@@ -33,7 +33,6 @@ for sub in ["", "../discovery",
     sys.path.insert(0, os.path.join(HERE, sub))
 
 from node_api import assemble                                     # noqa: E402
-from nodes_literature import literature_nodes                     # noqa: E402
 from ladder import assess                                         # noqa: E402
 from dgs import fit_dgs                                           # noqa: E402
 from panel import make_panel                                     # noqa: E402
@@ -54,8 +53,9 @@ def _load(modpath, name):
 
 def all_self_org_nodes():
     rivers = _load(os.path.join(HERE, "../studies/2C_river_networks/river_node.py"), "river2c")
+    neuro = _load(os.path.join(HERE, "../studies/2D_biological_branching/neuro_node.py"), "neuro2d")
     nodes = [rivers.build_node()]                                # REAL rivers (HydroRIVERS NA)
-    nodes += literature_nodes(seed=0)                            # bio subsystems (placeholder)
+    nodes += neuro.build_nodes()                                 # REAL biology (NeuroMorpho arbors)
     corporate = _load(os.path.join(HERE, "../studies/2B_corporate/corporate_node.py"), "corp2b")
     organizations = _load(os.path.join(HERE, "../studies/2E_organizations/org_node.py"), "org2e")
     opensource = _load(os.path.join(HERE, "../studies/2F_opensource/oss_node.py"), "oss2f")
