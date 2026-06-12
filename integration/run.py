@@ -108,12 +108,36 @@ def mechanism_on_assembled(nodes):
             "slope_p": r.slope_p, "gap_consistent_with_1": r.gap_consistent_with_1}
 
 
+def dgs_real_block():
+    """REAL DGS->instability test on the cached country-period panel (Harvard
+    ECI + V-Dem + World Bank + UCDP), if the cache is present."""
+    panel_path = os.path.join(HERE, "../studies/2A_political_fragmentation/results/dgs_panel_real.json")
+    sens_path = os.path.join(HERE, "../studies/2A_political_fragmentation/results/dgs_sensitivity.json")
+    if not os.path.exists(panel_path):
+        return None
+    raw = json.load(open(panel_path))
+    meta = raw.get("_meta", {})
+    panel = {k: np.array(v) for k, v in raw.items() if k != "_meta"}
+    r = fit_dgs(panel)
+    out = {"n": r.n, "n_countries": meta.get("n_countries"),
+           "base_rate": round(meta.get("base_rate", float("nan")), 3),
+           "beta_dgs": round(r.beta_dgs, 3), "lr_p": r.lr_p,
+           "auc_gain": round(r.auc_gain, 3),
+           "verdict": "DGS predicts instability beyond controls" if r.lr_p < 0.05
+                      else "NULL: DGS adds nothing beyond GDP+pop+governance",
+           "sources": meta.get("sources")}
+    if os.path.exists(sens_path):
+        out["sensitivity_lr_p"] = [s["lr_p"] for s in json.load(open(sens_path))]
+    return out
+
+
 def predictive_calibrations():
     dgs = {}
     for label, beta in [("true_effect", 0.6), ("null_effect", 0.0)]:
         res = fit_dgs(make_panel(beta_dgs_true=beta, seed=4))
         dgs[label] = {"beta_dgs": round(res.beta_dgs, 3), "lr_p": res.lr_p,
                       "auc_gain": round(res.auc_gain, 3)}
+    dgs_real = dgs_real_block()
     surv = {}
     for label, beta in [("true_effect", 0.5), ("null_effect", 0.0)]:
         res = fit_hazard(make_firm_panel(beta_true=beta, seed=4))
@@ -125,7 +149,8 @@ def predictive_calibrations():
         lf = 1.0 + slope_true * (g - 1.0) + rng.normal(0, 0.05, size=12)
         r = gap_predicts_factor(g, lf)
         mech[label] = {"slope_ci": [round(x, 3) for x in r.slope_ci], "slope_p": r.slope_p}
-    return {"dgs_instability": dgs, "corporate_survival": surv, "mechanism_gap_factor": mech}
+    return {"dgs_instability": dgs, "dgs_instability_real": dgs_real,
+            "corporate_survival": surv, "mechanism_gap_factor": mech}
 
 
 def main():

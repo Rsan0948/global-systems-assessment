@@ -65,6 +65,23 @@
         "auc_gain": -0.005
       }
     },
+    "dgs_instability_real": {
+      "n": 713,
+      "n_countries": 144,
+      "base_rate": 0.241,
+      "beta_dgs": 0.107,
+      "lr_p": 0.41539810079208006,
+      "auc_gain": 0.0,
+      "verdict": "NULL: DGS adds nothing beyond GDP+pop+governance",
+      "sources": "Harvard ECI + V-Dem (OWID) + World Bank + UCDP/PRIO ACD",
+      "sensitivity_lr_p": [
+        0.41539810079208006,
+        0.9281327522801898,
+        0.2160390602071975,
+        0.40004936904585353,
+        0.7043618639448161
+      ]
+    },
     "corporate_survival": {
       "true_effect": {
         "hazard_ratio": 1.652,

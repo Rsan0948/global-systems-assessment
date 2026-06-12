@@ -8,3 +8,6 @@ studies/2C_river_networks/data/
 
 # NCBI taxdump raw download (~75 MB); derived fan-out cache in results/ is committed
 studies/4_negative_controls/data/
+
+# DGS raw source downloads (Harvard ECI, V-Dem, World Bank, UCDP); panel cache in results/ is committed
+studies/2A_political_fragmentation/data/

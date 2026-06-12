@@ -1,0 +1,42 @@
+[
+  {
+    "spec": "5yr windows, any conflict (primary)",
+    "n": 713,
+    "base_rate": 0.24123422159887797,
+    "beta_dgs": 0.1069,
+    "lr_p": 0.41539810079208006,
+    "auc_gain": 0.0003
+  },
+  {
+    "spec": "3yr windows, any conflict",
+    "n": 1138,
+    "base_rate": 0.210896309314587,
+    "beta_dgs": -0.0096,
+    "lr_p": 0.9281327522801898,
+    "auc_gain": -0.0005
+  },
+  {
+    "spec": "10yr windows, any conflict",
+    "n": 282,
+    "base_rate": 0.30141843971631205,
+    "beta_dgs": 0.244,
+    "lr_p": 0.2160390602071975,
+    "auc_gain": null
+  },
+  {
+    "spec": "5yr windows, war only (>=2)",
+    "n": 713,
+    "base_rate": 0.07152875175315568,
+    "beta_dgs": -0.1568,
+    "lr_p": 0.40004936904585353,
+    "auc_gain": -0.0158
+  },
+  {
+    "spec": "annual anchors, 5yr window",
+    "n": 3138,
+    "base_rate": 0.24219247928616955,
+    "beta_dgs": -0.0239,
+    "lr_p": 0.7043618639448161,
+    "auc_gain": -0.0
+  }
+]
