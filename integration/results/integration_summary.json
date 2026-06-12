@@ -2,13 +2,13 @@
   "ladder_on_self_organizing_nodes": {
     "rung": 1,
     "label": "domain-specific laws",
-    "reason": "each domain concentrated (median CV=0.17) but values differ (Q p=0.000, I^2=0.97)",
-    "pooled_ratio": 3.0096,
+    "reason": "each domain concentrated (median CV=0.19) but values differ (Q p=0.000, I^2=0.98)",
+    "pooled_ratio": 2.95,
     "pooled_ci": [
-      2.5836,
-      3.5058
+      2.6096,
+      3.3348
     ],
-    "i_squared": 0.972,
+    "i_squared": 0.98,
     "q_p": 0.0,
     "constants_in_ci": [
       "e",
@@ -17,25 +17,25 @@
       "golden^2"
     ],
     "per_domain": {
-      "rivers": 3.957,
-      "bronchial": 2.968,
-      "vascular": 3.044,
-      "botanical": 3.409,
+      "rivers": 3.488,
+      "bronchial": 2.712,
+      "vascular": 3.008,
+      "botanical": 3.731,
       "corporate": 2.041,
       "organizations": 3.197,
       "opensource": 2.793
     }
   },
   "negative_controls": {
-    "self_org_mean_cv": 0.256,
+    "self_org_mean_cv": 0.248,
     "control_mean_cv": 1.685,
-    "brown_forsythe_p": 3.466132745519217e-24,
+    "brown_forsythe_p": 1.2266819478948945e-89,
     "controls_disperse_more": true,
     "per_node_cv": {
-      "rivers": 0.141,
-      "bronchial": 0.126,
-      "vascular": 0.165,
-      "botanical": 0.229,
+      "rivers": 0.191,
+      "bronchial": 0.107,
+      "vascular": 0.099,
+      "botanical": 0.208,
       "corporate": 0.523,
       "organizations": 0.168,
       "opensource": 0.44,
@@ -46,13 +46,13 @@
   "mechanism_on_assembled_nodes": {
     "status": "insufficient exponent variation",
     "note": "illustrative placeholder exponents are ~constant (gap~1); the cross-domain gap->factor test needs REAL exponent estimates (Study 3B estimator on raw allometry) to run meaningfully.",
-    "n_domains_with_exponents": 6
+    "n_domains_with_exponents": 5
   },
   "predictive_calibrations": {
     "dgs_instability": {
       "true_effect": {
         "beta_dgs": 0.555,
-        "lr_p": 2.668745941214868e-12,
+        "lr_p": 2.6687459412148677e-12,
         "auc_gain": 0.024
       },
       "null_effect": {
@@ -64,7 +64,7 @@
     "corporate_survival": {
       "true_effect": {
         "hazard_ratio": 1.652,
-        "lr_p": 2.3508997327939263e-13
+        "lr_p": 2.350899732794473e-13
       },
       "null_effect": {
         "hazard_ratio": 1.054,
@@ -77,7 +77,7 @@
           0.479,
           0.684
         ],
-        "slope_p": 1.8425147428296478e-07
+        "slope_p": 1.8425147428297134e-07
       },
       "no_link": {
         "slope_ci": [
@@ -88,5 +88,5 @@
       }
     }
   },
-  "note": "Simulated / literature-summary inputs. Proves the pipeline, not the theory."
+  "note": "MIXED inputs: rivers = REAL (HydroRIVERS NA, discovery continent); all other domains still simulated / literature-summary placeholders. Not yet a cross-domain finding about real systems. Sealed holdout (corporate, open-source, rivers cross-continent) untouched."
 }

@@ -53,7 +53,9 @@ def _load(modpath, name):
 
 
 def all_self_org_nodes():
-    nodes = literature_nodes(seed=0)                              # rivers + bio subsystems
+    rivers = _load(os.path.join(HERE, "../studies/2C_river_networks/river_node.py"), "river2c")
+    nodes = [rivers.build_node()]                                # REAL rivers (HydroRIVERS NA)
+    nodes += literature_nodes(seed=0)                            # bio subsystems (placeholder)
     corporate = _load(os.path.join(HERE, "../studies/2B_corporate/corporate_node.py"), "corp2b")
     organizations = _load(os.path.join(HERE, "../studies/2E_organizations/org_node.py"), "org2e")
     opensource = _load(os.path.join(HERE, "../studies/2F_opensource/oss_node.py"), "oss2f")
@@ -137,7 +139,10 @@ def main():
         "negative_controls": negative_control_block(self_org, controls),
         "mechanism_on_assembled_nodes": mechanism_on_assembled(self_org),
         "predictive_calibrations": predictive_calibrations(),
-        "note": "Simulated / literature-summary inputs. Proves the pipeline, not the theory.",
+        "note": "MIXED inputs: rivers = REAL (HydroRIVERS NA, discovery continent); "
+                "all other domains still simulated / literature-summary placeholders. "
+                "Not yet a cross-domain finding about real systems. Sealed holdout "
+                "(corporate, open-source, rivers cross-continent) untouched.",
     }
     with open(os.path.join(RESULTS, "integration_summary.json"), "w") as f:
         json.dump(summary, f, indent=2)

@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
+
+# HydroRIVERS raw downloads (60+ MB each); derived Rb caches in results/ are committed
+studies/2C_river_networks/data/
