@@ -27,11 +27,15 @@ status — it may emerge as the pooled estimate, or not.
 preregistration/PREREGISTRATION.md   The two-stage discovery pre-analysis plan (v0.2)
 discovery/                           Reusable core instrument: variance-components
                                      decomposition + trivial-null control + the ladder
-integration/                         Node interface + runner: assemble nodes -> ladder
+integration/                         Node interface + runner: assemble all nodes -> ladder
 studies/2C_river_networks/           River branching: pipeline + power/calibration
 studies/2D_biological_branching/     Biology node (bronchial/vascular/botanical)
 studies/2A_political_fragmentation/  DGS -> instability mechanism test
+studies/2B_corporate/                Corporate split factor + survival/hazard test
+studies/2E_organizations/            Inter-echelon org scaling ratio
+studies/2F_opensource/               Viable-fork factor (boundary probe)
 studies/3B_mechanism/                Rung-4: does the dimensional gap predict the factor?
+studies/4_negative_controls/         Engineered (4A) + classification (4B) controls
 ```
 
 ## Status
@@ -45,18 +49,26 @@ studies/3B_mechanism/                Rung-4: does the dimensional gap predict th
   analysis (real HydroSHEDS ingestion ready). Supplied the empirical proof that
   random topology clusters near 3–4 *with no law* — motivating the triviality
   control.
-- **Study 2D (biology):** domain node built (literature-summary inputs; FIA /
-  morphometry ingestion hooks ready).
+- **Domain nodes built (2D biology, 2B corporate, 2E organizations, 2F
+  open-source):** all on literature-summary inputs, each with a mechanism-free
+  trivial null and a real-data ingestion hook.
 - **Study 2A (political):** the DGS→instability mechanism test, built and
   calibrated. Honestly *not* a ratio node — administrative hierarchy is designed,
   so it's a boundary-condition control, not self-organizing branching.
+- **Study 2B / corporate survival:** hazard test recovers a true complexity
+  effect (HR ≈ 1.65) and is null without one.
 - **Study 3B (mechanism, rung 4):** built and calibrated — recovers a true
   gap→factor link and is null without one.
-- **Integration:** assembles nodes through the engine. On illustrative literature
-  inputs the ladder returns **rung 0 (trivial)** — the triviality control
-  correctly declines to call clustering-near-3 a law. See `integration/`.
-- **Remaining:** corporate (2B), organizations (2E), open-source (2F) nodes;
-  classification negative control (4B); real-data ingestion; public deposit.
+- **Negative controls (4A engineered, 4B classification):** built; on
+  illustrative inputs the controls disperse ~6× more than self-organizing
+  systems (Brown–Forsythe p ≈ 3×10⁻²⁴) — boundary condition confirmed.
+- **Integration:** assembles all seven self-organizing nodes through the engine.
+  On illustrative inputs the ladder returns **rung 1 (domain-specific laws)** —
+  each domain concentrated, but values differ (I² ≈ 0.97). See `integration/`.
+- **Remaining (needs you / real data):** swap each node's inputs for real
+  measurements via the ingestion hooks; real exponent estimates for the rung-4
+  test; the sealed-holdout confirmation pass; and the public deposit. See the
+  "What you need to do" section below.
 
 ## The honest caveat on all runnable numbers
 

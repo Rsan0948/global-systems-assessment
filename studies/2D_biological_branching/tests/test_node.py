@@ -5,7 +5,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from node import build_node
+from biology_node import build_node
 
 
 def test_node_builds_positive_ratios():
