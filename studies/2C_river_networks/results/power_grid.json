@@ -1,0 +1,272 @@
+[
+  {
+    "true_center": "e",
+    "n_basins": 100,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 155229991588.20557
+  },
+  {
+    "true_center": "e",
+    "n_basins": 300,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 1.5046219352445638e+33
+  },
+  {
+    "true_center": "e",
+    "n_basins": 1000,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 4.377899996729057e+111
+  },
+  {
+    "true_center": "e",
+    "n_basins": 3000,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": Infinity
+  },
+  {
+    "true_center": "e",
+    "n_basins": 10000,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": Infinity
+  },
+  {
+    "true_center": "e",
+    "n_basins": 100,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 0.9866666666666667,
+    "prob_decisive": 0.9866666666666667,
+    "median_bf_truth_vs_rival": 646105.8941976638
+  },
+  {
+    "true_center": "e",
+    "n_basins": 300,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 3.898354443926945e+16
+  },
+  {
+    "true_center": "e",
+    "n_basins": 1000,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 5.5579293418818886e+56
+  },
+  {
+    "true_center": "e",
+    "n_basins": 3000,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 7.953868010723946e+170
+  },
+  {
+    "true_center": "e",
+    "n_basins": 10000,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": Infinity
+  },
+  {
+    "true_center": "e",
+    "n_basins": 100,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 0.9666666666666667,
+    "prob_decisive": 0.9,
+    "median_bf_truth_vs_rival": 1578.1297467966147
+  },
+  {
+    "true_center": "e",
+    "n_basins": 300,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 0.9933333333333333,
+    "median_bf_truth_vs_rival": 998328046.1537949
+  },
+  {
+    "true_center": "e",
+    "n_basins": 1000,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 1.008837797345631e+31
+  },
+  {
+    "true_center": "e",
+    "n_basins": 3000,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 1.0513607360816071e+94
+  },
+  {
+    "true_center": "e",
+    "n_basins": 10000,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": Infinity
+  },
+  {
+    "true_center": "3",
+    "n_basins": 100,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 0.96,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 314753624997.93933
+  },
+  {
+    "true_center": "3",
+    "n_basins": 300,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 6.468885720748791e+33
+  },
+  {
+    "true_center": "3",
+    "n_basins": 1000,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 6.058474882601232e+111
+  },
+  {
+    "true_center": "3",
+    "n_basins": 3000,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": Infinity
+  },
+  {
+    "true_center": "3",
+    "n_basins": 10000,
+    "log_sd": 0.12,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": Infinity
+  },
+  {
+    "true_center": "3",
+    "n_basins": 100,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 0.8666666666666667,
+    "prob_decisive": 0.9866666666666667,
+    "median_bf_truth_vs_rival": 779168.3065932298
+  },
+  {
+    "true_center": "3",
+    "n_basins": 300,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 0.9866666666666667,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 2.4582626343479898e+17
+  },
+  {
+    "true_center": "3",
+    "n_basins": 1000,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 2.1640351300504507e+57
+  },
+  {
+    "true_center": "3",
+    "n_basins": 3000,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 5.74176690309888e+172
+  },
+  {
+    "true_center": "3",
+    "n_basins": 10000,
+    "log_sd": 0.18,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": Infinity
+  },
+  {
+    "true_center": "3",
+    "n_basins": 100,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 0.7933333333333333,
+    "prob_decisive": 0.94,
+    "median_bf_truth_vs_rival": 2261.776827013315
+  },
+  {
+    "true_center": "3",
+    "n_basins": 300,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 0.9533333333333334,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 4851235409.562225
+  },
+  {
+    "true_center": "3",
+    "n_basins": 1000,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 0.9933333333333333,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 8.490549427021866e+31
+  },
+  {
+    "true_center": "3",
+    "n_basins": 3000,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": 1.2506760726324113e+95
+  },
+  {
+    "true_center": "3",
+    "n_basins": 10000,
+    "log_sd": 0.25,
+    "n_reps": 150,
+    "prob_correct_best": 1.0,
+    "prob_decisive": 1.0,
+    "median_bf_truth_vs_rival": Infinity
+  }
+]
