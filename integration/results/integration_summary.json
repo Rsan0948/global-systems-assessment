@@ -29,8 +29,8 @@
   },
   "negative_controls": {
     "self_org_mean_cv": 0.257,
-    "control_mean_cv": 1.685,
-    "brown_forsythe_p": 1.3963949524450227e-124,
+    "control_mean_cv": 5.767,
+    "brown_forsythe_p": 9.694898946792632e-252,
     "controls_disperse_more": true,
     "per_node_cv": {
       "rivers": 0.191,
@@ -43,8 +43,8 @@
       "corporate": 0.523,
       "organizations": 0.168,
       "opensource": 0.44,
-      "engineered": 2.406,
-      "classification": 0.965
+      "engineered": 1.645,
+      "classification": 9.888
     }
   },
   "mechanism_on_assembled_nodes": {

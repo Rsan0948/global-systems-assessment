@@ -64,8 +64,8 @@ def all_self_org_nodes():
 
 
 def control_nodes():
-    nc = _load(os.path.join(HERE, "../studies/4_negative_controls/nodes.py"), "nc4")
-    return [nc.engineered_node(), nc.classification_node()]
+    nc = _load(os.path.join(HERE, "../studies/4_negative_controls/real_controls.py"), "nc4real")
+    return [nc.engineered_node(), nc.classification_node()]      # REAL specs + NCBI taxonomy
 
 
 def ladder_block(nodes):

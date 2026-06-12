@@ -5,3 +5,6 @@ __pycache__/
 
 # HydroRIVERS raw downloads (60+ MB each); derived Rb caches in results/ are committed
 studies/2C_river_networks/data/
+
+# NCBI taxdump raw download (~75 MB); derived fan-out cache in results/ is committed
+studies/4_negative_controls/data/
