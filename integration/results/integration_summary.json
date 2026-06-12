@@ -1,0 +1,92 @@
+{
+  "ladder_on_self_organizing_nodes": {
+    "rung": 1,
+    "label": "domain-specific laws",
+    "reason": "each domain concentrated (median CV=0.17) but values differ (Q p=0.000, I^2=0.97)",
+    "pooled_ratio": 3.0096,
+    "pooled_ci": [
+      2.5836,
+      3.5058
+    ],
+    "i_squared": 0.972,
+    "q_p": 0.0,
+    "constants_in_ci": [
+      "e",
+      "3",
+      "pi",
+      "golden^2"
+    ],
+    "per_domain": {
+      "rivers": 3.957,
+      "bronchial": 2.968,
+      "vascular": 3.044,
+      "botanical": 3.409,
+      "corporate": 2.041,
+      "organizations": 3.197,
+      "opensource": 2.793
+    }
+  },
+  "negative_controls": {
+    "self_org_mean_cv": 0.256,
+    "control_mean_cv": 1.685,
+    "brown_forsythe_p": 3.466132745519217e-24,
+    "controls_disperse_more": true,
+    "per_node_cv": {
+      "rivers": 0.141,
+      "bronchial": 0.126,
+      "vascular": 0.165,
+      "botanical": 0.229,
+      "corporate": 0.523,
+      "organizations": 0.168,
+      "opensource": 0.44,
+      "engineered": 2.406,
+      "classification": 0.965
+    }
+  },
+  "mechanism_on_assembled_nodes": {
+    "status": "insufficient exponent variation",
+    "note": "illustrative placeholder exponents are ~constant (gap~1); the cross-domain gap->factor test needs REAL exponent estimates (Study 3B estimator on raw allometry) to run meaningfully.",
+    "n_domains_with_exponents": 6
+  },
+  "predictive_calibrations": {
+    "dgs_instability": {
+      "true_effect": {
+        "beta_dgs": 0.555,
+        "lr_p": 2.668745941214868e-12,
+        "auc_gain": 0.024
+      },
+      "null_effect": {
+        "beta_dgs": 0.032,
+        "lr_p": 0.6790513679058945,
+        "auc_gain": -0.005
+      }
+    },
+    "corporate_survival": {
+      "true_effect": {
+        "hazard_ratio": 1.652,
+        "lr_p": 2.3508997327939263e-13
+      },
+      "null_effect": {
+        "hazard_ratio": 1.054,
+        "lr_p": 0.44266650856779566
+      }
+    },
+    "mechanism_gap_factor": {
+      "gap_predicts": {
+        "slope_ci": [
+          0.479,
+          0.684
+        ],
+        "slope_p": 1.8425147428296478e-07
+      },
+      "no_link": {
+        "slope_ci": [
+          -0.208,
+          0.053
+        ],
+        "slope_p": 0.21689681815912076
+      }
+    }
+  },
+  "note": "Simulated / literature-summary inputs. Proves the pipeline, not the theory."
+}

@@ -1,0 +1,7 @@
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+pytest>=7.0
+# Real-data ingestion only (not needed for the synthetic calibration study):
+# geopandas>=0.14
+# pyogrio>=0.7
