@@ -1,0 +1,74 @@
+{
+  "universal (truth: rung 3, value=e)": {
+    "rung": 3,
+    "label": "named constant ~ e",
+    "reason": "universal (Q p=0.45, I^2=0.00); pooled CI (2.678, 2.731) isolates e",
+    "pooled_ratio": 2.7043,
+    "pooled_ci": [
+      2.6781,
+      2.7308
+    ],
+    "tau": 0.0,
+    "i_squared": 0.0,
+    "q_p": 0.4462,
+    "median_within_cv": 0.11,
+    "constants_in_ci": [
+      "e"
+    ],
+    "trivial_pooled_displacement_p": 0.0,
+    "trivial_tau_below_null_p": 0.0
+  },
+  "domain_specific (truth: rung 1)": {
+    "rung": 1,
+    "label": "domain-specific laws",
+    "reason": "each domain concentrated (median CV=0.10) but values differ (Q p=0.000, I^2=1.00)",
+    "pooled_ratio": 2.8337,
+    "pooled_ci": [
+      2.3902,
+      3.3595
+    ],
+    "tau": 0.2124,
+    "i_squared": 0.997,
+    "q_p": 0.0,
+    "median_within_cv": 0.104,
+    "constants_in_ci": [
+      "e",
+      "3",
+      "pi",
+      "golden^2"
+    ],
+    "trivial_pooled_displacement_p": 0.0,
+    "trivial_tau_below_null_p": 1.0
+  },
+  "trivial (truth: rung 0)": {
+    "rung": 0,
+    "label": "no theorem (trivial)",
+    "reason": "signal indistinguishable from mechanism-free null (pooled disp p=0.35, tau-below-null p=0.09)",
+    "pooled_ratio": 3.6282,
+    "pooled_ci": [
+      3.4006,
+      3.871
+    ],
+    "tau": 0.0792,
+    "i_squared": 0.957,
+    "q_p": 0.0,
+    "median_within_cv": 0.15,
+    "constants_in_ci": [],
+    "trivial_pooled_displacement_p": 0.352,
+    "trivial_tau_below_null_p": 0.092
+  },
+  "discover_then_confirm (universal)": {
+    "discovery_rung": 3,
+    "discovery_pooled_ci": [
+      2.6902408014117447,
+      2.7571230078283437
+    ],
+    "holdout_rung": 3,
+    "holdout_pooled_ci": [
+      2.6887364261490396,
+      2.7932655982350556
+    ],
+    "ci_overlap": true,
+    "confirmation_passed": true
+  }
+}
