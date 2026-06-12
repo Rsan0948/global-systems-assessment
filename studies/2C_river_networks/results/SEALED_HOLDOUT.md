@@ -1,4 +1,11 @@
-# Rivers — sealed cross-continent holdout
+# Rivers — cross-continent holdout  [CONFIRMED 2026-06-12 — seal SPENT]
+
+> **STATUS: confirmation complete.** The discovery claim was frozen first
+> (`preregistration/FROZEN_DISCOVERY_CLAIM.md`, commit `5cff6be`), then South
+> America was measured (`confirm_rivers.py`). Result: SA geom-mean Rb = **3.539**
+> (vs NA discovery 3.488) — predictions A1/A2/A3 all PASS. The rivers law
+> replicates on an independent continent. The SA holdout is now spent and can no
+> longer serve as a clean confirmation set.
 
 Rivers have no temporal axis, so the within-domain confirmation holdout
 (PREREGISTRATION §discovery/confirmation split) is **geographic**:
