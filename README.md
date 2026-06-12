@@ -27,7 +27,11 @@ status — it may emerge as the pooled estimate, or not.
 preregistration/PREREGISTRATION.md   The two-stage discovery pre-analysis plan (v0.2)
 discovery/                           Reusable core instrument: variance-components
                                      decomposition + trivial-null control + the ladder
-studies/2C_river_networks/           One worked-out domain node, end-to-end and runnable
+integration/                         Node interface + runner: assemble nodes -> ladder
+studies/2C_river_networks/           River branching: pipeline + power/calibration
+studies/2D_biological_branching/     Biology node (bronchial/vascular/botanical)
+studies/2A_political_fragmentation/  DGS -> instability mechanism test
+studies/3B_mechanism/                Rung-4: does the dimensional gap predict the factor?
 ```
 
 ## Status
@@ -38,12 +42,21 @@ studies/2C_river_networks/           One worked-out domain node, end-to-end and 
   correctly returns rung 3 (one law, isolates *e*), rung 1 (many laws), and
   rung 0 (trivial), and the discover→confirm split passes. See `discovery/`.
 - **Study 2C (rivers):** built end-to-end; runnable result is a power/calibration
-  analysis (real HydroSHEDS ingestion ready). It also supplied the empirical
-  proof that random topology clusters near 3–4 *with no law* — the motivation for
-  the triviality control.
-- **Other domains (2A/2B/2D/2E/2F), mechanism test (3B), negative controls:**
-  specified in the pre-registration as nodes/controls for the engine; not yet
-  implemented.
+  analysis (real HydroSHEDS ingestion ready). Supplied the empirical proof that
+  random topology clusters near 3–4 *with no law* — motivating the triviality
+  control.
+- **Study 2D (biology):** domain node built (literature-summary inputs; FIA /
+  morphometry ingestion hooks ready).
+- **Study 2A (political):** the DGS→instability mechanism test, built and
+  calibrated. Honestly *not* a ratio node — administrative hierarchy is designed,
+  so it's a boundary-condition control, not self-organizing branching.
+- **Study 3B (mechanism, rung 4):** built and calibrated — recovers a true
+  gap→factor link and is null without one.
+- **Integration:** assembles nodes through the engine. On illustrative literature
+  inputs the ladder returns **rung 0 (trivial)** — the triviality control
+  correctly declines to call clustering-near-3 a law. See `integration/`.
+- **Remaining:** corporate (2B), organizations (2E), open-source (2F) nodes;
+  classification negative control (4B); real-data ingestion; public deposit.
 
 ## The honest caveat on all runnable numbers
 

@@ -1,0 +1,73 @@
+{
+  "ladder_on_literature_nodes": {
+    "rung": 0,
+    "label": "no theorem (trivial)",
+    "reason": "signal indistinguishable from mechanism-free null (pooled disp p=0.08, tau-below-null p=1.00)",
+    "pooled_ratio": 3.3252,
+    "pooled_ci": [
+      2.8346,
+      3.9007
+    ],
+    "i_squared": 0.957,
+    "q_p": 0.0,
+    "constants_in_ci": [
+      "3",
+      "pi"
+    ],
+    "per_domain": {
+      "rivers": 3.957,
+      "bronchial": 2.968,
+      "vascular": 3.044,
+      "botanical": 3.409
+    }
+  },
+  "dgs_instability_calibration": {
+    "true_effect": {
+      "beta_dgs": 0.555,
+      "lr_stat": 48.92,
+      "lr_p": 2.668745941214868e-12,
+      "auc_full": 0.766,
+      "auc_reduced": 0.742,
+      "auc_gain": 0.024
+    },
+    "null_effect": {
+      "beta_dgs": 0.032,
+      "lr_stat": 0.17,
+      "lr_p": 0.6790513679058945,
+      "auc_full": 0.664,
+      "auc_reduced": 0.669,
+      "auc_gain": -0.005
+    }
+  },
+  "mechanism_gap_factor_calibration": {
+    "gap_predicts": {
+      "slope": 0.582,
+      "slope_ci": [
+        0.479,
+        0.684
+      ],
+      "slope_p": 1.8425147428296478e-07,
+      "r_squared": 0.941,
+      "gap_mean_ci": [
+        0.782,
+        1.116
+      ],
+      "gap_consistent_with_1": true
+    },
+    "no_link": {
+      "slope": -0.077,
+      "slope_ci": [
+        -0.208,
+        0.053
+      ],
+      "slope_p": 0.21689681815912076,
+      "r_squared": 0.148,
+      "gap_mean_ci": [
+        0.814,
+        1.151
+      ],
+      "gap_consistent_with_1": true
+    }
+  },
+  "note": "Simulated / literature-summary inputs. Proves the pipeline, not the theory."
+}
