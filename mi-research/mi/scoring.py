@@ -9,7 +9,36 @@ import math
 import json
 from pathlib import Path
 from typing import Optional
-from mi.constants import WEIGHTS, WEIGHTS_ARCHIVED_HAND_V0, WEIGHTS_EQUAL, TIERS, LENS
+from mi.constants import (WEIGHTS, WEIGHTS_ARCHIVED_HAND_V0, WEIGHTS_EQUAL, TIERS, LENS,
+                          WEIGHTS_V2_EQUAL, V2_ERA_LEADER, V2_ELEVATED_WEIGHT, MI_ACTIVE_WEIGHTING)
+
+_PILLARS = ["P1", "P2", "P3", "P4", "P5"]
+
+
+def _era_for(year) -> str:
+    """Bucket a stress-event year to the nearest measured rotation era."""
+    try:
+        y = int(year)
+    except (TypeError, ValueError):
+        return "2018"
+    return "2012" if y <= 2015 else ("2018" if y <= 2021 else "2024")
+
+
+def v2_timevarying_weights(event_year):
+    """Option B: elevate the era's most-central pillar; split the rest equally."""
+    leader = V2_ERA_LEADER[_era_for(event_year)]
+    rest = (1.0 - V2_ELEVATED_WEIGHT) / 4
+    return {p: (V2_ELEVATED_WEIGHT if p == leader else rest) for p in _PILLARS}
+
+
+def resolve_weights(weighting: str = None, event_year=None) -> dict:
+    """Resolve the active weighting scheme to a weights dict (the single selector)."""
+    mode = weighting or MI_ACTIVE_WEIGHTING
+    if mode == "v1":
+        return WEIGHTS
+    if mode == "timevarying":
+        return v2_timevarying_weights(event_year)
+    return WEIGHTS_V2_EQUAL  # "equal" (V2 default; equal wins ties)
 
 
 def normalize_wgi(score: float) -> float:
@@ -184,13 +213,13 @@ def calculate_mi_score(pillar_scores: dict, weights: dict = None) -> Optional[fl
 
     Args:
         pillar_scores: dict with P1-P5 values (0-1 each)
-        weights: weight dict (defaults to LIVE correlation-derived)
+        weights: weight dict (defaults to the active V2 weighting; pass explicitly to override)
 
     Returns:
         Weighted composite score, or None if insufficient pillars available.
     """
     if weights is None:
-        weights = WEIGHTS
+        weights = resolve_weights()
 
     available = {k: v for k, v in pillar_scores.items()
                  if k in weights and v is not None}
@@ -235,20 +264,22 @@ def get_tier(mi_score: float) -> dict:
     return {"tier": 6, "name": "Below Floor"}
 
 
-def score_country(indicators: dict, weights: dict = None) -> dict:
+def score_country(indicators: dict, weights: dict = None, event_year=None) -> dict:
     """
     Full scoring pipeline for a single country at a single time point.
 
     Args:
         indicators: dict of raw indicator values
-        weights: optional weight override
+        weights: optional explicit weight override
+        event_year: stress-event year (used only by the time-varying weighting)
 
     Returns:
         Complete diagnostic output including pillars, MI score, spread,
         configuration, tier, and data gaps.
     """
     pillars = calculate_pillar_scores(indicators)
-    mi_score = calculate_mi_score(pillars, weights)
+    eff_weights = weights if weights is not None else resolve_weights(event_year=event_year)
+    mi_score = calculate_mi_score(pillars, eff_weights)
     spread = calculate_pillar_spread(pillars)
     config = get_configuration_profile(pillars)
 
@@ -259,15 +290,16 @@ def score_country(indicators: dict, weights: dict = None) -> dict:
         "configuration": config,
         "tier": get_tier(mi_score) if mi_score is not None else None,
         "data_gaps": pillars.get("gaps", []),
-        "weights_used": weights or WEIGHTS,
+        "weights_used": eff_weights,
+        "weighting_mode": MI_ACTIVE_WEIGHTING if weights is None else "explicit",
     }
 
-    # Sensitivity: headline the canonical MI v1, plus an equal-weights robustness
-    # control and the ARCHIVED hand weights (historical only, never canonical).
+    # Sensitivity across all weighting schemes (active V2 + the alternatives + frozen V1).
     if weights is None:
         result["sensitivity"] = {
-            "mi_v1": calculate_mi_score(pillars, WEIGHTS),            # canonical
-            "equal_weights": calculate_mi_score(pillars, WEIGHTS_EQUAL),
+            "v2_equal": calculate_mi_score(pillars, WEIGHTS_V2_EQUAL),
+            "v2_timevarying": calculate_mi_score(pillars, v2_timevarying_weights(event_year)),
+            "v1": calculate_mi_score(pillars, WEIGHTS),
             "archived_hand_v0": calculate_mi_score(pillars, WEIGHTS_ARCHIVED_HAND_V0),
         }
 

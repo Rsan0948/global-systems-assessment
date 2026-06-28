@@ -40,6 +40,20 @@ WEIGHTS_EQUAL = {
     "P5": 0.20,
 }
 
+# === V2 WEIGHTING ARCHITECTURE (retrodiction decides; equal wins ties) ===
+# V1's P1=0.34 was an artifact of the 85-country/2018 sample. At 143 countries across
+# three time points the most-central pillar ROTATES and all five sit in a tight
+# 0.71-0.80 correlation band — so V2 chooses between:
+#   Option A — equal weights (WEIGHTS_EQUAL above). Simple, defensible, empirically supported.
+#   Option B — time-varying: the most-central pillar at the stress-event era is elevated.
+WEIGHTS_V2_EQUAL = dict(WEIGHTS_EQUAL)
+# Measured rotation (the era's binding constraint / most-central pillar):
+V2_ERA_LEADER = {"2012": "P2", "2018": "P1", "2024": "P3"}
+V2_ELEVATED_WEIGHT = 0.30  # leader pillar; remaining 0.70 split equally (0.175 each)
+# Active V2 weighting — set by the A-vs-B retrodiction (see docs/architectural_decisions/).
+# "equal" | "timevarying" | "v1" (v1 retained only for V1 reproduction).
+MI_ACTIVE_WEIGHTING = "equal"
+
 # === MI v1 LENS — the single scoring config ===
 # Every scoring/normalization/safeguard threshold the engine uses lives HERE.
 # Edit a value once and it propagates to all cases on the next re-score. This is
@@ -73,6 +87,10 @@ LENS = {
     "f_executive_collapses_min": 2,
     # strategy classification
     "small_population": 10_000_000,
+    # V2 below-floor configuration diagnostic
+    "below_floor_mi": 0.40,            # apply the partial-failure diagnostic at/below this MI
+    "partial_failure_p4_min": 0.50,   # "has money": resource/income pillar strong
+    "partial_failure_p1p2_max": 0.40, # "no institutions/economy": P1 and P2 catastrophic
 }
 
 # === INDICATOR SPECIFICATIONS ===
@@ -201,10 +219,16 @@ SAFEGUARD_THRESHOLDS = {
         "description": "Democratic transition + weak P4 = reversal risk",
     },
     "E_rentier_capture": {
-        "rents_gdp_flag": 0.25,  # 25-30% of GDP triggers flag
-        "rents_revenue_unreliable": 0.50,  # >50% of revenue = treat P1 as unreliable
+        # V2 empirically-derived graded thresholds (143-country data), in PERCENT of GDP to
+        # match the WB resource-rents unit (e.g. 38.83 = 38.83%). Below 15% ~= zero effect.
+        # (V1 expressed these as fractions (0.25) while the data is percent -> trivially-true
+        #  comparison; V2 fixes the unit.)
+        "e1_material_gdp": 15.0,   # 15-25% of GDP -> MATERIAL penalty: P1 potentially undermined (moderate discount)
+        "e2_severe_gdp": 25.0,     # >25% of GDP -> SEVERE penalty: P1 likely unreliable (substantial discount)
+        "rents_revenue_unreliable": 50.0,  # >50% of revenue = treat P1 as unreliable
         "bidirectional": True,
-        "note": "Negative (capture) AND positive (rent-stabilization)",
+        "positive_p1_ceiling": 0.33,  # rent-stabilization (positive arm): low-P1 state using rents for cohesion
+        "note": "V2: graded E-1/E-2 (percent-of-GDP); below 15% no penalty. Bidirectional retained.",
     },
     "F_substate_turbulence": {
         "antisystem_vote_threshold": 0.25,  # 25% in any region

@@ -216,42 +216,48 @@ def evaluate_safeguard_e(pillars: dict, context: dict) -> dict:
     Derived from: Timor-Leste (negative), Nigeria (positive)
     """
     thresholds = SAFEGUARD_THRESHOLDS["E_rentier_capture"]
-    rents_gdp = context.get("resource_rents_pct_gdp") or 0
-    rents_revenue = context.get("resource_rents_pct_revenue") or 0
+    rents_gdp = context.get("resource_rents_pct_gdp") or 0           # PERCENT of GDP
+    rents_revenue = context.get("resource_rents_pct_revenue") or 0   # PERCENT of revenue
     p1 = pillars.get("P1")
 
-    negative_triggered = rents_gdp > thresholds["rents_gdp_flag"]
-    unreliable_p1 = rents_revenue > thresholds["rents_revenue_unreliable"]
-    positive_triggered = (negative_triggered and p1 is not None and p1 < LENS["p1_bottom_third"])
+    # V2 graded thresholds (percent of GDP): below 15% no penalty; 15-25% material; >25% severe.
+    if rents_gdp > thresholds["e2_severe_gdp"]:
+        tier = "E-2 (SEVERE)"
+        neg_mod = "Substantial P1 discount — institutional quality likely UNRELIABLE."
+    elif rents_gdp > thresholds["e1_material_gdp"]:
+        tier = "E-1 (MATERIAL)"
+        neg_mod = "Moderate qualitative P1 discount — institutional quality potentially undermined."
+    else:
+        tier = None
+        neg_mod = None
+
+    negative_triggered = tier is not None
+    unreliable_p1 = (rents_revenue > thresholds["rents_revenue_unreliable"]) or (tier == "E-2 (SEVERE)")
+    # Positive arm (rent-stabilization): low-P1 state using rents to buy cohesion.
+    positive_triggered = (negative_triggered and p1 is not None and p1 < thresholds["positive_p1_ceiling"])
 
     direction = None
-    if negative_triggered and not positive_triggered:
-        direction = "negative (rentier capture)"
-    elif positive_triggered:
+    if positive_triggered:
         direction = "bidirectional (capture + rent-stabilization)"
     elif negative_triggered:
-        direction = "negative"
-
-    triggered = negative_triggered
+        direction = "negative (rentier capture)"
 
     return {
         "name": "Rentier Capture (Bidirectional)",
-        "triggered": triggered,
+        "triggered": negative_triggered,
+        "tier": tier,
         "direction": direction,
         "p1_unreliable": unreliable_p1,
         "explanation": (
-            f"Resource rents {rents_gdp:.1%} GDP "
-            f"({'>' if negative_triggered else '<'} {thresholds['rents_gdp_flag']:.0%} threshold). "
-            f"{'P1 may be fiscally inflated. ' if negative_triggered else ''}"
-            f"{'P1 UNRELIABLE (rents >50% revenue). ' if unreliable_p1 else ''}"
-            f"{'Low P1 + rents = rent-stabilization possible (Nigeria model). ' if positive_triggered else ''}"
+            f"Resource rents {rents_gdp:.1f}% of GDP -> {tier or 'below 15% (no penalty)'}. "
+            f"{'P1 likely unreliable (E-2, or rents >50% of revenue). ' if unreliable_p1 else ''}"
+            f"{'Low P1 + rents = rent-stabilization possible (Nigeria/Gulf model). ' if positive_triggered else ''}"
         ),
         "modification": (
-            "Apply qualitative haircut to P1." if negative_triggered and not unreliable_p1
-            else "Treat P1 as unreliable (equivalent to Safeguard A)." if unreliable_p1
-            else None
+            "Treat P1 as unreliable (equivalent to Safeguard A)." if unreliable_p1
+            else neg_mod
         ),
-        "derivation": "Timor-Leste (negative capture); Nigeria (positive stabilization)",
+        "derivation": "Timor-Leste (negative capture); Nigeria/Gulf (positive stabilization). V2: graded E-1/E-2.",
     }
 
 

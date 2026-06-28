@@ -57,17 +57,27 @@ def classify_strategy(score: dict, context: dict) -> dict:
         "restrictive", "very_restrictive"
     )
 
-    if p1 > LENS["p1_complexity_control_min"] and (small_population or island) and immigration_restrictive:
+    # V2 Strategy 3 (refined): high institutional quality applied to a LOW-COMPLEXITY
+    # environment. Geographic/demographic constraint (small pop, island, restrictive
+    # immigration) can FACILITATE this but does NOT by itself confer advantage — the
+    # expanded 143-country data shows small states do not systematically outperform.
+    # The driver is P1, not geography. So: require high P1 + some low-complexity signal
+    # (any one, as a facilitator), not the V1 conjunction.
+    low_complexity = small_population or island or immigration_restrictive
+    if p1 > LENS["p1_complexity_control_min"] and low_complexity:
+        facilitators = [n for n, c in [("small population", small_population),
+                        ("island geography", island), ("restrictive immigration", immigration_restrictive)] if c]
         return {
             "strategy": "complexity_control",
-            "confidence": "high" if island else "moderate",
+            "confidence": "high" if (p1 > 0.80 and len(facilitators) >= 2) else "moderate",
             "explanation": (
-                "High P1 with controlled complexity inputs. "
-                "System manages by limiting what it has to govern rather than "
-                "building capacity to govern everything."
+                f"High institutional quality (P1={p1:.3f}) applied to a low-complexity "
+                f"environment (facilitated by: {', '.join(facilitators)}). The advantage is the "
+                "institutional quality, NOT the geographic constraint per se — small/island states "
+                "do not systematically outperform in the expanded data; constraint only facilitates."
             ),
             "failure_mode": "Demographic/economic stagnation",
-            "examples": "Singapore, Japan, island nations",
+            "examples": "Singapore, Japan (institutional quality in low-complexity settings)",
         }
 
     # Check for porosity signals
@@ -192,12 +202,39 @@ def assess_vulnerability(score: dict, safeguards: dict) -> dict:
     return {
         "risk_level": risk_level,
         "flags": flags,
+        "below_floor": below_floor_diagnostic(pillars, mi),
         "summary": (
             f"Risk level: {risk_level.upper()}. "
             f"P1 = {f'{p1:.3f}' if p1 is not None else 'N/A'}, "
             f"spread = {f'{spread:.3f}' if spread is not None else 'N/A'}, "
             f"{len(triggered_safeguards)} safeguards active."
         ),
+    }
+
+
+def below_floor_diagnostic(pillars: dict, mi) -> Optional[dict]:
+    """
+    V2 below-floor configuration finding: most below-floor countries are PARTIAL failures
+    (resource/income strong, institutions+economy catastrophic) — not uniformly poor. This
+    changes the prescription from "very bad shape" to "money but no institutions: target P1/P2,
+    not P4." Returns None for countries above the below-floor MI cutoff.
+    """
+    if mi is None or mi > LENS["below_floor_mi"]:
+        return None
+    p1 = pillars.get("P1"); p2 = pillars.get("P2"); p4 = pillars.get("P4")
+    strong_p4 = p4 is not None and p4 >= LENS["partial_failure_p4_min"]
+    weak_inst = (p1 is not None and p1 <= LENS["partial_failure_p1p2_max"]) and \
+                (p2 is None or p2 <= LENS["partial_failure_p1p2_max"])
+    if strong_p4 and weak_inst:
+        return {
+            "configuration": "partial_failure",
+            "reading": "Has money, not institutions: strong P4 (resource/income) atop catastrophic P1/P2.",
+            "prescription": "Target P1/P2 (institutions, knowledge economy) — NOT P4. Money is not the binding constraint.",
+        }
+    return {
+        "configuration": "uniformly_poor",
+        "reading": "Weak across pillars including P4 — no resource/income cushion.",
+        "prescription": "Broad-based capacity building; no single binding constraint to target.",
     }
 
 
