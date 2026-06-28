@@ -164,9 +164,12 @@ def main():
         "negative_controls": negative_control_block(self_org, controls),
         "mechanism_on_assembled_nodes": mechanism_on_assembled(self_org),
         "predictive_calibrations": predictive_calibrations(),
-        "note": "MIXED inputs: rivers = REAL (HydroRIVERS NA, discovery continent); "
-                "all other domains still simulated / literature-summary placeholders. "
-                "Not yet a cross-domain finding about real systems. Sealed holdout "
+        "note": "MIXED inputs: REAL = rivers (HydroRIVERS NA, discovery continent), "
+                "biology (NeuroMorpho arbors, 6 cell types), negative controls "
+                "(NCBI taxonomy + engineered specs), and DGS (ECI+V-Dem+WB+UCDP). "
+                "SIMULATED placeholders = corporate, organizations, open-source. "
+                "The pooled cross-domain ratio therefore mixes real and simulated "
+                "nodes and is NOT a finding about real systems. Sealed holdout "
                 "(corporate, open-source, rivers cross-continent) untouched.",
     }
     with open(os.path.join(RESULTS, "integration_summary.json"), "w") as f:
