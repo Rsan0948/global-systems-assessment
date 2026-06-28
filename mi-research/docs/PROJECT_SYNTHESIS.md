@@ -46,16 +46,32 @@ runs through it. That integration is the genuinely new thing.
 6. **Coherent — a navigable space, not a data lake.** One spine runs through all of it: **level/structure
    under stress** ("trust the level, distrust the slope"). A substrate that's incoherent is just noise
    with room in it; the spine is what makes the room navigable.
+7. **Deterministic, and populated by citable external evidence — not AI judgment.** The engine is
+   reproducible (same inputs → same outputs) and ingests *authoritative external data* — WGI, V-Dem,
+   Maddison, WDI — i.e. citable observations from the best available sources, **not** the AI's own read
+   of the world. The structure the space shows is therefore what the cited evidence *does* under fixed
+   logic; anyone can re-run it and get the same result. That objectivity is itself a load-bearing
+   substrate property: a foundation made of AI judgment couldn't be one. (The lone exception is the
+   **ancient tier**, which I scored interpretively — exactly why it is firewalled as lowest-confidence
+   and carries hypotheses, not evidence.)
 
 ## The evidence the space is real and load-bearing
-A substrate is only worth anything if the structure it preserves actually carries weight. Three proofs:
+A substrate is only worth anything if the structure it preserves actually carries weight. Three proofs —
+stated at their true strength, which is *consistency*, not yet *prediction*:
 
-- **Invariants that survived falsification AND 4,700 years.** The durability gap and the container held
-  through a *pre-registered geographic holdout*, the N=21 signature validation (Safeguard J,
-  83/100/100), the n=3 supercycle, and pre-modern cases from Old Kingdom Egypt to now (6/6, 10/10).
-  Patterns that survive deliberate kill-attempts *and* every civilization we can score are load-bearing,
-  not decorative. (`v3_1_durability_gate.md`, `signature_validation_N21.md`,
-  `globalization_supercycle_shape.md`, `ancient_25_analysis.md`.)
+- **Invariants that are deterministically and cross-temporally CONSISTENT** — the durability gap and the
+  container recur, on fixed logic over citable data, across the modern panel, the n=3 supercycle, and
+  pre-modern cases from Old Kingdom Egypt to now (6/6, 10/10). This is strong evidence the structure is
+  *real and coherent in the data* — the substrate claim. **It is NOT out-of-sample validation, and the
+  doc must not dress it as such.** The 51-case retrodiction (213C/77P/0F) is **hindsight-calibrated**:
+  cases were scored knowing outcomes, and the LENS thresholds were *tuned to fit* them — so the
+  determinism guarantees reproducibility, not freedom from overfitting (the bias is baked into
+  parameter/case selection *before* the deterministic run). The only genuinely pre-registered,
+  before-outcomes test we ran — the golden-age signature holdout — **failed**; the sealed US/UK flags
+  are the one real forward test still pending. So the honest claim is: *strongly and reproducibly
+  consistent across data and eras; one pre-registered forward test failed; true predictive validation is
+  still owed.* (`v3_1_durability_gate.md`, `signature_validation_N21.md`,
+  `globalization_supercycle_shape.md`, `ancient_25_analysis.md`, `sealed_flags_2024.json`.)
 - **A graveyard, which is itself a map.** The golden-age signature (refuted on holdout), the
   modernization sequence (autocorrelation artifact), the commodity driver (retracted), the 1900–1910
   parallel (dissolved), the micro n-expansion (floor-confounded), the modifier delta (≈ the gap
@@ -100,8 +116,12 @@ genuine predictive psychohistory will eventually require — the part that, ungl
 built.
 
 ## Load-bearing caveats (not boilerplate)
-- The 51-case baseline (213C / 77P / 0F) is directional/ordinal, partly structural; report it as a
-  **range** (~62–85%), never a single number.
+- **The retrodiction is overstated if read as validation.** The 51-case baseline (213C / 77P / 0F) is
+  hindsight-calibrated retrodiction (outcomes known at scoring; thresholds tuned to fit) — strong
+  evidence of *internal/cross-era consistency*, weak evidence of *out-of-sample prediction*. Determinism
+  gives reproducibility, not freedom from overfitting. Report it as a **range** (~62–85%), never a single
+  number, and never as a forecast. The one pre-registered forward test (golden-age signature) failed; the
+  sealed flags are the pending real one.
 - The ancient tier is **interpreter-scored with hindsight** — a consistency check, lowest confidence,
   firewalled from the baseline; it informs hypotheses, nothing more.
 - The supercycle is **n=3 / n=2 outcomes** — mechanism-consistent, not a powered law.
