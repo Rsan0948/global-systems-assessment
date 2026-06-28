@@ -54,10 +54,54 @@ def evaluate_all_safeguards(
     results["F"] = evaluate_safeguard_f(pillars, context)
     results["G"] = evaluate_safeguard_g(pillars, context)
     results["I"] = evaluate_safeguard_i(pillars, context)
+    results["J"] = evaluate_safeguard_j(pillars, context)
     results["Mod4"] = evaluate_mod4(pillars, context)
     results["Mod8"] = evaluate_mod8(pillars, context)
 
     return results
+
+
+def evaluate_safeguard_j(pillars: dict, context: dict) -> dict:
+    """
+    Safeguard J — Durability Gate (the P4-P1 "durability gap").
+
+    INDEPENDENTLY DERIVED on the N=21 acute-signature test set (2026-06-28): the four-component
+    pre-turn DECLINE signature failed blind (14-25% sens, 40% PPV), but a single LEVEL variable —
+    the gap between economy/income (P4) and institutions (P1) — separated real crises from absorbers
+    at 83% sensitivity / 100% specificity / 100% PPV. When income has outrun institutions
+    (P4 - P1 > threshold), the state is "granted/fragile" — structurally crisis-prone under shock.
+    Unifies with the durability ratio (mi/durability.py). Directional/structural, NOT a timing or
+    idiosyncratic-event forecast (Chile, S.Korea — acute elite gambles — are out of scope by design).
+
+    Derivation: docs/architectural_decisions/v3_1_durability_gate.md.
+    """
+    p1 = pillars.get("P1"); p4 = pillars.get("P4")
+    if p1 is None or p4 is None:
+        return {"name": "Durability Gate (P4-P1 gap)", "triggered": False,
+                "explanation": "P1 or P4 unavailable — gate not evaluable.", "modification": None,
+                "derivation": "N=21 signature set; = durability ratio re-derived as a forward gate."}
+    gap = p4 - p1
+    threshold = LENS["structural_vulnerability_gap"]
+    triggered = gap > threshold
+    return {
+        "name": "Durability Gate (P4-P1 gap)",
+        "triggered": triggered,
+        "gap": round(gap, 3),
+        "threshold": threshold,
+        "explanation": (
+            f"P4-P1 gap = {gap:.3f} > {threshold}: income/economy has outrun institutions "
+            "(granted/fragile) — STRUCTURALLY crisis-vulnerable under shock."
+            if triggered else
+            f"P4-P1 gap = {gap:.3f} <= {threshold}: institutions roughly keep pace with income — "
+            "not structurally flagged (absorber-class on this measure)."
+        ),
+        "modification": (
+            "Flag elevated structural crisis-vulnerability; pair with stability (P5) and shock "
+            "exposure. Risk, not timing (Mod8)."
+            if triggered else None
+        ),
+        "derivation": "N=21 signature set (83% sens/100% spec/100% PPV); = durability ratio re-derived.",
+    }
 
 
 def evaluate_safeguard_a(pillars: dict, context: dict) -> dict:

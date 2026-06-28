@@ -33,5 +33,22 @@
   "failing_components": [
     "P1_declined",
     "P5_declined"
-  ]
+  ],
+  "metadata": {
+    "stress_type": "durability_gate_test",
+    "round": "signature_set_N19",
+    "case_name": "Italy"
+  },
+  "verification": {
+    "j_durability_gate": {
+      "result": "FALSIFIED",
+      "evidence": "gate no-fire (gap 0.195); actual crisis=yes -> Safeguard J WRONG",
+      "explanation": "Tests Safeguard J (durability gate) \u2014 does P4-P1>threshold correctly predict crisis vs absorption? Distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "safeguard_j": {
+    "gap": 0.195,
+    "fired": false,
+    "threshold": 0.22
+  }
 }

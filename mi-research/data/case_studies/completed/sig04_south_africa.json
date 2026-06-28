@@ -30,5 +30,22 @@
   },
   "blind_signature_fired": true,
   "classification": "TP",
-  "failing_components": []
+  "failing_components": [],
+  "metadata": {
+    "stress_type": "durability_gate_test",
+    "round": "signature_set_N19",
+    "case_name": "South Africa"
+  },
+  "verification": {
+    "j_durability_gate": {
+      "result": "CONFIRMED",
+      "evidence": "gate fired (gap 0.288); actual crisis=yes -> Safeguard J correct",
+      "explanation": "Tests Safeguard J (durability gate) \u2014 does P4-P1>threshold correctly predict crisis vs absorption? Distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "safeguard_j": {
+    "gap": 0.288,
+    "fired": true,
+    "threshold": 0.22
+  }
 }

@@ -55,6 +55,7 @@ The weights are correlation-derived from the data itself. P1 at 34% (up from ini
 - **Mod4 — Margin-of-Error Gate:** P1 ordinality claim applies ONLY when gap exceeds margin. Narrow-gap cases = abstain, don't predict.
 - **Mod8 — Violence Risk/Agency Split:** Framework predicts violence RISK, not violence AGENCY (who initiates). Separate these in all predictions.
 - **Safeguard I — Porosity-with-Backstop:** When fragmenting state has external backstop patron, predict re-suppression rather than permanent secession. Confirmed by Ethiopia/Tigray and Myanmar.
+- **Safeguard J — Durability Gate (P4−P1 gap) [V3.1, independently derived]:** When economy/income has outrun institutions (P4 − P1 > 0.22), the state is "granted/fragile" — structurally crisis-vulnerable under shock. Derived on the N=21 acute-signature test set (83% sens / 100% spec / 100% PPV; the four-component DECLINE signature failed blind at 14–25%/40% — a *level*, not a trajectory, is what predicts). Unifies with the durability ratio. Directional/structural, not a timing or idiosyncratic-event forecast. See `docs/architectural_decisions/v3_1_durability_gate.md`.
 
 ---
 

@@ -112,8 +112,10 @@ LENS = {
     "structural_vulnerability_gap": 0.22,   # P4 - P1 above this = structurally crisis-vulnerable
 }
 
-# Active MI model version (V3 = V2 + the consolidated-pair Mod4 extension above).
-MI_MODEL_VERSION = "v3"
+# Active MI model version. V3 = V2 + consolidated-pair Mod4 extension.
+# V3.1 = V3 + Safeguard J (the durability gate, P4-P1 gap) — independently derived on the N=21
+# signature set (83% sens / 100% spec / 100% PPV), unifying with the durability ratio.
+MI_MODEL_VERSION = "v3.1"
 
 # === LEAD-TIME / FORESIGHT CONFIG (single source; the per-case structural fact reads this) ===
 # How far before the outcome the framework still predicts accurately. Empirical finding:

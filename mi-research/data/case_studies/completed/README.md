@@ -1,8 +1,14 @@
 # completed/ — structured case records (read the counting caveat before quoting any rate)
 
-25 machine-readable case records: the 20-case baseline (`case01`–`case20`,
-transcribed from `live/runs/run1`–`run5`) plus the 5 expansion cases
-(`case21`–`case25`, Batch 1).
+**70-case corpus, two classes (different claims; `--validate` scores them separately):**
+- **51 P1-ordinality cases** (`case01`–`case51`): the retrodiction baseline (213C/77P/0F).
+- **19 durability-gate / Safeguard-J test cases** (`sig01`–`sig19`, `stress_type=durability_gate_test`):
+  the N=19 acute-signature set; each tests whether Safeguard J (P4−P1 gap) correctly predicts
+  crisis vs absorption (17/19 correct, 89%). NOT P1-ordinality cases — see
+  `docs/signature_validation_N21.md` + `docs/architectural_decisions/v3_1_durability_gate.md`.
+
+The 51 ordinality cases: the 20-case baseline (`case01`–`case20`, from `live/runs/run1`–`run5`),
+Batch 1 (`case21`–`case25`), and Batches 2–6 (`case26`–`case51`).
 
 ## Report the clean rate as a RANGE, not a single number.
 
