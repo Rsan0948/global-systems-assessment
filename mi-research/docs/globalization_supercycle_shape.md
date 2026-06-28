@@ -55,22 +55,43 @@ This also reconnects to the fragmentation program's mechanism: the container is 
 *vent* pressure. A strengthening container (1970s) vents the deceleration's stress (new institutions,
 peaceful transitions); a brittle/eroding one (1910s; now) has nowhere to put it.
 
-## Micro-scale: can country-level boom-busts expand n=3? (directional, weak)
-Each national boom→bust is a micro-realization of the supercycle shape. Detecting them systematically
-(255 episodes, 1910–2010: a GDP-growth peak followed by a sharp deceleration), with container = rule-of-
-law level at the peak and **rupture = a large regime swing in EITHER direction** (an order breaking
-toward democracy *or* chaos — a direction-agnostic upheaval; a "decline-only" proxy is blind to
-ruptures that democratize, e.g. Indonesia/Korea 1997):
-- LOW container: **17%** upheaval (n=127) vs HIGH container: **12%** (n=128) — right direction
-  (low institutions rupture more) but **z=+1.1, weak, not significant**, and partly a floor effect.
-- So country-level episodes give **directional corroboration, not powered confirmation** — n=3 does not
-  cleanly multiply into a strong law.
+## Micro-scale: can country-level boom-busts expand n=3? NO — cleanly confounded (an honest null)
+Each national boom→bust is a micro-realization of the supercycle shape. I tried to expand n two ways
+and both fail for the **same measurement reason** — so the micro-scale gives *illustration*, not a
+clean statistical expansion.
 
-**Where it IS clean: within-shock natural experiments** (one shock, several countries — controls for the
-shock, varies the container). 1997 Asian crisis: same capital-flight shock; **Indonesia (rol 0.05)
-ruptured (Suharto fell, swing 0.49); Malaysia & Thailand (rol ~0.42) absorbed.** The discriminator
-holds with the shock held fixed. (Conceptual note: "rupture" = discontinuous regime change either way;
-ruptures that democratize make institutional indices *rise*, so direction-agnostic upheaval is required.)
+**Multi-cohort within-shock study** (5 shocks, 46 country-shocks; container = rule-of-law level
+pre-shock; outcome = regime swing post-shock; shock controlled by cohort-demeaning):
+| shock | within-cohort Spearman(container, upheaval) | note |
+|---|---|---|
+| 1997 Asia | −0.30 | Indonesia (0.05) ruptured; Korea (0.89) absorbed |
+| 1980s LatAm | −0.52 | but the "upheaval" was *democratization* (good) |
+| 2008 eurozone | −0.04 | **uniformly high container → uniformly absorbed** (Greece swing 0.04) |
+| 2011 Arab Spring | −0.45 | Libya/Syria/Yemen collapse; monarchies absorbed |
+| post-1991 Soviet | **+0.50 (inverts)** | high-container Baltics *transformed* (big good swings) |
+
+- **Pooled upheaval (any direction):** corr = **−0.16** — weak, and a **floor artifact** (low-container
+  states can only swing *up* / democratize, inflating their "upheaval").
+- **Pooled collapse (downward only, the failure mode):** corr = **+0.03 (null)**, 4/5 cohorts invert —
+  the **ceiling artifact** mirror (low-container states are already at the floor and *can't drop*, so
+  high-container states mechanically show more measurable collapse).
+
+The bounded democracy index's *change* is confounded by its starting *level in both directions*, so a
+clean within-shock statistical test is impossible with this instrument. **The micro-scale does NOT
+expand n=3.**
+
+**What survives is illustration, not statistics, plus a real refinement:**
+- Vivid cases align with the thesis: the **eurozone** (high-container cohort) absorbed the GFC with
+  near-zero regime change; the **Arab Spring's** lowest-container states (Libya/Syria/Yemen) collapsed
+  into civil war while the monarchies held; **Indonesia 1997** (rol 0.05) ruptured.
+- **Threat vs opportunity:** the container "absorbs" logic fits *threat* shocks (financial crises, the
+  GFC, pressure on weak states), but **inverts for opportunity shocks** (the Soviet collapse was an
+  opening that high-capacity Baltics seized — strong institutions *channel* change rather than minimize
+  it: they resist collapse under threat AND enable transformation under opportunity).
+- So the rigorous claim stays **n=3** at the macro level; the country level supports it by example and
+  refines it (threat vs opportunity), but cannot confirm it statistically with bounded-index measures.
+  A clean micro-test would need an *unbounded* or *event-based* rupture outcome (conflict deaths,
+  regime-duration, state-failure events), not a democracy-index delta.
 
 ## Honest limits
 - **n=3** supercycles, **n=2** clean outcomes (one catastrophe, one benign) — the discriminator is a
