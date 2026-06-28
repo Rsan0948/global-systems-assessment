@@ -21,23 +21,6 @@
     "event_description": "Unified Sudan -> South Sudan independence referendum and secession (July 9, 2011); secondary fragmentation in South Sudan civil war (Dec 2013).",
     "entities": {
       "Sudan": {
-        "indicators": {
-          "gov_effectiveness": 6.7,
-          "rule_of_law": 6.2,
-          "regulatory_quality": 7.2,
-          "cpi": null,
-          "control_of_corruption": 4.3,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": 0.9,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -59,26 +42,12 @@
           "oda_pct_gni",
           "fsi"
         ],
-        "notes": "WGI shown on 0-100 absolute scale (Sudan scored well below 10 in all governance areas in 2010 per World Bank WGI - functionally floor-level). Legacy-scale government-effectiveness estimate ~ -1.3 (1996 high -0.987, 2014 low -1.532). TI CPI 2011 = 1.6/10 (177/183). Derived pillar estimate: P1 approx 0.06 (floor), P4 severely distorted by oil + ODA, P5 approx floor (Darfur); estimated MI low/floor tier. Pillar spread narrow but uniformly catastrophic (dangerous 'uniform low' profile)."
+        "notes": "WGI shown on 0-100 absolute scale (Sudan scored well below 10 in all governance areas in 2010 per World Bank WGI - functionally floor-level). Legacy-scale government-effectiveness estimate ~ -1.3 (1996 high -0.987, 2014 low -1.532). TI CPI 2011 = 1.6/10 (177/183). Derived pillar estimate: P1 approx 0.06 (floor), P4 severely distorted by oil + ODA, P5 approx floor (Darfur); estimated MI low/floor tier. Pillar spread narrow but uniformly catastrophic (dangerous 'uniform low' profile).",
+        "country_ref": "Sudan",
+        "pre_year": "2010",
+        "post_year": "2024"
       },
       "South Sudan": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": true,
           "admin_details": "Heavy UN/donor presence (UNMISS); measured capacity partly reflects external actors (Safeguard A flag).",
@@ -106,7 +75,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "No prior independent statehood; literacy ~34.5%; oil = ~98% of government budget and ~80% of GDP; oil rents peaked at 58.3% of GDP in 2008. Derived pillar estimate: P1 approx 0.02-0.04 (world floor), P2 floor, P3 floor (literacy), P4 extreme rentier distortion, P5 floor; estimated MI bottom of dataset. The near-total absence of independent governance statistics pre-2011 is itself the signal of institutional vacuum - reported as missing, never interpolated."
+        "notes": "No prior independent statehood; literacy ~34.5%; oil = ~98% of government budget and ~80% of GDP; oil rents peaked at 58.3% of GDP in 2008. Derived pillar estimate: P1 approx 0.02-0.04 (world floor), P2 floor, P3 floor (literacy), P4 extreme rentier distortion, P5 floor; estimated MI bottom of dataset. The near-total absence of independent governance statistics pre-2011 is itself the signal of institutional vacuum - reported as missing, never interpolated.",
+        "country_ref": "South Sudan",
+        "pre_year": "2010",
+        "post_year": "2024"
       }
     }
   },
@@ -185,13 +157,36 @@
           "GDP per capita collapse ~76%"
         ]
       }
+    },
+    "resolved_scores": {
+      "Sudan": {
+        "pre": {
+          "P1": 0.277,
+          "MI": 0.348
+        },
+        "post": {
+          "P1": 0.216,
+          "MI": 0.281
+        }
+      },
+      "South Sudan": {
+        "pre": {
+          "P1": 0.435,
+          "MI": null
+        },
+        "post": {
+          "P1": 0.161,
+          "MI": 0.256
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Sudan 109.3 vs South Sudan 109.0 on FSI - statistically indistinguishable.",
-      "explanation": "Ordinal claim barely holds; both went catastrophic, so the marginal ranking is not discriminating at the floor. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]"
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Ordinal claim barely holds; both went catastrophic, so the marginal ranking is not discriminating at the floor. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]",
+      "auto_derived": false
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -201,7 +196,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Convergence at the floor (FSI ~109 for both).",
-      "explanation": "Both units collapsed to the catastrophic floor."
+      "explanation": "Both units collapsed to the catastrophic floor.",
+      "auto_derived": false
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
@@ -253,6 +249,8 @@
       "Promote Safeguard B to primary status for low-count fragmentations: when P1 < bottom-third WGI Rule of Law, score 'catastrophic regardless of fragment count' before consulting P1 ordinality."
     ],
     "baseline_impact": "Reinforces existing safeguards; Safeguard B promotion is a candidate refinement, not a degradation of the 20-case baseline.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

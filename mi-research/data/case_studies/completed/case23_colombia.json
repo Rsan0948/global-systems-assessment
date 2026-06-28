@@ -20,23 +20,6 @@
     "event_description": "Pre-accord; central state vs FARC-controlled periphery.",
     "entities": {
       "Colombia": {
-        "indicators": {
-          "gov_effectiveness": 49.2992,
-          "rule_of_law": 49.2601,
-          "regulatory_quality": 58.3626,
-          "cpi": 36.0,
-          "control_of_corruption": 39.5561,
-          "gii": 35.5,
-          "rd_pct_gdp": 0.2212,
-          "eci": 0.287,
-          "education_index": 0.6482,
-          "life_expectancy_index": 0.8556,
-          "gdp_per_capita_ppp": 12093.0755,
-          "resource_rents_pct_gdp": 8.2968,
-          "oda_pct_gni": 0.2144,
-          "political_stability": 43.1514,
-          "fsi": 84.4
-        },
         "context": {
           "population": 52000000,
           "is_island": false,
@@ -49,7 +32,10 @@
           "resource_rents_pct_revenue": 10.0
         },
         "data_gaps": [],
-        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Colombia",
+        "pre_year": "2012",
+        "post_year": "2024"
       }
     }
   },
@@ -129,6 +115,18 @@
           "paz total stalled"
         ]
       }
+    },
+    "resolved_scores": {
+      "Colombia": {
+        "pre": {
+          "P1": 0.482,
+          "MI": 0.573
+        },
+        "post": {
+          "P1": 0.476,
+          "MI": 0.556
+        }
+      }
     }
   },
   "verification": {
@@ -183,6 +181,8 @@
     "what_this_case_uniquely_reveals": "Backstop can secure the centre without securing the periphery.",
     "proposed_framework_modifications": [],
     "baseline_impact": "None.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

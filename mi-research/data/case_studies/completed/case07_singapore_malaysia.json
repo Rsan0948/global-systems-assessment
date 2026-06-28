@@ -21,23 +21,6 @@
     "event_description": "Singapore's expulsion from Malaysia (Aug 9, 1965), scored on a 1996 baseline over 1996-2024.",
     "entities": {
       "Singapore": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": 0.0,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "is_island": true,
@@ -63,26 +46,12 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law 1996 ~1.4 (avg 1.46; legacy scale). Govt Effectiveness avg 2.21, 2024 = 2.28 (world #1). Political Stability avg 1.27. Natural resource rents ~0% (anti-rentier). Net donor by 1996. MI (existing dataset): 0.790 (1996) -> 0.939 (2024); P1 = 0.945, P4 = 0.988 (highest). Uniformly high pillars; narrow spread at the TOP (inverse of South Sudan's narrow spread at the floor)."
+        "notes": "WGI Rule of Law 1996 ~1.4 (avg 1.46; legacy scale). Govt Effectiveness avg 2.21, 2024 = 2.28 (world #1). Political Stability avg 1.27. Natural resource rents ~0% (anti-rentier). Net donor by 1996. MI (existing dataset): 0.790 (1996) -> 0.939 (2024); P1 = 0.945, P4 = 0.988 (highest). Uniformly high pillars; narrow spread at the TOP (inverse of South Sudan's narrow spread at the floor).",
+        "country_ref": "Singapore",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Malaysia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "none",
@@ -107,7 +76,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law 1996 = 0.50 (its own max; avg 0.25, 2024 = 0.35; legacy scale). Govt Effectiveness 1996 = 0.54 (its own min; avg 0.97). Natural resource rents avg 17.6% (1970-2021); ~7-18% in the 1996 era; 2021 = 6.92% - BELOW the 25-30% Safeguard E threshold. Modest ODA recipient. MI: 0.376 (1996) -> 0.518 (2024), Tier 3. Derived P1 approx 0.65; moderate across the board."
+        "notes": "WGI Rule of Law 1996 = 0.50 (its own max; avg 0.25, 2024 = 0.35; legacy scale). Govt Effectiveness 1996 = 0.54 (its own min; avg 0.97). Natural resource rents avg 17.6% (1970-2021); ~7-18% in the 1996 era; 2021 = 6.92% - BELOW the 25-30% Safeguard E threshold. Modest ODA recipient. MI: 0.376 (1996) -> 0.518 (2024), Tier 3. Derived P1 approx 0.65; moderate across the board.",
+        "country_ref": "Malaysia",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -180,13 +152,36 @@
           "Tier 3 plateau"
         ]
       }
+    },
+    "resolved_scores": {
+      "Singapore": {
+        "pre": {
+          "P1": 0.87,
+          "MI": 0.849
+        },
+        "post": {
+          "P1": 0.874,
+          "MI": 0.882
+        }
+      },
+      "Malaysia": {
+        "pre": {
+          "P1": 0.623,
+          "MI": 0.696
+        },
+        "post": {
+          "P1": 0.619,
+          "MI": 0.674
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Singapore 0.939 vs Malaysia 0.518.",
-      "explanation": "Massive P1 gap mapped to vastly divergent trajectories as predicted."
+      "explanation": "AUTO: full ordering matches: Singapore > Malaysia (by pre-P1) == outcome by post-MI; gap 0.247. | prior: Massive P1 gap mapped to vastly divergent trajectories as predicted.",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -196,7 +191,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Gap maintained/widened (~0.41 in 1996, ~0.42 in 2024).",
-      "explanation": "Divergence as predicted."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.153->0.208). | prior: Divergence as predicted.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
@@ -238,6 +234,8 @@
     "what_this_case_uniquely_reveals": "Singapore is the framework's complexity-control flagship and genuine proof-of-concept for complexity-capacity matching: with zero natural endowment, institutional quality alone (P1 = 0.945, world-highest Government Effectiveness 2.28) produced the dataset's best trajectory. The MI weights P1 at 34% and Singapore maxes exactly that pillar. Humility note: small scale and city-state geography reduce the complexity its capacity must match - a best-case rather than a generalizable template.",
     "proposed_framework_modifications": [],
     "baseline_impact": "None; confirms the existing weighting without proposing a modification.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

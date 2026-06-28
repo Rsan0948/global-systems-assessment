@@ -20,23 +20,6 @@
     "event_description": "Belgium's six-government federal architecture under extreme linguistic/regional fragmentation pressure -- the framework's high-porosity limit test.",
     "entities": {
       "Belgium": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": 1.28,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "is_democratic": true,
           "is_authoritarian": false,
@@ -65,7 +48,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Belgium WGI estimate scale: RoL ~1.28 (top tier; indistinguishable from UK 1.27). All three Safeguard F triggers met: (1) separatist/nationalist vote >25% in Flanders -- N-VA 24.5% + Vlaams Belang 22.8% = ~47% (2024); (2) executive repeatedly suspended -- 541 days in 2010-11 and 652 days in 2019-20 (both world records per the Brussels Times), still forming after the June 2024 election at source-reporting time; (3) regional divergence >30% -- Flemish EUR47,300 PPS vs Walloon EUR33,400 PPS (>40% gap; Wallonia ~72% of the Belgian average). 'executive_collapses'=3 recorded record-length formations (2010-11, 2019-20, 2024)."
+        "notes": "Belgium WGI estimate scale: RoL ~1.28 (top tier; indistinguishable from UK 1.27). All three Safeguard F triggers met: (1) separatist/nationalist vote >25% in Flanders -- N-VA 24.5% + Vlaams Belang 22.8% = ~47% (2024); (2) executive repeatedly suspended -- 541 days in 2010-11 and 652 days in 2019-20 (both world records per the Brussels Times), still forming after the June 2024 election at source-reporting time; (3) regional divergence >30% -- Flemish EUR47,300 PPS vs Walloon EUR33,400 PPS (>40% gap; Wallonia ~72% of the Belgian average). 'executive_collapses'=3 recorded record-length formations (2010-11, 2019-20, 2024).",
+        "country_ref": "Belgium",
+        "pre_year": "2010",
+        "post_year": "2024"
       }
     }
   },
@@ -131,6 +117,18 @@
           "Flanders-Wallonia GDP-per-capita gap >40% (Flemish EUR47,300 vs Walloon EUR33,400 PPS)"
         ]
       }
+    },
+    "resolved_scores": {
+      "Belgium": {
+        "pre": {
+          "P1": 0.781,
+          "MI": 0.832
+        },
+        "post": {
+          "P1": 0.743,
+          "MI": 0.779
+        }
+      }
     }
   },
   "verification": {
@@ -189,6 +187,8 @@
       "Mod4: do not rank statistically indistinguishable P1 pairs (UK RoL 1.27 vs Belgium RoL 1.28)."
     ],
     "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

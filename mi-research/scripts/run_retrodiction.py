@@ -36,10 +36,16 @@ def run_phase1(case_data: dict) -> dict:
     results = {}
 
     for entity_name, entity_data in pre_event.get("entities", {}).items():
-        indicators = entity_data.get("indicators", {})
+        # Reference-based records resolve indicators via the Data API (country_ref +
+        # pre_year). Legacy records that embed "indicators" still work.
+        indicators = entity_data.get("indicators")
+        if not indicators and entity_data.get("country_ref"):
+            from mi import datasource
+            indicators = datasource.get_indicators(
+                entity_data["country_ref"], entity_data.get("pre_year")) or {}
         context = entity_data.get("context", {})
 
-        score = score_country(indicators)
+        score = score_country(indicators or {})
         safeguards = evaluate_all_safeguards(score, context)
         strategy = classify_strategy(score, context)
         vulnerability = assess_vulnerability(score, safeguards)
@@ -180,13 +186,14 @@ def validate_baseline(completed_dir: str):
             print(f"  Clean rate (per-letter count): {total['confirmed']/total_scored:.0%}")
             print(f"  Directional: {(total['confirmed']+total['partial'])/total_scored:.0%}")
             print("\n  HONESTY NOTE — report as a RANGE, not a single number.")
-            print("  The records carry the run6 STRICT re-code (post-hoc 'primary dimension'")
-            print("  d-calls -> PARTIAL; narrow-gap a-trajectory annotated with Mod4), so this")
-            print("  per-letter clean rate now lands at the canonical best estimate (~78%).")
-            print("  The HONEST figure is a RANGE: ~62% (strict) - 85% (generous), best ~78%;")
-            print("  directional ~100% (zero falsifications, partly by construction). It remains")
-            print("  partly redundant with WGI standalone. See")
-            print("  live/runs/run6of6_definitive_synthesis_20cases.md and completed/README.md.")
+            print("  Records are MI v1, scored on real data via the Data API. a_trajectory &")
+            print("  c_convergence are AUTO-DERIVED from the re-scored data (Mod4-gated); the")
+            print("  run6 strict re-code (post-hoc d-calls -> PARTIAL) is also applied. The")
+            print("  per-letter clean rate now ~74% (real-data auto-derivation moved 5 verdicts")
+            print("  off the prior ~78% — all CONFIRMED->PARTIAL, e.g. Mod4 near-ties).")
+            print("  HONEST figure is a RANGE: ~62-85%, and directional ~100% (zero")
+            print("  falsifications, partly by construction; capacity partly redundant w/ WGI).")
+            print("  See live/runs/run6of6_definitive_synthesis_20cases.md & completed/README.md.")
 
 
 def main():

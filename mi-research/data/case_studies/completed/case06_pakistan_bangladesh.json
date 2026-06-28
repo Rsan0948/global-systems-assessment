@@ -21,23 +21,6 @@
     "event_description": "1971 War of Independence (East Pakistan secession to form Bangladesh), scored on a 1996 baseline over 1996-2024.",
     "entities": {
       "Pakistan": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -63,26 +46,12 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law (legacy -2.5/+2.5): 1996 = -0.63 (Pakistan's own max), 2000 = -1.00 (min), 2023 = -0.86. Govt Effectiveness 2024 = -0.60 (avg -0.62). HDI 2023 = 0.544 (168th, Low). Derived: low-P1 (P1 approx 0.20-0.25), with P5 (political stability) and P1 deteriorating. Resource rents low."
+        "notes": "WGI Rule of Law (legacy -2.5/+2.5): 1996 = -0.63 (Pakistan's own max), 2000 = -1.00 (min), 2023 = -0.86. Govt Effectiveness 2024 = -0.60 (avg -0.62). HDI 2023 = 0.544 (168th, Low). Derived: low-P1 (P1 approx 0.20-0.25), with P5 (political stability) and P1 deteriorating. Resource rents low.",
+        "country_ref": "Pakistan",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Bangladesh": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -109,7 +78,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law (legacy): 1996 ~ -0.8 to -1.0; 2000 = -1.15 to -1.19 (min era); 2023 = -0.50 (Bangladesh's own max). HDI 1990->2023: 0.397 -> 0.685 (+72.5%, one of world's largest gains, 130th Medium). Net ODA 2023 = 1.25% GNI. Resource rents very low (gas-dependent domestic). Derived: low-P1 (~0.20-0.25); P3 (life expectancy 74.7 yrs) and P4 (sustained 6-8% growth) rose materially. GDP per capita PPP overtook Pakistan ~2016-2020."
+        "notes": "WGI Rule of Law (legacy): 1996 ~ -0.8 to -1.0; 2000 = -1.15 to -1.19 (min era); 2023 = -0.50 (Bangladesh's own max). HDI 1990->2023: 0.397 -> 0.685 (+72.5%, one of world's largest gains, 130th Medium). Net ODA 2023 = 1.25% GNI. Resource rents very low (gas-dependent domestic). Derived: low-P1 (~0.20-0.25); P3 (life expectancy 74.7 yrs) and P4 (sustained 6-8% growth) rose materially. GDP per capita PPP overtook Pakistan ~2016-2020.",
+        "country_ref": "Bangladesh",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -177,13 +149,36 @@
           "interim government under Muhammad Yunus"
         ]
       }
+    },
+    "resolved_scores": {
+      "Pakistan": {
+        "pre": {
+          "P1": 0.398,
+          "MI": 0.489
+        },
+        "post": {
+          "P1": 0.371,
+          "MI": 0.403
+        }
+      },
+      "Bangladesh": {
+        "pre": {
+          "P1": 0.359,
+          "MI": 0.482
+        },
+        "post": {
+          "P1": 0.357,
+          "MI": 0.445
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh OUTPERFORMED Pakistan on HDI and GDP per capita despite near-equal (arguably marginally lower) 1996 P1.",
-      "explanation": "Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]"
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -193,7 +188,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Economic divergence - Bangladesh pulled ahead, overtaking Pakistan on GDP per capita.",
-      "explanation": "Divergence as assessed."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.007->0.042). | prior: Divergence as assessed.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
@@ -243,6 +239,8 @@
       "Treat Bangladesh as the canonical Safeguard C case and re-audit any dataset country scored as 'consolidating on growth' with sub-floor P1."
     ],
     "baseline_impact": "Restates the P1 ordinal claim (gap must exceed WGI margin of error) - a refinement candidate to check against the 20-case baseline before adoption.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

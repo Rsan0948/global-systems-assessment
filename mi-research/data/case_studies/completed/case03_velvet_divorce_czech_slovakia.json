@@ -33,23 +33,6 @@
     "event_description": "Velvet Divorce: peaceful 1993 dissolution of Czechoslovakia into the Czech Republic and Slovakia; divergent (both successful) post-divorce trajectories.",
     "entities": {
       "Czech Republic": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -95,26 +78,12 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 high, balanced -> MI relatively high, narrow spread; well above Yugoslav/post-Soviet floors. WGI Rule of Law high (upper tier of post-communist); Govt Effectiveness high; Regulatory Quality high (Klaus reforms). HDI 1995 high band; GDP per cap PPP 1996 higher than Slovakia; political stability high. Ordering: Czech >= Slovakia. Pillar values are estimates, not exact WGI. WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 high, balanced -> MI relatively high, narrow spread; well above Yugoslav/post-Soviet floors. WGI Rule of Law high (upper tier of post-communist); Govt Effectiveness high; Regulatory Quality high (Klaus reforms). HDI 1995 high band; GDP per cap PPP 1996 higher than Slovakia; political stability high. Ordering: Czech >= Slovakia. Pillar values are estimates, not exact WGI. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Czech Republic",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Slovakia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -160,7 +129,10 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 high but with Mecir-era political dysfunction -> MI slightly lower than Czech, slightly wider spread; still well above Yugoslav/post-Soviet floors. WGI Rule of Law high (slightly below Czech); Govt Effectiveness moderate-high; Regulatory Quality high but Mecir-era backsliding. HDI 1995 high band (similar to Czech); GDP per cap PPP 1996 ~20% lower; political stability high but illiberal drift under Mecir. Triggers Safeguard F (sub-state/political turbulence in a high-P1 state). Pillar values are estimates, not exact WGI. WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 high but with Mecir-era political dysfunction -> MI slightly lower than Czech, slightly wider spread; still well above Yugoslav/post-Soviet floors. WGI Rule of Law high (slightly below Czech); Govt Effectiveness moderate-high; Regulatory Quality high but Mecir-era backsliding. HDI 1995 high band (similar to Czech); GDP per cap PPP 1996 ~20% lower; political stability high but illiberal drift under Mecir. Triggers Safeguard F (sub-state/political turbulence in a high-P1 state). Pillar values are estimates, not exact WGI. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Slovakia",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -230,13 +202,36 @@
           "correction of Mecir-era illiberalism before EU accession"
         ]
       }
+    },
+    "resolved_scores": {
+      "Czech Republic": {
+        "pre": {
+          "P1": 0.653,
+          "MI": 0.76
+        },
+        "post": {
+          "P1": 0.705,
+          "MI": 0.761
+        }
+      },
+      "Slovakia": {
+        "pre": {
+          "P1": 0.584,
+          "MI": 0.716
+        },
+        "post": {
+          "P1": 0.603,
+          "MI": 0.702
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Czech retains lead; Slovakia close (both succeed).",
-      "explanation": "Higher-P1 Czech Republic kept a modest lead while both successors thrived, as predicted."
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: Higher-P1 Czech Republic kept a modest lead while both successors thrived, as predicted.",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -292,6 +287,8 @@
     "what_this_case_uniquely_reveals": "As close to a controlled natural experiment as the validation set offers. Scholars note the puzzle that Czechoslovakia's two societies were more alike at dissolution than at founding, making institutional quality and elite strategy -- not ethnic difference -- the operative variable, aligning precisely with the MI's complexity-capacity-matching logic.",
     "proposed_framework_modifications": [],
     "baseline_impact": "None; strengthens the P1-predicts-violence-vs-peace claim. No baseline-breaking modification proposed.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

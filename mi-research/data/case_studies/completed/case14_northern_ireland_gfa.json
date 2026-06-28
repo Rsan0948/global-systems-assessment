@@ -20,23 +20,6 @@
     "event_description": "Good Friday Agreement: consociational power-sharing, cross-border bodies, and three-strand architecture -- textbook Tier 3 porosity inside the high-P1 UK.",
     "entities": {
       "Northern Ireland (UK)": {
-        "indicators": {
-          "gov_effectiveness": 1.18,
-          "rule_of_law": 1.27,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "is_democratic": true,
           "is_authoritarian": false,
@@ -63,7 +46,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Indicators are UK sovereign WGI estimates (RoL 1.27, GE 1.18). NI GDP per capita ~20% below the UK average; consistently the UK's lowest-productivity region; highest economic inactivity (26.8% vs 20.8% UK, late 2023); depends on a UK subvention of ~GBP10-11bn (about a quarter of its output). 'executive_collapses' = at least 8 Stormont suspensions covering >40% of the institution's existence."
+        "notes": "Indicators are UK sovereign WGI estimates (RoL 1.27, GE 1.18). NI GDP per capita ~20% below the UK average; consistently the UK's lowest-productivity region; highest economic inactivity (26.8% vs 20.8% UK, late 2023); depends on a UK subvention of ~GBP10-11bn (about a quarter of its output). 'executive_collapses' = at least 8 Stormont suspensions covering >40% of the institution's existence.",
+        "country_ref": "United Kingdom",
+        "pre_year": "1998",
+        "post_year": "2024"
       }
     }
   },
@@ -128,6 +114,18 @@
           "Economic inactivity 26.8% (vs 20.8% UK) in late 2023; GBP10-11bn annual UK subvention (~quarter of output)"
         ]
       }
+    },
+    "resolved_scores": {
+      "Northern Ireland (UK)": {
+        "pre": {
+          "P1": 0.862,
+          "MI": 0.847
+        },
+        "post": {
+          "P1": 0.757,
+          "MI": 0.787
+        }
+      }
     }
   },
   "verification": {
@@ -186,6 +184,8 @@
       "Reaffirm Mod3 (no timing claims) for prevention cases."
     ],
     "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

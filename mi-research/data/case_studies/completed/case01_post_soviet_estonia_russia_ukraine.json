@@ -34,23 +34,6 @@
     "event_description": "Dissolution of the USSR into 15 successor states; divergent post-Soviet modernization trajectories under structural stress.",
     "entities": {
       "Estonia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -98,26 +81,12 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 high (~0.45-0.55 on 0-1), P4 moderate-high, P5 moderate -> MI ~= 0.40 (matches dataset 0.398). Configuration: balanced, institution-led; narrowest pillar spread of the post-Soviet three. WGI Rule of Law / Govt Effectiveness / Control of Corruption / Regulatory Quality all highest of the three (clear regional reformer). HDI 1995 ~0.79 band; GDP per cap PPP 1996 highest of three. ERCAS describes Estonia as 'since 1991, the world's most successful short transition to good governance.' Pillar values are estimates, not exact WGI; WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 high (~0.45-0.55 on 0-1), P4 moderate-high, P5 moderate -> MI ~= 0.40 (matches dataset 0.398). Configuration: balanced, institution-led; narrowest pillar spread of the post-Soviet three. WGI Rule of Law / Govt Effectiveness / Control of Corruption / Regulatory Quality all highest of the three (clear regional reformer). HDI 1995 ~0.79 band; GDP per cap PPP 1996 highest of three. ERCAS describes Estonia as 'since 1991, the world's most successful short transition to good governance.' Pillar values are estimates, not exact WGI; WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Estonia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Russia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -165,26 +134,12 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 very low (~0.10), P4 distorted by resource rents (rentier flag, Safeguard E), P5 low -> MI ~= 0.09 (dataset 0.087). Configuration: rentier, widest spread of the three (high human capital vs floor institutions). WGI Rule of Law / Control of Corruption bottom tier / very low. CPI 1996/1998 ~2.4 (very corrupt). HDI 1995 ~0.77 band; GDP per cap PPP 1996 middle; natural-resource rents high (oil/gas rentier flag). Pillar values are estimates, not exact WGI; CPI ~2.4 is approximate and from 1996/1998 (pre-2012 CPI not year-comparable, ordinal cross-country use only) so left null in indicators. WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 very low (~0.10), P4 distorted by resource rents (rentier flag, Safeguard E), P5 low -> MI ~= 0.09 (dataset 0.087). Configuration: rentier, widest spread of the three (high human capital vs floor institutions). WGI Rule of Law / Control of Corruption bottom tier / very low. CPI 1996/1998 ~2.4 (very corrupt). HDI 1995 ~0.77 band; GDP per cap PPP 1996 middle; natural-resource rents high (oil/gas rentier flag). Pillar values are estimates, not exact WGI; CPI ~2.4 is approximate and from 1996/1998 (pre-2012 CPI not year-comparable, ordinal cross-country use only) so left null in indicators. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Russia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Ukraine": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -232,7 +187,10 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 low (~0.12), P4 weak, P5 low -> MI ~= 0.12 (dataset 0.119). Configuration: uniformly weak, no rentier cushion. WGI Rule of Law bottom tier (~ Russia). CPI 1998 = 2.8, then declining. HDI 1995 ~0.74 band; GDP per cap PPP 1996 lowest of three; resource rents moderate; political stability moderate. Democratic aspirations + weak P4 -> high reversal/instability risk (Safeguard C). Pillar values are estimates, not exact WGI; CPI is 1998 (not 1996) and pre-2012 (ordinal use only) so left null in indicators. WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 low (~0.12), P4 weak, P5 low -> MI ~= 0.12 (dataset 0.119). Configuration: uniformly weak, no rentier cushion. WGI Rule of Law bottom tier (~ Russia). CPI 1998 = 2.8, then declining. HDI 1995 ~0.74 band; GDP per cap PPP 1996 lowest of three; resource rents moderate; political stability moderate. Democratic aspirations + weak P4 -> high reversal/instability risk (Safeguard C). Pillar values are estimates, not exact WGI; CPI is 1998 (not 1996) and pre-2012 (ordinal use only) so left null in indicators. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Ukraine",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -362,13 +320,46 @@
           "2022 full-scale invasion"
         ]
       }
+    },
+    "resolved_scores": {
+      "Estonia": {
+        "pre": {
+          "P1": 0.632,
+          "MI": 0.707
+        },
+        "post": {
+          "P1": 0.78,
+          "MI": 0.778
+        }
+      },
+      "Russia": {
+        "pre": {
+          "P1": 0.38,
+          "MI": 0.548
+        },
+        "post": {
+          "P1": 0.355,
+          "MI": 0.542
+        }
+      },
+      "Ukraine": {
+        "pre": {
+          "P1": 0.351,
+          "MI": 0.578
+        },
+        "post": {
+          "P1": 0.423,
+          "MI": 0.527
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Estonia 1996 M=0.398 -> 2024 M=0.716 (steepest, highest); EU/NATO/eurozone.",
-      "explanation": "Highest pre-event P1 produced the best trajectory, as predicted."
+      "explanation": "AUTO: full ordering matches: Estonia > Russia > Ukraine (by pre-P1) == outcome by post-MI; gap 0.281. | prior: Highest pre-event P1 produced the best trajectory, as predicted.",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -378,7 +369,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Gap widened from 0.31 to 0.51 (Estonia vs Russia).",
-      "explanation": "Outcomes diverged rather than converged."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.159->0.251). | prior: Outcomes diverged rather than converged.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
@@ -428,6 +420,8 @@
     "what_this_case_uniquely_reveals": "Russia exposes a limitation/strength of the framework: it correctly predicts non-improvement of a floor-P1 rentier state but says nothing about its decades-long durability. Estonia confirms institution-led modernization at the post-Soviet top.",
     "proposed_framework_modifications": [],
     "baseline_impact": "None; no modification proposed. Reinforces P1-ordinal as the validated core.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

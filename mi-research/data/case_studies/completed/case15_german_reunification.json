@@ -20,23 +20,6 @@
     "event_description": "Reunification: West Germany absorbs ~16 million people from the radically different East German institutional system -- fusion / complexity expansion.",
     "entities": {
       "Germany": {
-        "indicators": {
-          "gov_effectiveness": 1.19,
-          "rule_of_law": 1.53,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "is_democratic": true,
           "is_authoritarian": false,
@@ -62,7 +45,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Highest P1 of the five (existing dataset P1=0.890; WGI RoL ~1.53, GE ~1.19, estimate scale). regional_antisystem_vote recorded as the peak AfD 2024 state result (Thuringia 32.8%); also Saxony 30.6% (behind CDU 31.9%) and ~29% Brandenburg -- all well above the 25% Safeguard F threshold. Regional divergence near/above 30% (eastern GDP/cap ~66-72% of West; eastern productivity ~80% of western)."
+        "notes": "Highest P1 of the five (existing dataset P1=0.890; WGI RoL ~1.53, GE ~1.19, estimate scale). regional_antisystem_vote recorded as the peak AfD 2024 state result (Thuringia 32.8%); also Saxony 30.6% (behind CDU 31.9%) and ~29% Brandenburg -- all well above the 25% Safeguard F threshold. Regional divergence near/above 30% (eastern GDP/cap ~66-72% of West; eastern productivity ~80% of western).",
+        "country_ref": "Germany",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -126,6 +112,18 @@
           "Regional divergence near/above 30% persists; expressed via politics, not violence or secession"
         ]
       }
+    },
+    "resolved_scores": {
+      "Germany": {
+        "pre": {
+          "P1": 0.836,
+          "MI": 0.856
+        },
+        "post": {
+          "P1": 0.8,
+          "MI": 0.818
+        }
+      }
     }
   },
   "verification": {
@@ -184,6 +182,8 @@
       "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard."
     ],
     "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. pre-WGI: WGI series starts 1996; 1990 unavailable -> 1996 proxy (flagged)"
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

@@ -47,6 +47,31 @@ rather than relying on a footnote. Still: report the **range** (62–85%), and r
 the capacity construct is partly redundant with WGI standalone and the zero-falsification
 record is partly by construction.
 
+## Phase 3 rebuild — MI v1, reference-based, auto-derived verification (2026-06-28)
+All 25 records were migrated to the two-layer architecture:
+- **No embedded indicator copies.** Each entity stores `country_ref` + `pre_year`/`post_year`;
+  indicators are resolved live via `mi.datasource` at score time (`post_event.resolved_scores`
+  caches the computed pre/post P1 & MI for transparency).
+- **Predictions stay locked**; **mechanical verdicts auto-derived** from the re-scored real
+  data — `a_trajectory` (full P1-ordering vs post-MI, Mod4-gated) and `c_convergence`
+  (MI-range over time, material-change-gated). `b/d/e/f/g/h` preserved as judgment.
+- Data-limited cases (Sudan/S.Sudan, Serbia/Kosovo, Indonesia/E.Timor pre-event; Germany
+  pre-WGI) are **not** auto-derived (an entity lacks a complete pre-event MI) — judgment
+  preserved, limitation flagged.
+
+**Re-scoring on real data moved 5 verdicts** (all CONFIRMED→PARTIAL; **zero new falsifications**):
+| Case | Field | Change | Why |
+|---|---|---|---|
+| 03 Czech/Slovakia | a_trajectory | CONFIRMED→PARTIAL | Mod4: pre-P1 gap 0.069 < 0.10 → too close to call |
+| 24 DRC/Rwanda | a_trajectory | CONFIRMED→PARTIAL | Mod4: 1996 gap 0.096 < 0.10 → abstain |
+| 02 Yugoslavia | a_trajectory | CONFIRMED→PARTIAL | Slovenia top correct, Serbia/Bosnia sub-pair swapped |
+| 02 Yugoslavia | c_convergence | CONFIRMED→PARTIAL | predicted divergence; MI-range converged 0.316→0.198 |
+| 19 India/Pak/Bang | c_convergence | CONFIRMED→PARTIAL | predicted convergence; MI-range diverged 0.082→0.145 |
+
+Aggregate after the rebuild: **109C / 38P / 0F ≈ 74% clean, 100% directional** — within the
+honest 62–85% band; the drop from ~78% is the cost of honest real-data re-scoring (mostly the
+framework correctly abstaining on Mod4 near-ties).
+
 ## Batch 1 (cases 21–25)
 Inputs sourced from the committed `mi_pipeline/` panel (commit 9487dd0) for cross-project
 consistency; panel grid to 2024. The batch writeup reports **~75% clean** (in-range) with

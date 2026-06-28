@@ -21,23 +21,6 @@
     "event_description": "Chronic institutional divergence on a shared island.",
     "entities": {
       "Haiti": {
-        "indicators": {
-          "gov_effectiveness": 25.0166,
-          "rule_of_law": 32.9623,
-          "regulatory_quality": 32.2497,
-          "cpi": null,
-          "control_of_corruption": 28.3092,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -1.008,
-          "education_index": 0.3767,
-          "life_expectancy_index": 0.5556,
-          "gdp_per_capita_ppp": 2069.6145,
-          "resource_rents_pct_gdp": 0.9428,
-          "oda_pct_gni": 11.3377,
-          "political_stability": 48.7767,
-          "fsi": null
-        },
         "context": {
           "population": 11700000,
           "is_island": true,
@@ -52,26 +35,12 @@
           "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Haiti",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Dominican Republic": {
-        "indicators": {
-          "gov_effectiveness": 45.4496,
-          "rule_of_law": 46.6427,
-          "regulatory_quality": 46.0362,
-          "cpi": null,
-          "control_of_corruption": 44.4179,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -0.611,
-          "education_index": 0.4887,
-          "life_expectancy_index": 0.763,
-          "gdp_per_capita_ppp": 5160.9878,
-          "resource_rents_pct_gdp": 0.7034,
-          "oda_pct_gni": 0.4722,
-          "political_stability": 62.5763,
-          "fsi": null
-        },
         "context": {
           "population": 11300000,
           "is_island": true,
@@ -86,7 +55,10 @@
           "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Dominican Republic",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -191,13 +163,36 @@
           "peaceful turnover"
         ]
       }
+    },
+    "resolved_scores": {
+      "Haiti": {
+        "pre": {
+          "P1": 0.296,
+          "MI": 0.427
+        },
+        "post": {
+          "P1": 0.223,
+          "MI": 0.358
+        }
+      },
+      "Dominican Republic": {
+        "pre": {
+          "P1": 0.456,
+          "MI": 0.585
+        },
+        "post": {
+          "P1": 0.502,
+          "MI": 0.59
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "DR Tier 2 (MI 0.585->0.617); Haiti Tier3->Tier4 (P1 0.296->0.223)",
-      "explanation": "Wide P1 gap mapped to divergent outcomes as predicted."
+      "explanation": "AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: Wide P1 gap mapped to divergent outcomes as predicted.",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -207,7 +202,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "MI gap 0.17->0.24",
-      "explanation": "Divergence."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.158->0.232). | prior: Divergence.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
@@ -243,6 +239,8 @@
     "what_this_case_uniquely_reveals": "Shared-geography control: institutions, not geography, drive divergence.",
     "proposed_framework_modifications": [],
     "baseline_impact": "None; no modification proposed.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

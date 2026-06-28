@@ -51,7 +51,7 @@ def classify_strategy(score: dict, context: dict) -> dict:
     indicators = []
 
     # Check for complexity control signals
-    small_population = context.get("population", float("inf")) < LENS["small_population"]
+    small_population = (context.get("population") or float("inf")) < LENS["small_population"]
     island = context.get("is_island", False)
     immigration_restrictive = context.get("immigration_policy", "") in (
         "restrictive", "very_restrictive"
@@ -239,9 +239,9 @@ def generate_predictions(score: dict, safeguards: dict, comparison_scores: dict 
     # (c) Convergence/divergence
     spread = score.get("pillar_spread")
     if comparison_scores and len(comparison_scores) >= 2:
-        p1_values = [s.get("pillar_scores", {}).get("P1", 0)
-                     for s in comparison_scores.values()]
-        p1_range = max(p1_values) - min(p1_values) if p1_values else 0
+        p1_values = [p1 for s in comparison_scores.values()
+                     if (p1 := s.get("pillar_scores", {}).get("P1")) is not None]
+        p1_range = max(p1_values) - min(p1_values) if len(p1_values) >= 2 else 0
         predictions["c_convergence"] = {
             "prediction": "DIVERGENCE" if p1_range > 0.15 else "CONVERGENCE",
             "basis": f"P1 range across entities: {p1_range:.3f}",

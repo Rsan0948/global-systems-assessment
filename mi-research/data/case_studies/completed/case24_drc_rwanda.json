@@ -21,23 +21,6 @@
     "event_description": "Post-genocide / post-Mobutu reconstruction baselines.",
     "entities": {
       "DR Congo": {
-        "indicators": {
-          "gov_effectiveness": 19.3656,
-          "rule_of_law": 26.7847,
-          "regulatory_quality": 22.4585,
-          "cpi": null,
-          "control_of_corruption": 10.8526,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -2.023,
-          "education_index": 0.3401,
-          "life_expectancy_index": 0.4519,
-          "gdp_per_capita_ppp": 526.165,
-          "resource_rents_pct_gdp": 36.299,
-          "oda_pct_gni": 3.0779,
-          "political_stability": 20.2456,
-          "fsi": null
-        },
         "context": {
           "population": 102000000,
           "is_island": false,
@@ -55,26 +38,12 @@
           "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "DR Congo",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Rwanda": {
-        "indicators": {
-          "gov_effectiveness": 25.9463,
-          "rule_of_law": 30.7451,
-          "regulatory_quality": 29.7427,
-          "cpi": null,
-          "control_of_corruption": 31.5932,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -0.224,
-          "education_index": 0.23,
-          "life_expectancy_index": 0.3459,
-          "gdp_per_capita_ppp": 498.882,
-          "resource_rents_pct_gdp": 12.5562,
-          "oda_pct_gni": 34.0043,
-          "political_stability": 30.1572,
-          "fsi": null
-        },
         "context": {
           "population": 13800000,
           "is_island": false,
@@ -94,7 +63,10 @@
           "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Rwanda",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -198,13 +170,36 @@
           "chronic state weakness"
         ]
       }
+    },
+    "resolved_scores": {
+      "DR Congo": {
+        "pre": {
+          "P1": 0.199,
+          "MI": 0.276
+        },
+        "post": {
+          "P1": 0.255,
+          "MI": 0.268
+        }
+      },
+      "Rwanda": {
+        "pre": {
+          "P1": 0.295,
+          "MI": 0.329
+        },
+        "post": {
+          "P1": 0.582,
+          "MI": 0.488
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "1996 gap 0.096 within margin->abstain; 2024 gap 0.327 decisive",
-      "explanation": "Mod4->divergence sequence vindicated."
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: Mod4->divergence sequence vindicated.",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -214,7 +209,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "2024 MI gap ~0.19",
-      "explanation": ""
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.053->0.220). | prior: ",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
@@ -253,6 +249,8 @@
     "what_this_case_uniquely_reveals": "Refusing a too-close 1996 ranking then being vindicated by a decisive 2023 gap.",
     "proposed_framework_modifications": [],
     "baseline_impact": "None.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

@@ -35,23 +35,6 @@
     "event_description": "Post-Soviet institutional divergence: resource-poor Baltics choosing the EU/NATO path vs. resource-rich Central Asian states remaining in Russia's orbit.",
     "entities": {
       "Estonia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -71,26 +54,12 @@
           "gdp_per_capita_ppp (only nominal given: $32,760 IMF 2024-25)",
           "hdi (~0.89 2022; not a template field)"
         ],
-        "notes": "Highest P1 of the four (P1 normalized 0.865 given). WGI RoL 1996 ~0.3. EU/NATO member since 2004. Resource-poor yet top on every modernization dimension."
+        "notes": "Highest P1 of the four (P1 normalized 0.865 given). WGI RoL 1996 ~0.3. EU/NATO member since 2004. Resource-poor yet top on every modernization dimension.",
+        "country_ref": "Estonia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Latvia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": 1.09,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -109,26 +78,12 @@
           "gdp_per_capita_ppp (only nominal given: $24,370 IMF 2024-25)",
           "education_index / life_expectancy_index (HDI 0.879 2022 given; not template fields)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim 1.09 on the -2.5/+2.5 scale (high-confidence endpoint). WGI RoL 1996 = 0.06. P1 normalized ~0.80 (estimate). Latvia-Kazakhstan gap ~1.47 WGI points >> WGI margin of error, so Mod4 does not defer."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim 1.09 on the -2.5/+2.5 scale (high-confidence endpoint). WGI RoL 1996 = 0.06. P1 normalized ~0.80 (estimate). Latvia-Kazakhstan gap ~1.47 WGI points >> WGI margin of error, so Mod4 does not defer.",
+        "country_ref": "Latvia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Kazakhstan": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": -0.38,
-          "regulatory_quality": null,
-          "cpi": 31,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": 26.84,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -146,26 +101,12 @@
           "gdp_per_capita_ppp (only nominal given: ~$13,340 IMF 2024)",
           "education_index / life_expectancy_index (HDI 0.802 2022 given; not template fields)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.38 (-2.5/+2.5 scale; its all-time max was -0.37 in 2018; 1996 = -1.42). P1 normalized ~0.34 (estimate). resource_rents_pct_gdp = 2021 value 26.84%; peaks 32.4% (2005) and 33.25% (2008) crossed the Safeguard E 30% gate only in peak-oil years -> intermittent, not structural, rentier (Mod2 does not mechanically trigger inversion). Oil wealth bought GDP/capita but not institutional quality, resilience, or freedom from violence (Bloody January 2022: 238 dead, ~4,500 injured, ~10,000 detained, CSTO intervention)."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.38 (-2.5/+2.5 scale; its all-time max was -0.37 in 2018; 1996 = -1.42). P1 normalized ~0.34 (estimate). resource_rents_pct_gdp = 2021 value 26.84%; peaks 32.4% (2005) and 33.25% (2008) crossed the Safeguard E 30% gate only in peak-oil years -> intermittent, not structural, rentier (Mod2 does not mechanically trigger inversion). Oil wealth bought GDP/capita but not institutional quality, resilience, or freedom from violence (Bloody January 2022: 238 dead, ~4,500 injured, ~10,000 detained, CSTO intervention).",
+        "country_ref": "Kazakhstan",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Uzbekistan": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": -0.66,
-          "regulatory_quality": null,
-          "cpi": 32,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": 20.47,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -182,7 +123,10 @@
           "gdp_per_capita_ppp (only nominal given: ~$3,510 IMF 2024)",
           "education_index / life_expectancy_index (HDI 0.727 2022 given; not template fields)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.66 (-2.5/+2.5 scale; 1996 ~-1.1, series avg -1.08). P1 normalized ~0.29 (estimate, lowest). cpi 2024 = 32. resource_rents_pct_gdp = 2021 value 20.47%; peaks 38.0% (2006) and 30.1% (2008) -> intermittent rentier (Safeguard E gate crossed only in peak years). Lowest on every modernization dimension."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.66 (-2.5/+2.5 scale; 1996 ~-1.1, series avg -1.08). P1 normalized ~0.29 (estimate, lowest). cpi 2024 = 32. resource_rents_pct_gdp = 2021 value 20.47%; peaks 38.0% (2006) and 30.1% (2008) -> intermittent rentier (Safeguard E gate crossed only in peak years). Lowest on every modernization dimension.",
+        "country_ref": "Uzbekistan",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -269,13 +213,56 @@
           "Andijan 2005 legacy"
         ]
       }
+    },
+    "resolved_scores": {
+      "Estonia": {
+        "pre": {
+          "P1": 0.632,
+          "MI": 0.707
+        },
+        "post": {
+          "P1": 0.78,
+          "MI": 0.778
+        }
+      },
+      "Latvia": {
+        "pre": {
+          "P1": 0.518,
+          "MI": 0.653
+        },
+        "post": {
+          "P1": 0.682,
+          "MI": 0.719
+        }
+      },
+      "Kazakhstan": {
+        "pre": {
+          "P1": 0.311,
+          "MI": 0.556
+        },
+        "post": {
+          "P1": 0.5,
+          "MI": 0.61
+        }
+      },
+      "Uzbekistan": {
+        "pre": {
+          "P1": 0.281,
+          "MI": 0.486
+        },
+        "post": {
+          "P1": 0.432,
+          "MI": 0.533
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Estonia > Latvia (WGI 1.09) > Kazakhstan (-0.38) > Uzbekistan (-0.66); pair gaps far exceed WGI margin of error.",
-      "explanation": "Four-way P1 ordinal holds with wide, above-margin gaps; Mod4 does not defer (both versions)."
+      "explanation": "AUTO: full ordering matches: Estonia > Latvia > Kazakhstan > Uzbekistan (by pre-P1) == outcome by post-MI; gap 0.351. | prior: Four-way P1 ordinal holds with wide, above-margin gaps; Mod4 does not defer (both versions).",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -285,7 +272,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Wide divergence between Baltic and Central Asian pairs; convergence within each pair.",
-      "explanation": "Divergence-between / convergence-within pattern confirmed."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.221->0.245). | prior: Divergence-between / convergence-within pattern confirmed.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
@@ -333,6 +321,8 @@
     "what_this_case_uniquely_reveals": "Institutional choice dominates resource endowment: resource-poor Baltics that chose EU/NATO porosity-with-backstop vastly outperform resource-rich Central Asian states locked in Russia's orbit. Safeguard E's 30% gate is vindicated as a discriminator (intermittent vs. structural rentiers).",
     "proposed_framework_modifications": [],
     "baseline_impact": "None; confirms existing framework (P1>P4 dominance, Safeguards C/D/H/I, Mod2 30% gate, Mod4 margin gating).",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

@@ -20,23 +20,6 @@
     "event_description": "Post-genocide institutional floor.",
     "entities": {
       "Rwanda": {
-        "indicators": {
-          "gov_effectiveness": 25.9463,
-          "rule_of_law": 30.7451,
-          "regulatory_quality": 29.7427,
-          "cpi": null,
-          "control_of_corruption": 31.5932,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -0.224,
-          "education_index": 0.23,
-          "life_expectancy_index": 0.3459,
-          "gdp_per_capita_ppp": 498.882,
-          "resource_rents_pct_gdp": 12.5562,
-          "oda_pct_gni": 34.0043,
-          "political_stability": 30.1572,
-          "fsi": null
-        },
         "context": {
           "population": 13800000,
           "is_island": false,
@@ -56,7 +39,10 @@
           "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Rwanda",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -135,6 +121,18 @@
           "sustained stability"
         ]
       }
+    },
+    "resolved_scores": {
+      "Rwanda": {
+        "pre": {
+          "P1": 0.295,
+          "MI": 0.329
+        },
+        "post": {
+          "P1": 0.582,
+          "MI": 0.488
+        }
+      }
     }
   },
   "verification": {
@@ -195,6 +193,8 @@
       "Safeguard-C extension to non-transition developmental authoritarian states (qualitative flag only)"
     ],
     "baseline_impact": "Architectural decision: keep P1 composite; no engine change; baseline unchanged.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

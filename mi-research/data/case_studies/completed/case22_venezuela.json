@@ -20,23 +20,6 @@
     "event_description": "Pre-Chavez baseline before two decades of rentier capture.",
     "entities": {
       "Venezuela": {
-        "indicators": {
-          "gov_effectiveness": 37.1554,
-          "rule_of_law": 43.4257,
-          "regulatory_quality": 44.0405,
-          "cpi": null,
-          "control_of_corruption": 32.084,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": 0.423,
-          "education_index": 0.5211,
-          "life_expectancy_index": 0.7988,
-          "gdp_per_capita_ppp": 13824.4687,
-          "resource_rents_pct_gdp": 23.8368,
-          "oda_pct_gni": 0.0524,
-          "political_stability": 56.4275,
-          "fsi": null
-        },
         "context": {
           "population": 28300000,
           "is_island": false,
@@ -56,7 +39,10 @@
           "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Venezuela",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -155,6 +141,18 @@
           "Maduro entrenchment"
         ]
       }
+    },
+    "resolved_scores": {
+      "Venezuela": {
+        "pre": {
+          "P1": 0.392,
+          "MI": 0.569
+        },
+        "post": {
+          "P1": 0.192,
+          "MI": 0.351
+        }
+      }
     }
   },
   "verification": {
@@ -212,6 +210,8 @@
     "proposed_framework_modifications": [
       "Flag/down-weight MI when P4 lacks its GDP component"
     ],
-    "baseline_impact": "Proposed flag is additive; not yet implemented; baseline unchanged."
-  }
+    "baseline_impact": "Proposed flag is additive; not yet implemented; baseline unchanged.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

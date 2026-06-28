@@ -34,23 +34,6 @@
     "event_description": "Arab Spring uprisings (from late 2010 / 2011); divergent post-uprising trajectories under structural stress.",
     "entities": {
       "Tunisia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": 4.3,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -97,26 +80,12 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "2010 estimate (ordinal): P1 highest of the trio, balanced, low rents -> MI highest of three, narrowest spread. WGI Rule of Law highest of three; Govt Effectiveness best (~+0.4 band). CPI 2010 = 4.3 (rank 66) -- EXACT, placed in indicator. HDI 2010 high-medium; GDP per cap PPP 2010 ~$10-11k (approximate range, left null); resource rents low; political stability moderate. Democratic transition + weak P4 -> HIGH reversal risk (Safeguard C). WGI pillar values are estimates (exact 2010 percentiles not isolated); pre-2012 CPI is ordinal-cross-country only. WGI 2025-anchored vintage caveat applies."
+        "notes": "2010 estimate (ordinal): P1 highest of the trio, balanced, low rents -> MI highest of three, narrowest spread. WGI Rule of Law highest of three; Govt Effectiveness best (~+0.4 band). CPI 2010 = 4.3 (rank 66) -- EXACT, placed in indicator. HDI 2010 high-medium; GDP per cap PPP 2010 ~$10-11k (approximate range, left null); resource rents low; political stability moderate. Democratic transition + weak P4 -> HIGH reversal risk (Safeguard C). WGI pillar values are estimates (exact 2010 percentiles not isolated); pre-2012 CPI is ordinal-cross-country only. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Tunisia",
+        "pre_year": "2010",
+        "post_year": "2024"
       },
       "Egypt": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": 3.1,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -163,26 +132,12 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "2010 estimate (ordinal): P1 low-moderate, large population, military-economy distortion -> MI low (matches dataset: 2012 M=-0.008, near floor; 2024 P1=0.297). WGI Rule of Law middle (mildly negative); Govt Effectiveness negative by 2010. CPI 2010 = 3.1 (rank 105) -- EXACT, placed in indicator. HDI 2010 medium; GDP per cap PPP 2010 ~$10k (approximate, left null); resource rents moderate; political stability low. Democratic transition + weak delivery -> HIGH reversal risk (Safeguard C); military-dominant (Safeguard G Tier 1). WGI pillar values are estimates; pre-2012 CPI ordinal-cross-country only. WGI 2025-anchored vintage caveat applies."
+        "notes": "2010 estimate (ordinal): P1 low-moderate, large population, military-economy distortion -> MI low (matches dataset: 2012 M=-0.008, near floor; 2024 P1=0.297). WGI Rule of Law middle (mildly negative); Govt Effectiveness negative by 2010. CPI 2010 = 3.1 (rank 105) -- EXACT, placed in indicator. HDI 2010 medium; GDP per cap PPP 2010 ~$10k (approximate, left null); resource rents moderate; political stability low. Democratic transition + weak delivery -> HIGH reversal risk (Safeguard C); military-dominant (Safeguard G Tier 1). WGI pillar values are estimates; pre-2012 CPI ordinal-cross-country only. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Egypt",
+        "pre_year": "2010",
+        "post_year": "2024"
       },
       "Libya": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": 2.2,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": 53.663,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -229,7 +184,10 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "2010 estimate (ordinal): P1 bottom (near-global-worst), P4 massively distorted by ~53% rents (rentier capture inflating apparent wealth/P1) -> MI low despite high GDP; widest pillar spread (oil wealth vs institutional vacuum). WGI Rule of Law bottom; Govt Effectiveness bottom. CPI 2010 = 2.2 (rank 154) -- EXACT, placed in indicator. Resource rents: oil 52.785%, total 53.663% of GDP -- EXACT, placed in indicator (resource_rents_pct_gdp). HDI 2010 highest nominal (oil-inflated); GDP per cap PPP 2010 ~$12,800 (oil; approximate, left null); political stability low-moderate (police state). Safeguard E bidirectional flag: rents far above the 25-30% threshold both inflated apparent stability under Gaddafi AND left no institutional substrate on regime collapse -> catastrophic fragmentation predicted. WGI pillar values are estimates; pre-2012 CPI ordinal-cross-country only. WGI 2025-anchored vintage caveat applies."
+        "notes": "2010 estimate (ordinal): P1 bottom (near-global-worst), P4 massively distorted by ~53% rents (rentier capture inflating apparent wealth/P1) -> MI low despite high GDP; widest pillar spread (oil wealth vs institutional vacuum). WGI Rule of Law bottom; Govt Effectiveness bottom. CPI 2010 = 2.2 (rank 154) -- EXACT, placed in indicator. Resource rents: oil 52.785%, total 53.663% of GDP -- EXACT, placed in indicator (resource_rents_pct_gdp). HDI 2010 highest nominal (oil-inflated); GDP per cap PPP 2010 ~$12,800 (oil; approximate, left null); political stability low-moderate (police state). Safeguard E bidirectional flag: rents far above the 25-30% threshold both inflated apparent stability under Gaddafi AND left no institutional substrate on regime collapse -> catastrophic fragmentation predicted. WGI pillar values are estimates; pre-2012 CPI ordinal-cross-country only. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Libya",
+        "pre_year": "2010",
+        "post_year": "2024"
       }
     }
   },
@@ -320,13 +278,46 @@
           "GNA / Haftar division"
         ]
       }
+    },
+    "resolved_scores": {
+      "Tunisia": {
+        "pre": {
+          "P1": 0.526,
+          "MI": 0.641
+        },
+        "post": {
+          "P1": 0.463,
+          "MI": 0.542
+        }
+      },
+      "Egypt": {
+        "pre": {
+          "P1": 0.458,
+          "MI": 0.574
+        },
+        "post": {
+          "P1": 0.426,
+          "MI": 0.518
+        }
+      },
+      "Libya": {
+        "pre": {
+          "P1": 0.303,
+          "MI": 0.493
+        },
+        "post": {
+          "P1": 0.23,
+          "MI": 0.394
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Tunisia kept a functioning, undivided state + a decade of democracy; Egypt restabilized as an autocracy with intact institutions; Libya = failed/fragmented state.",
-      "explanation": "Tunisia > Egypt > Libya ordering by P1 reproduced exactly."
+      "explanation": "AUTO: full ordering matches: Tunisia > Egypt > Libya (by pre-P1) == outcome by post-MI; gap 0.223. | prior: Tunisia > Egypt > Libya ordering by P1 reproduced exactly.",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -386,6 +377,8 @@
       "Apply Safeguard E bidirectionally and explicitly invert resilience predictions when rents exceed ~30% of GDP."
     ],
     "baseline_impact": "None degrading; reinforces Safeguard E. No baseline-breaking modification proposed.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

@@ -20,23 +20,6 @@
     "event_description": "Abiy Ahmed (PM April 2018; Nobel Peace Prize 2019; rapprochement with Eritrea) dismantled the post-1995 ethnic-federal (Tier 3 porosity) system and centralized power, preceding the Tigray War (Nov 2020-Nov 2022) and the Amhara Fano insurgency (2023-).",
     "entities": {
       "Ethiopia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -64,7 +47,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Government Effectiveness negative, ~ -0.6 to -0.7 region (CEIC: -0.699 in 2017; legacy). Rule of Law negative (1996 min -0.97 per Run 2 data; still bottom-tier in 2018). Political Stability deeply negative (recurrent ethnic clashes, mass displacement). Resource rents low (not an oil rentier). FSI 2019 = 94.2 (most-improved that year, post-Abiy optimism); 2024 = 98.1 (6th most fragile in Africa). HDI low (medium-low tier). Derived: floor/near-floor P1; wide spread; high structural vulnerability."
+        "notes": "WGI Government Effectiveness negative, ~ -0.6 to -0.7 region (CEIC: -0.699 in 2017; legacy). Rule of Law negative (1996 min -0.97 per Run 2 data; still bottom-tier in 2018). Political Stability deeply negative (recurrent ethnic clashes, mass displacement). Resource rents low (not an oil rentier). FSI 2019 = 94.2 (most-improved that year, post-Abiy optimism); 2024 = 98.1 (6th most fragile in Africa). HDI low (medium-low tier). Derived: floor/near-floor P1; wide spread; high structural vulnerability.",
+        "country_ref": "Ethiopia",
+        "pre_year": "2018",
+        "post_year": "2024"
       }
     }
   },
@@ -130,6 +116,18 @@
           "Pretoria Agreement 2 Nov 2022",
           "Amhara Fano insurgency 2023-"
         ]
+      }
+    },
+    "resolved_scores": {
+      "Ethiopia": {
+        "pre": {
+          "P1": 0.399,
+          "MI": 0.452
+        },
+        "post": {
+          "P1": 0.391,
+          "MI": 0.362
+        }
       }
     }
   },
@@ -197,6 +195,8 @@
       "Promote 're-suppression after porosity' from heuristic to a tested core prediction; flag any state dismantling a long-standing porosity/federal-accommodation system as elevated-risk."
     ],
     "baseline_impact": "Confirms Mods 5 and 6; promotes a heuristic to a tested core prediction - a refinement, not a degradation of the baseline.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

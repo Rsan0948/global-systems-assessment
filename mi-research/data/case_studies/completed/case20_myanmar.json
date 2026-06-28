@@ -32,24 +32,6 @@
     "event_description": "End of the 2011-2021 democratic opening (two NLD landslides) immediately before the February 2021 military coup.",
     "entities": {
       "Myanmar": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": 96,
-          "n_successor_states": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "medium",
@@ -70,7 +52,10 @@
           "gdp_per_capita_ppp (only total GDP given: 2020 nominal $81.26B; PPP ~$312B)",
           "P1 normalized ~0.20-0.25 (floor, but rising; range estimate, no template field)"
         ],
-        "notes": "fsi = ~96 (high fragility) even pre-coup (approximate). 20+ active Ethnic Armed Organizations (EAOs). Pre-coup P1 ~0.20-0.25 (floor, rising) -> below bottom-third WGI Rule of Law -> Safeguard B (Mod5) primary -> predicts catastrophic outcomes on stress. Resource rents far below 30% -> NOT rentier-locked (both versions). The 2011-2021 opening created mobilized actors (NLD, Civil Disobedience Movement, civil society, organizational capacity) that re-suppression could not re-absorb."
+        "notes": "fsi = ~96 (high fragility) even pre-coup (approximate). 20+ active Ethnic Armed Organizations (EAOs). Pre-coup P1 ~0.20-0.25 (floor, rising) -> below bottom-third WGI Rule of Law -> Safeguard B (Mod5) primary -> predicts catastrophic outcomes on stress. Resource rents far below 30% -> NOT rentier-locked (both versions). The 2011-2021 opening created mobilized actors (NLD, Civil Disobedience Movement, civil society, organizational capacity) that re-suppression could not re-absorb.",
+        "country_ref": "Myanmar",
+        "pre_year": "2018",
+        "post_year": "2024"
       }
     }
   },
@@ -154,6 +139,18 @@
           "FY2024-25 projected to contract a further ~1%"
         ]
       }
+    },
+    "resolved_scores": {
+      "Myanmar": {
+        "pre": {
+          "P1": 0.334,
+          "MI": 0.469
+        },
+        "post": {
+          "P1": 0.238,
+          "MI": 0.347
+        }
+      }
     }
   },
   "verification": {
@@ -218,6 +215,8 @@
     "what_this_case_uniquely_reveals": "Re-suppression-after-porosity at floor-P1: a decade of opening created mobilized actors and organizational capacity that the coup could not re-absorb, yielding not stable authoritarian restoration but catastrophic fragmentation. Tests the BOUNDARY of Safeguard I - porosity-with-backstop applies to high-P1 cases; Myanmar is floor-P1 porosity-WITHOUT-backstop, so the re-suppression mechanism (not the backstop) governs.",
     "proposed_framework_modifications": [],
     "baseline_impact": "None; graduates Mod9 (re-suppression-after-porosity) from conjecture to a tested core prediction (now 2/2: Ethiopia/Tigray + Myanmar), cabined to floor-P1 with prior mobilization. Myanmar trajectory is a watch item into Run 6.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

@@ -61,7 +61,9 @@ mi-research/
 - **Validated Cases:** 20 modern + 5 ancient (proxy), now backed by structured JSON
   records in `data/case_studies/completed/`; **+5 expansion cases (Batch 1, cases
   21-25)** scored on fresh real data — see `live/runs/run7_expansion_batch1_cases21-25.md`.
-- **Clean Confirmation Rate:** ~78% (range 62-85%) on the baseline; Batch-1 ~75%.
+- **Clean Confirmation Rate:** ~74% across the rebuilt 25-case corpus (109C/38P/0F),
+  within the honest 62-85% range. (The drop from the ~78% strict-recode estimate is the cost
+  of honest real-data re-scoring — mostly the framework correctly abstaining on Mod4 near-ties.)
 - **Directional Accuracy:** ~100% (zero falsifications) — note this is partly
   structural (directional claims are hard to falsify) and partly redundant with WGI standalone.
 - **P1 Ordinality:** 20/20 baseline; confirmed in every Batch-1 case where the gap

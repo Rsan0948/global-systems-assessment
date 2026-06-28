@@ -21,23 +21,6 @@
     "event_description": "1999 UN-supervised referendum -> Timor-Leste independence (20 May 2002); the 1999 militia/TNI scorched-earth campaign accompanied the departure of the occupying power.",
     "entities": {
       "Indonesia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": 9.9,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "none",
@@ -63,26 +46,12 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Oil rents ~9.9% of GDP (1998), fell to ~0.8% by 2021. Higher P1 of the pair (a functioning, if crisis-hit, state). Chaotic post-Suharto transition."
+        "notes": "Oil rents ~9.9% of GDP (1998), fell to ~0.8% by 2021. Higher P1 of the pair (a functioning, if crisis-hit, state). Chaotic post-Suharto transition.",
+        "country_ref": "Indonesia",
+        "pre_year": "1998",
+        "post_year": "2024"
       },
       "East Timor": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": true,
           "admin_details": "Under UNTAET 1999-2002 (UN administration). Measured P1 = administration, not indigenous capacity (Mod 1).",
@@ -110,7 +79,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Economy destroyed - 80% of infrastructure razed in 1999. Near-zero indigenous P1, built from scratch. Petroleum later ~70-80% of GDP; IMF labels it the most oil-dependent economy in the world (Mod 2 / Safeguard E inversion: apparent P4 wealth = vulnerability). Per IMF Country Report No. 25/278: Petroleum Fund balance stood at 939% of non-oil GDP in 2024, but oil/gas production has ceased and continued large withdrawals would deplete it by the end of the 2030s."
+        "notes": "Economy destroyed - 80% of infrastructure razed in 1999. Near-zero indigenous P1, built from scratch. Petroleum later ~70-80% of GDP; IMF labels it the most oil-dependent economy in the world (Mod 2 / Safeguard E inversion: apparent P4 wealth = vulnerability). Per IMF Country Report No. 25/278: Petroleum Fund balance stood at 939% of non-oil GDP in 2024, but oil/gas production has ceased and continued large withdrawals would deplete it by the end of the 2030s.",
+        "country_ref": "East Timor",
+        "pre_year": "1998",
+        "post_year": "2024"
       }
     }
   },
@@ -181,13 +153,36 @@
           "oil production ceased; fund depletion looming"
         ]
       }
+    },
+    "resolved_scores": {
+      "Indonesia": {
+        "pre": {
+          "P1": 0.368,
+          "MI": 0.509
+        },
+        "post": {
+          "P1": 0.505,
+          "MI": 0.558
+        }
+      },
+      "East Timor": {
+        "pre": {
+          "P1": null,
+          "MI": null
+        },
+        "post": {
+          "P1": 0.418,
+          "MI": 0.479
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Indonesia GDP ~$95bn (1998) -> >$1.3tn (2022); Timor-Leste undiversified, 42% poverty.",
-      "explanation": "Indonesia > East Timor as predicted (both versions)."
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Indonesia > East Timor as predicted (both versions).",
+      "auto_derived": false
     },
     "b_violence": {
       "result": "PARTIALLY_CONFIRMED",
@@ -197,7 +192,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Indonesia recovered and grew; Timor-Leste remained undiversified.",
-      "explanation": "Divergence as predicted (both versions)."
+      "explanation": "Divergence as predicted (both versions).",
+      "auto_derived": false
     },
     "d_failure_dimension": {
       "result": "NOT_APPLICABLE",
@@ -247,6 +243,8 @@
     "proposed_framework_modifications": [
       "Codify the directional-violence attribution rule (Mod8 / Safeguard D) as a formal amendment to Core Prediction 2; score Case 10 STATIC as a partial falsification on attribution in the master log."
     ],
-    "baseline_impact": "Amends Core Prediction 2 (violence risk vs violence agency); LIVE strictly improved accuracy over STATIC."
-  }
+    "baseline_impact": "Amends Core Prediction 2 (violence risk vs violence agency); LIVE strictly improved accuracy over STATIC.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

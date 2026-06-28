@@ -20,23 +20,6 @@
     "event_description": "October 2017 Catalan independence referendum, met by Tier 2 legal/constitutional suppression rather than military force or Tier-3 expanded porosity.",
     "entities": {
       "Spain (Catalonia)": {
-        "indicators": {
-          "gov_effectiveness": 0.75,
-          "rule_of_law": 0.82,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "is_democratic": true,
           "is_authoritarian": false,
@@ -61,7 +44,10 @@
           "fsi",
           "regional_antisystem_vote (pro-independence vote share at 2017 not given as a single figure)"
         ],
-        "notes": "Spain WGI estimate scale: RoL 0.82, GE 0.75 -- high but clearly below Germany/UK/Belgium. Catalonia ~18.8-20% of Spanish GDP; GDP per capita EUR37,426 (2024), above the Spanish average. Suppression mechanism: Article 155 + Constitutional Court action + prosecutions/exile (Puigdemont); some Oct 1 police violence but no sustained deployment."
+        "notes": "Spain WGI estimate scale: RoL 0.82, GE 0.75 -- high but clearly below Germany/UK/Belgium. Catalonia ~18.8-20% of Spanish GDP; GDP per capita EUR37,426 (2024), above the Spanish average. Suppression mechanism: Article 155 + Constitutional Court action + prosecutions/exile (Puigdemont); some Oct 1 police violence but no sustained deployment.",
+        "country_ref": "Spain",
+        "pre_year": "2017",
+        "post_year": "2024"
       }
     }
   },
@@ -127,6 +113,18 @@
           "CEO polling: ~50% against independence, ~42% for; drought (not secession) the leading public concern"
         ]
       }
+    },
+    "resolved_scores": {
+      "Spain (Catalonia)": {
+        "pre": {
+          "P1": 0.686,
+          "MI": 0.772
+        },
+        "post": {
+          "P1": 0.666,
+          "MI": 0.728
+        }
+      }
     }
   },
   "verification": {
@@ -184,6 +182,8 @@
       "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard."
     ],
     "baseline_impact": "No modification adopted from this case; Mod9 still needs a proper test before any baseline-affecting change.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

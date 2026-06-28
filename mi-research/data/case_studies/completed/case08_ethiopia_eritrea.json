@@ -21,23 +21,6 @@
     "event_description": "Eritrean independence (May 24, 1993), scored on a 1996 baseline; followed by the 1998-2000 border war and (for Ethiopia) the later Tigray War.",
     "entities": {
       "Ethiopia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -64,26 +47,12 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law 1996 = -0.97 (its min; avg -0.73, 2017 max -0.45; legacy scale). Political Stability avg -1.5, 2021 min -2.01, 2024 = -1.88. Resource rents low; heavy ODA dependence in 1996 (P4 distortion via aid, not rents). Derived: floor-P1 (~0.10-0.15). Larger, diverse, ethnic-federal state."
+        "notes": "WGI Rule of Law 1996 = -0.97 (its min; avg -0.73, 2017 max -0.45; legacy scale). Political Stability avg -1.5, 2021 min -2.01, 2024 = -1.88. Resource rents low; heavy ODA dependence in 1996 (P4 distortion via aid, not rents). Derived: floor-P1 (~0.10-0.15). Larger, diverse, ethnic-federal state.",
+        "country_ref": "Ethiopia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Eritrea": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -110,7 +79,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Severe data limitation - one of the world's most closed states; the data vacuum is itself evidence of institutional opacity/capacity collapse (not to be interpolated). WGI Political Stability avg -0.97, 1998 min -1.76, 2024 = -0.71 (legacy). HDI 2022/23 = 0.493 (175th); 2005 = 0.466 (near-stagnant). Resource rents low; heavy ODA dependence. Derived: floor-P1 (~0.10-0.15). Small, militarized, totalitarian."
+        "notes": "Severe data limitation - one of the world's most closed states; the data vacuum is itself evidence of institutional opacity/capacity collapse (not to be interpolated). WGI Political Stability avg -0.97, 1998 min -1.76, 2024 = -0.71 (legacy). HDI 2022/23 = 0.493 (175th); 2005 = 0.466 (near-stagnant). Resource rents low; heavy ODA dependence. Derived: floor-P1 (~0.10-0.15). Small, militarized, totalitarian.",
+        "country_ref": "Eritrea",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -187,13 +159,36 @@
           "permanent militarization / closure"
         ]
       }
+    },
+    "resolved_scores": {
+      "Ethiopia": {
+        "pre": {
+          "P1": 0.317,
+          "MI": 0.335
+        },
+        "post": {
+          "P1": 0.391,
+          "MI": 0.362
+        }
+      },
+      "Eritrea": {
+        "pre": {
+          "P1": 0.401,
+          "MI": 0.377
+        },
+        "post": {
+          "P1": 0.212,
+          "MI": 0.336
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Too close to rank cleanly; Ethiopia had stronger growth in the 2000s-2010s then suffered catastrophic political collapse.",
-      "explanation": "Neither state clearly 'won'; the floor-P1 ordinal lacks discriminating power. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]"
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: Neither state clearly 'won'; the floor-P1 ordinal lacks discriminating power. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -255,6 +250,8 @@
       "Add a provisional centrifugal-vs-centripetal failure-mode sub-classifier; if >=2 more floor-P1 pairs show divergent failure pathways, codify it (the later Mod6 / Safeguard H)."
     ],
     "baseline_impact": "Proposes a new failure-mode classifier; would require a 20-case baseline check before formalization.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

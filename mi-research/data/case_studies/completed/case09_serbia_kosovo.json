@@ -21,23 +21,6 @@
     "event_description": "Kosovo's unilateral declaration of independence (Feb 17, 2008); pre-event 2007 under UNMIK administration.",
     "entities": {
       "Serbia": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": 11230.0,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -62,26 +45,12 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law (legacy est.) ~ -0.4 region, improving post-2000; sovereign, EU candidate track. GDP per capita PPP ~$11,230 (2007). Derived: higher P1 than Kosovo on measured WGI; both below EU-core levels."
+        "notes": "WGI Rule of Law (legacy est.) ~ -0.4 region, improving post-2000; sovereign, EU candidate track. GDP per capita PPP ~$11,230 (2007). Derived: higher P1 than Kosovo on measured WGI; both below EU-core levels.",
+        "country_ref": "Serbia",
+        "pre_year": "2007",
+        "post_year": "2024"
       },
       "Kosovo": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": true,
           "admin_details": "UNMIK since 1999; EULEX deployed 2008 (Bonn-Powers-equivalent authority). Measured P1 > actual indigenous capacity (Mod 1 discount).",
@@ -107,7 +76,10 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law (legacy est.) ~ -0.5 to -0.7 region, under UNMIK administration. GDP per capita far lower than Serbia (~$6,200 only reached by 2023); remittances ~14% of GDP, aid-dependent; very high (later ~50%+ youth) unemployment. Excluded from FSI (Fund for Peace does not rank Kosovo). 2nd-order recursive fragment (Yugoslavia -> Serbia -> Kosovo); passes the capacity gate minimally, only under international scaffolding. LIVE (Mod 1) discounts measured P1 -> indigenous P1 lower than raw WGI suggests."
+        "notes": "WGI Rule of Law (legacy est.) ~ -0.5 to -0.7 region, under UNMIK administration. GDP per capita far lower than Serbia (~$6,200 only reached by 2023); remittances ~14% of GDP, aid-dependent; very high (later ~50%+ youth) unemployment. Excluded from FSI (Fund for Peace does not rank Kosovo). 2nd-order recursive fragment (Yugoslavia -> Serbia -> Kosovo); passes the capacity gate minimally, only under international scaffolding. LIVE (Mod 1) discounts measured P1 -> indigenous P1 lower than raw WGI suggests.",
+        "country_ref": "Kosovo",
+        "pre_year": "2007",
+        "post_year": "2024"
       }
     }
   },
@@ -186,13 +158,36 @@
           "partial international recognition"
         ]
       }
+    },
+    "resolved_scores": {
+      "Serbia": {
+        "pre": {
+          "P1": 0.467,
+          "MI": 0.637
+        },
+        "post": {
+          "P1": 0.495,
+          "MI": 0.61
+        }
+      },
+      "Kosovo": {
+        "pre": {
+          "P1": 0.468,
+          "MI": null
+        },
+        "post": {
+          "P1": 0.505,
+          "MI": 0.563
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Serbia GDP per capita PPP ~$26,884 (2024) vs Kosovo ~$6,200 (2023).",
-      "explanation": "Both versions got the ordinal call right; Mod 1 discount made the P1 gap exceed the margin of error."
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Both versions got the ordinal call right; Mod 1 discount made the P1 gap exceed the margin of error.",
+      "auto_derived": false
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -202,7 +197,8 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Serbia pulled ahead economically; Kosovo remained the region's highest-unemployment economy.",
-      "explanation": "Divergence as predicted."
+      "explanation": "Divergence as predicted.",
+      "auto_derived": false
     },
     "d_failure_dimension": {
       "result": "NOT_APPLICABLE",
@@ -249,6 +245,8 @@
     "proposed_framework_modifications": [
       "Retain Mod 1 (Safeguard A discount) and Mod 4 (margin-of-error gate); their interaction earned its keep here."
     ],
-    "baseline_impact": "No degradation; LIVE improved defensibility without changing the ordinal outcome."
-  }
+    "baseline_impact": "No degradation; LIVE improved defensibility without changing the ordinal outcome.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

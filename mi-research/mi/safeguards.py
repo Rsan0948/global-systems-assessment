@@ -135,10 +135,10 @@ def evaluate_safeguard_c(pillars: dict, context: dict) -> dict:
             "derivation": "Tunisia 2021 reversal",
         }
 
-    # Assess severity
+    # Assess severity (treat explicit None context values as absent/0)
     thresholds = SAFEGUARD_THRESHOLDS["C_reversal_risk"]
-    resource_rents = context.get("resource_rents_pct_gdp", 0)
-    youth_unemp = context.get("youth_unemployment", 0)
+    resource_rents = context.get("resource_rents_pct_gdp") or 0
+    youth_unemp = context.get("youth_unemployment") or 0
     growth = context.get("growth_trajectory", "growing")
 
     severity_factors = []
@@ -216,8 +216,8 @@ def evaluate_safeguard_e(pillars: dict, context: dict) -> dict:
     Derived from: Timor-Leste (negative), Nigeria (positive)
     """
     thresholds = SAFEGUARD_THRESHOLDS["E_rentier_capture"]
-    rents_gdp = context.get("resource_rents_pct_gdp", 0)
-    rents_revenue = context.get("resource_rents_pct_revenue", 0)
+    rents_gdp = context.get("resource_rents_pct_gdp") or 0
+    rents_revenue = context.get("resource_rents_pct_revenue") or 0
     p1 = pillars.get("P1")
 
     negative_triggered = rents_gdp > thresholds["rents_gdp_flag"]
@@ -264,9 +264,9 @@ def evaluate_safeguard_f(pillars: dict, context: dict) -> dict:
     """
     thresholds = SAFEGUARD_THRESHOLDS["F_substate_turbulence"]
 
-    antisystem_vote = context.get("regional_antisystem_vote", 0)
-    exec_collapses = context.get("executive_collapses", 0)
-    regional_divergence = context.get("regional_gdp_divergence", 0)
+    antisystem_vote = context.get("regional_antisystem_vote") or 0
+    exec_collapses = context.get("executive_collapses") or 0
+    regional_divergence = context.get("regional_gdp_divergence") or 0
 
     triggers = []
     if antisystem_vote > thresholds["antisystem_vote_threshold"]:

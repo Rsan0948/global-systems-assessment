@@ -34,23 +34,6 @@
     "event_description": "Three-way South Asian institutional trajectory comparison from the WGI series start.",
     "entities": {
       "India": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": -0.04,
-          "regulatory_quality": null,
-          "cpi": 38,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "medium",
@@ -68,26 +51,12 @@
           "P1 normalized 0.485 given; pillar components (gov_effectiveness, etc.) not provided",
           "education_index / life_expectancy_index (HDI 'medium, P3-lagging'; not numeric)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.04 (-2.5/+2.5 scale; max 0.26 in 2000; min -0.18 in 2021). CPI 2024 = 38 (96th). P1 normalized 0.485 (given). India's founding P1 is LOW (not high like South Africa), so Mod12 does NOT shield it from reversal risk -> India backsliding watch is live."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.04 (-2.5/+2.5 scale; max 0.26 in 2000; min -0.18 in 2021). CPI 2024 = 38 (96th). P1 normalized 0.485 (given). India's founding P1 is LOW (not high like South Africa), so Mod12 does NOT shield it from reversal risk -> India backsliding watch is live.",
+        "country_ref": "India",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Pakistan": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": -1.02,
-          "regulatory_quality": null,
-          "cpi": 27,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "medium",
@@ -104,26 +73,12 @@
           "P1 normalized ~0.23 (estimate)",
           "education_index / life_expectancy_index (HDI 'low'; not numeric)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -1.02 (-2.5/+2.5 scale; max -0.46 in 1996; min -1.15 in 2011). CPI 2024 = 27 (135th). P1 normalized ~0.23 (estimate). Bangladesh-Pakistan gap (0.06) within WGI margin of error -> sub-ranking deferred under Mod4."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -1.02 (-2.5/+2.5 scale; max -0.46 in 1996; min -1.15 in 2011). CPI 2024 = 27 (135th). P1 normalized ~0.23 (estimate). Bangladesh-Pakistan gap (0.06) within WGI margin of error -> sub-ranking deferred under Mod4.",
+        "country_ref": "Pakistan",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Bangladesh": {
-        "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": -0.96,
-          "regulatory_quality": null,
-          "cpi": 23,
-          "control_of_corruption": null,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "low",
@@ -140,7 +95,10 @@
           "P1 normalized ~0.25 (estimate)",
           "gdp_per_capita_ppp (HDI 0.397->0.685 given; GDP series suspect, Hasina-era inflated ~$100B per interim white paper)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.96 (-2.5/+2.5 scale; max -0.70 in 2011; min -1.18 in 2003). CPI 2024 = 23 (149th). P1 normalized ~0.25 (estimate). Safeguard C primary: growth-without-institutional-delivery -> reversal (confirmed in Run 2, August-2024 collapse). Bangladesh-Pakistan gap 0.06 within WGI margin -> Mod4 defers sub-ranking to Safeguard B."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.96 (-2.5/+2.5 scale; max -0.70 in 2011; min -1.18 in 2003). CPI 2024 = 23 (149th). P1 normalized ~0.25 (estimate). Safeguard C primary: growth-without-institutional-delivery -> reversal (confirmed in Run 2, August-2024 collapse). Bangladesh-Pakistan gap 0.06 within WGI margin -> Mod4 defers sub-ranking to Safeguard B.",
+        "country_ref": "Bangladesh",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -219,13 +177,46 @@
           "Yunus interim-government white paper: Hasina-era GDP inflated ~$100B"
         ]
       }
+    },
+    "resolved_scores": {
+      "India": {
+        "pre": {
+          "P1": 0.486,
+          "MI": 0.564
+        },
+        "post": {
+          "P1": 0.517,
+          "MI": 0.548
+        }
+      },
+      "Pakistan": {
+        "pre": {
+          "P1": 0.398,
+          "MI": 0.489
+        },
+        "post": {
+          "P1": 0.371,
+          "MI": 0.403
+        }
+      },
+      "Bangladesh": {
+        "pre": {
+          "P1": 0.359,
+          "MI": 0.482
+        },
+        "post": {
+          "P1": 0.357,
+          "MI": 0.445
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "India lead (WGI -0.04 vs -1.02 / -0.96) clearly CONFIRMED; Bangladesh-Pakistan gap 0.06 within WGI margin -> sub-ordinal correctly DEFERRED (LIVE) / over-claimed (STATIC).",
-      "explanation": "India ordinal confirmed; the framework correctly declines to assert a false Bangladesh>Pakistan ordinal under Mod4 - the single clearest LIVE-over-STATIC improvement in the run."
+      "explanation": "AUTO: top correct (India) but sub-ordering differs (pred ['India', 'Pakistan', 'Bangladesh'] vs outcome ['India', 'Bangladesh', 'Pakistan']); often a within-margin sub-pair. | prior: India ordinal confirmed; the framework correctly declines to assert a false Bangladesh>Pakistan ordinal under Mod4 - the single clearest LIVE-over-STATIC improvement in the run.",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -233,9 +224,10 @@
       "explanation": "Violence-risk pattern realized across all three as predicted."
     },
     "c_convergence": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "India pulled away 1996-2024; Bangladesh and Pakistan converged near the floor.",
-      "explanation": "Divergence of India vs. floor-convergence of the other two confirmed."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.082->0.145). | prior: Divergence of India vs. floor-convergence of the other two confirmed.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "NOT_APPLICABLE",
@@ -281,6 +273,8 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "Continental-scale P1 ordinality with margin gating: the world's largest complexity-capacity experiment (India) holds at the union level while tolerating high sub-state turbulence, and the framework refuses to assert ordinals across sub-margin gaps. Mod4 is the single clearest LIVE-over-STATIC improvement in the run.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; confirms Mod4 (margin gating), Mod12 (founding-P1 conditioning), Safeguards B/C/I. India backsliding is a live watch item into Run 6."
-  }
+    "baseline_impact": "None; confirms Mod4 (margin gating), Mod12 (founding-P1 conditioning), Safeguards B/C/I. India backsliding is a live watch item into Run 6.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

@@ -20,23 +20,6 @@
     "event_description": "Democratic transition: institutional replacement plus extension of governance to the entire population (managed-complexity increase). High-for-region founding institutional quality.",
     "entities": {
       "South Africa": {
-        "indicators": {
-          "gov_effectiveness": 1.0,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": 0.87,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
-        },
         "context": {
           "is_democratic": true,
           "is_authoritarian": false,
@@ -64,7 +47,10 @@
           "fsi",
           "resource_rents_pct_gdp (run gives ordinal range ~4-7% of GDP, mineral rents <4%; no single point)"
         ],
-        "notes": "Founding (1996) values: Government Effectiveness approx 1.0 and Control of Corruption approx 0.87 were both series maxima (estimate scale). High-for-region at founding. Control of Corruption percentile rank was ~76th in 1996. Resource rents ~4-7% of GDP (mineral rents <4%) -> far below the 30%-of-GDP LIVE threshold, so Safeguard E does NOT trigger."
+        "notes": "Founding (1996) values: Government Effectiveness approx 1.0 and Control of Corruption approx 0.87 were both series maxima (estimate scale). High-for-region at founding. Control of Corruption percentile rank was ~76th in 1996. Resource rents ~4-7% of GDP (mineral rents <4%) -> far below the 30%-of-GDP LIVE threshold, so Safeguard E does NOT trigger.",
+        "country_ref": "South Africa",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -148,6 +134,18 @@
           "2024 election: ANC falls to 40.2% (from 57.5% in 2019), loses majority for first time since apartheid, forms Government of National Unity with DA (21.8%); MK 14.6%"
         ]
       }
+    },
+    "resolved_scores": {
+      "South Africa": {
+        "pre": {
+          "P1": 0.608,
+          "MI": 0.646
+        },
+        "post": {
+          "P1": 0.498,
+          "MI": 0.552
+        }
+      }
     }
   },
   "verification": {
@@ -207,6 +205,8 @@
       "Promote candidate Safeguard I (porosity-with-backstop) from candidate to working safeguard (confirmed 5/5 in Run 4)."
     ],
     "baseline_impact": "Conditioning Safeguard C on founding P1 is a refinement that needs the 20-case baseline check before adoption.",
-    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
-  }
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }
