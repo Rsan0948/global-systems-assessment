@@ -66,14 +66,23 @@ demonstrated.
 - **SIMULATED / deferred:** organizations (2E, doctrine-table literature values);
   open-source (2F) — real-ingest code is committed but the GitHub crawl is
   **deferred** (descoped from holdout B, logged as a prereg amendment).
-- **Rung-4 mechanism test:** left as an honest placeholder — real per-domain
-  scaling exponents were not estimated, so the dimensional-gap → factor test does
-  not run. This is the apex test the program did **not** reach.
+- **Rung-4 mechanism test → RUN on real allometry, result NULL.** Real
+  dimensional gaps were estimated per biology cell type from the NeuroMorpho
+  CNG.swc 3-D reconstructions (interior = total dendritic length ~ radius;
+  interface = terminal tips ~ radius; `fetch_neuromorpho_exponents.py`). Across
+  the 6 cell types the gap does **not** predict the subdivision factor
+  (slope 0.14, 95% CI [−0.07, 0.35], p = 0.15) — **no rung-4 mechanism.** The
+  gaps themselves are consistent with the dimensional prediction Δ≈1 (mean 0.66,
+  CI [0.15, 1.18]), but the gap→factor link is absent. The full *cross-domain*
+  apex (rivers + corporate exponents too) is not run — those need raw spatial
+  re-ingest beyond the committed caches.
 
 ## Scope explicitly closed out
 
-This study is concluded at the confirmation stage above. Not pursued (by design,
-to ship): the 2F real crawl (needs a GitHub token), real rung-4 exponents, real
-2E doctrine parsing, and the public OSF/arXiv deposit (needs a human author
-identity). Each remains a clean future extension, not a blocker — the engine,
-the nodes, and the confirmation discipline are all in place.
+This study is concluded at the confirmation + mechanism stages above. Genuinely
+out of reach here (not done): the **2F open-source** real crawl (needs a GitHub
+token), the **cross-domain** rung-4 extension to rivers/corporate (needs raw
+spatial re-ingest), real **2E** doctrine parsing (low value), and the public
+**OSF/arXiv deposit** (needs a human author identity). Each is a clean future
+extension, not a blocker — the engine, the real-data nodes, the spent
+confirmations, and a real (null) mechanism test are all in place.

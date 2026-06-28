@@ -94,18 +94,31 @@ def negative_control_block(self_org, controls):
 
 
 def mechanism_on_assembled(nodes):
+    """Rung-4 mechanism test on the domains carrying REAL allometric exponents
+    (the biology cell types; fetch_neuromorpho_exponents.py). interior =
+    length~radius, interface = tips~radius, gap = interior - interface."""
     with_exp = [n for n in nodes if n.gap is not None]
     gaps = np.array([n.gap for n in with_exp])
     log_factors = np.array([np.log(np.exp(np.log(n.ratios).mean())) for n in with_exp])
-    if gaps.std(ddof=1) < 0.05:
+    if gaps.size < 3 or gaps.std(ddof=1) < 0.05:
         return {"status": "insufficient exponent variation",
-                "note": "illustrative placeholder exponents are ~constant (gap~1); "
-                        "the cross-domain gap->factor test needs REAL exponent estimates "
-                        "(Study 3B estimator on raw allometry) to run meaningfully.",
+                "note": "no/constant real exponents; needs REAL per-domain allometry.",
                 "n_domains_with_exponents": int(gaps.size)}
     r = gap_predicts_factor(gaps, log_factors)
-    return {"slope": round(r.slope, 3), "slope_ci": [round(x, 3) for x in r.slope_ci],
-            "slope_p": r.slope_p, "gap_consistent_with_1": r.gap_consistent_with_1}
+    return {
+        "domains": [n.name for n in with_exp],
+        "n_domains_with_exponents": int(gaps.size),
+        "gaps": {n.name: round(float(n.gap), 3) for n in with_exp},
+        "exponents_source": "REAL NeuroMorpho CNG.swc allometry (biology cell types)",
+        "slope": round(r.slope, 3), "slope_ci": [round(x, 3) for x in r.slope_ci],
+        "slope_p": round(r.slope_p, 4), "r_squared": round(r.r_squared, 3),
+        "gap_mean": round(r.gap_mean, 3), "gap_mean_ci": [round(x, 3) for x in r.gap_mean_ci],
+        "gap_consistent_with_1": r.gap_consistent_with_1,
+        "verdict": ("gap PREDICTS factor (slope CI excludes 0)"
+                    if (r.slope_ci[0] > 0 or r.slope_ci[1] < 0)
+                    else "NULL: gap does not predict the subdivision factor "
+                         "(slope CI includes 0) -> no rung-4 mechanism"),
+    }
 
 
 def dgs_real_block():

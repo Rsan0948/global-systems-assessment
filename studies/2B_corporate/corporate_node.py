@@ -83,11 +83,10 @@ def build_node(seed: int = 0) -> DomainNode:
         ratios=ratios,
         null_sampler=make_binary_null(s_pool),
         is_self_organizing=True,
-        # interior ~ internal relationships scale ~ size^2 (Metcalfe-ish);
-        # interface ~ management throughput ~ size^1. Gap ~1 (illustrative;
-        # 3B's estimator replaces from real allometry, see survival.py notes).
-        interior_exp=2.0, interior_exp_se=0.25,
-        interface_exp=1.0, interface_exp_se=0.25,
+        # No real allometric exponents for firms -> excluded from the rung-4
+        # mechanism test, which runs ONLY on domains with REAL exponents (the
+        # biology cell types). Placeholder values removed (were 2.0/1.0).
+        interior_exp=None, interface_exp=None,
         source=f"SEC EDGAR (REAL): {cov.get('events_with_segments', len(ratios))} spin-off "
                f"events, split factor E/S x{SCALE:.0f}; via ingest_edgar",
     )

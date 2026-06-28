@@ -38,7 +38,9 @@ def test_build_nodes_and_null_sampler():
     assert len(nodes) >= 5
     n0 = nodes[0]
     assert n0.name.startswith("neuro_")
-    assert n0.is_self_organizing and n0.interior_exp is None
+    assert n0.is_self_organizing
+    # real allometric exponents now wired (rung-4); gap is a finite number
+    assert n0.interior_exp is not None and n0.gap is not None
     rng = np.random.default_rng(0)
     x = n0.null_sampler(300, rng)
     assert x.shape == (300,) and np.all(x > 1.0)

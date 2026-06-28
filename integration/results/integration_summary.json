@@ -45,9 +45,38 @@
     }
   },
   "mechanism_on_assembled_nodes": {
-    "status": "insufficient exponent variation",
-    "note": "illustrative placeholder exponents are ~constant (gap~1); the cross-domain gap->factor test needs REAL exponent estimates (Study 3B estimator on raw allometry) to run meaningfully.",
-    "n_domains_with_exponents": 2
+    "domains": [
+      "neuro_ganglion",
+      "neuro_granule",
+      "neuro_interneuron",
+      "neuro_motoneuron",
+      "neuro_purkinje",
+      "neuro_pyramidal"
+    ],
+    "n_domains_with_exponents": 6,
+    "gaps": {
+      "neuro_ganglion": 0.604,
+      "neuro_granule": 0.352,
+      "neuro_interneuron": 0.514,
+      "neuro_motoneuron": 1.504,
+      "neuro_purkinje": 0.225,
+      "neuro_pyramidal": 0.788
+    },
+    "exponents_source": "REAL NeuroMorpho CNG.swc allometry (biology cell types)",
+    "slope": 0.137,
+    "slope_ci": [
+      -0.074,
+      0.347
+    ],
+    "slope_p": 0.1465,
+    "r_squared": 0.447,
+    "gap_mean": 0.664,
+    "gap_mean_ci": [
+      0.148,
+      1.181
+    ],
+    "gap_consistent_with_1": true,
+    "verdict": "NULL: gap does not predict the subdivision factor (slope CI includes 0) -> no rung-4 mechanism"
   },
   "predictive_calibrations": {
     "dgs_instability": {

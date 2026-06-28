@@ -13,7 +13,8 @@ def test_node_builds():
     nd = build_node()
     assert nd.name == "corporate"
     assert np.all(nd.ratios > 0)
-    assert nd.gap is not None
+    # no real allometric exponents for firms -> excluded from the rung-4 test
+    assert nd.gap is None
 
 
 def test_hazard_detects_complexity_effect():

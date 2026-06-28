@@ -1,0 +1,60 @@
+{
+  "source": "NeuroMorpho.org CNG.swc 3-D reconstructions (free API)",
+  "observable": "interior=log(total dendritic length)/log(radius); interface=log(n_terminal_tips)/log(radius); gap=interior-interface",
+  "cell_types": {
+    "pyramidal": {
+      "cell_type": "pyramidal",
+      "n": 90,
+      "interior_exp": 1.1914,
+      "interior_se": 0.0592,
+      "interface_exp": 0.4039,
+      "interface_se": 0.0765,
+      "gap": 0.7875
+    },
+    "purkinje": {
+      "cell_type": "Purkinje",
+      "n": 90,
+      "interior_exp": 0.8007,
+      "interior_se": 0.061,
+      "interface_exp": 0.5755,
+      "interface_se": 0.0963,
+      "gap": 0.2252
+    },
+    "granule": {
+      "cell_type": "granule",
+      "n": 90,
+      "interior_exp": 0.5916,
+      "interior_se": 0.1476,
+      "interface_exp": 0.2398,
+      "interface_se": 0.1372,
+      "gap": 0.3518
+    },
+    "ganglion": {
+      "cell_type": "ganglion",
+      "n": 90,
+      "interior_exp": 0.3542,
+      "interior_se": 0.0282,
+      "interface_exp": -0.25,
+      "interface_se": 0.0402,
+      "gap": 0.6042
+    },
+    "interneuron": {
+      "cell_type": "interneuron",
+      "n": 90,
+      "interior_exp": 1.7266,
+      "interior_se": 0.0924,
+      "interface_exp": 1.213,
+      "interface_se": 0.1145,
+      "gap": 0.5137
+    },
+    "motoneuron": {
+      "cell_type": "Motoneuron",
+      "n": 90,
+      "interior_exp": 1.2773,
+      "interior_se": 0.0931,
+      "interface_exp": -0.2269,
+      "interface_se": 0.1519,
+      "gap": 1.5042
+    }
+  }
+}

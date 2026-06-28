@@ -114,22 +114,36 @@ def make_null_sampler(min_orders: int = PRIMARY_MIN_ORDERS):
 
 
 # --------------------------------------------------------------------- the nodes
+def _load_exponents() -> dict:
+    """Real per-cell-type allometric exponents (rung-4), if ingested."""
+    path = os.path.join(RESULTS, "bio_exponents.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        return json.load(f).get("cell_types", {})
+
+
 def build_nodes(min_orders: int = PRIMARY_MIN_ORDERS) -> list:
     sys.path.insert(0, os.path.join(HERE, "..", "..", "integration"))
     from node_api import DomainNode
 
     sampler = make_null_sampler(min_orders)
+    exps = _load_exponents()                          # REAL allometric exponents (rung-4)
     nodes = []
     for ct in available_cell_types():
         ratios = real_rb(ct, min_orders)
         if ratios.size < 2:
             continue
+        ex = exps.get(ct, {})
         nodes.append(DomainNode(
             name=f"neuro_{ct}",
             ratios=ratios,
             null_sampler=sampler,
             is_self_organizing=True,
-            interior_exp=None, interface_exp=None,   # real allometry deferred (Phase 3)
+            # REAL allometry from CNG.swc (fetch_neuromorpho_exponents.py): interior =
+            # length~radius, interface = tips~radius; None until ingested.
+            interior_exp=ex.get("interior_exp"), interface_exp=ex.get("interface_exp"),
+            interior_exp_se=ex.get("interior_se"), interface_exp_se=ex.get("interface_se"),
             source=f"NeuroMorpho {ct} arbors (real); Horton Rb, "
                    f"min_orders={min_orders}; n={ratios.size}",
         ))
