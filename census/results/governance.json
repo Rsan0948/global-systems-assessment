@@ -27,6 +27,16 @@
       "n": 174,
       "data": "systematic (ParlGov)"
     },
+    "admin_subdivisions": {
+      "fanout_mean": 16.95,
+      "CV": 2.281,
+      "range": [
+        1,
+        853
+      ],
+      "n": 2805,
+      "data": "systematic (GeoNames)"
+    },
     "state_dissolutions": {
       "factor": 4.75,
       "CV": 0.901,
@@ -50,6 +60,6 @@
     "central_authority_mean_bodies": 7.0,
     "congregational_mean_bodies": 322.5
   },
-  "headline": "Self-organized systems (incl. human language) fracture in a tight ~3 band (CV ~0.2) that beats chance. Designed governance fractures DISPERSED: party splits CV 0.58, state dissolutions CV 0.90 (range 2-15) -- 3-5x the natural spread. Severity tracks suppression (violent breakups: ~53y suppressed vs ~10y peaceful) and porosity (central religions ~7 bodies vs congregational ~322).",
-  "data_caveats": "party_splits = systematic (ParlGov). state_dissolutions & denominations = CURATED (no systematic free successor/schism data exists; flagged). Qualitative confirmation, not precise laws."
+  "headline": "Self-organized systems (incl. human language) fracture in a tight ~3 band (CV ~0.2) that beats chance. Designed governance fractures DISPERSED, rising with how engineered the structure is: corporate CV 0.31, party splits 0.58, state dissolutions 0.90 (range 2-15), admin subdivisions 1.2-2.3 (fan-out ~17) -- up to ~10x the natural spread. Severity tracks suppression (violent breakups ~53y vs ~10y) and porosity (central religions ~7 bodies vs congregational ~322).",
+  "data_caveats": "SYSTEMATIC: corporate (EDGAR), party_splits (ParlGov), admin_subdivisions (GeoNames). CURATED (flagged): state_dissolutions, denominations -- no systematic free successor/schism data exists. Qualitative confirmation."
 }

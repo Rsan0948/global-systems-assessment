@@ -18,6 +18,7 @@ import os
 import state_dissolutions
 import party_splits
 import denominations
+import admin_subdivisions
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, "..", "results")
@@ -27,6 +28,7 @@ def main():
     states = state_dissolutions.analyze()
     parties = party_splits.analyze()
     denoms = denominations.analyze()
+    admin = admin_subdivisions.analyze()
     out = {
         "baseline_self_organized": {"systems": ["rivers", "trees", "neurons", "languages"],
                                     "factor_band": "2.9-3.8", "CV": "0.11-0.25",
@@ -37,6 +39,10 @@ def main():
             "party_splits": {"factor": parties["split_factor_mean"], "CV": parties["CV"],
                              "range": parties["split_factor_range"], "n": parties["n_splits"],
                              "data": "systematic (ParlGov)"},
+            "admin_subdivisions": {"fanout_mean": admin["admin2_per_admin1"]["mean_fanout"],
+                                   "CV": admin["CV"], "range": admin["admin2_per_admin1"]["range"],
+                                   "n": admin["admin2_per_admin1"]["n_parents"],
+                                   "data": "systematic (GeoNames)"},
             "state_dissolutions": {"factor": states["successor_mean"], "CV": states["successor_CV"],
                                    "range": states["successor_range"], "n": states["n_events"],
                                    "data": "curated"},
@@ -55,13 +61,15 @@ def main():
         },
         "headline": "Self-organized systems (incl. human language) fracture in a tight "
                     "~3 band (CV ~0.2) that beats chance. Designed governance fractures "
-                    "DISPERSED: party splits CV 0.58, state dissolutions CV 0.90 (range "
-                    "2-15) -- 3-5x the natural spread. Severity tracks suppression "
-                    "(violent breakups: ~53y suppressed vs ~10y peaceful) and porosity "
-                    "(central religions ~7 bodies vs congregational ~322).",
-        "data_caveats": "party_splits = systematic (ParlGov). state_dissolutions & "
-                        "denominations = CURATED (no systematic free successor/schism "
-                        "data exists; flagged). Qualitative confirmation, not precise laws.",
+                    "DISPERSED, rising with how engineered the structure is: corporate "
+                    "CV 0.31, party splits 0.58, state dissolutions 0.90 (range 2-15), "
+                    "admin subdivisions 1.2-2.3 (fan-out ~17) -- up to ~10x the natural "
+                    "spread. Severity tracks suppression (violent breakups ~53y vs ~10y) "
+                    "and porosity (central religions ~7 bodies vs congregational ~322).",
+        "data_caveats": "SYSTEMATIC: corporate (EDGAR), party_splits (ParlGov), "
+                        "admin_subdivisions (GeoNames). CURATED (flagged): "
+                        "state_dissolutions, denominations -- no systematic free "
+                        "successor/schism data exists. Qualitative confirmation.",
     }
     os.makedirs(RESULTS, exist_ok=True)
     with open(os.path.join(RESULTS, "governance.json"), "w") as f:
