@@ -58,8 +58,8 @@ def all_self_org_nodes():
     nodes += neuro.build_nodes()                                 # REAL biology (NeuroMorpho arbors)
     corporate = _load(os.path.join(HERE, "../studies/2B_corporate/corporate_node.py"), "corp2b")
     organizations = _load(os.path.join(HERE, "../studies/2E_organizations/org_node.py"), "org2e")
-    opensource = _load(os.path.join(HERE, "../studies/2F_opensource/oss_node.py"), "oss2f")
-    nodes += [corporate.build_node(), organizations.build_node(), opensource.build_node()]
+    # 2F open-source DESCOPED from the dataset (GitHub real ingest deferred); not assembled.
+    nodes += [corporate.build_node(), organizations.build_node()]    # REAL corporate (EDGAR)
     return nodes
 
 
@@ -165,12 +165,15 @@ def main():
         "mechanism_on_assembled_nodes": mechanism_on_assembled(self_org),
         "predictive_calibrations": predictive_calibrations(),
         "note": "MIXED inputs: REAL = rivers (HydroRIVERS NA, discovery continent), "
-                "biology (NeuroMorpho arbors, 6 cell types), negative controls "
-                "(NCBI taxonomy + engineered specs), and DGS (ECI+V-Dem+WB+UCDP). "
-                "SIMULATED placeholders = corporate, organizations, open-source. "
-                "The pooled cross-domain ratio therefore mixes real and simulated "
-                "nodes and is NOT a finding about real systems. Sealed holdout "
-                "(corporate, open-source, rivers cross-continent) untouched.",
+                "biology (NeuroMorpho arbors, 6 cell types), corporate (SEC EDGAR "
+                "spin-off split factors, the cross-domain holdout -- now SPENT, see "
+                "studies/2B_corporate/results/SEALED_HOLDOUT_CORPORATE.md), negative "
+                "controls (NCBI taxonomy + engineered specs), and DGS (ECI+V-Dem+WB+UCDP). "
+                "SIMULATED = organizations (doctrine tables). 2F open-source DESCOPED "
+                "(GitHub real ingest deferred). The pooled cross-domain ratio still "
+                "mixes one simulated node (organizations) and is NOT a clean finding "
+                "about real systems; the corporate confirmation is reported separately "
+                "in confirm_corporate.py.",
     }
     with open(os.path.join(RESULTS, "integration_summary.json"), "w") as f:
         json.dump(summary, f, indent=2)

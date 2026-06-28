@@ -70,7 +70,27 @@ def make_pa_null(observed_mean: float):
     return sampler
 
 
+def _simulated_placeholder(seed: int) -> DomainNode:
+    """Heavy-tailed viable-fork placeholder used ONLY when no real GitHub cache
+    exists. 2F is DESCOPED from the current analysis (the GitHub real ingest is
+    deferred -- GH Archive is impractical, the REST path needs a token). This
+    node is excluded from integration/run.py and from confirmation B; the
+    placeholder keeps the standalone study runnable."""
+    rng = np.random.default_rng(seed)
+    ratios = (2 + rng.geometric(p=0.55, size=150) - 1).astype(float)
+    return DomainNode(
+        name="opensource",
+        ratios=ratios,
+        null_sampler=lambda n, r: (2 + r.geometric(p=0.55, size=n) - 1).astype(float),
+        is_self_organizing=True,
+        source="SIMULATED placeholder (boundary probe); real GitHub ingest DEFERRED "
+               "(see ingest_github.py); 2F descoped from current analysis",
+    )
+
+
 def build_node(seed: int = 0) -> DomainNode:
+    if not os.path.exists(CACHE):
+        return _simulated_placeholder(seed)
     cache = _load_cache()
     ratios = np.array(cache["ratios"], dtype=float)
     cov = cache.get("coverage", {})
