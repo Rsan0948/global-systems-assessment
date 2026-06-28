@@ -2,7 +2,7 @@
 
 > Which natural systems have a consistent fragmentation point (concentrated factor that beats its mechanism-free null)?
 
-**8 of 8 natural systems** have a lawful fragmentation point (factors 2.92–3.79).
+**9 of 9 natural systems** have a lawful fragmentation point (factors 2.92–3.79).
 
 | system | kind | n | factor | 95% CI | CV | null | vs null | lawful? |
 |---|---|---:|---:|---|---:|---:|:--:|:--:|
@@ -14,8 +14,9 @@
 | neuro_purkinje | natural | 150 | **3.445** | [3.337, 3.557] | 0.201 | 2.979 | above | ✅ |
 | neuro_pyramidal | natural | 150 | **3.685** | [3.562, 3.811] | 0.231 | 2.978 | above | ✅ |
 | trees | natural | 1210 | **3.788** | [3.766, 3.81] | 0.106 | 2.989 | above | ✅ |
-| corporate | contrast | 108 | **2.242** | [2.105, 2.387] | 0.311 | 2.345 | below | ❌ |
-| engineered | contrast | 35 | **35.832** | [18.967, 67.691] | 1.645 | 36.248 | at | ❌ |
-| classification | contrast | 4000 | **5.076** | [4.913, 5.245] | 9.888 | 5.077 | at | ❌ |
+| languages | natural | 67 | **3.4** | [3.255, 3.552] | 0.2 | 2.982 | above | ✅ |
+| corporate | contrast | 108 | **2.242** | [2.105, 2.387] | 0.311 | 2.347 | below | ❌ |
+| engineered | contrast | 35 | **35.832** | [18.967, 67.691] | 1.645 | 36.189 | at | ❌ |
+| classification | contrast | 4000 | **5.076** | [4.913, 5.245] | 9.888 | 5.078 | at | ❌ |
 
 ✅ lawful (concentrated + beats null) · ⚪ candidate · ❌ not lawful

@@ -1,8 +1,8 @@
 {
   "question": "Which natural systems have a consistent fragmentation point (concentrated factor that beats its mechanism-free null)?",
-  "n_systems": 11,
-  "n_natural": 8,
-  "n_lawful": 8,
+  "n_systems": 12,
+  "n_natural": 9,
+  "n_lawful": 9,
   "lawful_systems": [
     "rivers",
     "neuro_ganglion",
@@ -11,16 +11,17 @@
     "neuro_motoneuron",
     "neuro_purkinje",
     "neuro_pyramidal",
-    "trees"
+    "trees",
+    "languages"
   ],
   "lawful_factor_range": [
     2.92,
     3.79
   ],
   "function_dimension": {
-    "n_classes": 3,
-    "n_systems": 8,
-    "eta_squared_function_explains_factor": 0.219,
+    "n_classes": 4,
+    "n_systems": 9,
+    "eta_squared_function_explains_factor": 0.22,
     "classes": {
       "energy-transport": {
         "n_systems": 1,
@@ -64,6 +65,19 @@
         "n_lawful": 1,
         "systems": [
           "trees"
+        ]
+      },
+      "self-organized-human": {
+        "n_systems": 1,
+        "principle": "speech-community dispersal (Glottolog)",
+        "geom_factor": 3.4,
+        "factor_range": [
+          3.4,
+          3.4
+        ],
+        "n_lawful": 1,
+        "systems": [
+          "languages"
         ]
       }
     },
@@ -208,6 +222,23 @@
       "source": "BioDiv-3DTrees TLS skeletons (real); Horton Rb, min_orders=4; n=1210 trees"
     },
     {
+      "name": "languages",
+      "kind": "natural",
+      "n": 67,
+      "factor": 3.4,
+      "ci_low": 3.255,
+      "ci_high": 3.552,
+      "cv": 0.2,
+      "null_factor": 2.982,
+      "direction": "above",
+      "beats_null_p": 0.0,
+      "concentrated": true,
+      "beats_null": true,
+      "lawful": true,
+      "verdict": "LAWFUL fragmentation point ~3.40 (above null)",
+      "source": "Glottolog language families (real); Horton Rb, min_orders=4; n=67 families"
+    },
+    {
       "name": "corporate",
       "kind": "contrast",
       "n": 108,
@@ -215,9 +246,9 @@
       "ci_low": 2.105,
       "ci_high": 2.387,
       "cv": 0.311,
-      "null_factor": 2.345,
+      "null_factor": 2.347,
       "direction": "below",
-      "beats_null_p": 0.23,
+      "beats_null_p": 0.226,
       "concentrated": false,
       "beats_null": false,
       "lawful": false,
@@ -232,9 +263,9 @@
       "ci_low": 18.967,
       "ci_high": 67.691,
       "cv": 1.645,
-      "null_factor": 36.248,
+      "null_factor": 36.189,
       "direction": "at",
-      "beats_null_p": 0.9685,
+      "beats_null_p": 0.993,
       "concentrated": false,
       "beats_null": false,
       "lawful": false,
@@ -249,9 +280,9 @@
       "ci_low": 4.913,
       "ci_high": 5.245,
       "cv": 9.888,
-      "null_factor": 5.077,
+      "null_factor": 5.078,
       "direction": "at",
-      "beats_null_p": 0.9855,
+      "beats_null_p": 0.993,
       "concentrated": false,
       "beats_null": false,
       "lawful": false,

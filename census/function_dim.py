@@ -33,6 +33,7 @@ FUNCTION = {
     "lungs": ("mass-distribution", "branching morphogenesis (Metzger 2008)"),
     "lung_airways": ("mass-distribution", "branching morphogenesis (Metzger 2008)"),
     "leaf_venation": ("resource-distribution", "area-preservation venation (Eloy)"),
+    "languages": ("self-organized-human", "speech-community dispersal (Glottolog)"),
 }
 # every neuro_* cell type -> information-sampling
 _NEURO = ("information-sampling", "wiring economy (Chklovskii, Cuntz)")

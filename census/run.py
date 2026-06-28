@@ -71,6 +71,7 @@ def collect_systems():
     # --- NEW natural systems (added as ingests land; see census/systems/) ---
     for rel, mod, builder in [
         ("systems/trees_node.py", "trees_node", "build_node"),
+        ("systems/languages_node.py", "languages_node", "build_node"),
         ("systems/vessels_node.py", "vessels_node", "build_nodes"),
         ("systems/leaf_node.py", "leaf_node", "build_node"),
         ("systems/lung_node.py", "lung_node", "build_node"),
