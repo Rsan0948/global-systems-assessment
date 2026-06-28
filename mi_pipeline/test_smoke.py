@@ -198,6 +198,21 @@ def test_overperformers_use_top_quartile():
 
 
 # ─────────────────────────────────────────────────────────────────
+#  Hardening — World Bank aggregate codes are excluded from the panel
+# ─────────────────────────────────────────────────────────────────
+def test_wb_aggregate_fallback_set():
+    """The static fallback aggregate set (used when the WB country-list call
+    fails) must contain the well-known regional/income aggregates and must NOT
+    contain real countries — so World/OECD/Arab World never leak into the panel
+    as countries, while Switzerland/Lebanon/USA/Taiwan are kept."""
+    agg = mp._WB_AGGREGATE_FALLBACK
+    for code in ["WLD", "EUU", "OED", "ARB", "SSA", "LIC", "HIC", "MEA"]:
+        assert code in agg, f"{code} should be flagged as a WB aggregate"
+    for code in ["USA", "CHE", "LBN", "TWN", "SGP", "NGA"]:
+        assert code not in agg, f"{code} is a real country, must not be excluded"
+
+
+# ─────────────────────────────────────────────────────────────────
 #  standalone runner
 # ─────────────────────────────────────────────────────────────────
 def _run_all():
@@ -207,6 +222,7 @@ def _run_all():
         ("fix 2: v1 succeeds with anchors", test_v1_anchoring_succeeds_when_anchors_present),
         ("fix 3: ECI snaps to nearest target", test_eci_snaps_to_nearest_target_year),
         ("fix 4: overperformers use top quartile", test_overperformers_use_top_quartile),
+        ("hardening: WB aggregates excluded", test_wb_aggregate_fallback_set),
     ]
     failures = 0
     for name, fn in tests:

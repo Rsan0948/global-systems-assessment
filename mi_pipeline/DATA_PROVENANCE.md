@@ -14,7 +14,19 @@ pipeline's own `_snap_to_target_years` logic.
 ## Automatic — World Bank API (`data/wb_cached.csv`)
 
 Pulled by `python mi_pipeline.py` (cached for `--skip-api`). 1275 country-year rows,
-259 countries, all 5 time points, 9 indicators.
+215 real countries, all 5 time points, 9 indicators.
+
+**Aggregate exclusion (hardening):** the WB `country/all` endpoint returns ~44
+regional/income *aggregates* (World, OECD members, Arab World, Sub-Saharan Africa,
+…) whose codes are 3 letters (WLD, EUU, OED, …) and so slip past a bare
+`len(iso3)==3` filter. They never reach the scored set (they lack the manual
+indicators), but they polluted the master panel and — because v2 percentile-ranks
+within each year's cohort — slightly skewed every country's `v2_GPA`. The pipeline
+now excludes them at the source via the WB country metadata endpoint (entries whose
+region is "Aggregates"), with a static fallback. Net effect: master 261→217 entities,
+`v1_MScore` unchanged (anchor-based), `v2_GPA` corrected (≤0.044 GPA shift), scored
+counts identical. Taiwan and other non-WB territories are preserved (excluded by
+aggregate membership, not by a country whitelist).
 
 **Important upstream change handled in code:** the World Bank restructured the WGI
 database. The legacy percentile-rank codes (`GE.PER.RNK`, etc.) now return
