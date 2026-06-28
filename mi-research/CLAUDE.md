@@ -26,12 +26,18 @@ code together.
 
 ```bash
 cd mi-research
-python scripts/score_country.py --country "Estonia" --year 2024   # ✓ runs, MI 0.793, Tier 2
-python scripts/run_retrodiction.py --case data/case_studies/in_progress/<your_case>.json
+python scripts/score_country.py --country "Estonia" --year 2024   # ✓ MI 0.778, Tier 2 (MI v1, 2025-anchored)
+python scripts/run_retrodiction.py --validate data/case_studies/completed/
 ```
 
-No third-party deps are needed for the scoring path (pure-Python stdlib;
-indicator data is read from JSON under `data/countries/`).
+No third-party deps for the scoring path (pure-Python stdlib). Indicator data is
+served by the internal **Data API** (`mi/datasource.py`), which assembles values
+live from the canonical sources — `data/sources/wb_anchored.json` (World Bank
+2025-anchored WGI/WDI; refresh via `scripts/refresh_wgi_wdi.py`) + the committed
+`mi_pipeline/` panel CSVs. There are no per-country copy files. The scoring *lens*
+lives in `mi/constants.LENS` (one place; propagates on re-score). Methodology is
+**MI v1** (the former "LIVE"; old hand weights archived). NB: Estonia is 0.778 on
+the consistent 2025-anchored vintage — the legacy 0.793 used percentile-rank inputs.
 
 ## Core principles (from README — honor these)
 

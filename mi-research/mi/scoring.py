@@ -275,22 +275,36 @@ def score_country(indicators: dict, weights: dict = None) -> dict:
 
 
 def load_country_data(country_name: str, year: int = None) -> Optional[dict]:
-    """Load country indicator data from the data directory."""
-    data_dir = Path(__file__).parent.parent / "data" / "countries"
-    filename = country_name.lower().replace(" ", "_") + ".json"
-    filepath = data_dir / filename
+    """Load country indicator data via the internal Data API (single source).
 
-    if not filepath.exists():
-        return None
-
-    with open(filepath) as f:
-        data = json.load(f)
+    Indicators are assembled live from the canonical sources (mi.datasource);
+    there are no per-country copy files to keep in sync. Falls back to a legacy
+    data/countries/<name>.json only if the Data API has nothing for that country.
+    """
+    from mi import datasource  # lazy import to avoid any import cycle
 
     if year is not None:
-        # Find the closest available year
-        year_str = str(year)
-        if year_str in data.get("indicators_by_year", {}):
-            return data["indicators_by_year"][year_str]
-        return None
+        ind = datasource.get_indicators(country_name, year, with_meta=True)
+        if ind is not None:
+            return ind
+    else:
+        years = datasource.available_years(country_name)
+        if years:
+            return {
+                "country": country_name,
+                "iso3": datasource.country_to_iso(country_name),
+                "indicators_by_year": {
+                    y: datasource.get_indicators(country_name, y, with_meta=True) for y in years
+                },
+            }
 
+    # Legacy fallback: a static country file (deprecated; the Data API is canonical)
+    filepath = Path(__file__).parent.parent / "data" / "countries" / (
+        country_name.lower().replace(" ", "_") + ".json")
+    if not filepath.exists():
+        return None
+    with open(filepath) as f:
+        data = json.load(f)
+    if year is not None:
+        return data.get("indicators_by_year", {}).get(str(year))
     return data
