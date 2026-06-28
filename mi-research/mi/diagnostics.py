@@ -8,7 +8,7 @@ comparable case identification.
 from typing import Optional
 from mi.scoring import score_country, calculate_pillar_spread, get_configuration_profile
 from mi.safeguards import evaluate_all_safeguards
-from mi.constants import LENS
+from mi.constants import LENS, ASCENT_LOW_BASE
 
 
 def full_diagnostic(indicators: dict, context: dict = None) -> dict:
@@ -30,6 +30,10 @@ def full_diagnostic(indicators: dict, context: dict = None) -> dict:
         "vulnerability": vulnerability,
         "accountability_gap": accountability_gap(
             indicators.get("voice_accountability"), score.get("pillar_scores", {})),
+        "ascent_potential": ascent_potential(score.get("pillar_scores", {})),
+        "movement_quality": (movement_quality(score.get("pillar_scores", {}),
+                                               (context or {}).get("prior_pillars"))
+                             if (context or {}).get("prior_pillars") else None),
     }
 
 
@@ -213,6 +217,68 @@ def assess_vulnerability(score: dict, safeguards: dict) -> dict:
             f"{len(triggered_safeguards)} safeguards active."
         ),
     }
+
+
+def ascent_potential(pillars: dict) -> Optional[dict]:
+    """
+    V3.3 — ascent potential (the one HOLDOUT-VALIDATED golden-age signal). A low institutional base
+    (P1 < ASCENT_LOW_BASE) carries an elevated chance of a durable climb (room-to-rise / mean-reversion;
+    holdout z+2.4). This is NOT agency or an internal-trajectory prediction — golden ages need an
+    EXOGENOUS trigger (post-communist transition, commodity-boom era, etc.); the institutional *slope*
+    predicts nothing (the CC/component-jump signature was refuted on a pre-registered geographic
+    holdout, z=-0.0). So this flags *eligibility*, not a forecast.
+    """
+    p1 = pillars.get("P1")
+    if p1 is None:
+        return None
+    low = p1 < ASCENT_LOW_BASE
+    return {
+        "p1": round(p1, 3), "low_base": low,
+        "reading": ("LOW BASE — elevated room-to-rise (durable-climb tendency, holdout z+2.4); but this is "
+                    "eligibility, not a forecast — realized ascent needs an exogenous trigger "
+                    "(transition/commodity era), and recent momentum predicts the OPPOSITE (reversion)."
+                    if low else
+                    "base too high for the room-to-rise tendency; ascents from here are rare and exogenous."),
+        "caveat": "Validated as a LEVEL signal (z+2.4 holdout); the slope is not predictive. Trust the level.",
+    }
+
+
+def movement_quality(pillars: dict, prior_pillars: dict) -> Optional[dict]:
+    """
+    V3.3 — movement typology + the explicit DISTRUST-THE-SLOPE caveat. Headline MI movement decomposes
+    into kinds that the level hides: real_ascent (P1/P5-led), windfall (P4-led income, gap-widening),
+    ratchet_rise (P2/P3-led human-capital/innovation), hollow_stability (flat MI, governance core P1
+    eroding under the P3 ratchet), decline (P5/P4-led fall), stable. DESCRIPTIVE — the slope is
+    mean-reverting and low-reliability; the durable signal is the LEVEL + the durability gap (Safeguard J).
+    """
+    P = ["P1", "P2", "P3", "P4", "P5"]
+    if not prior_pillars or any(pillars.get(p) is None or prior_pillars.get(p) is None for p in P):
+        return None
+    dmi = sum(pillars[p] for p in P) / 5 - sum(prior_pillars[p] for p in P) / 5
+    dp = {p: pillars[p] - prior_pillars[p] for p in P}
+    lead = max(dp, key=dp.get)
+    if dmi > 0.03:
+        cls = ("real_ascent" if lead in ("P1", "P5")
+               else "windfall" if lead == "P4" else "ratchet_rise")
+    elif dmi < -0.03:
+        cls = "decline"
+    elif dp["P1"] <= -0.03:
+        cls = "hollow_stability"
+    else:
+        cls = "stable"
+    note = {
+        "windfall": "income-led rise with institutions flat — the durability gap is WIDENING, not progress.",
+        "hollow_stability": "headline flat but the governance core (P1) is eroding under the P3 ratchet — "
+                            "'feels stable, isn't'. Read the core, not the MI.",
+        "real_ascent": "institution/stability-led — the durable kind (rare).",
+        "ratchet_rise": "human-capital/innovation-led — the global-development tide, not governance.",
+        "decline": "stability/income-led fall.",
+        "stable": "no material movement.",
+    }[cls]
+    return {"class": cls, "dMI": round(dmi, 3), "lead": lead, "dP1": round(dp["P1"], 3),
+            "reading": note,
+            "caveat": "DISTRUST THE SLOPE — movement is mean-reverting and low-reliability; the predictive "
+                      "content is the LEVEL and the durability gap, not the delta."}
 
 
 def accountability_gap(voice_accountability, pillars: dict) -> Optional[dict]:

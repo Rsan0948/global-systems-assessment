@@ -59,6 +59,19 @@ The weights are correlation-derived from the data itself. P1 at 34% (up from ini
   - **Convergence Qualifier [V3.2]:** the gap's TRAJECTORY disambiguates a flag — CLOSING (P1 rising) = developmental catch-up (downgrade); WIDENING/static = fragility (escalate). 92% sens / 80% spec on flagged states. Supply `context["prior_pillars"]`.
 - **Accountability Gap [V3.2 — HYPOTHESIS, informational, NOT a verdict]:** VA (which P1 excludes) vs income; VA − P4 ≤ −0.50 = "capacity without consent" (legitimacy-capped: Saudi/China/Russia/Turkey), a hypothesized brittle failure mode orthogonal to the durability gap. VA wired in for all 180 panel countries (`data/sources/va_anchored.json`); `diagnostics.accountability_gap()`; `scripts/big_signals_scan.py`. No crisis validation yet. See `docs/architectural_decisions/v3_2_convergence_and_accountability.md`.
 
+## Standing epistemic — TRUST THE LEVEL, DISTRUST THE SLOPE [V3.3]
+The crisis lead-time and golden-age holdout converge on one rule: the **level** (and the durability
+gap) carries the predictive content; the **slope** (year-to-year movement) is mean-reverting noise.
+Crises: ordinal level predicts 10–28y out; acute timing only ~3–5y. Golden ages: a country's own
+institutional *jump* predicts nothing (CC-jump signature **refuted on a pre-registered geographic
+holdout**, z=−0.0), while a low *level* (room-to-rise) is holdout-validated (z+2.4) and the real
+drivers are exogenous (transition era + commodity cycle, ~81% of climbs). Operationalized in V3.3:
+`diagnostics.ascent_potential()` (validated level signal) and `diagnostics.movement_quality()` (names
+the movement — windfall / hollow_stability / real_ascent — with an explicit distrust-the-slope caveat).
+Global-picture consequence (`docs/v3_3_inclusion_and_global_picture.md`): apparent global MI progress
+is the P3 human-capital ratchet + commodity income masking a flat-to-eroding governance core, a
+golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
+
 ---
 
 ## What's Been Done

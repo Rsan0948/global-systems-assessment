@@ -138,7 +138,16 @@ LENS = {
 # V3.2 = V3.1 + the Convergence Qualifier on Safeguard J (gap TRAJECTORY: closing=developmental
 # catch-up vs widening=fragility; 92% sens / 80% spec on flagged states) + the Accountability-Gap
 # diagnostic (VA vs income; "capacity without consent", a hypothesis — informational, not a verdict).
-MI_MODEL_VERSION = "v3.2"
+# V3.3 = V3.2 + the LEVEL-OVER-SLOPE epistemic, made operational: movement_quality (the typology +
+# an explicit distrust-the-slope caveat) + ascent_potential (low institutional base -> elevated
+# durable-climb tendency; the one HOLDOUT-VALIDATED golden-age signal, z+2.4). NB: the golden-age
+# *signature* (CC/component jumps) was REFUTED on a pre-registered geographic holdout (z=-0.0) and is
+# deliberately NOT added — golden ages are exogenous (level + era + commodity), not internal slope.
+MI_MODEL_VERSION = "v3.3"
+
+# Ascent potential: low institutional base predicts a durable climb (room-to-rise / mean-reversion),
+# holdout-validated (z+2.4). Not agency — needs an exogenous trigger (transition/commodity window).
+ASCENT_LOW_BASE = 0.40
 
 # === LEAD-TIME / FORESIGHT CONFIG (single source; the per-case structural fact reads this) ===
 # How far before the outcome the framework still predicts accurately. Empirical finding:

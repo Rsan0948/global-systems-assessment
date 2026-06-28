@@ -54,12 +54,15 @@ mi-research/
 
 ## Current Status
 
-- **MI Version:** **MI v3.2** (live; `MI_MODEL_VERSION="v3.2"`). V3.2 = V3.1 + the **Convergence
-  Qualifier** on Safeguard J (gap TRAJECTORY: closing = developmental catch-up vs widening = fragility;
-  92% sens / 80% spec) + the **Accountability Gap** diagnostic (VA vs income; "capacity without
-  consent" — a hypothesis, informational). V3.1 = V3 + **Safeguard J — the Durability Gate** (P4−P1
-  gap, three-state flag/clear/borderline), N=21 (83/100/100; = durability ratio re-derived). See
-  `docs/architectural_decisions/v3_2_convergence_and_accountability.md` + `v3_1_durability_gate.md`.
+- **MI Version:** **MI v3.3** (live; `MI_MODEL_VERSION="v3.3"`). V3.3 = V3.2 + the **level-over-slope**
+  epistemic made operational: `ascent_potential` (low base → durable-climb tendency; the one
+  holdout-validated golden-age signal, z+2.4) + `movement_quality` (names windfall / hollow_stability /
+  real_ascent with a distrust-the-slope caveat). The golden-age *signature* (component jumps) was
+  **refuted on a pre-registered geographic holdout** (z=−0.0) and deliberately NOT added. See
+  `docs/v3_3_inclusion_and_global_picture.md`, `golden_age_holdout_and_structure.md`. V3.2 = V3.1 +
+  **Convergence Qualifier** on Safeguard J (gap trajectory; 92/80) + **Accountability Gap** (VA vs
+  income; hypothesis). V3.1 = V3 + **Safeguard J — Durability Gate** (P4−P1, three-state), N=21
+  (83/100/100). See `v3_2_convergence_and_accountability.md` + `v3_1_durability_gate.md`.
 - **Corpus:** **84 case studies**, three classes scored separately by `--validate`: 51 P1-ordinality
   (213C/77P/0F) + 19 durability-gate / Safeguard-J (17/19) + 14 rule-validation A/B (8 confirmed /
   2 indeterminate / 2 falsified; 2 pre-WGI N/A). The rule-validation set (`docs/c_cases_blind_validation.md`)
