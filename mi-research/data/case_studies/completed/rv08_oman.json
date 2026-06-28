@@ -1,0 +1,30 @@
+{
+  "name": "Oman",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "B_accountability",
+    "case_name": "Oman",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Oman",
+  "prior_year": null,
+  "predictor_year": 2019,
+  "actual_outcome_crisis": false,
+  "outcome": "2020 smooth succession (Haitham)",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "CONFIRMED",
+      "evidence": "NOT legitimacy-capped in data (VA-P4 -0.18 balanced); correctly predicted no crisis",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.051,
+    "J_status": "clear",
+    "convergence": null,
+    "accountability": "balanced",
+    "va_minus_p4": -0.184,
+    "rents_pct": 24.98
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Ireland",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "A_convergence",
+    "case_name": "Ireland",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Ireland",
+  "prior_year": 2002,
+  "predictor_year": 2007,
+  "actual_outcome_crisis": false,
+  "outcome": "2008 economic shock, NO institutional crisis",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "CONFIRMED",
+      "evidence": "clear gap (high institutions match income); absorbed the shock as economic, not institutional",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.08,
+    "J_status": "clear",
+    "convergence": "widening",
+    "accountability": "balanced",
+    "va_minus_p4": -0.055,
+    "rents_pct": 0.29
+  }
+}

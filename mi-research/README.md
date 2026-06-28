@@ -60,9 +60,13 @@ mi-research/
   consent" — a hypothesis, informational). V3.1 = V3 + **Safeguard J — the Durability Gate** (P4−P1
   gap, three-state flag/clear/borderline), N=21 (83/100/100; = durability ratio re-derived). See
   `docs/architectural_decisions/v3_2_convergence_and_accountability.md` + `v3_1_durability_gate.md`.
-- **Corpus:** **70 case studies** = 51 P1-ordinality (`completed/`, stress_type ≠ durability_gate_test)
-  + 19 durability-gate / Safeguard-J tests (stress_type=durability_gate_test). `--validate` reports
-  the two classes separately.
+- **Corpus:** **84 case studies**, three classes scored separately by `--validate`: 51 P1-ordinality
+  (213C/77P/0F) + 19 durability-gate / Safeguard-J (17/19) + 14 rule-validation A/B (8 confirmed /
+  2 indeterminate / 2 falsified; 2 pre-WGI N/A). The rule-validation set (`docs/c_cases_blind_validation.md`)
+  was run blind: it *strengthened* the Convergence Qualifier (the qualifier correctly handles the
+  petro-state the source doc called its strongest disconfirmation — so the doc's rent-control add-on
+  is unnecessary) and *refuted* the Accountability Gap as a crisis predictor (Cuba legitimacy-capped,
+  no crisis) — B stays an informational hypothesis.
 - **MI v3 base:** V3 = V2 + the **consolidated-pair
   high-end caution** (Mod4 extension: between two polities both P1 > 0.60, abstain on an ordinal
   call unless the gap ≥ 0.15 — derived from the Chile/Uruguay falsification; complexity-capacity:

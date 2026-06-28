@@ -157,20 +157,23 @@ def validate_baseline(completed_dir: str):
     # Two classes in the 70-case corpus: P1-ORDINALITY cases (51) and DURABILITY-GATE / Safeguard-J
     # test cases (19, stress_type="durability_gate_test"). Scored separately — different claims.
     cls = {"ordinality": {"confirmed": 0, "partial": 0, "falsified": 0, "n": 0},
-           "durability_gate": {"confirmed": 0, "partial": 0, "falsified": 0, "n": 0}}
+           "durability_gate": {"confirmed": 0, "partial": 0, "falsified": 0, "n": 0},
+           "rule_validation": {"confirmed": 0, "partial": 0, "falsified": 0, "n": 0}}
     cases_processed = 0
 
     for case_file in sorted(completed_path.glob("*.json")):
         with open(case_file) as f:
             case_data = json.load(f)
-        k = ("durability_gate" if case_data.get("metadata", {}).get("stress_type") == "durability_gate_test"
+        st = case_data.get("metadata", {}).get("stress_type")
+        k = ("durability_gate" if st == "durability_gate_test"
+             else "rule_validation" if st == "rule_validation"
              else "ordinality")
         cls[k]["n"] += 1
         for pred_name, result in case_data.get("verification", {}).items():
             coding = result.get("result", "").upper()
             if "CONFIRMED" in coding and "PARTIAL" not in coding:
                 cls[k]["confirmed"] += 1
-            elif "PARTIAL" in coding:
+            elif "PARTIAL" in coding or "INDETERMIN" in coding:
                 cls[k]["partial"] += 1
             elif "FALSIF" in coding:
                 cls[k]["falsified"] += 1
@@ -178,9 +181,10 @@ def validate_baseline(completed_dir: str):
 
     total = cls["ordinality"]  # back-compat: the headline scorecard is the ordinality baseline
     if cases_processed > 0:
-        o = cls["ordinality"]; g = cls["durability_gate"]
+        o = cls["ordinality"]; g = cls["durability_gate"]; rv = cls["rule_validation"]
         total_scored = o["confirmed"] + o["partial"] + o["falsified"]
-        print(f"\nCORPUS: {cases_processed} cases = {o['n']} P1-ordinality + {g['n']} durability-gate (Safeguard J)")
+        print(f"\nCORPUS: {cases_processed} cases = {o['n']} P1-ordinality + {g['n']} durability-gate "
+              f"+ {rv['n']} rule-validation (A/B)")
         print(f"\nP1-ORDINALITY BASELINE — {o['n']} cases")
         print(f"  Total predictions: {total_scored}")
         print(f"  Confirmed: {o['confirmed']}")
@@ -191,6 +195,10 @@ def validate_baseline(completed_dir: str):
             print(f"\nDURABILITY-GATE (Safeguard J) TEST SET — {g['n']} cases: "
                   f"{g['confirmed']} correct / {g['falsified']} wrong "
                   f"({g['confirmed']/gscored*100:.0f}% accuracy)")
+        rvs = rv["confirmed"] + rv["partial"] + rv["falsified"]
+        if rvs:
+            print(f"\nRULE-VALIDATION (A/B) TEST SET — {rv['n']} cases: "
+                  f"{rv['confirmed']} confirmed / {rv['partial']} indeterminate / {rv['falsified']} falsified")
         if total_scored > 0:
             print(f"  Clean rate (per-letter count): {total['confirmed']/total_scored:.0%}")
             print(f"  Directional: {(total['confirmed']+total['partial'])/total_scored:.0%}")

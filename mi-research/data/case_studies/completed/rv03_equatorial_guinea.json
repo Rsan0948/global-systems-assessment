@@ -1,0 +1,30 @@
+{
+  "name": "Equatorial Guinea",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "A_convergence",
+    "case_name": "Equatorial Guinea",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Equatorial Guinea",
+  "prior_year": 2002,
+  "predictor_year": 2018,
+  "actual_outcome_crisis": false,
+  "outcome": "no regime crisis (Obiang continues)",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "CONFIRMED",
+      "evidence": "FLAG but gap CLOSING -> qualifier correctly not-fragile (doc called this the strongest disconfirmation; the V3.2 trajectory handles it). NOTE: 'developmental' label wrong \u2014 rent-financed stasis (rents 28%); pair Safeguard E",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.42,
+    "J_status": "FLAG",
+    "convergence": "closing",
+    "accountability": "accountability_lag",
+    "va_minus_p4": -0.425,
+    "rents_pct": 27.8
+  }
+}
