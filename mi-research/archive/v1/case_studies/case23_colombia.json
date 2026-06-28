@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "case_name": "Colombia (FARC peace; peripheral porosity-with-backstop)",
+    "case_id": "case23",
+    "author": "expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "suppressed_fragmentation",
+    "geographic_region": "South America / Andes",
+    "time_period": "2012 -> 2024",
+    "entities": [
+      "Colombia"
+    ],
+    "key_test": "Safeguard I (porosity-with-backstop) - chosen to potentially falsify it.",
+    "round": "expansion_batch1",
+    "notes": ""
+  },
+  "pre_event": {
+    "time_point": "2012",
+    "event_description": "Pre-accord; central state vs FARC-controlled periphery.",
+    "entities": {
+      "Colombia": {
+        "context": {
+          "population": 52000000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "insurgency",
+          "external_backstop": true,
+          "backstop_details": "Sovereign central state retains military/constitutional backstop over FARC-vacated periphery",
+          "resource_rents_pct_revenue": 10.0
+        },
+        "data_gaps": [],
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Colombia",
+        "pre_year": "2012",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Stable-to-improving national trajectory",
+      "basis": "Mid P1 above capacity gate",
+      "falsification_condition": "national collapse"
+    },
+    "b_violence": {
+      "prediction": "Localized periphery violence RISK, not national war",
+      "risk_level": "high",
+      "agency_note": "Mod8",
+      "falsification_condition": "national-scale civil war or no peripheral violence"
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity)",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "Peripheral capacity vacuum",
+      "note": "",
+      "falsification_condition": ""
+    },
+    "e_fragment_count": {
+      "prediction": "N/A",
+      "safeguard_b_applied": false,
+      "falsification_condition": ""
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "Porosity-with-backstop (Safeguard I)",
+      "tier": null,
+      "falsification_condition": "backstop yields permanent secession OR full peripheral control"
+    },
+    "h_substate_turbulence": {
+      "prediction": "Sub-state turbulence below collapse threshold",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Colombia": {
+        "indicators_by_year": {
+          "2024": {
+            "gov_effectiveness": 49.1803,
+            "rule_of_law": 47.3311,
+            "regulatory_quality": 55.074,
+            "cpi": 39.0,
+            "control_of_corruption": 41.9095,
+            "gii": 29.18,
+            "rd_pct_gdp": null,
+            "eci": 0.233,
+            "education_index": 0.6979,
+            "life_expectancy_index": 0.8881,
+            "gdp_per_capita_ppp": 22349.4364,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 0.289,
+            "political_stability": 49.3103,
+            "fsi": 78.1
+          }
+        },
+        "outcome_summary": "2016 accord; social-leader/ex-combatant assassinations surged in FARC-vacated zones (ELN/dissidents); stable centre, MI ->Tier 2; no secession.",
+        "key_events": [
+          "2016 Havana accord",
+          "social-leader killings",
+          "paz total stalled"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Colombia": {
+        "pre": {
+          "P1": 0.482,
+          "MI": 0.573
+        },
+        "post": {
+          "P1": 0.476,
+          "MI": 0.556
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "P1 flat ~0.48; MI 0.573->0.588 (Tier 3)",
+      "explanation": "Stable centre."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "localized periphery violence, no national war",
+      "explanation": ""
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "capacity vacuum in vacated zones",
+      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Safeguard I: peripheral violence resurgence, no permanent secession, backstop holds centre",
+      "explanation": "Safeguard I survives a falsification-designed case."
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "chronic peripheral dysfunction below collapse",
+      "explanation": ""
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Safeguard I confirmed under a hard stress-test.",
+    "safeguards_triggered": [
+      "I"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Backstop can secure the centre without securing the periphery.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

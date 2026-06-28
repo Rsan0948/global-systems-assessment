@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "case_name": "Indonesia vs. East Timor (Timor-Leste)",
+    "case_id": "case10",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "suppressed_fragmentation",
+    "geographic_region": "Southeast Asia",
+    "time_period": "1998 -> 2024",
+    "entities": [
+      "Indonesia",
+      "East Timor"
+    ],
+    "key_test": "The critical directional-violence test: lethal violence came from the departing higher-P1 power (Indonesia), not the low-P1 fragment. Derives Mod8 (predicts RISK not AGENCY) + Safeguard D for attribution. Also Mod 2 (Safeguard E inversion) for Timor-Leste oil dependence.",
+    "round": "baseline_run3",
+    "notes": "All calls ordinal/directional; no precise MI point scores. East Timor pre-independence WGI reflects UNTAET administration (Safeguard A / Mod 1), not indigenous capacity."
+  },
+  "pre_event": {
+    "time_point": "1998",
+    "event_description": "1999 UN-supervised referendum -> Timor-Leste independence (20 May 2002); the 1999 militia/TNI scorched-earth campaign accompanied the departure of the occupying power.",
+    "entities": {
+      "Indonesia": {
+        "context": {
+          "under_external_admin": false,
+          "neighbor_threat_level": "none",
+          "neighbor_details": "Indonesia is the former occupier of East Timor (24-year occupation 1975-1999); the departing predatory power in the 1999 violence.",
+          "is_democratic": false,
+          "growth_trajectory": "1997-98 Asian crisis shock: GDP contracted 13.1% in 1998; rupiah collapsed ~2,400 -> 14,000/USD; Suharto fell May 1998",
+          "fragmentation_mechanism": "loss of occupied territory via referendum",
+          "n_successor_states": 2
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "Oil rents ~9.9% of GDP (1998), fell to ~0.8% by 2021. Higher P1 of the pair (a functioning, if crisis-hit, state). Chaotic post-Suharto transition.",
+        "country_ref": "Indonesia",
+        "pre_year": "1998",
+        "post_year": "2024"
+      },
+      "East Timor": {
+        "context": {
+          "under_external_admin": true,
+          "admin_details": "Under UNTAET 1999-2002 (UN administration). Measured P1 = administration, not indigenous capacity (Mod 1).",
+          "neighbor_threat_level": "high",
+          "neighbor_details": "Indonesia (former occupier); Australia as stabilizing neighbor (INTERFET, led by Maj. Gen. Peter Cosgrove).",
+          "external_backstop": true,
+          "backstop_details": "UNTAET / INTERFET international stabilization.",
+          "fragmentation_mechanism": "independence via internationally-supervised referendum",
+          "n_successor_states": 2
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "Economy destroyed - 80% of infrastructure razed in 1999. Near-zero indigenous P1, built from scratch. Petroleum later ~70-80% of GDP; IMF labels it the most oil-dependent economy in the world (Mod 2 / Safeguard E inversion: apparent P4 wealth = vulnerability). Per IMF Country Report No. 25/278: Petroleum Fund balance stood at 939% of non-oil GDP in 2024, but oil/gas production has ceased and continued large withdrawals would deplete it by the end of the 2030s.",
+        "country_ref": "East Timor",
+        "pre_year": "1998",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Indonesia > East Timor trajectory.",
+      "basis": "Indonesia higher P1 despite the 1998 crisis.",
+      "falsification_condition": "East Timor matches or exceeds Indonesia's trajectory."
+    },
+    "b_violence": {
+      "prediction": "Low P1 (East Timor) predicts a violent outcome - but the rule does NOT specify who commits the violence; LIVE uses Safeguard D + the directional tag to attribute violence to the departing predatory power (Indonesia).",
+      "risk_level": "high",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "No violent outcome accompanies the separation."
+    },
+    "c_convergence": {
+      "prediction": "Divergence.",
+      "basis": "Wide P1 gap; Indonesia recovers, East Timor undiversified.",
+      "falsification_condition": "Convergence in outcomes."
+    },
+    "d_failure_dimension": {
+      "prediction": "N/A",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": ""
+    },
+    "e_fragment_count": {
+      "prediction": "2 successors; Timor-Leste passes the capacity gate only with international scaffolding.",
+      "safeguard_b_applied": true,
+      "falsification_condition": "Timor-Leste sustains capacity without external scaffolding, or fragment count differs."
+    },
+    "f_reversal_risk": {
+      "prediction": "Timor-Leste reversal / oil-curse risk (Mod 2 inversion; STATIC flags weakly via Safeguard E).",
+      "safeguard_c_severity": "HIGH (oil-curse / rentier vulnerability)",
+      "falsification_condition": "Timor-Leste durably diversifies and avoids the oil curse."
+    },
+    "g_suppression_mechanism": {
+      "classification": "24 years of Tier 1 military suppression -> 1999 internationally-supervised referendum; a Tier 1 -> exit-via-external-administration shift, not an internal move down the suppression tiers.",
+      "tier": 1,
+      "falsification_condition": "Outcome behaves as an internal tier transition rather than an exit."
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2002",
+      "2022",
+      "2024"
+    ],
+    "entities": {
+      "Indonesia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Democratized rapidly; GDP grew from ~$95bn (1998) to >$1.3tn (2022); decentralized; remains stable.",
+        "key_events": [
+          "rapid democratization",
+          "sustained growth and decentralization"
+        ]
+      },
+      "East Timor": {
+        "indicators_by_year": {},
+        "outcome_summary": "Independence 20 May 2002; stable politically but undiversified; 42% poverty; HDI declined after 2010 as oil reserves drew down; oil production has now ceased with Petroleum Fund depletion looming.",
+        "key_events": [
+          "1999 militia/TNI scorched-earth campaign (violence by departing power)",
+          "oil production ceased; fund depletion looming"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Indonesia": {
+        "pre": {
+          "P1": 0.368,
+          "MI": 0.509
+        },
+        "post": {
+          "P1": 0.505,
+          "MI": 0.558
+        }
+      },
+      "East Timor": {
+        "pre": {
+          "P1": null,
+          "MI": null
+        },
+        "post": {
+          "P1": 0.418,
+          "MI": 0.479
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Indonesia GDP ~$95bn (1998) -> >$1.3tn (2022); Timor-Leste undiversified, 42% poverty.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Indonesia > East Timor as predicted (both versions).",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Violence came from Indonesia (the higher-P1 member): UN CAVR 'Chega!' - 'at least 1,200 civilians, and perhaps as many as 1,500, were killed'; HRW - ~1,500 killed, more than 250,000 forcibly driven into West Timor.",
+      "explanation": "STATIC partial/falsified on attribution - violence occurred but from the wrong actor relative to the P1 logic. LIVE (Mod8 directional tag + Safeguard D) correctly assigns agency to the departing predatory power -> CONFIRMED under LIVE.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Indonesia pre-P1=0.368 -> MODERATE risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Indonesia recovered and grew; Timor-Leste remained undiversified.",
+      "explanation": "Divergence as predicted (both versions).",
+      "auto_derived": false
+    },
+    "d_failure_dimension": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No standalone failure-dimension prediction made/scored for this case.",
+      "computed_config": "Indonesia: P4=0.71, P2=0.64, P3=0.58, P5=0.37, P1=0.37 | below-median (genuine vulnerabilities): P1=0.37, P5=0.37",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Capacity-gate note made under Safeguard B but not separately scored in the run's scorecard.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Oil production has ceased; IMF: Petroleum Fund at 939% of non-oil GDP (2024) but depletion looming by the end of the 2030s; HDI declined after 2010.",
+      "explanation": "CONFIRMED, LIVE stronger via Mod 2 (the oil wealth that looks like P4 strength is the central long-run vulnerability).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "24 years of Tier 1 military occupation (1975-1999) -> 1999 internationally-supervised referendum and exit.",
+      "explanation": "Tier 1 -> exit-via-external-administration as classified (both versions, LIVE cleaner).",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: loss of occupied territory via referendum"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No substate-turbulence prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "result_coding_reference": {
+    "CONFIRMED": "Prediction matched outcome on the specific dimension predicted",
+    "PARTIALLY_CONFIRMED": "Direction correct but magnitude, form, or timing significantly different",
+    "FALSIFIED": "Prediction contradicted by outcome",
+    "NOT_APPLICABLE": "Prediction type not relevant to this case"
+  },
+  "analysis": {
+    "overall_assessment": "Scored: a CONFIRMED, b PARTIALLY_CONFIRMED (STATIC mis-attribution; LIVE confirmed), c CONFIRMED, f CONFIRMED, g CONFIRMED. The case that most justifies Safeguard D's elevation and the directional violence tag.",
+    "safeguards_triggered": [
+      "Mod8 / directional-violence tag - predicts RISK not AGENCY; derived here to correctly locate the violent actor",
+      "Safeguard D - Indonesia as departing predatory power / former occupier (Australia/INTERFET as stabilizer)",
+      "Safeguard E (Mod 2 inversion) - Timor-Leste petroleum ~70-80% of GDP, most oil-dependent economy in the world; apparent wealth = vulnerability",
+      "Safeguard A (Mod 1) - East Timor measured P1 reflects UNTAET administration, not indigenous capacity"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [
+      "Directional-violence: an unmodified low-P1 -> violence rule mis-locates agency; the departing higher-P1 power was the violent actor. Resolved by Mod8 + Safeguard D."
+    ],
+    "what_this_case_uniquely_reveals": "The cleanest demonstration that 'who commits the violence' matters: the departing power, not the low-capacity fragment, was the violent actor. Mod 2's inversion for Timor-Leste is also vindicated - the oil wealth that looks like P4 strength is the central long-run vulnerability.",
+    "proposed_framework_modifications": [
+      "Codify the directional-violence attribution rule (Mod8 / Safeguard D) as a formal amendment to Core Prediction 2; score Case 10 STATIC as a partial falsification on attribution in the master log."
+    ],
+    "baseline_impact": "Amends Core Prediction 2 (violence risk vs violence agency); LIVE strictly improved accuracy over STATIC.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

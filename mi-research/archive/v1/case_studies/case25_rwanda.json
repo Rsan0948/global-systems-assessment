@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "case_name": "Rwanda (developmental authoritarianism; architectural stress case)",
+    "case_id": "case25",
+    "author": "expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "institutional_reconstruction",
+    "geographic_region": "Central Africa / Great Lakes",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Rwanda"
+    ],
+    "key_test": "Whether a high-effectiveness/low-voice P1 needs decomposition; composite kept (see architectural decision).",
+    "round": "expansion_batch1",
+    "notes": "All six WGI dims stored (incl. voice). Architectural decision: P1 composite."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Post-genocide institutional floor.",
+    "entities": {
+      "Rwanda": {
+        "context": {
+          "population": 13800000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "military_dominant": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "legal",
+          "prior_porosity_period": false,
+          "is_democratic_transition": false,
+          "growth_trajectory": "growing",
+          "resource_rents_pct_revenue": 5.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Rwanda",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Stability-with-latent-reversal-risk; positive trajectory driven by effectiveness",
+      "basis": "composite P1 (capacity-led)",
+      "falsification_condition": "collapse despite high effectiveness OR liberalization despite low voice"
+    },
+    "b_violence": {
+      "prediction": "Low near-term violence RISK; elevated latent succession/reversal risk",
+      "risk_level": "low (near-term)",
+      "agency_note": "Mod8",
+      "falsification_condition": ""
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity)",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "Residual vulnerability = accountability/voice, not capacity",
+      "note": "",
+      "falsification_condition": ""
+    },
+    "e_fragment_count": {
+      "prediction": "N/A",
+      "safeguard_b_applied": false,
+      "falsification_condition": ""
+    },
+    "f_reversal_risk": {
+      "prediction": "Latent reversal risk (voice deficit); proposed Safeguard-C extension",
+      "safeguard_c_severity": "latent",
+      "falsification_condition": "liberalization despite low voice"
+    },
+    "g_suppression_mechanism": {
+      "classification": "Legal/institutional ('managed')",
+      "tier": 2,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Low (narrow spread 0.132)",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Rwanda": {
+        "indicators_by_year": {
+          "2024": {
+            "gov_effectiveness": 58.1246,
+            "rule_of_law": 58.6905,
+            "regulatory_quality": 59.1148,
+            "cpi": 57.0,
+            "control_of_corruption": 60.5158,
+            "gii": 19.69,
+            "rd_pct_gdp": 0.7815,
+            "eci": -1.098,
+            "education_index": 0.5124,
+            "life_expectancy_index": 0.7352,
+            "gdp_per_capita_ppp": 3710.8604,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 9.8732,
+            "political_stability": 65.1481,
+            "fsi": 82.3
+          }
+        },
+        "outcome_summary": "Two decades stability, no turnover; HDI 0.189(1994)->0.578(2023); strong growth; tight political control (VA -0.53). Neither falsification condition met.",
+        "key_events": [
+          "developmental authoritarianism",
+          "sustained stability"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Rwanda": {
+        "pre": {
+          "P1": 0.295,
+          "MI": 0.329
+        },
+        "post": {
+          "P1": 0.582,
+          "MI": 0.488
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "realized stability + development; composite P1 0.582 predicts correctly",
+      "explanation": "Decomposition would have biased toward a fragility miscall the record refutes."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "low near-term violence",
+      "explanation": "reversal-risk component OPEN/prospective"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "voice is the depressed dimension",
+      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "f_reversal_risk": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "latent, not yet falsifiable",
+      "explanation": "Logged as open prospective forecast, not a closed win."
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "legal/institutional managed suppression",
+      "explanation": ""
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "narrow spread, no turbulence",
+      "explanation": ""
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Not the framework-breaker feared; composite P1 holds. Part prospective.",
+    "safeguards_triggered": [
+      "G"
+    ],
+    "safeguards_that_should_have_triggered": [
+      "proposed Safeguard-C extension (non-transition developmental authoritarian)"
+    ],
+    "new_failure_modes_discovered": [
+      "high-capacity/low-voice latent reversal risk not captured by current Safeguard C"
+    ],
+    "what_this_case_uniquely_reveals": "In 2025-anchored WGI the effectiveness/voice gap is inside the margin; composite predicts realized stability.",
+    "proposed_framework_modifications": [
+      "Safeguard-C extension to non-transition developmental authoritarian states (qualitative flag only)"
+    ],
+    "baseline_impact": "Architectural decision: keep P1 composite; no engine change; baseline unchanged.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

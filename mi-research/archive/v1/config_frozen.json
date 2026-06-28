@@ -1,0 +1,92 @@
+{
+  "WEIGHTS_MI_V1": {
+    "P1": 0.34,
+    "P2": 0.15,
+    "P3": 0.16,
+    "P4": 0.2,
+    "P5": 0.16
+  },
+  "LENS": {
+    "min_pillars_for_mi": 3,
+    "resource_rents_full_dependence_pct": 50.0,
+    "oda_full_dependence_pct": 20.0,
+    "fsi_max": 120.0,
+    "eci_default_min": -2.5,
+    "eci_default_max": 2.5,
+    "gdp_ppp_floor": 500.0,
+    "gdp_ppp_ceiling": 150000.0,
+    "mod4_margin": 0.1,
+    "p1_bottom_third": 0.33,
+    "p1_median": 0.5,
+    "p1_strategy_authoritarian": 0.4,
+    "p1_porosity_min": 0.6,
+    "p1_complexity_control_min": 0.7,
+    "spread_critical": 0.5,
+    "spread_warning": 0.35,
+    "f_executive_collapses_min": 2,
+    "small_population": 10000000
+  },
+  "TIERS": {
+    "1": {
+      "name": "Fully Modernized",
+      "m_score_min": 0.8
+    },
+    "2": {
+      "name": "Highly Modernized",
+      "m_score_min": 0.6
+    },
+    "3": {
+      "name": "Moderately Modernized",
+      "m_score_min": 0.4
+    },
+    "4": {
+      "name": "Emerging Modern",
+      "m_score_min": 0.2
+    },
+    "5": {
+      "name": "Fragile Modern",
+      "m_score_min": 0.0
+    },
+    "6": {
+      "name": "Below Floor",
+      "m_score_min": -Infinity
+    }
+  },
+  "SAFEGUARD_THRESHOLDS": {
+    "B_capacity_gate": {
+      "description": "Minimum P1 for fragment count to indicate manageability",
+      "threshold": "bottom third of Rule of Law (ordinal, not fixed number)",
+      "note": "Apply ordinally due to 2025 WGI revision changing scales"
+    },
+    "C_reversal_risk": {
+      "resource_rents_trigger": 0.3,
+      "youth_unemployment_compound": 0.25,
+      "description": "Democratic transition + weak P4 = reversal risk"
+    },
+    "E_rentier_capture": {
+      "rents_gdp_flag": 0.25,
+      "rents_revenue_unreliable": 0.5,
+      "bidirectional": true,
+      "note": "Negative (capture) AND positive (rent-stabilization)"
+    },
+    "F_substate_turbulence": {
+      "antisystem_vote_threshold": 0.25,
+      "regional_divergence_threshold": 0.3,
+      "description": "Chronic management load indicator, not collapse predictor"
+    }
+  },
+  "WEIGHTS_EQUAL": {
+    "P1": 0.2,
+    "P2": 0.2,
+    "P3": 0.2,
+    "P4": 0.2,
+    "P5": 0.2
+  },
+  "WEIGHTS_ARCHIVED_HAND_V0": {
+    "P1": 0.25,
+    "P2": 0.25,
+    "P3": 0.2,
+    "P4": 0.2,
+    "P5": 0.1
+  }
+}
