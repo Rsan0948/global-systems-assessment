@@ -278,5 +278,24 @@
     "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
     "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
-  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "miss",
+      "3": "miss",
+      "5": "miss",
+      "7": "miss",
+      "10": "miss",
+      "15": "abstain",
+      "20": "abstain",
+      "28": "abstain"
+    },
+    "ordinal_holds_to_years": 0,
+    "note": "ordinal mis-ranks from 1y lead (structural exception, not a timing effect)"
+  }
 }

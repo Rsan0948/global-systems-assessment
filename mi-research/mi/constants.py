@@ -105,6 +105,23 @@ LENS = {
 # Active MI model version (V3 = V2 + the consolidated-pair Mod4 extension above).
 MI_MODEL_VERSION = "v3"
 
+# === LEAD-TIME / FORESIGHT CONFIG (single source; the per-case structural fact reads this) ===
+# How far before the outcome the framework still predicts accurately. Empirical finding:
+# the ORDINAL/STRUCTURAL signal (who is more durable; is a state structurally fragile) is stable
+# ~10-28 years out (institutional rank is persistent); the ACUTE-TIMING signal (when a stable-
+# looking state actually turns over) is only ~3-5 years out (the framework is directional, not a
+# timing oracle - Mod8). Predictor = pre-event P1 at (outcome_anchor - lead); Mod4 + consolidated-
+# pair gates apply (an abstention is "correctly cautious", not a miss).
+LEAD_TIME = {
+    "outcome_anchor": 2024,
+    "leads_years": [1, 3, 5, 7, 10, 15, 20, 28],
+    "structural_horizon_years": 10,        # ordinal/fragility signal reliable to >= this (empirically ~28)
+    "acute_timing_horizon_years": "3-5",   # collapse/turn-over date only foreseeable this far out
+    "gates": "Mod4 margin + V3 consolidated-pair caution",
+    "finding": ("ordinal accuracy flat ~92% from 1y to 28y (no horizon decay; rank is persistent); "
+                "21/26 single-entity risk tiers stable across a decade; acute timing ~3-5y only."),
+}
+
 # === INDICATOR SPECIFICATIONS ===
 INDICATORS = {
     "P1": {
