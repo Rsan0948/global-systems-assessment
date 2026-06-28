@@ -12,6 +12,9 @@ touching code. Read `README.md` for the project's scientific framing and
 > - `mi-research/` — Modernization Index *scoring/diagnostic/retrodiction engine*
 >   (consumes per-country data → MI scores + case-study validation). Carries the
 >   `MASTER_REFERENCE_ARCHITECTURE.md` source-of-truth spec.
+> - `mi-website/` — the planned public *website* for the Modernization Index
+>   (pre-development; currently just `DESIGN_SPEC.md`). Consumes `mi-research`'s
+>   engine/data and `mi_pipeline`'s ingestion — it does not re-implement them.
 
 ## What this project is (in one paragraph)
 
