@@ -1,0 +1,160 @@
+{
+  "title": "MI v3 \u2014 SEALED prospective flags (acute pre-turn signature, 2024 baseline)",
+  "status": "SEALED \u2014 frozen before outcomes; do not re-tune. Score out once WGI ~2028 is published (~2030).",
+  "frozen_date": "2026-06-28",
+  "model": "MI v3 (equal weights + consolidated-pair caution); data = WGI 2025-anchored, 180-country panel.",
+  "method": "Acute pre-turn signature = P1 down >=0.03 AND pillar spread widening >=0.03 since 2018, from a non-floor level (P1>0.33). The framework's acute-timing horizon is ~3-5y (mi.constants.LEAD_TIME); these are directional RISK flags, NOT dated forecasts (Mod8).",
+  "evaluation_window": "2025-2029",
+  "score_out_year": 2030,
+  "calibration_caveat": "Acute horizon calibrated on n=2 turns (Chile 2019, Lebanon 2019) -> preliminary. These flags are the out-of-sample test of that horizon.",
+  "reference": "docs/lead_time_analysis.md ; mi.constants.LEAD_TIME",
+  "flags": {
+    "United States": {
+      "iso3": "USA",
+      "tier": "A",
+      "baseline_2024": {
+        "P1": 0.731,
+        "P2": 0.729,
+        "P3": 0.909,
+        "P4": 0.942,
+        "P5": 0.633,
+        "equal_MI": 0.789,
+        "spread": 0.31
+      },
+      "delta_2018_2024": {
+        "P1": -0.043,
+        "P5": -0.064,
+        "spread": 0.066
+      },
+      "prediction": "Elevated risk of a stability/cohesion shock or contested institutional episode (managed instability) within the window \u2014 NOT state fragmentation or collapse (P3/P4 remain high). If the flag is real, expect P5 (stability) to keep falling and the pillar spread to keep widening.",
+      "falsification_condition": "FALSE POSITIVE if, by the score-out, P5 has RECOVERED toward its 2018 level AND the spread has NARROWED, with no notable national instability/cohesion episode in 2025-2029.",
+      "watch_signal": "P5 (political stability/cohesion) trajectory + pillar spread (the Chile-2019 signature); economy (P4) staying high while P1/P5 fall is the tell."
+    },
+    "United Kingdom": {
+      "iso3": "GBR",
+      "tier": "A",
+      "baseline_2024": {
+        "P1": 0.757,
+        "P2": 0.734,
+        "P3": 0.944,
+        "P4": 0.917,
+        "P5": 0.677,
+        "equal_MI": 0.806,
+        "spread": 0.267
+      },
+      "delta_2018_2024": {
+        "P1": -0.055,
+        "P5": -0.034,
+        "spread": 0.047
+      },
+      "prediction": "Elevated risk of a stability/cohesion shock or contested institutional episode (managed instability) within the window \u2014 NOT state fragmentation or collapse (P3/P4 remain high). If the flag is real, expect P5 (stability) to keep falling and the pillar spread to keep widening.",
+      "falsification_condition": "FALSE POSITIVE if, by the score-out, P5 has RECOVERED toward its 2018 level AND the spread has NARROWED, with no notable national instability/cohesion episode in 2025-2029.",
+      "watch_signal": "P5 (political stability/cohesion) trajectory + pillar spread (the Chile-2019 signature); economy (P4) staying high while P1/P5 fall is the tell."
+    },
+    "Chile": {
+      "iso3": "CHL",
+      "tier": "A",
+      "baseline_2024": {
+        "P1": 0.673,
+        "P2": 0.476,
+        "P3": 0.894,
+        "P4": 0.875,
+        "P5": 0.664,
+        "equal_MI": 0.716,
+        "spread": 0.418
+      },
+      "delta_2018_2024": {
+        "P1": -0.04,
+        "P5": -0.054,
+        "spread": 0.041
+      },
+      "prediction": "Elevated risk of a stability/cohesion shock or contested institutional episode (managed instability) within the window \u2014 NOT state fragmentation or collapse (P3/P4 remain high). If the flag is real, expect P5 (stability) to keep falling and the pillar spread to keep widening.",
+      "falsification_condition": "FALSE POSITIVE if, by the score-out, P5 has RECOVERED toward its 2018 level AND the spread has NARROWED, with no notable national instability/cohesion episode in 2025-2029.",
+      "watch_signal": "P5 (political stability/cohesion) trajectory + pillar spread (the Chile-2019 signature); economy (P4) staying high while P1/P5 fall is the tell."
+    },
+    "Russia": {
+      "iso3": "RUS",
+      "tier": "B",
+      "baseline_2024": {
+        "P1": 0.355,
+        "P2": 0.487,
+        "P3": 0.799,
+        "P4": 0.896,
+        "P5": 0.416,
+        "equal_MI": 0.591,
+        "spread": 0.541
+      },
+      "delta_2018_2024": {
+        "P1": -0.065,
+        "P5": -0.06,
+        "spread": 0.137
+      },
+      "prediction": "Continued institutional stagnation at/near the floor; elevated fragmentation/violence risk under shock; recovery unlikely without institutional change. (Mod8: risk, not agency or timing.)",
+      "falsification_condition": "FLAG WRONG if, by the score-out, P1 has MATERIALLY RECOVERED (>= +0.05 toward the median) AND the spread has narrowed.",
+      "watch_signal": "P1 floor persistence + spread; for Russia, ignore the war-economy P4 (2024-GDP-gap artifact) and read P1/P5."
+    },
+    "Belarus": {
+      "iso3": "BLR",
+      "tier": "B",
+      "baseline_2024": {
+        "P1": 0.355,
+        "P2": 0.505,
+        "P3": 0.815,
+        "P4": 0.864,
+        "P5": 0.506,
+        "equal_MI": 0.609,
+        "spread": 0.509
+      },
+      "delta_2018_2024": {
+        "P1": -0.089,
+        "P5": -0.053,
+        "spread": 0.083
+      },
+      "prediction": "Continued institutional stagnation at/near the floor; elevated fragmentation/violence risk under shock; recovery unlikely without institutional change. (Mod8: risk, not agency or timing.)",
+      "falsification_condition": "FLAG WRONG if, by the score-out, P1 has MATERIALLY RECOVERED (>= +0.05 toward the median) AND the spread has narrowed.",
+      "watch_signal": "P1 floor persistence + spread; for Russia, ignore the war-economy P4 (2024-GDP-gap artifact) and read P1/P5."
+    },
+    "Kyrgyz Republic": {
+      "iso3": "KGZ",
+      "tier": "B",
+      "baseline_2024": {
+        "P1": 0.367,
+        "P2": 0.437,
+        "P3": 0.775,
+        "P4": 0.685,
+        "P5": 0.471,
+        "equal_MI": 0.547,
+        "spread": 0.409
+      },
+      "delta_2018_2024": {
+        "P1": -0.043,
+        "P5": -0.003,
+        "spread": 0.061
+      },
+      "prediction": "Continued institutional stagnation at/near the floor; elevated fragmentation/violence risk under shock; recovery unlikely without institutional change. (Mod8: risk, not agency or timing.)",
+      "falsification_condition": "FLAG WRONG if, by the score-out, P1 has MATERIALLY RECOVERED (>= +0.05 toward the median) AND the spread has narrowed.",
+      "watch_signal": "P1 floor persistence + spread; for Russia, ignore the war-economy P4 (2024-GDP-gap artifact) and read P1/P5."
+    },
+    "Mali": {
+      "iso3": "MLI",
+      "tier": "B",
+      "baseline_2024": {
+        "P1": 0.336,
+        "P2": 0.289,
+        "P3": 0.436,
+        "P4": 0.555,
+        "P5": 0.202,
+        "equal_MI": 0.364,
+        "spread": 0.353
+      },
+      "delta_2018_2024": {
+        "P1": -0.048,
+        "P5": -0.077,
+        "spread": 0.032
+      },
+      "prediction": "Continued institutional stagnation at/near the floor; elevated fragmentation/violence risk under shock; recovery unlikely without institutional change. (Mod8: risk, not agency or timing.)",
+      "falsification_condition": "FLAG WRONG if, by the score-out, P1 has MATERIALLY RECOVERED (>= +0.05 toward the median) AND the spread has narrowed.",
+      "watch_signal": "P1 floor persistence + spread; for Russia, ignore the war-economy P4 (2024-GDP-gap artifact) and read P1/P5."
+    }
+  }
+}
