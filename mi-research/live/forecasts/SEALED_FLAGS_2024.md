@@ -67,3 +67,13 @@ pending an **absorber sub-index** (judicial independence, electoral integrity, e
 civil-society, veto points) — that, not the four pillars, is where the predictive content lives. The
 US is still the relatively more exposed (steepest P5 decline, no external anchor), but "elevated and
 absorbable," not "pre-collapse."
+
+## Addendum 2 — the validated discriminator REFINES these flags (V3.1 durability gate)
+The N=21 analysis found a discriminator that *does* tune (83% sens / 100% spec / 100% PPV): the
+**P4 − P1 gap** (economy/income minus institutions; `docs/architectural_decisions/v3_1_durability_gate.md`).
+By that validated rule (threshold 0.22), the 2024 gaps are **US ≈ +0.21, UK +0.09, Chile +0.08 — all
+BELOW threshold (absorber-class, NOT structurally crisis-flagged)**; only **Russia (+0.44)** flags
+(Belarus/Kyrgyzstan/Mali also elevated). So the structural read **demotes the Tier-A US/UK flags**
+(institutions roughly keep pace with income) and **confirms the Tier-B authoritarian sliders**. The
+durability gap is the part of the original signature that survives validation; on it the US (closest
+to the line at ~0.21) is "elevated-but-absorbable," the UK lower, and Russia the genuine structural flag.

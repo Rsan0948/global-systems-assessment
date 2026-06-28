@@ -202,6 +202,7 @@ def assess_vulnerability(score: dict, safeguards: dict) -> dict:
     return {
         "risk_level": risk_level,
         "flags": flags,
+        "structural_vulnerability": structural_vulnerability(pillars),
         "below_floor": below_floor_diagnostic(pillars, mi),
         "summary": (
             f"Risk level: {risk_level.upper()}. "
@@ -209,6 +210,32 @@ def assess_vulnerability(score: dict, safeguards: dict) -> dict:
             f"spread = {f'{spread:.3f}' if spread is not None else 'N/A'}, "
             f"{len(triggered_safeguards)} safeguards active."
         ),
+    }
+
+
+def structural_vulnerability(pillars: dict) -> Optional[dict]:
+    """
+    V3.1 structural crisis-vulnerability gate (the "durability gap"): P4 - P1 > threshold means
+    economy/income has outrun institutions ("granted/fragile") -> structurally crisis-prone. This
+    LEVEL discriminator separated real crises from absorbers on the N=21 signature set at 83% sens /
+    100% spec / 100% PPV — far better than the (failed) acute pre-turn DECLINE signature, because a
+    level is forward-available while a decline emerges only at/after the event. Returns None if P1/P4
+    unavailable. NOT a dated forecast (Mod8) — a structural risk flag; idiosyncratic acute events
+    (Chile, S.Korea) have no structural warning and are out of scope.
+    """
+    p1 = pillars.get("P1"); p4 = pillars.get("P4")
+    if p1 is None or p4 is None:
+        return None
+    gap = p4 - p1
+    flagged = gap > LENS["structural_vulnerability_gap"]
+    return {
+        "p4_minus_p1_gap": round(gap, 3),
+        "flagged": flagged,
+        "reading": ("STRUCTURALLY VULNERABLE — income/economy has outrun institutions "
+                    "(granted/fragile); elevated crisis risk under shock."
+                    if flagged else
+                    "institutions roughly keep pace with income — not structurally crisis-flagged "
+                    "(absorber-class on this measure)."),
     }
 
 

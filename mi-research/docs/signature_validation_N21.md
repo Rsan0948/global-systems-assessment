@@ -57,6 +57,15 @@ moderate, not high; its fragility was the *level/spread*, not a sharp pre-event 
   stress without firing) and the *absorber* phenomenon itself (Poland reversed; Canada/Germany
   absorbed) — i.e., the interesting science is in **shock-absorption**, not in the pre-turn signature.
 
+## The successful tune (hits-vs-misses shape) → V3.1
+The decline signature failed, but the hits and misses **do** have a predictable shape, and it tunes:
+the **P4 − P1 gap** (economy/income minus institutions; a LEVEL, not a trajectory) separates crises
+(mean 0.29) from absorbers (mean 0.10). **Rule P4 − P1 > 0.22 → 83% sens / 100% spec / 100% PPV** on
+N=21 (only misses = Chile, South Korea — idiosyncratic acute, no structural warning). It is the
+durability ratio re-derived as a forward gate, adopted as V3.1
+(`docs/architectural_decisions/v3_1_durability_gate.md`; `LENS.structural_vulnerability_gap`).
+It also corrects the US/UK alarm (their gaps ~0.09–0.21 are below threshold = absorber-class).
+
 ## Honest caveats
 - Anchored WGI (.SC) is smoother than percentile-rank/estimate vintages; some declines the doc saw
   in those vintages are flatter here. This is the consistent vintage we use throughout; it's the

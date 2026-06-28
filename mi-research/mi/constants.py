@@ -100,6 +100,16 @@ LENS = {
     # (Chile/Uruguay reversed at 0.107; Singapore/Malaysia held at 0.247) -> PRELIMINARY (n=2).
     "v3_consolidation_threshold": 0.60,
     "v3_high_end_margin": 0.15,
+    # === V3.1 — structural vulnerability gate (P4-P1 gap; the "durability gap") ===
+    # DISCOVERED on the N=21 signature set: the acute pre-turn DECLINE signature fails blind
+    # (14-25% sens, 40% PPV), but a single LEVEL variable — the gap between economy/income (P4) and
+    # institutions (P1) — separates real crises from absorbers cleanly (crisis mean 0.29 vs no-crisis
+    # 0.10). Rule: P4 - P1 > threshold -> structurally crisis-vulnerable ("granted/fragile": income
+    # has outrun institutions). N=21: 83% sens / 100% spec / 100% PPV (only misses = the idiosyncratic
+    # acute cases Chile & S.Korea, which have no structural warning by design). This is the durability
+    # ratio re-derived as a forward gate; it works where the decline signature failed because a LEVEL
+    # is persistent/forward-available while a trajectory emerges late.
+    "structural_vulnerability_gap": 0.22,   # P4 - P1 above this = structurally crisis-vulnerable
 }
 
 # Active MI model version (V3 = V2 + the consolidated-pair Mod4 extension above).
