@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "case_name": "German reunification (fusion / complexity expansion)",
+    "case_id": "case15",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "fusion",
+    "geographic_region": "Central Europe / Germany",
+    "time_period": "1990 -> 2024",
+    "entities": [
+      "Germany"
+    ],
+    "key_test": "Highest-P1 case absorbs extreme complexity (fusion) non-violently; Safeguard F triggered (AfD >25% + regional divergence ~30%) yet no collapse; Mod10 backstop (federalism + Basic Law eternity clause).",
+    "round": "baseline_run4",
+    "notes": "Run4 Case 15. WGI cited on World Bank estimate scale (-2.5 to +2.5). Existing-dataset P1=0.890 used as given for ordinal placement (highest of the five). Most pillar values ordinal/estimated, not cardinal."
+  },
+  "pre_event": {
+    "time_point": "1990",
+    "event_description": "Reunification: West Germany absorbs ~16 million people from the radically different East German institutional system -- fusion / complexity expansion.",
+    "entities": {
+      "Germany": {
+        "indicators": {
+          "gov_effectiveness": 1.19,
+          "rule_of_law": 1.53,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "none",
+          "has_federalism": true,
+          "regional_antisystem_vote": 0.328,
+          "regional_gdp_divergence": 0.30,
+          "fragmentation_mechanism": "fusion",
+          "prior_porosity_period": false,
+          "external_backstop": true,
+          "backstop_details": "Mod10 backstop: federalism + the Basic Law's eternity clause (Art. 79(3)) + federal-intervention powers."
+        },
+        "data_gaps": [
+          "control_of_corruption",
+          "regulatory_quality",
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "Highest P1 of the five (existing dataset P1=0.890; WGI RoL ~1.53, GE ~1.19, estimate scale). regional_antisystem_vote recorded as the peak AfD 2024 state result (Thuringia 32.8%); also Saxony 30.6% (behind CDU 31.9%) and ~29% Brandenburg -- all well above the 25% Safeguard F threshold. Regional divergence near/above 30% (eastern GDP/cap ~66-72% of West; eastern productivity ~80% of western)."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Highest P1 -> best outcome: high capacity absorbs extreme complexity; non-violent, democratic stress expression and higher absolute convergence.",
+      "basis": "P1=0.890 (highest of five); complexity-capacity matching.",
+      "falsification_condition": "Government collapse, secession, or political violence."
+    },
+    "b_violence": {
+      "prediction": "No political violence; strain channelled through democratic politics.",
+      "risk_level": "low",
+      "agency_note": "Mod8: predicts RISK.",
+      "falsification_condition": "Political violence emerges."
+    },
+    "c_convergence": {
+      "prediction": "Persistent East-West configuration mismatch (convergence stalls), expressed non-violently.",
+      "basis": "Eastern GDP/cap ~66-72% of West, barely moved since ~2000; productivity ~80%.",
+      "falsification_condition": "Full East-West convergence, or mismatch turning violent."
+    },
+    "d_failure_dimension": {
+      "prediction": "Configuration mismatch (regional / East-West economic), expressed via the AfD's rise rather than institutional failure.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Failure driven by an institutional (P1) collapse."
+    },
+    "e_fragment_count": {
+      "prediction": "No secession; state stays intact.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Secession or territorial fragmentation."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A -- not a democratic-transition reversal case.",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A -- fusion / complexity expansion (Mod6: centripetal), not a suppression case.",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Safeguard F triggered (AfD >25% in eastern states + regional divergence ~30%), yet no government collapse, no secession, no political violence; Mod10 backstop = federalism + Basic Law eternity clause.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Safeguard F triggers translate into collapse/secession/violence."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2000",
+      "2024"
+    ],
+    "entities": {
+      "Germany": {
+        "indicators_by_year": {},
+        "outcome_summary": "High capacity absorbed extreme complexity: real strain, channelled non-violently through democratic politics. East-West convergence stalled (eastern GDP/cap ~66-72% of West, barely moved since ~2000; productivity ~80%). Political expression = AfD rise above the 25% Safeguard F threshold. No government collapse, no secession, no political violence.",
+        "key_events": [
+          "Absorbed ~16 million people from a radically different institutional system",
+          "2024 Thuringia state election: AfD won with 32.8% -- first far-right plurality in a German state election since 1945",
+          "2024 Saxony: AfD 30.6% (behind CDU 31.9%); Brandenburg ~29%",
+          "Regional divergence near/above 30% persists; expressed via politics, not violence or secession"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "High capacity absorbed extreme complexity; strain real but channelled non-violently through democratic politics.",
+      "explanation": "Highest-P1 case produced the best outcome, as predicted (thesis confirmed)."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "No political violence; no government collapse, no secession.",
+      "explanation": "Strain expressed through democratic politics, as predicted."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Eastern GDP/cap ~66-72% of West and 'barely moved since ~2000'; productivity ~80%.",
+      "explanation": "Persistent configuration mismatch realized and expressed non-violently, as predicted."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "Strain surfaced as the AfD's rise (regional/economic mismatch), not as institutional collapse.",
+      "explanation": "Configuration-mismatch dimension confirmed."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "No secession.",
+      "explanation": "State intact, as predicted."
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case."
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Fusion / complexity expansion, not a suppression case."
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "AfD >25% (Thuringia 32.8%) + regional divergence ~30% -- Safeguard F triggered -- yet no collapse/secession/violence; Mod10 backstop = federalism + Basic Law eternity clause (Art. 79(3)).",
+      "explanation": "Safeguard F triggers were absorbed by the porosity-with-backstop architecture, confirming Mod10/Safeguard I."
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Thesis confirmed: the highest-P1 case absorbed extreme fusion complexity non-violently. Real, persistent East-West strain channelled through democratic politics; no collapse, secession, or violence.",
+    "safeguards_triggered": [
+      "F (AfD >25% in eastern states + regional divergence ~30%)",
+      "I (porosity-with-backstop, Mod10: federalism + Basic Law eternity clause Art. 79(3))"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Fusion-driven complexity expansion under the highest P1 produces persistent configuration mismatch that is channelled non-violently when a hard constitutional backstop (Basic Law eternity clause + federal intervention) catches the strain.",
+    "proposed_framework_modifications": [
+      "Strengthens the complexity-capacity thesis and P1 ordinality.",
+      "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard."
+    ],
+    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check."
+  }
+}

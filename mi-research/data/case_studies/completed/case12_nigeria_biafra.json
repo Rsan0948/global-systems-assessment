@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "case_name": "Nigeria / Biafra",
+    "case_id": "case12",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "suppressed_fragmentation",
+    "geographic_region": "West Africa",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Nigeria"
+    ],
+    "key_test": "The run's hardest case and most important correction: Safeguard E is NOT triggered (oil rents never crossed the 30% inversion threshold). Nigeria's 55-year unity is a Safeguard B + Tier 3 porosity-with-backstop (candidate Safeguard I) phenomenon, not a rentier-stabilization story.",
+    "round": "baseline_run3",
+    "notes": "NOTE ON TASK BRIEF: the brief's parenthetical ('case12 confirms bidirectional Safeguard E') is contradicted by the source run, which explicitly states Safeguard E does NOT apply to Nigeria (rents below 30%). Transcribed faithfully to the run. Single-entity case. WGI legacy-scale values recorded in notes; WGI vintage discrepancies flagged in the source."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Biafra War (1967-70, 1-3 million dead, mostly starvation) = Tier 1 military suppression; post-war 36-state federalism = Tier 3 porosity (genuine federal accommodation across 250+ ethnic groups) with a Tier 1 backstop. Scored longitudinally over 1996-2024 as a suppressed/unified state.",
+    "entities": {
+      "Nigeria": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": 2140.0,
+          "resource_rents_pct_gdp": 22.34,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "neighbor_threat_level": "none",
+          "is_authoritarian": true,
+          "has_federalism": true,
+          "prior_porosity_period": true,
+          "external_backstop": false,
+          "fragmentation_mechanism": "suppressed secession (Biafra) channeled by federal porosity",
+          "n_successor_states": null,
+          "resource_rents_pct_revenue": null
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "WGI (legacy -2.5/+2.5): Rule of Law ~ -1.10 (1996), -0.89 ('23)/-1.01 ('24); Govt Effectiveness -0.92 (1996) -> -0.85/-1.01 ('23/'24); Control of Corruption -1.19 (1996) -> -1.10/-1.11; Political Stability -1.06 (1996) -> -2.04 (2012), -2.10 (2018), -1.96/-2.00 ('23/'24). Oil rents % GDP: 1996 = 17.77%, 2004 = 15.29%, 2012 = 13.99%, 2018 = 8.84%, 2019 = 7.40% (never crossing 30%). Total natural resource rents % GDP: 1996 = 22.34%, 2004 = 17.52%, 2012 = 16.82%, 2018 = 11.46%, 2021 = 8.55%. GDP per capita PPP (2011 ICP): 1996 ~$2,140; 2018 ~$5,279. HDI 2022 = 0.548, 2023 = 0.560. CPI 2018 = 27, 2024 = 26 (140/180). FSI 2007 = 95.6, 2016 = 103.5 (max), 2018 = 99.91, 2024 = 96.6 (8th most fragile in Africa). Existing MI 2024 snapshot M-Score = -0.206 (below floor; worst in dataset). Derived: floor P1; P5 deeply negative (~-2.0); wide spread."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "As a unified state: low and stagnant MI; chronic instability but continued unity.",
+      "basis": "Floor P1; capacity gate + Tier 3 porosity.",
+      "falsification_condition": "Nigeria either stabilizes to a high trajectory or breaks up."
+    },
+    "b_violence": {
+      "prediction": "HIGH, chronic, regionally distributed violence.",
+      "risk_level": "critical",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Violence is low or absent."
+    },
+    "c_convergence": {
+      "prediction": "Will Nigeria fragment? Floor P1 + centrifugal pressure = fragmentation RISK, BUT capacity gate + Tier 3 porosity predict CONTAINMENT short of breakup.",
+      "basis": "Centrifugal pressure channeled, not resolved, by federal accommodation.",
+      "falsification_condition": "Nigeria fragments into successor states."
+    },
+    "d_failure_dimension": {
+      "prediction": "Primary vulnerability P5 (political stability, ~-2.0, among world's lowest) + P1.",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Primary vulnerability located on an unrelated dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "Suppression classification: Biafra = Tier 1 military suppression; post-war 36-state federalism = Tier 3 porosity + Tier 1 backstop (porosity WITH a suppression backstop, not 'Tier 1 in civilian clothing').",
+      "safeguard_b_applied": true,
+      "falsification_condition": "Federalism behaves as pure suppression with no genuine accommodation."
+    },
+    "f_reversal_risk": {
+      "prediction": "Oil rents stabilizing fiscally but NOT a Safeguard-E rentier-capture case (below the 30% inversion threshold throughout). CRITICAL question (framework failure or Safeguard E confirmation?): Neither, cleanly - it is a Safeguard B + Tier 3 porosity confirmation.",
+      "safeguard_c_severity": "N/A (Mod 7 / Safeguard C analogy does NOT trigger - Nigeria lacks sustained high growth)",
+      "falsification_condition": "Oil rents exceed 30% of GDP and drive a rentier-stabilization dynamic."
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A (suppression classification carried under prediction e for this case)",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Centrifugal risk profile (Boko Haram NE, IPOB SE, Niger Delta militancy, banditry NW) - but contained below the breakup threshold.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Turbulence resolves or escalates to breakup."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2018",
+      "2024"
+    ],
+    "entities": {
+      "Nigeria": {
+        "indicators_by_year": {
+          "2024": {
+            "fsi": 96.6,
+            "cpi": 26
+          }
+        },
+        "outcome_summary": "Remained unified 55+ years post-Biafra. Political Stability WGI deteriorated markedly (-1.06 in 1996 -> ~-2.0 by 2018-24). Worst MI in the 2024 snapshot (M-Score -0.206). Multiple active insurgencies (Boko Haram, banditry, separatist agitation) but no successful secession; IPOB agitation suppressed; 2023 elections held; CPI stuck at 26-27.",
+        "key_events": [
+          "55+ years of unity",
+          "multiple simultaneous insurgencies, no breakup"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Low, stagnant MI (worst 2024 snapshot M-Score -0.206); chronic instability; continued unity.",
+      "explanation": "Unified low-trajectory outcome as predicted (both versions)."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "HIGH, chronic, regionally distributed violence (Boko Haram, banditry, separatist agitation).",
+      "explanation": "Violence profile matched the prediction (both versions)."
+    },
+    "c_convergence": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Fragmentation pressure present, breakup absent.",
+      "explanation": "LIVE's capacity-gate + porosity framing scores better than a naive 'floor P1 -> fragmentation' reading; pressure is real but containment held."
+    },
+    "d_failure_dimension": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Primary-vulnerability prediction (P5 + P1) made but not separately scored in the run's scorecard."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Biafra = Tier 1; federalism = Tier 3 porosity + Tier 1 backstop.",
+      "explanation": "Suppression classification confirmed; porosity with a suppression backstop channels centrifugal pressure short of breakup."
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Oil rents = 8.8% of GDP (2018) and total resource rents ~11-22% across the period - below the 30% inversion threshold throughout.",
+      "explanation": "Corrects the prior assumption: Safeguard E does NOT apply. Nigeria's unity is a porosity-plus-capacity-gate phenomenon, not rentier stabilization. Mod 2's non-triggering validates the 30% rule's discriminating power."
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Suppression classification was scored under prediction e for this case."
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Centrifugal-containment described under Safeguard H/I but not separately scored in the run's scorecard."
+    }
+  },
+  "result_coding_reference": {
+    "CONFIRMED": "Prediction matched outcome on the specific dimension predicted",
+    "PARTIALLY_CONFIRMED": "Direction correct but magnitude, form, or timing significantly different",
+    "FALSIFIED": "Prediction contradicted by outcome",
+    "NOT_APPLICABLE": "Prediction type not relevant to this case"
+  },
+  "analysis": {
+    "overall_assessment": "Scored: a CONFIRMED, b CONFIRMED, c PARTIALLY_CONFIRMED, e CONFIRMED, f CONFIRMED (corrects prior assumption). The run's hardest case; LIVE prevented a STATIC over-prediction of breakup.",
+    "safeguards_triggered": [
+      "Safeguard B (capacity gate) + Tier 3 porosity-with-backstop (candidate Safeguard I) - the real explanation for Nigeria's 55-year unity: floor-P1 turbulence channeled, not resolved, by federal accommodation",
+      "Mod 5 (capacity gate first) - below bottom-third Rule of Law -> catastrophic/floor classification up front",
+      "Mod 6 (centrifugal classifier) - multiple simultaneous insurgencies, but contained below the breakup threshold",
+      "Safeguard E (Mod 2) - explicitly NOT triggered: oil rents never crossed 30% (a negative confirmation validating the 30% rule)",
+      "Mod 7 (Bangladesh/Safeguard C analogy) - NOT triggered: Nigeria lacks the sustained high-growth half of the pattern"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [
+      "Porosity-with-backstop containment: Tier 3 federal accommodation + a Tier 1 suppression backstop can contain floor-P1 centrifugal pressure short of breakup (candidate Safeguard I)."
+    ],
+    "what_this_case_uniquely_reveals": "The tempting 'oil rents buy stability' story is quantitatively false at the Safeguard-E threshold. Nigeria's unity is a porosity-plus-capacity-gate phenomenon, not a rentier-stabilization phenomenon. The framework is NOT falsified by Nigeria's persistence because it predicts turbulence rather than deterministic breakup - but only LIVE (Mod 5 + Tier 3 porosity classification) states this correctly.",
+    "proposed_framework_modifications": [
+      "Add a candidate Safeguard I - 'Porosity-with-backstop' - to formalize the Nigeria pattern (Tier 3 federal accommodation + Tier 1 suppression backstop = containment of centrifugal pressure short of breakup); demote Mod 7 to provisional until a genuine high-growth + floor-P1 case appears."
+    ],
+    "baseline_impact": "Corrects a prior 'oil buys stability' assumption; re-audit any prior case that assumed rentier stabilization without checking the rents-to-GDP ratio."
+  }
+}

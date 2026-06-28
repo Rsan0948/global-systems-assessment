@@ -1,0 +1,112 @@
+{
+  "country": "DR Congo",
+  "iso3": "COD",
+  "region": "Central Africa",
+  "notes": "Case 24 (DRC vs Rwanda). Chronically collapsed state; resource rents 38.8% GDP (2021). WGI 2025-anchored series.",
+  "indicators_by_year": {
+    "1996": {
+      "gov_effectiveness": 19.37,
+      "rule_of_law": 26.78,
+      "regulatory_quality": 22.46,
+      "control_of_corruption": 10.85,
+      "voice_accountability": 22.78,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.34,
+      "life_expectancy_index": 0.452,
+      "gdp_per_capita_ppp": 526.17,
+      "resource_rents_pct_gdp": 36.3,
+      "oda_pct_gni": 3.08,
+      "political_stability": 20.25,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2012": {
+      "gov_effectiveness": 20.75,
+      "rule_of_law": 28.18,
+      "regulatory_quality": 32.65,
+      "control_of_corruption": 20.06,
+      "voice_accountability": 31.54,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.442,
+      "life_expectancy_index": 0.575,
+      "gdp_per_capita_ppp": 647.8,
+      "resource_rents_pct_gdp": 27.12,
+      "oda_pct_gni": 10.01,
+      "political_stability": 28.03,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2018": {
+      "gov_effectiveness": 21.8,
+      "rule_of_law": 28.45,
+      "regulatory_quality": 34.43,
+      "control_of_corruption": 16.85,
+      "voice_accountability": 33.17,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.519,
+      "life_expectancy_index": 0.614,
+      "gdp_per_capita_ppp": 1048.87,
+      "resource_rents_pct_gdp": 18.42,
+      "oda_pct_gni": 5.59,
+      "political_stability": 33.5,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2023": {
+      "gov_effectiveness": 19.1,
+      "rule_of_law": 29.33,
+      "regulatory_quality": 35.02,
+      "control_of_corruption": 17.71,
+      "voice_accountability": 37.15,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.549,
+      "life_expectancy_index": 0.645,
+      "gdp_per_capita_ppp": 1730.62,
+      "resource_rents_pct_gdp": 38.83,
+      "oda_pct_gni": 6.42,
+      "political_stability": 32.05,
+      "fsi": 106.7,
+      "_gaps": [
+        "gii",
+        "eci"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs). resource_rents from 2021 (latest published; 2023 not available, not interpolated) fsi = Fund for Peace FSI 2024 (latest); pre-2006 years use political_stability alone (Track 2)."
+    }
+  },
+  "context": {
+    "population": 102000000,
+    "is_island": false,
+    "is_democratic": false,
+    "is_authoritarian": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Rwanda/M23 activity in eastern DRC",
+    "resource_rents_pct_gdp": 38.83,
+    "resource_rents_pct_revenue": 40.0,
+    "n_successor_states": null
+  },
+  "data_sources": {
+    "P1_WGI": "World Bank Worldwide Governance Indicators 2025 revision (source 3, GOV_WGI_*.SC anchored 0-100), api.worldbank.org",
+    "P3_HDI": "UNDP HDR 2025 Composite Indices complete time series (le/eys/mys -> UNDP sub-index formulas)",
+    "P4_WDI": "World Bank WDI: NY.GDP.PCAP.PP.CD, NY.GDP.TOTL.RT.ZS, DT.ODA.ODAT.GN.ZS",
+    "P5_FSI": "Fund for Peace Fragile States Index 2024"
+  }
+}

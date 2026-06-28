@@ -1,0 +1,449 @@
+{
+  "metadata": {
+    "case_name": "Yugoslav Successors: Slovenia vs Croatia vs Serbia vs Bosnia-Herzegovina",
+    "case_id": "case02",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "traditional_fragmentation",
+    "geographic_region": "Balkans / Former Yugoslavia",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Slovenia",
+      "Croatia",
+      "Serbia",
+      "Bosnia-Herzegovina"
+    ],
+    "key_test": "P1 ordinal prediction at the violent end, and Safeguard A: Bosnia's post-Dayton governance scores partly reflect the Office of the High Representative's Bonn Powers, so measured capacity overstates indigenous P1.",
+    "round": "baseline_run1",
+    "notes": "Breakup of Yugoslavia into 7 successor states via violent contested secession (engineered). Pre-event 1996, post-Dayton. These countries are NOT in the user M-score dataset; post-event trajectory is qualitative (EU accession milestones). 1996 pillar values are ordinal estimates; the one exact pre-event WGI figure recovered is Croatia's 1996 Rule-of-Law estimate of -0.67 (legacy WGI -2.5..+2.5 scale, all-time low) which is NOT placed in the 0-100 indicator slot to avoid scale-mixing. WGI 2025-anchored vintage caveat applies."
+  },
+  "stress_types_reference": [
+    "traditional_fragmentation",
+    "recursive_fragmentation",
+    "suppressed_fragmentation",
+    "institutional_reconstruction",
+    "fragmentation_prevention",
+    "fusion",
+    "legal_suppression",
+    "extreme_porosity",
+    "prospective",
+    "comparative_trajectory"
+  ],
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Violent dissolution of Yugoslavia into 7 successor states (post-Dayton, 1996); divergent post-war trajectories.",
+    "entities": {
+      "Slovenia": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": true,
+          "youth_unemployment": null,
+          "growth_trajectory": "rising / converges to EU core",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": "engineered",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": 7,
+          "population": null,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "wgi": "World Bank WGI via TheGlobalEconomy.com (1996, ordinal; Slovenia series avg ~1.02, 1998 max 1.26, legacy scale)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "cpi",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "1996 estimate (ordinal): P1 high, balanced -> MI high (~0.45+), narrow spread. Regional leader; WGI Rule of Law ~+1.0 (legacy scale; series averaged ~1.02 with 1998 max 1.26) and Govt Effectiveness highest. HDI 1995 = 0.760; GDP per cap PPP 1996 highest by far; resource rents low; political stability high. Ordering P1: Slovenia >> Croatia > Serbia >= Bosnia. Pillar values are estimates, not exact 0-100 WGI; legacy-scale RoL figure not placed in indicator slot. WGI 2025-anchored vintage caveat applies."
+      },
+      "Croatia": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": true,
+          "youth_unemployment": null,
+          "growth_trajectory": "recovering / strong second",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": "engineered",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": 7,
+          "population": null,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "wgi": "World Bank WGI via TheGlobalEconomy.com (Croatia 1996 Rule-of-Law estimate -0.67, its all-time low, legacy scale)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "cpi",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "1996 estimate (ordinal): P1 moderate-negative, recovering -> MI moderate-low, middle of the four. The one exact pre-event WGI figure recovered for the case: Croatia 1996 Rule of Law = -0.67 (its all-time low; legacy WGI -2.5..+2.5 scale) -- NOT placed in the 0-100 rule_of_law indicator slot to avoid scale-mixing. HDI 1995 medium band; GDP per cap PPP 1996 middle; resource rents low; political stability recovering. WGI 2025-anchored vintage caveat applies."
+      },
+      "Serbia": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "Pariah/sanctioned status under Milosevic.",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": false,
+          "youth_unemployment": null,
+          "growth_trajectory": "stalled / democratic backsliding",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": "engineered",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": 7,
+          "population": null,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "wgi": "World Bank WGI (1996, ordinal; exact 1996 estimate not isolated, clearly negative/bottom)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "cpi",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "1996 estimate (ordinal): P1 negative (~-1, not isolated), P4 sanctions-distorted -> MI low. WGI Rule of Law strongly negative; Govt Effectiveness negative. HDI 1995 = 0.674; GDP per cap PPP 1996 low (sanctions); resource rents low; political stability low (Milosevic). Held back by low P1 plus predatory/pariah status. Pillar values are estimates; exact 1996 WGI not isolated (reported missing, not interpolated). WGI 2025-anchored vintage caveat applies."
+      },
+      "Bosnia-Herzegovina": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": true,
+          "admin_details": "Post-Dayton Office of the High Representative (OHR) holds 'Bonn Powers' -- the power to impose laws and remove elected officials. WGI partly measures international-administrator competence, not indigenous capacity (Safeguard A).",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": false,
+          "youth_unemployment": null,
+          "growth_trajectory": "stalled / ward-of-the-international-community",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": "engineered",
+          "prior_porosity_period": false,
+          "external_backstop": true,
+          "backstop_details": "OHR international administration under the Dayton Agreement.",
+          "n_successor_states": 7,
+          "population": null,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": false,
+          "has_federalism": true,
+          "has_devolution": false,
+          "has_power_sharing": true,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "wgi": "World Bank WGI (1996, ordinal; exact 1996 estimate not isolated, bottom/administrator-driven)",
+          "qualitative": "Dayton Agreement / OHR Bonn Powers"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "cpi",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "hdi_1995",
+          "fsi"
+        ],
+        "notes": "1996 estimate (ordinal): P1 bottom (and externally administered), P5 floor -> MI lowest; widest vulnerability. Safeguard A applied: discount measured capacity because WGI reflects the OHR administrator overlay (Bonn Powers), so indigenous P1 is lower than measured. WGI Rule of Law bottom (not isolated; OHR overlay); Govt Effectiveness bottom/administrator-driven. HDI 1995 not reported (war); GDP per cap PPP 1996 lowest (war-devastated); resource rents low; political stability very low (post-war). Pillar values are estimates; exact 1996 WGI not isolated (reported missing, not interpolated). WGI 2025-anchored vintage caveat applies."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Four-way ordinal: Slovenia > Croatia > Serbia > Bosnia.",
+      "basis": "P1 ordering Slovenia >> Croatia > Serbia >= Bosnia, with Bosnia's measured capacity discounted under Safeguard A.",
+      "falsification_condition": "Any lower-P1 successor out-trajectories a higher-P1 one (e.g., Bosnia surpasses Slovenia)."
+    },
+    "b_violence": {
+      "prediction": "Violence (retroactive) concentrated where pre-war institutional profile was weakest / ethnic-factional fragility highest (Bosnia and Serbia/FRY), not in Slovenia (10-day war, minimal deaths).",
+      "risk_level": "Bosnia/Serbia high; Slovenia low",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Severe violence concentrated in the highest-P1 successor (Slovenia)."
+    },
+    "c_convergence": {
+      "prediction": "Divergence (Slovenia converges to EU core; Bosnia diverges downward).",
+      "basis": "Wide pre-event P1 spread across the four.",
+      "falsification_condition": "Convergence of outcomes across the four successors."
+    },
+    "d_failure_dimension": {
+      "prediction": "Slovenia succeeds on P1; Bosnia fails on indigenous P1 + stability; Serbia held back by P1 + predatory/pariah status; Croatia mid.",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Outcomes driven by a non-P1 dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "7 successors = engineered (violent contested secession, not organic state formation).",
+      "safeguard_b_applied": true,
+      "falsification_condition": "Fragmentation reads as organic/managed."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "Military suppression: the wars were resolved by force/partition (Croatia's Operation Storm, Dayton's military annexes, NATO).",
+      "tier": 1,
+      "falsification_condition": "Resolution achieved by legal/institutional rather than military means."
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "qualitative trajectory (not in user M-score dataset)"
+    ],
+    "entities": {
+      "Slovenia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Best trajectory: EU 2004, eurozone 2007; 'very high human development' (HDI 0.760 -> 0.918, 1995 -> 2021).",
+        "key_events": [
+          "EU accession 2004",
+          "eurozone 2007"
+        ]
+      },
+      "Croatia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Strong second: EU 2013, eurozone/Schengen 2023.",
+        "key_events": [
+          "EU accession 2013",
+          "eurozone and Schengen 2023"
+        ]
+      },
+      "Serbia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Stalled: EU candidate 2012, negotiations 2014, still not a member; democratic backsliding.",
+        "key_events": [
+          "EU candidate 2012",
+          "accession negotiations 2014"
+        ]
+      },
+      "Bosnia-Herzegovina": {
+        "indicators_by_year": {},
+        "outcome_summary": "Worst trajectory: EU candidate only 2022, negotiations conditionally opened March 2024; still under OHR; Republika Srpska secession threats (Dodik, 2025).",
+        "key_events": [
+          "EU candidate 2022",
+          "negotiations conditionally opened March 2024",
+          "Republika Srpska secession threats (2025)"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "EU accession dates map exactly: Slovenia 2004 > Croatia 2013 > Serbia candidate > Bosnia candidate-last.",
+      "explanation": "Four-way P1 ordering reproduced the four-way outcome ordering."
+    },
+    "b_violence": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Institutional weakness is consistent with the violence locus, but the 1996 data is post-war; cannot fully separate pre-war P1 from war damage.",
+      "explanation": "Direction correct (violence concentrated in low-P1 Bosnia/Serbia) but coded conservatively because 1996 measures are post-war."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Slovenia converged to EU core while Bosnia diverged downward.",
+      "explanation": "Outcomes diverged across the spread as predicted."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "CONFIRMED for Slovenia/Bosnia poles; PARTIAL for Serbia/Croatia middle.",
+      "explanation": "The P1-failure dimension holds cleanly at the poles but is mixed for the middle two."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Contested violent secession (7 successors).",
+      "explanation": "Engineered-fragmentation call confirmed."
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No reversal-risk (Safeguard C) prediction was made for this case."
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Tier 1 military suppression: Croatia's Operation Storm, Dayton's military annexes, NATO.",
+      "explanation": "The wars were resolved by force/partition, matching the Tier 1 classification."
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case."
+    }
+  },
+  "result_coding_reference": {
+    "CONFIRMED": "Prediction matched outcome on the specific dimension predicted",
+    "PARTIALLY_CONFIRMED": "Direction correct but magnitude, form, or timing significantly different",
+    "FALSIFIED": "Prediction contradicted by outcome",
+    "NOT_APPLICABLE": "Prediction type not relevant to this case",
+    "coding_rule": "When ambiguous between confirmed and partial, code PARTIAL. When ambiguous between partial and falsified, code PARTIAL but note ambiguity."
+  },
+  "analysis": {
+    "overall_assessment": "Confirms the framework at the violent end of the spectrum. Four-way ordering, divergence, engineered count, and Tier 1 military suppression all CONFIRMED; violence and failure-dimension PARTIALLY CONFIRMED due to post-war measurement and mixed middle. Safeguard A is essential -- without it Bosnia's OHR-inflated governance scores would overstate indigenous capacity and weaken the prediction.",
+    "safeguards_triggered": [
+      "A (Bosnia under OHR/Dayton -- measured > actual capacity)",
+      "B (7 successors, engineered)",
+      "G (military suppression during the wars -- Tier 1)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Validates the framework's handling of externally administered states (Safeguard A). The violence-severity end is anchored by the RDC Sarajevo 'Bosnian Book of the Dead': 97,207 confirmed named dead/missing (66.2% Bosniak, 25.4% Serb, 7.8% Croat), 'the largest existing database on Bosnian war victims' (Ewa Tabeau, ICTY); the wider Yugoslav Wars killed at least 130,000 (Humanitarian Law Center) to 140,000 (ICTJ).",
+    "proposed_framework_modifications": [
+      "Codify Safeguard A: if an OHR-type body holds binding legislative power (Bonn Powers), flag indigenous P1 as 'measured > actual.'"
+    ],
+    "baseline_impact": "None degrading; supports keeping Safeguard A. No 20-case baseline-breaking modification proposed."
+  }
+}

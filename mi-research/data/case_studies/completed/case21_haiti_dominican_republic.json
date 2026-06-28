@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "case_name": "Haiti vs. Dominican Republic",
+    "case_id": "case21",
+    "author": "expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "comparative_trajectory",
+    "geographic_region": "Caribbean / Hispaniola",
+    "time_period": "1996 -> 2023",
+    "entities": [
+      "Haiti",
+      "Dominican Republic"
+    ],
+    "key_test": "P1 ordinal prediction at the low end; wide gap should map to divergence (Mod4 should NOT trigger).",
+    "round": "expansion_batch1",
+    "notes": "WGI 2025-anchored vintage. Shared-island Acemoglu-style natural experiment."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Chronic institutional divergence on a shared island.",
+    "entities": {
+      "Haiti": {
+        "indicators": {
+          "gov_effectiveness": 25.02,
+          "rule_of_law": 32.96,
+          "regulatory_quality": 32.25,
+          "cpi": null,
+          "control_of_corruption": 28.31,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": 0.377,
+          "life_expectancy_index": 0.556,
+          "gdp_per_capita_ppp": 2069.61,
+          "resource_rents_pct_gdp": 0.94,
+          "oda_pct_gni": 11.34,
+          "political_stability": 48.78,
+          "fsi": null
+        },
+        "context": {
+          "population": 11700000,
+          "is_island": true,
+          "is_democratic": false,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "none",
+          "neighbor_details": "Shares Hispaniola with DR; no predatory-power dynamic",
+          "resource_rents_pct_revenue": 1.0
+        },
+        "data_gaps": [
+          "gii",
+          "eci",
+          "fsi"
+        ],
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+      },
+      "Dominican Republic": {
+        "indicators": {
+          "gov_effectiveness": 45.45,
+          "rule_of_law": 46.64,
+          "regulatory_quality": 46.04,
+          "cpi": null,
+          "control_of_corruption": 44.42,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": 0.489,
+          "life_expectancy_index": 0.763,
+          "gdp_per_capita_ppp": 5160.99,
+          "resource_rents_pct_gdp": 0.7,
+          "oda_pct_gni": 0.47,
+          "political_stability": 62.58,
+          "fsi": null
+        },
+        "context": {
+          "population": 11300000,
+          "is_island": true,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "none",
+          "resource_rents_pct_revenue": 3.0
+        },
+        "data_gaps": [
+          "gii",
+          "eci",
+          "fsi"
+        ],
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Dominican Republic > Haiti",
+      "basis": "P1 ordinality; gap 0.160 > 0.10 margin",
+      "falsification_condition": "Haiti matches or exceeds DR trajectory"
+    },
+    "b_violence": {
+      "prediction": "Haiti elevated violence RISK (P1 bottom-third)",
+      "risk_level": "critical",
+      "agency_note": "Mod8: risk not agency",
+      "falsification_condition": "Haiti remains peaceful and stable"
+    },
+    "c_convergence": {
+      "prediction": "Divergence",
+      "basis": "P1 gap > 0.15",
+      "falsification_condition": "convergence in MI/outcomes"
+    },
+    "d_failure_dimension": {
+      "prediction": "Haiti fails on P1/institutions",
+      "note": "post-hoc risk",
+      "falsification_condition": "Haiti's failure driven by non-P1 dimension"
+    },
+    "e_fragment_count": {
+      "prediction": "N/A",
+      "safeguard_b_applied": false,
+      "falsification_condition": ""
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2023"
+    ],
+    "entities": {
+      "Haiti": {
+        "indicators_by_year": {
+          "2023": {
+            "gov_effectiveness": 12.24,
+            "rule_of_law": 28.71,
+            "regulatory_quality": 30.5,
+            "cpi": null,
+            "control_of_corruption": 17.47,
+            "gii": null,
+            "rd_pct_gdp": null,
+            "eci": null,
+            "education_index": 0.482,
+            "life_expectancy_index": 0.691,
+            "gdp_per_capita_ppp": 3291.74,
+            "resource_rents_pct_gdp": 0.33,
+            "oda_pct_gni": 5.43,
+            "political_stability": 49.3,
+            "fsi": 103.5
+          }
+        },
+        "outcome_summary": "P1 0.296->0.222; state collapse: 2021 presidential assassination, gang control of Port-au-Prince by 2024.",
+        "key_events": [
+          "2021 Moise assassination",
+          "2024 gang takeover"
+        ]
+      },
+      "Dominican Republic": {
+        "indicators_by_year": {
+          "2023": {
+            "gov_effectiveness": 52.23,
+            "rule_of_law": 52.81,
+            "regulatory_quality": 55.63,
+            "cpi": null,
+            "control_of_corruption": 39.15,
+            "gii": null,
+            "rd_pct_gdp": null,
+            "eci": null,
+            "education_index": 0.693,
+            "life_expectancy_index": 0.826,
+            "gdp_per_capita_ppp": 25839.94,
+            "resource_rents_pct_gdp": 2.08,
+            "oda_pct_gni": 0.58,
+            "political_stability": 73.85,
+            "fsi": 60.2
+          }
+        },
+        "outcome_summary": "MI 0.597->0.657 (Tier 2); GDP PPP $5.2k->$25.8k; stable democracy.",
+        "key_events": [
+          "sustained growth",
+          "peaceful turnover"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "DR Tier 2, GDP ratio ~2.5x(1996)->~7.8x(2023)",
+      "explanation": "Wide P1 gap mapped to divergent outcomes as predicted."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Haiti gang collapse vs DR peace",
+      "explanation": "Low-P1 Haiti -> violent state breakdown."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "MI gap 0.17->0.24",
+      "explanation": "Divergence."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "Haiti P1 0.222 floor pillar",
+      "explanation": "Institutional failure as predicted."
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No fragmentation event."
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Clean confirmation; 4/4 applicable predictions CONFIRMED.",
+    "safeguards_triggered": [],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Shared-geography control: institutions, not geography, drive divergence.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; no modification proposed."
+  }
+}

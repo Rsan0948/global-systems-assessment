@@ -1,0 +1,109 @@
+{
+  "country": "Dominican Republic",
+  "iso3": "DOM",
+  "region": "Caribbean",
+  "notes": "Case 21 (Haiti/DR). Higher-P1 island neighbour. WGI 2025-anchored series.",
+  "indicators_by_year": {
+    "1996": {
+      "gov_effectiveness": 45.45,
+      "rule_of_law": 46.64,
+      "regulatory_quality": 46.04,
+      "control_of_corruption": 44.42,
+      "voice_accountability": 52.98,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.489,
+      "life_expectancy_index": 0.763,
+      "gdp_per_capita_ppp": 5160.99,
+      "resource_rents_pct_gdp": 0.7,
+      "oda_pct_gni": 0.47,
+      "political_stability": 62.58,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2012": {
+      "gov_effectiveness": 41.6,
+      "rule_of_law": 46.87,
+      "regulatory_quality": 51.95,
+      "control_of_corruption": 32.03,
+      "voice_accountability": 57.73,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.627,
+      "life_expectancy_index": 0.813,
+      "gdp_per_capita_ppp": 11776.62,
+      "resource_rents_pct_gdp": 0.45,
+      "oda_pct_gni": 0.45,
+      "political_stability": 66.43,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2018": {
+      "gov_effectiveness": 44.4,
+      "rule_of_law": 47.53,
+      "regulatory_quality": 52.58,
+      "control_of_corruption": 30.76,
+      "voice_accountability": 56.23,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.702,
+      "life_expectancy_index": 0.824,
+      "gdp_per_capita_ppp": 17994.84,
+      "resource_rents_pct_gdp": 0.87,
+      "oda_pct_gni": 0.11,
+      "political_stability": 65.95,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2023": {
+      "gov_effectiveness": 52.23,
+      "rule_of_law": 52.81,
+      "regulatory_quality": 55.63,
+      "control_of_corruption": 39.15,
+      "voice_accountability": 59.45,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.693,
+      "life_expectancy_index": 0.826,
+      "gdp_per_capita_ppp": 25839.94,
+      "resource_rents_pct_gdp": 2.08,
+      "oda_pct_gni": 0.58,
+      "political_stability": 73.85,
+      "fsi": 60.2,
+      "_gaps": [
+        "gii",
+        "eci"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs). resource_rents from 2021 (latest published; 2023 not available, not interpolated) fsi = Fund for Peace FSI 2024 (latest); pre-2006 years use political_stability alone (Track 2)."
+    }
+  },
+  "context": {
+    "population": 11300000,
+    "is_island": true,
+    "is_democratic": true,
+    "is_authoritarian": false,
+    "neighbor_threat_level": "none",
+    "resource_rents_pct_revenue": 3.0
+  },
+  "data_sources": {
+    "P1_WGI": "World Bank Worldwide Governance Indicators 2025 revision (source 3, GOV_WGI_*.SC anchored 0-100), api.worldbank.org",
+    "P3_HDI": "UNDP HDR 2025 Composite Indices complete time series (le/eys/mys -> UNDP sub-index formulas)",
+    "P4_WDI": "World Bank WDI: NY.GDP.PCAP.PP.CD, NY.GDP.TOTL.RT.ZS, DT.ODA.ODAT.GN.ZS",
+    "P5_FSI": "Fund for Peace Fragile States Index 2024"
+  }
+}

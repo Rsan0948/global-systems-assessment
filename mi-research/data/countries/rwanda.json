@@ -1,0 +1,114 @@
+{
+  "country": "Rwanda",
+  "iso3": "RWA",
+  "region": "Central Africa",
+  "notes": "Cases 24/25 + ARCHITECTURAL DECISION case. Developmental authoritarianism: high effectiveness/corruption-control, low voice. WGI 2025-anchored series; all six WGI dims stored (incl. voice_accountability) for the P1-decomposition test.",
+  "indicators_by_year": {
+    "1996": {
+      "gov_effectiveness": 25.95,
+      "rule_of_law": 30.75,
+      "regulatory_quality": 29.74,
+      "control_of_corruption": 31.59,
+      "voice_accountability": 26.57,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.23,
+      "life_expectancy_index": 0.346,
+      "gdp_per_capita_ppp": 498.88,
+      "resource_rents_pct_gdp": 12.56,
+      "oda_pct_gni": 34.0,
+      "political_stability": 30.16,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2012": {
+      "gov_effectiveness": 49.59,
+      "rule_of_law": 51.41,
+      "regulatory_quality": 52.41,
+      "control_of_corruption": 56.5,
+      "voice_accountability": 41.23,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.462,
+      "life_expectancy_index": 0.68,
+      "gdp_per_capita_ppp": 1454.53,
+      "resource_rents_pct_gdp": 6.39,
+      "oda_pct_gni": 11.63,
+      "political_stability": 61.48,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2018": {
+      "gov_effectiveness": 56.73,
+      "rule_of_law": 54.5,
+      "regulatory_quality": 56.8,
+      "control_of_corruption": 56.68,
+      "voice_accountability": 44.1,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.461,
+      "life_expectancy_index": 0.713,
+      "gdp_per_capita_ppp": 2125.5,
+      "resource_rents_pct_gdp": 4.71,
+      "oda_pct_gni": 12.05,
+      "political_stability": 68.62,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2023": {
+      "gov_effectiveness": 59.29,
+      "rule_of_law": 58.19,
+      "regulatory_quality": 58.41,
+      "control_of_corruption": 61.64,
+      "voice_accountability": 47.62,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.512,
+      "life_expectancy_index": 0.735,
+      "gdp_per_capita_ppp": 3399.45,
+      "resource_rents_pct_gdp": 4.02,
+      "oda_pct_gni": 9.87,
+      "political_stability": 66.54,
+      "fsi": 81.8,
+      "_gaps": [
+        "gii",
+        "eci"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs). resource_rents from 2021 (latest published; 2023 not available, not interpolated) fsi = Fund for Peace FSI 2024 (latest); pre-2006 years use political_stability alone (Track 2)."
+    }
+  },
+  "context": {
+    "population": 13800000,
+    "is_island": false,
+    "is_democratic": false,
+    "is_authoritarian": true,
+    "military_dominant": false,
+    "neighbor_threat_level": "none",
+    "fragmentation_mechanism": "legal",
+    "prior_porosity_period": false,
+    "is_democratic_transition": false,
+    "growth_trajectory": "growing",
+    "resource_rents_pct_revenue": 5.0
+  },
+  "data_sources": {
+    "P1_WGI": "World Bank Worldwide Governance Indicators 2025 revision (source 3, GOV_WGI_*.SC anchored 0-100), api.worldbank.org",
+    "P3_HDI": "UNDP HDR 2025 Composite Indices complete time series (le/eys/mys -> UNDP sub-index formulas)",
+    "P4_WDI": "World Bank WDI: NY.GDP.PCAP.PP.CD, NY.GDP.TOTL.RT.ZS, DT.ODA.ODAT.GN.ZS",
+    "P5_FSI": "Fund for Peace Fragile States Index 2024"
+  }
+}

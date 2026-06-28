@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "case_name": "Belgium (extreme porosity, the limit test)",
+    "case_id": "case17",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "extreme_porosity",
+    "geographic_region": "Western Europe / Belgium",
+    "time_period": "2010 -> 2024",
+    "entities": [
+      "Belgium"
+    ],
+    "key_test": "Maximum Safeguard F case (all three triggers met) yet zero secession / zero violence under high P1; porosity has no hard ceiling; Mod10 backstops (monarchy, caretaker convention, EU, Brussels).",
+    "round": "baseline_run4",
+    "notes": "Run4 Case 17 -- the limit test. WGI cited on World Bank estimate scale (-2.5 to +2.5). UK RoL 1.27 and Belgium RoL 1.28 are statistically indistinguishable (Mod4 declines to rank them). Most pillar values ordinal/estimated, not cardinal."
+  },
+  "pre_event": {
+    "time_point": "2010",
+    "event_description": "Belgium's six-government federal architecture under extreme linguistic/regional fragmentation pressure -- the framework's high-porosity limit test.",
+    "entities": {
+      "Belgium": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": 1.28,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "none",
+          "has_federalism": true,
+          "has_power_sharing": true,
+          "regional_antisystem_vote": 0.47,
+          "executive_collapses": 3,
+          "regional_gdp_divergence": 0.40,
+          "fragmentation_mechanism": "extreme_porosity",
+          "prior_porosity_period": true,
+          "external_backstop": true,
+          "backstop_details": "Mod10 backstops: the monarchy (the King's appointment of informateurs/formateurs structures every formation), the caretaker-government convention (prior coalition stays in office, preventing a vacuum), the EU framework, and Brussels as a shared capital neither region can exclusively claim."
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "control_of_corruption",
+          "regulatory_quality",
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "Belgium WGI estimate scale: RoL ~1.28 (top tier; indistinguishable from UK 1.27). All three Safeguard F triggers met: (1) separatist/nationalist vote >25% in Flanders -- N-VA 24.5% + Vlaams Belang 22.8% = ~47% (2024); (2) executive repeatedly suspended -- 541 days in 2010-11 and 652 days in 2019-20 (both world records per the Brussels Times), still forming after the June 2024 election at source-reporting time; (3) regional divergence >30% -- Flemish EUR47,300 PPS vs Walloon EUR33,400 PPS (>40% gap; Wallonia ~72% of the Belgian average). 'executive_collapses'=3 recorded record-length formations (2010-11, 2019-20, 2024)."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "State persists indefinitely in managed tension: as long as P1 is high and porosity channels remain open, the state survives.",
+      "basis": "High P1 + extreme open Tier-3 porosity; porosity has no hard ceiling.",
+      "falsification_condition": "State collapse or secession."
+    },
+    "b_violence": {
+      "prediction": "Zero political violence throughout.",
+      "risk_level": "low",
+      "agency_note": "Mod8: predicts RISK.",
+      "falsification_condition": "Any political violence emerges."
+    },
+    "c_convergence": {
+      "prediction": "Persistent regional divergence (>40% Flanders-Wallonia gap), managed without violence.",
+      "basis": "Flemish EUR47,300 vs Walloon EUR33,400 PPS; Wallonia ~72% of Belgian average.",
+      "falsification_condition": "Convergence, or divergence turning violent."
+    },
+    "d_failure_dimension": {
+      "prediction": "Linguistic/regional fragmentation pressure is the stress surface, managed by the federal architecture.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Failure driven by a non-fragmentation dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "Zero secession; state stays intact.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Flanders or Wallonia secedes."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A -- not a democratic-transition reversal case.",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "Extreme Tier 3 porosity (six governments, linguistic parity, alarm-bell procedure, concurrent majorities) -- no suppression.",
+      "tier": 3,
+      "falsification_condition": "State resorts to military (Tier 1) or legal (Tier 2) suppression."
+    },
+    "h_substate_turbulence": {
+      "prediction": "Maximum Safeguard F (all three triggers met) yet zero secession and zero political violence, sustained by extreme Tier 3 architecture and Mod10 backstops (monarchy, caretaker convention, EU, Brussels).",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Safeguard F triggers translate into secession or violence."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2011",
+      "2020",
+      "2024"
+    ],
+    "entities": {
+      "Belgium": {
+        "indicators_by_year": {},
+        "outcome_summary": "Prediction confirmed at the limit: with high P1 and open porosity channels, the state persists in managed tension. Zero secession and zero political violence despite all three Safeguard F triggers, sustained by extreme Tier 3 architecture (six governments, linguistic parity, alarm-bell procedure, concurrent majorities) and Mod10 backstops. Belgium demonstrates porosity has no hard ceiling under high P1.",
+        "key_events": [
+          "541 days without a government in 2010-11 (world record, per the Brussels Times)",
+          "652 days without a government in 2019-20 (world record)",
+          "Still forming after the June 2024 election at the time of source reporting",
+          "Combined Flemish nationalist/separatist vote ~47% (N-VA 24.5% + Vlaams Belang 22.8%, 2024)",
+          "Flanders-Wallonia GDP-per-capita gap >40% (Flemish EUR47,300 vs Walloon EUR33,400 PPS)"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "541-day (2010-11) and 652-day (2019-20) formations, yet the state persisted in managed tension.",
+      "explanation": "High P1 + open porosity produced indefinite survival, as predicted -- the framework's prediction realized at the limit."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Zero political violence throughout.",
+      "explanation": "No-violence prediction realized."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Flanders-Wallonia GDP/cap gap >40% (Flemish EUR47,300 vs Walloon EUR33,400 PPS) persists, managed without violence.",
+      "explanation": "Persistent regional divergence managed non-violently, as predicted."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "Linguistic/regional fragmentation pressure managed by the six-government federal architecture.",
+      "explanation": "Fragmentation-pressure dimension confirmed."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Zero secession.",
+      "explanation": "State intact, as predicted."
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case."
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Extreme Tier 3 architecture (six governments, linguistic parity, alarm-bell procedure, concurrent majorities); no suppression deployed.",
+      "explanation": "Mechanism classified as extreme Tier 3 porosity, as predicted."
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "All three Safeguard F triggers met (vote ~47%, record-length formations, divergence >40%), yet zero secession/violence; Mod10 backstops = monarchy, caretaker convention, EU, Brussels.",
+      "explanation": "Maximum Safeguard F absorbed by porosity-with-backstop -- confirms Mod10/Safeguard I; porosity has no hard ceiling under high P1."
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Confirmed at the limit: Belgium is the extreme porosity case -- all three Safeguard F triggers met, yet zero secession and zero political violence. With high P1 and open porosity channels backed by hard backstops, the state persists indefinitely in managed tension.",
+    "safeguards_triggered": [
+      "F (all three triggers: separatist vote ~47%, record executive formations, regional divergence >40%)",
+      "I (porosity-with-backstop, Mod10: monarchy + caretaker convention + EU + Brussels)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Porosity has no hard ceiling under high P1: even with every Safeguard F trigger maxed out, a state persists indefinitely when open porosity channels are caught by hard backstops.",
+    "proposed_framework_modifications": [
+      "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard -- Belgium is the strongest single demonstration.",
+      "Mod4: do not rank statistically indistinguishable P1 pairs (UK RoL 1.27 vs Belgium RoL 1.28)."
+    ],
+    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "country": "Venezuela",
+  "iso3": "VEN",
+  "region": "South America",
+  "notes": "Case 22 (rentier capture + collapse). GDP per capita unpublished by govt after 2011 (real data gap, not interpolated). WGI 2025-anchored series.",
+  "indicators_by_year": {
+    "1998": {
+      "gov_effectiveness": 33.43,
+      "rule_of_law": 43.88,
+      "regulatory_quality": 42.87,
+      "control_of_corruption": 31.63,
+      "voice_accountability": 54.65,
+      "gii": null,
+      "eci": null,
+      "education_index": null,
+      "life_expectancy_index": null,
+      "gdp_per_capita_ppp": 14567.66,
+      "resource_rents_pct_gdp": 9.06,
+      "oda_pct_gni": 0.05,
+      "political_stability": 57.33,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "education_index",
+        "life_expectancy_index",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2012": {
+      "gov_effectiveness": 33.34,
+      "rule_of_law": 25.43,
+      "regulatory_quality": 31.68,
+      "control_of_corruption": 22.26,
+      "voice_accountability": 38.88,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.693,
+      "life_expectancy_index": 0.817,
+      "gdp_per_capita_ppp": null,
+      "resource_rents_pct_gdp": 18.78,
+      "oda_pct_gni": 0.01,
+      "political_stability": 45.09,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "gdp_per_capita_ppp",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2018": {
+      "gov_effectiveness": 20.31,
+      "rule_of_law": 17.27,
+      "regulatory_quality": 21.01,
+      "control_of_corruption": 15.57,
+      "voice_accountability": 27.88,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.702,
+      "life_expectancy_index": 0.81,
+      "gdp_per_capita_ppp": null,
+      "resource_rents_pct_gdp": 11.85,
+      "oda_pct_gni": 0.16,
+      "political_stability": 40.87,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "gdp_per_capita_ppp",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs). resource_rents from 2014 (latest published; 2018 not available, not interpolated) GDP per capita PPP: govt stopped publishing after 2011 -> reported as gap, NOT interpolated."
+    },
+    "2023": {
+      "gov_effectiveness": 23.49,
+      "rule_of_law": 19.09,
+      "regulatory_quality": 25.09,
+      "control_of_corruption": 16.29,
+      "voice_accountability": 26.08,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.683,
+      "life_expectancy_index": 0.808,
+      "gdp_per_capita_ppp": null,
+      "resource_rents_pct_gdp": 11.85,
+      "oda_pct_gni": 0.39,
+      "political_stability": 47.04,
+      "fsi": 89.0,
+      "_gaps": [
+        "gii",
+        "eci",
+        "gdp_per_capita_ppp"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs). resource_rents from 2014 (latest published; 2023 not available, not interpolated) fsi = Fund for Peace FSI 2024 (latest); pre-2006 years use political_stability alone (Track 2). GDP per capita PPP: govt stopped publishing after 2011 -> reported as gap, NOT interpolated."
+    }
+  },
+  "context": {
+    "population": 28300000,
+    "is_island": false,
+    "is_democratic": false,
+    "is_authoritarian": true,
+    "neighbor_threat_level": "none",
+    "resource_rents_pct_gdp": 23.84,
+    "resource_rents_pct_revenue": 60.0,
+    "is_democratic_transition": false,
+    "growth_trajectory": "declining",
+    "fragmentation_mechanism": "authoritarian_reversal",
+    "prior_porosity_period": false
+  },
+  "data_sources": {
+    "P1_WGI": "World Bank Worldwide Governance Indicators 2025 revision (source 3, GOV_WGI_*.SC anchored 0-100), api.worldbank.org",
+    "P3_HDI": "UNDP HDR 2025 Composite Indices complete time series (le/eys/mys -> UNDP sub-index formulas)",
+    "P4_WDI": "World Bank WDI: NY.GDP.PCAP.PP.CD, NY.GDP.TOTL.RT.ZS, DT.ODA.ODAT.GN.ZS",
+    "P5_FSI": "Fund for Peace Fragile States Index 2024"
+  }
+}

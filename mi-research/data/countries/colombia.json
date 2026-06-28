@@ -1,0 +1,91 @@
+{
+  "country": "Colombia",
+  "iso3": "COL",
+  "region": "South America",
+  "notes": "Case 23 (FARC peace / peripheral porosity-with-backstop). WGI 2025-anchored series.",
+  "indicators_by_year": {
+    "2012": {
+      "gov_effectiveness": 49.3,
+      "rule_of_law": 49.26,
+      "regulatory_quality": 58.36,
+      "control_of_corruption": 39.56,
+      "voice_accountability": 55.93,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.648,
+      "life_expectancy_index": 0.856,
+      "gdp_per_capita_ppp": 12093.08,
+      "resource_rents_pct_gdp": 8.3,
+      "oda_pct_gni": 0.21,
+      "political_stability": 43.15,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2018": {
+      "gov_effectiveness": 49.13,
+      "rule_of_law": 49.7,
+      "regulatory_quality": 56.58,
+      "control_of_corruption": 41.41,
+      "voice_accountability": 58.28,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.69,
+      "life_expectancy_index": 0.87,
+      "gdp_per_capita_ppp": 15239.4,
+      "resource_rents_pct_gdp": 4.94,
+      "oda_pct_gni": 0.55,
+      "political_stability": 54.53,
+      "fsi": null,
+      "_gaps": [
+        "gii",
+        "eci",
+        "fsi"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+    },
+    "2023": {
+      "gov_effectiveness": 50.52,
+      "rule_of_law": 47.24,
+      "regulatory_quality": 57.02,
+      "control_of_corruption": 41.6,
+      "voice_accountability": 57.38,
+      "gii": null,
+      "eci": null,
+      "education_index": 0.698,
+      "life_expectancy_index": 0.888,
+      "gdp_per_capita_ppp": 21246.38,
+      "resource_rents_pct_gdp": 5.32,
+      "oda_pct_gni": 0.29,
+      "political_stability": 52.24,
+      "fsi": 75.6,
+      "_gaps": [
+        "gii",
+        "eci"
+      ],
+      "_notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs). resource_rents from 2021 (latest published; 2023 not available, not interpolated) fsi = Fund for Peace FSI 2024 (latest); pre-2006 years use political_stability alone (Track 2)."
+    }
+  },
+  "context": {
+    "population": 52000000,
+    "is_island": false,
+    "is_democratic": true,
+    "is_authoritarian": false,
+    "has_devolution": false,
+    "neighbor_threat_level": "none",
+    "fragmentation_mechanism": "insurgency",
+    "external_backstop": true,
+    "backstop_details": "Sovereign central state retains military/constitutional backstop over FARC-vacated periphery",
+    "resource_rents_pct_revenue": 10.0
+  },
+  "data_sources": {
+    "P1_WGI": "World Bank Worldwide Governance Indicators 2025 revision (source 3, GOV_WGI_*.SC anchored 0-100), api.worldbank.org",
+    "P3_HDI": "UNDP HDR 2025 Composite Indices complete time series (le/eys/mys -> UNDP sub-index formulas)",
+    "P4_WDI": "World Bank WDI: NY.GDP.PCAP.PP.CD, NY.GDP.TOTL.RT.ZS, DT.ODA.ODAT.GN.ZS",
+    "P5_FSI": "Fund for Peace Fragile States Index 2024"
+  }
+}

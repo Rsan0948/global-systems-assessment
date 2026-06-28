@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "case_name": "Ethiopia vs. Eritrea",
+    "case_id": "case08",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "traditional_fragmentation",
+    "geographic_region": "Horn of Africa",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Ethiopia",
+      "Eritrea"
+    ],
+    "key_test": "Two floor-P1 successors with opposite political models both end catastrophically (Safeguard B) - exposing the framework's failure-mode blindness (centrifugal fragmentation vs centripetal totalitarian closure). Also tests Safeguard D (mutual predatory neighbors -> 1998-2000 war).",
+    "round": "baseline_run2",
+    "notes": "Eritrea is one of the world's most closed states; the data vacuum is itself evidence of institutional opacity, reported as missing and never interpolated. WGI legacy-scale values recorded in notes; pillars are derived estimates."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Eritrean independence (May 24, 1993), scored on a 1996 baseline; followed by the 1998-2000 border war and (for Ethiopia) the later Tigray War.",
+    "entities": {
+      "Ethiopia": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "neighbor_threat_level": "high",
+          "neighbor_details": "Mutual predatory neighbors with Eritrea (predicts the 1998-2000 border war).",
+          "is_democratic": false,
+          "has_federalism": true,
+          "fragmentation_mechanism": "secession (Eritrean independence)",
+          "n_successor_states": 2
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "WGI Rule of Law 1996 = -0.97 (its min; avg -0.73, 2017 max -0.45; legacy scale). Political Stability avg -1.5, 2021 min -2.01, 2024 = -1.88. Resource rents low; heavy ODA dependence in 1996 (P4 distortion via aid, not rents). Derived: floor-P1 (~0.10-0.15). Larger, diverse, ethnic-federal state."
+      },
+      "Eritrea": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "neighbor_threat_level": "high",
+          "neighbor_details": "Mutual predatory neighbors with Ethiopia.",
+          "is_authoritarian": true,
+          "military_dominant": true,
+          "fragmentation_mechanism": "new state via secession",
+          "n_successor_states": 2
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "Severe data limitation - one of the world's most closed states; the data vacuum is itself evidence of institutional opacity/capacity collapse (not to be interpolated). WGI Political Stability avg -0.97, 1998 min -1.76, 2024 = -0.71 (legacy). HDI 2022/23 = 0.493 (175th); 2005 = 0.466 (near-stagnant). Resource rents low; heavy ODA dependence. Derived: floor-P1 (~0.10-0.15). Small, militarized, totalitarian."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Trajectory ranking very close (both at floor).",
+      "basis": "Both floor-P1, within margin of error.",
+      "falsification_condition": "One state clearly and durably outperforms the other."
+    },
+    "b_violence": {
+      "prediction": "Violent outcomes predicted for both.",
+      "risk_level": "critical",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Either state remains peaceful."
+    },
+    "c_convergence": {
+      "prediction": "Convergence-at-bottom on capacity vs divergence in political model.",
+      "basis": "Both floor-P1 but structurally different regimes.",
+      "falsification_condition": "Clear convergence in political model or upward divergence in capacity."
+    },
+    "d_failure_dimension": {
+      "prediction": "Ethiopia failure = ethnic-federal fragmentation (P5); Eritrea = totalitarian closure (P1/P2 + human-capital flight).",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Failure modes reversed or absent."
+    },
+    "e_fragment_count": {
+      "prediction": "Fragment count is 2; Safeguard B implies catastrophic despite the low count.",
+      "safeguard_b_applied": true,
+      "falsification_condition": "Low fragment count yields a manageable outcome."
+    },
+    "f_reversal_risk": {
+      "prediction": "Framework predicts the 1998-2000 war (Safeguard D, mutual predatory neighbors).",
+      "safeguard_c_severity": "TRIGGERED for both (any institutional gains at high reversal risk)",
+      "falsification_condition": "No interstate war between the two."
+    },
+    "g_suppression_mechanism": {
+      "classification": "Ethiopia's profile predicts continued fragmentation pressure (foreshadowing the Tigray War).",
+      "tier": 1,
+      "falsification_condition": "Ethiopia remains internally stable with no further fragmentation pressure."
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2000",
+      "2024"
+    ],
+    "entities": {
+      "Ethiopia": {
+        "indicators_by_year": {
+          "2024": {
+            "fsi": 98.1
+          }
+        },
+        "outcome_summary": "FSI 2024 = 98.1 (6th most fragile in Africa). 1998-2000 war (70,000-100,000+ dead); Tigray War (Nov 2020-Nov 2022) ~600,000 deaths per AU mediator Obasanjo (FT, Jan 16, 2023); ongoing Amhara/Fano insurgency (2023-). Stronger economic growth in 2000s-2010s then catastrophic political collapse.",
+        "key_events": [
+          "1998-2000 Eritrean-Ethiopian War",
+          "Tigray War 2020-2022",
+          "Amhara/Fano insurgency 2023-"
+        ]
+      },
+      "Eritrea": {
+        "indicators_by_year": {
+          "2024": {}
+        },
+        "outcome_summary": "HDI 2022/23 = 0.493 (175th). Permanent militarization; closed/totalitarian state; participated in the 1998-2000 war (over 500,000 troops engaged, 70,000-100,000+ killed).",
+        "key_events": [
+          "1998-2000 war",
+          "permanent militarization / closure"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Too close to rank cleanly; Ethiopia had stronger growth in the 2000s-2010s then suffered catastrophic political collapse.",
+      "explanation": "Neither state clearly 'won'; the floor-P1 ordinal lacks discriminating power."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Both violent (1998-2000 war 70,000-100,000+ dead; Eritrea's permanent militarization; Ethiopia's later wars).",
+      "explanation": "Floor-P1 in both -> violent outcomes as predicted."
+    },
+    "c_convergence": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Divergent political models but convergent at low P1 / high fragility.",
+      "explanation": "Convergence-at-bottom holds on capacity; the political-model divergence makes the call partial."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "Ethiopia via ethnic-federal fragmentation; Eritrea via totalitarian closure.",
+      "explanation": "Failure modes matched the predicted dimensions."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "2 fragments, both catastrophic.",
+      "explanation": "Safeguard B vindicated again."
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "The 1998-2000 Eritrean-Ethiopian War (over 500,000 troops engaged, 70,000-100,000+ killed).",
+      "explanation": "Safeguard D (mutual predatory neighbors) predicted the interstate war."
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Ethiopia's fragmentation pressure realized in the Tigray War (Nov 2020-Nov 2022; Obasanjo ~600,000 deaths) followed by the Amhara/Fano insurgency (2023-).",
+      "explanation": "Continued fragmentation pressure foreshadowed by the floor-P1 ethnic-federal profile."
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No standalone substate-turbulence prediction made for this case."
+    }
+  },
+  "result_coding_reference": {
+    "CONFIRMED": "Prediction matched outcome on the specific dimension predicted",
+    "PARTIALLY_CONFIRMED": "Direction correct but magnitude, form, or timing significantly different",
+    "FALSIFIED": "Prediction contradicted by outcome",
+    "NOT_APPLICABLE": "Prediction type not relevant to this case"
+  },
+  "analysis": {
+    "overall_assessment": "7 applicable predictions: 5 CONFIRMED, 2 PARTIALLY_CONFIRMED (a, c), 0 FALSIFIED. Confirms Safeguard B again while exposing failure-mode blindness.",
+    "safeguards_triggered": [
+      "Safeguard B - TRIGGERED: 2 successors, both floor-P1 -> catastrophic despite low count",
+      "Safeguard D - TRIGGERED: mutual predatory neighbors, predicting the 1998-2000 war",
+      "Safeguard C - TRIGGERED for both (institutional gains at high reversal risk)"
+    ],
+    "safeguards_that_should_have_triggered": [
+      "A failure-mode sub-classifier (centrifugal vs centripetal) - the MI flagged both as floor-P1 catastrophes but did not distinguish Ethiopia's fragmentation from Eritrea's totalitarian ossification."
+    ],
+    "new_failure_modes_discovered": [
+      "Failure-mode blindness: the MI flags floor-P1 catastrophe but not whether it manifests as fragmentation (Ethiopia) vs totalitarian ossification (Eritrea)."
+    ],
+    "what_this_case_uniquely_reveals": "Two floor-P1 states with opposite political models both ended catastrophically - confirming Safeguard B but exposing that the MI does not distinguish failure MODES. Candidate for a new safeguard distinguishing centrifugal (fragmentation) from centripetal (totalitarian-closure) failure at the floor.",
+    "proposed_framework_modifications": [
+      "Add a provisional centrifugal-vs-centripetal failure-mode sub-classifier; if >=2 more floor-P1 pairs show divergent failure pathways, codify it (the later Mod6 / Safeguard H)."
+    ],
+    "baseline_impact": "Proposes a new failure-mode classifier; would require a 20-case baseline check before formalization."
+  }
+}

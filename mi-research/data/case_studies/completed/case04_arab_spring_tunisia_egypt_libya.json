@@ -1,0 +1,384 @@
+{
+  "metadata": {
+    "case_name": "Arab Spring: Tunisia vs Egypt vs Libya",
+    "case_id": "case04",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "traditional_fragmentation",
+    "geographic_region": "North Africa / Middle East",
+    "time_period": "2010 -> 2024",
+    "entities": [
+      "Tunisia",
+      "Egypt",
+      "Libya"
+    ],
+    "key_test": "P1 + rentier (Safeguard E): Libya's high HDI/GDP (oil-inflated) would predict resilience, but the rentier flag should invert this to 'fragile, will fragment on shock'; and Safeguard C reversal risk for both democratic transitions (Tunisia and Egypt) with weak economic delivery.",
+    "round": "baseline_run1",
+    "notes": "Arab Spring (post-2011) shock. Pre-event 2010. CPI 2010 figures are EXACT (Transparency International official CPI 2010 dataset) and are placed in indicators; Libya's 2010 total natural-resource rents (53.663% of GDP, World Bank 'The Changing Wealth of Nations' via CEIC) are placed in indicators. WGI ordering Tunisia > Egypt > Libya is high-confidence but exact 2010 percentile ranks were not isolated; those pillar values remain ordinal estimates. WGI 2025-anchored vintage caveat applies."
+  },
+  "stress_types_reference": [
+    "traditional_fragmentation",
+    "recursive_fragmentation",
+    "suppressed_fragmentation",
+    "institutional_reconstruction",
+    "fragmentation_prevention",
+    "fusion",
+    "legal_suppression",
+    "extreme_porosity",
+    "prospective",
+    "comparative_trajectory"
+  ],
+  "pre_event": {
+    "time_point": "2010",
+    "event_description": "Arab Spring uprisings (from late 2010 / 2011); divergent post-uprising trajectories under structural stress.",
+    "entities": {
+      "Tunisia": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": 4.3,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": true,
+          "youth_unemployment": null,
+          "growth_trajectory": "weak economic delivery (reversal driver)",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": null,
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": null,
+          "population": null,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "cpi": "Transparency International official CPI 2010 dataset (4.3, rank 66, 0-10 scale)",
+          "wgi": "World Bank WGI (2010, ordinal; exact percentile ranks not isolated)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "2010 estimate (ordinal): P1 highest of the trio, balanced, low rents -> MI highest of three, narrowest spread. WGI Rule of Law highest of three; Govt Effectiveness best (~+0.4 band). CPI 2010 = 4.3 (rank 66) -- EXACT, placed in indicator. HDI 2010 high-medium; GDP per cap PPP 2010 ~$10-11k (approximate range, left null); resource rents low; political stability moderate. Democratic transition + weak P4 -> HIGH reversal risk (Safeguard C). WGI pillar values are estimates (exact 2010 percentiles not isolated); pre-2012 CPI is ordinal-cross-country only. WGI 2025-anchored vintage caveat applies."
+      },
+      "Egypt": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": 3.1,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": true,
+          "youth_unemployment": null,
+          "growth_trajectory": "low; military-economy distortion",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": null,
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": null,
+          "population": null,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": true,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "cpi": "Transparency International official CPI 2010 dataset (3.1, rank 105, 0-10 scale)",
+          "wgi": "World Bank WGI (2010, ordinal; exact percentile ranks not isolated)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "2010 estimate (ordinal): P1 low-moderate, large population, military-economy distortion -> MI low (matches dataset: 2012 M=-0.008, near floor; 2024 P1=0.297). WGI Rule of Law middle (mildly negative); Govt Effectiveness negative by 2010. CPI 2010 = 3.1 (rank 105) -- EXACT, placed in indicator. HDI 2010 medium; GDP per cap PPP 2010 ~$10k (approximate, left null); resource rents moderate; political stability low. Democratic transition + weak delivery -> HIGH reversal risk (Safeguard C); military-dominant (Safeguard G Tier 1). WGI pillar values are estimates; pre-2012 CPI ordinal-cross-country only. WGI 2025-anchored vintage caveat applies."
+      },
+      "Libya": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": 2.2,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": 53.663,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "moderate",
+          "neighbor_details": "Post-2014 external intervention by Egypt/UAE/Russia/Turkey (Safeguard D applies weakly, post-collapse).",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": false,
+          "youth_unemployment": null,
+          "growth_trajectory": "oil-inflated apparent wealth over an institutional vacuum",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": null,
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": null,
+          "population": null,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "cpi": "Transparency International official CPI 2010 dataset (2.2, rank 154, 0-10 scale)",
+          "resource_rents": "World Bank 'The Changing Wealth of Nations' via CEIC (2010 oil rents 52.785%; total natural-resource rents 53.663% of GDP)",
+          "wgi": "World Bank WGI (2010, ordinal; exact percentile ranks not isolated)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "2010 estimate (ordinal): P1 bottom (near-global-worst), P4 massively distorted by ~53% rents (rentier capture inflating apparent wealth/P1) -> MI low despite high GDP; widest pillar spread (oil wealth vs institutional vacuum). WGI Rule of Law bottom; Govt Effectiveness bottom. CPI 2010 = 2.2 (rank 154) -- EXACT, placed in indicator. Resource rents: oil 52.785%, total 53.663% of GDP -- EXACT, placed in indicator (resource_rents_pct_gdp). HDI 2010 highest nominal (oil-inflated); GDP per cap PPP 2010 ~$12,800 (oil; approximate, left null); political stability low-moderate (police state). Safeguard E bidirectional flag: rents far above the 25-30% threshold both inflated apparent stability under Gaddafi AND left no institutional substrate on regime collapse -> catastrophic fragmentation predicted. WGI pillar values are estimates; pre-2012 CPI ordinal-cross-country only. WGI 2025-anchored vintage caveat applies."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Ordinal trajectory: Tunisia > Egypt > Libya.",
+      "basis": "P1 ordering Tunisia > Egypt > Libya (Libya's oil-inflated HDI/GDP discounted under Safeguard E).",
+      "falsification_condition": "Libya or Egypt out-trajectories Tunisia."
+    },
+    "b_violence": {
+      "prediction": "Tunisia lowest violence (institutional/legal route); Egypt high (coup, massacre); Libya highest (state collapse, civil war).",
+      "risk_level": "Libya highest; Egypt high; Tunisia lowest",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Violence concentrated in highest-P1 Tunisia rather than in Libya/Egypt."
+    },
+    "c_convergence": {
+      "prediction": "Divergence.",
+      "basis": "Wide pre-event P1 spread; Libya rentier collapse.",
+      "falsification_condition": "Convergence of outcomes across the three."
+    },
+    "d_failure_dimension": {
+      "prediction": "Libya = P4 resource distortion + P1 vacuum (rentier collapse); Egypt = P1 + military capture; Tunisia = P4 weak delivery driving reversal.",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Failures driven by dimensions other than those predicted."
+    },
+    "e_fragment_count": {
+      "prediction": "N/A",
+      "safeguard_b_applied": false,
+      "falsification_condition": ""
+    },
+    "f_reversal_risk": {
+      "prediction": "Tunisia reversal risk HIGH (predicts a Saied-type seizure); Egypt reversal risk HIGH (predicts a coup).",
+      "safeguard_c_severity": "high (both)",
+      "falsification_condition": "Either democratic transition consolidates without reversal."
+    },
+    "g_suppression_mechanism": {
+      "classification": "Egypt = Tier 1 (military suppression, 2013 coup + Rabaa massacre); Tunisia = Tier 2 (institutional/legal suppression under Saied, 2021-).",
+      "tier": 1,
+      "falsification_condition": "Suppression mechanisms do not match the predicted tiers."
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2012",
+      "2014",
+      "2018",
+      "2024"
+    ],
+    "entities": {
+      "Tunisia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Best of the three: kept a functioning, undivided state and a decade of democracy (2011-2021), then the Saied self-coup (July 2021); autocratizing but intact state. V-Dem codes Tunisia an electoral democracy 2012-2021, reverting to electoral autocracy in 2022.",
+        "key_events": [
+          "decade of democracy 2011-2021",
+          "Saied self-coup July 2021 (Article 80; parliament suspended, PM dismissed)"
+        ]
+      },
+      "Egypt": {
+        "indicators_by_year": {
+          "2012": {"mi_score": -0.008},
+          "2018": {"mi_score": 0.048},
+          "2024": {"mi_score": 0.092}
+        },
+        "outcome_summary": "Restabilized as an autocracy with intact institutions; 2013 military coup + Rabaa massacre (~900-1,000 killed in a single day per Human Rights Watch). 2024 P1 = 0.297.",
+        "key_events": [
+          "2013 military coup",
+          "Rabaa massacre (2013)"
+        ]
+      },
+      "Libya": {
+        "indicators_by_year": {},
+        "outcome_summary": "Failed/fragmented state: NTC -> 2014 civil war resumes (rival governments) -> divided (GNA/Haftar) -> still fragmented, no unified state as of 2024. 62.1% GDP contraction in the 2011 civil war; 2024 per-capita PPP GDP only 65% of its pre-war 2010 level (IMF via Wikipedia 'Economy of Libya').",
+        "key_events": [
+          "2011 civil war / state collapse",
+          "2014 resumed civil war (rival governments)",
+          "GNA / Haftar division"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Tunisia kept a functioning, undivided state + a decade of democracy; Egypt restabilized as an autocracy with intact institutions; Libya = failed/fragmented state.",
+      "explanation": "Tunisia > Egypt > Libya ordering by P1 reproduced exactly."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Libya civil war/collapse > Egypt coup + Rabaa massacre (~900-1,000 killed in a single day, Human Rights Watch) > Tunisia largely non-violent breakdown.",
+      "explanation": "Violence ordering matched the inverse P1 ordering."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Outcomes diverged from intact-democracy (Tunisia) to failed state (Libya).",
+      "explanation": "Divergence as predicted."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "Safeguard E textbook case -- rents masked an institutional vacuum; Libya GDP/cap fell to ~65% of its 2010 pre-war level by 2024.",
+      "explanation": "Each country's failure ran along its predicted dimension (Libya rentier collapse; Egypt P1 + military; Tunisia weak P4 delivery)."
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No fragment-count (Safeguard B) prediction was made for this case."
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Tunisia reversal via the July 2021 Saied self-coup; Egypt reversal via the 2013 military coup.",
+      "explanation": "Both HIGH reversal-risk calls (Safeguard C) were borne out."
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Egypt = Tier 1 (military suppression, 2013 coup + Rabaa massacre); Tunisia = Tier 2 (institutional/legal suppression under Saied, 2021-).",
+      "explanation": "Suppression mechanisms matched the predicted tiers (Egypt military Tier 1; Tunisia legal/institutional Tier 2)."
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case."
+    }
+  },
+  "result_coding_reference": {
+    "CONFIRMED": "Prediction matched outcome on the specific dimension predicted",
+    "PARTIALLY_CONFIRMED": "Direction correct but magnitude, form, or timing significantly different",
+    "FALSIFIED": "Prediction contradicted by outcome",
+    "NOT_APPLICABLE": "Prediction type not relevant to this case",
+    "coding_rule": "When ambiguous between confirmed and partial, code PARTIAL. When ambiguous between partial and falsified, code PARTIAL but note ambiguity."
+  },
+  "analysis": {
+    "overall_assessment": "The clearest 'P1 + rentier' confirmation in the set; all applicable predictions CONFIRMED. Without Safeguard E, Libya's high HDI/GDP would have predicted resilience; the rentier flag correctly inverts this to 'fragile, will fragment on shock.' The case also shows the framework's directional honesty: it predicted Tunisia relatively best, not Tunisia good -- and Tunisia's democracy did reverse (Safeguard C).",
+    "safeguards_triggered": [
+      "C (Tunisia & Egypt reversal risk -- both HIGH)",
+      "E (Libya rentier capture, ~53% rents -- bidirectional)",
+      "D (weakly, Libya post-collapse external intervention)",
+      "G (Egypt Tier 1 military; Tunisia Tier 2 legal/institutional)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Rentier capture (Safeguard E) must be applied bidirectionally: high P4 from rents is a vulnerability, not a strength, once a regime shock arrives. Libya (53.663% rents in 2010) confirms this -- the regime fell with no indigenous administrative capacity and the country fragmented.",
+    "proposed_framework_modifications": [
+      "Apply Safeguard E bidirectionally and explicitly invert resilience predictions when rents exceed ~30% of GDP."
+    ],
+    "baseline_impact": "None degrading; reinforces Safeguard E. No baseline-breaking modification proposed."
+  }
+}

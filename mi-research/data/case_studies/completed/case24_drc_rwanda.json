@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "case_name": "DR Congo vs. Rwanda (Central Africa divergence)",
+    "case_id": "case24",
+    "author": "expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "comparative_trajectory",
+    "geographic_region": "Central Africa / Great Lakes",
+    "time_period": "1996 -> 2023",
+    "entities": [
+      "DR Congo",
+      "Rwanda"
+    ],
+    "key_test": "P1 ordinality + Mod4 (1996 gap inside margin) + Safeguard D; effectiveness/voice split.",
+    "round": "expansion_batch1",
+    "notes": ""
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Post-genocide / post-Mobutu reconstruction baselines.",
+    "entities": {
+      "DR Congo": {
+        "indicators": {
+          "gov_effectiveness": 19.37,
+          "rule_of_law": 26.78,
+          "regulatory_quality": 22.46,
+          "cpi": null,
+          "control_of_corruption": 10.85,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": 0.34,
+          "life_expectancy_index": 0.452,
+          "gdp_per_capita_ppp": 526.17,
+          "resource_rents_pct_gdp": 36.3,
+          "oda_pct_gni": 3.08,
+          "political_stability": 20.25,
+          "fsi": null
+        },
+        "context": {
+          "population": 102000000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "neighbor_threat_level": "moderate",
+          "neighbor_details": "Rwanda/M23 activity in eastern DRC",
+          "resource_rents_pct_gdp": 38.83,
+          "resource_rents_pct_revenue": 40.0,
+          "n_successor_states": null
+        },
+        "data_gaps": [
+          "gii",
+          "eci",
+          "fsi"
+        ],
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+      },
+      "Rwanda": {
+        "indicators": {
+          "gov_effectiveness": 25.95,
+          "rule_of_law": 30.75,
+          "regulatory_quality": 29.74,
+          "cpi": null,
+          "control_of_corruption": 31.59,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": 0.23,
+          "life_expectancy_index": 0.346,
+          "gdp_per_capita_ppp": 498.88,
+          "resource_rents_pct_gdp": 12.56,
+          "oda_pct_gni": 34.0,
+          "political_stability": 30.16,
+          "fsi": null
+        },
+        "context": {
+          "population": 13800000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "military_dominant": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "legal",
+          "prior_porosity_period": false,
+          "is_democratic_transition": false,
+          "growth_trajectory": "growing",
+          "resource_rents_pct_revenue": 5.0
+        },
+        "data_gaps": [
+          "gii",
+          "eci",
+          "fsi"
+        ],
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "ABSTAIN at 1996 (gap 0.096 < 0.10 margin); predict divergence over reconstruction horizon with Rwanda the likelier riser",
+      "basis": "Mod4 abstention then P1 ordinality",
+      "falsification_condition": "DRC out-reconstructs Rwanda"
+    },
+    "b_violence": {
+      "prediction": "Both high violence RISK (Great Lakes)",
+      "risk_level": "critical",
+      "agency_note": "Mod8",
+      "falsification_condition": ""
+    },
+    "c_convergence": {
+      "prediction": "Divergence",
+      "basis": "reconstruction trajectories",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "DRC fails on P1 + rentier P4; Rwanda residual risk = voice/accountability (latent)",
+      "note": "",
+      "falsification_condition": ""
+    },
+    "e_fragment_count": {
+      "prediction": "N/A",
+      "safeguard_b_applied": false,
+      "falsification_condition": ""
+    },
+    "f_reversal_risk": {
+      "prediction": "Rwanda latent reversal risk (voice deficit)",
+      "safeguard_c_severity": "latent",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "DRC east: chronic",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2023"
+    ],
+    "entities": {
+      "Rwanda": {
+        "indicators_by_year": {
+          "2023": {
+            "gov_effectiveness": 59.29,
+            "rule_of_law": 58.19,
+            "regulatory_quality": 58.41,
+            "cpi": null,
+            "control_of_corruption": 61.64,
+            "gii": null,
+            "rd_pct_gdp": null,
+            "eci": null,
+            "education_index": 0.512,
+            "life_expectancy_index": 0.735,
+            "gdp_per_capita_ppp": 3399.45,
+            "resource_rents_pct_gdp": 4.02,
+            "oda_pct_gni": 9.87,
+            "political_stability": 66.54,
+            "fsi": 81.8
+          }
+        },
+        "outcome_summary": "MI 0.284->0.579 (Tier 4->3); HDI 0.297->0.578; reconstruction success, authoritarian.",
+        "key_events": [
+          "developmental reconstruction"
+        ]
+      },
+      "DR Congo": {
+        "indicators_by_year": {
+          "2023": {
+            "gov_effectiveness": 19.1,
+            "rule_of_law": 29.33,
+            "regulatory_quality": 35.02,
+            "cpi": null,
+            "control_of_corruption": 17.71,
+            "gii": null,
+            "rd_pct_gdp": null,
+            "eci": null,
+            "education_index": 0.549,
+            "life_expectancy_index": 0.645,
+            "gdp_per_capita_ppp": 1730.62,
+            "resource_rents_pct_gdp": 38.83,
+            "oda_pct_gni": 6.42,
+            "political_stability": 32.05,
+            "fsi": 106.7
+          }
+        },
+        "outcome_summary": "MI 0.277->0.338 (Tier 4); chronic eastern conflict (M23).",
+        "key_events": [
+          "M23 conflict",
+          "chronic state weakness"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "1996 abstention correct (gap too close); 2023 gap 0.341 decisive",
+      "explanation": "Mod4->divergence sequence vindicated."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "DRC east still at war",
+      "explanation": ""
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "2023 MI gap 0.24",
+      "explanation": ""
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "DRC P1 floor; Rwanda residual = voice",
+      "explanation": ""
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "f_reversal_risk": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Rwanda latent reversal risk not yet realized",
+      "explanation": "Coded partial/open: prospective, not yet falsifiable."
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "DRC east chronic turbulence",
+      "explanation": ""
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Strong; demonstrates Mod4 abstention discipline.",
+    "safeguards_triggered": [
+      "D",
+      "E"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Refusing a too-close 1996 ranking then being vindicated by a decisive 2023 gap.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None."
+  }
+}

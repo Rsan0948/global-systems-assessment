@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "case_name": "South Africa (institutional replacement + complexity expansion)",
+    "case_id": "case13",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "institutional_reconstruction",
+    "geographic_region": "Southern Africa",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "South Africa"
+    ],
+    "key_test": "Complexity-capacity matching when P1 ERODES post-transition; Mod8 (violence risk vs agency); Mod2/Safeguard E correct null on resources; Safeguard C conditioned on founding P1; Mod10 porosity-with-backstop.",
+    "round": "baseline_run4",
+    "notes": "Run4 Case 13. WGI cited on World Bank estimate scale (-2.5 to +2.5), per run; differs from the 0-100 .SC vintage of expansion_batch1 exemplars. Most pillar values are ordinal/estimated in the run, not cardinal."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Democratic transition: institutional replacement plus extension of governance to the entire population (managed-complexity increase). High-for-region founding institutional quality.",
+    "entities": {
+      "South Africa": {
+        "indicators": {
+          "gov_effectiveness": 1.0,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": 0.87,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "is_democratic_transition": true,
+          "neighbor_threat_level": "none",
+          "growth_trajectory": "declining",
+          "has_federalism": true,
+          "fragmentation_mechanism": "institutional_replacement",
+          "prior_porosity_period": false,
+          "external_backstop": true,
+          "backstop_details": "Strong founding constitution, independent judiciary, free press, Zondo Commission, and Constitutional Court (which jailed Zuma) act as a constitutional backstop. Nine-province quasi-federal system is the Mod10 porosity channel.",
+          "resource_rents_pct_revenue": null
+        },
+        "data_gaps": [
+          "rule_of_law (1996 estimate not given in run)",
+          "regulatory_quality",
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "fsi",
+          "resource_rents_pct_gdp (run gives ordinal range ~4-7% of GDP, mineral rents <4%; no single point)"
+        ],
+        "notes": "Founding (1996) values: Government Effectiveness approx 1.0 and Control of Corruption approx 0.87 were both series maxima (estimate scale). High-for-region at founding. Control of Corruption percentile rank was ~76th in 1996. Resource rents ~4-7% of GDP (mineral rents <4%) -> far below the 30%-of-GDP LIVE threshold, so Safeguard E does NOT trigger."
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "P1 declines post-transition; outcome below the high-P1 cases (Germany/UK/Belgium) but NO state collapse, because founding institutional design sets a survival floor.",
+      "basis": "Complexity-capacity thesis: governance extended to entire population while institutional capacity eroded (state capture); founding P1 high.",
+      "falsification_condition": "State collapse, or trajectory matching/exceeding the high-P1 cases."
+    },
+    "b_violence": {
+      "prediction": "Very high violence RISK, but communal/criminal/opportunistic and NOT state-perpetrated, NOT secessionist.",
+      "risk_level": "high",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY. The state is not the violence agent.",
+      "falsification_condition": "South Africa remains low-violence, OR the violence is state-perpetrated/secessionist."
+    },
+    "c_convergence": {
+      "prediction": "Complexity-capacity mismatch: capacity lags complexity expansion; wide pillar spread signals vulnerability.",
+      "basis": "Governance extended to whole population (complexity up) while WGI capacity fell.",
+      "falsification_condition": "Capacity keeps pace with complexity; narrow pillar spread."
+    },
+    "d_failure_dimension": {
+      "prediction": "P1 (state capture) + P4 (economic structure / labour market) mismatch -- NOT a resource curse or a P1-floor failure.",
+      "note": "Most exposed to post-hoc coding bias. Mod2 (Safeguard E) should produce a clean null on resources.",
+      "falsification_condition": "Binding constraint turns out to be resource dependence or a P1 floor breach."
+    },
+    "e_fragment_count": {
+      "prediction": "No territorial fragmentation; state stays intact.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "South Africa territorially fragments."
+    },
+    "f_reversal_risk": {
+      "prediction": "Low-to-moderate reversal risk; under-delivery produces ELECTORAL TURNOVER, not authoritarian reversal, because founding P1 is high. Safeguard C must be conditioned on baseline P1; Mod7 (Bangladesh/Safeguard C analogy) should NOT trigger (no high-growth bargain).",
+      "safeguard_c_severity": "low (conditioned on high founding P1)",
+      "falsification_condition": "South Africa reverses to authoritarianism."
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A -- not a suppression case (Mod6: centripetal / integrating-expanding).",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Nine-province quasi-federal system is a porosity channel (provincial coalitions diverge from the national GNU) with the constitution and Constitutional Court as the Mod10 backstop. Mod9 not applicable (no re-suppression).",
+      "safeguard_f_triggered": false,
+      "falsification_condition": "Provincial divergence escapes the constitutional backstop."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "entities": {
+      "South Africa": {
+        "indicators_by_year": {
+          "2024": {
+            "gov_effectiveness": -0.23,
+            "rule_of_law": 0.02,
+            "regulatory_quality": null,
+            "cpi": null,
+            "control_of_corruption": -0.19,
+            "gii": null,
+            "rd_pct_gdp": null,
+            "eci": null,
+            "education_index": null,
+            "life_expectancy_index": null,
+            "gdp_per_capita_ppp": null,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": null,
+            "political_stability": null,
+            "fsi": null
+          }
+        },
+        "outcome_summary": "P1 eroded multi-decade (Zuma/state-capture era ~2009-2018): Government Effectiveness from ~1.0 (1996) to negative by 2023; Control of Corruption percentile rank ~76th (1996) -> 43.9 (2022) -> ~45.8 (2023). 2024 WGI estimates: RoL 0.02, GE -0.23/-0.26, CoC -0.19. Fell ~40 places on the Fragile States Index since 2007, into 'Warning' (not 'Alert'/'Critical'). High violence RISK realized as communal/criminal violence; no state collapse; democratic turnover.",
+        "key_events": [
+          "July 2021 Gauteng/KwaZulu-Natal unrest (~350 deaths; govt tally 337 -- 79 Gauteng, 258 KZN; ~R50bn cost; worst violence since apartheid)",
+          "Recurrent xenophobic waves (2008, 2015, 2019, 2021-22, 2026) and chronic service-delivery protests",
+          "Q2 2024 youth (15-24) unemployment 60.8%; expanded unemployment ~42%; Gini ~0.63 (world's highest)",
+          "2024 election: ANC falls to 40.2% (from 57.5% in 2019), loses majority for first time since apartheid, forms Government of National Unity with DA (21.8%); MK 14.6%"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "GE ~1.0 (1996) -> negative by 2023; CoC percentile ~76th -> 43.9 (2022); fell ~40 FSI places since 2007 into 'Warning' -- but no collapse.",
+      "explanation": "P1 declined and outcome sits below the high-P1 cases, yet founding institutional design held the survival floor exactly as predicted."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "July 2021 unrest killed ~350 (worst since apartheid); recurrent xenophobic waves -- communal/criminal, not state-perpetrated, not secessionist.",
+      "explanation": "Mod8 correctly classified SA as high-violence-RISK but not state-perpetrated; high risk realized without the state as agent."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Governance extended to whole population while WGI capacity eroded -- 'capacity lagged complexity expansion'.",
+      "explanation": "Clearest illustration of the complexity-capacity thesis; wide pillar spread (P1 down, P4 catastrophic labour market) signalled vulnerability."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "Binding constraint = declining P1 (state capture) + catastrophic labour market (60.8% youth unemployment, Gini ~0.63); resource rents ~4-7% of GDP.",
+      "explanation": "P1+P4 mismatch, not a resource curse; Mod2/Safeguard E correctly produced a null on resources (below 30% threshold)."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "No state collapse; intact state with provincial coalitions diverging from the national GNU.",
+      "explanation": "No territorial fragmentation, as predicted."
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "30 years without authoritarian reversal; 2024 produced a democratic turnover (ANC 40.2%, GNU with DA) -- the opposite of reversal.",
+      "explanation": "Naive Safeguard C reading (under-delivery -> reversal) NOT borne out; high founding P1 produced electoral turnover. Confirms conditioning Safeguard C on baseline P1; Mod7 correctly did not trigger."
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a suppression case (Mod6: centripetal / complexity-expansion)."
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Nine-province quasi-federal porosity (ANC-EFF in Gauteng, MK plurality in KZN) held under the national constitution/Constitutional Court backstop.",
+      "explanation": "Mod10/Safeguard I (porosity-with-backstop) fits SA; Mod9 not applicable (no re-suppression)."
+    }
+  },
+  "analysis": {
+    "overall_assessment": "All applicable predictions consistent with the framework; LIVE outperforms STATIC (Mod8 risk-vs-agency, Mod2 resource null). South Africa avoided collapse despite declining P1 because its founding institutional design set a survival floor.",
+    "safeguards_triggered": [
+      "I (porosity-with-backstop, Mod10: constitution + Constitutional Court)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [
+      "P1 can ERODE rather than rise after a democratic transition; capacity lagging complexity expression appears as communal/criminal violence, not state collapse."
+    ],
+    "what_this_case_uniquely_reveals": "Founding institutional design sets a survival floor that is independent of subsequent P1 erosion; under-delivery under high founding P1 yields electoral turnover, not authoritarian reversal.",
+    "proposed_framework_modifications": [
+      "Condition Safeguard C on founding P1 (under-delivery need not cause reversal when founding institutional quality is high).",
+      "Promote candidate Safeguard I (porosity-with-backstop) from candidate to working safeguard (confirmed 5/5 in Run 4)."
+    ],
+    "baseline_impact": "Conditioning Safeguard C on founding P1 is a refinement that needs the 20-case baseline check before adoption."
+  }
+}
