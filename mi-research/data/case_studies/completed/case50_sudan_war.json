@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "case_name": "Sudan post-2019 / 2023 war (re-suppression after porosity)",
+    "case_id": "case50",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "prospective",
+    "geographic_region": "Northeast Africa / Sahel-Horn",
+    "time_period": "2018 -> 2024",
+    "entities": [
+      "Sudan"
+    ],
+    "key_test": "Mod9 directly: the 2019 revolution (porosity/opening) followed by the 2021 coup (re-suppression) and the 2023 SAF/RSF war should yield a WORSE outcome than no opening at all - re-suppression after porosity is catastrophic at floor-P1. Safeguard G Tier 1 (military) + Safeguard D (external backers fuelling both sides). DISTINCT from case05 (the 2011 Sudan/South Sudan secession); this case is the post-2019 collapse. Outcome ongoing -> coded prospective.",
+    "round": "v2_batch6",
+    "notes": "Reference-based record; single entity (Sudan). 2018-19 revolution ousts Bashir; 2019 transitional civilian-military government (porosity); October 2021 coup (re-suppression); April 2023 outbreak of the SAF (Burhan) vs RSF (Hemedti) war. Scored ~2018 vs 2024. MODERATE data (war disrupts series) -> directional-only. PROSPECTIVE / ongoing."
+  },
+  "pre_event": {
+    "time_point": "2018",
+    "event_description": "On the eve of the December 2018-2019 revolution that ousted Omar al-Bashir, Sudan was a floor-capacity authoritarian state. The 2019 transitional civilian-military arrangement opened a brief porosity period; the October 2021 coup re-suppressed it; and in April 2023 the rivalry between the Sudanese Armed Forces (Burhan) and the Rapid Support Forces (Hemedti) erupted into full-scale war.",
+    "entities": {
+      "Sudan": {
+        "context": {
+          "under_external_admin": false,
+          "population": 42000000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "military_dominant": true,
+          "neighbor_threat_level": "medium",
+          "neighbor_details": "Safeguard D: external backers fuelling the war - reported UAE support to the RSF, Egypt/Saudi alignment with the SAF, plus Chad, Libya (Haftar), and regional arms flows; cross-border spillover with South Sudan, Chad, Ethiopia.",
+          "fragmentation_mechanism": "re-suppression after porosity (Mod9)",
+          "prior_porosity_period": true,
+          "external_backstop": false,
+          "external_backstop_note": "no stabilizing backstop; external actors are predatory backers (Safeguard D), not guarantors",
+          "is_democratic_transition": false,
+          "growth_trajectory": "collapse",
+          "resource_rents_pct_revenue": 12.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Floor-P1 (pre ~0.257, Tier 4) with a brief 2019 opening that mobilized civilian actors; the framework predicts re-suppression of that opening (2021 coup -> 2023 war) is worse than continuous suppression would have been (Mod9). Distinct from the 2011 secession (case05).",
+        "country_ref": "Sudan",
+        "pre_year": "2018",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "[PROSPECTIVE] Catastrophic deterioration: re-suppression of the 2019 opening at floor-P1 yields an outcome WORSE than continuous suppression - state collapse and large-scale war (Mod9).",
+      "basis": "Floor pre-P1 ~0.257 (Tier 4) + re-suppression after a porosity period (Mod9) + external predatory backers (Safeguard D).",
+      "falsification_condition": "Sudan stabilizes / re-consolidates, OR the post-2019 trajectory proves no worse than its pre-2019 authoritarian baseline."
+    },
+    "b_violence": {
+      "prediction": "[PROSPECTIVE] High, catastrophic violence: re-suppression of mobilized actors at floor capacity ignites full-scale war.",
+      "risk_level": "critical",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Low-violence stable authoritarian restoration."
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity); self-trajectory: opening then re-suppression then collapse.",
+      "basis": "No comparison entity.",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "[PROSPECTIVE] Primary failure = institutional-capacity (P1) collapse plus state-cohesion (P5) breakdown into competing armed centers.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Failure driven by a non-P1/non-P5 dimension, or no failure."
+    },
+    "e_fragment_count": {
+      "prediction": "[PROSPECTIVE] De facto fragmentation into rival military-controlled zones (SAF vs RSF, plus Darfur/peripheral actors) - Safeguard B: floor capacity cannot manage even a low fragment count.",
+      "safeguard_b_applied": true,
+      "falsification_condition": "Unitary central control restored / re-centralization."
+    },
+    "f_reversal_risk": {
+      "prediction": "[PROSPECTIVE] The democratic opening is reversed (the 2021 coup IS the reversal); reversal at floor-P1 with mobilized actors predicts war, not stable restoration.",
+      "safeguard_c_severity": "critical",
+      "falsification_condition": "The reversal produces a stable, low-violence authoritarian restoration."
+    },
+    "g_suppression_mechanism": {
+      "classification": "[PROSPECTIVE] Re-suppression after porosity (Mod9) - worse than continuous suppression; Safeguard G Tier 1 (military) executes the re-suppression (2021 coup) which then fractures into SAF/RSF war.",
+      "tier": 1,
+      "falsification_condition": "The military successfully restores stable pre-2019 control (re-suppression 'working')."
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Sudan": {
+        "indicators_by_year": {},
+        "outcome_summary": "[PROSPECTIVE - ongoing] Catastrophic, as predicted. The 2019 opening was re-suppressed by the October 2021 coup, and the SAF/RSF rivalry erupted into full-scale war in April 2023 - the world's largest displacement crisis (over 10 million displaced), famine declared, tens of thousands killed, with RSF atrocities in Darfur. P1 fell 0.257 -> 0.216 and MI 0.400 -> 0.297 (Tier 4 throughout, deepening); P4 (economic structure) collapsed (0.697 -> 0.253). External backers (Safeguard D) prolonged the war. A markedly WORSE outcome than the pre-2019 continuous-authoritarian baseline (Mod9).",
+        "key_events": [
+          "2018-19 revolution; ouster of Bashir (April 2019)",
+          "2019 transitional civilian-military government (porosity)",
+          "October 2021 coup (re-suppression; Safeguard G Tier 1)",
+          "April 2023 outbreak of SAF (Burhan) vs RSF (Hemedti) war",
+          "2024: >10M displaced, famine declared, RSF atrocities in Darfur; external backers sustain both sides (Safeguard D)"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Sudan": {
+        "pre": {
+          "P1": 0.257,
+          "MI": 0.4
+        },
+        "post": {
+          "P1": 0.216,
+          "MI": 0.297
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] P1 0.257 -> 0.216, MI 0.400 -> 0.297 (Tier 4 deepening); 2023 full-scale war, world's largest displacement crisis.",
+      "explanation": "Re-suppression after porosity at floor-P1 produced an outcome worse than continuous suppression (Mod9), as predicted; prospective - war ongoing.",
+      "auto_derived": true
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] Full-scale SAF/RSF war; tens of thousands killed, famine, >10M displaced, Darfur atrocities.",
+      "explanation": "Floor-P1 re-suppression of mobilized actors -> catastrophic violence, as predicted (Mod8); prospective.",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Sudan pre-P1=0.257 -> HIGH risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity.",
+      "auto_derived": false
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "[prospective] P1 collapse + P5 cohesion breakdown into rival armed centers; P4 collapsed (0.697 -> 0.253).",
+      "explanation": "Primary failure dimensions (capacity + cohesion) matched. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Sudan: P4=0.70, P3=0.53, P2=0.29, P1=0.26, P5=0.23 | below-median (genuine vulnerabilities): P5=0.23, P1=0.26, P2=0.29",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] De facto fragmentation into SAF- and RSF-controlled zones plus peripheral actors.",
+      "explanation": "Floor capacity could not manage even a low fragment count, as Safeguard B predicts; prospective.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] The 2021 coup reversed the democratic opening; reversal at floor-P1 with mobilized actors produced war, not stable restoration.",
+      "explanation": "Reversal of the porosity at floor-P1 yielded catastrophe rather than restoration, as predicted; prospective.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] Safeguard G Tier 1 (military) re-suppression (2021 coup) fractured into the 2023 SAF/RSF war; the military did NOT restore stable pre-2019 control.",
+      "explanation": "Mod9 (re-suppression after porosity worse than continuous suppression) confirmed directionally - alongside Ethiopia/Tigray (case11) and Myanmar (case20); prospective.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: re-suppression after porosity (Mod9)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "PROSPECTIVE: 6/6 applicable predictions CONSISTENT WITH EVIDENCE THROUGH 2024 (5 CONFIRMED, d PARTIAL under the strict re-code), 0 falsified. The starkest living Mod9 test - re-suppression after porosity at floor-P1 producing catastrophe.",
+    "safeguards_triggered": [
+      "B (capacity gate: floor capacity cannot manage fragmentation)",
+      "G Tier 1 (military re-suppression)",
+      "D (external predatory backers fuelling both sides)",
+      "C (reversal of the democratic opening)",
+      "Mod9 (re-suppression after porosity)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Re-suppression after porosity at floor-P1, executed by a fractured security sector and fuelled by external backers, is worse than no opening at all: the 2019 mobilization plus the 2021 re-suppression produced not authoritarian restoration but a war between the two halves of the security apparatus (SAF vs RSF). Third Mod9 confirmation (with Ethiopia/Tigray case11 and Myanmar case20), and distinct from the 2011 secession (case05).",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; third Mod9 confirmation (now 3/3: Ethiopia/Tigray, Myanmar, Sudan) and a Safeguard D + Safeguard G Tier 1 instance. Trajectory is a watch item (war ongoing).",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

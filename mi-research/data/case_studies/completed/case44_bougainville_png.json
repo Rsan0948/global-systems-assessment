@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "case_name": "Bougainville / Papua New Guinea (prospective secession)",
+    "case_id": "case44",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "prospective",
+    "geographic_region": "Pacific / Melanesia",
+    "time_period": "2019 -> prospective 2027+",
+    "entities": [
+      "Papua New Guinea",
+      "Bougainville"
+    ],
+    "key_test": "PROSPECTIVE negotiated secession: the 2019 referendum returned 98.31% for independence (independence targeted ~2027). Safeguard I (autonomy-with-backstop heading toward dissolution) + a prospective P1 ordinal prediction - can a low-capacity micro-state (parent PNG P1=0.392, Tier 3) sustain statehood? Complexity-capacity matching for a micro-state predicts a HIGH-RISK transition. Bougainville is a SUB-STATE region -> proxied via the parent state + qualitative evidence (no standalone WGI). Outcome NOT settled -> coded prospective.",
+    "round": "v2_batch6",
+    "notes": "Reference-based record. Papua New Guinea carries real MI v1 re-scores; Bougainville is a sub-state proxy entity with no resolved scores. 1988-1998 civil war (~15,000-20,000 dead), 2001 Bougainville Peace Agreement, 2019 non-binding referendum (98.31% pro-independence of valid ballots), independence targeted ~2027 pending PNG parliamentary ratification. Scored ~2019 vs prospective 2027+ (PNG re-scored 2019->2024). PROSPECTIVE / directional-only per the framework's MODERATE-data rule."
+  },
+  "pre_event": {
+    "time_point": "2019",
+    "event_description": "The November-December 2019 Bougainville independence referendum, mandated by the 2001 Bougainville Peace Agreement, returned 98.31% for independence over greater autonomy on a ~87% turnout. The result is non-binding; under the Peace Agreement the outcome is subject to consultation between the Autonomous Bougainville Government and the national government and to ratification by the PNG National Parliament, with independence targeted for ~2027.",
+    "entities": {
+      "Papua New Guinea": {
+        "context": {
+          "population": 8800000,
+          "is_island": true,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "military_dominant": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "negotiated prospective secession (autonomy-with-backstop heading toward dissolution)",
+          "prior_porosity_period": true,
+          "external_backstop": true,
+          "backstop_details": "Safeguard I configuration: the 2001 Bougainville Peace Agreement established autonomy + a referendum-backed path with the national government (Port Moresby) as the constitutional guarantor/ratifier. Here the backstop is heading toward dissolution (a negotiated exit) rather than re-absorption.",
+          "has_devolution": true,
+          "has_power_sharing": true,
+          "growth_trajectory": "low-growth, resource-dependent",
+          "resource_rents_pct_revenue": 25.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. PNG is a low-capacity Tier 3 state (pre-P1 ~0.392); the framework's complexity-capacity logic flags both the parent's limited capacity to manage the transition and the prospective micro-state's capacity floor.",
+        "country_ref": "Papua New Guinea",
+        "pre_year": "2019",
+        "post_year": "2024"
+      },
+      "Bougainville": {
+        "context": {
+          "under_external_admin": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "negotiated prospective secession (referendum-backed)",
+          "prior_porosity_period": true,
+          "external_backstop": true,
+          "backstop_details": "2001 Bougainville Peace Agreement: autonomy + the referendum mechanism, with PNG as constitutional guarantor and ratifier.",
+          "has_devolution": true,
+          "has_power_sharing": true,
+          "growth_trajectory": "low-capacity, post-conflict, resource-legacy (Panguna mine)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "data_note": "pre-event indicators unavailable for Bougainville at 2019 (sub-state/new-state/pre-WGI gap)",
+        "country_ref": "Bougainville",
+        "pre_year": "2019",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "[PROSPECTIVE] High-risk transition. A negotiated path to independence is plausible without renewed war, but a Bougainville micro-state built on a low parent-capacity base (PNG pre-P1 ~0.392, Tier 3) faces a fragile statehood trajectory; PNG itself absorbs governance and fiscal strain from the secession process.",
+      "basis": "Complexity-capacity matching for a micro-state + low parent-state P1 (Tier 3); Safeguard I (autonomy-with-backstop heading toward dissolution).",
+      "falsification_condition": "Bougainville achieves stable, high-capacity independence by ~2027 with no fiscal/governance crisis (falsifies the fragility call), OR the process collapses into renewed armed conflict (falsifies the 'managed/negotiated' reading)."
+    },
+    "b_violence": {
+      "prediction": "[PROSPECTIVE] Elevated transition RISK given low capacity and the unresolved Panguna-mine/landowner cleavages, but the negotiated framework predicts no return to the 1988-1998 scale of civil war absent a breakdown in ratification.",
+      "risk_level": "high (transition risk)",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Large-scale armed conflict reignites, OR the transition completes with no instability at all."
+    },
+    "c_convergence": {
+      "prediction": "N/A (parent state + sub-state proxy, not a two-sovereign comparison).",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "[PROSPECTIVE] The binding constraint is institutional/fiscal capacity (P1 plus economic-structure P2): a low-capacity parent cannot easily endow a viable successor, and the prospective micro-state inherits a thin revenue base.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Any failure is driven by a non-capacity dimension, or no failure materializes."
+    },
+    "e_fragment_count": {
+      "prediction": "[PROSPECTIVE] 1 prospective successor state (Bougainville). Currently 0 (referendum non-binding, ratification pending); Safeguard B (capacity gate) flags low manageability for the new micro-state.",
+      "safeguard_b_applied": true,
+      "falsification_condition": "More than one successor, or a permanent return to full integration with no secession."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A - not a democratic-transition reversal case.",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A - negotiated/referendum-backed exit, not active suppression.",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "[PROSPECTIVE] Sub-state turbulence channelled through the negotiated process (referendum, consultation, parliamentary ratification) rather than violence; Safeguard I (autonomy-with-backstop heading toward dissolution) governs.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Sub-state turbulence escalates into renewed armed conflict."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Papua New Guinea": {
+        "indicators_by_year": {},
+        "outcome_summary": "[PROSPECTIVE - outcome not settled] The 2019 referendum's 98.31% pro-independence result moved into a negotiated, non-violent ratification track (Era Kone Covenant 2022; consultations toward a targeted ~2027 independence) rather than renewed war - consistent with the Safeguard I 'heading-toward-dissolution' reading. PNG's own capacity slipped over the window: P1 near-flat 0.392 -> 0.393 but MI 0.499 -> 0.417 (Tier 3 throughout) as economic and governance pillars eroded, consistent with the low-capacity strain the framework flagged. Bougainville statehood is NOT yet realized; the fragility prediction is pending.",
+        "key_events": [
+          "2019 referendum: 98.31% for independence (of valid ballots), ~87% turnout",
+          "2022 Era Kone Covenant: agreed political path toward independence",
+          "PNG National Parliament ratification still pending; independence targeted ~2027",
+          "no return to large-scale armed conflict through 2024"
+        ]
+      },
+      "Bougainville": {
+        "indicators_by_year": {},
+        "outcome_summary": "[PROSPECTIVE, sub-state, no WB data] Qualitative: the Autonomous Bougainville Government pursued independence through the negotiated framework; peace held; but capacity for viable statehood (revenue base, public administration, the contested Panguna mine) remains the open question the framework flags. No secession has yet occurred.",
+        "key_events": [
+          "Autonomous Bougainville Government negotiating ratification",
+          "Panguna mine reopening debated as a fiscal base",
+          "peace sustained since the 2001 agreement"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Papua New Guinea": {
+        "pre": {
+          "P1": 0.392,
+          "MI": 0.499
+        },
+        "post": {
+          "P1": 0.393,
+          "MI": 0.417
+        }
+      },
+      "Bougainville": {
+        "pre": {
+          "P1": null,
+          "MI": null
+        },
+        "post": {
+          "P1": null,
+          "MI": null
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] Negotiated path held (no renewed war); PNG MI declined 0.499 -> 0.417 (capacity strain), consistent with the low-capacity reading. Bougainville independence not yet realized -> the micro-state fragility call is pending.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: the sub-state entity lacks pre-P1/post-MI -> auto-derivation skipped, judgment preserved] Direction (managed, high-risk transition under low capacity) matches evidence so far, but the defining outcome (viable independence vs crisis) is not yet settled -> PARTIAL/prospective.",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] No return to 1988-1998-scale conflict; turbulence channelled through the referendum and ratification process.",
+      "explanation": "Risk acknowledged (Mod8) and so far managed without large-scale violence; prospective - transition incomplete.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Papua New Guinea pre-P1=0.392 -> MODERATE risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Parent-state + sub-state proxy; not a two-sovereign convergence test.",
+      "auto_derived": false
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "[prospective] PNG's MI erosion concentrated in capacity/economic pillars; the micro-state's fiscal-capacity question remains the binding constraint.",
+      "explanation": "Capacity-dimension reading is consistent so far; not yet fully testable (independence pending). [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Papua New Guinea: P4=0.65, P3=0.57, P5=0.52, P1=0.39, P2=0.36 | below-median (genuine vulnerabilities): P2=0.36, P1=0.39",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "[prospective] Referendum mandate for 1 successor state (98.31%); not yet realized (ratification pending) -> currently 0.",
+      "explanation": "Direction (1 prospective successor) matches the mandate; the count is not yet realized -> PARTIAL/prospective. Safeguard B capacity gate flagged for the prospective micro-state.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Negotiated/referendum-backed exit, not active suppression.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: negotiated prospective secession (autonomy-with-backstop heading toward dissolution)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] Sub-state turbulence channelled through referendum + Era Kone Covenant + ratification track, not violence.",
+      "explanation": "Safeguard I (autonomy-with-backstop heading toward dissolution) absorbed the secession bid into a negotiated process, as predicted; prospective.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "PROSPECTIVE hard stress test: 4/4 applicable predictions CONSISTENT WITH EVIDENCE THROUGH 2024 (2 CONFIRMED, 2 PARTIAL/prospective), 0 falsified. The defining outcome - whether a low-capacity micro-state can sustain viable independence by ~2027 - is not yet settled and is the framework's sealed forecast for this case.",
+    "safeguards_triggered": [
+      "I (autonomy-with-backstop heading toward dissolution)",
+      "B (capacity gate, prospective micro-state)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Safeguard I can run in the secession direction: a credible autonomy-plus-backstop architecture can channel an overwhelming pro-independence vote into a negotiated, non-violent dissolution path rather than war - but the complexity-capacity logic relocates the risk from the transition process to the viability of the resulting micro-state, built on a low parent-capacity base. A genuine out-of-sample forecast to be scored at ~2027.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; adds a prospective Safeguard I 'heading-toward-dissolution' variant and a directional micro-state capacity forecast.",
+    "data_note": "Bougainville is a non-WB sub-state proxy entity; its scores are intentionally null and its assessment is qualitative.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

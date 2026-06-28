@@ -180,7 +180,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Singapore 0.939 vs Malaysia 0.518.",
-      "explanation": "AUTO: full ordering matches: Singapore > Malaysia (by pre-P1) == outcome by post-MI; gap 0.247. | prior: AUTO: full ordering matches: Singapore > Malaysia (by pre-P1) == outcome by post-MI; gap 0.247. | prior: AUTO: full ordering matches: Singapore > Malaysia (by pre-P1) == outcome by post-MI; gap 0.247. | prior: Massive P1 gap mapped to vastly divergent trajectories as predicted.",
+      "explanation": "AUTO: full ordering matches: Singapore > Malaysia (by pre-P1) == outcome by post-MI; gap 0.247. | prior: AUTO: full ordering matches: Singapore > Malaysia (by pre-P1) == outcome by post-MI; gap 0.247. | prior: AUTO: full ordering matches: Singapore > Malaysia (by pre-P1) == outcome by post-MI; gap 0.247. | prior: AUTO: full ordering matches: Singapore > Malaysia (by pre-P1) == outcome by post-MI; gap 0.247. | prior: Massive P1 gap mapped to vastly divergent trajectories as predicted.",
       "auto_derived": true
     },
     "b_violence": {
@@ -193,7 +193,7 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Gap maintained/widened (~0.41 in 1996, ~0.42 in 2024).",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.133->0.195). | prior: AUTO: outcome DIVERGENCE (MI-range 0.133->0.195). | prior: AUTO: outcome DIVERGENCE (MI-range 0.153->0.208). | prior: Divergence as predicted.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.133->0.195). | prior: AUTO: outcome DIVERGENCE (MI-range 0.133->0.195). | prior: AUTO: outcome DIVERGENCE (MI-range 0.133->0.195). | prior: AUTO: outcome DIVERGENCE (MI-range 0.153->0.208). | prior: Divergence as predicted.",
       "auto_derived": true
     },
     "d_failure_dimension": {

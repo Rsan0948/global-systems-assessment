@@ -167,7 +167,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Outcome Ghana > Cote d'Ivoire by post-MI (0.502 vs 0.445); but pre-P1 gap was 0.002, below margin.",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.002 < margin 0.1 -> abstain (too close to call). | prior: Direction matches the hypothesis (Ghana ahead) but the ordering was a Mod4 near-tie at the 1996 baseline -- the divergence was earned by post-1996 institutional choices the starting P1 could not distinguish. Coded PARTIAL.",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.002 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.002 < margin 0.1 -> abstain (too close to call). | prior: Direction matches the hypothesis (Ghana ahead) but the ordering was a Mod4 near-tie at the 1996 baseline -- the divergence was earned by post-1996 institutional choices the starting P1 could not distinguish. Coded PARTIAL.",
       "auto_derived": true
     },
     "b_violence": {

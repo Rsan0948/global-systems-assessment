@@ -228,7 +228,7 @@
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "India pulled away 1996-2024; Bangladesh and Pakistan converged near the floor.",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.082->0.145). | prior: Divergence of India vs. floor-convergence of the other two confirmed.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.082->0.145). | prior: Divergence of India vs. floor-convergence of the other two confirmed.",
       "auto_derived": true
     },
     "d_failure_dimension": {

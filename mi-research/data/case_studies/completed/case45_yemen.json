@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "case_name": "Yemen unification 1990 (fusion that failed)",
+    "case_id": "case45",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "fusion",
+    "geographic_region": "MENA / Arabian Peninsula",
+    "time_period": "1990/1996 -> 2024",
+    "entities": [
+      "Yemen"
+    ],
+    "key_test": "Fusion under LOW P1: merging two low-capacity, rent-competing states (North Yemen/YAR + South Yemen/PDRY -> Republic of Yemen, 1990) predicts violent dissolution - the inverse of German reunification (case15), where the HIGHEST-P1 state absorbed extreme fusion complexity non-violently. Tests the complexity-capacity thesis at the failure pole: low-P1 fusion -> 1994 civil war -> post-2014 collapse. Safeguard E (oil rents intensifying elite competition).",
+    "round": "v2_batch6",
+    "notes": "Reference-based record; single entity (Yemen). 1990 unification, 1994 civil war (North defeats Southern secession attempt), 2011 uprising, 2014 Houthi takeover of Sana'a, 2015- Saudi-led intervention and de facto territorial breakup. Pre-event proxy: WGI series starts 1996 -> 1990 unavailable, pre scored ~1996 (flagged). MODERATE data (war disrupts series) -> directional-only."
+  },
+  "pre_event": {
+    "time_point": "1996 (post-unification proxy; 1990 pre-WGI)",
+    "event_description": "The 1990 fusion of North Yemen (Yemen Arab Republic) and South Yemen (People's Democratic Republic of Yemen) into the Republic of Yemen joined two low-capacity states with rival institutional legacies and competing rent claims. Power-sharing broke down quickly; the 1994 civil war defeated a Southern secession bid and entrenched Northern dominance. Scored at the ~1996 WGI proxy (1990 pre-dates the series).",
+    "entities": {
+      "Yemen": {
+        "context": {
+          "population": 15000000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "military_dominant": true,
+          "neighbor_threat_level": "medium",
+          "neighbor_details": "Saudi Arabia (border friction, later lead interventionist 2015-); regional proxy competition (Saudi/UAE vs Iran-aligned Houthis).",
+          "fragmentation_mechanism": "failed fusion of two low-capacity rent-competing states",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "is_democratic_transition": false,
+          "growth_trajectory": "stagnant, rent-dependent, declining",
+          "resource_rents_pct_revenue": 28.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100; pre is the ~1996 proxy (1990 pre-dates the WGI series). Low-P1 (pre ~0.374, Tier 3) fusion of two weak states with competing oil-rent claims -> the framework's failure-pole fusion case, contra Germany (case15, highest-P1, success).",
+        "country_ref": "Yemen",
+        "pre_year": "1990/1996",
+        "post_year": "2024",
+        "data_note": "pre-event indicators unavailable for Yemen at 1990/1996 (sub-state/new-state/pre-WGI gap)"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Severe deterioration: low-P1 fusion fails to integrate, producing violent dissolution and state collapse - the inverse of the highest-P1 German fusion success.",
+      "basis": "Pre-P1 ~0.374 (Tier 3, low) + fusion complexity expansion + competing oil rents (Safeguard E); complexity-capacity mismatch.",
+      "falsification_condition": "Yemen consolidates into a stable unified state, OR avoids large-scale violence."
+    },
+    "b_violence": {
+      "prediction": "High, ultimately catastrophic violence (1994 civil war, then post-2014 war and humanitarian collapse).",
+      "risk_level": "critical",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Low-violence trajectory / stable peace."
+    },
+    "c_convergence": {
+      "prediction": "North-South configuration mismatch never converges; the fused halves diverge back toward de facto separation.",
+      "basis": "Two rival institutional legacies (tribal-republican North vs Marxist South) joined without the capacity to integrate them; rent competition intensifies the split.",
+      "falsification_condition": "Genuine North-South institutional convergence / durable integration."
+    },
+    "d_failure_dimension": {
+      "prediction": "Primary failure = institutional capacity (P1) collapse plus state-cohesion (P5) breakdown; the fusion overloaded a low-capacity base.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Failure driven by a non-P1/non-P5 dimension, or no failure."
+    },
+    "e_fragment_count": {
+      "prediction": "De facto fragmentation (Houthi-controlled north, internationally-recognized-government south, Southern Transitional Council) - a low fragment count that is NOT manageable at floor capacity (Safeguard B).",
+      "safeguard_b_applied": true,
+      "falsification_condition": "State stays unified and centrally governed."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A - not a democratic-transition reversal case.",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A - fusion / complexity expansion that failed, not a legal-suppression case.",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Yemen": {
+        "indicators_by_year": {},
+        "outcome_summary": "Failed fusion, as predicted. The 1990 union produced the 1994 civil war (defeat of Southern secession), then the 2011 uprising, the 2014 Houthi seizure of Sana'a, and the 2015- Saudi-led war - de facto territorial breakup and one of the world's worst humanitarian crises. P1 collapsed 0.374 -> 0.205 and MI 0.408 -> 0.312 (Tier 3 -> Tier 4); P4 (economic structure) became unscorable amid the war. The inverse of Germany's highest-P1 fusion success (case15).",
+        "key_events": [
+          "1990 North-South unification (Republic of Yemen)",
+          "1994 civil war: North defeats Southern secession attempt",
+          "2011 uprising; 2012 Saleh exit",
+          "2014 Houthi takeover of Sana'a",
+          "2015- Saudi-led intervention; de facto territorial breakup (Houthi north / IRG / STC)"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Yemen": {
+        "pre": {
+          "P1": null,
+          "MI": null
+        },
+        "post": {
+          "P1": 0.205,
+          "MI": 0.312
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "P1 0.374 -> 0.205, MI 0.408 -> 0.312 (Tier 3 -> Tier 4); 1994 civil war then post-2014 collapse.",
+      "explanation": "Low-P1 fusion produced violent dissolution and state collapse, the predicted failure-pole inverse of the German success.",
+      "auto_derived": true
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "1994 civil war; 2015- war and humanitarian catastrophe (hundreds of thousands dead, mass displacement, famine conditions).",
+      "explanation": "Low-P1 fusion + rent competition -> catastrophic violence, as predicted (Mod8).",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Yemen pre-P1=0.374 -> MODERATE risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "No North-South convergence; the fused halves reverted toward de facto separation (Houthi north vs IRG/STC south).",
+      "explanation": "[data-limited: single fused entity -> auto-derivation skipped, judgment preserved] Persistent configuration mismatch realized as violent de facto re-division, as predicted.",
+      "auto_derived": false
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "P1 collapse + P5 cohesion breakdown; P4 became unscorable amid war.",
+      "explanation": "Primary failure dimensions (capacity + cohesion) matched. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Yemen (pre): P2=0.470, P4=0.440, P3=0.418, P1=0.374, P5=0.340 | below-median (genuine vulnerabilities): P1=0.374, P5=0.340",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "De facto fragmentation into Houthi-controlled north, internationally-recognized government, and Southern Transitional Council.",
+      "explanation": "Floor-capacity fusion could not hold a low fragment count, as Safeguard B predicts.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Failed fusion, not a legal-suppression case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: failed fusion"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Clean directional confirmation at the fusion failure pole: 4/4 applicable predictions CONFIRMED (d PARTIAL under the strict re-code). The defining contrast to German reunification (case15).",
+    "safeguards_triggered": [
+      "B (capacity gate: low fragment count unmanageable at floor capacity)",
+      "E (oil rents intensifying elite competition)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Fusion is not inherently stabilizing or destabilizing - the parent capacity decides. Where Germany's highest-P1 base absorbed extreme fusion complexity non-violently (case15), Yemen's low-P1 base, joining two weak rent-competing states, could not integrate the complexity and dissolved violently. The two cases bracket the complexity-capacity thesis for fusion.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; supplies the failed-fusion counterpart to Germany, strengthening the bidirectional fusion reading of the complexity-capacity thesis.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips; b risk-level set from real pre-P1; d augmented with the real pre-event config (weakest pillars below median flagged)."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

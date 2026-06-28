@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "case_name": "Botswana (rent-stabilization, positive Safeguard E)",
+    "case_id": "case38",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "fragmentation_prevention",
+    "geographic_region": "Southern Africa",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Botswana"
+    ],
+    "key_test": "Safeguard E POSITIVE pole. Diamond rents historically well above the 30%-of-GDP resource-curse threshold did NOT produce the curse because high-quality institutions captured the rents transparently (Pula Fund, fiscal rules). High P1 (0.632) + high rents should predict stability and growth -> validates the bidirectional design (the same rent level that drove Venezuela's collapse is benign under strong institutions).",
+    "round": "v2_batch4",
+    "notes": "Reference-based record (country_ref + years; no embedded indicators). Resolved scores are real MI v2 re-scores. Post-1966 independence + diamond discovery -> 2024; scored ~1996 vs 2024. P2 is unavailable at pre-event (data gap). Botswana stayed Tier 2 throughout; the modest MI drift reflects the panel-wide P2 normalization and the post-windfall easing of the diamond-inflated P4, not institutional decline."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Three decades after independence and the diamond discovery, Botswana had become Africa's longest-running multiparty democracy with strong institutions and a transparently managed mineral windfall (Pula Fund sovereign savings, sustainable-budget fiscal rule).",
+    "entities": {
+      "Botswana": {
+        "context": {
+          "population": 1600000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "low",
+          "is_democratic_transition": false,
+          "growth_trajectory": "growing",
+          "fragmentation_mechanism": "legal",
+          "resource_rents_pct_gdp": 28.0,
+          "resource_rents_pct_revenue": 50.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi",
+          "P2_unavailable_pre_event"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Diamond rents historically a very large share of GDP and ~half of government revenue -- above the resource-curse threshold -- but captured transparently (Pula Fund, sustainable-budget index). The POSITIVE-pole test of Safeguard E.",
+        "country_ref": "Botswana",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Stable positive consolidation; Tier 2 maintained. High P1 + transparently captured rents -> growth and stability, NOT the resource curse",
+      "basis": "P1 ordinality (high, 0.632) combined with the Safeguard E positive pole: rents above threshold but institutionally managed",
+      "falsification_condition": "Rentier capture / authoritarian reversion / growth collapse despite high P1, i.e. the negative pole materializing"
+    },
+    "b_violence": {
+      "prediction": "Low internal-violence RISK (high P1, stable democracy)",
+      "risk_level": "low",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Sustained internal political violence or breakdown"
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity)",
+      "basis": "",
+      "falsification_condition": "N/A"
+    },
+    "d_failure_dimension": {
+      "prediction": "Residual exposure = economic concentration / human capital (diamond dependence, lower P3), NOT institutions or accountability",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Failure driven by an institutional/accountability dimension instead of economic concentration"
+    },
+    "e_fragment_count": {
+      "prediction": "N/A (no fragmentation pressure)",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Territorial fragmentation pressure emerges"
+    },
+    "f_reversal_risk": {
+      "prediction": "Low democratic-reversal risk; transparent rent management lowers capture risk",
+      "safeguard_c_severity": "low",
+      "falsification_condition": "Authoritarian reversion or rentier capture of the democratic system"
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": "Emergence of a suppression mechanism"
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": "Sub-state turbulence emerges"
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Botswana": {
+        "indicators_by_year": {},
+        "outcome_summary": "Stable positive consolidation as predicted (Tier 2 held): MI 0.702 -> 0.610, P1 0.632 -> 0.600. Among the strongest sustained growth records of any country (~9%/yr real GDP 1965/66-2005/06), upper-middle-income, no internal violence, no rentier capture. The 2024 election produced a fully peaceful handover ending the ruling party's 58-year tenure -- the strongest possible accountability signal.",
+        "key_events": [
+          "decades of high growth without the resource curse",
+          "Pula Fund / fiscal-rule rent management sustained",
+          "2024 peaceful transfer of power ending 58 years of BDP rule"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Botswana": {
+        "pre": {
+          "P1": 0.632,
+          "MI": 0.702
+        },
+        "post": {
+          "P1": 0.6,
+          "MI": 0.61
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Tier 2 held (MI 0.702 -> 0.610; P1 0.632 -> 0.600); decades of high growth, no curse, 2024 peaceful turnover",
+      "explanation": "The Safeguard E positive pole was realized: above-threshold rents under strong institutions produced stability and growth, the inverse of Venezuela. The modest MI drift is the panel-wide P2 normalization plus post-windfall P4 easing, not decline.",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "No internal political violence across the window; 2024 handover entirely peaceful",
+      "explanation": "Low-risk call held.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Botswana pre-P1=0.632 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "No institutional/accountability failure; residual exposure is economic concentration (diamond dependence) and the relatively lower human-capital pillar",
+      "explanation": "No institutional failure dimension materialized, as predicted; the only vulnerabilities are economic-structural.",
+      "computed_config": "Botswana: P5=0.85, P4=0.79, P1=0.63, P3=0.53 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P3=0.53)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No fragmentation event.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "No reversion or capture; the 2024 peaceful transfer of power confirms durable accountability",
+      "explanation": "Low reversal risk held; transparent rent management did not corrode the democratic system.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "The canonical resource-curse exception, cleanly confirmed. High P1 plus above-threshold rents produced stability and growth -- the positive pole of Safeguard E -- and the 2024 peaceful handover removed any lingering one-party-dominance doubt about accountability.",
+    "safeguards_triggered": [
+      "E (positive pole)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Direct validation of Safeguard E's bidirectionality: the SAME rent intensity that drove Venezuela's collapse is benign -- even stabilizing -- under high-quality institutions. Resource rents are not destiny; institutional capacity sets the sign. The 2024 alternation also retires the 'stability is just one-party entrenchment' objection.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; calibrates the Safeguard E positive pole alongside Venezuela (negative), Mongolia (mixed) and the Gulf (authoritarian positive).",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

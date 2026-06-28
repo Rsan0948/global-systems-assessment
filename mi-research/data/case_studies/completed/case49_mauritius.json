@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "case_name": "Mauritius (African island democratic success)",
+    "case_id": "case49",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "fragmentation_prevention",
+    "geographic_region": "East Africa / Indian Ocean (island nation)",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Mauritius"
+    ],
+    "key_test": "Refined Strategy 3 (complexity control) -- but achieved through INSTITUTIONAL quality in a low-complexity environment, NOT through Singapore-style demographic engineering or constrained voice. Mauritius is genuinely multi-ethnic and genuinely democratic; high P1 (0.614) + democratic accountability should predict durable stability. The test is whether the framework attributes the success to institutions rather than to island geography alone.",
+    "round": "v2_batch4",
+    "notes": "Reference-based record (country_ref + years; no embedded indicators). Resolved scores are real MI v2 re-scores. Replaces the original Case 49 (Singapore standalone) per the revisions/replacements doc, to gain an independent, never-before-scored entity. 1968 independence -> 2024; scored ~1996 vs 2024. Notably, P1 actually ROSE (0.614 -> 0.637) -- a rare improving-institutions case in this batch -- and MI was near-flat (0.686 -> 0.677): exceptional durability."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Three decades after independence, Mauritius -- a small, resource-poor, multi-ethnic Indian Ocean island (Hindu ~48%, Creole ~27%, Muslim ~17%, Sino-Mauritian ~3%) -- had built a prosperous, continuously democratic state (Freedom House 'Free') on textiles, tourism, financial services and institutional quality rather than natural resources.",
+    "entities": {
+      "Mauritius": {
+        "context": {
+          "population": 1200000,
+          "is_island": true,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "none",
+          "is_democratic_transition": false,
+          "growth_trajectory": "growing",
+          "fragmentation_mechanism": "legal",
+          "has_power_sharing": true,
+          "resource_rents_pct_revenue": 1.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Genuinely multi-ethnic and genuinely democratic (the 'best loser' system manages communal representation); minimal natural resources -- prosperity is earned via institutions and human capital, not granted by rents. The institutional (not geographic, not authoritarian) version of small-island complexity control.",
+        "country_ref": "Mauritius",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Durable stable consolidation; Tier 2 maintained. High P1 + democratic accountability + low-complexity environment -> sustained stability and prosperity",
+      "basis": "P1 ordinality (high, 0.614); refined Strategy 3 -- institutional quality matching a low-complexity setting, achieved democratically",
+      "falsification_condition": "Loss of stability/prosperity, communal breakdown, or democratic reversion despite high P1"
+    },
+    "b_violence": {
+      "prediction": "Low internal-violence RISK (high P1, stable multi-ethnic democracy)",
+      "risk_level": "low",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Sustained communal or political violence / breakdown"
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity)",
+      "basis": "",
+      "falsification_condition": "N/A"
+    },
+    "d_failure_dimension": {
+      "prediction": "No primary institutional failure dimension; residual exposure = small-open-economy external shocks (P4), not institutions or communal cleavage",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Failure driven by an institutional or ethnic-cleavage dimension"
+    },
+    "e_fragment_count": {
+      "prediction": "N/A (no fragmentation pressure)",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Territorial/communal fragmentation pressure emerges"
+    },
+    "f_reversal_risk": {
+      "prediction": "Low democratic-reversal risk; genuine multiparty competition with peaceful turnovers",
+      "safeguard_c_severity": "low",
+      "falsification_condition": "Sustained democratic backsliding or authoritarian reversion"
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": "Emergence of a suppression mechanism"
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": "Sub-state / communal turbulence emerges"
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Mauritius": {
+        "indicators_by_year": {},
+        "outcome_summary": "Durable stable consolidation as predicted (Tier 2 held): MI 0.686 -> 0.677 (near-flat), P1 0.614 -> 0.637 (rose). Highest HDI in sub-Saharan Africa ('High Human Development'), among the continent's least corrupt and most democratic states, genuine multi-ethnic democracy with repeated peaceful turnovers including the November 2024 alternation. No communal breakdown.",
+        "key_events": [
+          "highest HDI in sub-Saharan Africa sustained",
+          "genuine multi-ethnic democracy, no communal breakdown",
+          "2024 peaceful alternation of power"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Mauritius": {
+        "pre": {
+          "P1": 0.614,
+          "MI": 0.686
+        },
+        "post": {
+          "P1": 0.637,
+          "MI": 0.677
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Tier 2 held (MI 0.686 -> 0.677); P1 actually rose (0.614 -> 0.637); highest SSA HDI; 2024 peaceful alternation",
+      "explanation": "Durable consolidation realized -- and uniquely in this batch, institutions strengthened rather than drifting. The framework's success call rests on institutional quality + democratic accountability, distinguishing the mechanism from Singapore's constrained-voice route.",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "No sustained communal or political violence across the window",
+      "explanation": "Low-risk call held for the high-P1 multi-ethnic democracy.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Mauritius pre-P1=0.614 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "No institutional or ethnic-cleavage failure; the only material movement is the post-windfall-neutral P4 easing common to small open economies, plus the panel-wide P2 normalization",
+      "explanation": "No primary failure dimension materialized, as predicted.",
+      "computed_config": "Mauritius: P5=0.83, P4=0.81, P3=0.64, P1=0.61, P2=0.53 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P2=0.53)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No fragmentation event.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "No backsliding; repeated peaceful turnovers including 2024; P1 rose over the window",
+      "explanation": "Low reversal risk held; genuine democratic competition sustained.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "African democratic success cleanly confirmed, and the most durable record in the batch (near-flat MI, rising P1). The case shows the framework explains African success as well as African failure, and pins the mechanism on institutions + accountability rather than island geography.",
+    "safeguards_triggered": [],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Refines Strategy 3 (complexity control) into an INSTITUTIONAL claim, not a geographic or authoritarian one: a genuinely multi-ethnic, genuinely democratic small island reaches Singapore-tier durability WITHOUT demographic engineering or constrained voice. Paired with Singapore (case7), Rwanda (case25) and Vietnam (case31), it completes the effectiveness/voice matrix -- Mauritius is the high-effectiveness/high-voice corner -- and is the rare entity whose institutions strengthened across the window.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; adds an independent African democratic-success data point and the high-voice corner of the effectiveness/voice comparison.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

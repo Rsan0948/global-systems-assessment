@@ -191,7 +191,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "DR Tier 2 (MI 0.585->0.617); Haiti Tier3->Tier4 (P1 0.296->0.223)",
-      "explanation": "AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: Wide P1 gap mapped to divergent outcomes as predicted.",
+      "explanation": "AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: Wide P1 gap mapped to divergent outcomes as predicted.",
       "auto_derived": true
     },
     "b_violence": {
@@ -204,7 +204,7 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "MI gap 0.17->0.24",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.158->0.232). | prior: Divergence.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.158->0.232). | prior: Divergence.",
       "auto_derived": true
     },
     "d_failure_dimension": {

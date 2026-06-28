@@ -174,7 +174,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Korea Tier 2 -> Tier 1; Taiwan qualitatively top-tier; intra-pair gap unmeasurable (Taiwan absent from WGI) -> Mod4 abstention honored",
-      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Mod4 abstention: both consolidated as predicted, but the framework correctly declines to rank them because Taiwan is data-limited and any P1 gap is within (indeed below) the WGI margin. Coded PARTIAL to mark the abstention rather than a clean ordinal confirmation.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Mod4 abstention: both consolidated as predicted, but the framework correctly declines to rank them because Taiwan is data-limited and any P1 gap is within (indeed below) the WGI margin. Coded PARTIAL to mark the abstention rather than a clean ordinal confirmation.",
       "auto_derived": false
     },
     "b_violence": {

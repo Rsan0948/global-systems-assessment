@@ -58,14 +58,14 @@ mi-research/
   Safeguard E (E-1/E-2), refined Strategy 3, + two new outputs (durability ratio, below-floor
   diagnostic). V1 (correlation-derived weights) is frozen at tag `mi-v1` / `archive/v1`. Decisions:
   `docs/architectural_decisions/v2_*.md`; synthesis: `docs/v2_synthesis_35cases.md`.
-- **Validated Cases:** **35 under V2** — 25 redone (cases 1–25) + 10 new (26–35, Batch 2+3:
-  Ghana/CDI, Malaysia, Argentina, Lebanon, Iraq, Vietnam, Korea/Taiwan, Fiji, Bolivia, Aceh).
-  See `live/runs/run8_v2_batch2-3_cases26-35.md`.
-- **Clean Confirmation Rate (V2):** **~74%** across 35 cases (154C/53P/0F), within the honest
-  62–85% range; **zero falsifications** across 207 predictions. The 25 redone tie V1 exactly
-  (weighting immaterial); the 10 new are ~75% clean.
-- **Directional Accuracy:** ~100% (zero falsifications) — partly structural; capacity partly
-  redundant with WGI standalone.
+- **Validated Cases:** **51 under V2** — 25 redone (1–25) + 26 new (26–51, incl. revisions
+  47 Cameroon / 49 Mauritius / 51 Somaliland). Runs: run7 (21–25), run8 (26–35), run9 (36–51);
+  synthesis `docs/v2_synthesis_51cases.md`.
+- **Clean Confirmation Rate (V2):** **~73%** across 51 cases (213C/76P/**1F**), honest range 62–85%.
+  **One falsification** (the first): Case 36 Chile/Uruguay — Chile's higher pre-P1 (gap 0.107, just
+  outside the Mod4 margin) was out-trajectoried by Uruguay. Flagged as the prime V3 signal.
+- **Directional Accuracy:** **99.7%** (1 falsification / 290 predictions) — no longer perfect, which
+  is more credible; partly structural; capacity partly redundant with WGI standalone.
 - **P1 Ordinality / centrality:** ordinality holds **independent of weighting** (the V1 P1=0.34
   "centrality" was a sample/time-point artifact; the pillar rotates and sits in a 0.71–0.80 band).
   See `docs/architectural_decisions/v2_p1_centrality_restatement.md`.

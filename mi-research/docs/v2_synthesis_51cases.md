@@ -1,18 +1,22 @@
-# MI v2 — 35-case synthesis (scorecard, V1↔V2 comparison, what breaks → V3)
+# MI v2 — 51-case synthesis (scorecard, V1↔V2 comparison, what breaks → V3)
 
-**Date:** 2026-06-28. Corpus: 25 redone under V2 + 10 new (cases 26–35). The eventual target is
-50; this is the 35-case checkpoint.
+**Date:** 2026-06-28. Corpus: **51 cases** = 25 redone under V2 + 26 new (cases 26–51, incl.
+revisions 47 Cameroon / 49 Mauritius / 51 Somaliland). This completes the baseline. Per-batch
+writeups: run7 (21–25), run8 (26–35), run9 (36–51).
 
 ## Scorecard (V2, equal weights)
 | segment | C | P | F | clean | directional |
 |---|---|---|---|---|---|
 | 25 redone (V2) | 109 | 38 | 0 | 74% | 100% |
-| 10 new (26–35) | 45 | 15 | 0 | 75% | 100% |
-| **all 35** | **154** | **53** | **0** | **74%** | **100%** |
+| new 26–35 | 45 | 15 | 0 | 75% | 100% |
+| new 36–51 | 59 | 23 | 1 | 71% | ~99% |
+| **all 51** | **213** | **76** | **1** | **73%** | **99.7%** |
 
-Honest range, not a single number: clean ~62–85% depending on coding; **zero falsifications across
-207 discrete predictions** (partly by construction — directional claims are hard to falsify);
-capacity construct partly redundant with WGI standalone.
+Honest range, not a single number: clean ~62–85% depending on coding; **one falsification across
+290 predictions** — the framework's FIRST: **Case 36 Chile/Uruguay** (Chile higher pre-P1 by 0.107,
+*just* outside the Mod4 margin, but Uruguay out-trajectoried it). Coded FALSIFIED, not softened.
+Capacity construct partly redundant with WGI standalone; near-zero falsification was always partly
+structural — this one real miss makes the record more credible, not less.
 
 ## V1 ↔ V2 comparison (honest, incl. where V2 is not better)
 - **The 25 redone are identical to V1: 109C/38P/0F.** The V1→V2 weighting change (P1 0.34 → equal)
@@ -36,6 +40,12 @@ capacity construct partly redundant with WGI standalone.
   I/Mod9 (Aceh — the constructive counterpart to Myanmar/Tigray re-suppression).
 
 ## What breaks / limits → raw material for V3
+0. **★ Chile/Uruguay falsification (Case 36).** The framework's first clean miss: Chile (higher
+   pre-P1 by 0.107, just outside the 0.10 Mod4 margin) was out-trajectoried by Uruguay. Either the
+   Mod4 margin is slightly too tight (~0.11–0.12 abstains it) or Uruguay is a genuine exception
+   (cohesion/stability compensating lower measured P1). **Prime V3 question.** Nepal is a second,
+   milder expectation-miss (flat P1 vs a 'rising-P1' hypothesis).
+
 1. **Non-WB polities have no data path.** Taiwan (case 32) is absent from the World Bank source →
    forced Mod4 abstention. V3 needs a documented proxy series (e.g. V-Dem/ICRG/WJP) for Taiwan and
    similar.

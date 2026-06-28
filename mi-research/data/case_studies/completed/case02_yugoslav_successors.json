@@ -385,7 +385,7 @@
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Slovenia converged to EU core while Bosnia diverged downward.",
-      "explanation": "AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.316->0.198). | prior: Outcomes diverged across the spread as predicted.",
+      "explanation": "AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.316->0.198). | prior: Outcomes diverged across the spread as predicted.",
       "auto_derived": true
     },
     "d_failure_dimension": {
