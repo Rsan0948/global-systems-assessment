@@ -4,7 +4,7 @@ These documents are the **process record** of how the MI score was tested and
 refined over time — the retrodiction studies behind the 20-case modern baseline
 summarized in `../../RESEARCH.md` ("What's Been Done"). They are **not** the
 canonical run 1–6 reference (that is the source-of-truth scoring record and lives
-in the project's working/live area; it will be added separately).
+in `../../live/runs/`).
 
 Treat these as evidence and derivation history: each round runs ~5 new (or
 re-examined) cases, scores the framework's predictions honestly, and — crucially —
@@ -21,6 +21,13 @@ in the LIVE version) as safeguards were added.
 | `round2_validation_five_cases.md` | **Round 2** — five new cases (~66% clean / ~90% directional, holds baseline). | Ethiopia/Eritrea, India/Pakistan/Bangladesh, Indonesia/East Timor, Serbia/Kosovo, Singapore/Malaysia | confirms A/B/C; flags rentier-capture, violence-source (→ E, Mod8) |
 | `round3_validation_structural_stress.md` | **Round 3** — five new cases; broadens to reconstruction/fusion. | Pakistan/Bangladesh, Ethiopia/Tigray, South Africa, Northern Ireland/GFA, German Reunification | high-P1 turbulence blind spot (→ Safeguard F) |
 | `round4_validation_structural_stress.md` | **Round 4** — five structural-stress cases (5/5 ordinal confirmed). | Nigeria/Biafra, Spain/Catalonia, Myanmar, Baltics vs Central Asia, Belgium | → Safeguards F, G (three-tier suppression), bidirectional E |
+
+### Additional studies (not numbered rounds)
+
+| File | What it is | Cases |
+|------|-----------|-------|
+| `ancient_extension_five_premodern_collapses.md` | The **ancient extension** — stress-tests the framework's structural logic across ~3,000 years (ordinal 1–5 proxy scoring). Verdict: "a strong heuristic, a weak oracle." | Western Rome, Han China, Abbasid Caliphate, Mongol Empire, Inca Empire |
+| `blind_prediction_study_five_structural_stress.md` | A **blind-prediction study** of five structural-stress cases (overlaps the Round 3 case set; framed as pre-registered-in-reasoning predictions). | Pakistan/Bangladesh, Ethiopia/Tigray, South Africa, Northern Ireland/GFA, Germany |
 
 ## Notes for agents
 
