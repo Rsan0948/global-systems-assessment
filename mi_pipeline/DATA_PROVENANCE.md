@@ -1,8 +1,9 @@
 # Data provenance — mi_pipeline real run
 
 This records exactly how the inputs in `./data/` were acquired and shaped for the
-first real end-to-end run. The CSVs themselves are git-ignored (raw downloads stay
-local, per `CLAUDE.md`); this file is the reproducible record.
+first real end-to-end run. The CSVs (and the generated `./output/`) **are committed
+to the repo** as of 2026-06-28; this file is the reproducible record of where each
+one came from.
 
 Acquired 2026-06-27. All sources are free/public. **No values were invented or
 interpolated** — every figure is a real upstream observation; the only
