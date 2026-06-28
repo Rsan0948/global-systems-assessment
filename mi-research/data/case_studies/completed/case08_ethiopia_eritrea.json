@@ -164,21 +164,21 @@
       "Ethiopia": {
         "pre": {
           "P1": 0.317,
-          "MI": 0.335
+          "MI": 0.34
         },
         "post": {
           "P1": 0.391,
-          "MI": 0.362
+          "MI": 0.356
         }
       },
       "Eritrea": {
         "pre": {
           "P1": 0.401,
-          "MI": 0.377
+          "MI": 0.371
         },
         "post": {
           "P1": 0.212,
-          "MI": 0.336
+          "MI": 0.383
         }
       }
     }
@@ -187,7 +187,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Too close to rank cleanly; Ethiopia had stronger growth in the 2000s-2010s then suffered catastrophic political collapse.",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: Neither state clearly 'won'; the floor-P1 ordinal lacks discriminating power. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: Neither state clearly 'won'; the floor-P1 ordinal lacks discriminating power. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]",
       "auto_derived": true
     },
     "b_violence": {

@@ -175,21 +175,21 @@
       "DR Congo": {
         "pre": {
           "P1": 0.199,
-          "MI": 0.276
+          "MI": 0.288
         },
         "post": {
           "P1": 0.255,
-          "MI": 0.268
+          "MI": 0.27
         }
       },
       "Rwanda": {
         "pre": {
           "P1": 0.295,
-          "MI": 0.329
+          "MI": 0.344
         },
         "post": {
           "P1": 0.582,
-          "MI": 0.488
+          "MI": 0.471
         }
       }
     }
@@ -198,7 +198,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "1996 gap 0.096 within margin->abstain; 2024 gap 0.327 decisive",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: Mod4->divergence sequence vindicated.",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: Mod4->divergence sequence vindicated.",
       "auto_derived": true
     },
     "b_violence": {
@@ -209,7 +209,7 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "2024 MI gap ~0.19",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.053->0.220). | prior: ",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.056->0.201). | prior: AUTO: outcome DIVERGENCE (MI-range 0.053->0.220). | prior: ",
       "auto_derived": true
     },
     "d_failure_dimension": {

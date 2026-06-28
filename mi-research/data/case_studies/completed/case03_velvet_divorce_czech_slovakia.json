@@ -207,21 +207,21 @@
       "Czech Republic": {
         "pre": {
           "P1": 0.653,
-          "MI": 0.76
+          "MI": 0.783
         },
         "post": {
           "P1": 0.705,
-          "MI": 0.761
+          "MI": 0.768
         }
       },
       "Slovakia": {
         "pre": {
           "P1": 0.584,
-          "MI": 0.716
+          "MI": 0.746
         },
         "post": {
           "P1": 0.603,
-          "MI": 0.702
+          "MI": 0.718
         }
       }
     }
@@ -230,7 +230,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Czech retains lead; Slovakia close (both succeed).",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: Higher-P1 Czech Republic kept a modest lead while both successors thrived, as predicted.",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: Higher-P1 Czech Republic kept a modest lead while both successors thrived, as predicted.",
       "auto_derived": true
     },
     "b_violence": {

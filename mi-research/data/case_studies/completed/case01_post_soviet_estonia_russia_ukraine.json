@@ -325,31 +325,31 @@
       "Estonia": {
         "pre": {
           "P1": 0.632,
-          "MI": 0.707
+          "MI": 0.725
         },
         "post": {
           "P1": 0.78,
-          "MI": 0.778
+          "MI": 0.775
         }
       },
       "Russia": {
         "pre": {
           "P1": 0.38,
-          "MI": 0.548
+          "MI": 0.586
         },
         "post": {
           "P1": 0.355,
-          "MI": 0.542
+          "MI": 0.57
         }
       },
       "Ukraine": {
         "pre": {
           "P1": 0.351,
-          "MI": 0.578
+          "MI": 0.629
         },
         "post": {
           "P1": 0.423,
-          "MI": 0.527
+          "MI": 0.545
         }
       }
     }
@@ -358,7 +358,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Estonia 1996 M=0.398 -> 2024 M=0.716 (steepest, highest); EU/NATO/eurozone.",
-      "explanation": "AUTO: full ordering matches: Estonia > Russia > Ukraine (by pre-P1) == outcome by post-MI; gap 0.281. | prior: Highest pre-event P1 produced the best trajectory, as predicted.",
+      "explanation": "AUTO: full ordering matches: Estonia > Russia > Ukraine (by pre-P1) == outcome by post-MI; gap 0.281. | prior: AUTO: full ordering matches: Estonia > Russia > Ukraine (by pre-P1) == outcome by post-MI; gap 0.281. | prior: Highest pre-event P1 produced the best trajectory, as predicted.",
       "auto_derived": true
     },
     "b_violence": {
@@ -371,7 +371,7 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Gap widened from 0.31 to 0.51 (Estonia vs Russia).",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.159->0.251). | prior: Outcomes diverged rather than converged.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.139->0.230). | prior: AUTO: outcome DIVERGENCE (MI-range 0.159->0.251). | prior: Outcomes diverged rather than converged.",
       "auto_derived": true
     },
     "d_failure_dimension": {

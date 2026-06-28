@@ -154,21 +154,21 @@
       "Pakistan": {
         "pre": {
           "P1": 0.398,
-          "MI": 0.489
+          "MI": 0.498
         },
         "post": {
           "P1": 0.371,
-          "MI": 0.403
+          "MI": 0.409
         }
       },
       "Bangladesh": {
         "pre": {
           "P1": 0.359,
-          "MI": 0.482
+          "MI": 0.499
         },
         "post": {
           "P1": 0.357,
-          "MI": 0.445
+          "MI": 0.46
         }
       }
     }
@@ -177,7 +177,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh OUTPERFORMED Pakistan on HDI and GDP per capita despite near-equal (arguably marginally lower) 1996 P1.",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]",
       "auto_derived": true
     },
     "b_violence": {
@@ -185,19 +185,19 @@
       "evidence": "Extreme 1971 violence (estimates 300,000-3,000,000 killed).",
       "explanation": "Consistent with the low-P1 engineered-bifurcation profile.",
       "risk_level": "MODERATE",
-      "data_refreshed": "2026-06-28: focus=Bangladesh pre-P1=0.359 -> MODERATE risk (MI v1, anchored)"
+      "data_refreshed": "2026-06-28: focus=Pakistan pre-P1=0.398 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Economic divergence - Bangladesh pulled ahead, overtaking Pakistan on GDP per capita.",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.007->0.042). | prior: Divergence as assessed.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.001->0.051). | prior: AUTO: outcome DIVERGENCE (MI-range 0.007->0.042). | prior: Divergence as assessed.",
       "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh via garments/human capital; Pakistan via instability.",
       "explanation": "Drivers matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
-      "computed_config": "Bangladesh: P4=0.68, P5=0.53, P2=0.46, P3=0.46, P1=0.36 | below-median (genuine vulnerabilities): P1=0.36, P3=0.46, P2=0.46",
+      "computed_config": "Pakistan: P4=0.73, P2=0.52, P3=0.42, P5=0.42, P1=0.40 | below-median (genuine vulnerabilities): P1=0.40, P5=0.42, P3=0.42",
       "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
@@ -226,7 +226,7 @@
       "explanation": "No suppression-mechanism prediction made for this case.",
       "safeguard_state_now": {
         "triggered": true,
-        "tier": "UNCLASSIFIED: successor state of 1971 secession"
+        "tier": "UNCLASSIFIED: secession of bifurcated province (East Pakistan)"
       },
       "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },

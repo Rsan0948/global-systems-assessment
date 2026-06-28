@@ -158,11 +158,11 @@
       "Indonesia": {
         "pre": {
           "P1": 0.368,
-          "MI": 0.509
+          "MI": 0.532
         },
         "post": {
           "P1": 0.505,
-          "MI": 0.558
+          "MI": 0.566
         }
       },
       "East Timor": {
@@ -172,7 +172,7 @@
         },
         "post": {
           "P1": 0.418,
-          "MI": 0.479
+          "MI": 0.502
         }
       }
     }
@@ -181,7 +181,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Indonesia GDP ~$95bn (1998) -> >$1.3tn (2022); Timor-Leste undiversified, 42% poverty.",
-      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Indonesia > East Timor as predicted (both versions).",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Indonesia > East Timor as predicted (both versions).",
       "auto_derived": false
     },
     "b_violence": {

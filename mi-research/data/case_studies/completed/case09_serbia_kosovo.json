@@ -163,11 +163,11 @@
       "Serbia": {
         "pre": {
           "P1": 0.467,
-          "MI": 0.637
+          "MI": 0.668
         },
         "post": {
           "P1": 0.495,
-          "MI": 0.61
+          "MI": 0.629
         }
       },
       "Kosovo": {
@@ -177,7 +177,7 @@
         },
         "post": {
           "P1": 0.505,
-          "MI": 0.563
+          "MI": 0.579
         }
       }
     }
@@ -186,7 +186,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Serbia GDP per capita PPP ~$26,884 (2024) vs Kosovo ~$6,200 (2023).",
-      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Both versions got the ordinal call right; Mod 1 discount made the P1 gap exceed the margin of error.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Both versions got the ordinal call right; Mod 1 discount made the P1 gap exceed the margin of error.",
       "auto_derived": false
     },
     "b_violence": {

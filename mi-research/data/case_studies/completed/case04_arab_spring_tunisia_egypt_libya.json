@@ -283,31 +283,31 @@
       "Tunisia": {
         "pre": {
           "P1": 0.526,
-          "MI": 0.641
+          "MI": 0.661
         },
         "post": {
           "P1": 0.463,
-          "MI": 0.542
+          "MI": 0.557
         }
       },
       "Egypt": {
         "pre": {
           "P1": 0.458,
-          "MI": 0.574
+          "MI": 0.591
         },
         "post": {
           "P1": 0.426,
-          "MI": 0.518
+          "MI": 0.531
         }
       },
       "Libya": {
         "pre": {
           "P1": 0.303,
-          "MI": 0.493
+          "MI": 0.532
         },
         "post": {
           "P1": 0.23,
-          "MI": 0.394
+          "MI": 0.42
         }
       }
     }
@@ -316,7 +316,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Tunisia kept a functioning, undivided state + a decade of democracy; Egypt restabilized as an autocracy with intact institutions; Libya = failed/fragmented state.",
-      "explanation": "AUTO: full ordering matches: Tunisia > Egypt > Libya (by pre-P1) == outcome by post-MI; gap 0.223. | prior: Tunisia > Egypt > Libya ordering by P1 reproduced exactly.",
+      "explanation": "AUTO: full ordering matches: Tunisia > Egypt > Libya (by pre-P1) == outcome by post-MI; gap 0.223. | prior: AUTO: full ordering matches: Tunisia > Egypt > Libya (by pre-P1) == outcome by post-MI; gap 0.223. | prior: Tunisia > Egypt > Libya ordering by P1 reproduced exactly.",
       "auto_derived": true
     },
     "b_violence": {
