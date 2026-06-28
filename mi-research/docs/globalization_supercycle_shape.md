@@ -55,6 +55,23 @@ This also reconnects to the fragmentation program's mechanism: the container is 
 *vent* pressure. A strengthening container (1970s) vents the deceleration's stress (new institutions,
 peaceful transitions); a brittle/eroding one (1910s; now) has nowhere to put it.
 
+## Micro-scale: can country-level boom-busts expand n=3? (directional, weak)
+Each national boom→bust is a micro-realization of the supercycle shape. Detecting them systematically
+(255 episodes, 1910–2010: a GDP-growth peak followed by a sharp deceleration), with container = rule-of-
+law level at the peak and **rupture = a large regime swing in EITHER direction** (an order breaking
+toward democracy *or* chaos — a direction-agnostic upheaval; a "decline-only" proxy is blind to
+ruptures that democratize, e.g. Indonesia/Korea 1997):
+- LOW container: **17%** upheaval (n=127) vs HIGH container: **12%** (n=128) — right direction
+  (low institutions rupture more) but **z=+1.1, weak, not significant**, and partly a floor effect.
+- So country-level episodes give **directional corroboration, not powered confirmation** — n=3 does not
+  cleanly multiply into a strong law.
+
+**Where it IS clean: within-shock natural experiments** (one shock, several countries — controls for the
+shock, varies the container). 1997 Asian crisis: same capital-flight shock; **Indonesia (rol 0.05)
+ruptured (Suharto fell, swing 0.49); Malaysia & Thailand (rol ~0.42) absorbed.** The discriminator
+holds with the shock held fixed. (Conceptual note: "rupture" = discontinuous regime change either way;
+ruptures that democratize make institutional indices *rise*, so direction-agnostic upheaval is required.)
+
 ## Honest limits
 - **n=3** supercycles, **n=2** clean outcomes (one catastrophe, one benign) — the discriminator is a
   *mechanism-consistent reading*, not a statistically powered law. It cannot be.
