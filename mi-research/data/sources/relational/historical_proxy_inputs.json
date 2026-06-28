@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "purpose": "HISTORICAL-PROXY tier (tier 2 of 3). Pre-1816 units, where the citable relational primitives (COW CINC, ATOP, ICOW) do not exist, but established quantitative historical series DO — and are used as era-appropriate proxies.",
+    "confidence": "Below the citable tier (tier 1), above pure interpretation (tier 3). Real reproducible data, but: (a) relative power is proxied by economic MASS (Maddison GDPpc x population) rather than the COW composite; (b) population is supplied from standard historical demography (NOT in the repo's Maddison GDPpc subset — see tech debt); (c) alliance/territorial-claim primitives are coded from documented historical fact, not ICOW/ATOP.",
+    "e1_method": "economic_mass = GDPpc x population. own vs JOINT adversary mass.",
+    "tech_debt": "Population is the weak link: the repo's longrun_pillars.json carries Maddison GDP-per-capita but NOT population. The figures below are standard historical-demography estimates (c.1770), citable to the Maddison population series / standard sources, and should be tightened to the exact Maddison population CSV when ingested. GDPpc year-gaps (Austria nearest 1820, Russia nearest 1860) are flagged per value.",
+    "provenance_tier": "historical_proxy"
+  },
+  "Polish-Lithuanian Commonwealth@1772": {
+    "provenance_tier": "historical_proxy",
+    "label": "Polish-Lithuanian Commonwealth, pre-First-Partition 1772 — the pre-1816 exogenous-erasure case, now proxy-backed",
+    "internal_pillars": {
+      "P1": 0.18,
+      "P5": null,
+      "provenance": "P1 = V-Dem rule-of-law @1789 (vdem_longrun.json POL rol=0.18) — the nearest historical V-Dem value; captures the liberum-veto institutional paralysis IN THE DATA (cf. partitioners Prussia 0.64, Austria 0.70). NB 1789 is post-first-partition. P5 left null (no contemporaneous stability series); the relational reading does not require it for this illustration. Internal read, historical-proxy tier."
+    },
+    "human_capital_proxy": {"literacy_pct": 5.0, "year": 1750, "provenance": "longrun_pillars.json POL P3_literacy @1750 = 5.0 (vs Prussia/DEU 38.0) — a real human-capital gap, for context."},
+    "exposure": {
+      "E1_relative_power": {
+        "method": "economic_mass",
+        "own": {"polity": "Poland-Lithuania", "gdppc": 974, "gdppc_year": 1772, "population_millions": 12.0, "gdppc_provenance": "longrun_pillars.json POL P4_gdp @1772", "pop_provenance": "historical demography c.1770 (pre-1st-partition ~12M); standard estimate, tech-debt to exact Maddison pop"},
+        "adversaries": [
+          {"polity": "Russia", "gdppc": 754, "gdppc_year": 1860, "population_millions": 25.0, "gdppc_provenance": "longrun_pillars.json RUS P4_gdp nearest=1860 (no 1772 value; flag year-gap, Russian power was demographic not per-capita)", "pop_provenance": "Russian Empire c.1770 ~25M, standard historical demography"},
+          {"polity": "Prussia", "gdppc": 1604, "gdppc_year": 1772, "population_millions": 5.0, "gdppc_provenance": "longrun_pillars.json DEU P4_gdp @1772 (DEU as Prussia proxy)", "pop_provenance": "Prussia c.1770 ~5M, standard historical demography"},
+          {"polity": "Austria", "gdppc": 1941, "gdppc_year": 1820, "population_millions": 18.0, "gdppc_provenance": "longrun_pillars.json AUT P4_gdp nearest=1820 (flag year-gap)", "pop_provenance": "Habsburg monarchy c.1770 ~18M, standard historical demography"}
+        ],
+        "detail": "Commonwealth economic mass vs the JOINT mass of its three partitioning neighbors. Mass = GDPpc x pop. Own ~11,688; joint adversary ~61,800 (Russia ~18,850 + Prussia ~8,020 + Austria ~34,938) -> overwhelming.",
+        "provenance": "Maddison GDPpc (repo) x historical-demography population (supplied). HISTORICAL-PROXY."
+      },
+      "E2_patron": {"credible_external_defender": false, "detail": "No external guarantor; the three neighbors WERE the predators. Documented historical fact (no ATOP pre-1816).", "provenance": "historical fact"},
+      "E3_contested_border": {"active_claim_against": true, "detail": "Active partitionist designs by all three neighbors (First Partition Aug 1772). Documented historical fact (no ICOW pre-1816).", "provenance": "historical fact"},
+      "E4_neighborhood": {"active_conflicts_contiguous": 3, "detail": "Surrounded by three hostile great powers; Russo-Turkish war + Bar Confederation context. Documented historical fact.", "provenance": "historical fact"},
+      "E5_great_power_faultline": {"on_faultline": true, "detail": "The Commonwealth WAS the contested ground between three rising absolutist powers.", "provenance": "historical fact"}
+    },
+    "response": {
+      "R4_strategic_depth": {"area_km2": 730000, "provenance": "Commonwealth area c.1772 ~730k km2 (large, but no mobilizational capacity to use it — the depth is nominal).", "note": "Large area, but depth without capacity. The R2 (P1) read is what carries the response signal, and it is very low (rol 0.18)."}
+    },
+    "outcome_factual": "Three partitions (1772, 1793, 1795); the state was erased from the map until 1918.",
+    "demonstrates": "The SAME logic as citable-tier Cyprus (high exposure + no patron + collapsed relative power -> erasure), but at the historical-proxy confidence tier. Real Maddison/V-Dem data, NOT interpretation."
+  }
+}

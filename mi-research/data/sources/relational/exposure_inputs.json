@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "purpose": "Citable relational-layer inputs for the T3 exposure/response tier. Every value is sourced from a named external dataset (COW NMC/CINC, ATOP/COW alliances, ICOW, COW MID, WDI). See docs/relational_tier_spec.md.",
+    "discipline": "The EXPOSURE axis (E1-E5) is strictly citable external data — that is the new contribution and must stay clean. The internal_pillars block is the MI's internal read (P1/P5); for historical cases (no contemporaneous WGI) it is the same recorded ordinal estimate the corpus already uses, tagged accordingly — it is NOT part of the citable exposure layer.",
+    "provenance_tiers": "Three tiers, decreasing confidence: (1) CITABLE — COW NMC/CINC, ATOP/COW alliances, ICOW, SIPRI (>=1816 / >=1949); this file. (2) HISTORICAL-PROXY — established quantitative historical series (Maddison GDP, V-Dem rule-of-law) used as era-appropriate proxies where the citable relational primitives don't exist pre-1816; historical_proxy_inputs.json. (3) INTERPRETED — pure hindsight, no structured source (the ancient tier's domain). This file is tier 1 only.",
+    "e1_method": "Tier 1 uses method='cinc' (COW composite capability ratio). Tier 2 uses method='economic_mass' (Maddison GDPpc x population ratio) because CINC doesn't exist pre-1816."
+  },
+  "Cyprus@1974": {
+    "provenance_tier": "citable",
+    "label": "Republic of Cyprus, pre-invasion 1974 (the documented exogenous MISS)",
+    "internal_pillars": {
+      "P1": 0.45,
+      "P5": 0.30,
+      "provenance": "historical ordinal estimate (corpus convention; no 1974 WGI). Divided bicommunal republic: moderate state institutions, low stability (intercommunal violence 1963-64, 1967). INTERNAL READ ONLY — not part of the citable exposure layer."
+    },
+    "exposure": {
+      "E1_relative_power": {"method": "cinc", "own_cinc": 0.0003, "adversary": "Turkey", "adversary_cinc": 0.0181, "year": 1974, "provenance": "COW National Material Capabilities v6 (CINC), 1974"},
+      "E2_patron": {"credible_external_defender": false, "detail": "1960 Treaty of Guarantee (Greece/Turkey/UK). Structurally non-credible: Turkey was itself a guarantor (the 'intervention' clause it invoked); the Greek junta did not/ could not project force; the UK declined to act. No defender honored it.", "provenance": "ATOP 4.0 / Treaty of Guarantee (1960) text + historical record of non-intervention"},
+      "E3_contested_border": {"active_claim_against": true, "detail": "Active irredentist/protection claim: enosis (union w/ Greece) vs taksim (partition); Turkey asserted a right to protect the Turkish-Cypriot community.", "provenance": "ICOW territorial-claim corpus / Cyprus dispute"},
+      "E4_neighborhood": {"active_conflicts_contiguous": 1, "detail": "Greco-Turkish Aegean militarized rivalry.", "provenance": "COW Militarized Interstate Disputes, 1974"},
+      "E5_great_power_faultline": {"on_faultline": true, "detail": "NATO southern flank, Cold War Eastern Mediterranean.", "provenance": "COW major-power list + contiguity"}
+    },
+    "response": {
+      "R4_strategic_depth": {"area_km2": 9251, "population": 631000, "provenance": "WDI / Maddison, c.1974"}
+    },
+    "outcome_factual": "Turkish invasion (Jul-Aug 1974); ~37% of the island occupied; de facto partition persisting to today."
+  },
+  "South Korea@2016": {
+    "provenance_tier": "citable",
+    "label": "Republic of Korea (the patron-SHIELDED mirror)",
+    "internal_pillars": {
+      "P1": null,
+      "P5": null,
+      "provenance": "LIVE from the Data API (modern unit, scoreable). Nulls here are placeholders; the module reads P1/P5 from score_country at run time."
+    },
+    "exposure": {
+      "E1_relative_power": {"method": "cinc", "own_cinc": 0.0189, "adversary": "China", "adversary_cinc": 0.2180, "year": 2016, "provenance": "COW NMC v6 (CINC), 2016. Adversary = most-capable plausible intervener in a peninsular war (the 1950 precedent), not the proximate DPRK."},
+      "E2_patron": {"credible_external_defender": true, "detail": "US-ROK Mutual Defense Treaty (1953), ATOP-coded, with ~28k forward-deployed US forces and demonstrated reinforcement posture.", "provenance": "ATOP 4.0 (US-ROK MDT 1953) + force-posture record"},
+      "E3_contested_border": {"active_claim_against": true, "detail": "DPRK constitutional claim to the whole peninsula; armistice (1953), not a peace treaty.", "provenance": "ICOW / armistice status"},
+      "E4_neighborhood": {"active_conflicts_contiguous": 1, "detail": "Recurrent DPRK militarized provocations along the DMZ/NLL.", "provenance": "COW MID / UCDP, modern"},
+      "E5_great_power_faultline": {"on_faultline": true, "detail": "US-China strategic boundary in Northeast Asia.", "provenance": "COW major-power list + contiguity"}
+    },
+    "response": {
+      "R4_strategic_depth": {"area_km2": 100210, "population": 51000000, "provenance": "WDI, 2016"}
+    },
+    "outcome_factual": "Persists as a sovereign state under standing high exposure; no successful invasion since 1953."
+  }
+}
