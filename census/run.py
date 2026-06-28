@@ -29,6 +29,7 @@ ROOT = os.path.join(HERE, "..")
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(ROOT, "integration"))
 from catalog import assess_system, to_dict  # noqa: E402
+import function_dim  # noqa: E402
 
 RESULTS = os.path.join(HERE, "results")
 
@@ -118,6 +119,7 @@ def main():
         "lawful_systems": [e.name for e in lawful],
         "lawful_factor_range": ([round(min(e.factor for e in lawful), 2),
                                  round(max(e.factor for e in lawful), 2)] if lawful else None),
+        "function_dimension": function_dim.analyze(entries),
         "entries": [to_dict(e) for e in entries],
     }
     with open(os.path.join(RESULTS, "catalog.json"), "w") as f:

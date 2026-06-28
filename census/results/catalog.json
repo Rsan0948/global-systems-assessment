@@ -1,8 +1,8 @@
 {
   "question": "Which natural systems have a consistent fragmentation point (concentrated factor that beats its mechanism-free null)?",
-  "n_systems": 10,
-  "n_natural": 7,
-  "n_lawful": 7,
+  "n_systems": 11,
+  "n_natural": 8,
+  "n_lawful": 8,
   "lawful_systems": [
     "rivers",
     "neuro_ganglion",
@@ -10,12 +10,66 @@
     "neuro_interneuron",
     "neuro_motoneuron",
     "neuro_purkinje",
-    "neuro_pyramidal"
+    "neuro_pyramidal",
+    "trees"
   ],
   "lawful_factor_range": [
     2.92,
-    3.74
+    3.79
   ],
+  "function_dimension": {
+    "n_classes": 3,
+    "n_systems": 8,
+    "eta_squared_function_explains_factor": 0.219,
+    "classes": {
+      "energy-transport": {
+        "n_systems": 1,
+        "principle": "minimum energy dissipation / OCN (Rinaldo)",
+        "geom_factor": 3.488,
+        "factor_range": [
+          3.49,
+          3.49
+        ],
+        "n_lawful": 1,
+        "systems": [
+          "rivers"
+        ]
+      },
+      "information-sampling": {
+        "n_systems": 6,
+        "principle": "wiring economy (Chklovskii, Cuntz)",
+        "geom_factor": 3.368,
+        "factor_range": [
+          2.92,
+          3.74
+        ],
+        "n_lawful": 6,
+        "systems": [
+          "neuro_ganglion",
+          "neuro_granule",
+          "neuro_interneuron",
+          "neuro_motoneuron",
+          "neuro_purkinje",
+          "neuro_pyramidal"
+        ]
+      },
+      "resource-distribution": {
+        "n_systems": 1,
+        "principle": "pipe model / area-preservation (Shinozaki, Eloy)",
+        "geom_factor": 3.788,
+        "factor_range": [
+          3.79,
+          3.79
+        ],
+        "n_lawful": 1,
+        "systems": [
+          "trees"
+        ]
+      }
+    },
+    "interpretation": "function does NOT clearly organize the factor (eta^2=0.22: within-class spread rivals between-class). Consistent with the ratio being a weak observable.",
+    "caveat": "Ratio is near-inevitable (Kirchner 1993); only lawful systems (those that beat their null) count. Scaling-exponent version is the stronger, not-yet-built test."
+  },
   "entries": [
     {
       "name": "rivers",
@@ -137,6 +191,23 @@
       "source": "NeuroMorpho pyramidal arbors (real); Horton Rb, min_orders=3; n=150"
     },
     {
+      "name": "trees",
+      "kind": "natural",
+      "n": 1210,
+      "factor": 3.788,
+      "ci_low": 3.766,
+      "ci_high": 3.81,
+      "cv": 0.106,
+      "null_factor": 2.989,
+      "direction": "above",
+      "beats_null_p": 0.0,
+      "concentrated": true,
+      "beats_null": true,
+      "lawful": true,
+      "verdict": "LAWFUL fragmentation point ~3.79 (above null)",
+      "source": "BioDiv-3DTrees TLS skeletons (real); Horton Rb, min_orders=4; n=1210 trees"
+    },
+    {
       "name": "corporate",
       "kind": "contrast",
       "n": 108,
@@ -146,7 +217,7 @@
       "cv": 0.311,
       "null_factor": 2.345,
       "direction": "below",
-      "beats_null_p": 0.214,
+      "beats_null_p": 0.23,
       "concentrated": false,
       "beats_null": false,
       "lawful": false,
@@ -161,9 +232,9 @@
       "ci_low": 18.967,
       "ci_high": 67.691,
       "cv": 1.645,
-      "null_factor": 36.162,
+      "null_factor": 36.248,
       "direction": "at",
-      "beats_null_p": 0.99,
+      "beats_null_p": 0.9685,
       "concentrated": false,
       "beats_null": false,
       "lawful": false,
@@ -178,9 +249,9 @@
       "ci_low": 4.913,
       "ci_high": 5.245,
       "cv": 9.888,
-      "null_factor": 5.078,
+      "null_factor": 5.077,
       "direction": "at",
-      "beats_null_p": 0.9895,
+      "beats_null_p": 0.9855,
       "concentrated": false,
       "beats_null": false,
       "lawful": false,
