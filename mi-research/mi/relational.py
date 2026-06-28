@@ -60,7 +60,7 @@ def _band(x):
 def load_records():
     """All T3 records across the citable and historical-proxy tiers, keyed 'Unit@Year'."""
     recs = {}
-    for fname in ("exposure_inputs.json", "historical_proxy_inputs.json"):
+    for fname in ("exposure_inputs.json", "historical_proxy_inputs.json", "validation_misses.json"):
         d = _load(fname)
         for k, v in d.items():
             if k == "_meta":
@@ -71,8 +71,15 @@ def load_records():
 
 # ----------------------------------------------------------------------------- exposure (E1-E5)
 def _e1_relative_power(blk):
-    """Relative military/material power vs the most-capable plausible adversary. Higher = weaker = more exposed."""
+    """Relative military/material power vs the most-capable plausible adversary. Higher = weaker = more exposed.
+
+    Returns None when there is NO external state with an active hostile posture/claim toward the unit
+    (method 'no_active_adversary'). This matters: a merely stronger but non-threatening neighbor must
+    NOT register as exposure — relative-power exposure only exists against an actual adversary. An
+    internally-collapsing state with no invader has E1 = None (E3/E4/E5 carry the structural read)."""
     method = blk.get("method")
+    if method == "no_active_adversary" or blk.get("adversary") in (None, "", "none"):
+        return None
     if method == "cinc":
         own = blk["own_cinc"]
         adv = blk["adversary_cinc"]

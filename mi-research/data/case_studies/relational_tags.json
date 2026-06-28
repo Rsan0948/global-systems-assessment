@@ -1,0 +1,685 @@
+{
+ "_meta": {
+  "rule": "docs/relational_tier_spec.md \u00a7C; tags assigned from shock text BEFORE joining outcomes; firewalled, additive, baseline untouched."
+ },
+ "tags": [
+  {
+   "case_id": "case01",
+   "name": "Post-Soviet Divergence: Estonia vs Russia vs Ukraine",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "'invasion/annex' refer to later Russia-Ukraine CONTEXT; the SCORED shock is the 1996 engineered USSR dissolution (internal imperial dissolution).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case02",
+   "name": "Yugoslav Successors: Slovenia vs Croatia vs Serbia vs Bosnia-Herzegovina",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 2,
+    "P": 4,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case03",
+   "name": "Velvet Divorce: Czech Republic vs Slovakia",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case04",
+   "name": "Arab Spring: Tunisia vs Egypt vs Libya",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "'intervention' is the 2011 Libya context; the scored shock is the endogenous Arab Spring uprisings.",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case05",
+   "name": "Sudan vs. South Sudan",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case06",
+   "name": "Pakistan vs. Bangladesh",
+   "tag": "mixed",
+   "primary_initiator": "endogenous",
+   "evidence": "1971 War of Independence: endogenous Bengali secession, but militarily DECIDED by India's external invasion of East Pakistan. Primary = endogenous secession; external state decisive.",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case07",
+   "name": "Singapore vs. Malaysia",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case08",
+   "name": "Ethiopia vs. Eritrea",
+   "tag": "mixed",
+   "primary_initiator": "endogenous",
+   "evidence": "Eritrean independence 1993 (endogenous secession) FOLLOWED BY the 1998-2000 Ethiopia-Eritrea interstate border war (exogenous). Case spans both.",
+   "keyword_markers": [
+    "border war"
+   ],
+   "outcomes": {
+    "C": 4,
+    "P": 3,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case09",
+   "name": "Serbia vs. Kosovo",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 0,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case10",
+   "name": "Indonesia vs. East Timor (Timor-Leste)",
+   "tag": "exogenous",
+   "primary_initiator": "exogenous",
+   "evidence": "Timor-Leste was under Indonesian OCCUPATION (external power). Independence ended an external occupation, and the 1999 violence came from the departing external power (TNI), not the fragment.",
+   "keyword_markers": [
+    "occupied",
+    "occupy",
+    "scorched-earth",
+    "tni"
+   ],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case11",
+   "name": "Ethiopia / Tigray",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "'occupy' is incidental; scored shock is Abiy's internal dismantling of ethnic federalism (re-suppression).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case12",
+   "name": "Nigeria / Biafra",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case13",
+   "name": "South Africa (institutional replacement + complexity expansion)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 6,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case14",
+   "name": "Northern Ireland / Good Friday Agreement (fragmentation prevention)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 6,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case15",
+   "name": "German reunification (fusion / complexity expansion)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case16",
+   "name": "Spain / Catalonia (Tier 2 legal suppression)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case17",
+   "name": "Belgium (extreme porosity, the limit test)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 6,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case18",
+   "name": "Baltics vs. Central Asia (institutions vs. resources)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case19",
+   "name": "India / Pakistan / Bangladesh (continental-scale P1 ordinality)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case20",
+   "name": "Myanmar post-2021 coup (re-suppression after porosity)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case21",
+   "name": "Haiti vs. Dominican Republic",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 3,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case22",
+   "name": "Venezuela (rentier capture and collapse)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case23",
+   "name": "Colombia (FARC peace; peripheral porosity-with-backstop)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case24",
+   "name": "DR Congo vs. Rwanda (Central Africa divergence)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 3,
+    "P": 3,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case25",
+   "name": "Rwanda (developmental authoritarianism; architectural stress case)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case26",
+   "name": "Ghana vs. Cote d'Ivoire (decolonization divergence)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 3,
+    "P": 4,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case27",
+   "name": "Malaysia (decolonization + centripetal federation)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 6,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case28",
+   "name": "Argentina 2001 (economic crisis with institutional resilience)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case29",
+   "name": "Lebanon (consociational collapse + economic crisis)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 6,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case30",
+   "name": "Iraq post-2003 (external administration + sectarian reconstruction)",
+   "tag": "exogenous",
+   "primary_initiator": "exogenous",
+   "evidence": "Iraq rebuilt under EXTERNAL administration (CPA) after the 2003 US invasion; 'externally imposed' sectarian settlement. Paradigm exogenous statebuilding (Safeguard A).",
+   "keyword_markers": [
+    "external administration",
+    "externally imposed",
+    "cpa"
+   ],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case31",
+   "name": "Vietnam (single-party developmental state)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 2,
+    "P": 3,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case32",
+   "name": "South Korea and Taiwan (developmental democratic transitions)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case33",
+   "name": "Fiji (coup-cycle, ethnic, Pacific)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "'intervention' = the military as an internal veto actor (1987/2000 coups). Endogenous.",
+   "keyword_markers": [
+    "intervention"
+   ],
+   "outcomes": {
+    "C": 3,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case34",
+   "name": "Bolivia (resource nationalism, regional 'media luna' tension, near-fragmentation)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case35",
+   "name": "Aceh, Indonesia (porosity-with-backstop, re-suppression test)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 6,
+    "P": 0,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case36",
+   "name": "Chile vs. Uruguay (Southern Cone consolidation, Mod4 abstention test)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case37",
+   "name": "Costa Rica vs. Nicaragua / Honduras / Guatemala (Central American exceptionalism)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 3,
+    "P": 3,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case38",
+   "name": "Botswana (rent-stabilization, positive Safeguard E)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 0,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case39",
+   "name": "Mongolia (democratic transition + resource dependence, mixed Safeguard E)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 3,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case40",
+   "name": "Quebec / Canada (1995 referendum, centripetal prevention)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case41",
+   "name": "Jamaica vs. Trinidad and Tobago (Caribbean institutional divergence)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 2,
+    "P": 3,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case42",
+   "name": "Gulf monarchies (Saudi Arabia / UAE rent-stabilization)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 3,
+    "P": 3,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case43",
+   "name": "Slovakia vs. Hungary (post-accession democratic backsliding)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case44",
+   "name": "Bougainville / Papua New Guinea (prospective secession)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 2,
+    "P": 3,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case45",
+   "name": "Yemen unification 1990 (fusion that failed)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "'intervention' incidental; scored shock is the failed 1990 Yemen fusion -> internal civil war.",
+   "keyword_markers": [
+    "intervention"
+   ],
+   "outcomes": {
+    "C": 4,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case46",
+   "name": "Sri Lanka (post-2022 economic collapse)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 3,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case47",
+   "name": "Cameroon (Anglophone crisis, colonial-institutional engineering)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case48",
+   "name": "Nepal (monarchy-to-republic transition + federal redesign)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 2,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case49",
+   "name": "Mauritius (African island democratic success)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 4,
+    "P": 0,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case50",
+   "name": "Sudan post-2019 / 2023 war (re-suppression after porosity)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "no external-state initiator in the shock description (rule default).",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  },
+  {
+   "case_id": "case51",
+   "name": "Somaliland / Somalia (de facto fragmentation, inverted recognition)",
+   "tag": "endogenous",
+   "primary_initiator": "endogenous",
+   "evidence": "'intervention' contextual; scored shock is the 1991 internal state collapse / warlordism.",
+   "keyword_markers": [],
+   "outcomes": {
+    "C": 5,
+    "P": 1,
+    "F": 0
+   }
+  }
+ ]
+}

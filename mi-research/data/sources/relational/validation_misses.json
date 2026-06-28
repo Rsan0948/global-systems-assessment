@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "purpose": "The engine-alone MISSES from validation_run_modern_30.md — moderate/high-institution states that ruptured anyway. T3 is run on them as a CONSISTENCY CHECK: does the exposure layer DISCRIMINATE — flag the relational (exogenous-military) misses HIGH and correctly stay LOW on the internal-channel misses?",
+    "discipline": "CONSISTENCY CHECK, NOT VALIDATION. These cases motivated/shaped T3; re-scoring them shows the mechanism behaves as intended, it cannot validate it. Firewalled from any out-of-sample claim and from the 213/77/0 baseline.",
+    "internal_read": "P1 = V-Dem rule-of-law at the pre-shock year (vdem_longrun.json), the same proxy used in the 30-run. Citable-tier for the exposure layer (COW CINC, >=1816).",
+    "provenance_tier": "citable"
+  },
+  "Greece@1919": {
+    "provenance_tier": "citable",
+    "label": "Greece, Asia Minor campaign 1919-1922 (engine-alone MISS — EXOGENOUS-military)",
+    "engine_alone": {"rol": 0.549, "outcome_tag": "2 (violent rupture)", "miss_type": "exogenous-military: defeat in Anatolia, not internal collapse"},
+    "internal_pillars": {"P1": 0.549, "P5": null, "provenance": "V-Dem rol @1919 = 0.549 (vdem_longrun.json GRC)"},
+    "exposure": {
+      "E1_relative_power": {"method": "cinc", "own_cinc": 0.006, "adversary": "Turkey (Ankara/Kemalist)", "adversary_cinc": 0.009, "year": 1920, "provenance": "COW CINC c.1920; Greece overextended deep in Anatolia vs a resurgent adversary on its own ground"},
+      "E2_patron": {"credible_external_defender": false, "detail": "Initial British (Lloyd George) backing collapsed by 1921-22 as France and Italy tilted to Kemal and the Allies withdrew support. No credible defender at the crisis.", "provenance": "ATOP/historical record of Allied abandonment"},
+      "E3_contested_border": {"active_claim_against": true, "detail": "Mutually contested Anatolia/Smyrna (Megali Idea vs Turkish national movement).", "provenance": "ICOW-era territorial dispute"},
+      "E4_neighborhood": {"active_conflicts_contiguous": 1, "detail": "The Greco-Turkish war itself.", "provenance": "COW war list 1919-22"},
+      "E5_great_power_faultline": {"on_faultline": true, "detail": "Post-Ottoman partition contested by the great powers.", "provenance": "COW major-power"}
+    },
+    "response": {"R4_strategic_depth": {"area_km2": 130000, "provenance": "Greece area; note the FORCES were overextended far from home depth in Anatolia"}},
+    "outcome_factual": "Catastrophic defeat in Anatolia (1922); Smyrna burned; population exchange; the 1922 revolution at home."
+  },
+  "Spain@1936": {
+    "provenance_tier": "citable",
+    "label": "Spain 1936 (engine-alone MISS — INTERNAL polarization, NOT relational)",
+    "engine_alone": {"rol": 0.663, "outcome_tag": "2 (violent rupture)", "miss_type": "endogenous: civil war from internal left-right polarization"},
+    "internal_pillars": {"P1": 0.663, "P5": null, "provenance": "V-Dem rol @1936 = 0.663 (vdem_longrun.json ESP)"},
+    "exposure": {
+      "E1_relative_power": {"method": "no_active_adversary", "adversary": null, "detail": "No external state sought to conquer Spain. Foreign involvement (German/Italian aid to Franco, Soviet to the Republic) came IN SUPPORT OF FACTIONS, not as a conquest of Spanish sovereignty — that is not relational EXPOSURE.", "provenance": "historical fact"},
+      "E2_patron": {"credible_external_defender": false, "detail": "n/a — internal conflict", "provenance": "n/a"},
+      "E3_contested_border": {"active_claim_against": false, "detail": "No external state held a territorial claim against Spain in 1936.", "provenance": "historical fact"},
+      "E4_neighborhood": {"active_conflicts_contiguous": 0, "detail": "Western Europe was at peace in 1936 (pre-WWII); no neighbor war spilling in.", "provenance": "COW"},
+      "E5_great_power_faultline": {"on_faultline": false, "detail": "Spain was peripheral; the war BECAME an ideological proxy, but the proximate shock was the internal July-1936 coup.", "provenance": "historical fact"}
+    },
+    "response": {"R4_strategic_depth": {"area_km2": 505000, "provenance": "Spain area"}},
+    "outcome_factual": "Spanish Civil War 1936-39; Franco dictatorship to 1975.",
+    "t3_expectation": "T3 SHOULD read LOW structural exposure — Spain 1936 is an INTERNAL-channel miss. If T3 flags it high, T3 is over-claiming; if low, T3 correctly DOES NOT resolve it, pointing to a different missing layer (acute internal polarization)."
+  },
+  "Portugal@1926": {
+    "provenance_tier": "citable",
+    "label": "Portugal 1926 (engine-alone MISS — INTERNAL military coup)",
+    "engine_alone": {"rol": 0.590, "outcome_tag": "severe (coup -> Estado Novo)", "miss_type": "endogenous: 28 May 1926 military coup"},
+    "internal_pillars": {"P1": 0.590, "P5": null, "provenance": "V-Dem rol @1926 = 0.590 (vdem_longrun.json PRT)"},
+    "exposure": {
+      "E1_relative_power": {"method": "no_active_adversary", "adversary": null, "detail": "No external state threatening Portuguese sovereignty in 1926.", "provenance": "historical fact"},
+      "E2_patron": {"credible_external_defender": false, "detail": "n/a", "provenance": "n/a"},
+      "E3_contested_border": {"active_claim_against": false, "provenance": "historical fact"},
+      "E4_neighborhood": {"active_conflicts_contiguous": 0, "provenance": "COW"},
+      "E5_great_power_faultline": {"on_faultline": false, "provenance": "historical fact"}
+    },
+    "response": {"R4_strategic_depth": {"area_km2": 92000, "provenance": "Portugal area"}},
+    "outcome_factual": "28 May 1926 coup -> the Estado Novo dictatorship (to 1974).",
+    "t3_expectation": "LOW exposure expected — internal-channel miss; T3 should not resolve it."
+  },
+  "Venezuela@1948": {
+    "provenance_tier": "citable",
+    "label": "Venezuela 1948 (engine-alone MISS — INTERNAL military coup)",
+    "engine_alone": {"rol": 0.511, "outcome_tag": "severe (coup)", "miss_type": "endogenous: Nov 1948 military overthrow of Gallegos"},
+    "internal_pillars": {"P1": 0.511, "P5": null, "provenance": "V-Dem rol @1948 = 0.511 (vdem_longrun.json VEN)"},
+    "exposure": {
+      "E1_relative_power": {"method": "no_active_adversary", "adversary": null, "detail": "No external state threatening Venezuelan sovereignty in 1948.", "provenance": "historical fact"},
+      "E2_patron": {"credible_external_defender": false, "detail": "n/a", "provenance": "n/a"},
+      "E3_contested_border": {"active_claim_against": false, "provenance": "historical fact"},
+      "E4_neighborhood": {"active_conflicts_contiguous": 0, "provenance": "COW"},
+      "E5_great_power_faultline": {"on_faultline": false, "provenance": "historical fact"}
+    },
+    "response": {"R4_strategic_depth": {"area_km2": 916000, "provenance": "Venezuela area"}},
+    "outcome_factual": "Nov 1948 coup; military rule (Perez Jimenez) to 1958.",
+    "t3_expectation": "LOW exposure expected — internal-channel miss; T3 should not resolve it."
+  }
+}
