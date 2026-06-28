@@ -7,7 +7,7 @@
     "status": "completed",
     "stress_type": "institutional_reconstruction",
     "geographic_region": "Central Africa / Great Lakes",
-    "time_period": "1996 -> 2023",
+    "time_period": "1996 -> 2024",
     "entities": [
       "Rwanda"
     ],
@@ -21,20 +21,20 @@
     "entities": {
       "Rwanda": {
         "indicators": {
-          "gov_effectiveness": 25.95,
-          "rule_of_law": 30.75,
-          "regulatory_quality": 29.74,
+          "gov_effectiveness": 25.9463,
+          "rule_of_law": 30.7451,
+          "regulatory_quality": 29.7427,
           "cpi": null,
-          "control_of_corruption": 31.59,
+          "control_of_corruption": 31.5932,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -0.224,
           "education_index": 0.23,
-          "life_expectancy_index": 0.346,
-          "gdp_per_capita_ppp": 498.88,
-          "resource_rents_pct_gdp": 12.56,
-          "oda_pct_gni": 34.0,
-          "political_stability": 30.16,
+          "life_expectancy_index": 0.3459,
+          "gdp_per_capita_ppp": 498.882,
+          "resource_rents_pct_gdp": 12.5562,
+          "oda_pct_gni": 34.0043,
+          "political_stability": 30.1572,
           "fsi": null
         },
         "context": {
@@ -51,11 +51,12 @@
           "resource_rents_pct_revenue": 5.0
         },
         "data_gaps": [
+          "cpi",
           "gii",
-          "eci",
+          "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
       }
     }
   },
@@ -105,27 +106,27 @@
   },
   "post_event": {
     "time_points": [
-      "2023"
+      "2024"
     ],
     "entities": {
       "Rwanda": {
         "indicators_by_year": {
-          "2023": {
-            "gov_effectiveness": 59.29,
-            "rule_of_law": 58.19,
-            "regulatory_quality": 58.41,
-            "cpi": null,
-            "control_of_corruption": 61.64,
-            "gii": null,
-            "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.512,
-            "life_expectancy_index": 0.735,
-            "gdp_per_capita_ppp": 3399.45,
-            "resource_rents_pct_gdp": 4.02,
-            "oda_pct_gni": 9.87,
-            "political_stability": 66.54,
-            "fsi": 81.8
+          "2024": {
+            "gov_effectiveness": 58.1246,
+            "rule_of_law": 58.6905,
+            "regulatory_quality": 59.1148,
+            "cpi": 57.0,
+            "control_of_corruption": 60.5158,
+            "gii": 19.69,
+            "rd_pct_gdp": 0.7815,
+            "eci": -1.098,
+            "education_index": 0.5124,
+            "life_expectancy_index": 0.7352,
+            "gdp_per_capita_ppp": 3710.8604,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 9.8732,
+            "political_stability": 65.1481,
+            "fsi": 82.3
           }
         },
         "outcome_summary": "Two decades stability, no turnover; HDI 0.189(1994)->0.578(2023); strong growth; tight political control (VA -0.53). Neither falsification condition met.",
@@ -139,7 +140,7 @@
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
-      "evidence": "realized stability + development; composite P1 predicts correctly",
+      "evidence": "realized stability + development; composite P1 0.582 predicts correctly",
       "explanation": "Decomposition would have biased toward a fragility miscall the record refutes."
     },
     "b_violence": {
@@ -153,9 +154,9 @@
       "explanation": ""
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "voice is the depressed dimension",
-      "explanation": ""
+      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
@@ -193,6 +194,7 @@
     "proposed_framework_modifications": [
       "Safeguard-C extension to non-transition developmental authoritarian states (qualitative flag only)"
     ],
-    "baseline_impact": "Architectural decision: keep P1 composite; no engine change; baseline unchanged."
+    "baseline_impact": "Architectural decision: keep P1 composite; no engine change; baseline unchanged.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

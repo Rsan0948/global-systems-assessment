@@ -291,11 +291,21 @@
     "entities": {
       "Estonia": {
         "indicators_by_year": {
-          "1996": {"mi_score": 0.398},
-          "2004": {"mi_score": 0.546},
-          "2012": {"mi_score": 0.681},
-          "2018": {"mi_score": 0.686},
-          "2024": {"mi_score": 0.716}
+          "1996": {
+            "mi_score": 0.398
+          },
+          "2004": {
+            "mi_score": 0.546
+          },
+          "2012": {
+            "mi_score": 0.681
+          },
+          "2018": {
+            "mi_score": 0.686
+          },
+          "2024": {
+            "mi_score": 0.716
+          }
         },
         "outcome_summary": "Steepest and highest trajectory; EU/NATO/eurozone integration. P1 2024 = 0.865.",
         "key_events": [
@@ -305,11 +315,21 @@
       },
       "Russia": {
         "indicators_by_year": {
-          "1996": {"mi_score": 0.087},
-          "2004": {"mi_score": 0.141},
-          "2012": {"mi_score": 0.196},
-          "2018": {"mi_score": 0.198},
-          "2024": {"mi_score": 0.203}
+          "1996": {
+            "mi_score": 0.087
+          },
+          "2004": {
+            "mi_score": 0.141
+          },
+          "2012": {
+            "mi_score": 0.196
+          },
+          "2018": {
+            "mi_score": 0.198
+          },
+          "2024": {
+            "mi_score": 0.203
+          }
         },
         "outcome_summary": "Flat-but-stable M (rents buy stability in a low-P1 state); never modernizes. P1 2024 = 0.278.",
         "key_events": [
@@ -319,11 +339,21 @@
       },
       "Ukraine": {
         "indicators_by_year": {
-          "1996": {"mi_score": 0.119},
-          "2004": {"mi_score": 0.166},
-          "2012": {"mi_score": 0.195},
-          "2018": {"mi_score": 0.177},
-          "2024": {"mi_score": 0.143}
+          "1996": {
+            "mi_score": 0.119
+          },
+          "2004": {
+            "mi_score": 0.166
+          },
+          "2012": {
+            "mi_score": 0.195
+          },
+          "2018": {
+            "mi_score": 0.177
+          },
+          "2024": {
+            "mi_score": 0.143
+          }
         },
         "outcome_summary": "Absolute decline post-2012 (0.177 -> 0.143); subjected to invasion. P1 2024 = 0.387.",
         "key_events": [
@@ -351,9 +381,9 @@
       "explanation": "Outcomes diverged rather than converged."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Estonia's P1 2024=0.865 vs Russia 0.278, Ukraine 0.387.",
-      "explanation": "Estonia succeeded on the institutional pillar; Russia/Ukraine failed on P1 as predicted."
+      "explanation": "Estonia succeeded on the institutional pillar; Russia/Ukraine failed on P1 as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "PARTIALLY_CONFIRMED",
@@ -397,6 +427,7 @@
     ],
     "what_this_case_uniquely_reveals": "Russia exposes a limitation/strength of the framework: it correctly predicts non-improvement of a floor-P1 rentier state but says nothing about its decades-long durability. Estonia confirms institution-led modernization at the post-Soviet top.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; no modification proposed. Reinforces P1-ordinal as the validated core."
+    "baseline_impact": "None; no modification proposed. Reinforces P1-ordinal as the validated core.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

@@ -191,7 +191,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Sudan 109.3 vs South Sudan 109.0 on FSI - statistically indistinguishable.",
-      "explanation": "Ordinal claim barely holds; both went catastrophic, so the marginal ranking is not discriminating at the floor."
+      "explanation": "Ordinal claim barely holds; both went catastrophic, so the marginal ranking is not discriminating at the floor. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]"
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -204,9 +204,9 @@
       "explanation": "Both units collapsed to the catastrophic floor."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "World Bank: oil 'contributes 60 percent of GDP, 99 percent of exports and 85 percent of government revenues' yet 'Nine out of ten people live below the poverty line'; per capita GDP fell 76%.",
-      "explanation": "Failure dimensions matched: South Sudan institutional vacuum + rentier distortion; Sudan P1+P5."
+      "explanation": "Failure dimensions matched: South Sudan institutional vacuum + rentier distortion; Sudan P1+P5. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -252,6 +252,7 @@
     "proposed_framework_modifications": [
       "Promote Safeguard B to primary status for low-count fragmentations: when P1 < bottom-third WGI Rule of Law, score 'catastrophic regardless of fragment count' before consulting P1 ordinality."
     ],
-    "baseline_impact": "Reinforces existing safeguards; Safeguard B promotion is a candidate refinement, not a degradation of the 20-case baseline."
+    "baseline_impact": "Reinforces existing safeguards; Safeguard B promotion is a candidate refinement, not a degradation of the 20-case baseline.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

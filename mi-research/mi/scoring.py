@@ -31,7 +31,11 @@ def normalize_eci(score: float, dataset_min: float = -2.5, dataset_max: float = 
     """Min-max normalize Economic Complexity Index."""
     if dataset_max == dataset_min:
         return 0.5
-    return (score - dataset_min) / (dataset_max - dataset_min)
+    # Clamp to [0,1]: an ECI outside the supplied dataset range must not push a
+    # pillar score negative or >1 (e.g. DR Congo ECI < dataset_min). Pass the
+    # dataset min/max via indicators (eci_dataset_min/max) for cross-dataset consistency.
+    norm = (score - dataset_min) / (dataset_max - dataset_min)
+    return max(0.0, min(1.0, norm))
 
 
 def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log: float = None) -> float:

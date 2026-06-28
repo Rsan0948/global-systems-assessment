@@ -18,35 +18,39 @@ ordinal P1 prediction" (proposal). The proposal mandated settling this *before* 
 warned the case "can be embarrassed either way."
 
 ## What was done
-Real, current public indicators were collected for Rwanda (and the rest of Batch 1):
-WGI **2025 revision** anchored 0-100 scores (World Bank source 3, `GOV_WGI_*.SC`), UNDP HDR 2025
-HDI sub-indices, World Bank WDI (GDP PPP / resource rents / ODA), Fund for Peace FSI 2024.
-Rwanda was then scored both ways and compared. Reproducible experiment + numbers:
-`sandbox/experiments/rwanda_p1_decomposition/` (`run_experiment.py`, `results.md`).
+Indicators are sourced from the **committed `mi_pipeline/` panel (commit 9487dd0)** for
+cross-project consistency — WGI **2025 revision** anchored 0-100 scores (`wb_cached.csv`), CPI,
+GII, ECI, UNDP HDR sub-indices (`hdr.csv`), WDI (GDP PPP / resource rents / ODA), Fund for Peace
+FSI — on the panel year grid (…/2012/2018/2024). Voice & Accountability is pulled from the WGI API
+because the panel omits it. mi-research reproduces the panel's P1/P2/P3/P5 (P4 differs by a small
+documented monotonic rescaling). Rwanda was scored both ways and compared. Reproducible experiment
++ numbers: `sandbox/experiments/rwanda_p1_decomposition/` (`run_experiment.py`, `results.md`).
+The decision is unchanged from the initial 2023-vintage run; the 2024 panel data gives the same picture.
 
 ## Evidence
 
 | | P1 composite | P1a capacity | P1b accountability | cap−acc gap |
 |---|---|---|---|---|
-| **Rwanda 2023** | 0.594 | 0.589 | 0.558 | **+0.030** |
+| **Rwanda 2024** | 0.582 | 0.586 | 0.552 | **+0.034** |
 | Rwanda 1996 | 0.295 | 0.278 | 0.296 | −0.018 |
 
-Rwanda's WGI 2023 (anchored 0-100 / estimate): GE 59.3/+0.41 · RQ 58.4/+0.23 · RL 58.2/+0.07 ·
-CC 61.6/+0.68 · **VA 47.6/−0.53** · PV 66.5/+0.04. Standard errors ≈ 0.14–0.19 on the estimate scale.
+Rwanda's WGI 2024 (anchored 0-100): GE 58.1 · RQ ≈59.1 · RL 58.7 · **CC 60.5** · **VA 46.5** · PV 65.1.
+(Inputs from the committed mi_pipeline panel; Voice from the WGI API as the panel omits it. The
+2023 vintage gave the same picture: gap +0.030, GE 59.3/+0.41 est, VA 47.6/−0.53 est, SEs ≈ 0.14–0.19.)
 
 Four reasons the decomposition is **not clearly better**, and one reason it is **risky**:
 
-1. **The capacity/accountability gap is inside the margin of error.** +0.030 on the 0-1 scale is
+1. **The capacity/accountability gap is inside the margin of error.** +0.034 on the 0-1 scale is
    well within the Mod4 margin (0.10). Per the framework's own abstention rule, we may not assert
    capacity > accountability for Rwanda — so the split carries no robust ordinal signal. Across
-   *all* of Batch 1 every entity's gap is within margin (Colombia +0.050, Haiti −0.058, DR +0.035,
-   Venezuela ±0.04–0.05) — Rwanda is not even an outlier.
+   *all* of Batch 1 every entity's gap is within margin (Colombia +0.032, Haiti −0.050, DR +0.032,
+   Venezuela +0.039) — Rwanda is not even an outlier.
 2. **The vintage matters and the canonical vintage shrinks the puzzle.** The proposal's "65th-pct
    effectiveness vs bottom-tier voice" rests on legacy *percentile ranks*. The 2025 WGI revision
    replaced those with anchored scores and moved Rwanda's Voice estimate from ≈ −0.9 to −0.53. In
    the current canonical data the effectiveness/voice chasm is a ~3-point gap, not a chasm.
 3. **It changes no prediction.** Splitting the 0.34 P1 weight into 0.17+0.17 moves Rwanda's MI
-   0.579→0.571 and DRC's 0.338→0.347; the Rwanda ≫ DRC ordinal (gap ≈ 0.24) is unchanged.
+   0.503→0.499 and DRC's 0.313→0.317; the Rwanda ≫ DRC ordinal (gap ≈ 0.19) is unchanged.
 4. **The composite already excludes Voice.** P1 (current) = GE, RL, RQ, CC — no VA. So the
    composite never over-credited Rwanda for accountability; the *only* new thing decomposition
    does is inject VA, lowering P1b and pushing toward a **fragility** call. Rwanda's realized

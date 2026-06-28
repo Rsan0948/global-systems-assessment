@@ -44,7 +44,7 @@
           "has_devolution": true,
           "has_power_sharing": true,
           "executive_collapses": 8,
-          "regional_gdp_divergence": 0.20,
+          "regional_gdp_divergence": 0.2,
           "fragmentation_mechanism": "consociational_power_sharing",
           "prior_porosity_period": true,
           "external_backstop": true,
@@ -147,9 +147,9 @@
       "explanation": "Persistent economic divergence realized without triggering violence, as predicted."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Lowest productivity + highest economic inactivity + subvention dependence -- the strain is economic, not institutional collapse.",
-      "explanation": "P4 under-delivery is the binding dimension, as predicted."
+      "explanation": "P4 under-delivery is the binding dimension, as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -185,6 +185,7 @@
       "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard.",
       "Reaffirm Mod3 (no timing claims) for prevention cases."
     ],
-    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check."
+    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

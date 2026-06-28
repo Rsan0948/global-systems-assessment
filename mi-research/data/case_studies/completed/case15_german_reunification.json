@@ -43,7 +43,7 @@
           "neighbor_threat_level": "none",
           "has_federalism": true,
           "regional_antisystem_vote": 0.328,
-          "regional_gdp_divergence": 0.30,
+          "regional_gdp_divergence": 0.3,
           "fragmentation_mechanism": "fusion",
           "prior_porosity_period": false,
           "external_backstop": true,
@@ -145,9 +145,9 @@
       "explanation": "Persistent configuration mismatch realized and expressed non-violently, as predicted."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Strain surfaced as the AfD's rise (regional/economic mismatch), not as institutional collapse.",
-      "explanation": "Configuration-mismatch dimension confirmed."
+      "explanation": "Configuration-mismatch dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -183,6 +183,7 @@
       "Strengthens the complexity-capacity thesis and P1 ordinality.",
       "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard."
     ],
-    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check."
+    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

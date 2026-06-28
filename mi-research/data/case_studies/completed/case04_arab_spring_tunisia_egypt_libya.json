@@ -295,9 +295,15 @@
       },
       "Egypt": {
         "indicators_by_year": {
-          "2012": {"mi_score": -0.008},
-          "2018": {"mi_score": 0.048},
-          "2024": {"mi_score": 0.092}
+          "2012": {
+            "mi_score": -0.008
+          },
+          "2018": {
+            "mi_score": 0.048
+          },
+          "2024": {
+            "mi_score": 0.092
+          }
         },
         "outcome_summary": "Restabilized as an autocracy with intact institutions; 2013 military coup + Rabaa massacre (~900-1,000 killed in a single day per Human Rights Watch). 2024 P1 = 0.297.",
         "key_events": [
@@ -333,9 +339,9 @@
       "explanation": "Divergence as predicted."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Safeguard E textbook case -- rents masked an institutional vacuum; Libya GDP/cap fell to ~65% of its 2010 pre-war level by 2024.",
-      "explanation": "Each country's failure ran along its predicted dimension (Libya rentier collapse; Egypt P1 + military; Tunisia weak P4 delivery)."
+      "explanation": "Each country's failure ran along its predicted dimension (Libya rentier collapse; Egypt P1 + military; Tunisia weak P4 delivery). [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
@@ -379,6 +385,7 @@
     "proposed_framework_modifications": [
       "Apply Safeguard E bidirectionally and explicitly invert resilience predictions when rents exceed ~30% of GDP."
     ],
-    "baseline_impact": "None degrading; reinforces Safeguard E. No baseline-breaking modification proposed."
+    "baseline_impact": "None degrading; reinforces Safeguard E. No baseline-breaking modification proposed.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

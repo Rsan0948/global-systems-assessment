@@ -150,9 +150,9 @@
       "explanation": "Continued fragmentation pressure as predicted (both versions)."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "P1 + P5 (stability) failure; centrifugal form (sequential regional fronts).",
-      "explanation": "Confirmed; Mod 6's centrifugal classification adds value."
+      "explanation": "Confirmed; Mod 6's centrifugal classification adds value. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
@@ -196,6 +196,7 @@
     "proposed_framework_modifications": [
       "Promote 're-suppression after porosity' from heuristic to a tested core prediction; flag any state dismantling a long-standing porosity/federal-accommodation system as elevated-risk."
     ],
-    "baseline_impact": "Confirms Mods 5 and 6; promotes a heuristic to a tested core prediction - a refinement, not a degradation of the baseline."
+    "baseline_impact": "Confirms Mods 5 and 6; promotes a heuristic to a tested core prediction - a refinement, not a degradation of the baseline.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

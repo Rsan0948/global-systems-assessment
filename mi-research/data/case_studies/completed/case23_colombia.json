@@ -7,7 +7,7 @@
     "status": "completed",
     "stress_type": "suppressed_fragmentation",
     "geographic_region": "South America / Andes",
-    "time_period": "2012 -> 2023",
+    "time_period": "2012 -> 2024",
     "entities": [
       "Colombia"
     ],
@@ -21,40 +21,35 @@
     "entities": {
       "Colombia": {
         "indicators": {
-          "gov_effectiveness": 49.3,
-          "rule_of_law": 49.26,
-          "regulatory_quality": 58.36,
-          "cpi": null,
-          "control_of_corruption": 39.56,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": 0.648,
-          "life_expectancy_index": 0.856,
-          "gdp_per_capita_ppp": 12093.08,
-          "resource_rents_pct_gdp": 8.3,
-          "oda_pct_gni": 0.21,
-          "political_stability": 43.15,
-          "fsi": null
+          "gov_effectiveness": 49.2992,
+          "rule_of_law": 49.2601,
+          "regulatory_quality": 58.3626,
+          "cpi": 36.0,
+          "control_of_corruption": 39.5561,
+          "gii": 35.5,
+          "rd_pct_gdp": 0.2212,
+          "eci": 0.287,
+          "education_index": 0.6482,
+          "life_expectancy_index": 0.8556,
+          "gdp_per_capita_ppp": 12093.0755,
+          "resource_rents_pct_gdp": 8.2968,
+          "oda_pct_gni": 0.2144,
+          "political_stability": 43.1514,
+          "fsi": 84.4
         },
         "context": {
           "population": 52000000,
           "is_island": false,
           "is_democratic": true,
           "is_authoritarian": false,
-          "has_devolution": false,
           "neighbor_threat_level": "none",
           "fragmentation_mechanism": "insurgency",
           "external_backstop": true,
           "backstop_details": "Sovereign central state retains military/constitutional backstop over FARC-vacated periphery",
           "resource_rents_pct_revenue": 10.0
         },
-        "data_gaps": [
-          "gii",
-          "eci",
-          "fsi"
-        ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "data_gaps": [],
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
       }
     }
   },
@@ -104,27 +99,27 @@
   },
   "post_event": {
     "time_points": [
-      "2023"
+      "2024"
     ],
     "entities": {
       "Colombia": {
         "indicators_by_year": {
-          "2023": {
-            "gov_effectiveness": 50.52,
-            "rule_of_law": 47.24,
-            "regulatory_quality": 57.02,
-            "cpi": null,
-            "control_of_corruption": 41.6,
-            "gii": null,
+          "2024": {
+            "gov_effectiveness": 49.1803,
+            "rule_of_law": 47.3311,
+            "regulatory_quality": 55.074,
+            "cpi": 39.0,
+            "control_of_corruption": 41.9095,
+            "gii": 29.18,
             "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.698,
-            "life_expectancy_index": 0.888,
-            "gdp_per_capita_ppp": 21246.38,
-            "resource_rents_pct_gdp": 5.32,
-            "oda_pct_gni": 0.29,
-            "political_stability": 52.24,
-            "fsi": 75.6
+            "eci": 0.233,
+            "education_index": 0.6979,
+            "life_expectancy_index": 0.8881,
+            "gdp_per_capita_ppp": 22349.4364,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 0.289,
+            "political_stability": 49.3103,
+            "fsi": 78.1
           }
         },
         "outcome_summary": "2016 accord; social-leader/ex-combatant assassinations surged in FARC-vacated zones (ELN/dissidents); stable centre, MI ->Tier 2; no secession.",
@@ -139,7 +134,7 @@
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
-      "evidence": "P1 flat 0.491; MI 0.599->0.621 Tier 2",
+      "evidence": "P1 flat ~0.48; MI 0.573->0.588 (Tier 3)",
       "explanation": "Stable centre."
     },
     "b_violence": {
@@ -153,9 +148,9 @@
       "explanation": ""
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "capacity vacuum in vacated zones",
-      "explanation": ""
+      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
@@ -187,6 +182,7 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "Backstop can secure the centre without securing the periphery.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None."
+    "baseline_impact": "None.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

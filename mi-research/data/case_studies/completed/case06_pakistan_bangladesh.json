@@ -183,7 +183,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh OUTPERFORMED Pakistan on HDI and GDP per capita despite near-equal (arguably marginally lower) 1996 P1.",
-      "explanation": "Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply."
+      "explanation": "Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]"
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -196,9 +196,9 @@
       "explanation": "Divergence as assessed."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh via garments/human capital; Pakistan via instability.",
-      "explanation": "Drivers matched the predicted dimensions."
+      "explanation": "Drivers matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -242,6 +242,7 @@
     "proposed_framework_modifications": [
       "Treat Bangladesh as the canonical Safeguard C case and re-audit any dataset country scored as 'consolidating on growth' with sub-floor P1."
     ],
-    "baseline_impact": "Restates the P1 ordinal claim (gap must exceed WGI margin of error) - a refinement candidate to check against the 20-case baseline before adoption."
+    "baseline_impact": "Restates the P1 ordinal claim (gap must exceed WGI margin of error) - a refinement candidate to check against the 20-case baseline before adoption.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

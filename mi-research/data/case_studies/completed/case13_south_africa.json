@@ -167,9 +167,9 @@
       "explanation": "Clearest illustration of the complexity-capacity thesis; wide pillar spread (P1 down, P4 catastrophic labour market) signalled vulnerability."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Binding constraint = declining P1 (state capture) + catastrophic labour market (60.8% youth unemployment, Gini ~0.63); resource rents ~4-7% of GDP.",
-      "explanation": "P1+P4 mismatch, not a resource curse; Mod2/Safeguard E correctly produced a null on resources (below 30% threshold)."
+      "explanation": "P1+P4 mismatch, not a resource curse; Mod2/Safeguard E correctly produced a null on resources (below 30% threshold). [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -206,6 +206,7 @@
       "Condition Safeguard C on founding P1 (under-delivery need not cause reversal when founding institutional quality is high).",
       "Promote candidate Safeguard I (porosity-with-backstop) from candidate to working safeguard (confirmed 5/5 in Run 4)."
     ],
-    "baseline_impact": "Conditioning Safeguard C on founding P1 is a refinement that needs the 20-case baseline check before adoption."
+    "baseline_impact": "Conditioning Safeguard C on founding P1 is a refinement that needs the 20-case baseline check before adoption.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

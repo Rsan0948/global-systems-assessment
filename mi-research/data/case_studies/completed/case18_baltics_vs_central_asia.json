@@ -288,9 +288,9 @@
       "explanation": "Divergence-between / convergence-within pattern confirmed."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Kazakhstan's oil wealth bought GDP/capita but not institutions, resilience, or freedom from violence; Uzbekistan lowest on all dimensions.",
-      "explanation": "Institutions dominate resources (P1 > P4) - the strongest result of the run; resource endowment compensated for institutional weakness nowhere."
+      "explanation": "Institutions dominate resources (P1 > P4) - the strongest result of the run; resource endowment compensated for institutional weakness nowhere. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
@@ -332,6 +332,7 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "Institutional choice dominates resource endowment: resource-poor Baltics that chose EU/NATO porosity-with-backstop vastly outperform resource-rich Central Asian states locked in Russia's orbit. Safeguard E's 30% gate is vindicated as a discriminator (intermittent vs. structural rentiers).",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; confirms existing framework (P1>P4 dominance, Safeguards C/D/H/I, Mod2 30% gate, Mod4 margin gating)."
+    "baseline_impact": "None; confirms existing framework (P1>P4 dominance, Safeguards C/D/H/I, Mod2 30% gate, Mod4 margin gating).",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

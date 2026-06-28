@@ -249,9 +249,9 @@
       "explanation": "Both successors converged upward to the EU core."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Both succeeded on the P1/institutions dimension.",
-      "explanation": "Success driven by the predicted institutional pillar."
+      "explanation": "Success driven by the predicted institutional pillar. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -291,6 +291,7 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "As close to a controlled natural experiment as the validation set offers. Scholars note the puzzle that Czechoslovakia's two societies were more alike at dissolution than at founding, making institutional quality and elite strategy -- not ethnic difference -- the operative variable, aligning precisely with the MI's complexity-capacity-matching logic.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; strengthens the P1-predicts-violence-vs-peace claim. No baseline-breaking modification proposed."
+    "baseline_impact": "None; strengthens the P1-predicts-violence-vs-peace claim. No baseline-breaking modification proposed.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

@@ -177,15 +177,15 @@ def validate_baseline(completed_dir: str):
         print(f"  Partial: {total['partial']}")
         print(f"  Falsified: {total['falsified']}")
         if total_scored > 0:
-            print(f"  Clean rate (naive per-letter count): {total['confirmed']/total_scored:.0%}")
+            print(f"  Clean rate (per-letter count): {total['confirmed']/total_scored:.0%}")
             print(f"  Directional: {(total['confirmed']+total['partial'])/total_scored:.0%}")
-            print("\n  ⚠ HONESTY NOTE — do NOT headline the clean rate above.")
-            print("  This is a NAIVE per-letter tally (a-h slots, NOT_APPLICABLE excluded) and")
-            print("  reproduces the GENEROUS-end coding. It does NOT apply the strict-coding")
-            print("  downgrades, the Mod4 narrow-gap 'too-close-to-call' conversions, or the")
-            print("  finer-grained denominator that the canonical synthesis uses. The HONEST")
-            print("  aggregate is a RANGE: ~62% (strict) - 85% (generous), best ~78% clean;")
-            print("  directional ~100% (zero falsifications, partly by construction). See")
+            print("\n  HONESTY NOTE — report as a RANGE, not a single number.")
+            print("  The records carry the run6 STRICT re-code (post-hoc 'primary dimension'")
+            print("  d-calls -> PARTIAL; narrow-gap a-trajectory annotated with Mod4), so this")
+            print("  per-letter clean rate now lands at the canonical best estimate (~78%).")
+            print("  The HONEST figure is a RANGE: ~62% (strict) - 85% (generous), best ~78%;")
+            print("  directional ~100% (zero falsifications, partly by construction). It remains")
+            print("  partly redundant with WGI standalone. See")
             print("  live/runs/run6of6_definitive_synthesis_20cases.md and completed/README.md.")
 
 

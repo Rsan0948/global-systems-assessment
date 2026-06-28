@@ -173,9 +173,9 @@
       "explanation": "Territorial fragmentation realized; prospective, figures vary by source."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024-25, prospective] P1 collapse + centrifugal P5 breakdown: multiple ethnic resistance fronts + PDF; junta unable to re-centralize.",
-      "explanation": "Primary failure dimensions matched (Safeguard H centrifugal classification); prospective."
+      "explanation": "Primary failure dimensions matched (Safeguard H centrifugal classification); prospective. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
@@ -217,6 +217,7 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "Re-suppression-after-porosity at floor-P1: a decade of opening created mobilized actors and organizational capacity that the coup could not re-absorb, yielding not stable authoritarian restoration but catastrophic fragmentation. Tests the BOUNDARY of Safeguard I - porosity-with-backstop applies to high-P1 cases; Myanmar is floor-P1 porosity-WITHOUT-backstop, so the re-suppression mechanism (not the backstop) governs.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; graduates Mod9 (re-suppression-after-porosity) from conjecture to a tested core prediction (now 2/2: Ethiopia/Tigray + Myanmar), cabined to floor-P1 with prior mobilization. Myanmar trajectory is a watch item into Run 6."
+    "baseline_impact": "None; graduates Mod9 (re-suppression-after-porosity) from conjecture to a tested core prediction (now 2/2: Ethiopia/Tigray + Myanmar), cabined to floor-P1 with prior mobilization. Myanmar trajectory is a watch item into Run 6.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

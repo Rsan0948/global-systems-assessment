@@ -146,9 +146,9 @@
       "explanation": "Pressure de-escalated following Article 155 + accommodation, as predicted."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Stress surface was legal/constitutional (Article 155, Constitutional Court, prosecutions), not military or institutional collapse.",
-      "explanation": "Legal dimension confirmed."
+      "explanation": "Legal dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -183,6 +183,7 @@
       "Mod9 remains unproven -- needs a genuine sustained, hard re-suppression case (Catalonia is a weak/null test, not a confirmation or refutation).",
       "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard."
     ],
-    "baseline_impact": "No modification adopted from this case; Mod9 still needs a proper test before any baseline-affecting change."
+    "baseline_impact": "No modification adopted from this case; Mod9 still needs a proper test before any baseline-affecting change.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

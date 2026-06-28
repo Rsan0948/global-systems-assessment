@@ -199,9 +199,9 @@
       "explanation": "Divergence as predicted."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Singapore via institutions; Malaysia plateaued in Tier 3.",
-      "explanation": "Drivers matched: institutional quality, not endowment, drove the trajectory."
+      "explanation": "Drivers matched: institutional quality, not endowment, drove the trajectory. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -237,6 +237,7 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "Singapore is the framework's complexity-control flagship and genuine proof-of-concept for complexity-capacity matching: with zero natural endowment, institutional quality alone (P1 = 0.945, world-highest Government Effectiveness 2.28) produced the dataset's best trajectory. The MI weights P1 at 34% and Singapore maxes exactly that pillar. Humility note: small scale and city-state geography reduce the complexity its capacity must match - a best-case rather than a generalizable template.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; confirms the existing weighting without proposing a modification."
+    "baseline_impact": "None; confirms the existing weighting without proposing a modification.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

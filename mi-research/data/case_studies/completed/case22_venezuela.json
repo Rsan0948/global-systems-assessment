@@ -7,7 +7,7 @@
     "status": "completed",
     "stress_type": "economic_crisis",
     "geographic_region": "South America",
-    "time_period": "1998 -> 2023",
+    "time_period": "1996 -> 2024",
     "entities": [
       "Venezuela"
     ],
@@ -16,25 +16,25 @@
     "notes": "GDP per capita unpublished after 2011 (real gap, not interpolated)."
   },
   "pre_event": {
-    "time_point": "1998",
+    "time_point": "1996",
     "event_description": "Pre-Chavez baseline before two decades of rentier capture.",
     "entities": {
       "Venezuela": {
         "indicators": {
-          "gov_effectiveness": 33.43,
-          "rule_of_law": 43.88,
-          "regulatory_quality": 42.87,
+          "gov_effectiveness": 37.1554,
+          "rule_of_law": 43.4257,
+          "regulatory_quality": 44.0405,
           "cpi": null,
-          "control_of_corruption": 31.63,
+          "control_of_corruption": 32.084,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": 14567.66,
-          "resource_rents_pct_gdp": 9.06,
-          "oda_pct_gni": 0.05,
-          "political_stability": 57.33,
+          "eci": 0.423,
+          "education_index": 0.5211,
+          "life_expectancy_index": 0.7988,
+          "gdp_per_capita_ppp": 13824.4687,
+          "resource_rents_pct_gdp": 23.8368,
+          "oda_pct_gni": 0.0524,
+          "political_stability": 56.4275,
           "fsi": null
         },
         "context": {
@@ -51,13 +51,12 @@
           "prior_porosity_period": false
         },
         "data_gaps": [
+          "cpi",
           "gii",
-          "eci",
-          "education_index",
-          "life_expectancy_index",
+          "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
       }
     }
   },
@@ -108,47 +107,47 @@
   "post_event": {
     "time_points": [
       "2018",
-      "2023"
+      "2024"
     ],
     "entities": {
       "Venezuela": {
         "indicators_by_year": {
           "2018": {
-            "gov_effectiveness": 20.31,
-            "rule_of_law": 17.27,
-            "regulatory_quality": 21.01,
-            "cpi": null,
-            "control_of_corruption": 15.57,
+            "gov_effectiveness": 20.3087248,
+            "rule_of_law": 17.2687585,
+            "regulatory_quality": 21.0136831,
+            "cpi": 18.0,
+            "control_of_corruption": 15.57127,
             "gii": null,
             "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.702,
-            "life_expectancy_index": 0.81,
+            "eci": -0.909,
+            "education_index": 0.7017,
+            "life_expectancy_index": 0.8099,
             "gdp_per_capita_ppp": null,
-            "resource_rents_pct_gdp": 11.85,
-            "oda_pct_gni": 0.16,
-            "political_stability": 40.87,
-            "fsi": null
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 0.158513462404584,
+            "political_stability": 40.8698504,
+            "fsi": 86.2
           },
-          "2023": {
-            "gov_effectiveness": 23.49,
-            "rule_of_law": 19.09,
-            "regulatory_quality": 25.09,
-            "cpi": null,
-            "control_of_corruption": 16.29,
+          "2024": {
+            "gov_effectiveness": 22.83069,
+            "rule_of_law": 19.0276028,
+            "regulatory_quality": 24.8486239,
+            "cpi": 10.0,
+            "control_of_corruption": 15.7286763,
             "gii": null,
             "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.683,
-            "life_expectancy_index": 0.808,
+            "eci": -1.601,
+            "education_index": 0.6828,
+            "life_expectancy_index": 0.8079,
             "gdp_per_capita_ppp": null,
-            "resource_rents_pct_gdp": 11.85,
-            "oda_pct_gni": 0.39,
-            "political_stability": 47.04,
-            "fsi": 89.0
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 0.39205716032986,
+            "political_stability": 36.1651626,
+            "fsi": 90.5
           }
         },
-        "outcome_summary": "P1 0.380->0.210; spread ->0.66; 88% GDP collapse 2013-2020 (IMF); ~7.7M emigrants; intact authoritarian state.",
+        "outcome_summary": "P1 0.392->0.192; spread ->0.79; 88% GDP collapse 2013-2020 (IMF); ~7.7M emigrants; intact authoritarian state.",
         "key_events": [
           "88% GDP collapse",
           "hyperinflation",
@@ -171,12 +170,12 @@
     },
     "c_convergence": {
       "result": "CONFIRMED",
-      "evidence": "spread 0.42->0.66",
+      "evidence": "spread 0.31->0.79",
       "explanation": ""
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
-      "evidence": "P4 gap-inflated to 0.87; composite MI 0.55->0.49 masks depth",
+      "evidence": "P4 gap-inflated to 0.98; composite MI 0.57->0.48 masks depth",
       "explanation": "Direction right; composite MI magnitude misleading due to unpublished GDP - coded partial, limitation stated."
     },
     "e_fragment_count": {

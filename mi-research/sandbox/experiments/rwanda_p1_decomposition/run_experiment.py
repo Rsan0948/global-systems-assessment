@@ -38,9 +38,9 @@ def decomposed(ind):
 
 def main():
     cases = {
-        "Rwanda": ["1996", "2023"], "DR Congo": ["1996", "2023"],
-        "Venezuela": ["1998", "2023"], "Colombia": ["2012", "2023"],
-        "Haiti": ["1996", "2023"], "Dominican Republic": ["1996", "2023"],
+        "Rwanda": ["1996", "2024"], "DR Congo": ["1996", "2024"],
+        "Venezuela": ["1996", "2024"], "Colombia": ["2012", "2024"],
+        "Haiti": ["1996", "2024"], "Dominican Republic": ["1996", "2024"],
     }
     print(f"{'entity/year':28}{'P1_comp':>9}{'P1a_cap':>9}{'P1b_acc':>9}{'cap-acc':>9}  within Mod4 margin?")
     for c, yrs in cases.items():
@@ -52,11 +52,11 @@ def main():
             gap = a - b
             print(f"{c+' '+y:28}{p1:>9.3f}{a:>9.3f}{b:>9.3f}{gap:>9.3f}  {'YES (abstain)' if abs(gap) < MARGIN else 'no'}")
 
-    print("\nOrdinal-stability / Golden-Rule check (2023): does splitting P1 (0.34 -> 0.17+0.17) change the Rwanda>DRC ordinal?")
+    print("\nOrdinal-stability / Golden-Rule check (2024): does splitting P1 (0.34 -> 0.17+0.17) change the Rwanda>DRC ordinal?")
     w2 = {"P1a": 0.17, "P1b": 0.17, "P2": 0.15, "P3": 0.16, "P4": 0.20, "P5": 0.16}
     for c in ["Rwanda", "DR Congo"]:
         data = json.loads((ROOT / "data" / "countries" / (c.lower().replace(" ", "_") + ".json")).read_text())
-        ind = data["indicators_by_year"]["2023"]
+        ind = data["indicators_by_year"]["2024"]
         mi_comp = score_country(ind)["mi_score"]
         ps = calculate_pillar_scores(ind)
         a, b = decomposed(ind)

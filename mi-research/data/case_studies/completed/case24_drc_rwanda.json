@@ -7,7 +7,7 @@
     "status": "completed",
     "stress_type": "comparative_trajectory",
     "geographic_region": "Central Africa / Great Lakes",
-    "time_period": "1996 -> 2023",
+    "time_period": "1996 -> 2024",
     "entities": [
       "DR Congo",
       "Rwanda"
@@ -22,20 +22,20 @@
     "entities": {
       "DR Congo": {
         "indicators": {
-          "gov_effectiveness": 19.37,
-          "rule_of_law": 26.78,
-          "regulatory_quality": 22.46,
+          "gov_effectiveness": 19.3656,
+          "rule_of_law": 26.7847,
+          "regulatory_quality": 22.4585,
           "cpi": null,
-          "control_of_corruption": 10.85,
+          "control_of_corruption": 10.8526,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": 0.34,
-          "life_expectancy_index": 0.452,
-          "gdp_per_capita_ppp": 526.17,
-          "resource_rents_pct_gdp": 36.3,
-          "oda_pct_gni": 3.08,
-          "political_stability": 20.25,
+          "eci": -2.023,
+          "education_index": 0.3401,
+          "life_expectancy_index": 0.4519,
+          "gdp_per_capita_ppp": 526.165,
+          "resource_rents_pct_gdp": 36.299,
+          "oda_pct_gni": 3.0779,
+          "political_stability": 20.2456,
           "fsi": null
         },
         "context": {
@@ -50,28 +50,29 @@
           "n_successor_states": null
         },
         "data_gaps": [
+          "cpi",
           "gii",
-          "eci",
+          "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
       },
       "Rwanda": {
         "indicators": {
-          "gov_effectiveness": 25.95,
-          "rule_of_law": 30.75,
-          "regulatory_quality": 29.74,
+          "gov_effectiveness": 25.9463,
+          "rule_of_law": 30.7451,
+          "regulatory_quality": 29.7427,
           "cpi": null,
-          "control_of_corruption": 31.59,
+          "control_of_corruption": 31.5932,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -0.224,
           "education_index": 0.23,
-          "life_expectancy_index": 0.346,
-          "gdp_per_capita_ppp": 498.88,
-          "resource_rents_pct_gdp": 12.56,
-          "oda_pct_gni": 34.0,
-          "political_stability": 30.16,
+          "life_expectancy_index": 0.3459,
+          "gdp_per_capita_ppp": 498.882,
+          "resource_rents_pct_gdp": 12.5562,
+          "oda_pct_gni": 34.0043,
+          "political_stability": 30.1572,
           "fsi": null
         },
         "context": {
@@ -88,11 +89,12 @@
           "resource_rents_pct_revenue": 5.0
         },
         "data_gaps": [
+          "cpi",
           "gii",
-          "eci",
+          "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it)."
       }
     }
   },
@@ -142,55 +144,55 @@
   },
   "post_event": {
     "time_points": [
-      "2023"
+      "2024"
     ],
     "entities": {
       "Rwanda": {
         "indicators_by_year": {
-          "2023": {
-            "gov_effectiveness": 59.29,
-            "rule_of_law": 58.19,
-            "regulatory_quality": 58.41,
-            "cpi": null,
-            "control_of_corruption": 61.64,
-            "gii": null,
-            "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.512,
-            "life_expectancy_index": 0.735,
-            "gdp_per_capita_ppp": 3399.45,
-            "resource_rents_pct_gdp": 4.02,
-            "oda_pct_gni": 9.87,
-            "political_stability": 66.54,
-            "fsi": 81.8
+          "2024": {
+            "gov_effectiveness": 58.1246,
+            "rule_of_law": 58.6905,
+            "regulatory_quality": 59.1148,
+            "cpi": 57.0,
+            "control_of_corruption": 60.5158,
+            "gii": 19.69,
+            "rd_pct_gdp": 0.7815,
+            "eci": -1.098,
+            "education_index": 0.5124,
+            "life_expectancy_index": 0.7352,
+            "gdp_per_capita_ppp": 3710.8604,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 9.8732,
+            "political_stability": 65.1481,
+            "fsi": 82.3
           }
         },
-        "outcome_summary": "MI 0.284->0.579 (Tier 4->3); HDI 0.297->0.578; reconstruction success, authoritarian.",
+        "outcome_summary": "MI 0.329->0.503 (Tier 4->3); HDI 0.297->0.578; reconstruction success, authoritarian.",
         "key_events": [
           "developmental reconstruction"
         ]
       },
       "DR Congo": {
         "indicators_by_year": {
-          "2023": {
-            "gov_effectiveness": 19.1,
-            "rule_of_law": 29.33,
-            "regulatory_quality": 35.02,
-            "cpi": null,
-            "control_of_corruption": 17.71,
+          "2024": {
+            "gov_effectiveness": 18.4131,
+            "rule_of_law": 28.9697,
+            "regulatory_quality": 34.5989,
+            "cpi": 20.0,
+            "control_of_corruption": 17.182,
             "gii": null,
             "rd_pct_gdp": null,
-            "eci": null,
+            "eci": -3.126,
             "education_index": 0.549,
-            "life_expectancy_index": 0.645,
-            "gdp_per_capita_ppp": 1730.62,
-            "resource_rents_pct_gdp": 38.83,
-            "oda_pct_gni": 6.42,
-            "political_stability": 32.05,
-            "fsi": 106.7
+            "life_expectancy_index": 0.6445,
+            "gdp_per_capita_ppp": 1821.0487,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 6.4168,
+            "political_stability": 29.6955,
+            "fsi": 107.2
           }
         },
-        "outcome_summary": "MI 0.277->0.338 (Tier 4); chronic eastern conflict (M23).",
+        "outcome_summary": "MI 0.276->0.313 (Tier 4); chronic eastern conflict (M23).",
         "key_events": [
           "M23 conflict",
           "chronic state weakness"
@@ -201,7 +203,7 @@
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
-      "evidence": "1996 abstention correct (gap too close); 2023 gap 0.341 decisive",
+      "evidence": "1996 gap 0.096 within margin->abstain; 2024 gap 0.327 decisive",
       "explanation": "Mod4->divergence sequence vindicated."
     },
     "b_violence": {
@@ -211,13 +213,13 @@
     },
     "c_convergence": {
       "result": "CONFIRMED",
-      "evidence": "2023 MI gap 0.24",
+      "evidence": "2024 MI gap ~0.19",
       "explanation": ""
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "DRC P1 floor; Rwanda residual = voice",
-      "explanation": ""
+      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
@@ -250,6 +252,7 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "Refusing a too-close 1996 ranking then being vindicated by a decisive 2023 gap.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None."
+    "baseline_impact": "None.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }

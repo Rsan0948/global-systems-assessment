@@ -193,7 +193,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Too close to rank cleanly; Ethiopia had stronger growth in the 2000s-2010s then suffered catastrophic political collapse.",
-      "explanation": "Neither state clearly 'won'; the floor-P1 ordinal lacks discriminating power."
+      "explanation": "Neither state clearly 'won'; the floor-P1 ordinal lacks discriminating power. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]"
     },
     "b_violence": {
       "result": "CONFIRMED",
@@ -206,9 +206,9 @@
       "explanation": "Convergence-at-bottom holds on capacity; the political-model divergence makes the call partial."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Ethiopia via ethnic-federal fragmentation; Eritrea via totalitarian closure.",
-      "explanation": "Failure modes matched the predicted dimensions."
+      "explanation": "Failure modes matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
@@ -254,6 +254,7 @@
     "proposed_framework_modifications": [
       "Add a provisional centrifugal-vs-centripetal failure-mode sub-classifier; if >=2 more floor-P1 pairs show divergent failure pathways, codify it (the later Mod6 / Safeguard H)."
     ],
-    "baseline_impact": "Proposes a new failure-mode classifier; would require a 20-case baseline check before formalization."
+    "baseline_impact": "Proposes a new failure-mode classifier; would require a 20-case baseline check before formalization.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%."
   }
 }
