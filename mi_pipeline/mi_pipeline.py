@@ -133,6 +133,58 @@ COMMON_NAME_TO_ISO3 = {
 #  SECTION 1 — DATA FETCHERS
 # ═══════════════════════════════════════════════════════════════════
 
+# The World Bank `country/all` endpoint returns regional and income-group
+# AGGREGATES (World, OECD members, Arab World, Sub-Saharan Africa, …) alongside
+# real countries. Many of their codes are 3 letters (WLD, EUU, OED, …) so a bare
+# `len(iso3) == 3` filter lets them through — they then appear in the master panel
+# as if they were countries. They never survive into the scored set (they lack the
+# manual indicators, so they exceed the gap threshold), but they pollute the master
+# CSV and the "total countries with any data" counts. We exclude them at the source.
+#
+# Authoritative list is fetched once from the WB country metadata endpoint (entries
+# whose region is "Aggregates"); a static fallback is used only if that call fails.
+# NOTE: we exclude *aggregates specifically* rather than keeping only a fixed list of
+# countries, so legitimately-listed-elsewhere territories (e.g. Taiwan, absent from
+# the WB country list but present in ECI/GII) are NOT dropped.
+_WB_AGGREGATE_FALLBACK = frozenset({
+    "WLD", "ARB", "CEB", "CSS", "EAP", "EAR", "EAS", "ECA", "ECS", "EMU", "EUU",
+    "FCS", "HIC", "HPC", "IBD", "IBT", "IDA", "IDB", "IDX", "INX", "LAC", "LCN",
+    "LDC", "LIC", "LMC", "LMY", "LTE", "MEA", "MIC", "MNA", "NAC", "OED", "OSS",
+    "PRE", "PSS", "PST", "SAS", "SSA", "SSF", "SST", "TEA", "TEC", "TLA", "TMN",
+    "TSA", "TSS", "UMC", "AFE", "AFW", "EAR", "LMY",
+})
+_wb_aggregate_cache = None
+
+
+def wb_aggregate_codes() -> frozenset:
+    """ISO3 codes that are World Bank *aggregates* (regions / income groups),
+    to be excluded from the country panel. Fetched once from the WB country
+    metadata endpoint; falls back to a static list if the call fails."""
+    global _wb_aggregate_cache
+    if _wb_aggregate_cache is not None:
+        return _wb_aggregate_cache
+    try:
+        resp = requests.get(
+            "https://api.worldbank.org/v2/country?format=json&per_page=400",
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        codes = {
+            c.get("id") for c in data[1]
+            if c.get("region", {}).get("value") == "Aggregates" and c.get("id")
+        }
+        if codes:
+            _wb_aggregate_cache = frozenset(codes)
+            log.info(f"WB aggregate filter: {len(codes)} aggregate codes excluded")
+            return _wb_aggregate_cache
+        log.warning("WB country list returned no aggregates; using static fallback.")
+    except Exception as e:
+        log.warning(f"Could not fetch WB country list ({e}); using static aggregate fallback.")
+    _wb_aggregate_cache = _WB_AGGREGATE_FALLBACK
+    return _wb_aggregate_cache
+
+
 def fetch_world_bank(indicator_code: str, years: list[int],
                      retries: int = 3, per_page: int = 500,
                      source: int = None) -> pd.DataFrame:
@@ -154,6 +206,7 @@ def fetch_world_bank(indicator_code: str, years: list[int],
     rows = []
     page = 1
     total_pages = 1
+    aggregates = wb_aggregate_codes()
 
     while page <= total_pages:
         paged_url = f"{url}&page={page}"
@@ -182,7 +235,8 @@ def fetch_world_bank(indicator_code: str, years: list[int],
             name = rec.get("country", {}).get("value")
             year = int(rec.get("date", 0))
             val  = rec.get("value")
-            if val is not None and iso3 and len(iso3) == 3:
+            if (val is not None and iso3 and len(iso3) == 3
+                    and iso3 not in aggregates):
                 rows.append({"iso3": iso3, "country": name,
                              "year": year, "value": float(val)})
         page += 1
