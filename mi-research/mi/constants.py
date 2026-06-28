@@ -149,6 +149,18 @@ MI_MODEL_VERSION = "v3.3"
 # holdout-validated (z+2.4). Not agency — needs an exogenous trigger (transition/commodity window).
 ASCENT_LOW_BASE = 0.40
 
+# === GLOBAL SYSTEMS MEASUREMENT (system-level category, distinct from country-level MI) ===
+# Aggregates the validated world-system findings: the three improvement "engines" (institutions/
+# income/human-capital climb rates), the institutional "container" trajectory (the supercycle
+# discriminator), and the global movement-type distribution. EXPLORATORY/descriptive — proxies, not
+# the country scoring engine. See docs/global_systems_measurement.md.
+# Historical median 10y climb rate per engine (1850-2012, from longrun analysis) — the "firing" bar:
+GLOBAL_ENGINE_MEDIAN = {"institutions": 0.049, "income": 0.052, "human_capital": 0.068}
+GLOBAL_ENGINE_THRESH = {"institutions": 0.15, "income": 0.50, "human_capital": 7.0}  # 10y climb to count
+# Container trajectory bands (institutional net climb-minus-decline rate over the window):
+GLOBAL_CONTAINER_STRENGTHENING = 0.05   # net >= this -> robust/strengthening (absorbs deceleration)
+GLOBAL_CONTAINER_ERODING = -0.02        # net <= this -> brittle/eroding
+
 # === LEAD-TIME / FORESIGHT CONFIG (single source; the per-case structural fact reads this) ===
 # How far before the outcome the framework still predicts accurately. Empirical finding:
 # the ORDINAL/STRUCTURAL signal (who is more durable; is a state structurally fragile) is stable

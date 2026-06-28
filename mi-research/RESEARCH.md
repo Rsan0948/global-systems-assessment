@@ -59,6 +59,11 @@ The weights are correlation-derived from the data itself. P1 at 34% (up from ini
   - **Convergence Qualifier [V3.2]:** the gap's TRAJECTORY disambiguates a flag — CLOSING (P1 rising) = developmental catch-up (downgrade); WIDENING/static = fragility (escalate). 92% sens / 80% spec on flagged states. Supply `context["prior_pillars"]`.
 - **Accountability Gap [V3.2 — HYPOTHESIS, informational, NOT a verdict]:** VA (which P1 excludes) vs income; VA − P4 ≤ −0.50 = "capacity without consent" (legitimacy-capped: Saudi/China/Russia/Turkey), a hypothesized brittle failure mode orthogonal to the durability gap. VA wired in for all 180 panel countries (`data/sources/va_anchored.json`); `diagnostics.accountability_gap()`; `scripts/big_signals_scan.py`. No crisis validation yet. See `docs/architectural_decisions/v3_2_convergence_and_accountability.md`.
 
+## Measurement tiers — COUNTRY-LEVEL + SYSTEM-LEVEL [V3.3]
+The framework now has two tiers, sharing data + the level/slope epistemic, answering different questions:
+- **Country-level (the MI):** pillars P1–P5, safeguards A–J, mods 4/8, durability/ascent/movement diagnostics — *is this polity durable?*
+- **System-level (Global Systems Measurement):** the world system's state — the three improvement *engines* (institutions/income/human-capital climb rates vs historical norm), the institutional *container* trajectory (the supercycle discriminator: strengthening/eroding/flat), the *texture* (surge/churn/stasis/collapse), and the global *movement distribution* (real_ascent / windfall / ratchet_rise / hollow_stability / decline). `mi/global_systems.py`; `scripts/global_systems.py`; `docs/global_systems_measurement.md`. EXPLORATORY/proxy — changes no country verdict. Current reading: multi-engine lull on a flat-to-eroding container; only ~2% of countries in genuine institution-led ascent.
+
 ## Standing epistemic — TRUST THE LEVEL, DISTRUST THE SLOPE [V3.3]
 The crisis lead-time and golden-age holdout converge on one rule: the **level** (and the durability
 gap) carries the predictive content; the **slope** (year-to-year movement) is mean-reverting noise.
