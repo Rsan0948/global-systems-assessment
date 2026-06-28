@@ -1,0 +1,34 @@
+{
+  "name": "South Africa",
+  "type": "signature_test",
+  "country_ref": "South Africa",
+  "window_start": 2009,
+  "predictor_year": 2020,
+  "actual_acute_crisis": true,
+  "doc_category": "TP",
+  "outcome": "2021 riots (worst since apartheid)",
+  "tests": "acute pre-turn signature (P1 high-base decline + P5 decline + spread widening + P4 strong) \u2014 blind, real WGI",
+  "note": "Distinct from the 51-case P1-ordinality baseline; tests the SIGNATURE function only.",
+  "pre": {
+    "P1": 0.579,
+    "P5": 0.648,
+    "P4": 0.815,
+    "spread": 0.242
+  },
+  "predictor": {
+    "P1": 0.534,
+    "P5": 0.616,
+    "P4": 0.823,
+    "spread": 0.288
+  },
+  "components_blind": {
+    "P1_high_base": true,
+    "P1_declined": true,
+    "P5_declined": true,
+    "spread_widened": true,
+    "P4_strong": true
+  },
+  "blind_signature_fired": true,
+  "classification": "TP",
+  "failing_components": []
+}

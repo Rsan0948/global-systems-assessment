@@ -1,0 +1,37 @@
+{
+  "name": "Thailand",
+  "type": "signature_test",
+  "country_ref": "Thailand",
+  "window_start": 2008,
+  "predictor_year": 2013,
+  "actual_acute_crisis": true,
+  "doc_category": "TP",
+  "outcome": "2014 military coup",
+  "tests": "acute pre-turn signature (P1 high-base decline + P5 decline + spread widening + P4 strong) \u2014 blind, real WGI",
+  "note": "Distinct from the 51-case P1-ordinality baseline; tests the SIGNATURE function only.",
+  "pre": {
+    "P1": 0.512,
+    "P5": 0.46,
+    "P4": 0.832,
+    "spread": 0.372
+  },
+  "predictor": {
+    "P1": 0.517,
+    "P5": 0.427,
+    "P4": 0.849,
+    "spread": 0.422
+  },
+  "components_blind": {
+    "P1_high_base": false,
+    "P1_declined": false,
+    "P5_declined": true,
+    "spread_widened": true,
+    "P4_strong": true
+  },
+  "blind_signature_fired": false,
+  "classification": "FN",
+  "failing_components": [
+    "P1_high_base",
+    "P1_declined"
+  ]
+}

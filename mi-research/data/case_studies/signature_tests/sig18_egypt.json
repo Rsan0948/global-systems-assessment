@@ -1,0 +1,37 @@
+{
+  "name": "Egypt",
+  "type": "signature_test",
+  "country_ref": "Egypt",
+  "window_start": 2004,
+  "predictor_year": 2010,
+  "actual_acute_crisis": true,
+  "doc_category": "FN",
+  "outcome": "2011 revolution (low P1 base)",
+  "tests": "acute pre-turn signature (P1 high-base decline + P5 decline + spread widening + P4 strong) \u2014 blind, real WGI",
+  "note": "Distinct from the 51-case P1-ordinality baseline; tests the SIGNATURE function only.",
+  "pre": {
+    "P1": 0.439,
+    "P5": 0.509,
+    "P4": 0.706,
+    "spread": 0.267
+  },
+  "predictor": {
+    "P1": 0.458,
+    "P5": 0.488,
+    "P4": 0.767,
+    "spread": 0.309
+  },
+  "components_blind": {
+    "P1_high_base": false,
+    "P1_declined": false,
+    "P5_declined": true,
+    "spread_widened": true,
+    "P4_strong": true
+  },
+  "blind_signature_fired": false,
+  "classification": "FN",
+  "failing_components": [
+    "P1_high_base",
+    "P1_declined"
+  ]
+}

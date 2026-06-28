@@ -1,0 +1,247 @@
+{
+  "N": 21,
+  "strict_thresholds": {
+    "HIGH_BASE": 0.55,
+    "P1_decline": 0.03,
+    "P5_decline": 0.01,
+    "spread_rise": 0.02,
+    "P4_strong": 0.55
+  },
+  "confusion": {
+    "TP": 2,
+    "FP": 3,
+    "FN": 12,
+    "TN": 4
+  },
+  "sensitivity": 0.14,
+  "specificity": 0.57,
+  "PPV": 0.4,
+  "charitable_3component": {
+    "sensitivity": 0.25,
+    "specificity": 0.43,
+    "PPV": 0.43,
+    "note": "no high-base/P4 conditions; still weak"
+  },
+  "cases": [
+    {
+      "name": "Turkey",
+      "doc_category": "TP",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_declined"
+      ]
+    },
+    {
+      "name": "Thailand",
+      "doc_category": "TP",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined"
+      ]
+    },
+    {
+      "name": "Brazil",
+      "doc_category": "TP",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined",
+        "spread_widened"
+      ]
+    },
+    {
+      "name": "South Africa",
+      "doc_category": "TP",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": true,
+      "classification": "TP",
+      "failing_components": []
+    },
+    {
+      "name": "Peru",
+      "doc_category": "TP",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined",
+        "spread_widened"
+      ]
+    },
+    {
+      "name": "Tunisia",
+      "doc_category": "TP-boundary",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined",
+        "P5_declined",
+        "spread_widened"
+      ]
+    },
+    {
+      "name": "Sri Lanka",
+      "doc_category": "TP-boundary",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined"
+      ]
+    },
+    {
+      "name": "Italy",
+      "doc_category": "TP-preWGI",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_declined",
+        "P5_declined"
+      ]
+    },
+    {
+      "name": "Canada",
+      "doc_category": "TN",
+      "actual_acute_crisis": false,
+      "blind_signature_fired": true,
+      "classification": "FP",
+      "failing_components": []
+    },
+    {
+      "name": "Germany",
+      "doc_category": "TN",
+      "actual_acute_crisis": false,
+      "blind_signature_fired": false,
+      "classification": "TN",
+      "failing_components": [
+        "P1_declined"
+      ]
+    },
+    {
+      "name": "Japan",
+      "doc_category": "TN",
+      "actual_acute_crisis": false,
+      "blind_signature_fired": false,
+      "classification": "TN",
+      "failing_components": [
+        "P1_declined",
+        "spread_widened"
+      ]
+    },
+    {
+      "name": "Uruguay",
+      "doc_category": "TN",
+      "actual_acute_crisis": false,
+      "blind_signature_fired": false,
+      "classification": "TN",
+      "failing_components": [
+        "P1_declined"
+      ]
+    },
+    {
+      "name": "Poland",
+      "doc_category": "FP",
+      "actual_acute_crisis": false,
+      "blind_signature_fired": true,
+      "classification": "FP",
+      "failing_components": []
+    },
+    {
+      "name": "Hungary",
+      "doc_category": "FP",
+      "actual_acute_crisis": false,
+      "blind_signature_fired": true,
+      "classification": "FP",
+      "failing_components": []
+    },
+    {
+      "name": "France",
+      "doc_category": "FP",
+      "actual_acute_crisis": false,
+      "blind_signature_fired": false,
+      "classification": "TN",
+      "failing_components": [
+        "P1_declined"
+      ]
+    },
+    {
+      "name": "South Korea",
+      "doc_category": "FN",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_declined",
+        "P5_declined",
+        "spread_widened"
+      ]
+    },
+    {
+      "name": "Argentina",
+      "doc_category": "FN",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined",
+        "P5_declined",
+        "spread_widened"
+      ]
+    },
+    {
+      "name": "Egypt",
+      "doc_category": "FN",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined"
+      ]
+    },
+    {
+      "name": "Venezuela",
+      "doc_category": "FN-preWGI",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined",
+        "P5_declined"
+      ]
+    },
+    {
+      "name": "Chile (confirmed)",
+      "doc_category": "confirmed",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": true,
+      "classification": "TP",
+      "failing_components": []
+    },
+    {
+      "name": "Lebanon (confirmed)",
+      "doc_category": "confirmed",
+      "actual_acute_crisis": true,
+      "blind_signature_fired": false,
+      "classification": "FN",
+      "failing_components": [
+        "P1_high_base",
+        "P1_declined"
+      ]
+    }
+  ]
+}

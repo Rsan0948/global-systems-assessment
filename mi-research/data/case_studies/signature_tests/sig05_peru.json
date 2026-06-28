@@ -1,0 +1,38 @@
+{
+  "name": "Peru",
+  "type": "signature_test",
+  "country_ref": "Peru",
+  "window_start": 2016,
+  "predictor_year": 2021,
+  "actual_acute_crisis": true,
+  "doc_category": "TP",
+  "outcome": "2022 Castillo self-coup + deadly unrest",
+  "tests": "acute pre-turn signature (P1 high-base decline + P5 decline + spread widening + P4 strong) \u2014 blind, real WGI",
+  "note": "Distinct from the 51-case P1-ordinality baseline; tests the SIGNATURE function only.",
+  "pre": {
+    "P1": 0.491,
+    "P5": 0.628,
+    "P4": 0.82,
+    "spread": 0.329
+  },
+  "predictor": {
+    "P1": 0.48,
+    "P5": 0.602,
+    "P4": 0.779,
+    "spread": 0.316
+  },
+  "components_blind": {
+    "P1_high_base": false,
+    "P1_declined": false,
+    "P5_declined": true,
+    "spread_widened": false,
+    "P4_strong": true
+  },
+  "blind_signature_fired": false,
+  "classification": "FN",
+  "failing_components": [
+    "P1_high_base",
+    "P1_declined",
+    "spread_widened"
+  ]
+}

@@ -55,3 +55,15 @@ states that still look intact on *level* but show the late-emerging erosion + wi
 Re-pull WGI through ~2028, recompute P1/P5/spread for each flag, and check each prediction against
 its falsification condition. Honest accounting: report confirmations **and** false positives — a
 flag that quietly stabilizes is a miss, and counts as one.
+
+## Addendum — confidence calibration (same day, N=21 blind validation)
+The 19-case + Chile/Lebanon **blind** validation of the underlying signature
+(`docs/signature_validation_N21.md`) lands it at **~14–25% sensitivity and ~40% PPV** — it does
+*not* replicate as a forward predictor, and it **fires on stable Canada and Germany (no crisis)**.
+The flags above are therefore **LOW CONFIDENCE and likely absorber-class false positives** — the
+Tier-A consolidated democracies (US/UK) fire the same configuration that Canada/Germany fire without
+turning over. The frozen predictions stand (for honest scoring), but read them as *weak* signals
+pending an **absorber sub-index** (judicial independence, electoral integrity, external anchoring,
+civil-society, veto points) — that, not the four pillars, is where the predictive content lives. The
+US is still the relatively more exposed (steepest P5 decline, no external anchor), but "elevated and
+absorbable," not "pre-collapse."

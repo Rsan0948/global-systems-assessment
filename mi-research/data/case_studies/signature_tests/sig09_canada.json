@@ -1,0 +1,34 @@
+{
+  "name": "Canada",
+  "type": "signature_test",
+  "country_ref": "Canada",
+  "window_start": 2008,
+  "predictor_year": 2024,
+  "actual_acute_crisis": false,
+  "doc_category": "TN",
+  "outcome": "no acute crisis (2008 GFC, COVID, convoy absorbed)",
+  "tests": "acute pre-turn signature (P1 high-base decline + P5 decline + spread widening + P4 strong) \u2014 blind, real WGI",
+  "note": "Distinct from the 51-case P1-ordinality baseline; tests the SIGNATURE function only.",
+  "pre": {
+    "P1": 0.855,
+    "P5": 0.846,
+    "P4": 0.834,
+    "spread": 0.098
+  },
+  "predictor": {
+    "P1": 0.797,
+    "P5": 0.802,
+    "P4": 0.852,
+    "spread": 0.286
+  },
+  "components_blind": {
+    "P1_high_base": true,
+    "P1_declined": true,
+    "P5_declined": true,
+    "spread_widened": true,
+    "P4_strong": true
+  },
+  "blind_signature_fired": true,
+  "classification": "FP",
+  "failing_components": []
+}

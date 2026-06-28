@@ -1,0 +1,34 @@
+{
+  "name": "Hungary",
+  "type": "signature_test",
+  "country_ref": "Hungary",
+  "window_start": 2010,
+  "predictor_year": 2022,
+  "actual_acute_crisis": false,
+  "doc_category": "FP",
+  "outcome": "slow autocratization, no acute rupture",
+  "tests": "acute pre-turn signature (P1 high-base decline + P5 decline + spread widening + P4 strong) \u2014 blind, real WGI",
+  "note": "Distinct from the 51-case P1-ordinality baseline; tests the SIGNATURE function only.",
+  "pre": {
+    "P1": 0.624,
+    "P5": 0.792,
+    "P4": 0.825,
+    "spread": 0.227
+  },
+  "predictor": {
+    "P1": 0.583,
+    "P5": 0.773,
+    "P4": 0.786,
+    "spread": 0.265
+  },
+  "components_blind": {
+    "P1_high_base": true,
+    "P1_declined": true,
+    "P5_declined": true,
+    "spread_widened": true,
+    "P4_strong": true
+  },
+  "blind_signature_fired": true,
+  "classification": "FP",
+  "failing_components": []
+}

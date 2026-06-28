@@ -1,0 +1,34 @@
+{
+  "name": "Poland",
+  "type": "signature_test",
+  "country_ref": "Poland",
+  "window_start": 2015,
+  "predictor_year": 2022,
+  "actual_acute_crisis": false,
+  "doc_category": "FP",
+  "outcome": "backslid then REVERSED via 2023 election (EU anchor)",
+  "tests": "acute pre-turn signature (P1 high-base decline + P5 decline + spread widening + P4 strong) \u2014 blind, real WGI",
+  "note": "Distinct from the 51-case P1-ordinality baseline; tests the SIGNATURE function only.",
+  "pre": {
+    "P1": 0.68,
+    "P5": 0.841,
+    "P4": 0.837,
+    "spread": 0.188
+  },
+  "predictor": {
+    "P1": 0.629,
+    "P5": 0.751,
+    "P4": 0.796,
+    "spread": 0.254
+  },
+  "components_blind": {
+    "P1_high_base": true,
+    "P1_declined": true,
+    "P5_declined": true,
+    "spread_widened": true,
+    "P4_strong": true
+  },
+  "blind_signature_fired": true,
+  "classification": "FP",
+  "failing_components": []
+}
