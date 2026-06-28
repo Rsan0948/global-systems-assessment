@@ -4,10 +4,14 @@ This file orients an agent working in `universalsystemgrade`. Read it before
 touching code. Read `README.md` for the project's scientific framing and
 `preregistration/PREREGISTRATION.md` for the binding analysis plan.
 
-> **Unrelated sub-project:** `mi_pipeline/` is a self-contained Modernization
-> Index data pipeline (separate from the fragmentation study — do not wire the
-> two together). It has its own `mi_pipeline/CLAUDE.md`; a local agent working on
-> it should read that, not this file.
+> **Unrelated sub-projects** (separate from the fragmentation study — do not wire
+> any of them together). Each has its own `CLAUDE.md`; a local agent working on
+> one should read that, not this file:
+> - `mi_pipeline/` — Modernization Index *data pipeline* (builds the raw indicator
+>   panel from World Bank API + manual CSVs).
+> - `mi-research/` — Modernization Index *scoring/diagnostic/retrodiction engine*
+>   (consumes per-country data → MI scores + case-study validation). Carries the
+>   `MASTER_REFERENCE_ARCHITECTURE.md` source-of-truth spec.
 
 ## What this project is (in one paragraph)
 

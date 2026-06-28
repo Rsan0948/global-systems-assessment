@@ -1,0 +1,258 @@
+"""
+Modernization Index — Diagnostic Engine
+
+Higher-level analysis: strategy classification, vulnerability assessment,
+comparable case identification.
+"""
+
+from typing import Optional
+from mi.scoring import score_country, calculate_pillar_spread, get_configuration_profile
+from mi.safeguards import evaluate_all_safeguards
+
+
+def full_diagnostic(indicators: dict, context: dict = None) -> dict:
+    """
+    Run the complete MI diagnostic pipeline on a country.
+
+    Returns scoring, configuration analysis, strategy classification,
+    all safeguard evaluations, and vulnerability assessment.
+    """
+    score = score_country(indicators)
+    safeguards = evaluate_all_safeguards(score, context or {})
+    strategy = classify_strategy(score, context or {})
+    vulnerability = assess_vulnerability(score, safeguards)
+
+    return {
+        "scoring": score,
+        "strategy": strategy,
+        "safeguards": safeguards,
+        "vulnerability": vulnerability,
+    }
+
+
+def classify_strategy(score: dict, context: dict) -> dict:
+    """
+    Classify which of the three governance strategies a country is running,
+    based on its MI configuration.
+
+    Strategy 1 (Porosity): High P1, institutional diffusion of pressure
+    Strategy 2 (Suppression): Control through force/authority
+    Strategy 3 (Complexity Control): Low internal complexity by design
+    """
+    pillars = score.get("pillar_scores", {})
+    p1 = pillars.get("P1")
+    spread = score.get("pillar_spread")
+
+    if p1 is None:
+        return {"strategy": "unknown", "confidence": "insufficient data"}
+
+    # Heuristic classification based on P1 level and context
+    indicators = []
+
+    # Check for complexity control signals
+    small_population = context.get("population", float("inf")) < 10_000_000
+    island = context.get("is_island", False)
+    immigration_restrictive = context.get("immigration_policy", "") in (
+        "restrictive", "very_restrictive"
+    )
+
+    if p1 > 0.70 and (small_population or island) and immigration_restrictive:
+        return {
+            "strategy": "complexity_control",
+            "confidence": "high" if island else "moderate",
+            "explanation": (
+                "High P1 with controlled complexity inputs. "
+                "System manages by limiting what it has to govern rather than "
+                "building capacity to govern everything."
+            ),
+            "failure_mode": "Demographic/economic stagnation",
+            "examples": "Singapore, Japan, island nations",
+        }
+
+    # Check for porosity signals
+    has_devolution = context.get("has_devolution", False)
+    has_power_sharing = context.get("has_power_sharing", False)
+    has_federalism = context.get("has_federalism", False)
+    democratic = context.get("is_democratic", False)
+
+    porosity_signals = sum([
+        has_devolution, has_power_sharing, has_federalism, democratic
+    ])
+
+    if p1 > 0.60 and porosity_signals >= 2:
+        return {
+            "strategy": "porosity",
+            "confidence": "high" if porosity_signals >= 3 else "moderate",
+            "explanation": (
+                f"High P1 ({p1:.3f}) with {porosity_signals} porosity mechanisms. "
+                "System diffuses complexity pressure through institutional channels."
+            ),
+            "failure_mode": "Institutional exhaustion if complexity outgrows adaptation",
+            "examples": "Switzerland, Belgium, UK, Canada",
+        }
+
+    # Check for suppression signals
+    authoritarian = context.get("is_authoritarian", False)
+    military_dominant = context.get("military_dominant", False)
+
+    if authoritarian or military_dominant or (p1 < 0.40 and not democratic):
+        # Determine suppression tier
+        if context.get("prior_porosity_period", False):
+            tier = 3
+            tier_label = "Re-suppression after porosity (WORST)"
+        elif p1 > 0.60:
+            tier = 2
+            tier_label = "Institutional/legal suppression"
+        else:
+            tier = 1
+            tier_label = "Military/authoritarian suppression"
+
+        return {
+            "strategy": "suppression",
+            "tier": tier,
+            "tier_label": tier_label,
+            "confidence": "moderate",
+            "explanation": (
+                f"P1 = {p1:.3f}. System manages complexity through control "
+                f"rather than diffusion. Suppression tier: {tier_label}."
+            ),
+            "failure_mode": (
+                "Catastrophic fragmentation (re-suppression after porosity)"
+                if tier == 3 else
+                "Violent fragmentation when control mechanisms weaken"
+                if tier == 1 else
+                "De-escalation possible but pressure may recur"
+            ),
+        }
+
+    # Default / ambiguous
+    return {
+        "strategy": "ambiguous",
+        "confidence": "low",
+        "explanation": (
+            f"P1 = {p1:.3f}. Insufficient context signals to classify strategy. "
+            "Could be transitioning between strategies or running a hybrid."
+        ),
+        "indicators_needed": [
+            "is_democratic", "is_authoritarian", "has_federalism",
+            "has_devolution", "population", "is_island"
+        ],
+    }
+
+
+def assess_vulnerability(score: dict, safeguards: dict) -> dict:
+    """
+    Produce an overall vulnerability assessment based on scoring and safeguards.
+    """
+    pillars = score.get("pillar_scores", {})
+    p1 = pillars.get("P1")
+    spread = score.get("pillar_spread")
+    mi = score.get("mi_score")
+
+    flags = []
+    risk_level = "low"
+
+    # P1 assessment
+    if p1 is not None:
+        if p1 < 0.33:
+            flags.append("CRITICAL: P1 in bottom third — high fragmentation/violence risk")
+            risk_level = "critical"
+        elif p1 < 0.50:
+            flags.append("WARNING: P1 below median — elevated structural risk")
+            risk_level = max(risk_level, "high", key=["low", "moderate", "high", "critical"].index)
+
+    # Spread assessment
+    if spread is not None:
+        if spread > 0.50:
+            flags.append(f"CRITICAL: Pillar spread {spread:.3f} — extreme configuration imbalance")
+            risk_level = max(risk_level, "high", key=["low", "moderate", "high", "critical"].index)
+        elif spread > 0.35:
+            flags.append(f"WARNING: Pillar spread {spread:.3f} — significant imbalance")
+
+    # Safeguard flags
+    triggered_safeguards = [
+        name for name, result in safeguards.items()
+        if result.get("triggered", False) and name not in ("Mod4", "Mod8")
+    ]
+    if triggered_safeguards:
+        flags.append(f"Active safeguards: {', '.join(triggered_safeguards)}")
+
+    # Specific high-risk combinations
+    if (safeguards.get("B", {}).get("triggered") and
+            safeguards.get("E", {}).get("triggered")):
+        flags.append("CRITICAL COMBINATION: Low P1 + resource dependence — "
+                      "catastrophic outcome pattern (Libya/South Sudan profile)")
+        risk_level = "critical"
+
+    if safeguards.get("G", {}).get("tier") == "RE-SUPPRESSION AFTER POROSITY (WORST PATH)":
+        flags.append("CRITICAL: Re-suppression after porosity — worst documented path")
+        risk_level = "critical"
+
+    return {
+        "risk_level": risk_level,
+        "flags": flags,
+        "summary": (
+            f"Risk level: {risk_level.upper()}. "
+            f"P1 = {f'{p1:.3f}' if p1 is not None else 'N/A'}, "
+            f"spread = {f'{spread:.3f}' if spread is not None else 'N/A'}, "
+            f"{len(triggered_safeguards)} safeguards active."
+        ),
+    }
+
+
+def generate_predictions(score: dict, safeguards: dict, comparison_scores: dict = None) -> dict:
+    """
+    Generate the standard prediction set (a-h) from a scored country profile.
+
+    For cases involving comparison between entities, provide comparison_scores
+    as a dict of {entity_name: score_dict}.
+    """
+    pillars = score.get("pillar_scores", {})
+    predictions = {}
+
+    # (a) Best trajectory prediction
+    if comparison_scores:
+        rankings = []
+        for name, comp_score in comparison_scores.items():
+            comp_p1 = comp_score.get("pillar_scores", {}).get("P1")
+            if comp_p1 is not None:
+                rankings.append((name, comp_p1))
+        rankings.sort(key=lambda x: x[1], reverse=True)
+        predictions["a_trajectory_ranking"] = {
+            "prediction": f"Predicted ranking: {' > '.join(n for n, _ in rankings)}",
+            "basis": "P1 ordinality (highest P1 = best trajectory)",
+            "rankings": rankings,
+            "mod4_check": "Apply Mod4 to adjacent pairs — abstain if gap < margin",
+        }
+
+    # (b) Violence prediction
+    p1 = pillars.get("P1")
+    if p1 is not None:
+        violence_risk = "HIGH" if p1 < 0.33 else "MODERATE" if p1 < 0.50 else "LOW"
+        predictions["b_violence"] = {
+            "prediction": f"Violence RISK: {violence_risk} (P1 = {p1:.3f})",
+            "note": "Mod8 applies: this predicts RISK, not AGENCY",
+            "basis": "Low P1 → violent outcomes confirmed across all tested cases",
+        }
+
+    # (c) Convergence/divergence
+    spread = score.get("pillar_spread")
+    if comparison_scores and len(comparison_scores) >= 2:
+        p1_values = [s.get("pillar_scores", {}).get("P1", 0)
+                     for s in comparison_scores.values()]
+        p1_range = max(p1_values) - min(p1_values) if p1_values else 0
+        predictions["c_convergence"] = {
+            "prediction": "DIVERGENCE" if p1_range > 0.15 else "CONVERGENCE",
+            "basis": f"P1 range across entities: {p1_range:.3f}",
+        }
+
+    # (d) Primary failure dimension
+    config = score.get("configuration", [])
+    if config:
+        weakest = config[-1] if config else None
+        predictions["d_failure_dimension"] = {
+            "prediction": f"Primary vulnerability: {weakest[0]} ({weakest[1]:.3f})" if weakest else "unknown",
+            "note": "Post-hoc coding risk — this prediction is the most exposed to confirmation bias",
+        }
+
+    return predictions

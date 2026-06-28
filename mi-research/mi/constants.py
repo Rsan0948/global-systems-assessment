@@ -1,0 +1,231 @@
+"""
+Modernization Index — Constants and Configuration
+
+All weights, thresholds, and indicator specifications.
+This is the single source of truth for framework parameters.
+"""
+
+# === PILLAR WEIGHTS ===
+# Correlation-derived (v2/LIVE). Data independently pushed P1 from 25% to 34%.
+WEIGHTS = {
+    "P1": 0.34,  # Institutional Quality (most central: avg |r| = 0.79-0.80)
+    "P2": 0.15,  # Innovation & Knowledge Economy
+    "P3": 0.16,  # Human Capital
+    "P4": 0.20,  # Economic Structure & Independence
+    "P5": 0.16,  # Stability & Resilience
+}
+
+# Original hand-assigned weights (v1) for comparison/sensitivity
+WEIGHTS_V1 = {
+    "P1": 0.25,
+    "P2": 0.25,
+    "P3": 0.20,
+    "P4": 0.20,
+    "P5": 0.10,
+}
+
+# Equal weights (v3) for sensitivity analysis
+WEIGHTS_EQUAL = {
+    "P1": 0.20,
+    "P2": 0.20,
+    "P3": 0.20,
+    "P4": 0.20,
+    "P5": 0.20,
+}
+
+# === INDICATOR SPECIFICATIONS ===
+INDICATORS = {
+    "P1": {
+        "name": "Institutional Quality",
+        "indicators": {
+            "gov_effectiveness": {
+                "source": "World Bank WGI",
+                "scale": "0-100 percentile (legacy) or anchored 0-100 (2025+)",
+                "normalization": "score / 100",
+                "track2_substitute": None,
+            },
+            "rule_of_law": {
+                "source": "World Bank WGI",
+                "scale": "0-100 percentile or anchored 0-100",
+                "normalization": "score / 100",
+                "track2_substitute": None,
+            },
+            "regulatory_quality": {
+                "source": "World Bank WGI",
+                "scale": "0-100 percentile or anchored 0-100",
+                "normalization": "score / 100",
+                "track2_substitute": None,
+            },
+            "corruption_control": {
+                "source": "Transparency International CPI",
+                "scale": "0-100",
+                "normalization": "score / 100",
+                "track2_substitute": "WGI Control of Corruption (for pre-2012)",
+            },
+        },
+        "pillar_score": "arithmetic mean of normalized indicators",
+    },
+    "P2": {
+        "name": "Innovation & Knowledge Economy",
+        "indicators": {
+            "innovation_index": {
+                "source": "WIPO GII",
+                "scale": "0-100",
+                "normalization": "score / 100",
+                "track2_substitute": "R&D Expenditure % GDP (min-max, for pre-2007)",
+            },
+            "economic_complexity": {
+                "source": "Harvard/OEC ECI",
+                "scale": "~-2.5 to +2.5",
+                "normalization": "min-max within dataset",
+                "track2_substitute": None,
+            },
+        },
+        "pillar_score": "arithmetic mean of normalized indicators",
+    },
+    "P3": {
+        "name": "Human Capital",
+        "indicators": {
+            "education_index": {
+                "source": "UNDP HDR",
+                "scale": "0-1",
+                "normalization": "already normalized",
+                "track2_substitute": None,
+            },
+            "life_expectancy_index": {
+                "source": "UNDP HDR",
+                "scale": "0-1",
+                "normalization": "already normalized",
+                "track2_substitute": None,
+            },
+        },
+        "pillar_score": "arithmetic mean",
+    },
+    "P4": {
+        "name": "Economic Structure & Independence",
+        "indicators": {
+            "gdp_per_capita_ppp": {
+                "source": "World Bank WDI",
+                "scale": "continuous",
+                "normalization": "log-transform, then min-max",
+                "track2_substitute": None,
+            },
+            "resource_rents_pct_gdp": {
+                "source": "World Bank WDI",
+                "scale": "0-60%+",
+                "normalization": "inverted: 1 - min(rents/50, 1)",
+                "track2_substitute": None,
+            },
+            "oda_pct_gni": {
+                "source": "World Bank WDI",
+                "scale": "0-20%+",
+                "normalization": "inverted: 1 - min(oda/20, 1)",
+                "track2_substitute": None,
+            },
+        },
+        "pillar_score": "arithmetic mean of normalized indicators",
+    },
+    "P5": {
+        "name": "Stability & Resilience",
+        "indicators": {
+            "political_stability": {
+                "source": "World Bank WGI",
+                "scale": "0-100 percentile or anchored 0-100",
+                "normalization": "score / 100",
+                "track2_substitute": None,
+            },
+            "fragile_states_index": {
+                "source": "Fund for Peace FSI",
+                "scale": "0-120 (higher = worse)",
+                "normalization": "inverted: 1 - (fsi/120)",
+                "available_from": 2006,
+                "track2_substitute": "P5 = political_stability alone (pre-2006)",
+            },
+        },
+        "pillar_score": "arithmetic mean (or sole indicator for Track 2 pre-2006)",
+    },
+}
+
+# === SAFEGUARD THRESHOLDS ===
+SAFEGUARD_THRESHOLDS = {
+    "B_capacity_gate": {
+        "description": "Minimum P1 for fragment count to indicate manageability",
+        "threshold": "bottom third of Rule of Law (ordinal, not fixed number)",
+        "note": "Apply ordinally due to 2025 WGI revision changing scales",
+    },
+    "C_reversal_risk": {
+        "resource_rents_trigger": 0.30,  # 30% of GDP
+        "youth_unemployment_compound": 0.25,  # 25%
+        "description": "Democratic transition + weak P4 = reversal risk",
+    },
+    "E_rentier_capture": {
+        "rents_gdp_flag": 0.25,  # 25-30% of GDP triggers flag
+        "rents_revenue_unreliable": 0.50,  # >50% of revenue = treat P1 as unreliable
+        "bidirectional": True,
+        "note": "Negative (capture) AND positive (rent-stabilization)",
+    },
+    "F_substate_turbulence": {
+        "antisystem_vote_threshold": 0.25,  # 25% in any region
+        "regional_divergence_threshold": 0.30,  # 30% GDP per capita gap
+        "description": "Chronic management load indicator, not collapse predictor",
+    },
+}
+
+# === TIER BOUNDARIES ===
+TIERS = {
+    1: {"name": "Fully Modernized", "m_score_min": 0.80},
+    2: {"name": "Highly Modernized", "m_score_min": 0.60},
+    3: {"name": "Moderately Modernized", "m_score_min": 0.40},
+    4: {"name": "Emerging Modern", "m_score_min": 0.20},
+    5: {"name": "Fragile Modern", "m_score_min": 0.00},
+    6: {"name": "Below Floor", "m_score_min": float("-inf")},
+}
+
+# === STRATEGY CLASSIFICATION ===
+STRATEGIES = {
+    "porosity": {
+        "description": "High complexity managed through institutional diffusion",
+        "p1_requirement": "high",
+        "failure_mode": "institutional exhaustion, chronic dysfunction",
+        "examples": ["Switzerland", "Belgium", "UK/GFA", "Canada"],
+    },
+    "suppression": {
+        "description": "Complexity managed through authoritarian control",
+        "p1_requirement": "any (determines suppression tier)",
+        "failure_mode": "violent fragmentation when control weakens",
+        "tiers": {
+            1: "Military suppression (armed force)",
+            2: "Institutional/legal suppression (high-P1, legal mechanisms)",
+            3: "Re-suppression after porosity (WORST outcome)",
+        },
+        "examples": {
+            1: ["Nigeria/Biafra", "Ethiopia/Tigray"],
+            2: ["Spain/Catalonia"],
+            3: ["Myanmar post-2021"],
+        },
+    },
+    "complexity_control": {
+        "description": "Complexity kept below fragmentation threshold",
+        "p1_requirement": "high (reflects management efficiency)",
+        "failure_mode": "demographic/economic stagnation",
+        "examples": ["Singapore", "Japan", "island nations"],
+    },
+}
+
+# === ANCHORS ===
+# For v1 anchor-based scoring
+ANCHOR_CEILING = "Switzerland"  # M-Score = 1.000
+ANCHOR_FLOOR = "Lebanon"  # M-Score = 0.000
+
+# === VALIDATED BASELINE ===
+BASELINE = {
+    "version": "LIVE",
+    "n_modern_cases": 20,
+    "n_ancient_cases": 5,
+    "clean_confirmation_rate": 0.78,  # best estimate
+    "clean_confirmation_range": (0.62, 0.85),  # strict to generous
+    "directional_accuracy": 1.00,  # zero falsifications
+    "p1_ordinality": "20/20",
+    "total_predictions": "~130",
+    "falsifications": 0,
+}
