@@ -6,7 +6,7 @@ Each safeguard has: trigger conditions, modification logic, derivation history.
 """
 
 from typing import Optional
-from mi.constants import SAFEGUARD_THRESHOLDS
+from mi.constants import SAFEGUARD_THRESHOLDS, LENS
 
 
 def evaluate_all_safeguards(
@@ -95,7 +95,7 @@ def evaluate_safeguard_b(pillars: dict, context: dict) -> dict:
     """
     p1 = pillars.get("P1")
     n_successors = context.get("n_successor_states")
-    low_p1 = p1 is not None and p1 < 0.33  # Bottom third (ordinal)
+    low_p1 = p1 is not None and p1 < LENS["p1_bottom_third"]  # Bottom third (ordinal)
 
     triggered = low_p1 and n_successors is not None and n_successors <= 4
     return {
@@ -189,7 +189,7 @@ def evaluate_safeguard_d(pillars: dict, context: dict) -> dict:
     threat = context.get("neighbor_threat_level", "none")
     triggered = threat in ("moderate", "high")
     p1 = pillars.get("P1")
-    low_p1 = p1 is not None and p1 < 0.50
+    low_p1 = p1 is not None and p1 < LENS["p1_median"]
 
     return {
         "name": "Predatory Neighbor / Exogenous Shock",
@@ -222,7 +222,7 @@ def evaluate_safeguard_e(pillars: dict, context: dict) -> dict:
 
     negative_triggered = rents_gdp > thresholds["rents_gdp_flag"]
     unreliable_p1 = rents_revenue > thresholds["rents_revenue_unreliable"]
-    positive_triggered = (negative_triggered and p1 is not None and p1 < 0.33)
+    positive_triggered = (negative_triggered and p1 is not None and p1 < LENS["p1_bottom_third"])
 
     direction = None
     if negative_triggered and not positive_triggered:
@@ -271,7 +271,7 @@ def evaluate_safeguard_f(pillars: dict, context: dict) -> dict:
     triggers = []
     if antisystem_vote > thresholds["antisystem_vote_threshold"]:
         triggers.append(f"anti-system vote {antisystem_vote:.1%} > 25%")
-    if exec_collapses >= 2:
+    if exec_collapses >= LENS["f_executive_collapses_min"]:
         triggers.append(f"{exec_collapses} executive collapses")
     if regional_divergence > thresholds["regional_divergence_threshold"]:
         triggers.append(f"regional divergence {regional_divergence:.1%} > 30%")
@@ -404,7 +404,7 @@ def evaluate_mod4(pillars: dict, context: dict) -> dict:
     the gap between compared entities exceeds margin of error.
     """
     comparison_gap = context.get("p1_comparison_gap")
-    margin = 0.10  # ~10 percentile points as default margin
+    margin = LENS["mod4_margin"]  # ordinal abstention threshold (single source: constants.LENS)
 
     if comparison_gap is None:
         return {

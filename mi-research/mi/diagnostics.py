@@ -8,6 +8,7 @@ comparable case identification.
 from typing import Optional
 from mi.scoring import score_country, calculate_pillar_spread, get_configuration_profile
 from mi.safeguards import evaluate_all_safeguards
+from mi.constants import LENS
 
 
 def full_diagnostic(indicators: dict, context: dict = None) -> dict:
@@ -50,13 +51,13 @@ def classify_strategy(score: dict, context: dict) -> dict:
     indicators = []
 
     # Check for complexity control signals
-    small_population = context.get("population", float("inf")) < 10_000_000
+    small_population = context.get("population", float("inf")) < LENS["small_population"]
     island = context.get("is_island", False)
     immigration_restrictive = context.get("immigration_policy", "") in (
         "restrictive", "very_restrictive"
     )
 
-    if p1 > 0.70 and (small_population or island) and immigration_restrictive:
+    if p1 > LENS["p1_complexity_control_min"] and (small_population or island) and immigration_restrictive:
         return {
             "strategy": "complexity_control",
             "confidence": "high" if island else "moderate",
@@ -79,7 +80,7 @@ def classify_strategy(score: dict, context: dict) -> dict:
         has_devolution, has_power_sharing, has_federalism, democratic
     ])
 
-    if p1 > 0.60 and porosity_signals >= 2:
+    if p1 > LENS["p1_porosity_min"] and porosity_signals >= 2:
         return {
             "strategy": "porosity",
             "confidence": "high" if porosity_signals >= 3 else "moderate",
@@ -95,12 +96,12 @@ def classify_strategy(score: dict, context: dict) -> dict:
     authoritarian = context.get("is_authoritarian", False)
     military_dominant = context.get("military_dominant", False)
 
-    if authoritarian or military_dominant or (p1 < 0.40 and not democratic):
+    if authoritarian or military_dominant or (p1 < LENS["p1_strategy_authoritarian"] and not democratic):
         # Determine suppression tier
         if context.get("prior_porosity_period", False):
             tier = 3
             tier_label = "Re-suppression after porosity (WORST)"
-        elif p1 > 0.60:
+        elif p1 > LENS["p1_porosity_min"]:
             tier = 2
             tier_label = "Institutional/legal suppression"
         else:
@@ -154,19 +155,19 @@ def assess_vulnerability(score: dict, safeguards: dict) -> dict:
 
     # P1 assessment
     if p1 is not None:
-        if p1 < 0.33:
+        if p1 < LENS["p1_bottom_third"]:
             flags.append("CRITICAL: P1 in bottom third — high fragmentation/violence risk")
             risk_level = "critical"
-        elif p1 < 0.50:
+        elif p1 < LENS["p1_median"]:
             flags.append("WARNING: P1 below median — elevated structural risk")
             risk_level = max(risk_level, "high", key=["low", "moderate", "high", "critical"].index)
 
     # Spread assessment
     if spread is not None:
-        if spread > 0.50:
+        if spread > LENS["spread_critical"]:
             flags.append(f"CRITICAL: Pillar spread {spread:.3f} — extreme configuration imbalance")
             risk_level = max(risk_level, "high", key=["low", "moderate", "high", "critical"].index)
-        elif spread > 0.35:
+        elif spread > LENS["spread_warning"]:
             flags.append(f"WARNING: Pillar spread {spread:.3f} — significant imbalance")
 
     # Safeguard flags
@@ -228,7 +229,7 @@ def generate_predictions(score: dict, safeguards: dict, comparison_scores: dict 
     # (b) Violence prediction
     p1 = pillars.get("P1")
     if p1 is not None:
-        violence_risk = "HIGH" if p1 < 0.33 else "MODERATE" if p1 < 0.50 else "LOW"
+        violence_risk = "HIGH" if p1 < LENS["p1_bottom_third"] else "MODERATE" if p1 < LENS["p1_median"] else "LOW"
         predictions["b_violence"] = {
             "prediction": f"Violence RISK: {violence_risk} (P1 = {p1:.3f})",
             "note": "Mod8 applies: this predicts RISK, not AGENCY",

@@ -54,7 +54,10 @@ mi-research/
 
 ## Current Status
 
-- **MI Version:** LIVE (with Mods 4, 8 and Safeguards A-I)
+- **MI Version:** **MI v1** — the canonical methodology (correlation-derived weights +
+  Mods 4, 8 and Safeguards A-I; formerly "LIVE"/v2). The old hand-assigned draft weights are
+  archived (`WEIGHTS_ARCHIVED_HAND_V0`, not used). See
+  `docs/architectural_decisions/mi_v1_naming_and_archive.md`.
 - **Validated Cases:** 20 modern + 5 ancient (proxy), now backed by structured JSON
   records in `data/case_studies/completed/`; **+5 expansion cases (Batch 1, cases
   21-25)** scored on fresh real data — see `live/runs/run7_expansion_batch1_cases21-25.md`.

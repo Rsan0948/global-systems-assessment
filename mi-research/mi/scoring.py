@@ -9,7 +9,7 @@ import math
 import json
 from pathlib import Path
 from typing import Optional
-from mi.constants import WEIGHTS, WEIGHTS_V1, WEIGHTS_EQUAL, TIERS
+from mi.constants import WEIGHTS, WEIGHTS_ARCHIVED_HAND_V0, WEIGHTS_EQUAL, TIERS, LENS
 
 
 def normalize_wgi(score: float) -> float:
@@ -27,7 +27,7 @@ def normalize_gii(score: float) -> float:
     return score / 100.0
 
 
-def normalize_eci(score: float, dataset_min: float = -2.5, dataset_max: float = 2.5) -> float:
+def normalize_eci(score: float, dataset_min: float = LENS["eci_default_min"], dataset_max: float = LENS["eci_default_max"]) -> float:
     """Min-max normalize Economic Complexity Index."""
     if dataset_max == dataset_min:
         return 0.5
@@ -44,9 +44,9 @@ def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log
         return 0.0
     log_gdp = math.log(gdp)
     if dataset_min_log is None or dataset_max_log is None:
-        # Default range based on global data (~$500 to ~$150,000)
-        dataset_min_log = math.log(500)
-        dataset_max_log = math.log(150000)
+        # Fixed absolute reference range from the LENS config (~$500 to ~$150,000)
+        dataset_min_log = math.log(LENS["gdp_ppp_floor"])
+        dataset_max_log = math.log(LENS["gdp_ppp_ceiling"])
     if dataset_max_log == dataset_min_log:
         return 0.5
     return (log_gdp - dataset_min_log) / (dataset_max_log - dataset_min_log)
@@ -54,17 +54,17 @@ def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log
 
 def normalize_resource_rents(rents_pct: float) -> float:
     """Invert resource rents: lower dependence = higher score."""
-    return 1.0 - min(rents_pct / 50.0, 1.0)
+    return 1.0 - min(rents_pct / LENS["resource_rents_full_dependence_pct"], 1.0)
 
 
 def normalize_oda(oda_pct: float) -> float:
     """Invert ODA: lower dependence = higher score."""
-    return 1.0 - min(oda_pct / 20.0, 1.0)
+    return 1.0 - min(oda_pct / LENS["oda_full_dependence_pct"], 1.0)
 
 
 def normalize_fsi(fsi: float) -> float:
     """Invert FSI: lower fragility = higher score."""
-    return 1.0 - (fsi / 120.0)
+    return 1.0 - (fsi / LENS["fsi_max"])
 
 
 def calculate_pillar_scores(indicators: dict) -> dict:
@@ -116,8 +116,8 @@ def calculate_pillar_scores(indicators: dict) -> dict:
         gaps.append("P2:innovation_index")
 
     eci = indicators.get("eci")
-    eci_min = indicators.get("eci_dataset_min", -2.5)
-    eci_max = indicators.get("eci_dataset_max", 2.5)
+    eci_min = indicators.get("eci_dataset_min", LENS["eci_default_min"])
+    eci_max = indicators.get("eci_dataset_max", LENS["eci_default_max"])
     if eci is not None:
         p2_values.append(normalize_eci(eci, eci_min, eci_max))
     else:
@@ -195,7 +195,7 @@ def calculate_mi_score(pillar_scores: dict, weights: dict = None) -> Optional[fl
     available = {k: v for k, v in pillar_scores.items()
                  if k in weights and v is not None}
 
-    if len(available) < 3:  # Need at least 3 pillars for meaningful score
+    if len(available) < LENS["min_pillars_for_mi"]:  # need enough pillars for a meaningful score
         return None
 
     # Weight and normalize by available weights
@@ -262,12 +262,13 @@ def score_country(indicators: dict, weights: dict = None) -> dict:
         "weights_used": weights or WEIGHTS,
     }
 
-    # Run all three weight schemes for sensitivity
+    # Sensitivity: headline the canonical MI v1, plus an equal-weights robustness
+    # control and the ARCHIVED hand weights (historical only, never canonical).
     if weights is None:
         result["sensitivity"] = {
-            "v1_score": calculate_mi_score(pillars, WEIGHTS_V1),
-            "v2_score": calculate_mi_score(pillars, WEIGHTS),
-            "equal_score": calculate_mi_score(pillars, WEIGHTS_EQUAL),
+            "mi_v1": calculate_mi_score(pillars, WEIGHTS),            # canonical
+            "equal_weights": calculate_mi_score(pillars, WEIGHTS_EQUAL),
+            "archived_hand_v0": calculate_mi_score(pillars, WEIGHTS_ARCHIVED_HAND_V0),
         }
 
     return result

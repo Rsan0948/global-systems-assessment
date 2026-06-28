@@ -6,7 +6,10 @@ This is the single source of truth for framework parameters.
 """
 
 # === PILLAR WEIGHTS ===
-# Correlation-derived (v2/LIVE). Data independently pushed P1 from 25% to 34%.
+# MI v1 is the canonical, only-supported methodology from 2026-06-27 onward.
+# "MI v1" == the former "LIVE"/v2 version (correlation-derived weights; data
+# independently pushed P1 from 25% to 34%, plus Mods 4/8 and Safeguards A-I).
+# ALWAYS use WEIGHTS for scoring.
 WEIGHTS = {
     "P1": 0.34,  # Institutional Quality (most central: avg |r| = 0.79-0.80)
     "P2": 0.15,  # Innovation & Knowledge Economy
@@ -15,8 +18,12 @@ WEIGHTS = {
     "P5": 0.16,  # Stability & Resilience
 }
 
-# Original hand-assigned weights (v1) for comparison/sensitivity
-WEIGHTS_V1 = {
+# === ARCHIVED — DO NOT USE FOR SCORING ===
+# Original hand-assigned draft weights (the pre-release "v0" weighting, previously
+# labelled "v1"). ARCHIVED 2026-06-27: superseded by MI v1 (WEIGHTS above). Retained
+# ONLY for the documented 25%->34% provenance and historical sensitivity, never for
+# canonical scoring. See docs/architectural_decisions/mi_v1_naming_and_archive.md.
+WEIGHTS_ARCHIVED_HAND_V0 = {
     "P1": 0.25,
     "P2": 0.25,
     "P3": 0.20,
@@ -24,13 +31,48 @@ WEIGHTS_V1 = {
     "P5": 0.10,
 }
 
-# Equal weights (v3) for sensitivity analysis
+# Equal weights for sensitivity analysis (a robustness control, not a version)
 WEIGHTS_EQUAL = {
     "P1": 0.20,
     "P2": 0.20,
     "P3": 0.20,
     "P4": 0.20,
     "P5": 0.20,
+}
+
+# === MI v1 LENS — the single scoring config ===
+# Every scoring/normalization/safeguard threshold the engine uses lives HERE.
+# Edit a value once and it propagates to all cases on the next re-score. This is
+# the "universal config": the lens through which the (fixed) structural inputs are
+# scored. Per-case data and predictions live in the case records, not here.
+LENS = {
+    # composite
+    "min_pillars_for_mi": 3,
+    # P4 / P5 normalization denominators (inversion points)
+    "resource_rents_full_dependence_pct": 50.0,   # rents/50 -> fully dependent
+    "oda_full_dependence_pct": 20.0,              # oda/20  -> fully dependent
+    "fsi_max": 120.0,                             # FSI 0-120 scale
+    # P2 ECI min-max (dataset-relative; override per-record via eci_dataset_min/max)
+    "eci_default_min": -2.5,
+    "eci_default_max": 2.5,
+    # P4 GDP log min-max reference range (fixed absolute scale, by design)
+    "gdp_ppp_floor": 500.0,
+    "gdp_ppp_ceiling": 150000.0,
+    # Mod4 — margin-of-error gate (ordinal abstention threshold on the 0-1 P1 scale)
+    "mod4_margin": 0.10,
+    # capacity / risk cutoffs
+    "p1_bottom_third": 0.33,        # Safeguard B/E gate; CRITICAL risk
+    "p1_median": 0.50,             # Safeguard D; WARNING risk
+    "p1_strategy_authoritarian": 0.40,
+    "p1_porosity_min": 0.60,
+    "p1_complexity_control_min": 0.70,
+    # pillar-spread risk cutoffs
+    "spread_critical": 0.50,
+    "spread_warning": 0.35,
+    # Safeguard F
+    "f_executive_collapses_min": 2,
+    # strategy classification
+    "small_population": 10_000_000,
 }
 
 # === INDICATOR SPECIFICATIONS ===
@@ -219,7 +261,7 @@ ANCHOR_FLOOR = "Lebanon"  # M-Score = 0.000
 
 # === VALIDATED BASELINE ===
 BASELINE = {
-    "version": "LIVE",
+    "version": "MI v1 (canonical; formerly 'LIVE')",
     "n_modern_cases": 20,
     "n_ancient_cases": 5,
     "clean_confirmation_rate": 0.78,  # best estimate
