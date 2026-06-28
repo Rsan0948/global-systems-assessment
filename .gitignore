@@ -12,8 +12,5 @@ studies/4_negative_controls/data/
 # DGS raw source downloads (Harvard ECI, V-Dem, World Bank, UCDP); panel cache in results/ is committed
 studies/2A_political_fragmentation/data/
 
-# MI pipeline: keep the dirs (.gitkeep) but not the local downloads / generated artifacts
-mi_pipeline/data/*
-!mi_pipeline/data/.gitkeep
-mi_pipeline/output/*
-!mi_pipeline/output/.gitkeep
+# MI pipeline: data inputs and generated outputs ARE committed (see mi_pipeline/DATA_PROVENANCE.md).
+# (Previously git-ignored; convention reversed 2026-06-28 — the real panel lives in the repo.)

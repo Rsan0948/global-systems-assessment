@@ -1,0 +1,401 @@
+iso3,country,year,GII
+AGO,Angola,2012,22.2
+ALB,Albania,2012,30.4
+ARE,United Arab Emirates,2012,44.4
+ARG,Argentina,2012,34.4
+ARM,Armenia,2012,34.5
+AUS,Australia,2012,51.9
+AUT,Austria,2012,53.1
+AZE,Azerbaijan,2012,30.4
+BDI,Burundi,2012,20.5
+BEL,Belgium,2012,54.3
+BEN,Benin,2012,24.4
+BFA,Burkina Faso,2012,24.6
+BGD,Bangladesh,2012,26.1
+BGR,Bulgaria,2012,40.7
+BHR,Bahrain,2012,41.1
+BIH,Bosnia and Herzegovina,2012,34.2
+BLR,Belarus,2012,32.9
+BLZ,Belize,2012,32.5
+BOL,Bolivia (Plurinational State of),2012,25.8
+BRA,Brazil,2012,36.6
+BRN,Brunei Darussalam,2012,37.7
+BWA,Botswana,2012,31.4
+CAN,Canada,2012,56.9
+CHE,Switzerland,2012,68.2
+CHL,Chile,2012,42.7
+CHN,China,2012,45.4
+CIV,Cote dIvoire,2012,22.6
+CMR,Cameroon,2012,25.0
+COL,Colombia,2012,35.5
+CRI,Costa Rica,2012,36.3
+CYP,Cyprus,2012,47.9
+CZE,Czech Republic,2012,49.7
+DEU,Germany,2012,56.2
+DNK,Denmark,2012,59.9
+DOM,Dominican Republic,2012,30.9
+DZA,Algeria,2012,24.4
+ECU,Ecuador,2012,28.5
+EGY,Egypt,2012,27.9
+ESP,Spain,2012,47.2
+EST,Estonia,2012,55.3
+ETH,Ethiopia,2012,23.3
+FIN,Finland,2012,61.8
+FJI,Fiji,2012,27.9
+FRA,France,2012,51.8
+GAB,Gabon,2012,26.5
+GBR,United Kingdom,2012,61.2
+GEO,Georgia,2012,34.3
+GHA,Ghana,2012,29.6
+GMB,Gambia,2012,23.3
+GRC,Greece,2012,35.3
+GTM,Guatemala,2012,28.4
+GUY,Guyana,2012,33.7
+HKG,Hong Kong (China),2012,58.7
+HND,Honduras,2012,26.3
+HRV,Croatia,2012,40.7
+HUN,Hungary,2012,46.5
+IDN,Indonesia,2012,28.1
+IND,India,2012,35.7
+IRL,Ireland,2012,58.7
+IRN,Iran (Islamic Republic of),2012,27.3
+ISL,Iceland,2012,55.7
+ISR,Israel,2012,56.0
+ITA,Italy,2012,44.5
+JAM,Jamaica,2012,30.2
+JOR,Jordan,2012,37.1
+JPN,Japan,2012,51.7
+KAZ,Kazakhstan,2012,31.9
+KEN,Kenya,2012,28.9
+KGZ,Kyrgyzstan,2012,26.4
+KHM,Cambodia,2012,23.4
+KOR,Republic of Korea (the),2012,53.9
+KWT,Kuwait,2012,37.2
+LAO,Lao People's Democratic Republic,2012,20.2
+LBN,Lebanon,2012,36.2
+LKA,Sri Lanka,2012,29.1
+LSO,Lesotho,2012,25.7
+LTU,Lithuania,2012,44.0
+LUX,Luxembourg,2012,57.7
+LVA,Latvia,2012,47.0
+MAR,Morocco,2012,30.7
+MDA,Republic of Moldova (the),2012,39.2
+MDG,Madagascar,2012,24.2
+MEX,Mexico,2012,32.9
+MKD,North Macedonia*,2012,36.2
+MLI,Mali,2012,25.4
+MLT,Malta,2012,56.1
+MNE,Montenegro,2012,40.1
+MNG,Mongolia,2012,35.0
+MOZ,Mozambique,2012,26.3
+MUS,Mauritius,2012,39.2
+MWI,Malawi,2012,25.4
+MYS,Malaysia,2012,45.9
+NAM,Namibia,2012,34.1
+NER,Niger,2012,18.6
+NGA,Nigeria,2012,24.6
+NIC,Nicaragua,2012,26.7
+NLD,Netherlands,2012,60.5
+NOR,Norway,2012,56.4
+NPL,Nepal,2012,26.0
+NZL,New Zealand,2012,56.6
+OMN,Oman,2012,39.5
+PAK,Pakistan,2012,23.1
+PAN,Panama,2012,30.9
+PER,Peru,2012,34.1
+PHL,Philippines,2012,29.0
+POL,Poland,2012,40.4
+PRT,Portugal,2012,45.3
+PRY,Paraguay,2012,31.6
+QAT,Qatar,2012,45.5
+ROU,Romania,2012,37.8
+RUS,Russian Federation,2012,37.9
+RWA,Rwanda,2012,27.9
+SAU,Saudi Arabia,2012,39.3
+SDN,Sudan,2012,16.8
+SEN,Senegal,2012,28.8
+SGP,Singapore,2012,63.5
+SLV,El Salvador,2012,29.5
+SRB,Serbia,2012,40.0
+SVK,Slovakia,2012,41.4
+SVN,Slovenia,2012,49.9
+SWE,Sweden,2012,64.8
+SWZ,Swaziland - Eswatini,2012,32.0
+SYR,Syrian Arab Republic,2012,23.1
+TGO,Togo,2012,20.5
+THA,Thailand,2012,36.9
+TJK,Tajikistan,2012,26.4
+TTO,Trinidad and Tobago,2012,32.5
+TUN,Tunisia,2012,36.5
+TUR,Turkey,2012,34.1
+TZA,United Republic of Tanzania (the),2012,23.9
+UGA,Uganda,2012,25.6
+UKR,Ukraine,2012,36.1
+URY,Uruguay,2012,35.1
+USA,United States of America,2012,57.7
+UZB,Uzbekistan,2012,23.9
+VEN,"Venezuela, Bolivarian Republic of",2012,25.4
+VNM,Vietnam,2012,33.9
+YEM,Yemen,2012,19.2
+ZAF,South Africa,2012,37.4
+ZMB,Zambia,2012,26.4
+ZWE,Zimbabwe,2012,25.7
+ALB,Albania,2018,30.0
+ARE,United Arab Emirates,2018,42.6
+ARG,Argentina,2018,30.7
+ARM,Armenia,2018,32.8
+AUS,Australia,2018,52.0
+AUT,Austria,2018,51.3
+AZE,Azerbaijan,2018,30.2
+BEL,Belgium,2018,50.5
+BEN,Benin,2018,20.6
+BFA,Burkina Faso,2018,18.9
+BGD,Bangladesh,2018,23.1
+BGR,Bulgaria,2018,42.6
+BHR,Bahrain,2018,31.7
+BIH,Bosnia and Herzegovina,2018,31.1
+BLR,Belarus,2018,29.4
+BOL,Bolivia (Plurinational State of),2018,22.9
+BRA,Brazil,2018,33.4
+BRN,Brunei Darussalam,2018,32.8
+BWA,Botswana,2018,28.2
+CAN,Canada,2018,53.0
+CHE,Switzerland,2018,68.4
+CHL,Chile,2018,37.8
+CHN,China,2018,53.1
+CIV,Cote dIvoire,2018,20.0
+CMR,Cameroon,2018,23.8
+COL,Colombia,2018,33.8
+CRI,Costa Rica,2018,35.7
+CYP,Cyprus,2018,47.8
+CZE,Czech Republic,2018,48.7
+DEU,Germany,2018,58.0
+DNK,Denmark,2018,58.4
+DOM,Dominican Republic,2018,29.3
+DZA,Algeria,2018,23.9
+ECU,Ecuador,2018,26.8
+EGY,Egypt,2018,27.2
+ESP,Spain,2018,48.7
+EST,Estonia,2018,50.5
+FIN,Finland,2018,59.6
+FRA,France,2018,54.4
+GBR,United Kingdom,2018,60.1
+GEO,Georgia,2018,35.0
+GHA,Ghana,2018,24.5
+GIN,Guinea,2018,20.7
+GRC,Greece,2018,38.9
+GTM,Guatemala,2018,25.5
+HKG,Hong Kong (China),2018,54.6
+HND,Honduras,2018,24.9
+HRV,Croatia,2018,40.7
+HUN,Hungary,2018,44.9
+IDN,Indonesia,2018,29.8
+IND,India,2018,35.2
+IRL,Ireland,2018,57.2
+IRN,Iran (Islamic Republic of),2018,33.4
+ISL,Iceland,2018,51.2
+ISR,Israel,2018,56.8
+ITA,Italy,2018,46.3
+JAM,Jamaica,2018,30.4
+JOR,Jordan,2018,30.8
+JPN,Japan,2018,55.0
+KAZ,Kazakhstan,2018,31.4
+KEN,Kenya,2018,31.1
+KGZ,Kyrgyzstan,2018,27.6
+KHM,Cambodia,2018,26.7
+KOR,Republic of Korea (the),2018,56.6
+KWT,Kuwait,2018,34.4
+LBN,Lebanon,2018,28.2
+LKA,Sri Lanka,2018,28.7
+LTU,Lithuania,2018,41.2
+LUX,Luxembourg,2018,54.5
+LVA,Latvia,2018,43.2
+MAR,Morocco,2018,31.1
+MDA,Republic of Moldova (the),2018,37.6
+MDG,Madagascar,2018,24.8
+MEX,Mexico,2018,35.3
+MKD,North Macedonia*,2018,29.9
+MLI,Mali,2018,23.3
+MLT,Malta,2018,50.3
+MNE,Montenegro,2018,36.5
+MNG,Mongolia,2018,35.9
+MOZ,Mozambique,2018,23.1
+MUS,Mauritius,2018,31.3
+MWI,Malawi,2018,23.1
+MYS,Malaysia,2018,43.0
+NAM,Namibia,2018,28.0
+NER,Niger,2018,20.6
+NGA,Nigeria,2018,22.4
+NLD,Netherlands,2018,63.3
+NOR,Norway,2018,52.6
+NPL,Nepal,2018,24.2
+NZL,New Zealand,2018,51.3
+OMN,Oman,2018,32.8
+PAK,Pakistan,2018,24.1
+PAN,Panama,2018,32.4
+PER,Peru,2018,31.8
+PHL,Philippines,2018,31.6
+POL,Poland,2018,41.7
+PRT,Portugal,2018,45.7
+PRY,Paraguay,2018,28.7
+QAT,Qatar,2018,36.6
+ROU,Romania,2018,37.6
+RUS,Russian Federation,2018,37.9
+RWA,Rwanda,2018,26.5
+SAU,Saudi Arabia,2018,34.3
+SEN,Senegal,2018,26.5
+SGP,Singapore,2018,59.8
+SLV,El Salvador,2018,25.1
+SRB,Serbia,2018,35.5
+SVK,Slovakia,2018,42.9
+SVN,Slovenia,2018,46.9
+SWE,Sweden,2018,63.1
+TGO,Togo,2018,18.9
+THA,Thailand,2018,38.0
+TJK,Tajikistan,2018,26.5
+TTO,Trinidad and Tobago,2018,27.0
+TUN,Tunisia,2018,32.9
+TUR,Turkey,2018,37.4
+TZA,United Republic of Tanzania (the),2018,28.1
+UGA,Uganda,2018,25.3
+UKR,Ukraine,2018,38.5
+URY,Uruguay,2018,34.2
+USA,United States of America,2018,59.8
+VNM,Vietnam,2018,37.9
+YEM,Yemen,2018,15.0
+ZAF,South Africa,2018,35.1
+ZMB,Zambia,2018,20.7
+ZWE,Zimbabwe,2018,23.1
+AGO,Angola,2024,10.22
+ALB,Albania,2024,24.54
+ARE,United Arab Emirates,2024,42.8
+ARG,Argentina,2024,26.42
+ARM,Armenia,2024,29.02
+AUS,Australia,2024,48.1
+AUT,Austria,2024,50.28
+AZE,Azerbaijan,2024,21.3
+BDI,Burundi,2024,13.21
+BEL,Belgium,2024,47.73
+BEN,Benin,2024,15.44
+BFA,Burkina Faso,2024,12.76
+BGD,Bangladesh,2024,19.11
+BGR,Bulgaria,2024,38.49
+BHR,Bahrain,2024,27.64
+BIH,Bosnia and Herzegovina,2024,25.47
+BLR,Belarus,2024,24.21
+BOL,Bolivia (Plurinational State of),2024,20.25
+BRA,Brazil,2024,32.74
+BRB,Barbados,2024,26.05
+BRN,Brunei Darussalam,2024,22.77
+BWA,Botswana,2024,23.08
+CAN,Canada,2024,52.91
+CHE,Switzerland,2024,67.47
+CHL,Chile,2024,32.62
+CHN,China,2024,56.32
+CIV,Côte d'Ivoire,2024,17.49
+CMR,Cameroon,2024,14.42
+COL,Colombia,2024,29.18
+CPV,Cabo Verde,2024,22.29
+CRI,Costa Rica,2024,28.33
+CYP,Cyprus,2024,45.07
+CZE,Czech Republic,2024,44.04
+DEU,Germany,2024,58.08
+DNK,Denmark,2024,57.11
+DOM,Dominican Republic,2024,20.82
+DZA,Algeria,2024,16.16
+ECU,Ecuador,2024,19.33
+EGY,Egypt,2024,23.65
+ESP,Spain,2024,44.93
+EST,Estonia,2024,52.31
+ETH,Ethiopia,2024,12.33
+FIN,Finland,2024,59.44
+FRA,France,2024,55.41
+GBR,United Kingdom,2024,61.05
+GEO,Georgia,2024,30.39
+GHA,Ghana,2024,20.03
+GRC,Greece,2024,36.15
+GTM,Guatemala,2024,14.56
+HKG,"Hong Kong, China",2024,50.14
+HND,Honduras,2024,16.74
+HRV,Croatia,2024,36.34
+HUN,Hungary,2024,39.57
+IDN,Indonesia,2024,30.62
+IND,India,2024,38.31
+IRL,Ireland,2024,49.96
+IRN,Iran (Islamic Republic of),2024,28.88
+ISL,Iceland,2024,48.54
+ISR,Israel,2024,52.73
+ITA,Italy,2024,45.33
+JAM,Jamaica,2024,25.67
+JOR,Jordan,2024,27.45
+JPN,Japan,2024,54.12
+KAZ,Kazakhstan,2024,25.67
+KEN,Kenya,2024,20.99
+KGZ,Kyrgyzstan,2024,20.35
+KHM,Cambodia,2024,19.89
+KOR,Republic of Korea,2024,60.93
+KWT,Kuwait,2024,28.09
+LAO,Lao People's Democratic Republic,2024,17.84
+LBN,Lebanon,2024,21.54
+LKA,Sri Lanka,2024,22.6
+LTU,Lithuania,2024,40.06
+LUX,Luxembourg,2024,49.09
+LVA,Latvia,2024,36.35
+MAR,Morocco,2024,28.79
+MDA,Republic of Moldova,2024,28.68
+MDG,Madagascar,2024,17.93
+MEX,Mexico,2024,30.45
+MKD,North Macedonia,2024,29.89
+MLI,Mali,2024,11.79
+MLT,Malta,2024,44.83
+MMR,Myanmar,2024,13.77
+MNE,Montenegro,2024,28.87
+MNG,Mongolia,2024,28.69
+MOZ,Mozambique,2024,13.11
+MRT,Mauritania,2024,13.21
+MUS,Mauritius,2024,30.56
+MYS,Malaysia,2024,40.48
+NAM,Namibia,2024,19.96
+NER,Niger,2024,11.23
+NGA,Nigeria,2024,17.11
+NIC,Nicaragua,2024,13.99
+NLD,Netherlands (Kingdom of the),2024,58.83
+NOR,Norway,2024,49.06
+NPL,Nepal,2024,18.06
+NZL,New Zealand,2024,45.86
+OMN,Oman,2024,27.13
+PAK,Pakistan,2024,22.01
+PAN,Panama,2024,24.74
+PER,Peru,2024,26.7
+PHL,Philippines,2024,31.13
+POL,Poland,2024,37.0
+PRT,Portugal,2024,43.66
+PRY,Paraguay,2024,21.85
+QAT,Qatar,2024,32.89
+ROU,Romania,2024,33.4
+RUS,Russian Federation,2024,29.73
+RWA,Rwanda,2024,19.69
+SAU,Saudi Arabia,2024,33.93
+SEN,Senegal,2024,21.97
+SGP,Singapore,2024,61.18
+SLV,El Salvador,2024,20.61
+SRB,Serbia,2024,32.25
+SVK,Slovakia,2024,34.31
+SVN,Slovenia,2024,40.17
+SWE,Sweden,2024,64.52
+TGO,Togo,2024,15.62
+THA,Thailand,2024,36.89
+TJK,Tajikistan,2024,18.6
+TTO,Trinidad and Tobago,2024,18.41
+TUN,Tunisia,2024,25.35
+TUR,Türkiye,2024,39.0
+TZA,United Republic of Tanzania,2024,15.33
+UGA,Uganda,2024,14.94
+UKR,Ukraine,2024,29.5
+URY,Uruguay,2024,29.13
+USA,United States of America,2024,62.38
+UZB,Uzbekistan,2024,24.7
+VNM,Viet Nam,2024,36.18
+ZAF,South Africa,2024,28.34
+ZMB,Zambia,2024,15.66
+ZWE,Zimbabwe,2024,15.57
