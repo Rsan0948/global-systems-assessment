@@ -56,6 +56,44 @@ def acct(iso, y="2024"):
          "accountability_lag" if vp4 <= LENS["va_accountability_lag_p4"] else "balanced"
     return va01, vp4, st
 
+PILL = ["P1", "P2", "P3", "P4", "P5"]
+def _pillars(iso, y):
+    r = rows.get((iso, y))
+    if not r:
+        return None
+    v = {p: fnum(r[p]) for p in PILL}
+    return v if all(x is not None for x in v.values()) else None
+
+def movement(iso, y_now="2024", y_prior="2012"):
+    """EXPLORATORY movement typology (docs/movement_signal_exploration.md). Descriptive, not a
+    validated predictor: real_ascent (P1/P5-led rise) / windfall (P4-led rise, institutions flat) /
+    hollow_stability (flat MI, governance core P1 eroding under the P3 ratchet) / decline / stable."""
+    a, b = _pillars(iso, y_prior), _pillars(iso, y_now)
+    if not a or not b:
+        return None
+    dmi = sum(b.values()) / 5 - sum(a.values()) / 5
+    dp = {p: b[p] - a[p] for p in PILL}
+    lead = max(dp, key=dp.get)
+    if dmi > 0.03:
+        cls = ("real_ascent" if lead in ("P1", "P5")
+               else "windfall" if lead == "P4"
+               else "ratchet_rise")   # P2/P3-led: human-capital/innovation, not income or institutions
+    elif dmi < -0.03:
+        cls = "decline"
+    elif dp["P1"] <= -0.03:
+        cls = "hollow_stability"
+    else:
+        cls = "stable"
+    return {"dMI": round(dmi, 3), "lead": lead, "dP1": round(dp["P1"], 3),
+            "dP3": round(dp["P3"], 3), "dP4": round(dp["P4"], 3), "class": cls}
+
+def report_movement(iso):
+    m = movement(iso)
+    if not m:
+        print(f"{names.get(iso, iso):16} no movement data"); return
+    print(f"{names.get(iso, iso):16} {m['class']:16} dMI={m['dMI']:+.3f} lead={m['lead']} "
+          f"dP1={m['dP1']:+.2f} dP3={m['dP3']:+.2f} dP4={m['dP4']:+.2f}")
+
 def report(iso):
     g = gap(iso, "2024")
     if g is None:
@@ -75,15 +113,21 @@ if __name__ == "__main__":
     ap.add_argument("--country")
     ap.add_argument("--set", choices=["g20", "panel"])
     ap.add_argument("--flagged-only", action="store_true")
+    ap.add_argument("--movement", action="store_true",
+                    help="EXPLORATORY movement typology (real_ascent/windfall/hollow_stability/decline)")
     args = ap.parse_args()
+    rep = report_movement if args.movement else report
     if args.country:
         iso = args.country if args.country in rows or args.country in VA else \
               next((i for i, n in names.items() if n.lower() == args.country.lower()), args.country)
-        report(iso)
+        rep(iso)
     else:
         isos = GSET if args.set == "g20" else sorted({i for i, _ in rows})
-        print("V3.2 signals — durability gap + convergence (A) + accountability gap (B)\n")
+        print(("EXPLORATORY movement typology — docs/movement_signal_exploration.md" if args.movement
+               else "V3.2 signals — durability gap + convergence (A) + accountability gap (B)") + "\n")
         for iso in isos:
+            if args.movement:
+                rep(iso); continue
             g = gap(iso, "2024")
             if g is None: continue
             if args.flagged_only and g < LENS["structural_vuln_clear_ceiling"]: continue
