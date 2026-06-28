@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "case_name": "",
+    "case_id": "",
+    "author": "",
+    "date_created": "",
+    "status": "in_progress",
+    "stress_type": "",
+    "geographic_region": "",
+    "time_period": "",
+    "entities": [],
+    "key_test": "",
+    "round": null,
+    "notes": ""
+  },
+  "stress_types_reference": [
+    "traditional_fragmentation",
+    "recursive_fragmentation",
+    "suppressed_fragmentation",
+    "institutional_reconstruction",
+    "fragmentation_prevention",
+    "fusion",
+    "legal_suppression",
+    "extreme_porosity",
+    "prospective",
+    "comparative_trajectory"
+  ],
+  "pre_event": {
+    "time_point": "",
+    "event_description": "",
+    "entities": {
+      "ENTITY_NAME": {
+        "indicators": {
+          "gov_effectiveness": null,
+          "rule_of_law": null,
+          "regulatory_quality": null,
+          "cpi": null,
+          "control_of_corruption": null,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": null,
+          "education_index": null,
+          "life_expectancy_index": null,
+          "gdp_per_capita_ppp": null,
+          "resource_rents_pct_gdp": null,
+          "oda_pct_gni": null,
+          "political_stability": null,
+          "fsi": null
+        },
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": false,
+          "youth_unemployment": null,
+          "growth_trajectory": "",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": null,
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": null,
+          "population": null,
+          "is_island": false,
+          "is_democratic": null,
+          "is_authoritarian": null,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {},
+        "data_gaps": [],
+        "notes": ""
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "b_violence": {
+      "prediction": "",
+      "risk_level": "",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": ""
+    },
+    "c_convergence": {
+      "prediction": "",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": ""
+    },
+    "e_fragment_count": {
+      "prediction": "",
+      "safeguard_b_applied": false,
+      "falsification_condition": ""
+    },
+    "f_reversal_risk": {
+      "prediction": "",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [],
+    "entities": {
+      "ENTITY_NAME": {
+        "indicators_by_year": {},
+        "outcome_summary": "",
+        "key_events": []
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {"result": "", "evidence": "", "explanation": ""},
+    "b_violence": {"result": "", "evidence": "", "explanation": ""},
+    "c_convergence": {"result": "", "evidence": "", "explanation": ""},
+    "d_failure_dimension": {"result": "", "evidence": "", "explanation": ""},
+    "e_fragment_count": {"result": "", "evidence": "", "explanation": ""},
+    "f_reversal_risk": {"result": "", "evidence": "", "explanation": ""},
+    "g_suppression": {"result": "", "evidence": "", "explanation": ""},
+    "h_turbulence": {"result": "", "evidence": "", "explanation": ""}
+  },
+  "result_coding_reference": {
+    "CONFIRMED": "Prediction matched outcome on the specific dimension predicted",
+    "PARTIALLY_CONFIRMED": "Direction correct but magnitude, form, or timing significantly different",
+    "FALSIFIED": "Prediction contradicted by outcome",
+    "NOT_APPLICABLE": "Prediction type not relevant to this case",
+    "coding_rule": "When ambiguous between confirmed and partial, code PARTIAL. When ambiguous between partial and falsified, code PARTIAL but note ambiguity."
+  },
+  "analysis": {
+    "overall_assessment": "",
+    "safeguards_triggered": [],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "Does this case suggest any modification that needs 20-case baseline check?"
+  }
+}
