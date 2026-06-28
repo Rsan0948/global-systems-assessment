@@ -27,7 +27,6 @@ import logging
 import argparse
 import warnings
 from pathlib import Path
-from io import StringIO
 
 import numpy as np
 import pandas as pd
@@ -49,18 +48,30 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 TIME_POINTS = [1996, 2004, 2012, 2018, 2024]
 
 # ── World Bank API indicator codes ───────────────────────────────
+# Each entry: label -> (indicator_code, source_id).
+# source_id is None for the default WDI database (source 2) and 3 for the
+# Worldwide Governance Indicators database.
+#
+# NOTE (2026-06): The World Bank restructured the WGI database. The legacy
+# percentile-rank codes (GE.PER.RNK, RL.PER.RNK, …) now return HTTP-200 with
+# "The indicator was not found. It may have been deleted or archived." The
+# current WGI database (source 3) publishes a 0–100 governance *score* under
+# the GOV_WGI_<dim>.SC codes. These scores are the direct successor to the old
+# percentile ranks (e.g. 2023: Switzerland 91.0, Singapore 95.3, Lebanon 28.7),
+# share the 0–100 range, and so the existing "÷ 100" normalization is unchanged
+# and correct. iso3 for source 3 lives in `countryiso3code`, not `country.id`.
 WB_INDICATORS = {
-    # WGI percentile ranks
-    "GovEff":    "GE.PER.RNK",
-    "RuleLaw":   "RL.PER.RNK",
-    "RegQual":   "RQ.PER.RNK",
-    "CtrlCorr":  "CC.PER.RNK",
-    "PolStab":   "PV.PER.RNK",
-    # WDI
-    "GDPpcPPP":  "NY.GDP.PCAP.PP.CD",
-    "ResRents":  "NY.GDP.TOTL.RT.ZS",
-    "ODA":       "DT.ODA.ODAT.GN.ZS",
-    "RD":        "GB.XPD.RSDV.GD.ZS",
+    # WGI 0–100 governance scores (successor to the percentile ranks), source 3
+    "GovEff":    ("GOV_WGI_GE.SC", 3),
+    "RuleLaw":   ("GOV_WGI_RL.SC", 3),
+    "RegQual":   ("GOV_WGI_RQ.SC", 3),
+    "CtrlCorr":  ("GOV_WGI_CC.SC", 3),
+    "PolStab":   ("GOV_WGI_PV.SC", 3),
+    # WDI (default source)
+    "GDPpcPPP":  ("NY.GDP.PCAP.PP.CD", None),
+    "ResRents":  ("NY.GDP.TOTL.RT.ZS", None),
+    "ODA":       ("DT.ODA.ODAT.GN.ZS", None),
+    "RD":        ("GB.XPD.RSDV.GD.ZS", None),
 }
 
 # ── scoring weights ──────────────────────────────────────────────
@@ -122,10 +133,66 @@ COMMON_NAME_TO_ISO3 = {
 #  SECTION 1 — DATA FETCHERS
 # ═══════════════════════════════════════════════════════════════════
 
+# The World Bank `country/all` endpoint returns regional and income-group
+# AGGREGATES (World, OECD members, Arab World, Sub-Saharan Africa, …) alongside
+# real countries. Many of their codes are 3 letters (WLD, EUU, OED, …) so a bare
+# `len(iso3) == 3` filter lets them through — they then appear in the master panel
+# as if they were countries. They never survive into the scored set (they lack the
+# manual indicators, so they exceed the gap threshold), but they pollute the master
+# CSV and the "total countries with any data" counts. We exclude them at the source.
+#
+# Authoritative list is fetched once from the WB country metadata endpoint (entries
+# whose region is "Aggregates"); a static fallback is used only if that call fails.
+# NOTE: we exclude *aggregates specifically* rather than keeping only a fixed list of
+# countries, so legitimately-listed-elsewhere territories (e.g. Taiwan, absent from
+# the WB country list but present in ECI/GII) are NOT dropped.
+_WB_AGGREGATE_FALLBACK = frozenset({
+    "WLD", "ARB", "CEB", "CSS", "EAP", "EAR", "EAS", "ECA", "ECS", "EMU", "EUU",
+    "FCS", "HIC", "HPC", "IBD", "IBT", "IDA", "IDB", "IDX", "INX", "LAC", "LCN",
+    "LDC", "LIC", "LMC", "LMY", "LTE", "MEA", "MIC", "MNA", "NAC", "OED", "OSS",
+    "PRE", "PSS", "PST", "SAS", "SSA", "SSF", "SST", "TEA", "TEC", "TLA", "TMN",
+    "TSA", "TSS", "UMC", "AFE", "AFW", "EAR", "LMY",
+})
+_wb_aggregate_cache = None
+
+
+def wb_aggregate_codes() -> frozenset:
+    """ISO3 codes that are World Bank *aggregates* (regions / income groups),
+    to be excluded from the country panel. Fetched once from the WB country
+    metadata endpoint; falls back to a static list if the call fails."""
+    global _wb_aggregate_cache
+    if _wb_aggregate_cache is not None:
+        return _wb_aggregate_cache
+    try:
+        resp = requests.get(
+            "https://api.worldbank.org/v2/country?format=json&per_page=400",
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        codes = {
+            c.get("id") for c in data[1]
+            if c.get("region", {}).get("value") == "Aggregates" and c.get("id")
+        }
+        if codes:
+            _wb_aggregate_cache = frozenset(codes)
+            log.info(f"WB aggregate filter: {len(codes)} aggregate codes excluded")
+            return _wb_aggregate_cache
+        log.warning("WB country list returned no aggregates; using static fallback.")
+    except Exception as e:
+        log.warning(f"Could not fetch WB country list ({e}); using static aggregate fallback.")
+    _wb_aggregate_cache = _WB_AGGREGATE_FALLBACK
+    return _wb_aggregate_cache
+
+
 def fetch_world_bank(indicator_code: str, years: list[int],
-                     retries: int = 3, per_page: int = 500) -> pd.DataFrame:
+                     retries: int = 3, per_page: int = 500,
+                     source: int = None) -> pd.DataFrame:
     """Pull a single World Bank indicator for all countries at given years.
-    Returns DataFrame with columns: [iso3, country, year, value]."""
+    Returns DataFrame with columns: [iso3, country, year, value].
+
+    `source` selects the World Bank database (None = default WDI; 3 = WGI).
+    The WGI database requires the explicit `&source=` parameter."""
 
     # WGI uses biennial years pre-2002; request a range to catch them
     year_min, year_max = min(years), max(years)
@@ -133,10 +200,13 @@ def fetch_world_bank(indicator_code: str, years: list[int],
         f"https://api.worldbank.org/v2/country/all/indicator/{indicator_code}"
         f"?date={year_min}:{year_max}&format=json&per_page={per_page}"
     )
+    if source is not None:
+        url += f"&source={source}"
 
     rows = []
     page = 1
     total_pages = 1
+    aggregates = wb_aggregate_codes()
 
     while page <= total_pages:
         paged_url = f"{url}&page={page}"
@@ -157,11 +227,16 @@ def fetch_world_bank(indicator_code: str, years: list[int],
 
         total_pages = data[0].get("pages", 1)
         for rec in data[1]:
-            iso3 = rec.get("country", {}).get("id")
+            # iso3: WDI puts the 3-letter code in country.id; WGI (source 3)
+            # leaves country.id as a 2-letter code and carries iso3 in
+            # `countryiso3code`. Prefer the explicit iso3 field when present.
+            iso3 = (rec.get("countryiso3code") or "").strip() \
+                or (rec.get("country", {}) or {}).get("id")
             name = rec.get("country", {}).get("value")
             year = int(rec.get("date", 0))
             val  = rec.get("value")
-            if val is not None and iso3 and len(iso3) == 3:
+            if (val is not None and iso3 and len(iso3) == 3
+                    and iso3 not in aggregates):
                 rows.append({"iso3": iso3, "country": name,
                              "year": year, "value": float(val)})
         page += 1
@@ -198,9 +273,9 @@ def _snap_to_target_years(df: pd.DataFrame, targets: list[int],
 def fetch_all_world_bank() -> pd.DataFrame:
     """Pull all World Bank indicators and pivot into one row per country-year."""
     frames = {}
-    for label, code in WB_INDICATORS.items():
+    for label, (code, source) in WB_INDICATORS.items():
         log.info(f"Fetching World Bank: {label} ({code})")
-        df = fetch_world_bank(code, TIME_POINTS)
+        df = fetch_world_bank(code, TIME_POINTS, source=source)
         if df.empty:
             log.warning(f"  ⚠ No data returned for {label}")
         else:
@@ -387,9 +462,34 @@ def merge_all(wb: pd.DataFrame, cpi: pd.DataFrame, gii: pd.DataFrame,
     return master.sort_values(["iso3", "year"]).reset_index(drop=True)
 
 
-def _snap_eci_years(df: pd.DataFrame) -> pd.DataFrame:
-    """ECI has annual data; keep only rows matching target years."""
-    return df[df["year"].isin(TIME_POINTS)]
+def _snap_eci_years(df: pd.DataFrame, max_gap: int = 3) -> pd.DataFrame:
+    """ECI has annual data. Snap each country's annual ECI to the nearest
+    target year (within ``max_gap`` years), then keep only target-year rows.
+
+    The previous implementation kept *only* rows whose year was exactly a
+    target year and discarded everything else — so a country whose latest ECI
+    sits on, say, 2023 rather than 2024 lost its ECI entirely. Here we instead
+    carry the nearest available annual value onto each target-year row (mirrors
+    the nearest-year logic in ``_snap_to_target_years``) before dropping the
+    off-target rows."""
+    # Per-country annual ECI series (only rows that actually carry an ECI value).
+    eci_long = df.loc[df["ECI"].notna(), ["iso3", "year", "ECI"]]
+    snapped = {}  # (iso3, target_year) -> snapped ECI value
+    for iso3, grp in eci_long.groupby("iso3"):
+        avail = grp.groupby("year")["ECI"].mean()  # collapse any dup years
+        for t in TIME_POINTS:
+            window = avail.loc[(avail.index >= t - max_gap) & (avail.index <= t + max_gap)]
+            if window.empty:
+                continue
+            best_year = min(window.index, key=lambda y: abs(y - t))
+            snapped[(iso3, t)] = window[best_year]
+
+    out = df[df["year"].isin(TIME_POINTS)].copy()
+    # Overwrite ECI on the surviving target-year rows with the snapped value
+    # (an exact-year match snaps to itself, so already-aligned values are kept).
+    out["ECI"] = [snapped.get((iso3, year), np.nan)
+                  for iso3, year in zip(out["iso3"], out["year"])]
+    return out
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -564,6 +664,20 @@ def score_v1(df: pd.DataFrame) -> pd.DataFrame:
 
     raw_ceil  = out.loc[ceil_mask, "v1_raw"].values[0]
     raw_floor = out.loc[floor_mask, "v1_raw"].values[0]
+
+    # Fail loudly when an anchor's raw composite is NaN. If Switzerland or
+    # Lebanon 2024 is missing any pillar input, v1_raw is NaN, which would make
+    # `spread` NaN and silently collapse the *entire* v1_MScore column to NaN
+    # with no warning. A NaN anchor means the anchoring is undefined — halt
+    # rather than emit a result-shaped non-result.
+    if np.isnan(raw_ceil) or np.isnan(raw_floor):
+        raise ValueError(
+            "v1 anchoring failed: anchor raw composite is NaN "
+            f"({CEILING_COUNTRY} 2024 raw={raw_ceil}, {FLOOR_COUNTRY} 2024 raw={raw_floor}). "
+            "An anchor is missing one or more pillar inputs, so v1_MScore cannot be "
+            "computed. Check the pillar coverage for the anchor countries before scoring."
+        )
+
     spread = raw_ceil - raw_floor
 
     if abs(spread) < 1e-9:
@@ -659,36 +773,29 @@ def compute_diagnostics(df: pd.DataFrame) -> pd.DataFrame:
 
     out["config_profile"] = out.apply(config_profile, axis=1)
 
-    # count gaps (missing indicators per row)
+    # Count gaps (missing indicators per row) against the *canonical expected*
+    # indicator set per track — NOT against whichever columns happen to exist.
+    # If an entire source CSV is absent (e.g. hdr.csv), its columns never enter
+    # the panel; gating on `c in out.columns` would then make the gap invisible
+    # and every affected country would falsely report gap_count = 0 / scoreable
+    # while its pillar went silently NaN. A missing column is itself a gap, so
+    # `row.get(c)` returns None for an absent indicator and pd.isna counts it.
     raw_indicators = ["GovEff", "RuleLaw", "RegQual", "PolStab",
                       "EduIdx", "LifeExpIdx", "GDPpcPPP", "ResRents"]
     # track-dependent
     t1_extra = ["CPI", "GII", "ECI", "ODA", "FSI"]
     t2_extra = ["CtrlCorr", "RD", "ECI", "ODA"]
 
+    def _expected(row):
+        return raw_indicators + (t1_extra if row.get("Track") == 1 else t2_extra)
+
     def count_gaps(row):
-        base = sum(1 for c in raw_indicators if c in out.columns and pd.isna(row.get(c)))
-        if row.get("Track") == 1:
-            extra = sum(1 for c in t1_extra if c in out.columns and pd.isna(row.get(c)))
-        else:
-            extra = sum(1 for c in t2_extra if c in out.columns and pd.isna(row.get(c)))
-        return base + extra
+        return sum(1 for c in _expected(row) if pd.isna(row.get(c)))
 
     out["gap_count"] = out.apply(count_gaps, axis=1)
 
     def list_gaps(row):
-        gaps = []
-        for c in raw_indicators:
-            if c in out.columns and pd.isna(row.get(c)):
-                gaps.append(c)
-        if row.get("Track") == 1:
-            for c in t1_extra:
-                if c in out.columns and pd.isna(row.get(c)):
-                    gaps.append(c)
-        else:
-            for c in t2_extra:
-                if c in out.columns and pd.isna(row.get(c)):
-                    gaps.append(c)
+        gaps = [c for c in _expected(row) if pd.isna(row.get(c))]
         return "; ".join(gaps) if gaps else ""
 
     out["gaps_noted"] = out.apply(list_gaps, axis=1)
@@ -859,9 +966,14 @@ def analytical_findings(df: pd.DataFrame) -> str:
         if "GDPpcPPP" in yr2024.columns:
             gdp_25 = yr2024["GDPpcPPP"].quantile(0.25)
             mi_75 = yr2024["v1_MScore"].quantile(0.75)
-            overperformers = yr2024[(yr2024["GDPpcPPP"] < gdp_25) & (yr2024["v1_MScore"] > mi_median)]
+            # "Structural overperformers" = bottom-quartile GDP yet top-quartile
+            # MI. The threshold here is mi_75 (the computed quantile), matching
+            # the variable's intent; the previous code computed mi_75 but then
+            # filtered on mi_median, leaving the quantile unused and the label
+            # inconsistent.
+            overperformers = yr2024[(yr2024["GDPpcPPP"] < gdp_25) & (yr2024["v1_MScore"] > mi_75)]
             if len(overperformers) > 0:
-                lines.append("  Low GDP but above-median MI (structural overperformers):")
+                lines.append("  Low GDP but top-quartile MI (structural overperformers):")
                 for _, row in overperformers.iterrows():
                     name = row.get("country", row.get("iso3"))
                     lines.append(f"    {name}: GDP ${row['GDPpcPPP']:,.0f}, "
