@@ -1,5 +1,10 @@
 # V3.3 — including the level/slope findings properly + does it change the global picture?
 
+> **CORRECTION (see `golden_age_hardening.md`):** references to "commodity" as a golden-age driver are
+> RETRACTED — the era effect is not commodity-specific (resource-rich states were immune). And
+> `ascent_potential`/low-base is **era-conditional** (worked in the 2002–11 wave, dormant 2012–19), not
+> an always-on signal; the engine caveat is corrected accordingly.
+
 **Date:** 2026-06-28. `MI_MODEL_VERSION = "v3.3"`. Additive; the 51-case ordinality baseline is
 unchanged (213C/77P/0F), Estonia 0.775. This folds the crisis-lead-time + golden-age work into the
 engine **honestly** — adding what validated, refusing what didn't.

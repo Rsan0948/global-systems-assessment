@@ -60,6 +60,11 @@ trajectory-based instrument is the wrong shape for a phenomenon driven by starti
 exogenous waves. (It mirrors the lead-time result for crises: *trust the level, distrust the slope* —
 here, the level and the era carry the signal; the slope is mean-reverting noise.)
 
+> **CORRECTION (see `golden_age_hardening.md`):** the "commodity cycle" attribution below is RETRACTED
+> — resource-rich states showed no boom-year boost (z+0.6); the era effect is real but its mechanism is
+> NOT commodities (unidentified). And the low-base effect is **era-conditional** (fails the 2012–19
+> temporal holdout), not the always-on signal implied here.
+
 ## Follow-up — do EXOGENOUS drivers explain the waves? (yes, ~81%)
 Brought in externally-defined structural facts (not MI-derived) and tested climb-start rate vs the 7%
 base (full panel, annual era):

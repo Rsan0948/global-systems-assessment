@@ -234,12 +234,15 @@ def ascent_potential(pillars: dict) -> Optional[dict]:
     low = p1 < ASCENT_LOW_BASE
     return {
         "p1": round(p1, 3), "low_base": low,
-        "reading": ("LOW BASE — elevated room-to-rise (durable-climb tendency, holdout z+2.4); but this is "
-                    "eligibility, not a forecast — realized ascent needs an exogenous trigger "
-                    "(transition/commodity era), and recent momentum predicts the OPPOSITE (reversion)."
+        "reading": ("LOW BASE — room-to-rise *eligibility*. NOT an active forecast: the low-base effect is "
+                    "ERA-CONDITIONAL — strong in the 2002-11 global wave (z+6.2) but DORMANT 2012-19 "
+                    "(z-0.6). It realizes only inside an exogenous era/wave (which is currently absent), "
+                    "and recent momentum predicts the OPPOSITE (reversion)."
                     if low else
                     "base too high for the room-to-rise tendency; ascents from here are rare and exogenous."),
-        "caveat": "Validated as a LEVEL signal (z+2.4 holdout); the slope is not predictive. Trust the level.",
+        "caveat": ("Era-conditional level signal: geographically holdout-valid pooled (z+2.4) but it FAILS "
+                   "the temporal holdout (dormant since ~2012). Golden ages are a spent 2002-11 era/wave "
+                   "(NOT commodity-driven); currently nothing forecasts them. Trust the level, distrust the slope."),
     }
 
 
