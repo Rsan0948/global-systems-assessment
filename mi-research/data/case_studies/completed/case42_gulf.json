@@ -164,7 +164,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Pre-P1 order UAE (0.647) > Saudi (0.532), gap 0.115; post-MI order UAE (0.763) > Saudi (0.693), gap 0.070. Ordering held; both monarchies survived the Arab Spring intact while non-rentier MENA (case04) destabilized.",
-      "explanation": "AUTO: full ordering matches: United Arab Emirates > Saudi Arabia (by pre-P1) == outcome by post-MI; gap 0.115. | prior: AUTO: full ordering matches: United Arab Emirates > Saudi Arabia (by pre-P1) == outcome by post-MI; pre-P1 gap 0.115 (> 0.10 Mod4 margin, ordinal read permitted). Both rose; rent-funded survival confirmed.",
+      "explanation": "AUTO: full ordering matches: United Arab Emirates > Saudi Arabia (by pre-P1) == outcome by post-MI; gap 0.115. | prior: AUTO: full ordering matches: United Arab Emirates > Saudi Arabia (by pre-P1) == outcome by post-MI; gap 0.115. | prior: AUTO: full ordering matches: United Arab Emirates > Saudi Arabia (by pre-P1) == outcome by post-MI; pre-P1 gap 0.115 (> 0.10 Mod4 margin, ordinal read permitted). Both rose; rent-funded survival confirmed.",
       "auto_derived": true
     },
     "b_violence": {
@@ -177,7 +177,7 @@
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Both rose and the gap narrowed: MI-range 0.104 (pre) -> 0.070 (post). Both Tier 2 throughout; no fragmentation.",
-      "explanation": "AUTO: outcome CONVERGENCE (MI-range 0.104->0.070). | prior: AUTO: outcome CONVERGENCE (MI-range 0.104 -> 0.070). Shared rentier-authoritarian survival mechanism produced parallel, slightly converging trajectories with no fragmentation, as predicted.",
+      "explanation": "AUTO: outcome CONVERGENCE (MI-range 0.104->0.070). | prior: AUTO: outcome CONVERGENCE (MI-range 0.104->0.070). | prior: AUTO: outcome CONVERGENCE (MI-range 0.104 -> 0.070). Shared rentier-authoritarian survival mechanism produced parallel, slightly converging trajectories with no fragmentation, as predicted.",
       "auto_derived": true
     },
     "d_failure_dimension": {

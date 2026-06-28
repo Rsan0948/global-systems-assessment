@@ -250,7 +250,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Costa Rica stayed Tier 2 (MI 0.686) and decisively above all neighbors; Nicaragua/Honduras/Guatemala stayed Tier 3 (post-MI 0.467/0.465/0.498). Full ordering matches the pre-P1 ranking; gap to nearest neighbor never closed.",
-      "explanation": "AUTO: top correct (Costa Rica) but sub-ordering differs (pred ['Costa Rica', 'Nicaragua', 'Guatemala', 'Honduras'] vs outcome ['Costa Rica', 'Guatemala', 'Nicaragua', 'Honduras']); often a within-margin sub-pair. | prior: Wide P1 gap mapped to divergent outcomes exactly as predicted; Mod4 correctly did not trigger.",
+      "explanation": "AUTO: top correct (Costa Rica) but sub-ordering differs (pred ['Costa Rica', 'Nicaragua', 'Guatemala', 'Honduras'] vs outcome ['Costa Rica', 'Guatemala', 'Nicaragua', 'Honduras']); often a within-margin sub-pair. | prior: AUTO: top correct (Costa Rica) but sub-ordering differs (pred ['Costa Rica', 'Nicaragua', 'Guatemala', 'Honduras'] vs outcome ['Costa Rica', 'Guatemala', 'Nicaragua', 'Honduras']); often a within-margin sub-pair. | prior: Wide P1 gap mapped to divergent outcomes exactly as pred",
       "auto_derived": true
     },
     "b_violence": {

@@ -411,6 +411,7 @@ def evaluate_mod4(pillars: dict, context: dict) -> dict:
     """
     comparison_gap = context.get("p1_comparison_gap")
     margin = LENS["mod4_margin"]  # ordinal abstention threshold (single source: constants.LENS)
+    p1_min_level = context.get("p1_min_level")  # min P1 of the compared pair (for the V3 rule)
 
     if comparison_gap is None:
         return {
@@ -421,23 +422,35 @@ def evaluate_mod4(pillars: dict, context: dict) -> dict:
         }
 
     within_margin = abs(comparison_gap) < margin
+    # V3 consolidated-pair high-end caution: between two already-consolidated polities, a
+    # sub-high-end-margin P1 gap does not predict trajectory (Chile/Uruguay) -> abstain.
+    consolidated_pair = (
+        p1_min_level is not None
+        and p1_min_level > LENS["v3_consolidation_threshold"]
+        and abs(comparison_gap) < LENS["v3_high_end_margin"]
+    )
+    abstain = within_margin or consolidated_pair
+    reason = ("within margin of error" if within_margin
+              else "consolidated-pair high-end caution (both above the capacity threshold; "
+                   "sub-high-end-margin gaps don't predict trajectory)" if consolidated_pair
+              else None)
 
     return {
         "name": "Margin-of-Error Gate (Mod4)",
-        "triggered": within_margin,
+        "triggered": abstain,
         "gap": comparison_gap,
         "margin": margin,
+        "consolidated_pair": consolidated_pair,
         "explanation": (
-            f"P1 gap ({comparison_gap:.3f}) is within margin of error ({margin}). "
-            "Framework ABSTAINS from ordinal prediction — too close to call."
-            if within_margin else
-            f"P1 gap ({comparison_gap:.3f}) exceeds margin ({margin}). "
-            "Ordinal prediction is warranted."
+            f"P1 gap ({comparison_gap:.3f}) -> ABSTAIN ({reason})."
+            if abstain else
+            f"P1 gap ({comparison_gap:.3f}) exceeds margin ({margin}) and not a consolidated-pair "
+            "case. Ordinal prediction is warranted."
         ),
         "modification": (
             "ABSTAIN from P1 ordinality claim. Do not predict which entity "
-            "will outperform — the gap is too narrow."
-            if within_margin else None
+            "will outperform — too close to call / consolidated pair."
+            if abstain else None
         ),
     }
 

@@ -91,7 +91,19 @@ LENS = {
     "below_floor_mi": 0.40,            # apply the partial-failure diagnostic at/below this MI
     "partial_failure_p4_min": 0.50,   # "has money": resource/income pillar strong
     "partial_failure_p1p2_max": 0.40, # "no institutions/economy": P1 and P2 catastrophic
+    # === V3 — consolidated-pair high-end caution (Mod4 extension) ===
+    # Derived from the lone V2 falsification (Chile/Uruguay): a 3.5-sigma pre-event P1 gap did
+    # NOT predict trajectory because BOTH polities were already consolidated. Complexity-capacity
+    # matching: above the capacity threshold, more capacity no longer predicts a better outcome.
+    # So between two consolidated polities (both P1 > threshold), abstain on a P1-ordinal call
+    # unless the gap is wide (>= high-end margin). Calibrated on the 2 available high-vs-high pairs
+    # (Chile/Uruguay reversed at 0.107; Singapore/Malaysia held at 0.247) -> PRELIMINARY (n=2).
+    "v3_consolidation_threshold": 0.60,
+    "v3_high_end_margin": 0.15,
 }
+
+# Active MI model version (V3 = V2 + the consolidated-pair Mod4 extension above).
+MI_MODEL_VERSION = "v3"
 
 # === INDICATOR SPECIFICATIONS ===
 INDICATORS = {

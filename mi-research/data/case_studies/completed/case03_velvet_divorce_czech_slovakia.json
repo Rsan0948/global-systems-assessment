@@ -230,7 +230,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Czech retains lead; Slovakia close (both succeed).",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: Higher-P1 Czech Republic kept a modest lead while both successors thrived, as predicted.",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: Higher-P1 Czech Republic kept a modest lead while both ",
       "auto_derived": true
     },
     "b_violence": {

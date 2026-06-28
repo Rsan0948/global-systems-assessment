@@ -179,7 +179,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Canada P1 0.846 -> 0.797, MI 0.850 -> 0.806 (Tier 1 throughout); no territorial loss; secession managed legally via the Clarity Act.",
-      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: sub-state entity (Quebec) lacks scores -> auto-derivation skipped, judgment preserved] A very-high-P1 federation contained the ~1.16% near-miss peacefully and lawfully, exactly as predicted.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: sub-state entity (Quebec) lacks scores -> auto-derivation skipped, judgment preserved] A very-high-P1 federation contained the ~1.16% near-miss peacefully and lawfully, exactly as predicted.",
       "auto_derived": false
     },
     "b_violence": {

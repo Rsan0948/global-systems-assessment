@@ -186,7 +186,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Serbia GDP per capita PPP ~$26,884 (2024) vs Kosovo ~$6,200 (2023).",
-      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Both versions got the ordinal call right; Mod 1 discount made the P1 gap exceed the margin of error.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Both versions g",
       "auto_derived": false
     },
     "b_violence": {

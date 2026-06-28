@@ -161,7 +161,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Pre-P1 order Trinidad (0.614) > Jamaica (0.527), gap 0.087; post-MI order Trinidad (0.616) > Jamaica (0.571), gap 0.045. Ordering held; both remained intact democracies.",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.087 < margin 0.1 -> abstain (too close to call). | prior: AUTO: full ordering matches: Trinidad and Tobago > Jamaica (by pre-P1) == outcome by post-MI; pre-P1 gap 0.087. MOD4 NEAR-TIE: gap 0.087 < 0.10 margin, so this is reported as a near-tie that happened to hold, NOT a confident ordinal ranking -- the prediction's near-tie framing is vindicated (both stable, no fragmentation).",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.087 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.087 < margin 0.1 -> abstain (too close to call). | prior: AUTO: full ordering matches: Trinidad and Tobago > Jamaica (by pre-P1) == outcome by post-MI; pre-P1 gap 0.087. MOD4 NEAR-TIE: gap 0.087 < 0.10 margin, so this is reported as a near-tie that happened to hold, NOT a confident ordinal ranking -- the prediction's near-tie framing is vindicated (both stable, no fragmentation",
       "auto_derived": true
     },
     "b_violence": {

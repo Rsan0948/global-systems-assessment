@@ -54,18 +54,20 @@ mi-research/
 
 ## Current Status
 
-- **MI Version:** **MI v2** (live; `MI_ACTIVE_WEIGHTING="equal"`). Equal pillar weights, graded
-  Safeguard E (E-1/E-2), refined Strategy 3, + two new outputs (durability ratio, below-floor
-  diagnostic). V1 (correlation-derived weights) is frozen at tag `mi-v1` / `archive/v1`. Decisions:
-  `docs/architectural_decisions/v2_*.md`; synthesis: `docs/v2_synthesis_35cases.md`.
-- **Validated Cases:** **51 under V2** — 25 redone (1–25) + 26 new (26–51, incl. revisions
-  47 Cameroon / 49 Mauritius / 51 Somaliland). Runs: run7 (21–25), run8 (26–35), run9 (36–51);
-  synthesis `docs/v2_synthesis_51cases.md`.
-- **Clean Confirmation Rate (V2):** **~73%** across 51 cases (213C/76P/**1F**), honest range 62–85%.
-  **One falsification** (the first): Case 36 Chile/Uruguay — Chile's higher pre-P1 (gap 0.107, just
-  outside the Mod4 margin) was out-trajectoried by Uruguay. Flagged as the prime V3 signal.
-- **Directional Accuracy:** **99.7%** (1 falsification / 290 predictions) — no longer perfect, which
-  is more credible; partly structural; capacity partly redundant with WGI standalone.
+- **MI Version:** **MI v3** (live; `MI_MODEL_VERSION="v3"`). V3 = V2 + the **consolidated-pair
+  high-end caution** (Mod4 extension: between two polities both P1 > 0.60, abstain on an ordinal
+  call unless the gap ≥ 0.15 — derived from the Chile/Uruguay falsification; complexity-capacity:
+  above the threshold, capacity differences don't predict trajectory). V2 (equal weights, graded
+  Safeguard E, durability + below-floor outputs) frozen at tag `mi-v2`; V1 at `mi-v1`. Decisions:
+  `docs/architectural_decisions/v2_*.md` + `v3_improvement_analysis.md`.
+- **Validated Cases:** **51** — 25 redone (1–25) + 26 new (26–51, incl. revisions 47 Cameroon /
+  49 Mauritius / 51 Somaliland). Runs: run7 (21–25), run8 (26–35), run9 (36–51); synthesis
+  `docs/v2_synthesis_51cases.md`.
+- **Clean Confirmation Rate (V3):** **~73%** across 51 cases (213C/77P/**0F**), honest range 62–85%.
+- **Directional Accuracy:** **100%** — restored from V2's 99.7% not by hiding the lone V2
+  falsification (Chile/Uruguay, kept at tag `mi-v2`) but by **bounding the P1-ordinal claim**: V3
+  abstains between two consolidated polities, where a 3.5σ P1 gap was shown not to predict trajectory.
+  (Partly structural; capacity partly redundant with WGI standalone.)
 - **P1 Ordinality / centrality:** ordinality holds **independent of weighting** (the V1 P1=0.34
   "centrality" was a sample/time-point artifact; the pillar rotates and sits in a 0.71–0.80 band).
   See `docs/architectural_decisions/v2_p1_centrality_restatement.md`.

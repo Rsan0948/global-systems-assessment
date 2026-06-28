@@ -274,7 +274,7 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Wide divergence between Baltic and Central Asian pairs; convergence within each pair.",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.221->0.245). | prior: Divergence-between / convergence-within pattern confirmed.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.221->0.245). | prior: Divergence-between / convergence-within pattern confirmed.",
       "auto_derived": true
     },
     "d_failure_dimension": {

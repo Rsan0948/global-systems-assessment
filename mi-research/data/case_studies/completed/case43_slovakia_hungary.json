@@ -166,7 +166,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Founding P1 near-tie (Hungary 0.685 vs Slovakia 0.650, gap 0.035); on outcome the order is Slovakia (MI 0.718) > Hungary (MI 0.699), gap 0.019 -- also within noise. Both remained EU member democracies; neither fragmented.",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.035 < margin 0.1 -> abstain (too close to call). | prior: AUTO/Mod4: pre-P1 gap 0.035 < 0.10 margin -> ABSTAIN on ordinal ranking. The post-MI order nominally reverses (Slovakia > Hungary) but the 0.019 gap is inside the margin, so this is NOT a falsification -- the abstention discipline held and the case's real signal is the reversal event (f), not the ranking. Coded CONFIRMED on the abstention call.",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.035 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.035 < margin 0.1 -> abstain (too close to call). | prior: AUTO/Mod4: pre-P1 gap 0.035 < 0.10 margin -> ABSTAIN on ordinal ranking. The post-MI order nominally reverses (Slovakia > Hungary) but the 0.019 gap is inside the margin, so this is NOT a falsification -- the abstention discipline held and the case's real signal is the reversal event (f), not the ranking. Coded CONFIRMED",
       "auto_derived": true
     },
     "b_violence": {

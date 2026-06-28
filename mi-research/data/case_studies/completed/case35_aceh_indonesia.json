@@ -180,7 +180,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Indonesian P1 0.379 -> 0.505, MI 0.557 -> 0.566; Aceh peace held; better than East Timor's secession",
-      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Rising parent-state P1 + credible autonomy produced durable peace, the predicted superior-to-secession outcome.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Rising parent-state P1 + credible autonomy produced durable peace, the predicted superior-to-secession outcome.",
       "auto_derived": false
     },
     "b_violence": {

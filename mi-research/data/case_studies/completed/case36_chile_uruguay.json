@@ -161,9 +161,9 @@
   },
   "verification": {
     "a_trajectory": {
-      "result": "FALSIFIED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Both stayed Tier 2 (Chile MI 0.747->0.691; Uruguay 0.726->0.716); the intra-pair ordering reversed (Uruguay edged above Chile on post-MI), so any confident pre-period ranking would have been wrong",
-      "explanation": "AUTO: top mismatch \u2014 pred Chile vs outcome Uruguay; gap 0.107. | prior: Mod4 abstention vindicated: the pre-event P1 gap (0.107) was within margin, the framework declined to rank them, and the outcome ordering actually flipped. Coded PARTIAL to mark the abstention rather than a clean ordinal confirmation.",
+      "explanation": "AUTO (V3 consolidated-pair caution): both pre-P1 > 0.6 (min 0.652) and gap 0.107 < high-end margin 0.15 -> abstain; capacity differences don't predict trajectory above the threshold. | prior: AUTO: top mismatch \u2014 pred Chile vs outcome Uruguay; gap 0.107. | prior: Mod4 abstention vindicated: the pre-event P1 gap (0.107) was within margin, the framework declined to rank them, and the outcome ordering actually flipped. Coded PARTIAL to mark the abstention rather than a clean ordinal confirmation.",
       "auto_derived": true
     },
     "b_violence": {

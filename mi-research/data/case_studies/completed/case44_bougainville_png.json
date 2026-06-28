@@ -180,7 +180,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024, prospective] Negotiated path held (no renewed war); PNG MI declined 0.499 -> 0.417 (capacity strain), consistent with the low-capacity reading. Bougainville independence not yet realized -> the micro-state fragility call is pending.",
-      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: the sub-state entity lacks pre-P1/post-MI -> auto-derivation skipped, judgment preserved] Direction (managed, high-risk transition under low capacity) matches evidence so far, but the defining outcome (viable independence vs crisis) is not yet settled -> PARTIAL/prospective.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: the sub-state entity lacks pre-P1/post-MI -> auto-derivation skipped, judgment preserved] Direction (managed, high-risk transition under low capacity) matches evidence so far, but the defining outcome (viable independence vs crisis) is not yet settled -> PARTIAL/prospective.",
       "auto_derived": false
     },
     "b_violence": {

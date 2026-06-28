@@ -181,7 +181,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Somaliland sustained peaceful elections + functioning institutions (qualitative); Somalia stayed at the floor (P1 0.132 -> 0.173, MI 0.223 -> 0.245, Tier 4). Capacity, not recognition, tracked the outcome.",
-      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: the unrecognized entity lacks pre-P1/post-MI -> auto-derivation skipped, judgment preserved] Functional capacity predicted the better trajectory (Somaliland > Somalia) despite the inversion of formal recognition, as predicted.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: the unrecognized entity lacks pre-P1/post-MI -> auto-derivation skipped, judgment preserved] Functional capacity predicted the better trajectory (Somaliland > Somalia) despite the inversion of formal recognition, as predicted.",
       "auto_derived": false
     },
     "b_violence": {
