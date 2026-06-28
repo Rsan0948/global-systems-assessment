@@ -60,6 +60,23 @@ def _engine_rate(series_by_iso, year, thresh, log=False, win=10):
     return {"climb": climb / obs, "decline": decline / obs, "n": obs}
 
 
+def _inst_forward_net(vd, year, span=12, win=10):
+    """Institutional net (climb-minus-decline) averaged over the decade AHEAD [year, year+span] — the
+    supercycle container discriminator. None if the forward window isn't observable yet (right-censored)."""
+    inst = {i: vd[i]["rol"] for i in vd if "rol" in vd[i]}
+    nets = []
+    for y in range(year, year + span + 1):
+        obs = cl = dc = 0
+        for s in inst.values():
+            a = s.get(str(y)); b = s.get(str(y + win))
+            if a is None or b is None:
+                continue
+            obs += 1; cl += (b - a > 0.15); dc += (b - a < -0.15)
+        if obs >= 10:
+            nets.append((cl - dc) / obs)
+    return st.mean(nets) if len(nets) >= 3 else None
+
+
 def measure_global_system(year=2024, win=10):
     """Produce the global systems measurement for the window ending at `year`."""
     vd = _load("vdem_longrun.json")
@@ -107,10 +124,22 @@ def measure_global_system(year=2024, win=10):
                 else "eroding" if net <= GLOBAL_CONTAINER_ERODING else "flat")
         texture = ("surge" if cl - dc > 0.06 else "collapse" if dc - cl > 0.04
                    else "stasis" if cl + dc < 0.06 else "churn")
-        out["container"] = {"institutional_net": round(net, 3), "trajectory": traj,
-                            "reading": {"strengthening": "robust — absorbs a growth deceleration (cf. 1970s)",
-                                        "eroding": "brittle — a deceleration has nowhere to vent (cf. 1910s)",
-                                        "flat": "ambiguous — neither repairing nor clearly collapsing"}[traj]}
+        # FORWARD container = the supercycle discriminator (net over the decade AHEAD). The trailing
+        # net is the decade BEHIND and can be the OPPOSITE of what matters (1973 trailing=collapse but
+        # forward=Third-Wave-surge -> absorbed; 1913 trailing=calm but forward=brittle -> ruptured).
+        fwd = _inst_forward_net(_load("vdem_longrun.json"), year)
+        if fwd is None:
+            fwd_traj, fwd_reading = "censored", "the decade ahead isn't observable yet — the discriminator is unknowable now"
+        else:
+            fwd_traj = ("strengthening" if fwd >= GLOBAL_CONTAINER_STRENGTHENING
+                        else "eroding" if fwd <= GLOBAL_CONTAINER_ERODING else "flat")
+            fwd_reading = {"strengthening": "robust — absorbed the deceleration (cf. 1970s/Third Wave)",
+                           "eroding": "brittle — the deceleration ruptured (cf. 1910s)",
+                           "flat": "neither clearly repairing nor collapsing"}[fwd_traj]
+        out["container"] = {"net_trailing": round(net, 3), "trajectory_trailing": traj,
+                            "net_forward": (round(fwd, 3) if fwd is not None else None),
+                            "trajectory_forward": fwd_traj, "forward_reading": fwd_reading,
+                            "note": "the FORWARD container is the supercycle discriminator; trailing is the decade behind."}
         out["texture"] = texture
 
     # MOVEMENT DISTRIBUTION (5-pillar panel)

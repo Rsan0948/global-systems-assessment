@@ -30,9 +30,13 @@ for k, e in m["engines"].items():
           f"(median {e['historical_median']*100:.0f}%)  -> {'FIRING' if e['firing'] else 'quiet'}")
 c = m.get("container", {})
 if c:
-    print(f"\nINSTITUTIONAL CONTAINER: net {c['institutional_net']*100:+.0f}pp  -> {c['trajectory'].upper()}")
-    print(f"  {c['reading']}")
-    print(f"TEXTURE: {m.get('texture','?').upper()}")
+    print(f"\nINSTITUTIONAL CONTAINER:")
+    print(f"  trailing (decade behind): net {c['net_trailing']*100:+.0f}pp -> {c['trajectory_trailing'].upper()}")
+    fn = c['net_forward']
+    fns = f"net {fn*100:+.0f}pp" if fn is not None else "unobservable (future)"
+    print(f"  FORWARD (the discriminator): {fns} -> {c['trajectory_forward'].upper()}")
+    print(f"    {c['forward_reading']}")
+    print(f"TEXTURE (trailing): {m.get('texture','?').upper()}")
 md = m.get("movement_distribution", {})
 if md.get("available") is not False:
     print(f"\nMOVEMENT DISTRIBUTION (countries, {md['window']}, n={md['n']}):")

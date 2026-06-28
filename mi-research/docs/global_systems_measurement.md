@@ -14,9 +14,15 @@ Code: `mi/global_systems.py` · CLI: `scripts/global_systems.py` · constants: `
    historical-median "firing" bar: **institutions** (V-Dem rule-of-law), **income** (Maddison GDP),
    **human capital** (life expectancy). Golden ages are dimension-specific and out of phase, so the
    engines are reported separately, never collapsed.
-2. **Container** — the institutional **net** (climb-minus-decline) trajectory: *strengthening* (robust,
-   absorbs a deceleration — cf. 1970s) / *eroding* (brittle, a deceleration can't vent — cf. 1910s) /
-   *flat* (ambiguous). This is the supercycle discriminator (`globalization_supercycle_shape.md`).
+2. **Container** — the institutional **net** (climb-minus-decline), reported **two ways**: *trailing*
+   (the decade behind) and **forward** (the decade ahead — the actual supercycle discriminator). These
+   can be *opposite*: 1973 trailing = COLLAPSE (it captures the 1960s decolonization reversals) but
+   forward = **strengthening +8pp** (the Third Wave → absorbed); 1913 trailing = calm but forward
+   brittle. **The container that decides rupture-vs-absorption is forward** — and for the present it is
+   **right-censored** (the decade ahead isn't observable), which is precisely why the current verdict is
+   genuinely unknowable, not reassuring. Caveat: measured on *rule-of-law*, the container captures the
+   *institutional*-collapse mode of rupture (1930s fascism, 1960s coups) better than the *great-power-war*
+   mode (1914 was a stability/geopolitical rupture, under-captured here).
 3. **Texture** — surge / churn / stasis / collapse, from the climb-vs-decline mix.
 4. **Movement distribution** — share of countries in each `movement_quality` class (real_ascent /
    windfall / ratchet_rise / hollow_stability / decline / stable), from the 5-pillar panel.
