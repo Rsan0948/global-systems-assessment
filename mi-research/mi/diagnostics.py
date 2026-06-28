@@ -227,15 +227,23 @@ def structural_vulnerability(pillars: dict) -> Optional[dict]:
     if p1 is None or p4 is None:
         return None
     gap = p4 - p1
-    flagged = gap > LENS["structural_vulnerability_gap"]
+    flag_floor = LENS["structural_vuln_flag_floor"]
+    clear_ceiling = LENS["structural_vuln_clear_ceiling"]
+    if gap >= flag_floor:
+        status, reading = "flagged", ("STRUCTURALLY VULNERABLE — income/economy has outrun institutions "
+                                      "(granted/fragile); elevated crisis risk under shock.")
+    elif gap <= clear_ceiling:
+        status, reading = "clear", ("institutions roughly keep pace with income — not structurally "
+                                    "crisis-flagged (absorber-class on this measure).")
+    else:
+        status, reading = "borderline", ("INDETERMINATE — gap sits in the empty band between the validated "
+                                         "absorber ceiling and crisis floor; above every confirmed absorber "
+                                         "but below the crisis floor. Elevated watch, not a verdict.")
     return {
         "p4_minus_p1_gap": round(gap, 3),
-        "flagged": flagged,
-        "reading": ("STRUCTURALLY VULNERABLE — income/economy has outrun institutions "
-                    "(granted/fragile); elevated crisis risk under shock."
-                    if flagged else
-                    "institutions roughly keep pace with income — not structurally crisis-flagged "
-                    "(absorber-class on this measure)."),
+        "status": status,
+        "flagged": gap > LENS["structural_vulnerability_gap"],  # back-compat boolean
+        "reading": reading,
     }
 
 

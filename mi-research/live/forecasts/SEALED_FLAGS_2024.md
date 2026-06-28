@@ -69,11 +69,16 @@ US is still the relatively more exposed (steepest P5 decline, no external anchor
 absorbable," not "pre-collapse."
 
 ## Addendum 2 — the validated discriminator REFINES these flags (V3.1 durability gate)
-The N=21 analysis found a discriminator that *does* tune (83% sens / 100% spec / 100% PPV): the
-**P4 − P1 gap** (economy/income minus institutions; `docs/architectural_decisions/v3_1_durability_gate.md`).
-By that validated rule (threshold 0.22), the 2024 gaps are **US ≈ +0.21, UK +0.09, Chile +0.08 — all
-BELOW threshold (absorber-class, NOT structurally crisis-flagged)**; only **Russia (+0.44)** flags
-(Belarus/Kyrgyzstan/Mali also elevated). So the structural read **demotes the Tier-A US/UK flags**
-(institutions roughly keep pace with income) and **confirms the Tier-B authoritarian sliders**. The
-durability gap is the part of the original signature that survives validation; on it the US (closest
-to the line at ~0.21) is "elevated-but-absorbable," the UK lower, and Russia the genuine structural flag.
+The N=21 analysis found a discriminator that *does* tune: the **P4 − P1 gap** (economy/income minus
+institutions; `docs/architectural_decisions/v3_1_durability_gate.md`). A single hard cutoff was false
+precision — the data is **unidentified inside (0.203, 0.283)** (every crisis ≥ 0.283, every absorber
+≤ 0.203, the middle empty). So the gate is **three-state**: flagged ≥ 0.28, clear ≤ 0.20, **borderline**
+between.
+
+2024 gaps: **US +0.211 → BORDERLINE**, UK +0.09 → clear, Chile +0.08 → clear, Russia +0.44 → FLAGGED
+(Belarus/Kyrgyzstan/Mali also flagged). **Correction (per user, 2026-06-28):** the US is NOT
+absorber-class — at 0.211 it sits in the empty band **above every confirmed absorber** (Hungary 0.203,
+Poland 0.167, France 0.126, Germany 0.075…), ~one **0.07 institutional backslide** from the crisis
+floor. "0.21 below a 0.22 line" was a rounding artifact of a fake cutoff; the honest read is **the US
+is the single closest case to the flag in the entire set, indeterminate, and one slip from tipping.**
+The UK and Chile are genuinely clear; only Russia is a definite structural flag.

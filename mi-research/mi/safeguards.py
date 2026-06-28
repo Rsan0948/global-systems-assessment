@@ -81,25 +81,34 @@ def evaluate_safeguard_j(pillars: dict, context: dict) -> dict:
                 "explanation": "P1 or P4 unavailable — gate not evaluable.", "modification": None,
                 "derivation": "N=21 signature set; = durability ratio re-derived as a forward gate."}
     gap = p4 - p1
-    threshold = LENS["structural_vulnerability_gap"]
-    triggered = gap > threshold
+    flag_floor = LENS["structural_vuln_flag_floor"]        # 0.28 (crisis floor)
+    clear_ceiling = LENS["structural_vuln_clear_ceiling"]  # 0.20 (absorber ceiling)
+    triggered = gap > LENS["structural_vulnerability_gap"]  # back-compat boolean (nominal 0.22)
+    if gap >= flag_floor:
+        status = "flagged"
+        expl = (f"P4-P1 gap = {gap:.3f} >= {flag_floor} (crisis floor): income/economy has outrun "
+                "institutions (granted/fragile) — STRUCTURALLY crisis-vulnerable under shock.")
+        mod = "Flag elevated structural crisis-vulnerability; pair with stability (P5)/shock exposure. Risk, not timing (Mod8)."
+    elif gap <= clear_ceiling:
+        status = "clear"
+        expl = (f"P4-P1 gap = {gap:.3f} <= {clear_ceiling} (absorber ceiling): institutions roughly "
+                "keep pace with income — not structurally flagged (absorber-class).")
+        mod = None
+    else:
+        status = "borderline"
+        expl = (f"P4-P1 gap = {gap:.3f} in the indeterminate band ({clear_ceiling}, {flag_floor}): the "
+                "N=21 data is UNIDENTIFIED here (empty zone between the absorber and crisis clusters). "
+                "Above every confirmed absorber but below the crisis floor — elevated WATCH, not a "
+                "verdict; a further institutional backslide would tip it into the flag.")
+        mod = "Treat as elevated watch; insufficient validated evidence to call. Monitor P1 vs P4."
     return {
         "name": "Durability Gate (P4-P1 gap)",
         "triggered": triggered,
+        "status": status,
         "gap": round(gap, 3),
-        "threshold": threshold,
-        "explanation": (
-            f"P4-P1 gap = {gap:.3f} > {threshold}: income/economy has outrun institutions "
-            "(granted/fragile) — STRUCTURALLY crisis-vulnerable under shock."
-            if triggered else
-            f"P4-P1 gap = {gap:.3f} <= {threshold}: institutions roughly keep pace with income — "
-            "not structurally flagged (absorber-class on this measure)."
-        ),
-        "modification": (
-            "Flag elevated structural crisis-vulnerability; pair with stability (P5) and shock "
-            "exposure. Risk, not timing (Mod8)."
-            if triggered else None
-        ),
+        "flag_floor": flag_floor, "clear_ceiling": clear_ceiling,
+        "explanation": expl,
+        "modification": mod,
         "derivation": "N=21 signature set (83% sens/100% spec/100% PPV); = durability ratio re-derived.",
     }
 

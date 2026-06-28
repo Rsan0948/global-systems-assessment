@@ -42,12 +42,24 @@ correctly excludes **every** absorber (Poland, Hungary, France, Canada, Germany,
   DO flag** — their income/economy ran far ahead of institutions, which is precisely the
   vulnerability, regardless of "high base."
 
-## What it does to the US/UK flags
-By the validated gate (2024): **US ≈ +0.21, UK +0.09, Chile +0.08, Canada +0.05, Germany +0.08 — all
-below 0.22 (absorber-class, NOT structurally crisis-flagged); only Russia (+0.44) flags.** So the
-discriminator both tunes the signature **and corrects the US/UK alarm**: institutions there roughly
-keep pace with income. The US is the closest to the line (most exposed of the safe set), consistent
-with "elevated but absorbable," not "pre-collapse." (Sealed flags updated accordingly.)
+## The threshold is unidentified inside a band (no false precision)
+A single 0.22 line over-claims. The N=21 gaps cluster with an **empty zone** between them:
+- **Crisis floor:** every structural crisis sits at gap **≥ 0.283** (Tunisia 0.283 → Lebanon 0.442).
+- **Absorber ceiling:** every confirmed absorber sits at gap **≤ 0.203** (Hungary 0.203 → Japan 0.010).
+- **(0.203, 0.283) is empty** in the test set — *any* cutoff there gives the same confusion matrix, so
+  the data cannot identify one. The gate is therefore **three-state** (`LENS.structural_vuln_flag_floor`
+  = 0.28, `structural_vuln_clear_ceiling` = 0.20): **flagged** ≥ 0.28 (all 10 crises, 0 absorbers),
+  **clear** ≤ 0.20, **borderline** in between (elevated watch, not a verdict). Hungary (0.203) sits at
+  the boundary and reads borderline — fitting, since it *did* slowly autocratize.
+
+## What it does to the US/UK flags (corrected 2026-06-28)
+By the three-state gate (2024): **US +0.211 → BORDERLINE; UK +0.09 → clear; Chile +0.08 → clear;
+Canada +0.05, Germany +0.08 → clear; Russia +0.44 → FLAGGED.** The earlier "US ≈ 0.21 < 0.22 →
+absorber-class" was **false precision** (per user): 0.21 vs 0.22 is rounding noise on a fake line. The
+honest read — **the US sits alone in the empty band, ABOVE every confirmed absorber, ~one 0.07
+institutional backslide from the crisis floor.** It is the single closest case to the flag in the whole
+set: not "safe/absorber-class," but indeterminate-and-one-slip-from-tipping. UK and Chile are genuinely
+clear; only Russia is a definite structural flag.
 
 ## Scope / honesty
 - Additive: the gate is a new diagnostic flag; the 51-case ordinality baseline is unchanged

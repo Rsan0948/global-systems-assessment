@@ -109,7 +109,15 @@ LENS = {
     # acute cases Chile & S.Korea, which have no structural warning by design). This is the durability
     # ratio re-derived as a forward gate; it works where the decline signature failed because a LEVEL
     # is persistent/forward-available while a trajectory emerges late.
-    "structural_vulnerability_gap": 0.22,   # P4 - P1 above this = structurally crisis-vulnerable
+    "structural_vulnerability_gap": 0.22,   # nominal cut (back-compat boolean); see band below
+    # The single 0.22 line is FALSE PRECISION: on N=21 the data is UNIDENTIFIED inside (0.203, 0.283).
+    # Every structural crisis sits at gap >= 0.283 (crisis floor = Tunisia); every confirmed absorber
+    # sits at gap <= 0.203 (absorber ceiling = Hungary); the zone between is EMPTY in the test set, so
+    # no cutoff there is distinguishable. Report three states, not a hard pass/fail:
+    "structural_vuln_flag_floor": 0.28,     # gap >= this -> FLAGGED (matches all 10 crises, 0 absorbers)
+    "structural_vuln_clear_ceiling": 0.20,  # gap <= this -> CLEAR (absorber-class)
+    # (0.20, 0.28) = BORDERLINE / indeterminate — no validated evidence either way. The US (gap 0.211,
+    # 2024) lands here, ABOVE every confirmed absorber, ~one 0.07 institutional backslide from the floor.
 }
 
 # Active MI model version. V3 = V2 + consolidated-pair Mod4 extension.

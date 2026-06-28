@@ -64,7 +64,10 @@ the **P4 − P1 gap** (economy/income minus institutions; a LEVEL, not a traject
 N=21 (only misses = Chile, South Korea — idiosyncratic acute, no structural warning). It is the
 durability ratio re-derived as a forward gate, adopted as V3.1
 (`docs/architectural_decisions/v3_1_durability_gate.md`; `LENS.structural_vulnerability_gap`).
-It also corrects the US/UK alarm (their gaps ~0.09–0.21 are below threshold = absorber-class).
+The single line is false precision — the data is unidentified inside (0.203, 0.283), so the gate is
+three-state (flag ≥ 0.28 / clear ≤ 0.20 / borderline between). This corrects the US/UK read: **US
++0.211 → BORDERLINE** (above every confirmed absorber, ~one 0.07 backslide from the crisis floor),
+UK +0.09 and Chile +0.08 → clear, only Russia +0.44 → flagged.
 
 ## Honest caveats
 - Anchored WGI (.SC) is smoother than percentile-rank/estimate vintages; some declines the doc saw
