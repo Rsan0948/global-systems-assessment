@@ -60,6 +60,29 @@ trajectory-based instrument is the wrong shape for a phenomenon driven by starti
 exogenous waves. (It mirrors the lead-time result for crises: *trust the level, distrust the slope* —
 here, the level and the era carry the signal; the slope is mean-reverting noise.)
 
+## Follow-up — do EXOGENOUS drivers explain the waves? (yes, ~81%)
+Brought in externally-defined structural facts (not MI-derived) and tested climb-start rate vs the 7%
+base (full panel, annual era):
+| predictor | climb rate | z |
+|---|---|---|
+| low starting base (P1<0.40) | 11% | **+4.1** |
+| post-communist × transition (≤2012) | 13% | **+4.4** |
+| commodity-boom year (2003–08, 2010–13) | 9% | +2.3 |
+| EU-accession run-up | 6% | −0.4 (null) |
+| post-conflict (P5<0.30) | 5% | −0.7 (null) |
+| **outside ALL structural conditions** | **4%** | **−3.6** |
+
+**81% of durable climb-starts fall under a structural condition; outside all of them the rate drops
+below base (4% vs 7%, z=−3.6).** Golden ages are forecastable — from **where you start (low base) +
+era/regime-origin (post-communist transition) + the global commodity cycle** — none of which is the
+country's own pillar slope (which predicts nothing). This closes the loop: the signal is exogenous +
+level, exactly as hypothesized.
+
+Caveats: low-base and post-communist overlap heavily (both = "started low"); commodity is a broad
+global time flag (so the 81% capture is partly breadth); EU-accession and post-conflict came back
+**null** (not every exogenous story works); only **low-base is holdout-validated** (z+2.4) — the
+others are externally-specified but full-panel.
+
 ## Honest caveats
 - The low-base effect is *partly* mechanical mean-reversion (more headroom + regression). Real and
   out-of-sample, but don't over-read it as agency.
