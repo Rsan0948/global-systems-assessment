@@ -164,7 +164,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "repression, mass exodus",
-      "explanation": "Elevated risk realized."
+      "explanation": "Elevated risk realized.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Venezuela pre-P1=0.392 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -174,27 +176,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "P4 gap-inflated to 0.98; composite MI 0.57->0.48 masks depth",
-      "explanation": "Direction right; composite MI magnitude misleading due to unpublished GDP - coded partial, limitation stated."
+      "explanation": "Direction right; composite MI magnitude misleading due to unpublished GDP - coded partial, limitation stated.",
+      "computed_config": "Venezuela: P2=0.70, P4=0.70, P3=0.66, P5=0.56, P1=0.39 | below-median (genuine vulnerabilities): P1=0.39",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "intact authoritarian state",
-      "explanation": "No fragmentation, as predicted."
+      "explanation": "No fragmentation, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "authoritarian reversal entrenched",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: authoritarian_reversal"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -211,7 +235,8 @@
       "Flag/down-weight MI when P4 lacks its GDP component"
     ],
     "baseline_impact": "Proposed flag is additive; not yet implemented; baseline unchanged.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

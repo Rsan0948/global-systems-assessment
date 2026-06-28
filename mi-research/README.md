@@ -54,20 +54,21 @@ mi-research/
 
 ## Current Status
 
-- **MI Version:** **MI v1** — the canonical methodology (correlation-derived weights +
-  Mods 4, 8 and Safeguards A-I; formerly "LIVE"/v2). The old hand-assigned draft weights are
-  archived (`WEIGHTS_ARCHIVED_HAND_V0`, not used). See
-  `docs/architectural_decisions/mi_v1_naming_and_archive.md`.
-- **Validated Cases:** 20 modern + 5 ancient (proxy), now backed by structured JSON
-  records in `data/case_studies/completed/`; **+5 expansion cases (Batch 1, cases
-  21-25)** scored on fresh real data — see `live/runs/run7_expansion_batch1_cases21-25.md`.
-- **Clean Confirmation Rate:** ~74% across the rebuilt 25-case corpus (109C/38P/0F),
-  within the honest 62-85% range. (The drop from the ~78% strict-recode estimate is the cost
-  of honest real-data re-scoring — mostly the framework correctly abstaining on Mod4 near-ties.)
-- **Directional Accuracy:** ~100% (zero falsifications) — note this is partly
-  structural (directional claims are hard to falsify) and partly redundant with WGI standalone.
-- **P1 Ordinality:** 20/20 baseline; confirmed in every Batch-1 case where the gap
-  exceeded the WGI margin (and correctly abstained, per Mod4, where it did not).
+- **MI Version:** **MI v2** (live; `MI_ACTIVE_WEIGHTING="equal"`). Equal pillar weights, graded
+  Safeguard E (E-1/E-2), refined Strategy 3, + two new outputs (durability ratio, below-floor
+  diagnostic). V1 (correlation-derived weights) is frozen at tag `mi-v1` / `archive/v1`. Decisions:
+  `docs/architectural_decisions/v2_*.md`; synthesis: `docs/v2_synthesis_35cases.md`.
+- **Validated Cases:** **35 under V2** — 25 redone (cases 1–25) + 10 new (26–35, Batch 2+3:
+  Ghana/CDI, Malaysia, Argentina, Lebanon, Iraq, Vietnam, Korea/Taiwan, Fiji, Bolivia, Aceh).
+  See `live/runs/run8_v2_batch2-3_cases26-35.md`.
+- **Clean Confirmation Rate (V2):** **~74%** across 35 cases (154C/53P/0F), within the honest
+  62–85% range; **zero falsifications** across 207 predictions. The 25 redone tie V1 exactly
+  (weighting immaterial); the 10 new are ~75% clean.
+- **Directional Accuracy:** ~100% (zero falsifications) — partly structural; capacity partly
+  redundant with WGI standalone.
+- **P1 Ordinality / centrality:** ordinality holds **independent of weighting** (the V1 P1=0.34
+  "centrality" was a sample/time-point artifact; the pillar rotates and sits in a 0.71–0.80 band).
+  See `docs/architectural_decisions/v2_p1_centrality_restatement.md`.
 
 ### Recent work (expansion Batch 1, 2026-06-27)
 - **Rwanda architectural decision** settled (P1 kept composite, not decomposed):

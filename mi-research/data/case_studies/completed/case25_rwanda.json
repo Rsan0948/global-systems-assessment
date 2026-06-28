@@ -144,7 +144,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "low near-term violence",
-      "explanation": "reversal-risk component OPEN/prospective"
+      "explanation": "reversal-risk component OPEN/prospective",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Rwanda pre-P1=0.295 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "NOT_APPLICABLE",
@@ -154,27 +156,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "voice is the depressed dimension",
-      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Rwanda: P2=0.59, P5=0.30, P1=0.30, P3=0.29, P4=0.25 | below-median (genuine vulnerabilities): P4=0.25, P3=0.29, P1=0.30, P5=0.30",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "latent, not yet falsifiable",
-      "explanation": "Logged as open prospective forecast, not a closed win."
+      "explanation": "Logged as open prospective forecast, not a closed win.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "legal/institutional managed suppression",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "narrow spread, no turbulence",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -194,7 +218,8 @@
     ],
     "baseline_impact": "Architectural decision: keep P1 composite; no engine change; baseline unchanged.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

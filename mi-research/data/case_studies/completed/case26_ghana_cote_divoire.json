@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "case_name": "Ghana vs. Cote d'Ivoire (decolonization divergence)",
+    "case_id": "case26",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "comparative_trajectory",
+    "geographic_region": "West Africa",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Ghana",
+      "Cote d'Ivoire"
+    ],
+    "key_test": "Long-run P1 ordinal from near-identical decolonization/colonial starts: do divergent institutional choices (Ghana's democratic consolidation vs. Cote d'Ivoire's 2002-2011 civil wars) track P1? Pre-1996 P1 is a near-tie (0.477 vs 0.479) -- a hard case where divergence is driven by post-1996 institutional choices the starting P1 does not yet distinguish.",
+    "round": "v2_batch2",
+    "notes": "Reference-based record: indicators resolved live via mi.datasource (country_ref + year). resolved_scores carry the MI v2 re-scored pillars. Cote d'Ivoire ref uses ASCII spelling to match the panel key."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Two near-identical West African decolonization starts (Ghana ind. 1957, Cote d'Ivoire ind. 1960) measured at a common 1996 baseline before their institutional trajectories sharply diverge.",
+    "entities": {
+      "Ghana": {
+        "context": {
+          "population": 18000000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "is_democratic_transition": true,
+          "neighbor_threat_level": "moderate",
+          "neighbor_details": "Sahel/regional instability spillover; no direct interstate threat.",
+          "fragmentation_mechanism": null,
+          "n_successor_states": 0,
+          "resource_rents_pct_gdp": 12.0,
+          "growth_trajectory": "rising"
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Indicators resolved via mi.datasource (Ghana, 1996 -> 2024). Decolonization start closely matched to Cote d'Ivoire; divergence hypothesis tests institutional choice over starting conditions.",
+        "country_ref": "Ghana",
+        "pre_year": "1996",
+        "post_year": "2024"
+      },
+      "Cote d'Ivoire": {
+        "context": {
+          "population": 15000000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": false,
+          "is_democratic_transition": false,
+          "neighbor_threat_level": "moderate",
+          "neighbor_details": "Liberia/regional war spillover; mercenary flows.",
+          "fragmentation_mechanism": "ethnicized_political_settlement",
+          "n_successor_states": 1,
+          "resource_rents_pct_gdp": 8.0,
+          "growth_trajectory": "declining"
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Indicators resolved via mi.datasource (Cote d'Ivoire, 1996 -> 2024). 'Ivoirite' ethnicized citizenship politics emerging post-Houphouet (d. 1993); 1999 coup, 2002-2007 north-south war, 2010-2011 post-election crisis.",
+        "country_ref": "Cote d'Ivoire",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Ghana >= Cote d'Ivoire (marginal); near-tie at 1996",
+      "basis": "Pre-P1 essentially identical (Ghana 0.477 vs Cote d'Ivoire 0.479, gap 0.002 << 0.10 margin). Mechanical ordinal is a tie; the divergence hypothesis expects Ghana to pull ahead via institutional consolidation.",
+      "falsification_condition": "Cote d'Ivoire ends at or above Ghana on post-MI."
+    },
+    "b_violence": {
+      "prediction": "Both mid-band P1 -> moderate violence risk; the framework's 1996 reading does NOT single out Cote d'Ivoire over Ghana.",
+      "risk_level": "moderate",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY.",
+      "falsification_condition": "Neither country experiences elevated political violence."
+    },
+    "c_convergence": {
+      "prediction": "Divergence (institutional choices diverge despite near-identical 1996 P1)",
+      "basis": "Case hypothesis: divergent institutional settlements; caveat -- the 0.002 pre-P1 gap is below margin, so the raw P1 signal is weak and would mechanically read convergence.",
+      "falsification_condition": "Outcomes converge (similar post-MI and stability)."
+    },
+    "d_failure_dimension": {
+      "prediction": "Cote d'Ivoire primary failure on P1 (ethnicized political settlement / institutional legitimacy) with P5 cohesion collapse.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Cote d'Ivoire's failure driven by a non-institutional dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "No permanent fragmentation; Cote d'Ivoire de facto north-south partition is transient and reunifies (n_successor_states stays 1 each).",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Either state permanently fragments into successor states."
+    },
+    "f_reversal_risk": {
+      "prediction": "Ghana low democratic-reversal risk (consolidating alternation); Cote d'Ivoire elevated reversal risk.",
+      "safeguard_c_severity": "moderate",
+      "falsification_condition": "Ghana suffers democratic reversal / Cote d'Ivoire shows none."
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A -- neither is a suppressed-fragmentation suppression-tier case.",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Cote d'Ivoire sub-state turbulence triggered (regional/ethnic rebel control of the north, Forces Nouvelles); Ghana none.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "No sub-state armed turbulence in Cote d'Ivoire."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Ghana": {
+        "indicators_by_year": {},
+        "outcome_summary": "P1 0.477->0.515; MI 0.474->0.502 (Tier 3). Sustained multiparty democracy with repeated peaceful alternations of power (2000, 2008, 2016, 2024); a regional democratic exemplar despite economic strain.",
+        "key_events": [
+          "2000 peaceful turnover",
+          "2008/2016/2024 alternations",
+          "democratic consolidation"
+        ]
+      },
+      "Cote d'Ivoire": {
+        "indicators_by_year": {},
+        "outcome_summary": "P1 0.479->0.474 (flat); MI 0.511->0.445 (Tier 3, declined). 1999 coup, 2002-2007 north-south civil war, 2010-2011 post-election crisis (~3,000 dead); reunified and stabilized after 2011 but P5 cohesion collapsed (0.652->0.394).",
+        "key_events": [
+          "1999 coup",
+          "2002-2007 civil war (de facto partition)",
+          "2010-2011 post-election crisis"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Ghana": {
+        "pre": {
+          "P1": 0.477,
+          "MI": 0.474
+        },
+        "post": {
+          "P1": 0.515,
+          "MI": 0.502
+        }
+      },
+      "Cote d'Ivoire": {
+        "pre": {
+          "P1": 0.479,
+          "MI": 0.511
+        },
+        "post": {
+          "P1": 0.474,
+          "MI": 0.445
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Outcome Ghana > Cote d'Ivoire by post-MI (0.502 vs 0.445); but pre-P1 gap was 0.002, below margin.",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.002 < margin 0.1 -> abstain (too close to call). | prior: Direction matches the hypothesis (Ghana ahead) but the ordering was a Mod4 near-tie at the 1996 baseline -- the divergence was earned by post-1996 institutional choices the starting P1 could not distinguish. Coded PARTIAL.",
+      "auto_derived": true
+    },
+    "b_violence": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Cote d'Ivoire: 2002-2007 civil war + 2010-2011 crisis (~3,000 dead). Ghana: peaceful.",
+      "explanation": "Elevated risk materialized -- but in Cote d'Ivoire specifically, which the near-identical 1996 P1 did not single out from Ghana. Risk realized; discrimination weak. PARTIAL.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Ghana pre-P1=0.477 -> MODERATE risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Post-MI gap widened (Ghana up, Cote d'Ivoire down; ~0.057 gap); pre-P1 gap was ~0.002.",
+      "explanation": "Outcome diverged as the case hypothesis expected, but the raw pre-P1 gap was below the divergence margin and would mechanically have read convergence. PARTIAL."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Cote d'Ivoire P5 cohesion collapsed 0.652->0.394; P1 flat-to-declining amid ethnicized settlement.",
+      "explanation": "Institutional/cohesion failure as predicted; post-hoc dimension identification coded PARTIAL under strict standards.",
+      "computed_config": "Ghana: P5=0.55, P4=0.50, P1=0.48, P3=0.46, P2=0.38 | below-median (genuine vulnerabilities): P2=0.38, P3=0.46, P1=0.48, P4=0.50",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Cote d'Ivoire de facto 2002-2011 north-south partition reunified; no successor states for either country.",
+      "explanation": "No permanent fragmentation, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Ghana: repeated peaceful alternations, no reversal. Cote d'Ivoire: 1999 coup + 2010-2011 refusal-to-cede crisis.",
+      "explanation": "Reversal-risk ordering held.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Neither is a suppression-tier suppressed-fragmentation case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Forces Nouvelles held the Ivorian north 2002-2011; Ghana none.",
+      "explanation": "Sub-state armed turbulence triggered in Cote d'Ivoire as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Matched-start decolonization control. P1 ordinal alone was a near-tie at 1996; divergence was real and large but earned by post-baseline institutional choices, so a/b/c code PARTIAL while the safeguard-style calls (e/f/h) are clean.",
+    "safeguards_triggered": [
+      "F"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [
+      "Near-identical starting P1 can precede large divergence -- the framework reads convergence where institutional choice later drives divergence (decolonization blind spot)."
+    ],
+    "what_this_case_uniquely_reveals": "Shared colonial start control: institutions, not the 1996 P1 level, drive the Ghana/Cote d'Ivoire divergence.",
+    "proposed_framework_modifications": [
+      "Flag near-tie pre-P1 pairs as low-confidence ordinal predictions rather than convergence calls."
+    ],
+    "baseline_impact": "Flag is additive; no baseline change.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

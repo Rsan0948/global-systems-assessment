@@ -177,7 +177,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh OUTPERFORMED Pakistan on HDI and GDP per capita despite near-equal (arguably marginally lower) 1996 P1.",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI margin of error -> 'too close to call'; coded PARTIAL, not CONFIRMED.]",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply. [run6 \u00a74 Mod4: pre-event P1 gap within the WGI marg",
       "auto_derived": true
     },
     "b_violence": {
@@ -190,7 +190,7 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Economic divergence - Bangladesh pulled ahead, overtaking Pakistan on GDP per capita.",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.001->0.051). | prior: AUTO: outcome DIVERGENCE (MI-range 0.007->0.042). | prior: Divergence as assessed.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.001->0.051). | prior: AUTO: outcome DIVERGENCE (MI-range 0.001->0.051). | prior: AUTO: outcome DIVERGENCE (MI-range 0.007->0.042). | prior: Divergence as assessed.",
       "auto_derived": true
     },
     "d_failure_dimension": {

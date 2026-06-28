@@ -372,7 +372,7 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "EU accession dates map exactly: Slovenia 2004 > Croatia 2013 > Serbia candidate > Bosnia candidate-last.",
-      "explanation": "AUTO: top correct (Slovenia) but sub-ordering differs (pred ['Slovenia', 'Croatia', 'Bosnia-Herzegovina', 'Serbia'] vs outcome ['Slovenia', 'Croatia', 'Serbia', 'Bosnia-Herzegovina']); often a within-margin sub-pair. | prior: AUTO: top correct (Slovenia) but sub-ordering differs (pred ['Slovenia', 'Croatia', 'Bosnia-Herzegovina', 'Serbia'] vs outcome ['Slovenia', 'Croatia', 'Serbia', 'Bosnia-Herzegovina']); often a within-margin sub-pair. | prior: Four-way P1 ordering reproduced the four-way out",
+      "explanation": "AUTO: top correct (Slovenia) but sub-ordering differs (pred ['Slovenia', 'Croatia', 'Bosnia-Herzegovina', 'Serbia'] vs outcome ['Slovenia', 'Croatia', 'Serbia', 'Bosnia-Herzegovina']); often a within-margin sub-pair. | prior: AUTO: top correct (Slovenia) but sub-ordering differs (pred ['Slovenia', 'Croatia', 'Bosnia-Herzegovina', 'Serbia'] vs outcome ['Slovenia', 'Croatia', 'Serbia', 'Bosnia-Herzegovina']); often a within-margin sub-pair. | prior: AUTO: top correct (Slovenia) but sub-ordering di",
       "auto_derived": true
     },
     "b_violence": {
@@ -385,7 +385,7 @@
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Slovenia converged to EU core while Bosnia diverged downward.",
-      "explanation": "AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.316->0.198). | prior: Outcomes diverged across the spread as predicted.",
+      "explanation": "AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.316->0.198). | prior: Outcomes diverged across the spread as predicted.",
       "auto_derived": true
     },
     "d_failure_dimension": {

@@ -162,7 +162,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024-25, prospective] Catastrophic violence: AAPP >=6,231 civilians killed by the military through end-2024 (1,824 in 2024 alone); UN >75,000 total deaths; 3.5M+ IDPs.",
-      "explanation": "Floor-P1 + re-suppression -> catastrophic violence, as predicted; prospective."
+      "explanation": "Floor-P1 + re-suppression -> catastrophic violence, as predicted; prospective.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Myanmar pre-P1=0.334 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -172,27 +174,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024-25, prospective] P1 collapse + centrifugal P5 breakdown: multiple ethnic resistance fronts + PDF; junta unable to re-centralize.",
-      "explanation": "Primary failure dimensions matched (Safeguard H centrifugal classification); prospective. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Primary failure dimensions matched (Safeguard H centrifugal classification); prospective. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Myanmar: P4=0.72, P3=0.61, P2=0.45, P1=0.33, P5=0.32 | below-median (genuine vulnerabilities): P5=0.32, P1=0.33, P2=0.45",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No specific fragment-count predicted; Safeguard B applied at floor-P1 for the catastrophic-outcome prediction."
+      "explanation": "No specific fragment-count predicted; Safeguard B applied at floor-P1 for the catastrophic-outcome prediction.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No democratic-transition reversal-risk prediction scored separately; the coup itself is the stressor."
+      "explanation": "No democratic-transition reversal-risk prediction scored separately; the coup itself is the stressor.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "[CONSISTENT WITH EVIDENCE THROUGH 2024-25, prospective] Re-suppression worse than continuous suppression: territorial fragmentation, casualties, and state-capacity decline all exceed the pre-2011 baseline. The junta has NOT restored pre-2011 control.",
-      "explanation": "Mod9 (re-suppression after porosity) consistent - second confirmation after Ethiopia/Tigray; NOT falsified; prospective."
+      "explanation": "Mod9 (re-suppression after porosity) consistent - second confirmation after Ethiopia/Tigray; NOT falsified; prospective.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: re-suppression after porosity (Mod9)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -216,7 +240,8 @@
     "proposed_framework_modifications": [],
     "baseline_impact": "None; graduates Mod9 (re-suppression-after-porosity) from conjecture to a tested core prediction (now 2/2: Ethiopia/Tigray + Myanmar), cabined to floor-P1 with prior mobilization. Myanmar trajectory is a watch item into Run 6.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

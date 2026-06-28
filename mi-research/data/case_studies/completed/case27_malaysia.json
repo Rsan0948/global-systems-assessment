@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "case_name": "Malaysia (decolonization + centripetal federation)",
+    "case_id": "case27",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "fragmentation_prevention",
+    "geographic_region": "Southeast Asia",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Malaysia"
+    ],
+    "key_test": "Safeguard H (centripetal classifier): does consociational/affirmative-action institutional design (the New Economic Policy + federal bargain) sustain plural-society unity despite deep ethnic cleavage? Moderate-and-rising P1 plus centripetal design predicts maintained unity, NOT coercive suppression.",
+    "round": "v2_batch2",
+    "notes": "Reference-based record: indicators resolved live via mi.datasource. The retained federation (post-1965 Singapore exit, already covered as case07). resolved_scores carry MI v2 re-scored pillars."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Plural-society federation (1957 independence, 1963 federation) measured after a generation of NEP affirmative-action design intended to manage Malay/Chinese/Indian cleavage following the 1969 communal riots.",
+    "entities": {
+      "Malaysia": {
+        "context": {
+          "population": 21000000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "is_democratic_transition": false,
+          "has_federalism": true,
+          "has_devolution": true,
+          "has_power_sharing": true,
+          "neighbor_threat_level": "low",
+          "neighbor_details": "Managed regional relations; minor southern-Thailand insurgency spillover.",
+          "fragmentation_mechanism": null,
+          "n_successor_states": 0,
+          "resource_rents_pct_gdp": 11.0,
+          "growth_trajectory": "rising"
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Indicators resolved via mi.datasource (Malaysia, 1996 -> 2024). Centripetal design = New Economic Policy (Bumiputera affirmative action) + federal Sabah/Sarawak autonomy + consociational Barisan Nasional coalition. Safeguard H (centripetal), not suppression.",
+        "country_ref": "Malaysia",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Stable, maintained Tier 2 (moderate-high, near-flat P1).",
+      "basis": "Pre-P1 0.623 (upper-middle) with centripetal design; predicts continuity rather than collapse or breakout.",
+      "falsification_condition": "Malaysia drops a tier or experiences institutional collapse."
+    },
+    "b_violence": {
+      "prediction": "Low communal-violence risk; institutional design contains the 1969-type cleavage.",
+      "risk_level": "low",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY.",
+      "falsification_condition": "Recurrence of large-scale communal violence."
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity); self-trajectory stable.",
+      "basis": "No comparison entity.",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "If any strain, on P2 (political openness / distributional distortions of NEP and one-coalition dominance).",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Strain concentrates on a non-P2 dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "No fragmentation; federation holds (Sabah/Sarawak autonomy managed within the federation).",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Secession of a state or federation breakup."
+    },
+    "f_reversal_risk": {
+      "prediction": "Moderate but contained reversal risk under long single-coalition dominance; alternation possible.",
+      "safeguard_c_severity": "low",
+      "falsification_condition": "Authoritarian reversal / breakdown of electoral competition."
+    },
+    "g_suppression_mechanism": {
+      "classification": "Centripetal federation / consociational design (Safeguard H) -- fragmentation MANAGEMENT, not coercive suppression.",
+      "tier": null,
+      "falsification_condition": "Unity maintained primarily by coercive suppression rather than design/co-optation."
+    },
+    "h_substate_turbulence": {
+      "prediction": "Low sub-state turbulence; Sabah/Sarawak grievances channeled politically, minor border spillover only.",
+      "safeguard_f_triggered": false,
+      "falsification_condition": "Sustained sub-state armed turbulence."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Malaysia": {
+        "indicators_by_year": {},
+        "outcome_summary": "P1 0.623->0.619 (flat); MI 0.709->0.681 (Tier 2 maintained). Federation held intact; first-ever electoral turnover in 2018 (BN ousted after six decades), further peaceful transitions 2020/2022 -- unity sustained via design and electoral channels, not communal violence. P2 declined 0.746->0.592.",
+        "key_events": [
+          "2018 first electoral turnover",
+          "2020/2022 peaceful transitions",
+          "no recurrence of 1969-type communal violence"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Malaysia": {
+        "pre": {
+          "P1": 0.623,
+          "MI": 0.709
+        },
+        "post": {
+          "P1": 0.619,
+          "MI": 0.681
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Tier 2 maintained (MI 0.709->0.681); P1 flat 0.623->0.619.",
+      "explanation": "Stable trajectory as predicted."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "No recurrence of communal violence; 2018/2022 transitions peaceful.",
+      "explanation": "Low violence risk realized; design contained the cleavage.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Malaysia pre-P1=0.623 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "P2 fell 0.746->0.592, the largest pillar decline.",
+      "explanation": "Strain concentrated on political-openness pillar as predicted; post-hoc dimension call coded PARTIAL.",
+      "computed_config": "Malaysia: P4=0.77, P2=0.75, P5=0.72, P3=0.68, P1=0.62 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.62)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Federation intact; no secession.",
+      "explanation": "No fragmentation, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "2018 peaceful alternation ended single-coalition dominance without breakdown.",
+      "explanation": "Reversal risk stayed contained; competition deepened rather than collapsed.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Unity sustained via consociational coalition + NEP design + electoral alternation, not coercion.",
+      "explanation": "Centripetal classification (Safeguard H) holds; not a suppression case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Sabah/Sarawak grievances channeled politically (MA63 negotiations); no sustained armed turbulence.",
+      "explanation": "Low sub-state turbulence as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Clean centripetal-design success; moderate-high P1 plus consociational/affirmative-action design sustained plural-society unity through a historic 2018 alternation.",
+    "safeguards_triggered": [
+      "H"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Institutional design (centripetal federation + NEP) is a distinct fragmentation-management path from coercive suppression -- Safeguard H, not the suppression tiers.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; no modification proposed.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

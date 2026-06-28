@@ -191,44 +191,68 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "DR Tier 2 (MI 0.585->0.617); Haiti Tier3->Tier4 (P1 0.296->0.223)",
-      "explanation": "AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: Wide P1 gap mapped to divergent outcomes as predicted.",
+      "explanation": "AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: Wide P1 gap mapped to divergent outcomes as predicted.",
       "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Haiti gang collapse vs DR peace",
-      "explanation": "Low-P1 Haiti -> violent state breakdown."
+      "explanation": "Low-P1 Haiti -> violent state breakdown.",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Haiti pre-P1=0.296 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "MI gap 0.17->0.24",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.158->0.232). | prior: Divergence.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.158->0.232). | prior: Divergence.",
       "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Haiti P1 0.223 floor pillar",
-      "explanation": "Institutional failure as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Institutional failure as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Haiti: P4=0.55, P5=0.49, P3=0.47, P2=0.45, P1=0.30 | below-median (genuine vulnerabilities): P1=0.30, P2=0.45, P3=0.47, P5=0.49",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No fragmentation event."
+      "explanation": "No fragmentation event.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -240,7 +264,8 @@
     "proposed_framework_modifications": [],
     "baseline_impact": "None; no modification proposed.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

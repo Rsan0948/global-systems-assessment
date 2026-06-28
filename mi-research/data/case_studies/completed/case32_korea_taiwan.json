@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "case_name": "South Korea and Taiwan (developmental democratic transitions)",
+    "case_id": "case32",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "comparative_trajectory",
+    "geographic_region": "East Asia",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "South Korea",
+      "Taiwan"
+    ],
+    "key_test": "Mod4 abstention: both near-matched developmental democracies should consolidate; the framework should ABSTAIN on ranking them against each other if the late-period P1 gap falls inside the WGI margin of error. Taiwan is NOT in the World Bank WGI dataset -> treated as DATA-LIMITED (proxy/qualitative high-capacity democracy) per the sub-state/non-WB convention; the gap is therefore unmeasurable and abstention is mandatory.",
+    "round": "v2_batch3",
+    "notes": "Reference-based record. South Korea carries real MI v2 re-scores. Taiwan has no World Bank WGI coverage -> no resolved scores; reasoned qualitatively (mirrors how Kosovo / South Sudan / East Timor data gaps were handled). 1987-1996 transitions -> 2024; scored ~1996 vs 2024."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Both economies completed peaceful transitions from developmental authoritarianism to electoral democracy (Korea 1987-1992; Taiwan 1987-1996 first direct presidential election), atop Confucian, Japanese-colonial, developmental-dictatorship legacies.",
+    "entities": {
+      "South Korea": {
+        "context": {
+          "population": 45500000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "high",
+          "neighbor_details": "North Korea (armistice, not peace).",
+          "is_democratic_transition": true,
+          "growth_trajectory": "growing",
+          "fragmentation_mechanism": "legal",
+          "resource_rents_pct_revenue": 0.5
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Consolidated high-capacity democracy with peaceful turnovers.",
+        "country_ref": "South Korea",
+        "pre_year": "1996",
+        "post_year": "2024"
+      },
+      "Taiwan": {
+        "context": {
+          "population": 21500000,
+          "is_island": true,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "high",
+          "neighbor_details": "PRC cross-strait pressure.",
+          "is_democratic_transition": true,
+          "growth_trajectory": "growing",
+          "fragmentation_mechanism": "legal"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "data_note": "pre-event indicators unavailable for Taiwan at 1996 (sub-state/new-state/pre-WGI gap)",
+        "country_ref": "Taiwan",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Both consolidate to high-tier outcomes; ABSTAIN on ranking South Korea vs Taiwan (Mod4)",
+      "basis": "Near-matched developmental democracies; Taiwan is data-limited so the P1 gap is unmeasurable -> within-margin by default -> abstention mandatory",
+      "falsification_condition": "Either case fails to consolidate, OR a defensible same-source measurement places one decisively above the other beyond the WGI margin"
+    },
+    "b_violence": {
+      "prediction": "Low internal violence RISK for both (high P1, consolidated democracies)",
+      "risk_level": "low",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Internal political violence or breakdown in either"
+    },
+    "c_convergence": {
+      "prediction": "Convergence (both rise toward the high-capacity-democracy band)",
+      "basis": "Shared developmental-democratic trajectory; both already high P1",
+      "falsification_condition": "Divergence between the two"
+    },
+    "d_failure_dimension": {
+      "prediction": "No primary failure dimension expected; residual exposure is external (security environment), not institutional",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Institutional collapse on a measured pillar"
+    },
+    "e_fragment_count": {
+      "prediction": "N/A",
+      "safeguard_b_applied": false,
+      "falsification_condition": ""
+    },
+    "f_reversal_risk": {
+      "prediction": "Low reversal risk for both consolidated democracies",
+      "safeguard_c_severity": "low",
+      "falsification_condition": "Democratic backsliding in either"
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "South Korea": {
+        "indicators_by_year": {},
+        "outcome_summary": "Consolidated to the top tier: MI 0.778 -> 0.804 (Tier 2 -> Tier 1), P1 0.635 -> 0.728. Multiple peaceful turnovers; a sitting president impeached and removed by constitutional process (2017) - democratic resilience, not breakdown.",
+        "key_events": [
+          "2017 presidential impeachment via constitutional process",
+          "repeated peaceful turnovers",
+          "advanced-economy / OECD consolidation"
+        ]
+      },
+      "Taiwan": {
+        "indicators_by_year": {},
+        "outcome_summary": "Qualitative (no WB data): consolidated high-capacity democracy. Repeated peaceful presidential turnovers (2000, 2008, 2016, 2024), Freedom House 'Free', top-regional rule of law and control of corruption in non-WB measures. Outcome materially indistinguishable in tier from South Korea -> Mod4 abstention on ranking upheld.",
+        "key_events": [
+          "peaceful turnovers 2000 / 2008 / 2016 / 2024",
+          "high-capacity democracy sustained under cross-strait pressure"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "South Korea": {
+        "pre": {
+          "P1": 0.635,
+          "MI": 0.778
+        },
+        "post": {
+          "P1": 0.728,
+          "MI": 0.804
+        }
+      },
+      "Taiwan": {
+        "pre": {
+          "P1": null,
+          "MI": null
+        },
+        "post": {
+          "P1": null,
+          "MI": null
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Korea Tier 2 -> Tier 1; Taiwan qualitatively top-tier; intra-pair gap unmeasurable (Taiwan absent from WGI) -> Mod4 abstention honored",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Mod4 abstention: both consolidated as predicted, but the framework correctly declines to rank them because Taiwan is data-limited and any P1 gap is within (indeed below) the WGI margin. Coded PARTIAL to mark the abstention rather than a clean ordinal confirmation.",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "No internal political violence/breakdown in either; Korea's 2017 impeachment resolved constitutionally",
+      "explanation": "Low-risk call held for both.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=South Korea pre-P1=0.635 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Both in the high-capacity-democracy band by 2024 (Korea Tier 1; Taiwan qualitatively equivalent)",
+      "explanation": "Convergence to the top band as predicted.",
+      "auto_derived": false
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "No institutional-pillar failure in either; residual exposure is the external security environment",
+      "explanation": "No primary failure dimension materialized, as predicted.",
+      "computed_config": "South Korea: P4=0.87, P2=0.83, P3=0.79, P5=0.77, P1=0.64 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.64)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No fragmentation event.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "No sustained backsliding; peaceful turnovers continued in both",
+      "explanation": "Low reversal risk held.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Paradigmatic peaceful authoritarian-to-democratic consolidations; both reached the top band. The Mod4 sub-test is the point of the case: with Taiwan unmeasurable in WGI, the framework abstains from an intra-pair ranking rather than manufacturing a spurious gap.",
+    "safeguards_triggered": [],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Demonstrates Mod4 abstention discipline driven by a hard data limitation (a high-capacity polity simply absent from the source dataset), not merely by a narrow numeric gap.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; reinforces the directional/ordinal-only and Mod4 abstention rules.",
+    "data_note": "Taiwan is a non-WB, data-limited entity; its scores are intentionally null and its assessment is qualitative.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

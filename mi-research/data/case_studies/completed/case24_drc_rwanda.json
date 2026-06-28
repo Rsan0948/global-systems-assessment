@@ -198,44 +198,68 @@
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "1996 gap 0.096 within margin->abstain; 2024 gap 0.327 decisive",
-      "explanation": "AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: Mod4->divergence sequence vindicated.",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.096 < margin 0.1 -> abstain (too close to call). | prior: Mod4->divergence sequence vindicated.",
       "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "DRC east still at war",
-      "explanation": ""
+      "explanation": "",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=DR Congo pre-P1=0.199 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "2024 MI gap ~0.19",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.056->0.201). | prior: AUTO: outcome DIVERGENCE (MI-range 0.053->0.220). | prior: ",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.056->0.201). | prior: AUTO: outcome DIVERGENCE (MI-range 0.056->0.201). | prior: AUTO: outcome DIVERGENCE (MI-range 0.053->0.220). | prior: ",
       "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "DRC P1 floor; Rwanda residual = voice",
-      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": " [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "DR Congo: P3=0.40, P4=0.38, P2=0.27, P5=0.20, P1=0.20 | below-median (genuine vulnerabilities): P1=0.20, P5=0.20, P2=0.27, P4=0.38, P3=0.40",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Rwanda latent reversal risk not yet realized",
-      "explanation": "Coded partial/open: prospective, not yet falsifiable."
+      "explanation": "Coded partial/open: prospective, not yet falsifiable.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "DRC east chronic turbulence",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -250,7 +274,8 @@
     "proposed_framework_modifications": [],
     "baseline_impact": "None.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

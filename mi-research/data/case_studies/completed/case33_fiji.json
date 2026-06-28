@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "case_name": "Fiji (coup-cycle, ethnic, Pacific)",
+    "case_id": "case33",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "suppressed_fragmentation",
+    "geographic_region": "Pacific / Oceania (Melanesia)",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Fiji"
+    ],
+    "key_test": "Safeguard G Tier 1 (military suppression) + Mod8 (violence-RISK vs AGENCY): does ethnic bifurcation plus low-moderate P1 predict RECURRENT COUPS rather than large-scale civil war? Whether the 2013 'ethnically blind' constitution and the 2022 peaceful turnover end the cycle is the trajectory sub-test. MODERATE data (P2 unavailable) -> DIRECTIONAL ONLY, never used for fine ordinal ranking.",
+    "round": "v2_batch3",
+    "notes": "Reference-based record. Real MI v2 re-scores (P2 unavailable -> null). 1987 / 2000 / 2006 coups -> 2022 transition; scored ~1996 vs 2024. Flagged directional-only per the framework's data-limited rule."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Between the 1987 coups and the 2000 coup; an indigenous-Fijian / Indo-Fijian ethnic cleavage politically entrenched, with the military a recurring veto actor.",
+    "entities": {
+      "Fiji": {
+        "context": {
+          "population": 775000,
+          "is_island": true,
+          "is_democratic": false,
+          "is_authoritarian": false,
+          "military_dominant": true,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "coup/military intervention",
+          "prior_porosity_period": false,
+          "is_democratic_transition": false,
+          "growth_trajectory": "stagnant",
+          "resource_rents_pct_revenue": 2.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi",
+          "P2"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. MODERATE data coverage (P2 / economic-complexity pillar unavailable). DIRECTIONAL-ONLY case: do not use for fine ordinal rankings.",
+        "country_ref": "Fiji",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Directional: instability/stagnation persists through the coup cycle; rising P1 after a credible institutional reset (2013 constitution) is required to end it",
+      "basis": "Low-moderate P1 + entrenched ethnic cleavage + military-dominant veto",
+      "falsification_condition": "Stable consolidation with no further coups absent any institutional reset"
+    },
+    "b_violence": {
+      "prediction": "Recurrent COUPS (elite/military seizures), NOT large-scale ethnic civil war",
+      "risk_level": "high (coup risk); low-moderate (mass-violence risk)",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY; the military is the proximate agent, the framework reads structural risk",
+      "falsification_condition": "Either large-scale civil war OR no further coups"
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity)",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "Failure dimension = political/institutional (P1) - contested executive legitimacy along the ethnic cleavage",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Failure driven by an economic/non-P1 dimension"
+    },
+    "e_fragment_count": {
+      "prediction": "N/A (suppression, not territorial fragmentation)",
+      "safeguard_b_applied": false,
+      "falsification_condition": ""
+    },
+    "f_reversal_risk": {
+      "prediction": "High reversal risk while the cycle persists; declining if the 2013 reset and a peaceful turnover hold",
+      "safeguard_c_severity": "high",
+      "falsification_condition": "No reversal despite no institutional reset"
+    },
+    "g_suppression_mechanism": {
+      "classification": "Military (direct coup-based suppression)",
+      "tier": 1,
+      "falsification_condition": "Suppression turns out to be purely legal/non-coercive"
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Fiji": {
+        "indicators_by_year": {},
+        "outcome_summary": "Recurrent coups as predicted, NOT civil war: 1987 (x2), 2000, 2006. The 2013 'ethnically blind' constitution reset the franchise (common roll, no ethnic seats); the 2022 election produced the first peaceful, electoral change of government in decades. MI 0.692 -> 0.629 (Tier 2 throughout in re-score), P1 0.569 -> 0.591 (modest rise). Cycle apparently broken by the reset + turnover.",
+        "key_events": [
+          "1987 Rabuka coups",
+          "2000 Speight coup",
+          "2006 Bainimarama coup",
+          "2013 ethnically blind constitution",
+          "2022 peaceful electoral turnover"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Fiji": {
+        "pre": {
+          "P1": 0.569,
+          "MI": 0.692
+        },
+        "post": {
+          "P1": 0.591,
+          "MI": 0.629
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "P1 rose modestly 0.569 -> 0.591 and the 2022 turnover held, but MI declined 0.692 -> 0.629 (directional-only case)",
+      "explanation": "Directional call broadly holds - the cycle ended only after the 2013 institutional reset, as predicted - but the modest P1 rise sits inside the data-limited margin and MI fell, so PARTIAL not clean."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Four coups (1987 x2 / 2000 / 2006), no large-scale civil war",
+      "explanation": "Ethnic cleavage + low-moderate P1 produced recurrent coups, not mass ethnic violence - exactly the Mod8 risk shape predicted.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Fiji pre-P1=0.569 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Contested executive legitimacy along the ethnic cleavage drove each coup",
+      "explanation": "Institutional/P1 failure dimension as predicted; coded PARTIAL under strict post-hoc-dimension standards.",
+      "computed_config": "Fiji: P5=0.80, P4=0.76, P3=0.65, P1=0.57 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.57)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Suppression case, no territorial fragmentation.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Repeated reversals until the 2013 reset; stabilized after the 2022 turnover",
+      "explanation": "High reversal risk realized, then declined post-reset as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Direct military coups (Tier 1) the dominant suppression mechanism",
+      "explanation": "Safeguard G Tier 1 (military) classification matches.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: coup/military intervention"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Required Pacific/Oceania case; the defining coup-cycle instance. Mod8 risk-vs-agency and Safeguard G Tier 1 both clean; trajectory PARTIAL (directional-only data, MI declined while P1 ticked up).",
+    "safeguards_triggered": [
+      "G (Tier 1, military)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Ethnic bifurcation + low-moderate P1 channels instability into recurrent elite coups rather than mass civil war, and an 'ethnically blind' constitutional reset plus one peaceful turnover can break the cycle without a large P1 jump.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; flagged DIRECTIONAL-ONLY (MODERATE data, P2 missing).",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

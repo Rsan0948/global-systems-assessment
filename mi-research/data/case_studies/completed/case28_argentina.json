@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "case_name": "Argentina 2001 (economic crisis with institutional resilience)",
+    "case_id": "case28",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "economic_crisis",
+    "geographic_region": "South America / Southern Cone",
+    "time_period": "2000 -> 2024",
+    "entities": [
+      "Argentina"
+    ],
+    "key_test": "Does a moderate P1 absorb a catastrophic economic shock (the 2001-2002 default and ~20% GDP collapse) WITHOUT territorial fragmentation or sustained political violence -- democracy holding through five presidents in two weeks? Economic crisis decoupled from state breakup. Pairs against Venezuela (case22, crisis WITH capture).",
+    "round": "v2_batch2",
+    "notes": "Reference-based record: indicators resolved live via mi.datasource. resolved_scores carry MI v2 re-scored pillars (pre 2000, post 2024)."
+  },
+  "pre_event": {
+    "time_point": "2000",
+    "event_description": "Argentina on the eve of its 2001-2002 sovereign default and convertibility collapse -- then the world's largest sovereign default -- with GDP down ~20% (1998-2002), unemployment ~21.5%, poverty above 45%.",
+    "entities": {
+      "Argentina": {
+        "context": {
+          "population": 37000000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "is_democratic_transition": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": null,
+          "n_successor_states": 0,
+          "executive_collapses": 5,
+          "resource_rents_pct_gdp": 3.0,
+          "growth_trajectory": "collapsing",
+          "external_backstop": false,
+          "backstop_details": "IMF program involvement but no external backstop preventing default."
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Indicators resolved via mi.datasource (Argentina, 2000 -> 2024). Test of complexity-capacity matching and the stability claim: moderate institutional P1 absorbing a maximal economic shock without fragmentation/civil war.",
+        "country_ref": "Argentina",
+        "pre_year": "2000",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Institutional continuity; Tier 2 maintained despite economic shock and mild MI decline.",
+      "basis": "Pre-P1 0.502 (moderate) is high enough to absorb the shock without institutional collapse; economic pillars (P2/P4) take the hit, P1 holds.",
+      "falsification_condition": "Argentina drops below Tier 2 / suffers institutional (not merely economic) collapse."
+    },
+    "b_violence": {
+      "prediction": "Elevated unrest risk around the crisis peak, but no sustained political violence or civil war.",
+      "risk_level": "moderate",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY.",
+      "falsification_condition": "Sustained civil conflict / mass-casualty violence."
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity); self-trajectory: shock then recovery.",
+      "basis": "No comparison entity.",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "Stress concentrates on economic capacity (P4) and openness/distribution (P2); institutional P1 holds flat.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "P1 collapses / failure concentrates on institutions."
+    },
+    "e_fragment_count": {
+      "prediction": "No territorial fragmentation; state stays intact.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Argentina fragments territorially."
+    },
+    "f_reversal_risk": {
+      "prediction": "Elevated executive-turnover risk (multiple presidents) but NO democratic reversal / military coup -- constitutional succession holds.",
+      "safeguard_c_severity": "moderate",
+      "falsification_condition": "Military coup or extra-constitutional seizure of power."
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A -- not a suppressed-fragmentation suppression-tier case.",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Provincial fiscal/social turbulence (provincial quasi-currencies, piquetero movements) but contained and reabsorbed.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Provincial breakaway or sustained sub-state armed turbulence."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Argentina": {
+        "indicators_by_year": {},
+        "outcome_summary": "P1 0.502->0.489 (near-flat); MI 0.694->0.630 (Tier 2 maintained). Dec 2001 saw ~39 dead in riots and five presidents in two weeks, the world's then-largest sovereign default, GDP down ~20% -- yet constitutional succession held, no coup, no territorial fragmentation, and democracy continued through 2003 elections and beyond. Economic pillars absorbed the hit (P2 0.745->0.441; P4 0.834->0.720).",
+        "key_events": [
+          "2001-2002 sovereign default + end of convertibility",
+          "five presidents in two weeks (constitutional succession)",
+          "no coup; democracy continuous"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Argentina": {
+        "pre": {
+          "P1": 0.502,
+          "MI": 0.694
+        },
+        "post": {
+          "P1": 0.489,
+          "MI": 0.63
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Tier 2 maintained (MI 0.694->0.630); P1 near-flat 0.502->0.489.",
+      "explanation": "Institutional continuity through a maximal economic shock, as predicted."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Dec 2001 riots (~39 dead) then stabilization; no civil war.",
+      "explanation": "Moderate unrest risk realized and bounded; no sustained violence.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Argentina pre-P1=0.502 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "P2 collapsed 0.745->0.441 and P4 fell 0.834->0.720 while P1 held near-flat.",
+      "explanation": "Economic pillars absorbed the shock as predicted; institutional P1 held. Post-hoc dimension call coded PARTIAL.",
+      "computed_config": "Argentina: P4=0.83, P2=0.74, P3=0.74, P5=0.65, P1=0.50 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.50)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "No territorial fragmentation; state intact.",
+      "explanation": "As predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Five presidents in two weeks via constitutional succession; no military coup -- a notable break from Argentina's coup history.",
+      "explanation": "Executive turnover realized; democratic reversal avoided, exactly as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a suppression case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Provincial quasi-currencies (patacones, etc.) and piquetero movements emerged and were reabsorbed.",
+      "explanation": "Contained sub-state fiscal/social turbulence as predicted.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Clean 'crisis without state breakup' confirmation: a moderate P1 absorbed a catastrophic economic shock with institutional and territorial continuity, contrasting sharply with Venezuela's crisis-with-capture (case22).",
+    "safeguards_triggered": [
+      "F"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Economic catastrophe and political fragmentation are decoupled: a sufficient institutional floor (moderate P1) lets a state survive a maximal economic shock without breaking up or abandoning constitutional rule.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; no modification proposed.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

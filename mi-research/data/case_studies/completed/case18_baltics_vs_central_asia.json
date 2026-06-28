@@ -261,7 +261,7 @@
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Estonia > Latvia (WGI 1.09) > Kazakhstan (-0.38) > Uzbekistan (-0.66); pair gaps far exceed WGI margin of error.",
-      "explanation": "AUTO: full ordering matches: Estonia > Latvia > Kazakhstan > Uzbekistan (by pre-P1) == outcome by post-MI; gap 0.351. | prior: AUTO: full ordering matches: Estonia > Latvia > Kazakhstan > Uzbekistan (by pre-P1) == outcome by post-MI; gap 0.351. | prior: Four-way P1 ordinal holds with wide, above-margin gaps; Mod4 does not defer (both versions).",
+      "explanation": "AUTO: full ordering matches: Estonia > Latvia > Kazakhstan > Uzbekistan (by pre-P1) == outcome by post-MI; gap 0.351. | prior: AUTO: full ordering matches: Estonia > Latvia > Kazakhstan > Uzbekistan (by pre-P1) == outcome by post-MI; gap 0.351. | prior: AUTO: full ordering matches: Estonia > Latvia > Kazakhstan > Uzbekistan (by pre-P1) == outcome by post-MI; gap 0.351. | prior: Four-way P1 ordinal holds with wide, above-margin gaps; Mod4 does not defer (both versions).",
       "auto_derived": true
     },
     "b_violence": {
@@ -274,7 +274,7 @@
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Wide divergence between Baltic and Central Asian pairs; convergence within each pair.",
-      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.221->0.245). | prior: Divergence-between / convergence-within pattern confirmed.",
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.192->0.222). | prior: AUTO: outcome DIVERGENCE (MI-range 0.221->0.245). | prior: Divergence-between / convergence-within pattern confirmed.",
       "auto_derived": true
     },
     "d_failure_dimension": {
