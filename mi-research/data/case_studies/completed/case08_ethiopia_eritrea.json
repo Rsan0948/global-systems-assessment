@@ -193,7 +193,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Both violent (1998-2000 war 70,000-100,000+ dead; Eritrea's permanent militarization; Ethiopia's later wars).",
-      "explanation": "Floor-P1 in both -> violent outcomes as predicted."
+      "explanation": "Floor-P1 in both -> violent outcomes as predicted.",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Ethiopia pre-P1=0.317 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
@@ -203,27 +205,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Ethiopia via ethnic-federal fragmentation; Eritrea via totalitarian closure.",
-      "explanation": "Failure modes matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Failure modes matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Ethiopia: P5=0.43, P1=0.32, P4=0.31, P2=0.30 | below-median (genuine vulnerabilities): P2=0.30, P4=0.31, P1=0.32, P5=0.43",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "2 fragments, both catastrophic.",
-      "explanation": "Safeguard B vindicated again."
+      "explanation": "Safeguard B vindicated again.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "The 1998-2000 Eritrean-Ethiopian War (over 500,000 troops engaged, 70,000-100,000+ killed).",
-      "explanation": "Safeguard D (mutual predatory neighbors) predicted the interstate war."
+      "explanation": "Safeguard D (mutual predatory neighbors) predicted the interstate war.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Ethiopia's fragmentation pressure realized in the Tigray War (Nov 2020-Nov 2022; Obasanjo ~600,000 deaths) followed by the Amhara/Fano insurgency (2023-).",
-      "explanation": "Continued fragmentation pressure foreshadowed by the floor-P1 ethnic-federal profile."
+      "explanation": "Continued fragmentation pressure foreshadowed by the floor-P1 ethnic-federal profile.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: secession (Eritrean independence)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No standalone substate-turbulence prediction made for this case."
+      "explanation": "No standalone substate-turbulence prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -251,7 +275,8 @@
     ],
     "baseline_impact": "Proposes a new failure-mode classifier; would require a 20-case baseline check before formalization.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

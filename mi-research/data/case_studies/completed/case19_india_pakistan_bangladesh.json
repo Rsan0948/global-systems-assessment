@@ -221,7 +221,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "India sub-state turbulent but union-stable (J&K fatalities 4,011->127); Pakistan chronically unstable; Bangladesh episodic-to-acute (2024).",
-      "explanation": "Violence-risk pattern realized across all three as predicted."
+      "explanation": "Violence-risk pattern realized across all three as predicted.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Bangladesh pre-P1=0.359 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
@@ -232,27 +234,49 @@
     "d_failure_dimension": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No single-failure-dimension prediction scored separately."
+      "explanation": "No single-failure-dimension prediction scored separately.",
+      "computed_config": "Bangladesh: P4=0.68, P5=0.53, P2=0.46, P3=0.46, P1=0.36 | below-median (genuine vulnerabilities): P1=0.36, P3=0.46, P2=0.46",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No territorial fragmentation-count prediction (Safeguard B applied for sub-ranking deferral, not a fragment count)."
+      "explanation": "No territorial fragmentation-count prediction (Safeguard B applied for sub-ranking deferral, not a fragment count).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Bangladesh August-2024 collapse (Safeguard C confirmed in Run 2, carried forward); India 2024 result consistent with the predicted electoral-turnover-over-authoritarian-reversal pathway.",
-      "explanation": "Bangladesh reversal CONFIRMED; India backsliding remains a watch flag - 2024 turnover consistent with Mod12 founding-P1 logic."
+      "explanation": "Bangladesh reversal CONFIRMED; India backsliding remains a watch flag - 2024 turnover consistent with Mod12 founding-P1 logic.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "India porosity classified Tier 3 with President's-Rule backstop; Mod9 partial re-suppression is a WATCH flag, not a trigger (2024 election produced turnover, BJP lost majority, Supreme Court struck electoral bonds).",
-      "explanation": "India porosity = Tier 3 confirmed; no full re-suppression observed."
+      "explanation": "India porosity = Tier 3 confirmed; no full re-suppression observed.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: authoritarian collapse (August 2024)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "Sub-state turbulence (Kashmir, NE India, Maoist belt, communal violence) present while the union held.",
-      "explanation": "Sub-state turbulence tolerated at union level as predicted."
+      "explanation": "Sub-state turbulence tolerated at union level as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -274,7 +298,8 @@
     "what_this_case_uniquely_reveals": "Continental-scale P1 ordinality with margin gating: the world's largest complexity-capacity experiment (India) holds at the union level while tolerating high sub-state turbulence, and the framework refuses to assert ordinals across sub-margin gaps. Mod4 is the single clearest LIVE-over-STATIC improvement in the run.",
     "proposed_framework_modifications": [],
     "baseline_impact": "None; confirms Mod4 (margin gating), Mod12 (founding-P1 conditioning), Safeguards B/C/I. India backsliding is a live watch item into Run 6.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

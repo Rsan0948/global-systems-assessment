@@ -378,7 +378,9 @@
     "b_violence": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Institutional weakness is consistent with the violence locus, but the 1996 data is post-war; cannot fully separate pre-war P1 from war damage.",
-      "explanation": "Direction correct (violence concentrated in low-P1 Bosnia/Serbia) but coded conservatively because 1996 measures are post-war."
+      "explanation": "Direction correct (violence concentrated in low-P1 Bosnia/Serbia) but coded conservatively because 1996 measures are post-war.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Bosnia-Herzegovina pre-P1=0.369 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
@@ -389,27 +391,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "CONFIRMED for Slovenia/Bosnia poles; PARTIAL for Serbia/Croatia middle.",
-      "explanation": "The P1-failure dimension holds cleanly at the poles but is mixed for the middle two."
+      "explanation": "The P1-failure dimension holds cleanly at the poles but is mixed for the middle two.",
+      "computed_config": "Bosnia-Herzegovina: P2=0.73, P5=0.53, P4=0.42, P1=0.37 | below-median (genuine vulnerabilities): P1=0.37, P4=0.42",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "Contested violent secession (7 successors).",
-      "explanation": "Engineered-fragmentation call confirmed."
+      "explanation": "Engineered-fragmentation call confirmed.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No reversal-risk (Safeguard C) prediction was made for this case."
+      "explanation": "No reversal-risk (Safeguard C) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Tier 1 military suppression: Croatia's Operation Storm, Dayton's military annexes, NATO.",
-      "explanation": "The wars were resolved by force/partition, matching the Tier 1 classification."
+      "explanation": "The wars were resolved by force/partition, matching the Tier 1 classification.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: engineered"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case."
+      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -433,7 +457,8 @@
       "Codify Safeguard A: if an OHR-type body holds binding legislative power (Bonn Powers), flag indigenous P1 as 'measured > actual.'"
     ],
     "baseline_impact": "None degrading; supports keeping Safeguard A. No 20-case baseline-breaking modification proposed.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

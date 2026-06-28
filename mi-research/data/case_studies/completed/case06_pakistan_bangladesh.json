@@ -183,7 +183,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Extreme 1971 violence (estimates 300,000-3,000,000 killed).",
-      "explanation": "Consistent with the low-P1 engineered-bifurcation profile."
+      "explanation": "Consistent with the low-P1 engineered-bifurcation profile.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Bangladesh pre-P1=0.359 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -194,27 +196,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh via garments/human capital; Pakistan via instability.",
-      "explanation": "Drivers matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Drivers matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Bangladesh: P4=0.68, P5=0.53, P2=0.46, P3=0.46, P1=0.36 | below-median (genuine vulnerabilities): P1=0.36, P3=0.46, P2=0.46",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "Fragment count was 2.",
-      "explanation": "As predicted."
+      "explanation": "As predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Bangladesh's August 2024 collapse: Hasina ousted Aug 5, 2024; UN OHCHR estimated up to 1,400 killed (1 Jul-15 Aug 2024); High Commissioner Volker Turk: 'the brutal response was a calculated and well-coordinated strategy by the former government to hold onto power.'",
-      "explanation": "Confirmed strongly - exactly the 'growth without institutional delivery -> reversal' pathway. P4 growth is not a substitute for P1."
+      "explanation": "Confirmed strongly - exactly the 'growth without institutional delivery -> reversal' pathway. P4 growth is not a substitute for P1.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No suppression-mechanism prediction made for this case."
+      "explanation": "No suppression-mechanism prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: successor state of 1971 secession"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No substate-turbulence prediction made for this case."
+      "explanation": "No substate-turbulence prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -240,7 +264,8 @@
     ],
     "baseline_impact": "Restates the P1 ordinal claim (gap must exceed WGI margin of error) - a refinement candidate to check against the 20-case baseline before adoption.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

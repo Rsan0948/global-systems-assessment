@@ -322,7 +322,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Libya civil war/collapse > Egypt coup + Rabaa massacre (~900-1,000 killed in a single day, Human Rights Watch) > Tunisia largely non-violent breakdown.",
-      "explanation": "Violence ordering matched the inverse P1 ordering."
+      "explanation": "Violence ordering matched the inverse P1 ordering.",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Libya pre-P1=0.303 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -332,27 +334,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Safeguard E textbook case -- rents masked an institutional vacuum; Libya GDP/cap fell to ~65% of its 2010 pre-war level by 2024.",
-      "explanation": "Each country's failure ran along its predicted dimension (Libya rentier collapse; Egypt P1 + military; Tunisia weak P4 delivery). [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Each country's failure ran along its predicted dimension (Libya rentier collapse; Egypt P1 + military; Tunisia weak P4 delivery). [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Libya: P3=0.72, P5=0.58, P4=0.57, P2=0.49, P1=0.30 | below-median (genuine vulnerabilities): P1=0.30, P2=0.49",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No fragment-count (Safeguard B) prediction was made for this case."
+      "explanation": "No fragment-count (Safeguard B) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Tunisia reversal via the July 2021 Saied self-coup; Egypt reversal via the 2013 military coup.",
-      "explanation": "Both HIGH reversal-risk calls (Safeguard C) were borne out."
+      "explanation": "Both HIGH reversal-risk calls (Safeguard C) were borne out.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Egypt = Tier 1 (military suppression, 2013 coup + Rabaa massacre); Tunisia = Tier 2 (institutional/legal suppression under Saied, 2021-).",
-      "explanation": "Suppression mechanisms matched the predicted tiers (Egypt military Tier 1; Tunisia legal/institutional Tier 2)."
+      "explanation": "Suppression mechanisms matched the predicted tiers (Egypt military Tier 1; Tunisia legal/institutional Tier 2).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case."
+      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -378,7 +402,8 @@
     ],
     "baseline_impact": "None degrading; reinforces Safeguard E. No baseline-breaking modification proposed.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

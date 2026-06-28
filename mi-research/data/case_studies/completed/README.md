@@ -72,6 +72,25 @@ Aggregate after the rebuild: **109C / 38P / 0F ≈ 74% clean, 100% directional**
 honest 62–85% band; the drop from ~78% is the cost of honest real-data re-scoring (mostly the
 framework correctly abstaining on Mod4 near-ties).
 
+## Judgment-verdict refresh (2026-06-28)
+After the Phase-3 mechanical auto-derivation, the **judgment verdicts (b/d/e/f/g/h)** of the 20
+baseline cases were individually re-examined against the MI v1 real-data scores:
+- **No verdict flips** — the directional/qualitative readings are robust to the legacy→anchored
+  vintage change (low-P1 cases still show institutional vulnerability + realized violence;
+  high-P1 cases still show management-load, not collapse).
+- **`b_violence` risk-levels refreshed** from real pre-P1 (`data_refreshed` field).
+- **`d_failure_dimension` augmented** with the real pillar config (`computed_config`): it lists
+  the *below-median* pillars as genuine vulnerabilities (e.g. Russia P1+P5 behind high P2/P3/P4;
+  Sudan P2/P5/P1/P3) and explicitly says "no binding vulnerability" for high-capacity cases
+  (NI/Germany/Belgium) rather than mislabelling a relatively-lowest-but-high pillar.
+- **Safeguards re-evaluated** on the real data and attached (`safeguard_state_now`).
+- Stale legacy-vintage numbers in evidence superseded by the refreshed values; the substantive
+  outcome judgments (real-world events) are preserved.
+
+Caveat: `d_failure_dimension` is **not** purely mechanical — the numeric-lowest pillar is only a
+*vulnerability* when actually low; interpreting "primary failure dimension" needs judgment, which
+is why d is augmented (not overwritten) and kept PARTIAL under the run6 strict-coding.
+
 ## Batch 1 (cases 21–25)
 Inputs sourced from the committed `mi_pipeline/` panel (commit 9487dd0) for cross-project
 consistency; panel grid to 2024. The batch writeup reports **~75% clean** (in-range) with

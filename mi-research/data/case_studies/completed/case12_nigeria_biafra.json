@@ -139,7 +139,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "HIGH, chronic, regionally distributed violence (Boko Haram, banditry, separatist agitation).",
-      "explanation": "Violence profile matched the prediction (both versions)."
+      "explanation": "Violence profile matched the prediction (both versions).",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Nigeria pre-P1=0.325 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
@@ -149,27 +151,49 @@
     "d_failure_dimension": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Primary-vulnerability prediction (P5 + P1) made but not separately scored in the run's scorecard."
+      "explanation": "Primary-vulnerability prediction (P5 + P1) made but not separately scored in the run's scorecard.",
+      "computed_config": "Nigeria: P4=0.44, P5=0.43, P3=0.36, P2=0.34, P1=0.33 | below-median (genuine vulnerabilities): P1=0.33, P2=0.34, P3=0.36, P5=0.43, P4=0.44",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "Biafra = Tier 1; federalism = Tier 3 porosity + Tier 1 backstop.",
-      "explanation": "Suppression classification confirmed; porosity with a suppression backstop channels centrifugal pressure short of breakup."
+      "explanation": "Suppression classification confirmed; porosity with a suppression backstop channels centrifugal pressure short of breakup.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Oil rents = 8.8% of GDP (2018) and total resource rents ~11-22% across the period - below the 30% inversion threshold throughout.",
-      "explanation": "Corrects the prior assumption: Safeguard E does NOT apply. Nigeria's unity is a porosity-plus-capacity-gate phenomenon, not rentier stabilization. Mod 2's non-triggering validates the 30% rule's discriminating power."
+      "explanation": "Corrects the prior assumption: Safeguard E does NOT apply. Nigeria's unity is a porosity-plus-capacity-gate phenomenon, not rentier stabilization. Mod 2's non-triggering validates the 30% rule's discriminating power.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Suppression classification was scored under prediction e for this case."
+      "explanation": "Suppression classification was scored under prediction e for this case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: suppressed secession (Biafra) channeled by federal porosity"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Centrifugal-containment described under Safeguard H/I but not separately scored in the run's scorecard."
+      "explanation": "Centrifugal-containment described under Safeguard H/I but not separately scored in the run's scorecard.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -196,7 +220,8 @@
       "Add a candidate Safeguard I - 'Porosity-with-backstop' - to formalize the Nigeria pattern (Tier 3 federal accommodation + Tier 1 suppression backstop = containment of centrifugal pressure short of breakup); demote Mod 7 to provisional until a genuine high-growth + floor-P1 case appears."
     ],
     "baseline_impact": "Corrects a prior 'oil buys stability' assumption; re-audit any prior case that assumed rentier stabilization without checking the rents-to-GDP ratio.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

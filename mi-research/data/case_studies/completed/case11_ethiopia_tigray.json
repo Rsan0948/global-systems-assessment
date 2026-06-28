@@ -140,7 +140,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Tigray War ~300,000-600,000 deaths; 'one of the world's bloodiest contemporary conflicts.'",
-      "explanation": "Confirmed directionally (both); LIVE's up-front catastrophic call (Mod 5) is more decision-useful. Framework disclaims timing/trigger."
+      "explanation": "Confirmed directionally (both); LIVE's up-front catastrophic call (Mod 5) is more decision-useful. Framework disclaims timing/trigger.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Ethiopia pre-P1=0.399 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -150,27 +152,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "P1 + P5 (stability) failure; centrifugal form (sequential regional fronts).",
-      "explanation": "Confirmed; Mod 6's centrifugal classification adds value. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Confirmed; Mod 6's centrifugal classification adds value. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Ethiopia: P4=0.61, P3=0.51, P2=0.45, P1=0.40, P5=0.31 | below-median (genuine vulnerabilities): P5=0.31, P1=0.40, P2=0.45",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Single-entity internal case; no fragment-count prediction scored."
+      "explanation": "Single-entity internal case; no fragment-count prediction scored.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No standalone reversal-risk prediction scored for this case."
+      "explanation": "No standalone reversal-risk prediction scored for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Tier 1 military suppression (Tigray War). CRITICAL re-suppression-after-porosity prediction CONFIRMED: dismantling the 23-year ethnic-federal porosity system preceded a war killing ~half a million and a second insurgency.",
-      "explanation": "Strongest confirmation in the run; only LIVE names the mechanism explicitly. Re-suppression after porosity yielded worse outcomes than continuous suppression."
+      "explanation": "Strongest confirmation in the run; only LIVE names the mechanism explicitly. Re-suppression after porosity yielded worse outcomes than continuous suppression.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: re-suppression after porosity (dismantling 23-year ethnic federalism)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "Sequential Tigray -> Amhara -> Oromia fronts; Fano claims control of >80% of the Amhara region.",
-      "explanation": "Mod 6's centrifugal classifier correctly captured the form of failure (sequential regional fronts)."
+      "explanation": "Mod 6's centrifugal classifier correctly captured the form of failure (sequential regional fronts).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -196,7 +220,8 @@
     ],
     "baseline_impact": "Confirms Mods 5 and 6; promotes a heuristic to a tested core prediction - a refinement, not a degradation of the baseline.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

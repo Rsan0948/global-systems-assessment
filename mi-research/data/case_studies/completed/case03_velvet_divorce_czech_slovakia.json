@@ -236,7 +236,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "'Czechoslovakia is the only former Eastern Bloc state that had an entirely peaceful breakup' vs Yugoslavia's 130,000-140,000 war dead.",
-      "explanation": "The framework's single cleanest validation of 'P1 predicts violence vs peace' -- high P1 produced a bloodless divorce."
+      "explanation": "The framework's single cleanest validation of 'P1 predicts violence vs peace' -- high P1 produced a bloodless divorce.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Slovakia pre-P1=0.584 -> LOW risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -246,27 +248,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Both succeeded on the P1/institutions dimension.",
-      "explanation": "Success driven by the predicted institutional pillar. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Success driven by the predicted institutional pillar. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Slovakia: P5=0.84, P2=0.83, P4=0.75, P3=0.72, P1=0.58 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.58)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "2 = natural/manageable range, both above the bottom-third Rule-of-Law gate.",
-      "explanation": "Low fragment count gated by high P1 yielded a manageable peaceful fragmentation."
+      "explanation": "Low fragment count gated by high P1 yielded a manageable peaceful fragmentation.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No reversal-risk (Safeguard C) prediction was made for this case."
+      "explanation": "No reversal-risk (Safeguard C) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No suppression-mechanism prediction was made (the breakup was negotiated, not suppressed)."
+      "explanation": "No suppression-mechanism prediction was made (the breakup was negotiated, not suppressed).",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: negotiated"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "Slovakia's Mecir-era illiberalism was 'later corrected before 2004 EU accession.'",
-      "explanation": "Safeguard F triggered: a high-P1 state absorbed/corrected sub-state political turbulence rather than collapsing, as predicted."
+      "explanation": "Safeguard F triggered: a high-P1 state absorbed/corrected sub-state political turbulence rather than collapsing, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -288,7 +312,8 @@
     "proposed_framework_modifications": [],
     "baseline_impact": "None; strengthens the P1-predicts-violence-vs-peace claim. No baseline-breaking modification proposed.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

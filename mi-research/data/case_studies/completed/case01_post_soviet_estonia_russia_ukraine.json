@@ -364,7 +364,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Estonia peaceful; Ukraine subjected to invasion.",
-      "explanation": "Violence concentrated in the low-P1 case (Ukraine), not in high-P1 Estonia."
+      "explanation": "Violence concentrated in the low-P1 case (Ukraine), not in high-P1 Estonia.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Russia pre-P1=0.380 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -375,27 +377,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Estonia's P1 2024=0.865 vs Russia 0.278, Ukraine 0.387.",
-      "explanation": "Estonia succeeded on the institutional pillar; Russia/Ukraine failed on P1 as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Estonia succeeded on the institutional pillar; Russia/Ukraine failed on P1 as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Russia: P2=0.83, P3=0.69, P4=0.61, P5=0.42, P1=0.38 | below-median (genuine vulnerabilities): P1=0.38, P5=0.42",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Engineered count 'defensible but the framework is directional, not a fragment-count oracle; coded conservatively.'",
-      "explanation": "The engineered-dissolution call is supported in aggregate (only the Baltics thrived) but the framework is directional, not a fragment-count oracle."
+      "explanation": "The engineered-dissolution call is supported in aggregate (only the Baltics thrived) but the framework is directional, not a fragment-count oracle.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "2024 M below 1996-trajectory expectation; absolute decline post-2012.",
-      "explanation": "Ukraine's high reversal risk (Safeguard C) was borne out (Orange Revolution reversal, 2014, war)."
+      "explanation": "Ukraine's high reversal risk (Safeguard C) was borne out (Orange Revolution reversal, 2014, war).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No suppression-mechanism prediction was made for this case."
+      "explanation": "No suppression-mechanism prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: engineered"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case."
+      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -421,7 +445,8 @@
     "proposed_framework_modifications": [],
     "baseline_impact": "None; no modification proposed. Reinforces P1-ordinal as the validated core.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

@@ -191,7 +191,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Both states experienced mass-casualty war (Sudan 2023-; South Sudan 2013-2018).",
-      "explanation": "Low-floor P1 in both successors -> violent breakdown as predicted."
+      "explanation": "Low-floor P1 in both successors -> violent breakdown as predicted.",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Sudan pre-P1=0.277 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -202,27 +204,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "World Bank: oil 'contributes 60 percent of GDP, 99 percent of exports and 85 percent of government revenues' yet 'Nine out of ten people live below the poverty line'; per capita GDP fell 76%.",
-      "explanation": "Failure dimensions matched: South Sudan institutional vacuum + rentier distortion; Sudan P1+P5. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Failure dimensions matched: South Sudan institutional vacuum + rentier distortion; Sudan P1+P5. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Sudan: P4=0.64, P3=0.42, P1=0.28, P5=0.24, P2=0.16 | below-median (genuine vulnerabilities): P2=0.16, P5=0.24, P1=0.28, P3=0.42",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "2 fragments, both catastrophic.",
-      "explanation": "Safeguard B vindicated: fragment count is meaningless below the capacity gate."
+      "explanation": "Safeguard B vindicated: fragment count is meaningless below the capacity gate.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Reversal/non-delivery total.",
-      "explanation": "South Sudan never delivered governance; reversal as predicted."
+      "explanation": "South Sudan never delivered governance; reversal as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Secondary fragmentation (2013 civil war) predicted by the 2010 floor-P1 profile.",
-      "explanation": "Floor-P1 profile anticipated South Sudan's secondary fragmentation within 29 months of independence."
+      "explanation": "Floor-P1 profile anticipated South Sudan's secondary fragmentation within 29 months of independence.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: secession / independence referendum"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No high-P1 survivor; substate-turbulence prediction not made for this case."
+      "explanation": "No high-P1 survivor; substate-turbulence prediction not made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -250,7 +274,8 @@
     ],
     "baseline_impact": "Reinforces existing safeguards; Safeguard B promotion is a candidate refinement, not a degradation of the 20-case baseline.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

@@ -137,7 +137,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Violence de-escalated dramatically; prevention worked.",
-      "explanation": "Prior-violence legacy de-escalated without recurrence, as predicted."
+      "explanation": "Prior-violence legacy de-escalated without recurrence, as predicted.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Northern Ireland (UK) pre-P1=0.862 -> LOW risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -147,27 +149,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Lowest productivity + highest economic inactivity + subvention dependence -- the strain is economic, not institutional collapse.",
-      "explanation": "P4 under-delivery is the binding dimension, as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "P4 under-delivery is the binding dimension, as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Northern Ireland (UK): P1=0.86, P2=0.86, P5=0.84, P4=0.84, P3=0.82 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P3=0.82)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "No territorial loss; UK never withdrew devolution permanently.",
-      "explanation": "Mod9 correctly not applicable; no fragmentation."
+      "explanation": "Mod9 correctly not applicable; no fragmentation.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Not a democratic-transition reversal case."
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "GFA consociational power-sharing, cross-border bodies, three-strand architecture = textbook Tier 3 porosity.",
-      "explanation": "Mechanism classified as Tier 3, as predicted."
+      "explanation": "Mechanism classified as Tier 3, as predicted.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: consociational_power_sharing"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "The repeated executive collapses were caught every time by the UK's Direct Rule backstop.",
-      "explanation": "Clearest single illustration of Mod10/Safeguard I (porosity-with-backstop); Safeguard F divergence held safely because the backstop caught each failure."
+      "explanation": "Clearest single illustration of Mod10/Safeguard I (porosity-with-backstop); Safeguard F divergence held safely because the backstop caught each failure.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -185,7 +209,8 @@
     ],
     "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

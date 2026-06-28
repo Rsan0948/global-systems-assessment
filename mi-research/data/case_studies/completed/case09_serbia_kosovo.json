@@ -192,7 +192,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "No return to war; only low-intensity episodes (e.g. Banjska 2023).",
-      "explanation": "Low-intensity, episodic outcome as predicted."
+      "explanation": "Low-intensity, episodic outcome as predicted.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Serbia pre-P1=0.467 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -203,27 +205,49 @@
     "d_failure_dimension": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Predicted (Kosovo P4+P1; Serbia P1/P5) but not separately scored in the run's scorecard."
+      "explanation": "Predicted (Kosovo P4+P1; Serbia P1/P5) but not separately scored in the run's scorecard.",
+      "computed_config": "Serbia: P4=0.81, P2=0.74, P3=0.73, P5=0.59, P1=0.47 | below-median (genuine vulnerabilities): P1=0.47",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Predicted (no further fragmentation) but not separately scored in the run's scorecard."
+      "explanation": "Predicted (no further fragmentation) but not separately scored in the run's scorecard.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Serbia democratic backsliding (Freedom House 'Partly Free'; V-Dem 'electoral autocracy' since 2014).",
-      "explanation": "Confirmed, LIVE flagged more strongly than STATIC."
+      "explanation": "Confirmed, LIVE flagged more strongly than STATIC.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Kosovo's UDI; ICJ 22 July 2010 advisory opinion (10-4) that the declaration did not violate international law.",
-      "explanation": "STATIC ambiguous; LIVE CONFIRMED - best classified as an exit from suppression toward recognized (if partial) statehood."
+      "explanation": "STATIC ambiguous; LIVE CONFIRMED - best classified as an exit from suppression toward recognized (if partial) statehood.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: loss of breakaway province (Kosovo)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No substate-turbulence prediction made for this case."
+      "explanation": "No substate-turbulence prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -246,7 +270,8 @@
       "Retain Mod 1 (Safeguard A discount) and Mod 4 (margin-of-error gate); their interaction earned its keep here."
     ],
     "baseline_impact": "No degradation; LIVE improved defensibility without changing the ordinal outcome.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

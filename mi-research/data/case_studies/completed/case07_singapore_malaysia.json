@@ -186,7 +186,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "The 1965 separation was peaceful.",
-      "explanation": "High P1 consistent with a negotiated, non-violent outcome."
+      "explanation": "High P1 consistent with a negotiated, non-violent outcome.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Malaysia pre-P1=0.623 -> LOW risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -197,27 +199,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Singapore via institutions; Malaysia plateaued in Tier 3.",
-      "explanation": "Drivers matched: institutional quality, not endowment, drove the trajectory. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Drivers matched: institutional quality, not endowment, drove the trajectory. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Malaysia: P4=0.77, P2=0.75, P5=0.72, P3=0.68, P1=0.62 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.62)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "2 fragments, both above the capacity gate.",
-      "explanation": "As predicted; neither fell below the gate."
+      "explanation": "As predicted; neither fell below the gate.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No reversal-risk prediction made for this case."
+      "explanation": "No reversal-risk prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No suppression-mechanism prediction made for this case."
+      "explanation": "No suppression-mechanism prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: parent state of 1965 separation"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No substate-turbulence prediction made for this case."
+      "explanation": "No substate-turbulence prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -235,7 +259,8 @@
     "proposed_framework_modifications": [],
     "baseline_impact": "None; confirms the existing weighting without proposing a modification.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

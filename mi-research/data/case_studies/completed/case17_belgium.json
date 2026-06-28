@@ -140,7 +140,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Zero political violence throughout.",
-      "explanation": "No-violence prediction realized."
+      "explanation": "No-violence prediction realized.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Belgium pre-P1=0.781 -> LOW risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -150,27 +152,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Linguistic/regional fragmentation pressure managed by the six-government federal architecture.",
-      "explanation": "Fragmentation-pressure dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Fragmentation-pressure dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Belgium: P3=0.89, P4=0.88, P2=0.84, P5=0.82, P1=0.78 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.78)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "Zero secession.",
-      "explanation": "State intact, as predicted."
+      "explanation": "State intact, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Not a democratic-transition reversal case."
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Extreme Tier 3 architecture (six governments, linguistic parity, alarm-bell procedure, concurrent majorities); no suppression deployed.",
-      "explanation": "Mechanism classified as extreme Tier 3 porosity, as predicted."
+      "explanation": "Mechanism classified as extreme Tier 3 porosity, as predicted.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: extreme_porosity"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "All three Safeguard F triggers met (vote ~47%, record-length formations, divergence >40%), yet zero secession/violence; Mod10 backstops = monarchy, caretaker convention, EU, Brussels.",
-      "explanation": "Maximum Safeguard F absorbed by porosity-with-backstop -- confirms Mod10/Safeguard I; porosity has no hard ceiling under high P1."
+      "explanation": "Maximum Safeguard F absorbed by porosity-with-backstop -- confirms Mod10/Safeguard I; porosity has no hard ceiling under high P1.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -188,7 +212,8 @@
     ],
     "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. "
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }

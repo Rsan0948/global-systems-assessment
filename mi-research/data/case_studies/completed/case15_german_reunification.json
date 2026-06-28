@@ -135,7 +135,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "No political violence; no government collapse, no secession.",
-      "explanation": "Strain expressed through democratic politics, as predicted."
+      "explanation": "Strain expressed through democratic politics, as predicted.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Germany pre-P1=0.836 -> LOW risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -145,27 +147,49 @@
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Strain surfaced as the AfD's rise (regional/economic mismatch), not as institutional collapse.",
-      "explanation": "Configuration-mismatch dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]"
+      "explanation": "Configuration-mismatch dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Germany: P2=0.91, P5=0.88, P3=0.85, P4=0.84, P1=0.84 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.84)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "No secession.",
-      "explanation": "State intact, as predicted."
+      "explanation": "State intact, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Not a democratic-transition reversal case."
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Fusion / complexity expansion, not a suppression case."
+      "explanation": "Fusion / complexity expansion, not a suppression case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: fusion"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "AfD >25% (Thuringia 32.8%) + regional divergence ~30% -- Safeguard F triggered -- yet no collapse/secession/violence; Mod10 backstop = federalism + Basic Law eternity clause (Art. 79(3)).",
-      "explanation": "Safeguard F triggers were absorbed by the porosity-with-backstop architecture, confirming Mod10/Safeguard I."
+      "explanation": "Safeguard F triggers were absorbed by the porosity-with-backstop architecture, confirming Mod10/Safeguard I.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -183,7 +207,8 @@
     ],
     "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
     "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
-    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. pre-WGI: WGI series starts 1996; 1990 unavailable -> 1996 proxy (flagged)"
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. pre-WGI: WGI series starts 1996; 1990 unavailable -> 1996 proxy (flagged)",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
   },
   "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
 }
