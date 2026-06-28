@@ -78,6 +78,9 @@ Ordered by severity. Items 1–3 can silently produce a result-shaped non-result
 ## Conventions
 
 - Python 3.11; deps pinned in `requirements.txt`.
-- `./data/` (inputs) and `./output/` (artifacts) are git-kept but their contents
-  are not committed — raw downloads and generated files stay local.
+- `./data/` (inputs) and `./output/` (artifacts) **are committed** to the repo as of
+  2026-06-28. The real acquired panel and generated outputs live in version control;
+  see `DATA_PROVENANCE.md` for exactly how each input was sourced. (This reverses the
+  earlier "stay local" convention — the parent fragmentation study still keeps its raw
+  data out of git, but `mi_pipeline/` does not.)
 - Don't wire MI data into the parent fragmentation study; they are unrelated.

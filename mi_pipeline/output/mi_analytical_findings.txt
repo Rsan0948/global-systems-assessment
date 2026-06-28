@@ -1,0 +1,41 @@
+
+======================================================================
+  MODERNIZATION INDEX — ANALYTICAL FINDINGS
+======================================================================
+
+── THESIS 1: Institutional Centrality ──
+  Average |r| with other pillars (2024, n=143):
+    P3: 0.798 ◄ HIGHEST
+    P5: 0.772
+    P1: 0.766
+    P2: 0.727
+    P4: 0.705
+  → NOTE: P3 is most central, not P1
+
+── THESIS 2: Resource Penalty ──
+
+── THESIS 3: Configuration (Spread vs. Trajectory Stability) ──
+  Pearson r(avg_pillar_spread, trajectory_volatility): 0.240  (p=0.0032, n=149)
+  → SUPPORTED: Higher spread associates with less stable trajectories
+
+── SURPRISING PROFILES (2024) ──
+
+── TIER DISTRIBUTION (2024) ──
+  Tier 1 (≥0.80): 16 countries
+    Australia, Austria, Canada, Denmark, Finland, Germany, Ireland, Japan, Korea, Rep., Netherlands, New Zealand, Norway, Singapore, Sweden, Switzerland
+    ... and 1 more
+  Tier 2 (0.60-0.79): 16 countries
+    Belgium, Cyprus, Czechia, Estonia, France, Israel, Italy, Latvia, Lithuania, Poland, Portugal, Qatar, Slovenia, Spain, United Arab Emirates
+    ... and 1 more
+  Tier 3 (0.40-0.59): 18 countries
+    Bahrain, Bulgaria, Chile, China, Costa Rica, Croatia, Georgia, Greece, Hungary, Kuwait, Malaysia, Mauritius, Oman, Romania, Saudi Arabia
+    ... and 3 more
+  Tier 4 (0.20-0.39): 34 countries
+    Albania, Argentina, Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Botswana, Brazil, Colombia, Dominican Republic, Eswatini, India, Indonesia, Jamaica, Jordan
+    ... and 19 more
+  Tier 5 (0.00-0.19): 21 countries
+    Algeria, Bangladesh, Bolivia, Cabo Verde, Cambodia, Ecuador, Egypt, Arab Rep., El Salvador, Gabon, Ghana, Guatemala, Honduras, Iran, Islamic Rep., Kenya, Kyrgyz Republic
+    ... and 6 more
+  Below Floor (<0.00): 38 countries
+    Afghanistan, Angola, Benin, Burkina Faso, Burundi, Cameroon, Chad, Congo, Dem. Rep., Congo, Rep., Cote d'Ivoire, Equatorial Guinea, Ethiopia, Guinea, Haiti, Iraq
+    ... and 23 more

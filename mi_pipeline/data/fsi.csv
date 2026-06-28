@@ -1,0 +1,536 @@
+iso3,country,year,FSI
+SOM,Somalia,2012,114.9
+COD,Congo Democratic Republic,2012,111.2
+SDN,Sudan,2012,109.4
+SSD,South Sudan,2012,108.4
+TCD,Chad,2012,107.6
+ZWE,Zimbabwe,2012,106.3
+AFG,Afghanistan,2012,106.0
+HTI,Haiti,2012,104.9
+YEM,Yemen,2012,104.8
+IRQ,Iraq,2012,104.3
+CAF,Central African Republic,2012,103.8
+CIV,Cote d'Ivoire,2012,103.6
+GIN,Guinea,2012,101.9
+PAK,Pakistan,2012,101.6
+NGA,Nigeria,2012,101.1
+GNB,Guinea Bissau,2012,99.2
+KEN,Kenya,2012,98.4
+ETH,Ethiopia,2012,97.9
+BDI,Burundi,2012,97.5
+NER,Niger,2012,96.9
+UGA,Uganda,2012,96.5
+MMR,Myanmar,2012,96.2
+PRK,North Korea,2012,95.5
+ERI,Eritrea,2012,94.5
+SYR,Syria,2012,94.5
+LBR,Liberia,2012,93.3
+CMR,Cameroon,2012,93.1
+NPL,Nepal,2012,93.0
+TLS,Timor-Leste,2012,92.7
+BGD,Bangladesh,2012,92.2
+LKA,Sri Lanka,2012,92.2
+EGY,Egypt,2012,90.4
+SLE,Sierra Leone,2012,90.4
+COG,Congo Republic,2012,90.1
+IRN,Iran,2012,89.6
+RWA,Rwanda,2012,89.3
+MWI,Malawi,2012,88.8
+KHM,Cambodia,2012,88.7
+MRT,Mauritania,2012,87.6
+TGO,Togo,2012,87.5
+UZB,Uzbekistan,2012,87.5
+BFA,Burkina Faso,2012,87.4
+KGZ,Kyrgyz Republic,2012,87.4
+GNQ,Equatorial Guinea,2012,86.3
+ZMB,Zambia,2012,85.9
+LBN,Lebanon,2012,85.8
+TJK,Tajikistan,2012,85.7
+SLB,Solomon Islands,2012,85.6
+LAO,Laos,2012,85.5
+AGO,Angola,2012,85.1
+LBY,Libya,2012,84.9
+GEO,Georgia,2012,84.8
+COL,Colombia,2012,84.4
+DJI,Djibouti,2012,83.8
+PNG,Papua New Guinea,2012,83.7
+SWZ,Swaziland,2012,83.5
+PHL,Philippines,2012,83.2
+COM,Comoros,2012,83.0
+MDG,Madagascar,2012,82.5
+BTN,Bhutan,2012,82.4
+MOZ,Mozambique,2012,82.4
+ISR,Israel and West Bank,2012,82.2
+BOL,Bolivia,2012,82.1
+GMB,Gambia,2012,80.6
+IDN,Indonesia,2012,80.6
+FJI,Fiji,2012,80.5
+TZA,Tanzania,2012,80.4
+ECU,Ecuador,2012,80.1
+AZE,Azerbaijan,2012,79.8
+NIC,Nicaragua,2012,79.6
+GTM,Guatemala,2012,79.4
+SEN,Senegal,2012,79.3
+LSO,Lesotho,2012,79.0
+MDA,Moldova,2012,78.7
+BEN,Benin,2012,78.6
+HND,Honduras,2012,78.5
+CHN,China,2012,78.3
+DZA,Algeria,2012,78.1
+IND,India,2012,78.0
+BIH,Bosnia and Herzegovina,2012,77.9
+MLI,Mali,2012,77.9
+TKM,Turkmenistan,2012,77.4
+VEN,Venezuela,2012,77.3
+RUS,Russia,2012,77.1
+THA,Thailand,2012,77.0
+BLR,Belarus,2012,76.6
+TUR,Turkey,2012,76.6
+MAR,Morocco,2012,76.1
+MDV,Maldives,2012,75.1
+SRB,Serbia,2012,75.0
+JOR,Jordan,2012,74.8
+CPV,Cape Verde,2012,74.7
+GAB,Gabon,2012,74.6
+SLV,El Salvador,2012,74.4
+TUN,Tunisia,2012,74.2
+DOM,Dominican Republic,2012,74.1
+VNM,Vietnam,2012,74.0
+STP,Sao Tome and Principe,2012,73.9
+MEX,Mexico,2012,73.6
+PER,Peru,2012,73.5
+SAU,Saudi Arabia,2012,73.4
+CUB,Cuba,2012,73.1
+ARM,Armenia,2012,72.2
+FSM,Micronesia,2012,71.9
+GUY,Guyana,2012,71.4
+SUR,Suriname,2012,71.2
+NAM,Namibia,2012,71.0
+KAZ,Kazakhstan,2012,70.9
+PRY,Paraguay,2012,70.9
+MKD,Macedonia,2012,69.1
+MYS,Malaysia,2012,68.5
+WSM,Samoa,2012,68.5
+GHA,Ghana,2012,67.5
+BLZ,Belize,2012,67.2
+UKR,Ukraine,2012,67.2
+CYP,Cyprus,2012,66.8
+ZAF,South Africa,2012,66.8
+BWA,Botswana,2012,66.5
+ALB,Albania,2012,66.1
+JAM,Jamaica,2012,65.8
+SYC,Seychelles,2012,65.1
+GRD,Grenada,2012,65.0
+TTO,Trinidad and Tobago,2012,64.4
+BRA,Brazil,2012,64.1
+BRN,Brunei Darussalam,2012,64.1
+BHR,Bahrain,2012,62.2
+ROU,Romania,2012,59.5
+ATG,Antigua and Barbuda,2012,58.9
+KWT,Kuwait,2012,58.8
+MNG,Mongolia,2012,58.7
+BGR,Bulgaria,2012,56.3
+HRV,Croatia,2012,56.3
+PAN,Panama,2012,56.1
+MNE,Montenegro,2012,55.5
+BHS,Bahamas,2012,55.1
+BRB,Barbados,2012,52.0
+LVA,Latvia,2012,51.9
+OMN,Oman,2012,51.7
+GRC,Greece,2012,50.4
+CRI,Costa Rica,2012,49.7
+ARE,United Arab Emirates,2012,48.9
+HUN,Hungary,2012,48.3
+QAT,Qatar,2012,48.0
+EST,Estonia,2012,47.5
+SVK,Slovak Republic,2012,47.4
+ARG,Argentina,2012,46.5
+ITA,Italy,2012,45.8
+MUS,Mauritius,2012,44.7
+POL,Poland,2012,44.3
+LTU,Lithuania,2012,44.2
+MLT,Malta,2012,43.8
+CHL,Chile,2012,43.5
+JPN,Japan,2012,43.5
+ESP,Spain,2012,42.8
+URY,Uruguay,2012,40.5
+CZE,Czech Republic,2012,39.5
+KOR,South Korea,2012,37.6
+SGP,Singapore,2012,35.6
+GBR,United Kingdom,2012,35.3
+USA,United States,2012,34.8
+PRT,Portugal,2012,34.2
+SVN,Slovenia,2012,34.0
+FRA,France,2012,33.6
+BEL,Belgium,2012,33.5
+DEU,Germany,2012,31.7
+AUS,Australia,2012,29.2
+ISL,Iceland,2012,29.1
+NLD,Netherlands,2012,28.1
+AUT,Austria,2012,27.5
+CAN,Canada,2012,26.8
+IRL,Ireland,2012,26.5
+NZL,New Zealand,2012,25.6
+LUX,Luxembourg,2012,25.5
+NOR,Norway,2012,23.9
+CHE,Switzerland,2012,23.3
+DNK,Denmark,2012,23.0
+SWE,Sweden,2012,21.3
+FIN,Finland,2012,20.0
+SSD,South Sudan,2018,113.4
+SOM,Somalia,2018,113.2
+YEM,Yemen,2018,112.7
+SYR,Syria,2018,111.4
+CAF,Central African Republic,2018,111.1
+COD,Congo Democratic Republic,2018,110.7
+SDN,Sudan,2018,108.7
+TCD,Chad,2018,108.3
+AFG,Afghanistan,2018,106.6
+ZWE,Zimbabwe,2018,102.3
+IRQ,Iraq,2018,102.2
+HTI,Haiti,2018,102.0
+GIN,Guinea,2018,101.6
+NGA,Nigeria,2018,99.9
+ETH,Ethiopia,2018,99.6
+GNB,Guinea Bissau,2018,98.1
+KEN,Kenya,2018,97.4
+BDI,Burundi,2018,97.4
+ERI,Eritrea,2018,97.2
+PAK,Pakistan,2018,96.3
+NER,Niger,2018,96.2
+MMR,Myanmar,2018,96.1
+CMR,Cameroon,2018,95.3
+UGA,Uganda,2018,95.1
+LBY,Libya,2018,94.6
+CIV,Cote d'Ivoire,2018,94.6
+MLI,Mali,2018,93.6
+PRK,North Korea,2018,93.2
+COG,Congo Republic,2018,93.1
+LBR,Liberia,2018,92.6
+MRT,Mauritania,2018,92.2
+BGD,Bangladesh,2018,90.3
+AGO,Angola,2018,89.4
+RWA,Rwanda,2018,89.3
+SLE,Sierra Leone,2018,89.1
+EGY,Egypt,2018,88.7
+MOZ,Mozambique,2018,88.7
+TLS,Timor-Leste,2018,88.3
+NPL,Nepal,2018,87.9
+SWZ,Swaziland,2018,87.5
+ZMB,Zambia,2018,87.2
+DJI,Djibouti,2018,87.1
+GMB,Gambia,2018,87.1
+LBN,Lebanon,2018,86.8
+BFA,Burkina Faso,2018,86.5
+VEN,Venezuela,2018,86.2
+PHL,Philippines,2018,85.5
+MWI,Malawi,2018,85.5
+TGO,Togo,2018,85.2
+LKA,Sri Lanka,2018,84.9
+PNG,Papua New Guinea,2018,84.8
+IRN,Iran,2018,84.3
+KHM,Cambodia,2018,84.0
+MDG,Madagascar,2018,83.6
+GNQ,Equatorial Guinea,2018,83.4
+SLB,Solomon Islands,2018,83.1
+COM,Comoros,2018,82.6
+TUR,Turkey,2018,82.2
+GTM,Guatemala,2018,81.8
+LAO,Laos,2018,80.7
+LSO,Lesotho,2018,80.1
+SEN,Senegal,2018,79.6
+TJK,Tajikistan,2018,79.5
+TZA,Tanzania,2018,79.4
+UZB,Uzbekistan,2018,79.1
+KGZ,Kyrgyz Republic,2018,78.6
+ISR,Israel and West Bank,2018,78.5
+HND,Honduras,2018,77.3
+RUS,Russia,2018,77.2
+JOR,Jordan,2018,76.8
+COL,Colombia,2018,76.6
+IND,India,2018,76.3
+DZA,Algeria,2018,75.8
+BEN,Benin,2018,75.7
+NIC,Nicaragua,2018,75.3
+BOL,Bolivia,2018,75.2
+THA,Thailand,2018,75.0
+AZE,Azerbaijan,2018,74.6
+FJI,Fiji,2018,74.5
+FSM,Micronesia,2018,74.4
+BTN,Bhutan,2018,74.3
+ECU,Ecuador,2018,74.2
+MAR,Morocco,2018,74.0
+GEO,Georgia,2018,74.0
+ZAF,South Africa,2018,72.9
+TKM,Turkmenistan,2018,72.6
+UKR,Ukraine,2018,72.6
+GAB,Gabon,2018,72.5
+MDV,Maldives,2018,72.4
+CHN,China,2018,72.4
+IDN,Indonesia,2018,72.3
+STP,Sao Tome and Principe,2018,72.1
+TUN,Tunisia,2018,72.1
+MEX,Mexico,2018,71.5
+BIH,Bosnia and Herzegovina,2018,71.3
+SLV,El Salvador,2018,71.2
+BLR,Belarus,2018,70.5
+GUY,Guyana,2018,70.4
+SAU,Saudi Arabia,2018,70.2
+PER,Peru,2018,70.1
+PRY,Paraguay,2018,69.8
+MDA,Moldova,2018,69.5
+ARM,Armenia,2018,69.5
+DOM,Dominican Republic,2018,69.2
+NAM,Namibia,2018,68.8
+BRA,Brazil,2018,68.7
+VNM,Vietnam,2018,68.4
+GHA,Ghana,2018,68.1
+SRB,Serbia,2018,68.1
+CPV,Cape Verde,2018,68.0
+WSM,Samoa,2018,65.5
+MKD,Macedonia,2018,64.8
+BHR,Bahrain,2018,64.4
+SUR,Suriname,2018,64.0
+BLZ,Belize,2018,63.7
+MYS,Malaysia,2018,63.6
+KAZ,Kazakhstan,2018,63.4
+JAM,Jamaica,2018,63.1
+CUB,Cuba,2018,62.9
+BWA,Botswana,2018,62.0
+CYP,Cyprus,2018,60.3
+ALB,Albania,2018,60.1
+GRD,Grenada,2018,59.9
+BRN,Brunei Darussalam,2018,59.8
+SYC,Seychelles,2018,56.8
+KWT,Kuwait,2018,55.9
+ATG,Antigua and Barbuda,2018,55.6
+MNE,Montenegro,2018,55.3
+GRC,Greece,2018,55.3
+MNG,Mongolia,2018,54.9
+TTO,Trinidad and Tobago,2018,54.6
+OMN,Oman,2018,52.6
+BGR,Bulgaria,2018,51.7
+HUN,Hungary,2018,50.2
+BHS,Bahamas,2018,50.0
+PAN,Panama,2018,49.5
+ROU,Romania,2018,49.4
+HRV,Croatia,2018,48.7
+BRB,Barbados,2018,48.2
+QAT,Qatar,2018,48.1
+ARG,Argentina,2018,46.1
+LVA,Latvia,2018,44.9
+ITA,Italy,2018,43.8
+CRI,Costa Rica,2018,43.2
+EST,Estonia,2018,43.0
+ARE,United Arab Emirates,2018,42.8
+SVK,Slovak Republic,2018,42.5
+POL,Poland,2018,41.5
+ESP,Spain,2018,41.4
+CHL,Chile,2018,40.7
+MUS,Mauritius,2018,40.5
+LTU,Lithuania,2018,39.4
+CZE,Czech Republic,2018,39.0
+USA,United States,2018,37.7
+MLT,Malta,2018,36.2
+KOR,South Korea,2018,35.7
+URY,Uruguay,2018,35.4
+JPN,Japan,2018,34.5
+GBR,United Kingdom,2018,34.3
+FRA,France,2018,32.2
+SGP,Singapore,2018,30.4
+SVN,Slovenia,2018,30.3
+BEL,Belgium,2018,29.7
+PRT,Portugal,2018,27.3
+AUT,Austria,2018,26.2
+NLD,Netherlands,2018,26.2
+DEU,Germany,2018,25.8
+CAN,Canada,2018,21.5
+NZL,New Zealand,2018,20.9
+SWE,Sweden,2018,20.8
+AUS,Australia,2018,20.8
+LUX,Luxembourg,2018,20.8
+IRL,Ireland,2018,20.7
+ISL,Iceland,2018,20.3
+DNK,Denmark,2018,19.8
+CHE,Switzerland,2018,19.2
+NOR,Norway,2018,18.3
+FIN,Finland,2018,17.9
+SOM,Somalia,2024,111.9
+YEM,Yemen,2024,108.9
+SSD,South Sudan,2024,108.5
+COD,Congo Democratic Republic,2024,107.2
+SYR,Syria,2024,107.1
+AFG,Afghanistan,2024,106.6
+SDN,Sudan,2024,106.2
+CAF,Central African Republic,2024,105.7
+TCD,Chad,2024,104.6
+HTI,Haiti,2024,102.9
+ETH,Ethiopia,2024,100.4
+MMR,Myanmar,2024,100.2
+MLI,Mali,2024,99.5
+GIN,Guinea,2024,98.5
+NGA,Nigeria,2024,98.0
+ZWE,Zimbabwe,2024,96.9
+LBY,Libya,2024,96.1
+UKR,Ukraine,2024,95.9
+ERI,Eritrea,2024,94.5
+BDI,Burundi,2024,94.2
+BFA,Burkina Faso,2024,94.0
+MOZ,Mozambique,2024,94.0
+CMR,Cameroon,2024,94.0
+NER,Niger,2024,93.4
+LBN,Lebanon,2024,91.8
+UGA,Uganda,2024,91.5
+IRQ,Iraq,2024,91.4
+COG,Congo Republic,2024,90.7
+VEN,Venezuela,2024,90.5
+LKA,Sri Lanka,2024,90.3
+GNB,Guinea Bissau,2024,89.9
+PAK,Pakistan,2024,89.9
+LBR,Liberia,2024,88.9
+PSE,Palestine,2024,87.9
+KEN,Kenya,2024,87.8
+CIV,Cote d'Ivoire,2024,87.1
+MRT,Mauritania,2024,87.0
+PRK,North Korea,2024,87.0
+AGO,Angola,2024,86.9
+IRN,Iran,2024,85.4
+BGD,Bangladesh,2024,85.2
+GNQ,Equatorial Guinea,2024,84.4
+MWI,Malawi,2024,83.2
+RWA,Rwanda,2024,82.3
+COM,Comoros,2024,82.2
+DJI,Djibouti,2024,82.2
+TGO,Togo,2024,82.1
+ZMB,Zambia,2024,81.8
+MDG,Madagascar,2024,81.7
+EGY,Egypt,2024,81.6
+SLE,Sierra Leone,2024,81.4
+TUR,Turkey,2024,81.2
+RUS,Russia,2024,80.7
+KHM,Cambodia,2024,80.3
+NPL,Nepal,2024,80.2
+SLB,Solomon Islands,2024,79.6
+HND,Honduras,2024,79.6
+SWZ,Swaziland,2024,79.1
+COL,Colombia,2024,78.1
+PNG,Papua New Guinea,2024,78.1
+PHL,Philippines,2024,77.8
+NIC,Nicaragua,2024,77.7
+TLS,Timor-Leste,2024,77.5
+GTM,Guatemala,2024,77.3
+TZA,Tanzania,2024,76.6
+LSO,Lesotho,2024,76.3
+GMB,Gambia,2024,76.1
+JOR,Jordan,2024,75.7
+KGZ,Kyrgyz Republic,2024,75.6
+LAO,Laos,2024,74.7
+BRA,Brazil,2024,74.5
+TJK,Tajikistan,2024,74.2
+IND,India,2024,74.1
+BEN,Benin,2024,73.3
+PER,Peru,2024,73.1
+AZE,Azerbaijan,2024,72.7
+BIH,Bosnia and Herzegovina,2024,72.3
+ZAF,South Africa,2024,72.0
+GEO,Georgia,2024,71.9
+SEN,Senegal,2024,71.5
+BOL,Bolivia,2024,70.7
+FJI,Fiji,2024,70.2
+DZA,Algeria,2024,70.0
+BLR,Belarus,2024,69.9
+MEX,Mexico,2024,69.8
+STP,Sao Tome and Principe,2024,69.7
+ECU,Ecuador,2024,69.4
+FSM,Micronesia,2024,69.3
+SLV,El Salvador,2024,69.3
+MAR,Morocco,2024,68.2
+THA,Thailand,2024,68.0
+SRB,Serbia,2024,67.9
+ARM,Armenia,2024,67.5
+MDA,Moldova,2024,67.4
+UZB,Uzbekistan,2024,66.8
+BTN,Bhutan,2024,66.4
+TUN,Tunisia,2024,66.4
+IDN,Indonesia,2024,65.6
+GAB,Gabon,2024,65.5
+SAU,Saudi Arabia,2024,65.3
+WSM,Samoa,2024,65.1
+BHR,Bahrain,2024,65.1
+CHN,China,2024,65.1
+TKM,Turkmenistan,2024,64.5
+PRY,Paraguay,2024,63.7
+MDV,Maldives,2024,62.9
+GHA,Ghana,2024,62.3
+JAM,Jamaica,2024,61.9
+GUY,Guyana,2024,61.6
+DOM,Dominican Republic,2024,60.8
+KAZ,Kazakhstan,2024,60.6
+NAM,Namibia,2024,60.3
+MKD,Macedonia,2024,60.3
+CPV,Cape Verde,2024,60.1
+BLZ,Belize,2024,59.8
+SUR,Suriname,2024,59.7
+CUB,Cuba,2024,59.5
+VNM,Vietnam,2024,58.3
+MNE,Montenegro,2024,58.0
+CYP,Cyprus,2024,57.0
+ALB,Albania,2024,56.8
+BWA,Botswana,2024,55.3
+GRC,Greece,2024,55.1
+MYS,Malaysia,2024,55.0
+BRN,Brunei Darussalam,2024,54.7
+ATG,Antigua and Barbuda,2024,53.8
+GRD,Grenada,2024,53.7
+SYC,Seychelles,2024,53.3
+ROU,Romania,2024,53.0
+TTO,Trinidad and Tobago,2024,52.9
+BGR,Bulgaria,2024,51.8
+MNG,Mongolia,2024,51.3
+KWT,Kuwait,2024,51.2
+BHS,Bahamas,2024,49.2
+HUN,Hungary,2024,48.8
+PAN,Panama,2024,48.7
+OMN,Oman,2024,48.7
+HRV,Croatia,2024,48.7
+ARG,Argentina,2024,46.4
+BRB,Barbados,2024,45.4
+USA,United States,2024,45.3
+POL,Poland,2024,45.2
+ISR,Israel,2024,44.1
+ESP,Spain,2024,43.5
+LVA,Latvia,2024,43.3
+ITA,Italy,2024,42.6
+CHL,Chile,2024,42.2
+GBR,United Kingdom,2024,41.9
+QAT,Qatar,2024,40.5
+CRI,Costa Rica,2024,40.4
+CZE,Czech Republic,2024,40.2
+LTU,Lithuania,2024,39.4
+EST,Estonia,2024,38.6
+MUS,Mauritius,2024,38.0
+SVK,Slovak Republic,2024,37.8
+ARE,United Arab Emirates,2024,37.0
+URY,Uruguay,2024,34.4
+MLT,Malta,2024,33.0
+KOR,South Korea,2024,31.5
+BEL,Belgium,2024,31.4
+JPN,Japan,2024,30.5
+FRA,France,2024,28.8
+SVN,Slovenia,2024,27.3
+PRT,Portugal,2024,25.7
+SGP,Singapore,2024,25.5
+DEU,Germany,2024,24.6
+AUT,Austria,2024,24.4
+AUS,Australia,2024,22.0
+NLD,Netherlands,2024,21.0
+SWE,Sweden,2024,20.6
+LUX,Luxembourg,2024,19.5
+IRL,Ireland,2024,19.5
+CAN,Canada,2024,18.9
+DNK,Denmark,2024,17.9
+CHE,Switzerland,2024,17.8
+NZL,New Zealand,2024,16.7
+FIN,Finland,2024,16.0
+ISL,Iceland,2024,15.7
+NOR,Norway,2024,14.5
