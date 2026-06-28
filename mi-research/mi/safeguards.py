@@ -101,7 +101,7 @@ def evaluate_safeguard_j(pillars: dict, context: dict) -> dict:
                 "Above every confirmed absorber but below the crisis floor — elevated WATCH, not a "
                 "verdict; a further institutional backslide would tip it into the flag.")
         mod = "Treat as elevated watch; insufficient validated evidence to call. Monitor P1 vs P4."
-    return {
+    result = {
         "name": "Durability Gate (P4-P1 gap)",
         "triggered": triggered,
         "status": status,
@@ -111,6 +111,28 @@ def evaluate_safeguard_j(pillars: dict, context: dict) -> dict:
         "modification": mod,
         "derivation": "N=21 signature set (83% sens/100% spec/100% PPV); = durability ratio re-derived.",
     }
+    # V3.2 Convergence Qualifier — disambiguate a flagged gap by its TRAJECTORY, if a prior
+    # timepoint is supplied (context["prior_pillars"] = {"P1":.., "P4":..}, ~5-10y earlier).
+    prior = context.get("prior_pillars") if context else None
+    if prior and prior.get("P1") is not None and prior.get("P4") is not None:
+        prior_gap = prior["P4"] - prior["P1"]
+        dgap = gap - prior_gap
+        dead = LENS["structural_vuln_converge_deadband"]
+        direction = "widening" if dgap > dead else "closing" if dgap < -dead else "static"
+        if status in ("flagged", "borderline"):
+            refined = "developmental_catchup" if direction == "closing" else "fragile"
+            note = ("gap CLOSING — institutions catching up to income (developmental catch-up); "
+                    "downgrade structural-crisis weight." if direction == "closing" else
+                    "gap WIDENING/static — the grant is eroding (income outrunning institutions); "
+                    "confirm/escalate structural-crisis weight.")
+        else:
+            refined = "n/a"; note = "gap below the flag band — qualifier informational only."
+        result["convergence"] = {
+            "prior_gap": round(prior_gap, 3), "dgap": round(dgap, 3),
+            "direction": direction, "refined": refined, "note": note,
+            "validation": "92% sens / 80% spec on flagged states (FP: Saudi rentier-overshoot; FN: Peru churn).",
+        }
+    return result
 
 
 def evaluate_safeguard_a(pillars: dict, context: dict) -> dict:

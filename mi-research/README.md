@@ -54,10 +54,12 @@ mi-research/
 
 ## Current Status
 
-- **MI Version:** **MI v3.1** (live; `MI_MODEL_VERSION="v3.1"`). V3.1 = V3 + **Safeguard J — the
-  Durability Gate** (P4−P1 gap > 0.22 → structurally crisis-vulnerable), independently derived on
-  the N=21 acute-signature set (83% sens / 100% spec / 100% PPV; = the durability ratio re-derived).
-  See `docs/architectural_decisions/v3_1_durability_gate.md`.
+- **MI Version:** **MI v3.2** (live; `MI_MODEL_VERSION="v3.2"`). V3.2 = V3.1 + the **Convergence
+  Qualifier** on Safeguard J (gap TRAJECTORY: closing = developmental catch-up vs widening = fragility;
+  92% sens / 80% spec) + the **Accountability Gap** diagnostic (VA vs income; "capacity without
+  consent" — a hypothesis, informational). V3.1 = V3 + **Safeguard J — the Durability Gate** (P4−P1
+  gap, three-state flag/clear/borderline), N=21 (83/100/100; = durability ratio re-derived). See
+  `docs/architectural_decisions/v3_2_convergence_and_accountability.md` + `v3_1_durability_gate.md`.
 - **Corpus:** **70 case studies** = 51 P1-ordinality (`completed/`, stress_type ≠ durability_gate_test)
   + 19 durability-gate / Safeguard-J tests (stress_type=durability_gate_test). `--validate` reports
   the two classes separately.

@@ -28,6 +28,8 @@ def full_diagnostic(indicators: dict, context: dict = None) -> dict:
         "strategy": strategy,
         "safeguards": safeguards,
         "vulnerability": vulnerability,
+        "accountability_gap": accountability_gap(
+            indicators.get("voice_accountability"), score.get("pillar_scores", {})),
     }
 
 
@@ -211,6 +213,41 @@ def assess_vulnerability(score: dict, safeguards: dict) -> dict:
             f"{len(triggered_safeguards)} safeguards active."
         ),
     }
+
+
+def accountability_gap(voice_accountability, pillars: dict) -> Optional[dict]:
+    """
+    V3.2 Accountability Gap (HYPOTHESIS — informational, NOT a verdict).
+
+    P1 deliberately excludes Voice & Accountability (VA); among high-capacity states VA is the only
+    axis separating democracies from rich authoritarians. When VA sits far below income (P4) — and
+    capacity (P1) — the state delivers economically with no accountability channel ("capacity without
+    consent"), a hypothesized BRITTLE/sudden failure mode (succession/legitimacy shock), orthogonal to
+    the durability gap. NO crisis validation yet (Saudi/China have not broken) — surfaced as a signal
+    to watch, never a verdict. `voice_accountability` accepted as 0-100 (WGI .SC) or 0-1; pillars 0-1.
+    """
+    va = voice_accountability
+    p1 = pillars.get("P1"); p4 = pillars.get("P4")
+    if va is None or p1 is None or p4 is None:
+        return None
+    if va > 1.5:           # accept 0-100 input
+        va = va / 100.0
+    va_p4 = va - p4; va_p1 = va - p1
+    cap = LENS["va_legitimacy_cap_p4"]; lag = LENS["va_accountability_lag_p4"]
+    if va_p4 <= cap:
+        status = "legitimacy_capped"
+        reading = ("CAPACITY WITHOUT CONSENT — accountability far below income/capacity; hypothesized "
+                   "brittle failure mode (succession/legitimacy shock). HYPOTHESIS, not a verdict.")
+    elif va_p4 <= lag:
+        status = "accountability_lag"
+        reading = "accountability trails income/capacity — partial; watch."
+    else:
+        status = "balanced"
+        reading = "accountability roughly tracks capacity and income."
+    return {"voice_accountability": round(va, 3),
+            "va_minus_p4": round(va_p4, 3), "va_minus_p1": round(va_p1, 3),
+            "status": status, "reading": reading,
+            "caveat": "HYPOTHESIS (V3.2) — informational; orthogonal to the durability gap; no crisis validation yet."}
 
 
 def structural_vulnerability(pillars: dict) -> Optional[dict]:

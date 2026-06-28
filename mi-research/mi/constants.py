@@ -116,6 +116,18 @@ LENS = {
     # no cutoff there is distinguishable. Report three states, not a hard pass/fail:
     "structural_vuln_flag_floor": 0.28,     # gap >= this -> FLAGGED (matches all 10 crises, 0 absorbers)
     "structural_vuln_clear_ceiling": 0.20,  # gap <= this -> CLEAR (absorber-class)
+    # V3.2 Convergence Qualifier: a flagged durability gap means OPPOSITE things by trajectory.
+    # CLOSING gap (institutions catching up to income) = developmental catch-up (downgrade);
+    # WIDENING/static gap (the grant eroding) = genuine fragility. Validated on flagged states:
+    # 92% sens / 80% spec (errors: Saudi rentier-overshoot FP, Peru institutional-churn FN).
+    "structural_vuln_converge_deadband": 0.01,  # |dgap| <= this over the window -> "static"
+    # V3.2 Accountability Gap (HYPOTHESIS — informational diagnostic, NOT a verdict; no crisis
+    # evidence yet). P1 excludes Voice & Accountability (VA) by design; among high-capacity states VA
+    # is the only axis separating democracies from rich authoritarians. VA - P4 (income) below the
+    # cap = "capacity without consent" (legitimacy-capped: Saudi/China/Russia/Turkey) — hypothesized
+    # brittle/sudden failure mode, orthogonal to the durability gap. All in 0-1 units.
+    "va_legitimacy_cap_p4": -0.50,     # VA - P4 <= this -> legitimacy-capped
+    "va_accountability_lag_p4": -0.20,  # VA - P4 in (cap, this] -> accountability lag
     # (0.20, 0.28) = BORDERLINE / indeterminate — no validated evidence either way. The US (gap 0.211,
     # 2024) lands here, ABOVE every confirmed absorber, ~one 0.07 institutional backslide from the floor.
 }
@@ -123,7 +135,10 @@ LENS = {
 # Active MI model version. V3 = V2 + consolidated-pair Mod4 extension.
 # V3.1 = V3 + Safeguard J (the durability gate, P4-P1 gap) — independently derived on the N=21
 # signature set (83% sens / 100% spec / 100% PPV), unifying with the durability ratio.
-MI_MODEL_VERSION = "v3.1"
+# V3.2 = V3.1 + the Convergence Qualifier on Safeguard J (gap TRAJECTORY: closing=developmental
+# catch-up vs widening=fragility; 92% sens / 80% spec on flagged states) + the Accountability-Gap
+# diagnostic (VA vs income; "capacity without consent", a hypothesis — informational, not a verdict).
+MI_MODEL_VERSION = "v3.2"
 
 # === LEAD-TIME / FORESIGHT CONFIG (single source; the per-case structural fact reads this) ===
 # How far before the outcome the framework still predicts accurately. Empirical finding:

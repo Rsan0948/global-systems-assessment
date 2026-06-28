@@ -31,7 +31,22 @@ SOURCES = {
     "wb_anchored": _MI_ROOT / "data" / "sources" / "wb_anchored.json",
     # Panel CSVs: env override wins, else the sibling mi_pipeline panel (shared upstream).
     "panel_dir": Path(os.environ.get("MI_PANEL_DIR", _REPO_ROOT / "mi_pipeline" / "data")),
+    # Voice & Accountability (WGI 2025-anchored .SC, 0-100) for ALL 180 panel countries — P1
+    # excludes VA by design, so this serves the Accountability-Gap diagnostic (V3.2). Refresh via
+    # the WB API (GOV_WGI_VA.SC, source=3).
+    "va_anchored": _MI_ROOT / "data" / "sources" / "va_anchored.json",
 }
+
+_VA_CACHE = None
+def _va():
+    global _VA_CACHE
+    if _VA_CACHE is None:
+        try:
+            with open(SOURCES["va_anchored"]) as fh:
+                _VA_CACHE = json.load(fh)
+        except FileNotFoundError:
+            _VA_CACHE = {}
+    return _VA_CACHE
 
 # indicator dict keys the scoring engine consumes
 _ENGINE_KEYS = [
@@ -141,7 +156,7 @@ def get_indicators(country: str, year, with_meta: bool = False):
         "regulatory_quality": W.get("RQ", {}).get(year),
         "cpi": panel["cpi"].get((iso, year)),
         "control_of_corruption": W.get("CC", {}).get(year),
-        "voice_accountability": W.get("VA", {}).get(year),
+        "voice_accountability": W.get("VA", {}).get(year) or _va().get(iso, {}).get(str(year)),
         "gii": panel["gii"].get((iso, year)),
         "rd_pct_gdp": None,
         "eci": panel["eci"].get((iso, year)),
