@@ -59,6 +59,37 @@ quieter.) The distinctive feature now is the *sharp deceleration* from a roaring
   institutions (which genuinely rise and fall).
 - One tempting parallel — the 1900–1910 all-quiet preceding WWI — is **n≈1**; noted, not claimed.
 
+## Addendum — the 1900–1910-vs-now parallel, pulled apart (it DISSOLVES)
+I flagged "1900–1910 ≈ now" as n≈1 and suggestive. Tested rigorously, it does not hold — and the
+record points the other way.
+
+**Opposite textures, not alike.** Decomposing institutional change into simultaneous climb vs decline:
+| period | climb | decline | net | texture |
+|---|---|---|---|---|
+| 1900–05 | 2–3% | 0–3% | ~0 | **stasis** (frozen at the floor) |
+| **now (2010)** | **8%** | **7%** | +1 | **churn** (roiling, nets to flat) |
+| 1980s (Third Wave) | 20% | 6% | +14 | surge |
+| 1960s | 2–5% | **11–14%** | −12 | **collapse** (worst on record) |
+| 1930s | 2% | 8% | −6 | collapse (fascism) |
+
+1900–05 and now share *only* quiet income/health engines; their institutional dynamics are **opposite**
+— 1900s frozen, now divergent/polarizing. Same near-zero *net*, 4–5× the *churn*.
+
+**Now is not historically extreme.** Today's institutional-decline rate (7%) merely ties 1910 and is
+dwarfed by the **1960s (14% — post-colonial/coup reversal, the worst on record)** and the **1930s (8%)**.
+Today most resembles the 1990–2005 post–Cold-War churn, mildly intensifying.
+
+**"Lull precedes rupture" is UNSUPPORTED — it inverts.** The two worst collapses (1960s, 1930s) did NOT
+follow lulls; the 1960s reversal followed the *active* post-war churn/decolonization wave. Historically,
+ruptures followed **expansion and churn, not calm.** The 1900–1910→WWI thread was a single cherry-picked
+case, and the broader record contradicts the "calm before the storm" mechanism it implied. **Retracted.**
+
+**The real signature of the present** is not "pre-rupture lull" but **divergence/churn netting to flat**
+— a world where institutional gains and losses run at elevated rates and cancel, distinct from both the
+calm 1900s stasis and the 1980s directional surge. (Caveat: V-Dem pre-1900 is smoothed/reconstructed, so
+early *churn* may be understated; but the 1960s/1930s collapses register on the same data, and the modern
+erosion is corroborated by WGI — so the texture contrasts are real, not pure artifact.)
+
 ## What it adds
 Confirms golden ages are **real, recurring, and structurally detectable** — but **dimension-specific**:
 there is no single "golden age," there are institutional waves, growth booms, and health transitions,
