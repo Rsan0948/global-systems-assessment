@@ -42,19 +42,30 @@ GDP + ODA, and the "resource penalty" thesis cannot run for 2024.
 - Extracted `CPI score {2012,2018,2024}` → `iso3,country,year,CPI` (0–100).
 - 535 rows, 181 countries. Spot-check vs README: Denmark 2024 = 90 ✓, NZ 83, CHE 81, LBN 22.
 
-## Manual CSV 2 — GII (`data/gii.csv`)  ⚠ partial
+## Manual CSV 2 — GII (`data/gii.csv`)  ✅ all 3 years
 
-- **Source:** WIPO Global Innovation Index 2024 data annex
+All three required editions obtained, from two complementary sources:
+
+- **2024:** WIPO GII 2024 data annex
   (`https://www.wipo.int/edocs/pubdocs/en/wipo-pub-2000-2024-tech1.xlsx`), overall
-  "Global Innovation Index" score from the `Data` sheet.
-- 133 economies, **year 2024 only**. Spot-check vs README: CHE 67.5 ✓, SWE 64.5 ✓,
-  USA 62.4 ✓.
-- **Could not obtain GII 2012 and 2018 editions by direct download.** The WIPO GII
-  Data Explorer only serves 2023–2025 (`/gii-ranking/data/bc_results_gii_<yr>.csv`);
-  the `tech1.xlsx` pattern only exists back to 2022. Older editions' annexes live in
-  archived report PDFs, not machine-downloadable score tables. Impact is contained:
-  for 2012/2018 (Track 1) P2 = mean(GII, ECI) falls back to ECI alone (skipna) and
-  the GII gap is reported — not a silent NaN. The 2024 headline year is complete.
+  "Global Innovation Index" score from the `Data` sheet. 133 economies.
+  Spot-check vs README: CHE 67.5 ✓, SWE 64.5 ✓, USA 62.4 ✓.
+- **2012 & 2018:** WIPO's own Data Explorer only serves 2023–2025 and the
+  `tech1.xlsx` pattern only goes back to 2022, so the older editions came from a
+  **GII panel dataset on Mendeley Data** (Elsevier's research-data repository),
+  `doi:10.17632/cvkdzr8tv3.4` — "Global Innovation Index: panel data (2011–2022)",
+  `Scores` sheet, `Global Innovation Index` column. Downloaded via the Mendeley
+  public-files API. 141 economies (2012), 126 (2018).
+- **Validated against the official WIPO figures before use** (this is a third-party
+  compilation, so it was cross-checked, not trusted blindly): the panel reproduces
+  the published GII scores *exactly* —
+  - 2012: Switzerland 68.20, Sweden 64.80, Singapore 63.50, Finland 61.80, UK 61.20,
+    Netherlands 60.50 (matches the official GII 2012 top-6 order and scores).
+  - 2018: Switzerland 68.40, Netherlands 63.30, Sweden 63.10, UK 60.10, US 59.80,
+    Singapore 59.80 (matches the WIPO 2018 press-release ranking and scores exactly).
+- Names mapped to ISO3 via the WB name list + 17 explicit overrides
+  (e.g. "Iran (Islamic Republic of)"→IRN, "Republic of Korea (the)"→KOR); 0 unmapped.
+- gii.csv total: 400 rows — 2012 (141) / 2018 (126) / 2024 (133).
 
 ## Manual CSV 3 — ECI (`data/eci.csv`)
 
@@ -96,11 +107,13 @@ GDP + ODA, and the "resource penalty" thesis cannot run for 2024.
 ## Run result (sanity checks)
 
 `python mi_pipeline.py --skip-api` → 180 unique countries scored; per year
-1996:154 / 2004:174 / 2012:160 / 2018:162 / 2024:143. Anchors resolved
-(Switzerland 2024 v1_MScore = 1.000, Lebanon = 0.000). P3 (Human Capital) populated,
-not all-NaN. Top MI 2024: Switzerland 1.00, Singapore 0.99, Norway 0.90, Germany/Japan
-0.88 — all plausible. `test_smoke.py` 5/5.
+1996:154 / 2004:174 / 2012:168 / 2018:167 / 2024:143 (806 scoreable obs).
+Anchors resolved (Switzerland 2024 v1_MScore = 1.000, Lebanon = 0.000). P3
+(Human Capital) populated, not all-NaN. Top MI 2024: Switzerland 1.00, Singapore
+0.99, Norway 0.90, Germany/Japan 0.88 — all plausible. `test_smoke.py` 5/5.
+(Adding GII 2012/2018 lifted 2012 scoreable 160→168 and 2018 162→167.)
 
-**Disclaimer unchanged:** this proves the *pipeline* on real inputs; the two snaps
-above (HDR/FSI 2024←2023) and the GII 2012/2018 fallback are the only coverage caveats,
-all reported as gaps rather than filled.
+**Disclaimer unchanged:** this proves the *pipeline* on real inputs. The only
+remaining coverage caveats are the two "latest available" snaps (HDR/FSI 2024←2023,
+because the 2024 editions aren't published yet) and the WDI resource-rents 2024 lag —
+all reported as gaps rather than filled. No values were invented or interpolated.
