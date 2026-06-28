@@ -1,0 +1,777 @@
+[
+  {
+    "name": "Old Kingdom Egypt",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Egypt",
+      "data_quality": "RICH",
+      "shock": "mixed",
+      "outcome": "rupture",
+      "fragment_count": 2
+    },
+    "peak": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 2
+    },
+    "tags": [
+      "container_erosion",
+      "frag2-4"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Achaemenid Persia",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "NearEast",
+      "data_quality": "RICH",
+      "shock": "exo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 5,
+      "P2": 4,
+      "P3": 3,
+      "P4": 4,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 5,
+      "P2": 4,
+      "P3": 3,
+      "P4": 4,
+      "P5": 4
+    },
+    "tags": [
+      "P1ord_exo_conquest",
+      "porosity"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Sasanian Persia",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "NearEast",
+      "data_quality": "RICH",
+      "shock": "exo+confed",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 5,
+      "P2": 4,
+      "P3": 3,
+      "P4": 4,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 1
+    },
+    "tags": [
+      "P1ord_challenge",
+      "confederacy",
+      "container_erosion",
+      "suppression"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Mauryan Empire",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SouthAsia",
+      "data_quality": "RICH",
+      "shock": "endo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 2
+    },
+    "tags": [
+      "P4P1gap",
+      "ruler_dependence",
+      "container_erosion"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Gupta Empire",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SouthAsia",
+      "data_quality": "RICH",
+      "shock": "mixed",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 4,
+      "P3": 3,
+      "P4": 4,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 4,
+      "P3": 3,
+      "P4": 4,
+      "P5": 2
+    },
+    "tags": [
+      "golden_age",
+      "P4P1gap",
+      "container_erosion"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Vijayanagara",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SouthAsia",
+      "data_quality": "RICH",
+      "shock": "exo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 2
+    },
+    "tags": [
+      "suppression",
+      "frag_engineered"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Tang Dynasty",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "EastAsia",
+      "data_quality": "RICH",
+      "shock": "endo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 5,
+      "P2": 4,
+      "P3": 4,
+      "P4": 4,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 4,
+      "P2": 4,
+      "P3": 4,
+      "P4": 3,
+      "P5": 2
+    },
+    "tags": [
+      "suppression",
+      "container_erosion"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Song Dynasty",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "EastAsia",
+      "data_quality": "RICH",
+      "shock": "exo",
+      "outcome": "rupture",
+      "fragment_count": "none-internal"
+    },
+    "peak": {
+      "P1": 5,
+      "P2": 5,
+      "P3": 4,
+      "P4": 5,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 5,
+      "P2": 5,
+      "P3": 4,
+      "P4": 5,
+      "P5": 3
+    },
+    "tags": [
+      "golden_age",
+      "porosity",
+      "P1ord_exo_conquest"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Tokugawa Japan",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "EastAsia",
+      "data_quality": "RICH",
+      "shock": "mixed",
+      "outcome": "transition",
+      "fragment_count": "none"
+    },
+    "peak": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 4,
+      "P4": 4,
+      "P5": 5
+    },
+    "pre_stress": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 4,
+      "P4": 3,
+      "P5": 4
+    },
+    "tags": [
+      "config",
+      "managed_transition",
+      "container_absorb"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Joseon Korea",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "EastAsia",
+      "data_quality": "RICH",
+      "shock": "exo+endo",
+      "outcome": "absorb",
+      "fragment_count": "none"
+    },
+    "peak": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 4
+    },
+    "tags": [
+      "P1ord_longevity",
+      "config",
+      "reconstruction",
+      "moderate_P1_longevity"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Khmer / Angkor",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SEAsia",
+      "data_quality": "RICH",
+      "shock": "exo",
+      "outcome": "migrate",
+      "fragment_count": "none"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 2
+    },
+    "tags": [
+      "container_erosion",
+      "environmental",
+      "migrate_transform"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Srivijaya",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SEAsia",
+      "data_quality": "MOD",
+      "shock": "exo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 5,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 5,
+      "P5": 3
+    },
+    "tags": [
+      "P4P1gap_extreme",
+      "thalassocracy"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Majapahit",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SEAsia",
+      "data_quality": "MOD",
+      "shock": "endo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 2
+    },
+    "tags": [
+      "config",
+      "ruler_dependence",
+      "suppression"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Mali Empire",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SSAfrica",
+      "data_quality": "MOD",
+      "shock": "endo+exo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 5,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 2
+    },
+    "tags": [
+      "P4P1gap",
+      "ruler_dependence",
+      "container_erosion"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Great Zimbabwe",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SSAfrica",
+      "data_quality": "MOD",
+      "shock": "exo+env",
+      "outcome": "migrate",
+      "fragment_count": "2"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 2,
+      "P3": 2,
+      "P4": 4,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 2,
+      "P3": 2,
+      "P4": 3,
+      "P5": 2
+    },
+    "tags": [
+      "container_erosion",
+      "environmental",
+      "frag2-4"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Aksum",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "SSAfrica",
+      "data_quality": "MOD",
+      "shock": "exo",
+      "outcome": "migrate",
+      "fragment_count": "none"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 2,
+      "P5": 2
+    },
+    "tags": [
+      "container_erosion",
+      "P4P1gap",
+      "migrate",
+      "environmental"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Aztec Triple Alliance",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Meso",
+      "data_quality": "RICH",
+      "shock": "exo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 3
+    },
+    "tags": [
+      "suppression_strong",
+      "P4P1gap",
+      "confederacy"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Classic Maya",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Meso",
+      "data_quality": "RICH",
+      "shock": "exo+endo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 2
+    },
+    "pre_stress": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 1
+    },
+    "tags": [
+      "config",
+      "environmental",
+      "container_erosion"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Tiwanaku",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Andes",
+      "data_quality": "MOD",
+      "shock": "endo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 3,
+      "P2": 2,
+      "P3": 2,
+      "P4": 3,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 3,
+      "P2": 2,
+      "P3": 2,
+      "P4": 3,
+      "P5": 2
+    },
+    "tags": [
+      "container_erosion",
+      "ritual_legitimacy",
+      "NOT_environmental"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Wari",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Andes",
+      "data_quality": "MOD",
+      "shock": "endo",
+      "outcome": "rupture",
+      "fragment_count": "many"
+    },
+    "peak": {
+      "P1": 2,
+      "P2": 2,
+      "P3": 2,
+      "P4": 3,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 3,
+      "P2": 2,
+      "P3": 2,
+      "P4": 3,
+      "P5": 2
+    },
+    "tags": [
+      "centralization_trigger",
+      "config"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Carolingian",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Europe",
+      "data_quality": "RICH",
+      "shock": "endo",
+      "outcome": "rupture",
+      "fragment_count": 3
+    },
+    "peak": {
+      "P1": 2,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 3
+    },
+    "pre_stress": {
+      "P1": 2,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "tags": [
+      "frag_engineered",
+      "ruler_dependence",
+      "thin_container"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Byzantine (Macedonian)",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Europe",
+      "data_quality": "RICH",
+      "shock": "none",
+      "outcome": "absorb",
+      "fragment_count": "none"
+    },
+    "peak": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 4,
+      "P4": 4,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 4,
+      "P4": 4,
+      "P5": 4
+    },
+    "tags": [
+      "golden_age",
+      "P1ord",
+      "porosity",
+      "low_base_recovery"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Venetian Republic",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Europe",
+      "data_quality": "RICH",
+      "shock": "none",
+      "outcome": "durable",
+      "fragment_count": "none"
+    },
+    "peak": {
+      "P1": 5,
+      "P2": 4,
+      "P3": 4,
+      "P4": 5,
+      "P5": 5
+    },
+    "pre_stress": {
+      "P1": 5,
+      "P2": 3,
+      "P3": 4,
+      "P4": 3,
+      "P5": 5
+    },
+    "tags": [
+      "P1ord_strong",
+      "config",
+      "convergence_closure",
+      "durability"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "Ottoman (classical)",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "NearEast",
+      "data_quality": "RICH",
+      "shock": "none",
+      "outcome": "absorb",
+      "fragment_count": "none"
+    },
+    "peak": {
+      "P1": 4,
+      "P2": 4,
+      "P3": 3,
+      "P4": 4,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 4,
+      "P2": 4,
+      "P3": 3,
+      "P4": 4,
+      "P5": 4
+    },
+    "tags": [
+      "convergence_developmental",
+      "innovation_with_inst",
+      "porosity"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  },
+  {
+    "name": "New Kingdom Egypt",
+    "metadata": {
+      "stress_type": "ancient_proxy",
+      "region": "Egypt",
+      "data_quality": "RICH",
+      "shock": "mixed",
+      "outcome": "rupture",
+      "fragment_count": 2
+    },
+    "peak": {
+      "P1": 4,
+      "P2": 3,
+      "P3": 3,
+      "P4": 4,
+      "P5": 4
+    },
+    "pre_stress": {
+      "P1": 3,
+      "P2": 3,
+      "P3": 3,
+      "P4": 3,
+      "P5": 2
+    },
+    "tags": [
+      "container_erosion",
+      "environmental_systemic",
+      "suppression",
+      "frag2-4"
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+  }
+]
