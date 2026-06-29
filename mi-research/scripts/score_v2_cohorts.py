@@ -21,6 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VDEM = ROOT / "data" / "sources" / "vdem_longrun.json"
+LONGRUN = ROOT / "data" / "sources" / "longrun_pillars.json"
 
 # 27 observations transcribed from VALIDATION_v2_shock_cohort_modern.md.
 # (iso3, pre_shock_year ~2-3yr pre-onset, cohort, origin, outcome_tag)
@@ -46,6 +47,22 @@ def _rol(vd, code, yr):
     b = vd.get(code, {}).get("rol", {})
     le = [int(y) for y in b if int(y) <= yr]
     return round(b[str(max(le))], 3) if le else None
+
+
+def _gdp(lp, code, yr):
+    b = lp.get(code, {}).get("P4_gdp", {})
+    le = [int(y) for y in b if int(y) <= yr]
+    return b[str(max(le))] if le else None
+
+
+def _gdp_pct(lp, code, yr):
+    """P4 proxy = Maddison GDP percentile across the panel at the pre-shock year."""
+    t = _gdp(lp, code, yr)
+    if t is None:
+        return None
+    vals = [_gdp(lp, c, yr) for c in lp]
+    vals = [v for v in vals if v is not None]
+    return round(sum(1 for v in vals if v <= t) / len(vals), 3) if len(vals) >= 5 else None
 
 
 def _pearson(xs, ys):
@@ -103,6 +120,34 @@ def main():
     print("\nREAD: within-cohort 4/5 variance-cohorts concordant (~+0.77); pooled ~null (+0.09) — "
           "entrenched low-institution autocracies absorb ECONOMIC shocks (oil cohort), which rol "
           "doesn't capture. Internal engine only; T3 not exercised (no military shock drawn).")
+
+    # ---- SECOND load-bearing claim: the durability gap (P4 - P1) ----
+    lp = json.load(open(LONGRUN))
+    drows = []
+    for iso, yr, co, org, tag in OBS:
+        p1 = _rol(vd, iso, yr)
+        p4 = _gdp_pct(lp, iso, yr)
+        gap = round(p4 - p1, 3) if (p1 is not None and p4 is not None) else None
+        if gap is not None:
+            drows.append((iso, co, org, gap, tag))
+    print("\n" + "=" * 70 + "\nDURABILITY GAP (P4 GDP-pct - P1 rol). RULE: bigger gap -> MORE severe -> NEGATIVE corr.")
+
+    def dblk(rs, lbl):
+        gap = [r[3] for r in rs]; tag = [r[4] for r in rs]
+        p, sp = _pearson(gap, tag), _spearman(gap, tag)
+        print(f"{lbl:22} n={len(rs):2}  gap~tag Pearson={p:+.2f}  Spearman={sp:+.2f}" if p is not None
+              else f"{lbl:22} n={len(rs)} (too few)")
+    dblk(drows, "POOLED (25 scoreable)")
+    dblk([r for r in drows if r[2] == "internal"], "  internal-origin")
+    dblk([r for r in drows if r[2] == "external"], "  external-origin")
+    sev = [r[3] for r in drows if r[4] <= 2]; non = [r[3] for r in drows if r[4] >= 3]
+    print(f"  mean gap: severe(tag<=2) n={len(sev)} = {sum(sev)/len(sev):+.3f}  vs  "
+          f"non-severe n={len(non)} = {sum(non)/len(non):+.3f}  (rule: severe > non-severe)")
+    print("READ: durability gap is right-signed and a touch cleaner pooled (~-0.22) than the rol level; "
+          "moderate within internal cohorts (~-0.58). Same confounds: the oil cohort has huge gaps "
+          "(+0.46) yet survived the economic shock; CFA/Cote d'Ivoire is delayed-succession noise. "
+          "FULL 5-pillar engine: only 5/27 are in the Data API (obscure states) and all are tag-4 "
+          "survivors -> coverage-blocked, no variance; the gap proxy is the operative test on v2.")
 
 
 if __name__ == "__main__":

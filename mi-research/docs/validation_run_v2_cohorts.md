@@ -51,6 +51,31 @@ reading of outcomes.
   Côte d'Ivoire's coup came 5 years after the shock, downstream of Houphouët-Boigny's death — a
   succession-timing event the framework explicitly disclaims.
 
+## Second load-bearing claim — the durability gap (P4 − P1)
+The first run scored only institutions (rol). This adds the **durability gap** (P4 = Maddison
+GDP-percentile, P1 = rol) — *income outrunning institutions → fragile*. Rule: bigger gap → more
+severe → **negative** correlation with the outcome tag. 25/27 scoreable (Maldives, Somalia lack
+Maddison GDP).
+
+| slice | n | Pearson | Spearman |
+|-------|--:|--------:|---------:|
+| POOLED | 25 | −0.19 | **−0.22** |
+| internal-origin | 12 | −0.53 | **−0.58** |
+| external-origin | 13 | −0.39 | −0.40 |
+| **mean gap** | severe (tag≤2) **+0.173** | vs | non-severe **+0.041** |
+
+**The gap is right-signed and a touch cleaner pooled (−0.22) than the institutions level (+0.09),
+and moderate within internal cohorts (−0.58).** The severe-vs-non-severe gap means (+0.173 vs +0.041)
+**replicate the v1-30 direction** (+0.02 vs −0.14 there) out of sample — independent corroboration of
+the second claim. Same two confounds recur: the oil cohort has the *largest* gaps (mean +0.46, classic
+rentier "granted prosperity") yet absorbed the economic shock (entrenchment ≠ structural durability on
+a 10-yr economic window), and CFA/Côte d'Ivoire is delayed-succession noise.
+
+**Full 5-pillar engine — coverage-blocked.** Only **5 of 27** observations are in the Data API
+(Kazakhstan, Gabon, Eq. Guinea, Sri Lanka, Argentina — all tag-4 survivors, MI 0.50–0.66); the WGI
+panel doesn't carry the obscure states in this draw, and the 5 covered have no outcome variance. So
+the **V-Dem rol + Maddison-gap proxy is the operative engine on v2** — the same proxy the v1 runs used.
+
 ## The decisive limitation — v2 does NOT test T3
 **Not one external-military/conquest shock was drawn.** Every "external" cohort is a natural-disaster
 or price shock (tsunami, Ebola, oil) — exogenous to the economy, but not an invasion. The relational/
@@ -70,5 +95,6 @@ conquest. So v2:
 1. Run a **military-shock cohort** for T3 (re-draw including WWII-occupation / interstate-war waves),
    with the deterministic relational pull (COW CINC/ATOP/ICOW) added to the scoring protocol.
 2. Build the flagged **shielded-survivor probe** to populate the empty 4th cell (discrimination check).
-3. Optional: re-score v2's modern cohorts on the full 5-pillar MI + durability gap (P4−P1) where Data
-   API coverage exists, to test the *second* load-bearing claim (this run tested institutions only).
+3. ~~Re-score v2 on the durability gap + 5-pillar~~ **DONE** (see "Second load-bearing claim" above):
+   gap is right-signed (pooled −0.22, internal −0.58) and replicates the v1-30 direction; full 5-pillar
+   is coverage-blocked (5/27 in the Data API).
