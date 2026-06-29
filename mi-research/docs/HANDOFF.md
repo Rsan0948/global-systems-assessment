@@ -1,7 +1,8 @@
 # HANDOFF — Modernization Index (MI) project: state, method, next steps
 
 **Updated: 2026-06-28.** Single landing page for an agent picking this up. Read this, then
-`PROJECT_SYNTHESIS.md` (what it all means), then the doc(s) for whatever you're doing.
+`SYSTEM_STATE.md` (the full consolidated inventory — every tier + case count + epistemic status),
+then `PROJECT_SYNTHESIS.md` (what it all means), then the doc(s) for whatever you're doing.
 
 ## 0. Environment / mechanics
 - **Working dir:** `/Users/rubensanchez/Developer/usg-mi-research-wt/mi-research` (isolated worktree).
@@ -23,7 +24,7 @@ distrust the slope.** Full framing: `PROJECT_SYNTHESIS.md`.
 ## 2. Engine state — MI v3.3
 `mi/` : `constants.py` (LENS dict + GLOBAL_* + ASCENT_LOW_BASE; `MI_MODEL_VERSION="v3.3"`), `scoring.py`,
 `safeguards.py` (A–J + Mod4/Mod8), `diagnostics.py`, `datasource.py` (the Data API), `durability.py`,
-`global_systems.py`.
+`global_systems.py`, **`relational.py` (T3 — the relational/exposure tier; see SYSTEM_STATE.md §1)**.
 - Pillars P1–P5 (equal-weighted MI). Safeguards A–G, **I** (porosity-backstop), **J** (durability gate,
   P4−P1, three-state flag/clear/borderline + V3.2 convergence qualifier), Mod4 (margin/consolidated-pair),
   Mod8 (violence/agency). Diagnostics: `structural_vulnerability`, `accountability_gap` (HYPOTHESIS),
@@ -76,27 +77,24 @@ lowest-confidence, interpreter-scored, hindsight; **never** merged into the 213C
   `random_validation_brief.md` (v1), `random_validation_brief_v2.md`, `ancient_validation_brief.md`.
 
 ## 7. NEXT STEPS (in order)
-1. **Build the RELATIONAL / EXPOSURE tier (the "war/conflict indicator layer").** The framework is blind
-   to *exogenous conflict* only because it's an internal instrument — the signal exists in a relational
-   layer we never built (this is a SCOPE choice, not impossibility). Decompose: (a) shock OCCURRENCE —
-   alliance/patron protection [COW alliances], relative military power [COW CINC], bad-neighborhood/
-   conflict-diffusion, contested borders/irredentism [ICOW], strategic geography/resources, great-power
-   fault-line; (b) shock RESPONSE — cohesion (P5), mobilization (P1), patron intervention, strategic
-   depth. **Existing toeholds:** Safeguard A (external admin), Safeguard I (backstop patron), the
-   confederacy-fragility finding. **The field exists:** ViEWS, ACLED, PITF (~80% @2y), COW CINC. Goal:
-   turn "exogenous defeats us" into "conditioned on exposure" so Cyprus/Poland-Lithuania become HITS not
-   misses. Irreducible kernel: the specific actor's decision to start a specific war (timing) — distrust
-   the slope. → spec it as a **third tier**; build deterministic indicators from citable sources.
-2. **Run the v2 (shock-cohort) modern cases** when they arrive: deterministic pre-shock pull + the
-   pre-registered rule (lower institutions / bigger durability gap → more severe outcome), compare
-   **within cohort** (the clean within-shock natural experiment) AND pooled, **split by origin tag**.
-   Log predictions before reading outcomes. Optionally write/run an **ancient v2** (shock-cohorts —
-   Mongol invasions, Black Death, Bronze-Age collapse — survivor-inclusive).
-3. **Score any new case studies given**, using the same blind/deterministic protocols + the firewall.
-4. **Re-examine the ENTIRE corpus through the relational lens:** re-tag every existing case by shock
-   origin (endogenous/exogenous) and exposure; re-test whether *conditioning on exposure* resolves the
-   known misses (Spain 1936, Cyprus 1974, Greece 1922; the ancient exogenous-conquest collapses). This
-   could shrink the blind spot retroactively and is the most promising path to strengthening validation.
+**DONE this session (commits ce8fcdc → 4a0af87; see SYSTEM_STATE.md §4 + the T3 docs):** built the
+**T3 relational/exposure tier** (spec → Phase-2 proof → Phase-3 corpus re-tag + miss-discrimination →
+v2 out-of-sample scoring → 4th-cell shielded-survivor probe). Findings: corpus is ~92% endogenous
+(blind spot selected out); T3 *discriminates* (resolves exogenous misses Cyprus/Greece, silent on
+internal Spain/Portugal/Venezuela; shielded survivors Bosnia/Kuwait vs unshielded fallers); v2
+validated the internal engine within-cohort but did **not** test T3 (no military shock drawn). All
+additive, baseline 213/77/0 unchanged.
+
+**Pending (in priority order):**
+1. **Blind military-shock cohort for T3** — the one design that tests T3 out-of-sample (v2 drew zero
+   interstate-conquest shocks). Frame a v3 framework-naive brief that draws interstate-war/occupation
+   waves and *guarantees* the relational layer (COW CINC/ATOP/ICOW) is collected/scored. Distrust the
+   slope: T3 is a risk gauge, not a war-timing predictor.
+2. **Full-engine pass on v2** — score the v2 cohorts on the durability gap (P4−P1) + 5-pillar where WGI
+   covers, to test the *second* load-bearing claim (only institutions were scored: `score_v2_cohorts.py`).
+3. **Score any new case studies given**, same blind/deterministic protocols + the firewall.
+4. Optional **ancient v2** (shock-cohorts — Mongol invasions, Black Death, Bronze-Age collapse —
+   survivor-inclusive), firewalled.
 
 ## 8. Standing integrity rules (do not break)
 - **Never commit to main.** Additive only; **no change may degrade the 213C/77P/0F baseline** (Golden
