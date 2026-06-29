@@ -86,12 +86,14 @@ validated the internal engine within-cohort but did **not** test T3 (no military
 additive, baseline 213/77/0 unchanged.
 
 **Pending (in priority order):**
-1. **Blind military-shock cohort for T3** — the one design that tests T3 out-of-sample (v2 drew zero
-   interstate-conquest shocks). Frame a v3 framework-naive brief that draws interstate-war/occupation
-   waves and *guarantees* the relational layer (COW CINC/ATOP/ICOW) is collected/scored. Distrust the
-   slope: T3 is a risk gauge, not a war-timing predictor.
-2. **Full-engine pass on v2** — score the v2 cohorts on the durability gap (P4−P1) + 5-pillar where WGI
-   covers, to test the *second* load-bearing claim (only institutions were scored: `score_v2_cohorts.py`).
+1. **Blind military-shock cohort for T3** — the one design that tests T3 out-of-sample. **Brief now
+   FROZEN: `random_validation_brief_v3_military.md`** (framework-naive; draws interstate-war/occupation
+   waves, survivor-inclusive, alignment-spread, and collects the strategic/relational facts). **Awaiting
+   the naive agent's returned cohorts**, then score per its internal note (deterministic COW
+   CINC/ATOP/ICOW pull + T3, within-cohort + pooled, split by shield status). Distrust the slope.
+2. ~~**Full-engine pass on v2**~~ **DONE** (durability gap right-signed out of sample, pooled −0.22,
+   replicates v1-30; 5-pillar coverage-blocked at 5/27). See `validation_run_v2_cohorts.md` +
+   `score_v2_cohorts.py`.
 3. **Score any new case studies given**, same blind/deterministic protocols + the firewall.
 4. Optional **ancient v2** (shock-cohorts — Mongol invasions, Black Death, Bronze-Age collapse —
    survivor-inclusive), firewalled.

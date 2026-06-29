@@ -80,7 +80,9 @@ Never commit to main · additive only, never degrade 213/77/0 (re-run `--validat
 never a forecast · out-of-sample = blind selection + mechanical predictor + pre-registered rule.
 
 ## 7. What's genuinely pending
-1. **Blind military-shock cohort** for T3 (the one design that tests it out-of-sample; v2 drew none).
-2. **Full-engine pass on v2** (durability gap P4−P1 + 5-pillar where WGI covers) — tests the *second*
-   load-bearing claim; only the institutions claim was scored on v2.
+1. **Blind military-shock cohort for T3** — **brief FROZEN** (`random_validation_brief_v3_military.md`),
+   **awaiting the framework-naive agent's returned cohorts**; then score (COW CINC/ATOP/ICOW + T3,
+   within-cohort + pooled, split by shield status). The one design that tests T3 out-of-sample.
+2. ~~Full-engine pass on v2~~ **DONE** — durability gap right-signed out of sample (pooled −0.22,
+   internal −0.58; replicates v1-30); full 5-pillar coverage-blocked (5/27 in the Data API).
 3. Sealed US/UK durability flags (`live/forecasts/`, score-out ~2030 — do not re-tune).
