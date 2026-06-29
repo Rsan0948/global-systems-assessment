@@ -60,7 +60,8 @@ def _band(x):
 def load_records():
     """All T3 records across the citable and historical-proxy tiers, keyed 'Unit@Year'."""
     recs = {}
-    for fname in ("exposure_inputs.json", "historical_proxy_inputs.json", "validation_misses.json"):
+    for fname in ("exposure_inputs.json", "historical_proxy_inputs.json", "validation_misses.json",
+                  "shielded_survivor_probe.json"):
         d = _load(fname)
         for k, v in d.items():
             if k == "_meta":
@@ -94,8 +95,20 @@ def _e1_relative_power(blk):
 
 
 def _patron_strength(exposure):
-    """1.0 if a credible external defender exists, else 0.0. Shared by E2 (deters) and R3 (blunts)."""
+    """DETERRENCE-patron (ex ante): 1.0 if a credible external defender exists to deter a shock, else 0.0.
+    Feeds E2 (lowers net exposure)."""
     return 1.0 if exposure.get("E2_patron", {}).get("credible_external_defender") else 0.0
+
+
+def _response_patron(exposure):
+    """RESPONSE-patron (ex post): does a patron intervene to BLUNT/reverse a shock that lands? Feeds R3.
+    Decoupled from deterrence because they can differ — Kuwait 1990 had NO credible deterrent (invaded)
+    but a decisive response patron (the coalition restored it). Falls back to the deterrence flag when a
+    case doesn't distinguish them."""
+    p = exposure.get("E2_patron", {})
+    if "response_patron" in p:
+        return 1.0 if p["response_patron"] else 0.0
+    return _patron_strength(exposure)
 
 
 def compute_exposure(record):
@@ -151,7 +164,7 @@ def compute_response(record, unit, year):
     ex = record["exposure"]
     r1 = pillars.get("P5")                                           # cohesion
     r2 = pillars.get("P1")                                           # mobilization capacity
-    r3 = _patron_strength(ex)                                        # patron intervention credibility
+    r3 = _response_patron(ex)                                        # patron intervention (ex post; decoupled from deterrence)
     depth_blk = record.get("response", {}).get("R4_strategic_depth", {})
     area = depth_blk.get("area_km2")
     r4 = min(area / R4_DEPTH_ANCHOR_KM2, 1.0) if area else None      # strategic depth
