@@ -21,16 +21,16 @@
   },
   {
    "key": "durability",
-   "label": "Earned prosperity",
-   "valence": "good",
-   "why": "Institutions match or exceed what income predicts \u2014 durable.",
-   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
   },
   {
    "key": "shape",
    "label": "Some imbalance \u00b7 weakest: Stability & Resilience",
    "valence": "warn",
-   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
    "rule": "max(pillar) \u2212 min(pillar)."
   }
  ],
@@ -39,9 +39,9 @@
   "total": 5,
   "missing": []
  },
- "verdict": "Mixed structural profile \u2014 prosperity roughly in line with institutions.",
+ "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions.",
  "spread": 0.263,
- "residual": 0.009,
+ "residual": -0.034,
  "config": [
   [
    "P3",
@@ -138,5 +138,6 @@
    "source": "Fund for Peace FSI"
   }
  ],
- "data_year": 2024
+ "data_year": 2024,
+ "source_tier": "A"
 }

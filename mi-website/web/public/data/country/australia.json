@@ -1,0 +1,150 @@
+{
+ "slug": "australia",
+ "name": "Australia",
+ "iso3": "AUS",
+ "mi": 0.775,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.82,
+  "P2": 0.504,
+  "P3": 0.956,
+  "P4": 0.802,
+  "P5": 0.794
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 13% of GDP \u2014 prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable \u2014 prosperity roughly in line with institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.453,
+ "residual": 0.015,
+ "config": [
+  [
+   "P3",
+   0.956
+  ],
+  [
+   "P1",
+   0.82
+  ],
+  [
+   "P4",
+   0.802
+  ],
+  [
+   "P5",
+   0.794
+  ],
+  [
+   "P2",
+   0.504
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 86.5156,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 82.2714,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 82.0262,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 85.3425,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 77.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 48.1,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.131,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.929,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9834,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 72111.18,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 79.44,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 83.32,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 13.36,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B"
+}

@@ -32,11 +32,28 @@ export default function Home() {
       </section>
 
       <section className="mt-12">
-        <div className="mb-4 flex items-baseline justify-between">
+        <div className="mb-3 flex items-baseline justify-between">
           <h2 className="serif text-lg">The world, by structure</h2>
           <Link href="/atlas" className="link text-[13px]">
             Open the atlas →
           </Link>
+        </div>
+        <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-1">
+          {[
+            [1, "#10b981", "Highly modernized"],
+            [2, "#3b82f6", "Durable"],
+            [3, "#f59e0b", "Mixed"],
+            [4, "#fb923c", "Fragile"],
+            [5, "#ef4444", "Floor"],
+          ].map(([t, col, label]) => {
+            const n = countries.filter((c) => c.tier === t).length;
+            return (
+              <span key={t as number} className="mono flex items-center gap-1.5 text-[11px] text-fg3">
+                <span style={{ color: col as string }}>●</span> T{t as number} {label}
+                <span className="text-fg2">{n}</span>
+              </span>
+            );
+          })}
         </div>
         <CountryGrid countries={countries} />
         <p className="mt-5 max-w-2xl text-[12px] leading-relaxed text-fg3">

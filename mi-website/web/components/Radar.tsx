@@ -5,26 +5,27 @@ type Props = {
 };
 
 const ORDER = ["P1", "P2", "P3", "P4", "P5"];
+const SHORT: Record<string, string> = {
+  P1: "Institutions",
+  P2: "Complexity",
+  P3: "Human cap.",
+  P4: "Economy",
+  P5: "Stability",
+};
 
-export default function Radar({ pillars, names, size = 280 }: Props) {
+export default function Radar({ pillars, size = 260 }: Props) {
   const cx = size / 2;
   const cy = size / 2;
-  const r = size / 2 - 46;
+  const r = size / 2 - 54;
   const n = ORDER.length;
   const angle = (i: number) => -Math.PI / 2 + (i * 2 * Math.PI) / n;
   const pt = (i: number, frac: number) => [cx + r * frac * Math.cos(angle(i)), cy + r * frac * Math.sin(angle(i))];
 
-  const rings = [0.25, 0.5, 0.75, 1].map((f) =>
-    ORDER.map((_, i) => pt(i, f).join(",")).join(" ")
-  );
-
-  const filled = ORDER.map((p, i) => {
-    const v = pillars[p];
-    return pt(i, v == null ? 0 : v).join(",");
-  }).join(" ");
+  const rings = [0.25, 0.5, 0.75, 1].map((f) => ORDER.map((_, i) => pt(i, f).join(",")).join(" "));
+  const filled = ORDER.map((p, i) => pt(i, pillars[p] == null ? 0 : (pillars[p] as number)).join(",")).join(" ");
 
   return (
-    <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size} className="overflow-visible">
+    <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size}>
       {rings.map((pts, i) => (
         <polygon key={i} points={pts} fill="none" stroke="#232338" strokeWidth={1} />
       ))}
@@ -40,22 +41,16 @@ export default function Radar({ pillars, names, size = 280 }: Props) {
       })}
       {ORDER.map((p, i) => {
         const [lx, ly] = pt(i, 1.0);
-        const ox = lx + (lx - cx) * 0.18;
-        const oy = ly + (ly - cy) * 0.18;
+        const ox = lx + (lx - cx) * 0.1;
+        const oy = ly + (ly - cy) * 0.1;
         const v = pillars[p];
+        const anchor = Math.abs(ox - cx) < 8 ? "middle" : ox > cx ? "start" : "end";
         return (
-          <text
-            key={p}
-            x={ox}
-            y={oy}
-            textAnchor={Math.abs(ox - cx) < 6 ? "middle" : ox > cx ? "start" : "end"}
-            dominantBaseline="middle"
-            className="mono"
-            fontSize={10}
-            fill={v == null ? "#6b6b82" : "#9a9ab0"}
-          >
+          <text key={p} x={ox} y={oy} textAnchor={anchor} dominantBaseline="middle" className="mono" fontSize={9.5}>
             <tspan fontWeight={600} fill={v == null ? "#6b6b82" : "#cfcfe0"}>{p}</tspan>
-            <tspan x={ox} dy={12} fontSize={8.5}>{v == null ? "no data" : (names[p] ?? "")}</tspan>
+            <tspan x={ox} dy={11} fontSize={8} fill={v == null ? "#6b6b82" : "#8a8aa0"}>
+              {v == null ? "no data" : SHORT[p]}
+            </tspan>
           </text>
         );
       })}

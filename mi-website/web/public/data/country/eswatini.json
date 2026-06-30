@@ -1,0 +1,138 @@
+{
+ "slug": "eswatini",
+ "name": "Eswatini",
+ "iso3": "SWZ",
+ "mi": 0.581,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.375,
+  "P2": 0.554,
+  "P3": 0.696,
+  "P4": 0.747,
+  "P5": 0.534
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity roughly in line with institutions \u2014 lopsided (institutions the weak point).",
+ "spread": 0.372,
+ "residual": 0.015,
+ "config": [
+  [
+   "P4",
+   0.747
+  ],
+  [
+   "P3",
+   0.696
+  ],
+  [
+   "P2",
+   0.554
+  ],
+  [
+   "P5",
+   0.534
+  ],
+  [
+   "P1",
+   0.375
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 36.1519,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 42.1656,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 44.8006,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 31.962,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 27.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "eci",
+   "value": 0.271,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.713,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.6788,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 11799.2,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 53.38,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 33.27,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 3.0,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B"
+}

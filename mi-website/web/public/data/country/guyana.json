@@ -1,0 +1,127 @@
+{
+ "slug": "guyana",
+ "name": "Guyana",
+ "iso3": "GUY",
+ "mi": 0.592,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.473,
+  "P2": null,
+  "P3": null,
+  "P4": 0.608,
+  "P5": 0.696
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "partial",
+   "label": "Partial data \u00b7 3/5 pillars",
+   "valence": "neutral",
+   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
+   "rule": "2 of 5 pillars lack public data."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Institutions",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 34% of GDP \u2014 prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
+  }
+ ],
+ "coverage": {
+  "present": 3,
+  "total": 5,
+  "missing": [
+   "P2",
+   "P3"
+  ]
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions.",
+ "spread": 0.223,
+ "residual": -0.18,
+ "config": [
+  [
+   "P5",
+   0.696
+  ],
+  [
+   "P4",
+   0.608
+  ],
+  [
+   "P1",
+   0.473
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 49.43,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 51.21,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 47.81,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 40.83,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 80155.04,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 69.59,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 54.97,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 33.68,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "C"
+}

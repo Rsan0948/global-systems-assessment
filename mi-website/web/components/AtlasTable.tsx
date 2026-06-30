@@ -12,6 +12,7 @@ const COLS = [
   ["P3", "Human Cap."],
   ["P4", "Economy"],
   ["P5", "Stability"],
+  ["cov", "Data"],
 ] as const;
 
 const cell = (v: number | null) =>
@@ -28,9 +29,14 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
     const f = countries.filter((c) => c.name.toLowerCase().includes(q.toLowerCase()));
     return f.sort((a, b) => {
       if (sort === "name") return a.name.localeCompare(b.name);
-      const av = sort === "mi" ? a.mi : (a.pillars[sort] ?? -1);
-      const bv = sort === "mi" ? b.mi : (b.pillars[sort] ?? -1);
-      return bv - av;
+      if (sort === "cov") return b.coverage.present - a.coverage.present || b.mi - a.mi;
+      if (sort === "mi") {
+        const fa = a.coverage.present === 5 ? 1 : 0;
+        const fb = b.coverage.present === 5 ? 1 : 0;
+        if (fa !== fb) return fb - fa; // full-coverage first (comparable)
+        return b.mi - a.mi;
+      }
+      return (b.pillars[sort] ?? -1) - (a.pillars[sort] ?? -1);
     });
   }, [countries, sort, q]);
 
@@ -75,6 +81,13 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
                     {cell(c.pillars[p])}
                   </td>
                 ))}
+                <td className="px-3 py-1.5 text-fg3">
+                  {c.coverage.present < 5 ? (
+                    <span className="text-warn/80">{c.coverage.present}/5</span>
+                  ) : (
+                    <span className="text-fg3">5/5</span>
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>

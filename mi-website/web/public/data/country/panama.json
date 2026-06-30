@@ -1,0 +1,148 @@
+{
+ "slug": "panama",
+ "name": "Panama",
+ "iso3": "PAN",
+ "mi": 0.655,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.488,
+  "P2": 0.41,
+  "P3": 0.824,
+  "P4": 0.85,
+  "P5": 0.704
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable \u2014 prosperity outrunning institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.441,
+ "residual": -0.046,
+ "config": [
+  [
+   "P4",
+   0.85
+  ],
+  [
+   "P3",
+   0.824
+  ],
+  [
+   "P5",
+   0.704
+  ],
+  [
+   "P1",
+   0.488
+  ],
+  [
+   "P2",
+   0.41
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 56.1071,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 52.4309,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 53.6988,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 36.6386,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 33.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 24.74,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 0.1971,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": 0.361,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7309,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9168,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 41369.42,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 70.42,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 64.57,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 3.66,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B"
+}

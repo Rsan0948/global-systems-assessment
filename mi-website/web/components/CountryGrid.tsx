@@ -48,12 +48,16 @@ function Tile({ c }: { c: Summary }) {
 export default function CountryGrid({ countries }: { countries: Summary[] }) {
   const [q, setQ] = useState("");
   const [tier, setTier] = useState(0);
+  const [fullOnly, setFullOnly] = useState(false);
   const filtered = useMemo(
     () =>
       countries.filter(
-        (c) => (tier === 0 || c.tier === tier) && c.name.toLowerCase().includes(q.toLowerCase())
+        (c) =>
+          (tier === 0 || c.tier === tier) &&
+          (!fullOnly || c.coverage.present === 5) &&
+          c.name.toLowerCase().includes(q.toLowerCase())
       ),
-    [countries, q, tier]
+    [countries, q, tier, fullOnly]
   );
   return (
     <div>
@@ -62,7 +66,7 @@ export default function CountryGrid({ countries }: { countries: Summary[] }) {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Search any country…"
-          className="w-56 rounded-md border border-border bg-surface px-3 py-1.5 text-[13px] outline-none placeholder:text-fg3 focus:border-primary"
+          className="w-52 rounded-md border border-border bg-surface px-3 py-1.5 text-[13px] outline-none placeholder:text-fg3 focus:border-primary"
         />
         <div className="flex gap-1">
           {[0, 1, 2, 3, 4, 5].map((t) => (
@@ -80,6 +84,18 @@ export default function CountryGrid({ countries }: { countries: Summary[] }) {
             </button>
           ))}
         </div>
+        <button
+          onClick={() => setFullOnly((v) => !v)}
+          className="mono rounded px-2 py-1 text-[11px] transition"
+          style={{
+            background: fullOnly ? "#3b82f622" : "transparent",
+            color: fullOnly ? "#60a5fa" : "#6b6b82",
+            border: `1px solid ${fullOnly ? "#3b82f655" : "#232338"}`,
+          }}
+          title="Only countries measured on all five pillars are directly comparable"
+        >
+          Full data 5/5
+        </button>
         <span className="mono ml-auto text-[11px] text-fg3">{filtered.length} shown</span>
       </div>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">

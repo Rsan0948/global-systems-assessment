@@ -24,13 +24,13 @@
    "label": "Granted prosperity",
    "valence": "bad",
    "why": "Wealth has outrun institutions \u2014 historically fragile.",
-   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
   },
   {
    "key": "shape",
    "label": "Lopsided \u00b7 weakest: Institutions",
    "valence": "bad",
-   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
    "rule": "max(pillar) \u2212 min(pillar)."
   }
  ],
@@ -41,7 +41,7 @@
  },
  "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions \u2014 lopsided (institutions the weak point).",
  "spread": 0.459,
- "residual": -0.121,
+ "residual": -0.166,
  "config": [
   [
    "P3",
@@ -133,5 +133,6 @@
    "source": "Fund for Peace FSI"
   }
  ],
- "data_year": 2024
+ "data_year": 2024,
+ "source_tier": "A"
 }

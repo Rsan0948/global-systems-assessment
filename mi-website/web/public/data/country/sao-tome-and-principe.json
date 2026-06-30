@@ -1,0 +1,120 @@
+{
+ "slug": "sao-tome-and-principe",
+ "name": "Sao Tome and Principe",
+ "iso3": "STP",
+ "mi": 0.632,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.452,
+  "P2": null,
+  "P3": null,
+  "P4": 0.702,
+  "P5": 0.743
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "partial",
+   "label": "Partial data \u00b7 3/5 pillars",
+   "valence": "neutral",
+   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
+   "rule": "2 of 5 pillars lack public data."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Institutions",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 3,
+  "total": 5,
+  "missing": [
+   "P2",
+   "P3"
+  ]
+ },
+ "verdict": "Structurally durable \u2014 prosperity matched by institutions.",
+ "spread": 0.291,
+ "residual": 0.135,
+ "config": [
+  [
+   "P5",
+   0.743
+  ],
+  [
+   "P4",
+   0.702
+  ],
+  [
+   "P1",
+   0.452
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 37.37,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 50.89,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 40.81,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 51.58,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 6241.86,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 74.25,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 59.73,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 1.88,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "C"
+}

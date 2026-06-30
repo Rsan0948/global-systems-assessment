@@ -1,0 +1,150 @@
+{
+ "slug": "qatar",
+ "name": "Qatar",
+ "iso3": "QAT",
+ "mi": 0.694,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.674,
+  "P2": 0.423,
+  "P3": 0.842,
+  "P4": 0.712,
+  "P5": 0.821
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 27% of GDP \u2014 prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable \u2014 prosperity outrunning institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.419,
+ "residual": -0.126,
+ "config": [
+  [
+   "P3",
+   0.842
+  ],
+  [
+   "P5",
+   0.821
+  ],
+  [
+   "P4",
+   0.712
+  ],
+  [
+   "P1",
+   0.674
+  ],
+  [
+   "P2",
+   0.423
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 73.3953,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 67.112,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 70.1033,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 63.1337,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 59.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 32.89,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.083,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.724,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9595,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 126046.35,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 82.14,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 40.15,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 27.29,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B"
+}

@@ -1,0 +1,150 @@
+{
+ "slug": "mozambique",
+ "name": "Mozambique",
+ "iso3": "MOZ",
+ "mi": 0.385,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.354,
+  "P2": 0.193,
+  "P3": 0.563,
+  "P4": 0.458,
+  "P5": 0.359
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 15% of GDP \u2014 prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally fragile \u2014 prosperity roughly in line with institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.37,
+ "residual": 0.028,
+ "config": [
+  [
+   "P3",
+   0.563
+  ],
+  [
+   "P4",
+   0.458
+  ],
+  [
+   "P5",
+   0.359
+  ],
+  [
+   "P1",
+   0.354
+  ],
+  [
+   "P2",
+   0.193
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 37.4226,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 36.3988,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 42.8212,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 26.3622,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 25.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 13.11,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -1.227,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.4544,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.6709,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 1705.38,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 35.86,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 39.25,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 14.91,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B"
+}

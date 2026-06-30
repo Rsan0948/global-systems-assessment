@@ -1,0 +1,143 @@
+{
+ "slug": "tanzania",
+ "name": "Tanzania",
+ "iso3": "TZA",
+ "mi": 0.496,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.453,
+  "P2": 0.234,
+  "P3": 0.582,
+  "P4": 0.62,
+  "P5": 0.592
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity matched by institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.386,
+ "residual": 0.041,
+ "config": [
+  [
+   "P4",
+   0.62
+  ],
+  [
+   "P5",
+   0.592
+  ],
+  [
+   "P3",
+   0.582
+  ],
+  [
+   "P1",
+   0.453
+  ],
+  [
+   "P2",
+   0.234
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 45.6541,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 48.0251,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 46.4192,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 41.9017,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 41.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 15.33,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -0.923,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.4407,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.723,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 4220.8,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 59.24,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 45.56,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 6.69,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B"
+}

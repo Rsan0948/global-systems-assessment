@@ -1,0 +1,138 @@
+{
+ "slug": "guinea",
+ "name": "Guinea",
+ "iso3": "GIN",
+ "mi": 0.424,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.35,
+  "P2": 0.141,
+  "P3": 0.499,
+  "P4": 0.649,
+  "P5": 0.482
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.507,
+ "residual": -0.039,
+ "config": [
+  [
+   "P4",
+   0.649
+  ],
+  [
+   "P3",
+   0.499
+  ],
+  [
+   "P5",
+   0.482
+  ],
+  [
+   "P1",
+   0.35
+  ],
+  [
+   "P2",
+   0.141
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 34.071,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 37.208,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 40.799,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 24.0821,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 28.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "eci",
+   "value": -1.793,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.3716,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.6268,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 4565.3,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 48.17,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 35.68,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 4.52,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B"
+}

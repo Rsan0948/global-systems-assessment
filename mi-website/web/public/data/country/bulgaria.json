@@ -1,0 +1,148 @@
+{
+ "slug": "bulgaria",
+ "name": "Bulgaria",
+ "iso3": "BGR",
+ "mi": 0.685,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.527,
+  "P2": 0.521,
+  "P3": 0.832,
+  "P4": 0.879,
+  "P5": 0.666
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable \u2014 prosperity roughly in line with institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.358,
+ "residual": -0.017,
+ "config": [
+  [
+   "P4",
+   0.879
+  ],
+  [
+   "P3",
+   0.832
+  ],
+  [
+   "P5",
+   0.666
+  ],
+  [
+   "P1",
+   0.527
+  ],
+  [
+   "P2",
+   0.521
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 52.1731,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 56.3909,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 59.4055,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 42.9965,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 43.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 38.49,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 0.7922,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": 0.785,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.8073,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8559,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 41969.45,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 66.58,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 60.58,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 0.92,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B"
+}

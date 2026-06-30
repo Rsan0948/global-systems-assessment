@@ -24,13 +24,13 @@
    "label": "Earned prosperity",
    "valence": "good",
    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
   },
   {
    "key": "shape",
    "label": "Some imbalance \u00b7 weakest: Economic Complexity",
    "valence": "warn",
-   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
    "rule": "max(pillar) \u2212 min(pillar)."
   }
  ],
@@ -41,7 +41,7 @@
  },
  "verdict": "Highly modernized \u2014 prosperity roughly in line with institutions.",
  "spread": 0.31,
- "residual": -0.003,
+ "residual": 0.013,
  "config": [
   [
    "P4",
@@ -138,5 +138,6 @@
    "source": "Fund for Peace FSI"
   }
  ],
- "data_year": 2024
+ "data_year": 2024,
+ "source_tier": "A"
 }
