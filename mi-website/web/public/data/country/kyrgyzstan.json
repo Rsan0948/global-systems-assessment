@@ -1,21 +1,21 @@
 {
- "slug": "hungary",
- "name": "Hungary",
- "iso3": "HUN",
- "mi": 0.699,
- "tier": 2,
+ "slug": "kyrgyzstan",
+ "name": "Kyrgyzstan",
+ "iso3": "KGZ",
+ "mi": 0.543,
+ "tier": 3,
  "pillars": {
-  "P1": 0.556,
-  "P2": 0.613,
-  "P3": 0.859,
-  "P4": 0.802,
-  "P5": 0.663
+  "P1": 0.367,
+  "P2": 0.373,
+  "P3": 0.775,
+  "P4": 0.628,
+  "P5": 0.573
  },
  "chips": [
   {
    "key": "tier",
-   "label": "Tier 2: Durable",
-   "valence": "good",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
    "why": "Modernization Index band (equal-weighted pillars).",
    "rule": "MI score binned into 5 tiers."
   },
@@ -28,10 +28,17 @@
   },
   {
    "key": "shape",
-   "label": "Some imbalance \u00b7 weakest: Institutions",
-   "valence": "warn",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
    "rule": "max(pillar) \u2212 min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 12% of GDP \u2014 prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
   }
  ],
  "coverage": {
@@ -39,29 +46,29 @@
   "total": 5,
   "missing": []
  },
- "verdict": "Structurally durable \u2014 prosperity roughly in line with institutions.",
- "spread": 0.303,
- "residual": -0.019,
+ "verdict": "Mixed structural profile \u2014 prosperity roughly in line with institutions \u2014 lopsided (institutions the weak point).",
+ "spread": 0.409,
+ "residual": 0.019,
  "config": [
   [
    "P3",
-   0.859
+   0.775
   ],
   [
    "P4",
-   0.802
+   0.628
   ],
   [
    "P5",
-   0.663
+   0.573
   ],
   [
    "P2",
-   0.613
+   0.373
   ],
   [
    "P1",
-   0.556
+   0.367
   ]
  ],
  "pillar_names": {
@@ -74,70 +81,75 @@
  "indicators": [
   {
    "key": "gov_effectiveness",
-   "value": 61.1,
+   "value": 34.0644,
    "source": "World Bank WGI"
   },
   {
    "key": "rule_of_law",
-   "value": 60.27,
+   "value": 40.8539,
    "source": "World Bank WGI"
   },
   {
    "key": "regulatory_quality",
-   "value": 60.15,
+   "value": 46.713,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 24.851,
    "source": "World Bank WGI"
   },
   {
    "key": "cpi",
-   "value": 41.0,
+   "value": 25.0,
    "source": "Transparency International"
   },
   {
-   "key": "control_of_corruption",
-   "value": 48.65,
-   "source": "World Bank WGI"
-  },
-  {
-   "key": "voice_accountability",
-   "value": 56.36,
-   "source": "World Bank WGI"
-  },
-  {
    "key": "gii",
-   "value": 39.57,
+   "value": 20.35,
    "source": "WIPO Global Innovation Index"
   },
   {
+   "key": "rd_pct_gdp",
+   "value": 0.0527,
+   "source": "World Bank WDI"
+  },
+  {
    "key": "eci",
-   "value": 1.15,
+   "value": 0.212,
    "source": "Harvard Atlas (ECI)"
   },
   {
    "key": "education_index",
-   "value": 0.8408,
+   "value": 0.7554,
    "source": "UNDP HDR"
   },
   {
    "key": "life_expectancy_index",
-   "value": 0.8773,
+   "value": 0.795,
    "source": "UNDP HDR"
   },
   {
    "key": "gdp_per_capita_ppp",
-   "value": 48552.47,
+   "value": 8012.45,
    "source": "World Bank WDI"
   },
   {
    "key": "political_stability",
-   "value": 73.35,
+   "value": 57.28,
    "source": "World Bank WGI"
   },
   {
-   "key": "fsi",
-   "value": 48.8,
-   "source": "Fund for Peace FSI"
+   "key": "voice_accountability",
+   "value": 42.82,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 11.51,
+   "source": "World Bank WDI"
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "B"
 }

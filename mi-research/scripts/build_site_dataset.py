@@ -47,9 +47,20 @@ INDICATOR_SOURCES = {
 NAME_FIX = {  # micro-states/territories not named by any source
     "AND": "Andorra", "ATG": "Antigua and Barbuda", "ABW": "Aruba", "BHS": "Bahamas",
     "BMU": "Bermuda", "CYM": "Cayman Islands", "GRL": "Greenland", "KIR": "Kiribati",
-    "MAC": "Macao SAR", "MHL": "Marshall Islands", "NRU": "Nauru", "PLW": "Palau",
+    "MAC": "Macao", "MHL": "Marshall Islands", "NRU": "Nauru", "PLW": "Palau",
     "PRI": "Puerto Rico", "SMR": "San Marino", "KNA": "St Kitts and Nevis",
     "VIR": "US Virgin Islands",
+}
+# Clean raw World Bank / source names into readable display names.
+DISPLAY_FIX = {
+    "Lao PDR": "Laos", "Iran, Islamic Rep.": "Iran", "Congo, Rep.": "Republic of the Congo",
+    "Congo, Dem. Rep.": "DR Congo", "Kyrgyz Republic": "Kyrgyzstan", "Slovak Republic": "Slovakia",
+    "Egypt, Arab Rep.": "Egypt", "Yemen, Rep.": "Yemen", "Venezuela, RB": "Venezuela",
+    "Russian Federation": "Russia", "Korea, Rep.": "South Korea", "Korea, Dem. People's Rep.": "North Korea",
+    "Gambia, The": "Gambia", "Bahamas, The": "Bahamas", "Brunei Darussalam": "Brunei",
+    "Syrian Arab Republic": "Syria", "Viet Nam": "Vietnam", "Macao SAR": "Macao",
+    "Hong Kong SAR, China": "Hong Kong", "Turkiye": "Turkey", "Micronesia, Fed. Sts.": "Micronesia",
+    "St. Lucia": "St Lucia", "St. Vincent and the Grenadines": "St Vincent & Grenadines",
 }
 
 
@@ -141,8 +152,9 @@ def chips_for(ind, tier, residual, spread, weakest, present):
         chips.append({"key": "durability", "label": "Granted prosperity" if granted else "Earned prosperity",
                       "valence": "bad" if granted else "good",
                       "why": ("Wealth has outrun institutions — historically fragile." if granted
-                              else "Institutions match or exceed what income predicts — durable."),
-                      "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."})
+                              else "Institutions roughly match or exceed what income predicts — durable."),
+                      "rule": "MI residual vs. the log-GDP regression (the durability gap): below −0.03 → granted, "
+                              "otherwise earned (a ±0.03 tolerance treats near-zero gaps as in-line)."})
     if spread is not None:
         shape = "Balanced" if spread < 0.15 else "Some imbalance" if spread < 0.35 else "Lopsided"
         chips.append({"key": "shape", "label": f"{shape} · weakest: {PILLAR_NAMES.get(weakest, weakest)}",
@@ -225,9 +237,10 @@ def build():
         present = [p for p in ["P1", "P2", "P3", "P4", "P5"] if pillars.get(p) is not None]
         missing = [p for p in ["P1", "P2", "P3", "P4", "P5"] if pillars.get(p) is None]
         chips = chips_for(ind, tier, residual, spread, weakest, len(present))
-        slug = slugify(name)
+        display = DISPLAY_FIX.get(name, name)  # readable name for the site; `name` stays the data key
+        slug = slugify(display)
         summary = {
-            "slug": slug, "name": name, "iso3": iso, "mi": round(mi, 3), "tier": tier,
+            "slug": slug, "name": display, "iso3": iso, "mi": round(mi, 3), "tier": tier,
             "pillars": {p: (round(pillars[p], 3) if pillars.get(p) is not None else None)
                         for p in ["P1", "P2", "P3", "P4", "P5"]},
             "chips": chips, "coverage": {"present": len(present), "total": 5, "missing": missing},

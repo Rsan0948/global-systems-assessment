@@ -176,28 +176,37 @@ def compute_response(record, unit, year):
 
 
 # ----------------------------------------------------------------------------- joint reading
-def _joint_reading(E_struct, R, patron_present):
-    """Placement on (structural exposure x response), with the patron as the bridge between them.
-    Keyed on E_structural (raw adversity) not net E, so 'exposed but shielded' stays visible.
-    Descriptive only — NO verdict, NO MI delta."""
+def _joint_reading(E_struct, R, deterrence_patron, response_patron=False):
+    """Placement on (structural exposure x response). The patron is the bridge: a DETERRENCE patron
+    lowers occurrence; a RESPONSE patron reverses a shock that lands. Keyed on E_structural (raw
+    adversity) so 'exposed but shielded' stays visible. Descriptive only — NO verdict, NO MI delta."""
     if E_struct is None or R is None:
         return "insufficient data for a joint reading."
     sb, rb = _band(E_struct), _band(R)
-    if sb == "high" and patron_present:
-        return ("HIGH structural exposure but PATRON-SHIELDED: raw adversity is severe, yet a credible "
-                "external defender both DETERS the shock (lowers net exposure) and BLUNTS it (lifts response). "
-                "Persistence despite exposure is the expected reading here (e.g. South Korea).")
-    if sb == "high" and not patron_present and rb in ("low", "moderate"):
+    if sb == "high":
+        if deterrence_patron:
+            return ("HIGH structural exposure but PATRON-SHIELDED: raw adversity is severe, yet a credible "
+                    "external defender both DETERS the shock (lowers net exposure) and BLUNTS it (lifts "
+                    "response). Persistence despite exposure is the expected reading here (e.g. South Korea).")
+        if response_patron:
+            return ("HIGH structural exposure with NO standing deterrent — but a RESPONSE patron intervened "
+                    "to reverse the shock after it landed: survival came from outside help, not internal "
+                    "strength (e.g. Kuwait 1990, conquered then restored by the coalition).")
+        if rb == "high":
+            return ("HIGH structural exposure + NO patron, but strong INTERNAL response (cohesion/capacity): "
+                    "can survive a shock on its own resources (the cohesion-shielded path, e.g. Finland 1939).")
         return ("HIGH structural exposure + NO patron + weak response: standing vulnerability to "
                 "externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs "
                 "it. This is the configuration that turns an internal 'OK' read into an external miss — "
                 "Cyprus 1974, Poland-Lithuania 1772.")
-    if sb == "high" and not patron_present and rb == "high":
-        return ("HIGH structural exposure + NO patron, but strong INTERNAL response (cohesion/capacity): "
-                "can survive a shock on its own resources (the cohesion-shielded path, e.g. Finland 1939).")
-    if sb in ("low", "moderate"):
-        return f"structural exposure={sb}, response={rb}: relationally lower-risk on this axis."
-    return f"structural exposure={sb}, response={rb}: read the components."
+    if sb == "moderate":
+        if rb == "low":
+            return ("MODERATE structural exposure + weak response: not relationally over-determined, but with "
+                    "little to absorb a shock — fragile if one lands, and fatal if an external prop is removed "
+                    "(e.g. Afghanistan 2021, which fell within weeks of the withdrawal).")
+        return f"MODERATE structural exposure, {rb} response: relationally mid-risk on this axis."
+    return (f"LOW structural exposure ({sb}), {rb} response: this was not a relational case — any rupture "
+            "here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).")
 
 
 def relational_reading(unit, year=None, record=None):
@@ -224,7 +233,8 @@ def relational_reading(unit, year=None, record=None):
         "label": record.get("label", ""),
         "exposure": exposure,
         "response": response,
-        "joint_reading": _joint_reading(exposure["E_structural"], response["R"], exposure["patron_present"]),
+        "joint_reading": _joint_reading(exposure["E_structural"], response["R"], exposure["patron_present"],
+                                        _response_patron(record["exposure"]) == 1.0),
         "outcome_factual": record.get("outcome_factual", ""),
         "DISCLAIMER": ("Risk gauge, NOT a war-predictor: conditions on WHO is exposed, not WHEN a war "
                        "starts. Firewalled from the MI — reads pillars, changes no MI score. "

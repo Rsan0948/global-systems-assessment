@@ -24,8 +24,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -66,8 +66,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -108,50 +108,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Some imbalance \u00b7 weakest: Economic Complexity",
-    "valence": "warn",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "denmark",
-  "name": "Denmark",
-  "iso3": "DNK",
-  "mi": 0.84,
-  "tier": 1,
-  "pillars": {
-   "P1": 0.888,
-   "P2": 0.637,
-   "P3": 0.944,
-   "P4": 0.944,
-   "P5": 0.79
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -192,8 +150,50 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+    "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "denmark",
+  "name": "Denmark",
+  "iso3": "DNK",
+  "mi": 0.84,
+  "tier": 1,
+  "pillars": {
+   "P1": 0.888,
+   "P2": 0.637,
+   "P3": 0.944,
+   "P4": 0.944,
+   "P5": 0.79
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 1: Highly Modernized",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -234,8 +234,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -276,8 +276,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -318,8 +318,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -360,8 +360,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -402,8 +402,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -444,8 +444,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -493,8 +493,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -535,8 +535,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -577,8 +577,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -619,8 +619,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -661,8 +661,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -703,8 +703,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -745,12 +745,54 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Some imbalance \u00b7 weakest: Stability & Resilience",
+    "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "estonia",
+  "name": "Estonia",
+  "iso3": "EST",
+  "mi": 0.775,
+  "tier": 2,
+  "pillars": {
+   "P1": 0.78,
+   "P2": 0.654,
+   "P3": 0.903,
+   "P4": 0.807,
+   "P5": 0.728
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 2: Durable",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Some imbalance \u00b7 weakest: Economic Complexity",
     "valence": "warn",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
@@ -787,8 +829,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -803,48 +845,6 @@
     "valence": "warn",
     "why": "Resource rents \u2248 13% of GDP \u2014 prosperity leans on extraction.",
     "rule": "resource rents \u2265 10% of GDP."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "estonia",
-  "name": "Estonia",
-  "iso3": "EST",
-  "mi": 0.775,
-  "tier": 2,
-  "pillars": {
-   "P1": 0.78,
-   "P2": 0.654,
-   "P3": 0.903,
-   "P4": 0.807,
-   "P5": 0.728
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 2: Durable",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Some imbalance \u00b7 weakest: Economic Complexity",
-    "valence": "warn",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
    }
   ],
   "coverage": {
@@ -878,8 +878,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -920,8 +920,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -962,8 +962,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1004,8 +1004,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1046,8 +1046,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1088,8 +1088,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1130,8 +1130,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1172,8 +1172,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1214,8 +1214,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1256,8 +1256,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1298,8 +1298,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1340,8 +1340,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1382,8 +1382,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1424,8 +1424,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1466,8 +1466,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1508,8 +1508,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1550,8 +1550,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1593,7 +1593,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1642,7 +1642,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1683,50 +1683,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Lopsided \u00b7 weakest: Economic Complexity",
-    "valence": "bad",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "costa-rica",
-  "name": "Costa Rica",
-  "iso3": "CRI",
-  "mi": 0.686,
-  "tier": 2,
-  "pillars": {
-   "P1": 0.616,
-   "P2": 0.485,
-   "P3": 0.842,
-   "P4": 0.724,
-   "P5": 0.762
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 2: Durable",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1767,8 +1725,50 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Lopsided \u00b7 weakest: Economic Complexity",
+    "valence": "bad",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "costa-rica",
+  "name": "Costa Rica",
+  "iso3": "CRI",
+  "mi": 0.686,
+  "tier": 2,
+  "pillars": {
+   "P1": 0.616,
+   "P2": 0.485,
+   "P3": 0.842,
+   "P4": 0.724,
+   "P5": 0.762
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 2: Durable",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1809,8 +1809,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1851,8 +1851,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1893,8 +1893,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1936,7 +1936,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -1977,8 +1977,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2019,8 +2019,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2062,7 +2062,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2110,8 +2110,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2153,7 +2153,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2194,8 +2194,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2237,7 +2237,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2279,7 +2279,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2320,8 +2320,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2363,11 +2363,53 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Lopsided \u00b7 weakest: Stability & Resilience",
+    "valence": "bad",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "jordan",
+  "name": "Jordan",
+  "iso3": "JOR",
+  "mi": 0.624,
+  "tier": 2,
+  "pillars": {
+   "P1": 0.559,
+   "P2": 0.396,
+   "P3": 0.797,
+   "P4": 0.769,
+   "P5": 0.599
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 2: Durable",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Lopsided \u00b7 weakest: Economic Complexity",
     "valence": "bad",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
@@ -2405,54 +2447,12 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Some imbalance \u00b7 weakest: Economic Complexity",
     "valence": "warn",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "jordan",
-  "name": "Jordan",
-  "iso3": "JOR",
-  "mi": 0.624,
-  "tier": 2,
-  "pillars": {
-   "P1": 0.559,
-   "P2": 0.396,
-   "P3": 0.797,
-   "P4": 0.769,
-   "P5": 0.599
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 2: Durable",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Lopsided \u00b7 weakest: Economic Complexity",
-    "valence": "bad",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
    }
@@ -2489,7 +2489,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2538,7 +2538,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2580,7 +2580,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2622,7 +2622,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2663,8 +2663,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2706,7 +2706,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2748,7 +2748,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2789,8 +2789,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2832,7 +2832,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2874,7 +2874,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2915,50 +2915,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Lopsided \u00b7 weakest: Economic Complexity",
-    "valence": "bad",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "morocco",
-  "name": "Morocco",
-  "iso3": "MAR",
-  "mi": 0.593,
-  "tier": 3,
-  "pillars": {
-   "P1": 0.492,
-   "P2": 0.389,
-   "P3": 0.738,
-   "P4": 0.762,
-   "P5": 0.584
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
-    "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -2999,13 +2957,55 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Some imbalance \u00b7 weakest: Institutions",
     "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "morocco",
+  "name": "Morocco",
+  "iso3": "MAR",
+  "mi": 0.593,
+  "tier": 3,
+  "pillars": {
+   "P1": 0.492,
+   "P2": 0.389,
+   "P3": 0.738,
+   "P4": 0.762,
+   "P5": 0.584
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 3: Mixed",
+    "valence": "warn",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Lopsided \u00b7 weakest: Economic Complexity",
+    "valence": "bad",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
    }
@@ -3041,8 +3041,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3083,8 +3083,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3126,7 +3126,49 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Lopsided \u00b7 weakest: Institutions",
+    "valence": "bad",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "eswatini",
+  "name": "Eswatini",
+  "iso3": "SWZ",
+  "mi": 0.581,
+  "tier": 3,
+  "pillars": {
+   "P1": 0.375,
+   "P2": 0.554,
+   "P3": 0.696,
+   "P4": 0.747,
+   "P5": 0.534
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 3: Mixed",
+    "valence": "warn",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3167,8 +3209,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3183,48 +3225,6 @@
     "valence": "warn",
     "why": "Resource rents \u2248 18% of GDP \u2014 prosperity leans on extraction.",
     "rule": "resource rents \u2265 10% of GDP."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "eswatini",
-  "name": "Eswatini",
-  "iso3": "SWZ",
-  "mi": 0.581,
-  "tier": 3,
-  "pillars": {
-   "P1": 0.375,
-   "P2": 0.554,
-   "P3": 0.696,
-   "P4": 0.747,
-   "P5": 0.534
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
-    "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Lopsided \u00b7 weakest: Institutions",
-    "valence": "bad",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
    }
   ],
   "coverage": {
@@ -3259,7 +3259,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3300,8 +3300,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3343,7 +3343,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3385,7 +3385,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3427,7 +3427,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3469,7 +3469,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3511,7 +3511,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3553,53 +3553,11 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Some imbalance \u00b7 weakest: Institutions",
-    "valence": "warn",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "india",
-  "name": "India",
-  "iso3": "IND",
-  "mi": 0.555,
-  "tier": 3,
-  "pillars": {
-   "P1": 0.517,
-   "P2": 0.568,
-   "P3": 0.695,
-   "P4": 0.544,
-   "P5": 0.454
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
-    "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Some imbalance \u00b7 weakest: Stability & Resilience",
     "valence": "warn",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
@@ -3636,13 +3594,55 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Lopsided \u00b7 weakest: Economic Complexity",
     "valence": "bad",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "india",
+  "name": "India",
+  "iso3": "IND",
+  "mi": 0.555,
+  "tier": 3,
+  "pillars": {
+   "P1": 0.517,
+   "P2": 0.568,
+   "P3": 0.695,
+   "P4": 0.544,
+   "P5": 0.454
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 3: Mixed",
+    "valence": "warn",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Some imbalance \u00b7 weakest: Stability & Resilience",
+    "valence": "warn",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
    }
@@ -3679,7 +3679,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3720,8 +3720,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3738,8 +3738,8 @@
   }
  },
  {
-  "slug": "lao-pdr",
-  "name": "Lao PDR",
+  "slug": "laos",
+  "name": "Laos",
   "iso3": "LAO",
   "mi": 0.549,
   "tier": 3,
@@ -3762,8 +3762,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3805,7 +3805,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3847,7 +3847,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3896,7 +3896,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3913,8 +3913,8 @@
   }
  },
  {
-  "slug": "kyrgyz-republic",
-  "name": "Kyrgyz Republic",
+  "slug": "kyrgyzstan",
+  "name": "Kyrgyzstan",
   "iso3": "KGZ",
   "mi": 0.543,
   "tier": 3,
@@ -3937,8 +3937,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -3987,7 +3987,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4029,7 +4029,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4070,8 +4070,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4113,7 +4113,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4155,7 +4155,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4204,7 +4204,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4252,8 +4252,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4294,8 +4294,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4336,8 +4336,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4379,7 +4379,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4420,8 +4420,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4462,8 +4462,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4504,8 +4504,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4547,7 +4547,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4564,8 +4564,8 @@
   }
  },
  {
-  "slug": "iran-islamic-rep",
-  "name": "Iran, Islamic Rep.",
+  "slug": "iran",
+  "name": "Iran",
   "iso3": "IRN",
   "mi": 0.486,
   "tier": 3,
@@ -4589,7 +4589,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4637,8 +4637,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4679,8 +4679,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4721,8 +4721,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4763,8 +4763,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4806,7 +4806,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4848,7 +4848,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4890,7 +4890,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4938,8 +4938,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -4954,48 +4954,6 @@
     "valence": "warn",
     "why": "Resource rents \u2248 35% of GDP \u2014 prosperity leans on extraction.",
     "rule": "resource rents \u2265 10% of GDP."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "zimbabwe",
-  "name": "Zimbabwe",
-  "iso3": "ZWE",
-  "mi": 0.46,
-  "tier": 3,
-  "pillars": {
-   "P1": 0.314,
-   "P2": 0.219,
-   "P3": 0.631,
-   "P4": 0.653,
-   "P5": 0.485
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
-    "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Granted prosperity",
-    "valence": "bad",
-    "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Lopsided \u00b7 weakest: Economic Complexity",
-    "valence": "bad",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
    }
   ],
   "coverage": {
@@ -5030,11 +4988,53 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Lopsided \u00b7 weakest: Stability & Resilience",
+    "valence": "bad",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "zimbabwe",
+  "name": "Zimbabwe",
+  "iso3": "ZWE",
+  "mi": 0.46,
+  "tier": 3,
+  "pillars": {
+   "P1": 0.314,
+   "P2": 0.219,
+   "P3": 0.631,
+   "P4": 0.653,
+   "P5": 0.485
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 3: Mixed",
+    "valence": "warn",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Granted prosperity",
+    "valence": "bad",
+    "why": "Wealth has outrun institutions \u2014 historically fragile.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Lopsided \u00b7 weakest: Economic Complexity",
     "valence": "bad",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
@@ -5071,8 +5071,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5114,7 +5114,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5156,7 +5156,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5205,7 +5205,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5247,7 +5247,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5289,7 +5289,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5331,7 +5331,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5373,7 +5373,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5415,7 +5415,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5456,8 +5456,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5474,8 +5474,8 @@
   }
  },
  {
-  "slug": "congo-rep",
-  "name": "Congo, Rep.",
+  "slug": "republic-of-the-congo",
+  "name": "Republic of the Congo",
   "iso3": "COG",
   "mi": 0.398,
   "tier": 4,
@@ -5499,7 +5499,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5547,8 +5547,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5589,8 +5589,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5639,7 +5639,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5680,8 +5680,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5730,7 +5730,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5772,7 +5772,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5821,12 +5821,54 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Some imbalance \u00b7 weakest: Economic Complexity",
     "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "myanmar",
+  "name": "Myanmar",
+  "iso3": "MMR",
+  "mi": 0.367,
+  "tier": 4,
+  "pillars": {
+   "P1": 0.238,
+   "P2": 0.299,
+   "P3": 0.627,
+   "P4": 0.436,
+   "P5": 0.233
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 4: Fragile",
+    "valence": "bad",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Granted prosperity",
+    "valence": "bad",
+    "why": "Wealth has outrun institutions \u2014 historically fragile.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Lopsided \u00b7 weakest: Stability & Resilience",
+    "valence": "bad",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
    }
@@ -5862,8 +5904,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5878,48 +5920,6 @@
     "valence": "warn",
     "why": "Resource rents \u2248 14% of GDP \u2014 prosperity leans on extraction.",
     "rule": "resource rents \u2265 10% of GDP."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
-  "slug": "myanmar",
-  "name": "Myanmar",
-  "iso3": "MMR",
-  "mi": 0.367,
-  "tier": 4,
-  "pillars": {
-   "P1": 0.238,
-   "P2": 0.299,
-   "P3": 0.627,
-   "P4": 0.436,
-   "P5": 0.233
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
-    "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Granted prosperity",
-    "valence": "bad",
-    "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Lopsided \u00b7 weakest: Stability & Resilience",
-    "valence": "bad",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
    }
   ],
   "coverage": {
@@ -5954,7 +5954,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -5996,7 +5996,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6038,7 +6038,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6087,7 +6087,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6129,7 +6129,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6177,12 +6177,64 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Some imbalance \u00b7 weakest: Stability & Resilience",
+    "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 3,
+   "total": 5,
+   "missing": [
+    "P2",
+    "P3"
+   ]
+  }
+ },
+ {
+  "slug": "andorra",
+  "name": "Andorra",
+  "iso3": "AND",
+  "mi": 0.87,
+  "tier": 1,
+  "pillars": {
+   "P1": 0.748,
+   "P2": null,
+   "P3": null,
+   "P4": 0.939,
+   "P5": 0.923
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 1: Highly Modernized",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "partial",
+    "label": "Partial data \u00b7 3/5 pillars",
+    "valence": "neutral",
+    "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
+    "rule": "2 of 5 pillars lack public data."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Some imbalance \u00b7 weakest: Institutions",
     "valence": "warn",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
@@ -6229,65 +6281,13 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
     "label": "Balanced \u00b7 weakest: Institutions",
     "valence": "good",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 3,
-   "total": 5,
-   "missing": [
-    "P2",
-    "P3"
-   ]
-  }
- },
- {
-  "slug": "andorra",
-  "name": "Andorra",
-  "iso3": "AND",
-  "mi": 0.87,
-  "tier": 1,
-  "pillars": {
-   "P1": 0.748,
-   "P2": null,
-   "P3": null,
-   "P4": 0.939,
-   "P5": 0.923
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "partial",
-    "label": "Partial data \u00b7 3/5 pillars",
-    "valence": "neutral",
-    "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
-    "rule": "2 of 5 pillars lack public data."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Some imbalance \u00b7 weakest: Institutions",
-    "valence": "warn",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
    }
@@ -6333,8 +6333,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6385,8 +6385,60 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Some imbalance \u00b7 weakest: Institutions",
+    "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 3,
+   "total": 5,
+   "missing": [
+    "P2",
+    "P3"
+   ]
+  }
+ },
+ {
+  "slug": "macao",
+  "name": "Macao",
+  "iso3": "MAC",
+  "mi": 0.842,
+  "tier": 1,
+  "pillars": {
+   "P1": 0.702,
+   "P2": null,
+   "P3": null,
+   "P4": 0.985,
+   "P5": 0.839
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 1: Highly Modernized",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "partial",
+    "label": "Partial data \u00b7 3/5 pillars",
+    "valence": "neutral",
+    "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
+    "rule": "2 of 5 pillars lack public data."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6437,60 +6489,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Some imbalance \u00b7 weakest: Institutions",
-    "valence": "warn",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 3,
-   "total": 5,
-   "missing": [
-    "P2",
-    "P3"
-   ]
-  }
- },
- {
-  "slug": "macao-sar",
-  "name": "Macao SAR",
-  "iso3": "MAC",
-  "mi": 0.842,
-  "tier": 1,
-  "pillars": {
-   "P1": 0.702,
-   "P2": null,
-   "P3": null,
-   "P4": 0.985,
-   "P5": 0.839
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "partial",
-    "label": "Partial data \u00b7 3/5 pillars",
-    "valence": "neutral",
-    "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
-    "rule": "2 of 5 pillars lack public data."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6541,8 +6541,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6593,8 +6593,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6645,8 +6645,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6697,8 +6697,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6749,8 +6749,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6801,8 +6801,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6853,8 +6853,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6905,8 +6905,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -6957,60 +6957,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Some imbalance \u00b7 weakest: Institutions",
-    "valence": "warn",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 3,
-   "total": 5,
-   "missing": [
-    "P2",
-    "P3"
-   ]
-  }
- },
- {
-  "slug": "st-kitts-and-nevis",
-  "name": "St Kitts and Nevis",
-  "iso3": "KNA",
-  "mi": 0.77,
-  "tier": 2,
-  "pillars": {
-   "P1": 0.623,
-   "P2": null,
-   "P3": null,
-   "P4": 0.872,
-   "P5": 0.815
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 2: Durable",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "partial",
-    "label": "Partial data \u00b7 3/5 pillars",
-    "valence": "neutral",
-    "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
-    "rule": "2 of 5 pillars lack public data."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7061,8 +7009,60 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   },
+   {
+    "key": "shape",
+    "label": "Some imbalance \u00b7 weakest: Institutions",
+    "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 3,
+   "total": 5,
+   "missing": [
+    "P2",
+    "P3"
+   ]
+  }
+ },
+ {
+  "slug": "st-kitts-and-nevis",
+  "name": "St Kitts and Nevis",
+  "iso3": "KNA",
+  "mi": 0.77,
+  "tier": 2,
+  "pillars": {
+   "P1": 0.623,
+   "P2": null,
+   "P3": null,
+   "P4": 0.872,
+   "P5": 0.815
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 2: Durable",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "partial",
+    "label": "Partial data \u00b7 3/5 pillars",
+    "valence": "neutral",
+    "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
+    "rule": "2 of 5 pillars lack public data."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7113,8 +7113,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7165,8 +7165,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7217,8 +7217,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7269,8 +7269,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7321,8 +7321,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7373,8 +7373,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7425,8 +7425,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7477,8 +7477,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7529,8 +7529,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7581,7 +7581,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7639,8 +7639,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7692,7 +7692,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7787,8 +7787,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7846,8 +7846,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7898,8 +7898,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -7950,8 +7950,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -8002,8 +8002,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -8054,8 +8054,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -8149,8 +8149,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -8201,8 +8201,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -8350,7 +8350,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -8401,8 +8401,8 @@
     "key": "durability",
     "label": "Earned prosperity",
     "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",
@@ -8550,7 +8550,7 @@
     "label": "Granted prosperity",
     "valence": "bad",
     "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
    },
    {
     "key": "shape",

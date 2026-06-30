@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCountries, getCountry } from "@/lib/data";
-import { tier as tierOf, tierColor } from "@/lib/config";
+import { tier as tierOf, tierColor, clamp01, SHAPE_BALANCED, SHAPE_LOPSIDED, DURABILITY_TOL } from "@/lib/config";
 import Radar from "@/components/Radar";
 import ChipRow from "@/components/ChipRow";
 
@@ -10,7 +10,7 @@ export function generateStaticParams() {
 }
 
 const fmtKey = (k: string) =>
-  k.replace(/_/g, " ").replace(/\bpct\b/, "%").replace(/\bgdp\b/i, "GDP").replace(/\boda\b/i, "ODA");
+  k.replace(/_/g, " ").replace(/\bpct\b/g, "%").replace(/\bgdp\b/gi, "GDP").replace(/\boda\b/gi, "ODA");
 
 function RelStat({
   label,
@@ -41,7 +41,7 @@ function RelStat({
         </span>
       </div>
       <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-surface2">
-        <div className="h-full rounded-full" style={{ width: `${(value ?? 0) * 100}%`, background: col }} />
+        <div className="h-full rounded-full" style={{ width: `${clamp01(value ?? 0) * 100}%`, background: col }} />
       </div>
       <div className="mt-1 text-[11px] text-fg3">{hint}</div>
     </div>
@@ -54,7 +54,13 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   if (!c) notFound();
   const col = tierColor(c.tier);
   const spreadLabel =
-    c.spread == null ? null : c.spread < 0.15 ? "Balanced" : c.spread < 0.35 ? "Some imbalance" : "Lopsided";
+    c.spread == null
+      ? null
+      : c.spread < SHAPE_BALANCED
+      ? "Balanced"
+      : c.spread < SHAPE_LOPSIDED
+      ? "Some imbalance"
+      : "Lopsided";
 
   return (
     <div className="py-10">
@@ -110,7 +116,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 <span className="mono w-7 text-[12px] font-semibold">{p}</span>
                 <span className="w-32 text-[12px] text-fg2">{c.pillar_names[p]}</span>
                 <div className="h-2 flex-1 overflow-hidden rounded-full bg-surface2">
-                  <div className="h-full rounded-full" style={{ width: `${v * 100}%`, background: col }} />
+                  <div className="h-full rounded-full" style={{ width: `${clamp01(v) * 100}%`, background: col }} />
                 </div>
                 <span className="num w-10 text-right text-[12px]">{v.toFixed(2)}</span>
               </div>
@@ -119,11 +125,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           {c.residual != null && (
             <div className="mt-4 border-t border-border pt-3 text-[12px] text-fg2">
               <span className="text-fg3">Durability gap: </span>
-              {c.residual < -0.03 ? (
+              {c.residual < -DURABILITY_TOL ? (
                 <span className="text-danger">
                   prosperity outruns institutions ({c.residual.toFixed(2)}) — granted, historically fragile
                 </span>
-              ) : c.residual > 0.03 ? (
+              ) : c.residual > DURABILITY_TOL ? (
                 <span className="text-good">
                   institutions exceed income ({c.residual.toFixed(2)}) — earned, durable
                 </span>

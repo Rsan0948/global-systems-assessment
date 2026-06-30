@@ -1,21 +1,21 @@
 {
- "slug": "hungary",
- "name": "Hungary",
- "iso3": "HUN",
- "mi": 0.699,
- "tier": 2,
+ "slug": "laos",
+ "name": "Laos",
+ "iso3": "LAO",
+ "mi": 0.549,
+ "tier": 3,
  "pillars": {
-  "P1": 0.556,
-  "P2": 0.613,
-  "P3": 0.859,
-  "P4": 0.802,
-  "P5": 0.663
+  "P1": 0.405,
+  "P2": 0.269,
+  "P3": 0.611,
+  "P4": 0.707,
+  "P5": 0.754
  },
  "chips": [
   {
    "key": "tier",
-   "label": "Tier 2: Durable",
-   "valence": "good",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
    "why": "Modernization Index band (equal-weighted pillars).",
    "rule": "MI score binned into 5 tiers."
   },
@@ -28,8 +28,8 @@
   },
   {
    "key": "shape",
-   "label": "Some imbalance \u00b7 weakest: Institutions",
-   "valence": "warn",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
    "rule": "max(pillar) \u2212 min(pillar)."
   }
@@ -39,29 +39,29 @@
   "total": 5,
   "missing": []
  },
- "verdict": "Structurally durable \u2014 prosperity roughly in line with institutions.",
- "spread": 0.303,
- "residual": -0.019,
+ "verdict": "Mixed structural profile \u2014 prosperity roughly in line with institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.485,
+ "residual": 0.004,
  "config": [
   [
-   "P3",
-   0.859
+   "P5",
+   0.754
   ],
   [
    "P4",
-   0.802
+   0.707
   ],
   [
-   "P5",
-   0.663
-  ],
-  [
-   "P2",
-   0.613
+   "P3",
+   0.611
   ],
   [
    "P1",
-   0.556
+   0.405
+  ],
+  [
+   "P2",
+   0.269
   ]
  ],
  "pillar_names": {
@@ -74,70 +74,70 @@
  "indicators": [
   {
    "key": "gov_effectiveness",
-   "value": 61.1,
+   "value": 40.026,
    "source": "World Bank WGI"
   },
   {
    "key": "rule_of_law",
-   "value": 60.27,
+   "value": 44.1872,
    "source": "World Bank WGI"
   },
   {
    "key": "regulatory_quality",
-   "value": 60.15,
+   "value": 44.8317,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 28.0202,
    "source": "World Bank WGI"
   },
   {
    "key": "cpi",
-   "value": 41.0,
+   "value": 33.0,
    "source": "Transparency International"
   },
   {
-   "key": "control_of_corruption",
-   "value": 48.65,
-   "source": "World Bank WGI"
-  },
-  {
-   "key": "voice_accountability",
-   "value": 56.36,
-   "source": "World Bank WGI"
-  },
-  {
    "key": "gii",
-   "value": 39.57,
+   "value": 17.84,
    "source": "WIPO Global Innovation Index"
   },
   {
    "key": "eci",
-   "value": 1.15,
+   "value": -0.703,
    "source": "Harvard Atlas (ECI)"
   },
   {
    "key": "education_index",
-   "value": 0.8408,
+   "value": 0.4688,
    "source": "UNDP HDR"
   },
   {
    "key": "life_expectancy_index",
-   "value": 0.8773,
+   "value": 0.7533,
    "source": "UNDP HDR"
   },
   {
    "key": "gdp_per_capita_ppp",
-   "value": 48552.47,
+   "value": 9775.83,
    "source": "World Bank WDI"
   },
   {
    "key": "political_stability",
-   "value": 73.35,
+   "value": 75.42,
    "source": "World Bank WGI"
   },
   {
-   "key": "fsi",
-   "value": 48.8,
-   "source": "Fund for Peace FSI"
+   "key": "voice_accountability",
+   "value": 31.1,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 5.38,
+   "source": "World Bank WDI"
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "B"
 }

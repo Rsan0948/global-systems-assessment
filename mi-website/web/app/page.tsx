@@ -35,6 +35,10 @@ export default function Home() {
 
       <section className="mt-8">
         <WorldMap features={features} sphere={sphere} countries={countries} />
+        <p className="mono mt-2 text-[10px] text-fg3">
+          Hover a country for its score; click to open it. A handful of scored micro-states (Singapore,
+          San Marino, island states…) are too small to draw — find them in the list below.
+        </p>
       </section>
 
       <section className="mt-12">

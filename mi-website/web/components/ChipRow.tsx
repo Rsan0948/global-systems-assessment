@@ -17,6 +17,7 @@ export default function ChipRow({ chips }: { chips: Chip[] }) {
               key={c.key}
               onClick={() => setOpen(on ? null : c.key)}
               aria-expanded={on}
+              aria-controls={on ? "chip-detail" : undefined}
               className="rounded-full border px-3 py-1 text-[12px] font-medium transition-colors"
               style={{ borderColor: cl + "66", color: cl, background: on ? cl + "1f" : cl + "12" }}
             >
@@ -26,7 +27,7 @@ export default function ChipRow({ chips }: { chips: Chip[] }) {
         })}
       </div>
       {active && (
-        <div className="card mt-3 p-4 text-[13px]">
+        <div id="chip-detail" role="region" className="card mt-3 p-4 text-[13px]">
           <div className="font-medium" style={{ color: valenceColor(active.valence) }}>
             {active.label}
           </div>

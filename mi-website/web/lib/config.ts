@@ -59,3 +59,15 @@ export const heat = (v: number): string => `hsl(${Math.round(v * 130)}, 55%, 60%
 // world-map viewport (client-safe constants; the geometry builder lives in lib/worldmap.ts)
 export const MAP_W = 980;
 export const MAP_H = 500;
+
+// shared chrome colors (kept in sync across components — single source of truth)
+export const NODATA = "#2a2a3a"; // null pillar / unmatched feature
+export const TRACK = "#1a1a28"; // empty bar/track background
+export const COVERAGE_SCORED = "#46637e";
+export const COVERAGE_UNSCORED = "#181826";
+
+// classification thresholds (mirror the engine; keep the page in sync with the chips)
+export const SHAPE_BALANCED = 0.15;
+export const SHAPE_LOPSIDED = 0.35;
+export const DURABILITY_TOL = 0.03;
+export const clamp01 = (v: number) => Math.max(0, Math.min(1, v));

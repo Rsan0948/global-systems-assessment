@@ -7,9 +7,9 @@ import { PILLARS, tierColor, heat } from "@/lib/config";
 const COLS = [
   ["name", "Country"],
   ["mi", "MI"],
-  ["P1", PILLARS.P1.full],
+  ["P1", PILLARS.P1.short],
   ["P2", PILLARS.P2.short],
-  ["P3", PILLARS.P3.full],
+  ["P3", PILLARS.P3.short],
   ["P4", PILLARS.P4.short],
   ["P5", PILLARS.P5.short],
   ["cov", "Data"],
@@ -42,6 +42,7 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
         value={q}
         onChange={(e) => setQ(e.target.value)}
         placeholder="Filter…"
+        aria-label="Filter countries"
         className="mb-3 w-48 rounded-md border border-border bg-surface px-3 py-1.5 text-[13px] outline-none placeholder:text-fg3 focus:border-primary"
       />
       <div className="card overflow-x-auto">
@@ -61,6 +62,13 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
             </tr>
           </thead>
           <tbody className="mono">
+            {rows.length === 0 && (
+              <tr>
+                <td colSpan={COLS.length} className="px-3 py-10 text-center font-sans text-[13px] text-fg3">
+                  No countries match “{q}”.
+                </td>
+              </tr>
+            )}
             {rows.map((c) => (
               <tr key={c.slug} className="border-b border-border/50 hover:bg-surface2">
                 <td className="px-3 py-1.5">

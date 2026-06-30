@@ -24,7 +24,7 @@
    "label": "Granted prosperity",
    "valence": "bad",
    "why": "Wealth has outrun institutions \u2014 historically fragile.",
-   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
   },
   {
    "key": "shape",
@@ -162,7 +162,7 @@
   "patron_present": false,
   "response": 0.478,
   "response_band": "moderate",
-  "joint_reading": "HIGH structural exposure + NO patron + weak response: standing vulnerability to externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs it. This is the configuration that turns an internal 'OK' read into an external miss \u2014 Cyprus 1974, Poland-Lithuania 1772.",
+  "joint_reading": "HIGH structural exposure with NO standing deterrent \u2014 but a RESPONSE patron intervened to reverse the shock after it landed: survival came from outside help, not internal strength (e.g. Kuwait 1990, conquered then restored by the coalition).",
   "outcome_factual": "Invaded by Iraq 2 Aug 1990; sovereignty restored by the coalition Feb 1991. SURVIVED via the response patron."
  }
 }

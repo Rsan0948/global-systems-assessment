@@ -8,7 +8,8 @@ import type { MapFeature } from "@/lib/types";
 // d3-geo fills a polygon's COMPLEMENT when its ring winding is reversed (common on
 // antimeridian-crossing countries). If a feature covers >half the sphere, its winding
 // is inverted — reverse every ring so it fills the country, not the ocean.
-function fixWinding(feature: { geometry: { type: string; coordinates: unknown } }) {
+function fixWinding(feature: { geometry?: { type: string; coordinates: unknown } | null }) {
+  if (!feature.geometry) return feature;
   if (geoArea(feature as never) <= 2 * Math.PI) return feature;
   const g = feature.geometry;
   const rev = (rings: number[][][]) => rings.map((r) => [...r].reverse());

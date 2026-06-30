@@ -1,37 +1,44 @@
 {
- "slug": "hungary",
- "name": "Hungary",
- "iso3": "HUN",
- "mi": 0.699,
- "tier": 2,
+ "slug": "iran",
+ "name": "Iran",
+ "iso3": "IRN",
+ "mi": 0.486,
+ "tier": 3,
  "pillars": {
-  "P1": 0.556,
-  "P2": 0.613,
-  "P3": 0.859,
-  "P4": 0.802,
-  "P5": 0.663
+  "P1": 0.318,
+  "P2": 0.387,
+  "P3": 0.818,
+  "P4": 0.518,
+  "P5": 0.389
  },
  "chips": [
   {
    "key": "tier",
-   "label": "Tier 2: Durable",
-   "valence": "good",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
    "why": "Modernization Index band (equal-weighted pillars).",
    "rule": "MI score binned into 5 tiers."
   },
   {
    "key": "durability",
-   "label": "Earned prosperity",
-   "valence": "good",
-   "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
    "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
   },
   {
    "key": "shape",
-   "label": "Some imbalance \u00b7 weakest: Institutions",
-   "valence": "warn",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
    "rule": "max(pillar) \u2212 min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 30% of GDP \u2014 prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
   }
  ],
  "coverage": {
@@ -39,29 +46,29 @@
   "total": 5,
   "missing": []
  },
- "verdict": "Structurally durable \u2014 prosperity roughly in line with institutions.",
- "spread": 0.303,
- "residual": -0.019,
+ "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions \u2014 lopsided (institutions the weak point).",
+ "spread": 0.5,
+ "residual": -0.136,
  "config": [
   [
    "P3",
-   0.859
+   0.818
   ],
   [
    "P4",
-   0.802
+   0.518
   ],
   [
    "P5",
-   0.663
+   0.389
   ],
   [
    "P2",
-   0.613
+   0.387
   ],
   [
    "P1",
-   0.556
+   0.318
   ]
  ],
  "pillar_names": {
@@ -74,70 +81,70 @@
  "indicators": [
   {
    "key": "gov_effectiveness",
-   "value": 61.1,
+   "value": 37.6106,
    "source": "World Bank WGI"
   },
   {
    "key": "rule_of_law",
-   "value": 60.27,
+   "value": 35.7129,
    "source": "World Bank WGI"
   },
   {
    "key": "regulatory_quality",
-   "value": 60.15,
+   "value": 31.0266,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 24.633,
    "source": "World Bank WGI"
   },
   {
    "key": "cpi",
-   "value": 41.0,
+   "value": 23.0,
    "source": "Transparency International"
   },
   {
-   "key": "control_of_corruption",
-   "value": 48.65,
-   "source": "World Bank WGI"
-  },
-  {
-   "key": "voice_accountability",
-   "value": 56.36,
-   "source": "World Bank WGI"
-  },
-  {
    "key": "gii",
-   "value": 39.57,
+   "value": 28.88,
    "source": "WIPO Global Innovation Index"
   },
   {
    "key": "eci",
-   "value": 1.15,
+   "value": -0.071,
    "source": "Harvard Atlas (ECI)"
   },
   {
    "key": "education_index",
-   "value": 0.8408,
+   "value": 0.7496,
    "source": "UNDP HDR"
   },
   {
    "key": "life_expectancy_index",
-   "value": 0.8773,
+   "value": 0.887,
    "source": "UNDP HDR"
   },
   {
    "key": "gdp_per_capita_ppp",
-   "value": 48552.47,
+   "value": 19873.89,
    "source": "World Bank WDI"
   },
   {
    "key": "political_stability",
-   "value": 73.35,
+   "value": 38.89,
    "source": "World Bank WGI"
   },
   {
-   "key": "fsi",
-   "value": 48.8,
-   "source": "Fund for Peace FSI"
+   "key": "voice_accountability",
+   "value": 29.75,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 30.45,
+   "source": "World Bank WDI"
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "B"
 }

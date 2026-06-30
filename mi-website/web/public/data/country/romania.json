@@ -23,8 +23,8 @@
    "key": "durability",
    "label": "Earned prosperity",
    "valence": "good",
-   "why": "Institutions match or exceed what income predicts \u2014 durable.",
-   "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+   "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
   },
   {
    "key": "shape",

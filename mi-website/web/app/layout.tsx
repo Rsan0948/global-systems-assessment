@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${fraunces.variable} ${dmSans.variable} ${jetbrains.variable}`}>
-      <body className="min-h-full">
+      <body className="min-h-screen">
         <header className="sticky top-0 z-50 border-b border-border bg-bg/85 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-5">
             <Link href="/" className="flex shrink-0 items-baseline gap-2">
