@@ -139,5 +139,18 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "A",
+ "relational": {
+  "year": 2003,
+  "tier": "citable",
+  "label": "Estonia 2003, pre-NATO accession (DURABLE + EXPOSED + SHIELDED) -> persists",
+  "exposure_structural": 0.496,
+  "exposure_structural_band": "moderate",
+  "exposure_net": 0.397,
+  "patron_present": true,
+  "response": 0.69,
+  "response_band": "high",
+  "joint_reading": "structural exposure=moderate, response=high: relationally lower-risk on this axis.",
+  "outcome_factual": "Persists; NATO/EU member from 2004, no invasion."
+ }
 }

@@ -49,6 +49,8 @@ def main():
 
     # 2 + 3. run the engine over all data and publish the site dataset
     run([PY, str(MI_RESEARCH / "scripts" / "build_site_dataset.py")], MI_RESEARCH)
+    # 4. enrich with the T3 relational layer where we have it
+    run([PY, str(MI_RESEARCH / "scripts" / "build_relational.py")], MI_RESEARCH)
     print("\n✓ pipeline complete — web/public/data refreshed.")
 
 

@@ -139,5 +139,18 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "A",
+ "relational": {
+  "year": 2016,
+  "tier": "citable",
+  "label": "Republic of Korea (the patron-SHIELDED mirror)",
+  "exposure_structural": 0.813,
+  "exposure_structural_band": "high",
+  "exposure_net": 0.651,
+  "patron_present": true,
+  "response": 0.658,
+  "response_band": "moderate",
+  "joint_reading": "HIGH structural exposure but PATRON-SHIELDED: raw adversity is severe, yet a credible external defender both DETERS the shock (lowers net exposure) and BLUNTS it (lifts response). Persistence despite exposure is the expected reading here (e.g. South Korea).",
+  "outcome_factual": "Persists as a sovereign state under standing high exposure; no successful invasion since 1953."
+ }
 }

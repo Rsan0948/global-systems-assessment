@@ -139,5 +139,18 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "A",
+ "relational": {
+  "year": 1936,
+  "tier": "citable",
+  "label": "Spain 1936 (engine-alone MISS \u2014 INTERNAL polarization, NOT relational)",
+  "exposure_structural": 0.0,
+  "exposure_structural_band": "low",
+  "exposure_net": 0.25,
+  "patron_present": false,
+  "response": 0.554,
+  "response_band": "moderate",
+  "joint_reading": "structural exposure=low, response=moderate: relationally lower-risk on this axis.",
+  "outcome_factual": "Spanish Civil War 1936-39; Franco dictatorship to 1975."
+ }
 }

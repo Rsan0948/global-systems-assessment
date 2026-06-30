@@ -127,5 +127,18 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "A",
+ "relational": {
+  "year": 1948,
+  "tier": "citable",
+  "label": "Venezuela 1948 (engine-alone MISS \u2014 INTERNAL military coup)",
+  "exposure_structural": 0.0,
+  "exposure_structural_band": "low",
+  "exposure_net": 0.25,
+  "patron_present": false,
+  "response": 0.504,
+  "response_band": "moderate",
+  "joint_reading": "structural exposure=low, response=moderate: relationally lower-risk on this axis.",
+  "outcome_factual": "Nov 1948 coup; military rule (Perez Jimenez) to 1958."
+ }
 }

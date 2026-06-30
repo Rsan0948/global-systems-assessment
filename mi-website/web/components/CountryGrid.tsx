@@ -7,7 +7,7 @@ import { PILLAR_ORDER, TIERS, tierColor } from "@/lib/config";
 function Tile({ c }: { c: Summary }) {
   const col = tierColor(c.tier);
   return (
-    <Link href={`/country/${c.slug}`} className="card group flex flex-col gap-2 p-3 transition-colors hover:border-fg3">
+    <Link href={`/country/${c.slug}`} className="card lift group flex flex-col gap-2 p-3">
       <div className="flex items-start justify-between gap-2">
         <span className="text-[13px] font-medium leading-tight group-hover:text-white">{c.name}</span>
         <span className="num text-[13px] font-semibold" style={{ color: col }}>

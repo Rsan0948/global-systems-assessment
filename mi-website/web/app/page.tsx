@@ -1,19 +1,21 @@
 import Link from "next/link";
 import { getCountries, getMeta } from "@/lib/data";
 import { SITE } from "@/lib/config";
+import { buildWorldPaths } from "@/lib/worldmap";
 import CountryGrid from "@/components/CountryGrid";
-import { TierLegend, TierDistribution } from "@/components/ui";
+import WorldMap from "@/components/WorldMap";
 
 export default function Home() {
   const countries = getCountries();
   const meta = getMeta();
+  const { features, sphere } = buildWorldPaths();
   const tier1 = countries.filter((c) => c.tier === 1).length;
 
   return (
-    <div className="py-12">
+    <div className="py-10 sm:py-12">
       <section className="mx-auto max-w-3xl text-center">
         <h1 className="serif text-[2.1rem] font-black leading-[1.05] sm:text-5xl">{SITE.tagline}</h1>
-        <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-fg2">
+        <p className="mx-auto mt-5 max-w-xl text-[14px] leading-relaxed text-fg2 sm:text-[15px]">
           A structural diagnostic of how governed systems withstand pressure — computed
           deterministically from citable public data, not opinion. Look up any country: see how it&apos;s
           built, and what we can&apos;t yet see.
@@ -31,16 +33,16 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mt-8">
+        <WorldMap features={features} sphere={sphere} countries={countries} />
+      </section>
+
       <section className="mt-12">
-        <div className="mb-3 flex items-baseline justify-between">
-          <h2 className="serif text-lg">The world, by structure</h2>
+        <div className="mb-4 flex items-baseline justify-between">
+          <h2 className="serif text-lg">Browse every country</h2>
           <Link href="/atlas" className="link text-[13px]">
             Open the atlas →
           </Link>
-        </div>
-        <TierDistribution countries={countries} />
-        <div className="mb-4 mt-2.5">
-          <TierLegend countries={countries} />
         </div>
         <CountryGrid countries={countries} />
         <p className="mt-5 max-w-2xl text-[12px] leading-relaxed text-fg3">

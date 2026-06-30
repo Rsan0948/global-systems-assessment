@@ -144,5 +144,18 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "B"
+ "source_tier": "B",
+ "relational": {
+  "year": 1974,
+  "tier": "citable",
+  "label": "Republic of Cyprus, pre-invasion 1974 (the documented exogenous MISS)",
+  "exposure_structural": 0.829,
+  "exposure_structural_band": "high",
+  "exposure_net": 0.863,
+  "patron_present": false,
+  "response": 0.192,
+  "response_band": "low",
+  "joint_reading": "HIGH structural exposure + NO patron + weak response: standing vulnerability to externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs it. This is the configuration that turns an internal 'OK' read into an external miss \u2014 Cyprus 1974, Poland-Lithuania 1772.",
+  "outcome_factual": "Turkish invasion (Jul-Aug 1974); ~37% of the island occupied; de facto partition persisting to today."
+ }
 }

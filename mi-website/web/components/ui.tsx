@@ -8,10 +8,11 @@ export function Card({ className = "", children }: { className?: string; childre
 }
 
 export function TierDot({ tier, size = 8 }: { tier: number; size?: number }) {
+  const col = tierColor(tier);
   return (
     <span
       aria-hidden
-      style={{ background: tierColor(tier), width: size, height: size }}
+      style={{ background: col, width: size, height: size, boxShadow: `0 0 ${size}px ${col}88` }}
       className="inline-block shrink-0 rounded-full"
     />
   );

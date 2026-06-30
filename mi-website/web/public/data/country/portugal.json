@@ -144,5 +144,18 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "B"
+ "source_tier": "B",
+ "relational": {
+  "year": 1926,
+  "tier": "citable",
+  "label": "Portugal 1926 (engine-alone MISS \u2014 INTERNAL military coup)",
+  "exposure_structural": 0.0,
+  "exposure_structural_band": "low",
+  "exposure_net": 0.25,
+  "patron_present": false,
+  "response": 0.258,
+  "response_band": "low",
+  "joint_reading": "structural exposure=low, response=low: relationally lower-risk on this axis.",
+  "outcome_factual": "28 May 1926 coup -> the Estado Novo dictatorship (to 1974)."
+ }
 }

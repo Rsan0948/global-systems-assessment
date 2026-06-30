@@ -126,17 +126,17 @@
   }
  },
  {
-  "slug": "ireland",
-  "name": "Ireland",
-  "iso3": "IRL",
+  "slug": "denmark",
+  "name": "Denmark",
+  "iso3": "DNK",
   "mi": 0.84,
   "tier": 1,
   "pillars": {
-   "P1": 0.818,
-   "P2": 0.669,
-   "P3": 0.925,
-   "P4": 0.979,
-   "P5": 0.809
+   "P1": 0.888,
+   "P2": 0.637,
+   "P3": 0.944,
+   "P4": 0.944,
+   "P5": 0.79
   },
   "chips": [
    {
@@ -168,17 +168,17 @@
   }
  },
  {
-  "slug": "denmark",
-  "name": "Denmark",
-  "iso3": "DNK",
+  "slug": "ireland",
+  "name": "Ireland",
+  "iso3": "IRL",
   "mi": 0.84,
   "tier": 1,
   "pillars": {
-   "P1": 0.888,
-   "P2": 0.637,
-   "P3": 0.944,
-   "P4": 0.944,
-   "P5": 0.79
+   "P1": 0.818,
+   "P2": 0.669,
+   "P3": 0.925,
+   "P4": 0.979,
+   "P5": 0.809
   },
   "chips": [
    {
@@ -763,48 +763,6 @@
   }
  },
  {
-  "slug": "estonia",
-  "name": "Estonia",
-  "iso3": "EST",
-  "mi": 0.775,
-  "tier": 2,
-  "pillars": {
-   "P1": 0.78,
-   "P2": 0.654,
-   "P3": 0.903,
-   "P4": 0.807,
-   "P5": 0.728
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 2: Durable",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Some imbalance \u00b7 weakest: Economic Complexity",
-    "valence": "warn",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
   "slug": "australia",
   "name": "Australia",
   "iso3": "AUS",
@@ -845,6 +803,48 @@
     "valence": "warn",
     "why": "Resource rents \u2248 13% of GDP \u2014 prosperity leans on extraction.",
     "rule": "resource rents \u2265 10% of GDP."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "estonia",
+  "name": "Estonia",
+  "iso3": "EST",
+  "mi": 0.775,
+  "tier": 2,
+  "pillars": {
+   "P1": 0.78,
+   "P2": 0.654,
+   "P3": 0.903,
+   "P4": 0.807,
+   "P5": 0.728
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 2: Durable",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions match or exceed what income predicts \u2014 durable.",
+    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+   },
+   {
+    "key": "shape",
+    "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+    "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
    }
   ],
   "coverage": {
@@ -1701,17 +1701,17 @@
   }
  },
  {
-  "slug": "greece",
-  "name": "Greece",
-  "iso3": "GRC",
+  "slug": "costa-rica",
+  "name": "Costa Rica",
+  "iso3": "CRI",
   "mi": 0.686,
   "tier": 2,
   "pillars": {
-   "P1": 0.571,
-   "P2": 0.54,
-   "P3": 0.918,
-   "P4": 0.786,
-   "P5": 0.612
+   "P1": 0.616,
+   "P2": 0.485,
+   "P3": 0.842,
+   "P4": 0.724,
+   "P5": 0.762
   },
   "chips": [
    {
@@ -1743,17 +1743,17 @@
   }
  },
  {
-  "slug": "costa-rica",
-  "name": "Costa Rica",
-  "iso3": "CRI",
+  "slug": "greece",
+  "name": "Greece",
+  "iso3": "GRC",
   "mi": 0.686,
   "tier": 2,
   "pillars": {
-   "P1": 0.616,
-   "P2": 0.485,
-   "P3": 0.842,
-   "P4": 0.724,
-   "P5": 0.762
+   "P1": 0.571,
+   "P2": 0.54,
+   "P3": 0.918,
+   "P4": 0.786,
+   "P5": 0.612
   },
   "chips": [
    {
@@ -2380,48 +2380,6 @@
   }
  },
  {
-  "slug": "jordan",
-  "name": "Jordan",
-  "iso3": "JOR",
-  "mi": 0.624,
-  "tier": 2,
-  "pillars": {
-   "P1": 0.559,
-   "P2": 0.396,
-   "P3": 0.797,
-   "P4": 0.769,
-   "P5": 0.599
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 2: Durable",
-    "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Earned prosperity",
-    "valence": "good",
-    "why": "Institutions match or exceed what income predicts \u2014 durable.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Lopsided \u00b7 weakest: Economic Complexity",
-    "valence": "bad",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
   "slug": "kazakhstan",
   "name": "Kazakhstan",
   "iso3": "KAZ",
@@ -2453,6 +2411,48 @@
     "key": "shape",
     "label": "Some imbalance \u00b7 weakest: Economic Complexity",
     "valence": "warn",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "jordan",
+  "name": "Jordan",
+  "iso3": "JOR",
+  "mi": 0.624,
+  "tier": 2,
+  "pillars": {
+   "P1": 0.559,
+   "P2": 0.396,
+   "P3": 0.797,
+   "P4": 0.769,
+   "P5": 0.599
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 2: Durable",
+    "valence": "good",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Earned prosperity",
+    "valence": "good",
+    "why": "Institutions match or exceed what income predicts \u2014 durable.",
+    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+   },
+   {
+    "key": "shape",
+    "label": "Lopsided \u00b7 weakest: Economic Complexity",
+    "valence": "bad",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
    }
@@ -4963,48 +4963,6 @@
   }
  },
  {
-  "slug": "bangladesh",
-  "name": "Bangladesh",
-  "iso3": "BGD",
-  "mi": 0.46,
-  "tier": 3,
-  "pillars": {
-   "P1": 0.357,
-   "P2": 0.37,
-   "P3": 0.705,
-   "P4": 0.519,
-   "P5": 0.349
-  },
-  "chips": [
-   {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
-    "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
-   },
-   {
-    "key": "durability",
-    "label": "Granted prosperity",
-    "valence": "bad",
-    "why": "Wealth has outrun institutions \u2014 historically fragile.",
-    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
-   },
-   {
-    "key": "shape",
-    "label": "Lopsided \u00b7 weakest: Stability & Resilience",
-    "valence": "bad",
-    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-    "rule": "max(pillar) \u2212 min(pillar)."
-   }
-  ],
-  "coverage": {
-   "present": 5,
-   "total": 5,
-   "missing": []
-  }
- },
- {
   "slug": "zimbabwe",
   "name": "Zimbabwe",
   "iso3": "ZWE",
@@ -5035,6 +4993,48 @@
    {
     "key": "shape",
     "label": "Lopsided \u00b7 weakest: Economic Complexity",
+    "valence": "bad",
+    "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
+    "rule": "max(pillar) \u2212 min(pillar)."
+   }
+  ],
+  "coverage": {
+   "present": 5,
+   "total": 5,
+   "missing": []
+  }
+ },
+ {
+  "slug": "bangladesh",
+  "name": "Bangladesh",
+  "iso3": "BGD",
+  "mi": 0.46,
+  "tier": 3,
+  "pillars": {
+   "P1": 0.357,
+   "P2": 0.37,
+   "P3": 0.705,
+   "P4": 0.519,
+   "P5": 0.349
+  },
+  "chips": [
+   {
+    "key": "tier",
+    "label": "Tier 3: Mixed",
+    "valence": "warn",
+    "why": "Modernization Index band (equal-weighted pillars).",
+    "rule": "MI score binned into 5 tiers."
+   },
+   {
+    "key": "durability",
+    "label": "Granted prosperity",
+    "valence": "bad",
+    "why": "Wealth has outrun institutions \u2014 historically fragile.",
+    "rule": "Sign of the MI residual vs. log-GDP regression (the durability gap)."
+   },
+   {
+    "key": "shape",
+    "label": "Lopsided \u00b7 weakest: Stability & Resilience",
     "valence": "bad",
     "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
     "rule": "max(pillar) \u2212 min(pillar)."
@@ -6406,17 +6406,17 @@
   }
  },
  {
-  "slug": "macao-sar",
-  "name": "Macao SAR",
-  "iso3": "MAC",
+  "slug": "bermuda",
+  "name": "Bermuda",
+  "iso3": "BMU",
   "mi": 0.842,
   "tier": 1,
   "pillars": {
-   "P1": 0.702,
+   "P1": 0.718,
    "P2": null,
    "P3": null,
-   "P4": 0.985,
-   "P5": 0.839
+   "P4": 0.983,
+   "P5": 0.825
   },
   "chips": [
    {
@@ -6458,17 +6458,17 @@
   }
  },
  {
-  "slug": "bermuda",
-  "name": "Bermuda",
-  "iso3": "BMU",
+  "slug": "macao-sar",
+  "name": "Macao SAR",
+  "iso3": "MAC",
   "mi": 0.842,
   "tier": 1,
   "pillars": {
-   "P1": 0.718,
+   "P1": 0.702,
    "P2": null,
    "P3": null,
-   "P4": 0.983,
-   "P5": 0.825
+   "P4": 0.985,
+   "P5": 0.839
   },
   "chips": [
    {

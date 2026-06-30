@@ -134,5 +134,18 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "B"
+ "source_tier": "B",
+ "relational": {
+  "year": 2019,
+  "tier": "citable",
+  "label": "Afghanistan (Islamic Republic) 2019 (FRAGILE + SHIELD WITHDRAWN) -> COLLAPSED 2021",
+  "exposure_structural": 0.444,
+  "exposure_structural_band": "moderate",
+  "exposure_net": 0.333,
+  "patron_present": true,
+  "response": 0.314,
+  "response_band": "low",
+  "joint_reading": "structural exposure=moderate, response=low: relationally lower-risk on this axis.",
+  "outcome_factual": "Survived 2001-2021 on external backing; collapsed within weeks of the US withdrawal (Kabul fell 15 Aug 2021). Shield removed -> fell."
+ }
 }

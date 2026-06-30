@@ -151,5 +151,18 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "B"
+ "source_tier": "B",
+ "relational": {
+  "year": 1989,
+  "tier": "citable",
+  "label": "Kuwait, pre-1990 (FRAGILE + SHIELDED by response) -> invaded then RESTORED by coalition",
+  "exposure_structural": 0.819,
+  "exposure_structural_band": "high",
+  "exposure_net": 0.855,
+  "patron_present": false,
+  "response": 0.478,
+  "response_band": "moderate",
+  "joint_reading": "HIGH structural exposure + NO patron + weak response: standing vulnerability to externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs it. This is the configuration that turns an internal 'OK' read into an external miss \u2014 Cyprus 1974, Poland-Lithuania 1772.",
+  "outcome_factual": "Invaded by Iraq 2 Aug 1990; sovereignty restored by the coalition Feb 1991. SURVIVED via the response patron."
+ }
 }

@@ -55,3 +55,7 @@ export const valenceColor = (v: string): string => VALENCE[v as Valence] ?? VALE
 
 // a 0–1 pillar value → a red→amber→green hue (used in the atlas heat cells)
 export const heat = (v: number): string => `hsl(${Math.round(v * 130)}, 55%, 60%)`;
+
+// world-map viewport (client-safe constants; the geometry builder lives in lib/worldmap.ts)
+export const MAP_W = 980;
+export const MAP_H = 500;

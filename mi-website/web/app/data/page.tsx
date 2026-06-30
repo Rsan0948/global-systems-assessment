@@ -43,7 +43,7 @@ export default function DataPage() {
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
         <a
           href="/data/countries.json"
-          className="card flex flex-col gap-1 p-4 transition hover:border-fg3"
+          className="card lift flex flex-col gap-1 p-4"
         >
           <span className="text-[14px] font-medium">Full dataset (JSON)</span>
           <span className="mono text-[11px] text-fg3">{n} countries · all pillars · all classifiers</span>
