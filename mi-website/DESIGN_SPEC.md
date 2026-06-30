@@ -1,6 +1,8 @@
 # Modernization Index Website — Design Specification
 
-**Version:** 0.2 **Date:** 2026-06-30 **Status:** V1 in build
+**Version:** 0.2 **Date:** 2026-06-30 **Status:** V1 LIVE — https://modernization-index.vercel.app
+(190 countries, full coverage with visible gaps; data pipeline wired via `scripts/refresh_and_build.py`
++ `.github/workflows/update-mi-data.yml`)
 
 > v0.2 supersedes v0.1 (2026-06-27). v0.1 predated the relational/exposure tier and the project's
 > honesty reckoning; it led with "Zero falsifications" and was an academic platform (contribution
