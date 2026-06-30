@@ -1,0 +1,123 @@
+{
+ "slug": "yemen",
+ "name": "Yemen",
+ "iso3": "YEM",
+ "mi": 0.312,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.205,
+  "P2": 0.328,
+  "P3": 0.575,
+  "P4": null,
+  "P5": 0.141
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Stability & Resilience",
+   "valence": "bad",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 4,
+  "total": 5,
+  "missing": [
+   "P4"
+  ]
+ },
+ "verdict": "Structurally fragile \u2014 lopsided (stability & resilience the weak point).",
+ "spread": 0.434,
+ "residual": null,
+ "config": [
+  [
+   "P3",
+   0.575
+  ],
+  [
+   "P2",
+   0.328
+  ],
+  [
+   "P1",
+   0.205
+  ],
+  [
+   "P5",
+   0.141
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 14.93,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 24.24,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 29.88,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 13.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 14.74,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 27.14,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "eci",
+   "value": -1.682,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.391,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7584,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "political_stability",
+   "value": 18.91,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 108.9,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

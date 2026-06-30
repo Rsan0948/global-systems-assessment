@@ -1,0 +1,115 @@
+{
+ "slug": "eritrea",
+ "name": "Eritrea",
+ "iso3": "ERI",
+ "mi": 0.383,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.212,
+  "P2": null,
+  "P3": 0.561,
+  "P4": null,
+  "P5": 0.375
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Institutions",
+   "valence": "warn",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 3,
+  "total": 5,
+  "missing": [
+   "P2",
+   "P4"
+  ]
+ },
+ "verdict": "Structurally fragile.",
+ "spread": 0.349,
+ "residual": null,
+ "config": [
+  [
+   "P3",
+   0.561
+  ],
+  [
+   "P5",
+   0.375
+  ],
+  [
+   "P1",
+   0.212
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 23.03,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 25.94,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 22.76,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 13.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 14.8,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 16.77,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "education_index",
+   "value": 0.3735,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7481,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "political_stability",
+   "value": 53.79,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 94.5,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

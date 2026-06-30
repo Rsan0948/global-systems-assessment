@@ -1,0 +1,142 @@
+{
+ "slug": "bolivia",
+ "name": "Bolivia",
+ "iso3": "BOL",
+ "mi": 0.495,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.344,
+  "P2": 0.317,
+  "P3": 0.758,
+  "P4": 0.57,
+  "P5": 0.488
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.44,
+ "residual": -0.032,
+ "config": [
+  [
+   "P3",
+   0.758
+  ],
+  [
+   "P4",
+   0.57
+  ],
+  [
+   "P5",
+   0.488
+  ],
+  [
+   "P1",
+   0.344
+  ],
+  [
+   "P2",
+   0.317
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 39.47,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 35.15,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 35.08,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 28.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 27.66,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 49.15,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 20.25,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -1.097,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7677,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7474,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 12877.64,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 56.57,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 70.7,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

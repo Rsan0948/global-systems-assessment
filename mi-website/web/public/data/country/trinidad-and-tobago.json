@@ -1,0 +1,142 @@
+{
+ "slug": "trinidad-and-tobago",
+ "name": "Trinidad and Tobago",
+ "iso3": "TTO",
+ "mi": 0.616,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.492,
+  "P2": 0.411,
+  "P3": 0.789,
+  "P4": 0.751,
+  "P5": 0.64
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable \u2014 prosperity outrunning institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.379,
+ "residual": -0.051,
+ "config": [
+  [
+   "P3",
+   0.789
+  ],
+  [
+   "P4",
+   0.751
+  ],
+  [
+   "P5",
+   0.64
+  ],
+  [
+   "P1",
+   0.492
+  ],
+  [
+   "P2",
+   0.411
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 53.5,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 50.57,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 51.6,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 41.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 40.98,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 63.96,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 18.41,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.056,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7552,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8229,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 36328.51,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 72.04,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 52.9,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

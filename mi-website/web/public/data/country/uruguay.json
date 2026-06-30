@@ -1,0 +1,142 @@
+{
+ "slug": "uruguay",
+ "name": "Uruguay",
+ "iso3": "URY",
+ "mi": 0.716,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.698,
+  "P2": 0.47,
+  "P3": 0.866,
+  "P4": 0.752,
+  "P5": 0.795
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable \u2014 prosperity matched by institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.396,
+ "residual": 0.048,
+ "config": [
+  [
+   "P3",
+   0.866
+  ],
+  [
+   "P5",
+   0.795
+  ],
+  [
+   "P4",
+   0.752
+  ],
+  [
+   "P1",
+   0.698
+  ],
+  [
+   "P2",
+   0.47
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 64.77,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 73.32,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 65.06,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 76.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 78.78,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 78.34,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 29.13,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.122,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.837,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8944,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 36417.87,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 87.72,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 34.4,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

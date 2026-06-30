@@ -1,0 +1,107 @@
+{
+ "slug": "kosovo",
+ "name": "Kosovo",
+ "iso3": "XKX",
+ "mi": 0.579,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.505,
+  "P2": null,
+  "P3": null,
+  "P4": 0.627,
+  "P5": 0.604
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Balanced \u00b7 weakest: Institutions",
+   "valence": "good",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 3,
+  "total": 5,
+  "missing": [
+   "P2",
+   "P3"
+  ]
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity roughly in line with institutions.",
+ "spread": 0.122,
+ "residual": 0.007,
+ "config": [
+  [
+   "P4",
+   0.627
+  ],
+  [
+   "P5",
+   0.604
+  ],
+  [
+   "P1",
+   0.505
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 50.15,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 57.86,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 51.35,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 42.7,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 59.64,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 17864.42,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 60.4,
+   "source": "World Bank WGI"
+  }
+ ],
+ "data_year": 2024
+}

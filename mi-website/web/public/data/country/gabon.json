@@ -1,0 +1,137 @@
+{
+ "slug": "gabon",
+ "name": "Gabon",
+ "iso3": "GAB",
+ "mi": 0.515,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.37,
+  "P2": 0.308,
+  "P3": 0.707,
+  "P4": 0.66,
+  "P5": 0.533
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions \u2014 lopsided (economic complexity the weak point).",
+ "spread": 0.399,
+ "residual": -0.081,
+ "config": [
+  [
+   "P3",
+   0.707
+  ],
+  [
+   "P4",
+   0.66
+  ],
+  [
+   "P5",
+   0.533
+  ],
+  [
+   "P1",
+   0.37
+  ],
+  [
+   "P2",
+   0.308
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 40.31,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 37.07,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 43.45,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 27.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 28.89,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 38.98,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "eci",
+   "value": -1.797,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.6696,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7436,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 21510.17,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 61.16,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 65.5,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

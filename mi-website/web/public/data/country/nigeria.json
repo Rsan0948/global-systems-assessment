@@ -1,0 +1,142 @@
+{
+ "slug": "nigeria",
+ "name": "Nigeria",
+ "iso3": "NGA",
+ "mi": 0.37,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.356,
+  "P2": 0.196,
+  "P3": 0.538,
+  "P4": 0.508,
+  "P5": 0.25
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+   "valence": "warn",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally fragile \u2014 prosperity outrunning institutions.",
+ "spread": 0.341,
+ "residual": -0.111,
+ "config": [
+  [
+   "P3",
+   0.538
+  ],
+  [
+   "P4",
+   0.508
+  ],
+  [
+   "P1",
+   0.356
+  ],
+  [
+   "P5",
+   0.25
+  ],
+  [
+   "P2",
+   0.196
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 31.77,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 39.63,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 44.87,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 26.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 25.29,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 44.13,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 17.11,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -2.281,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.5449,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.5302,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 9086.88,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 31.69,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 98.0,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

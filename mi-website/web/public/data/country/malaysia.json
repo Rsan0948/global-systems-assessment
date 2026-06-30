@@ -1,0 +1,142 @@
+{
+ "slug": "malaysia",
+ "name": "Malaysia",
+ "iso3": "MYS",
+ "mi": 0.681,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.619,
+  "P2": 0.592,
+  "P3": 0.797,
+  "P4": 0.763,
+  "P5": 0.633
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+   "valence": "warn",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable \u2014 prosperity roughly in line with institutions.",
+ "spread": 0.204,
+ "residual": 0.004,
+ "config": [
+  [
+   "P3",
+   0.797
+  ],
+  [
+   "P4",
+   0.763
+  ],
+  [
+   "P5",
+   0.633
+  ],
+  [
+   "P1",
+   0.619
+  ],
+  [
+   "P2",
+   0.592
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 69.13,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 62.9,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 65.59,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 50.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 57.94,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 54.63,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 40.48,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.86,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7218,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8716,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 38779.28,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 72.47,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 55.0,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

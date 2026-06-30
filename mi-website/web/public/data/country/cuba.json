@@ -1,0 +1,123 @@
+{
+ "slug": "cuba",
+ "name": "Cuba",
+ "iso3": "CUB",
+ "mi": 0.57,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.414,
+  "P2": 0.441,
+  "P3": 0.817,
+  "P4": null,
+  "P5": 0.608
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 4,
+  "total": 5,
+  "missing": [
+   "P4"
+  ]
+ },
+ "verdict": "Mixed structural profile \u2014 lopsided (institutions the weak point).",
+ "spread": 0.403,
+ "residual": null,
+ "config": [
+  [
+   "P3",
+   0.817
+  ],
+  [
+   "P5",
+   0.608
+  ],
+  [
+   "P2",
+   0.441
+  ],
+  [
+   "P1",
+   0.414
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 46.1,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 46.23,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 32.2,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 41.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 43.27,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 34.65,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "eci",
+   "value": -1.048,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7399,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8936,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "political_stability",
+   "value": 71.28,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 59.5,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

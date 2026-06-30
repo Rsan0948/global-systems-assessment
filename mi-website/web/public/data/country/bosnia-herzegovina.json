@@ -1,0 +1,142 @@
+{
+ "slug": "bosnia-herzegovina",
+ "name": "Bosnia-Herzegovina",
+ "iso3": "BIH",
+ "mi": 0.583,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.432,
+  "P2": 0.5,
+  "P3": 0.811,
+  "P4": 0.686,
+  "P5": 0.485
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions \u2014 lopsided (institutions the weak point).",
+ "spread": 0.379,
+ "residual": -0.035,
+ "config": [
+  [
+   "P3",
+   0.811
+  ],
+  [
+   "P4",
+   0.686
+  ],
+  [
+   "P2",
+   0.5
+  ],
+  [
+   "P5",
+   0.485
+  ],
+  [
+   "P1",
+   0.432
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 38.99,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 51.47,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 49.35,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 33.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 37.47,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 49.93,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 25.47,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.662,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7313,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.89,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 25043.09,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 57.34,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 72.3,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

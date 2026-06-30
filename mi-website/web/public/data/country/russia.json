@@ -1,0 +1,142 @@
+{
+ "slug": "russia",
+ "name": "Russia",
+ "iso3": "RUS",
+ "mi": 0.57,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.355,
+  "P2": 0.484,
+  "P3": 0.799,
+  "P4": 0.798,
+  "P5": 0.416
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions \u2014 historically fragile.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions \u2014 lopsided (institutions the weak point).",
+ "spread": 0.443,
+ "residual": -0.133,
+ "config": [
+  [
+   "P3",
+   0.799
+  ],
+  [
+   "P4",
+   0.798
+  ],
+  [
+   "P2",
+   0.484
+  ],
+  [
+   "P5",
+   0.416
+  ],
+  [
+   "P1",
+   0.355
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 45.09,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 37.06,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 38.01,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 22.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 29.82,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 31.96,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 29.73,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.243,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7799,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8178,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 47404.96,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 50.46,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 80.7,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

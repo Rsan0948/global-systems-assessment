@@ -1,0 +1,137 @@
+{
+ "slug": "sudan",
+ "name": "Sudan",
+ "iso3": "SDN",
+ "mi": 0.297,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.216,
+  "P2": 0.258,
+  "P3": 0.542,
+  "P4": 0.253,
+  "P5": 0.214
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Stability & Resilience",
+   "valence": "warn",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally fragile \u2014 prosperity roughly in line with institutions.",
+ "spread": 0.328,
+ "residual": 0.014,
+ "config": [
+  [
+   "P3",
+   0.542
+  ],
+  [
+   "P2",
+   0.258
+  ],
+  [
+   "P4",
+   0.253
+  ],
+  [
+   "P1",
+   0.216
+  ],
+  [
+   "P5",
+   0.214
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 16.46,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 26.44,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 28.64,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 15.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 16.33,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 23.88,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "eci",
+   "value": -2.078,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.3715,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7128,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 2115.82,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 31.32,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 106.2,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}

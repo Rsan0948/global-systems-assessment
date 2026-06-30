@@ -1,0 +1,130 @@
+{
+ "slug": "east-timor",
+ "name": "East Timor",
+ "iso3": "TLS",
+ "mi": 0.502,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.418,
+  "P2": null,
+  "P3": 0.655,
+  "P4": 0.382,
+  "P5": 0.551
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions match or exceed what income predicts \u2014 durable.",
+   "rule": "Sign of MI residual vs. log-GDP regression (the durability gap)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Economic Structure",
+   "valence": "warn",
+   "why": "Spread between strongest and weakest pillar; the country's structural shape.",
+   "rule": "max(pillar) \u2212 min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 4,
+  "total": 5,
+  "missing": [
+   "P2"
+  ]
+ },
+ "verdict": "Mixed structural profile \u2014 prosperity matched by institutions.",
+ "spread": 0.273,
+ "residual": 0.119,
+ "config": [
+  [
+   "P3",
+   0.655
+  ],
+  [
+   "P5",
+   0.551
+  ],
+  [
+   "P1",
+   0.418
+  ],
+  [
+   "P4",
+   0.382
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 33.87,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 46.2,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 43.28,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 44.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 40.21,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 62.9,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "education_index",
+   "value": 0.5757,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7337,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 4422.78,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 74.88,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 77.5,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024
+}
