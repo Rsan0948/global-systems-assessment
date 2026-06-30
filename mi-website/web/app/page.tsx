@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getCountries, getMeta } from "@/lib/data";
+import { SITE } from "@/lib/config";
 import CountryGrid from "@/components/CountryGrid";
+import { TierLegend, TierDistribution } from "@/components/ui";
 
 export default function Home() {
   const countries = getCountries();
@@ -10,9 +12,7 @@ export default function Home() {
   return (
     <div className="py-12">
       <section className="mx-auto max-w-3xl text-center">
-        <h1 className="serif text-4xl font-black leading-[1.05] sm:text-5xl">
-          How nations weather stress
-        </h1>
+        <h1 className="serif text-[2.1rem] font-black leading-[1.05] sm:text-5xl">{SITE.tagline}</h1>
         <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-fg2">
           A structural diagnostic of how governed systems withstand pressure — computed
           deterministically from citable public data, not opinion. Look up any country: see how it&apos;s
@@ -38,22 +38,9 @@ export default function Home() {
             Open the atlas →
           </Link>
         </div>
-        <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-1">
-          {[
-            [1, "#10b981", "Highly modernized"],
-            [2, "#3b82f6", "Durable"],
-            [3, "#f59e0b", "Mixed"],
-            [4, "#fb923c", "Fragile"],
-            [5, "#ef4444", "Floor"],
-          ].map(([t, col, label]) => {
-            const n = countries.filter((c) => c.tier === t).length;
-            return (
-              <span key={t as number} className="mono flex items-center gap-1.5 text-[11px] text-fg3">
-                <span style={{ color: col as string }}>●</span> T{t as number} {label}
-                <span className="text-fg2">{n}</span>
-              </span>
-            );
-          })}
+        <TierDistribution countries={countries} />
+        <div className="mb-4 mt-2.5">
+          <TierLegend countries={countries} />
         </div>
         <CountryGrid countries={countries} />
         <p className="mt-5 max-w-2xl text-[12px] leading-relaxed text-fg3">

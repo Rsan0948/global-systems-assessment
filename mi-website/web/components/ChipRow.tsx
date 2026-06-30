@@ -1,47 +1,39 @@
 "use client";
 import { useState } from "react";
 import type { Chip } from "@/lib/data";
-
-const color = (v: Chip["valence"]) =>
-  v === "good" ? "#4ade80" : v === "warn" ? "#fbbf24" : v === "bad" ? "#f87171" : "#9a9ab0";
+import { valenceColor } from "@/lib/config";
 
 export default function ChipRow({ chips }: { chips: Chip[] }) {
   const [open, setOpen] = useState<string | null>(null);
+  const active = chips.find((c) => c.key === open);
   return (
     <div>
       <div className="flex flex-wrap gap-2">
         {chips.map((c) => {
-          const cl = color(c.valence);
-          const active = open === c.key;
+          const cl = valenceColor(c.valence);
+          const on = open === c.key;
           return (
             <button
               key={c.key}
-              onClick={() => setOpen(active ? null : c.key)}
-              className="rounded-full border px-3 py-1 text-[12px] font-medium transition"
-              style={{
-                borderColor: cl + "66",
-                color: cl,
-                background: active ? cl + "1f" : cl + "12",
-              }}
+              onClick={() => setOpen(on ? null : c.key)}
+              aria-expanded={on}
+              className="rounded-full border px-3 py-1 text-[12px] font-medium transition-colors"
+              style={{ borderColor: cl + "66", color: cl, background: on ? cl + "1f" : cl + "12" }}
             >
               {c.label}
             </button>
           );
         })}
       </div>
-      {open &&
-        (() => {
-          const c = chips.find((x) => x.key === open)!;
-          return (
-            <div className="card mt-3 p-4 text-[13px]">
-              <div className="font-medium" style={{ color: color(c.valence) }}>
-                {c.label}
-              </div>
-              <p className="mt-1 text-fg2">{c.why}</p>
-              <p className="mono mt-2 text-[11px] text-fg3">Rule: {c.rule}</p>
-            </div>
-          );
-        })()}
+      {active && (
+        <div className="card mt-3 p-4 text-[13px]">
+          <div className="font-medium" style={{ color: valenceColor(active.valence) }}>
+            {active.label}
+          </div>
+          <p className="mt-1 text-fg2">{active.why}</p>
+          <p className="mono mt-2 text-[11px] text-fg3">Rule: {active.rule}</p>
+        </div>
+      )}
     </div>
   );
 }

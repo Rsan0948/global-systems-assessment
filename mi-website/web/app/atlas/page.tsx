@@ -1,19 +1,21 @@
 import { getCountries } from "@/lib/data";
 import AtlasTable from "@/components/AtlasTable";
+import { PageHeader, TierLegend } from "@/components/ui";
 
 export const metadata = { title: "Atlas — Modernization Index" };
 
 export default function Atlas() {
+  const countries = getCountries();
   return (
     <div className="py-10">
-      <h1 className="serif text-3xl font-black">The Atlas</h1>
-      <p className="mt-2 max-w-2xl text-[14px] text-fg2">
-        Every scored country, rankable by any pillar. The score is a deterministic formula over public
-        data — sort it, don&apos;t trust it blindly.
-      </p>
-      <div className="mt-6">
-        <AtlasTable countries={getCountries()} />
+      <PageHeader
+        title="The Atlas"
+        lede="Every scored country, rankable by any pillar. The score is a deterministic formula over public data — sort it, don't trust it blindly. Partial-data countries sort below the comparable ones."
+      />
+      <div className="mb-5">
+        <TierLegend countries={countries} />
       </div>
+      <AtlasTable countries={countries} />
     </div>
   );
 }

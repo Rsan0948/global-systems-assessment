@@ -2,25 +2,21 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { Summary } from "@/lib/data";
+import { PILLARS, tierColor, heat } from "@/lib/config";
 
-const TIER = ["#10b981", "#3b82f6", "#f59e0b", "#fb923c", "#ef4444"];
 const COLS = [
   ["name", "Country"],
   ["mi", "MI"],
-  ["P1", "Institutions"],
-  ["P2", "Complexity"],
-  ["P3", "Human Cap."],
-  ["P4", "Economy"],
-  ["P5", "Stability"],
+  ["P1", PILLARS.P1.full],
+  ["P2", PILLARS.P2.short],
+  ["P3", PILLARS.P3.full],
+  ["P4", PILLARS.P4.short],
+  ["P5", PILLARS.P5.short],
   ["cov", "Data"],
 ] as const;
 
 const cell = (v: number | null) =>
-  v == null ? (
-    <span className="text-fg3">—</span>
-  ) : (
-    <span style={{ color: `hsl(${v * 130}, 55%, 60%)` }}>{v.toFixed(2)}</span>
-  );
+  v == null ? <span className="text-fg3">—</span> : <span style={{ color: heat(v) }}>{v.toFixed(2)}</span>;
 
 export default function AtlasTable({ countries }: { countries: Summary[] }) {
   const [sort, setSort] = useState<string>("mi");
@@ -69,11 +65,11 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
               <tr key={c.slug} className="border-b border-border/50 hover:bg-surface2">
                 <td className="px-3 py-1.5">
                   <Link href={`/country/${c.slug}`} className="flex items-center gap-2 hover:text-white">
-                    <span style={{ color: TIER[c.tier - 1] }}>●</span>
+                    <span style={{ color: tierColor(c.tier) }}>●</span>
                     <span className="font-sans">{c.name}</span>
                   </Link>
                 </td>
-                <td className="px-3 py-1.5 font-semibold" style={{ color: TIER[c.tier - 1] }}>
+                <td className="px-3 py-1.5 font-semibold" style={{ color: tierColor(c.tier) }}>
                   {c.mi.toFixed(3)}
                 </td>
                 {["P1", "P2", "P3", "P4", "P5"].map((p) => (

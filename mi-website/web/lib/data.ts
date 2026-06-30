@@ -51,13 +51,3 @@ export const getCountry = (slug: string): Country | null => {
     return null;
   }
 };
-
-export const TIER_COLOR: Record<number, string> = {
-  1: "var(--color-tier1)",
-  2: "var(--color-tier2)",
-  3: "var(--color-tier3)",
-  4: "var(--color-tier4)",
-  5: "var(--color-tier5)",
-};
-export const valenceColor = (v: Chip["valence"]) =>
-  v === "good" ? "var(--color-good)" : v === "warn" ? "var(--color-warn)" : v === "bad" ? "var(--color-danger)" : "var(--color-fg2)";

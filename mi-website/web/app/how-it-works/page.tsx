@@ -1,12 +1,6 @@
-export const metadata = { title: "How it works — Modernization Index" };
+import { PILLAR_ORDER, PILLARS } from "@/lib/config";
 
-const PILLARS = [
-  ["P1", "Institutions", "Government effectiveness, rule of law, corruption control, accountability."],
-  ["P2", "Economic Complexity", "How sophisticated and diversified the productive economy is."],
-  ["P3", "Human Capital", "Education and health — the population's capacity."],
-  ["P4", "Economic Structure", "Income and the material base."],
-  ["P5", "Stability & Resilience", "Political stability and the absence of structural fragility."],
-];
+export const metadata = { title: "How it works — Modernization Index" };
 
 export default function HowItWorks() {
   return (
@@ -21,12 +15,12 @@ export default function HowItWorks() {
 
       <h2 className="serif mt-9 text-xl">The five pillars</h2>
       <div className="mt-3 space-y-2">
-        {PILLARS.map(([k, n, d]) => (
+        {PILLAR_ORDER.map((k) => (
           <div key={k} className="card flex gap-3 p-3">
             <span className="mono mt-0.5 text-[13px] font-semibold text-primary">{k}</span>
             <div>
-              <div className="text-[14px] font-medium">{n}</div>
-              <div className="text-[12px] text-fg2">{d}</div>
+              <div className="text-[14px] font-medium">{PILLARS[k].full}</div>
+              <div className="text-[12px] text-fg2">{PILLARS[k].desc}</div>
             </div>
           </div>
         ))}

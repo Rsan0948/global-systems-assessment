@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getCountries, getCountry, TIER_COLOR } from "@/lib/data";
+import { getCountries, getCountry } from "@/lib/data";
+import { tier as tierOf, tierColor } from "@/lib/config";
 import Radar from "@/components/Radar";
 import ChipRow from "@/components/ChipRow";
 
@@ -8,13 +9,6 @@ export function generateStaticParams() {
   return getCountries().map((c) => ({ slug: c.slug }));
 }
 
-const TIER_NAME: Record<number, string> = {
-  1: "Highly Modernized",
-  2: "Durable",
-  3: "Mixed",
-  4: "Fragile",
-  5: "Floor",
-};
 const fmtKey = (k: string) =>
   k.replace(/_/g, " ").replace(/\bpct\b/, "%").replace(/\bgdp\b/i, "GDP").replace(/\boda\b/i, "ODA");
 
@@ -22,7 +16,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const c = getCountry(slug);
   if (!c) notFound();
-  const col = TIER_COLOR[c.tier];
+  const col = tierColor(c.tier);
   const spreadLabel =
     c.spread == null ? null : c.spread < 0.15 ? "Balanced" : c.spread < 0.35 ? "Some imbalance" : "Lopsided";
 
@@ -35,15 +29,15 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       {/* Verdict */}
       <div className="mt-3 flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h1 className="serif text-4xl font-black">{c.name}</h1>
-          <p className="mt-2 max-w-xl text-[15px] text-fg2">{c.verdict}</p>
+          <h1 className="serif text-3xl font-black sm:text-4xl">{c.name}</h1>
+          <p className="mt-2 max-w-xl text-[14px] text-fg2 sm:text-[15px]">{c.verdict}</p>
         </div>
         <div className="text-right">
           <div className="num text-4xl font-bold" style={{ color: col }}>
             {c.mi.toFixed(3)}
           </div>
           <div className="mono mt-1 text-[11px]" style={{ color: col }}>
-            Tier {c.tier} · {TIER_NAME[c.tier]}
+            Tier {c.tier} · {tierOf(c.tier).name}
           </div>
         </div>
       </div>
@@ -60,7 +54,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <section className="card p-5">
           <h2 className="serif text-base">Structural shape</h2>
           <div className="mt-2 flex justify-center">
-            <Radar pillars={c.pillars} names={c.pillar_names} />
+            <Radar pillars={c.pillars} />
           </div>
           {spreadLabel && (
             <p className="mt-1 text-center text-[12px] text-fg2">

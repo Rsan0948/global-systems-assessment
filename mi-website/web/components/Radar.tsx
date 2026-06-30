@@ -1,17 +1,11 @@
+import { PILLAR_ORDER, PILLARS, VALENCE } from "@/lib/config";
+
 type Props = {
   pillars: Record<string, number | null>;
-  names: Record<string, string>;
   size?: number;
 };
 
-const ORDER = ["P1", "P2", "P3", "P4", "P5"];
-const SHORT: Record<string, string> = {
-  P1: "Institutions",
-  P2: "Complexity",
-  P3: "Human cap.",
-  P4: "Economy",
-  P5: "Stability",
-};
+const ORDER = PILLAR_ORDER;
 
 export default function Radar({ pillars, size = 260 }: Props) {
   const cx = size / 2;
@@ -33,11 +27,11 @@ export default function Radar({ pillars, size = 260 }: Props) {
         const [x, y] = pt(i, 1);
         return <line key={i} x1={cx} y1={cy} x2={x} y2={y} stroke="#232338" strokeWidth={1} />;
       })}
-      <polygon points={filled} fill="#3b82f633" stroke="#60a5fa" strokeWidth={2} strokeLinejoin="round" />
+      <polygon points={filled} fill={VALENCE.primary + "33"} stroke={VALENCE.primary} strokeWidth={2} strokeLinejoin="round" />
       {ORDER.map((p, i) => {
         const v = pillars[p];
         const [x, y] = pt(i, v == null ? 0 : v);
-        return <circle key={p} cx={x} cy={y} r={v == null ? 0 : 3} fill="#60a5fa" />;
+        return <circle key={p} cx={x} cy={y} r={v == null ? 0 : 3} fill={VALENCE.primary} />;
       })}
       {ORDER.map((p, i) => {
         const [lx, ly] = pt(i, 1.0);
@@ -49,7 +43,7 @@ export default function Radar({ pillars, size = 260 }: Props) {
           <text key={p} x={ox} y={oy} textAnchor={anchor} dominantBaseline="middle" className="mono" fontSize={9.5}>
             <tspan fontWeight={600} fill={v == null ? "#6b6b82" : "#cfcfe0"}>{p}</tspan>
             <tspan x={ox} dy={11} fontSize={8} fill={v == null ? "#6b6b82" : "#8a8aa0"}>
-              {v == null ? "no data" : SHORT[p]}
+              {v == null ? "no data" : PILLARS[p].short}
             </tspan>
           </text>
         );
