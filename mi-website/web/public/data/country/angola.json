@@ -23,21 +23,21 @@
    "key": "durability",
    "label": "Granted prosperity",
    "valence": "bad",
-   "why": "Wealth has outrun institutions \u2014 historically fragile.",
-   "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
   },
   {
    "key": "shape",
    "label": "Lopsided \u00b7 weakest: Economic Complexity",
    "valence": "bad",
-   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-   "rule": "max(pillar) \u2212 min(pillar)."
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
   },
   {
    "key": "resource",
    "label": "Resource-dependent",
    "valence": "warn",
-   "why": "Resource rents \u2248 30% of GDP \u2014 prosperity leans on extraction.",
+   "why": "Resource rents \u2248 30% of GDP - prosperity leans on extraction.",
    "rule": "resource rents \u2265 10% of GDP."
   }
  ],
@@ -46,7 +46,7 @@
   "total": 5,
   "missing": []
  },
- "verdict": "Mixed structural profile \u2014 prosperity outrunning institutions \u2014 lopsided (economic complexity the weak point).",
+ "verdict": "Mixed structural profile - prosperity outrunning institutions - lopsided (economic complexity the weak point).",
  "spread": 0.387,
  "residual": -0.103,
  "config": [

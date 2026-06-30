@@ -23,15 +23,15 @@
    "key": "durability",
    "label": "Earned prosperity",
    "valence": "good",
-   "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
-   "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
   },
   {
    "key": "shape",
    "label": "Some imbalance \u00b7 weakest: Stability & Resilience",
    "valence": "warn",
-   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-   "rule": "max(pillar) \u2212 min(pillar)."
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
   }
  ],
  "coverage": {
@@ -39,7 +39,7 @@
   "total": 5,
   "missing": []
  },
- "verdict": "Structurally durable \u2014 prosperity roughly in line with institutions.",
+ "verdict": "Structurally durable - prosperity roughly in line with institutions.",
  "spread": 0.296,
  "residual": -0.0,
  "config": [

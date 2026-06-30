@@ -4,8 +4,15 @@ import Link from "next/link";
 import type { Summary } from "@/lib/data";
 import { PILLAR_ORDER, TIERS, tierColor, clamp01, NODATA, TRACK } from "@/lib/config";
 
+const FLAG_LABEL: Record<string, string> = {
+  durability: "granted",
+  resource: "resource",
+  aid: "aid",
+};
+
 function Tile({ c }: { c: Summary }) {
   const col = tierColor(c.tier);
+  const flags = c.chips.filter((ch) => FLAG_LABEL[ch.key] && (ch.valence === "warn" || ch.valence === "bad"));
   return (
     <Link href={`/country/${c.slug}`} className="card lift group flex flex-col gap-2 p-3">
       <div className="flex items-start justify-between gap-2">
@@ -34,9 +41,22 @@ function Tile({ c }: { c: Summary }) {
           );
         })}
       </div>
-      <div className="mono flex items-center gap-1.5 text-[10px] text-fg3">
+      <div className="mono flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[10px] text-fg3">
         <span style={{ color: col }}>● Tier {c.tier}</span>
         {c.coverage.present < 5 && <span>· {c.coverage.present}/5 data</span>}
+        {flags.map((f) => {
+          const fc = f.valence === "bad" ? "#f87171" : "#fbbf24";
+          return (
+            <span
+              key={f.key}
+              title={f.label}
+              className="rounded px-1 py-px text-[9px] font-medium"
+              style={{ background: fc + "1f", color: fc }}
+            >
+              {FLAG_LABEL[f.key]}
+            </span>
+          );
+        })}
       </div>
     </Link>
   );

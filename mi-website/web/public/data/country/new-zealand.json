@@ -23,15 +23,15 @@
    "key": "durability",
    "label": "Earned prosperity",
    "valence": "good",
-   "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
-   "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
   },
   {
    "key": "shape",
    "label": "Lopsided \u00b7 weakest: Economic Complexity",
    "valence": "bad",
-   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-   "rule": "max(pillar) \u2212 min(pillar)."
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
   }
  ],
  "coverage": {
@@ -39,7 +39,7 @@
   "total": 5,
   "missing": []
  },
- "verdict": "Highly modernized \u2014 prosperity matched by institutions \u2014 lopsided (economic complexity the weak point).",
+ "verdict": "Highly modernized - prosperity matched by institutions - lopsided (economic complexity the weak point).",
  "spread": 0.411,
  "residual": 0.083,
  "config": [

@@ -1,11 +1,11 @@
 """
-Relational / Exposure Tier (T3) — a THIRD measurement tier, firewalled from the MI.
+Relational / Exposure Tier (T3) - a THIRD measurement tier, firewalled from the MI.
 
 Where the country-level MI measures how a polity is built INTERNALLY (P1-P5), and the system-level
 Global Systems Measurement measures the world system, T3 measures a polity's RELATIONAL position:
 how exposed it is to externally-imposed shock (invasion/conquest), and how well it could absorb one.
 
-It exists because the MI is an internal instrument and is therefore blind to exogenous conflict — the
+It exists because the MI is an internal instrument and is therefore blind to exogenous conflict - the
 signal lives in a relational layer BETWEEN units that the internal instrument never had. T3 is that
 layer. It turns "an external power defeated us" (a flat miss) into "conditioned on exposure" (a
 consistency hit): Cyprus 1974 was internally OK-ish but highly exposed with no credible patron ->
@@ -76,7 +76,7 @@ def _e1_relative_power(blk):
 
     Returns None when there is NO external state with an active hostile posture/claim toward the unit
     (method 'no_active_adversary'). This matters: a merely stronger but non-threatening neighbor must
-    NOT register as exposure — relative-power exposure only exists against an actual adversary. An
+    NOT register as exposure - relative-power exposure only exists against an actual adversary. An
     internally-collapsing state with no invader has E1 = None (E3/E4/E5 carry the structural read)."""
     method = blk.get("method")
     if method == "no_active_adversary" or blk.get("adversary") in (None, "", "none"):
@@ -102,7 +102,7 @@ def _patron_strength(exposure):
 
 def _response_patron(exposure):
     """RESPONSE-patron (ex post): does a patron intervene to BLUNT/reverse a shock that lands? Feeds R3.
-    Decoupled from deterrence because they can differ — Kuwait 1990 had NO credible deterrent (invaded)
+    Decoupled from deterrence because they can differ - Kuwait 1990 had NO credible deterrent (invaded)
     but a decisive response patron (the coalition restored it). Falls back to the deterrence flag when a
     case doesn't distinguish them."""
     p = exposure.get("E2_patron", {})
@@ -116,7 +116,7 @@ def compute_exposure(record):
 
     Two numbers, because the patron acts on two distinct things (see spec A1, the double-count):
       - E_structural: the raw external ADVERSITY a unit faces (E1 power, E3 border, E4 neighborhood,
-        E5 faultline) — patron-INDEPENDENT. "How exposed are you, ignoring who protects you."
+        E5 faultline) - patron-INDEPENDENT. "How exposed are you, ignoring who protects you."
       - E (net): structural adversity AFTER the patron's DETERRENCE (adds E2). "How likely is a shock
         actually attempted." A credible patron lowers E below E_structural.
     The patron's BLUNTING effect (separate from deterrence) lives on the Response axis (R3). Splitting
@@ -179,7 +179,7 @@ def compute_response(record, unit, year):
 def _joint_reading(E_struct, R, deterrence_patron, response_patron=False):
     """Placement on (structural exposure x response). The patron is the bridge: a DETERRENCE patron
     lowers occurrence; a RESPONSE patron reverses a shock that lands. Keyed on E_structural (raw
-    adversity) so 'exposed but shielded' stays visible. Descriptive only — NO verdict, NO MI delta."""
+    adversity) so 'exposed but shielded' stays visible. Descriptive only - NO verdict, NO MI delta."""
     if E_struct is None or R is None:
         return "insufficient data for a joint reading."
     sb, rb = _band(E_struct), _band(R)
@@ -189,7 +189,7 @@ def _joint_reading(E_struct, R, deterrence_patron, response_patron=False):
                     "external defender both DETERS the shock (lowers net exposure) and BLUNTS it (lifts "
                     "response). Persistence despite exposure is the expected reading here (e.g. South Korea).")
         if response_patron:
-            return ("HIGH structural exposure with NO standing deterrent — but a RESPONSE patron intervened "
+            return ("HIGH structural exposure with NO standing deterrent - but a RESPONSE patron intervened "
                     "to reverse the shock after it landed: survival came from outside help, not internal "
                     "strength (e.g. Kuwait 1990, conquered then restored by the coalition).")
         if rb == "high":
@@ -197,15 +197,15 @@ def _joint_reading(E_struct, R, deterrence_patron, response_patron=False):
                     "can survive a shock on its own resources (the cohesion-shielded path, e.g. Finland 1939).")
         return ("HIGH structural exposure + NO patron + weak response: standing vulnerability to "
                 "externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs "
-                "it. This is the configuration that turns an internal 'OK' read into an external miss — "
+                "it. This is the configuration that turns an internal 'OK' read into an external miss - "
                 "Cyprus 1974, Poland-Lithuania 1772.")
     if sb == "moderate":
         if rb == "low":
             return ("MODERATE structural exposure + weak response: not relationally over-determined, but with "
-                    "little to absorb a shock — fragile if one lands, and fatal if an external prop is removed "
+                    "little to absorb a shock - fragile if one lands, and fatal if an external prop is removed "
                     "(e.g. Afghanistan 2021, which fell within weeks of the withdrawal).")
         return f"MODERATE structural exposure, {rb} response: relationally mid-risk on this axis."
-    return (f"LOW structural exposure ({sb}), {rb} response: this was not a relational case — any rupture "
+    return (f"LOW structural exposure ({sb}), {rb} response: this was not a relational case - any rupture "
             "here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).")
 
 
@@ -216,7 +216,7 @@ def relational_reading(unit, year=None, record=None):
         key = f"{unit}@{year}" if year is not None else unit
         record = recs.get(key)
         if record is None and year is None:
-            # bare unit name given — find the (single) matching 'Unit@Year' key
+            # bare unit name given - find the (single) matching 'Unit@Year' key
             matches = [k for k in recs if k.split("@")[0] == unit]
             if len(matches) == 1:
                 key = matches[0]
@@ -237,6 +237,6 @@ def relational_reading(unit, year=None, record=None):
                                         _response_patron(record["exposure"]) == 1.0),
         "outcome_factual": record.get("outcome_factual", ""),
         "DISCLAIMER": ("Risk gauge, NOT a war-predictor: conditions on WHO is exposed, not WHEN a war "
-                       "starts. Firewalled from the MI — reads pillars, changes no MI score. "
+                       "starts. Firewalled from the MI - reads pillars, changes no MI score. "
                        f"Provenance tier: {record.get('provenance_tier','unknown')}."),
     }

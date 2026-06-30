@@ -1,7 +1,7 @@
 import { TIERS, tierColor } from "@/lib/config";
 import type { Summary } from "@/lib/data";
 
-// Reusable primitives — one definition, used everywhere. Keeps the site consistent.
+// Reusable primitives - one definition, used everywhere. Keeps the site consistent.
 
 export function Card({ className = "", children }: { className?: string; children: React.ReactNode }) {
   return <div className={`card ${className}`}>{children}</div>;
@@ -42,16 +42,31 @@ export function TierDistribution({ countries }: { countries: Summary[] }) {
 
 export function TierLegend({ countries }: { countries?: Summary[] }) {
   return (
-    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
-      {TIERS.map((t) => {
-        const n = countries?.filter((c) => c.tier === t.n).length;
-        return (
-          <span key={t.n} className="mono flex items-center gap-1.5 text-[11px] text-fg3">
-            <TierDot tier={t.n} size={7} /> T{t.n} {t.short}
-            {n != null && <span className="text-fg2">{n}</span>}
-          </span>
-        );
-      })}
+    <div>
+      <p className="mb-2 text-[11.5px] text-fg2">
+        Each country scores 0 to 1. Higher tiers are more structurally able to weather stress.
+      </p>
+      <div className="flex flex-wrap gap-x-5 gap-y-2">
+        {TIERS.map((t) => {
+          const n = countries?.filter((c) => c.tier === t.n).length;
+          const range = t.n === 1 ? "0.80+" : `${t.min.toFixed(2)} to ${(t.min + 0.2 - 0.01).toFixed(2)}`;
+          return (
+            <span key={t.n} className="flex items-center gap-2 text-[12.5px]">
+              <span
+                aria-hidden
+                className="inline-block h-3 w-3 shrink-0 rounded-[3px]"
+                style={{ background: t.color, boxShadow: `0 0 8px ${t.color}66` }}
+              />
+              <span className="font-medium text-fg">Tier {t.n}</span>
+              <span className="text-fg2">{t.short}</span>
+              <span className="mono text-[10.5px] text-fg3">{range}</span>
+              {n != null && (
+                <span className="num rounded bg-surface2 px-1.5 text-[11px] text-fg2">{n}</span>
+              )}
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 }

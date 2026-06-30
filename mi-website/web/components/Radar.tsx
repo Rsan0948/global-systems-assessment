@@ -16,7 +16,7 @@ export default function Radar({ pillars, size = 260 }: Props) {
   const pt = (i: number, frac: number) => [cx + r * frac * Math.cos(angle(i)), cy + r * frac * Math.sin(angle(i))];
 
   const rings = [0.25, 0.5, 0.75, 1].map((f) => ORDER.map((_, i) => pt(i, f).join(",")).join(" "));
-  // shape connects ONLY measured pillars (in angular order) — missing axes break the polygon
+  // shape connects ONLY measured pillars (in angular order) - missing axes break the polygon
   // rather than pinching it through the center, so a 3/5 country reads as a triangle, not a 0.
   const filled = ORDER.map((p, i) => (pillars[p] == null ? null : pt(i, clamp01(pillars[p] as number)).join(",")))
     .filter(Boolean)

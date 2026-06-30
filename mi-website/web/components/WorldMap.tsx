@@ -75,7 +75,13 @@ export default function WorldMap({
               <stop offset="100%" stopColor="#0b0d16" />
             </radialGradient>
           </defs>
-          <path d={sphere} fill="url(#ocean)" stroke="#232338" strokeWidth={0.8} />
+          <path
+            d={sphere}
+            fill="url(#ocean)"
+            stroke="#232338"
+            strokeWidth={0.8}
+            onMouseEnter={() => setHover(null)}
+          />
           {features.map((f, i) => {
             const on = hover === f;
             return (
@@ -129,7 +135,7 @@ export default function WorldMap({
         ) : (
           <p className="mono text-[11px] text-fg3">
             <span style={{ color: COVERAGE_SCORED }}>●</span> scored ·{" "}
-            <span style={{ color: COVERAGE_UNSCORED }}>●</span> not yet measured — roughly half the world is
+            <span style={{ color: COVERAGE_UNSCORED }}>●</span> not yet measured - roughly half the world is
             dark, missing the public data the engine needs.
           </p>
         )}

@@ -23,15 +23,15 @@
    "key": "partial",
    "label": "Partial data \u00b7 4/5 pillars",
    "valence": "neutral",
-   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
+   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country - the missing pillars are unmeasured, not zero.",
    "rule": "1 of 5 pillars lack public data."
   },
   {
    "key": "shape",
    "label": "Lopsided \u00b7 weakest: Stability & Resilience",
    "valence": "bad",
-   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-   "rule": "max(pillar) \u2212 min(pillar)."
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
   }
  ],
  "coverage": {
@@ -41,7 +41,7 @@
    "P4"
   ]
  },
- "verdict": "Structurally fragile \u2014 lopsided (stability & resilience the weak point).",
+ "verdict": "Structurally fragile - lopsided (stability & resilience the weak point).",
  "spread": 0.434,
  "residual": null,
  "config": [

@@ -4,7 +4,7 @@ Enrich the site's country files with the T3 relational/exposure read, where we h
 
 Runs the validated T3 engine (mi.relational) over its records and, for any record whose
 country matches a scored country on the site, writes a `relational` block into that
-country's JSON — exposure (structural vs net), response, patron shield, the 2x2 reading.
+country's JSON - exposure (structural vs net), response, patron shield, the 2x2 reading.
 These are historical snapshots (the relational layer is rolled out case by case), tagged
 with their year and provenance tier. Run AFTER build_site_dataset.py.
 """

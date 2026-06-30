@@ -16,7 +16,7 @@ const COLS = [
 ] as const;
 
 const cell = (v: number | null) =>
-  v == null ? <span className="text-fg3">—</span> : <span style={{ color: heat(v) }}>{v.toFixed(2)}</span>;
+  v == null ? <span className="text-fg3">-</span> : <span style={{ color: heat(v) }}>{v.toFixed(2)}</span>;
 
 export default function AtlasTable({ countries }: { countries: Summary[] }) {
   const [sort, setSort] = useState<string>("mi");

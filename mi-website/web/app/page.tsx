@@ -16,7 +16,7 @@ export default function Home() {
       <section className="mx-auto max-w-3xl text-center">
         <h1 className="serif text-[2.1rem] font-black leading-[1.05] sm:text-5xl">{SITE.tagline}</h1>
         <p className="mx-auto mt-5 max-w-xl text-[14px] leading-relaxed text-fg2 sm:text-[15px]">
-          A structural diagnostic of how governed systems withstand pressure — computed
+          A structural diagnostic of how governed systems withstand pressure - computed
           deterministically from citable public data, not opinion. Look up any country: see how it&apos;s
           built, and what we can&apos;t yet see.
         </p>
@@ -37,7 +37,7 @@ export default function Home() {
         <WorldMap features={features} sphere={sphere} countries={countries} />
         <p className="mono mt-2 text-[10px] text-fg3">
           Hover a country for its score; click to open it. A handful of scored micro-states (Singapore,
-          San Marino, island states…) are too small to draw — find them in the list below.
+          San Marino, island states…) are too small to draw - find them in the list below.
         </p>
       </section>
 
@@ -50,10 +50,9 @@ export default function Home() {
         </div>
         <CountryGrid countries={countries} />
         <p className="mt-5 max-w-2xl text-[12px] leading-relaxed text-fg3">
-          {meta.count} of the world&apos;s ~195 states are scored here. The rest aren&apos;t graded —
-          they&apos;re <span className="text-fg2">unmeasured</span>, missing the public data the engine
-          needs. We show that honestly rather than guessing. The well-governed world is, not
-          coincidentally, the well-measured world.
+          {meta.count} of the world&apos;s ~195 states are scored here. The rest are{" "}
+          <span className="text-fg2">unmeasured</span>, missing the public data the engine needs, and shown
+          dark rather than guessed.
         </p>
       </section>
     </div>

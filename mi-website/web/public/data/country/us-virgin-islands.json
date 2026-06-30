@@ -23,22 +23,22 @@
    "key": "partial",
    "label": "Partial data \u00b7 3/5 pillars",
    "valence": "neutral",
-   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country \u2014 the missing pillars are unmeasured, not zero.",
+   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country - the missing pillars are unmeasured, not zero.",
    "rule": "2 of 5 pillars lack public data."
   },
   {
    "key": "durability",
    "label": "Earned prosperity",
    "valence": "good",
-   "why": "Institutions roughly match or exceed what income predicts \u2014 durable.",
-   "rule": "MI residual vs. the log-GDP regression (the durability gap): below \u22120.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
   },
   {
    "key": "shape",
    "label": "Some imbalance \u00b7 weakest: Institutions",
    "valence": "warn",
-   "why": "Spread between the strongest and weakest pillar \u2014 the country's structural shape.",
-   "rule": "max(pillar) \u2212 min(pillar)."
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
   }
  ],
  "coverage": {
@@ -49,7 +49,7 @@
    "P3"
   ]
  },
- "verdict": "Structurally durable \u2014 prosperity matched by institutions.",
+ "verdict": "Structurally durable - prosperity matched by institutions.",
  "spread": 0.291,
  "residual": 0.058,
  "config": [

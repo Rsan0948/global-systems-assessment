@@ -1,4 +1,4 @@
-// Pure type definitions — NO runtime imports (no node:fs). Safe to import from
+// Pure type definitions - NO runtime imports (no node:fs). Safe to import from
 // client components. The fs-using loaders live in lib/data.ts and lib/worldmap.ts.
 
 export type Chip = {
