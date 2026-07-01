@@ -1,8 +1,8 @@
 {
   "_meta": {
     "purpose": "Citable relational-layer inputs for the T3 exposure/response tier. Every value is sourced from a named external dataset (COW NMC/CINC, ATOP/COW alliances, ICOW, COW MID, WDI). See docs/relational_tier_spec.md.",
-    "discipline": "The EXPOSURE axis (E1-E5) is strictly citable external data — that is the new contribution and must stay clean. The internal_pillars block is the MI's internal read (P1/P5); for historical cases (no contemporaneous WGI) it is the same recorded ordinal estimate the corpus already uses, tagged accordingly — it is NOT part of the citable exposure layer.",
-    "provenance_tiers": "Three tiers, decreasing confidence: (1) CITABLE — COW NMC/CINC, ATOP/COW alliances, ICOW, SIPRI (>=1816 / >=1949); this file. (2) HISTORICAL-PROXY — established quantitative historical series (Maddison GDP, V-Dem rule-of-law) used as era-appropriate proxies where the citable relational primitives don't exist pre-1816; historical_proxy_inputs.json. (3) INTERPRETED — pure hindsight, no structured source (the ancient tier's domain). This file is tier 1 only.",
+    "discipline": "The EXPOSURE axis (E1-E5) is strictly citable external data - that is the new contribution and must stay clean. The internal_pillars block is the MI's internal read (P1/P5); for historical cases (no contemporaneous WGI) it is the same recorded ordinal estimate the corpus already uses, tagged accordingly - it is NOT part of the citable exposure layer.",
+    "provenance_tiers": "Three tiers, decreasing confidence: (1) CITABLE - COW NMC/CINC, ATOP/COW alliances, ICOW, SIPRI (>=1816 / >=1949); this file. (2) HISTORICAL-PROXY - established quantitative historical series (Maddison GDP, V-Dem rule-of-law) used as era-appropriate proxies where the citable relational primitives don't exist pre-1816; historical_proxy_inputs.json. (3) INTERPRETED - pure hindsight, no structured source (the ancient tier's domain). This file is tier 1 only.",
     "e1_method": "Tier 1 uses method='cinc' (COW composite capability ratio). Tier 2 uses method='economic_mass' (Maddison GDPpc x population ratio) because CINC doesn't exist pre-1816."
   },
   "Cyprus@1974": {
@@ -11,7 +11,7 @@
     "internal_pillars": {
       "P1": 0.45,
       "P5": 0.30,
-      "provenance": "historical ordinal estimate (corpus convention; no 1974 WGI). Divided bicommunal republic: moderate state institutions, low stability (intercommunal violence 1963-64, 1967). INTERNAL READ ONLY — not part of the citable exposure layer."
+      "provenance": "historical ordinal estimate (corpus convention; no 1974 WGI). Divided bicommunal republic: moderate state institutions, low stability (intercommunal violence 1963-64, 1967). INTERNAL READ ONLY - not part of the citable exposure layer."
     },
     "exposure": {
       "E1_relative_power": {"method": "cinc", "own_cinc": 0.0003, "adversary": "Turkey", "adversary_cinc": 0.0181, "year": 1974, "provenance": "COW National Material Capabilities v6 (CINC), 1974"},

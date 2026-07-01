@@ -122,8 +122,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.19",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.10",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
   },
   {
    "key": "weak",

@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.19",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.04",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "tanzania",
+   "name": "Tanzania",
+   "mi": 0.496,
+   "tier": 3
+  },
+  {
+   "slug": "senegal",
+   "name": "Senegal",
+   "mi": 0.53,
+   "tier": 3
+  },
+  {
+   "slug": "mauritania",
+   "name": "Mauritania",
+   "mi": 0.464,
+   "tier": 3
+  },
+  {
+   "slug": "malawi",
+   "name": "Malawi",
+   "mi": 0.497,
+   "tier": 3
+  },
+  {
+   "slug": "madagascar",
+   "name": "Madagascar",
+   "mi": 0.455,
+   "tier": 3
   }
  ]
 }

@@ -51,6 +51,7 @@ export type Country = Summary & {
   indicators: { key: string; value: number; source: string }[];
   data_year: number;
   checks?: Check[];
+  similar?: { slug: string; name: string; mi: number; tier: number }[];
   relational?: Relational;
 };
 

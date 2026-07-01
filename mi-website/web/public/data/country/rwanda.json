@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions -0.23",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.03",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "ghana",
+   "name": "Ghana",
+   "mi": 0.502,
+   "tier": 3
+  },
+  {
+   "slug": "cote-d-ivoire",
+   "name": "Cote d'Ivoire",
+   "mi": 0.445,
+   "tier": 3
+  },
+  {
+   "slug": "nepal",
+   "name": "Nepal",
+   "mi": 0.47,
+   "tier": 3
+  },
+  {
+   "slug": "papua-new-guinea",
+   "name": "Papua New Guinea",
+   "mi": 0.417,
+   "tier": 3
+  },
+  {
+   "slug": "zambia",
+   "name": "Zambia",
+   "mi": 0.462,
+   "tier": 3
   }
  ]
 }

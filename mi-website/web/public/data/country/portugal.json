@@ -149,9 +149,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "info",
-   "headline": "income vs institutions +0.23",
-   "detail": "Income runs somewhat ahead of institutions - a gap worth watching, though not yet a clear warning."
+   "status": "clear",
+   "headline": "earned-vs-granted +0.03",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -168,17 +168,49 @@
    "detail": "The base is already high, so large structural jumps from here are historically rare."
   }
  ],
+ "similar": [
+  {
+   "slug": "cyprus",
+   "name": "Cyprus",
+   "mi": 0.746,
+   "tier": 2
+  },
+  {
+   "slug": "united-arab-emirates",
+   "name": "United Arab Emirates",
+   "mi": 0.763,
+   "tier": 2
+  },
+  {
+   "slug": "lithuania",
+   "name": "Lithuania",
+   "mi": 0.756,
+   "tier": 2
+  },
+  {
+   "slug": "slovenia",
+   "name": "Slovenia",
+   "mi": 0.771,
+   "tier": 2
+  },
+  {
+   "slug": "latvia",
+   "name": "Latvia",
+   "mi": 0.722,
+   "tier": 2
+  }
+ ],
  "relational": {
   "year": 1926,
   "tier": "citable",
-  "label": "Portugal 1926 (engine-alone MISS \u2014 INTERNAL military coup)",
+  "label": "Portugal 1926 (engine-alone MISS - INTERNAL military coup)",
   "exposure_structural": 0.0,
   "exposure_structural_band": "low",
   "exposure_net": 0.25,
   "patron_present": false,
   "response": 0.258,
   "response_band": "low",
-  "joint_reading": "LOW structural exposure (low), low response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
+  "joint_reading": "LOW structural exposure, low response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
   "outcome_factual": "28 May 1926 coup -> the Estado Novo dictatorship (to 1974)."
  }
 }

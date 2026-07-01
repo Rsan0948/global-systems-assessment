@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "clear",
-   "headline": "income vs institutions +0.17",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.05",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "azerbaijan",
+   "name": "Azerbaijan",
+   "mi": 0.546,
+   "tier": 3
+  },
+  {
+   "slug": "dominican-republic",
+   "name": "Dominican Republic",
+   "mi": 0.602,
+   "tier": 2
+  },
+  {
+   "slug": "jamaica",
+   "name": "Jamaica",
+   "mi": 0.571,
+   "tier": 3
+  },
+  {
+   "slug": "kyrgyzstan",
+   "name": "Kyrgyzstan",
+   "mi": 0.543,
+   "tier": 3
+  },
+  {
+   "slug": "trinidad-and-tobago",
+   "name": "Trinidad and Tobago",
+   "mi": 0.616,
+   "tier": 2
   }
  ]
 }

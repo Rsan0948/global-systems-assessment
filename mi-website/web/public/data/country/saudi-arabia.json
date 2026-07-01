@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "info",
-   "headline": "income vs institutions +0.24",
-   "detail": "Income runs somewhat ahead of institutions - a gap worth watching, though not yet a clear warning."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.07",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "greece",
+   "name": "Greece",
+   "mi": 0.686,
+   "tier": 2
+  },
+  {
+   "slug": "spain",
+   "name": "Spain",
+   "mi": 0.735,
+   "tier": 2
+  },
+  {
+   "slug": "croatia",
+   "name": "Croatia",
+   "mi": 0.703,
+   "tier": 2
+  },
+  {
+   "slug": "poland",
+   "name": "Poland",
+   "mi": 0.722,
+   "tier": 2
+  },
+  {
+   "slug": "romania",
+   "name": "Romania",
+   "mi": 0.697,
+   "tier": 2
   }
  ]
 }

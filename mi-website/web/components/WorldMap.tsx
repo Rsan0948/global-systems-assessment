@@ -131,10 +131,17 @@ export default function WorldMap({
         {layer === "structure" ? (
           <TierLegend countries={countries} />
         ) : (
-          <p className="mono text-[11px] text-fg3">
-            <span style={{ color: COVERAGE_SCORED }}>●</span> scored ·{" "}
-            <span style={{ color: COVERAGE_UNSCORED }}>●</span> not yet measured - roughly half the world is
-            dark, missing the public data the engine needs.
+          <p className="mono flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[11px] text-fg3">
+            <span
+              className="inline-block h-2.5 w-2.5 rounded-[2px] border border-border align-middle"
+              style={{ background: COVERAGE_SCORED }}
+            />
+            scored ·
+            <span
+              className="inline-block h-2.5 w-2.5 rounded-[2px] border border-border align-middle"
+              style={{ background: COVERAGE_UNSCORED }}
+            />
+            not yet measured - roughly half the world is dark, missing the public data the engine needs.
           </p>
         )}
       </div>

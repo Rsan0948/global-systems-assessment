@@ -9,11 +9,7 @@
   --color-fg2: #a6a6bd;
   --color-fg3: #8a8aa4;
 
-  --color-tier1: #10b981;
-  --color-tier2: #3b82f6;
-  --color-tier3: #f59e0b;
-  --color-tier4: #fb923c;
-  --color-tier5: #ef4444;
+  /* tier colours are owned by lib/config.ts TIERS (single source of truth); do not duplicate here */
   --color-nodata: #2a2a3a;
 
   --color-good: #4ade80;

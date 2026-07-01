@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "clear",
-   "headline": "income vs institutions +0.16",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.04",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "brazil",
+   "name": "Brazil",
+   "mi": 0.578,
+   "tier": 3
+  },
+  {
+   "slug": "thailand",
+   "name": "Thailand",
+   "mi": 0.608,
+   "tier": 2
+  },
+  {
+   "slug": "bosnia-herzegovina",
+   "name": "Bosnia-Herzegovina",
+   "mi": 0.583,
+   "tier": 3
+  },
+  {
+   "slug": "colombia",
+   "name": "Colombia",
+   "mi": 0.567,
+   "tier": 3
+  },
+  {
+   "slug": "serbia",
+   "name": "Serbia",
+   "mi": 0.629,
+   "tier": 2
   }
  ]
 }

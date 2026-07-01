@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.01",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted -0.02",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "honduras",
+   "name": "Honduras",
+   "mi": 0.465,
+   "tier": 3
+  },
+  {
+   "slug": "cote-d-ivoire",
+   "name": "Cote d'Ivoire",
+   "mi": 0.445,
+   "tier": 3
+  },
+  {
+   "slug": "papua-new-guinea",
+   "name": "Papua New Guinea",
+   "mi": 0.417,
+   "tier": 3
+  },
+  {
+   "slug": "bangladesh",
+   "name": "Bangladesh",
+   "mi": 0.46,
+   "tier": 3
+  },
+  {
+   "slug": "guatemala",
+   "name": "Guatemala",
+   "mi": 0.498,
+   "tier": 3
   }
  ]
 }

@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "info",
-   "headline": "income vs institutions +0.21",
-   "detail": "Income runs somewhat ahead of institutions - a gap worth watching, though not yet a clear warning."
+   "status": "clear",
+   "headline": "earned-vs-granted -0.00",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "spain",
+   "name": "Spain",
+   "mi": 0.735,
+   "tier": 2
+  },
+  {
+   "slug": "poland",
+   "name": "Poland",
+   "mi": 0.722,
+   "tier": 2
+  },
+  {
+   "slug": "slovakia",
+   "name": "Slovakia",
+   "mi": 0.718,
+   "tier": 2
+  },
+  {
+   "slug": "croatia",
+   "name": "Croatia",
+   "mi": 0.703,
+   "tier": 2
+  },
+  {
+   "slug": "czech-republic",
+   "name": "Czech Republic",
+   "mi": 0.768,
+   "tier": 2
   }
  ]
 }

@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.17",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted -0.00",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -163,17 +163,49 @@
    "detail": "The base is already high, so large structural jumps from here are historically rare."
   }
  ],
+ "similar": [
+  {
+   "slug": "italy",
+   "name": "Italy",
+   "mi": 0.74,
+   "tier": 2
+  },
+  {
+   "slug": "poland",
+   "name": "Poland",
+   "mi": 0.722,
+   "tier": 2
+  },
+  {
+   "slug": "latvia",
+   "name": "Latvia",
+   "mi": 0.722,
+   "tier": 2
+  },
+  {
+   "slug": "france",
+   "name": "France",
+   "mi": 0.77,
+   "tier": 2
+  },
+  {
+   "slug": "croatia",
+   "name": "Croatia",
+   "mi": 0.703,
+   "tier": 2
+  }
+ ],
  "relational": {
   "year": 1936,
   "tier": "citable",
-  "label": "Spain 1936 (engine-alone MISS \u2014 INTERNAL polarization, NOT relational)",
+  "label": "Spain 1936 (engine-alone MISS - INTERNAL polarization, NOT relational)",
   "exposure_structural": 0.0,
   "exposure_structural_band": "low",
   "exposure_net": 0.25,
   "patron_present": false,
   "response": 0.554,
   "response_band": "moderate",
-  "joint_reading": "LOW structural exposure (low), moderate response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
+  "joint_reading": "LOW structural exposure, moderate response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
   "outcome_factual": "Spanish Civil War 1936-39; Franco dictatorship to 1975."
  }
 }

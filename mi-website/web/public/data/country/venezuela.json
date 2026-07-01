@@ -134,7 +134,7 @@
    "title": "Configuration",
    "status": "flag",
    "headline": "uniformly poor",
-   "detail": "Weak across pillars including P4 - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
+   "detail": "Weak across pillars including Economic Structure - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
   },
   {
    "key": "weak",
@@ -154,14 +154,14 @@
  "relational": {
   "year": 1948,
   "tier": "citable",
-  "label": "Venezuela 1948 (engine-alone MISS \u2014 INTERNAL military coup)",
+  "label": "Venezuela 1948 (engine-alone MISS - INTERNAL military coup)",
   "exposure_structural": 0.0,
   "exposure_structural_band": "low",
   "exposure_net": 0.25,
   "patron_present": false,
   "response": 0.504,
   "response_band": "moderate",
-  "joint_reading": "LOW structural exposure (low), moderate response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
+  "joint_reading": "LOW structural exposure, moderate response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
   "outcome_factual": "Nov 1948 coup; military rule (Perez Jimenez) to 1958."
  }
 }

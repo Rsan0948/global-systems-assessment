@@ -156,9 +156,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "clear",
-   "headline": "income vs institutions +0.05",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.10",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -177,9 +177,41 @@
   {
    "key": "rentier",
    "title": "Rentier check",
-   "status": "flag",
+   "status": "info",
    "headline": "resource rents ~29% of GDP",
-   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+   "detail": "A meaningful share of income comes from resource extraction. The institutions here are solid, but resource dependence is still a source of volatility."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "botswana",
+   "name": "Botswana",
+   "mi": 0.61,
+   "tier": 2
+  },
+  {
+   "slug": "jamaica",
+   "name": "Jamaica",
+   "mi": 0.571,
+   "tier": 3
+  },
+  {
+   "slug": "dominican-republic",
+   "name": "Dominican Republic",
+   "mi": 0.602,
+   "tier": 2
+  },
+  {
+   "slug": "costa-rica",
+   "name": "Costa Rica",
+   "mi": 0.686,
+   "tier": 2
+  },
+  {
+   "slug": "mauritius",
+   "name": "Mauritius",
+   "mi": 0.677,
+   "tier": 2
   }
  ],
  "relational": {

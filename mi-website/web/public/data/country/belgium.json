@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.13",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.02",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "france",
+   "name": "France",
+   "mi": 0.77,
+   "tier": 2
+  },
+  {
+   "slug": "czech-republic",
+   "name": "Czech Republic",
+   "mi": 0.768,
+   "tier": 2
+  },
+  {
+   "slug": "austria",
+   "name": "Austria",
+   "mi": 0.798,
+   "tier": 2
+  },
+  {
+   "slug": "estonia",
+   "name": "Estonia",
+   "mi": 0.775,
+   "tier": 2
+  },
+  {
+   "slug": "united-arab-emirates",
+   "name": "United Arab Emirates",
+   "mi": 0.763,
+   "tier": 2
   }
  ]
 }

@@ -129,8 +129,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.01",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.16",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
   },
   {
    "key": "weak",
@@ -151,7 +151,7 @@
    "title": "Rentier check",
    "status": "flag",
    "headline": "resource rents ~18% of GDP",
-   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+   "detail": "A large share of prosperity comes from extracting resources rather than from strong institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
   }
  ]
 }

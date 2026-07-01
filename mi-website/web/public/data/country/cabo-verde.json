@@ -147,8 +147,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions -0.01",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.02",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -167,9 +167,41 @@
   {
    "key": "rentier",
    "title": "Rentier check",
-   "status": "flag",
+   "status": "info",
    "headline": "resource rents ~18% of GDP",
-   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+   "detail": "A meaningful share of income comes from resource extraction. The institutions here are solid, but resource dependence is still a source of volatility."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "namibia",
+   "name": "Namibia",
+   "mi": 0.598,
+   "tier": 3
+  },
+  {
+   "slug": "botswana",
+   "name": "Botswana",
+   "mi": 0.61,
+   "tier": 2
+  },
+  {
+   "slug": "mongolia",
+   "name": "Mongolia",
+   "mi": 0.563,
+   "tier": 3
+  },
+  {
+   "slug": "laos",
+   "name": "Laos",
+   "mi": 0.549,
+   "tier": 3
+  },
+  {
+   "slug": "kuwait",
+   "name": "Kuwait",
+   "mi": 0.624,
+   "tier": 2
   }
  ]
 }

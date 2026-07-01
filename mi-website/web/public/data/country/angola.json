@@ -151,9 +151,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "clear",
-   "headline": "income vs institutions +0.10",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.10",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -174,7 +174,39 @@
    "title": "Rentier check",
    "status": "flag",
    "headline": "resource rents ~30% of GDP",
-   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+   "detail": "A large share of prosperity comes from extracting resources rather than from strong institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "madagascar",
+   "name": "Madagascar",
+   "mi": 0.455,
+   "tier": 3
+  },
+  {
+   "slug": "papua-new-guinea",
+   "name": "Papua New Guinea",
+   "mi": 0.417,
+   "tier": 3
+  },
+  {
+   "slug": "togo",
+   "name": "Togo",
+   "mi": 0.478,
+   "tier": 3
+  },
+  {
+   "slug": "malawi",
+   "name": "Malawi",
+   "mi": 0.497,
+   "tier": 3
+  },
+  {
+   "slug": "uganda",
+   "name": "Uganda",
+   "mi": 0.477,
+   "tier": 3
   }
  ]
 }

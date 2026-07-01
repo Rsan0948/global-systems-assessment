@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "flag",
-   "headline": "income vs institutions +0.44",
-   "detail": "Income has outrun institutions. This is the classic structural fragility signal: wealth the institutions cannot anchor tends not to last."
+   "headline": "earned-vs-granted -0.15",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "low base",
    "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "turkey",
+   "name": "Turkey",
+   "mi": 0.611,
+   "tier": 2
+  },
+  {
+   "slug": "mexico",
+   "name": "Mexico",
+   "mi": 0.606,
+   "tier": 2
+  },
+  {
+   "slug": "bosnia-herzegovina",
+   "name": "Bosnia-Herzegovina",
+   "mi": 0.583,
+   "tier": 3
+  },
+  {
+   "slug": "brazil",
+   "name": "Brazil",
+   "mi": 0.578,
+   "tier": 3
+  },
+  {
+   "slug": "colombia",
+   "name": "Colombia",
+   "mi": 0.567,
+   "tier": 3
   }
  ]
 }

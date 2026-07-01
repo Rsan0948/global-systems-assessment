@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "purpose": "The SHIELDED-SURVIVOR PROBE — deliberately populates the empty 4th cell of the 2x2 (internally fragile + high exposure + SHIELDED -> survives), with its discriminating contrast (same fragility + exposure, shield ABSENT/withdrawn -> falls). This is the observation neither the 51-case corpus, the random 30, nor the v2 cohorts return, because shielded survival is rare and undramatic.",
-    "discipline": "EXPLICITLY NON-RANDOM and NON-BLIND — a targeted DISCRIMINATION PROBE, NOT an out-of-sample test. Hand-selected to test whether T3's response-patron axis tracks survival in internally-weak, highly-exposed states. NEVER folded into any out-of-sample/validation claim; firewalled from the 213/77/0 baseline.",
+    "purpose": "The SHIELDED-SURVIVOR PROBE - deliberately populates the empty 4th cell of the 2x2 (internally fragile + high exposure + SHIELDED -> survives), with its discriminating contrast (same fragility + exposure, shield ABSENT/withdrawn -> falls). This is the observation neither the 51-case corpus, the random 30, nor the v2 cohorts return, because shielded survival is rare and undramatic.",
+    "discipline": "EXPLICITLY NON-RANDOM and NON-BLIND - a targeted DISCRIMINATION PROBE, NOT an out-of-sample test. Hand-selected to test whether T3's response-patron axis tracks survival in internally-weak, highly-exposed states. NEVER folded into any out-of-sample/validation claim; firewalled from the 213/77/0 baseline.",
     "internal_read": "P1 = V-Dem rule-of-law at the pre-shock year (vdem_longrun.json); P5 = fragility estimate where no series. Exposure = citable COW-era data (approximate CINC, flagged).",
     "decoupling": "Kuwait motivates the deterrence-patron (E2, ex ante) vs response-patron (R3, ex post) split: Kuwait had NO deterrent (invaded) but a decisive response patron (coalition restored it).",
     "provenance_tier": "citable"
@@ -11,15 +11,15 @@
     "label": "Kuwait, pre-1990 (FRAGILE + SHIELDED by response) -> invaded then RESTORED by coalition",
     "cell": "fragile + high exposure + response-shielded -> survived",
     "engine_alone": {"rol": 0.625, "note": "militarily indefensible micro-state; internal capacity could not resist conquest (fell in 2 days)"},
-    "internal_pillars": {"P1": 0.625, "P5": 0.25, "provenance": "P1 = V-Dem rol @1989 = 0.625 (KWT); P5 low — no strategic depth, tiny armed forces"},
+    "internal_pillars": {"P1": 0.625, "P5": 0.25, "provenance": "P1 = V-Dem rol @1989 = 0.625 (KWT); P5 low - no strategic depth, tiny armed forces"},
     "exposure": {
       "E1_relative_power": {"method": "cinc", "own_cinc": 0.0009, "adversary": "Iraq", "adversary_cinc": 0.0145, "year": 1990, "provenance": "COW CINC c.1990 (approx); Iraq overwhelmingly stronger, battle-hardened post Iran-Iraq war"},
-      "E2_patron": {"credible_external_defender": false, "response_patron": true, "detail": "DETERRENCE absent ex ante — no committed defender deterred Iraq (Saddam invaded Aug 1990). RESPONSE present ex post — the US-led UN coalition (Desert Storm) expelled Iraq and restored sovereignty Feb 1991.", "provenance": "ATOP (no pre-1990 defense pact) + historical record of Desert Storm"},
+      "E2_patron": {"credible_external_defender": false, "response_patron": true, "detail": "DETERRENCE absent ex ante - no committed defender deterred Iraq (Saddam invaded Aug 1990). RESPONSE present ex post - the US-led UN coalition (Desert Storm) expelled Iraq and restored sovereignty Feb 1991.", "provenance": "ATOP (no pre-1990 defense pact) + historical record of Desert Storm"},
       "E3_contested_border": {"active_claim_against": true, "detail": "Iraq's standing claim that Kuwait was its '19th province'.", "provenance": "ICOW-era claim"},
       "E4_neighborhood": {"active_conflicts_contiguous": 1, "detail": "Just-ended Iran-Iraq war; militarized Gulf.", "provenance": "COW MID"},
-      "E5_great_power_faultline": {"on_faultline": true, "detail": "Gulf oil — acute great-power interest.", "provenance": "COW"}
+      "E5_great_power_faultline": {"on_faultline": true, "detail": "Gulf oil - acute great-power interest.", "provenance": "COW"}
     },
-    "response": {"R4_strategic_depth": {"area_km2": 17818, "provenance": "Kuwait area — negligible depth"}},
+    "response": {"R4_strategic_depth": {"area_km2": 17818, "provenance": "Kuwait area - negligible depth"}},
     "outcome_factual": "Invaded by Iraq 2 Aug 1990; sovereignty restored by the coalition Feb 1991. SURVIVED via the response patron."
   },
   "Bosnia@1995": {
@@ -27,13 +27,13 @@
     "label": "Bosnia-Herzegovina 1995 (FRAGILE + SHIELDED) -> survives as a state only via external protection",
     "cell": "fragile + high exposure + shielded -> survived",
     "engine_alone": {"rol": 0.347, "note": "genuinely fragile post-war state; statehood externally underwritten"},
-    "internal_pillars": {"P1": 0.347, "P5": 0.20, "provenance": "P1 = V-Dem rol @1996 = 0.347 (BIH); P5 floor — just out of a genocidal war"},
+    "internal_pillars": {"P1": 0.347, "P5": 0.20, "provenance": "P1 = V-Dem rol @1996 = 0.347 (BIH); P5 floor - just out of a genocidal war"},
     "exposure": {
       "E1_relative_power": {"method": "cinc", "own_cinc": 0.0008, "adversary": "FR Yugoslavia / Serbia + RS forces", "adversary_cinc": 0.0050, "year": 1995, "provenance": "COW CINC c.1995 (approx); Bosnian govt forces weaker than Serb/FRY"},
       "E2_patron": {"credible_external_defender": true, "response_patron": true, "detail": "NATO airstrikes (Operation Deliberate Force, 1995) + Dayton + IFOR/SFOR/EUFOR external military protection sustained Bosnian statehood; it remains externally underwritten.", "provenance": "ATOP/Dayton + NATO/EU force record"},
       "E3_contested_border": {"active_claim_against": true, "detail": "Serb/Croat territorial claims and partition pressure.", "provenance": "ICOW-era"},
       "E4_neighborhood": {"active_conflicts_contiguous": 2, "detail": "Yugoslav wars across the region.", "provenance": "COW war list"},
-      "E5_great_power_faultline": {"on_faultline": true, "detail": "Balkans — great-power contest.", "provenance": "COW"}
+      "E5_great_power_faultline": {"on_faultline": true, "detail": "Balkans - great-power contest.", "provenance": "COW"}
     },
     "response": {"R4_strategic_depth": {"area_km2": 51209, "provenance": "Bosnia area"}},
     "outcome_factual": "Survived as a sovereign state (Dayton, Dec 1995) under sustained external (NATO/EU) protection."
@@ -42,11 +42,11 @@
     "provenance_tier": "citable",
     "label": "Taiwan 1996, Third Strait Crisis (DURABLE + EXPOSED + SHIELDED) -> persists",
     "cell": "durable + extreme exposure + shielded -> survived (supporting, not the fragile cell)",
-    "engine_alone": {"rol": 0.749, "note": "internally strong by 1996 — NOT a fragility case; included to fill the top-right cell"},
+    "engine_alone": {"rol": 0.749, "note": "internally strong by 1996 - NOT a fragility case; included to fill the top-right cell"},
     "internal_pillars": {"P1": 0.749, "P5": 0.55, "provenance": "P1 = V-Dem rol @1996 = 0.749 (TWN)"},
     "exposure": {
       "E1_relative_power": {"method": "cinc", "own_cinc": 0.011, "adversary": "PRC", "adversary_cinc": 0.118, "year": 1996, "provenance": "COW CINC c.1996; PRC overwhelmingly larger"},
-      "E2_patron": {"credible_external_defender": true, "detail": "US deterrence — Taiwan Relations Act + the 1996 carrier-group deployment to the Strait.", "provenance": "TRA + force-posture record"},
+      "E2_patron": {"credible_external_defender": true, "detail": "US deterrence - Taiwan Relations Act + the 1996 carrier-group deployment to the Strait.", "provenance": "TRA + force-posture record"},
       "E3_contested_border": {"active_claim_against": true, "detail": "PRC's One-China claim to Taiwan.", "provenance": "ICOW-era"},
       "E4_neighborhood": {"active_conflicts_contiguous": 1, "detail": "1995-96 missile crisis.", "provenance": "COW MID"},
       "E5_great_power_faultline": {"on_faultline": true, "detail": "US-China primary fault-line.", "provenance": "COW"}
@@ -58,7 +58,7 @@
     "provenance_tier": "citable",
     "label": "Estonia 2003, pre-NATO accession (DURABLE + EXPOSED + SHIELDED) -> persists",
     "cell": "durable + high exposure + shielded -> survived (supporting)",
-    "engine_alone": {"rol": 0.969, "note": "internally very strong — NOT a fragility case; militarily tiny vs Russia, shielded by NATO (2004)"},
+    "engine_alone": {"rol": 0.969, "note": "internally very strong - NOT a fragility case; militarily tiny vs Russia, shielded by NATO (2004)"},
     "internal_pillars": {"P1": 0.969, "P5": 0.70, "provenance": "P1 = V-Dem rol @2003 = 0.969 (EST)"},
     "exposure": {
       "E1_relative_power": {"method": "cinc", "own_cinc": 0.0006, "adversary": "Russia", "adversary_cinc": 0.040, "year": 2003, "provenance": "COW CINC c.2003; Russia vastly larger"},
@@ -77,14 +77,14 @@
     "engine_alone": {"rol": 0.156, "note": "very fragile; survived 2001-2021 ONLY on external (US) military backing"},
     "internal_pillars": {"P1": 0.156, "P5": 0.10, "provenance": "P1 = V-Dem rol @2019 = 0.156 (AFG); P5 floor"},
     "exposure": {
-      "E1_relative_power": {"method": "no_active_adversary", "adversary": null, "detail": "Threat was the Taliban INSURGENCY (non-state), not an external state — so E1 (interstate relative power) is N/A. Flagged: this is an insurgency/patron-dependence channel, not pure interstate conquest. Included as the vivid shield-withdrawal contrast.", "provenance": "historical fact"},
+      "E1_relative_power": {"method": "no_active_adversary", "adversary": null, "detail": "Threat was the Taliban INSURGENCY (non-state), not an external state - so E1 (interstate relative power) is N/A. Flagged: this is an insurgency/patron-dependence channel, not pure interstate conquest. Included as the vivid shield-withdrawal contrast.", "provenance": "historical fact"},
       "E2_patron": {"credible_external_defender": true, "response_patron": false, "detail": "External (US/NATO) military backing PRESENT 2001-2021 (held the state up), then WITHDRAWN Aug 2021 -> the Republic fell within weeks. response_patron=false captures the withdrawal at the decisive moment.", "provenance": "historical record of the 2021 withdrawal"},
       "E3_contested_border": {"active_claim_against": false, "detail": "Internal insurgency, not external territorial claim.", "provenance": "historical fact"},
       "E4_neighborhood": {"active_conflicts_contiguous": 1, "detail": "Cross-border Taliban/Pakistan sanctuary.", "provenance": "UCDP"},
       "E5_great_power_faultline": {"on_faultline": true, "detail": "Long great-power contest (the graveyard of empires).", "provenance": "historical fact"}
     },
-    "response": {"R4_strategic_depth": {"area_km2": 652000, "provenance": "Afghanistan area — large, but no capacity to use it without the patron"}},
+    "response": {"R4_strategic_depth": {"area_km2": 652000, "provenance": "Afghanistan area - large, but no capacity to use it without the patron"}},
     "outcome_factual": "Survived 2001-2021 on external backing; collapsed within weeks of the US withdrawal (Kabul fell 15 Aug 2021). Shield removed -> fell.",
-    "flag": "Impure for T3 (insurgency channel, not interstate conquest) — included as a real, vivid shield-withdrawal contrast; Cyprus 1974 is the cleaner unshielded interstate-conquest contrast."
+    "flag": "Impure for T3 (insurgency channel, not interstate conquest) - included as a real, vivid shield-withdrawal contrast; Cyprus 1974 is the cleaner unshielded interstate-conquest contrast."
   }
 }

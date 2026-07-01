@@ -128,16 +128,16 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "info",
-   "headline": "income vs institutions +0.22",
-   "detail": "Income runs somewhat ahead of institutions - a gap worth watching, though not yet a clear warning."
+   "status": "clear",
+   "headline": "earned-vs-granted +0.04",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
   },
   {
    "key": "config",
    "title": "Configuration",
    "status": "flag",
    "headline": "uniformly poor",
-   "detail": "Weak across pillars including P4 - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
+   "detail": "Weak across pillars including Economic Structure - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
   },
   {
    "key": "weak",
@@ -158,7 +158,7 @@
    "title": "Rentier check",
    "status": "flag",
    "headline": "resource rents ~10% of GDP",
-   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+   "detail": "A large share of prosperity comes from extracting resources rather than from strong institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
   }
  ]
 }

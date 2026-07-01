@@ -122,15 +122,15 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "flag",
-   "headline": "income vs institutions +0.43",
-   "detail": "Income has outrun institutions. This is the classic structural fragility signal: wealth the institutions cannot anchor tends not to last."
+   "headline": "earned-vs-granted -0.10",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "config",
    "title": "Configuration",
    "status": "flag",
    "headline": "partial failure",
-   "detail": "Has money, not institutions: strong P4 (resource/income) atop catastrophic P1/P2. Target P1/P2 (institutions, knowledge economy) - NOT P4. Money is not the binding constraint."
+   "detail": "Has money, not institutions: strong Economic Structure (resource/income) atop catastrophic Institutions and Economic Complexity. Target Institutions and Economic Complexity (institutions, knowledge economy) - NOT Economic Structure. Money is not the binding constraint."
   },
   {
    "key": "weak",

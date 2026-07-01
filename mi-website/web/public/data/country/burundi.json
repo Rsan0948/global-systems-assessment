@@ -147,15 +147,15 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.12",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.05",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
   },
   {
    "key": "config",
    "title": "Configuration",
    "status": "flag",
    "headline": "uniformly poor",
-   "detail": "Weak across pillars including P4 - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
+   "detail": "Weak across pillars including Economic Structure - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
   },
   {
    "key": "weak",
@@ -176,7 +176,39 @@
    "title": "Rentier check",
    "status": "flag",
    "headline": "resource rents ~14% of GDP",
-   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+   "detail": "A large share of prosperity comes from extracting resources rather than from strong institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "mozambique",
+   "name": "Mozambique",
+   "mi": 0.385,
+   "tier": 4
+  },
+  {
+   "slug": "papua-new-guinea",
+   "name": "Papua New Guinea",
+   "mi": 0.417,
+   "tier": 3
+  },
+  {
+   "slug": "cameroon",
+   "name": "Cameroon",
+   "mi": 0.384,
+   "tier": 4
+  },
+  {
+   "slug": "burkina-faso",
+   "name": "Burkina Faso",
+   "mi": 0.383,
+   "tier": 4
+  },
+  {
+   "slug": "chad",
+   "name": "Chad",
+   "mi": 0.303,
+   "tier": 4
   }
  ]
 }

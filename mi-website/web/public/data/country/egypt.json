@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "info",
-   "headline": "income vs institutions +0.21",
-   "detail": "Income runs somewhat ahead of institutions - a gap worth watching, though not yet a clear warning."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.09",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "ukraine",
+   "name": "Ukraine",
+   "mi": 0.545,
+   "tier": 3
+  },
+  {
+   "slug": "sri-lanka",
+   "name": "Sri Lanka",
+   "mi": 0.541,
+   "tier": 3
+  },
+  {
+   "slug": "colombia",
+   "name": "Colombia",
+   "mi": 0.567,
+   "tier": 3
+  },
+  {
+   "slug": "tunisia",
+   "name": "Tunisia",
+   "mi": 0.557,
+   "tier": 3
+  },
+  {
+   "slug": "peru",
+   "name": "Peru",
+   "mi": 0.554,
+   "tier": 3
   }
  ]
 }

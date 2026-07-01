@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "flag",
-   "headline": "income vs institutions +0.36",
-   "detail": "Income has outrun institutions. This is the classic structural fragility signal: wealth the institutions cannot anchor tends not to last."
+   "status": "clear",
+   "headline": "earned-vs-granted +0.03",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "low base",
    "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "el-salvador",
+   "name": "El Salvador",
+   "mi": 0.589,
+   "tier": 3
+  },
+  {
+   "slug": "laos",
+   "name": "Laos",
+   "mi": 0.549,
+   "tier": 3
+  },
+  {
+   "slug": "paraguay",
+   "name": "Paraguay",
+   "mi": 0.592,
+   "tier": 3
+  },
+  {
+   "slug": "mongolia",
+   "name": "Mongolia",
+   "mi": 0.563,
+   "tier": 3
+  },
+  {
+   "slug": "gabon",
+   "name": "Gabon",
+   "mi": 0.515,
+   "tier": 3
   }
  ]
 }

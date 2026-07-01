@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "info",
-   "headline": "income vs institutions +0.27",
-   "detail": "Income runs somewhat ahead of institutions - a gap worth watching, though not yet a clear warning."
+   "status": "clear",
+   "headline": "earned-vs-granted +0.04",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "trinidad-and-tobago",
+   "name": "Trinidad and Tobago",
+   "mi": 0.616,
+   "tier": 2
+  },
+  {
+   "slug": "dominican-republic",
+   "name": "Dominican Republic",
+   "mi": 0.602,
+   "tier": 2
+  },
+  {
+   "slug": "moldova",
+   "name": "Moldova",
+   "mi": 0.628,
+   "tier": 2
+  },
+  {
+   "slug": "jordan",
+   "name": "Jordan",
+   "mi": 0.624,
+   "tier": 2
+  },
+  {
+   "slug": "philippines",
+   "name": "Philippines",
+   "mi": 0.593,
+   "tier": 3
   }
  ]
 }

@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.20",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.09",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "low base",
    "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "mauritania",
+   "name": "Mauritania",
+   "mi": 0.464,
+   "tier": 3
+  },
+  {
+   "slug": "malawi",
+   "name": "Malawi",
+   "mi": 0.497,
+   "tier": 3
+  },
+  {
+   "slug": "togo",
+   "name": "Togo",
+   "mi": 0.478,
+   "tier": 3
+  },
+  {
+   "slug": "tanzania",
+   "name": "Tanzania",
+   "mi": 0.496,
+   "tier": 3
+  },
+  {
+   "slug": "angola",
+   "name": "Angola",
+   "mi": 0.446,
+   "tier": 3
   }
  ]
 }

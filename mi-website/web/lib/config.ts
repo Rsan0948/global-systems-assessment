@@ -17,6 +17,7 @@ export const SITE = {
     "A structural diagnostic of how governed systems withstand stress. Deterministic, from citable public data. Look up any country - see how it's built, and what we can't yet see.",
   nav: [
     ["Atlas", "/atlas"],
+    ["Compare", "/compare"],
     ["Stories", "/stories"],
     ["How it works", "/how-it-works"],
     ["Data", "/data"],
@@ -68,5 +69,4 @@ export const COVERAGE_UNSCORED = "#181826";
 // classification thresholds (mirror the engine; keep the page in sync with the chips)
 export const SHAPE_BALANCED = 0.15;
 export const SHAPE_LOPSIDED = 0.35;
-export const DURABILITY_TOL = 0.03;
 export const clamp01 = (v: number) => Math.max(0, Math.min(1, v));

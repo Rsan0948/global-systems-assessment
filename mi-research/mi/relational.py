@@ -205,7 +205,7 @@ def _joint_reading(E_struct, R, deterrence_patron, response_patron=False):
                     "little to absorb a shock - fragile if one lands, and fatal if an external prop is removed "
                     "(e.g. Afghanistan 2021, which fell within weeks of the withdrawal).")
         return f"MODERATE structural exposure, {rb} response: relationally mid-risk on this axis."
-    return (f"LOW structural exposure ({sb}), {rb} response: this was not a relational case - any rupture "
+    return (f"LOW structural exposure, {rb} response: this was not a relational case - any rupture "
             "here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).")
 
 

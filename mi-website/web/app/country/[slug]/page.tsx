@@ -7,6 +7,9 @@ import ChipRow from "@/components/ChipRow";
 import Define from "@/components/Define";
 import IndicatorRow from "@/components/IndicatorRow";
 import ScoreProfile from "@/components/ScoreProfile";
+import { TierDot } from "@/components/ui";
+
+export const dynamicParams = false; // 190 country pages are fully known at build; no on-demand slugs
 
 export function generateStaticParams() {
   return getCountries().map((c) => ({ slug: c.slug }));
@@ -122,7 +125,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       </section>
 
       {/* Interactive engine readout */}
-      <ScoreProfile name={c.name} tier={c.tier} mi={c.mi} config={c.config} checks={c.checks ?? []} />
+      {c.checks && c.checks.length > 0 && (
+        <ScoreProfile name={c.name} tier={c.tier} mi={c.mi} config={c.config} checks={c.checks} />
+      )}
 
       {/* Neighborhood (relational tier) — only where we have it */}
       {c.relational && (
@@ -189,6 +194,34 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         </div>
         <p className="mt-3 text-[11px] text-fg3">Tap any indicator to see what it measures and where it comes from.</p>
       </section>
+
+      {/* Structurally similar countries */}
+      {c.similar && c.similar.length > 0 && (
+        <section className="card mt-6 p-5">
+          <h2 className="serif text-base">Built like {c.name}</h2>
+          <p className="mt-1 text-[12px] text-fg3">
+            The countries whose five-pillar shape is closest. Good places to explore next.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {c.similar.map((s) => (
+              <Link
+                key={s.slug}
+                href={`/compare?a=${c.slug}&b=${s.slug}`}
+                className="lift flex items-center gap-2 rounded-lg border border-border bg-surface2/40 px-3 py-2 text-[13px]"
+              >
+                <TierDot tier={s.tier} size={7} />
+                <span className="font-medium">{s.name}</span>
+                <span className="num text-[12px]" style={{ color: tierColor(s.tier) }}>
+                  {s.mi.toFixed(2)}
+                </span>
+              </Link>
+            ))}
+          </div>
+          <Link href={`/compare?a=${c.slug}`} className="link mt-3 inline-block text-[12px]">
+            Compare {c.name} head-to-head with any country →
+          </Link>
+        </section>
+      )}
     </div>
   );
 }

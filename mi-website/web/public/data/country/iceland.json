@@ -140,8 +140,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.10",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.03",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -156,6 +156,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "new-zealand",
+   "name": "New Zealand",
+   "mi": 0.815,
+   "tier": 1
+  },
+  {
+   "slug": "norway",
+   "name": "Norway",
+   "mi": 0.81,
+   "tier": 1
+  },
+  {
+   "slug": "australia",
+   "name": "Australia",
+   "mi": 0.775,
+   "tier": 2
+  },
+  {
+   "slug": "united-arab-emirates",
+   "name": "United Arab Emirates",
+   "mi": 0.763,
+   "tier": 2
+  },
+  {
+   "slug": "canada",
+   "name": "Canada",
+   "mi": 0.806,
+   "tier": 1
   }
  ]
 }

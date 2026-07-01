@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.13",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.00",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "indonesia",
+   "name": "Indonesia",
+   "mi": 0.566,
+   "tier": 3
+  },
+  {
+   "slug": "thailand",
+   "name": "Thailand",
+   "mi": 0.608,
+   "tier": 2
+  },
+  {
+   "slug": "uzbekistan",
+   "name": "Uzbekistan",
+   "mi": 0.553,
+   "tier": 3
+  },
+  {
+   "slug": "armenia",
+   "name": "Armenia",
+   "mi": 0.598,
+   "tier": 3
+  },
+  {
+   "slug": "tunisia",
+   "name": "Tunisia",
+   "mi": 0.557,
+   "tier": 3
   }
  ]
 }

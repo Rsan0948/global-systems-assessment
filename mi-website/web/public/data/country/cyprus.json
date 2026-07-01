@@ -149,9 +149,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "info",
-   "headline": "income vs institutions +0.27",
-   "detail": "Income runs somewhat ahead of institutions - a gap worth watching, though not yet a clear warning."
+   "status": "clear",
+   "headline": "earned-vs-granted -0.00",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -166,6 +166,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "portugal",
+   "name": "Portugal",
+   "mi": 0.75,
+   "tier": 2
+  },
+  {
+   "slug": "united-arab-emirates",
+   "name": "United Arab Emirates",
+   "mi": 0.763,
+   "tier": 2
+  },
+  {
+   "slug": "romania",
+   "name": "Romania",
+   "mi": 0.697,
+   "tier": 2
+  },
+  {
+   "slug": "poland",
+   "name": "Poland",
+   "mi": 0.722,
+   "tier": 2
+  },
+  {
+   "slug": "lithuania",
+   "name": "Lithuania",
+   "mi": 0.756,
+   "tier": 2
   }
  ],
  "relational": {

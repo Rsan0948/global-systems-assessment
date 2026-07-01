@@ -56,7 +56,7 @@ export default function ScoreProfile({
         <div>
           <h2 className="serif text-base">Watch the engine grade {name}</h2>
           <p className="mt-1 text-[12px] text-fg3">
-            The same deterministic checks a case study runs, live from the five pillars.
+            The same deterministic checks a case study runs, live from {config.length === 5 ? "the five pillars" : `${config.length} measured pillar${config.length === 1 ? "" : "s"}`}.
           </p>
         </div>
         <button

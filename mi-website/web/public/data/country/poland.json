@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.19",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted -0.00",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "croatia",
+   "name": "Croatia",
+   "mi": 0.703,
+   "tier": 2
+  },
+  {
+   "slug": "slovakia",
+   "name": "Slovakia",
+   "mi": 0.718,
+   "tier": 2
+  },
+  {
+   "slug": "italy",
+   "name": "Italy",
+   "mi": 0.74,
+   "tier": 2
+  },
+  {
+   "slug": "spain",
+   "name": "Spain",
+   "mi": 0.735,
+   "tier": 2
+  },
+  {
+   "slug": "latvia",
+   "name": "Latvia",
+   "mi": 0.722,
+   "tier": 2
   }
  ]
 }

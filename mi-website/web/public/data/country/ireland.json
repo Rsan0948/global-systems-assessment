@@ -145,8 +145,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.16",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.01",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "sweden",
+   "name": "Sweden",
+   "mi": 0.833,
+   "tier": 1
+  },
+  {
+   "slug": "finland",
+   "name": "Finland",
+   "mi": 0.842,
+   "tier": 1
+  },
+  {
+   "slug": "denmark",
+   "name": "Denmark",
+   "mi": 0.84,
+   "tier": 1
+  },
+  {
+   "slug": "netherlands",
+   "name": "Netherlands",
+   "mi": 0.818,
+   "tier": 1
+  },
+  {
+   "slug": "switzerland",
+   "name": "Switzerland",
+   "mi": 0.867,
+   "tier": 1
   }
  ]
 }

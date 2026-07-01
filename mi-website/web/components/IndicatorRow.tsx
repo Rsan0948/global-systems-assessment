@@ -1,14 +1,14 @@
 "use client";
-import { useState } from "react";
 import { INDICATOR_META, labelFor, fmtVal } from "@/lib/indicators";
 import { PILLARS } from "@/lib/config";
+import { usePopover } from "@/lib/usePopover";
 
 export default function IndicatorRow({
   ind,
 }: {
   ind: { key: string; value: number; source: string };
 }) {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen, ref, pos } = usePopover<HTMLDivElement>();
   const meta = INDICATOR_META[ind.key];
   const pillar = meta ? PILLARS[meta.pillar] : null;
 
@@ -32,7 +32,11 @@ export default function IndicatorRow({
       </button>
       <span className="num font-semibold text-fg">{fmtVal(ind.value)}</span>
       {open && meta && (
-        <div className="absolute left-0 top-full z-30 mt-1 w-72 rounded-lg border border-border bg-surface p-3 text-left text-[12px] font-normal">
+        <div
+          ref={ref}
+          style={{ transform: `translateX(${pos.x}px)` }}
+          className={`absolute left-0 z-30 w-72 max-w-[calc(100vw-1rem)] rounded-lg border border-border bg-surface p-3 text-left text-[12px] font-normal ${pos.above ? "bottom-full mb-1" : "top-full mt-1"}`}
+        >
           <div className="font-medium text-fg">{labelFor(ind.key)}</div>
           <p className="mt-1 leading-relaxed text-fg2">{meta.what}</p>
           <div className="mono mt-2 flex flex-wrap gap-x-3 gap-y-0.5 text-[10.5px] text-fg3">

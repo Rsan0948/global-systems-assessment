@@ -1,11 +1,11 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 import { GLOSSARY } from "@/lib/glossary";
+import { usePopover } from "@/lib/usePopover";
 
 // Inline "what does this mean?" affordance. Dotted underline; click to reveal a
 // plain-language definition with a link to the fuller explanation. Beginner-friendly,
-// never in the way.
+// never in the way. Escape closes; the popover nudges to stay on-screen.
 export default function Define({
   id,
   children,
@@ -15,7 +15,7 @@ export default function Define({
   children?: React.ReactNode;
   className?: string;
 }) {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen, ref, pos } = usePopover<HTMLSpanElement>();
   const e = GLOSSARY[id];
   if (!e) return <>{children ?? id}</>;
 
@@ -38,7 +38,11 @@ export default function Define({
         {children ?? e.term}
       </button>
       {open && (
-        <span className="absolute left-0 top-full z-30 mt-1.5 block w-64 rounded-lg border border-border bg-surface p-3 text-left text-[12px] font-normal normal-case tracking-normal">
+        <span
+          ref={ref}
+          style={{ transform: `translateX(${pos.x}px)` }}
+          className={`absolute left-0 z-30 block w-64 max-w-[calc(100vw-1rem)] rounded-lg border border-border bg-surface p-3 text-left text-[12px] font-normal normal-case tracking-normal ${pos.above ? "bottom-full mb-1.5" : "top-full mt-1.5"}`}
+        >
           <span className="block font-medium text-fg">{e.term}</span>
           <span className="mt-1 block leading-relaxed text-fg2">{e.short}</span>
           <Link

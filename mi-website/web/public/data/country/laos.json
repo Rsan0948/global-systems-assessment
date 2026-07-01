@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "flag",
-   "headline": "income vs institutions +0.30",
-   "detail": "Income has outrun institutions. This is the classic structural fragility signal: wealth the institutions cannot anchor tends not to last."
+   "status": "clear",
+   "headline": "earned-vs-granted +0.00",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "cambodia",
+   "name": "Cambodia",
+   "mi": 0.555,
+   "tier": 3
+  },
+  {
+   "slug": "namibia",
+   "name": "Namibia",
+   "mi": 0.598,
+   "tier": 3
+  },
+  {
+   "slug": "el-salvador",
+   "name": "El Salvador",
+   "mi": 0.589,
+   "tier": 3
+  },
+  {
+   "slug": "senegal",
+   "name": "Senegal",
+   "mi": 0.53,
+   "tier": 3
+  },
+  {
+   "slug": "tanzania",
+   "name": "Tanzania",
+   "mi": 0.496,
+   "tier": 3
   }
  ]
 }

@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "clear",
-   "headline": "income vs institutions +0.16",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.08",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "low base",
    "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "iraq",
+   "name": "Iraq",
+   "mi": 0.447,
+   "tier": 3
+  },
+  {
+   "slug": "honduras",
+   "name": "Honduras",
+   "mi": 0.465,
+   "tier": 3
+  },
+  {
+   "slug": "iran",
+   "name": "Iran",
+   "mi": 0.486,
+   "tier": 3
+  },
+  {
+   "slug": "nepal",
+   "name": "Nepal",
+   "mi": 0.47,
+   "tier": 3
+  },
+  {
+   "slug": "bolivia",
+   "name": "Bolivia",
+   "mi": 0.495,
+   "tier": 3
   }
  ]
 }

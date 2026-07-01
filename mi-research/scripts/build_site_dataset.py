@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from mi import datasource as ds
 from mi.scoring import (score_country, get_tier, get_configuration_profile,
                         calculate_pillar_spread)
-from mi.diagnostics import structural_vulnerability, below_floor_diagnostic, ascent_potential
+from mi.diagnostics import below_floor_diagnostic, ascent_potential
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "sources"
@@ -174,32 +174,38 @@ def chips_for(ind, tier, residual, spread, weakest, present):
     return chips
 
 
-def build_checks(pillars, mi, ind, weakest):
+def _pillar_names_in(text):
+    """Replace raw pillar codes (P1..P5, P1/P2) with friendly names in engine text."""
+    text = text.replace("P1/P2", "Institutions and Economic Complexity")
+    for code, name in PILLAR_NAMES.items():
+        text = text.replace(code, name)
+    return text
+
+
+def build_checks(pillars, mi, ind, weakest, residual):
     """The deterministic diagnostic checks the engine runs on every country - the
     'rules firing' you see in a case study, computed from the pillars alone."""
     checks = []
-    p1, p4 = pillars.get("P1"), pillars.get("P4")
 
-    # 1. Durability gate (does income outrun institutions?)
-    sv = structural_vulnerability(pillars)
-    if p1 is not None and p4 is not None and sv:
-        st = sv.get("status")
-        gap = round(p4 - p1, 2)
-        if st == "flagged":
-            status, detail = "flag", ("Income has outrun institutions. This is the classic structural fragility "
-                                      "signal: wealth the institutions cannot anchor tends not to last.")
-        elif st == "borderline":
-            status, detail = "info", ("Income runs somewhat ahead of institutions - a gap worth watching, though "
-                                      "not yet a clear warning.")
+    # 1. Durability gate (is prosperity earned or granted? - the residual vs log-GDP, same as the chip)
+    if residual is not None:
+        if residual < -0.03:
+            status, detail = "flag", ("This country's prosperity has outrun its institutions. Income the "
+                                      "institutions cannot anchor is the classic fragility signal - historically it "
+                                      "tends not to last.")
+        elif residual > 0.03:
+            status, detail = "clear", ("Institutions match or exceed what the country's income would predict. "
+                                       "Prosperity here looks earned, and durable.")
         else:
-            status, detail = "clear", "Institutions keep pace with the country's income. No durability warning here."
+            status, detail = "clear", "Prosperity sits roughly in line with institutions. No durability warning here."
         checks.append({"key": "durability", "title": "Durability gate", "status": status,
-                       "headline": f"income vs institutions {gap:+.2f}", "detail": detail})
+                       "headline": f"earned-vs-granted {residual:+.2f}", "detail": detail})
 
     # 2. Configuration (the shape of a failure, when there is one)
     bf = below_floor_diagnostic(pillars, mi)
     if bf and bf.get("reading"):
         detail = (bf.get("reading", "") + " " + bf.get("prescription", "")).replace("—", "-").replace("*", "").strip()
+        detail = _pillar_names_in(detail)
         checks.append({"key": "config", "title": "Configuration", "status": "flag",
                        "headline": bf.get("configuration", "").replace("_", " "), "detail": detail})
 
@@ -226,11 +232,14 @@ def build_checks(pillars, mi, ind, weakest):
     # 5. Rentier check (prosperity leaning on extraction)
     rents = ind.get("resource_rents_pct_gdp")
     if rents is not None and rents >= 10:
-        checks.append({"key": "rentier", "title": "Rentier check", "status": "flag",
-                       "headline": f"resource rents ~{rents:.0f}% of GDP",
-                       "detail": "A large share of prosperity comes from extracting resources rather than from "
-                                 "institutions or a complex economy. Historically this masks structural weakness - "
-                                 "the money can vanish with a price swing."})
+        weak_inst = (pillars.get("P1") or 1.0) < 0.55
+        detail = ("A large share of prosperity comes from extracting resources rather than from strong "
+                  "institutions or a complex economy. Historically this masks structural weakness - the money "
+                  "can vanish with a price swing." if weak_inst else
+                  "A meaningful share of income comes from resource extraction. The institutions here are solid, "
+                  "but resource dependence is still a source of volatility.")
+        checks.append({"key": "rentier", "title": "Rentier check", "status": "flag" if weak_inst else "info",
+                       "headline": f"resource rents ~{rents:.0f}% of GDP", "detail": detail})
     return checks
 
 
@@ -267,6 +276,8 @@ def fit_durability(points):
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "country").mkdir(exist_ok=True)
+    for stale in (OUT / "country").glob("*.json"):  # avoid orphaned files from renamed slugs
+        stale.unlink()
     wb, fp, csv_rows, names = load_universe()
     iso_universe = set(names) & (set(fp) | {v["iso3"] for v in wb.values() if v.get("iso3")} | set(csv_rows))
 
@@ -317,7 +328,7 @@ def build():
             "residual": round(residual, 3) if residual is not None else None,
             "config": [[p, round(v, 3)] for p, v in config],
             "pillar_names": PILLAR_NAMES, "indicators": indicators, "data_year": YEAR,
-            "source_tier": source, "checks": build_checks(pillars, mi, ind, weakest),
+            "source_tier": source, "checks": build_checks(pillars, mi, ind, weakest, residual),
         })
         json.dump(full, open(OUT / "country" / f"{slug}.json", "w"), indent=1)
 

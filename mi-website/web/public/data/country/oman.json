@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "clear",
-   "headline": "income vs institutions +0.16",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.04",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "bahrain",
+   "name": "Bahrain",
+   "mi": 0.657,
+   "tier": 2
+  },
+  {
+   "slug": "chile",
+   "name": "Chile",
+   "mi": 0.691,
+   "tier": 2
+  },
+  {
+   "slug": "jordan",
+   "name": "Jordan",
+   "mi": 0.624,
+   "tier": 2
+  },
+  {
+   "slug": "albania",
+   "name": "Albania",
+   "mi": 0.646,
+   "tier": 2
+  },
+  {
+   "slug": "costa-rica",
+   "name": "Costa Rica",
+   "mi": 0.686,
+   "tier": 2
   }
  ]
 }

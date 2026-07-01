@@ -144,9 +144,9 @@
   {
    "key": "durability",
    "title": "Durability gate",
-   "status": "clear",
-   "headline": "income vs institutions +0.13",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "status": "flag",
+   "headline": "earned-vs-granted -0.03",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
   },
   {
    "key": "weak",
@@ -161,6 +161,38 @@
    "status": "info",
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "south-africa",
+   "name": "South Africa",
+   "mi": 0.561,
+   "tier": 3
+  },
+  {
+   "slug": "indonesia",
+   "name": "Indonesia",
+   "mi": 0.566,
+   "tier": 3
+  },
+  {
+   "slug": "brazil",
+   "name": "Brazil",
+   "mi": 0.578,
+   "tier": 3
+  },
+  {
+   "slug": "sri-lanka",
+   "name": "Sri Lanka",
+   "mi": 0.541,
+   "tier": 3
+  },
+  {
+   "slug": "uzbekistan",
+   "name": "Uzbekistan",
+   "mi": 0.553,
+   "tier": 3
   }
  ]
 }

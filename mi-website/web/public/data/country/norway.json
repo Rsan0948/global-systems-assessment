@@ -157,8 +157,8 @@
    "key": "durability",
    "title": "Durability gate",
    "status": "clear",
-   "headline": "income vs institutions +0.02",
-   "detail": "Institutions keep pace with the country's income. No durability warning here."
+   "headline": "earned-vs-granted +0.01",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
   },
   {
    "key": "weak",
@@ -177,9 +177,41 @@
   {
    "key": "rentier",
    "title": "Rentier check",
-   "status": "flag",
+   "status": "info",
    "headline": "resource rents ~10% of GDP",
-   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+   "detail": "A meaningful share of income comes from resource extraction. The institutions here are solid, but resource dependence is still a source of volatility."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "new-zealand",
+   "name": "New Zealand",
+   "mi": 0.815,
+   "tier": 1
+  },
+  {
+   "slug": "australia",
+   "name": "Australia",
+   "mi": 0.775,
+   "tier": 2
+  },
+  {
+   "slug": "canada",
+   "name": "Canada",
+   "mi": 0.806,
+   "tier": 1
+  },
+  {
+   "slug": "denmark",
+   "name": "Denmark",
+   "mi": 0.84,
+   "tier": 1
+  },
+  {
+   "slug": "iceland",
+   "name": "Iceland",
+   "mi": 0.804,
+   "tier": 1
   }
  ]
 }
