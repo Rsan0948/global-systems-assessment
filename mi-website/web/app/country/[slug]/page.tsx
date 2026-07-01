@@ -4,6 +4,7 @@ import { getCountries, getCountry } from "@/lib/data";
 import { tier as tierOf, tierColor, clamp01, SHAPE_BALANCED, SHAPE_LOPSIDED, DURABILITY_TOL } from "@/lib/config";
 import Radar from "@/components/Radar";
 import ChipRow from "@/components/ChipRow";
+import Define from "@/components/Define";
 
 export function generateStaticParams() {
   return getCountries().map((c) => ({ slug: c.slug }));
@@ -37,12 +38,14 @@ function RelStat({
   band,
   hint,
   invert = false,
+  defId,
 }: {
   label: string;
   value: number | null;
   band: string;
   hint: string;
   invert?: boolean;
+  defId?: string;
 }) {
   const palette = invert
     ? { high: "#f87171", moderate: "#fbbf24", low: "#4ade80" }
@@ -50,7 +53,9 @@ function RelStat({
   const col = palette[band as keyof typeof palette] ?? "#9a9ab0";
   return (
     <div className="rounded-lg border border-border bg-surface2/40 p-3">
-      <div className="mono text-[10px] uppercase tracking-wider text-fg3">{label}</div>
+      <div className="mono text-[10px] uppercase tracking-wider text-fg3">
+        {defId ? <Define id={defId}>{label}</Define> : label}
+      </div>
       <div className="mt-1 flex items-baseline gap-2">
         <span className="num text-[15px] font-semibold" style={{ color: col }}>
           {value == null ? "-" : value.toFixed(2)}
@@ -100,14 +105,17 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <div className="mono mt-1 text-[11px]" style={{ color: col }}>
             Tier {c.tier} · {tierOf(c.tier).name}
           </div>
+          <div className="mono mt-1 text-[10px] text-fg3">
+            <Define id="mi">what is this score?</Define>
+          </div>
         </div>
       </div>
 
       {/* Fingerprint */}
       <section className="mt-7">
-        <h2 className="mono mb-2 text-[11px] uppercase tracking-wider text-fg3">Classifiers</h2>
+        <h2 className="mono mb-2 text-[11px] uppercase tracking-wider text-fg3">What stands out</h2>
         <ChipRow chips={c.chips} />
-        <p className="mt-2 text-[11px] text-fg3">Tap any classifier for the rule that set it.</p>
+        <p className="mt-2 text-[11px] text-fg3">Tap any flag to see what it means and why it matters.</p>
       </section>
 
       <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -119,7 +127,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           </div>
           {spreadLabel && (
             <p className="mt-1 text-center text-[12px] text-fg2">
-              {spreadLabel}
+              <Define id="shape">{spreadLabel}</Define>
               {c.spread != null && <span className="mono text-fg3"> · spread {c.spread.toFixed(2)}</span>}
             </p>
           )}
@@ -133,7 +141,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             {c.config.map(([p, v]) => (
               <div key={p} className="flex items-center gap-3">
                 <span className="mono w-7 text-[12px] font-semibold">{p}</span>
-                <span className="w-32 text-[12px] text-fg2">{c.pillar_names[p]}</span>
+                <span className="w-32 text-[12px] text-fg2">
+                  <Define id={p.toLowerCase()}>{c.pillar_names[p]}</Define>
+                </span>
                 <div className="h-2 flex-1 overflow-hidden rounded-full bg-surface2">
                   <div className="h-full rounded-full" style={{ width: `${clamp01(v) * 100}%`, background: col }} />
                 </div>
@@ -143,7 +153,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           </div>
           {c.residual != null && (
             <div className="mt-4 border-t border-border pt-3 text-[12px] text-fg2">
-              <span className="text-fg3">Durability gap: </span>
+              <span className="text-fg3">
+                <Define id="durability-gap">Durability gap</Define>:{" "}
+              </span>
               {c.residual < -DURABILITY_TOL ? (
                 <span className="text-danger">
                   prosperity outruns institutions ({c.residual.toFixed(2)}) - granted, historically fragile
@@ -170,13 +182,16 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <div className="mt-3 grid gap-3 sm:grid-cols-3">
             <RelStat
               label="Exposure"
+              defId="exposure"
               value={c.relational.exposure_structural}
               band={c.relational.exposure_structural_band}
               invert
               hint="how much external danger it faced"
             />
             <div className="rounded-lg border border-border bg-surface2/40 p-3">
-              <div className="mono text-[10px] uppercase tracking-wider text-fg3">Protection</div>
+              <div className="mono text-[10px] uppercase tracking-wider text-fg3">
+                <Define id="protection">Protection</Define>
+              </div>
               <div
                 className="mt-1 text-[15px] font-semibold"
                 style={{ color: c.relational.patron_present ? "#60a5fa" : "#f87171" }}
@@ -187,6 +202,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
             <RelStat
               label="Response"
+              defId="response"
               value={c.relational.response}
               band={c.relational.response_band}
               hint="how well it could absorb a hit"

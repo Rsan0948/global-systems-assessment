@@ -31,6 +31,12 @@ export default function Home() {
             engine <b className="text-fg">{meta.engine}</b> · reproducible
           </span>
         </div>
+        <p className="mt-4 text-[13px] text-fg3">
+          New here?{" "}
+          <Link href="/how-it-works" className="link">
+            Start with what this measures →
+          </Link>
+        </p>
       </section>
 
       <section className="mt-8">

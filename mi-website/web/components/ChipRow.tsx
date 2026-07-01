@@ -1,7 +1,15 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import type { Chip } from "@/lib/data";
 import { valenceColor } from "@/lib/config";
+
+const CHIP_ANCHOR: Record<string, string> = {
+  tier: "tiers",
+  durability: "durability-gap",
+  shape: "shape",
+  partial: "the-score",
+};
 
 export default function ChipRow({ chips }: { chips: Chip[] }) {
   const [open, setOpen] = useState<string | null>(null);
@@ -33,6 +41,11 @@ export default function ChipRow({ chips }: { chips: Chip[] }) {
           </div>
           <p className="mt-1 text-fg2">{active.why}</p>
           <p className="mono mt-2 text-[11px] text-fg3">Rule: {active.rule}</p>
+          {CHIP_ANCHOR[active.key] && (
+            <Link href={`/how-it-works#${CHIP_ANCHOR[active.key]}`} className="link mt-2 inline-block text-[11px]">
+              Learn more →
+            </Link>
+          )}
         </div>
       )}
     </div>
