@@ -5,32 +5,11 @@ import { tier as tierOf, tierColor, clamp01, SHAPE_BALANCED, SHAPE_LOPSIDED, DUR
 import Radar from "@/components/Radar";
 import ChipRow from "@/components/ChipRow";
 import Define from "@/components/Define";
+import IndicatorRow from "@/components/IndicatorRow";
 
 export function generateStaticParams() {
   return getCountries().map((c) => ({ slug: c.slug }));
 }
-
-const INDICATOR_LABELS: Record<string, string> = {
-  gov_effectiveness: "Government effectiveness",
-  rule_of_law: "Rule of law",
-  regulatory_quality: "Regulatory quality",
-  control_of_corruption: "Control of corruption",
-  voice_accountability: "Voice & accountability",
-  political_stability: "Political stability",
-  cpi: "Corruption Perceptions Index",
-  gii: "Global Innovation Index",
-  rd_pct_gdp: "R&D spending (% of GDP)",
-  eci: "Economic Complexity Index",
-  education_index: "Education index",
-  life_expectancy_index: "Life expectancy index",
-  gdp_per_capita_ppp: "GDP per capita (PPP)",
-  resource_rents_pct_gdp: "Resource rents (% of GDP)",
-  oda_pct_gni: "Aid received (% of GNI)",
-  fsi: "Fragile States Index",
-};
-const labelFor = (k: string) => INDICATOR_LABELS[k] ?? k.replace(/_/g, " ");
-const fmtVal = (v: number) =>
-  v >= 1000 ? Math.round(v).toLocaleString() : Number.isInteger(v) ? String(v) : v.toFixed(1);
 
 function RelStat({
   label,
@@ -232,18 +211,10 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         )}
         <div className="mt-3 grid gap-x-8 gap-y-0 sm:grid-cols-2">
           {c.indicators.map((ind) => (
-            <div
-              key={ind.key}
-              className="flex items-baseline justify-between gap-3 border-b border-border/50 py-1.5 text-[13px]"
-            >
-              <span className="text-fg2">{labelFor(ind.key)}</span>
-              <span className="num font-semibold text-fg">{fmtVal(ind.value)}</span>
-            </div>
+            <IndicatorRow key={ind.key} ind={ind} />
           ))}
         </div>
-        <p className="mt-3 text-[11px] text-fg3">
-          Sources: {Array.from(new Set(c.indicators.map((i) => i.source))).join(", ")}.
-        </p>
+        <p className="mt-3 text-[11px] text-fg3">Tap any indicator to see what it measures and where it comes from.</p>
       </section>
     </div>
   );
