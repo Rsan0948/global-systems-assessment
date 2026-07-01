@@ -139,5 +139,35 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "income vs institutions +0.07",
+   "detail": "Institutions keep pace with the country's income. No durability warning here."
+  },
+  {
+   "key": "config",
+   "title": "Configuration",
+   "status": "flag",
+   "headline": "uniformly poor",
+   "detail": "Weak across pillars including P4 - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ]
 }

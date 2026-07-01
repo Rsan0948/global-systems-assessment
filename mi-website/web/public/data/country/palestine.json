@@ -116,5 +116,28 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "C"
+ "source_tier": "C",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "income vs institutions +0.31",
+   "detail": "Income has outrun institutions. This is the classic structural fragility signal: wealth the institutions cannot anchor tends not to last."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Stability & Resilience is lowest",
+   "detail": "Stability & Resilience is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ]
 }

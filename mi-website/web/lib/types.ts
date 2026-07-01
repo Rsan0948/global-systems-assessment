@@ -34,6 +34,14 @@ export type Relational = {
   outcome_factual: string;
 };
 
+export type Check = {
+  key: string;
+  title: string;
+  status: "flag" | "info" | "clear";
+  headline: string;
+  detail: string;
+};
+
 export type Country = Summary & {
   verdict: string;
   spread: number | null;
@@ -42,6 +50,7 @@ export type Country = Summary & {
   pillar_names: Record<string, string>;
   indicators: { key: string; value: number; source: string }[];
   data_year: number;
+  checks?: Check[];
   relational?: Relational;
 };
 

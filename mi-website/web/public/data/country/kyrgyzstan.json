@@ -151,5 +151,35 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "B"
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "info",
+   "headline": "income vs institutions +0.26",
+   "detail": "Income runs somewhat ahead of institutions - a gap worth watching, though not yet a clear warning."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Institutions is lowest",
+   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  },
+  {
+   "key": "rentier",
+   "title": "Rentier check",
+   "status": "flag",
+   "headline": "resource rents ~12% of GDP",
+   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+  }
+ ]
 }

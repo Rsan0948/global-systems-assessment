@@ -139,5 +139,28 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "A"
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "income vs institutions +0.10",
+   "detail": "Institutions keep pace with the country's income. No durability warning here."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Stability & Resilience is lowest",
+   "detail": "Stability & Resilience is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ]
 }

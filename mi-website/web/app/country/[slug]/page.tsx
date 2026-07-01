@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCountries, getCountry } from "@/lib/data";
-import { tier as tierOf, tierColor, clamp01, SHAPE_BALANCED, SHAPE_LOPSIDED, DURABILITY_TOL } from "@/lib/config";
+import { tier as tierOf, tierColor, clamp01, SHAPE_BALANCED, SHAPE_LOPSIDED } from "@/lib/config";
 import Radar from "@/components/Radar";
 import ChipRow from "@/components/ChipRow";
 import Define from "@/components/Define";
 import IndicatorRow from "@/components/IndicatorRow";
+import ScoreProfile from "@/components/ScoreProfile";
 
 export function generateStaticParams() {
   return getCountries().map((c) => ({ slug: c.slug }));
@@ -97,59 +98,31 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <p className="mt-2 text-[11px] text-fg3">Tap any flag to see what it means and why it matters.</p>
       </section>
 
-      <div className="mt-8 grid gap-6 md:grid-cols-2">
-        {/* Shape */}
-        <section className="card p-5">
-          <h2 className="serif text-base">Structural shape</h2>
-          <div className="mt-2 flex justify-center">
+      {/* Structural shape */}
+      <section className="card mt-8 p-5">
+        <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-center">
+          <div className="shrink-0">
             <Radar pillars={c.pillars} />
           </div>
-          {spreadLabel && (
-            <p className="mt-1 text-center text-[12px] text-fg2">
-              <Define id="shape">{spreadLabel}</Define>
-              {c.spread != null && <span className="mono text-fg3"> · spread {c.spread.toFixed(2)}</span>}
+          <div className="text-[13px] leading-relaxed text-fg2">
+            <h2 className="serif text-base text-fg">Structural shape</h2>
+            <p className="mt-1.5">
+              Each spoke is one of the five pillars, 0 at the center and 1 at the edge. A balanced
+              pentagon is sturdier than a lopsided one with the same score, because a country tends to
+              break at its <Define id="shape">weakest pillar</Define>.
             </p>
-          )}
-        </section>
-
-        {/* Configuration */}
-        <section className="card p-5">
-          <h2 className="serif text-base">Configuration</h2>
-          <p className="mt-1 text-[12px] text-fg3">Pillars ranked strongest → weakest.</p>
-          <div className="mt-3 space-y-2.5">
-            {c.config.map(([p, v]) => (
-              <div key={p} className="flex items-center gap-3">
-                <span className="mono w-7 text-[12px] font-semibold">{p}</span>
-                <span className="w-32 text-[12px] text-fg2">
-                  <Define id={p.toLowerCase()}>{c.pillar_names[p]}</Define>
-                </span>
-                <div className="h-2 flex-1 overflow-hidden rounded-full bg-surface2">
-                  <div className="h-full rounded-full" style={{ width: `${clamp01(v) * 100}%`, background: col }} />
-                </div>
-                <span className="num w-10 text-right text-[12px]">{v.toFixed(2)}</span>
-              </div>
-            ))}
+            {spreadLabel && (
+              <p className="mono mt-2 text-[11px] text-fg3">
+                Read as <span className="text-fg2">{spreadLabel}</span>
+                {c.spread != null && <> · spread {c.spread.toFixed(2)}</>}
+              </p>
+            )}
           </div>
-          {c.residual != null && (
-            <div className="mt-4 border-t border-border pt-3 text-[12px] text-fg2">
-              <span className="text-fg3">
-                <Define id="durability-gap">Durability gap</Define>:{" "}
-              </span>
-              {c.residual < -DURABILITY_TOL ? (
-                <span className="text-danger">
-                  prosperity outruns institutions ({c.residual.toFixed(2)}) - granted, historically fragile
-                </span>
-              ) : c.residual > DURABILITY_TOL ? (
-                <span className="text-good">
-                  institutions exceed income ({c.residual.toFixed(2)}) - earned, durable
-                </span>
-              ) : (
-                <span>prosperity in line with institutions ({c.residual.toFixed(2)})</span>
-              )}
-            </div>
-          )}
-        </section>
-      </div>
+        </div>
+      </section>
+
+      {/* Interactive engine readout */}
+      <ScoreProfile name={c.name} tier={c.tier} mi={c.mi} config={c.config} checks={c.checks ?? []} />
 
       {/* Neighborhood (relational tier) — only where we have it */}
       {c.relational && (

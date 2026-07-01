@@ -24,6 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from mi import datasource as ds
 from mi.scoring import (score_country, get_tier, get_configuration_profile,
                         calculate_pillar_spread)
+from mi.diagnostics import structural_vulnerability, below_floor_diagnostic, ascent_potential
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "sources"
@@ -173,6 +174,66 @@ def chips_for(ind, tier, residual, spread, weakest, present):
     return chips
 
 
+def build_checks(pillars, mi, ind, weakest):
+    """The deterministic diagnostic checks the engine runs on every country - the
+    'rules firing' you see in a case study, computed from the pillars alone."""
+    checks = []
+    p1, p4 = pillars.get("P1"), pillars.get("P4")
+
+    # 1. Durability gate (does income outrun institutions?)
+    sv = structural_vulnerability(pillars)
+    if p1 is not None and p4 is not None and sv:
+        st = sv.get("status")
+        gap = round(p4 - p1, 2)
+        if st == "flagged":
+            status, detail = "flag", ("Income has outrun institutions. This is the classic structural fragility "
+                                      "signal: wealth the institutions cannot anchor tends not to last.")
+        elif st == "borderline":
+            status, detail = "info", ("Income runs somewhat ahead of institutions - a gap worth watching, though "
+                                      "not yet a clear warning.")
+        else:
+            status, detail = "clear", "Institutions keep pace with the country's income. No durability warning here."
+        checks.append({"key": "durability", "title": "Durability gate", "status": status,
+                       "headline": f"income vs institutions {gap:+.2f}", "detail": detail})
+
+    # 2. Configuration (the shape of a failure, when there is one)
+    bf = below_floor_diagnostic(pillars, mi)
+    if bf and bf.get("reading"):
+        detail = (bf.get("reading", "") + " " + bf.get("prescription", "")).replace("—", "-").replace("*", "").strip()
+        checks.append({"key": "config", "title": "Configuration", "status": "flag",
+                       "headline": bf.get("configuration", "").replace("_", " "), "detail": detail})
+
+    # 3. Weakest link
+    if weakest:
+        nm = PILLAR_NAMES.get(weakest, weakest)
+        checks.append({"key": "weak", "title": "Weakest link", "status": "info",
+                       "headline": f"{nm} is lowest",
+                       "detail": f"{nm} is the pillar dragging the score down. A chain breaks at its weakest link, "
+                                 "so this is where the structural risk concentrates."})
+
+    # 4. Room to rise (low-base eligibility)
+    ap = ascent_potential(pillars)
+    if ap:
+        if ap.get("low_base"):
+            checks.append({"key": "ascent", "title": "Room to rise", "status": "info", "headline": "low base",
+                           "detail": "Starting from a low institutional base, the country is structurally eligible "
+                                     "to climb. This is eligibility, not a forecast - the effect only showed up "
+                                     "strongly in the 2000s global growth wave."})
+        else:
+            checks.append({"key": "ascent", "title": "Room to rise", "status": "info", "headline": "already high",
+                           "detail": "The base is already high, so large structural jumps from here are historically rare."})
+
+    # 5. Rentier check (prosperity leaning on extraction)
+    rents = ind.get("resource_rents_pct_gdp")
+    if rents is not None and rents >= 10:
+        checks.append({"key": "rentier", "title": "Rentier check", "status": "flag",
+                       "headline": f"resource rents ~{rents:.0f}% of GDP",
+                       "detail": "A large share of prosperity comes from extracting resources rather than from "
+                                 "institutions or a complex economy. Historically this masks structural weakness - "
+                                 "the money can vanish with a price swing."})
+    return checks
+
+
 def verdict(tier, residual, spread, weakest):
     parts = [{1: "Highly modernized", 2: "Structurally durable", 3: "Mixed structural profile",
               4: "Structurally fragile", 5: "At the structural floor"}.get(tier, "")]
@@ -256,7 +317,7 @@ def build():
             "residual": round(residual, 3) if residual is not None else None,
             "config": [[p, round(v, 3)] for p, v in config],
             "pillar_names": PILLAR_NAMES, "indicators": indicators, "data_year": YEAR,
-            "source_tier": source,
+            "source_tier": source, "checks": build_checks(pillars, mi, ind, weakest),
         })
         json.dump(full, open(OUT / "country" / f"{slug}.json", "w"), indent=1)
 

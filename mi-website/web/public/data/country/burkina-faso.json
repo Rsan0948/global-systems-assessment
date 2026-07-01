@@ -151,5 +151,42 @@
   }
  ],
  "data_year": 2024,
- "source_tier": "B"
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "income vs institutions +0.04",
+   "detail": "Institutions keep pace with the country's income. No durability warning here."
+  },
+  {
+   "key": "config",
+   "title": "Configuration",
+   "status": "flag",
+   "headline": "uniformly poor",
+   "detail": "Weak across pillars including P4 - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  },
+  {
+   "key": "rentier",
+   "title": "Rentier check",
+   "status": "flag",
+   "headline": "resource rents ~20% of GDP",
+   "detail": "A large share of prosperity comes from extracting resources rather than from institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+  }
+ ]
 }
