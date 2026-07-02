@@ -25,7 +25,7 @@ def _load(country, year):
     data = load_country_data(country, year)
     if data is None:
         print(f"No data for {country}" + (f" at {year}" if year else "") +
-              f". Create data/countries/{country.lower().replace(' ', '_')}.json")
+              " in the canonical panel (mi/panel.py).")
         sys.exit(1)
     return data
 

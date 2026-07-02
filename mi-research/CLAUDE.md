@@ -1,85 +1,93 @@
 # CLAUDE.md — MI Research Platform (agent guide)
 
-A **self-contained research platform**, separate from everything else in this
-repo. It is NOT the same project as the sibling `mi_pipeline/` (that one builds
-the raw indicator dataset from World Bank + manual CSVs); this one is the
-**scoring + diagnostic + retrodiction engine** that consumes per-country
-indicator data and produces MI scores, configuration analysis, and case-study
-validation. It is also distinct from the `universalsystemgrade` fragmentation
-study at the repo root — though the master architecture doc ties them together
-conceptually (rivers Rb ≈ 3.5 → the "self-organizing systems fragment in
-concentrated bands" thesis the MI operationalizes). Do not wire these projects'
-code together.
+The **scoring + diagnostic + retrodiction engine** for the Modernization Index
+(MI): it consumes per-country governance indicators and produces MI scores,
+pillar diagnostics, safeguard evaluations, and case-study validation. Separate
+from the sibling `mi_pipeline/` (raw data build) and the root fragmentation
+study — do not wire them together.
 
-## Read these first (in order)
+## Read first (in order)
 
-1. **`RESEARCH.md`** — standing instructions for AI research agents working on
-   this platform. This is your operating manual; follow it.
-2. **`MASTER_REFERENCE_ARCHITECTURE.md`** — the source-of-truth spec and full
-   intellectual scaffolding (book + companion guide). **Section 4** is the
-   complete MI specification. The `README.md` refers to a `FRAMEWORK.md` "source
-   of truth" that was never shipped in the upload — that reference resolves to
-   this document (Section 4).
-3. **`README.md`** — quick start + project structure.
+1. **`RESEARCH.md`** — standing operating manual for research agents here.
+2. **`MASTER_REFERENCE_ARCHITECTURE.md`** — source-of-truth spec. **Section 4**
+   is the full MI specification.
+3. This file — code/data layout + invariants.
 
-## Quick start (verified working)
+## Quick start (verified)
 
 ```bash
 cd mi-research
-python scripts/score_country.py --country "Estonia" --year 2024   # ✓ MI 0.778, Tier 2 (MI v1, 2025-anchored)
+python scripts/score_country.py --country "Estonia" --year 2024   # ✓ MI 0.775, Tier 2
+python scripts/compare_countries.py --a Estonia --b Norway
+python scripts/find_similar.py --country Norway --top 5
 python scripts/run_retrodiction.py --validate data/case_studies/completed/
 ```
 
-No third-party deps for the scoring path (pure-Python stdlib). Indicator data is
-served by the internal **Data API** (`mi/datasource.py`), which assembles values
-live from the canonical sources — `data/sources/wb_anchored.json` (World Bank
-2025-anchored WGI/WDI; refresh via `scripts/refresh_wgi_wdi.py`) + the committed
-`mi_pipeline/` panel CSVs. There are no per-country copy files. The scoring *lens*
-lives in `mi/constants.LENS` (one place; propagates on re-score). Methodology is
-**MI v1** (the former "LIVE"; old hand weights archived). NB: Estonia is 0.778 on
-the consistent 2025-anchored vintage — the legacy 0.793 used percentile-rank inputs.
+Pure-Python stdlib for the scoring path — no third-party deps.
 
-## Core principles (from README — honor these)
+## The data path (ONE canonical store)
 
-1. **The 20-case baseline is the floor.** No modification may degrade performance
-   on existing cases.
-2. **Honest reporting.** Every result — confirmation, partial, or falsification —
-   is documented with full reasoning.
-3. **Additive improvement.** Extend (new safeguards/cases/indicators); don't
-   remove without documented justification.
-4. **Reproducibility.** Scoring is deterministic: same inputs → same outputs.
+Indicators come from a **single file**, `data/sources/canonical_panel.json`,
+read by **`mi/panel.py`** (the only runtime reader). Everything else in
+`data/sources/` (`wb_anchored.json`, `wgi_full_panel.json`, `vdem_longrun.json`,
+…) plus the sibling `mi_pipeline/` CSV are **build inputs**, not read at runtime.
 
-## State of this scaffold — what's here vs. what an agent must add
+```
+raw sources ─► scripts/build_canonical_panel.py ─► data/sources/canonical_panel.json ─► mi/panel.py ─► engine
+```
 
-This is a **seed**, not the full validated corpus. Present:
-- Engine: `mi/` (`constants.py`, `scoring.py`, `safeguards.py`, `diagnostics.py`).
-- Scripts: `score_country.py`, `run_retrodiction.py`.
-- Data: **only** `data/countries/estonia.json` and one case-study template.
-- Empty (`.gitkeep`) slots matching the documented layout:
-  `data/case_studies/{completed,in_progress}`, `data/baselines`,
-  `sandbox/experiments`, `docs`.
+- `build_canonical_panel.py` resolves the source tiers (A wb_anchored > B
+  mi_pipeline > C wgi_full_panel) + HDR **once, at build time**, and dedupes
+  multi-iso countries. Re-run it when a raw source refreshes.
+- `mi/panel.py` exposes `indicators_for(name_or_iso, year)`, `country_record`,
+  `all_indicators`, `iter_universe`. `scoring.load_country_data` and the CLIs
+  read through it. **There are no per-country data files** — do not re-add a
+  `data/countries/` directory (that was removed; the panel supersedes it).
 
-Gaps to be aware of (the README/quick-start over-promises relative to the upload):
-- **The 20-case baseline is NOT included** — `data/case_studies/completed/` and
-  `data/baselines/` are empty. The "~78% confirmation, 20/20 P1 ordinality"
-  claims cannot be reproduced here until those cases are added. Treat them as the
-  target to rebuild, not as present evidence.
-- **Only Estonia has country data.** Any other `--country` will fail until you add
-  `data/countries/<name>.json` (follow the `estonia.json` shape).
-- **Two README-referenced scripts don't exist:** `scripts/compare_countries.py`
-  and `scripts/find_similar.py`. Build them (or correct the README) before
-  relying on those commands.
+## Engine (`mi/`)
 
-## Fix already applied
+- `scoring.py` — `score_country`, `calculate_pillar_scores`, the normalizers
+  (all clamp to [0,1]), `detect_scale_issues` (the scale guard), and
+  `resolve_weights` (MI v2 equal default; time-varying option).
+- `constants.py` — `LENS` (all thresholds/goalposts in one place), weight
+  schemes, `TIERS`.
+- `safeguards.py` — the lettered safeguards (A–J) + Mod4/Mod8. `diagnostics.py`
+  — `full_diagnostic`, strategy/vulnerability. `durability.py` — the earned-vs-
+  granted durability gap.
+- `panel.py` — canonical-panel reader (above). `datasource.py` — WGI-anchored
+  source reader (build-time). `relational.py` / `global_systems.py` — the T3
+  relational layer and system-level (golden-age / global-systems) research
+  modules (not part of country scoring).
 
-`mi/safeguards.py` had an invalid f-string format specifier
-(`{p1:.3f if p1 else 'N/A'}`) that crashed `full_diagnostic` — i.e. the headline
-`score_country.py` command failed out of the box. Corrected to
-`{f'{p1:.3f}' if p1 else 'N/A'}`. Verified by scoring Estonia end-to-end. No
-scoring logic was changed.
+## Scripts (`scripts/`)
 
-## Conventions
+- **Data/site build:** `build_canonical_panel.py` → `build_site_dataset.py` →
+  `build_similar.py` → `build_relational.py` (the website's
+  `scripts/refresh_and_build.py` chains these). `refresh_wgi_wdi.py` refreshes
+  the raw WGI/WDI source.
+- **CLIs:** `score_country.py`, `compare_countries.py`, `find_similar.py`,
+  `run_retrodiction.py` (all cover any country in the panel; default `--year 2024`).
+- Research/exploration scripts (`score_v2_cohorts.py`, `big_signals_scan.py`,
+  `retag_corpus.py`, …) back the docs.
 
-- `data/` holds JSON inputs/cases; generated experiment results under
-  `sandbox/experiments/*/results/` are gitignored (see `.gitignore`).
-- Keep changes additive and deterministic per the principles above.
+## Data + docs
+
+- `data/case_studies/completed/` — the **51-case validation corpus** (case01…).
+  `data/case_studies/templates/` — the case template. `data/baselines/`,
+  `data/forecasts/` — reference results / prospective forecasts.
+- `docs/` — the research history (start at `SYSTEM_STATE.md` and `HANDOFF.md`;
+  `PROJECT_SYNTHESIS.md` is the capstone). `live/runs/` — canonical run writeups.
+  `archive/v1/` — the frozen MI v1 (do not edit).
+- `tests/test_scale_guard.py` — engine regression tests (`pytest tests/ -q`).
+
+## Invariants (do not break)
+
+1. **The 51-case corpus is the floor.** No change may degrade an existing case.
+2. **0-100 indicator scale.** WGI/CPI/GII inputs are 0–100; the scale guard hard-
+   fails out-of-domain values and flags suspicious ones. Never feed raw WGI
+   estimates (z-scores). All pillar normalizers clamp to [0,1].
+3. **Deterministic.** Same inputs → same outputs; the site build is stable
+   across runs. Keep it that way (sorted iteration, stable tiebreaks).
+4. **One data store.** The canonical panel is it; raw sources are build inputs.
+5. **Honest reporting; additive improvement.** Document every result; extend
+   rather than remove; don't claim timing or calibrated probabilities.

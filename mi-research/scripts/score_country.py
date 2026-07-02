@@ -5,7 +5,10 @@ Score a country using the Modernization Index.
 Usage:
     python scripts/score_country.py --country "Estonia" --year 2024
     python scripts/score_country.py --data '{"gov_effectiveness": 88.68, ...}'
-    python scripts/score_country.py --file data/countries/estonia.json --year 2024
+    python scripts/score_country.py --file path/to/country.json --year 2024
+
+--country resolves against the canonical panel (mi/panel.py); any country the
+site covers works.
 """
 
 import argparse
@@ -23,7 +26,7 @@ from mi.diagnostics import full_diagnostic, classify_strategy
 
 def main():
     parser = argparse.ArgumentParser(description="Score a country using the MI")
-    parser.add_argument("--country", type=str, help="Country name (loads from data/countries/)")
+    parser.add_argument("--country", type=str, help="Country name or iso3 (resolved via the canonical panel)")
     parser.add_argument("--year", type=int, default=2024, help="Year to score (default: 2024, the site vintage)")
     parser.add_argument("--data", type=str, help="JSON string of raw indicators")
     parser.add_argument("--file", type=str, help="Path to country JSON file")
@@ -50,8 +53,9 @@ def main():
             indicators = data
         else:
             print(f"No data found for {args.country}" +
-                  (f" at year {args.year}" if args.year else ""))
-            print(f"Create: data/countries/{args.country.lower().replace(' ', '_')}.json")
+                  (f" at year {args.year}" if args.year else "") +
+                  " in the canonical panel (mi/panel.py). Re-run "
+                  "scripts/build_canonical_panel.py if a source refreshed.")
             sys.exit(1)
 
     if indicators is None:
