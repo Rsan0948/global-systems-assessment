@@ -78,7 +78,10 @@ def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log
         dataset_max_log = math.log(LENS["gdp_ppp_ceiling"])
     if dataset_max_log == dataset_min_log:
         return 0.5
-    return (log_gdp - dataset_min_log) / (dataset_max_log - dataset_min_log)
+    # Clamp to [0,1]: GDP/capita above the ceiling (Luxembourg, Singapore, Qatar)
+    # must not push P4 > 1, mirroring normalize_eci's clamp.
+    norm = (log_gdp - dataset_min_log) / (dataset_max_log - dataset_min_log)
+    return max(0.0, min(1.0, norm))
 
 
 def normalize_resource_rents(rents_pct: float) -> float:
@@ -93,7 +96,49 @@ def normalize_oda(oda_pct: float) -> float:
 
 def normalize_fsi(fsi: float) -> float:
     """Invert FSI: lower fragility = higher score."""
-    return 1.0 - (fsi / LENS["fsi_max"])
+    return max(0.0, min(1.0, 1.0 - (fsi / LENS["fsi_max"])))
+
+
+# Indicators the engine expects on a 0-100 scale (WGI percentile/anchored, CPI, GII).
+# A raw WGI *estimate* (~-2.5..+2.5 z-score) or a legacy 0-10 CPI silently produced
+# garbage before this guard existed (score/100 turned RoL=1.53 into 0.0153 and let
+# negatives through as negative "quality"). See detect_scale_issues.
+_WGI_0_100 = ("gov_effectiveness", "rule_of_law", "regulatory_quality",
+              "control_of_corruption", "political_stability", "voice_accountability")
+
+
+def detect_scale_issues(indicators: dict) -> tuple[list, list]:
+    """Validate that 0-100-scaled indicators are actually on that scale.
+
+    Returns (hard_errors, soft_warnings). Hard errors are values outside
+    [0, 100] (impossible on the documented scale — almost always a raw WGI
+    estimate/z-score); the scorer refuses to run on these. Soft warnings are
+    in-range but suspicious (WGI <= 3, CPI <= 10) — surfaced, not fatal, since a
+    genuinely near-floor state can look identical to a mis-entry.
+    """
+    hard, soft = [], []
+    for k in _WGI_0_100:
+        v = indicators.get(k)
+        if v is None:
+            continue
+        if v < 0 or v > 100:
+            hard.append(f"{k}={v} is outside the WGI 0-100 domain "
+                        f"(looks like a raw WGI estimate/z-score; expected "
+                        f"percentile rank or anchored 0-100)")
+        elif v <= 3:
+            soft.append(f"{k}={v} is suspiciously low for a WGI 0-100 score "
+                        f"(likely a raw WGI estimate/z-score mis-entered)")
+    cpi = indicators.get("cpi")
+    if cpi is not None:
+        if cpi < 0 or cpi > 100:
+            hard.append(f"cpi={cpi} is outside the CPI 0-100 domain")
+        elif cpi <= 10:
+            soft.append(f"cpi={cpi} is suspiciously low (likely the legacy "
+                        f"0-10 CPI; multiply by 10 for the 0-100 scale)")
+    gii = indicators.get("gii")
+    if gii is not None and (gii < 0 or gii > 100):
+        hard.append(f"gii={gii} is outside the GII 0-100 domain")
+    return hard, soft
 
 
 def calculate_pillar_scores(indicators: dict) -> dict:
@@ -107,7 +152,14 @@ def calculate_pillar_scores(indicators: dict) -> dict:
     Returns:
         dict with pillar scores (P1-P5), each 0-1 scale.
         Also includes metadata about which indicators were available.
+
+    Raises:
+        ValueError: if any 0-100-scaled indicator is outside [0, 100].
     """
+    hard, soft = detect_scale_issues(indicators)
+    if hard:
+        raise ValueError("indicator scale error(s): " + "; ".join(hard))
+
     result = {}
     gaps = []
 
@@ -204,6 +256,7 @@ def calculate_pillar_scores(indicators: dict) -> dict:
     result["P5"] = sum(p5_values) / len(p5_values) if p5_values else None
 
     result["gaps"] = gaps
+    result["scale_warnings"] = soft
     return result
 
 
@@ -290,6 +343,7 @@ def score_country(indicators: dict, weights: dict = None, event_year=None) -> di
         "configuration": config,
         "tier": get_tier(mi_score) if mi_score is not None else None,
         "data_gaps": pillars.get("gaps", []),
+        "scale_warnings": pillars.get("scale_warnings", []),
         "weights_used": eff_weights,
         "weighting_mode": MI_ACTIVE_WEIGHTING if weights is None else "explicit",
     }

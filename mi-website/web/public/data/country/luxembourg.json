@@ -2,13 +2,13 @@
  "slug": "luxembourg",
  "name": "Luxembourg",
  "iso3": "LUX",
- "mi": 0.908,
+ "mi": 0.906,
  "tier": 1,
  "pillars": {
   "P1": 0.877,
   "P2": null,
   "P3": null,
-  "P4": 1.003,
+  "P4": 1.0,
   "P5": 0.842
  },
  "chips": [
@@ -50,12 +50,12 @@
   ]
  },
  "verdict": "Highly modernized - prosperity matched by institutions.",
- "spread": 0.161,
- "residual": 0.064,
+ "spread": 0.158,
+ "residual": 0.063,
  "config": [
   [
    "P4",
-   1.003
+   1.0
   ],
   [
    "P1",
