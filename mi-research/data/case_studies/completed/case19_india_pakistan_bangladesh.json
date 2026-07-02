@@ -35,21 +35,22 @@
     "entities": {
       "India": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": -0.04,
-          "regulatory_quality": null,
+          "gov_effectiveness": 59.2076,
+          "rule_of_law": 48.4,
+          "regulatory_quality": 53.3476,
           "cpi": 38,
-          "control_of_corruption": null,
+          "control_of_corruption": 41.8768,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": 0.705,
           "education_index": null,
           "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
+          "gdp_per_capita_ppp": 11159.9856,
           "resource_rents_pct_gdp": null,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 52.4723,
+          "fsi": null,
+          "voice_accountability": 55.4678
         },
         "context": {
           "under_external_admin": false,
@@ -68,25 +69,71 @@
           "P1 normalized 0.485 given; pillar components (gov_effectiveness, etc.) not provided",
           "education_index / life_expectancy_index (HDI 'medium, P3-lagging'; not numeric)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.04 (-2.5/+2.5 scale; max 0.26 in 2000; min -0.18 in 2021). CPI 2024 = 38 (96th). P1 normalized 0.485 (given). India's founding P1 is LOW (not high like South Africa), so Mod12 does NOT shield it from reversal risk -> India backsliding watch is live."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.04 (-2.5/+2.5 scale; max 0.26 in 2000; min -0.18 in 2021). CPI 2024 = 38 (96th). P1 normalized 0.485 (given). India's founding P1 is LOW (not high like South Africa), so Mod12 does NOT shield it from reversal risk -> India backsliding watch is live.",
+        "_scale_corrections": [
+          {
+            "indicator": "rule_of_law",
+            "original": -0.04,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 48.4
+          }
+        ],
+        "_hydrated_from_world": {
+          "source_slug": "india",
+          "source_year": "2024",
+          "target_year": 2024,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 59.2076
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 53.3476
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 41.8768
+            },
+            {
+              "indicator": "political_stability",
+              "value": 52.4723
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 55.4678
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 11159.9856
+            },
+            {
+              "indicator": "eci",
+              "value": 0.705
+            }
+          ]
+        }
       },
       "Pakistan": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": -1.02,
-          "regulatory_quality": null,
+          "gov_effectiveness": 39.6677,
+          "rule_of_law": 15.39,
+          "regulatory_quality": 42.3591,
           "cpi": 27,
-          "control_of_corruption": null,
+          "control_of_corruption": 26.285,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -0.233,
           "education_index": null,
           "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
+          "gdp_per_capita_ppp": 6252.1154,
           "resource_rents_pct_gdp": null,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 30.6477,
+          "fsi": null,
+          "voice_accountability": 36.4356
         },
         "context": {
           "under_external_admin": false,
@@ -104,25 +151,71 @@
           "P1 normalized ~0.23 (estimate)",
           "education_index / life_expectancy_index (HDI 'low'; not numeric)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -1.02 (-2.5/+2.5 scale; max -0.46 in 1996; min -1.15 in 2011). CPI 2024 = 27 (135th). P1 normalized ~0.23 (estimate). Bangladesh-Pakistan gap (0.06) within WGI margin of error -> sub-ranking deferred under Mod4."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -1.02 (-2.5/+2.5 scale; max -0.46 in 1996; min -1.15 in 2011). CPI 2024 = 27 (135th). P1 normalized ~0.23 (estimate). Bangladesh-Pakistan gap (0.06) within WGI margin of error -> sub-ranking deferred under Mod4.",
+        "_scale_corrections": [
+          {
+            "indicator": "rule_of_law",
+            "original": -1.02,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 15.39
+          }
+        ],
+        "_hydrated_from_world": {
+          "source_slug": "pakistan",
+          "source_year": "2024",
+          "target_year": 2024,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 39.6677
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 42.3591
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 26.285
+            },
+            {
+              "indicator": "political_stability",
+              "value": 30.6477
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 36.4356
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 6252.1154
+            },
+            {
+              "indicator": "eci",
+              "value": -0.233
+            }
+          ]
+        }
       },
       "Bangladesh": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": -0.96,
-          "regulatory_quality": null,
+          "gov_effectiveness": 39.3051,
+          "rule_of_law": 16.85,
+          "regulatory_quality": 39.8788,
           "cpi": 23,
-          "control_of_corruption": null,
+          "control_of_corruption": 25.5455,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -0.439,
           "education_index": null,
           "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
+          "gdp_per_capita_ppp": 9646.7698,
           "resource_rents_pct_gdp": null,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 40.9049,
+          "fsi": null,
+          "voice_accountability": 36.5323
         },
         "context": {
           "under_external_admin": false,
@@ -140,7 +233,52 @@
           "P1 normalized ~0.25 (estimate)",
           "gdp_per_capita_ppp (HDI 0.397->0.685 given; GDP series suspect, Hasina-era inflated ~$100B per interim white paper)"
         ],
-        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.96 (-2.5/+2.5 scale; max -0.70 in 2011; min -1.18 in 2003). CPI 2024 = 23 (149th). P1 normalized ~0.25 (estimate). Safeguard C primary: growth-without-institutional-delivery -> reversal (confirmed in Run 2, August-2024 collapse). Bangladesh-Pakistan gap 0.06 within WGI margin -> Mod4 defers sub-ranking to Safeguard B."
+        "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.96 (-2.5/+2.5 scale; max -0.70 in 2011; min -1.18 in 2003). CPI 2024 = 23 (149th). P1 normalized ~0.25 (estimate). Safeguard C primary: growth-without-institutional-delivery -> reversal (confirmed in Run 2, August-2024 collapse). Bangladesh-Pakistan gap 0.06 within WGI margin -> Mod4 defers sub-ranking to Safeguard B.",
+        "_scale_corrections": [
+          {
+            "indicator": "rule_of_law",
+            "original": -0.96,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 16.85
+          }
+        ],
+        "_hydrated_from_world": {
+          "source_slug": "bangladesh",
+          "source_year": "2024",
+          "target_year": 2024,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 39.3051
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 39.8788
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 25.5455
+            },
+            {
+              "indicator": "political_stability",
+              "value": 40.9049
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 36.5323
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 9646.7698
+            },
+            {
+              "indicator": "eci",
+              "value": -0.439
+            }
+          ]
+        }
       }
     }
   },

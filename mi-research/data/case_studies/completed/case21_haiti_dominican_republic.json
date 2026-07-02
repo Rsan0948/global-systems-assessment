@@ -29,14 +29,15 @@
           "control_of_corruption": 28.31,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -1.008,
           "education_index": 0.377,
           "life_expectancy_index": 0.556,
           "gdp_per_capita_ppp": 2069.61,
           "resource_rents_pct_gdp": 0.94,
           "oda_pct_gni": 11.34,
           "political_stability": 48.78,
-          "fsi": null
+          "fsi": null,
+          "voice_accountability": 43.35
         },
         "context": {
           "population": 11700000,
@@ -52,7 +53,23 @@
           "eci",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
+        "_hydrated_from_world": {
+          "source_slug": "haiti",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 43.35
+            },
+            {
+              "indicator": "eci",
+              "value": -1.008
+            }
+          ]
+        }
       },
       "Dominican Republic": {
         "indicators": {
@@ -63,14 +80,15 @@
           "control_of_corruption": 44.42,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -0.611,
           "education_index": 0.489,
           "life_expectancy_index": 0.763,
           "gdp_per_capita_ppp": 5160.99,
           "resource_rents_pct_gdp": 0.7,
           "oda_pct_gni": 0.47,
           "political_stability": 62.58,
-          "fsi": null
+          "fsi": null,
+          "voice_accountability": 52.98
         },
         "context": {
           "population": 11300000,
@@ -85,7 +103,23 @@
           "eci",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
+        "_hydrated_from_world": {
+          "source_slug": "dominican_republic",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 52.98
+            },
+            {
+              "indicator": "eci",
+              "value": -0.611
+            }
+          ]
+        }
       }
     }
   },

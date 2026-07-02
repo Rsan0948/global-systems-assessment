@@ -21,21 +21,22 @@
     "entities": {
       "Northern Ireland (UK)": {
         "indicators": {
-          "gov_effectiveness": 1.18,
-          "rule_of_law": 1.27,
-          "regulatory_quality": null,
+          "gov_effectiveness": 88.1,
+          "rule_of_law": 89.8,
+          "regulatory_quality": 84.5698,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 90.3093,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
+          "rd_pct_gdp": 1.5478,
+          "eci": 1.313,
+          "education_index": 0.7775,
+          "life_expectancy_index": 0.8812,
+          "gdp_per_capita_ppp": 23689.2366,
+          "resource_rents_pct_gdp": 0.172,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 84.4852,
+          "fsi": null,
+          "voice_accountability": 79.7437
         },
         "context": {
           "is_democratic": true,
@@ -44,7 +45,7 @@
           "has_devolution": true,
           "has_power_sharing": true,
           "executive_collapses": 8,
-          "regional_gdp_divergence": 0.20,
+          "regional_gdp_divergence": 0.2,
           "fragmentation_mechanism": "consociational_power_sharing",
           "prior_porosity_period": true,
           "external_backstop": true,
@@ -63,7 +64,71 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Indicators are UK sovereign WGI estimates (RoL 1.27, GE 1.18). NI GDP per capita ~20% below the UK average; consistently the UK's lowest-productivity region; highest economic inactivity (26.8% vs 20.8% UK, late 2023); depends on a UK subvention of ~GBP10-11bn (about a quarter of its output). 'executive_collapses' = at least 8 Stormont suspensions covering >40% of the institution's existence."
+        "notes": "Indicators are UK sovereign WGI estimates (RoL 1.27, GE 1.18). NI GDP per capita ~20% below the UK average; consistently the UK's lowest-productivity region; highest economic inactivity (26.8% vs 20.8% UK, late 2023); depends on a UK subvention of ~GBP10-11bn (about a quarter of its output). 'executive_collapses' = at least 8 Stormont suspensions covering >40% of the institution's existence.",
+        "_scale_corrections": [
+          {
+            "indicator": "gov_effectiveness",
+            "original": 1.18,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 88.1
+          },
+          {
+            "indicator": "rule_of_law",
+            "original": 1.27,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 89.8
+          }
+        ],
+        "_hydrated_from_world": {
+          "source_slug": "united_kingdom",
+          "source_year": "1998",
+          "target_year": 1998,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "regulatory_quality",
+              "value": 84.5698
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 90.3093
+            },
+            {
+              "indicator": "political_stability",
+              "value": 84.4852
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 79.7437
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 23689.2366
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.172
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 1.5478
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.7775
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8812
+            },
+            {
+              "indicator": "eci",
+              "value": 1.313
+            }
+          ]
+        }
       }
     }
   },

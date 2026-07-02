@@ -22,21 +22,22 @@
     "entities": {
       "Pakistan": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 40.828,
+          "rule_of_law": 49.1057,
+          "regulatory_quality": 44.8002,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 24.4461,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "eci": -0.594,
+          "education_index": 0.221,
+          "life_expectancy_index": 0.6215,
+          "gdp_per_capita_ppp": 2400.6345,
+          "resource_rents_pct_gdp": 1.3391,
+          "oda_pct_gni": 1.1202,
+          "political_stability": 41.6449,
+          "fsi": null,
+          "voice_accountability": 39.7882
         },
         "context": {
           "under_external_admin": false,
@@ -63,25 +64,82 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law (legacy -2.5/+2.5): 1996 = -0.63 (Pakistan's own max), 2000 = -1.00 (min), 2023 = -0.86. Govt Effectiveness 2024 = -0.60 (avg -0.62). HDI 2023 = 0.544 (168th, Low). Derived: low-P1 (P1 approx 0.20-0.25), with P5 (political stability) and P1 deteriorating. Resource rents low."
+        "notes": "WGI Rule of Law (legacy -2.5/+2.5): 1996 = -0.63 (Pakistan's own max), 2000 = -1.00 (min), 2023 = -0.86. Govt Effectiveness 2024 = -0.60 (avg -0.62). HDI 2023 = 0.544 (168th, Low). Derived: low-P1 (P1 approx 0.20-0.25), with P5 (political stability) and P1 deteriorating. Resource rents low.",
+        "_hydrated_from_world": {
+          "source_slug": "pakistan",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 40.828
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 49.1057
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 44.8002
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 24.4461
+            },
+            {
+              "indicator": "political_stability",
+              "value": 41.6449
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 39.7882
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 2400.6345
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 1.3391
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 1.1202
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.221
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.6215
+            },
+            {
+              "indicator": "eci",
+              "value": -0.594
+            }
+          ]
+        }
       },
       "Bangladesh": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 35.5681,
+          "rule_of_law": 41.1265,
+          "regulatory_quality": 36.5773,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 30.2024,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "eci": -0.93,
+          "education_index": 0.318,
+          "life_expectancy_index": 0.6076,
+          "gdp_per_capita_ppp": 1260.7549,
+          "resource_rents_pct_gdp": 0.5901,
+          "oda_pct_gni": 2.0249,
+          "political_stability": 53.3909,
+          "fsi": null,
+          "voice_accountability": 51.2854
         },
         "context": {
           "under_external_admin": false,
@@ -109,7 +167,63 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law (legacy): 1996 ~ -0.8 to -1.0; 2000 = -1.15 to -1.19 (min era); 2023 = -0.50 (Bangladesh's own max). HDI 1990->2023: 0.397 -> 0.685 (+72.5%, one of world's largest gains, 130th Medium). Net ODA 2023 = 1.25% GNI. Resource rents very low (gas-dependent domestic). Derived: low-P1 (~0.20-0.25); P3 (life expectancy 74.7 yrs) and P4 (sustained 6-8% growth) rose materially. GDP per capita PPP overtook Pakistan ~2016-2020."
+        "notes": "WGI Rule of Law (legacy): 1996 ~ -0.8 to -1.0; 2000 = -1.15 to -1.19 (min era); 2023 = -0.50 (Bangladesh's own max). HDI 1990->2023: 0.397 -> 0.685 (+72.5%, one of world's largest gains, 130th Medium). Net ODA 2023 = 1.25% GNI. Resource rents very low (gas-dependent domestic). Derived: low-P1 (~0.20-0.25); P3 (life expectancy 74.7 yrs) and P4 (sustained 6-8% growth) rose materially. GDP per capita PPP overtook Pakistan ~2016-2020.",
+        "_hydrated_from_world": {
+          "source_slug": "bangladesh",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 35.5681
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 41.1265
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 36.5773
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 30.2024
+            },
+            {
+              "indicator": "political_stability",
+              "value": 53.3909
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 51.2854
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 1260.7549
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.5901
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 2.0249
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.318
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.6076
+            },
+            {
+              "indicator": "eci",
+              "value": -0.93
+            }
+          ]
+        }
       }
     }
   },

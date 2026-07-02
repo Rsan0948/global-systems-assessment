@@ -29,14 +29,15 @@
           "control_of_corruption": 10.85,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -2.023,
           "education_index": 0.34,
           "life_expectancy_index": 0.452,
           "gdp_per_capita_ppp": 526.17,
           "resource_rents_pct_gdp": 36.3,
           "oda_pct_gni": 3.08,
           "political_stability": 20.25,
-          "fsi": null
+          "fsi": null,
+          "voice_accountability": 22.78
         },
         "context": {
           "population": 102000000,
@@ -54,7 +55,23 @@
           "eci",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
+        "_hydrated_from_world": {
+          "source_slug": "dr_congo",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 22.78
+            },
+            {
+              "indicator": "eci",
+              "value": -2.023
+            }
+          ]
+        }
       },
       "Rwanda": {
         "indicators": {
@@ -65,14 +82,15 @@
           "control_of_corruption": 31.59,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -0.224,
           "education_index": 0.23,
           "life_expectancy_index": 0.346,
           "gdp_per_capita_ppp": 498.88,
           "resource_rents_pct_gdp": 12.56,
           "oda_pct_gni": 34.0,
           "political_stability": 30.16,
-          "fsi": null
+          "fsi": null,
+          "voice_accountability": 26.57
         },
         "context": {
           "population": 13800000,
@@ -92,7 +110,23 @@
           "eci",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
+        "_hydrated_from_world": {
+          "source_slug": "rwanda",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 26.57
+            },
+            {
+              "indicator": "eci",
+              "value": -0.224
+            }
+          ]
+        }
       }
     }
   },

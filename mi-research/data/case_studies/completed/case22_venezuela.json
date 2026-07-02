@@ -28,14 +28,15 @@
           "control_of_corruption": 31.63,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
+          "eci": 0.542,
+          "education_index": 0.536,
+          "life_expectancy_index": 0.8103,
           "gdp_per_capita_ppp": 14567.66,
           "resource_rents_pct_gdp": 9.06,
           "oda_pct_gni": 0.05,
           "political_stability": 57.33,
-          "fsi": null
+          "fsi": null,
+          "voice_accountability": 54.65
         },
         "context": {
           "population": 28300000,
@@ -57,7 +58,31 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
+        "_hydrated_from_world": {
+          "source_slug": "venezuela",
+          "source_year": "1998",
+          "target_year": 1998,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 54.65
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.536
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8103
+            },
+            {
+              "indicator": "eci",
+              "value": 0.542
+            }
+          ]
+        }
       }
     }
   },

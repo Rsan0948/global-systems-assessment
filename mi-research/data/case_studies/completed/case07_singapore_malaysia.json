@@ -22,21 +22,22 @@
     "entities": {
       "Singapore": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 94.7718,
+          "rule_of_law": 81.4286,
+          "regulatory_quality": 84.2606,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 87.4922,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
+          "rd_pct_gdp": 1.3199,
+          "eci": 0.956,
+          "education_index": 0.6948,
+          "life_expectancy_index": 0.8698,
+          "gdp_per_capita_ppp": 36872.7036,
           "resource_rents_pct_gdp": 0.0,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 85.8876,
+          "fsi": null,
+          "voice_accountability": 62.027
         },
         "context": {
           "under_external_admin": false,
@@ -63,25 +64,78 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law 1996 ~1.4 (avg 1.46; legacy scale). Govt Effectiveness avg 2.21, 2024 = 2.28 (world #1). Political Stability avg 1.27. Natural resource rents ~0% (anti-rentier). Net donor by 1996. MI (existing dataset): 0.790 (1996) -> 0.939 (2024); P1 = 0.945, P4 = 0.988 (highest). Uniformly high pillars; narrow spread at the TOP (inverse of South Sudan's narrow spread at the floor)."
+        "notes": "WGI Rule of Law 1996 ~1.4 (avg 1.46; legacy scale). Govt Effectiveness avg 2.21, 2024 = 2.28 (world #1). Political Stability avg 1.27. Natural resource rents ~0% (anti-rentier). Net donor by 1996. MI (existing dataset): 0.790 (1996) -> 0.939 (2024); P1 = 0.945, P4 = 0.988 (highest). Uniformly high pillars; narrow spread at the TOP (inverse of South Sudan's narrow spread at the floor).",
+        "_hydrated_from_world": {
+          "source_slug": "singapore",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 94.7718
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 81.4286
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 84.2606
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 87.4922
+            },
+            {
+              "indicator": "political_stability",
+              "value": 85.8876
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 62.027
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 36872.7036
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 1.3199
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.6948
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8698
+            },
+            {
+              "indicator": "eci",
+              "value": 0.956
+            }
+          ]
+        }
       },
       "Malaysia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 66.3729,
+          "rule_of_law": 65.645,
+          "regulatory_quality": 62.1236,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 54.9767,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "rd_pct_gdp": 0.2165,
+          "eci": 0.668,
+          "education_index": 0.5547,
+          "life_expectancy_index": 0.805,
+          "gdp_per_capita_ppp": 11709.267,
+          "resource_rents_pct_gdp": 12.7125,
+          "oda_pct_gni": -0.4748,
+          "political_stability": 72.3303,
+          "fsi": null,
+          "voice_accountability": 46.2366
         },
         "context": {
           "under_external_admin": false,
@@ -107,7 +161,67 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law 1996 = 0.50 (its own max; avg 0.25, 2024 = 0.35; legacy scale). Govt Effectiveness 1996 = 0.54 (its own min; avg 0.97). Natural resource rents avg 17.6% (1970-2021); ~7-18% in the 1996 era; 2021 = 6.92% - BELOW the 25-30% Safeguard E threshold. Modest ODA recipient. MI: 0.376 (1996) -> 0.518 (2024), Tier 3. Derived P1 approx 0.65; moderate across the board."
+        "notes": "WGI Rule of Law 1996 = 0.50 (its own max; avg 0.25, 2024 = 0.35; legacy scale). Govt Effectiveness 1996 = 0.54 (its own min; avg 0.97). Natural resource rents avg 17.6% (1970-2021); ~7-18% in the 1996 era; 2021 = 6.92% - BELOW the 25-30% Safeguard E threshold. Modest ODA recipient. MI: 0.376 (1996) -> 0.518 (2024), Tier 3. Derived P1 approx 0.65; moderate across the board.",
+        "_hydrated_from_world": {
+          "source_slug": "malaysia",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 66.3729
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 65.645
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 62.1236
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 54.9767
+            },
+            {
+              "indicator": "political_stability",
+              "value": 72.3303
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 46.2366
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 11709.267
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 12.7125
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": -0.4748
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 0.2165
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.5547
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.805
+            },
+            {
+              "indicator": "eci",
+              "value": 0.668
+            }
+          ]
+        }
       }
     }
   },

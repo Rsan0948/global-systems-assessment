@@ -21,21 +21,22 @@
     "entities": {
       "Ethiopia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
+          "gov_effectiveness": 40.9791,
+          "rule_of_law": 43.3015,
+          "regulatory_quality": 41.5148,
+          "cpi": 34.0,
+          "control_of_corruption": 38.614,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "eci": -1.002,
+          "education_index": 0.3435,
+          "life_expectancy_index": 0.6986,
+          "gdp_per_capita_ppp": 2095.3176,
+          "resource_rents_pct_gdp": 6.3689,
+          "oda_pct_gni": 5.9555,
+          "political_stability": 45.3038,
+          "fsi": 99.57,
+          "voice_accountability": 36.3631
         },
         "context": {
           "under_external_admin": false,
@@ -64,7 +65,71 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Government Effectiveness negative, ~ -0.6 to -0.7 region (CEIC: -0.699 in 2017; legacy). Rule of Law negative (1996 min -0.97 per Run 2 data; still bottom-tier in 2018). Political Stability deeply negative (recurrent ethnic clashes, mass displacement). Resource rents low (not an oil rentier). FSI 2019 = 94.2 (most-improved that year, post-Abiy optimism); 2024 = 98.1 (6th most fragile in Africa). HDI low (medium-low tier). Derived: floor/near-floor P1; wide spread; high structural vulnerability."
+        "notes": "WGI Government Effectiveness negative, ~ -0.6 to -0.7 region (CEIC: -0.699 in 2017; legacy). Rule of Law negative (1996 min -0.97 per Run 2 data; still bottom-tier in 2018). Political Stability deeply negative (recurrent ethnic clashes, mass displacement). Resource rents low (not an oil rentier). FSI 2019 = 94.2 (most-improved that year, post-Abiy optimism); 2024 = 98.1 (6th most fragile in Africa). HDI low (medium-low tier). Derived: floor/near-floor P1; wide spread; high structural vulnerability.",
+        "_hydrated_from_world": {
+          "source_slug": "ethiopia",
+          "source_year": "2018",
+          "target_year": 2018,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 40.9791
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 43.3015
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 41.5148
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 38.614
+            },
+            {
+              "indicator": "political_stability",
+              "value": 45.3038
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 36.3631
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 2095.3176
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 6.3689
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 5.9555
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.3435
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.6986
+            },
+            {
+              "indicator": "cpi",
+              "value": 34.0
+            },
+            {
+              "indicator": "eci",
+              "value": -1.002
+            },
+            {
+              "indicator": "fsi",
+              "value": 99.57
+            }
+          ]
+        }
       }
     }
   },

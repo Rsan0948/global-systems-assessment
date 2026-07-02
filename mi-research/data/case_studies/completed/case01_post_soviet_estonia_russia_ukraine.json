@@ -35,21 +35,22 @@
     "entities": {
       "Estonia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 58.6672,
+          "rule_of_law": 68.6,
+          "regulatory_quality": 67.9821,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 57.6908,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "rd_pct_gdp": 0.55,
+          "eci": 0.699,
+          "education_index": 0.79,
+          "life_expectancy_index": 0.72,
+          "gdp_per_capita_ppp": 8800,
+          "resource_rents_pct_gdp": 1.2,
+          "oda_pct_gni": 1.8,
+          "political_stability": 78.6261,
+          "fsi": null,
+          "voice_accountability": 73.2091
         },
         "context": {
           "under_external_admin": false,
@@ -98,25 +99,86 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 high (~0.45-0.55 on 0-1), P4 moderate-high, P5 moderate -> MI ~= 0.40 (matches dataset 0.398). Configuration: balanced, institution-led; narrowest pillar spread of the post-Soviet three. WGI Rule of Law / Govt Effectiveness / Control of Corruption / Regulatory Quality all highest of the three (clear regional reformer). HDI 1995 ~0.79 band; GDP per cap PPP 1996 highest of three. ERCAS describes Estonia as 'since 1991, the world's most successful short transition to good governance.' Pillar values are estimates, not exact WGI; WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 high (~0.45-0.55 on 0-1), P4 moderate-high, P5 moderate -> MI ~= 0.40 (matches dataset 0.398). Configuration: balanced, institution-led; narrowest pillar spread of the post-Soviet three. WGI Rule of Law / Govt Effectiveness / Control of Corruption / Regulatory Quality all highest of the three (clear regional reformer). HDI 1995 ~0.79 band; GDP per cap PPP 1996 highest of three. ERCAS describes Estonia as 'since 1991, the world's most successful short transition to good governance.' Pillar values are estimates, not exact WGI; WGI 2025-anchored vintage caveat applies.",
+        "_hydrated_from_world": {
+          "source_slug": "estonia",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 58.6672
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 68.6
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 67.9821
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 57.6908
+            },
+            {
+              "indicator": "political_stability",
+              "value": 78.6261
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 73.2091
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 8800
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 1.2
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 1.8
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 0.55
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.79
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.72
+            },
+            {
+              "indicator": "eci",
+              "value": 0.699
+            }
+          ]
+        }
       },
       "Russia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 37.0586,
+          "rule_of_law": 42.0398,
+          "regulatory_quality": 44.7957,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 28.2118,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
+          "rd_pct_gdp": 0.9659,
+          "eci": 1.143,
+          "education_index": 0.6875,
+          "life_expectancy_index": 0.6988,
+          "gdp_per_capita_ppp": 5517.8589,
+          "resource_rents_pct_gdp": 10.4927,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 41.9769,
+          "fsi": null,
+          "voice_accountability": 49.7473
         },
         "context": {
           "under_external_admin": false,
@@ -165,25 +227,82 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 very low (~0.10), P4 distorted by resource rents (rentier flag, Safeguard E), P5 low -> MI ~= 0.09 (dataset 0.087). Configuration: rentier, widest spread of the three (high human capital vs floor institutions). WGI Rule of Law / Control of Corruption bottom tier / very low. CPI 1996/1998 ~2.4 (very corrupt). HDI 1995 ~0.77 band; GDP per cap PPP 1996 middle; natural-resource rents high (oil/gas rentier flag). Pillar values are estimates, not exact WGI; CPI ~2.4 is approximate and from 1996/1998 (pre-2012 CPI not year-comparable, ordinal cross-country use only) so left null in indicators. WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 very low (~0.10), P4 distorted by resource rents (rentier flag, Safeguard E), P5 low -> MI ~= 0.09 (dataset 0.087). Configuration: rentier, widest spread of the three (high human capital vs floor institutions). WGI Rule of Law / Control of Corruption bottom tier / very low. CPI 1996/1998 ~2.4 (very corrupt). HDI 1995 ~0.77 band; GDP per cap PPP 1996 middle; natural-resource rents high (oil/gas rentier flag). Pillar values are estimates, not exact WGI; CPI ~2.4 is approximate and from 1996/1998 (pre-2012 CPI not year-comparable, ordinal cross-country use only) so left null in indicators. WGI 2025-anchored vintage caveat applies.",
+        "_hydrated_from_world": {
+          "source_slug": "russian_federation",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 37.0586
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 42.0398
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 44.7957
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 28.2118
+            },
+            {
+              "indicator": "political_stability",
+              "value": 41.9769
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 49.7473
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 5517.8589
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 10.4927
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 0.9659
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.6875
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.6988
+            },
+            {
+              "indicator": "eci",
+              "value": 1.143
+            }
+          ]
+        }
       },
       "Ukraine": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 28.6603,
+          "rule_of_law": 41.3632,
+          "regulatory_quality": 43.3895,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 27.1098,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
+          "eci": 1.082,
+          "education_index": 0.683,
+          "life_expectancy_index": 0.7254,
+          "gdp_per_capita_ppp": 3812.2456,
+          "resource_rents_pct_gdp": 3.0066,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 62.2704,
+          "fsi": null,
+          "voice_accountability": 47.7822
         },
         "context": {
           "under_external_admin": false,
@@ -232,7 +351,59 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 low (~0.12), P4 weak, P5 low -> MI ~= 0.12 (dataset 0.119). Configuration: uniformly weak, no rentier cushion. WGI Rule of Law bottom tier (~ Russia). CPI 1998 = 2.8, then declining. HDI 1995 ~0.74 band; GDP per cap PPP 1996 lowest of three; resource rents moderate; political stability moderate. Democratic aspirations + weak P4 -> high reversal/instability risk (Safeguard C). Pillar values are estimates, not exact WGI; CPI is 1998 (not 1996) and pre-2012 (ordinal use only) so left null in indicators. WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 low (~0.12), P4 weak, P5 low -> MI ~= 0.12 (dataset 0.119). Configuration: uniformly weak, no rentier cushion. WGI Rule of Law bottom tier (~ Russia). CPI 1998 = 2.8, then declining. HDI 1995 ~0.74 band; GDP per cap PPP 1996 lowest of three; resource rents moderate; political stability moderate. Democratic aspirations + weak P4 -> high reversal/instability risk (Safeguard C). Pillar values are estimates, not exact WGI; CPI is 1998 (not 1996) and pre-2012 (ordinal use only) so left null in indicators. WGI 2025-anchored vintage caveat applies.",
+        "_hydrated_from_world": {
+          "source_slug": "ukraine",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 28.6603
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 41.3632
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 43.3895
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 27.1098
+            },
+            {
+              "indicator": "political_stability",
+              "value": 62.2704
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 47.7822
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 3812.2456
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 3.0066
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.683
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.7254
+            },
+            {
+              "indicator": "eci",
+              "value": 1.082
+            }
+          ]
+        }
       }
     }
   },
@@ -291,11 +462,21 @@
     "entities": {
       "Estonia": {
         "indicators_by_year": {
-          "1996": {"mi_score": 0.398},
-          "2004": {"mi_score": 0.546},
-          "2012": {"mi_score": 0.681},
-          "2018": {"mi_score": 0.686},
-          "2024": {"mi_score": 0.716}
+          "1996": {
+            "mi_score": 0.398
+          },
+          "2004": {
+            "mi_score": 0.546
+          },
+          "2012": {
+            "mi_score": 0.681
+          },
+          "2018": {
+            "mi_score": 0.686
+          },
+          "2024": {
+            "mi_score": 0.716
+          }
         },
         "outcome_summary": "Steepest and highest trajectory; EU/NATO/eurozone integration. P1 2024 = 0.865.",
         "key_events": [
@@ -305,11 +486,21 @@
       },
       "Russia": {
         "indicators_by_year": {
-          "1996": {"mi_score": 0.087},
-          "2004": {"mi_score": 0.141},
-          "2012": {"mi_score": 0.196},
-          "2018": {"mi_score": 0.198},
-          "2024": {"mi_score": 0.203}
+          "1996": {
+            "mi_score": 0.087
+          },
+          "2004": {
+            "mi_score": 0.141
+          },
+          "2012": {
+            "mi_score": 0.196
+          },
+          "2018": {
+            "mi_score": 0.198
+          },
+          "2024": {
+            "mi_score": 0.203
+          }
         },
         "outcome_summary": "Flat-but-stable M (rents buy stability in a low-P1 state); never modernizes. P1 2024 = 0.278.",
         "key_events": [
@@ -319,11 +510,21 @@
       },
       "Ukraine": {
         "indicators_by_year": {
-          "1996": {"mi_score": 0.119},
-          "2004": {"mi_score": 0.166},
-          "2012": {"mi_score": 0.195},
-          "2018": {"mi_score": 0.177},
-          "2024": {"mi_score": 0.143}
+          "1996": {
+            "mi_score": 0.119
+          },
+          "2004": {
+            "mi_score": 0.166
+          },
+          "2012": {
+            "mi_score": 0.195
+          },
+          "2018": {
+            "mi_score": 0.177
+          },
+          "2024": {
+            "mi_score": 0.143
+          }
         },
         "outcome_summary": "Absolute decline post-2012 (0.177 -> 0.143); subjected to invasion. P1 2024 = 0.387.",
         "key_events": [

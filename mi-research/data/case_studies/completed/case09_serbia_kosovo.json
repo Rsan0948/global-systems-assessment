@@ -22,21 +22,22 @@
     "entities": {
       "Serbia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 44.5486,
+          "rule_of_law": 52.4111,
+          "regulatory_quality": 48.2301,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 41.5611,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
+          "rd_pct_gdp": 0.5566,
+          "eci": 0.642,
+          "education_index": 0.7002,
+          "life_expectancy_index": 0.825,
           "gdp_per_capita_ppp": 11230.0,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "resource_rents_pct_gdp": 1.5542,
+          "oda_pct_gni": 1.9348,
+          "political_stability": 59.2734,
+          "fsi": 81.1,
+          "voice_accountability": 62.5949
         },
         "context": {
           "under_external_admin": false,
@@ -62,15 +63,75 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law (legacy est.) ~ -0.4 region, improving post-2000; sovereign, EU candidate track. GDP per capita PPP ~$11,230 (2007). Derived: higher P1 than Kosovo on measured WGI; both below EU-core levels."
+        "notes": "WGI Rule of Law (legacy est.) ~ -0.4 region, improving post-2000; sovereign, EU candidate track. GDP per capita PPP ~$11,230 (2007). Derived: higher P1 than Kosovo on measured WGI; both below EU-core levels.",
+        "_hydrated_from_world": {
+          "source_slug": "serbia",
+          "source_year": "2007",
+          "target_year": 2007,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 44.5486
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 52.4111
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 48.2301
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 41.5611
+            },
+            {
+              "indicator": "political_stability",
+              "value": 59.2734
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 62.5949
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 1.5542
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 1.9348
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 0.5566
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.7002
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.825
+            },
+            {
+              "indicator": "eci",
+              "value": 0.642
+            },
+            {
+              "indicator": "fsi",
+              "value": 81.1
+            }
+          ]
+        }
       },
       "Kosovo": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
+          "gov_effectiveness": 42.588,
+          "rule_of_law": 57.949,
           "regulatory_quality": null,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 39.9701,
           "gii": null,
           "rd_pct_gdp": null,
           "eci": null,
@@ -79,8 +140,9 @@
           "gdp_per_capita_ppp": null,
           "resource_rents_pct_gdp": null,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 68.0087,
+          "fsi": null,
+          "voice_accountability": 54.5121
         },
         "context": {
           "under_external_admin": true,
@@ -107,7 +169,35 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law (legacy est.) ~ -0.5 to -0.7 region, under UNMIK administration. GDP per capita far lower than Serbia (~$6,200 only reached by 2023); remittances ~14% of GDP, aid-dependent; very high (later ~50%+ youth) unemployment. Excluded from FSI (Fund for Peace does not rank Kosovo). 2nd-order recursive fragment (Yugoslavia -> Serbia -> Kosovo); passes the capacity gate minimally, only under international scaffolding. LIVE (Mod 1) discounts measured P1 -> indigenous P1 lower than raw WGI suggests."
+        "notes": "WGI Rule of Law (legacy est.) ~ -0.5 to -0.7 region, under UNMIK administration. GDP per capita far lower than Serbia (~$6,200 only reached by 2023); remittances ~14% of GDP, aid-dependent; very high (later ~50%+ youth) unemployment. Excluded from FSI (Fund for Peace does not rank Kosovo). 2nd-order recursive fragment (Yugoslavia -> Serbia -> Kosovo); passes the capacity gate minimally, only under international scaffolding. LIVE (Mod 1) discounts measured P1 -> indigenous P1 lower than raw WGI suggests.",
+        "_hydrated_from_world": {
+          "source_slug": "kosovo",
+          "source_year": "2007",
+          "target_year": 2007,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 42.588
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 57.949
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 39.9701
+            },
+            {
+              "indicator": "political_stability",
+              "value": 68.0087
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 54.5121
+            }
+          ]
+        }
       }
     }
   },

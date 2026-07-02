@@ -21,21 +21,22 @@
     "entities": {
       "Belgium": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": 1.28,
-          "regulatory_quality": null,
+          "gov_effectiveness": 83.6011,
+          "rule_of_law": 89.97,
+          "regulatory_quality": 72.7047,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 78.1287,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
+          "rd_pct_gdp": 2.0613,
+          "eci": 1.18,
+          "education_index": 0.8805,
+          "life_expectancy_index": 0.9236,
+          "gdp_per_capita_ppp": 39839.9773,
+          "resource_rents_pct_gdp": 0.047,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 81.5488,
+          "fsi": 32.0,
+          "voice_accountability": 83.5094
         },
         "context": {
           "is_democratic": true,
@@ -45,7 +46,7 @@
           "has_power_sharing": true,
           "regional_antisystem_vote": 0.47,
           "executive_collapses": 3,
-          "regional_gdp_divergence": 0.40,
+          "regional_gdp_divergence": 0.4,
           "fragmentation_mechanism": "extreme_porosity",
           "prior_porosity_period": true,
           "external_backstop": true,
@@ -65,7 +66,72 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Belgium WGI estimate scale: RoL ~1.28 (top tier; indistinguishable from UK 1.27). All three Safeguard F triggers met: (1) separatist/nationalist vote >25% in Flanders -- N-VA 24.5% + Vlaams Belang 22.8% = ~47% (2024); (2) executive repeatedly suspended -- 541 days in 2010-11 and 652 days in 2019-20 (both world records per the Brussels Times), still forming after the June 2024 election at source-reporting time; (3) regional divergence >30% -- Flemish EUR47,300 PPS vs Walloon EUR33,400 PPS (>40% gap; Wallonia ~72% of the Belgian average). 'executive_collapses'=3 recorded record-length formations (2010-11, 2019-20, 2024)."
+        "notes": "Belgium WGI estimate scale: RoL ~1.28 (top tier; indistinguishable from UK 1.27). All three Safeguard F triggers met: (1) separatist/nationalist vote >25% in Flanders -- N-VA 24.5% + Vlaams Belang 22.8% = ~47% (2024); (2) executive repeatedly suspended -- 541 days in 2010-11 and 652 days in 2019-20 (both world records per the Brussels Times), still forming after the June 2024 election at source-reporting time; (3) regional divergence >30% -- Flemish EUR47,300 PPS vs Walloon EUR33,400 PPS (>40% gap; Wallonia ~72% of the Belgian average). 'executive_collapses'=3 recorded record-length formations (2010-11, 2019-20, 2024).",
+        "_scale_corrections": [
+          {
+            "indicator": "rule_of_law",
+            "original": 1.28,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 89.97
+          }
+        ],
+        "_hydrated_from_world": {
+          "source_slug": "belgium",
+          "source_year": "2010",
+          "target_year": 2010,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 83.6011
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 72.7047
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 78.1287
+            },
+            {
+              "indicator": "political_stability",
+              "value": 81.5488
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 83.5094
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 39839.9773
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.047
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 2.0613
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.8805
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.9236
+            },
+            {
+              "indicator": "eci",
+              "value": 1.18
+            },
+            {
+              "indicator": "fsi",
+              "value": 32.0
+            }
+          ]
+        }
       }
     }
   },

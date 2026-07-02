@@ -29,14 +29,15 @@
           "control_of_corruption": 4.3,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
+          "eci": -2.652,
+          "education_index": 0.3104,
+          "life_expectancy_index": 0.6618,
+          "gdp_per_capita_ppp": 3805.6274,
+          "resource_rents_pct_gdp": 11.9429,
+          "oda_pct_gni": 3.6657,
           "political_stability": 0.9,
-          "fsi": null
+          "fsi": 111.8,
+          "voice_accountability": 28.224
         },
         "context": {
           "under_external_admin": false,
@@ -59,7 +60,47 @@
           "oda_pct_gni",
           "fsi"
         ],
-        "notes": "WGI shown on 0-100 absolute scale (Sudan scored well below 10 in all governance areas in 2010 per World Bank WGI - functionally floor-level). Legacy-scale government-effectiveness estimate ~ -1.3 (1996 high -0.987, 2014 low -1.532). TI CPI 2011 = 1.6/10 (177/183). Derived pillar estimate: P1 approx 0.06 (floor), P4 severely distorted by oil + ODA, P5 approx floor (Darfur); estimated MI low/floor tier. Pillar spread narrow but uniformly catastrophic (dangerous 'uniform low' profile)."
+        "notes": "WGI shown on 0-100 absolute scale (Sudan scored well below 10 in all governance areas in 2010 per World Bank WGI - functionally floor-level). Legacy-scale government-effectiveness estimate ~ -1.3 (1996 high -0.987, 2014 low -1.532). TI CPI 2011 = 1.6/10 (177/183). Derived pillar estimate: P1 approx 0.06 (floor), P4 severely distorted by oil + ODA, P5 approx floor (Darfur); estimated MI low/floor tier. Pillar spread narrow but uniformly catastrophic (dangerous 'uniform low' profile).",
+        "_hydrated_from_world": {
+          "source_slug": "sudan",
+          "source_year": "2010",
+          "target_year": 2010,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 28.224
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 3805.6274
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 11.9429
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 3.6657
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.3104
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.6618
+            },
+            {
+              "indicator": "eci",
+              "value": -2.652
+            },
+            {
+              "indicator": "fsi",
+              "value": 111.8
+            }
+          ]
+        }
       },
       "South Sudan": {
         "indicators": {
@@ -67,14 +108,14 @@
           "rule_of_law": null,
           "regulatory_quality": null,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 43.5196,
           "gii": null,
           "rd_pct_gdp": null,
           "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
+          "education_index": 0.3293,
+          "life_expectancy_index": 0.5356,
+          "gdp_per_capita_ppp": 2948.05,
+          "resource_rents_pct_gdp": 43.7093,
           "oda_pct_gni": null,
           "political_stability": null,
           "fsi": null
@@ -106,7 +147,35 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "No prior independent statehood; literacy ~34.5%; oil = ~98% of government budget and ~80% of GDP; oil rents peaked at 58.3% of GDP in 2008. Derived pillar estimate: P1 approx 0.02-0.04 (world floor), P2 floor, P3 floor (literacy), P4 extreme rentier distortion, P5 floor; estimated MI bottom of dataset. The near-total absence of independent governance statistics pre-2011 is itself the signal of institutional vacuum - reported as missing, never interpolated."
+        "notes": "No prior independent statehood; literacy ~34.5%; oil = ~98% of government budget and ~80% of GDP; oil rents peaked at 58.3% of GDP in 2008. Derived pillar estimate: P1 approx 0.02-0.04 (world floor), P2 floor, P3 floor (literacy), P4 extreme rentier distortion, P5 floor; estimated MI bottom of dataset. The near-total absence of independent governance statistics pre-2011 is itself the signal of institutional vacuum - reported as missing, never interpolated.",
+        "_hydrated_from_world": {
+          "source_slug": "south_sudan",
+          "source_year": "2010",
+          "target_year": 2010,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "control_of_corruption",
+              "value": 43.5196
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 2948.05
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 43.7093
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.3293
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.5356
+            }
+          ]
+        }
       }
     }
   },

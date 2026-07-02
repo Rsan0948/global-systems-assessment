@@ -21,16 +21,16 @@
     "entities": {
       "Germany": {
         "indicators": {
-          "gov_effectiveness": 1.19,
-          "rule_of_law": 1.53,
+          "gov_effectiveness": 88.3,
+          "rule_of_law": 93.7,
           "regulatory_quality": null,
           "cpi": null,
           "control_of_corruption": null,
           "gii": null,
           "rd_pct_gdp": null,
           "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
+          "education_index": 0.7448,
+          "life_expectancy_index": 0.8517,
           "gdp_per_capita_ppp": null,
           "resource_rents_pct_gdp": null,
           "oda_pct_gni": null,
@@ -43,7 +43,7 @@
           "neighbor_threat_level": "none",
           "has_federalism": true,
           "regional_antisystem_vote": 0.328,
-          "regional_gdp_divergence": 0.30,
+          "regional_gdp_divergence": 0.3,
           "fragmentation_mechanism": "fusion",
           "prior_porosity_period": false,
           "external_backstop": true,
@@ -62,7 +62,39 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Highest P1 of the five (existing dataset P1=0.890; WGI RoL ~1.53, GE ~1.19, estimate scale). regional_antisystem_vote recorded as the peak AfD 2024 state result (Thuringia 32.8%); also Saxony 30.6% (behind CDU 31.9%) and ~29% Brandenburg -- all well above the 25% Safeguard F threshold. Regional divergence near/above 30% (eastern GDP/cap ~66-72% of West; eastern productivity ~80% of western)."
+        "notes": "Highest P1 of the five (existing dataset P1=0.890; WGI RoL ~1.53, GE ~1.19, estimate scale). regional_antisystem_vote recorded as the peak AfD 2024 state result (Thuringia 32.8%); also Saxony 30.6% (behind CDU 31.9%) and ~29% Brandenburg -- all well above the 25% Safeguard F threshold. Regional divergence near/above 30% (eastern GDP/cap ~66-72% of West; eastern productivity ~80% of western).",
+        "_scale_corrections": [
+          {
+            "indicator": "gov_effectiveness",
+            "original": 1.19,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 88.3
+          },
+          {
+            "indicator": "rule_of_law",
+            "original": 1.53,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 93.7
+          }
+        ],
+        "_hydrated_from_world": {
+          "source_slug": "germany",
+          "source_year": "1990",
+          "target_year": 1990,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "education_index",
+              "value": 0.7448
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8517
+            }
+          ]
+        }
       }
     }
   },

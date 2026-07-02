@@ -33,22 +33,23 @@
     "entities": {
       "Myanmar": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
+          "gov_effectiveness": 25.6753,
+          "rule_of_law": 36.7673,
+          "regulatory_quality": 41.9834,
+          "cpi": 29.0,
+          "control_of_corruption": 32.3109,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
+          "rd_pct_gdp": 0.0588,
+          "eci": -1.007,
+          "education_index": 0.5152,
+          "life_expectancy_index": 0.7148,
+          "gdp_per_capita_ppp": 5581.277,
+          "resource_rents_pct_gdp": 6.7028,
+          "oda_pct_gni": 2.5943,
+          "political_stability": 43.7246,
           "fsi": 96,
-          "n_successor_states": null
+          "n_successor_states": null,
+          "voice_accountability": 38.9368
         },
         "context": {
           "under_external_admin": false,
@@ -70,7 +71,71 @@
           "gdp_per_capita_ppp (only total GDP given: 2020 nominal $81.26B; PPP ~$312B)",
           "P1 normalized ~0.20-0.25 (floor, but rising; range estimate, no template field)"
         ],
-        "notes": "fsi = ~96 (high fragility) even pre-coup (approximate). 20+ active Ethnic Armed Organizations (EAOs). Pre-coup P1 ~0.20-0.25 (floor, rising) -> below bottom-third WGI Rule of Law -> Safeguard B (Mod5) primary -> predicts catastrophic outcomes on stress. Resource rents far below 30% -> NOT rentier-locked (both versions). The 2011-2021 opening created mobilized actors (NLD, Civil Disobedience Movement, civil society, organizational capacity) that re-suppression could not re-absorb."
+        "notes": "fsi = ~96 (high fragility) even pre-coup (approximate). 20+ active Ethnic Armed Organizations (EAOs). Pre-coup P1 ~0.20-0.25 (floor, rising) -> below bottom-third WGI Rule of Law -> Safeguard B (Mod5) primary -> predicts catastrophic outcomes on stress. Resource rents far below 30% -> NOT rentier-locked (both versions). The 2011-2021 opening created mobilized actors (NLD, Civil Disobedience Movement, civil society, organizational capacity) that re-suppression could not re-absorb.",
+        "_hydrated_from_world": {
+          "source_slug": "myanmar",
+          "source_year": "2018",
+          "target_year": 2018,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 25.6753
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 36.7673
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 41.9834
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 32.3109
+            },
+            {
+              "indicator": "political_stability",
+              "value": 43.7246
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 38.9368
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 5581.277
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 6.7028
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 2.5943
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 0.0588
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.5152
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.7148
+            },
+            {
+              "indicator": "cpi",
+              "value": 29.0
+            },
+            {
+              "indicator": "eci",
+              "value": -1.007
+            }
+          ]
+        }
       }
     }
   },

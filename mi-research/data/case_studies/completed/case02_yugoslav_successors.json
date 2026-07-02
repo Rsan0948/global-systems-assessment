@@ -36,21 +36,22 @@
     "entities": {
       "Slovenia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 66.3938,
+          "rule_of_law": 75.1451,
+          "regulatory_quality": 65.8089,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 75.4309,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "rd_pct_gdp": 1.2669,
+          "eci": 1.249,
+          "education_index": 0.6629,
+          "life_expectancy_index": 0.8473,
+          "gdp_per_capita_ppp": 14284.3393,
+          "resource_rents_pct_gdp": 0.1932,
+          "oda_pct_gni": 0.3818,
+          "political_stability": 87.8864,
+          "fsi": null,
+          "voice_accountability": 78.9786
         },
         "context": {
           "under_external_admin": false,
@@ -97,25 +98,86 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 high, balanced -> MI high (~0.45+), narrow spread. Regional leader; WGI Rule of Law ~+1.0 (legacy scale; series averaged ~1.02 with 1998 max 1.26) and Govt Effectiveness highest. HDI 1995 = 0.760; GDP per cap PPP 1996 highest by far; resource rents low; political stability high. Ordering P1: Slovenia >> Croatia > Serbia >= Bosnia. Pillar values are estimates, not exact 0-100 WGI; legacy-scale RoL figure not placed in indicator slot. WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 high, balanced -> MI high (~0.45+), narrow spread. Regional leader; WGI Rule of Law ~+1.0 (legacy scale; series averaged ~1.02 with 1998 max 1.26) and Govt Effectiveness highest. HDI 1995 = 0.760; GDP per cap PPP 1996 highest by far; resource rents low; political stability high. Ordering P1: Slovenia >> Croatia > Serbia >= Bosnia. Pillar values are estimates, not exact 0-100 WGI; legacy-scale RoL figure not placed in indicator slot. WGI 2025-anchored vintage caveat applies.",
+        "_hydrated_from_world": {
+          "source_slug": "slovenia",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 66.3938
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 75.1451
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 65.8089
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 75.4309
+            },
+            {
+              "indicator": "political_stability",
+              "value": 87.8864
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 78.9786
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 14284.3393
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.1932
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 0.3818
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 1.2669
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.6629
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8473
+            },
+            {
+              "indicator": "eci",
+              "value": 1.249
+            }
+          ]
+        }
       },
       "Croatia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 44.8229,
+          "rule_of_law": 45.349,
+          "regulatory_quality": 50.0828,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 33.1266,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
+          "eci": 0.761,
+          "education_index": 0.5908,
+          "life_expectancy_index": 0.8294,
+          "gdp_per_capita_ppp": 8805.6367,
+          "resource_rents_pct_gdp": 0.8467,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 62.5412,
+          "fsi": null,
+          "voice_accountability": 48.3599
         },
         "context": {
           "under_external_admin": false,
@@ -162,25 +224,78 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 moderate-negative, recovering -> MI moderate-low, middle of the four. The one exact pre-event WGI figure recovered for the case: Croatia 1996 Rule of Law = -0.67 (its all-time low; legacy WGI -2.5..+2.5 scale) -- NOT placed in the 0-100 rule_of_law indicator slot to avoid scale-mixing. HDI 1995 medium band; GDP per cap PPP 1996 middle; resource rents low; political stability recovering. WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 moderate-negative, recovering -> MI moderate-low, middle of the four. The one exact pre-event WGI figure recovered for the case: Croatia 1996 Rule of Law = -0.67 (its all-time low; legacy WGI -2.5..+2.5 scale) -- NOT placed in the 0-100 rule_of_law indicator slot to avoid scale-mixing. HDI 1995 medium band; GDP per cap PPP 1996 middle; resource rents low; political stability recovering. WGI 2025-anchored vintage caveat applies.",
+        "_hydrated_from_world": {
+          "source_slug": "croatia",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 44.8229
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 45.349
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 50.0828
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 33.1266
+            },
+            {
+              "indicator": "political_stability",
+              "value": 62.5412
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 48.3599
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 8805.6367
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.8467
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.5908
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8294
+            },
+            {
+              "indicator": "eci",
+              "value": 0.761
+            }
+          ]
+        }
       },
       "Serbia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 40.828,
+          "rule_of_law": 36.5981,
+          "regulatory_quality": 32.3275,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 26.901,
           "gii": null,
           "rd_pct_gdp": null,
           "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
+          "education_index": 0.5913,
+          "life_expectancy_index": 0.7931,
+          "gdp_per_capita_ppp": 5433.7198,
+          "resource_rents_pct_gdp": 0.5274,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 43.0879,
+          "fsi": null,
+          "voice_accountability": 32.6884
         },
         "context": {
           "under_external_admin": false,
@@ -227,25 +342,74 @@
           "life_expectancy_index",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 negative (~-1, not isolated), P4 sanctions-distorted -> MI low. WGI Rule of Law strongly negative; Govt Effectiveness negative. HDI 1995 = 0.674; GDP per cap PPP 1996 low (sanctions); resource rents low; political stability low (Milosevic). Held back by low P1 plus predatory/pariah status. Pillar values are estimates; exact 1996 WGI not isolated (reported missing, not interpolated). WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 negative (~-1, not isolated), P4 sanctions-distorted -> MI low. WGI Rule of Law strongly negative; Govt Effectiveness negative. HDI 1995 = 0.674; GDP per cap PPP 1996 low (sanctions); resource rents low; political stability low (Milosevic). Held back by low P1 plus predatory/pariah status. Pillar values are estimates; exact 1996 WGI not isolated (reported missing, not interpolated). WGI 2025-anchored vintage caveat applies.",
+        "_hydrated_from_world": {
+          "source_slug": "serbia",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 40.828
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 36.5981
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 32.3275
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 26.901
+            },
+            {
+              "indicator": "political_stability",
+              "value": 43.0879
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 32.6884
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 5433.7198
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.5274
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.5913
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.7931
+            }
+          ]
+        }
       },
       "Bosnia-Herzegovina": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 24.861,
+          "rule_of_law": 51.6699,
+          "regulatory_quality": 33.9259,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 37.2655,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": 0.589,
           "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "life_expectancy_index": 0.822,
+          "gdp_per_capita_ppp": 2268.5629,
+          "resource_rents_pct_gdp": 0.0917,
+          "oda_pct_gni": 33.2213,
+          "political_stability": 52.9854,
+          "fsi": null,
+          "voice_accountability": 53.4556
         },
         "context": {
           "under_external_admin": true,
@@ -294,7 +458,59 @@
           "hdi_1995",
           "fsi"
         ],
-        "notes": "1996 estimate (ordinal): P1 bottom (and externally administered), P5 floor -> MI lowest; widest vulnerability. Safeguard A applied: discount measured capacity because WGI reflects the OHR administrator overlay (Bonn Powers), so indigenous P1 is lower than measured. WGI Rule of Law bottom (not isolated; OHR overlay); Govt Effectiveness bottom/administrator-driven. HDI 1995 not reported (war); GDP per cap PPP 1996 lowest (war-devastated); resource rents low; political stability very low (post-war). Pillar values are estimates; exact 1996 WGI not isolated (reported missing, not interpolated). WGI 2025-anchored vintage caveat applies."
+        "notes": "1996 estimate (ordinal): P1 bottom (and externally administered), P5 floor -> MI lowest; widest vulnerability. Safeguard A applied: discount measured capacity because WGI reflects the OHR administrator overlay (Bonn Powers), so indigenous P1 is lower than measured. WGI Rule of Law bottom (not isolated; OHR overlay); Govt Effectiveness bottom/administrator-driven. HDI 1995 not reported (war); GDP per cap PPP 1996 lowest (war-devastated); resource rents low; political stability very low (post-war). Pillar values are estimates; exact 1996 WGI not isolated (reported missing, not interpolated). WGI 2025-anchored vintage caveat applies.",
+        "_hydrated_from_world": {
+          "source_slug": "bosnia_and_herzegovina",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 24.861
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 51.6699
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 33.9259
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 37.2655
+            },
+            {
+              "indicator": "political_stability",
+              "value": 52.9854
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 53.4556
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 2268.5629
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.0917
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 33.2213
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.822
+            },
+            {
+              "indicator": "eci",
+              "value": 0.589
+            }
+          ]
+        }
       }
     }
   },

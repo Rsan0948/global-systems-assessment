@@ -22,21 +22,22 @@
     "entities": {
       "Ethiopia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 25.1093,
+          "rule_of_law": 42.0783,
+          "regulatory_quality": 31.5905,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 27.9722,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
+          "eci": -1.826,
           "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "life_expectancy_index": 0.445,
+          "gdp_per_capita_ppp": 453.3684,
+          "resource_rents_pct_gdp": 28.6687,
+          "oda_pct_gni": 9.3661,
+          "political_stability": 42.845,
+          "fsi": null,
+          "voice_accountability": 35.309
         },
         "context": {
           "under_external_admin": false,
@@ -64,25 +65,78 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "WGI Rule of Law 1996 = -0.97 (its min; avg -0.73, 2017 max -0.45; legacy scale). Political Stability avg -1.5, 2021 min -2.01, 2024 = -1.88. Resource rents low; heavy ODA dependence in 1996 (P4 distortion via aid, not rents). Derived: floor-P1 (~0.10-0.15). Larger, diverse, ethnic-federal state."
+        "notes": "WGI Rule of Law 1996 = -0.97 (its min; avg -0.73, 2017 max -0.45; legacy scale). Political Stability avg -1.5, 2021 min -2.01, 2024 = -1.88. Resource rents low; heavy ODA dependence in 1996 (P4 distortion via aid, not rents). Derived: floor-P1 (~0.10-0.15). Larger, diverse, ethnic-federal state.",
+        "_hydrated_from_world": {
+          "source_slug": "ethiopia",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 25.1093
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 42.0783
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 31.5905
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 27.9722
+            },
+            {
+              "indicator": "political_stability",
+              "value": 42.845
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 35.309
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 453.3684
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 28.6687
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 9.3661
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.445
+            },
+            {
+              "indicator": "eci",
+              "value": -1.826
+            }
+          ]
+        }
       },
       "Eritrea": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 25.9463,
+          "rule_of_law": 43.9132,
+          "regulatory_quality": 32.3995,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 57.976,
           "gii": null,
           "rd_pct_gdp": null,
           "eci": null,
           "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "life_expectancy_index": 0.5501,
+          "gdp_per_capita_ppp": 1449.0548,
+          "resource_rents_pct_gdp": 7.7088,
+          "oda_pct_gni": 22.9632,
+          "political_stability": 36.9388,
+          "fsi": null,
+          "voice_accountability": 30.3371
         },
         "context": {
           "under_external_admin": false,
@@ -110,7 +164,55 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Severe data limitation - one of the world's most closed states; the data vacuum is itself evidence of institutional opacity/capacity collapse (not to be interpolated). WGI Political Stability avg -0.97, 1998 min -1.76, 2024 = -0.71 (legacy). HDI 2022/23 = 0.493 (175th); 2005 = 0.466 (near-stagnant). Resource rents low; heavy ODA dependence. Derived: floor-P1 (~0.10-0.15). Small, militarized, totalitarian."
+        "notes": "Severe data limitation - one of the world's most closed states; the data vacuum is itself evidence of institutional opacity/capacity collapse (not to be interpolated). WGI Political Stability avg -0.97, 1998 min -1.76, 2024 = -0.71 (legacy). HDI 2022/23 = 0.493 (175th); 2005 = 0.466 (near-stagnant). Resource rents low; heavy ODA dependence. Derived: floor-P1 (~0.10-0.15). Small, militarized, totalitarian.",
+        "_hydrated_from_world": {
+          "source_slug": "eritrea",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 25.9463
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 43.9132
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 32.3995
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 57.976
+            },
+            {
+              "indicator": "political_stability",
+              "value": 36.9388
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 30.3371
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 1449.0548
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 7.7088
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 22.9632
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.5501
+            }
+          ]
+        }
       }
     }
   },

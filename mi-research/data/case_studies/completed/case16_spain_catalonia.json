@@ -21,21 +21,22 @@
     "entities": {
       "Spain (Catalonia)": {
         "indicators": {
-          "gov_effectiveness": 0.75,
-          "rule_of_law": 0.82,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": null,
+          "gov_effectiveness": 77.34,
+          "rule_of_law": 79.39,
+          "regulatory_quality": 68.8481,
+          "cpi": 57.0,
+          "control_of_corruption": 59.8781,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
+          "rd_pct_gdp": 1.202,
+          "eci": 0.848,
+          "education_index": 0.8214,
+          "life_expectancy_index": 0.9697,
+          "gdp_per_capita_ppp": 39825.2498,
+          "resource_rents_pct_gdp": 0.0531,
           "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "political_stability": 70.6878,
+          "fsi": 37.9,
+          "voice_accountability": 75.6211
         },
         "context": {
           "is_democratic": true,
@@ -61,7 +62,79 @@
           "fsi",
           "regional_antisystem_vote (pro-independence vote share at 2017 not given as a single figure)"
         ],
-        "notes": "Spain WGI estimate scale: RoL 0.82, GE 0.75 -- high but clearly below Germany/UK/Belgium. Catalonia ~18.8-20% of Spanish GDP; GDP per capita EUR37,426 (2024), above the Spanish average. Suppression mechanism: Article 155 + Constitutional Court action + prosecutions/exile (Puigdemont); some Oct 1 police violence but no sustained deployment."
+        "notes": "Spain WGI estimate scale: RoL 0.82, GE 0.75 -- high but clearly below Germany/UK/Belgium. Catalonia ~18.8-20% of Spanish GDP; GDP per capita EUR37,426 (2024), above the Spanish average. Suppression mechanism: Article 155 + Constitutional Court action + prosecutions/exile (Puigdemont); some Oct 1 police violence but no sustained deployment.",
+        "_scale_corrections": [
+          {
+            "indicator": "gov_effectiveness",
+            "original": 0.75,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 77.34
+          },
+          {
+            "indicator": "rule_of_law",
+            "original": 0.82,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 79.39
+          }
+        ],
+        "_hydrated_from_world": {
+          "source_slug": "spain",
+          "source_year": "2017",
+          "target_year": 2017,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "regulatory_quality",
+              "value": 68.8481
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 59.8781
+            },
+            {
+              "indicator": "political_stability",
+              "value": 70.6878
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 75.6211
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 39825.2498
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.0531
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 1.202
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.8214
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.9697
+            },
+            {
+              "indicator": "cpi",
+              "value": 57.0
+            },
+            {
+              "indicator": "eci",
+              "value": 0.848
+            },
+            {
+              "indicator": "fsi",
+              "value": 37.9
+            }
+          ]
+        }
       }
     }
   },

@@ -24,18 +24,19 @@
           "gov_effectiveness": 49.3,
           "rule_of_law": 49.26,
           "regulatory_quality": 58.36,
-          "cpi": null,
+          "cpi": 36.0,
           "control_of_corruption": 39.56,
           "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
+          "rd_pct_gdp": 0.2212,
+          "eci": 0.287,
           "education_index": 0.648,
           "life_expectancy_index": 0.856,
           "gdp_per_capita_ppp": 12093.08,
           "resource_rents_pct_gdp": 8.3,
           "oda_pct_gni": 0.21,
           "political_stability": 43.15,
-          "fsi": null
+          "fsi": 84.4,
+          "voice_accountability": 55.93
         },
         "context": {
           "population": 52000000,
@@ -54,7 +55,35 @@
           "eci",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs)."
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
+        "_hydrated_from_world": {
+          "source_slug": "colombia",
+          "source_year": "2012",
+          "target_year": 2012,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 55.93
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 0.2212
+            },
+            {
+              "indicator": "cpi",
+              "value": 36.0
+            },
+            {
+              "indicator": "eci",
+              "value": 0.287
+            },
+            {
+              "indicator": "fsi",
+              "value": 84.4
+            }
+          ]
+        }
       }
     }
   },

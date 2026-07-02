@@ -22,21 +22,22 @@
     "entities": {
       "Indonesia": {
         "indicators": {
-          "gov_effectiveness": null,
-          "rule_of_law": null,
-          "regulatory_quality": null,
+          "gov_effectiveness": 36.9068,
+          "rule_of_law": 41.2334,
+          "regulatory_quality": 46.0463,
           "cpi": null,
-          "control_of_corruption": null,
+          "control_of_corruption": 22.9977,
           "gii": null,
           "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
+          "eci": 0.054,
+          "education_index": 0.4798,
+          "life_expectancy_index": 0.7071,
+          "gdp_per_capita_ppp": 4355.78,
           "resource_rents_pct_gdp": 9.9,
-          "oda_pct_gni": null,
-          "political_stability": null,
-          "fsi": null
+          "oda_pct_gni": 1.4053,
+          "political_stability": 36.9634,
+          "fsi": null,
+          "voice_accountability": 32.7461
         },
         "context": {
           "under_external_admin": false,
@@ -63,7 +64,59 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Oil rents ~9.9% of GDP (1998), fell to ~0.8% by 2021. Higher P1 of the pair (a functioning, if crisis-hit, state). Chaotic post-Suharto transition."
+        "notes": "Oil rents ~9.9% of GDP (1998), fell to ~0.8% by 2021. Higher P1 of the pair (a functioning, if crisis-hit, state). Chaotic post-Suharto transition.",
+        "_hydrated_from_world": {
+          "source_slug": "indonesia",
+          "source_year": "1998",
+          "target_year": 1998,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 36.9068
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 41.2334
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 46.0463
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 22.9977
+            },
+            {
+              "indicator": "political_stability",
+              "value": 36.9634
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 32.7461
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 4355.78
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 1.4053
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.4798
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.7071
+            },
+            {
+              "indicator": "eci",
+              "value": 0.054
+            }
+          ]
+        }
       },
       "East Timor": {
         "indicators": {
@@ -76,12 +129,13 @@
           "rd_pct_gdp": null,
           "eci": null,
           "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
+          "life_expectancy_index": 0.448,
+          "gdp_per_capita_ppp": 1107.9528,
           "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
+          "oda_pct_gni": 0.2544,
           "political_stability": null,
-          "fsi": null
+          "fsi": null,
+          "voice_accountability": 27.6533
         },
         "context": {
           "under_external_admin": true,
@@ -110,7 +164,31 @@
           "political_stability",
           "fsi"
         ],
-        "notes": "Economy destroyed - 80% of infrastructure razed in 1999. Near-zero indigenous P1, built from scratch. Petroleum later ~70-80% of GDP; IMF labels it the most oil-dependent economy in the world (Mod 2 / Safeguard E inversion: apparent P4 wealth = vulnerability). Per IMF Country Report No. 25/278: Petroleum Fund balance stood at 939% of non-oil GDP in 2024, but oil/gas production has ceased and continued large withdrawals would deplete it by the end of the 2030s."
+        "notes": "Economy destroyed - 80% of infrastructure razed in 1999. Near-zero indigenous P1, built from scratch. Petroleum later ~70-80% of GDP; IMF labels it the most oil-dependent economy in the world (Mod 2 / Safeguard E inversion: apparent P4 wealth = vulnerability). Per IMF Country Report No. 25/278: Petroleum Fund balance stood at 939% of non-oil GDP in 2024, but oil/gas production has ceased and continued large withdrawals would deplete it by the end of the 2030s.",
+        "_hydrated_from_world": {
+          "source_slug": "timor_leste",
+          "source_year": "1998",
+          "target_year": 1998,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 27.6533
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 1107.9528
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": 0.2544
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.448
+            }
+          ]
+        }
       }
     }
   },
