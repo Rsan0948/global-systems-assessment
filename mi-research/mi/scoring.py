@@ -365,32 +365,14 @@ def score_country(indicators: dict, weights: dict = None, event_year=None) -> di
 
 
 def load_country_data(country_name: str, year: int = None) -> Optional[dict]:
-    """Load country indicator data via the internal Data API (single source).
+    """Load country indicator data from the canonical panel (single store).
 
-    Indicators are assembled live from the canonical sources (mi.datasource).
-    For countries outside the curated Data API set, falls back to the full
-    multi-tier assembly (mi.panel), which combines the mi_pipeline panel +
-    wgi_full_panel — the same path build_site_dataset uses — so any country the
-    site covers is scoreable from the CLIs too (e.g. Norway). No per-country
-    copy files.
+    The canonical panel (mi.panel, built by scripts/build_canonical_panel.py)
+    is the one place indicators live at runtime — every country the site covers
+    is scoreable from the CLIs too (e.g. Norway). With a year, returns that
+    year's indicator dict; without, the country's full indicators_by_year.
     """
-    from mi import datasource  # lazy import to avoid any import cycle
-
+    from mi import panel  # lazy import to avoid any import cycle
     if year is not None:
-        ind = datasource.get_indicators(country_name, year, with_meta=True)
-        if ind is not None:
-            return ind
-    else:
-        years = datasource.available_years(country_name)
-        if years:
-            return {
-                "country": country_name,
-                "iso3": datasource.country_to_iso(country_name),
-                "indicators_by_year": {
-                    y: datasource.get_indicators(country_name, y, with_meta=True) for y in years
-                },
-            }
-
-    # Full-coverage fallback: multi-tier panel assembly (mi_pipeline + wgi_full_panel).
-    from mi import panel
-    return panel.indicators_for(country_name, year or panel.YEAR)
+        return panel.indicators_for(country_name, year)
+    return panel.country_record(country_name)

@@ -11,7 +11,6 @@ ASSEMBLES inputs and calls it. Deterministic.
 
 Emits to web/public/data: countries.json, country/<slug>.json, meta.json
 """
-import csv
 import json
 import math
 import re
@@ -21,15 +20,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from mi import datasource as ds
 from mi.scoring import (score_country, get_tier, get_configuration_profile,
                         calculate_pillar_spread)
 from mi.diagnostics import below_floor_diagnostic, ascent_potential
-from mi.panel import DISPLAY_FIX, load_universe, assemble
+from mi.panel import DISPLAY_FIX, iter_universe
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "data" / "sources"
-CSV_PATH = ROOT.parent / "mi_pipeline" / "output" / "mi_scored_countries.csv"
 OUT = ROOT.parent / "mi-website" / "web" / "public" / "data"
 YEAR = 2024
 
@@ -189,16 +185,9 @@ def build():
     (OUT / "country").mkdir(exist_ok=True)
     for stale in (OUT / "country").glob("*.json"):  # avoid orphaned files from renamed slugs
         stale.unlink()
-    wb, fp, csv_rows, names = load_universe()
-    iso_universe = set(names) & (set(fp) | {v["iso3"] for v in wb.values() if v.get("iso3")} | set(csv_rows))
-
     scored = []  # (iso, name, ind, pillars, mi, tier, source)
     points = []
-    for iso in sorted(iso_universe):  # deterministic iteration (set order is not stable across runs)
-        name = names.get(iso)
-        if not name:
-            continue
-        ind, source = assemble(iso, name, wb, fp, csv_rows)
+    for iso, name, _display, ind, source in iter_universe(YEAR):  # canonical panel (sorted, deterministic)
         if not ind:
             continue
         s = score_country(ind, event_year=YEAR)
