@@ -24,7 +24,7 @@ from mi.diagnostics import full_diagnostic, classify_strategy
 def main():
     parser = argparse.ArgumentParser(description="Score a country using the MI")
     parser.add_argument("--country", type=str, help="Country name (loads from data/countries/)")
-    parser.add_argument("--year", type=int, help="Year to score")
+    parser.add_argument("--year", type=int, default=2024, help="Year to score (default: 2024, the site vintage)")
     parser.add_argument("--data", type=str, help="JSON string of raw indicators")
     parser.add_argument("--file", type=str, help="Path to country JSON file")
     parser.add_argument("--context", type=str, help="JSON string of context for safeguards")

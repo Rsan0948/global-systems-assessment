@@ -25,6 +25,7 @@ from mi import datasource as ds
 from mi.scoring import (score_country, get_tier, get_configuration_profile,
                         calculate_pillar_spread)
 from mi.diagnostics import below_floor_diagnostic, ascent_potential
+from mi.panel import DISPLAY_FIX, load_universe, assemble
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "sources"
@@ -45,98 +46,8 @@ INDICATOR_SOURCES = {
     "gdp_per_capita_ppp": "World Bank WDI", "resource_rents_pct_gdp": "World Bank WDI",
     "oda_pct_gni": "World Bank WDI", "fsi": "Fund for Peace FSI",
 }
-NAME_FIX = {  # micro-states/territories not named by any source
-    "AND": "Andorra", "ATG": "Antigua and Barbuda", "ABW": "Aruba", "BHS": "Bahamas",
-    "BMU": "Bermuda", "CYM": "Cayman Islands", "GRL": "Greenland", "KIR": "Kiribati",
-    "MAC": "Macao", "MHL": "Marshall Islands", "NRU": "Nauru", "PLW": "Palau",
-    "PRI": "Puerto Rico", "SMR": "San Marino", "KNA": "St Kitts and Nevis",
-    "VIR": "US Virgin Islands",
-}
-# Clean raw World Bank / source names into readable display names.
-DISPLAY_FIX = {
-    "Lao PDR": "Laos", "Iran, Islamic Rep.": "Iran", "Congo, Rep.": "Republic of the Congo",
-    "Congo, Dem. Rep.": "DR Congo", "Kyrgyz Republic": "Kyrgyzstan", "Slovak Republic": "Slovakia",
-    "Egypt, Arab Rep.": "Egypt", "Yemen, Rep.": "Yemen", "Venezuela, RB": "Venezuela",
-    "Russian Federation": "Russia", "Korea, Rep.": "South Korea", "Korea, Dem. People's Rep.": "North Korea",
-    "Gambia, The": "Gambia", "Bahamas, The": "Bahamas", "Brunei Darussalam": "Brunei",
-    "Syrian Arab Republic": "Syria", "Viet Nam": "Vietnam", "Macao SAR": "Macao",
-    "Hong Kong SAR, China": "Hong Kong", "Turkiye": "Turkey", "Micronesia, Fed. Sts.": "Micronesia",
-    "St. Lucia": "St Lucia", "St. Vincent and the Grenadines": "St Vincent & Grenadines",
-}
-
-
 def slugify(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
-
-
-def _f(x):
-    try:
-        return float(x)
-    except (TypeError, ValueError):
-        return None
-
-
-def _panel_yr(panel, key, yr=YEAR):
-    b = panel.get(key)
-    if isinstance(b, dict):
-        ys = [int(y) for y in b if int(y) <= yr]
-        return b[str(max(ys))] if ys else None
-    return b
-
-
-def load_universe():
-    wb = json.load(open(SRC / "wb_anchored.json"))
-    fp = json.load(open(SRC / "wgi_full_panel.json"))
-    vd = json.load(open(SRC / "vdem_longrun.json"))
-    csv_rows = {}  # iso3 -> latest-year row (prefer Track 1)
-    for r in csv.DictReader(open(CSV_PATH)):
-        if int(r["year"]) != YEAR:
-            continue
-        iso = r["iso3"]
-        if iso not in csv_rows or r["Track"] == "1":
-            csv_rows[iso] = r
-    names = {}
-    for nm, v in wb.items():
-        if v.get("iso3"):
-            names[v["iso3"]] = nm
-    for iso, r in csv_rows.items():
-        names.setdefault(iso, r["country"])
-    for iso, v in vd.items():
-        if isinstance(v, dict) and v.get("name"):
-            names.setdefault(iso, v["name"])
-    names.update(NAME_FIX)
-    return wb, fp, csv_rows, names
-
-
-def assemble(iso, name, wb, fp, csv_rows):
-    """Return (indicators, tier_label) using the best available source. wb countries use the canonical API."""
-    if name in wb:
-        ind = ds.get_indicators(name, YEAR)
-        return (ind or {}), "A"
-    panel = fp.get(iso, {})
-    ind = {}
-    r = csv_rows.get(iso)
-    if r:  # tier B: full indicator family
-        for key, col in [("gov_effectiveness", "GovEff"), ("rule_of_law", "RuleLaw"),
-                         ("regulatory_quality", "RegQual"), ("control_of_corruption", "CtrlCorr"),
-                         ("cpi", "CPI"), ("gii", "GII"), ("rd_pct_gdp", "RD"), ("eci", "ECI"),
-                         ("education_index", "EduIdx"), ("life_expectancy_index", "LifeExpIdx")]:
-            v = _f(r.get(col))
-            if v is not None:
-                ind[key] = v
-    else:  # tier C: WGI institutions only
-        for key, col in [("gov_effectiveness", "GE"), ("rule_of_law", "RL"),
-                         ("regulatory_quality", "RQ"), ("control_of_corruption", "CC")]:
-            v = _panel_yr(panel, col)
-            if v is not None:
-                ind[key] = v
-    # shared from wgi_full_panel: gdp / political stability / voice / rents
-    for key, col in [("gdp_per_capita_ppp", "gdp"), ("political_stability", "PV"),
-                     ("voice_accountability", "VA"), ("resource_rents_pct_gdp", "rents")]:
-        v = _panel_yr(panel, col)
-        if v is not None and key not in ind:
-            ind[key] = v
-    return ind, ("B" if r else "C")
 
 
 def chips_for(ind, tier, residual, spread, weakest, present):
@@ -283,7 +194,7 @@ def build():
 
     scored = []  # (iso, name, ind, pillars, mi, tier, source)
     points = []
-    for iso in iso_universe:
+    for iso in sorted(iso_universe):  # deterministic iteration (set order is not stable across runs)
         name = names.get(iso)
         if not name:
             continue
@@ -332,7 +243,10 @@ def build():
         })
         json.dump(full, open(OUT / "country" / f"{slug}.json", "w"), indent=1)
 
-    # full-coverage countries first (comparable), then partial - each by MI desc
+    # full-coverage countries first (comparable), then partial - each by MI desc.
+    # slug is the stable tiebreak so equal-MI countries (e.g. Denmark/Ireland) have
+    # a deterministic order run-to-run.
+    summaries.sort(key=lambda r: r["slug"])
     summaries.sort(key=lambda r: (r["coverage"]["present"] == 5, r["mi"]), reverse=True)
     json.dump(summaries, open(OUT / "countries.json", "w"), indent=1)
     json.dump({"built": date.today().isoformat(), "count": len(summaries), "engine": "MI v3.3",

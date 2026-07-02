@@ -23,7 +23,8 @@ def main():
 
     n = 0
     for c in full:
-        nearest = sorted((o for o in full if o["slug"] != c["slug"]), key=lambda o: dist(c, o))[:5]
+        nearest = sorted((o for o in full if o["slug"] != c["slug"]),
+                         key=lambda o: (dist(c, o), o["slug"]))[:5]  # slug tiebreak for determinism
         block = [{"slug": o["slug"], "name": o["name"], "mi": o["mi"], "tier": o["tier"]} for o in nearest]
         fp = OUT / "country" / f"{c['slug']}.json"
         data = json.load(open(fp))

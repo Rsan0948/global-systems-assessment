@@ -34,7 +34,7 @@ def main():
     ap = argparse.ArgumentParser(description="Compare two countries under the MI")
     ap.add_argument("--a", required=True)
     ap.add_argument("--b", required=True)
-    ap.add_argument("--year", type=int)
+    ap.add_argument("--year", type=int, default=2024)
     args = ap.parse_args()
 
     sa = score_country(_load(args.a, args.year))

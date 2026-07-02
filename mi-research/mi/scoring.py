@@ -367,9 +367,12 @@ def score_country(indicators: dict, weights: dict = None, event_year=None) -> di
 def load_country_data(country_name: str, year: int = None) -> Optional[dict]:
     """Load country indicator data via the internal Data API (single source).
 
-    Indicators are assembled live from the canonical sources (mi.datasource);
-    there are no per-country copy files to keep in sync. Falls back to a legacy
-    data/countries/<name>.json only if the Data API has nothing for that country.
+    Indicators are assembled live from the canonical sources (mi.datasource).
+    For countries outside the curated Data API set, falls back to the full
+    multi-tier assembly (mi.panel), which combines the mi_pipeline panel +
+    wgi_full_panel — the same path build_site_dataset uses — so any country the
+    site covers is scoreable from the CLIs too (e.g. Norway). No per-country
+    copy files.
     """
     from mi import datasource  # lazy import to avoid any import cycle
 
@@ -388,13 +391,6 @@ def load_country_data(country_name: str, year: int = None) -> Optional[dict]:
                 },
             }
 
-    # Legacy fallback: a static country file (deprecated; the Data API is canonical)
-    filepath = Path(__file__).parent.parent / "data" / "countries" / (
-        country_name.lower().replace(" ", "_") + ".json")
-    if not filepath.exists():
-        return None
-    with open(filepath) as f:
-        data = json.load(f)
-    if year is not None:
-        return data.get("indicators_by_year", {}).get(str(year))
-    return data
+    # Full-coverage fallback: multi-tier panel assembly (mi_pipeline + wgi_full_panel).
+    from mi import panel
+    return panel.indicators_for(country_name, year or panel.YEAR)
