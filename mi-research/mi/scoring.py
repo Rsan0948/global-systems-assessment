@@ -86,12 +86,16 @@ def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log
 
 def normalize_resource_rents(rents_pct: float) -> float:
     """Invert resource rents: lower dependence = higher score."""
-    return 1.0 - min(rents_pct / LENS["resource_rents_full_dependence_pct"], 1.0)
+    return max(0.0, min(1.0, 1.0 - min(rents_pct / LENS["resource_rents_full_dependence_pct"], 1.0)))
 
 
 def normalize_oda(oda_pct: float) -> float:
-    """Invert ODA: lower dependence = higher score."""
-    return 1.0 - min(oda_pct / LENS["oda_full_dependence_pct"], 1.0)
+    """Invert ODA: lower dependence = higher score.
+
+    Net ODA can be negative (a country repays/donates more than it receives);
+    clamp so that does not push P4 above 1.
+    """
+    return max(0.0, min(1.0, 1.0 - min(oda_pct / LENS["oda_full_dependence_pct"], 1.0)))
 
 
 def normalize_fsi(fsi: float) -> float:
