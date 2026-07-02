@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "case_name": "Northern Ireland / Good Friday Agreement (fragmentation prevention)",
+    "case_id": "case14",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "fragmentation_prevention",
+    "geographic_region": "United Kingdom / Northern Ireland",
+    "time_period": "1998 -> 2024",
+    "entities": [
+      "Northern Ireland (UK)"
+    ],
+    "key_test": "Tier 3 porosity inside a high-P1 sovereign; Safeguard F (economic under-delivery) divergence without return to war; Safeguard I / Mod10 (Direct Rule backstop catches every executive collapse); Mod3 (no timing claims).",
+    "round": "baseline_run4",
+    "notes": "Run4 Case 14 -- the only prevention case. WGI cited on World Bank estimate scale (-2.5 to +2.5). UK existing-dataset P1=0.865 used for ordinal placement. Most pillar values ordinal/estimated, not cardinal."
+  },
+  "pre_event": {
+    "time_point": "1998",
+    "event_description": "Good Friday Agreement: consociational power-sharing, cross-border bodies, and three-strand architecture -- textbook Tier 3 porosity inside the high-P1 UK.",
+    "entities": {
+      "Northern Ireland (UK)": {
+        "indicators": {
+          "gov_effectiveness": 88.1,
+          "rule_of_law": 89.8,
+          "regulatory_quality": 84.5698,
+          "cpi": null,
+          "control_of_corruption": 90.3093,
+          "gii": null,
+          "rd_pct_gdp": 1.5478,
+          "eci": 1.313,
+          "education_index": 0.7775,
+          "life_expectancy_index": 0.8812,
+          "gdp_per_capita_ppp": 23689.2366,
+          "resource_rents_pct_gdp": 0.172,
+          "oda_pct_gni": null,
+          "political_stability": 84.4852,
+          "fsi": null,
+          "voice_accountability": 79.7437
+        },
+        "context": {
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "none",
+          "has_devolution": true,
+          "has_power_sharing": true,
+          "executive_collapses": 8,
+          "regional_gdp_divergence": 0.2,
+          "fragmentation_mechanism": "consociational_power_sharing",
+          "prior_porosity_period": true,
+          "external_backstop": true,
+          "backstop_details": "UK Direct Rule: every Stormont executive collapse is caught by reversion to Direct Rule from Westminster -- the clearest single illustration of Mod10/Safeguard I (porosity-with-backstop)."
+        },
+        "data_gaps": [
+          "control_of_corruption",
+          "regulatory_quality",
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp (NI figures vary by measure: GBP25,399 GDP/cap 2024 vs GBP32,944 on a different 2023 basis)",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "Indicators are UK sovereign WGI estimates (RoL 1.27, GE 1.18). NI GDP per capita ~20% below the UK average; consistently the UK's lowest-productivity region; highest economic inactivity (26.8% vs 20.8% UK, late 2023); depends on a UK subvention of ~GBP10-11bn (about a quarter of its output). 'executive_collapses' = at least 8 Stormont suspensions covering >40% of the institution's existence.",
+        "_scale_corrections": [
+          {
+            "indicator": "gov_effectiveness",
+            "original": 1.18,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 88.1
+          },
+          {
+            "indicator": "rule_of_law",
+            "original": 1.27,
+            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
+            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
+            "corrected": 89.8
+          }
+        ],
+        "_hydrated_from_world": {
+          "source_slug": "united_kingdom",
+          "source_year": "1998",
+          "target_year": 1998,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "regulatory_quality",
+              "value": 84.5698
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 90.3093
+            },
+            {
+              "indicator": "political_stability",
+              "value": 84.4852
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 79.7437
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 23689.2366
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 0.172
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 1.5478
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.7775
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8812
+            },
+            {
+              "indicator": "eci",
+              "value": 1.313
+            }
+          ]
+        }
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Managed instability, not collapse: executive collapses recur but are survivable; high P1 -> survival regardless of tier.",
+      "basis": "Tier 3 porosity inside high-P1 UK; Mod3 -- predict recurrence and survivability, NOT dates.",
+      "falsification_condition": "Permanent breakdown / return to war / territorial loss."
+    },
+    "b_violence": {
+      "prediction": "Violence de-escalates dramatically; prevention works.",
+      "risk_level": "low",
+      "agency_note": "Mod8: predicts RISK. Prior violence legacy now de-escalated.",
+      "falsification_condition": "Return to sustained political violence."
+    },
+    "c_convergence": {
+      "prediction": "Persistent economic under-delivery / divergence (Safeguard F) -- yet no return to war.",
+      "basis": "NI ~20% below UK GDP/cap, lowest productivity, GBP10-11bn subvention.",
+      "falsification_condition": "Economic convergence to UK average, or divergence triggering war."
+    },
+    "d_failure_dimension": {
+      "prediction": "Economic (P4) under-delivery is the binding strain, not institutional collapse.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Failure driven by a non-economic dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "No territorial loss; UK never permanently withdraws devolution (Mod9 not applicable).",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Territorial loss or permanent withdrawal of devolution."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A -- not a democratic-transition reversal case.",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "Tier 3 porosity (GFA consociational power-sharing, cross-border bodies, three-strand architecture).",
+      "tier": 3,
+      "falsification_condition": "Mechanism is military (Tier 1) or legal-only (Tier 2)."
+    },
+    "h_substate_turbulence": {
+      "prediction": "Recurrent executive (Stormont) collapses with Safeguard F economic divergence, each caught by the Direct Rule backstop (Mod10/Safeguard I). Mod3: predict recurrence + survivability, not timing.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "A collapse not caught by the backstop, leading to fragmentation."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2007",
+      "2020",
+      "2024"
+    ],
+    "entities": {
+      "Northern Ireland (UK)": {
+        "indicators_by_year": {},
+        "outcome_summary": "Prevention worked: violence de-escalated dramatically and territorial integrity retained. Stormont suspended on at least eight occasions covering >40% of the institution's existence; every collapse caught by the UK Direct Rule backstop. Persistent Safeguard F economic divergence (~20% below UK, lowest productivity, GBP10-11bn subvention) without return to war.",
+        "key_events": [
+          "Year 2000 first suspension; longest single suspension 2002-2007 (4.5 years of Direct Rule)",
+          "2017-2020 suspension; 2022-2024 suspension (DUP boycott over the Northern Ireland Protocol)",
+          "3 February 2024: power-sharing restored with Sinn Fein's Michelle O'Neill as the first nationalist First Minister, ending the two-year DUP boycott",
+          "Economic inactivity 26.8% (vs 20.8% UK) in late 2023; GBP10-11bn annual UK subvention (~quarter of output)"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Eight+ suspensions over >40% of the institution's life, yet power-sharing restored 3 Feb 2024 -- managed instability, survived.",
+      "explanation": "High-P1 sovereign produced recurrent-but-survivable collapses, exactly as predicted; Mod3 timing-agnostic framing held."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Violence de-escalated dramatically; prevention worked.",
+      "explanation": "Prior-violence legacy de-escalated without recurrence, as predicted."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "NI ~20% below UK GDP/cap, lowest-productivity region, GBP10-11bn subvention -- textbook Safeguard F divergence, yet no return to war.",
+      "explanation": "Persistent economic divergence realized without triggering violence, as predicted."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "Lowest productivity + highest economic inactivity + subvention dependence -- the strain is economic, not institutional collapse.",
+      "explanation": "P4 under-delivery is the binding dimension, as predicted."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "No territorial loss; UK never withdrew devolution permanently.",
+      "explanation": "Mod9 correctly not applicable; no fragmentation."
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case."
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "GFA consociational power-sharing, cross-border bodies, three-strand architecture = textbook Tier 3 porosity.",
+      "explanation": "Mechanism classified as Tier 3, as predicted."
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "The repeated executive collapses were caught every time by the UK's Direct Rule backstop.",
+      "explanation": "Clearest single illustration of Mod10/Safeguard I (porosity-with-backstop); Safeguard F divergence held safely because the backstop caught each failure."
+    }
+  },
+  "analysis": {
+    "overall_assessment": "The framework's prevention prediction is confirmed: Tier 3 porosity inside a high-P1 sovereign produced recurrent, survivable executive collapses and de-escalated violence. The single clearest illustration of porosity-with-backstop in Run 4.",
+    "safeguards_triggered": [
+      "F (economic under-delivery / divergence, ~20% below UK)",
+      "I (porosity-with-backstop, Mod10: UK Direct Rule)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Tier 3 prevention porosity survives chronic executive collapse only because a hard backstop (Direct Rule) catches every failure; Mod3 discipline is essential -- predict recurrence and survivability, not when.",
+    "proposed_framework_modifications": [
+      "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard.",
+      "Reaffirm Mod3 (no timing claims) for prevention cases."
+    ],
+    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check."
+  }
+}

@@ -12,10 +12,13 @@ python scripts/score_country.py --country "Estonia" --year 2024
 python scripts/compare_countries.py --a "Estonia" --b "Russia" --year 2024
 
 # Run retrodiction protocol on a case study
-python scripts/run_retrodiction.py --case case_studies/in_progress/your_case.json
+python scripts/run_retrodiction.py --case data/case_studies/completed/case21_haiti_dominican_republic.json
+
+# Validate the case-study database (scorecard across completed cases)
+python scripts/run_retrodiction.py --validate data/case_studies/completed/
 
 # Find countries with similar configurations
-python scripts/find_similar.py --country "Ukraine" --year 2020
+python scripts/find_similar.py --country "Venezuela" --year 2023
 ```
 
 ## Project Structure
@@ -23,7 +26,7 @@ python scripts/find_similar.py --country "Ukraine" --year 2020
 ```
 mi-research/
 ├── RESEARCH.md              # Standing instructions for AI research agents
-├── FRAMEWORK.md             # Complete MI specification (source of truth)
+├── MASTER_REFERENCE_ARCHITECTURE.md  # Complete MI specification — Section 4 (source of truth; the old "FRAMEWORK.md" reference resolves here)
 ├── mi/                      # Core scoring and diagnostic engine
 │   ├── constants.py         # Weights, thresholds, indicator specs
 │   ├── scoring.py           # MI scoring engine
@@ -52,7 +55,20 @@ mi-research/
 ## Current Status
 
 - **MI Version:** LIVE (with Mods 4, 8 and Safeguards A-I)
-- **Validated Cases:** 20 modern + 5 ancient (proxy)
-- **Clean Confirmation Rate:** ~78% (range 62-85%)
-- **Directional Accuracy:** ~100% (zero falsifications)
-- **P1 Ordinality:** 20/20 cases confirmed
+- **Validated Cases:** 20 modern + 5 ancient (proxy), now backed by structured JSON
+  records in `data/case_studies/completed/`; **+5 expansion cases (Batch 1, cases
+  21-25)** scored on fresh real data — see `live/runs/run7_expansion_batch1_cases21-25.md`.
+- **Clean Confirmation Rate:** ~78% (range 62-85%) on the baseline; Batch-1 ~75%.
+- **Directional Accuracy:** ~100% (zero falsifications) — note this is partly
+  structural (directional claims are hard to falsify) and partly redundant with WGI standalone.
+- **P1 Ordinality:** 20/20 baseline; confirmed in every Batch-1 case where the gap
+  exceeded the WGI margin (and correctly abstained, per Mod4, where it did not).
+
+### Recent work (expansion Batch 1, 2026-06-27)
+- **Rwanda architectural decision** settled (P1 kept composite, not decomposed):
+  `docs/architectural_decisions/rwanda_p1_composite_vs_decomposed.md`
+  (reproducible experiment in `sandbox/experiments/rwanda_p1_decomposition/`).
+- **New country data** (real WGI 2025-anchored / UNDP HDR 2025 / WB WDI / FSI 2024)
+  for Haiti, Dominican Republic, Venezuela, Colombia, DR Congo, Rwanda.
+- **WGI 2025 vintage note:** new cases use 2025-anchored 0-100 scores; the legacy
+  baseline used percentile ranks. Do not assert an ordinal across that vintage boundary.

@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "case_name": "Venezuela (rentier capture and collapse)",
+    "case_id": "case22",
+    "author": "expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "economic_crisis",
+    "geographic_region": "South America",
+    "time_period": "1998 -> 2023",
+    "entities": [
+      "Venezuela"
+    ],
+    "key_test": "Safeguard E (rentier capture) + resource-dependence-compounds-weakness; GDP-gap measurement trap.",
+    "round": "expansion_batch1",
+    "notes": "GDP per capita unpublished after 2011 (real gap, not interpolated)."
+  },
+  "pre_event": {
+    "time_point": "1998",
+    "event_description": "Pre-Chavez baseline before two decades of rentier capture.",
+    "entities": {
+      "Venezuela": {
+        "indicators": {
+          "gov_effectiveness": 33.43,
+          "rule_of_law": 43.88,
+          "regulatory_quality": 42.87,
+          "cpi": null,
+          "control_of_corruption": 31.63,
+          "gii": null,
+          "rd_pct_gdp": null,
+          "eci": 0.542,
+          "education_index": 0.536,
+          "life_expectancy_index": 0.8103,
+          "gdp_per_capita_ppp": 14567.66,
+          "resource_rents_pct_gdp": 9.06,
+          "oda_pct_gni": 0.05,
+          "political_stability": 57.33,
+          "fsi": null,
+          "voice_accountability": 54.65
+        },
+        "context": {
+          "population": 28300000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "neighbor_threat_level": "none",
+          "resource_rents_pct_gdp": 23.84,
+          "resource_rents_pct_revenue": 60.0,
+          "is_democratic_transition": false,
+          "growth_trajectory": "declining",
+          "fragmentation_mechanism": "authoritarian_reversal",
+          "prior_porosity_period": false
+        },
+        "data_gaps": [
+          "gii",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
+        "_hydrated_from_world": {
+          "source_slug": "venezuela",
+          "source_year": "1998",
+          "target_year": 1998,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "voice_accountability",
+              "value": 54.65
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.536
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8103
+            },
+            {
+              "indicator": "eci",
+              "value": 0.542
+            }
+          ]
+        }
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Sharp negative trajectory",
+      "basis": "Falling P1 + rentier capture on commodity shock",
+      "falsification_condition": "Venezuela maintains/improves trajectory"
+    },
+    "b_violence": {
+      "prediction": "Elevated repression/violence RISK",
+      "risk_level": "critical",
+      "agency_note": "Mod8",
+      "falsification_condition": "no repression/exodus"
+    },
+    "c_convergence": {
+      "prediction": "Divergence (downward from own path)",
+      "basis": "P1 collapse",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "P1 collapse + rentier P4 distortion; composite MI will UNDERSTATE collapse while GDP unpublished",
+      "note": "key measurement caveat",
+      "falsification_condition": ""
+    },
+    "e_fragment_count": {
+      "prediction": "No territorial fragmentation; state stays intact/authoritarian",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Venezuela territorially fragments"
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A (not a democratic transition)",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "Authoritarian reversal",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2018",
+      "2023"
+    ],
+    "entities": {
+      "Venezuela": {
+        "indicators_by_year": {
+          "2018": {
+            "gov_effectiveness": 20.31,
+            "rule_of_law": 17.27,
+            "regulatory_quality": 21.01,
+            "cpi": null,
+            "control_of_corruption": 15.57,
+            "gii": null,
+            "rd_pct_gdp": null,
+            "eci": null,
+            "education_index": 0.702,
+            "life_expectancy_index": 0.81,
+            "gdp_per_capita_ppp": null,
+            "resource_rents_pct_gdp": 11.85,
+            "oda_pct_gni": 0.16,
+            "political_stability": 40.87,
+            "fsi": null
+          },
+          "2023": {
+            "gov_effectiveness": 23.49,
+            "rule_of_law": 19.09,
+            "regulatory_quality": 25.09,
+            "cpi": null,
+            "control_of_corruption": 16.29,
+            "gii": null,
+            "rd_pct_gdp": null,
+            "eci": null,
+            "education_index": 0.683,
+            "life_expectancy_index": 0.808,
+            "gdp_per_capita_ppp": null,
+            "resource_rents_pct_gdp": 11.85,
+            "oda_pct_gni": 0.39,
+            "political_stability": 47.04,
+            "fsi": 89.0
+          }
+        },
+        "outcome_summary": "P1 0.380->0.210; spread ->0.66; 88% GDP collapse 2013-2020 (IMF); ~7.7M emigrants; intact authoritarian state.",
+        "key_events": [
+          "88% GDP collapse",
+          "hyperinflation",
+          "mass exodus",
+          "Maduro entrenchment"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "P1/P5 collapse",
+      "explanation": "Direction confirmed."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "repression, mass exodus",
+      "explanation": "Elevated risk realized."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "spread 0.42->0.66",
+      "explanation": ""
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "P4 gap-inflated to 0.87; composite MI 0.55->0.49 masks depth",
+      "explanation": "Direction right; composite MI magnitude misleading due to unpublished GDP - coded partial, limitation stated."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "intact authoritarian state",
+      "explanation": "No fragmentation, as predicted."
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "authoritarian reversal entrenched",
+      "explanation": ""
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": ""
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Confirms rentier-collapse thesis; surfaces GDP-gap measurement trap.",
+    "safeguards_triggered": [
+      "E"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [
+      "missing-GDP gap can flatter a collapsing state's composite MI"
+    ],
+    "what_this_case_uniquely_reveals": "Missing data is information: unpublished GDP IS the collapse signal.",
+    "proposed_framework_modifications": [
+      "Flag/down-weight MI when P4 lacks its GDP component"
+    ],
+    "baseline_impact": "Proposed flag is additive; not yet implemented; baseline unchanged."
+  }
+}

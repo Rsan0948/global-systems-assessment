@@ -1,0 +1,356 @@
+{
+  "metadata": {
+    "case_name": "Singapore vs. Malaysia",
+    "case_id": "case07",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "traditional_fragmentation",
+    "geographic_region": "Southeast Asia",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Singapore",
+      "Malaysia"
+    ],
+    "key_test": "The framework's clean proof-of-concept for complexity-capacity matching: a resource-zero city-state with maximal institutions produces the dataset's top trajectory; high P1 predicts a non-violent separation. Safeguard E checked and explicitly NOT triggered (Malaysia rents below the rentier-capture band).",
+    "round": "baseline_run2",
+    "notes": "Singapore/Malaysia are the supplied dataset anchors. WGI legacy-scale values and pillar/MI scores recorded in notes; resource rents are the load-bearing Safeguard-E figure."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Singapore's expulsion from Malaysia (Aug 9, 1965), scored on a 1996 baseline over 1996-2024.",
+    "entities": {
+      "Singapore": {
+        "indicators": {
+          "gov_effectiveness": 94.7718,
+          "rule_of_law": 81.4286,
+          "regulatory_quality": 84.2606,
+          "cpi": null,
+          "control_of_corruption": 87.4922,
+          "gii": null,
+          "rd_pct_gdp": 1.3199,
+          "eci": 0.956,
+          "education_index": 0.6948,
+          "life_expectancy_index": 0.8698,
+          "gdp_per_capita_ppp": 36872.7036,
+          "resource_rents_pct_gdp": 0.0,
+          "oda_pct_gni": null,
+          "political_stability": 85.8876,
+          "fsi": null,
+          "voice_accountability": 62.027
+        },
+        "context": {
+          "under_external_admin": false,
+          "is_island": true,
+          "neighbor_threat_level": "none",
+          "is_democratic": false,
+          "fragmentation_mechanism": "expulsion / negotiated separation",
+          "n_successor_states": 2,
+          "population": null
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "WGI Rule of Law 1996 ~1.4 (avg 1.46; legacy scale). Govt Effectiveness avg 2.21, 2024 = 2.28 (world #1). Political Stability avg 1.27. Natural resource rents ~0% (anti-rentier). Net donor by 1996. MI (existing dataset): 0.790 (1996) -> 0.939 (2024); P1 = 0.945, P4 = 0.988 (highest). Uniformly high pillars; narrow spread at the TOP (inverse of South Sudan's narrow spread at the floor).",
+        "_hydrated_from_world": {
+          "source_slug": "singapore",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 94.7718
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 81.4286
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 84.2606
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 87.4922
+            },
+            {
+              "indicator": "political_stability",
+              "value": 85.8876
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 62.027
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 36872.7036
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 1.3199
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.6948
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.8698
+            },
+            {
+              "indicator": "eci",
+              "value": 0.956
+            }
+          ]
+        }
+      },
+      "Malaysia": {
+        "indicators": {
+          "gov_effectiveness": 66.3729,
+          "rule_of_law": 65.645,
+          "regulatory_quality": 62.1236,
+          "cpi": null,
+          "control_of_corruption": 54.9767,
+          "gii": null,
+          "rd_pct_gdp": 0.2165,
+          "eci": 0.668,
+          "education_index": 0.5547,
+          "life_expectancy_index": 0.805,
+          "gdp_per_capita_ppp": 11709.267,
+          "resource_rents_pct_gdp": 12.7125,
+          "oda_pct_gni": -0.4748,
+          "political_stability": 72.3303,
+          "fsi": null,
+          "voice_accountability": 46.2366
+        },
+        "context": {
+          "under_external_admin": false,
+          "neighbor_threat_level": "none",
+          "is_democratic": true,
+          "fragmentation_mechanism": "parent state of 1965 separation",
+          "n_successor_states": 2
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "notes": "WGI Rule of Law 1996 = 0.50 (its own max; avg 0.25, 2024 = 0.35; legacy scale). Govt Effectiveness 1996 = 0.54 (its own min; avg 0.97). Natural resource rents avg 17.6% (1970-2021); ~7-18% in the 1996 era; 2021 = 6.92% - BELOW the 25-30% Safeguard E threshold. Modest ODA recipient. MI: 0.376 (1996) -> 0.518 (2024), Tier 3. Derived P1 approx 0.65; moderate across the board.",
+        "_hydrated_from_world": {
+          "source_slug": "malaysia",
+          "source_year": "1996",
+          "target_year": 1996,
+          "note": "null slots filled from World Bank / HDR world panel",
+          "filled": [
+            {
+              "indicator": "gov_effectiveness",
+              "value": 66.3729
+            },
+            {
+              "indicator": "rule_of_law",
+              "value": 65.645
+            },
+            {
+              "indicator": "regulatory_quality",
+              "value": 62.1236
+            },
+            {
+              "indicator": "control_of_corruption",
+              "value": 54.9767
+            },
+            {
+              "indicator": "political_stability",
+              "value": 72.3303
+            },
+            {
+              "indicator": "voice_accountability",
+              "value": 46.2366
+            },
+            {
+              "indicator": "gdp_per_capita_ppp",
+              "value": 11709.267
+            },
+            {
+              "indicator": "resource_rents_pct_gdp",
+              "value": 12.7125
+            },
+            {
+              "indicator": "oda_pct_gni",
+              "value": -0.4748
+            },
+            {
+              "indicator": "rd_pct_gdp",
+              "value": 0.2165
+            },
+            {
+              "indicator": "education_index",
+              "value": 0.5547
+            },
+            {
+              "indicator": "life_expectancy_index",
+              "value": 0.805
+            },
+            {
+              "indicator": "eci",
+              "value": 0.668
+            }
+          ]
+        }
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Singapore vastly better trajectory (massive P1 gap).",
+      "basis": "Wide P1 gap well above margin of error.",
+      "falsification_condition": "Malaysia matches or exceeds Singapore's trajectory."
+    },
+    "b_violence": {
+      "prediction": "1965 expulsion was peaceful - high P1 predicts non-violent separation.",
+      "risk_level": "low",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Separation was violent."
+    },
+    "c_convergence": {
+      "prediction": "Divergence (Singapore pulls further ahead).",
+      "basis": "Wide and widening P1 gap.",
+      "falsification_condition": "Convergence in outcomes."
+    },
+    "d_failure_dimension": {
+      "prediction": "Singapore success = P1 institutions; Malaysia drag = moderate resource dependence.",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Drivers reversed."
+    },
+    "e_fragment_count": {
+      "prediction": "Fragment count is 2, both above the capacity gate.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Either fragment falls below the capacity gate and collapses."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Singapore": {
+        "indicators_by_year": {
+          "2024": {
+            "gov_effectiveness": null
+          }
+        },
+        "outcome_summary": "MI 0.790 (1996) -> 0.939 (2024); P1 = 0.945; Government Effectiveness the world's highest at 2.28 (2024). Dataset's best trajectory from zero natural endowment.",
+        "key_events": [
+          "top-tier MI achieved with zero resource endowment"
+        ]
+      },
+      "Malaysia": {
+        "indicators_by_year": {
+          "2024": {}
+        },
+        "outcome_summary": "MI 0.376 (1996) -> 0.518 (2024); plateaued in Tier 3. Resource rents 2021 = 6.92%.",
+        "key_events": [
+          "Tier 3 plateau"
+        ]
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Singapore 0.939 vs Malaysia 0.518.",
+      "explanation": "Massive P1 gap mapped to vastly divergent trajectories as predicted."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "The 1965 separation was peaceful.",
+      "explanation": "High P1 consistent with a negotiated, non-violent outcome."
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Gap maintained/widened (~0.41 in 1996, ~0.42 in 2024).",
+      "explanation": "Divergence as predicted."
+    },
+    "d_failure_dimension": {
+      "result": "CONFIRMED",
+      "evidence": "Singapore via institutions; Malaysia plateaued in Tier 3.",
+      "explanation": "Drivers matched: institutional quality, not endowment, drove the trajectory."
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "2 fragments, both above the capacity gate.",
+      "explanation": "As predicted; neither fell below the gate."
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No reversal-risk prediction made for this case."
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No suppression-mechanism prediction made for this case."
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No substate-turbulence prediction made for this case."
+    }
+  },
+  "result_coding_reference": {
+    "CONFIRMED": "Prediction matched outcome on the specific dimension predicted",
+    "PARTIALLY_CONFIRMED": "Direction correct but magnitude, form, or timing significantly different",
+    "FALSIFIED": "Prediction contradicted by outcome",
+    "NOT_APPLICABLE": "Prediction type not relevant to this case"
+  },
+  "analysis": {
+    "overall_assessment": "5 applicable predictions: 5 CONFIRMED, 0 PARTIAL, 0 FALSIFIED. Cleanest confirmation in Run 2. Safeguard E was checked and explicitly NOT triggered (Malaysia rents ~7-18%, below the rentier-capture band).",
+    "safeguards_triggered": [],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Singapore is the framework's complexity-control flagship and genuine proof-of-concept for complexity-capacity matching: with zero natural endowment, institutional quality alone (P1 = 0.945, world-highest Government Effectiveness 2.28) produced the dataset's best trajectory. The MI weights P1 at 34% and Singapore maxes exactly that pillar. Humility note: small scale and city-state geography reduce the complexity its capacity must match - a best-case rather than a generalizable template.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; confirms the existing weighting without proposing a modification."
+  }
+}

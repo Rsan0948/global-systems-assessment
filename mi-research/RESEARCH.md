@@ -109,6 +109,26 @@ The weights are correlation-derived from the data itself. P1 at 34% (up from ini
 - P1 ordinality: 20/20 modern cases
 - LIVE outperforms STATIC in every comparison
 
+### Expansion — Batch 1 (cases 21-25, 2026-06-27)
+- **Architectural decision settled first:** P1 kept as a single composite (NOT
+  decomposed into capacity/accountability). Evidence: in the 2025-anchored WGI,
+  Rwanda's capacity-accountability gap is +0.030 — inside the Mod4 margin — and
+  decomposition changes no ordinal. See
+  `docs/architectural_decisions/rwanda_p1_composite_vs_decomposed.md` (reproducible
+  experiment in `sandbox/experiments/rwanda_p1_decomposition/`). The engine and the
+  20-case baseline are therefore UNCHANGED.
+- **Scored on fresh real data** (WGI 2025-anchored / UNDP HDR 2025 / WB WDI / FSI 2024,
+  committed as `data/countries/*.json`): 21 Haiti/DR, 22 Venezuela, 23 Colombia,
+  24 DRC/Rwanda, 25 Rwanda. Writeup: `live/runs/run7_expansion_batch1_cases21-25.md`.
+  Batch scorecard ~75% clean, 0 falsifications; Safeguard I (Colombia) and the
+  Mod4-then-divergence sequence (DRC/Rwanda 1996) both validated. Open prospective
+  forecast: Rwanda latent reversal risk (voice deficit).
+- **Structured JSON case records** now exist in `data/case_studies/completed/` for the
+  20 baseline cases (transcribed from `live/runs/`) plus the 5 new cases — the README
+  no longer over-promises them.
+- **WGI 2025 vintage break:** new cases use anchored 0-100 scores; the legacy baseline
+  used percentile ranks. Never assert an ordinal across that boundary.
+
 ---
 
 ## What Needs Doing

@@ -63,6 +63,53 @@ def normalize_fsi(fsi: float) -> float:
     return 1.0 - (fsi / 120.0)
 
 
+# Indicators the engine expects on a 0-100 scale (WGI percentile/anchored, CPI, GII).
+# A raw WGI *estimate* (~-2.5..+2.5 z-score) or a legacy 0-10 CPI silently produced
+# garbage before this guard existed: score/100 turned RoL=1.53 into 0.0153 and let
+# negative z-scores through as negative "quality". See detect_scale_issues.
+_WGI_0_100 = ("gov_effectiveness", "rule_of_law", "regulatory_quality",
+              "control_of_corruption", "political_stability", "voice_accountability")
+
+
+def detect_scale_issues(indicators: dict) -> tuple[list, list]:
+    """Validate that 0-100-scaled indicators are actually on that scale.
+
+    Returns (hard_errors, soft_warnings):
+      - hard_errors: values outside [0, 100] — impossible on the documented
+        scale, almost always a raw WGI estimate (z-score) or other mis-scaled
+        entry. The scorer refuses to run on these rather than emit garbage.
+      - soft_warnings: in-range but suspicious signatures — a WGI value <= 3
+        (real functioning states are essentially never below the 3rd percentile,
+        so this is almost certainly a raw estimate) or a CPI <= 10 (almost
+        certainly the legacy 0-10 index; multiply by 10 for 0-100). These cannot
+        be auto-rejected without risking a false positive on a genuinely
+        near-floor state, so they are surfaced, not fatal.
+    """
+    hard, soft = [], []
+    for k in _WGI_0_100:
+        v = indicators.get(k)
+        if v is None:
+            continue
+        if v < 0 or v > 100:
+            hard.append(f"{k}={v} is outside the WGI 0-100 domain "
+                        f"(looks like a raw WGI estimate/z-score; expected "
+                        f"percentile rank or anchored 0-100)")
+        elif v <= 3:
+            soft.append(f"{k}={v} is suspiciously low for a WGI 0-100 score "
+                        f"(likely a raw WGI estimate/z-score mis-entered)")
+    cpi = indicators.get("cpi")
+    if cpi is not None:
+        if cpi < 0 or cpi > 100:
+            hard.append(f"cpi={cpi} is outside the CPI 0-100 domain")
+        elif cpi <= 10:
+            soft.append(f"cpi={cpi} is suspiciously low (likely the legacy "
+                        f"0-10 CPI; multiply by 10 for the 0-100 scale)")
+    gii = indicators.get("gii")
+    if gii is not None and (gii < 0 or gii > 100):
+        hard.append(f"gii={gii} is outside the GII 0-100 domain")
+    return hard, soft
+
+
 def calculate_pillar_scores(indicators: dict) -> dict:
     """
     Calculate pillar scores from raw indicator values.
@@ -74,7 +121,16 @@ def calculate_pillar_scores(indicators: dict) -> dict:
     Returns:
         dict with pillar scores (P1-P5), each 0-1 scale.
         Also includes metadata about which indicators were available.
+
+    Raises:
+        ValueError: if any 0-100-scaled indicator is outside [0, 100] (a
+            mis-scaled input the engine must not silently normalize into
+            garbage). See detect_scale_issues.
     """
+    hard, soft = detect_scale_issues(indicators)
+    if hard:
+        raise ValueError("indicator scale error(s): " + "; ".join(hard))
+
     result = {}
     gaps = []
 
@@ -171,6 +227,7 @@ def calculate_pillar_scores(indicators: dict) -> dict:
     result["P5"] = sum(p5_values) / len(p5_values) if p5_values else None
 
     result["gaps"] = gaps
+    result["scale_warnings"] = soft
     return result
 
 
@@ -255,6 +312,7 @@ def score_country(indicators: dict, weights: dict = None) -> dict:
         "configuration": config,
         "tier": get_tier(mi_score) if mi_score is not None else None,
         "data_gaps": pillars.get("gaps", []),
+        "scale_warnings": pillars.get("scale_warnings", []),
         "weights_used": weights or WEIGHTS,
     }
 
