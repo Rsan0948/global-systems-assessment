@@ -18,7 +18,8 @@ import pytest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from mi.scoring import calculate_pillar_scores, detect_scale_issues, score_country
+from mi.scoring import (calculate_pillar_scores, detect_scale_issues,
+                        normalize_eci, normalize_gdp_ppp, normalize_fsi, score_country)
 
 
 def test_negative_wgi_hard_fails():
@@ -57,6 +58,20 @@ def test_clean_0_100_input_no_issues():
     r = score_country(ind)
     assert r["pillar_scores"]["P1"] is not None
     assert r["scale_warnings"] == []
+
+
+def test_normalizers_clamped_to_unit_interval():
+    # GDP above the ceiling and ECI outside the reference range must not push
+    # a pillar out of [0,1] (Luxembourg P4, DR Congo P2 were the real cases).
+    assert normalize_gdp_ppp(160000) == 1.0
+    assert normalize_eci(3.0) == 1.0 and normalize_eci(-3.0) == 0.0
+    assert normalize_fsi(130) == 0.0
+    ps = score_country({"gov_effectiveness": 95, "rule_of_law": 95,
+                        "regulatory_quality": 95, "gdp_per_capita_ppp": 160000,
+                        "resource_rents_pct_gdp": 0, "oda_pct_gni": 0,
+                        "eci": -3.0, "rd_pct_gdp": 0.1})["pillar_scores"]
+    for k, v in ps.items():
+        assert v is None or 0.0 <= v <= 1.0, f"{k}={v} out of [0,1]"
 
 
 def test_genuine_floor_percentile_scores_with_warning():

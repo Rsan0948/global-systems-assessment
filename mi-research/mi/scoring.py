@@ -31,7 +31,9 @@ def normalize_eci(score: float, dataset_min: float = -2.5, dataset_max: float = 
     """Min-max normalize Economic Complexity Index."""
     if dataset_max == dataset_min:
         return 0.5
-    return (score - dataset_min) / (dataset_max - dataset_min)
+    # Clamp to [0,1]: an ECI outside the reference range (e.g. DR Congo < -2.5)
+    # must not push P2 negative or >1.
+    return max(0.0, min(1.0, (score - dataset_min) / (dataset_max - dataset_min)))
 
 
 def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log: float = None) -> float:
@@ -45,22 +47,29 @@ def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log
         dataset_max_log = math.log(150000)
     if dataset_max_log == dataset_min_log:
         return 0.5
-    return (log_gdp - dataset_min_log) / (dataset_max_log - dataset_min_log)
+    # Clamp to [0,1]: GDP/capita above the ceiling (Luxembourg, Singapore, Qatar)
+    # must not push P4 > 1, mirroring normalize_eci's clamp.
+    norm = (log_gdp - dataset_min_log) / (dataset_max_log - dataset_min_log)
+    return max(0.0, min(1.0, norm))
 
 
 def normalize_resource_rents(rents_pct: float) -> float:
     """Invert resource rents: lower dependence = higher score."""
-    return 1.0 - min(rents_pct / 50.0, 1.0)
+    return max(0.0, min(1.0, 1.0 - min(rents_pct / 50.0, 1.0)))
 
 
 def normalize_oda(oda_pct: float) -> float:
-    """Invert ODA: lower dependence = higher score."""
-    return 1.0 - min(oda_pct / 20.0, 1.0)
+    """Invert ODA: lower dependence = higher score.
+
+    Net ODA can be negative (a country repays/donates more than it receives);
+    clamp so that does not push P4 above 1.
+    """
+    return max(0.0, min(1.0, 1.0 - min(oda_pct / 20.0, 1.0)))
 
 
 def normalize_fsi(fsi: float) -> float:
     """Invert FSI: lower fragility = higher score."""
-    return 1.0 - (fsi / 120.0)
+    return max(0.0, min(1.0, 1.0 - (fsi / 120.0)))
 
 
 # Indicators the engine expects on a 0-100 scale (WGI percentile/anchored, CPI, GII).
