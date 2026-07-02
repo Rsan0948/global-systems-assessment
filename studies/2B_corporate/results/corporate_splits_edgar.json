@@ -1,0 +1,1663 @@
+{
+  "observable": "split factor = resulting viable entities E per parent reportable segment S, scaled x3.0 (PREREGISTRATION sec.4)",
+  "scale": 3.0,
+  "source": "SEC EDGAR full-text search (10-12B) + 10-K segment narrative",
+  "window": [
+    2001,
+    2024
+  ],
+  "coverage": {
+    "spincos_listed": 570,
+    "parents_parsed": 368,
+    "distinct_parents": 341,
+    "events_with_segments": 108
+  },
+  "fields": [
+    "parent",
+    "parent_cik",
+    "successors_E",
+    "segments_S",
+    "factor"
+  ],
+  "events": [
+    {
+      "parent": "Abbott Laboratories",
+      "parent_cik": 1800,
+      "successors_E": 3,
+      "segments_S": 4,
+      "factor": 2.25,
+      "spincos": [
+        "HOSPIRA INC",
+        "AbbVie Inc.  (ABBV)"
+      ],
+      "years": [
+        "2003",
+        "2012"
+      ]
+    },
+    {
+      "parent": "Abraxis BioScience",
+      "parent_cik": 1141399,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "New Abraxis, Inc."
+      ],
+      "years": [
+        "2007"
+      ]
+    },
+    {
+      "parent": "Agilent Technologies,",
+      "parent_cik": 1090872,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Keysight Technologies, Inc.  (KEYS)"
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "Air Products",
+      "parent_cik": 2969,
+      "successors_E": 3,
+      "segments_S": 6,
+      "factor": 1.5,
+      "spincos": [
+        "ATLANTIC POWER CORP",
+        "Versum Materials, LLC"
+      ],
+      "years": [
+        "2010",
+        "2015"
+      ]
+    },
+    {
+      "parent": "Alcoa",
+      "parent_cik": 1675149,
+      "successors_E": 2,
+      "segments_S": 6,
+      "factor": 1.0,
+      "spincos": [
+        "Alcoa Upstream Corp  (AA)"
+      ],
+      "years": [
+        "2016"
+      ]
+    },
+    {
+      "parent": "American Express",
+      "parent_cik": 4962,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "AMERICAN EXPRESS FINANCIAL CORP  (AMP)"
+      ],
+      "years": [
+        "2005"
+      ]
+    },
+    {
+      "parent": "American Realty Capital Properties,",
+      "parent_cik": 1507385,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "American Realty Capital Centers, Inc."
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "Aramark",
+      "parent_cik": 1584509,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Epic NewCo, Inc.  (VSTS)"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    {
+      "parent": "Archer-Daniels-Midland",
+      "parent_cik": 7084,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Mercantile Bancorp, Inc."
+      ],
+      "years": [
+        "2005"
+      ]
+    },
+    {
+      "parent": "Arconic",
+      "parent_cik": 1790982,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Arconic Rolled Products Corp"
+      ],
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "parent": "Armstrong World Industries,",
+      "parent_cik": 7431,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Armstrong Flooring, Inc.  (AFIIQ)"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "ArvinMeritor,",
+      "parent_cik": 1113256,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Arvin Innovation, Inc."
+      ],
+      "years": [
+        "2008"
+      ]
+    },
+    {
+      "parent": "Atlas Energy,",
+      "parent_cik": 1984060,
+      "successors_E": 3,
+      "segments_S": 2,
+      "factor": 4.5,
+      "spincos": [
+        "Atlas Resource Partners, L.P.",
+        "Atlas Energy Group, LLC"
+      ],
+      "years": [
+        "2011",
+        "2014"
+      ]
+    },
+    {
+      "parent": "Baxter International",
+      "parent_cik": 10456,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Baxalta Inc"
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "Blackstone",
+      "parent_cik": 1393818,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "PJT Partners Inc.  (PJT)"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Bluerock Residential",
+      "parent_cik": 1442626,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Bluerock Homes Trust, Inc.  (BHM)"
+      ],
+      "years": [
+        "2022"
+      ]
+    },
+    {
+      "parent": "Cablevision Systems",
+      "parent_cik": 784681,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Madison Square Garden, Inc."
+      ],
+      "years": [
+        "2009"
+      ]
+    },
+    {
+      "parent": "Cardinal Health,",
+      "parent_cik": 721371,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "CareFusion Corp"
+      ],
+      "years": [
+        "2009"
+      ]
+    },
+    {
+      "parent": "Cash America International,",
+      "parent_cik": 807884,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Enova International, Inc.  (ENVA)"
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "Cendant",
+      "parent_cik": 723612,
+      "successors_E": 3,
+      "segments_S": 2,
+      "factor": 4.5,
+      "spincos": [
+        "WYNDHAM WORLDWIDE CORP  (TNL)",
+        "REALOGY CORP"
+      ],
+      "years": [
+        "2006"
+      ]
+    },
+    {
+      "parent": "Chesapeake Energy",
+      "parent_cik": 895126,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "CHESAPEAKE OILFIELD OPERATING LLC"
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "Clear Channel Communications",
+      "parent_cik": 739708,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "CCE Spinco, Inc.  (LYV)"
+      ],
+      "years": [
+        "2005"
+      ]
+    },
+    {
+      "parent": "Cogint,",
+      "parent_cik": 1460329,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Red Violet, Inc.  (RDVT)"
+      ],
+      "years": [
+        "2018"
+      ]
+    },
+    {
+      "parent": "Colfax",
+      "parent_cik": 1420800,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "ESAB Corp  (ESAB)"
+      ],
+      "years": [
+        "2022"
+      ]
+    },
+    {
+      "parent": "CompoSecure",
+      "parent_cik": 1823144,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Resolute Holdings Management, Inc."
+      ],
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "parent": "Comverse Technology,",
+      "parent_cik": 803014,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Comverse, Inc."
+      ],
+      "years": [
+        "2012"
+      ]
+    },
+    {
+      "parent": "Conexant",
+      "parent_cik": 1069353,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "MINDSPEED TECHNOLOGIES INC"
+      ],
+      "years": [
+        "2003"
+      ]
+    },
+    {
+      "parent": "Danaher",
+      "parent_cik": 313616,
+      "successors_E": 3,
+      "segments_S": 3,
+      "factor": 3.0,
+      "spincos": [
+        "Fortive Corp  (FTV)",
+        "Veralto Corp  (VLTO)"
+      ],
+      "years": [
+        "2015",
+        "2023"
+      ]
+    },
+    {
+      "parent": "Darden",
+      "parent_cik": 940944,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Four Corners Property Trust, Inc.  (FCPT)"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Darden Restaurants,",
+      "parent_cik": 940944,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "RED LOBSTER SEAFOOD CO."
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "Dean Foods",
+      "parent_cik": 27500,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "TreeHouse Foods, Inc.  (THS)"
+      ],
+      "years": [
+        "2005"
+      ]
+    },
+    {
+      "parent": "Digital Generation,",
+      "parent_cik": 934448,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "New Online Co"
+      ],
+      "years": [
+        "2013"
+      ]
+    },
+    {
+      "parent": "Dover",
+      "parent_cik": 29905,
+      "successors_E": 3,
+      "segments_S": 4,
+      "factor": 2.25,
+      "spincos": [
+        "Knowles Corp  (KN)",
+        "Apergy Corp  (CHX)"
+      ],
+      "years": [
+        "2013",
+        "2018"
+      ]
+    },
+    {
+      "parent": "DowDuPont",
+      "parent_cik": 1666700,
+      "successors_E": 3,
+      "segments_S": 8,
+      "factor": 1.125,
+      "spincos": [
+        "Corteva, Inc.  (CTVA)",
+        "Dow Holdings Inc.  (DOW)"
+      ],
+      "years": [
+        "2018"
+      ]
+    },
+    {
+      "parent": "Duke Energy",
+      "parent_cik": 1326160,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Gas SpinCo, Inc."
+      ],
+      "years": [
+        "2006"
+      ]
+    },
+    {
+      "parent": "Emergent BioSolutions",
+      "parent_cik": 1367644,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Aptevo Therapeutics Inc.  (APVO)"
+      ],
+      "years": [
+        "2016"
+      ]
+    },
+    {
+      "parent": "Encompass Health",
+      "parent_cik": 785161,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Enhabit, Inc.  (EHAB)"
+      ],
+      "years": [
+        "2022"
+      ]
+    },
+    {
+      "parent": "Energizer",
+      "parent_cik": 1096752,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Energizer SpinCo, Inc.  (ENR)"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Ensign",
+      "parent_cik": 1125376,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "CareTrust REIT, Inc.  (CTRE)"
+      ],
+      "years": [
+        "2013"
+      ]
+    },
+    {
+      "parent": "Enzon",
+      "parent_cik": 727510,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Evivrus, Inc."
+      ],
+      "years": [
+        "2008"
+      ]
+    },
+    {
+      "parent": "Exelis",
+      "parent_cik": 1524471,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Exelis MSCO Inc.  (VVX)"
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "First Data",
+      "parent_cik": 883980,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Western Union CO  (WU)"
+      ],
+      "years": [
+        "2006"
+      ]
+    },
+    {
+      "parent": "Fortive",
+      "parent_cik": 1659166,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Vontier Corp  (VNT)"
+      ],
+      "years": [
+        "2020"
+      ]
+    },
+    {
+      "parent": "Fortress Transportation",
+      "parent_cik": 1590364,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "FTAI Infrastructure LLC  (FIP)"
+      ],
+      "years": [
+        "2022"
+      ]
+    },
+    {
+      "parent": "Fortune Brands",
+      "parent_cik": 1519751,
+      "successors_E": 3,
+      "segments_S": 4,
+      "factor": 2.25,
+      "spincos": [
+        "Fortune Brands Home & Security LLC  (FBIN)",
+        "MasterBrand, Inc.  (MBC)"
+      ],
+      "years": [
+        "2011",
+        "2022"
+      ]
+    },
+    {
+      "parent": "Gaiam,",
+      "parent_cik": 1089872,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Gaia, Inc."
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Gannett",
+      "parent_cik": 39899,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Gannett SpinCo, Inc."
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Goodrich",
+      "parent_cik": 42542,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "ENPRO INDUSTRIES INC  (NPO)"
+      ],
+      "years": [
+        "2002"
+      ]
+    },
+    {
+      "parent": "Greatbatch,",
+      "parent_cik": 1114483,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "QIG GROUP, LLC"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "HERC",
+      "parent_cik": 1364479,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Hertz Rental Car Holding Company, Inc.  (HTZ, HTZWW)"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Harvard Bioscience,",
+      "parent_cik": 1123494,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Harvard Apparatus Regenerative Technology, Inc.  (HRGN)"
+      ],
+      "years": [
+        "2013"
+      ]
+    },
+    {
+      "parent": "Hillenbrand Industries,",
+      "parent_cik": 47518,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Batesville Holdings, Inc.  (HI)"
+      ],
+      "years": [
+        "2007"
+      ]
+    },
+    {
+      "parent": "Howard Hughes",
+      "parent_cik": 1981792,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Seaport Entertainment Group Inc.  (SEG)"
+      ],
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "parent": "Huntsman",
+      "parent_cik": 1307954,
+      "successors_E": 2,
+      "segments_S": 5,
+      "factor": 1.2,
+      "spincos": [
+        "Huntsman Spin Corp"
+      ],
+      "years": [
+        "2016"
+      ]
+    },
+    {
+      "parent": "Ingersoll Rand. Even",
+      "parent_cik": 1699150,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Allegion plc  (ALLE)"
+      ],
+      "years": [
+        "2013"
+      ]
+    },
+    {
+      "parent": "Inland American",
+      "parent_cik": 1307748,
+      "successors_E": 2,
+      "segments_S": 5,
+      "factor": 1.2,
+      "spincos": [
+        "Xenia Hotels & Resorts, Inc.  (XHR)"
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "Integra",
+      "parent_cik": 1114483,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "SeaSpine Holdings Corp"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "InvenTrust",
+      "parent_cik": 1307748,
+      "successors_E": 2,
+      "segments_S": 5,
+      "factor": 1.2,
+      "spincos": [
+        "Highlands REIT, Inc."
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "J2 Global",
+      "parent_cik": 1084048,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Consensus Cloud Solutions, Inc.  (CCSI)"
+      ],
+      "years": [
+        "2021"
+      ]
+    },
+    {
+      "parent": "JDS Uniphase",
+      "parent_cik": 912093,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Lumentum Holdings Inc.  (LITE)"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Johnson Controls",
+      "parent_cik": 833444,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Adient Ltd  (ADNT)"
+      ],
+      "years": [
+        "2016"
+      ]
+    },
+    {
+      "parent": "Journal Communications,",
+      "parent_cik": 54056,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "NORLIGHT TELECOMMUNICATIONS, INC."
+      ],
+      "years": [
+        "2006"
+      ]
+    },
+    {
+      "parent": "KAR Auction Services,",
+      "parent_cik": 1395942,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "IAA Spinco Inc."
+      ],
+      "years": [
+        "2018"
+      ]
+    },
+    {
+      "parent": "L-1 Identity Solutions,",
+      "parent_cik": 1018332,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "DMRC CORP  (DMRC)"
+      ],
+      "years": [
+        "2008"
+      ]
+    },
+    {
+      "parent": "Lifeloc Technologies,",
+      "parent_cik": 1493137,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Probation Tracker, Inc."
+      ],
+      "years": [
+        "2022"
+      ]
+    },
+    {
+      "parent": "Lionsgate",
+      "parent_cik": 2052959,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "LG ORION HOLDINGS INC."
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    {
+      "parent": "MSG Entertainment",
+      "parent_cik": 1795250,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "MSGE Spinco, Inc.  (MSGE)"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    {
+      "parent": "Marathon Oil",
+      "parent_cik": 101778,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Marathon Petroleum Corp  (MPC)"
+      ],
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "parent": "McDermott International,",
+      "parent_cik": 708819,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Babcock & Wilcox Co  (BWXT)"
+      ],
+      "years": [
+        "2010"
+      ]
+    },
+    {
+      "parent": "Member",
+      "parent_cik": 1846510,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "KANSAS CITY LIFE INSURANCE CO"
+      ],
+      "years": [
+        "2007"
+      ]
+    },
+    {
+      "parent": "Meredith",
+      "parent_cik": 65011,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Meredith Holdings Corp"
+      ],
+      "years": [
+        "2021"
+      ]
+    },
+    {
+      "parent": "Mestek",
+      "parent_cik": 65195,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Omega Flex, Inc.  (OFLX)"
+      ],
+      "years": [
+        "2005"
+      ]
+    },
+    {
+      "parent": "Mtron",
+      "parent_cik": 1956744,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "M-tron Industries, Inc.  (MPTI)"
+      ],
+      "years": [
+        "2022"
+      ]
+    },
+    {
+      "parent": "Myriad Genetics,",
+      "parent_cik": 899923,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Myriad Pharmaceuticals, Inc."
+      ],
+      "years": [
+        "2009"
+      ]
+    },
+    {
+      "parent": "NTELOS",
+      "parent_cik": 1328571,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "NTELOS Wireline One Inc."
+      ],
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "parent": "NYTEX Energy",
+      "parent_cik": 1475899,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "NYTEX Energy Holdings, Inc."
+      ],
+      "years": [
+        "2009"
+      ]
+    },
+    {
+      "parent": "National Oilwell Varco,",
+      "parent_cik": 1021860,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "NOW Inc.  (DNOW)"
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "New Alberto-Culver",
+      "parent_cik": 3327,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "New Aristotle Holdings, Inc."
+      ],
+      "years": [
+        "2006"
+      ]
+    },
+    {
+      "parent": "News",
+      "parent_cik": 1308161,
+      "successors_E": 2,
+      "segments_S": 5,
+      "factor": 1.2,
+      "spincos": [
+        "New Newscorp LLC  (NWS, NWSA)"
+      ],
+      "years": [
+        "2012"
+      ]
+    },
+    {
+      "parent": "Nielsen",
+      "parent_cik": 1397410,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Nielsen SpinCo B.V."
+      ],
+      "years": [
+        "2020"
+      ]
+    },
+    {
+      "parent": "Pinnacle Entertainment,",
+      "parent_cik": 921738,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "PNK Entertainment, Inc."
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Potlatch",
+      "parent_cik": 79716,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Potlatch Forest Products CORP  (CLW)"
+      ],
+      "years": [
+        "2008"
+      ]
+    },
+    {
+      "parent": "Quanex",
+      "parent_cik": 1423221,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Quanex Building Products CORP  (NX)"
+      ],
+      "years": [
+        "2008"
+      ]
+    },
+    {
+      "parent": "SITE Centers",
+      "parent_cik": 894315,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Curbline Properties Corp."
+      ],
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "parent": "SYNNEX",
+      "parent_cik": 1177394,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Concentrix Corp  (CNXC)"
+      ],
+      "years": [
+        "2020"
+      ]
+    },
+    {
+      "parent": "Safe",
+      "parent_cik": 1959023,
+      "successors_E": 3,
+      "segments_S": 3,
+      "factor": 3.0,
+      "spincos": [
+        "Safe & Green Development Corp  (SGD)",
+        "Star Holdings  (STHO)"
+      ],
+      "years": [
+        "2022"
+      ]
+    },
+    {
+      "parent": "Sara Lee",
+      "parent_cik": 23666,
+      "successors_E": 2,
+      "segments_S": 5,
+      "factor": 1.2,
+      "spincos": [
+        "Hanesbrands Inc.  (HBI)"
+      ],
+      "years": [
+        "2006"
+      ]
+    },
+    {
+      "parent": "ServiceMaster Global",
+      "parent_cik": 1428875,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "frontdoor, inc.  (FTDR)"
+      ],
+      "years": [
+        "2018"
+      ]
+    },
+    {
+      "parent": "Sprint Nextel",
+      "parent_cik": 101830,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "LTD Holding CO"
+      ],
+      "years": [
+        "2006"
+      ]
+    },
+    {
+      "parent": "Starwood Property Trust,",
+      "parent_cik": 1465128,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Starwood Waypoint Residential Trust"
+      ],
+      "years": [
+        "2013"
+      ]
+    },
+    {
+      "parent": "Supervalu",
+      "parent_cik": 95521,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Save-A-Lot, Inc."
+      ],
+      "years": [
+        "2016"
+      ]
+    },
+    {
+      "parent": "TEGNA",
+      "parent_cik": 39899,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Cars.com Inc.  (CARS)"
+      ],
+      "years": [
+        "2016"
+      ]
+    },
+    {
+      "parent": "Texas Industries,",
+      "parent_cik": 1482541,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Chaparral Steel CO"
+      ],
+      "years": [
+        "2005"
+      ]
+    },
+    {
+      "parent": "Timken",
+      "parent_cik": 98362,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "TimkenSteel Corp  (MTUS)"
+      ],
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "parent": "Tribune",
+      "parent_cik": 726513,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Tribune Publishing Co"
+      ],
+      "years": [
+        "2013"
+      ]
+    },
+    {
+      "parent": "Trinity Industries,",
+      "parent_cik": 99780,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Arcosa, Inc.  (ACA)"
+      ],
+      "years": [
+        "2018"
+      ]
+    },
+    {
+      "parent": "Twenty-First Century Fox,",
+      "parent_cik": 1308161,
+      "successors_E": 2,
+      "segments_S": 5,
+      "factor": 1.2,
+      "spincos": [
+        "Fox Corp  (FOX, FOXA)"
+      ],
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "parent": "United Online",
+      "parent_cik": 1142701,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "FTD Companies, Inc."
+      ],
+      "years": [
+        "2013"
+      ]
+    },
+    {
+      "parent": "Varian Medical Systems,",
+      "parent_cik": 203527,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Varex Imaging Corp  (VREX)"
+      ],
+      "years": [
+        "2016"
+      ]
+    },
+    {
+      "parent": "Ventas,",
+      "parent_cik": 740260,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "Care Capital Properties, Inc."
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Viad",
+      "parent_cik": 884219,
+      "successors_E": 2,
+      "segments_S": 3,
+      "factor": 2.0,
+      "spincos": [
+        "MONEYGRAM INTERNATIONAL INC"
+      ],
+      "years": [
+        "2003"
+      ]
+    },
+    {
+      "parent": "Vishay Intertechnology",
+      "parent_cik": 103730,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Vishay Precision Group, Inc.  (VPG)"
+      ],
+      "years": [
+        "2010"
+      ]
+    },
+    {
+      "parent": "Vista Outdoor",
+      "parent_cik": 1616318,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Outdoor Products Spinco Inc."
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    {
+      "parent": "W. P. Carey",
+      "parent_cik": 1025378,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Net Lease Office Properties  (NLOP)"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    {
+      "parent": "WestRock",
+      "parent_cik": 1636023,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Ingevity Corp  (NGVT)"
+      ],
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "parent": "Western Digital",
+      "parent_cik": 106040,
+      "successors_E": 2,
+      "segments_S": 2,
+      "factor": 3.0,
+      "spincos": [
+        "Sandisk Corp"
+      ],
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "parent": "Worthington Industries,",
+      "parent_cik": 108516,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "Worthington Steel, Inc.  (WS)"
+      ],
+      "years": [
+        "2023"
+      ]
+    },
+    {
+      "parent": "Zimmer Biomet",
+      "parent_cik": 1136869,
+      "successors_E": 2,
+      "segments_S": 4,
+      "factor": 1.5,
+      "spincos": [
+        "ZimVie Inc.  (ZIMV)"
+      ],
+      "years": [
+        "2022"
+      ]
+    }
+  ],
+  "ratios": [
+    2.25,
+    3.0,
+    2.0,
+    1.5,
+    1.0,
+    2.0,
+    3.0,
+    2.0,
+    2.0,
+    2.0,
+    1.5,
+    2.0,
+    4.5,
+    3.0,
+    1.5,
+    3.0,
+    1.5,
+    3.0,
+    3.0,
+    4.5,
+    3.0,
+    2.0,
+    3.0,
+    3.0,
+    3.0,
+    2.0,
+    3.0,
+    3.0,
+    1.5,
+    1.5,
+    3.0,
+    3.0,
+    2.25,
+    1.125,
+    2.0,
+    3.0,
+    3.0,
+    1.5,
+    2.0,
+    2.0,
+    3.0,
+    1.5,
+    3.0,
+    1.5,
+    2.25,
+    3.0,
+    3.0,
+    2.0,
+    3.0,
+    1.5,
+    3.0,
+    2.0,
+    1.5,
+    1.2,
+    2.0,
+    1.2,
+    3.0,
+    1.2,
+    2.0,
+    3.0,
+    1.5,
+    1.5,
+    2.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    1.5,
+    2.0,
+    2.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    2.0,
+    3.0,
+    2.0,
+    3.0,
+    1.2,
+    3.0,
+    2.0,
+    1.5,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    1.2,
+    2.0,
+    3.0,
+    2.0,
+    2.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    2.0,
+    1.2,
+    2.0,
+    3.0,
+    2.0,
+    2.0,
+    3.0,
+    3.0,
+    3.0,
+    1.5,
+    3.0,
+    1.5,
+    1.5
+  ],
+  "real_S_pool": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    6,
+    6,
+    8
+  ]
+}

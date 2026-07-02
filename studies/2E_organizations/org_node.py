@@ -42,7 +42,8 @@ def build_node(seed: int = 0) -> DomainNode:
         ratios=ratios,
         null_sampler=lognormal_null(center=5.5, log_sd=0.25),     # span-of-control prior
         is_self_organizing=True,
-        interior_exp=2.0, interior_exp_se=0.3,                    # internal comms ~ size^2
-        interface_exp=1.0, interface_exp_se=0.3,                  # management throughput ~ size
+        # No real allometric exponents -> excluded from the rung-4 mechanism test
+        # (runs only on the biology cell types' REAL exponents). Were 2.0/1.0.
+        interior_exp=None, interface_exp=None,
         source="military doctrine tables + team-size studies (illustrative)",
     )

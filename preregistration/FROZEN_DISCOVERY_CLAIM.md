@@ -41,3 +41,20 @@ Held out entirely during discovery (no real data ingested yet). On real data:
   (consistent with rung 1, not rung 2/3).
 NOTE: B requires building the SEC EDGAR (2B) and GitHub (2F) real ingests; only
 then is B run. A can be run immediately (SA already downloaded).
+
+---
+
+## Confirmation log (appended after the freeze — does NOT alter the claims above)
+
+- **2026-06-12 — Prediction A (rivers, South America):** CONFIRMED. A1/A2/A3 all
+  pass (SA geom Rb 3.539). See `studies/2C_river_networks/results/SEALED_HOLDOUT.md`.
+  The SA holdout is SPENT.
+- **2026-06-27 — Prediction B (cross-domain): RUN ONCE; corporate-only.** 2F
+  open-source was descoped (GitHub real ingest deferred), so B was run on
+  **corporate (2B) alone** as the cross-domain holdout — a pre-registration
+  amendment (weaker, conservative). Result on 108 real SEC EDGAR split events:
+  **B1 FAIL** (corporate is indistinguishable from its binary-default null,
+  displacement p=0.23 → trivial/rung-0), **B2 PASS** (adding corporate keeps
+  rung 1, I²=0.98, isolates no constant). **B NOT fully confirmed**; the
+  rung-1 / no-universal-constant verdict stands. The corporate cross-domain
+  holdout is now SPENT. See `studies/2B_corporate/results/SEALED_HOLDOUT_CORPORATE.md`.

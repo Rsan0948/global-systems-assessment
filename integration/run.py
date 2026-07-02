@@ -58,8 +58,8 @@ def all_self_org_nodes():
     nodes += neuro.build_nodes()                                 # REAL biology (NeuroMorpho arbors)
     corporate = _load(os.path.join(HERE, "../studies/2B_corporate/corporate_node.py"), "corp2b")
     organizations = _load(os.path.join(HERE, "../studies/2E_organizations/org_node.py"), "org2e")
-    opensource = _load(os.path.join(HERE, "../studies/2F_opensource/oss_node.py"), "oss2f")
-    nodes += [corporate.build_node(), organizations.build_node(), opensource.build_node()]
+    # 2F open-source DESCOPED from the dataset (GitHub real ingest deferred); not assembled.
+    nodes += [corporate.build_node(), organizations.build_node()]    # REAL corporate (EDGAR)
     return nodes
 
 
@@ -94,18 +94,31 @@ def negative_control_block(self_org, controls):
 
 
 def mechanism_on_assembled(nodes):
+    """Rung-4 mechanism test on the domains carrying REAL allometric exponents
+    (the biology cell types; fetch_neuromorpho_exponents.py). interior =
+    length~radius, interface = tips~radius, gap = interior - interface."""
     with_exp = [n for n in nodes if n.gap is not None]
     gaps = np.array([n.gap for n in with_exp])
     log_factors = np.array([np.log(np.exp(np.log(n.ratios).mean())) for n in with_exp])
-    if gaps.std(ddof=1) < 0.05:
+    if gaps.size < 3 or gaps.std(ddof=1) < 0.05:
         return {"status": "insufficient exponent variation",
-                "note": "illustrative placeholder exponents are ~constant (gap~1); "
-                        "the cross-domain gap->factor test needs REAL exponent estimates "
-                        "(Study 3B estimator on raw allometry) to run meaningfully.",
+                "note": "no/constant real exponents; needs REAL per-domain allometry.",
                 "n_domains_with_exponents": int(gaps.size)}
     r = gap_predicts_factor(gaps, log_factors)
-    return {"slope": round(r.slope, 3), "slope_ci": [round(x, 3) for x in r.slope_ci],
-            "slope_p": r.slope_p, "gap_consistent_with_1": r.gap_consistent_with_1}
+    return {
+        "domains": [n.name for n in with_exp],
+        "n_domains_with_exponents": int(gaps.size),
+        "gaps": {n.name: round(float(n.gap), 3) for n in with_exp},
+        "exponents_source": "REAL NeuroMorpho CNG.swc allometry (biology cell types)",
+        "slope": round(r.slope, 3), "slope_ci": [round(x, 3) for x in r.slope_ci],
+        "slope_p": round(r.slope_p, 4), "r_squared": round(r.r_squared, 3),
+        "gap_mean": round(r.gap_mean, 3), "gap_mean_ci": [round(x, 3) for x in r.gap_mean_ci],
+        "gap_consistent_with_1": r.gap_consistent_with_1,
+        "verdict": ("gap PREDICTS factor (slope CI excludes 0)"
+                    if (r.slope_ci[0] > 0 or r.slope_ci[1] < 0)
+                    else "NULL: gap does not predict the subdivision factor "
+                         "(slope CI includes 0) -> no rung-4 mechanism"),
+    }
 
 
 def dgs_real_block():
@@ -165,12 +178,15 @@ def main():
         "mechanism_on_assembled_nodes": mechanism_on_assembled(self_org),
         "predictive_calibrations": predictive_calibrations(),
         "note": "MIXED inputs: REAL = rivers (HydroRIVERS NA, discovery continent), "
-                "biology (NeuroMorpho arbors, 6 cell types), negative controls "
-                "(NCBI taxonomy + engineered specs), and DGS (ECI+V-Dem+WB+UCDP). "
-                "SIMULATED placeholders = corporate, organizations, open-source. "
-                "The pooled cross-domain ratio therefore mixes real and simulated "
-                "nodes and is NOT a finding about real systems. Sealed holdout "
-                "(corporate, open-source, rivers cross-continent) untouched.",
+                "biology (NeuroMorpho arbors, 6 cell types), corporate (SEC EDGAR "
+                "spin-off split factors, the cross-domain holdout -- now SPENT, see "
+                "studies/2B_corporate/results/SEALED_HOLDOUT_CORPORATE.md), negative "
+                "controls (NCBI taxonomy + engineered specs), and DGS (ECI+V-Dem+WB+UCDP). "
+                "SIMULATED = organizations (doctrine tables). 2F open-source DESCOPED "
+                "(GitHub real ingest deferred). The pooled cross-domain ratio still "
+                "mixes one simulated node (organizations) and is NOT a clean finding "
+                "about real systems; the corporate confirmation is reported separately "
+                "in confirm_corporate.py.",
     }
     with open(os.path.join(RESULTS, "integration_summary.json"), "w") as f:
         json.dump(summary, f, indent=2)

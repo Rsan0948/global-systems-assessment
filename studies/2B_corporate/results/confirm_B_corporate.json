@@ -1,0 +1,33 @@
+{
+  "discovery_rung": 1,
+  "discovery_pooled": 3.383,
+  "discovery_pooled_ci": [
+    3.192,
+    3.587
+  ],
+  "frozen_reference_ci": [
+    2.97,
+    3.37
+  ],
+  "corporate_n_events": 108,
+  "corporate_geom_factor": 2.242,
+  "corporate_cv": 0.311,
+  "corporate_vs_null_z": -1.21,
+  "corporate_displacement_p": 0.2305,
+  "B1_definable": true,
+  "B1_not_pure_null": false,
+  "B1_pass": false,
+  "full_set_rung": 1,
+  "full_set_i_squared": 0.982,
+  "full_set_pooled_ci": [
+    3.005,
+    3.461
+  ],
+  "full_set_constants_in_ci": [
+    "pi"
+  ],
+  "B2_keeps_rung1_no_constant": true,
+  "B2_pass": true,
+  "ci_overlap_holdout_vs_discovery": false,
+  "CONFIRMED": false
+}

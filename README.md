@@ -38,41 +38,51 @@ studies/3B_mechanism/                Rung-4: does the dimensional gap predict th
 studies/4_negative_controls/         Engineered (4A) + classification (4B) controls
 ```
 
-## Status
+## Final verdict
 
-- **Pre-registration (v0.2, discovery reframe):** drafted. Needs a human author
-  identity before public deposit (OSF/arXiv). Not yet deposited.
-- **Discovery engine:** built and calibrated. On known-truth synthetic worlds it
-  correctly returns rung 3 (one law, isolates *e*), rung 1 (many laws), and
-  rung 0 (trivial), and the discover→confirm split passes. See `discovery/`.
-- **Study 2C (rivers):** built end-to-end; runnable result is a power/calibration
-  analysis (real HydroSHEDS ingestion ready). Supplied the empirical proof that
-  random topology clusters near 3–4 *with no law* — motivating the triviality
-  control.
-- **Domain nodes built (2D biology, 2B corporate, 2E organizations, 2F
-  open-source):** all on literature-summary inputs, each with a mechanism-free
-  trivial null and a real-data ingestion hook.
-- **Study 2A (political):** the DGS→instability mechanism test, built and
-  calibrated. Honestly *not* a ratio node — administrative hierarchy is designed,
-  so it's a boundary-condition control, not self-organizing branching.
-- **Study 2B / corporate survival:** hazard test recovers a true complexity
-  effect (HR ≈ 1.65) and is null without one.
-- **Study 3B (mechanism, rung 4):** built and calibrated — recovers a true
-  gap→factor link and is null without one.
-- **Negative controls (4A engineered, 4B classification):** built; on
-  illustrative inputs the controls disperse ~6× more than self-organizing
-  systems (Brown–Forsythe p ≈ 3×10⁻²⁴) — boundary condition confirmed.
-- **Integration:** assembles all seven self-organizing nodes through the engine.
-  On illustrative inputs the ladder returns **rung 1 (domain-specific laws)** —
-  each domain concentrated, but values differ (I² ≈ 0.97). See `integration/`.
-- **Remaining (needs you / real data):** swap each node's inputs for real
-  measurements via the ingestion hooks; real exponent estimates for the rung-4
-  test; the sealed-holdout confirmation pass; and the public deposit. See the
-  "What you need to do" section below.
+**Rung 1 — domain-specific laws. No universal constant; no mechanism shown.**
+Self-organizing domains are each individually concentrated but do **not** share
+one value (I² ≈ 0.98); the pooled CI excludes *e*. Both pre-registered
+confirmations have been run and are **spent**:
 
-## The honest caveat on all runnable numbers
+- **Prediction A (rivers, cross-continent):** **CONFIRMED.** South America
+  reproduces the North-America finding (geom Rb 3.539; A1/A2/A3 pass).
+- **Prediction B (cross-domain holdout = corporate):** **B1 fail, B2 pass — not
+  fully confirmed.** On 108 real SEC EDGAR spin-off events, corporate splitting
+  is **indistinguishable from its mechanism-free binary-default null** (a trivial
+  domain), but adding it **keeps the verdict at rung 1** — it does not collapse
+  to universality or isolate a constant. Reported symmetrically.
 
-Everything that runs here uses **simulated data** and proves the *instruments*,
-not the theory: that the measurement pipeline doesn't manufacture *e*, and that
-the discovery engine can tell "one law" from "many laws" from "no law." No claim
-about real systems has been made.
+The program was *built to be able to conclude "no theorem of a universal
+constant,"* and that is where the real data lands: a real regularity within some
+domains (rivers, biology), no shared law across them, and no mechanism
+demonstrated.
+
+## What is real vs. simulated
+
+- **REAL data:** rivers (2C, HydroRIVERS, both continents), biology (2D,
+  NeuroMorpho, 6 cell types), negative controls (4, NCBI taxonomy + specs),
+  DGS (2A, ECI+V-Dem+WB+UCDP), and **corporate (2B, SEC EDGAR, 108 splits)**.
+- **SIMULATED / deferred:** organizations (2E, doctrine-table literature values);
+  open-source (2F) — real-ingest code is committed but the GitHub crawl is
+  **deferred** (descoped from holdout B, logged as a prereg amendment).
+- **Rung-4 mechanism test → RUN on real allometry, result NULL.** Real
+  dimensional gaps were estimated per biology cell type from the NeuroMorpho
+  CNG.swc 3-D reconstructions (interior = total dendritic length ~ radius;
+  interface = terminal tips ~ radius; `fetch_neuromorpho_exponents.py`). Across
+  the 6 cell types the gap does **not** predict the subdivision factor
+  (slope 0.14, 95% CI [−0.07, 0.35], p = 0.15) — **no rung-4 mechanism.** The
+  gaps themselves are consistent with the dimensional prediction Δ≈1 (mean 0.66,
+  CI [0.15, 1.18]), but the gap→factor link is absent. The full *cross-domain*
+  apex (rivers + corporate exponents too) is not run — those need raw spatial
+  re-ingest beyond the committed caches.
+
+## Scope explicitly closed out
+
+This study is concluded at the confirmation + mechanism stages above. Genuinely
+out of reach here (not done): the **2F open-source** real crawl (needs a GitHub
+token), the **cross-domain** rung-4 extension to rivers/corporate (needs raw
+spatial re-ingest), real **2E** doctrine parsing (low value), and the public
+**OSF/arXiv deposit** (needs a human author identity). Each is a clean future
+extension, not a blocker — the engine, the real-data nodes, the spent
+confirmations, and a real (null) mechanism test are all in place.
