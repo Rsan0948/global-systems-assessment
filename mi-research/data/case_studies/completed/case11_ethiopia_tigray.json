@@ -20,24 +20,6 @@
     "event_description": "Abiy Ahmed (PM April 2018; Nobel Peace Prize 2019; rapprochement with Eritrea) dismantled the post-1995 ethnic-federal (Tier 3 porosity) system and centralized power, preceding the Tigray War (Nov 2020-Nov 2022) and the Amhara Fano insurgency (2023-).",
     "entities": {
       "Ethiopia": {
-        "indicators": {
-          "gov_effectiveness": 40.9791,
-          "rule_of_law": 43.3015,
-          "regulatory_quality": 41.5148,
-          "cpi": 34.0,
-          "control_of_corruption": 38.614,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -1.002,
-          "education_index": 0.3435,
-          "life_expectancy_index": 0.6986,
-          "gdp_per_capita_ppp": 2095.3176,
-          "resource_rents_pct_gdp": 6.3689,
-          "oda_pct_gni": 5.9555,
-          "political_stability": 45.3038,
-          "fsi": 99.57,
-          "voice_accountability": 36.3631
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -66,70 +48,9 @@
           "fsi"
         ],
         "notes": "WGI Government Effectiveness negative, ~ -0.6 to -0.7 region (CEIC: -0.699 in 2017; legacy). Rule of Law negative (1996 min -0.97 per Run 2 data; still bottom-tier in 2018). Political Stability deeply negative (recurrent ethnic clashes, mass displacement). Resource rents low (not an oil rentier). FSI 2019 = 94.2 (most-improved that year, post-Abiy optimism); 2024 = 98.1 (6th most fragile in Africa). HDI low (medium-low tier). Derived: floor/near-floor P1; wide spread; high structural vulnerability.",
-        "_hydrated_from_world": {
-          "source_slug": "ethiopia",
-          "source_year": "2018",
-          "target_year": 2018,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 40.9791
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 43.3015
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 41.5148
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 38.614
-            },
-            {
-              "indicator": "political_stability",
-              "value": 45.3038
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 36.3631
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 2095.3176
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 6.3689
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 5.9555
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.3435
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.6986
-            },
-            {
-              "indicator": "cpi",
-              "value": 34.0
-            },
-            {
-              "indicator": "eci",
-              "value": -1.002
-            },
-            {
-              "indicator": "fsi",
-              "value": 99.57
-            }
-          ]
-        }
+        "country_ref": "Ethiopia",
+        "pre_year": "2018",
+        "post_year": "2024"
       }
     }
   },
@@ -196,6 +117,18 @@
           "Amhara Fano insurgency 2023-"
         ]
       }
+    },
+    "resolved_scores": {
+      "Ethiopia": {
+        "pre": {
+          "P1": 0.399,
+          "MI": 0.456
+        },
+        "post": {
+          "P1": 0.391,
+          "MI": 0.356
+        }
+      }
     }
   },
   "verification": {
@@ -207,7 +140,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Tigray War ~300,000-600,000 deaths; 'one of the world's bloodiest contemporary conflicts.'",
-      "explanation": "Confirmed directionally (both); LIVE's up-front catastrophic call (Mod 5) is more decision-useful. Framework disclaims timing/trigger."
+      "explanation": "Confirmed directionally (both); LIVE's up-front catastrophic call (Mod 5) is more decision-useful. Framework disclaims timing/trigger.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Ethiopia pre-P1=0.399 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -215,29 +150,51 @@
       "explanation": "Continued fragmentation pressure as predicted (both versions)."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "P1 + P5 (stability) failure; centrifugal form (sequential regional fronts).",
-      "explanation": "Confirmed; Mod 6's centrifugal classification adds value."
+      "explanation": "Confirmed; Mod 6's centrifugal classification adds value. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Ethiopia: P4=0.61, P3=0.51, P2=0.45, P1=0.40, P5=0.31 | below-median (genuine vulnerabilities): P5=0.31, P1=0.40, P2=0.45",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Single-entity internal case; no fragment-count prediction scored."
+      "explanation": "Single-entity internal case; no fragment-count prediction scored.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No standalone reversal-risk prediction scored for this case."
+      "explanation": "No standalone reversal-risk prediction scored for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Tier 1 military suppression (Tigray War). CRITICAL re-suppression-after-porosity prediction CONFIRMED: dismantling the 23-year ethnic-federal porosity system preceded a war killing ~half a million and a second insurgency.",
-      "explanation": "Strongest confirmation in the run; only LIVE names the mechanism explicitly. Re-suppression after porosity yielded worse outcomes than continuous suppression."
+      "explanation": "Strongest confirmation in the run; only LIVE names the mechanism explicitly. Re-suppression after porosity yielded worse outcomes than continuous suppression.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: re-suppression after porosity (dismantling 23-year ethnic federalism)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "Sequential Tigray -> Amhara -> Oromia fronts; Fano claims control of >80% of the Amhara region.",
-      "explanation": "Mod 6's centrifugal classifier correctly captured the form of failure (sequential regional fronts)."
+      "explanation": "Mod 6's centrifugal classifier correctly captured the form of failure (sequential regional fronts).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -261,6 +218,30 @@
     "proposed_framework_modifications": [
       "Promote 're-suppression after porosity' from heuristic to a tested core prediction; flag any state dismantling a long-standing porosity/federal-accommodation system as elevated-risk."
     ],
-    "baseline_impact": "Confirms Mods 5 and 6; promotes a heuristic to a tested core prediction - a refinement, not a degradation of the baseline."
+    "baseline_impact": "Confirms Mods 5 and 6; promotes a heuristic to a tested core prediction - a refinement, not a degradation of the baseline.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "MODERATE",
+    "risk_tier_by_lead": {
+      "1": "MODERATE",
+      "3": "MODERATE",
+      "5": "MODERATE",
+      "7": "MODERATE",
+      "10": "MODERATE",
+      "15": "MODERATE",
+      "20": "MODERATE",
+      "28": "HIGH"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
   }
 }

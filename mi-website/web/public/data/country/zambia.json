@@ -1,0 +1,212 @@
+{
+ "slug": "zambia",
+ "name": "Zambia",
+ "iso3": "ZMB",
+ "mi": 0.462,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.439,
+  "P2": 0.261,
+  "P3": 0.633,
+  "P4": 0.334,
+  "P5": 0.642
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 35% of GDP - prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile - prosperity roughly in line with institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.38,
+ "residual": 0.007,
+ "config": [
+  [
+   "P5",
+   0.642
+  ],
+  [
+   "P3",
+   0.633
+  ],
+  [
+   "P1",
+   0.439
+  ],
+  [
+   "P4",
+   0.334
+  ],
+  [
+   "P2",
+   0.261
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 40.9757,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 47.3065,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 48.2284,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 38.6079,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 39.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 15.66,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -0.67,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.5527,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7131,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 4214.89,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 64.17,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 49.72,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 35.26,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.01",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  },
+  {
+   "key": "rentier",
+   "title": "Rentier check",
+   "status": "flag",
+   "headline": "resource rents ~35% of GDP",
+   "detail": "A large share of prosperity comes from extracting resources rather than from strong institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "angola",
+   "name": "Angola",
+   "mi": 0.446,
+   "tier": 3
+  },
+  {
+   "slug": "ghana",
+   "name": "Ghana",
+   "mi": 0.502,
+   "tier": 3
+  },
+  {
+   "slug": "papua-new-guinea",
+   "name": "Papua New Guinea",
+   "mi": 0.417,
+   "tier": 3
+  },
+  {
+   "slug": "rwanda",
+   "name": "Rwanda",
+   "mi": 0.471,
+   "tier": 3
+  },
+  {
+   "slug": "nepal",
+   "name": "Nepal",
+   "mi": 0.47,
+   "tier": 3
+  }
+ ]
+}

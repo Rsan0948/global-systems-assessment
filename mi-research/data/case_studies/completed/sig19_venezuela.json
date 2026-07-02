@@ -1,0 +1,55 @@
+{
+  "name": "Venezuela",
+  "type": "signature_test",
+  "country_ref": "Venezuela",
+  "window_start": 1996,
+  "predictor_year": 1998,
+  "actual_acute_crisis": true,
+  "doc_category": "FN-preWGI",
+  "outcome": "Caracazo/1992 coups/Chavez 1998 (economy collapsing; window pre-WGI)",
+  "tests": "acute pre-turn signature (P1 high-base decline + P5 decline + spread widening + P4 strong) \u2014 blind, real WGI",
+  "note": "Distinct from the 51-case P1-ordinality baseline; tests the SIGNATURE function only.",
+  "pre": {
+    "P1": 0.392,
+    "P5": 0.564,
+    "P4": 0.701,
+    "spread": 0.31
+  },
+  "predictor": {
+    "P1": 0.38,
+    "P5": 0.573,
+    "P4": 0.802,
+    "spread": 0.423
+  },
+  "components_blind": {
+    "P1_high_base": false,
+    "P1_declined": false,
+    "P5_declined": false,
+    "spread_widened": true,
+    "P4_strong": true
+  },
+  "blind_signature_fired": false,
+  "classification": "FN",
+  "failing_components": [
+    "P1_high_base",
+    "P1_declined",
+    "P5_declined"
+  ],
+  "metadata": {
+    "stress_type": "durability_gate_test",
+    "round": "signature_set_N19",
+    "case_name": "Venezuela"
+  },
+  "verification": {
+    "j_durability_gate": {
+      "result": "CONFIRMED",
+      "evidence": "gate fired (gap 0.423); actual crisis=yes -> Safeguard J correct",
+      "explanation": "Tests Safeguard J (durability gate) \u2014 does P4-P1>threshold correctly predict crisis vs absorption? Distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "safeguard_j": {
+    "gap": 0.423,
+    "fired": true,
+    "threshold": 0.22
+  }
+}

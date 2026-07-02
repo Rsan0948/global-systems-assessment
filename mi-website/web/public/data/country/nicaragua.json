@@ -1,0 +1,198 @@
+{
+ "slug": "nicaragua",
+ "name": "Nicaragua",
+ "iso3": "NIC",
+ "mi": 0.467,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.283,
+  "P2": 0.304,
+  "P3": 0.748,
+  "P4": 0.501,
+  "P5": 0.5
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile - prosperity outrunning institutions - lopsided (institutions the weak point).",
+ "spread": 0.465,
+ "residual": -0.066,
+ "config": [
+  [
+   "P3",
+   0.748
+  ],
+  [
+   "P4",
+   0.501
+  ],
+  [
+   "P5",
+   0.5
+  ],
+  [
+   "P2",
+   0.304
+  ],
+  [
+   "P1",
+   0.283
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 30.87,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 29.09,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 39.23,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 14.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 18.85,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 26.82,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 13.99,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -0.891,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.6508,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8453,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 8708.8,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 64.71,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 77.7,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "earned-vs-granted -0.07",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Institutions is lowest",
+   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "bolivia",
+   "name": "Bolivia",
+   "mi": 0.495,
+   "tier": 3
+  },
+  {
+   "slug": "honduras",
+   "name": "Honduras",
+   "mi": 0.465,
+   "tier": 3
+  },
+  {
+   "slug": "iran",
+   "name": "Iran",
+   "mi": 0.486,
+   "tier": 3
+  },
+  {
+   "slug": "guatemala",
+   "name": "Guatemala",
+   "mi": 0.498,
+   "tier": 3
+  },
+  {
+   "slug": "algeria",
+   "name": "Algeria",
+   "mi": 0.511,
+   "tier": 3
+  }
+ ]
+}

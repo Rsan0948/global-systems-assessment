@@ -1,0 +1,30 @@
+{
+  "name": "Gabon",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "A_convergence",
+    "case_name": "Gabon",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Gabon",
+  "prior_year": 2002,
+  "predictor_year": 2022,
+  "actual_outcome_crisis": true,
+  "outcome": "2023 military coup (succession)",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "CONFIRMED",
+      "evidence": "FLAG + widening -> fragile; crisis occurred (mechanism succession; gap flagged it)",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.435,
+    "J_status": "FLAG",
+    "convergence": "widening",
+    "accountability": "accountability_lag",
+    "va_minus_p4": -0.423,
+    "rents_pct": null
+  }
+}

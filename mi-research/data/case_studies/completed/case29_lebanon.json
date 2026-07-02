@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "case_name": "Lebanon (consociational collapse + economic crisis)",
+    "case_id": "case29",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "economic_crisis",
+    "geographic_region": "MENA / Levant",
+    "time_period": "2010 -> 2024",
+    "entities": [
+      "Lebanon"
+    ],
+    "key_test": "Does a measured 'moderate' P1 OVERSTATE resilience when a confessional elite cartel hollows out institutions? Tests whether the wide P1-P5 pillar spread flags the vulnerability the composite MI masks -- a P1-surprise hard case. Safeguard F (sectarian militias / Hezbollah) and Safeguard H (centrifugal elite-cartel consociationalism).",
+    "round": "v2_batch2",
+    "notes": "Reference-based record: indicators resolved live via mi.datasource. resolved_scores carry MI v2 re-scored pillars (pre 2010, post 2024). P3 missing pre / P4 missing post are real data gaps."
+  },
+  "pre_event": {
+    "time_point": "2010",
+    "event_description": "Lebanon before its post-2019 collapse -- a confessional power-sharing (Taif) system measured at a deceptively moderate 2010 baseline, ahead of the worst economic crisis globally since the mid-19th century (World Bank).",
+    "entities": {
+      "Lebanon": {
+        "context": {
+          "population": 4900000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": false,
+          "is_democratic_transition": false,
+          "has_power_sharing": true,
+          "neighbor_threat_level": "high",
+          "neighbor_details": "Syria war spillover + recurrent Israel-Hezbollah conflict.",
+          "fragmentation_mechanism": "confessional_elite_cartel",
+          "n_successor_states": 0,
+          "resource_rents_pct_gdp": 0.5,
+          "growth_trajectory": "declining"
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi",
+          "p3_pre"
+        ],
+        "notes": "Indicators resolved via mi.datasource (Lebanon, 2010 -> 2024). Confessional power-sharing as elite cartel: Safeguard H centrifugal classifier; Hezbollah as armed state-within-state -> Safeguard F. Wide pillar spread is the diagnostic of interest.",
+        "country_ref": "Lebanon",
+        "pre_year": "2010",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Decline; drop from Tier 2 toward Tier 3 as institutions fail.",
+      "basis": "Pre-P1 0.440 is only moderate-low and the wide pillar spread (high P4 capacity vs low P5 cohesion 0.414) signals hidden fragility; predicts deterioration.",
+      "falsification_condition": "Lebanon maintains Tier 2 / institutional stability."
+    },
+    "b_violence": {
+      "prediction": "Elevated political-violence / instability risk despite the 'moderate' headline P1, driven by sectarian militias.",
+      "risk_level": "high",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY.",
+      "falsification_condition": "Lebanon remains peaceful and stable."
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity); self-trajectory: downward divergence.",
+      "basis": "No comparison entity.",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "Composite MI/P1 OVERSTATES resilience; the wide P1-P5 spread (P4 0.846 vs P5 0.414, ~0.43) is the true warning. Primary failure surfaces in cohesion (P5) and in the gap between formal capacity and a hollowed elite-cartel institutional core.",
+      "note": "Most exposed to post-hoc coding bias; this is the case's central hypothesis.",
+      "falsification_condition": "The moderate 2010 MI correctly tracked resilience (no collapse) / spread did not flag vulnerability."
+    },
+    "e_fragment_count": {
+      "prediction": "No formal partition despite confessional cantonization; state stays nominally intact.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Formal territorial partition / successor states."
+    },
+    "f_reversal_risk": {
+      "prediction": "Prolonged institutional paralysis / governance reversal (presidential vacuums, caretaker governments).",
+      "safeguard_c_severity": "high",
+      "falsification_condition": "Stable, functioning government throughout."
+    },
+    "g_suppression_mechanism": {
+      "classification": "Elite-cartel consociational (confessional) -- centrifugal capture (Safeguard H), not coercive suppression.",
+      "tier": null,
+      "falsification_condition": "Unity/order maintained by coercive state suppression rather than elite cartel."
+    },
+    "h_substate_turbulence": {
+      "prediction": "Sub-state turbulence triggered -- sectarian militias, Hezbollah as armed state-within-state.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "No armed sub-state actors / no sub-state turbulence."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Lebanon": {
+        "indicators_by_year": {},
+        "outcome_summary": "P1 0.440->0.324; MI 0.603->0.472 (Tier 2 -> Tier 3). Post-2019 collapse: the lira lost >98% of its pre-crisis value by Feb 2023 (World Bank Lebanon Economic Monitor), sovereign default (2020), banking-sector bankruptcy -- a 'perfect storm' unseen since the 19th century. 2020 Beirut port explosion; 2021 Tayouneh sectarian clashes; presidential vacuum 2022-2024; 2024 Israel-Hezbollah war. P5 cohesion fell 0.414->0.328.",
+        "key_events": [
+          "2019 currency collapse / 2020 default (lira -98%)",
+          "2020 Beirut port explosion",
+          "presidential vacuum 2022-2024 + 2024 Israel-Hezbollah war"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Lebanon": {
+        "pre": {
+          "P1": 0.44,
+          "MI": 0.603
+        },
+        "post": {
+          "P1": 0.324,
+          "MI": 0.472
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "P1 0.440->0.324; MI 0.603->0.472; Tier 2 -> Tier 3.",
+      "explanation": "Deterioration realized as predicted."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "2021 Tayouneh clashes; Hezbollah armed dominance; 2024 Israel-Hezbollah war; 2020 port explosion.",
+      "explanation": "Elevated instability/violence risk realized despite the moderate headline P1.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Lebanon pre-P1=0.440 -> MODERATE risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "2010 MI of 0.603 (Tier 2) preceded a near-total state-economic collapse; the pre-spread (P4 0.846 vs P5 0.414, ~0.43) was the standing warning the composite masked.",
+      "explanation": "Central hypothesis borne out: the moderate composite overstated resilience and the wide P1-P5 spread flagged the vulnerability. Post-hoc dimension identification coded PARTIAL under strict standards, but the spread-as-warning signal is the case's key finding.",
+      "computed_config": "Lebanon: P4=0.85, P2=0.71, P1=0.44, P5=0.41 | below-median (genuine vulnerabilities): P5=0.41, P1=0.44",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "State nominally intact despite confessional cantonization; no formal partition.",
+      "explanation": "As predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Presidential vacuum 2022-2024; serial caretaker governments; institutional paralysis.",
+      "explanation": "Governance reversal/paralysis realized as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Order/dysfunction driven by confessional elite cartel, not coercive state suppression.",
+      "explanation": "Centrifugal elite-cartel classification (Safeguard H) holds.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: confessional_elite_cartel"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Hezbollah armed state-within-state; 2021 sectarian clashes; 2024 war.",
+      "explanation": "Sub-state turbulence triggered as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "P1-surprise hard case largely confirmed: the moderate 2010 composite overstated resilience and the wide pillar spread flagged the hidden fragility that the post-2019 collapse realized.",
+    "safeguards_triggered": [
+      "F",
+      "H"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [
+      "A moderate composite MI can mask elite-cartel institutional hollowing; the P1-P5 spread (not the level) is the leading indicator of confessional-consociational collapse."
+    ],
+    "what_this_case_uniquely_reveals": "Pillar SPREAD outperforms the composite MI level as a vulnerability signal where a confessional elite cartel hollows institutions behind a formally moderate score.",
+    "proposed_framework_modifications": [
+      "Treat a wide P1-P5 spread under power-sharing/elite-cartel contexts as a standing vulnerability flag that down-weights the composite."
+    ],
+    "baseline_impact": "Spread-flag is additive; not yet implemented; baseline unchanged.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "HIGH",
+    "risk_tier_by_lead": {
+      "1": "HIGH",
+      "3": "MODERATE",
+      "5": "MODERATE",
+      "7": "MODERATE",
+      "10": "MODERATE",
+      "15": "MODERATE",
+      "20": "MODERATE",
+      "28": "MODERATE"
+    },
+    "risk_tier_stable_10y": false,
+    "note": "risk tier shifted within the decade -> a time-sensitive case (acute signal emerges late)"
+  }
+}

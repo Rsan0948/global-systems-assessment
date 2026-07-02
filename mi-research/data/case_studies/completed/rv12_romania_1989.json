@@ -1,0 +1,23 @@
+{
+  "name": "Romania (pre-WGI)",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "B_accountability",
+    "case_name": "Romania (pre-WGI)",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Romania",
+  "prior_year": null,
+  "predictor_year": 1989,
+  "actual_outcome_crisis": true,
+  "outcome": "1989 collapse",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "pre-WGI \u2014 unrunnable; doc's confirmation not testable on data",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "data_limited": true
+}

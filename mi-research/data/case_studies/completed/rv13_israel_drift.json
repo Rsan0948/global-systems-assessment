@@ -1,0 +1,30 @@
+{
+  "name": "Israel",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "drift",
+    "case_name": "Israel",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Israel",
+  "prior_year": 2017,
+  "predictor_year": 2022,
+  "actual_outcome_crisis": false,
+  "outcome": "erosion ongoing, not collapse",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "CONFIRMED",
+      "evidence": "gate CLEAR (gap 0.09); top-tier erosion in RL/VA sub-indicators masked by P1 composite -> gate cannot see it; no structural-crisis flag, consistent with erosion!=collapse",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.094,
+    "J_status": "clear",
+    "convergence": "closing",
+    "accountability": "balanced",
+    "va_minus_p4": -0.161,
+    "rents_pct": null
+  }
+}

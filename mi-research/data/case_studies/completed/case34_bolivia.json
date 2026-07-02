@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "case_name": "Bolivia (resource nationalism, regional 'media luna' tension, near-fragmentation)",
+    "case_id": "case34",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "fragmentation_prevention",
+    "geographic_region": "South America / Andes",
+    "time_period": "2000 -> 2024",
+    "entities": [
+      "Bolivia"
+    ],
+    "key_test": "Safeguard E (gas rents) interacting with Safeguard H (regionalized rents / 'media luna'): does low-moderate P1 + regionally concentrated resource rents predict a fragmentation SCARE that is CONTAINED (autonomy settlement) rather than realized secession? Mod8 agency split (risk, not agency).",
+    "round": "v2_batch3",
+    "notes": "Reference-based record. Real MI v2 re-scores. Gas wars 2003-2005, 2008 autonomy crisis -> 2009 constitution; scored ~2000 vs 2024. Centripetal classifier expected (contained, not secession)."
+  },
+  "pre_event": {
+    "time_point": "2000",
+    "event_description": "Onset of the resource-nationalism cycle (2000 Cochabamba water war prelude) with rising lowland-highland tension over gas rents concentrated in the eastern 'media luna' departments.",
+    "entities": {
+      "Bolivia": {
+        "context": {
+          "population": 8400000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "military_dominant": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "regional autonomy / resource-driven secessionist agitation",
+          "prior_porosity_period": false,
+          "is_democratic_transition": false,
+          "growth_trajectory": "volatile",
+          "regional_gdp_divergence": 0.4,
+          "resource_rents_pct_revenue": 32.0,
+          "resource_rents_pct_gdp": 9.0,
+          "has_devolution": true
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Gas rents concentrated in Santa Cruz / Tarija / Beni / Pando ('media luna') -> Safeguard H regional-concentration interaction with Safeguard E. resource_rents_pct_revenue ~32% (above the Safeguard E attention threshold via the fiscal channel); resource_rents_pct_gdp ~9%.",
+        "country_ref": "Bolivia",
+        "pre_year": "2000",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Directional: turbulent, contained; no secession. Net institutional trajectory weak/declining under recurrent crisis",
+      "basis": "Low-moderate P1 + regionalized rents -> fragmentation scare contained by a centripetal autonomy settlement",
+      "falsification_condition": "Actual secession of the media luna OR clean stable consolidation"
+    },
+    "b_violence": {
+      "prediction": "Elevated unrest/violence RISK during the gas wars, but contained below civil-war threshold",
+      "risk_level": "high (unrest); moderate (mass-violence)",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Full-scale civil war OR complete absence of unrest"
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity)",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "Stress dimension = political/institutional (P1) under resource-distribution conflict, not economic-complexity collapse",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Failure driven by a non-P1 dimension"
+    },
+    "e_fragment_count": {
+      "prediction": "CONTAINED fragmentation: 0 successor states; resolved via departmental autonomy",
+      "safeguard_b_applied": false,
+      "falsification_condition": "One or more departments secede"
+    },
+    "f_reversal_risk": {
+      "prediction": "High reversal/instability risk (recurrent executive crises)",
+      "safeguard_c_severity": "high",
+      "falsification_condition": "Sustained stability with no executive breakdowns"
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "High sub-state turbulence (regional 'media luna' autonomy agitation); Safeguard H engaged but centripetal",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "No regional turbulence"
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Bolivia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Contained fragmentation as predicted, NOT secession. Gas wars 2003 (Sanchez de Lozada ousted) and 2005; 2008 autonomy referendums + Pando violence brought the country to the brink; the 2009 constitution institutionalized departmental autonomy and kept the state whole. P1 declined 0.466 -> 0.344 and MI 0.564 -> 0.495 (Tier 3 throughout), reflecting the 2019-2020 political crisis (Morales resignation, contested transition). No department seceded.",
+        "key_events": [
+          "2003 gas war / Sanchez de Lozada ouster",
+          "2005 second gas war",
+          "2008 media luna autonomy referendums + Pando crisis",
+          "2009 constitution institutionalizes departmental autonomy",
+          "2019-2020 political crisis and recovery (no secession)"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Bolivia": {
+        "pre": {
+          "P1": 0.466,
+          "MI": 0.564
+        },
+        "post": {
+          "P1": 0.344,
+          "MI": 0.495
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Turbulent and contained; MI 0.564 -> 0.495, P1 0.466 -> 0.344 (declining), no secession",
+      "explanation": "Directional call - weak/declining institutional trajectory under contained resource-regional conflict - matches; the decline is consistent with the predicted high-instability path."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Gas wars and 2008 Pando violence (deaths, unrest) but no civil war",
+      "explanation": "Elevated unrest contained below the civil-war threshold, as predicted (Mod8).",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Bolivia pre-P1=0.466 -> MODERATE risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "P1 fell sharply (0.466 -> 0.344) under resource-distribution and executive-legitimacy conflict",
+      "explanation": "Institutional/P1 stress dimension as predicted; coded PARTIAL under strict post-hoc-dimension standards.",
+      "computed_config": "Bolivia: P4=0.67, P5=0.60, P3=0.60, P2=0.49, P1=0.47 | below-median (genuine vulnerabilities): P1=0.47, P2=0.49",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Zero successor states; 2009 constitution granted departmental autonomy",
+      "explanation": "Contained fragmentation via autonomy settlement - the centripetal prediction held; the media luna did not secede.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Recurrent executive breakdowns (2003, 2005, 2019-2020)",
+      "explanation": "High reversal/instability risk realized as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: regional autonomy / resource-driven secessionist agitation"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Intense media luna regional autonomy agitation (2008 referendums) resolved within the unitary state",
+      "explanation": "Safeguard H sub-state turbulence engaged but centripetal, as predicted.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Latin American resource-and-region fragmentation scare; the centripetal classifier called it correctly (contained autonomy settlement, not secession), with the predicted high-instability institutional decline.",
+    "safeguards_triggered": [
+      "E (gas rents)",
+      "H (regional concentration / media luna)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Regionally concentrated resource rents + low-moderate P1 generate a genuine secession scare that an autonomy settlement contains - the E x H interaction resolves centripetally rather than fragmenting.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; supports the Safeguard E x H interaction calibration.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "MODERATE",
+    "risk_tier_by_lead": {
+      "1": "MODERATE",
+      "3": "MODERATE",
+      "5": "MODERATE",
+      "7": "MODERATE",
+      "10": "MODERATE",
+      "15": "MODERATE",
+      "20": "MODERATE",
+      "28": "MODERATE"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
+  }
+}

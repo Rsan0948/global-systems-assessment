@@ -1,0 +1,198 @@
+{
+ "slug": "oman",
+ "name": "Oman",
+ "iso3": "OMN",
+ "mi": 0.665,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.619,
+  "P2": 0.401,
+  "P3": 0.847,
+  "P4": 0.776,
+  "P5": 0.68
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable - prosperity outrunning institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.446,
+ "residual": -0.037,
+ "config": [
+  [
+   "P3",
+   0.847
+  ],
+  [
+   "P4",
+   0.776
+  ],
+  [
+   "P5",
+   0.68
+  ],
+  [
+   "P1",
+   0.619
+  ],
+  [
+   "P2",
+   0.401
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 62.38,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 64.7,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 65.71,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 55.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 58.12,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 41.31,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 27.13,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -0.546,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7696,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9236,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 41740.17,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 76.61,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 48.7,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "earned-vs-granted -0.04",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "bahrain",
+   "name": "Bahrain",
+   "mi": 0.657,
+   "tier": 2
+  },
+  {
+   "slug": "chile",
+   "name": "Chile",
+   "mi": 0.691,
+   "tier": 2
+  },
+  {
+   "slug": "jordan",
+   "name": "Jordan",
+   "mi": 0.624,
+   "tier": 2
+  },
+  {
+   "slug": "albania",
+   "name": "Albania",
+   "mi": 0.646,
+   "tier": 2
+  },
+  {
+   "slug": "costa-rica",
+   "name": "Costa Rica",
+   "mi": 0.686,
+   "tier": 2
+  }
+ ]
+}

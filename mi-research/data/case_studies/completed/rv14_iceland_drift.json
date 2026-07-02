@@ -1,0 +1,30 @@
+{
+  "name": "Iceland",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "drift",
+    "case_name": "Iceland",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Iceland",
+  "prior_year": 2007,
+  "predictor_year": 2010,
+  "actual_outcome_crisis": false,
+  "outcome": "recovered (Pots-and-Pans)",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "CONFIRMED",
+      "evidence": "gate CLEAR; top-tier absorbed economic shock, reconstituted \u2014 no structural-crisis flag",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.085,
+    "J_status": "clear",
+    "convergence": "widening",
+    "accountability": "balanced",
+    "va_minus_p4": -0.044,
+    "rents_pct": 0
+  }
+}

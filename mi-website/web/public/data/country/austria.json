@@ -1,0 +1,203 @@
+{
+ "slug": "austria",
+ "name": "Austria",
+ "iso3": "AUT",
+ "mi": 0.798,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.774,
+  "P2": 0.626,
+  "P3": 0.909,
+  "P4": 0.937,
+  "P5": 0.743
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable - prosperity matched by institutions.",
+ "spread": 0.31,
+ "residual": 0.035,
+ "config": [
+  [
+   "P4",
+   0.937
+  ],
+  [
+   "P3",
+   0.909
+  ],
+  [
+   "P1",
+   0.774
+  ],
+  [
+   "P5",
+   0.743
+  ],
+  [
+   "P2",
+   0.626
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 80.7887,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 85.8398,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 76.171,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 74.0564,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 67.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 50.28,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 3.2552,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": 1.249,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.8644,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9532,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 73911.44,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 74.29,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 81.45,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 0.12,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.03",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "netherlands",
+   "name": "Netherlands",
+   "mi": 0.818,
+   "tier": 1
+  },
+  {
+   "slug": "belgium",
+   "name": "Belgium",
+   "mi": 0.781,
+   "tier": 2
+  },
+  {
+   "slug": "ireland",
+   "name": "Ireland",
+   "mi": 0.84,
+   "tier": 1
+  },
+  {
+   "slug": "sweden",
+   "name": "Sweden",
+   "mi": 0.833,
+   "tier": 1
+  },
+  {
+   "slug": "united-arab-emirates",
+   "name": "United Arab Emirates",
+   "mi": 0.763,
+   "tier": 2
+  }
+ ]
+}

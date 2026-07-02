@@ -1,0 +1,205 @@
+{
+ "slug": "niger",
+ "name": "Niger",
+ "iso3": "NER",
+ "mi": 0.396,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.385,
+  "P2": 0.223,
+  "P3": 0.456,
+  "P4": 0.56,
+  "P5": 0.358
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally fragile - prosperity roughly in line with institutions.",
+ "spread": 0.337,
+ "residual": 0.019,
+ "config": [
+  [
+   "P4",
+   0.56
+  ],
+  [
+   "P3",
+   0.456
+  ],
+  [
+   "P1",
+   0.385
+  ],
+  [
+   "P5",
+   0.358
+  ],
+  [
+   "P2",
+   0.223
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 36.3751,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 40.6881,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 42.8377,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 35.3675,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 34.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 11.23,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -0.835,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.2779,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.6336,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 2049.93,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 35.77,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 39.86,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 6.41,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.02",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
+  },
+  {
+   "key": "config",
+   "title": "Configuration",
+   "status": "flag",
+   "headline": "partial failure",
+   "detail": "Has money, not institutions: strong Economic Structure (resource/income) atop catastrophic Institutions and Economic Complexity. Target Institutions and Economic Complexity (institutions, knowledge economy) - NOT Economic Structure. Money is not the binding constraint."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "burkina-faso",
+   "name": "Burkina Faso",
+   "mi": 0.383,
+   "tier": 4
+  },
+  {
+   "slug": "nigeria",
+   "name": "Nigeria",
+   "mi": 0.37,
+   "tier": 4
+  },
+  {
+   "slug": "mozambique",
+   "name": "Mozambique",
+   "mi": 0.385,
+   "tier": 4
+  },
+  {
+   "slug": "guinea",
+   "name": "Guinea",
+   "mi": 0.424,
+   "tier": 3
+  },
+  {
+   "slug": "cote-d-ivoire",
+   "name": "Cote d'Ivoire",
+   "mi": 0.445,
+   "tier": 3
+  }
+ ]
+}

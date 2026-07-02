@@ -1,0 +1,203 @@
+{
+ "slug": "romania",
+ "name": "Romania",
+ "iso3": "ROU",
+ "mi": 0.697,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.574,
+  "P2": 0.516,
+  "P3": 0.818,
+  "P4": 0.891,
+  "P5": 0.686
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable - prosperity roughly in line with institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.374,
+ "residual": -0.022,
+ "config": [
+  [
+   "P4",
+   0.891
+  ],
+  [
+   "P3",
+   0.818
+  ],
+  [
+   "P5",
+   0.686
+  ],
+  [
+   "P1",
+   0.574
+  ],
+  [
+   "P2",
+   0.516
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 59.4705,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 63.3516,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 60.9104,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 48.3806,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 46.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 33.4,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 0.5166,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": 0.993,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7754,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8606,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 49076.54,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 68.61,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 63.63,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 1.14,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted -0.02",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "bulgaria",
+   "name": "Bulgaria",
+   "mi": 0.685,
+   "tier": 2
+  },
+  {
+   "slug": "north-macedonia",
+   "name": "North Macedonia",
+   "mi": 0.66,
+   "tier": 2
+  },
+  {
+   "slug": "croatia",
+   "name": "Croatia",
+   "mi": 0.703,
+   "tier": 2
+  },
+  {
+   "slug": "cyprus",
+   "name": "Cyprus",
+   "mi": 0.746,
+   "tier": 2
+  },
+  {
+   "slug": "slovakia",
+   "name": "Slovakia",
+   "mi": 0.718,
+   "tier": 2
+  }
+ ]
+}

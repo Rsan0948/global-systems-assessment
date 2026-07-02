@@ -21,24 +21,6 @@
     "event_description": "Kosovo's unilateral declaration of independence (Feb 17, 2008); pre-event 2007 under UNMIK administration.",
     "entities": {
       "Serbia": {
-        "indicators": {
-          "gov_effectiveness": 44.5486,
-          "rule_of_law": 52.4111,
-          "regulatory_quality": 48.2301,
-          "cpi": null,
-          "control_of_corruption": 41.5611,
-          "gii": null,
-          "rd_pct_gdp": 0.5566,
-          "eci": 0.642,
-          "education_index": 0.7002,
-          "life_expectancy_index": 0.825,
-          "gdp_per_capita_ppp": 11230.0,
-          "resource_rents_pct_gdp": 1.5542,
-          "oda_pct_gni": 1.9348,
-          "political_stability": 59.2734,
-          "fsi": 81.1,
-          "voice_accountability": 62.5949
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -64,86 +46,11 @@
           "fsi"
         ],
         "notes": "WGI Rule of Law (legacy est.) ~ -0.4 region, improving post-2000; sovereign, EU candidate track. GDP per capita PPP ~$11,230 (2007). Derived: higher P1 than Kosovo on measured WGI; both below EU-core levels.",
-        "_hydrated_from_world": {
-          "source_slug": "serbia",
-          "source_year": "2007",
-          "target_year": 2007,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 44.5486
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 52.4111
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 48.2301
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 41.5611
-            },
-            {
-              "indicator": "political_stability",
-              "value": 59.2734
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 62.5949
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 1.5542
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 1.9348
-            },
-            {
-              "indicator": "rd_pct_gdp",
-              "value": 0.5566
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.7002
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.825
-            },
-            {
-              "indicator": "eci",
-              "value": 0.642
-            },
-            {
-              "indicator": "fsi",
-              "value": 81.1
-            }
-          ]
-        }
+        "country_ref": "Serbia",
+        "pre_year": "2007",
+        "post_year": "2024"
       },
       "Kosovo": {
-        "indicators": {
-          "gov_effectiveness": 42.588,
-          "rule_of_law": 57.949,
-          "regulatory_quality": null,
-          "cpi": null,
-          "control_of_corruption": 39.9701,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": null,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": 68.0087,
-          "fsi": null,
-          "voice_accountability": 54.5121
-        },
         "context": {
           "under_external_admin": true,
           "admin_details": "UNMIK since 1999; EULEX deployed 2008 (Bonn-Powers-equivalent authority). Measured P1 > actual indigenous capacity (Mod 1 discount).",
@@ -170,34 +77,9 @@
           "fsi"
         ],
         "notes": "WGI Rule of Law (legacy est.) ~ -0.5 to -0.7 region, under UNMIK administration. GDP per capita far lower than Serbia (~$6,200 only reached by 2023); remittances ~14% of GDP, aid-dependent; very high (later ~50%+ youth) unemployment. Excluded from FSI (Fund for Peace does not rank Kosovo). 2nd-order recursive fragment (Yugoslavia -> Serbia -> Kosovo); passes the capacity gate minimally, only under international scaffolding. LIVE (Mod 1) discounts measured P1 -> indigenous P1 lower than raw WGI suggests.",
-        "_hydrated_from_world": {
-          "source_slug": "kosovo",
-          "source_year": "2007",
-          "target_year": 2007,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 42.588
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 57.949
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 39.9701
-            },
-            {
-              "indicator": "political_stability",
-              "value": 68.0087
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 54.5121
-            }
-          ]
-        }
+        "country_ref": "Kosovo",
+        "pre_year": "2007",
+        "post_year": "2024"
       }
     }
   },
@@ -276,48 +158,96 @@
           "partial international recognition"
         ]
       }
+    },
+    "resolved_scores": {
+      "Serbia": {
+        "pre": {
+          "P1": 0.467,
+          "MI": 0.668
+        },
+        "post": {
+          "P1": 0.495,
+          "MI": 0.629
+        }
+      },
+      "Kosovo": {
+        "pre": {
+          "P1": 0.468,
+          "MI": null
+        },
+        "post": {
+          "P1": 0.505,
+          "MI": 0.579
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Serbia GDP per capita PPP ~$26,884 (2024) vs Kosovo ~$6,200 (2023).",
-      "explanation": "Both versions got the ordinal call right; Mod 1 discount made the P1 gap exceed the margin of error."
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] Both versions g",
+      "auto_derived": false
     },
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "No return to war; only low-intensity episodes (e.g. Banjska 2023).",
-      "explanation": "Low-intensity, episodic outcome as predicted."
+      "explanation": "Low-intensity, episodic outcome as predicted.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Serbia pre-P1=0.467 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Serbia pulled ahead economically; Kosovo remained the region's highest-unemployment economy.",
-      "explanation": "Divergence as predicted."
+      "explanation": "Divergence as predicted.",
+      "auto_derived": false
     },
     "d_failure_dimension": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Predicted (Kosovo P4+P1; Serbia P1/P5) but not separately scored in the run's scorecard."
+      "explanation": "Predicted (Kosovo P4+P1; Serbia P1/P5) but not separately scored in the run's scorecard.",
+      "computed_config": "Serbia: P4=0.81, P2=0.74, P3=0.73, P5=0.59, P1=0.47 | below-median (genuine vulnerabilities): P1=0.47",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Predicted (no further fragmentation) but not separately scored in the run's scorecard."
+      "explanation": "Predicted (no further fragmentation) but not separately scored in the run's scorecard.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Serbia democratic backsliding (Freedom House 'Partly Free'; V-Dem 'electoral autocracy' since 2014).",
-      "explanation": "Confirmed, LIVE flagged more strongly than STATIC."
+      "explanation": "Confirmed, LIVE flagged more strongly than STATIC.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Kosovo's UDI; ICJ 22 July 2010 advisory opinion (10-4) that the declaration did not violate international law.",
-      "explanation": "STATIC ambiguous; LIVE CONFIRMED - best classified as an exit from suppression toward recognized (if partial) statehood."
+      "explanation": "STATIC ambiguous; LIVE CONFIRMED - best classified as an exit from suppression toward recognized (if partial) statehood.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: loss of breakaway province (Kosovo)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No substate-turbulence prediction made for this case."
+      "explanation": "No substate-turbulence prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -339,6 +269,28 @@
     "proposed_framework_modifications": [
       "Retain Mod 1 (Safeguard A discount) and Mod 4 (margin-of-error gate); their interaction earned its keep here."
     ],
-    "baseline_impact": "No degradation; LIVE improved defensibility without changing the ordinal outcome."
+    "baseline_impact": "No degradation; LIVE improved defensibility without changing the ordinal outcome.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "abstain",
+      "3": "abstain",
+      "5": "abstain",
+      "7": "abstain",
+      "10": "abstain",
+      "15": "abstain",
+      "20": "miss",
+      "28": "NA"
+    },
+    "ordinal_holds_to_years": 15,
+    "note": "ordinal mis-ranks from 20y lead (structural exception, not a timing effect)"
   }
 }

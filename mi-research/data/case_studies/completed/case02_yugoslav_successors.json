@@ -35,24 +35,6 @@
     "event_description": "Violent dissolution of Yugoslavia into 7 successor states (post-Dayton, 1996); divergent post-war trajectories.",
     "entities": {
       "Slovenia": {
-        "indicators": {
-          "gov_effectiveness": 66.3938,
-          "rule_of_law": 75.1451,
-          "regulatory_quality": 65.8089,
-          "cpi": null,
-          "control_of_corruption": 75.4309,
-          "gii": null,
-          "rd_pct_gdp": 1.2669,
-          "eci": 1.249,
-          "education_index": 0.6629,
-          "life_expectancy_index": 0.8473,
-          "gdp_per_capita_ppp": 14284.3393,
-          "resource_rents_pct_gdp": 0.1932,
-          "oda_pct_gni": 0.3818,
-          "political_stability": 87.8864,
-          "fsi": null,
-          "voice_accountability": 78.9786
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -99,86 +81,11 @@
           "fsi"
         ],
         "notes": "1996 estimate (ordinal): P1 high, balanced -> MI high (~0.45+), narrow spread. Regional leader; WGI Rule of Law ~+1.0 (legacy scale; series averaged ~1.02 with 1998 max 1.26) and Govt Effectiveness highest. HDI 1995 = 0.760; GDP per cap PPP 1996 highest by far; resource rents low; political stability high. Ordering P1: Slovenia >> Croatia > Serbia >= Bosnia. Pillar values are estimates, not exact 0-100 WGI; legacy-scale RoL figure not placed in indicator slot. WGI 2025-anchored vintage caveat applies.",
-        "_hydrated_from_world": {
-          "source_slug": "slovenia",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 66.3938
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 75.1451
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 65.8089
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 75.4309
-            },
-            {
-              "indicator": "political_stability",
-              "value": 87.8864
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 78.9786
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 14284.3393
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 0.1932
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 0.3818
-            },
-            {
-              "indicator": "rd_pct_gdp",
-              "value": 1.2669
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.6629
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.8473
-            },
-            {
-              "indicator": "eci",
-              "value": 1.249
-            }
-          ]
-        }
+        "country_ref": "Slovenia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Croatia": {
-        "indicators": {
-          "gov_effectiveness": 44.8229,
-          "rule_of_law": 45.349,
-          "regulatory_quality": 50.0828,
-          "cpi": null,
-          "control_of_corruption": 33.1266,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": 0.761,
-          "education_index": 0.5908,
-          "life_expectancy_index": 0.8294,
-          "gdp_per_capita_ppp": 8805.6367,
-          "resource_rents_pct_gdp": 0.8467,
-          "oda_pct_gni": null,
-          "political_stability": 62.5412,
-          "fsi": null,
-          "voice_accountability": 48.3599
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -225,78 +132,11 @@
           "fsi"
         ],
         "notes": "1996 estimate (ordinal): P1 moderate-negative, recovering -> MI moderate-low, middle of the four. The one exact pre-event WGI figure recovered for the case: Croatia 1996 Rule of Law = -0.67 (its all-time low; legacy WGI -2.5..+2.5 scale) -- NOT placed in the 0-100 rule_of_law indicator slot to avoid scale-mixing. HDI 1995 medium band; GDP per cap PPP 1996 middle; resource rents low; political stability recovering. WGI 2025-anchored vintage caveat applies.",
-        "_hydrated_from_world": {
-          "source_slug": "croatia",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 44.8229
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 45.349
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 50.0828
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 33.1266
-            },
-            {
-              "indicator": "political_stability",
-              "value": 62.5412
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 48.3599
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 8805.6367
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 0.8467
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.5908
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.8294
-            },
-            {
-              "indicator": "eci",
-              "value": 0.761
-            }
-          ]
-        }
+        "country_ref": "Croatia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Serbia": {
-        "indicators": {
-          "gov_effectiveness": 40.828,
-          "rule_of_law": 36.5981,
-          "regulatory_quality": 32.3275,
-          "cpi": null,
-          "control_of_corruption": 26.901,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": 0.5913,
-          "life_expectancy_index": 0.7931,
-          "gdp_per_capita_ppp": 5433.7198,
-          "resource_rents_pct_gdp": 0.5274,
-          "oda_pct_gni": null,
-          "political_stability": 43.0879,
-          "fsi": null,
-          "voice_accountability": 32.6884
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -343,74 +183,11 @@
           "fsi"
         ],
         "notes": "1996 estimate (ordinal): P1 negative (~-1, not isolated), P4 sanctions-distorted -> MI low. WGI Rule of Law strongly negative; Govt Effectiveness negative. HDI 1995 = 0.674; GDP per cap PPP 1996 low (sanctions); resource rents low; political stability low (Milosevic). Held back by low P1 plus predatory/pariah status. Pillar values are estimates; exact 1996 WGI not isolated (reported missing, not interpolated). WGI 2025-anchored vintage caveat applies.",
-        "_hydrated_from_world": {
-          "source_slug": "serbia",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 40.828
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 36.5981
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 32.3275
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 26.901
-            },
-            {
-              "indicator": "political_stability",
-              "value": 43.0879
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 32.6884
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 5433.7198
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 0.5274
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.5913
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.7931
-            }
-          ]
-        }
+        "country_ref": "Serbia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Bosnia-Herzegovina": {
-        "indicators": {
-          "gov_effectiveness": 24.861,
-          "rule_of_law": 51.6699,
-          "regulatory_quality": 33.9259,
-          "cpi": null,
-          "control_of_corruption": 37.2655,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": 0.589,
-          "education_index": null,
-          "life_expectancy_index": 0.822,
-          "gdp_per_capita_ppp": 2268.5629,
-          "resource_rents_pct_gdp": 0.0917,
-          "oda_pct_gni": 33.2213,
-          "political_stability": 52.9854,
-          "fsi": null,
-          "voice_accountability": 53.4556
-        },
         "context": {
           "under_external_admin": true,
           "admin_details": "Post-Dayton Office of the High Representative (OHR) holds 'Bonn Powers' -- the power to impose laws and remove elected officials. WGI partly measures international-administrator competence, not indigenous capacity (Safeguard A).",
@@ -459,58 +236,9 @@
           "fsi"
         ],
         "notes": "1996 estimate (ordinal): P1 bottom (and externally administered), P5 floor -> MI lowest; widest vulnerability. Safeguard A applied: discount measured capacity because WGI reflects the OHR administrator overlay (Bonn Powers), so indigenous P1 is lower than measured. WGI Rule of Law bottom (not isolated; OHR overlay); Govt Effectiveness bottom/administrator-driven. HDI 1995 not reported (war); GDP per cap PPP 1996 lowest (war-devastated); resource rents low; political stability very low (post-war). Pillar values are estimates; exact 1996 WGI not isolated (reported missing, not interpolated). WGI 2025-anchored vintage caveat applies.",
-        "_hydrated_from_world": {
-          "source_slug": "bosnia_and_herzegovina",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 24.861
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 51.6699
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 33.9259
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 37.2655
-            },
-            {
-              "indicator": "political_stability",
-              "value": 52.9854
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 53.4556
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 2268.5629
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 0.0917
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 33.2213
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.822
-            },
-            {
-              "indicator": "eci",
-              "value": 0.589
-            }
-          ]
-        }
+        "country_ref": "Bosnia-Herzegovina",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -596,48 +324,116 @@
           "Republika Srpska secession threats (2025)"
         ]
       }
+    },
+    "resolved_scores": {
+      "Slovenia": {
+        "pre": {
+          "P1": 0.707,
+          "MI": 0.809
+        },
+        "post": {
+          "P1": 0.684,
+          "MI": 0.771
+        }
+      },
+      "Croatia": {
+        "pre": {
+          "P1": 0.433,
+          "MI": 0.653
+        },
+        "post": {
+          "P1": 0.587,
+          "MI": 0.703
+        }
+      },
+      "Serbia": {
+        "pre": {
+          "P1": 0.342,
+          "MI": 0.545
+        },
+        "post": {
+          "P1": 0.495,
+          "MI": 0.629
+        }
+      },
+      "Bosnia-Herzegovina": {
+        "pre": {
+          "P1": 0.369,
+          "MI": 0.513
+        },
+        "post": {
+          "P1": 0.432,
+          "MI": 0.583
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "EU accession dates map exactly: Slovenia 2004 > Croatia 2013 > Serbia candidate > Bosnia candidate-last.",
-      "explanation": "Four-way P1 ordering reproduced the four-way outcome ordering."
+      "explanation": "AUTO: top correct (Slovenia) but sub-ordering differs (pred ['Slovenia', 'Croatia', 'Bosnia-Herzegovina', 'Serbia'] vs outcome ['Slovenia', 'Croatia', 'Serbia', 'Bosnia-Herzegovina']); often a within-margin sub-pair. | prior: AUTO: top correct (Slovenia) but sub-ordering differs (pred ['Slovenia', 'Croatia', 'Bosnia-Herzegovina', 'Serbia'] vs outcome ['Slovenia', 'Croatia', 'Serbia', 'Bosnia-Herzegovina']); often a within-margin sub-pair. | prior: AUTO: top correct (Slovenia) but sub-ordering di",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Institutional weakness is consistent with the violence locus, but the 1996 data is post-war; cannot fully separate pre-war P1 from war damage.",
-      "explanation": "Direction correct (violence concentrated in low-P1 Bosnia/Serbia) but coded conservatively because 1996 measures are post-war."
+      "explanation": "Direction correct (violence concentrated in low-P1 Bosnia/Serbia) but coded conservatively because 1996 measures are post-war.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Bosnia-Herzegovina pre-P1=0.369 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Slovenia converged to EU core while Bosnia diverged downward.",
-      "explanation": "Outcomes diverged across the spread as predicted."
+      "explanation": "AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.296->0.188). | prior: AUTO: outcome CONVERGENCE (MI-range 0.316->0.198). | prior: Outcomes diverged across the spread as predicted.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "CONFIRMED for Slovenia/Bosnia poles; PARTIAL for Serbia/Croatia middle.",
-      "explanation": "The P1-failure dimension holds cleanly at the poles but is mixed for the middle two."
+      "explanation": "The P1-failure dimension holds cleanly at the poles but is mixed for the middle two.",
+      "computed_config": "Bosnia-Herzegovina: P2=0.73, P5=0.53, P4=0.42, P1=0.37 | below-median (genuine vulnerabilities): P1=0.37, P4=0.42",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "Contested violent secession (7 successors).",
-      "explanation": "Engineered-fragmentation call confirmed."
+      "explanation": "Engineered-fragmentation call confirmed.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No reversal-risk (Safeguard C) prediction was made for this case."
+      "explanation": "No reversal-risk (Safeguard C) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Tier 1 military suppression: Croatia's Operation Storm, Dayton's military annexes, NATO.",
-      "explanation": "The wars were resolved by force/partition, matching the Tier 1 classification."
+      "explanation": "The wars were resolved by force/partition, matching the Tier 1 classification.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: engineered"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case."
+      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -660,6 +456,28 @@
     "proposed_framework_modifications": [
       "Codify Safeguard A: if an OHR-type body holds binding legislative power (Bonn Powers), flag indigenous P1 as 'measured > actual.'"
     ],
-    "baseline_impact": "None degrading; supports keeping Safeguard A. No 20-case baseline-breaking modification proposed."
+    "baseline_impact": "None degrading; supports keeping Safeguard A. No 20-case baseline-breaking modification proposed.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "hit",
+      "3": "hit",
+      "5": "hit",
+      "7": "hit",
+      "10": "hit",
+      "15": "hit",
+      "20": "hit",
+      "28": "hit"
+    },
+    "ordinal_holds_to_years": 28,
+    "note": "ordinal call correct/cautious at all tested leads (no horizon decay)"
   }
 }

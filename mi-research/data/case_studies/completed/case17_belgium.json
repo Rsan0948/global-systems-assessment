@@ -20,24 +20,6 @@
     "event_description": "Belgium's six-government federal architecture under extreme linguistic/regional fragmentation pressure -- the framework's high-porosity limit test.",
     "entities": {
       "Belgium": {
-        "indicators": {
-          "gov_effectiveness": 83.6011,
-          "rule_of_law": 89.97,
-          "regulatory_quality": 72.7047,
-          "cpi": null,
-          "control_of_corruption": 78.1287,
-          "gii": null,
-          "rd_pct_gdp": 2.0613,
-          "eci": 1.18,
-          "education_index": 0.8805,
-          "life_expectancy_index": 0.9236,
-          "gdp_per_capita_ppp": 39839.9773,
-          "resource_rents_pct_gdp": 0.047,
-          "oda_pct_gni": null,
-          "political_stability": 81.5488,
-          "fsi": 32.0,
-          "voice_accountability": 83.5094
-        },
         "context": {
           "is_democratic": true,
           "is_authoritarian": false,
@@ -67,71 +49,9 @@
           "fsi"
         ],
         "notes": "Belgium WGI estimate scale: RoL ~1.28 (top tier; indistinguishable from UK 1.27). All three Safeguard F triggers met: (1) separatist/nationalist vote >25% in Flanders -- N-VA 24.5% + Vlaams Belang 22.8% = ~47% (2024); (2) executive repeatedly suspended -- 541 days in 2010-11 and 652 days in 2019-20 (both world records per the Brussels Times), still forming after the June 2024 election at source-reporting time; (3) regional divergence >30% -- Flemish EUR47,300 PPS vs Walloon EUR33,400 PPS (>40% gap; Wallonia ~72% of the Belgian average). 'executive_collapses'=3 recorded record-length formations (2010-11, 2019-20, 2024).",
-        "_scale_corrections": [
-          {
-            "indicator": "rule_of_law",
-            "original": 1.28,
-            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
-            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
-            "corrected": 89.97
-          }
-        ],
-        "_hydrated_from_world": {
-          "source_slug": "belgium",
-          "source_year": "2010",
-          "target_year": 2010,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 83.6011
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 72.7047
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 78.1287
-            },
-            {
-              "indicator": "political_stability",
-              "value": 81.5488
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 83.5094
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 39839.9773
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 0.047
-            },
-            {
-              "indicator": "rd_pct_gdp",
-              "value": 2.0613
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.8805
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.9236
-            },
-            {
-              "indicator": "eci",
-              "value": 1.18
-            },
-            {
-              "indicator": "fsi",
-              "value": 32.0
-            }
-          ]
-        }
+        "country_ref": "Belgium",
+        "pre_year": "2010",
+        "post_year": "2024"
       }
     }
   },
@@ -197,6 +117,18 @@
           "Flanders-Wallonia GDP-per-capita gap >40% (Flemish EUR47,300 vs Walloon EUR33,400 PPS)"
         ]
       }
+    },
+    "resolved_scores": {
+      "Belgium": {
+        "pre": {
+          "P1": 0.781,
+          "MI": 0.841
+        },
+        "post": {
+          "P1": 0.743,
+          "MI": 0.781
+        }
+      }
     }
   },
   "verification": {
@@ -208,7 +140,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Zero political violence throughout.",
-      "explanation": "No-violence prediction realized."
+      "explanation": "No-violence prediction realized.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Belgium pre-P1=0.781 -> LOW risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -216,29 +150,51 @@
       "explanation": "Persistent regional divergence managed non-violently, as predicted."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Linguistic/regional fragmentation pressure managed by the six-government federal architecture.",
-      "explanation": "Fragmentation-pressure dimension confirmed."
+      "explanation": "Fragmentation-pressure dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Belgium: P3=0.89, P4=0.88, P2=0.84, P5=0.82, P1=0.78 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.78)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "Zero secession.",
-      "explanation": "State intact, as predicted."
+      "explanation": "State intact, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Not a democratic-transition reversal case."
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Extreme Tier 3 architecture (six governments, linguistic parity, alarm-bell procedure, concurrent majorities); no suppression deployed.",
-      "explanation": "Mechanism classified as extreme Tier 3 porosity, as predicted."
+      "explanation": "Mechanism classified as extreme Tier 3 porosity, as predicted.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: extreme_porosity"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "All three Safeguard F triggers met (vote ~47%, record-length formations, divergence >40%), yet zero secession/violence; Mod10 backstops = monarchy, caretaker convention, EU, Brussels.",
-      "explanation": "Maximum Safeguard F absorbed by porosity-with-backstop -- confirms Mod10/Safeguard I; porosity has no hard ceiling under high P1."
+      "explanation": "Maximum Safeguard F absorbed by porosity-with-backstop -- confirms Mod10/Safeguard I; porosity has no hard ceiling under high P1.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -254,6 +210,30 @@
       "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard -- Belgium is the strongest single demonstration.",
       "Mod4: do not rank statistically indistinguishable P1 pairs (UK RoL 1.27 vs Belgium RoL 1.28)."
     ],
-    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check."
+    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "LOW",
+    "risk_tier_by_lead": {
+      "1": "LOW",
+      "3": "LOW",
+      "5": "LOW",
+      "7": "LOW",
+      "10": "LOW",
+      "15": "LOW",
+      "20": "LOW",
+      "28": "LOW"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
   }
 }

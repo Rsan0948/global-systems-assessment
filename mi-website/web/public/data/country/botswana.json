@@ -1,0 +1,198 @@
+{
+ "slug": "botswana",
+ "name": "Botswana",
+ "iso3": "BWA",
+ "mi": 0.61,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.6,
+  "P2": 0.401,
+  "P3": 0.712,
+  "P4": 0.651,
+  "P5": 0.687
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable - prosperity roughly in line with institutions.",
+ "spread": 0.31,
+ "residual": -0.015,
+ "config": [
+  [
+   "P3",
+   0.712
+  ],
+  [
+   "P5",
+   0.687
+  ],
+  [
+   "P4",
+   0.651
+  ],
+  [
+   "P1",
+   0.6
+  ],
+  [
+   "P2",
+   0.401
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 59.45,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 62.34,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 61.2,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 57.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 60.63,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 62.02,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 23.08,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -0.31,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.6666,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7564,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 20538.13,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 83.53,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 55.3,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted -0.02",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "kuwait",
+   "name": "Kuwait",
+   "mi": 0.624,
+   "tier": 2
+  },
+  {
+   "slug": "jamaica",
+   "name": "Jamaica",
+   "mi": 0.571,
+   "tier": 3
+  },
+  {
+   "slug": "dominican-republic",
+   "name": "Dominican Republic",
+   "mi": 0.602,
+   "tier": 2
+  },
+  {
+   "slug": "mauritius",
+   "name": "Mauritius",
+   "mi": 0.677,
+   "tier": 2
+  },
+  {
+   "slug": "mongolia",
+   "name": "Mongolia",
+   "mi": 0.563,
+   "tier": 3
+  }
+ ]
+}

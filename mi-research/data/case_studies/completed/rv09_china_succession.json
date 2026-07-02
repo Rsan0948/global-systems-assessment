@@ -1,0 +1,30 @@
+{
+  "name": "China",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "B_accountability",
+    "case_name": "China",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "China",
+  "prior_year": null,
+  "predictor_year": 2011,
+  "actual_outcome_crisis": false,
+  "outcome": "2012 Hu->Xi orderly transition",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "CONFIRMED",
+      "evidence": "accountability_lag not legitimacy-capped; correctly predicted no crisis",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.323,
+    "J_status": "FLAG",
+    "convergence": null,
+    "accountability": "accountability_lag",
+    "va_minus_p4": -0.464,
+    "rents_pct": 7.69
+  }
+}

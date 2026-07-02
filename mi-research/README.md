@@ -54,15 +54,39 @@ mi-research/
 
 ## Current Status
 
-- **MI Version:** LIVE (with Mods 4, 8 and Safeguards A-I)
-- **Validated Cases:** 20 modern + 5 ancient (proxy), now backed by structured JSON
-  records in `data/case_studies/completed/`; **+5 expansion cases (Batch 1, cases
-  21-25)** scored on fresh real data — see `live/runs/run7_expansion_batch1_cases21-25.md`.
-- **Clean Confirmation Rate:** ~78% (range 62-85%) on the baseline; Batch-1 ~75%.
-- **Directional Accuracy:** ~100% (zero falsifications) — note this is partly
-  structural (directional claims are hard to falsify) and partly redundant with WGI standalone.
-- **P1 Ordinality:** 20/20 baseline; confirmed in every Batch-1 case where the gap
-  exceeded the WGI margin (and correctly abstained, per Mod4, where it did not).
+- **MI Version:** **MI v3.3** (live; `MI_MODEL_VERSION="v3.3"`). V3.3 = V3.2 + the **level-over-slope**
+  epistemic made operational: `ascent_potential` (low base → durable-climb tendency; the one
+  holdout-validated golden-age signal, z+2.4) + `movement_quality` (names windfall / hollow_stability /
+  real_ascent with a distrust-the-slope caveat). The golden-age *signature* (component jumps) was
+  **refuted on a pre-registered geographic holdout** (z=−0.0) and deliberately NOT added. See
+  `docs/v3_3_inclusion_and_global_picture.md`, `golden_age_holdout_and_structure.md`. V3.2 = V3.1 +
+  **Convergence Qualifier** on Safeguard J (gap trajectory; 92/80) + **Accountability Gap** (VA vs
+  income; hypothesis). V3.1 = V3 + **Safeguard J — Durability Gate** (P4−P1, three-state), N=21
+  (83/100/100). See `v3_2_convergence_and_accountability.md` + `v3_1_durability_gate.md`.
+- **Corpus:** **84 case studies**, three classes scored separately by `--validate`: 51 P1-ordinality
+  (213C/77P/0F) + 19 durability-gate / Safeguard-J (17/19) + 14 rule-validation A/B (8 confirmed /
+  2 indeterminate / 2 falsified; 2 pre-WGI N/A). The rule-validation set (`docs/c_cases_blind_validation.md`)
+  was run blind: it *strengthened* the Convergence Qualifier (the qualifier correctly handles the
+  petro-state the source doc called its strongest disconfirmation — so the doc's rent-control add-on
+  is unnecessary) and *refuted* the Accountability Gap as a crisis predictor (Cuba legitimacy-capped,
+  no crisis) — B stays an informational hypothesis.
+- **MI v3 base:** V3 = V2 + the **consolidated-pair
+  high-end caution** (Mod4 extension: between two polities both P1 > 0.60, abstain on an ordinal
+  call unless the gap ≥ 0.15 — derived from the Chile/Uruguay falsification; complexity-capacity:
+  above the threshold, capacity differences don't predict trajectory). V2 (equal weights, graded
+  Safeguard E, durability + below-floor outputs) frozen at tag `mi-v2`; V1 at `mi-v1`. Decisions:
+  `docs/architectural_decisions/v2_*.md` + `v3_improvement_analysis.md`.
+- **Validated Cases:** **51** — 25 redone (1–25) + 26 new (26–51, incl. revisions 47 Cameroon /
+  49 Mauritius / 51 Somaliland). Runs: run7 (21–25), run8 (26–35), run9 (36–51); synthesis
+  `docs/v2_synthesis_51cases.md`.
+- **Clean Confirmation Rate (V3):** **~73%** across 51 cases (213C/77P/**0F**), honest range 62–85%.
+- **Directional Accuracy:** **100%** — restored from V2's 99.7% not by hiding the lone V2
+  falsification (Chile/Uruguay, kept at tag `mi-v2`) but by **bounding the P1-ordinal claim**: V3
+  abstains between two consolidated polities, where a 3.5σ P1 gap was shown not to predict trajectory.
+  (Partly structural; capacity partly redundant with WGI standalone.)
+- **P1 Ordinality / centrality:** ordinality holds **independent of weighting** (the V1 P1=0.34
+  "centrality" was a sample/time-point artifact; the pillar rotates and sits in a 0.71–0.80 band).
+  See `docs/architectural_decisions/v2_p1_centrality_restatement.md`.
 
 ### Recent work (expansion Batch 1, 2026-06-27)
 - **Rwanda architectural decision** settled (P1 kept composite, not decomposed):

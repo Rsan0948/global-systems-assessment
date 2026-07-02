@@ -34,24 +34,6 @@
     "event_description": "Dissolution of the USSR into 15 successor states; divergent post-Soviet modernization trajectories under structural stress.",
     "entities": {
       "Estonia": {
-        "indicators": {
-          "gov_effectiveness": 58.6672,
-          "rule_of_law": 68.6,
-          "regulatory_quality": 67.9821,
-          "cpi": null,
-          "control_of_corruption": 57.6908,
-          "gii": null,
-          "rd_pct_gdp": 0.55,
-          "eci": 0.699,
-          "education_index": 0.79,
-          "life_expectancy_index": 0.72,
-          "gdp_per_capita_ppp": 8800,
-          "resource_rents_pct_gdp": 1.2,
-          "oda_pct_gni": 1.8,
-          "political_stability": 78.6261,
-          "fsi": null,
-          "voice_accountability": 73.2091
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -100,86 +82,11 @@
           "fsi"
         ],
         "notes": "1996 estimate (ordinal): P1 high (~0.45-0.55 on 0-1), P4 moderate-high, P5 moderate -> MI ~= 0.40 (matches dataset 0.398). Configuration: balanced, institution-led; narrowest pillar spread of the post-Soviet three. WGI Rule of Law / Govt Effectiveness / Control of Corruption / Regulatory Quality all highest of the three (clear regional reformer). HDI 1995 ~0.79 band; GDP per cap PPP 1996 highest of three. ERCAS describes Estonia as 'since 1991, the world's most successful short transition to good governance.' Pillar values are estimates, not exact WGI; WGI 2025-anchored vintage caveat applies.",
-        "_hydrated_from_world": {
-          "source_slug": "estonia",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 58.6672
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 68.6
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 67.9821
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 57.6908
-            },
-            {
-              "indicator": "political_stability",
-              "value": 78.6261
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 73.2091
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 8800
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 1.2
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 1.8
-            },
-            {
-              "indicator": "rd_pct_gdp",
-              "value": 0.55
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.79
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.72
-            },
-            {
-              "indicator": "eci",
-              "value": 0.699
-            }
-          ]
-        }
+        "country_ref": "Estonia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Russia": {
-        "indicators": {
-          "gov_effectiveness": 37.0586,
-          "rule_of_law": 42.0398,
-          "regulatory_quality": 44.7957,
-          "cpi": null,
-          "control_of_corruption": 28.2118,
-          "gii": null,
-          "rd_pct_gdp": 0.9659,
-          "eci": 1.143,
-          "education_index": 0.6875,
-          "life_expectancy_index": 0.6988,
-          "gdp_per_capita_ppp": 5517.8589,
-          "resource_rents_pct_gdp": 10.4927,
-          "oda_pct_gni": null,
-          "political_stability": 41.9769,
-          "fsi": null,
-          "voice_accountability": 49.7473
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -228,82 +135,11 @@
           "fsi"
         ],
         "notes": "1996 estimate (ordinal): P1 very low (~0.10), P4 distorted by resource rents (rentier flag, Safeguard E), P5 low -> MI ~= 0.09 (dataset 0.087). Configuration: rentier, widest spread of the three (high human capital vs floor institutions). WGI Rule of Law / Control of Corruption bottom tier / very low. CPI 1996/1998 ~2.4 (very corrupt). HDI 1995 ~0.77 band; GDP per cap PPP 1996 middle; natural-resource rents high (oil/gas rentier flag). Pillar values are estimates, not exact WGI; CPI ~2.4 is approximate and from 1996/1998 (pre-2012 CPI not year-comparable, ordinal cross-country use only) so left null in indicators. WGI 2025-anchored vintage caveat applies.",
-        "_hydrated_from_world": {
-          "source_slug": "russian_federation",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 37.0586
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 42.0398
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 44.7957
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 28.2118
-            },
-            {
-              "indicator": "political_stability",
-              "value": 41.9769
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 49.7473
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 5517.8589
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 10.4927
-            },
-            {
-              "indicator": "rd_pct_gdp",
-              "value": 0.9659
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.6875
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.6988
-            },
-            {
-              "indicator": "eci",
-              "value": 1.143
-            }
-          ]
-        }
+        "country_ref": "Russia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Ukraine": {
-        "indicators": {
-          "gov_effectiveness": 28.6603,
-          "rule_of_law": 41.3632,
-          "regulatory_quality": 43.3895,
-          "cpi": null,
-          "control_of_corruption": 27.1098,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": 1.082,
-          "education_index": 0.683,
-          "life_expectancy_index": 0.7254,
-          "gdp_per_capita_ppp": 3812.2456,
-          "resource_rents_pct_gdp": 3.0066,
-          "oda_pct_gni": null,
-          "political_stability": 62.2704,
-          "fsi": null,
-          "voice_accountability": 47.7822
-        },
         "context": {
           "under_external_admin": false,
           "admin_details": "",
@@ -352,58 +188,9 @@
           "fsi"
         ],
         "notes": "1996 estimate (ordinal): P1 low (~0.12), P4 weak, P5 low -> MI ~= 0.12 (dataset 0.119). Configuration: uniformly weak, no rentier cushion. WGI Rule of Law bottom tier (~ Russia). CPI 1998 = 2.8, then declining. HDI 1995 ~0.74 band; GDP per cap PPP 1996 lowest of three; resource rents moderate; political stability moderate. Democratic aspirations + weak P4 -> high reversal/instability risk (Safeguard C). Pillar values are estimates, not exact WGI; CPI is 1998 (not 1996) and pre-2012 (ordinal use only) so left null in indicators. WGI 2025-anchored vintage caveat applies.",
-        "_hydrated_from_world": {
-          "source_slug": "ukraine",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 28.6603
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 41.3632
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 43.3895
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 27.1098
-            },
-            {
-              "indicator": "political_stability",
-              "value": 62.2704
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 47.7822
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 3812.2456
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 3.0066
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.683
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.7254
-            },
-            {
-              "indicator": "eci",
-              "value": 1.082
-            }
-          ]
-        }
+        "country_ref": "Ukraine",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -533,48 +320,106 @@
           "2022 full-scale invasion"
         ]
       }
+    },
+    "resolved_scores": {
+      "Estonia": {
+        "pre": {
+          "P1": 0.632,
+          "MI": 0.725
+        },
+        "post": {
+          "P1": 0.78,
+          "MI": 0.775
+        }
+      },
+      "Russia": {
+        "pre": {
+          "P1": 0.38,
+          "MI": 0.586
+        },
+        "post": {
+          "P1": 0.355,
+          "MI": 0.57
+        }
+      },
+      "Ukraine": {
+        "pre": {
+          "P1": 0.351,
+          "MI": 0.629
+        },
+        "post": {
+          "P1": 0.423,
+          "MI": 0.545
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
       "evidence": "Estonia 1996 M=0.398 -> 2024 M=0.716 (steepest, highest); EU/NATO/eurozone.",
-      "explanation": "Highest pre-event P1 produced the best trajectory, as predicted."
+      "explanation": "AUTO: full ordering matches: Estonia > Russia > Ukraine (by pre-P1) == outcome by post-MI; gap 0.281. | prior: AUTO: full ordering matches: Estonia > Russia > Ukraine (by pre-P1) == outcome by post-MI; gap 0.281. | prior: AUTO: full ordering matches: Estonia > Russia > Ukraine (by pre-P1) == outcome by post-MI; gap 0.281. | prior: AUTO: full ordering matches: Estonia > Russia > Ukraine (by pre-P1) == outcome by post-MI; gap 0.281. | prior: AUTO: full ordering matches: Estonia > Russia > Ukraine ",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Estonia peaceful; Ukraine subjected to invasion.",
-      "explanation": "Violence concentrated in the low-P1 case (Ukraine), not in high-P1 Estonia."
+      "explanation": "Violence concentrated in the low-P1 case (Ukraine), not in high-P1 Estonia.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Russia pre-P1=0.380 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Gap widened from 0.31 to 0.51 (Estonia vs Russia).",
-      "explanation": "Outcomes diverged rather than converged."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.139->0.230). | prior: AUTO: outcome DIVERGENCE (MI-range 0.139->0.230). | prior: AUTO: outcome DIVERGENCE (MI-range 0.139->0.230). | prior: AUTO: outcome DIVERGENCE (MI-range 0.139->0.230). | prior: AUTO: outcome DIVERGENCE (MI-range 0.159->0.251). | prior: Outcomes diverged rather than converged.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Estonia's P1 2024=0.865 vs Russia 0.278, Ukraine 0.387.",
-      "explanation": "Estonia succeeded on the institutional pillar; Russia/Ukraine failed on P1 as predicted."
+      "explanation": "Estonia succeeded on the institutional pillar; Russia/Ukraine failed on P1 as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Russia: P2=0.83, P3=0.69, P4=0.61, P5=0.42, P1=0.38 | below-median (genuine vulnerabilities): P1=0.38, P5=0.42",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Engineered count 'defensible but the framework is directional, not a fragment-count oracle; coded conservatively.'",
-      "explanation": "The engineered-dissolution call is supported in aggregate (only the Baltics thrived) but the framework is directional, not a fragment-count oracle."
+      "explanation": "The engineered-dissolution call is supported in aggregate (only the Baltics thrived) but the framework is directional, not a fragment-count oracle.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "2024 M below 1996-trajectory expectation; absolute decline post-2012.",
-      "explanation": "Ukraine's high reversal risk (Safeguard C) was borne out (Orange Revolution reversal, 2014, war)."
+      "explanation": "Ukraine's high reversal risk (Safeguard C) was borne out (Orange Revolution reversal, 2014, war).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No suppression-mechanism prediction was made for this case."
+      "explanation": "No suppression-mechanism prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: engineered"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case."
+      "explanation": "No sub-state turbulence (Safeguard F) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -598,6 +443,29 @@
     ],
     "what_this_case_uniquely_reveals": "Russia exposes a limitation/strength of the framework: it correctly predicts non-improvement of a floor-P1 rentier state but says nothing about its decades-long durability. Estonia confirms institution-led modernization at the post-Soviet top.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; no modification proposed. Reinforces P1-ordinal as the validated core."
+    "baseline_impact": "None; no modification proposed. Reinforces P1-ordinal as the validated core.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "hit",
+      "3": "hit",
+      "5": "hit",
+      "7": "hit",
+      "10": "hit",
+      "15": "hit",
+      "20": "hit",
+      "28": "hit"
+    },
+    "ordinal_holds_to_years": 28,
+    "note": "ordinal call correct/cautious at all tested leads (no horizon decay)"
   }
 }

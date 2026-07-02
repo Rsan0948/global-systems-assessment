@@ -20,24 +20,6 @@
     "event_description": "October 2017 Catalan independence referendum, met by Tier 2 legal/constitutional suppression rather than military force or Tier-3 expanded porosity.",
     "entities": {
       "Spain (Catalonia)": {
-        "indicators": {
-          "gov_effectiveness": 77.34,
-          "rule_of_law": 79.39,
-          "regulatory_quality": 68.8481,
-          "cpi": 57.0,
-          "control_of_corruption": 59.8781,
-          "gii": null,
-          "rd_pct_gdp": 1.202,
-          "eci": 0.848,
-          "education_index": 0.8214,
-          "life_expectancy_index": 0.9697,
-          "gdp_per_capita_ppp": 39825.2498,
-          "resource_rents_pct_gdp": 0.0531,
-          "oda_pct_gni": null,
-          "political_stability": 70.6878,
-          "fsi": 37.9,
-          "voice_accountability": 75.6211
-        },
         "context": {
           "is_democratic": true,
           "is_authoritarian": false,
@@ -63,78 +45,9 @@
           "regional_antisystem_vote (pro-independence vote share at 2017 not given as a single figure)"
         ],
         "notes": "Spain WGI estimate scale: RoL 0.82, GE 0.75 -- high but clearly below Germany/UK/Belgium. Catalonia ~18.8-20% of Spanish GDP; GDP per capita EUR37,426 (2024), above the Spanish average. Suppression mechanism: Article 155 + Constitutional Court action + prosecutions/exile (Puigdemont); some Oct 1 police violence but no sustained deployment.",
-        "_scale_corrections": [
-          {
-            "indicator": "gov_effectiveness",
-            "original": 0.75,
-            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
-            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
-            "corrected": 77.34
-          },
-          {
-            "indicator": "rule_of_law",
-            "original": 0.82,
-            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
-            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
-            "corrected": 79.39
-          }
-        ],
-        "_hydrated_from_world": {
-          "source_slug": "spain",
-          "source_year": "2017",
-          "target_year": 2017,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "regulatory_quality",
-              "value": 68.8481
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 59.8781
-            },
-            {
-              "indicator": "political_stability",
-              "value": 70.6878
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 75.6211
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 39825.2498
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 0.0531
-            },
-            {
-              "indicator": "rd_pct_gdp",
-              "value": 1.202
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.8214
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.9697
-            },
-            {
-              "indicator": "cpi",
-              "value": 57.0
-            },
-            {
-              "indicator": "eci",
-              "value": 0.848
-            },
-            {
-              "indicator": "fsi",
-              "value": 37.9
-            }
-          ]
-        }
+        "country_ref": "Spain",
+        "pre_year": "2017",
+        "post_year": "2024"
       }
     }
   },
@@ -200,6 +113,18 @@
           "CEO polling: ~50% against independence, ~42% for; drought (not secession) the leading public concern"
         ]
       }
+    },
+    "resolved_scores": {
+      "Spain (Catalonia)": {
+        "pre": {
+          "P1": 0.686,
+          "MI": 0.785
+        },
+        "post": {
+          "P1": 0.666,
+          "MI": 0.735
+        }
+      }
     }
   },
   "verification": {
@@ -211,7 +136,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Minimal violence -- only brief Oct 1 police clashes, no sustained deployment.",
-      "explanation": "Low-violence outcome realized, as predicted."
+      "explanation": "Low-violence outcome realized, as predicted.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Spain (Catalonia) pre-P1=0.686 -> LOW risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -219,29 +146,51 @@
       "explanation": "Pressure de-escalated following Article 155 + accommodation, as predicted."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Stress surface was legal/constitutional (Article 155, Constitutional Court, prosecutions), not military or institutional collapse.",
-      "explanation": "Legal dimension confirmed."
+      "explanation": "Legal dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Spain (Catalonia): P4=0.88, P3=0.87, P2=0.78, P5=0.71, P1=0.69 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.69)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "No territorial loss; pro-independence bloc fell below a majority (61 of 135, 68 needed).",
-      "explanation": "No secession, as predicted."
+      "explanation": "No secession, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Not a democratic-transition reversal case."
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Tier 2 was predicted to fall 'between' Tier 1 and Tier 3, but Catalonia 2017-2024 shows clear REDUCTION of pressure -- 'arguably more than a pure between result'.",
-      "explanation": "Tier classification and direction correct, but the magnitude of reduction exceeded the predicted 'between' outcome -- mechanism was Article 155 (temporary backstop) PLUS subsequent accommodation, so coded partial."
+      "explanation": "Tier classification and direction correct, but the magnitude of reduction exceeded the predicted 'between' outcome -- mechanism was Article 155 (temporary backstop) PLUS subsequent accommodation, so coded partial.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: legal_constitutional_suppression"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "Pro-independence bloc below majority for the first time since 1980; pressure managed via Article 155 backstop + accommodation on the 1978 autonomy system.",
-      "explanation": "Mod10/Safeguard I confirmed (porosity-with-backstop). Mod9 (re-suppression -> worse outcomes) NOT confirmed -- a weak/null test, not a refutation, because Article 155 was mild and brief and followed by accommodation rather than sustained suppression."
+      "explanation": "Mod10/Safeguard I confirmed (porosity-with-backstop). Mod9 (re-suppression -> worse outcomes) NOT confirmed -- a weak/null test, not a refutation, because Article 155 was mild and brief and followed by accommodation rather than sustained suppression.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -256,6 +205,30 @@
       "Mod9 remains unproven -- needs a genuine sustained, hard re-suppression case (Catalonia is a weak/null test, not a confirmation or refutation).",
       "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard."
     ],
-    "baseline_impact": "No modification adopted from this case; Mod9 still needs a proper test before any baseline-affecting change."
+    "baseline_impact": "No modification adopted from this case; Mod9 still needs a proper test before any baseline-affecting change.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "LOW",
+    "risk_tier_by_lead": {
+      "1": "LOW",
+      "3": "LOW",
+      "5": "LOW",
+      "7": "LOW",
+      "10": "LOW",
+      "15": "LOW",
+      "20": "LOW",
+      "28": "LOW"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
   }
 }

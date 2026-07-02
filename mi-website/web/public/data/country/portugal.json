@@ -1,0 +1,216 @@
+{
+ "slug": "portugal",
+ "name": "Portugal",
+ "iso3": "PRT",
+ "mi": 0.75,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.672,
+  "P2": 0.54,
+  "P3": 0.884,
+  "P4": 0.904,
+  "P5": 0.751
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable - prosperity roughly in line with institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.364,
+ "residual": 0.025,
+ "config": [
+  [
+   "P4",
+   0.904
+  ],
+  [
+   "P3",
+   0.884
+  ],
+  [
+   "P5",
+   0.751
+  ],
+  [
+   "P1",
+   0.672
+  ],
+  [
+   "P2",
+   0.54
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 69.7634,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 75.4172,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 66.5361,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 64.5373,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 57.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 43.66,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 1.6949,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": 0.713,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.8092,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9594,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 51679.89,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 75.07,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 78.99,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 0.29,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.03",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "cyprus",
+   "name": "Cyprus",
+   "mi": 0.746,
+   "tier": 2
+  },
+  {
+   "slug": "united-arab-emirates",
+   "name": "United Arab Emirates",
+   "mi": 0.763,
+   "tier": 2
+  },
+  {
+   "slug": "lithuania",
+   "name": "Lithuania",
+   "mi": 0.756,
+   "tier": 2
+  },
+  {
+   "slug": "slovenia",
+   "name": "Slovenia",
+   "mi": 0.771,
+   "tier": 2
+  },
+  {
+   "slug": "latvia",
+   "name": "Latvia",
+   "mi": 0.722,
+   "tier": 2
+  }
+ ],
+ "relational": {
+  "year": 1926,
+  "tier": "citable",
+  "label": "Portugal 1926 (engine-alone MISS - INTERNAL military coup)",
+  "exposure_structural": 0.0,
+  "exposure_structural_band": "low",
+  "exposure_net": 0.25,
+  "patron_present": false,
+  "response": 0.258,
+  "response_band": "low",
+  "joint_reading": "LOW structural exposure, low response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
+  "outcome_factual": "28 May 1926 coup -> the Estado Novo dictatorship (to 1974)."
+ }
+}

@@ -1,0 +1,203 @@
+{
+ "slug": "new-zealand",
+ "name": "New Zealand",
+ "iso3": "NZL",
+ "mi": 0.815,
+ "tier": 1,
+ "pillars": {
+  "P1": 0.85,
+  "P2": 0.532,
+  "P3": 0.942,
+  "P4": 0.898,
+  "P5": 0.855
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 1: Highly Modernized",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Highly modernized - prosperity matched by institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.411,
+ "residual": 0.083,
+ "config": [
+  [
+   "P3",
+   0.942
+  ],
+  [
+   "P4",
+   0.898
+  ],
+  [
+   "P5",
+   0.855
+  ],
+  [
+   "P1",
+   0.85
+  ],
+  [
+   "P2",
+   0.532
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 87.2961,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 85.6628,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 83.9531,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 86.8915,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 83.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 45.86,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 1.5485,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": 0.523,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.9294,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9552,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 55551.14,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 85.55,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 86.42,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 1.49,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.08",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "norway",
+   "name": "Norway",
+   "mi": 0.81,
+   "tier": 1
+  },
+  {
+   "slug": "iceland",
+   "name": "Iceland",
+   "mi": 0.804,
+   "tier": 1
+  },
+  {
+   "slug": "australia",
+   "name": "Australia",
+   "mi": 0.775,
+   "tier": 2
+  },
+  {
+   "slug": "denmark",
+   "name": "Denmark",
+   "mi": 0.84,
+   "tier": 1
+  },
+  {
+   "slug": "canada",
+   "name": "Canada",
+   "mi": 0.806,
+   "tier": 1
+  }
+ ]
+}

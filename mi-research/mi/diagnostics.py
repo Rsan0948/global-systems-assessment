@@ -8,6 +8,7 @@ comparable case identification.
 from typing import Optional
 from mi.scoring import score_country, calculate_pillar_spread, get_configuration_profile
 from mi.safeguards import evaluate_all_safeguards
+from mi.constants import LENS, ASCENT_LOW_BASE
 
 
 def full_diagnostic(indicators: dict, context: dict = None) -> dict:
@@ -27,6 +28,12 @@ def full_diagnostic(indicators: dict, context: dict = None) -> dict:
         "strategy": strategy,
         "safeguards": safeguards,
         "vulnerability": vulnerability,
+        "accountability_gap": accountability_gap(
+            indicators.get("voice_accountability"), score.get("pillar_scores", {})),
+        "ascent_potential": ascent_potential(score.get("pillar_scores", {})),
+        "movement_quality": (movement_quality(score.get("pillar_scores", {}),
+                                               (context or {}).get("prior_pillars"))
+                             if (context or {}).get("prior_pillars") else None),
     }
 
 
@@ -50,23 +57,33 @@ def classify_strategy(score: dict, context: dict) -> dict:
     indicators = []
 
     # Check for complexity control signals
-    small_population = context.get("population", float("inf")) < 10_000_000
+    small_population = (context.get("population") or float("inf")) < LENS["small_population"]
     island = context.get("is_island", False)
     immigration_restrictive = context.get("immigration_policy", "") in (
         "restrictive", "very_restrictive"
     )
 
-    if p1 > 0.70 and (small_population or island) and immigration_restrictive:
+    # V2 Strategy 3 (refined): high institutional quality applied to a LOW-COMPLEXITY
+    # environment. Geographic/demographic constraint (small pop, island, restrictive
+    # immigration) can FACILITATE this but does NOT by itself confer advantage — the
+    # expanded 143-country data shows small states do not systematically outperform.
+    # The driver is P1, not geography. So: require high P1 + some low-complexity signal
+    # (any one, as a facilitator), not the V1 conjunction.
+    low_complexity = small_population or island or immigration_restrictive
+    if p1 > LENS["p1_complexity_control_min"] and low_complexity:
+        facilitators = [n for n, c in [("small population", small_population),
+                        ("island geography", island), ("restrictive immigration", immigration_restrictive)] if c]
         return {
             "strategy": "complexity_control",
-            "confidence": "high" if island else "moderate",
+            "confidence": "high" if (p1 > 0.80 and len(facilitators) >= 2) else "moderate",
             "explanation": (
-                "High P1 with controlled complexity inputs. "
-                "System manages by limiting what it has to govern rather than "
-                "building capacity to govern everything."
+                f"High institutional quality (P1={p1:.3f}) applied to a low-complexity "
+                f"environment (facilitated by: {', '.join(facilitators)}). The advantage is the "
+                "institutional quality, NOT the geographic constraint per se — small/island states "
+                "do not systematically outperform in the expanded data; constraint only facilitates."
             ),
             "failure_mode": "Demographic/economic stagnation",
-            "examples": "Singapore, Japan, island nations",
+            "examples": "Singapore, Japan (institutional quality in low-complexity settings)",
         }
 
     # Check for porosity signals
@@ -79,7 +96,7 @@ def classify_strategy(score: dict, context: dict) -> dict:
         has_devolution, has_power_sharing, has_federalism, democratic
     ])
 
-    if p1 > 0.60 and porosity_signals >= 2:
+    if p1 > LENS["p1_porosity_min"] and porosity_signals >= 2:
         return {
             "strategy": "porosity",
             "confidence": "high" if porosity_signals >= 3 else "moderate",
@@ -95,12 +112,12 @@ def classify_strategy(score: dict, context: dict) -> dict:
     authoritarian = context.get("is_authoritarian", False)
     military_dominant = context.get("military_dominant", False)
 
-    if authoritarian or military_dominant or (p1 < 0.40 and not democratic):
+    if authoritarian or military_dominant or (p1 < LENS["p1_strategy_authoritarian"] and not democratic):
         # Determine suppression tier
         if context.get("prior_porosity_period", False):
             tier = 3
             tier_label = "Re-suppression after porosity (WORST)"
-        elif p1 > 0.60:
+        elif p1 > LENS["p1_porosity_min"]:
             tier = 2
             tier_label = "Institutional/legal suppression"
         else:
@@ -154,19 +171,19 @@ def assess_vulnerability(score: dict, safeguards: dict) -> dict:
 
     # P1 assessment
     if p1 is not None:
-        if p1 < 0.33:
+        if p1 < LENS["p1_bottom_third"]:
             flags.append("CRITICAL: P1 in bottom third — high fragmentation/violence risk")
             risk_level = "critical"
-        elif p1 < 0.50:
+        elif p1 < LENS["p1_median"]:
             flags.append("WARNING: P1 below median — elevated structural risk")
             risk_level = max(risk_level, "high", key=["low", "moderate", "high", "critical"].index)
 
     # Spread assessment
     if spread is not None:
-        if spread > 0.50:
+        if spread > LENS["spread_critical"]:
             flags.append(f"CRITICAL: Pillar spread {spread:.3f} — extreme configuration imbalance")
             risk_level = max(risk_level, "high", key=["low", "moderate", "high", "critical"].index)
-        elif spread > 0.35:
+        elif spread > LENS["spread_warning"]:
             flags.append(f"WARNING: Pillar spread {spread:.3f} — significant imbalance")
 
     # Safeguard flags
@@ -191,12 +208,174 @@ def assess_vulnerability(score: dict, safeguards: dict) -> dict:
     return {
         "risk_level": risk_level,
         "flags": flags,
+        "structural_vulnerability": structural_vulnerability(pillars),
+        "below_floor": below_floor_diagnostic(pillars, mi),
         "summary": (
             f"Risk level: {risk_level.upper()}. "
             f"P1 = {f'{p1:.3f}' if p1 is not None else 'N/A'}, "
             f"spread = {f'{spread:.3f}' if spread is not None else 'N/A'}, "
             f"{len(triggered_safeguards)} safeguards active."
         ),
+    }
+
+
+def ascent_potential(pillars: dict) -> Optional[dict]:
+    """
+    V3.3 — ascent potential (the one HOLDOUT-VALIDATED golden-age signal). A low institutional base
+    (P1 < ASCENT_LOW_BASE) carries an elevated chance of a durable climb (room-to-rise / mean-reversion;
+    holdout z+2.4). This is NOT agency or an internal-trajectory prediction — golden ages need an
+    EXOGENOUS trigger (post-communist transition, commodity-boom era, etc.); the institutional *slope*
+    predicts nothing (the CC/component-jump signature was refuted on a pre-registered geographic
+    holdout, z=-0.0). So this flags *eligibility*, not a forecast.
+    """
+    p1 = pillars.get("P1")
+    if p1 is None:
+        return None
+    low = p1 < ASCENT_LOW_BASE
+    return {
+        "p1": round(p1, 3), "low_base": low,
+        "reading": ("LOW BASE — room-to-rise *eligibility*. NOT an active forecast: the low-base effect is "
+                    "ERA-CONDITIONAL — strong in the 2002-11 global wave (z+6.2) but DORMANT 2012-19 "
+                    "(z-0.6). It realizes only inside an exogenous era/wave (which is currently absent), "
+                    "and recent momentum predicts the OPPOSITE (reversion)."
+                    if low else
+                    "base too high for the room-to-rise tendency; ascents from here are rare and exogenous."),
+        "caveat": ("Era-conditional level signal: geographically holdout-valid pooled (z+2.4) but it FAILS "
+                   "the temporal holdout (dormant since ~2012). Golden ages are a spent 2002-11 era/wave "
+                   "(NOT commodity-driven); currently nothing forecasts them. Trust the level, distrust the slope."),
+    }
+
+
+def movement_quality(pillars: dict, prior_pillars: dict) -> Optional[dict]:
+    """
+    V3.3 — movement typology + the explicit DISTRUST-THE-SLOPE caveat. Headline MI movement decomposes
+    into kinds that the level hides: real_ascent (P1/P5-led), windfall (P4-led income, gap-widening),
+    ratchet_rise (P2/P3-led human-capital/innovation), hollow_stability (flat MI, governance core P1
+    eroding under the P3 ratchet), decline (P5/P4-led fall), stable. DESCRIPTIVE — the slope is
+    mean-reverting and low-reliability; the durable signal is the LEVEL + the durability gap (Safeguard J).
+    """
+    P = ["P1", "P2", "P3", "P4", "P5"]
+    if not prior_pillars or any(pillars.get(p) is None or prior_pillars.get(p) is None for p in P):
+        return None
+    dmi = sum(pillars[p] for p in P) / 5 - sum(prior_pillars[p] for p in P) / 5
+    dp = {p: pillars[p] - prior_pillars[p] for p in P}
+    lead = max(dp, key=dp.get)
+    if dmi > 0.03:
+        cls = ("real_ascent" if lead in ("P1", "P5")
+               else "windfall" if lead == "P4" else "ratchet_rise")
+    elif dmi < -0.03:
+        cls = "decline"
+    elif dp["P1"] <= -0.03:
+        cls = "hollow_stability"
+    else:
+        cls = "stable"
+    note = {
+        "windfall": "income-led rise with institutions flat — the durability gap is WIDENING, not progress.",
+        "hollow_stability": "headline flat but the governance core (P1) is eroding under the P3 ratchet — "
+                            "'feels stable, isn't'. Read the core, not the MI.",
+        "real_ascent": "institution/stability-led — the durable kind (rare).",
+        "ratchet_rise": "human-capital/innovation-led — the global-development tide, not governance.",
+        "decline": "stability/income-led fall.",
+        "stable": "no material movement.",
+    }[cls]
+    return {"class": cls, "dMI": round(dmi, 3), "lead": lead, "dP1": round(dp["P1"], 3),
+            "reading": note,
+            "caveat": "DISTRUST THE SLOPE — movement is mean-reverting and low-reliability; the predictive "
+                      "content is the LEVEL and the durability gap, not the delta."}
+
+
+def accountability_gap(voice_accountability, pillars: dict) -> Optional[dict]:
+    """
+    V3.2 Accountability Gap (HYPOTHESIS — informational, NOT a verdict).
+
+    P1 deliberately excludes Voice & Accountability (VA); among high-capacity states VA is the only
+    axis separating democracies from rich authoritarians. When VA sits far below income (P4) — and
+    capacity (P1) — the state delivers economically with no accountability channel ("capacity without
+    consent"), a hypothesized BRITTLE/sudden failure mode (succession/legitimacy shock), orthogonal to
+    the durability gap. NO crisis validation yet (Saudi/China have not broken) — surfaced as a signal
+    to watch, never a verdict. `voice_accountability` accepted as 0-100 (WGI .SC) or 0-1; pillars 0-1.
+    """
+    va = voice_accountability
+    p1 = pillars.get("P1"); p4 = pillars.get("P4")
+    if va is None or p1 is None or p4 is None:
+        return None
+    if va > 1.5:           # accept 0-100 input
+        va = va / 100.0
+    va_p4 = va - p4; va_p1 = va - p1
+    cap = LENS["va_legitimacy_cap_p4"]; lag = LENS["va_accountability_lag_p4"]
+    if va_p4 <= cap:
+        status = "legitimacy_capped"
+        reading = ("CAPACITY WITHOUT CONSENT — accountability far below income/capacity; hypothesized "
+                   "brittle failure mode (succession/legitimacy shock). HYPOTHESIS, not a verdict.")
+    elif va_p4 <= lag:
+        status = "accountability_lag"
+        reading = "accountability trails income/capacity — partial; watch."
+    else:
+        status = "balanced"
+        reading = "accountability roughly tracks capacity and income."
+    return {"voice_accountability": round(va, 3),
+            "va_minus_p4": round(va_p4, 3), "va_minus_p1": round(va_p1, 3),
+            "status": status, "reading": reading,
+            "caveat": "HYPOTHESIS (V3.2) — informational; orthogonal to the durability gap; no crisis validation yet."}
+
+
+def structural_vulnerability(pillars: dict) -> Optional[dict]:
+    """
+    V3.1 structural crisis-vulnerability gate (the "durability gap"): P4 - P1 > threshold means
+    economy/income has outrun institutions ("granted/fragile") -> structurally crisis-prone. This
+    LEVEL discriminator separated real crises from absorbers on the N=21 signature set at 83% sens /
+    100% spec / 100% PPV — far better than the (failed) acute pre-turn DECLINE signature, because a
+    level is forward-available while a decline emerges only at/after the event. Returns None if P1/P4
+    unavailable. NOT a dated forecast (Mod8) — a structural risk flag; idiosyncratic acute events
+    (Chile, S.Korea) have no structural warning and are out of scope.
+    """
+    p1 = pillars.get("P1"); p4 = pillars.get("P4")
+    if p1 is None or p4 is None:
+        return None
+    gap = p4 - p1
+    flag_floor = LENS["structural_vuln_flag_floor"]
+    clear_ceiling = LENS["structural_vuln_clear_ceiling"]
+    if gap >= flag_floor:
+        status, reading = "flagged", ("STRUCTURALLY VULNERABLE — income/economy has outrun institutions "
+                                      "(granted/fragile); elevated crisis risk under shock.")
+    elif gap <= clear_ceiling:
+        status, reading = "clear", ("institutions roughly keep pace with income — not structurally "
+                                    "crisis-flagged (absorber-class on this measure).")
+    else:
+        status, reading = "borderline", ("INDETERMINATE — gap sits in the empty band between the validated "
+                                         "absorber ceiling and crisis floor; above every confirmed absorber "
+                                         "but below the crisis floor. Elevated watch, not a verdict.")
+    return {
+        "p4_minus_p1_gap": round(gap, 3),
+        "status": status,
+        "flagged": gap > LENS["structural_vulnerability_gap"],  # back-compat boolean
+        "reading": reading,
+    }
+
+
+def below_floor_diagnostic(pillars: dict, mi) -> Optional[dict]:
+    """
+    V2 below-floor configuration finding: most below-floor countries are PARTIAL failures
+    (resource/income strong, institutions+economy catastrophic) — not uniformly poor. This
+    changes the prescription from "very bad shape" to "money but no institutions: target P1/P2,
+    not P4." Returns None for countries above the below-floor MI cutoff.
+    """
+    if mi is None or mi > LENS["below_floor_mi"]:
+        return None
+    p1 = pillars.get("P1"); p2 = pillars.get("P2"); p4 = pillars.get("P4")
+    strong_p4 = p4 is not None and p4 >= LENS["partial_failure_p4_min"]
+    weak_inst = (p1 is not None and p1 <= LENS["partial_failure_p1p2_max"]) and \
+                (p2 is None or p2 <= LENS["partial_failure_p1p2_max"])
+    if strong_p4 and weak_inst:
+        return {
+            "configuration": "partial_failure",
+            "reading": "Has money, not institutions: strong P4 (resource/income) atop catastrophic P1/P2.",
+            "prescription": "Target P1/P2 (institutions, knowledge economy) — NOT P4. Money is not the binding constraint.",
+        }
+    return {
+        "configuration": "uniformly_poor",
+        "reading": "Weak across pillars including P4 — no resource/income cushion.",
+        "prescription": "Broad-based capacity building; no single binding constraint to target.",
     }
 
 
@@ -228,7 +407,7 @@ def generate_predictions(score: dict, safeguards: dict, comparison_scores: dict 
     # (b) Violence prediction
     p1 = pillars.get("P1")
     if p1 is not None:
-        violence_risk = "HIGH" if p1 < 0.33 else "MODERATE" if p1 < 0.50 else "LOW"
+        violence_risk = "HIGH" if p1 < LENS["p1_bottom_third"] else "MODERATE" if p1 < LENS["p1_median"] else "LOW"
         predictions["b_violence"] = {
             "prediction": f"Violence RISK: {violence_risk} (P1 = {p1:.3f})",
             "note": "Mod8 applies: this predicts RISK, not AGENCY",
@@ -238,9 +417,9 @@ def generate_predictions(score: dict, safeguards: dict, comparison_scores: dict 
     # (c) Convergence/divergence
     spread = score.get("pillar_spread")
     if comparison_scores and len(comparison_scores) >= 2:
-        p1_values = [s.get("pillar_scores", {}).get("P1", 0)
-                     for s in comparison_scores.values()]
-        p1_range = max(p1_values) - min(p1_values) if p1_values else 0
+        p1_values = [p1 for s in comparison_scores.values()
+                     if (p1 := s.get("pillar_scores", {}).get("P1")) is not None]
+        p1_range = max(p1_values) - min(p1_values) if len(p1_values) >= 2 else 0
         predictions["c_convergence"] = {
             "prediction": "DIVERGENCE" if p1_range > 0.15 else "CONVERGENCE",
             "basis": f"P1 range across entities: {p1_range:.3f}",

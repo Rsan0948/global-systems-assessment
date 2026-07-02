@@ -1,0 +1,230 @@
+{
+ "slug": "kuwait",
+ "name": "Kuwait",
+ "iso3": "KWT",
+ "mi": 0.624,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.565,
+  "P2": 0.422,
+  "P3": 0.812,
+  "P4": 0.615,
+  "P5": 0.709
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 29% of GDP - prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable - prosperity outrunning institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.39,
+ "residual": -0.102,
+ "config": [
+  [
+   "P3",
+   0.812
+  ],
+  [
+   "P5",
+   0.709
+  ],
+  [
+   "P4",
+   0.615
+  ],
+  [
+   "P1",
+   0.565
+  ],
+  [
+   "P2",
+   0.422
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 57.7161,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 60.9374,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 61.2268,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 52.2745,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 46.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 28.09,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 0.0895,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": 0.314,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.694,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9293,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 52443.6,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 70.92,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 44.28,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 29.28,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "earned-vs-granted -0.10",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  },
+  {
+   "key": "rentier",
+   "title": "Rentier check",
+   "status": "info",
+   "headline": "resource rents ~29% of GDP",
+   "detail": "A meaningful share of income comes from resource extraction. The institutions here are solid, but resource dependence is still a source of volatility."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "botswana",
+   "name": "Botswana",
+   "mi": 0.61,
+   "tier": 2
+  },
+  {
+   "slug": "jamaica",
+   "name": "Jamaica",
+   "mi": 0.571,
+   "tier": 3
+  },
+  {
+   "slug": "dominican-republic",
+   "name": "Dominican Republic",
+   "mi": 0.602,
+   "tier": 2
+  },
+  {
+   "slug": "costa-rica",
+   "name": "Costa Rica",
+   "mi": 0.686,
+   "tier": 2
+  },
+  {
+   "slug": "mauritius",
+   "name": "Mauritius",
+   "mi": 0.677,
+   "tier": 2
+  }
+ ],
+ "relational": {
+  "year": 1989,
+  "tier": "citable",
+  "label": "Kuwait, pre-1990 (FRAGILE + SHIELDED by response) -> invaded then RESTORED by coalition",
+  "exposure_structural": 0.819,
+  "exposure_structural_band": "high",
+  "exposure_net": 0.855,
+  "patron_present": false,
+  "response": 0.478,
+  "response_band": "moderate",
+  "joint_reading": "HIGH structural exposure with NO standing deterrent - but a RESPONSE patron intervened to reverse the shock after it landed: survival came from outside help, not internal strength (e.g. Kuwait 1990, conquered then restored by the coalition).",
+  "outcome_factual": "Invaded by Iraq 2 Aug 1990; sovereignty restored by the coalition Feb 1991. SURVIVED via the response patron."
+ }
+}

@@ -34,24 +34,6 @@
     "event_description": "Three-way South Asian institutional trajectory comparison from the WGI series start.",
     "entities": {
       "India": {
-        "indicators": {
-          "gov_effectiveness": 59.2076,
-          "rule_of_law": 48.4,
-          "regulatory_quality": 53.3476,
-          "cpi": 38,
-          "control_of_corruption": 41.8768,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": 0.705,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": 11159.9856,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": 52.4723,
-          "fsi": null,
-          "voice_accountability": 55.4678
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "medium",
@@ -70,71 +52,11 @@
           "education_index / life_expectancy_index (HDI 'medium, P3-lagging'; not numeric)"
         ],
         "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.04 (-2.5/+2.5 scale; max 0.26 in 2000; min -0.18 in 2021). CPI 2024 = 38 (96th). P1 normalized 0.485 (given). India's founding P1 is LOW (not high like South Africa), so Mod12 does NOT shield it from reversal risk -> India backsliding watch is live.",
-        "_scale_corrections": [
-          {
-            "indicator": "rule_of_law",
-            "original": -0.04,
-            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
-            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
-            "corrected": 48.4
-          }
-        ],
-        "_hydrated_from_world": {
-          "source_slug": "india",
-          "source_year": "2024",
-          "target_year": 2024,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 59.2076
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 53.3476
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 41.8768
-            },
-            {
-              "indicator": "political_stability",
-              "value": 52.4723
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 55.4678
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 11159.9856
-            },
-            {
-              "indicator": "eci",
-              "value": 0.705
-            }
-          ]
-        }
+        "country_ref": "India",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Pakistan": {
-        "indicators": {
-          "gov_effectiveness": 39.6677,
-          "rule_of_law": 15.39,
-          "regulatory_quality": 42.3591,
-          "cpi": 27,
-          "control_of_corruption": 26.285,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -0.233,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": 6252.1154,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": 30.6477,
-          "fsi": null,
-          "voice_accountability": 36.4356
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "medium",
@@ -152,71 +74,11 @@
           "education_index / life_expectancy_index (HDI 'low'; not numeric)"
         ],
         "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -1.02 (-2.5/+2.5 scale; max -0.46 in 1996; min -1.15 in 2011). CPI 2024 = 27 (135th). P1 normalized ~0.23 (estimate). Bangladesh-Pakistan gap (0.06) within WGI margin of error -> sub-ranking deferred under Mod4.",
-        "_scale_corrections": [
-          {
-            "indicator": "rule_of_law",
-            "original": -1.02,
-            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
-            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
-            "corrected": 15.39
-          }
-        ],
-        "_hydrated_from_world": {
-          "source_slug": "pakistan",
-          "source_year": "2024",
-          "target_year": 2024,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 39.6677
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 42.3591
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 26.285
-            },
-            {
-              "indicator": "political_stability",
-              "value": 30.6477
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 36.4356
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 6252.1154
-            },
-            {
-              "indicator": "eci",
-              "value": -0.233
-            }
-          ]
-        }
+        "country_ref": "Pakistan",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Bangladesh": {
-        "indicators": {
-          "gov_effectiveness": 39.3051,
-          "rule_of_law": 16.85,
-          "regulatory_quality": 39.8788,
-          "cpi": 23,
-          "control_of_corruption": 25.5455,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -0.439,
-          "education_index": null,
-          "life_expectancy_index": null,
-          "gdp_per_capita_ppp": 9646.7698,
-          "resource_rents_pct_gdp": null,
-          "oda_pct_gni": null,
-          "political_stability": 40.9049,
-          "fsi": null,
-          "voice_accountability": 36.5323
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "low",
@@ -234,51 +96,9 @@
           "gdp_per_capita_ppp (HDI 0.397->0.685 given; GDP series suspect, Hasina-era inflated ~$100B per interim white paper)"
         ],
         "notes": "rule_of_law = WGI Rule of Law 2024 verbatim -0.96 (-2.5/+2.5 scale; max -0.70 in 2011; min -1.18 in 2003). CPI 2024 = 23 (149th). P1 normalized ~0.25 (estimate). Safeguard C primary: growth-without-institutional-delivery -> reversal (confirmed in Run 2, August-2024 collapse). Bangladesh-Pakistan gap 0.06 within WGI margin -> Mod4 defers sub-ranking to Safeguard B.",
-        "_scale_corrections": [
-          {
-            "indicator": "rule_of_law",
-            "original": -0.96,
-            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
-            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
-            "corrected": 16.85
-          }
-        ],
-        "_hydrated_from_world": {
-          "source_slug": "bangladesh",
-          "source_year": "2024",
-          "target_year": 2024,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 39.3051
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 39.8788
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 25.5455
-            },
-            {
-              "indicator": "political_stability",
-              "value": 40.9049
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 36.5323
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 9646.7698
-            },
-            {
-              "indicator": "eci",
-              "value": -0.439
-            }
-          ]
-        }
+        "country_ref": "Bangladesh",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -357,48 +177,106 @@
           "Yunus interim-government white paper: Hasina-era GDP inflated ~$100B"
         ]
       }
+    },
+    "resolved_scores": {
+      "India": {
+        "pre": {
+          "P1": 0.486,
+          "MI": 0.576
+        },
+        "post": {
+          "P1": 0.517,
+          "MI": 0.555
+        }
+      },
+      "Pakistan": {
+        "pre": {
+          "P1": 0.398,
+          "MI": 0.498
+        },
+        "post": {
+          "P1": 0.371,
+          "MI": 0.409
+        }
+      },
+      "Bangladesh": {
+        "pre": {
+          "P1": 0.359,
+          "MI": 0.499
+        },
+        "post": {
+          "P1": 0.357,
+          "MI": 0.46
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "India lead (WGI -0.04 vs -1.02 / -0.96) clearly CONFIRMED; Bangladesh-Pakistan gap 0.06 within WGI margin -> sub-ordinal correctly DEFERRED (LIVE) / over-claimed (STATIC).",
-      "explanation": "India ordinal confirmed; the framework correctly declines to assert a false Bangladesh>Pakistan ordinal under Mod4 - the single clearest LIVE-over-STATIC improvement in the run."
+      "explanation": "AUTO: top correct (India) but sub-ordering differs (pred ['India', 'Pakistan', 'Bangladesh'] vs outcome ['India', 'Bangladesh', 'Pakistan']); often a within-margin sub-pair. | prior: AUTO: top correct (India) but sub-ordering differs (pred ['India', 'Pakistan', 'Bangladesh'] vs outcome ['India', 'Bangladesh', 'Pakistan']); often a within-margin sub-pair. | prior: AUTO: top correct (India) but sub-ordering differs (pred ['India', 'Pakistan', 'Bangladesh'] vs outcome ['India', 'Bangladesh', 'Pakis",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "India sub-state turbulent but union-stable (J&K fatalities 4,011->127); Pakistan chronically unstable; Bangladesh episodic-to-acute (2024).",
-      "explanation": "Violence-risk pattern realized across all three as predicted."
+      "explanation": "Violence-risk pattern realized across all three as predicted.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Pakistan pre-P1=0.398 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "India pulled away 1996-2024; Bangladesh and Pakistan converged near the floor.",
-      "explanation": "Divergence of India vs. floor-convergence of the other two confirmed."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.078->0.146). | prior: AUTO: outcome DIVERGENCE (MI-range 0.082->0.145). | prior: Divergence of India vs. floor-convergence of the other two confirmed.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No single-failure-dimension prediction scored separately."
+      "explanation": "No single-failure-dimension prediction scored separately.",
+      "computed_config": "Pakistan: P4=0.73, P2=0.52, P3=0.42, P5=0.42, P1=0.40 | below-median (genuine vulnerabilities): P1=0.40, P5=0.42, P3=0.42",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No territorial fragmentation-count prediction (Safeguard B applied for sub-ranking deferral, not a fragment count)."
+      "explanation": "No territorial fragmentation-count prediction (Safeguard B applied for sub-ranking deferral, not a fragment count).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Bangladesh August-2024 collapse (Safeguard C confirmed in Run 2, carried forward); India 2024 result consistent with the predicted electoral-turnover-over-authoritarian-reversal pathway.",
-      "explanation": "Bangladesh reversal CONFIRMED; India backsliding remains a watch flag - 2024 turnover consistent with Mod12 founding-P1 logic."
+      "explanation": "Bangladesh reversal CONFIRMED; India backsliding remains a watch flag - 2024 turnover consistent with Mod12 founding-P1 logic.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "India porosity classified Tier 3 with President's-Rule backstop; Mod9 partial re-suppression is a WATCH flag, not a trigger (2024 election produced turnover, BJP lost majority, Supreme Court struck electoral bonds).",
-      "explanation": "India porosity = Tier 3 confirmed; no full re-suppression observed."
+      "explanation": "India porosity = Tier 3 confirmed; no full re-suppression observed.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "Sub-state turbulence (Kashmir, NE India, Maoist belt, communal violence) present while the union held.",
-      "explanation": "Sub-state turbulence tolerated at union level as predicted."
+      "explanation": "Sub-state turbulence tolerated at union level as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -419,6 +297,28 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "Continental-scale P1 ordinality with margin gating: the world's largest complexity-capacity experiment (India) holds at the union level while tolerating high sub-state turbulence, and the framework refuses to assert ordinals across sub-margin gaps. Mod4 is the single clearest LIVE-over-STATIC improvement in the run.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; confirms Mod4 (margin gating), Mod12 (founding-P1 conditioning), Safeguards B/C/I. India backsliding is a live watch item into Run 6."
+    "baseline_impact": "None; confirms Mod4 (margin gating), Mod12 (founding-P1 conditioning), Safeguards B/C/I. India backsliding is a live watch item into Run 6.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "hit",
+      "3": "hit",
+      "5": "hit",
+      "7": "hit",
+      "10": "hit",
+      "15": "hit",
+      "20": "hit",
+      "28": "hit"
+    },
+    "ordinal_holds_to_years": 28,
+    "note": "ordinal call correct/cautious at all tested leads (no horizon decay)"
   }
 }

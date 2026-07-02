@@ -1,0 +1,167 @@
+{
+ "slug": "venezuela",
+ "name": "Venezuela",
+ "iso3": "VEN",
+ "mi": 0.396,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.192,
+  "P2": 0.343,
+  "P3": 0.745,
+  "P4": null,
+  "P5": 0.304
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "partial",
+   "label": "Partial data \u00b7 4/5 pillars",
+   "valence": "neutral",
+   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country - the missing pillars are unmeasured, not zero.",
+   "rule": "1 of 5 pillars lack public data."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 4,
+  "total": 5,
+  "missing": [
+   "P4"
+  ]
+ },
+ "verdict": "Structurally fragile - lopsided (institutions the weak point).",
+ "spread": 0.554,
+ "residual": null,
+ "config": [
+  [
+   "P3",
+   0.745
+  ],
+  [
+   "P2",
+   0.343
+  ],
+  [
+   "P5",
+   0.304
+  ],
+  [
+   "P1",
+   0.192
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 22.83,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 19.03,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 24.85,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 10.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 15.73,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 25.04,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "eci",
+   "value": -1.601,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.6828,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8079,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "political_stability",
+   "value": 36.17,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 90.5,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "config",
+   "title": "Configuration",
+   "status": "flag",
+   "headline": "uniformly poor",
+   "detail": "Weak across pillars including Economic Structure - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Institutions is lowest",
+   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "relational": {
+  "year": 1948,
+  "tier": "citable",
+  "label": "Venezuela 1948 (engine-alone MISS - INTERNAL military coup)",
+  "exposure_structural": 0.0,
+  "exposure_structural_band": "low",
+  "exposure_net": 0.25,
+  "patron_present": false,
+  "response": 0.504,
+  "response_band": "moderate",
+  "joint_reading": "LOW structural exposure, moderate response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
+  "outcome_factual": "Nov 1948 coup; military rule (Perez Jimenez) to 1958."
+ }
+}

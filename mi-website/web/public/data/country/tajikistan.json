@@ -1,0 +1,198 @@
+{
+ "slug": "tajikistan",
+ "name": "Tajikistan",
+ "iso3": "TJK",
+ "mi": 0.503,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.345,
+  "P2": 0.203,
+  "P3": 0.737,
+  "P4": 0.618,
+  "P5": 0.612
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile - prosperity roughly in line with institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.534,
+ "residual": 0.021,
+ "config": [
+  [
+   "P3",
+   0.737
+  ],
+  [
+   "P4",
+   0.618
+  ],
+  [
+   "P5",
+   0.612
+  ],
+  [
+   "P1",
+   0.345
+  ],
+  [
+   "P2",
+   0.203
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 39.6559,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 36.5918,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 42.8954,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 23.2056,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 19.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 18.6,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": -1.399,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.6771,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7968,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 5405.98,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 61.19,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 28.1,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 9.05,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.02",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "algeria",
+   "name": "Algeria",
+   "mi": 0.511,
+   "tier": 3
+  },
+  {
+   "slug": "gabon",
+   "name": "Gabon",
+   "mi": 0.515,
+   "tier": 3
+  },
+  {
+   "slug": "turkmenistan",
+   "name": "Turkmenistan",
+   "mi": 0.512,
+   "tier": 3
+  },
+  {
+   "slug": "mongolia",
+   "name": "Mongolia",
+   "mi": 0.563,
+   "tier": 3
+  },
+  {
+   "slug": "zimbabwe",
+   "name": "Zimbabwe",
+   "mi": 0.46,
+   "tier": 3
+  }
+ ]
+}

@@ -1,0 +1,216 @@
+{
+ "slug": "cyprus",
+ "name": "Cyprus",
+ "iso3": "CYP",
+ "mi": 0.746,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.649,
+  "P2": 0.523,
+  "P3": 0.909,
+  "P4": 0.924,
+  "P5": 0.725
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable - prosperity roughly in line with institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.401,
+ "residual": -0.0,
+ "config": [
+  [
+   "P4",
+   0.924
+  ],
+  [
+   "P3",
+   0.909
+  ],
+  [
+   "P5",
+   0.725
+  ],
+  [
+   "P1",
+   0.649
+  ],
+  [
+   "P2",
+   0.523
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 68.2497,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 68.8262,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 66.527,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 58.633,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 56.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "gii",
+   "value": 45.07,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 0.6815,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": 0.477,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.869,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9484,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 63006.61,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 72.49,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 72.38,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 0.01,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted -0.00",
+   "detail": "Prosperity sits roughly in line with institutions. No durability warning here."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "portugal",
+   "name": "Portugal",
+   "mi": 0.75,
+   "tier": 2
+  },
+  {
+   "slug": "united-arab-emirates",
+   "name": "United Arab Emirates",
+   "mi": 0.763,
+   "tier": 2
+  },
+  {
+   "slug": "romania",
+   "name": "Romania",
+   "mi": 0.697,
+   "tier": 2
+  },
+  {
+   "slug": "poland",
+   "name": "Poland",
+   "mi": 0.722,
+   "tier": 2
+  },
+  {
+   "slug": "lithuania",
+   "name": "Lithuania",
+   "mi": 0.756,
+   "tier": 2
+  }
+ ],
+ "relational": {
+  "year": 1974,
+  "tier": "citable",
+  "label": "Republic of Cyprus, pre-invasion 1974 (the documented exogenous MISS)",
+  "exposure_structural": 0.829,
+  "exposure_structural_band": "high",
+  "exposure_net": 0.863,
+  "patron_present": false,
+  "response": 0.192,
+  "response_band": "low",
+  "joint_reading": "HIGH structural exposure + NO patron + weak response: standing vulnerability to externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs it. This is the configuration that turns an internal 'OK' read into an external miss - Cyprus 1974, Poland-Lithuania 1772.",
+  "outcome_factual": "Turkish invasion (Jul-Aug 1974); ~37% of the island occupied; de facto partition persisting to today."
+ }
+}

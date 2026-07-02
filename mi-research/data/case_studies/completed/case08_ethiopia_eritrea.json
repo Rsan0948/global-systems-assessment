@@ -21,24 +21,6 @@
     "event_description": "Eritrean independence (May 24, 1993), scored on a 1996 baseline; followed by the 1998-2000 border war and (for Ethiopia) the later Tigray War.",
     "entities": {
       "Ethiopia": {
-        "indicators": {
-          "gov_effectiveness": 25.1093,
-          "rule_of_law": 42.0783,
-          "regulatory_quality": 31.5905,
-          "cpi": null,
-          "control_of_corruption": 27.9722,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -1.826,
-          "education_index": null,
-          "life_expectancy_index": 0.445,
-          "gdp_per_capita_ppp": 453.3684,
-          "resource_rents_pct_gdp": 28.6687,
-          "oda_pct_gni": 9.3661,
-          "political_stability": 42.845,
-          "fsi": null,
-          "voice_accountability": 35.309
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -66,78 +48,11 @@
           "fsi"
         ],
         "notes": "WGI Rule of Law 1996 = -0.97 (its min; avg -0.73, 2017 max -0.45; legacy scale). Political Stability avg -1.5, 2021 min -2.01, 2024 = -1.88. Resource rents low; heavy ODA dependence in 1996 (P4 distortion via aid, not rents). Derived: floor-P1 (~0.10-0.15). Larger, diverse, ethnic-federal state.",
-        "_hydrated_from_world": {
-          "source_slug": "ethiopia",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 25.1093
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 42.0783
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 31.5905
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 27.9722
-            },
-            {
-              "indicator": "political_stability",
-              "value": 42.845
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 35.309
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 453.3684
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 28.6687
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 9.3661
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.445
-            },
-            {
-              "indicator": "eci",
-              "value": -1.826
-            }
-          ]
-        }
+        "country_ref": "Ethiopia",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Eritrea": {
-        "indicators": {
-          "gov_effectiveness": 25.9463,
-          "rule_of_law": 43.9132,
-          "regulatory_quality": 32.3995,
-          "cpi": null,
-          "control_of_corruption": 57.976,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": null,
-          "education_index": null,
-          "life_expectancy_index": 0.5501,
-          "gdp_per_capita_ppp": 1449.0548,
-          "resource_rents_pct_gdp": 7.7088,
-          "oda_pct_gni": 22.9632,
-          "political_stability": 36.9388,
-          "fsi": null,
-          "voice_accountability": 30.3371
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -165,54 +80,9 @@
           "fsi"
         ],
         "notes": "Severe data limitation - one of the world's most closed states; the data vacuum is itself evidence of institutional opacity/capacity collapse (not to be interpolated). WGI Political Stability avg -0.97, 1998 min -1.76, 2024 = -0.71 (legacy). HDI 2022/23 = 0.493 (175th); 2005 = 0.466 (near-stagnant). Resource rents low; heavy ODA dependence. Derived: floor-P1 (~0.10-0.15). Small, militarized, totalitarian.",
-        "_hydrated_from_world": {
-          "source_slug": "eritrea",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 25.9463
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 43.9132
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 32.3995
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 57.976
-            },
-            {
-              "indicator": "political_stability",
-              "value": 36.9388
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 30.3371
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 1449.0548
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 7.7088
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 22.9632
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.5501
-            }
-          ]
-        }
+        "country_ref": "Eritrea",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -289,18 +159,43 @@
           "permanent militarization / closure"
         ]
       }
+    },
+    "resolved_scores": {
+      "Ethiopia": {
+        "pre": {
+          "P1": 0.317,
+          "MI": 0.34
+        },
+        "post": {
+          "P1": 0.391,
+          "MI": 0.356
+        }
+      },
+      "Eritrea": {
+        "pre": {
+          "P1": 0.401,
+          "MI": 0.371
+        },
+        "post": {
+          "P1": 0.212,
+          "MI": 0.383
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Too close to rank cleanly; Ethiopia had stronger growth in the 2000s-2010s then suffered catastrophic political collapse.",
-      "explanation": "Neither state clearly 'won'; the floor-P1 ordinal lacks discriminating power."
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.084 < margin 0.1 -> abstain (too close to call). | prior: Neither state clearly 'won'; the floor-P1 ordinal lacks",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Both violent (1998-2000 war 70,000-100,000+ dead; Eritrea's permanent militarization; Ethiopia's later wars).",
-      "explanation": "Floor-P1 in both -> violent outcomes as predicted."
+      "explanation": "Floor-P1 in both -> violent outcomes as predicted.",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Ethiopia pre-P1=0.317 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "PARTIALLY_CONFIRMED",
@@ -308,29 +203,51 @@
       "explanation": "Convergence-at-bottom holds on capacity; the political-model divergence makes the call partial."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Ethiopia via ethnic-federal fragmentation; Eritrea via totalitarian closure.",
-      "explanation": "Failure modes matched the predicted dimensions."
+      "explanation": "Failure modes matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Ethiopia: P5=0.43, P1=0.32, P4=0.31, P2=0.30 | below-median (genuine vulnerabilities): P2=0.30, P4=0.31, P1=0.32, P5=0.43",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "2 fragments, both catastrophic.",
-      "explanation": "Safeguard B vindicated again."
+      "explanation": "Safeguard B vindicated again.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "The 1998-2000 Eritrean-Ethiopian War (over 500,000 troops engaged, 70,000-100,000+ killed).",
-      "explanation": "Safeguard D (mutual predatory neighbors) predicted the interstate war."
+      "explanation": "Safeguard D (mutual predatory neighbors) predicted the interstate war.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "Ethiopia's fragmentation pressure realized in the Tigray War (Nov 2020-Nov 2022; Obasanjo ~600,000 deaths) followed by the Amhara/Fano insurgency (2023-).",
-      "explanation": "Continued fragmentation pressure foreshadowed by the floor-P1 ethnic-federal profile."
+      "explanation": "Continued fragmentation pressure foreshadowed by the floor-P1 ethnic-federal profile.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: secession (Eritrean independence)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No standalone substate-turbulence prediction made for this case."
+      "explanation": "No standalone substate-turbulence prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -356,6 +273,29 @@
     "proposed_framework_modifications": [
       "Add a provisional centrifugal-vs-centripetal failure-mode sub-classifier; if >=2 more floor-P1 pairs show divergent failure pathways, codify it (the later Mod6 / Safeguard H)."
     ],
-    "baseline_impact": "Proposes a new failure-mode classifier; would require a 20-case baseline check before formalization."
+    "baseline_impact": "Proposes a new failure-mode classifier; would require a 20-case baseline check before formalization.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "miss",
+      "3": "miss",
+      "5": "miss",
+      "7": "miss",
+      "10": "miss",
+      "15": "abstain",
+      "20": "abstain",
+      "28": "abstain"
+    },
+    "ordinal_holds_to_years": 0,
+    "note": "ordinal mis-ranks from 1y lead (structural exception, not a timing effect)"
   }
 }

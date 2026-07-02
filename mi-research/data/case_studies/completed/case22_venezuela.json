@@ -7,7 +7,7 @@
     "status": "completed",
     "stress_type": "economic_crisis",
     "geographic_region": "South America",
-    "time_period": "1998 -> 2023",
+    "time_period": "1996 -> 2024",
     "entities": [
       "Venezuela"
     ],
@@ -16,28 +16,10 @@
     "notes": "GDP per capita unpublished after 2011 (real gap, not interpolated)."
   },
   "pre_event": {
-    "time_point": "1998",
+    "time_point": "1996",
     "event_description": "Pre-Chavez baseline before two decades of rentier capture.",
     "entities": {
       "Venezuela": {
-        "indicators": {
-          "gov_effectiveness": 33.43,
-          "rule_of_law": 43.88,
-          "regulatory_quality": 42.87,
-          "cpi": null,
-          "control_of_corruption": 31.63,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": 0.542,
-          "education_index": 0.536,
-          "life_expectancy_index": 0.8103,
-          "gdp_per_capita_ppp": 14567.66,
-          "resource_rents_pct_gdp": 9.06,
-          "oda_pct_gni": 0.05,
-          "political_stability": 57.33,
-          "fsi": null,
-          "voice_accountability": 54.65
-        },
         "context": {
           "population": 28300000,
           "is_island": false,
@@ -52,37 +34,15 @@
           "prior_porosity_period": false
         },
         "data_gaps": [
+          "cpi",
           "gii",
-          "eci",
-          "education_index",
-          "life_expectancy_index",
+          "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
-        "_hydrated_from_world": {
-          "source_slug": "venezuela",
-          "source_year": "1998",
-          "target_year": 1998,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "voice_accountability",
-              "value": 54.65
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.536
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.8103
-            },
-            {
-              "indicator": "eci",
-              "value": 0.542
-            }
-          ]
-        }
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Venezuela",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -133,53 +93,65 @@
   "post_event": {
     "time_points": [
       "2018",
-      "2023"
+      "2024"
     ],
     "entities": {
       "Venezuela": {
         "indicators_by_year": {
           "2018": {
-            "gov_effectiveness": 20.31,
-            "rule_of_law": 17.27,
-            "regulatory_quality": 21.01,
-            "cpi": null,
-            "control_of_corruption": 15.57,
+            "gov_effectiveness": 20.3087248,
+            "rule_of_law": 17.2687585,
+            "regulatory_quality": 21.0136831,
+            "cpi": 18.0,
+            "control_of_corruption": 15.57127,
             "gii": null,
             "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.702,
-            "life_expectancy_index": 0.81,
+            "eci": -0.909,
+            "education_index": 0.7017,
+            "life_expectancy_index": 0.8099,
             "gdp_per_capita_ppp": null,
-            "resource_rents_pct_gdp": 11.85,
-            "oda_pct_gni": 0.16,
-            "political_stability": 40.87,
-            "fsi": null
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 0.158513462404584,
+            "political_stability": 40.8698504,
+            "fsi": 86.2
           },
-          "2023": {
-            "gov_effectiveness": 23.49,
-            "rule_of_law": 19.09,
-            "regulatory_quality": 25.09,
-            "cpi": null,
-            "control_of_corruption": 16.29,
+          "2024": {
+            "gov_effectiveness": 22.83069,
+            "rule_of_law": 19.0276028,
+            "regulatory_quality": 24.8486239,
+            "cpi": 10.0,
+            "control_of_corruption": 15.7286763,
             "gii": null,
             "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.683,
-            "life_expectancy_index": 0.808,
+            "eci": -1.601,
+            "education_index": 0.6828,
+            "life_expectancy_index": 0.8079,
             "gdp_per_capita_ppp": null,
-            "resource_rents_pct_gdp": 11.85,
-            "oda_pct_gni": 0.39,
-            "political_stability": 47.04,
-            "fsi": 89.0
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 0.39205716032986,
+            "political_stability": 36.1651626,
+            "fsi": 90.5
           }
         },
-        "outcome_summary": "P1 0.380->0.210; spread ->0.66; 88% GDP collapse 2013-2020 (IMF); ~7.7M emigrants; intact authoritarian state.",
+        "outcome_summary": "P1 0.392->0.192; spread ->0.79; 88% GDP collapse 2013-2020 (IMF); ~7.7M emigrants; intact authoritarian state.",
         "key_events": [
           "88% GDP collapse",
           "hyperinflation",
           "mass exodus",
           "Maduro entrenchment"
         ]
+      }
+    },
+    "resolved_scores": {
+      "Venezuela": {
+        "pre": {
+          "P1": 0.392,
+          "MI": 0.604
+        },
+        "post": {
+          "P1": 0.192,
+          "MI": 0.396
+        }
       }
     }
   },
@@ -192,37 +164,61 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "repression, mass exodus",
-      "explanation": "Elevated risk realized."
+      "explanation": "Elevated risk realized.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Venezuela pre-P1=0.392 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
-      "evidence": "spread 0.42->0.66",
+      "evidence": "spread 0.31->0.79",
       "explanation": ""
     },
     "d_failure_dimension": {
       "result": "PARTIALLY_CONFIRMED",
-      "evidence": "P4 gap-inflated to 0.87; composite MI 0.55->0.49 masks depth",
-      "explanation": "Direction right; composite MI magnitude misleading due to unpublished GDP - coded partial, limitation stated."
+      "evidence": "P4 gap-inflated to 0.98; composite MI 0.57->0.48 masks depth",
+      "explanation": "Direction right; composite MI magnitude misleading due to unpublished GDP - coded partial, limitation stated.",
+      "computed_config": "Venezuela: P2=0.70, P4=0.70, P3=0.66, P5=0.56, P1=0.39 | below-median (genuine vulnerabilities): P1=0.39",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "intact authoritarian state",
-      "explanation": "No fragmentation, as predicted."
+      "explanation": "No fragmentation, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "authoritarian reversal entrenched",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: authoritarian_reversal"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -238,6 +234,29 @@
     "proposed_framework_modifications": [
       "Flag/down-weight MI when P4 lacks its GDP component"
     ],
-    "baseline_impact": "Proposed flag is additive; not yet implemented; baseline unchanged."
+    "baseline_impact": "Proposed flag is additive; not yet implemented; baseline unchanged.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "HIGH",
+    "risk_tier_by_lead": {
+      "1": "HIGH",
+      "3": "HIGH",
+      "5": "HIGH",
+      "7": "HIGH",
+      "10": "HIGH",
+      "15": "HIGH",
+      "20": "HIGH",
+      "28": "MODERATE"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
   }
 }

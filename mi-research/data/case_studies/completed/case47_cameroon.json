@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "case_name": "Cameroon (Anglophone crisis, colonial-institutional engineering)",
+    "case_id": "case47",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "suppressed_fragmentation",
+    "geographic_region": "Central/West Africa",
+    "time_period": "2015 -> 2024",
+    "entities": [
+      "Cameroon"
+    ],
+    "key_test": "Colonial-institutional ENGINEERING as a fragmentation driver: two populations with DIFFERENT colonial-institutional legacies (British common-law Southern Cameroons + French civil-law Cameroun, merged 1961) compressed into one state -> does low-moderate P1 (0.365) + high INSTITUTIONAL heterogeneity produce fragmentation pressure along the institutional fault line (the 2016-17 Anglophone crisis / 'Ambazonia' declaration), and does Safeguard G Tier 1 (military suppression) DELAY-but-not-RESOLVE -> ongoing unresolved instability (MI 0.517 -> 0.384)? The Anglophone NW/SW regions have no standalone WGI; analyzed via Cameroon + qualitative evidence.",
+    "round": "v2_batch5",
+    "notes": "Reference-based single-entity record; Cameroon carries real MI v2 re-scores. 2016 Anglophone protests -> 2017 'Ambazonia' declaration -> ongoing armed conflict; scored ~2015 (pre) vs 2024. Fills the Francophone-Africa gap and isolates colonial-institutional (legal-tradition) heterogeneity rather than the ethnic/religious heterogeneity of Nigeria/Biafra (case12). Replaces the original Ethiopia-federal proposal (overlap with cases 8/11)."
+  },
+  "pre_event": {
+    "time_point": "2015",
+    "event_description": "On the eve of the 2016 Anglophone protests, Cameroon is a single state engineered from two different colonial-institutional inheritances: the formerly British-administered Southern Cameroons (common law, English-language education and administration) joined the formerly French-administered Cameroun (civil law, French institutions) in 1961. Decades of centralization eroded the federal/bicultural settlement; by 2015 Anglophone lawyers and teachers were protesting the imposition of Francophone legal and educational norms on the NW and SW regions -- a grievance located precisely on the institutional fault line.",
+    "entities": {
+      "Cameroon": {
+        "context": {
+          "population": 23300000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "military_dominant": true,
+          "neighbor_threat_level": "moderate",
+          "neighbor_details": "Borders Nigeria, whose own Anglophone identity and porous border provide an exogenous cross-border dimension (Safeguard D) to the Anglophone separatist movement; Boko Haram pressure in the Far North is a separate northern stress.",
+          "fragmentation_mechanism": "colonial-institutional engineering -- two legal/administrative traditions (British common law + French civil law) compressed into one centralized state; fragmentation pressure along the institutional fault line",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "is_democratic_transition": false,
+          "growth_trajectory": "slow",
+          "resource_rents_pct_revenue": 8.0,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Cameroon: long-personalist authoritarian rule with low-moderate P1 (0.365). The key structural variable is INSTITUTIONAL heterogeneity (two colonial legal traditions) within one centralized state -- distinct from the ethnic/religious heterogeneity of Nigeria/Biafra (case12). The Anglophone NW/SW regions have no separate WGI; analyzed via the parent state plus qualitative evidence.",
+        "country_ref": "Cameroon",
+        "pre_year": "2015",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Institutional DECLINE and active fragmentation pressure: low-moderate P1 + dual colonial-institutional legacies -> the state does NOT consolidate; it faces sustained separatist conflict along the Anglophone institutional boundary and its MI deteriorates.",
+      "basis": "Low founding P1 (0.365, Tier 3) + high institutional-legacy heterogeneity + centralized (non-accommodative) structure.",
+      "falsification_condition": "Cameroon consolidates / the Anglophone crisis resolves with rising MI, OR fragmentation pressure fails to materialize along the institutional fault line."
+    },
+    "b_violence": {
+      "prediction": "Elevated and sustained ARMED violence in the NW/SW regions: separatist insurgency met by military operations; thousands killed and hundreds of thousands displaced.",
+      "risk_level": "high",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "The crisis remains non-violent / low-casualty, or no armed conflict develops."
+    },
+    "c_convergence": {
+      "prediction": "N/A -- single-entity case (no two-sovereign comparison).",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "Binding failure on the institutional/voice axis (P1) compounded by social-cohesion erosion (P5); the FORM is separatist insurgency along the colonial-institutional fault line, not generalized ethnic war or pure economic crisis.",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Failure driven by a different dimension (e.g., capacity P3 collapse) or a different FORM (ethnic/religious war unrelated to the institutional boundary)."
+    },
+    "e_fragment_count": {
+      "prediction": "Fragmentation PRESSURE realized (a separatist 'Ambazonia' declaration) but suppressed -> 0 internationally recognized successor states in-window; an unresolved de facto contested zone, not a completed secession.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Either a recognized Anglophone successor state forms, OR no separatist movement/declaration emerges at all."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A -- not a democratic-transition reversal case (no prior consolidation to reverse).",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "Safeguard G TIER 1 (military suppression): the state answers the Anglophone bid with armed force. Framework predicts Tier 1 DELAYS but does NOT resolve the complexity-capacity mismatch -> continued, unresolved instability rather than settlement.",
+      "tier": 1,
+      "falsification_condition": "Response is non-military (legal/Tier 2 or autonomy/Tier 3 accommodation), OR military suppression actually RESOLVES the crisis into stable settlement."
+    },
+    "h_substate_turbulence": {
+      "prediction": "High and escalating sub-state turbulence in the NW/SW Anglophone regions; with no autonomy backstop (unlike Aceh case35) the turbulence is not channeled into peaceful governance.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Sub-state turbulence de-escalates into peaceful provincial governance."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Cameroon": {
+        "indicators_by_year": {},
+        "outcome_summary": "Confirmed directionally and in FORM. The 2016 lawyer/teacher protests escalated to a 2017 'Ambazonia' independence declaration and a sustained armed insurgency in the NW/SW regions, met by military suppression (Safeguard G Tier 1). The conflict remained unresolved through 2024 (thousands killed, hundreds of thousands displaced; OCHA reported millions in need). MI deteriorated 0.517 -> 0.384, dropping from Tier 3 to Tier 4; P1 fell 0.365 -> 0.351 and cohesion P5 fell 0.474 -> 0.305. No recognized successor state -- an unresolved, suppressed de facto contested zone, exactly the predicted Tier-1 'delay-not-resolve' outcome.",
+        "key_events": [
+          "2016 Anglophone lawyers'/teachers' strikes over imposed Francophone legal/education norms",
+          "2017 symbolic 'Ambazonia' independence declaration; armed insurgency begins",
+          "military operations in NW/SW; mass displacement (700k+), thousands killed",
+          "limited dialogue offers (2019 National Dialogue, 'special status') without resolution",
+          "conflict unresolved through 2024; no recognized secession"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Cameroon": {
+        "pre": {
+          "P1": 0.365,
+          "MI": 0.517
+        },
+        "post": {
+          "P1": 0.351,
+          "MI": 0.384
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "MI 0.517 -> 0.384 (Tier 3 -> Tier 4); P1 0.365 -> 0.351. The state did not consolidate; it entered sustained separatist conflict and its composite deteriorated.",
+      "explanation": "[single-entity trajectory call] Low founding P1 + dual colonial-institutional legacies produced institutional decline and active fragmentation pressure rather than consolidation, as predicted.",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Sustained armed insurgency in the NW/SW met by military operations; thousands killed and 700k+ displaced through 2024.",
+      "explanation": "High, sustained armed-violence risk realized, as predicted (Mod8).",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Cameroon pre-P1=0.365 -> MODERATE risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single-entity case; no two-sovereign convergence test.",
+      "auto_derived": false
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Erosion on the voice/cohesion axis (P1 0.365 -> 0.351, P5 0.474 -> 0.305); the FORM was separatist insurgency along the colonial-institutional (Anglophone) fault line, not generalized ethnic/religious war.",
+      "explanation": "Dimension (institutional/voice + cohesion) and FORM (institutional-boundary secession) confirmed directionally. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Cameroon: P4=0.71, P3=0.54, P2=0.50, P5=0.47, P1=0.36 | below-median (genuine vulnerabilities): P1=0.36, P5=0.47, P2=0.50",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Fragmentation pressure realized as the 2017 'Ambazonia' declaration but suppressed; zero recognized successor states through 2024 -- an unresolved de facto contested zone.",
+      "explanation": "Suppressed fragmentation (pressure without completed/recognized secession) realized, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case (no prior consolidation to reverse).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "CONFIRMED",
+      "evidence": "Military operations in the NW/SW (Tier 1) delayed but did not resolve the crisis; limited dialogue offers (2019 'special status') failed to settle it; conflict ongoing through 2024.",
+      "explanation": "Safeguard G Tier 1 confirmed: military suppression delayed without resolving the complexity-capacity mismatch -> continued unresolved instability, exactly as predicted.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: colonial-institutional engineering -- two legal/administrative traditions (British common law + French civil law) compressed into one centralized state; fragmentation pressure along the institutional fault line"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "High, escalating sub-state turbulence in the NW/SW; with no autonomy backstop the turbulence was not channeled into peaceful governance (contrast Aceh case35).",
+      "explanation": "Escalating sub-state turbulence realized; absence of a credible autonomy backstop left it unchanneled, as predicted (Safeguard F).",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Directional confirmation in both magnitude and FORM: low P1 plus dual colonial-institutional legacies produced fragmentation pressure precisely along the Anglophone institutional fault line, and Safeguard G Tier 1 military suppression delayed without resolving it -- MI fell from Tier 3 to Tier 4 with the conflict still active in 2024.",
+    "safeguards_triggered": [
+      "G Tier 1 (military suppression)",
+      "F (sub-state turbulence, no backstop)",
+      "D (cross-border Nigeria dimension -- secondary)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Colonial-institutional ENGINEERING is an isolable fragmentation driver: when two populations with different LEGAL/administrative traditions (common law vs civil law) are compressed into one centralized state, fragmentation pressure forms along the institutional fault line itself -- a cleaner test of institutional-legacy heterogeneity than the ethnically noisy Nigeria/Biafra (case12). It also sharpens the Safeguard G/I contrast: Cameroon's Tier-1 military suppression WITHOUT an autonomy backstop yields ongoing unresolved instability, the mirror image of Aceh's (case35) autonomy-with-backstop resolution.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; adds the Francophone-Africa case, isolates institutional-legacy heterogeneity as a complexity variable, and adds a Safeguard G Tier 1 confirmation (with Fiji case33 / Sudan case50). Replaces the original Ethiopia-federal proposal to avoid overlap with cases 8/11.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "MODERATE",
+    "risk_tier_by_lead": {
+      "1": "MODERATE",
+      "3": "MODERATE",
+      "5": "MODERATE",
+      "7": "MODERATE",
+      "10": "MODERATE",
+      "15": "MODERATE",
+      "20": "MODERATE",
+      "28": "HIGH"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
+  }
+}

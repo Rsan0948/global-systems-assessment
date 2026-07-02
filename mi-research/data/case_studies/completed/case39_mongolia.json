@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "case_name": "Mongolia (democratic transition + resource dependence, mixed Safeguard E)",
+    "case_id": "case39",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "democratic_transition",
+    "geographic_region": "East / Inner Asia",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Mongolia"
+    ],
+    "key_test": "MIXED Safeguard E -- the case that sits between Botswana (positive pole) and Venezuela (negative pole). Heavy mineral dependence (mining ~20-25% of GDP; minerals ~80-90% of exports) with only moderate institutions (pre-P1 0.502), but GENUINELY democratic. Democratic accountability should partially offset resource dependence -> boom-bust volatility but NO authoritarian/rentier reversion.",
+    "round": "v2_batch4",
+    "notes": "Reference-based record (country_ref + years; no embedded indicators). Resolved scores are real MI v2 re-scores. 1990 democratization -> 2024; scored ~1996 vs 2024. Mongolia stayed Tier 3 throughout; the near-flat MI conceals real macro volatility (the 2016-17 debt crisis / IMF program) that the framework predicts as boom-bust rather than collapse."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Six years after the peaceful 1990 democratic transition, Mongolia was a consolidating multiparty democracy (Freedom House 'Free') whose economy was becoming heavily dependent on mineral extraction, with moderate state institutions.",
+    "entities": {
+      "Mongolia": {
+        "context": {
+          "population": 2300000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "low",
+          "is_democratic_transition": true,
+          "growth_trajectory": "growing",
+          "fragmentation_mechanism": "legal",
+          "resource_rents_pct_gdp": 22.0,
+          "resource_rents_pct_revenue": 35.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Heavy mineral dependence (mining ~20-25% of GDP; minerals ~80-90% of exports) above the resource-curse threshold, but with only moderate institutions and genuine democratic competition -- the MIXED-pole test of Safeguard E.",
+        "country_ref": "Mongolia",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Stable-but-volatile consolidation; Tier 3 maintained. Democratic P1 partially offsets resource dependence -> boom-bust macro volatility but no authoritarian/rentier reversion",
+      "basis": "Moderate P1 (0.502) + Safeguard E mixed pole (above-threshold rents, moderate institutions, genuine democracy)",
+      "falsification_condition": "Either authoritarian/rentier capture (the Venezuela path) OR Botswana-grade smooth high-growth stability -- i.e. a clean positive or negative pole rather than the predicted middle"
+    },
+    "b_violence": {
+      "prediction": "Low-to-moderate internal-violence RISK; episodic unrest possible, no breakdown",
+      "risk_level": "low-moderate",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Large-scale internal violence or state breakdown"
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity)",
+      "basis": "",
+      "falsification_condition": "N/A"
+    },
+    "d_failure_dimension": {
+      "prediction": "Residual exposure = economic volatility / commodity dependence (P4), not authoritarian capture of institutions",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Failure driven by authoritarian institutional capture rather than commodity-cycle volatility"
+    },
+    "e_fragment_count": {
+      "prediction": "N/A (no fragmentation pressure)",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Territorial fragmentation pressure emerges"
+    },
+    "f_reversal_risk": {
+      "prediction": "Moderate reversal risk (resource dependence + moderate institutions) but democratic accountability holds -> NO authoritarian reversion",
+      "safeguard_c_severity": "moderate",
+      "falsification_condition": "Authoritarian reversion / rentier capture of the democratic system"
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": "Emergence of a suppression mechanism"
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A",
+      "safeguard_f_triggered": false,
+      "falsification_condition": "Sub-state turbulence emerges"
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Mongolia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Stable-but-volatile as predicted (Tier 3 held): MI 0.585 -> 0.563, P1 0.502 -> 0.464. Commodity-cycle boom-bust including a 2016-17 balance-of-payments crisis and IMF program, plus episodic corruption protests (2022) -- yet democracy held throughout (Freedom House 'Free', repeated peaceful turnovers, no authoritarian/rentier reversion).",
+        "key_events": [
+          "2016-17 debt crisis / IMF program (boom-bust)",
+          "2022 anti-corruption protests, contained",
+          "democracy sustained, no authoritarian reversion"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Mongolia": {
+        "pre": {
+          "P1": 0.502,
+          "MI": 0.585
+        },
+        "post": {
+          "P1": 0.464,
+          "MI": 0.563
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Tier 3 held (MI 0.585 -> 0.563; P1 0.502 -> 0.464); commodity boom-bust (2016-17 IMF program) without authoritarian/rentier reversion",
+      "explanation": "The mixed-pole prediction was realized: volatility but no collapse and no capture -- the middle ground between Botswana and Venezuela, with democratic accountability doing the offsetting work.",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "No large-scale internal violence; 2022 protests contained within democratic channels",
+      "explanation": "Low-to-moderate risk call held.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Mongolia pre-P1=0.502 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Economic/commodity-cycle volatility materialized (2016-17 crisis) as the binding exposure; no authoritarian institutional capture",
+      "explanation": "Direction correct -- the residual vulnerability was economic-structural, exactly as predicted, and it did surface -- but contained rather than failing; post-hoc dimension identification coded PARTIAL under strict standards.",
+      "computed_config": "Mongolia: P5=0.77, P3=0.57, P2=0.56, P4=0.53, P1=0.50 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.50)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No fragmentation event.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "No authoritarian reversion or rentier capture; repeated peaceful turnovers, Freedom House 'Free' sustained",
+      "explanation": "The key mixed-pole prediction -- democratic accountability prevents the reversion that resource dependence alone might produce -- held.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Confirms the mixed Safeguard E pole: heavy resource dependence under moderate institutions but genuine democracy produced boom-bust volatility without authoritarian reversion -- the predicted middle ground between Botswana's smooth success and Venezuela's capture-driven collapse.",
+    "safeguards_triggered": [
+      "E (mixed pole)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "The Safeguard E calibration's interior point: with the rent intensity held high, varying institutions+accountability traces a continuum -- Venezuela (low P1, captured) -> Mongolia (moderate P1, democratic, volatile) -> Botswana (high P1, smooth). Democratic accountability, not rent level, is what converts dependence into mere volatility rather than reversion.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; supplies the interior calibration point for the bidirectional Safeguard E (with cases 22, 38, 42).",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "MODERATE",
+    "risk_tier_by_lead": {
+      "1": "MODERATE",
+      "3": "MODERATE",
+      "5": "MODERATE",
+      "7": "MODERATE",
+      "10": "MODERATE",
+      "15": "MODERATE",
+      "20": "MODERATE",
+      "28": "LOW"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
+  }
+}

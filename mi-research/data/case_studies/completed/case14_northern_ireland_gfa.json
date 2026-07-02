@@ -20,24 +20,6 @@
     "event_description": "Good Friday Agreement: consociational power-sharing, cross-border bodies, and three-strand architecture -- textbook Tier 3 porosity inside the high-P1 UK.",
     "entities": {
       "Northern Ireland (UK)": {
-        "indicators": {
-          "gov_effectiveness": 88.1,
-          "rule_of_law": 89.8,
-          "regulatory_quality": 84.5698,
-          "cpi": null,
-          "control_of_corruption": 90.3093,
-          "gii": null,
-          "rd_pct_gdp": 1.5478,
-          "eci": 1.313,
-          "education_index": 0.7775,
-          "life_expectancy_index": 0.8812,
-          "gdp_per_capita_ppp": 23689.2366,
-          "resource_rents_pct_gdp": 0.172,
-          "oda_pct_gni": null,
-          "political_stability": 84.4852,
-          "fsi": null,
-          "voice_accountability": 79.7437
-        },
         "context": {
           "is_democratic": true,
           "is_authoritarian": false,
@@ -65,70 +47,9 @@
           "fsi"
         ],
         "notes": "Indicators are UK sovereign WGI estimates (RoL 1.27, GE 1.18). NI GDP per capita ~20% below the UK average; consistently the UK's lowest-productivity region; highest economic inactivity (26.8% vs 20.8% UK, late 2023); depends on a UK subvention of ~GBP10-11bn (about a quarter of its output). 'executive_collapses' = at least 8 Stormont suspensions covering >40% of the institution's existence.",
-        "_scale_corrections": [
-          {
-            "indicator": "gov_effectiveness",
-            "original": 1.18,
-            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
-            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
-            "corrected": 88.1
-          },
-          {
-            "indicator": "rule_of_law",
-            "original": 1.27,
-            "original_scale": "WGI estimate (~N(0,1) z-score, -2.5..+2.5)",
-            "method": "percentile = Phi(estimate)*100 (WGI estimate->percentile; matches authors' own normalization, e.g. case19 India Phi(-0.04)=0.484)",
-            "corrected": 89.8
-          }
-        ],
-        "_hydrated_from_world": {
-          "source_slug": "united_kingdom",
-          "source_year": "1998",
-          "target_year": 1998,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "regulatory_quality",
-              "value": 84.5698
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 90.3093
-            },
-            {
-              "indicator": "political_stability",
-              "value": 84.4852
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 79.7437
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 23689.2366
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 0.172
-            },
-            {
-              "indicator": "rd_pct_gdp",
-              "value": 1.5478
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.7775
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.8812
-            },
-            {
-              "indicator": "eci",
-              "value": 1.313
-            }
-          ]
-        }
+        "country_ref": "United Kingdom",
+        "pre_year": "1998",
+        "post_year": "2024"
       }
     }
   },
@@ -193,6 +114,18 @@
           "Economic inactivity 26.8% (vs 20.8% UK) in late 2023; GBP10-11bn annual UK subvention (~quarter of output)"
         ]
       }
+    },
+    "resolved_scores": {
+      "Northern Ireland (UK)": {
+        "pre": {
+          "P1": 0.862,
+          "MI": 0.844
+        },
+        "post": {
+          "P1": 0.757,
+          "MI": 0.79
+        }
+      }
     }
   },
   "verification": {
@@ -204,7 +137,9 @@
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Violence de-escalated dramatically; prevention worked.",
-      "explanation": "Prior-violence legacy de-escalated without recurrence, as predicted."
+      "explanation": "Prior-violence legacy de-escalated without recurrence, as predicted.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Northern Ireland (UK) pre-P1=0.862 -> LOW risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
@@ -212,29 +147,51 @@
       "explanation": "Persistent economic divergence realized without triggering violence, as predicted."
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Lowest productivity + highest economic inactivity + subvention dependence -- the strain is economic, not institutional collapse.",
-      "explanation": "P4 under-delivery is the binding dimension, as predicted."
+      "explanation": "P4 under-delivery is the binding dimension, as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Northern Ireland (UK): P1=0.86, P2=0.86, P5=0.84, P4=0.84, P3=0.82 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P3=0.82)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "No territorial loss; UK never withdrew devolution permanently.",
-      "explanation": "Mod9 correctly not applicable; no fragmentation."
+      "explanation": "Mod9 correctly not applicable; no fragmentation.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "Not a democratic-transition reversal case."
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "CONFIRMED",
       "evidence": "GFA consociational power-sharing, cross-border bodies, three-strand architecture = textbook Tier 3 porosity.",
-      "explanation": "Mechanism classified as Tier 3, as predicted."
+      "explanation": "Mechanism classified as Tier 3, as predicted.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: consociational_power_sharing"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "CONFIRMED",
       "evidence": "The repeated executive collapses were caught every time by the UK's Direct Rule backstop.",
-      "explanation": "Clearest single illustration of Mod10/Safeguard I (porosity-with-backstop); Safeguard F divergence held safely because the backstop caught each failure."
+      "explanation": "Clearest single illustration of Mod10/Safeguard I (porosity-with-backstop); Safeguard F divergence held safely because the backstop caught each failure.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -250,6 +207,30 @@
       "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard.",
       "Reaffirm Mod3 (no timing claims) for prevention cases."
     ],
-    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check."
+    "baseline_impact": "Promoting Safeguard I to a working safeguard needs the 20-case baseline check.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "LOW",
+    "risk_tier_by_lead": {
+      "1": "LOW",
+      "3": "LOW",
+      "5": "LOW",
+      "7": "LOW",
+      "10": "LOW",
+      "15": "LOW",
+      "20": "LOW",
+      "28": "LOW"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
   }
 }

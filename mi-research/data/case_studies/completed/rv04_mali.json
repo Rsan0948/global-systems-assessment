@@ -1,0 +1,30 @@
+{
+  "name": "Mali",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "A_convergence",
+    "case_name": "Mali",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Mali",
+  "prior_year": 2002,
+  "predictor_year": 2011,
+  "actual_outcome_crisis": true,
+  "outcome": "2012 state collapse (Tuareg/jihadist/coup)",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "FALSIFIED",
+      "evidence": "gap 0.13 = CLEAR (not flagged-closing as doc framed). OUT OF SCOPE: small-gap territorial/security collapse, not a durability-gap phenomenon",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.127,
+    "J_status": "clear",
+    "convergence": "widening",
+    "accountability": "balanced",
+    "va_minus_p4": 0.025,
+    "rents_pct": 8.91
+  }
+}

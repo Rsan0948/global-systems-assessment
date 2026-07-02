@@ -1,0 +1,193 @@
+{
+ "slug": "malawi",
+ "name": "Malawi",
+ "iso3": "MWI",
+ "mi": 0.497,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.428,
+  "P2": 0.299,
+  "P3": 0.589,
+  "P4": 0.573,
+  "P5": 0.594
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile - prosperity matched by institutions.",
+ "spread": 0.295,
+ "residual": 0.13,
+ "config": [
+  [
+   "P5",
+   0.594
+  ],
+  [
+   "P3",
+   0.589
+  ],
+  [
+   "P4",
+   0.573
+  ],
+  [
+   "P1",
+   0.428
+  ],
+  [
+   "P2",
+   0.299
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 37.2288,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 54.4468,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 45.6372,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 34.7249,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 34.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "eci",
+   "value": -1.007,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.4499,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7285,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 1857.62,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 59.4,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 54.93,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 4.22,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.13",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "tanzania",
+   "name": "Tanzania",
+   "mi": 0.496,
+   "tier": 3
+  },
+  {
+   "slug": "togo",
+   "name": "Togo",
+   "mi": 0.478,
+   "tier": 3
+  },
+  {
+   "slug": "madagascar",
+   "name": "Madagascar",
+   "mi": 0.455,
+   "tier": 3
+  },
+  {
+   "slug": "uganda",
+   "name": "Uganda",
+   "mi": 0.477,
+   "tier": 3
+  },
+  {
+   "slug": "senegal",
+   "name": "Senegal",
+   "mi": 0.53,
+   "tier": 3
+  }
+ ]
+}

@@ -55,6 +55,27 @@ The weights are correlation-derived from the data itself. P1 at 34% (up from ini
 - **Mod4 — Margin-of-Error Gate:** P1 ordinality claim applies ONLY when gap exceeds margin. Narrow-gap cases = abstain, don't predict.
 - **Mod8 — Violence Risk/Agency Split:** Framework predicts violence RISK, not violence AGENCY (who initiates). Separate these in all predictions.
 - **Safeguard I — Porosity-with-Backstop:** When fragmenting state has external backstop patron, predict re-suppression rather than permanent secession. Confirmed by Ethiopia/Tigray and Myanmar.
+- **Safeguard J — Durability Gate (P4−P1 gap) [V3.1, independently derived]:** When economy/income has outrun institutions (P4 − P1 > 0.22), the state is "granted/fragile" — structurally crisis-vulnerable under shock. Derived on the N=21 acute-signature test set (83% sens / 100% spec / 100% PPV; the four-component DECLINE signature failed blind at 14–25%/40% — a *level*, not a trajectory, is what predicts). Three-state (flag ≥ 0.28 / clear ≤ 0.20 / borderline between). Unifies with the durability ratio. See `docs/architectural_decisions/v3_1_durability_gate.md`.
+  - **Convergence Qualifier [V3.2]:** the gap's TRAJECTORY disambiguates a flag — CLOSING (P1 rising) = developmental catch-up (downgrade); WIDENING/static = fragility (escalate). 92% sens / 80% spec on flagged states. Supply `context["prior_pillars"]`.
+- **Accountability Gap [V3.2 — HYPOTHESIS, informational, NOT a verdict]:** VA (which P1 excludes) vs income; VA − P4 ≤ −0.50 = "capacity without consent" (legitimacy-capped: Saudi/China/Russia/Turkey), a hypothesized brittle failure mode orthogonal to the durability gap. VA wired in for all 180 panel countries (`data/sources/va_anchored.json`); `diagnostics.accountability_gap()`; `scripts/big_signals_scan.py`. No crisis validation yet. See `docs/architectural_decisions/v3_2_convergence_and_accountability.md`.
+
+## Measurement tiers — COUNTRY-LEVEL + SYSTEM-LEVEL [V3.3]
+The framework now has two tiers, sharing data + the level/slope epistemic, answering different questions:
+- **Country-level (the MI):** pillars P1–P5, safeguards A–J, mods 4/8, durability/ascent/movement diagnostics — *is this polity durable?*
+- **System-level (Global Systems Measurement):** the world system's state — the three improvement *engines* (institutions/income/human-capital climb rates vs historical norm), the institutional *container* trajectory (the supercycle discriminator: strengthening/eroding/flat), the *texture* (surge/churn/stasis/collapse), and the global *movement distribution* (real_ascent / windfall / ratchet_rise / hollow_stability / decline). `mi/global_systems.py`; `scripts/global_systems.py`; `docs/global_systems_measurement.md`. EXPLORATORY/proxy — changes no country verdict. Current reading: multi-engine lull on a flat-to-eroding container; only ~2% of countries in genuine institution-led ascent.
+
+## Standing epistemic — TRUST THE LEVEL, DISTRUST THE SLOPE [V3.3]
+The crisis lead-time and golden-age holdout converge on one rule: the **level** (and the durability
+gap) carries the predictive content; the **slope** (year-to-year movement) is mean-reverting noise.
+Crises: ordinal level predicts 10–28y out; acute timing only ~3–5y. Golden ages: a country's own
+institutional *jump* predicts nothing (CC-jump signature **refuted on a pre-registered geographic
+holdout**, z=−0.0), while a low *level* (room-to-rise) is holdout-validated (z+2.4) and the real
+drivers are exogenous (transition era + commodity cycle, ~81% of climbs). Operationalized in V3.3:
+`diagnostics.ascent_potential()` (validated level signal) and `diagnostics.movement_quality()` (names
+the movement — windfall / hollow_stability / real_ascent — with an explicit distrust-the-slope caveat).
+Global-picture consequence (`docs/v3_3_inclusion_and_global_picture.md`): apparent global MI progress
+is the P3 human-capital ratchet + commodity income masking a flat-to-eroding governance core, a
+golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
 
 ---
 

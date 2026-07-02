@@ -36,10 +36,16 @@ def run_phase1(case_data: dict) -> dict:
     results = {}
 
     for entity_name, entity_data in pre_event.get("entities", {}).items():
-        indicators = entity_data.get("indicators", {})
+        # Reference-based records resolve indicators via the Data API (country_ref +
+        # pre_year). Legacy records that embed "indicators" still work.
+        indicators = entity_data.get("indicators")
+        if not indicators and entity_data.get("country_ref"):
+            from mi import datasource
+            indicators = datasource.get_indicators(
+                entity_data["country_ref"], entity_data.get("pre_year")) or {}
         context = entity_data.get("context", {})
 
-        score = score_country(indicators)
+        score = score_country(indicators or {})
         safeguards = evaluate_all_safeguards(score, context)
         strategy = classify_strategy(score, context)
         vulnerability = assess_vulnerability(score, safeguards)
@@ -148,37 +154,63 @@ def validate_baseline(completed_dir: str):
         print(f"Directory not found: {completed_dir}")
         return
 
-    total = {"confirmed": 0, "partial": 0, "falsified": 0}
+    # Two classes in the 70-case corpus: P1-ORDINALITY cases (51) and DURABILITY-GATE / Safeguard-J
+    # test cases (19, stress_type="durability_gate_test"). Scored separately — different claims.
+    cls = {"ordinality": {"confirmed": 0, "partial": 0, "falsified": 0, "n": 0},
+           "durability_gate": {"confirmed": 0, "partial": 0, "falsified": 0, "n": 0},
+           "rule_validation": {"confirmed": 0, "partial": 0, "falsified": 0, "n": 0}}
     cases_processed = 0
 
     for case_file in sorted(completed_path.glob("*.json")):
         with open(case_file) as f:
             case_data = json.load(f)
-
-        case_name = case_data.get("metadata", {}).get("case_name", case_file.stem)
-        verification = case_data.get("verification", {})
-
-        for pred_name, result in verification.items():
+        st = case_data.get("metadata", {}).get("stress_type")
+        k = ("durability_gate" if st == "durability_gate_test"
+             else "rule_validation" if st == "rule_validation"
+             else "ordinality")
+        cls[k]["n"] += 1
+        for pred_name, result in case_data.get("verification", {}).items():
             coding = result.get("result", "").upper()
             if "CONFIRMED" in coding and "PARTIAL" not in coding:
-                total["confirmed"] += 1
-            elif "PARTIAL" in coding:
-                total["partial"] += 1
+                cls[k]["confirmed"] += 1
+            elif "PARTIAL" in coding or "INDETERMIN" in coding:
+                cls[k]["partial"] += 1
             elif "FALSIF" in coding:
-                total["falsified"] += 1
-
+                cls[k]["falsified"] += 1
         cases_processed += 1
 
+    total = cls["ordinality"]  # back-compat: the headline scorecard is the ordinality baseline
     if cases_processed > 0:
-        total_scored = total["confirmed"] + total["partial"] + total["falsified"]
-        print(f"\nBASELINE VALIDATION — {cases_processed} cases")
+        o = cls["ordinality"]; g = cls["durability_gate"]; rv = cls["rule_validation"]
+        total_scored = o["confirmed"] + o["partial"] + o["falsified"]
+        print(f"\nCORPUS: {cases_processed} cases = {o['n']} P1-ordinality + {g['n']} durability-gate "
+              f"+ {rv['n']} rule-validation (A/B)")
+        print(f"\nP1-ORDINALITY BASELINE — {o['n']} cases")
         print(f"  Total predictions: {total_scored}")
-        print(f"  Confirmed: {total['confirmed']}")
-        print(f"  Partial: {total['partial']}")
-        print(f"  Falsified: {total['falsified']}")
+        print(f"  Confirmed: {o['confirmed']}")
+        print(f"  Partial: {o['partial']}")
+        print(f"  Falsified: {o['falsified']}")
+        gscored = g["confirmed"] + g["partial"] + g["falsified"]
+        if gscored:
+            print(f"\nDURABILITY-GATE (Safeguard J) TEST SET — {g['n']} cases: "
+                  f"{g['confirmed']} correct / {g['falsified']} wrong "
+                  f"({g['confirmed']/gscored*100:.0f}% accuracy)")
+        rvs = rv["confirmed"] + rv["partial"] + rv["falsified"]
+        if rvs:
+            print(f"\nRULE-VALIDATION (A/B) TEST SET — {rv['n']} cases: "
+                  f"{rv['confirmed']} confirmed / {rv['partial']} indeterminate / {rv['falsified']} falsified")
         if total_scored > 0:
-            print(f"  Clean rate: {total['confirmed']/total_scored:.0%}")
+            print(f"  Clean rate (per-letter count): {total['confirmed']/total_scored:.0%}")
             print(f"  Directional: {(total['confirmed']+total['partial'])/total_scored:.0%}")
+            print("\n  HONESTY NOTE — report as a RANGE, not a single number.")
+            print("  Records are MI v1, scored on real data via the Data API. a_trajectory &")
+            print("  c_convergence are AUTO-DERIVED from the re-scored data (Mod4-gated); the")
+            print("  run6 strict re-code (post-hoc d-calls -> PARTIAL) is also applied. The")
+            print("  per-letter clean rate now ~74% (real-data auto-derivation moved 5 verdicts")
+            print("  off the prior ~78% — all CONFIRMED->PARTIAL, e.g. Mod4 near-ties).")
+            print("  HONEST figure is a RANGE: ~62-85%, and directional ~100% (zero")
+            print("  falsifications, partly by construction; capacity partly redundant w/ WGI).")
+            print("  See live/runs/run6of6_definitive_synthesis_20cases.md & completed/README.md.")
 
 
 def main():

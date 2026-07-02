@@ -1,0 +1,30 @@
+{
+  "name": "Botswana",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "A_convergence",
+    "case_name": "Botswana",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Botswana",
+  "prior_year": 2002,
+  "predictor_year": 2018,
+  "actual_outcome_crisis": false,
+  "outcome": "no crisis; 2024 peaceful transfer",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "INDETERMINATE",
+      "evidence": "borderline band (gap 0.24) + widening but NO crisis \u2014 the band's other side; high institutions",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.237,
+    "J_status": "BORDER",
+    "convergence": "widening",
+    "accountability": "accountability_lag",
+    "va_minus_p4": -0.248,
+    "rents_pct": 0.87
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "case_name": "Somaliland / Somalia (de facto fragmentation, inverted recognition)",
+    "case_id": "case51",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "comparative_trajectory",
+    "geographic_region": "East Africa / Horn of Africa",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Somalia",
+      "Somaliland"
+    ],
+    "key_test": "Recognition-inverted de facto fragmentation: does FUNCTIONAL institutional capacity (Somaliland - unrecognized but governing) or FORMAL sovereignty (Somalia - recognized but collapsed) determine outcomes? The framework claims capacity. Tests complexity-control from the BOTTOM: Somaliland deliberately reduced complexity (smaller, more clan-homogeneous territory, distinct British-colonial legacy) to match limited capacity. Somaliland is an UNRECOGNIZED de facto state with NO separate WB data -> proxied via the parent reference + qualitative evidence (mirrors Aceh/Kosovo/East Timor sub-state handling).",
+    "round": "v2_batch6",
+    "notes": "Reference-based record. Somalia (country_ref) carries real MI v1 re-scores - but they essentially measure Mogadishu/the recognized center, at the floor (P1 ~0.132). Somaliland (declared independence 1991; never internationally recognized) has no standalone WGI/WB coverage; its scores are intentionally null and its assessment is qualitative. Scored ~1996 vs 2024. The pre-event (1996) is already post-1991-split, so this is a comparative trajectory of the two de facto entities."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "By 1996, Somalia had collapsed into civil war and warlordism after the 1991 fall of Siad Barre; in the northwest, the former British Somaliland had declared independence (1991) and was building functional clan-negotiated institutions. The recognized state (Somalia) was failed; the unrecognized entity (Somaliland) was functional - an inversion of recognition and capacity.",
+    "entities": {
+      "Somalia": {
+        "context": {
+          "population": 7000000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": false,
+          "military_dominant": false,
+          "neighbor_threat_level": "high",
+          "neighbor_details": "Ethiopia/Kenya interventions; al-Shabaab insurgency; AU peacekeeping (AMISOM/ATMIS); piracy era.",
+          "fragmentation_mechanism": "state collapse with de facto unrecognized secession (Somaliland)",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "is_democratic_transition": false,
+          "growth_trajectory": "collapse then partial, aided recovery off the floor",
+          "resource_rents_pct_revenue": 5.0
+        },
+        "data_gaps": [
+          "p2_political_participation",
+          "p3_human_capital",
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Somalia sits at the institutional floor (pre-P1 ~0.132); the WGI essentially measure the recognized center (Mogadishu) and little else. Several pillars are unscorable (P2/P3 null pre).",
+        "country_ref": "Somalia",
+        "pre_year": "1996",
+        "post_year": "2024"
+      },
+      "Somaliland": {
+        "context": {
+          "under_external_admin": false,
+          "neighbor_threat_level": "medium",
+          "fragmentation_mechanism": "de facto unrecognized secession + complexity-control from the bottom",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "Safeguard I in REVERSE: the ABSENCE of any great-power backstop championing recognition prevents formal statehood despite functional institutions - recognition, not capacity, is the binding constraint.",
+          "has_power_sharing": true,
+          "growth_trajectory": "functional, clan-negotiated governance; modest growth (Berbera port/livestock)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "data_note": "pre-event indicators unavailable for Somaliland at 1996 (sub-state/new-state/pre-WGI gap)",
+        "country_ref": "Somaliland",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Somaliland (higher FUNCTIONAL capacity) > Somalia (recognized but floor-capacity). Capacity, not formal sovereignty, should predict the better outcome: Somaliland stabilizes and governs; Somalia remains failed (recovering only slowly off the floor).",
+      "basis": "Functional-P1 ordinality (Somaliland qualitatively well above Somalia's ~0.132 floor) + complexity-control from the bottom (Somaliland reduced territory/heterogeneity to match capacity).",
+      "falsification_condition": "Somalia (recognized) outperforms Somaliland, OR recognition status (not capacity) drives the outcome ranking."
+    },
+    "b_violence": {
+      "prediction": "Somalia: critical violence RISK (floor-P1; al-Shabaab, warlordism). Somaliland: low-moderate RISK given functional capacity and clan power-sharing.",
+      "risk_level": "critical (Somalia)",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Somaliland descends into Somalia-level violence, or Somalia stabilizes to Somaliland's level."
+    },
+    "c_convergence": {
+      "prediction": "Divergence: the recognized center and the unrecognized northwest diverge in governance and stability rather than re-converging into one functioning state.",
+      "basis": "Capacity gap (functional Somaliland vs failed Somali center) widens; no re-integration.",
+      "falsification_condition": "Convergence / re-integration into a single functioning state, or the capacity gap closing."
+    },
+    "d_failure_dimension": {
+      "prediction": "Somalia fails on institutional capacity (P1) plus cohesion (P5). Somaliland's binding constraint is NOT capacity but the EXTERNAL recognition ceiling - a dimension the MI does not model.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Somaliland's constraint proves to be internal capacity failure rather than the external recognition ceiling."
+    },
+    "e_fragment_count": {
+      "prediction": "1 de facto successor (Somaliland), already split since 1991 but unrecognized; Safeguard B - Somalia's floor capacity cannot re-absorb or manage the fragment.",
+      "safeguard_b_applied": true,
+      "falsification_condition": "Re-integration into a single recognized state, or further fragmentation of Somaliland itself."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A - not a democratic-transition reversal case.",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A - de facto fragmentation, not active suppression of Somaliland by the center (Mogadishu lacks the capacity to suppress).",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Somaliland channels clan turbulence into negotiated power-sharing and elections (complexity-control from the bottom), staying functional despite non-recognition.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Somaliland's internal turbulence escalates into Somalia-style collapse."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Somalia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Recognized but failed, as predicted. Somalia remained at the institutional floor through 2024 - al-Shabaab insurgency, dependence on AU peacekeeping, fragile federal politics - though it recovered marginally off the absolute floor (P1 0.132 -> 0.173, MI 0.223 -> 0.245, Tier 4 throughout; P3 became scorable, P4 fell 0.357 -> 0.204). Formal sovereignty did not translate into functional outcomes.",
+        "key_events": [
+          "persistent al-Shabaab insurgency",
+          "AU peacekeeping (AMISOM/ATMIS) dependence",
+          "fragile federal-member-state politics; recovery only marginally off the floor",
+          "2024 friction over the Somaliland-Ethiopia MoU (Berbera port access)"
+        ]
+      },
+      "Somaliland": {
+        "indicators_by_year": {},
+        "outcome_summary": "[sub-state, unrecognized, no WB data] Qualitative: Somaliland sustained functional self-governance - multiple peaceful multiparty elections (incl. the 2024 presidential election with an incumbent conceding), functioning courts, clan power-sharing (the Guurti upper house), lower violence, and modest growth (Berbera port, livestock). Materially better governed than the recognized Somali center - yet still unrecognized internationally, the recognition ceiling the framework flags as an external (non-capacity) constraint.",
+        "key_events": [
+          "sustained peaceful multiparty elections (incl. 2024 presidential transfer of power)",
+          "functioning courts + clan power-sharing (Guurti)",
+          "Berbera port development; 2024 Ethiopia MoU bid for sea access/recognition",
+          "still no international recognition despite functional statehood"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Somalia": {
+        "pre": {
+          "P1": 0.132,
+          "MI": 0.223
+        },
+        "post": {
+          "P1": 0.173,
+          "MI": 0.245
+        }
+      },
+      "Somaliland": {
+        "pre": {
+          "P1": null,
+          "MI": null
+        },
+        "post": {
+          "P1": null,
+          "MI": null
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Somaliland sustained peaceful elections + functioning institutions (qualitative); Somalia stayed at the floor (P1 0.132 -> 0.173, MI 0.223 -> 0.245, Tier 4). Capacity, not recognition, tracked the outcome.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: the unrecognized entity lacks pre-P1/post-MI -> auto-derivation skipped, judgment preserved] Functional capacity predicted the better trajectory (Somaliland > Somalia) despite the inversion of formal recognition, as predicted.",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Somalia: persistent al-Shabaab war (critical). Somaliland: low-moderate violence, peaceful turnovers.",
+      "explanation": "Floor-P1 Somalia -> critical violence risk; functional Somaliland -> far lower, as predicted (Mod8).",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Somalia pre-P1=0.132 -> HIGH risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "The recognized center and the unrecognized northwest diverged in governance and stability; no re-integration through 2024.",
+      "explanation": "[data-limited: the unrecognized entity lacks scores -> auto-derivation skipped, judgment preserved] Capacity-driven divergence realized, as predicted.",
+      "auto_derived": false
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Somalia fails on capacity (P1) + cohesion (P5); Somaliland's binding constraint is the external recognition ceiling, not internal capacity.",
+      "explanation": "Failure-dimension reading confirmed, including the framework-exceeding recognition ceiling. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Somalia: P4=0.36, P5=0.18, P1=0.13 | below-median (genuine vulnerabilities): P1=0.13, P5=0.18, P4=0.36",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "1 de facto successor (Somaliland), split since 1991, unrecognized; Somalia's floor capacity could not re-absorb it.",
+      "explanation": "Low de facto fragment count unmanageable at floor capacity, as Safeguard B predicts.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "De facto fragmentation; the center lacks the capacity to suppress Somaliland.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: state collapse with de facto unrecognized secession (Somaliland)"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Somaliland channelled clan turbulence into elections + power-sharing (Guurti), staying functional despite non-recognition.",
+      "explanation": "Complexity-control from the bottom contained sub-state turbulence, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Strong confirmation of the capacity-over-sovereignty claim: 6/6 applicable predictions confirmed (d PARTIAL under the strict re-code). Functional capacity (Somaliland) predicted the better outcome despite the inversion of formal recognition.",
+    "safeguards_triggered": [
+      "B (capacity gate: floor-capacity center cannot manage the fragment)",
+      "I in reverse (absence of a recognition backstop caps Somaliland's status)",
+      "H/complexity-control from the bottom (Somaliland reduced complexity to match capacity)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [
+      "Recognition ceiling: an external (international-system) constraint that caps a functional entity's status independent of its institutional capacity - a dimension the MI does not model."
+    ],
+    "what_this_case_uniquely_reveals": "Institutional capacity, not formal sovereignty, tracks outcomes: the unrecognized but functional entity (Somaliland) outperformed the recognized but collapsed state (Somalia) on every governance and stability measure. Somaliland achieved this by complexity-control from the BOTTOM - carving out a smaller, more clan-homogeneous, distinct-colonial-legacy entity matched to its capacity. The case also exposes a limit of the framework: a functional entity can be capped by an external recognition ceiling the MI does not capture.",
+    "proposed_framework_modifications": [
+      "Flag a 'recognition ceiling' as an external constraint distinct from institutional capacity (candidate for the companion guide; needs the 50-case baseline check before any safeguard status)."
+    ],
+    "baseline_impact": "Candidate 'recognition ceiling' note needs the baseline check; otherwise additive (confirms capacity-over-sovereignty).",
+    "data_note": "Somaliland is a non-WB unrecognized de facto entity; its scores are intentionally null and its assessment is qualitative. Somalia's WGI essentially measure the recognized center.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative_data_limited",
+    "note": "A proxy/data-limited entity lacks a 2024 MI -> ordinal lead-time not computable; judgment-only."
+  }
+}

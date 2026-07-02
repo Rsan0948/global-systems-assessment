@@ -1,0 +1,33 @@
+name: Update MI dataset
+
+# The data-collection pipeline, scheduled. Refreshes source data, re-runs the engine,
+# and commits the regenerated dataset — the push then triggers a Vercel deploy.
+on:
+  schedule:
+    - cron: "0 6 * * 1" # weekly, Mondays 06:00 UTC
+  workflow_dispatch: {} # allow manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run the pipeline (refresh → engine → publish)
+        run: python mi-website/scripts/refresh_and_build.py
+      - name: Commit regenerated dataset if changed
+        run: |
+          git config user.name "mi-data-bot"
+          git config user.email "noreply@modernizationindex.org"
+          if ! git diff --quiet -- mi-website/web/public/data; then
+            git add mi-website/web/public/data
+            git commit -m "data: scheduled MI dataset refresh"
+            git push
+          else
+            echo "No dataset changes."
+          fi

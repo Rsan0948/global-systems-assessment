@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "case_name": "Spain / Catalonia (Tier 2 legal suppression)",
+    "case_id": "case16",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "legal_suppression",
+    "geographic_region": "Spain / Catalonia",
+    "time_period": "2017 -> 2024",
+    "entities": [
+      "Spain (Catalonia)"
+    ],
+    "key_test": "Tier 2 (legal/constitutional suppression) outcome -- predicted to fall 'between' Tier 1 and Tier 3; Mod9 (re-suppression after porosity) test; Mod10 (Article 155 backstop + accommodation on the 1978 autonomy system).",
+    "round": "baseline_run4",
+    "notes": "Run4 Case 16. WGI cited on World Bank estimate scale (-2.5 to +2.5). Spain's P1 is high but distinctly lower than Germany/UK/Belgium -- relevant to tier choice. Most pillar values ordinal/estimated, not cardinal."
+  },
+  "pre_event": {
+    "time_point": "2017",
+    "event_description": "October 2017 Catalan independence referendum, met by Tier 2 legal/constitutional suppression rather than military force or Tier-3 expanded porosity.",
+    "entities": {
+      "Spain (Catalonia)": {
+        "context": {
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "neighbor_threat_level": "none",
+          "has_devolution": true,
+          "fragmentation_mechanism": "legal_constitutional_suppression",
+          "prior_porosity_period": true,
+          "external_backstop": true,
+          "backstop_details": "Spain's 1978 autonomy system IS porosity-with-backstop (Mod10), with Article 155 (direct rule, ~Oct 2017-June 2018) as the backstop briefly deployed and then withdrawn, followed by accommodation (pardons 2021, amnesty law 2024, fiscal dialogue)."
+        },
+        "data_gaps": [
+          "control_of_corruption",
+          "regulatory_quality",
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "fsi",
+          "regional_antisystem_vote (pro-independence vote share at 2017 not given as a single figure)"
+        ],
+        "notes": "Spain WGI estimate scale: RoL 0.82, GE 0.75 -- high but clearly below Germany/UK/Belgium. Catalonia ~18.8-20% of Spanish GDP; GDP per capita EUR37,426 (2024), above the Spanish average. Suppression mechanism: Article 155 + Constitutional Court action + prosecutions/exile (Puigdemont); some Oct 1 police violence but no sustained deployment.",
+        "country_ref": "Spain",
+        "pre_year": "2017",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Spain survives with no territorial loss; high (if lower) P1 -> survival.",
+      "basis": "High-but-lower P1 + Tier 2 legal suppression on the 1978 autonomy system.",
+      "falsification_condition": "Catalan secession / territorial loss."
+    },
+    "b_violence": {
+      "prediction": "Minimal violence (brief police clashes on Oct 1); no sustained deployment.",
+      "risk_level": "low",
+      "agency_note": "Mod8: predicts RISK.",
+      "falsification_condition": "Sustained or large-scale violence."
+    },
+    "c_convergence": {
+      "prediction": "Secession pressure de-escalates following Article 155 + accommodation.",
+      "basis": "Pardons (2021) + amnesty (2024) + fiscal dialogue layered on autonomy.",
+      "falsification_condition": "Secession pressure escalates."
+    },
+    "d_failure_dimension": {
+      "prediction": "Legal/constitutional dimension is the stress surface, not military or institutional collapse.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Failure driven by a non-legal dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "No fragmentation; no Catalan secession.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Catalonia secedes."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A -- not a democratic-transition reversal case.",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "Tier 2 (legal/constitutional suppression): Article 155 direct rule, Constitutional Court action, prosecutions/exile. Framework predicts Tier 2 falls 'between' Tier 1 (delays without reducing pressure) and Tier 3 (reduces without eliminating).",
+      "tier": 2,
+      "falsification_condition": "Mechanism is military (Tier 1) or expanded porosity (Tier 3); or pressure neither delayed nor reduced."
+    },
+    "h_substate_turbulence": {
+      "prediction": "High separatist pressure (Catalonia ~19% of GDP) managed via Article 155 backstop + accommodation; Mod9 (re-suppression after porosity -> worse outcomes) not expected to be confirmed -- Article 155 too mild and brief to be a real test.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Pressure escapes the backstop and produces secession or violence."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2018",
+      "2021",
+      "2024"
+    ],
+    "entities": {
+      "Spain (Catalonia)": {
+        "indicators_by_year": {},
+        "outcome_summary": "Spain survives, no territorial loss, minimal violence. Pressure de-escalated clearly -- arguably more than a pure 'between' result. Mechanism was Article 155 (temporary backstop) plus subsequent accommodation (pardons, amnesty, fiscal dialogue) layered on the 1978 autonomy system. Secession vote collapsed: pro-independence bloc fell below a majority for the first time since 1980.",
+        "key_events": [
+          "Article 155 direct rule ~Oct 2017-June 2018; Constitutional Court action; prosecutions/exile (Puigdemont)",
+          "Pardons (2021) and amnesty law (2024)",
+          "May 2024 regional election: pro-union Socialists (PSC) won for the first time -- 42 of 135 seats, 27.96%; first time Socialists led in both votes and seats in Catalan history",
+          "Pro-independence bloc fell to 61 of 135 seats (68 needed) -- below a majority for the first time since 1980",
+          "CEO polling: ~50% against independence, ~42% for; drought (not secession) the leading public concern"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Spain (Catalonia)": {
+        "pre": {
+          "P1": 0.686,
+          "MI": 0.772
+        },
+        "post": {
+          "P1": 0.666,
+          "MI": 0.728
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Spain survives, no territorial loss.",
+      "explanation": "High-but-lower P1 produced survival, as predicted."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "Minimal violence -- only brief Oct 1 police clashes, no sustained deployment.",
+      "explanation": "Low-violence outcome realized, as predicted.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Spain (Catalonia) pre-P1=0.686 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Secession vote collapsed; CEO polling now ~50% against / ~42% for; drought the leading concern.",
+      "explanation": "Pressure de-escalated following Article 155 + accommodation, as predicted."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Stress surface was legal/constitutional (Article 155, Constitutional Court, prosecutions), not military or institutional collapse.",
+      "explanation": "Legal dimension confirmed. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Spain (Catalonia): P4=0.88, P3=0.87, P2=0.78, P5=0.71, P1=0.69 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.69)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "No territorial loss; pro-independence bloc fell below a majority (61 of 135, 68 needed).",
+      "explanation": "No secession, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Tier 2 was predicted to fall 'between' Tier 1 and Tier 3, but Catalonia 2017-2024 shows clear REDUCTION of pressure -- 'arguably more than a pure between result'.",
+      "explanation": "Tier classification and direction correct, but the magnitude of reduction exceeded the predicted 'between' outcome -- mechanism was Article 155 (temporary backstop) PLUS subsequent accommodation, so coded partial.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: legal_constitutional_suppression"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Pro-independence bloc below majority for the first time since 1980; pressure managed via Article 155 backstop + accommodation on the 1978 autonomy system.",
+      "explanation": "Mod10/Safeguard I confirmed (porosity-with-backstop). Mod9 (re-suppression -> worse outcomes) NOT confirmed -- a weak/null test, not a refutation, because Article 155 was mild and brief and followed by accommodation rather than sustained suppression.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Confirmed: Spain survives with no territorial loss and minimal violence. Tier 2 legal suppression produced a discrete suppression episode followed by accommodation; pressure reduced more than the predicted 'between' result. Suggestively, the one case reaching for legal coercion is also the lowest-P1 of the three porosity cases (ordinally suggestive, not proven).",
+    "safeguards_triggered": [
+      "I (porosity-with-backstop, Mod10: Article 155 backstop + 1978 autonomy + accommodation)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Tier 2 legal/constitutional suppression layered onto a porosity-with-backstop autonomy system can REDUCE secession pressure more than a pure 'between' prediction when followed by accommodation rather than sustained re-suppression.",
+    "proposed_framework_modifications": [
+      "Mod9 remains unproven -- needs a genuine sustained, hard re-suppression case (Catalonia is a weak/null test, not a confirmation or refutation).",
+      "Promote candidate Safeguard I (porosity-with-backstop) to a working safeguard."
+    ],
+    "baseline_impact": "No modification adopted from this case; Mod9 still needs a proper test before any baseline-affecting change.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

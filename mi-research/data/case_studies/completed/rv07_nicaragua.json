@@ -1,0 +1,30 @@
+{
+  "name": "Nicaragua",
+  "metadata": {
+    "stress_type": "rule_validation",
+    "pattern": "A_convergence",
+    "case_name": "Nicaragua",
+    "round": "c_cases_blind"
+  },
+  "country_ref": "Nicaragua",
+  "prior_year": 2007,
+  "predictor_year": 2017,
+  "actual_outcome_crisis": true,
+  "outcome": "2018 crackdown/legitimacy crisis",
+  "tests": "rules A (Convergence Qualifier) / B (Accountability Gap) / drift \u2014 blind, engine-derived, doc labels NOT trusted",
+  "verification": {
+    "rule_test": {
+      "result": "CONFIRMED",
+      "evidence": "FLAG + widening (P1 falling) -> fragile; crisis occurred \u2014 the dangerous configuration",
+      "explanation": "Blind re-derivation vs actual outcome; distinct from the 51-case P1-ordinality claim."
+    }
+  },
+  "engine": {
+    "gap": 0.335,
+    "J_status": "FLAG",
+    "convergence": "widening",
+    "accountability": "accountability_lag",
+    "va_minus_p4": -0.305,
+    "rents_pct": 2.7
+  }
+}

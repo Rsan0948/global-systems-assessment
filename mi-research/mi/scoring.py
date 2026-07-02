@@ -9,7 +9,36 @@ import math
 import json
 from pathlib import Path
 from typing import Optional
-from mi.constants import WEIGHTS, WEIGHTS_V1, WEIGHTS_EQUAL, TIERS
+from mi.constants import (WEIGHTS, WEIGHTS_ARCHIVED_HAND_V0, WEIGHTS_EQUAL, TIERS, LENS,
+                          WEIGHTS_V2_EQUAL, V2_ERA_LEADER, V2_ELEVATED_WEIGHT, MI_ACTIVE_WEIGHTING)
+
+_PILLARS = ["P1", "P2", "P3", "P4", "P5"]
+
+
+def _era_for(year) -> str:
+    """Bucket a stress-event year to the nearest measured rotation era."""
+    try:
+        y = int(year)
+    except (TypeError, ValueError):
+        return "2018"
+    return "2012" if y <= 2015 else ("2018" if y <= 2021 else "2024")
+
+
+def v2_timevarying_weights(event_year):
+    """Option B: elevate the era's most-central pillar; split the rest equally."""
+    leader = V2_ERA_LEADER[_era_for(event_year)]
+    rest = (1.0 - V2_ELEVATED_WEIGHT) / 4
+    return {p: (V2_ELEVATED_WEIGHT if p == leader else rest) for p in _PILLARS}
+
+
+def resolve_weights(weighting: str = None, event_year=None) -> dict:
+    """Resolve the active weighting scheme to a weights dict (the single selector)."""
+    mode = weighting or MI_ACTIVE_WEIGHTING
+    if mode == "v1":
+        return WEIGHTS
+    if mode == "timevarying":
+        return v2_timevarying_weights(event_year)
+    return WEIGHTS_V2_EQUAL  # "equal" (V2 default; equal wins ties)
 
 
 def normalize_wgi(score: float) -> float:
@@ -27,13 +56,15 @@ def normalize_gii(score: float) -> float:
     return score / 100.0
 
 
-def normalize_eci(score: float, dataset_min: float = -2.5, dataset_max: float = 2.5) -> float:
+def normalize_eci(score: float, dataset_min: float = LENS["eci_default_min"], dataset_max: float = LENS["eci_default_max"]) -> float:
     """Min-max normalize Economic Complexity Index."""
     if dataset_max == dataset_min:
         return 0.5
-    # Clamp to [0,1]: an ECI outside the reference range (e.g. DR Congo < -2.5)
-    # must not push P2 negative or >1.
-    return max(0.0, min(1.0, (score - dataset_min) / (dataset_max - dataset_min)))
+    # Clamp to [0,1]: an ECI outside the supplied dataset range must not push a
+    # pillar score negative or >1 (e.g. DR Congo ECI < dataset_min). Pass the
+    # dataset min/max via indicators (eci_dataset_min/max) for cross-dataset consistency.
+    norm = (score - dataset_min) / (dataset_max - dataset_min)
+    return max(0.0, min(1.0, norm))
 
 
 def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log: float = None) -> float:
@@ -42,9 +73,9 @@ def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log
         return 0.0
     log_gdp = math.log(gdp)
     if dataset_min_log is None or dataset_max_log is None:
-        # Default range based on global data (~$500 to ~$150,000)
-        dataset_min_log = math.log(500)
-        dataset_max_log = math.log(150000)
+        # Fixed absolute reference range from the LENS config (~$500 to ~$150,000)
+        dataset_min_log = math.log(LENS["gdp_ppp_floor"])
+        dataset_max_log = math.log(LENS["gdp_ppp_ceiling"])
     if dataset_max_log == dataset_min_log:
         return 0.5
     # Clamp to [0,1]: GDP/capita above the ceiling (Luxembourg, Singapore, Qatar)
@@ -55,7 +86,7 @@ def normalize_gdp_ppp(gdp: float, dataset_min_log: float = None, dataset_max_log
 
 def normalize_resource_rents(rents_pct: float) -> float:
     """Invert resource rents: lower dependence = higher score."""
-    return max(0.0, min(1.0, 1.0 - min(rents_pct / 50.0, 1.0)))
+    return max(0.0, min(1.0, 1.0 - min(rents_pct / LENS["resource_rents_full_dependence_pct"], 1.0)))
 
 
 def normalize_oda(oda_pct: float) -> float:
@@ -64,18 +95,18 @@ def normalize_oda(oda_pct: float) -> float:
     Net ODA can be negative (a country repays/donates more than it receives);
     clamp so that does not push P4 above 1.
     """
-    return max(0.0, min(1.0, 1.0 - min(oda_pct / 20.0, 1.0)))
+    return max(0.0, min(1.0, 1.0 - min(oda_pct / LENS["oda_full_dependence_pct"], 1.0)))
 
 
 def normalize_fsi(fsi: float) -> float:
     """Invert FSI: lower fragility = higher score."""
-    return max(0.0, min(1.0, 1.0 - (fsi / 120.0)))
+    return max(0.0, min(1.0, 1.0 - (fsi / LENS["fsi_max"])))
 
 
 # Indicators the engine expects on a 0-100 scale (WGI percentile/anchored, CPI, GII).
 # A raw WGI *estimate* (~-2.5..+2.5 z-score) or a legacy 0-10 CPI silently produced
-# garbage before this guard existed: score/100 turned RoL=1.53 into 0.0153 and let
-# negative z-scores through as negative "quality". See detect_scale_issues.
+# garbage before this guard existed (score/100 turned RoL=1.53 into 0.0153 and let
+# negatives through as negative "quality"). See detect_scale_issues.
 _WGI_0_100 = ("gov_effectiveness", "rule_of_law", "regulatory_quality",
               "control_of_corruption", "political_stability", "voice_accountability")
 
@@ -83,16 +114,11 @@ _WGI_0_100 = ("gov_effectiveness", "rule_of_law", "regulatory_quality",
 def detect_scale_issues(indicators: dict) -> tuple[list, list]:
     """Validate that 0-100-scaled indicators are actually on that scale.
 
-    Returns (hard_errors, soft_warnings):
-      - hard_errors: values outside [0, 100] — impossible on the documented
-        scale, almost always a raw WGI estimate (z-score) or other mis-scaled
-        entry. The scorer refuses to run on these rather than emit garbage.
-      - soft_warnings: in-range but suspicious signatures — a WGI value <= 3
-        (real functioning states are essentially never below the 3rd percentile,
-        so this is almost certainly a raw estimate) or a CPI <= 10 (almost
-        certainly the legacy 0-10 index; multiply by 10 for 0-100). These cannot
-        be auto-rejected without risking a false positive on a genuinely
-        near-floor state, so they are surfaced, not fatal.
+    Returns (hard_errors, soft_warnings). Hard errors are values outside
+    [0, 100] (impossible on the documented scale — almost always a raw WGI
+    estimate/z-score); the scorer refuses to run on these. Soft warnings are
+    in-range but suspicious (WGI <= 3, CPI <= 10) — surfaced, not fatal, since a
+    genuinely near-floor state can look identical to a mis-entry.
     """
     hard, soft = [], []
     for k in _WGI_0_100:
@@ -132,9 +158,7 @@ def calculate_pillar_scores(indicators: dict) -> dict:
         Also includes metadata about which indicators were available.
 
     Raises:
-        ValueError: if any 0-100-scaled indicator is outside [0, 100] (a
-            mis-scaled input the engine must not silently normalize into
-            garbage). See detect_scale_issues.
+        ValueError: if any 0-100-scaled indicator is outside [0, 100].
     """
     hard, soft = detect_scale_issues(indicators)
     if hard:
@@ -177,8 +201,8 @@ def calculate_pillar_scores(indicators: dict) -> dict:
         gaps.append("P2:innovation_index")
 
     eci = indicators.get("eci")
-    eci_min = indicators.get("eci_dataset_min", -2.5)
-    eci_max = indicators.get("eci_dataset_max", 2.5)
+    eci_min = indicators.get("eci_dataset_min", LENS["eci_default_min"])
+    eci_max = indicators.get("eci_dataset_max", LENS["eci_default_max"])
     if eci is not None:
         p2_values.append(normalize_eci(eci, eci_min, eci_max))
     else:
@@ -246,18 +270,18 @@ def calculate_mi_score(pillar_scores: dict, weights: dict = None) -> Optional[fl
 
     Args:
         pillar_scores: dict with P1-P5 values (0-1 each)
-        weights: weight dict (defaults to LIVE correlation-derived)
+        weights: weight dict (defaults to the active V2 weighting; pass explicitly to override)
 
     Returns:
         Weighted composite score, or None if insufficient pillars available.
     """
     if weights is None:
-        weights = WEIGHTS
+        weights = resolve_weights()
 
     available = {k: v for k, v in pillar_scores.items()
                  if k in weights and v is not None}
 
-    if len(available) < 3:  # Need at least 3 pillars for meaningful score
+    if len(available) < LENS["min_pillars_for_mi"]:  # need enough pillars for a meaningful score
         return None
 
     # Weight and normalize by available weights
@@ -297,20 +321,22 @@ def get_tier(mi_score: float) -> dict:
     return {"tier": 6, "name": "Below Floor"}
 
 
-def score_country(indicators: dict, weights: dict = None) -> dict:
+def score_country(indicators: dict, weights: dict = None, event_year=None) -> dict:
     """
     Full scoring pipeline for a single country at a single time point.
 
     Args:
         indicators: dict of raw indicator values
-        weights: optional weight override
+        weights: optional explicit weight override
+        event_year: stress-event year (used only by the time-varying weighting)
 
     Returns:
         Complete diagnostic output including pillars, MI score, spread,
         configuration, tier, and data gaps.
     """
     pillars = calculate_pillar_scores(indicators)
-    mi_score = calculate_mi_score(pillars, weights)
+    eff_weights = weights if weights is not None else resolve_weights(event_year=event_year)
+    mi_score = calculate_mi_score(pillars, eff_weights)
     spread = calculate_pillar_spread(pillars)
     config = get_configuration_profile(pillars)
 
@@ -322,37 +348,53 @@ def score_country(indicators: dict, weights: dict = None) -> dict:
         "tier": get_tier(mi_score) if mi_score is not None else None,
         "data_gaps": pillars.get("gaps", []),
         "scale_warnings": pillars.get("scale_warnings", []),
-        "weights_used": weights or WEIGHTS,
+        "weights_used": eff_weights,
+        "weighting_mode": MI_ACTIVE_WEIGHTING if weights is None else "explicit",
     }
 
-    # Run all three weight schemes for sensitivity
+    # Sensitivity across all weighting schemes (active V2 + the alternatives + frozen V1).
     if weights is None:
         result["sensitivity"] = {
-            "v1_score": calculate_mi_score(pillars, WEIGHTS_V1),
-            "v2_score": calculate_mi_score(pillars, WEIGHTS),
-            "equal_score": calculate_mi_score(pillars, WEIGHTS_EQUAL),
+            "v2_equal": calculate_mi_score(pillars, WEIGHTS_V2_EQUAL),
+            "v2_timevarying": calculate_mi_score(pillars, v2_timevarying_weights(event_year)),
+            "v1": calculate_mi_score(pillars, WEIGHTS),
+            "archived_hand_v0": calculate_mi_score(pillars, WEIGHTS_ARCHIVED_HAND_V0),
         }
 
     return result
 
 
 def load_country_data(country_name: str, year: int = None) -> Optional[dict]:
-    """Load country indicator data from the data directory."""
-    data_dir = Path(__file__).parent.parent / "data" / "countries"
-    filename = country_name.lower().replace(" ", "_") + ".json"
-    filepath = data_dir / filename
+    """Load country indicator data via the internal Data API (single source).
 
-    if not filepath.exists():
-        return None
-
-    with open(filepath) as f:
-        data = json.load(f)
+    Indicators are assembled live from the canonical sources (mi.datasource);
+    there are no per-country copy files to keep in sync. Falls back to a legacy
+    data/countries/<name>.json only if the Data API has nothing for that country.
+    """
+    from mi import datasource  # lazy import to avoid any import cycle
 
     if year is not None:
-        # Find the closest available year
-        year_str = str(year)
-        if year_str in data.get("indicators_by_year", {}):
-            return data["indicators_by_year"][year_str]
-        return None
+        ind = datasource.get_indicators(country_name, year, with_meta=True)
+        if ind is not None:
+            return ind
+    else:
+        years = datasource.available_years(country_name)
+        if years:
+            return {
+                "country": country_name,
+                "iso3": datasource.country_to_iso(country_name),
+                "indicators_by_year": {
+                    y: datasource.get_indicators(country_name, y, with_meta=True) for y in years
+                },
+            }
 
+    # Legacy fallback: a static country file (deprecated; the Data API is canonical)
+    filepath = Path(__file__).parent.parent / "data" / "countries" / (
+        country_name.lower().replace(" ", "_") + ".json")
+    if not filepath.exists():
+        return None
+    with open(filepath) as f:
+        data = json.load(f)
+    if year is not None:
+        return data.get("indicators_by_year", {}).get(str(year))
     return data

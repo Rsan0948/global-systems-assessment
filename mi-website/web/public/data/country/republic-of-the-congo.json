@@ -1,0 +1,219 @@
+{
+ "slug": "republic-of-the-congo",
+ "name": "Republic of the Congo",
+ "iso3": "COG",
+ "mi": 0.398,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.315,
+  "P2": 0.038,
+  "P3": 0.667,
+  "P4": 0.355,
+  "P5": 0.615
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Economic Complexity",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  },
+  {
+   "key": "resource",
+   "label": "Resource-dependent",
+   "valence": "warn",
+   "why": "Resource rents \u2248 38% of GDP - prosperity leans on extraction.",
+   "rule": "resource rents \u2265 10% of GDP."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally fragile - prosperity outrunning institutions - lopsided (economic complexity the weak point).",
+ "spread": 0.629,
+ "residual": -0.112,
+ "config": [
+  [
+   "P3",
+   0.667
+  ],
+  [
+   "P5",
+   0.615
+  ],
+  [
+   "P4",
+   0.355
+  ],
+  [
+   "P1",
+   0.315
+  ],
+  [
+   "P2",
+   0.038
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 29.7452,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 36.6809,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 36.701,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 19.0396,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 23.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "rd_pct_gdp",
+   "value": 0.3834,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "eci",
+   "value": -2.531,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.6297,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7042,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 7026.36,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 61.48,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 33.84,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "resource_rents_pct_gdp",
+   "value": 37.71,
+   "source": "World Bank WDI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "B",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "earned-vs-granted -0.11",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
+  },
+  {
+   "key": "config",
+   "title": "Configuration",
+   "status": "flag",
+   "headline": "uniformly poor",
+   "detail": "Weak across pillars including Economic Structure - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  },
+  {
+   "key": "rentier",
+   "title": "Rentier check",
+   "status": "flag",
+   "headline": "resource rents ~38% of GDP",
+   "detail": "A large share of prosperity comes from extracting resources rather than from strong institutions or a complex economy. Historically this masks structural weakness - the money can vanish with a price swing."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "liberia",
+   "name": "Liberia",
+   "mi": 0.395,
+   "tier": 4
+  },
+  {
+   "slug": "angola",
+   "name": "Angola",
+   "mi": 0.446,
+   "tier": 3
+  },
+  {
+   "slug": "zambia",
+   "name": "Zambia",
+   "mi": 0.462,
+   "tier": 3
+  },
+  {
+   "slug": "burundi",
+   "name": "Burundi",
+   "mi": 0.367,
+   "tier": 4
+  },
+  {
+   "slug": "papua-new-guinea",
+   "name": "Papua New Guinea",
+   "mi": 0.417,
+   "tier": 3
+  }
+ ]
+}

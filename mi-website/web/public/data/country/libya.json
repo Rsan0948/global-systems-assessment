@@ -1,0 +1,193 @@
+{
+ "slug": "libya",
+ "name": "Libya",
+ "iso3": "LBY",
+ "mi": 0.42,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.23,
+  "P2": 0.329,
+  "P3": 0.689,
+  "P4": 0.588,
+  "P5": 0.267
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile - prosperity outrunning institutions - lopsided (institutions the weak point).",
+ "spread": 0.459,
+ "residual": -0.166,
+ "config": [
+  [
+   "P3",
+   0.689
+  ],
+  [
+   "P4",
+   0.588
+  ],
+  [
+   "P2",
+   0.329
+  ],
+  [
+   "P5",
+   0.267
+  ],
+  [
+   "P1",
+   0.23
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 23.74,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 27.74,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 27.43,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 13.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 16.85,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 33.47,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "eci",
+   "value": -1.679,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.6183,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7591,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 14303.81,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 33.5,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 96.1,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "earned-vs-granted -0.17",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Institutions is lowest",
+   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "iraq",
+   "name": "Iraq",
+   "mi": 0.447,
+   "tier": 3
+  },
+  {
+   "slug": "afghanistan",
+   "name": "Afghanistan",
+   "mi": 0.401,
+   "tier": 3
+  },
+  {
+   "slug": "myanmar",
+   "name": "Myanmar",
+   "mi": 0.367,
+   "tier": 4
+  },
+  {
+   "slug": "bangladesh",
+   "name": "Bangladesh",
+   "mi": 0.46,
+   "tier": 3
+  },
+  {
+   "slug": "iran",
+   "name": "Iran",
+   "mi": 0.486,
+   "tier": 3
+  }
+ ]
+}

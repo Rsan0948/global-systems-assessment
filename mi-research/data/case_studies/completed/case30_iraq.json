@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "case_name": "Iraq post-2003 (external administration + sectarian reconstruction)",
+    "case_id": "case30",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "institutional_reconstruction",
+    "geographic_region": "MENA / Mesopotamia",
+    "time_period": "2004 -> 2024",
+    "entities": [
+      "Iraq"
+    ],
+    "key_test": "Safeguard A (externally imposed statebuilding): do imposed institutions with low organic legitimacy -- the Coalition Provisional Authority handover plus the muhassasa sectarian-quota system -- predict recurrent violence regardless of formal P1 inputs? Tests whether external administration + sectarian-quota design drive the 2006-2008 civil war and 2014 ISIS collapse.",
+    "round": "v2_batch2",
+    "notes": "Reference-based record: indicators resolved live via mi.datasource. Entity includes the Coalition Provisional Authority context. resolved_scores carry MI v2 re-scored pillars (pre 2004, post 2024)."
+  },
+  "pre_event": {
+    "time_point": "2004",
+    "event_description": "Iraq at the 2004 CPA-to-sovereignty handover -- a state being rebuilt under external administration on an imposed sectarian-quota (muhassasa) settlement, with a floor-level institutional and cohesion base.",
+    "entities": {
+      "Iraq": {
+        "context": {
+          "under_external_admin": true,
+          "admin_details": "Coalition Provisional Authority (CPA, 2003-2004) governed Iraq and designed the post-Saddam settlement; externally imposed muhassasa sectarian-quota power-sharing handed to a sovereign Iraqi government in June 2004.",
+          "external_backstop": true,
+          "backstop_details": "US-led coalition military presence underwrote the state through 2011 (and again post-2014 vs ISIS).",
+          "is_democratic_transition": true,
+          "has_power_sharing": true,
+          "neighbor_threat_level": "high",
+          "neighbor_details": "Iran influence + Syria war spillover (ISIS cross-border).",
+          "fragmentation_mechanism": "sectarian_quota_imposed",
+          "n_successor_states": 0,
+          "population": 27000000,
+          "is_democratic": false,
+          "is_authoritarian": false,
+          "resource_rents_pct_gdp": 37.0,
+          "resource_rents_pct_revenue": 88.0,
+          "growth_trajectory": "volatile"
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Indicators resolved via mi.datasource (Iraq, 2004 -> 2024). Floor-level pre-event base (P1 0.254, P5 0.173) under external administration; the case probes Safeguard A and whether imposed institutions predict recurrent violence.",
+        "country_ref": "Iraq",
+        "pre_year": "2004",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Bottom-tier (Tier 4) with high instability; at best a slow, fragile climb off the floor.",
+      "basis": "Pre-P1 0.254 (bottom) and P5 cohesion 0.173 (floor) under imposed institutions; predicts persistent instability.",
+      "falsification_condition": "Iraq stabilizes into a high tier without major violence."
+    },
+    "b_violence": {
+      "prediction": "Critical political-violence risk; recurrent civil conflict.",
+      "risk_level": "critical",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY.",
+      "falsification_condition": "Iraq remains broadly peaceful post-2004."
+    },
+    "c_convergence": {
+      "prediction": "N/A (single entity); self-trajectory off a floor.",
+      "basis": "No comparison entity.",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "Primary failure on P1 (imposed institutions, low organic legitimacy) compounded by P5 sectarian-cohesion floor.",
+      "note": "Most exposed to post-hoc coding bias.",
+      "falsification_condition": "Failure concentrates on a non-institutional/non-cohesion dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "High fragmentation risk: de facto Kurdish (KRG) autonomy and an ISIS proto-state, but no formal successor states (Iraq stays nominally intact, n_successor_states 0).",
+      "safeguard_b_applied": true,
+      "falsification_condition": "Either permanent formal partition OR no fragmentation pressure at all."
+    },
+    "f_reversal_risk": {
+      "prediction": "Elevated reversal/legitimacy risk of the imposed institutions (externally underwritten, organically weak).",
+      "safeguard_c_severity": "high",
+      "falsification_condition": "Imposed institutions consolidate organic legitimacy quickly without reversal."
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A -- post-Saddam reconstruction; not a suppression-tier suppressed-fragmentation case at the 2004 baseline.",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Severe sub-state turbulence triggered: sectarian militias (Mahdi Army, later PMF/Hashd), Kurdish Peshmerga, ISIS.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "No armed sub-state actors / no sub-state turbulence."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Iraq": {
+        "indicators_by_year": {},
+        "outcome_summary": "P1 0.254->0.320; MI 0.371->0.447 (Tier 4 -> Tier 3, a fragile climb off the floor on oil-driven capacity). Imposed sectarian-quota institutions produced recurrent violence: 2006-2008 sectarian civil war (tens of thousands dead), 2014 ISIS seizure of ~one-third of the country, 2014-2017 war to retake it; 2017 Kurdish independence referendum and de facto KRG autonomy, but Iraq stayed formally intact. P5 cohesion 0.173->0.272; P4 capacity 0.293->0.590 (oil).",
+        "key_events": [
+          "2006-2008 sectarian civil war",
+          "2014 ISIS seizure of ~1/3 of Iraq",
+          "2017 Kurdish independence referendum / de facto KRG autonomy"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Iraq": {
+        "pre": {
+          "P1": 0.254,
+          "MI": 0.371
+        },
+        "post": {
+          "P1": 0.32,
+          "MI": 0.447
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Pre Tier 4 (MI 0.371) with floor P1 0.254 / P5 0.173; high instability throughout; only a fragile climb to Tier 3 by 2024.",
+      "explanation": "Bottom-tier instability as predicted; the post climb is oil-capacity-driven, not institutional consolidation."
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "2006-2008 civil war; 2014-2017 ISIS war.",
+      "explanation": "Critical recurrent-violence risk realized.",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Iraq pre-P1=0.254 -> HIGH risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Single entity."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "P5 cohesion stayed at the floor (0.173->0.272) and P1 remained bottom-band amid imposed institutions; violence recurred regardless of formal inputs.",
+      "explanation": "Institutional-legitimacy + sectarian-cohesion failure as predicted; post-hoc dimension call coded PARTIAL.",
+      "computed_config": "Iraq: P3=0.57, P2=0.56, P4=0.29, P1=0.25, P5=0.17 | below-median (genuine vulnerabilities): P5=0.17, P1=0.25, P4=0.29",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "De facto KRG autonomy + 2017 referendum and an ISIS proto-state, yet Iraq stayed formally intact (no successor states).",
+      "explanation": "High fragmentation pressure without formal partition, exactly as predicted; Safeguard B applied.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "CONFIRMED",
+      "evidence": "Imposed institutions repeatedly failed (2014 collapse) and remained externally underwritten; low organic legitimacy.",
+      "explanation": "Reversal/legitimacy risk of imposed institutions realized.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a suppression-tier case at the 2004 reconstruction baseline.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: sectarian_quota_imposed"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Mahdi Army / PMF (Hashd) militias, Kurdish Peshmerga, and ISIS all operated as armed sub-state actors.",
+      "explanation": "Severe sub-state turbulence triggered as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Confirms the externally-imposed-statebuilding thesis: CPA-handover + muhassasa sectarian-quota institutions with low organic legitimacy predicted recurrent violence and chronic fragmentation pressure regardless of formal inputs.",
+    "safeguards_triggered": [
+      "A",
+      "B",
+      "F"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [
+      "Oil-driven P4 capacity gains can lift the composite MI (Tier 4 -> Tier 3) while the institutional/cohesion core stays at the floor -- a reconstruction 'capacity flatters legitimacy' trap."
+    ],
+    "what_this_case_uniquely_reveals": "Imposed institutions plus a sectarian-quota settlement under external administration generate recurrent violence and fragmentation pressure that formal P1/MI inputs understate until organic legitimacy develops.",
+    "proposed_framework_modifications": [
+      "When Safeguard A is active, flag composite-MI gains driven by resource-rent P4 as not evidencing institutional consolidation."
+    ],
+    "baseline_impact": "Proposed flag is additive; not yet implemented; baseline unchanged.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "single_entity",
+    "risk_tier_2024": "HIGH",
+    "risk_tier_by_lead": {
+      "1": "HIGH",
+      "3": "HIGH",
+      "5": "HIGH",
+      "7": "HIGH",
+      "10": "HIGH",
+      "15": "HIGH",
+      "20": "HIGH",
+      "28": "HIGH"
+    },
+    "risk_tier_stable_10y": true,
+    "note": "structural risk diagnosis stable >=10y out (signal available a decade early)"
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "case_name": "Velvet Divorce: Czech Republic vs Slovakia",
+    "case_id": "case03",
+    "author": "transcribed from live/runs by expansion agent",
+    "date_created": "2026-06-27",
+    "status": "completed",
+    "stress_type": "traditional_fragmentation",
+    "geographic_region": "Central Europe",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Czech Republic",
+      "Slovakia"
+    ],
+    "key_test": "The framework's flagship near-controlled experiment: holding event type constant (multinational federation dissolution, same years, same end-of-communism trigger), high P1 should predict a peaceful 'Velvet Divorce' -- the explicit contrast with Yugoslavia (lower P1 -> war).",
+    "round": "baseline_run1",
+    "notes": "Czechoslovakia dissolved into 2 successor states via negotiated peaceful breakup (natural/manageable range, gated by high P1). Pre-event 1996. These countries are NOT in the user M-score dataset; post-event trajectory is qualitative. 1996 pillar values are ordinal estimates. WGI 2025-anchored vintage caveat applies."
+  },
+  "stress_types_reference": [
+    "traditional_fragmentation",
+    "recursive_fragmentation",
+    "suppressed_fragmentation",
+    "institutional_reconstruction",
+    "fragmentation_prevention",
+    "fusion",
+    "legal_suppression",
+    "extreme_porosity",
+    "prospective",
+    "comparative_trajectory"
+  ],
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "Velvet Divorce: peaceful 1993 dissolution of Czechoslovakia into the Czech Republic and Slovakia; divergent (both successful) post-divorce trajectories.",
+    "entities": {
+      "Czech Republic": {
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": true,
+          "youth_unemployment": null,
+          "growth_trajectory": "rising / converges upward to EU core",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": "negotiated",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": 2,
+          "population": null,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "wgi": "World Bank WGI (1996, ordinal)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "cpi",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "1996 estimate (ordinal): P1 high, balanced -> MI relatively high, narrow spread; well above Yugoslav/post-Soviet floors. WGI Rule of Law high (upper tier of post-communist); Govt Effectiveness high; Regulatory Quality high (Klaus reforms). HDI 1995 high band; GDP per cap PPP 1996 higher than Slovakia; political stability high. Ordering: Czech >= Slovakia. Pillar values are estimates, not exact WGI. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Czech Republic",
+        "pre_year": "1996",
+        "post_year": "2024"
+      },
+      "Slovakia": {
+        "context": {
+          "under_external_admin": false,
+          "admin_details": "",
+          "neighbor_threat_level": "none",
+          "neighbor_details": "",
+          "resource_rents_pct_revenue": null,
+          "is_democratic_transition": true,
+          "youth_unemployment": null,
+          "growth_trajectory": "rising / catches up economically",
+          "regional_antisystem_vote": null,
+          "executive_collapses": 0,
+          "regional_gdp_divergence": null,
+          "fragmentation_mechanism": "negotiated",
+          "prior_porosity_period": false,
+          "external_backstop": false,
+          "backstop_details": "",
+          "n_successor_states": 2,
+          "population": null,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "has_federalism": false,
+          "has_devolution": false,
+          "has_power_sharing": false,
+          "military_dominant": false,
+          "immigration_policy": ""
+        },
+        "data_sources": {
+          "wgi": "World Bank WGI (1996, ordinal)"
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "control_of_corruption",
+          "cpi",
+          "gdp_per_capita_ppp",
+          "political_stability",
+          "gii",
+          "eci",
+          "rd_pct_gdp",
+          "education_index",
+          "life_expectancy_index",
+          "fsi"
+        ],
+        "notes": "1996 estimate (ordinal): P1 high but with Mecir-era political dysfunction -> MI slightly lower than Czech, slightly wider spread; still well above Yugoslav/post-Soviet floors. WGI Rule of Law high (slightly below Czech); Govt Effectiveness moderate-high; Regulatory Quality high but Mecir-era backsliding. HDI 1995 high band (similar to Czech); GDP per cap PPP 1996 ~20% lower; political stability high but illiberal drift under Mecir. Triggers Safeguard F (sub-state/political turbulence in a high-P1 state). Pillar values are estimates, not exact WGI. WGI 2025-anchored vintage caveat applies.",
+        "country_ref": "Slovakia",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Czech Republic better trajectory (higher P1), but both succeed.",
+      "basis": "Czech P1 >= Slovakia P1, both well above the bottom-third Rule-of-Law gate.",
+      "falsification_condition": "Slovakia clearly out-trajectories the Czech Republic, or either fails outright."
+    },
+    "b_violence": {
+      "prediction": "Peaceful -- high P1 predicts a negotiated outcome. Explicit contrast with Yugoslavia: same era, same event type (federation dissolution), but Czechoslovakia's far higher P1 -> 'Velvet Divorce' with zero deaths vs Yugoslavia's 130,000-140,000 war dead.",
+      "risk_level": "very low / none",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "The dissolution produces inter-state or ethnic violence."
+    },
+    "c_convergence": {
+      "prediction": "Convergence (both converge upward to EU core).",
+      "basis": "Both high P1; both above the gate.",
+      "falsification_condition": "Persistent divergence between the two successors."
+    },
+    "d_failure_dimension": {
+      "prediction": "Primary success dimension is P1/institutions for both.",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Success/failure driven by a non-P1 dimension."
+    },
+    "e_fragment_count": {
+      "prediction": "2 successors = natural/manageable range, gated by high P1 -> manageable peaceful fragmentation.",
+      "safeguard_b_applied": true,
+      "falsification_condition": "Low fragment count plus high P1 still yields an unmanageable/violent breakup."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "Slovakia's 1990s Mecir illiberalism = a high-P1 state surviving with political dysfunction (later corrected before 2004 EU accession).",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Slovakia's turbulence collapses the state rather than being absorbed/corrected."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "qualitative trajectory (not in user M-score dataset)"
+    ],
+    "entities": {
+      "Czech Republic": {
+        "indicators_by_year": {},
+        "outcome_summary": "EU 2004; high-income, high-HDI; retained a modest lead. CPI 2024 = 56. Retains the koruna.",
+        "key_events": [
+          "EU accession 2004",
+          "peaceful 'Velvet Divorce' with zero deaths"
+        ]
+      },
+      "Slovakia": {
+        "indicators_by_year": {},
+        "outcome_summary": "EU 2004; adopted the euro in 2009 (ahead of Czechia); caught up economically; later governance wobbles (CPI 2024 = 49, somewhat lower than Czechia, consistent with the slightly lower 1996 P1). Mecir-era illiberalism corrected before 2004 accession.",
+        "key_events": [
+          "EU accession 2004",
+          "euro adoption 2009",
+          "correction of Mecir-era illiberalism before EU accession"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Czech Republic": {
+        "pre": {
+          "P1": 0.653,
+          "MI": 0.76
+        },
+        "post": {
+          "P1": 0.705,
+          "MI": 0.761
+        }
+      },
+      "Slovakia": {
+        "pre": {
+          "P1": 0.584,
+          "MI": 0.716
+        },
+        "post": {
+          "P1": 0.603,
+          "MI": 0.702
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Czech retains lead; Slovakia close (both succeed).",
+      "explanation": "AUTO (Mod4): full pre-P1 gap 0.069 < margin 0.1 -> abstain (too close to call). | prior: Higher-P1 Czech Republic kept a modest lead while both successors thrived, as predicted.",
+      "auto_derived": true
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "'Czechoslovakia is the only former Eastern Bloc state that had an entirely peaceful breakup' vs Yugoslavia's 130,000-140,000 war dead.",
+      "explanation": "The framework's single cleanest validation of 'P1 predicts violence vs peace' -- high P1 produced a bloodless divorce.",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Slovakia pre-P1=0.584 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "CONFIRMED",
+      "evidence": "Both EU; Slovakia euro 2009.",
+      "explanation": "Both successors converged upward to the EU core."
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Both succeeded on the P1/institutions dimension.",
+      "explanation": "Success driven by the predicted institutional pillar. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Slovakia: P5=0.84, P2=0.83, P4=0.75, P3=0.72, P1=0.58 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P1=0.58)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "2 = natural/manageable range, both above the bottom-third Rule-of-Law gate.",
+      "explanation": "Low fragment count gated by high P1 yielded a manageable peaceful fragmentation.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No reversal-risk (Safeguard C) prediction was made for this case.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No suppression-mechanism prediction was made (the breakup was negotiated, not suppressed).",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: negotiated"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "Slovakia's Mecir-era illiberalism was 'later corrected before 2004 EU accession.'",
+      "explanation": "Safeguard F triggered: a high-P1 state absorbed/corrected sub-state political turbulence rather than collapsing, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "result_coding_reference": {
+    "CONFIRMED": "Prediction matched outcome on the specific dimension predicted",
+    "PARTIALLY_CONFIRMED": "Direction correct but magnitude, form, or timing significantly different",
+    "FALSIFIED": "Prediction contradicted by outcome",
+    "NOT_APPLICABLE": "Prediction type not relevant to this case",
+    "coding_rule": "When ambiguous between confirmed and partial, code PARTIAL. When ambiguous between partial and falsified, code PARTIAL but note ambiguity."
+  },
+  "analysis": {
+    "overall_assessment": "The framework's flagship result and single cleanest validation. Holding event type constant (multinational federation dissolution, same years, same end-of-communism trigger), the only major difference is institutional quality, and outcomes split exactly as P1 predicts: high P1 -> bloodless divorce; lower P1 (Yugoslavia) -> war. All applicable predictions CONFIRMED.",
+    "safeguards_triggered": [
+      "B (2 successors, natural/manageable range gated by high P1)",
+      "F (Slovakia Mecir-era sub-state turbulence in a high-P1 state)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "As close to a controlled natural experiment as the validation set offers. Scholars note the puzzle that Czechoslovakia's two societies were more alike at dissolution than at founding, making institutional quality and elite strategy -- not ethnic difference -- the operative variable, aligning precisely with the MI's complexity-capacity-matching logic.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; strengthens the P1-predicts-violence-vs-peace claim. No baseline-breaking modification proposed.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies."
+}

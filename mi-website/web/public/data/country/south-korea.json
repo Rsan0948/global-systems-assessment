@@ -1,0 +1,211 @@
+{
+ "slug": "south-korea",
+ "name": "South Korea",
+ "iso3": "KOR",
+ "mi": 0.804,
+ "tier": 1,
+ "pillars": {
+  "P1": 0.728,
+  "P2": 0.76,
+  "P3": 0.938,
+  "P4": 0.842,
+  "P5": 0.753
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 1: Highly Modernized",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Institutions",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Highly modernized - prosperity matched by institutions.",
+ "spread": 0.209,
+ "residual": 0.062,
+ "config": [
+  [
+   "P3",
+   0.938
+  ],
+  [
+   "P4",
+   0.842
+  ],
+  [
+   "P2",
+   0.76
+  ],
+  [
+   "P5",
+   0.753
+  ],
+  [
+   "P1",
+   0.728
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 80.25,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 76.2,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 70.85,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 64.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 65.05,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 70.99,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 60.93,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 1.6,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.8857,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.9897,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 61051.35,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 76.82,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 31.5,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.06",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Institutions is lowest",
+   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "united-kingdom",
+   "name": "United Kingdom",
+   "mi": 0.79,
+   "tier": 2
+  },
+  {
+   "slug": "germany",
+   "name": "Germany",
+   "mi": 0.817,
+   "tier": 1
+  },
+  {
+   "slug": "japan",
+   "name": "Japan",
+   "mi": 0.816,
+   "tier": 1
+  },
+  {
+   "slug": "france",
+   "name": "France",
+   "mi": 0.77,
+   "tier": 2
+  },
+  {
+   "slug": "czech-republic",
+   "name": "Czech Republic",
+   "mi": 0.768,
+   "tier": 2
+  }
+ ],
+ "relational": {
+  "year": 2016,
+  "tier": "citable",
+  "label": "Republic of Korea (the patron-SHIELDED mirror)",
+  "exposure_structural": 0.813,
+  "exposure_structural_band": "high",
+  "exposure_net": 0.651,
+  "patron_present": true,
+  "response": 0.658,
+  "response_band": "moderate",
+  "joint_reading": "HIGH structural exposure but PATRON-SHIELDED: raw adversity is severe, yet a credible external defender both DETERS the shock (lowers net exposure) and BLUNTS it (lifts response). Persistence despite exposure is the expected reading here (e.g. South Korea).",
+  "outcome_factual": "Persists as a sovereign state under standing high exposure; no successful invasion since 1953."
+ }
+}

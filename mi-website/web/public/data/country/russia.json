@@ -1,0 +1,198 @@
+{
+ "slug": "russia",
+ "name": "Russia",
+ "iso3": "RUS",
+ "mi": 0.57,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.355,
+  "P2": 0.484,
+  "P3": 0.799,
+  "P4": 0.798,
+  "P5": 0.416
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Institutions",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile - prosperity outrunning institutions - lopsided (institutions the weak point).",
+ "spread": 0.443,
+ "residual": -0.145,
+ "config": [
+  [
+   "P3",
+   0.799
+  ],
+  [
+   "P4",
+   0.798
+  ],
+  [
+   "P2",
+   0.484
+  ],
+  [
+   "P5",
+   0.416
+  ],
+  [
+   "P1",
+   0.355
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 45.09,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 37.06,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 38.01,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 22.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 29.82,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 31.96,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 29.73,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.243,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7799,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8178,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 47404.96,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 50.46,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 80.7,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "earned-vs-granted -0.15",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Institutions is lowest",
+   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "turkey",
+   "name": "Turkey",
+   "mi": 0.611,
+   "tier": 2
+  },
+  {
+   "slug": "mexico",
+   "name": "Mexico",
+   "mi": 0.606,
+   "tier": 2
+  },
+  {
+   "slug": "bosnia-herzegovina",
+   "name": "Bosnia-Herzegovina",
+   "mi": 0.583,
+   "tier": 3
+  },
+  {
+   "slug": "brazil",
+   "name": "Brazil",
+   "mi": 0.578,
+   "tier": 3
+  },
+  {
+   "slug": "colombia",
+   "name": "Colombia",
+   "mi": 0.567,
+   "tier": 3
+  }
+ ]
+}

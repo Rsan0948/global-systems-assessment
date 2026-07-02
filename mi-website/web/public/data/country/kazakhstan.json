@@ -1,0 +1,198 @@
+{
+ "slug": "kazakhstan",
+ "name": "Kazakhstan",
+ "iso3": "KAZ",
+ "mi": 0.624,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.5,
+  "P2": 0.474,
+  "P3": 0.822,
+  "P4": 0.772,
+  "P5": 0.553
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Economic Complexity",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Structurally durable - prosperity outrunning institutions.",
+ "spread": 0.348,
+ "residual": -0.075,
+ "config": [
+  [
+   "P3",
+   0.822
+  ],
+  [
+   "P4",
+   0.772
+  ],
+  [
+   "P5",
+   0.553
+  ],
+  [
+   "P1",
+   0.5
+  ],
+  [
+   "P2",
+   0.474
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 54.19,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 50.4,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 55.6,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 40.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 46.5,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 42.57,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 25.67,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.363,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.8074,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.837,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 40890.93,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 61.06,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 60.6,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "earned-vs-granted -0.08",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Economic Complexity is lowest",
+   "detail": "Economic Complexity is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "serbia",
+   "name": "Serbia",
+   "mi": 0.629,
+   "tier": 2
+  },
+  {
+   "slug": "moldova",
+   "name": "Moldova",
+   "mi": 0.628,
+   "tier": 2
+  },
+  {
+   "slug": "philippines",
+   "name": "Philippines",
+   "mi": 0.593,
+   "tier": 3
+  },
+  {
+   "slug": "argentina",
+   "name": "Argentina",
+   "mi": 0.63,
+   "tier": 2
+  },
+  {
+   "slug": "jordan",
+   "name": "Jordan",
+   "mi": 0.624,
+   "tier": 2
+  }
+ ]
+}

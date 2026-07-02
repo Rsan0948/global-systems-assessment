@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "case_name": "Quebec / Canada (1995 referendum, centripetal prevention)",
+    "case_id": "case40",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "fragmentation_prevention",
+    "geographic_region": "North America",
+    "time_period": "1996 -> 2024",
+    "entities": [
+      "Canada",
+      "Quebec"
+    ],
+    "key_test": "Safeguard H (centripetal classifier): does a Tier-1, very-high-P1 federation absorb a razor-thin secession near-miss (the 30 Oct 1995 'No' won by ~1.16%) peacefully and LEGALLY (1998 Supreme Court Secession Reference, 2000 Clarity Act) without violence or territorial loss? Tests that very high founding P1 predicts peaceful, lawful management of separatism REGARDLESS of how close the vote is. Quebec is a SUB-STATE province -> proxied via Canada (country_ref) + qualitative evidence; no standalone WGI/MI. NB: the 1995 referendum predates the WGI series (which starts 1996), so the pre-event is anchored to 1996 as a proxy (flagged pre-WGI).",
+    "round": "v2_batch5",
+    "notes": "Reference-based record. Canada carries real MI v2 re-scores; Quebec is a sub-state proxy entity with no resolved scores (mirrors Aceh case35 / Catalonia case16 handling). The North-American required case; the centripetal counterpart to lower-P1 Catalonia (case16). Scored ~1996 (proxy for the 1995 referendum) vs 2024."
+  },
+  "pre_event": {
+    "time_point": "1996",
+    "event_description": "The 30 October 1995 Quebec sovereignty referendum failed by the narrowest of margins -- 'No' 50.58% vs 'Yes' 49.42% (a ~1.16-point gap). The near-miss triggered not violence or suppression but a legal-constitutional response: the federal government's 1998 reference to the Supreme Court on the legality of unilateral secession, and the resulting Clarity Act (2000) setting the conditions (a clear question, a clear majority) under which Ottawa would negotiate. Because the WGI series begins in 1996, the pre-event is anchored to 1996 as a proxy for the 1995 state of the federation (flagged).",
+    "entities": {
+      "Canada": {
+        "context": {
+          "population": 29600000,
+          "is_island": false,
+          "is_democratic": true,
+          "is_authoritarian": false,
+          "has_federalism": true,
+          "has_devolution": true,
+          "has_power_sharing": true,
+          "military_dominant": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "centripetal federation / legal-constitutional management of a secession bid",
+          "prior_porosity_period": true,
+          "external_backstop": false,
+          "is_democratic_transition": false,
+          "growth_trajectory": "growing",
+          "resource_rents_pct_revenue": 4.0
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. PRE-WGI FLAG: the triggering event (Oct 1995 referendum) predates the 1996 WGI start; 1996 is used as the proxy pre-year. Canada is a consolidated Tier-1 federal democracy; the relevant test is institutional MANAGEMENT of a near-miss secession bid, not survival risk.",
+        "country_ref": "Canada",
+        "pre_year": "1996",
+        "post_year": "2024"
+      },
+      "Quebec": {
+        "context": {
+          "under_external_admin": false,
+          "neighbor_threat_level": "none",
+          "fragmentation_mechanism": "provincial sovereignty bid resolved by legal-constitutional management",
+          "prior_porosity_period": true,
+          "has_devolution": true,
+          "has_power_sharing": true
+        },
+        "data_gaps": [
+          "gov_effectiveness",
+          "rule_of_law",
+          "regulatory_quality",
+          "cpi",
+          "control_of_corruption",
+          "gii",
+          "rd_pct_gdp",
+          "eci",
+          "education_index",
+          "life_expectancy_index",
+          "gdp_per_capita_ppp",
+          "resource_rents_pct_gdp",
+          "oda_pct_gni",
+          "political_stability",
+          "fsi"
+        ],
+        "data_note": "pre-event indicators unavailable for Quebec at 1996 (sub-state/new-state/pre-WGI gap)",
+        "country_ref": "Quebec",
+        "pre_year": "1996",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "Canada survives with no territorial loss; a very-high-P1 federation peacefully and legally contains the secession bid regardless of the razor-thin (~1.16%) margin. (Quebec is a sub-state proxy -> no standalone ordinal ranking.)",
+      "basis": "Very high founding P1 (Tier 1, MI ~0.85) + Safeguard H centripetal federation; legal-constitutional management (Supreme Court Reference -> Clarity Act) as institutional design.",
+      "falsification_condition": "Quebec secedes / Canada loses territory, OR the secession crisis turns violent."
+    },
+    "b_violence": {
+      "prediction": "Negligible violence; the entire contest is electoral, judicial, and legislative.",
+      "risk_level": "very low",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Sustained or large-scale violence around the secession question."
+    },
+    "c_convergence": {
+      "prediction": "N/A (parent state + sub-state proxy, not a two-sovereign comparison).",
+      "basis": "",
+      "falsification_condition": ""
+    },
+    "d_failure_dimension": {
+      "prediction": "No primary failure dimension; a high-capacity management-load case. The residual stress surface is national-unity politics, not any measured pillar.",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Institutional failure on a measured parent-state pillar."
+    },
+    "e_fragment_count": {
+      "prediction": "0 successor states; no Quebec secession.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Quebec secedes (>=1 successor state)."
+    },
+    "f_reversal_risk": {
+      "prediction": "N/A -- not a democratic-transition reversal case.",
+      "safeguard_c_severity": "",
+      "falsification_condition": ""
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A -- the federal response is peaceful legal-constitutional management (Clarity Act), not suppression of any tier.",
+      "tier": null,
+      "falsification_condition": "Federal response uses military or coercive suppression rather than legal channels."
+    },
+    "h_substate_turbulence": {
+      "prediction": "High separatist pressure (the 1995 'No' won by only ~1.16%) channeled into legal/constitutional management (1998 Supreme Court Secession Reference, 2000 Clarity Act) and declining over the following decades; Safeguard H centripetal containment, no secession.",
+      "safeguard_f_triggered": true,
+      "falsification_condition": "Pressure escapes legal channels -> secession or violence."
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Canada": {
+        "indicators_by_year": {},
+        "outcome_summary": "Containment as predicted. The federation absorbed the 1995 near-miss with zero violence: the Supreme Court's 1998 Secession Reference and the 2000 Clarity Act converted the crisis into a durable legal-constitutional framework. No further referendum was held; sovereignty support trended down. Canada's P1 stayed Tier 1 (0.846 -> 0.797) and MI held at 0.850 -> 0.806 (Tier 1). The centripetal (Safeguard H) counterpart to lower-P1 Catalonia (case16).",
+        "key_events": [
+          "30 Oct 1995 referendum: 'No' 50.58% vs 'Yes' 49.42% (~1.16-point margin)",
+          "1998 Supreme Court of Canada Reference re Secession of Quebec",
+          "2000 Clarity Act (clear question + clear majority conditions)",
+          "2006 House of Commons motion recognizing 'the Quebecois as a nation within a united Canada'",
+          "Parti Quebecois decline; no further sovereignty referendum through 2024"
+        ]
+      },
+      "Quebec": {
+        "indicators_by_year": {},
+        "outcome_summary": "Qualitative (sub-state, no WB data): the sovereignty option lost momentum after 1995. The PQ lost power in 2003, sovereignty support eroded, and Quebec's grievances were channeled into intergovernmental and fiscal accommodation within the federation rather than a renewed secession drive. No secession; no violence.",
+        "key_events": [
+          "Parti Quebecois out of power (2003)",
+          "sovereignty support declines; no second referendum",
+          "grievances channeled into legal/fiscal federalism"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Canada": {
+        "pre": {
+          "P1": 0.846,
+          "MI": 0.85
+        },
+        "post": {
+          "P1": 0.797,
+          "MI": 0.806
+        }
+      },
+      "Quebec": {
+        "pre": {
+          "P1": null,
+          "MI": null
+        },
+        "post": {
+          "P1": null,
+          "MI": null
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Canada P1 0.846 -> 0.797, MI 0.850 -> 0.806 (Tier 1 throughout); no territorial loss; secession managed legally via the Clarity Act.",
+      "explanation": "[data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: an entity lacks pre-P1 or post-MI -> auto-derivation skipped, judgment preserved] [data-limited: sub-state entity (Quebec) lacks scores -> auto-derivation skipped, judgment preserved] A very-high-P1 federation contained the ~1.16% near-miss peacefully and lawfully, exactly as predicted.",
+      "auto_derived": false
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "No violence -- the contest was entirely electoral, judicial, and legislative.",
+      "explanation": "Negligible violence risk realized, as predicted (Mod8).",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Canada pre-P1=0.846 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Parent-state + sub-state proxy; not a two-sovereign convergence test.",
+      "auto_derived": false
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "No parent-state pillar failure; high-capacity management-load case as predicted.",
+      "explanation": "No primary failure dimension materialized. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Canada: P5=0.88, P3=0.88, P1=0.85, P2=0.84, P4=0.81 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P4=0.81)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Zero successor states; Quebec did not secede.",
+      "explanation": "No fragmentation, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Not a democratic-transition reversal case.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Peaceful legal-constitutional management (Clarity Act), not suppression of any tier.",
+      "safeguard_state_now": {
+        "triggered": true,
+        "tier": "UNCLASSIFIED: centripetal federation / legal-constitutional management of a secession bid"
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "CONFIRMED",
+      "evidence": "High separatist pressure (1995 'No' by ~1.16%) channeled into the Clarity Act framework; sovereignty support declined and no second referendum followed.",
+      "explanation": "Safeguard H (centripetal federation / legal-constitutional management) channeled the near-miss into durable, peaceful containment, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Clean confirmation expected and delivered: a Tier-1 federation absorbed a razor-thin secession near-miss with zero violence and converted it into durable legal-constitutional management. Quebec, as a sub-state proxy, is assessed qualitatively.",
+    "safeguards_triggered": [
+      "H (centripetal federation / legal-constitutional management of secession)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Very high founding P1 predicts peaceful, lawful containment of separatism INDEPENDENT of how close the vote is: a Tier-1 federation absorbed a 1.16-point secession near-miss with no violence and institutionalized the outcome (Clarity Act). It is the centripetal (Safeguard H) high-P1 counterpart to the lower-P1 Catalonia case (case16) -- closeness of the vote did not translate into instability where institutional quality was top-tier.",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; adds the North-American required case and a high-P1 Safeguard H centripetal confirmation.",
+    "data_note": "Quebec is a non-WB sub-state proxy entity; its scores are intentionally null and its assessment is qualitative. Pre-event is anchored to 1996 as a proxy for the 1995 referendum (pre-WGI flag).",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative_data_limited",
+    "note": "A proxy/data-limited entity lacks a 2024 MI -> ordinal lead-time not computable; judgment-only."
+  }
+}

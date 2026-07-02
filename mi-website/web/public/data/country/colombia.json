@@ -1,0 +1,198 @@
+{
+ "slug": "colombia",
+ "name": "Colombia",
+ "iso3": "COL",
+ "mi": 0.567,
+ "tier": 3,
+ "pillars": {
+  "P1": 0.476,
+  "P2": 0.48,
+  "P3": 0.793,
+  "P4": 0.666,
+  "P5": 0.421
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 3: Mixed",
+   "valence": "warn",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "durability",
+   "label": "Granted prosperity",
+   "valence": "bad",
+   "why": "Wealth has outrun institutions - historically fragile.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Lopsided \u00b7 weakest: Stability & Resilience",
+   "valence": "bad",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 5,
+  "total": 5,
+  "missing": []
+ },
+ "verdict": "Mixed structural profile - prosperity outrunning institutions - lopsided (stability & resilience the weak point).",
+ "spread": 0.372,
+ "residual": -0.067,
+ "config": [
+  [
+   "P3",
+   0.793
+  ],
+  [
+   "P4",
+   0.666
+  ],
+  [
+   "P2",
+   0.48
+  ],
+  [
+   "P1",
+   0.476
+  ],
+  [
+   "P5",
+   0.421
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 49.18,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 47.33,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 55.07,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 39.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 41.91,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 57.45,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "gii",
+   "value": 29.18,
+   "source": "WIPO Global Innovation Index"
+  },
+  {
+   "key": "eci",
+   "value": 0.233,
+   "source": "Harvard Atlas (ECI)"
+  },
+  {
+   "key": "education_index",
+   "value": 0.6979,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.8881,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 22349.44,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 49.31,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 78.1,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "flag",
+   "headline": "earned-vs-granted -0.07",
+   "detail": "This country's prosperity has outrun its institutions. Income the institutions cannot anchor is the classic fragility signal - historically it tends not to last."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Stability & Resilience is lowest",
+   "detail": "Stability & Resilience is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ],
+ "similar": [
+  {
+   "slug": "brazil",
+   "name": "Brazil",
+   "mi": 0.578,
+   "tier": 3
+  },
+  {
+   "slug": "ukraine",
+   "name": "Ukraine",
+   "mi": 0.545,
+   "tier": 3
+  },
+  {
+   "slug": "armenia",
+   "name": "Armenia",
+   "mi": 0.598,
+   "tier": 3
+  },
+  {
+   "slug": "bosnia-herzegovina",
+   "name": "Bosnia-Herzegovina",
+   "mi": 0.583,
+   "tier": 3
+  },
+  {
+   "slug": "egypt",
+   "name": "Egypt",
+   "mi": 0.531,
+   "tier": 3
+  }
+ ]
+}

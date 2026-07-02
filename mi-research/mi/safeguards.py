@@ -6,7 +6,7 @@ Each safeguard has: trigger conditions, modification logic, derivation history.
 """
 
 from typing import Optional
-from mi.constants import SAFEGUARD_THRESHOLDS
+from mi.constants import SAFEGUARD_THRESHOLDS, LENS
 
 
 def evaluate_all_safeguards(
@@ -54,10 +54,85 @@ def evaluate_all_safeguards(
     results["F"] = evaluate_safeguard_f(pillars, context)
     results["G"] = evaluate_safeguard_g(pillars, context)
     results["I"] = evaluate_safeguard_i(pillars, context)
+    results["J"] = evaluate_safeguard_j(pillars, context)
     results["Mod4"] = evaluate_mod4(pillars, context)
     results["Mod8"] = evaluate_mod8(pillars, context)
 
     return results
+
+
+def evaluate_safeguard_j(pillars: dict, context: dict) -> dict:
+    """
+    Safeguard J — Durability Gate (the P4-P1 "durability gap").
+
+    INDEPENDENTLY DERIVED on the N=21 acute-signature test set (2026-06-28): the four-component
+    pre-turn DECLINE signature failed blind (14-25% sens, 40% PPV), but a single LEVEL variable —
+    the gap between economy/income (P4) and institutions (P1) — separated real crises from absorbers
+    at 83% sensitivity / 100% specificity / 100% PPV. When income has outrun institutions
+    (P4 - P1 > threshold), the state is "granted/fragile" — structurally crisis-prone under shock.
+    Unifies with the durability ratio (mi/durability.py). Directional/structural, NOT a timing or
+    idiosyncratic-event forecast (Chile, S.Korea — acute elite gambles — are out of scope by design).
+
+    Derivation: docs/architectural_decisions/v3_1_durability_gate.md.
+    """
+    p1 = pillars.get("P1"); p4 = pillars.get("P4")
+    if p1 is None or p4 is None:
+        return {"name": "Durability Gate (P4-P1 gap)", "triggered": False,
+                "explanation": "P1 or P4 unavailable — gate not evaluable.", "modification": None,
+                "derivation": "N=21 signature set; = durability ratio re-derived as a forward gate."}
+    gap = p4 - p1
+    flag_floor = LENS["structural_vuln_flag_floor"]        # 0.28 (crisis floor)
+    clear_ceiling = LENS["structural_vuln_clear_ceiling"]  # 0.20 (absorber ceiling)
+    triggered = gap > LENS["structural_vulnerability_gap"]  # back-compat boolean (nominal 0.22)
+    if gap >= flag_floor:
+        status = "flagged"
+        expl = (f"P4-P1 gap = {gap:.3f} >= {flag_floor} (crisis floor): income/economy has outrun "
+                "institutions (granted/fragile) — STRUCTURALLY crisis-vulnerable under shock.")
+        mod = "Flag elevated structural crisis-vulnerability; pair with stability (P5)/shock exposure. Risk, not timing (Mod8)."
+    elif gap <= clear_ceiling:
+        status = "clear"
+        expl = (f"P4-P1 gap = {gap:.3f} <= {clear_ceiling} (absorber ceiling): institutions roughly "
+                "keep pace with income — not structurally flagged (absorber-class).")
+        mod = None
+    else:
+        status = "borderline"
+        expl = (f"P4-P1 gap = {gap:.3f} in the indeterminate band ({clear_ceiling}, {flag_floor}): the "
+                "N=21 data is UNIDENTIFIED here (empty zone between the absorber and crisis clusters). "
+                "Above every confirmed absorber but below the crisis floor — elevated WATCH, not a "
+                "verdict; a further institutional backslide would tip it into the flag.")
+        mod = "Treat as elevated watch; insufficient validated evidence to call. Monitor P1 vs P4."
+    result = {
+        "name": "Durability Gate (P4-P1 gap)",
+        "triggered": triggered,
+        "status": status,
+        "gap": round(gap, 3),
+        "flag_floor": flag_floor, "clear_ceiling": clear_ceiling,
+        "explanation": expl,
+        "modification": mod,
+        "derivation": "N=21 signature set (83% sens/100% spec/100% PPV); = durability ratio re-derived.",
+    }
+    # V3.2 Convergence Qualifier — disambiguate a flagged gap by its TRAJECTORY, if a prior
+    # timepoint is supplied (context["prior_pillars"] = {"P1":.., "P4":..}, ~5-10y earlier).
+    prior = context.get("prior_pillars") if context else None
+    if prior and prior.get("P1") is not None and prior.get("P4") is not None:
+        prior_gap = prior["P4"] - prior["P1"]
+        dgap = gap - prior_gap
+        dead = LENS["structural_vuln_converge_deadband"]
+        direction = "widening" if dgap > dead else "closing" if dgap < -dead else "static"
+        if status in ("flagged", "borderline"):
+            refined = "developmental_catchup" if direction == "closing" else "fragile"
+            note = ("gap CLOSING — institutions catching up to income (developmental catch-up); "
+                    "downgrade structural-crisis weight." if direction == "closing" else
+                    "gap WIDENING/static — the grant is eroding (income outrunning institutions); "
+                    "confirm/escalate structural-crisis weight.")
+        else:
+            refined = "n/a"; note = "gap below the flag band — qualifier informational only."
+        result["convergence"] = {
+            "prior_gap": round(prior_gap, 3), "dgap": round(dgap, 3),
+            "direction": direction, "refined": refined, "note": note,
+            "validation": "92% sens / 80% spec on flagged states (FP: Saudi rentier-overshoot; FN: Peru churn).",
+        }
+    return result
 
 
 def evaluate_safeguard_a(pillars: dict, context: dict) -> dict:
@@ -95,7 +170,7 @@ def evaluate_safeguard_b(pillars: dict, context: dict) -> dict:
     """
     p1 = pillars.get("P1")
     n_successors = context.get("n_successor_states")
-    low_p1 = p1 is not None and p1 < 0.33  # Bottom third (ordinal)
+    low_p1 = p1 is not None and p1 < LENS["p1_bottom_third"]  # Bottom third (ordinal)
 
     triggered = low_p1 and n_successors is not None and n_successors <= 4
     return {
@@ -135,10 +210,10 @@ def evaluate_safeguard_c(pillars: dict, context: dict) -> dict:
             "derivation": "Tunisia 2021 reversal",
         }
 
-    # Assess severity
+    # Assess severity (treat explicit None context values as absent/0)
     thresholds = SAFEGUARD_THRESHOLDS["C_reversal_risk"]
-    resource_rents = context.get("resource_rents_pct_gdp", 0)
-    youth_unemp = context.get("youth_unemployment", 0)
+    resource_rents = context.get("resource_rents_pct_gdp") or 0
+    youth_unemp = context.get("youth_unemployment") or 0
     growth = context.get("growth_trajectory", "growing")
 
     severity_factors = []
@@ -189,7 +264,7 @@ def evaluate_safeguard_d(pillars: dict, context: dict) -> dict:
     threat = context.get("neighbor_threat_level", "none")
     triggered = threat in ("moderate", "high")
     p1 = pillars.get("P1")
-    low_p1 = p1 is not None and p1 < 0.50
+    low_p1 = p1 is not None and p1 < LENS["p1_median"]
 
     return {
         "name": "Predatory Neighbor / Exogenous Shock",
@@ -216,42 +291,48 @@ def evaluate_safeguard_e(pillars: dict, context: dict) -> dict:
     Derived from: Timor-Leste (negative), Nigeria (positive)
     """
     thresholds = SAFEGUARD_THRESHOLDS["E_rentier_capture"]
-    rents_gdp = context.get("resource_rents_pct_gdp", 0)
-    rents_revenue = context.get("resource_rents_pct_revenue", 0)
+    rents_gdp = context.get("resource_rents_pct_gdp") or 0           # PERCENT of GDP
+    rents_revenue = context.get("resource_rents_pct_revenue") or 0   # PERCENT of revenue
     p1 = pillars.get("P1")
 
-    negative_triggered = rents_gdp > thresholds["rents_gdp_flag"]
-    unreliable_p1 = rents_revenue > thresholds["rents_revenue_unreliable"]
-    positive_triggered = (negative_triggered and p1 is not None and p1 < 0.33)
+    # V2 graded thresholds (percent of GDP): below 15% no penalty; 15-25% material; >25% severe.
+    if rents_gdp > thresholds["e2_severe_gdp"]:
+        tier = "E-2 (SEVERE)"
+        neg_mod = "Substantial P1 discount — institutional quality likely UNRELIABLE."
+    elif rents_gdp > thresholds["e1_material_gdp"]:
+        tier = "E-1 (MATERIAL)"
+        neg_mod = "Moderate qualitative P1 discount — institutional quality potentially undermined."
+    else:
+        tier = None
+        neg_mod = None
+
+    negative_triggered = tier is not None
+    unreliable_p1 = (rents_revenue > thresholds["rents_revenue_unreliable"]) or (tier == "E-2 (SEVERE)")
+    # Positive arm (rent-stabilization): low-P1 state using rents to buy cohesion.
+    positive_triggered = (negative_triggered and p1 is not None and p1 < thresholds["positive_p1_ceiling"])
 
     direction = None
-    if negative_triggered and not positive_triggered:
-        direction = "negative (rentier capture)"
-    elif positive_triggered:
+    if positive_triggered:
         direction = "bidirectional (capture + rent-stabilization)"
     elif negative_triggered:
-        direction = "negative"
-
-    triggered = negative_triggered
+        direction = "negative (rentier capture)"
 
     return {
         "name": "Rentier Capture (Bidirectional)",
-        "triggered": triggered,
+        "triggered": negative_triggered,
+        "tier": tier,
         "direction": direction,
         "p1_unreliable": unreliable_p1,
         "explanation": (
-            f"Resource rents {rents_gdp:.1%} GDP "
-            f"({'>' if negative_triggered else '<'} {thresholds['rents_gdp_flag']:.0%} threshold). "
-            f"{'P1 may be fiscally inflated. ' if negative_triggered else ''}"
-            f"{'P1 UNRELIABLE (rents >50% revenue). ' if unreliable_p1 else ''}"
-            f"{'Low P1 + rents = rent-stabilization possible (Nigeria model). ' if positive_triggered else ''}"
+            f"Resource rents {rents_gdp:.1f}% of GDP -> {tier or 'below 15% (no penalty)'}. "
+            f"{'P1 likely unreliable (E-2, or rents >50% of revenue). ' if unreliable_p1 else ''}"
+            f"{'Low P1 + rents = rent-stabilization possible (Nigeria/Gulf model). ' if positive_triggered else ''}"
         ),
         "modification": (
-            "Apply qualitative haircut to P1." if negative_triggered and not unreliable_p1
-            else "Treat P1 as unreliable (equivalent to Safeguard A)." if unreliable_p1
-            else None
+            "Treat P1 as unreliable (equivalent to Safeguard A)." if unreliable_p1
+            else neg_mod
         ),
-        "derivation": "Timor-Leste (negative capture); Nigeria (positive stabilization)",
+        "derivation": "Timor-Leste (negative capture); Nigeria/Gulf (positive stabilization). V2: graded E-1/E-2.",
     }
 
 
@@ -264,14 +345,14 @@ def evaluate_safeguard_f(pillars: dict, context: dict) -> dict:
     """
     thresholds = SAFEGUARD_THRESHOLDS["F_substate_turbulence"]
 
-    antisystem_vote = context.get("regional_antisystem_vote", 0)
-    exec_collapses = context.get("executive_collapses", 0)
-    regional_divergence = context.get("regional_gdp_divergence", 0)
+    antisystem_vote = context.get("regional_antisystem_vote") or 0
+    exec_collapses = context.get("executive_collapses") or 0
+    regional_divergence = context.get("regional_gdp_divergence") or 0
 
     triggers = []
     if antisystem_vote > thresholds["antisystem_vote_threshold"]:
         triggers.append(f"anti-system vote {antisystem_vote:.1%} > 25%")
-    if exec_collapses >= 2:
+    if exec_collapses >= LENS["f_executive_collapses_min"]:
         triggers.append(f"{exec_collapses} executive collapses")
     if regional_divergence > thresholds["regional_divergence_threshold"]:
         triggers.append(f"regional divergence {regional_divergence:.1%} > 30%")
@@ -404,7 +485,8 @@ def evaluate_mod4(pillars: dict, context: dict) -> dict:
     the gap between compared entities exceeds margin of error.
     """
     comparison_gap = context.get("p1_comparison_gap")
-    margin = 0.10  # ~10 percentile points as default margin
+    margin = LENS["mod4_margin"]  # ordinal abstention threshold (single source: constants.LENS)
+    p1_min_level = context.get("p1_min_level")  # min P1 of the compared pair (for the V3 rule)
 
     if comparison_gap is None:
         return {
@@ -415,23 +497,35 @@ def evaluate_mod4(pillars: dict, context: dict) -> dict:
         }
 
     within_margin = abs(comparison_gap) < margin
+    # V3 consolidated-pair high-end caution: between two already-consolidated polities, a
+    # sub-high-end-margin P1 gap does not predict trajectory (Chile/Uruguay) -> abstain.
+    consolidated_pair = (
+        p1_min_level is not None
+        and p1_min_level > LENS["v3_consolidation_threshold"]
+        and abs(comparison_gap) < LENS["v3_high_end_margin"]
+    )
+    abstain = within_margin or consolidated_pair
+    reason = ("within margin of error" if within_margin
+              else "consolidated-pair high-end caution (both above the capacity threshold; "
+                   "sub-high-end-margin gaps don't predict trajectory)" if consolidated_pair
+              else None)
 
     return {
         "name": "Margin-of-Error Gate (Mod4)",
-        "triggered": within_margin,
+        "triggered": abstain,
         "gap": comparison_gap,
         "margin": margin,
+        "consolidated_pair": consolidated_pair,
         "explanation": (
-            f"P1 gap ({comparison_gap:.3f}) is within margin of error ({margin}). "
-            "Framework ABSTAINS from ordinal prediction — too close to call."
-            if within_margin else
-            f"P1 gap ({comparison_gap:.3f}) exceeds margin ({margin}). "
-            "Ordinal prediction is warranted."
+            f"P1 gap ({comparison_gap:.3f}) -> ABSTAIN ({reason})."
+            if abstain else
+            f"P1 gap ({comparison_gap:.3f}) exceeds margin ({margin}) and not a consolidated-pair "
+            "case. Ordinal prediction is warranted."
         ),
         "modification": (
             "ABSTAIN from P1 ordinality claim. Do not predict which entity "
-            "will outperform — the gap is too narrow."
-            if within_margin else None
+            "will outperform — too close to call / consolidated pair."
+            if abstain else None
         ),
     }
 

@@ -7,89 +7,40 @@
     "status": "completed",
     "stress_type": "comparative_trajectory",
     "geographic_region": "Caribbean / Hispaniola",
-    "time_period": "1996 -> 2023",
+    "time_period": "1996 -> 2024",
     "entities": [
       "Haiti",
       "Dominican Republic"
     ],
     "key_test": "P1 ordinal prediction at the low end; wide gap should map to divergence (Mod4 should NOT trigger).",
     "round": "expansion_batch1",
-    "notes": "WGI 2025-anchored vintage. Shared-island Acemoglu-style natural experiment."
+    "notes": "Inputs sourced from committed mi_pipeline panel (commit 9487dd0) for cross-project consistency; WGI 2025-anchored, panel grid to 2024."
   },
   "pre_event": {
     "time_point": "1996",
     "event_description": "Chronic institutional divergence on a shared island.",
     "entities": {
       "Haiti": {
-        "indicators": {
-          "gov_effectiveness": 25.02,
-          "rule_of_law": 32.96,
-          "regulatory_quality": 32.25,
-          "cpi": null,
-          "control_of_corruption": 28.31,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -1.008,
-          "education_index": 0.377,
-          "life_expectancy_index": 0.556,
-          "gdp_per_capita_ppp": 2069.61,
-          "resource_rents_pct_gdp": 0.94,
-          "oda_pct_gni": 11.34,
-          "political_stability": 48.78,
-          "fsi": null,
-          "voice_accountability": 43.35
-        },
         "context": {
           "population": 11700000,
           "is_island": true,
           "is_democratic": false,
           "is_authoritarian": false,
           "neighbor_threat_level": "none",
-          "neighbor_details": "Shares Hispaniola with DR; no predatory-power dynamic",
           "resource_rents_pct_revenue": 1.0
         },
         "data_gaps": [
+          "cpi",
           "gii",
-          "eci",
+          "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
-        "_hydrated_from_world": {
-          "source_slug": "haiti",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "voice_accountability",
-              "value": 43.35
-            },
-            {
-              "indicator": "eci",
-              "value": -1.008
-            }
-          ]
-        }
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Haiti",
+        "pre_year": "1996",
+        "post_year": "2024"
       },
       "Dominican Republic": {
-        "indicators": {
-          "gov_effectiveness": 45.45,
-          "rule_of_law": 46.64,
-          "regulatory_quality": 46.04,
-          "cpi": null,
-          "control_of_corruption": 44.42,
-          "gii": null,
-          "rd_pct_gdp": null,
-          "eci": -0.611,
-          "education_index": 0.489,
-          "life_expectancy_index": 0.763,
-          "gdp_per_capita_ppp": 5160.99,
-          "resource_rents_pct_gdp": 0.7,
-          "oda_pct_gni": 0.47,
-          "political_stability": 62.58,
-          "fsi": null,
-          "voice_accountability": 52.98
-        },
         "context": {
           "population": 11300000,
           "is_island": true,
@@ -99,27 +50,15 @@
           "resource_rents_pct_revenue": 3.0
         },
         "data_gaps": [
+          "cpi",
           "gii",
-          "eci",
+          "rd_pct_gdp",
           "fsi"
         ],
-        "notes": "WGI = 2025-anchored 0-100 score (.SC); vintage differs from legacy percentile-rank baseline (estonia.json/20-case runs).",
-        "_hydrated_from_world": {
-          "source_slug": "dominican_republic",
-          "source_year": "1996",
-          "target_year": 1996,
-          "note": "null slots filled from World Bank / HDR world panel",
-          "filled": [
-            {
-              "indicator": "voice_accountability",
-              "value": 52.98
-            },
-            {
-              "indicator": "eci",
-              "value": -0.611
-            }
-          ]
-        }
+        "notes": "inputs from mi_pipeline/output/mi_scored_countries.csv (panel) for cross-project consistency. WGI = 2025-anchored 0-100 score; P1 uses CPI for corruption (matches panel). ECI normalized on panel range [-3.53,2.10]. Voice stored for the P1-decomposition test (panel omits it).",
+        "country_ref": "Dominican Republic",
+        "pre_year": "1996",
+        "post_year": "2024"
       }
     }
   },
@@ -169,27 +108,27 @@
   },
   "post_event": {
     "time_points": [
-      "2023"
+      "2024"
     ],
     "entities": {
       "Haiti": {
         "indicators_by_year": {
-          "2023": {
-            "gov_effectiveness": 12.24,
-            "rule_of_law": 28.71,
-            "regulatory_quality": 30.5,
-            "cpi": null,
-            "control_of_corruption": 17.47,
+          "2024": {
+            "gov_effectiveness": 12.1474,
+            "rule_of_law": 29.3691,
+            "regulatory_quality": 31.7826,
+            "cpi": 16.0,
+            "control_of_corruption": 16.6758,
             "gii": null,
             "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.482,
-            "life_expectancy_index": 0.691,
-            "gdp_per_capita_ppp": 3291.74,
-            "resource_rents_pct_gdp": 0.33,
-            "oda_pct_gni": 5.43,
-            "political_stability": 49.3,
-            "fsi": 103.5
+            "eci": -0.558,
+            "education_index": 0.4821,
+            "life_expectancy_index": 0.6913,
+            "gdp_per_capita_ppp": 3193.6714,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 5.4277,
+            "political_stability": 45.3742,
+            "fsi": 102.9
           }
         },
         "outcome_summary": "P1 0.296->0.222; state collapse: 2021 presidential assassination, gang control of Port-au-Prince by 2024.",
@@ -200,22 +139,22 @@
       },
       "Dominican Republic": {
         "indicators_by_year": {
-          "2023": {
-            "gov_effectiveness": 52.23,
-            "rule_of_law": 52.81,
-            "regulatory_quality": 55.63,
-            "cpi": null,
-            "control_of_corruption": 39.15,
-            "gii": null,
+          "2024": {
+            "gov_effectiveness": 52.7919,
+            "rule_of_law": 53.8278,
+            "regulatory_quality": 58.1326,
+            "cpi": 36.0,
+            "control_of_corruption": 42.4809,
+            "gii": 20.82,
             "rd_pct_gdp": null,
-            "eci": null,
-            "education_index": 0.693,
-            "life_expectancy_index": 0.826,
-            "gdp_per_capita_ppp": 25839.94,
-            "resource_rents_pct_gdp": 2.08,
-            "oda_pct_gni": 0.58,
-            "political_stability": 73.85,
-            "fsi": 60.2
+            "eci": 0.034,
+            "education_index": 0.6931,
+            "life_expectancy_index": 0.8265,
+            "gdp_per_capita_ppp": 27541.6625,
+            "resource_rents_pct_gdp": null,
+            "oda_pct_gni": 0.5768,
+            "political_stability": 75.9613,
+            "fsi": 60.8
           }
         },
         "outcome_summary": "MI 0.597->0.657 (Tier 2); GDP PPP $5.2k->$25.8k; stable democracy.",
@@ -224,48 +163,96 @@
           "peaceful turnover"
         ]
       }
+    },
+    "resolved_scores": {
+      "Haiti": {
+        "pre": {
+          "P1": 0.296,
+          "MI": 0.451
+        },
+        "post": {
+          "P1": 0.223,
+          "MI": 0.392
+        }
+      },
+      "Dominican Republic": {
+        "pre": {
+          "P1": 0.456,
+          "MI": 0.603
+        },
+        "post": {
+          "P1": 0.502,
+          "MI": 0.602
+        }
+      }
     }
   },
   "verification": {
     "a_trajectory": {
       "result": "CONFIRMED",
-      "evidence": "DR Tier 2, GDP ratio ~2.5x(1996)->~7.8x(2023)",
-      "explanation": "Wide P1 gap mapped to divergent outcomes as predicted."
+      "evidence": "DR Tier 2 (MI 0.585->0.617); Haiti Tier3->Tier4 (P1 0.296->0.223)",
+      "explanation": "AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti (by pre-P1) == outcome by post-MI; gap 0.160. | prior: AUTO: full ordering matches: Dominican Republic > Haiti ",
+      "auto_derived": true
     },
     "b_violence": {
       "result": "CONFIRMED",
       "evidence": "Haiti gang collapse vs DR peace",
-      "explanation": "Low-P1 Haiti -> violent state breakdown."
+      "explanation": "Low-P1 Haiti -> violent state breakdown.",
+      "risk_level": "HIGH",
+      "data_refreshed": "2026-06-28: focus=Haiti pre-P1=0.296 -> HIGH risk (MI v1, anchored)"
     },
     "c_convergence": {
       "result": "CONFIRMED",
       "evidence": "MI gap 0.17->0.24",
-      "explanation": "Divergence."
+      "explanation": "AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.152->0.210). | prior: AUTO: outcome DIVERGENCE (MI-range 0.158->0.232). | prior: Divergence.",
+      "auto_derived": true
     },
     "d_failure_dimension": {
-      "result": "CONFIRMED",
-      "evidence": "Haiti P1 0.222 floor pillar",
-      "explanation": "Institutional failure as predicted."
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Haiti P1 0.223 floor pillar",
+      "explanation": "Institutional failure as predicted. [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Haiti: P4=0.55, P5=0.49, P3=0.47, P2=0.45, P1=0.30 | below-median (genuine vulnerabilities): P1=0.30, P2=0.45, P3=0.47, P5=0.49",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
     },
     "e_fragment_count": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": "No fragmentation event."
+      "explanation": "No fragmentation event.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "f_reversal_risk": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "g_suppression": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     },
     "h_turbulence": {
       "result": "NOT_APPLICABLE",
       "evidence": "",
-      "explanation": ""
+      "explanation": "",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
     }
   },
   "analysis": {
@@ -275,6 +262,29 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "Shared-geography control: institutions, not geography, drive divergence.",
     "proposed_framework_modifications": [],
-    "baseline_impact": "None; no modification proposed."
+    "baseline_impact": "None; no modification proposed.",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; narrow-gap a-trajectory annotated with Mod4). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "hit",
+      "3": "hit",
+      "5": "hit",
+      "7": "hit",
+      "10": "hit",
+      "15": "hit",
+      "20": "hit",
+      "28": "hit"
+    },
+    "ordinal_holds_to_years": 28,
+    "note": "ordinal call correct/cautious at all tested leads (no horizon decay)"
   }
 }

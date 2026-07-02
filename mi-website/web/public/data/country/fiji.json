@@ -1,0 +1,161 @@
+{
+ "slug": "fiji",
+ "name": "Fiji",
+ "iso3": "FJI",
+ "mi": 0.629,
+ "tier": 2,
+ "pillars": {
+  "P1": 0.591,
+  "P2": null,
+  "P3": 0.729,
+  "P4": 0.601,
+  "P5": 0.597
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 2: Durable",
+   "valence": "good",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "partial",
+   "label": "Partial data \u00b7 4/5 pillars",
+   "valence": "neutral",
+   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country - the missing pillars are unmeasured, not zero.",
+   "rule": "1 of 5 pillars lack public data."
+  },
+  {
+   "key": "durability",
+   "label": "Earned prosperity",
+   "valence": "good",
+   "why": "Institutions roughly match or exceed what income predicts - durable.",
+   "rule": "MI residual vs. the log-GDP regression (the durability gap): below -0.03 \u2192 granted, otherwise earned (a \u00b10.03 tolerance treats near-zero gaps as in-line)."
+  },
+  {
+   "key": "shape",
+   "label": "Balanced \u00b7 weakest: Institutions",
+   "valence": "good",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 4,
+  "total": 5,
+  "missing": [
+   "P2"
+  ]
+ },
+ "verdict": "Structurally durable - prosperity matched by institutions.",
+ "spread": 0.138,
+ "residual": 0.035,
+ "config": [
+  [
+   "P3",
+   0.729
+  ],
+  [
+   "P4",
+   0.601
+  ],
+  [
+   "P5",
+   0.597
+  ],
+  [
+   "P1",
+   0.591
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 63.18,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 62.23,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 55.89,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 55.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 59.24,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 62.65,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "education_index",
+   "value": 0.7304,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.7279,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "gdp_per_capita_ppp",
+   "value": 15450.3,
+   "source": "World Bank WDI"
+  },
+  {
+   "key": "political_stability",
+   "value": 77.82,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 70.2,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "durability",
+   "title": "Durability gate",
+   "status": "clear",
+   "headline": "earned-vs-granted +0.03",
+   "detail": "Institutions match or exceed what the country's income would predict. Prosperity here looks earned, and durable."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Institutions is lowest",
+   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "already high",
+   "detail": "The base is already high, so large structural jumps from here are historically rare."
+  }
+ ]
+}

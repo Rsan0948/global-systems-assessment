@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "case_name": "Gulf monarchies (Saudi Arabia / UAE rent-stabilization)",
+    "case_id": "case42",
+    "author": "V2 expansion (subagent draft)",
+    "date_created": "2026-06-28",
+    "status": "completed",
+    "stress_type": "comparative_trajectory",
+    "geographic_region": "MENA / Arabian Peninsula",
+    "time_period": "2010 -> 2024",
+    "entities": [
+      "Saudi Arabia",
+      "United Arab Emirates"
+    ],
+    "key_test": "Safeguard E POSITIVE pole, authoritarian variant: did high oil/gas rents buy regime SURVIVAL through the 2011 Arab Spring while non-rentier MENA states (Tunisia/Egypt/Libya, case04) destabilized? Tests whether rent-funded distribution + co-optation predicts stability despite low voice -- a positive E outcome carried with a LATENT reversal-risk flag (the bargain is contingent on sustained rents). Pre-P1 gap (~0.115) clears the Mod4 ~0.10 margin, so an ordinal read is permitted.",
+    "round": "v2_batch5",
+    "notes": "Reference-based record; both entities carry real MI v2 re-scores. Stress event = the 2011 Arab Spring; scored ~2010 (pre) vs 2024. The authoritarian rentier counterpart to Botswana's democratic rent-stabilization (case38) and the negative pole Venezuela (case22); contrasts with the non-rentier Arab Spring case (case04)."
+  },
+  "pre_event": {
+    "time_point": "2010",
+    "event_description": "On the eve of the 2011 Arab Spring, two high-rent Gulf monarchies face the same regional wave that toppled or convulsed non-rentier governments in Tunisia, Egypt, Libya, Yemen and Syria. Both deploy the rentier bargain -- large fiscal packages, public-sector wage and benefit increases, and subsidies -- alongside security measures to pre-empt mass mobilization.",
+    "entities": {
+      "Saudi Arabia": {
+        "context": {
+          "population": 29200000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "military_dominant": false,
+          "neighbor_threat_level": "low",
+          "neighbor_details": "Regional turbulence (Yemen to the south; Arab Spring contagion) but no state-threatening neighbor.",
+          "growth_trajectory": "growing",
+          "resource_rents_pct_revenue": 24.0,
+          "fragmentation_mechanism": null
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. Saudi Arabia: high oil rents (~24% of GDP, World Bank 2021 vintage) fund a distributive authoritarian bargain. Pre-2010 P1 driven by effectiveness/order with very low voice -- the rentier-authoritarian configuration. Safeguard E POSITIVE pole conditioned on rent-funded co-optation.",
+        "country_ref": "Saudi Arabia",
+        "pre_year": "2010",
+        "post_year": "2024"
+      },
+      "United Arab Emirates": {
+        "context": {
+          "population": 8500000,
+          "is_island": false,
+          "is_democratic": false,
+          "is_authoritarian": true,
+          "military_dominant": false,
+          "neighbor_threat_level": "low",
+          "growth_trajectory": "growing",
+          "resource_rents_pct_revenue": 16.0,
+          "fragmentation_mechanism": null
+        },
+        "data_gaps": [
+          "cpi",
+          "gii",
+          "rd_pct_gdp",
+          "fsi"
+        ],
+        "notes": "Inputs resolved live via mi.datasource (country_ref + year). WGI 2025-anchored 0-100. UAE: hydrocarbon rents (~16% of GDP, World Bank 2021 vintage) plus a diversified emirate economy fund a high-effectiveness, low-voice federation of emirates. Strong government-effectiveness and order scores; the rentier-authoritarian bargain with greater diversification than Saudi Arabia.",
+        "country_ref": "United Arab Emirates",
+        "pre_year": "2010",
+        "post_year": "2024"
+      }
+    }
+  },
+  "predictions": {
+    "generated_before_verification": true,
+    "a_trajectory_ranking": {
+      "prediction": "UAE > Saudi Arabia by founding P1 (gap ~0.115 clears the Mod4 ~0.10 margin -> ordinal read permitted); both rentier monarchies SURVIVE the 2011 Arab Spring intact, in contrast to non-rentier MENA (case04).",
+      "basis": "Pre-P1: UAE 0.647 vs Saudi 0.532 (gap 0.115 > 0.10). High rents + distributive bargain predict regime survival despite low voice.",
+      "falsification_condition": "Either monarchy is overthrown/collapses around 2011, OR the ordering reverses on outcome (Saudi > UAE on post-MI)."
+    },
+    "b_violence": {
+      "prediction": "Low REGIME-threatening violence in both; protests contained via spending + security; no civil war or state breakdown (unlike Libya/Syria/Yemen).",
+      "risk_level": "low (regime-stability), with localized unrest risk",
+      "agency_note": "Mod8: this predicts RISK, not AGENCY",
+      "falsification_condition": "Regime-threatening mass violence, civil war, or state breakdown in either monarchy."
+    },
+    "c_convergence": {
+      "prediction": "No divergence/fragmentation; both rentier monarchies remain stable and broadly track together (possible convergence as both ride the rent bargain).",
+      "basis": "Shared rentier-authoritarian survival mechanism -> parallel trajectories, no fragmentation.",
+      "falsification_condition": "Sharp divergence with one monarchy destabilizing, or fragmentation."
+    },
+    "d_failure_dimension": {
+      "prediction": "Binding vulnerability is the voice/economic-structure axis (P1 voice + P4 rent dependence), not capacity; latent, not realized in the window.",
+      "note": "Most exposed to post-hoc coding bias",
+      "falsification_condition": "Realized failure on a different dimension, or actual collapse."
+    },
+    "e_fragment_count": {
+      "prediction": "0 successor states for each; no fragmentation.",
+      "safeguard_b_applied": false,
+      "falsification_condition": "Either state fragments (>=1 successor state)."
+    },
+    "f_reversal_risk": {
+      "prediction": "LATENT reversal risk flagged: the stability is contingent on sustained rents and co-optation, not on accountable institutions -- a positive E outcome carried with a standing reversal-risk caveat (Safeguard C latent, not triggered in-window).",
+      "safeguard_c_severity": "latent / low-in-window",
+      "falsification_condition": "Rent-shock-driven destabilization or regime breakdown materializes within the scoring window."
+    },
+    "g_suppression_mechanism": {
+      "classification": "N/A as a separatist-suppression typology; protest containment was spending + policing, not territorial suppression.",
+      "tier": null,
+      "falsification_condition": ""
+    },
+    "h_substate_turbulence": {
+      "prediction": "N/A -- no sub-state secessionist turbulence.",
+      "safeguard_f_triggered": false,
+      "falsification_condition": ""
+    }
+  },
+  "post_event": {
+    "time_points": [
+      "2024"
+    ],
+    "entities": {
+      "Saudi Arabia": {
+        "indicators_by_year": {},
+        "outcome_summary": "Regime survival as predicted. The 2011 wave was absorbed via large fiscal packages and security measures; no regime change. P1 rose 0.532 -> 0.631 and MI rose 0.623 -> 0.693 (Tier 2 throughout), reflecting effectiveness/order gains and post-2016 Vision-2030 state-capacity investment under continued low voice. The positive Safeguard E (authoritarian variant) outcome -- with the latent reversal-risk flag intact (stability remains rent-contingent).",
+        "key_events": [
+          "2011 fiscal stimulus / benefits packages; protest containment",
+          "no regime change through the Arab Spring",
+          "post-2016 Vision 2030 state-capacity drive; sustained low voice"
+        ]
+      },
+      "United Arab Emirates": {
+        "indicators_by_year": {},
+        "outcome_summary": "Regime survival as predicted. Minimal unrest in 2011; rents plus diversification underwrote stability. P1 rose 0.647 -> 0.705 and MI rose 0.727 -> 0.763 (Tier 2 throughout) -- top-of-region effectiveness with low voice. The cleaner positive-E exemplar; latent reversal-risk flag intact.",
+        "key_events": [
+          "minimal 2011 unrest; rent-funded stability",
+          "continued economic diversification (trade, finance, logistics)",
+          "no regime change; sustained low voice"
+        ]
+      }
+    },
+    "resolved_scores": {
+      "Saudi Arabia": {
+        "pre": {
+          "P1": 0.532,
+          "MI": 0.623
+        },
+        "post": {
+          "P1": 0.631,
+          "MI": 0.693
+        }
+      },
+      "United Arab Emirates": {
+        "pre": {
+          "P1": 0.647,
+          "MI": 0.727
+        },
+        "post": {
+          "P1": 0.705,
+          "MI": 0.763
+        }
+      }
+    }
+  },
+  "verification": {
+    "a_trajectory": {
+      "result": "CONFIRMED",
+      "evidence": "Pre-P1 order UAE (0.647) > Saudi (0.532), gap 0.115; post-MI order UAE (0.763) > Saudi (0.693), gap 0.070. Ordering held; both monarchies survived the Arab Spring intact while non-rentier MENA (case04) destabilized.",
+      "explanation": "AUTO: full ordering matches: United Arab Emirates > Saudi Arabia (by pre-P1) == outcome by post-MI; gap 0.115. | prior: AUTO: full ordering matches: United Arab Emirates > Saudi Arabia (by pre-P1) == outcome by post-MI; gap 0.115. | prior: AUTO: full ordering matches: United Arab Emirates > Saudi Arabia (by pre-P1) == outcome by post-MI; pre-P1 gap 0.115 (> 0.10 Mod4 margin, ordinal read permitted). Both rose; rent-funded survival confirmed.",
+      "auto_derived": true
+    },
+    "b_violence": {
+      "result": "CONFIRMED",
+      "evidence": "No regime-threatening violence; 2011 contained via spending + security; no civil war (sharp contrast to Libya/Syria/Yemen).",
+      "explanation": "Low regime-stability violence risk realized in both, as predicted (Mod8).",
+      "risk_level": "LOW",
+      "data_refreshed": "2026-06-28: focus=Saudi Arabia pre-P1=0.532 -> LOW risk (MI v1, anchored)"
+    },
+    "c_convergence": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Both rose and the gap narrowed: MI-range 0.104 (pre) -> 0.070 (post). Both Tier 2 throughout; no fragmentation.",
+      "explanation": "AUTO: outcome CONVERGENCE (MI-range 0.104->0.070). | prior: AUTO: outcome CONVERGENCE (MI-range 0.104->0.070). | prior: AUTO: outcome CONVERGENCE (MI-range 0.104 -> 0.070). Shared rentier-authoritarian survival mechanism produced parallel, slightly converging trajectories with no fragmentation, as predicted.",
+      "auto_derived": true
+    },
+    "d_failure_dimension": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Binding vulnerabilities sit on the voice/rent-dependence axis (P1 voice, P4) rather than capacity; latent, not realized in-window.",
+      "explanation": "Vulnerability axis correct (voice + rent dependence). [STRICT RE-CODE per run6 \u00a73(d): post-hoc 'primary dimension' identification invites confirmation bias; coded PARTIAL under strict standards.]",
+      "computed_config": "Saudi Arabia: P2=0.72, P3=0.72, P5=0.61, P1=0.53, P4=0.53 | all pillars >= median -> no binding vulnerability (management-load/high-capacity case; relatively-lowest P4=0.53)",
+      "data_refreshed": "2026-06-28 (judgment preserved; numbers from MI v1)"
+    },
+    "e_fragment_count": {
+      "result": "CONFIRMED",
+      "evidence": "Zero successor states for each; no fragmentation.",
+      "explanation": "No fragmentation, as predicted.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "f_reversal_risk": {
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "Stability held and improved in-window (both MIs rose), so the latent reversal risk did NOT materialize during the scoring period -- but the bargain remains rent-contingent, so the flag stands.",
+      "explanation": "The positive-E outcome was carried with a standing latent reversal-risk caveat (Safeguard C latent): correctly flagged, not triggered in-window. Coded PARTIAL because the flag is a standing caveat rather than a realized/falsified event in this window.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "g_suppression": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "Protest containment was spending + policing, not separatist/territorial suppression.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    },
+    "h_turbulence": {
+      "result": "NOT_APPLICABLE",
+      "evidence": "",
+      "explanation": "No sub-state secessionist turbulence.",
+      "safeguard_state_now": {
+        "triggered": false,
+        "tier": null
+      },
+      "data_refreshed": "2026-06-28 (outcome judgment preserved; safeguard re-evaluated on real data)"
+    }
+  },
+  "analysis": {
+    "overall_assessment": "Confirmation: high rents bought regime survival through the 2011 Arab Spring in both monarchies while non-rentier MENA (case04) destabilized. The positive Safeguard E (authoritarian variant) outcome is recorded WITH a standing latent reversal-risk flag, because the stability is rent-contingent rather than institution-anchored.",
+    "safeguards_triggered": [
+      "E (resource rents -- POSITIVE pole, authoritarian variant)"
+    ],
+    "safeguards_that_should_have_triggered": [],
+    "new_failure_modes_discovered": [],
+    "what_this_case_uniquely_reveals": "Safeguard E's positive pole operates under authoritarianism, not only under good institutions (Botswana, case38): rent-funded distribution + co-optation can purchase regime survival through a region-wide shock despite very low voice -- but the framework must carry a LATENT reversal-risk flag, because the stability is contingent on sustained rents rather than on accountable institutions. It is the rentier MIRROR of the non-rentier Arab Spring collapses (case04) and the positive pole opposite Venezuela's rentier capture (case22).",
+    "proposed_framework_modifications": [],
+    "baseline_impact": "None; adds two MENA cases, the second/third rent-stabilization exemplars (authoritarian variant, with Botswana case38), and the rentier counterfactual to the Arab Spring case (case04).",
+    "strict_recode_note": "Strict re-code applied per run6 (post-hoc d-dimension -> PARTIAL; latent reversal flag coded PARTIAL as a standing caveat). Honest aggregate target ~62-78%.",
+    "phase3_note": "Migrated to MI v1 + Data API references. a_trajectory/c_convergence auto-derived from real re-scored data (Mod4-gated); b/d/e/f/g/h preserved as judgment. ",
+    "judgment_refresh_note": "Judgment verdicts (b/d/e/f/g/h) re-examined against MI v1 real-data scores on 2026-06-28: no verdict flips (directional readings robust to the legacy->anchored vintage change); b risk-levels refreshed from real pre-P1, d augmented with the real config (weakest pillar flagged as a binding vulnerability only when below median), safeguards re-evaluated."
+  },
+  "data_resolution": "Indicators resolved live via mi.datasource (country_ref + year); no embedded copies.",
+  "lead_time": {
+    "method": "outcome anchored at 2024; predictor = pre-event P1 at (2024-lead); Mod4 margin + V3 consolidated-pair caution (abstain = correctly cautious, not a miss).",
+    "config_ref": "mi.constants.LEAD_TIME",
+    "structural_horizon_years": 10,
+    "acute_timing_horizon_years": "3-5",
+    "type": "comparative",
+    "ordinal_by_lead": {
+      "1": "abstain",
+      "3": "hit",
+      "5": "hit",
+      "7": "hit",
+      "10": "hit",
+      "15": "hit",
+      "20": "hit",
+      "28": "hit"
+    },
+    "ordinal_holds_to_years": 28,
+    "note": "ordinal call correct/cautious at all tested leads (no horizon decay)"
+  }
+}

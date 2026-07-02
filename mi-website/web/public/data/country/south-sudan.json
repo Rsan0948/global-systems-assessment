@@ -1,0 +1,146 @@
+{
+ "slug": "south-sudan",
+ "name": "South Sudan",
+ "iso3": "SSD",
+ "mi": 0.292,
+ "tier": 4,
+ "pillars": {
+  "P1": 0.161,
+  "P2": null,
+  "P3": 0.463,
+  "P4": null,
+  "P5": 0.25
+ },
+ "chips": [
+  {
+   "key": "tier",
+   "label": "Tier 4: Fragile",
+   "valence": "bad",
+   "why": "Modernization Index band (equal-weighted pillars).",
+   "rule": "MI score binned into 5 tiers."
+  },
+  {
+   "key": "partial",
+   "label": "Partial data \u00b7 3/5 pillars",
+   "valence": "neutral",
+   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country - the missing pillars are unmeasured, not zero.",
+   "rule": "2 of 5 pillars lack public data."
+  },
+  {
+   "key": "shape",
+   "label": "Some imbalance \u00b7 weakest: Institutions",
+   "valence": "warn",
+   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
+   "rule": "max(pillar) - min(pillar)."
+  }
+ ],
+ "coverage": {
+  "present": 3,
+  "total": 5,
+  "missing": [
+   "P2",
+   "P4"
+  ]
+ },
+ "verdict": "Structurally fragile.",
+ "spread": 0.302,
+ "residual": null,
+ "config": [
+  [
+   "P3",
+   0.463
+  ],
+  [
+   "P5",
+   0.25
+  ],
+  [
+   "P1",
+   0.161
+  ]
+ ],
+ "pillar_names": {
+  "P1": "Institutions",
+  "P2": "Economic Complexity",
+  "P3": "Human Capital",
+  "P4": "Economic Structure",
+  "P5": "Stability & Resilience"
+ },
+ "indicators": [
+  {
+   "key": "gov_effectiveness",
+   "value": 9.09,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "rule_of_law",
+   "value": 23.02,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "regulatory_quality",
+   "value": 24.43,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "cpi",
+   "value": 8.0,
+   "source": "Transparency International"
+  },
+  {
+   "key": "control_of_corruption",
+   "value": 6.06,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "voice_accountability",
+   "value": 23.74,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "education_index",
+   "value": 0.3475,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "life_expectancy_index",
+   "value": 0.5787,
+   "source": "UNDP HDR"
+  },
+  {
+   "key": "political_stability",
+   "value": 40.45,
+   "source": "World Bank WGI"
+  },
+  {
+   "key": "fsi",
+   "value": 108.5,
+   "source": "Fund for Peace FSI"
+  }
+ ],
+ "data_year": 2024,
+ "source_tier": "A",
+ "checks": [
+  {
+   "key": "config",
+   "title": "Configuration",
+   "status": "flag",
+   "headline": "uniformly poor",
+   "detail": "Weak across pillars including Economic Structure - no resource/income cushion. Broad-based capacity building; no single binding constraint to target."
+  },
+  {
+   "key": "weak",
+   "title": "Weakest link",
+   "status": "info",
+   "headline": "Institutions is lowest",
+   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+  },
+  {
+   "key": "ascent",
+   "title": "Room to rise",
+   "status": "info",
+   "headline": "low base",
+   "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
+  }
+ ]
+}
