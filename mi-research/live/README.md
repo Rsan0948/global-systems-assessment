@@ -13,8 +13,10 @@ was tested and refined, not the canonical record).
 
 ## runs/
 
-The complete six-run validation sweep over the 20-case modern baseline. **All 6
-runs are present.** Runs 1–5 score cases; Run 6 is the definitive synthesis.
+The original six-run validation sweep over the initial 20-case modern baseline.
+**All 6 runs are present.** Runs 1–5 score cases; Run 6 is the definitive synthesis.
+The corpus has since expanded to 84 modern cases (51 ordinality + 19 durability-gate
++ 14 rule-validation) plus 25 ancient; see `../data/case_studies/completed/README.md`.
 
 | Run | File | Coverage |
 |-----|------|----------|
@@ -37,7 +39,7 @@ partly redundant with WGI standalone.
 - These runs introduce the STATIC-vs-LIVE comparison and the per-case (a)–(g)
   prediction scoring that the aggregate results in `../RESEARCH.md` rest on.
   Treat them as the authoritative case record.
-- Per the Golden Rule (`../RESEARCH.md`): the 20-case baseline documented here is
-  the floor. Any framework modification must not degrade performance on these runs.
+- Per the Golden Rule (`../RESEARCH.md`): the full 84-case modern corpus is
+  the floor. Any framework modification must not degrade performance on existing cases.
 - Each run carries its own caveats (WGI 2025 vintage break, ordinal-only scope,
   derived/estimated pillar values for non-dataset countries). Carry them forward.

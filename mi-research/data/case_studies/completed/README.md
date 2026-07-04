@@ -1,11 +1,17 @@
 # completed/ — structured case records (read the counting caveat before quoting any rate)
 
-**70-case corpus, two classes (different claims; `--validate` scores them separately):**
+**84-case corpus, three classes (different claims; `--validate` scores them separately):**
 - **51 P1-ordinality cases** (`case01`–`case51`): the retrodiction baseline (213C/77P/0F).
 - **19 durability-gate / Safeguard-J test cases** (`sig01`–`sig19`, `stress_type=durability_gate_test`):
   the N=19 acute-signature set; each tests whether Safeguard J (P4−P1 gap) correctly predicts
   crisis vs absorption (17/19 correct, 89%). NOT P1-ordinality cases — see
   `docs/signature_validation_N21.md` + `docs/architectural_decisions/v3_1_durability_gate.md`.
+- **14 rule-validation A/B cases** (`rv01`–`rv14`): blind convergence-qualifier and accountability-gap
+  tests. 8 confirmed / 2 indeterminate / 2 falsified / 2 pre-WGI N/A. See
+  `docs/c_cases_blind_validation.md`.
+
+Additionally, `../ancient/ancient_cases.json` contains **25 pre-modern cases** (c. 2686 BCE – 1797 CE),
+firewalled at lowest confidence. Total corpus: **109 case studies** (84 modern + 25 ancient).
 
 The 51 ordinality cases: the 20-case baseline (`case01`–`case20`, from `live/runs/run1`–`run5`),
 Batch 1 (`case21`–`case25`), and Batches 2–6 (`case26`–`case51`).

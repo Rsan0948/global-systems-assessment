@@ -33,8 +33,8 @@ All complex governance systems fragment when internal complexity exceeds institu
 This principle is:
 - Empirically grounded in measured properties of self-organizing branching systems (river networks, neural arbors), where a sealed holdout confirmation protocol demonstrated convergence on characteristic bifurcation ratios (Rb ≈ 3.5 for rivers, range ~2.9-3.7 across biological domains)
 - Quantitatively instantiated through the Modernization Index (MI), a five-pillar diagnostic instrument validated across three independent scoring methodologies (Spearman ρ ≥ 0.99)
-- Validated through retrodiction against twenty modern case studies spanning 1947-2024, four continents, and every major type of structural political stress, achieving ~65% clean confirmation and ~90% directional accuracy with P1 (Institutional Quality) ordinality confirmed in 20/20 cases
-- Extended through ordinal proxy application to five pre-modern empires spanning 3,000 years, demonstrating that the structural logic holds across all of recorded history
+- Validated through retrodiction against 84 modern case studies spanning 1947-2024, six continents, and every major type of structural political stress, achieving ~73% clean confirmation and 100% directional accuracy with P1 (Institutional Quality) ordinality confirmed across all 51 ordinality cases (213C/77P/0F)
+- Extended through ordinal proxy application to 25 pre-modern empires spanning ~5,000 years (c. 2686 BCE – 1797 CE), demonstrating that the structural logic holds across all of recorded history
 
 The principle does NOT predict timing, specific triggers, or exact magnitudes. It diagnoses structural conditions, predicts directional outcomes and relative rankings, and identifies which institutional dimension will be the primary failure or success mode.
 
@@ -158,7 +158,7 @@ The reader experiences the framework learning from its mistakes — which is mor
 
 Expand outward. Fifteen more cases across four rounds. Each round tests the framework in modes it hasn't handled before. Traditional fragmentation, recursive fragmentation, suppressed fragmentation, institutional reconstruction, fragmentation prevention, fusion, legal suppression, extreme porosity, prospective prediction, post-colonial engineered states.
 
-P1 ordinality holds in 20/20 cases. The three-tier suppression typology emerges. Belgium demonstrates no hard limit to porosity. Myanmar confirms the re-suppression-after-porosity prediction in real time. Singapore is the flagship positive case.
+P1 ordinality holds across all 51 ordinality cases (213C/77P/0F). The three-tier suppression typology emerges. Belgium demonstrates no hard limit to porosity. Myanmar confirms the re-suppression-after-porosity prediction in real time. Singapore is the flagship positive case.
 
 The reader watches the framework's range expand from "can it predict state dissolution?" to "can it predict any form of structural political stress?" The answer is yes, with documented limitations.
 
@@ -184,13 +184,13 @@ Connect to the Israel thesis from Chapter 1 — Israel's capital collapse isn't 
 
 ### Chapter 8 — Ancient Mirrors
 
-The temporal extension. Five empires: Rome (east vs west), Han China, the Abbasids, the Mongols, the Inca. Apply the MI's structural logic using ordinal proxy scoring from historical scholarship.
+The temporal extension. 25 pre-modern empires spanning c. 2686 BCE – 1797 CE, plus the 5 originals (Rome E/W, Han, Abbasids, Mongols, Inca). Apply the MI's structural logic using ordinal proxy scoring from historical scholarship.
 
-The headline findings: Rome's east-west divergence as a P1/P4 gap. The Abbasids as the ancient "complexity without institutions." The Aztec-vs-Inca unified failure-mode analysis. The Mongol confirmation that maximum territory on minimum institutions produces rapid fragmentation.
+The headline findings: Rome's east-west divergence as a P1/P4 gap. The Abbasids as the ancient "complexity without institutions." The Aztec-vs-Inca unified failure-mode analysis. The Mongol confirmation that maximum territory on minimum institutions produces rapid fragmentation. The expanded set (Old Kingdom Egypt through Ottoman classical) confirms cross-era consistency of the durability gap and suppression typology.
 
 Present honestly: "strong heuristic, weak oracle." The structural logic holds. The precision doesn't match the modern MI. The value is in demonstrating that complexity-capacity matching is a universal property of governance systems, not a modern phenomenon.
 
-**Evidence deployed:** Five ancient case studies with ordinal proxy scores, scholarly sources, alternative readings, and honest limitations.
+**Evidence deployed:** 25 ancient case studies (+ 5 originals) with ordinal proxy scores, scholarly sources, alternative readings, and honest limitations. Firewalled from the modern baseline.
 
 ### Chapter 9 — The American Question
 
@@ -651,7 +651,7 @@ American values are undergoing structural expansion — the latest in a series (
 - High P1 enables multiple viable de-escalation strategies (porosity or legal suppression); low P1 constrains to military suppression or collapse. (Supported by Spain vs Northern Ireland vs Nigeria/Ethiopia comparison; small N.)
 - There is no hard upper limit to porosity in a high-P1 state. (Supported by Belgium; single-country evidence.)
 - Rent distribution can substitute for institutional capacity in sustaining cohesion (rent-stabilization). (Supported by Nigeria; single case.)
-- The MI's structural logic generalizes to pre-modern civilizations as a diagnostic heuristic. (Supported by five ancient cases; ordinal scoring is interpreter-dependent.)
+- The MI's structural logic generalizes to pre-modern civilizations as a diagnostic heuristic. (Supported by 25 ancient cases + 5 originals; ordinal scoring is interpreter-dependent.)
 - The complexity-capacity matching principle is a universal property of complex governance systems. (Supported by convergent evidence across modern and ancient cases; strongest version of the claim.)
 - The ~2.9-3.7 natural fragmentation range holds for self-organizing systems. (Confirmed for rivers and neurons; governance application supported but not confirmed.)
 - The post-WWII institutional architecture is simultaneously approaching design-life limits across multiple systems. (Analytical framework supported by MI trajectories; not directly testable as a single claim.)
@@ -776,7 +776,7 @@ Framework correctly predicted Tunisia's initial democratic trajectory but failed
 
 **Comparable titles for positioning:** Sapiens (Harari), Guns Germs and Steel (Diamond), Why Nations Fail (Acemoglu/Robinson), The Fourth Turning (Strauss/Howe), Thinking Fast and Slow (Kahneman), The Accidental Superpower (Zeihan).
 
-**Differentiator:** Unlike all comparables, this book has a purpose-built quantitative diagnostic tool (MI), empirical grounding in natural systems (branching data), retrodiction validation across twenty modern cases AND five ancient empires, and a honest falsification-refinement history. It's not just a framework — it's a validated instrument with documented capabilities and boundaries.
+**Differentiator:** Unlike all comparables, this book has a purpose-built quantitative diagnostic tool (MI), empirical grounding in natural systems (branching data), retrodiction validation across 84 modern cases AND 25 ancient empires spanning ~5,000 years, and an honest falsification-refinement history. It's not just a framework — it's a validated instrument with documented capabilities and boundaries.
 
 **Byline:** "Ruben Sanchez is an AI systems engineer, independent geopolitical analyst, and the developer of the Modernization Index."
 

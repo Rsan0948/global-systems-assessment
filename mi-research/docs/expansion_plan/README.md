@@ -1,13 +1,13 @@
-# Expansion plan — toward a 50-case baseline
+# Expansion plan — historical roadmap (largely completed)
 
-Forward-looking **roadmap** documents (proposals for future work), distinct from:
-- the canonical results in `../../live/runs/` (the validated 20-case, 6-run record), and
+These were the **roadmap** documents that guided growth from 20 cases to the current
+84-case modern corpus + 25 ancient cases. Most proposals here have been executed — the
+51-case P1-ordinality baseline, the 19 durability-gate tests, the 14 rule-validation
+cases, and the 25-case ancient extension are all complete in `../../data/case_studies/`.
+
+Distinct from:
+- the canonical results in `../../live/runs/` (the original 20-case, 6-run record), and
 - the refinement history in `../validation_rounds/`.
-
-These describe how to grow the validated baseline from 20 cases to ~50, which gaps
-each new case fills, and which cases are most likely to *falsify* the framework.
-Nothing here is scored yet — treat it as the agenda referenced by `RESEARCH.md`
-("What Needs Doing"), not as evidence.
 
 ## Contents
 
@@ -21,7 +21,7 @@ Nothing here is scored yet — treat it as the agenda referenced by `RESEARCH.md
 - Read `case_revisions_replacements_and_bonus_cases.md` *after* the proposal — it
   amends rather than replaces it.
 - Per the Golden Rule (`../../RESEARCH.md`): any new case or safeguard must not
-  degrade performance on the existing 20-case baseline in `../../live/runs/`.
+  degrade performance on the existing 84-case modern corpus.
 - New cases should be scored with the same per-case (a)–(g) prediction discipline
   and STATIC-vs-LIVE comparison the runs use, and structured records added under
   `../../data/case_studies/` (template in `data/case_studies/templates/`).
