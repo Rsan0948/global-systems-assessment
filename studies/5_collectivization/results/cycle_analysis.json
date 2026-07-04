@@ -1,0 +1,449 @@
+{
+  "ratchet": {
+    "per_case": {
+      "China": {
+        "positive_dims": 3,
+        "incorporation_ratio": 0.007,
+        "demographic_ratio": 1.667,
+        "integration_depth": "0 -> 6",
+        "functional_breadth": "0 -> 5",
+        "efficiency_burst": NaN
+      },
+      "European Union": {
+        "positive_dims": 4,
+        "incorporation_ratio": 0.6,
+        "demographic_ratio": 1.183,
+        "integration_depth": "1 -> 5",
+        "functional_breadth": "1 -> 3",
+        "efficiency_burst": 0.0055
+      },
+      "Germany": {
+        "positive_dims": 4,
+        "incorporation_ratio": 0.083,
+        "demographic_ratio": 1.708,
+        "integration_depth": "1 -> 6",
+        "functional_breadth": "0 -> 5",
+        "efficiency_burst": 0.0161
+      },
+      "Italy": {
+        "positive_dims": 3,
+        "incorporation_ratio": 0.083,
+        "demographic_ratio": 2.552,
+        "integration_depth": "0 -> 6",
+        "functional_breadth": "0 -> 5",
+        "efficiency_burst": NaN
+      },
+      "Japan": {
+        "positive_dims": 3,
+        "incorporation_ratio": 0.015,
+        "demographic_ratio": 4.0,
+        "integration_depth": "0 -> 6",
+        "functional_breadth": "0 -> 5",
+        "efficiency_burst": NaN
+      },
+      "United States": {
+        "positive_dims": 5,
+        "incorporation_ratio": 1.121,
+        "demographic_ratio": 1.226,
+        "integration_depth": "5 -> 6",
+        "functional_breadth": "4 -> 5",
+        "efficiency_burst": 0.0021
+      }
+    },
+    "sign_test_p": 0.0081,
+    "strongest_dimensions": [
+      "demographic",
+      "integration_depth",
+      "functional_breadth"
+    ]
+  },
+  "form_shift": {
+    "per_case": {
+      "China": {
+        "type_pre": "feudal_order",
+        "type_post": "personal_empire",
+        "type_changed": true,
+        "flip_count": 11,
+        "flipped_features": [
+          "independent_militaries",
+          "independent_foreign_policy",
+          "shared_currency",
+          "shared_legal_code",
+          "unilateral_exit",
+          "central_tax",
+          "free_movement_persons",
+          "free_movement_goods",
+          "shared_supreme_court",
+          "central_standing_army",
+          "preexisting_polities"
+        ],
+        "legitimacy_flips": 1,
+        "failures_patched": [
+          "coordination_collapse",
+          "competitive_destruction"
+        ],
+        "new_vulnerabilities": [
+          "center_predation",
+          "rigidity_sclerosis"
+        ]
+      },
+      "Greek poleis": {
+        "type_pre": "colonial_imperial",
+        "type_post": "city_state_system",
+        "type_changed": true,
+        "flip_count": 7,
+        "flipped_features": [
+          "single_executive",
+          "hereditary_succession",
+          "independent_militaries",
+          "independent_foreign_policy",
+          "central_tax",
+          "central_standing_army",
+          "preexisting_polities"
+        ],
+        "legitimacy_flips": 3,
+        "failures_patched": [],
+        "new_vulnerabilities": [
+          "competitive_destruction"
+        ]
+      },
+      "Middle East (post-Ottoman)": {
+        "type_pre": "personal_empire",
+        "type_post": "city_state_system",
+        "type_changed": true,
+        "flip_count": 12,
+        "flipped_features": [
+          "single_executive",
+          "hereditary_succession",
+          "independent_militaries",
+          "independent_foreign_policy",
+          "shared_currency",
+          "shared_legal_code",
+          "unilateral_exit",
+          "central_tax",
+          "free_movement_persons",
+          "free_movement_goods",
+          "shared_supreme_court",
+          "central_standing_army"
+        ],
+        "legitimacy_flips": 3,
+        "failures_patched": [
+          "rigidity_sclerosis"
+        ],
+        "new_vulnerabilities": [
+          "coordination_collapse",
+          "competitive_destruction"
+        ]
+      },
+      "Post-Soviet": {
+        "type_pre": "ideological_party",
+        "type_post": "city_state_system",
+        "type_changed": true,
+        "flip_count": 10,
+        "flipped_features": [
+          "single_executive",
+          "independent_militaries",
+          "independent_foreign_policy",
+          "shared_currency",
+          "shared_legal_code",
+          "unilateral_exit",
+          "central_tax",
+          "free_movement_goods",
+          "shared_supreme_court",
+          "central_standing_army"
+        ],
+        "legitimacy_flips": 2,
+        "failures_patched": [],
+        "new_vulnerabilities": [
+          "coordination_collapse"
+        ]
+      },
+      "Sub-Saharan Africa": {
+        "type_pre": "colonial_imperial",
+        "type_post": "city_state_system",
+        "type_changed": true,
+        "flip_count": 7,
+        "flipped_features": [
+          "single_executive",
+          "hereditary_succession",
+          "independent_militaries",
+          "independent_foreign_policy",
+          "unilateral_exit",
+          "central_tax",
+          "central_standing_army"
+        ],
+        "legitimacy_flips": 3,
+        "failures_patched": [
+          "rigidity_sclerosis"
+        ],
+        "new_vulnerabilities": [
+          "coordination_collapse",
+          "competitive_destruction"
+        ]
+      },
+      "European Union": {
+        "type_pre": "city_state_system",
+        "type_post": "supranational_union",
+        "type_changed": true,
+        "flip_count": 6,
+        "flipped_features": [
+          "shared_currency",
+          "shared_legal_code",
+          "popular_sovereignty",
+          "elected_leadership",
+          "free_movement_goods",
+          "shared_supreme_court"
+        ],
+        "legitimacy_flips": 2,
+        "failures_patched": [
+          "legitimacy_vacuum"
+        ],
+        "new_vulnerabilities": []
+      },
+      "Germany": {
+        "type_pre": "feudal_order",
+        "type_post": "federal_republic",
+        "type_changed": true,
+        "flip_count": 11,
+        "flipped_features": [
+          "independent_militaries",
+          "independent_foreign_policy",
+          "shared_currency",
+          "shared_legal_code",
+          "unilateral_exit",
+          "central_tax",
+          "popular_sovereignty",
+          "elected_leadership",
+          "free_movement_persons",
+          "free_movement_goods",
+          "central_standing_army"
+        ],
+        "legitimacy_flips": 3,
+        "failures_patched": [
+          "coordination_collapse",
+          "competitive_destruction",
+          "legitimacy_vacuum"
+        ],
+        "new_vulnerabilities": []
+      },
+      "Italy": {
+        "type_pre": "city_state_system",
+        "type_post": "unitary_nation_state",
+        "type_changed": true,
+        "flip_count": 15,
+        "flipped_features": [
+          "single_executive",
+          "hereditary_succession",
+          "independent_militaries",
+          "independent_foreign_policy",
+          "shared_currency",
+          "shared_legal_code",
+          "unilateral_exit",
+          "central_tax",
+          "popular_sovereignty",
+          "elected_leadership",
+          "free_movement_persons",
+          "free_movement_goods",
+          "shared_supreme_court",
+          "central_standing_army",
+          "preexisting_polities"
+        ],
+        "legitimacy_flips": 5,
+        "failures_patched": [
+          "coordination_collapse",
+          "competitive_destruction",
+          "legitimacy_vacuum"
+        ],
+        "new_vulnerabilities": []
+      },
+      "Japan": {
+        "type_pre": "feudal_order",
+        "type_post": "personal_empire",
+        "type_changed": true,
+        "flip_count": 12,
+        "flipped_features": [
+          "independent_militaries",
+          "independent_foreign_policy",
+          "shared_currency",
+          "shared_legal_code",
+          "unilateral_exit",
+          "central_tax",
+          "elected_leadership",
+          "free_movement_persons",
+          "free_movement_goods",
+          "shared_supreme_court",
+          "central_standing_army",
+          "preexisting_polities"
+        ],
+        "legitimacy_flips": 2,
+        "failures_patched": [
+          "coordination_collapse",
+          "competitive_destruction"
+        ],
+        "new_vulnerabilities": []
+      },
+      "United States": {
+        "type_pre": "supranational_union",
+        "type_post": "federal_republic",
+        "type_changed": true,
+        "flip_count": 4,
+        "flipped_features": [
+          "independent_militaries",
+          "unilateral_exit",
+          "central_tax",
+          "central_standing_army"
+        ],
+        "legitimacy_flips": 1,
+        "failures_patched": [],
+        "new_vulnerabilities": []
+      }
+    },
+    "cases_mean_flips": 9.8,
+    "controls_mean_flips": 9.0,
+    "mann_whitney_p": 0.4148,
+    "all_cases_shifted_type": true,
+    "patching_rate": 0.83
+  },
+  "timing_intensity": {
+    "spearman_matrix": {
+      "unit_count_vs_speed": {
+        "rho": -0.943,
+        "p": 0.0048
+      },
+      "unit_count_vs_depth": {
+        "rho": -0.131,
+        "p": 0.8047
+      },
+      "unit_count_vs_durability": {
+        "rho": -0.086,
+        "p": 0.8717
+      },
+      "duration_vs_speed": {
+        "rho": -0.257,
+        "p": 0.6228
+      },
+      "duration_vs_depth": {
+        "rho": 0.131,
+        "p": 0.8047
+      },
+      "duration_vs_durability": {
+        "rho": -0.371,
+        "p": 0.4685
+      },
+      "conflict_intensity_vs_speed": {
+        "rho": 0.086,
+        "p": 0.8717
+      },
+      "conflict_intensity_vs_depth": {
+        "rho": -0.131,
+        "p": 0.8047
+      },
+      "conflict_intensity_vs_durability": {
+        "rho": 0.143,
+        "p": 0.7872
+      }
+    },
+    "dominant_channel": "coordination_failure"
+  },
+  "warning_signals": {
+    "China": {
+      "efficiency_decay": {
+        "fired": false,
+        "detail": "insufficient GDP data"
+      },
+      "integration_reversal": {
+        "fired": false,
+        "detail": "no later feature vector available"
+      },
+      "legitimacy_erosion": {
+        "fired": false,
+        "detail": "insufficient V-Dem data after collectivization"
+      },
+      "any_fired": false
+    },
+    "European Union": {
+      "efficiency_decay": {
+        "fired": false,
+        "detail": "growth never dropped below baseline 0.016 for 10+ consecutive years"
+      },
+      "integration_reversal": {
+        "fired": false,
+        "detail": "no later feature vector available"
+      },
+      "legitimacy_erosion": {
+        "fired": true,
+        "detail": "V-Dem dropped -0.062 over 2005-2025"
+      },
+      "any_fired": true
+    },
+    "Germany": {
+      "efficiency_decay": {
+        "fired": true,
+        "detail": "growth below baseline 0.014 for 10+ years starting ~1915"
+      },
+      "integration_reversal": {
+        "fired": false,
+        "detail": "no later feature vector available"
+      },
+      "legitimacy_erosion": {
+        "fired": true,
+        "detail": "V-Dem dropped -0.171 over 1913-1933"
+      },
+      "any_fired": true
+    },
+    "Italy": {
+      "efficiency_decay": {
+        "fired": true,
+        "detail": "growth below baseline 0.005 for 10+ years starting ~2010"
+      },
+      "integration_reversal": {
+        "fired": false,
+        "detail": "no later feature vector available"
+      },
+      "legitimacy_erosion": {
+        "fired": true,
+        "detail": "V-Dem dropped -0.124 over 1903-1923"
+      },
+      "any_fired": true
+    },
+    "Japan": {
+      "efficiency_decay": {
+        "fired": true,
+        "detail": "growth below baseline 0.013 for 10+ years starting ~1946"
+      },
+      "integration_reversal": {
+        "fired": false,
+        "detail": "no later feature vector available"
+      },
+      "legitimacy_erosion": {
+        "fired": false,
+        "detail": "no sustained V-Dem decline > -0.05 over any 20-year window"
+      },
+      "any_fired": true
+    },
+    "United States": {
+      "efficiency_decay": {
+        "fired": true,
+        "detail": "growth below baseline 0.014 for 10+ years starting ~1931"
+      },
+      "integration_reversal": {
+        "fired": false,
+        "detail": "no later feature vector available"
+      },
+      "legitimacy_erosion": {
+        "fired": true,
+        "detail": "V-Dem dropped -0.062 over 1997-2017"
+      },
+      "any_fired": true
+    }
+  },
+  "summary": {
+    "ratchet_supported": true,
+    "form_shift_supported": false,
+    "all_types_shifted": true,
+    "dominant_mechanism_channel": "coordination_failure",
+    "warning_signals_hit_rate": 0.83,
+    "n_core_cases": 6,
+    "n_controls": 4
+  }
+}
