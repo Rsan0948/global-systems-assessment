@@ -1,0 +1,1467 @@
+{
+  "method": "confidence-based uncertainty bands",
+  "uncertainty_margins": {
+    "HIGH": 0.1,
+    "MODERATE": 0.15,
+    "LOW": 0.25
+  },
+  "peak_ranking": [
+    {
+      "rank": 1,
+      "case": "Venetian Republic",
+      "mi_point": 0.799,
+      "mi_band": [
+        0.688,
+        0.887
+      ],
+      "mi_width": 0.2,
+      "pillars": {
+        "P1": {
+          "point": 0.812,
+          "band": [
+            0.713,
+            0.887
+          ]
+        },
+        "P2": {
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ]
+        },
+        "P3": {
+          "point": 0.65,
+          "band": [
+            0.517,
+            0.783
+          ]
+        },
+        "P4": {
+          "point": 0.773,
+          "band": [
+            0.64,
+            0.907
+          ]
+        },
+        "P5": {
+          "point": 1.0,
+          "band": [
+            0.9,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "case": "Song Dynasty",
+      "mi_point": 0.741,
+      "mi_band": [
+        0.624,
+        0.834
+      ],
+      "mi_width": 0.21,
+      "pillars": {
+        "P1": {
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ]
+        },
+        "P2": {
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ]
+        },
+        "P3": {
+          "point": 0.567,
+          "band": [
+            0.4,
+            0.733
+          ]
+        },
+        "P4": {
+          "point": 0.607,
+          "band": [
+            0.473,
+            0.74
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ]
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "case": "Tang Dynasty",
+      "mi_point": 0.709,
+      "mi_band": [
+        0.578,
+        0.823
+      ],
+      "mi_width": 0.245,
+      "pillars": {
+        "P1": {
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ]
+        },
+        "P2": {
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ]
+        },
+        "P3": {
+          "point": 0.433,
+          "band": [
+            0.267,
+            0.6
+          ]
+        },
+        "P4": {
+          "point": 0.643,
+          "band": [
+            0.46,
+            0.827
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "case": "Tokugawa Japan",
+      "mi_point": 0.675,
+      "mi_band": [
+        0.558,
+        0.792
+      ],
+      "mi_width": 0.234,
+      "pillars": {
+        "P1": {
+          "point": 0.688,
+          "band": [
+            0.575,
+            0.8
+          ]
+        },
+        "P2": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        },
+        "P3": {
+          "point": 0.617,
+          "band": [
+            0.5,
+            0.733
+          ]
+        },
+        "P4": {
+          "point": 0.617,
+          "band": [
+            0.483,
+            0.75
+          ]
+        },
+        "P5": {
+          "point": 0.825,
+          "band": [
+            0.725,
+            0.925
+          ]
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "case": "Ottoman (classical)",
+      "mi_point": 0.664,
+      "mi_band": [
+        0.54,
+        0.772
+      ],
+      "mi_width": 0.232,
+      "pillars": {
+        "P1": {
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ]
+        },
+        "P2": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        },
+        "P3": {
+          "point": 0.427,
+          "band": [
+            0.26,
+            0.593
+          ]
+        },
+        "P4": {
+          "point": 0.617,
+          "band": [
+            0.467,
+            0.767
+          ]
+        },
+        "P5": {
+          "point": 0.55,
+          "band": [
+            0.45,
+            0.65
+          ]
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "case": "Byzantine (Macedonian)",
+      "mi_point": 0.65,
+      "mi_band": [
+        0.526,
+        0.773
+      ],
+      "mi_width": 0.247,
+      "pillars": {
+        "P1": {
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ]
+        },
+        "P2": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        },
+        "P3": {
+          "point": 0.477,
+          "band": [
+            0.293,
+            0.66
+          ]
+        },
+        "P4": {
+          "point": 0.617,
+          "band": [
+            0.483,
+            0.75
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ]
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "case": "Sasanian Persia",
+      "mi_point": 0.642,
+      "mi_band": [
+        0.5,
+        0.784
+      ],
+      "mi_width": 0.283,
+      "pillars": {
+        "P1": {
+          "point": 0.75,
+          "band": [
+            0.637,
+            0.863
+          ]
+        },
+        "P2": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        },
+        "P3": {
+          "point": 0.427,
+          "band": [
+            0.243,
+            0.61
+          ]
+        },
+        "P4": {
+          "point": 0.617,
+          "band": [
+            0.433,
+            0.8
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "case": "Joseon Korea",
+      "mi_point": 0.585,
+      "mi_band": [
+        0.447,
+        0.722
+      ],
+      "mi_width": 0.276,
+      "pillars": {
+        "P1": {
+          "point": 0.688,
+          "band": [
+            0.575,
+            0.8
+          ]
+        },
+        "P2": {
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ]
+        },
+        "P3": {
+          "point": 0.38,
+          "band": [
+            0.197,
+            0.563
+          ]
+        },
+        "P4": {
+          "point": 0.417,
+          "band": [
+            0.233,
+            0.6
+          ]
+        },
+        "P5": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "case": "Achaemenid Persia",
+      "mi_point": 0.582,
+      "mi_band": [
+        0.444,
+        0.719
+      ],
+      "mi_width": 0.275,
+      "pillars": {
+        "P1": {
+          "point": 0.625,
+          "band": [
+            0.512,
+            0.738
+          ]
+        },
+        "P2": {
+          "point": 0.55,
+          "band": [
+            0.425,
+            0.675
+          ]
+        },
+        "P3": {
+          "point": 0.4,
+          "band": [
+            0.217,
+            0.583
+          ]
+        },
+        "P4": {
+          "point": 0.583,
+          "band": [
+            0.4,
+            0.767
+          ]
+        },
+        "P5": {
+          "point": 0.7,
+          "band": [
+            0.6,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "case": "New Kingdom Egypt",
+      "mi_point": 0.558,
+      "mi_band": [
+        0.421,
+        0.694
+      ],
+      "mi_width": 0.273,
+      "pillars": {
+        "P1": {
+          "point": 0.625,
+          "band": [
+            0.512,
+            0.738
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.327,
+          "band": [
+            0.177,
+            0.477
+          ]
+        },
+        "P4": {
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ]
+        },
+        "P5": {
+          "point": 0.75,
+          "band": [
+            0.625,
+            0.875
+          ]
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "case": "Gupta Empire",
+      "mi_point": 0.505,
+      "mi_band": [
+        0.354,
+        0.655
+      ],
+      "mi_width": 0.301,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ]
+        },
+        "P3": {
+          "point": 0.323,
+          "band": [
+            0.14,
+            0.507
+          ]
+        },
+        "P4": {
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "case": "Aztec Triple Alliance",
+      "mi_point": 0.469,
+      "mi_band": [
+        0.336,
+        0.603
+      ],
+      "mi_width": 0.267,
+      "pillars": {
+        "P1": {
+          "point": 0.5,
+          "band": [
+            0.388,
+            0.613
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.41,
+          "band": [
+            0.277,
+            0.543
+          ]
+        },
+        "P4": {
+          "point": 0.417,
+          "band": [
+            0.233,
+            0.6
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "case": "Mauryan Empire",
+      "mi_point": 0.463,
+      "mi_band": [
+        0.313,
+        0.617
+      ],
+      "mi_width": 0.304,
+      "pillars": {
+        "P1": {
+          "point": 0.562,
+          "band": [
+            0.425,
+            0.7
+          ]
+        },
+        "P2": {
+          "point": 0.45,
+          "band": [
+            0.3,
+            0.6
+          ]
+        },
+        "P3": {
+          "point": 0.307,
+          "band": [
+            0.123,
+            0.49
+          ]
+        },
+        "P4": {
+          "point": 0.4,
+          "band": [
+            0.233,
+            0.583
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "case": "Vijayanagara",
+      "mi_point": 0.462,
+      "mi_band": [
+        0.303,
+        0.621
+      ],
+      "mi_width": 0.318,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        },
+        "P3": {
+          "point": 0.323,
+          "band": [
+            0.157,
+            0.49
+          ]
+        },
+        "P4": {
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ]
+        },
+        "P5": {
+          "point": 0.55,
+          "band": [
+            0.4,
+            0.7
+          ]
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "case": "Old Kingdom Egypt",
+      "mi_point": 0.448,
+      "mi_band": [
+        0.313,
+        0.59
+      ],
+      "mi_width": 0.277,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.325,
+            0.55
+          ]
+        },
+        "P2": {
+          "point": 0.45,
+          "band": [
+            0.325,
+            0.575
+          ]
+        },
+        "P3": {
+          "point": 0.283,
+          "band": [
+            0.117,
+            0.467
+          ]
+        },
+        "P4": {
+          "point": 0.317,
+          "band": [
+            0.15,
+            0.5
+          ]
+        },
+        "P5": {
+          "point": 0.8,
+          "band": [
+            0.675,
+            0.925
+          ]
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "case": "Majapahit",
+      "mi_point": 0.447,
+      "mi_band": [
+        0.285,
+        0.609
+      ],
+      "mi_width": 0.324,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        },
+        "P3": {
+          "point": 0.297,
+          "band": [
+            0.113,
+            0.48
+          ]
+        },
+        "P4": {
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "case": "Khmer / Angkor",
+      "mi_point": 0.429,
+      "mi_band": [
+        0.28,
+        0.58
+      ],
+      "mi_width": 0.3,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.307,
+          "band": [
+            0.14,
+            0.473
+          ]
+        },
+        "P4": {
+          "point": 0.4,
+          "band": [
+            0.233,
+            0.583
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "case": "Aksum",
+      "mi_point": 0.424,
+      "mi_band": [
+        0.241,
+        0.606
+      ],
+      "mi_width": 0.365,
+      "pillars": {
+        "P1": {
+          "point": 0.375,
+          "band": [
+            0.188,
+            0.562
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        },
+        "P3": {
+          "point": 0.283,
+          "band": [
+            0.1,
+            0.467
+          ]
+        },
+        "P4": {
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.3,
+            0.7
+          ]
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "case": "Mali Empire",
+      "mi_point": 0.421,
+      "mi_band": [
+        0.259,
+        0.583
+      ],
+      "mi_width": 0.324,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.375,
+          "band": [
+            0.225,
+            0.525
+          ]
+        },
+        "P3": {
+          "point": 0.25,
+          "band": [
+            0.067,
+            0.433
+          ]
+        },
+        "P4": {
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "case": "Classic Maya",
+      "mi_point": 0.371,
+      "mi_band": [
+        0.24,
+        0.509
+      ],
+      "mi_width": 0.269,
+      "pillars": {
+        "P1": {
+          "point": 0.312,
+          "band": [
+            0.175,
+            0.45
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.307,
+          "band": [
+            0.173,
+            0.44
+          ]
+        },
+        "P4": {
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ]
+        },
+        "P5": {
+          "point": 0.425,
+          "band": [
+            0.325,
+            0.525
+          ]
+        }
+      }
+    },
+    {
+      "rank": 21,
+      "case": "Srivijaya",
+      "mi_point": 0.364,
+      "mi_band": [
+        0.174,
+        0.558
+      ],
+      "mi_width": 0.384,
+      "pillars": {
+        "P1": {
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.28,
+          "band": [
+            0.05,
+            0.53
+          ]
+        },
+        "P4": {
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ]
+        },
+        "P5": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        }
+      }
+    },
+    {
+      "rank": 22,
+      "case": "Carolingian",
+      "mi_point": 0.361,
+      "mi_band": [
+        0.228,
+        0.496
+      ],
+      "mi_width": 0.268,
+      "pillars": {
+        "P1": {
+          "point": 0.375,
+          "band": [
+            0.263,
+            0.487
+          ]
+        },
+        "P2": {
+          "point": 0.375,
+          "band": [
+            0.25,
+            0.5
+          ]
+        },
+        "P3": {
+          "point": 0.257,
+          "band": [
+            0.083,
+            0.44
+          ]
+        },
+        "P4": {
+          "point": 0.297,
+          "band": [
+            0.15,
+            0.447
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "rank": 23,
+      "case": "Tiwanaku",
+      "mi_point": 0.354,
+      "mi_band": [
+        0.18,
+        0.543
+      ],
+      "mi_width": 0.362,
+      "pillars": {
+        "P1": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        },
+        "P2": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        },
+        "P3": {
+          "point": 0.187,
+          "band": [
+            0.087,
+            0.337
+          ]
+        },
+        "P4": {
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ]
+        },
+        "P5": {
+          "point": 0.425,
+          "band": [
+            0.225,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "rank": 24,
+      "case": "Wari",
+      "mi_point": 0.328,
+      "mi_band": [
+        0.157,
+        0.513
+      ],
+      "mi_width": 0.356,
+      "pillars": {
+        "P1": {
+          "point": 0.375,
+          "band": [
+            0.2,
+            0.55
+          ]
+        },
+        "P2": {
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ]
+        },
+        "P3": {
+          "point": 0.187,
+          "band": [
+            0.053,
+            0.37
+          ]
+        },
+        "P4": {
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ]
+        },
+        "P5": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        }
+      }
+    },
+    {
+      "rank": 25,
+      "case": "Great Zimbabwe",
+      "mi_point": 0.302,
+      "mi_band": [
+        0.117,
+        0.5
+      ],
+      "mi_width": 0.383,
+      "pillars": {
+        "P1": {
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ]
+        },
+        "P2": {
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ]
+        },
+        "P3": {
+          "point": 0.187,
+          "band": [
+            0.053,
+            0.353
+          ]
+        },
+        "P4": {
+          "point": 0.463,
+          "band": [
+            0.283,
+            0.68
+          ]
+        },
+        "P5": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        }
+      }
+    }
+  ],
+  "tiers": [
+    {
+      "tier": 1,
+      "label": "High",
+      "mi_range": [
+        0.642,
+        0.799
+      ],
+      "mi_envelope": [
+        0.5,
+        0.887
+      ],
+      "cases": [
+        "Venetian Republic",
+        "Song Dynasty",
+        "Tang Dynasty",
+        "Tokugawa Japan",
+        "Ottoman (classical)",
+        "Byzantine (Macedonian)",
+        "Sasanian Persia"
+      ]
+    },
+    {
+      "tier": 2,
+      "label": "Mid-High",
+      "mi_range": [
+        0.558,
+        0.585
+      ],
+      "mi_envelope": [
+        0.421,
+        0.722
+      ],
+      "cases": [
+        "Joseon Korea",
+        "Achaemenid Persia",
+        "New Kingdom Egypt"
+      ]
+    },
+    {
+      "tier": 3,
+      "label": "Mid-Low",
+      "mi_range": [
+        0.421,
+        0.505
+      ],
+      "mi_envelope": [
+        0.241,
+        0.655
+      ],
+      "cases": [
+        "Gupta Empire",
+        "Aztec Triple Alliance",
+        "Mauryan Empire",
+        "Vijayanagara",
+        "Old Kingdom Egypt",
+        "Majapahit",
+        "Khmer / Angkor",
+        "Aksum",
+        "Mali Empire"
+      ]
+    },
+    {
+      "tier": 4,
+      "label": "Low",
+      "mi_range": [
+        0.302,
+        0.371
+      ],
+      "mi_envelope": [
+        0.117,
+        0.558
+      ],
+      "cases": [
+        "Classic Maya",
+        "Srivijaya",
+        "Carolingian",
+        "Tiwanaku",
+        "Wari",
+        "Great Zimbabwe"
+      ]
+    }
+  ],
+  "gap_analysis": [
+    {
+      "above": "Venetian Republic",
+      "below": "Song Dynasty",
+      "point_gap": 0.058,
+      "band_gap": -0.146,
+      "overlap_pct": 73.0,
+      "is_cut": false
+    },
+    {
+      "above": "Sasanian Persia",
+      "below": "Joseon Korea",
+      "point_gap": 0.057,
+      "band_gap": -0.222,
+      "overlap_pct": 80.4,
+      "is_cut": true
+    },
+    {
+      "above": "New Kingdom Egypt",
+      "below": "Gupta Empire",
+      "point_gap": 0.053,
+      "band_gap": -0.234,
+      "overlap_pct": 85.7,
+      "is_cut": true
+    },
+    {
+      "above": "Mali Empire",
+      "below": "Classic Maya",
+      "point_gap": 0.05,
+      "band_gap": -0.25,
+      "overlap_pct": 92.9,
+      "is_cut": true
+    },
+    {
+      "above": "Gupta Empire",
+      "below": "Aztec Triple Alliance",
+      "point_gap": 0.036,
+      "band_gap": -0.249,
+      "overlap_pct": 93.3,
+      "is_cut": false
+    },
+    {
+      "above": "Tang Dynasty",
+      "below": "Tokugawa Japan",
+      "point_gap": 0.034,
+      "band_gap": -0.214,
+      "overlap_pct": 91.5,
+      "is_cut": false
+    },
+    {
+      "above": "Song Dynasty",
+      "below": "Tang Dynasty",
+      "point_gap": 0.032,
+      "band_gap": -0.199,
+      "overlap_pct": 94.8,
+      "is_cut": false
+    },
+    {
+      "above": "Wari",
+      "below": "Great Zimbabwe",
+      "point_gap": 0.026,
+      "band_gap": -0.343,
+      "overlap_pct": 96.3,
+      "is_cut": false
+    },
+    {
+      "above": "Tiwanaku",
+      "below": "Wari",
+      "point_gap": 0.026,
+      "band_gap": -0.333,
+      "overlap_pct": 93.5,
+      "is_cut": false
+    },
+    {
+      "above": "Achaemenid Persia",
+      "below": "New Kingdom Egypt",
+      "point_gap": 0.024,
+      "band_gap": -0.25,
+      "overlap_pct": 91.6,
+      "is_cut": false
+    },
+    {
+      "above": "Majapahit",
+      "below": "Khmer / Angkor",
+      "point_gap": 0.018,
+      "band_gap": -0.295,
+      "overlap_pct": 98.3,
+      "is_cut": false
+    },
+    {
+      "above": "Ottoman (classical)",
+      "below": "Byzantine (Macedonian)",
+      "point_gap": 0.014,
+      "band_gap": -0.233,
+      "overlap_pct": 100.4,
+      "is_cut": false
+    },
+    {
+      "above": "Vijayanagara",
+      "below": "Old Kingdom Egypt",
+      "point_gap": 0.014,
+      "band_gap": -0.287,
+      "overlap_pct": 103.6,
+      "is_cut": false
+    },
+    {
+      "above": "Tokugawa Japan",
+      "below": "Ottoman (classical)",
+      "point_gap": 0.011,
+      "band_gap": -0.214,
+      "overlap_pct": 92.2,
+      "is_cut": false
+    },
+    {
+      "above": "Byzantine (Macedonian)",
+      "below": "Sasanian Persia",
+      "point_gap": 0.008,
+      "band_gap": -0.258,
+      "overlap_pct": 104.5,
+      "is_cut": false
+    },
+    {
+      "above": "Classic Maya",
+      "below": "Srivijaya",
+      "point_gap": 0.007,
+      "band_gap": -0.318,
+      "overlap_pct": 118.2,
+      "is_cut": false
+    },
+    {
+      "above": "Carolingian",
+      "below": "Tiwanaku",
+      "point_gap": 0.007,
+      "band_gap": -0.315,
+      "overlap_pct": 117.5,
+      "is_cut": false
+    },
+    {
+      "above": "Aztec Triple Alliance",
+      "below": "Mauryan Empire",
+      "point_gap": 0.006,
+      "band_gap": -0.281,
+      "overlap_pct": 105.2,
+      "is_cut": false
+    },
+    {
+      "above": "Khmer / Angkor",
+      "below": "Aksum",
+      "point_gap": 0.005,
+      "band_gap": -0.326,
+      "overlap_pct": 108.7,
+      "is_cut": false
+    },
+    {
+      "above": "Joseon Korea",
+      "below": "Achaemenid Persia",
+      "point_gap": 0.003,
+      "band_gap": -0.272,
+      "overlap_pct": 98.9,
+      "is_cut": false
+    },
+    {
+      "above": "Aksum",
+      "below": "Mali Empire",
+      "point_gap": 0.003,
+      "band_gap": -0.342,
+      "overlap_pct": 105.6,
+      "is_cut": false
+    },
+    {
+      "above": "Srivijaya",
+      "below": "Carolingian",
+      "point_gap": 0.003,
+      "band_gap": -0.322,
+      "overlap_pct": 120.1,
+      "is_cut": false
+    },
+    {
+      "above": "Mauryan Empire",
+      "below": "Vijayanagara",
+      "point_gap": 0.001,
+      "band_gap": -0.308,
+      "overlap_pct": 101.3,
+      "is_cut": false
+    },
+    {
+      "above": "Old Kingdom Egypt",
+      "below": "Majapahit",
+      "point_gap": 0.001,
+      "band_gap": -0.296,
+      "overlap_pct": 106.9,
+      "is_cut": false
+    }
+  ],
+  "ranking_stability": {
+    "total_pairs": 300,
+    "stable_pairs": 49,
+    "stable_pct": 16.3
+  }
+}

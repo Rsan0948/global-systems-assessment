@@ -1,0 +1,6384 @@
+{
+  "method": "pillar-level sensitivity with confidence bands",
+  "uncertainty": {
+    "HIGH": 0.1,
+    "MODERATE": 0.15,
+    "LOW": 0.25
+  },
+  "pillar_rankings": {
+    "P1": {
+      "name": "Institutional Quality",
+      "ranking": [
+        {
+          "case": "Tang Dynasty",
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ],
+          "beats_clearly": 17
+        },
+        {
+          "case": "Song Dynasty",
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ],
+          "beats_clearly": 17
+        },
+        {
+          "case": "Ottoman (classical)",
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ],
+          "beats_clearly": 17
+        },
+        {
+          "case": "Venetian Republic",
+          "point": 0.812,
+          "band": [
+            0.713,
+            0.887
+          ],
+          "beats_clearly": 15
+        },
+        {
+          "case": "Sasanian Persia",
+          "point": 0.75,
+          "band": [
+            0.637,
+            0.863
+          ],
+          "beats_clearly": 14
+        },
+        {
+          "case": "Byzantine (Macedonian)",
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ],
+          "beats_clearly": 14
+        },
+        {
+          "case": "Tokugawa Japan",
+          "point": 0.688,
+          "band": [
+            0.575,
+            0.8
+          ],
+          "beats_clearly": 7
+        },
+        {
+          "case": "Joseon Korea",
+          "point": 0.688,
+          "band": [
+            0.575,
+            0.8
+          ],
+          "beats_clearly": 7
+        },
+        {
+          "case": "Achaemenid Persia",
+          "point": 0.625,
+          "band": [
+            0.512,
+            0.738
+          ],
+          "beats_clearly": 4
+        },
+        {
+          "case": "New Kingdom Egypt",
+          "point": 0.625,
+          "band": [
+            0.512,
+            0.738
+          ],
+          "beats_clearly": 4
+        },
+        {
+          "case": "Mauryan Empire",
+          "point": 0.562,
+          "band": [
+            0.425,
+            0.7
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aztec Triple Alliance",
+          "point": 0.5,
+          "band": [
+            0.388,
+            0.613
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Old Kingdom Egypt",
+          "point": 0.438,
+          "band": [
+            0.325,
+            0.55
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Gupta Empire",
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Vijayanagara",
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Khmer / Angkor",
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Majapahit",
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mali Empire",
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aksum",
+          "point": 0.375,
+          "band": [
+            0.188,
+            0.562
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Tiwanaku",
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Wari",
+          "point": 0.375,
+          "band": [
+            0.2,
+            0.55
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Carolingian",
+          "point": 0.375,
+          "band": [
+            0.263,
+            0.487
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Classic Maya",
+          "point": 0.312,
+          "band": [
+            0.175,
+            0.45
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Srivijaya",
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Great Zimbabwe",
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ],
+          "beats_clearly": 0
+        }
+      ],
+      "clear_top": [
+        "Tang Dynasty",
+        "Song Dynasty",
+        "Ottoman (classical)",
+        "Venetian Republic",
+        "Sasanian Persia",
+        "Byzantine (Macedonian)"
+      ],
+      "clear_bottom": [],
+      "defensible_pairs": 116,
+      "total_pairs": 300,
+      "defensible_pct": 38.7
+    },
+    "P2": {
+      "name": "Innovation & Knowledge",
+      "ranking": [
+        {
+          "case": "Song Dynasty",
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ],
+          "beats_clearly": 20
+        },
+        {
+          "case": "Tang Dynasty",
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ],
+          "beats_clearly": 12
+        },
+        {
+          "case": "Joseon Korea",
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ],
+          "beats_clearly": 12
+        },
+        {
+          "case": "Venetian Republic",
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ],
+          "beats_clearly": 12
+        },
+        {
+          "case": "Gupta Empire",
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ],
+          "beats_clearly": 4
+        },
+        {
+          "case": "Sasanian Persia",
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ],
+          "beats_clearly": 2
+        },
+        {
+          "case": "Tokugawa Japan",
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ],
+          "beats_clearly": 2
+        },
+        {
+          "case": "Byzantine (Macedonian)",
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ],
+          "beats_clearly": 2
+        },
+        {
+          "case": "Ottoman (classical)",
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ],
+          "beats_clearly": 2
+        },
+        {
+          "case": "Achaemenid Persia",
+          "point": 0.55,
+          "band": [
+            0.425,
+            0.675
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Vijayanagara",
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Khmer / Angkor",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Srivijaya",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Majapahit",
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aksum",
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aztec Triple Alliance",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Classic Maya",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "New Kingdom Egypt",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Old Kingdom Egypt",
+          "point": 0.45,
+          "band": [
+            0.325,
+            0.575
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mauryan Empire",
+          "point": 0.45,
+          "band": [
+            0.3,
+            0.6
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mali Empire",
+          "point": 0.375,
+          "band": [
+            0.225,
+            0.525
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Tiwanaku",
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Carolingian",
+          "point": 0.375,
+          "band": [
+            0.25,
+            0.5
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Great Zimbabwe",
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Wari",
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ],
+          "beats_clearly": 0
+        }
+      ],
+      "clear_top": [
+        "Song Dynasty",
+        "Tang Dynasty",
+        "Joseon Korea",
+        "Venetian Republic"
+      ],
+      "clear_bottom": [],
+      "defensible_pairs": 68,
+      "total_pairs": 300,
+      "defensible_pct": 22.7
+    },
+    "P3": {
+      "name": "Human Capital",
+      "ranking": [
+        {
+          "case": "Venetian Republic",
+          "point": 0.65,
+          "band": [
+            0.517,
+            0.783
+          ],
+          "beats_clearly": 14
+        },
+        {
+          "case": "Tokugawa Japan",
+          "point": 0.617,
+          "band": [
+            0.5,
+            0.733
+          ],
+          "beats_clearly": 13
+        },
+        {
+          "case": "Song Dynasty",
+          "point": 0.567,
+          "band": [
+            0.4,
+            0.733
+          ],
+          "beats_clearly": 3
+        },
+        {
+          "case": "Byzantine (Macedonian)",
+          "point": 0.477,
+          "band": [
+            0.293,
+            0.66
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Tang Dynasty",
+          "point": 0.433,
+          "band": [
+            0.267,
+            0.6
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Sasanian Persia",
+          "point": 0.427,
+          "band": [
+            0.243,
+            0.61
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Ottoman (classical)",
+          "point": 0.427,
+          "band": [
+            0.26,
+            0.593
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aztec Triple Alliance",
+          "point": 0.41,
+          "band": [
+            0.277,
+            0.543
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Achaemenid Persia",
+          "point": 0.4,
+          "band": [
+            0.217,
+            0.583
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Joseon Korea",
+          "point": 0.38,
+          "band": [
+            0.197,
+            0.563
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "New Kingdom Egypt",
+          "point": 0.327,
+          "band": [
+            0.177,
+            0.477
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Gupta Empire",
+          "point": 0.323,
+          "band": [
+            0.14,
+            0.507
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Vijayanagara",
+          "point": 0.323,
+          "band": [
+            0.157,
+            0.49
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mauryan Empire",
+          "point": 0.307,
+          "band": [
+            0.123,
+            0.49
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Khmer / Angkor",
+          "point": 0.307,
+          "band": [
+            0.14,
+            0.473
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Classic Maya",
+          "point": 0.307,
+          "band": [
+            0.173,
+            0.44
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Majapahit",
+          "point": 0.297,
+          "band": [
+            0.113,
+            0.48
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Old Kingdom Egypt",
+          "point": 0.283,
+          "band": [
+            0.117,
+            0.467
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aksum",
+          "point": 0.283,
+          "band": [
+            0.1,
+            0.467
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Srivijaya",
+          "point": 0.28,
+          "band": [
+            0.05,
+            0.53
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Carolingian",
+          "point": 0.257,
+          "band": [
+            0.083,
+            0.44
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mali Empire",
+          "point": 0.25,
+          "band": [
+            0.067,
+            0.433
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Great Zimbabwe",
+          "point": 0.187,
+          "band": [
+            0.053,
+            0.353
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Tiwanaku",
+          "point": 0.187,
+          "band": [
+            0.087,
+            0.337
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Wari",
+          "point": 0.187,
+          "band": [
+            0.053,
+            0.37
+          ],
+          "beats_clearly": 0
+        }
+      ],
+      "clear_top": [
+        "Venetian Republic",
+        "Tokugawa Japan"
+      ],
+      "clear_bottom": [],
+      "defensible_pairs": 30,
+      "total_pairs": 300,
+      "defensible_pct": 10.0
+    },
+    "P4": {
+      "name": "Economic Structure",
+      "ranking": [
+        {
+          "case": "Venetian Republic",
+          "point": 0.773,
+          "band": [
+            0.64,
+            0.907
+          ],
+          "beats_clearly": 9
+        },
+        {
+          "case": "Tang Dynasty",
+          "point": 0.643,
+          "band": [
+            0.46,
+            0.827
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Sasanian Persia",
+          "point": 0.617,
+          "band": [
+            0.433,
+            0.8
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Tokugawa Japan",
+          "point": 0.617,
+          "band": [
+            0.483,
+            0.75
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Byzantine (Macedonian)",
+          "point": 0.617,
+          "band": [
+            0.483,
+            0.75
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Ottoman (classical)",
+          "point": 0.617,
+          "band": [
+            0.467,
+            0.767
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Song Dynasty",
+          "point": 0.607,
+          "band": [
+            0.473,
+            0.74
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Achaemenid Persia",
+          "point": 0.583,
+          "band": [
+            0.4,
+            0.767
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Vijayanagara",
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Srivijaya",
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "New Kingdom Egypt",
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Gupta Empire",
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Majapahit",
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mali Empire",
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aksum",
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Great Zimbabwe",
+          "point": 0.463,
+          "band": [
+            0.283,
+            0.68
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Joseon Korea",
+          "point": 0.417,
+          "band": [
+            0.233,
+            0.6
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aztec Triple Alliance",
+          "point": 0.417,
+          "band": [
+            0.233,
+            0.6
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mauryan Empire",
+          "point": 0.4,
+          "band": [
+            0.233,
+            0.583
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Khmer / Angkor",
+          "point": 0.4,
+          "band": [
+            0.233,
+            0.583
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Classic Maya",
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Tiwanaku",
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Wari",
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Old Kingdom Egypt",
+          "point": 0.317,
+          "band": [
+            0.15,
+            0.5
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Carolingian",
+          "point": 0.297,
+          "band": [
+            0.15,
+            0.447
+          ],
+          "beats_clearly": 0
+        }
+      ],
+      "clear_top": [],
+      "clear_bottom": [],
+      "defensible_pairs": 14,
+      "total_pairs": 300,
+      "defensible_pct": 4.7
+    },
+    "P5": {
+      "name": "Stability & Resilience",
+      "ranking": [
+        {
+          "case": "Venetian Republic",
+          "point": 1.0,
+          "band": [
+            0.9,
+            1.0
+          ],
+          "beats_clearly": 22
+        },
+        {
+          "case": "Tokugawa Japan",
+          "point": 0.825,
+          "band": [
+            0.725,
+            0.925
+          ],
+          "beats_clearly": 14
+        },
+        {
+          "case": "Old Kingdom Egypt",
+          "point": 0.8,
+          "band": [
+            0.675,
+            0.925
+          ],
+          "beats_clearly": 12
+        },
+        {
+          "case": "New Kingdom Egypt",
+          "point": 0.75,
+          "band": [
+            0.625,
+            0.875
+          ],
+          "beats_clearly": 4
+        },
+        {
+          "case": "Achaemenid Persia",
+          "point": 0.7,
+          "band": [
+            0.6,
+            0.8
+          ],
+          "beats_clearly": 4
+        },
+        {
+          "case": "Sasanian Persia",
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Gupta Empire",
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Tang Dynasty",
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Song Dynasty",
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Byzantine (Macedonian)",
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ],
+          "beats_clearly": 1
+        },
+        {
+          "case": "Joseon Korea",
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Vijayanagara",
+          "point": 0.55,
+          "band": [
+            0.4,
+            0.7
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Ottoman (classical)",
+          "point": 0.55,
+          "band": [
+            0.45,
+            0.65
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mauryan Empire",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Khmer / Angkor",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Majapahit",
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Mali Empire",
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aksum",
+          "point": 0.5,
+          "band": [
+            0.3,
+            0.7
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Aztec Triple Alliance",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Carolingian",
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Classic Maya",
+          "point": 0.425,
+          "band": [
+            0.325,
+            0.525
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Tiwanaku",
+          "point": 0.425,
+          "band": [
+            0.225,
+            0.625
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Srivijaya",
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Great Zimbabwe",
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ],
+          "beats_clearly": 0
+        },
+        {
+          "case": "Wari",
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ],
+          "beats_clearly": 0
+        }
+      ],
+      "clear_top": [
+        "Venetian Republic",
+        "Tokugawa Japan",
+        "Old Kingdom Egypt"
+      ],
+      "clear_bottom": [],
+      "defensible_pairs": 61,
+      "total_pairs": 300,
+      "defensible_pct": 20.3
+    }
+  },
+  "profiles": [
+    {
+      "case": "Venetian Republic",
+      "avg": 0.797,
+      "strongest": "P5",
+      "weakest": "P3",
+      "spread": 0.35,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.812,
+          "band": [
+            0.713,
+            0.887
+          ]
+        },
+        "P2": {
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ]
+        },
+        "P3": {
+          "point": 0.65,
+          "band": [
+            0.517,
+            0.783
+          ]
+        },
+        "P4": {
+          "point": 0.773,
+          "band": [
+            0.64,
+            0.907
+          ]
+        },
+        "P5": {
+          "point": 1.0,
+          "band": [
+            0.9,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "case": "Song Dynasty",
+      "avg": 0.72,
+      "strongest": "P1",
+      "weakest": "P3",
+      "spread": 0.308,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ]
+        },
+        "P2": {
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ]
+        },
+        "P3": {
+          "point": 0.567,
+          "band": [
+            0.4,
+            0.733
+          ]
+        },
+        "P4": {
+          "point": 0.607,
+          "band": [
+            0.473,
+            0.74
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ]
+        }
+      }
+    },
+    {
+      "case": "Tang Dynasty",
+      "avg": 0.675,
+      "strongest": "P1",
+      "weakest": "P3",
+      "spread": 0.442,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ]
+        },
+        "P2": {
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ]
+        },
+        "P3": {
+          "point": 0.433,
+          "band": [
+            0.267,
+            0.6
+          ]
+        },
+        "P4": {
+          "point": 0.643,
+          "band": [
+            0.46,
+            0.827
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "case": "Tokugawa Japan",
+      "avg": 0.674,
+      "strongest": "P5",
+      "weakest": "P3",
+      "spread": 0.208,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.688,
+          "band": [
+            0.575,
+            0.8
+          ]
+        },
+        "P2": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        },
+        "P3": {
+          "point": 0.617,
+          "band": [
+            0.5,
+            0.733
+          ]
+        },
+        "P4": {
+          "point": 0.617,
+          "band": [
+            0.483,
+            0.75
+          ]
+        },
+        "P5": {
+          "point": 0.825,
+          "band": [
+            0.725,
+            0.925
+          ]
+        }
+      }
+    },
+    {
+      "case": "Byzantine (Macedonian)",
+      "avg": 0.629,
+      "strongest": "P1",
+      "weakest": "P3",
+      "spread": 0.273,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ]
+        },
+        "P2": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        },
+        "P3": {
+          "point": 0.477,
+          "band": [
+            0.293,
+            0.66
+          ]
+        },
+        "P4": {
+          "point": 0.617,
+          "band": [
+            0.483,
+            0.75
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ]
+        }
+      }
+    },
+    {
+      "case": "Sasanian Persia",
+      "avg": 0.619,
+      "strongest": "P1",
+      "weakest": "P3",
+      "spread": 0.323,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.75,
+          "band": [
+            0.637,
+            0.863
+          ]
+        },
+        "P2": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        },
+        "P3": {
+          "point": 0.427,
+          "band": [
+            0.243,
+            0.61
+          ]
+        },
+        "P4": {
+          "point": 0.617,
+          "band": [
+            0.433,
+            0.8
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "case": "Ottoman (classical)",
+      "avg": 0.619,
+      "strongest": "P1",
+      "weakest": "P3",
+      "spread": 0.448,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.875,
+          "band": [
+            0.775,
+            0.925
+          ]
+        },
+        "P2": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        },
+        "P3": {
+          "point": 0.427,
+          "band": [
+            0.26,
+            0.593
+          ]
+        },
+        "P4": {
+          "point": 0.617,
+          "band": [
+            0.467,
+            0.767
+          ]
+        },
+        "P5": {
+          "point": 0.55,
+          "band": [
+            0.45,
+            0.65
+          ]
+        }
+      }
+    },
+    {
+      "case": "Achaemenid Persia",
+      "avg": 0.572,
+      "strongest": "P5",
+      "weakest": "P3",
+      "spread": 0.3,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.625,
+          "band": [
+            0.512,
+            0.738
+          ]
+        },
+        "P2": {
+          "point": 0.55,
+          "band": [
+            0.425,
+            0.675
+          ]
+        },
+        "P3": {
+          "point": 0.4,
+          "band": [
+            0.217,
+            0.583
+          ]
+        },
+        "P4": {
+          "point": 0.583,
+          "band": [
+            0.4,
+            0.767
+          ]
+        },
+        "P5": {
+          "point": 0.7,
+          "band": [
+            0.6,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "case": "Joseon Korea",
+      "avg": 0.572,
+      "strongest": "P2",
+      "weakest": "P3",
+      "spread": 0.37,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.688,
+          "band": [
+            0.575,
+            0.8
+          ]
+        },
+        "P2": {
+          "point": 0.75,
+          "band": [
+            0.65,
+            0.85
+          ]
+        },
+        "P3": {
+          "point": 0.38,
+          "band": [
+            0.197,
+            0.563
+          ]
+        },
+        "P4": {
+          "point": 0.417,
+          "band": [
+            0.233,
+            0.6
+          ]
+        },
+        "P5": {
+          "point": 0.625,
+          "band": [
+            0.5,
+            0.75
+          ]
+        }
+      }
+    },
+    {
+      "case": "New Kingdom Egypt",
+      "avg": 0.544,
+      "strongest": "P5",
+      "weakest": "P3",
+      "spread": 0.423,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.625,
+          "band": [
+            0.512,
+            0.738
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.327,
+          "band": [
+            0.177,
+            0.477
+          ]
+        },
+        "P4": {
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ]
+        },
+        "P5": {
+          "point": 0.75,
+          "band": [
+            0.625,
+            0.875
+          ]
+        }
+      }
+    },
+    {
+      "case": "Gupta Empire",
+      "avg": 0.522,
+      "strongest": "P2",
+      "weakest": "P3",
+      "spread": 0.352,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.675,
+          "band": [
+            0.575,
+            0.775
+          ]
+        },
+        "P3": {
+          "point": 0.323,
+          "band": [
+            0.14,
+            0.507
+          ]
+        },
+        "P4": {
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ]
+        },
+        "P5": {
+          "point": 0.675,
+          "band": [
+            0.55,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "case": "Vijayanagara",
+      "avg": 0.466,
+      "strongest": "P5",
+      "weakest": "P3",
+      "spread": 0.227,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        },
+        "P3": {
+          "point": 0.323,
+          "band": [
+            0.157,
+            0.49
+          ]
+        },
+        "P4": {
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ]
+        },
+        "P5": {
+          "point": 0.55,
+          "band": [
+            0.4,
+            0.7
+          ]
+        }
+      }
+    },
+    {
+      "case": "Aztec Triple Alliance",
+      "avg": 0.465,
+      "strongest": "P1",
+      "weakest": "P3",
+      "spread": 0.09,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.5,
+          "band": [
+            0.388,
+            0.613
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.41,
+          "band": [
+            0.277,
+            0.543
+          ]
+        },
+        "P4": {
+          "point": 0.417,
+          "band": [
+            0.233,
+            0.6
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "case": "Old Kingdom Egypt",
+      "avg": 0.458,
+      "strongest": "P5",
+      "weakest": "P3",
+      "spread": 0.517,
+      "robust": true,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.325,
+            0.55
+          ]
+        },
+        "P2": {
+          "point": 0.45,
+          "band": [
+            0.325,
+            0.575
+          ]
+        },
+        "P3": {
+          "point": 0.283,
+          "band": [
+            0.117,
+            0.467
+          ]
+        },
+        "P4": {
+          "point": 0.317,
+          "band": [
+            0.15,
+            0.5
+          ]
+        },
+        "P5": {
+          "point": 0.8,
+          "band": [
+            0.675,
+            0.925
+          ]
+        }
+      }
+    },
+    {
+      "case": "Majapahit",
+      "avg": 0.447,
+      "strongest": "P2",
+      "weakest": "P3",
+      "spread": 0.203,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        },
+        "P3": {
+          "point": 0.297,
+          "band": [
+            0.113,
+            0.48
+          ]
+        },
+        "P4": {
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        }
+      }
+    },
+    {
+      "case": "Mauryan Empire",
+      "avg": 0.444,
+      "strongest": "P1",
+      "weakest": "P3",
+      "spread": 0.255,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.562,
+          "band": [
+            0.425,
+            0.7
+          ]
+        },
+        "P2": {
+          "point": 0.45,
+          "band": [
+            0.3,
+            0.6
+          ]
+        },
+        "P3": {
+          "point": 0.307,
+          "band": [
+            0.123,
+            0.49
+          ]
+        },
+        "P4": {
+          "point": 0.4,
+          "band": [
+            0.233,
+            0.583
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "case": "Aksum",
+      "avg": 0.432,
+      "strongest": "P2",
+      "weakest": "P3",
+      "spread": 0.217,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.375,
+          "band": [
+            0.188,
+            0.562
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        },
+        "P3": {
+          "point": 0.283,
+          "band": [
+            0.1,
+            0.467
+          ]
+        },
+        "P4": {
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.3,
+            0.7
+          ]
+        }
+      }
+    },
+    {
+      "case": "Khmer / Angkor",
+      "avg": 0.429,
+      "strongest": "P2",
+      "weakest": "P3",
+      "spread": 0.193,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.307,
+          "band": [
+            0.14,
+            0.473
+          ]
+        },
+        "P4": {
+          "point": 0.4,
+          "band": [
+            0.233,
+            0.583
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "case": "Mali Empire",
+      "avg": 0.413,
+      "strongest": "P4",
+      "weakest": "P3",
+      "spread": 0.25,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.438,
+          "band": [
+            0.287,
+            0.588
+          ]
+        },
+        "P2": {
+          "point": 0.375,
+          "band": [
+            0.225,
+            0.525
+          ]
+        },
+        "P3": {
+          "point": 0.25,
+          "band": [
+            0.067,
+            0.433
+          ]
+        },
+        "P4": {
+          "point": 0.5,
+          "band": [
+            0.317,
+            0.683
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.35,
+            0.65
+          ]
+        }
+      }
+    },
+    {
+      "case": "Classic Maya",
+      "avg": 0.385,
+      "strongest": "P2",
+      "weakest": "P3",
+      "spread": 0.193,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.312,
+          "band": [
+            0.175,
+            0.45
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.307,
+          "band": [
+            0.173,
+            0.44
+          ]
+        },
+        "P4": {
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ]
+        },
+        "P5": {
+          "point": 0.425,
+          "band": [
+            0.325,
+            0.525
+          ]
+        }
+      }
+    },
+    {
+      "case": "Srivijaya",
+      "avg": 0.384,
+      "strongest": "P4",
+      "weakest": "P1",
+      "spread": 0.267,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ]
+        },
+        "P2": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        },
+        "P3": {
+          "point": 0.28,
+          "band": [
+            0.05,
+            0.53
+          ]
+        },
+        "P4": {
+          "point": 0.517,
+          "band": [
+            0.333,
+            0.7
+          ]
+        },
+        "P5": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        }
+      }
+    },
+    {
+      "case": "Carolingian",
+      "avg": 0.361,
+      "strongest": "P5",
+      "weakest": "P3",
+      "spread": 0.243,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.375,
+          "band": [
+            0.263,
+            0.487
+          ]
+        },
+        "P2": {
+          "point": 0.375,
+          "band": [
+            0.25,
+            0.5
+          ]
+        },
+        "P3": {
+          "point": 0.257,
+          "band": [
+            0.083,
+            0.44
+          ]
+        },
+        "P4": {
+          "point": 0.297,
+          "band": [
+            0.15,
+            0.447
+          ]
+        },
+        "P5": {
+          "point": 0.5,
+          "band": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "case": "Tiwanaku",
+      "avg": 0.348,
+      "strongest": "P5",
+      "weakest": "P3",
+      "spread": 0.238,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        },
+        "P2": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        },
+        "P3": {
+          "point": 0.187,
+          "band": [
+            0.087,
+            0.337
+          ]
+        },
+        "P4": {
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ]
+        },
+        "P5": {
+          "point": 0.425,
+          "band": [
+            0.225,
+            0.625
+          ]
+        }
+      }
+    },
+    {
+      "case": "Wari",
+      "avg": 0.313,
+      "strongest": "P4",
+      "weakest": "P3",
+      "spread": 0.193,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.375,
+          "band": [
+            0.2,
+            0.55
+          ]
+        },
+        "P2": {
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ]
+        },
+        "P3": {
+          "point": 0.187,
+          "band": [
+            0.053,
+            0.37
+          ]
+        },
+        "P4": {
+          "point": 0.38,
+          "band": [
+            0.233,
+            0.563
+          ]
+        },
+        "P5": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        }
+      }
+    },
+    {
+      "case": "Great Zimbabwe",
+      "avg": 0.305,
+      "strongest": "P4",
+      "weakest": "P3",
+      "spread": 0.276,
+      "robust": false,
+      "pillars": {
+        "P1": {
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ]
+        },
+        "P2": {
+          "point": 0.25,
+          "band": [
+            0.05,
+            0.45
+          ]
+        },
+        "P3": {
+          "point": 0.187,
+          "band": [
+            0.053,
+            0.353
+          ]
+        },
+        "P4": {
+          "point": 0.463,
+          "band": [
+            0.283,
+            0.68
+          ]
+        },
+        "P5": {
+          "point": 0.375,
+          "band": [
+            0.175,
+            0.575
+          ]
+        }
+      }
+    }
+  ],
+  "defensible_claims": [
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Classic Maya",
+      "margin": 0.375,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Classic Maya",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Srivijaya",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Great Zimbabwe",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Classic Maya",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Srivijaya",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Great Zimbabwe",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Classic Maya",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Srivijaya",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Great Zimbabwe",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Great Zimbabwe",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Wari",
+      "margin": 0.325,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Srivijaya",
+      "margin": 0.325,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Great Zimbabwe",
+      "margin": 0.325,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Wari",
+      "margin": 0.325,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Carolingian",
+      "margin": 0.288,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Carolingian",
+      "margin": 0.288,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Carolingian",
+      "margin": 0.288,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Carolingian",
+      "margin": 0.275,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.25,
+        0.5
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Mauryan Empire",
+      "margin": 0.275,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Khmer / Angkor",
+      "margin": 0.275,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.275,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Carolingian",
+      "margin": 0.275,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Tiwanaku",
+      "margin": 0.275,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.225,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Classic Maya",
+      "margin": 0.263,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Srivijaya",
+      "margin": 0.263,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Great Zimbabwe",
+      "margin": 0.263,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Mali Empire",
+      "margin": 0.25,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.225,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Ottoman (classical)",
+      "margin": 0.25,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.45,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Majapahit",
+      "margin": 0.25,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Mali Empire",
+      "margin": 0.25,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Carolingian",
+      "margin": 0.226,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.225,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.325,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Wari",
+      "margin": 0.225,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.2,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.225,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.325,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Wari",
+      "margin": 0.225,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.2,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.225,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.325,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Wari",
+      "margin": 0.225,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.2,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Aksum",
+      "margin": 0.213,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.188,
+        0.562
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Aksum",
+      "margin": 0.213,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.188,
+        0.562
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Aksum",
+      "margin": 0.213,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.188,
+        0.562
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Tiwanaku",
+      "margin": 0.2,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Tiwanaku",
+      "margin": 0.2,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Tiwanaku",
+      "margin": 0.2,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Classic Maya",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Srivijaya",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Great Zimbabwe",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.2,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.325,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Tiwanaku",
+      "margin": 0.2,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Great Zimbabwe",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Wari",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Great Zimbabwe",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Wari",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Great Zimbabwe",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Wari",
+      "margin": 0.2,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Vijayanagara",
+      "margin": 0.2,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.4,
+        0.7
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Aksum",
+      "margin": 0.2,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.3,
+        0.7
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Classic Maya",
+      "margin": 0.2,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Carolingian",
+      "margin": 0.193,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.15,
+        0.447
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Gupta Empire",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Vijayanagara",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Khmer / Angkor",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Majapahit",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Mali Empire",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Gupta Empire",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Vijayanagara",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Khmer / Angkor",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Majapahit",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Mali Empire",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Gupta Empire",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Vijayanagara",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Khmer / Angkor",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Majapahit",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Mali Empire",
+      "margin": 0.187,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Classic Maya",
+      "margin": 0.187,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Srivijaya",
+      "margin": 0.187,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Great Zimbabwe",
+      "margin": 0.187,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Tiwanaku",
+      "margin": 0.18,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.087,
+        0.337
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Mauryan Empire",
+      "margin": 0.175,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Great Zimbabwe",
+      "margin": 0.164,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.053,
+        0.353
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.163,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.325,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Wari",
+      "margin": 0.163,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.2,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Carolingian",
+      "margin": 0.163,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Tiwanaku",
+      "margin": 0.163,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.087,
+        0.337
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.162,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.388,
+        0.613
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.162,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.388,
+        0.613
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.162,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.388,
+        0.613
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Aksum",
+      "margin": 0.151,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.188,
+        0.562
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Carolingian",
+      "margin": 0.15,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Khmer / Angkor",
+      "margin": 0.15,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Srivijaya",
+      "margin": 0.15,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.15,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Classic Maya",
+      "margin": 0.15,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.15,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Carolingian",
+      "margin": 0.15,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.25,
+        0.5
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Carolingian",
+      "margin": 0.15,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.25,
+        0.5
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Carolingian",
+      "margin": 0.15,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.25,
+        0.5
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Joseon Korea",
+      "margin": 0.15,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.5,
+        0.75
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Srivijaya",
+      "margin": 0.15,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Great Zimbabwe",
+      "margin": 0.15,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Wari",
+      "margin": 0.15,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Classic Maya",
+      "margin": 0.15,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Wari",
+      "margin": 0.147,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.053,
+        0.37
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Great Zimbabwe",
+      "margin": 0.147,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.053,
+        0.353
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.14,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.15,
+        0.5
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Tiwanaku",
+      "margin": 0.138,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Wari",
+      "margin": 0.13,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.053,
+        0.37
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Gupta Empire",
+      "margin": 0.125,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Vijayanagara",
+      "margin": 0.125,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Khmer / Angkor",
+      "margin": 0.125,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Majapahit",
+      "margin": 0.125,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Mali Empire",
+      "margin": 0.125,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tokugawa Japan",
+      "lower": "Classic Maya",
+      "margin": 0.125,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tokugawa Japan",
+      "lower": "Srivijaya",
+      "margin": 0.125,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tokugawa Japan",
+      "lower": "Great Zimbabwe",
+      "margin": 0.125,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Joseon Korea",
+      "lower": "Classic Maya",
+      "margin": 0.125,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Joseon Korea",
+      "lower": "Srivijaya",
+      "margin": 0.125,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Joseon Korea",
+      "lower": "Great Zimbabwe",
+      "margin": 0.125,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Vijayanagara",
+      "margin": 0.125,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Majapahit",
+      "margin": 0.125,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Aksum",
+      "margin": 0.125,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Mali Empire",
+      "margin": 0.125,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.225,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Mali Empire",
+      "margin": 0.125,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.225,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Mali Empire",
+      "margin": 0.125,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.225,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Gupta Empire",
+      "lower": "Great Zimbabwe",
+      "margin": 0.125,
+      "higher_band": [
+        0.575,
+        0.775
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Gupta Empire",
+      "lower": "Wari",
+      "margin": 0.125,
+      "higher_band": [
+        0.575,
+        0.775
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Song Dynasty",
+      "margin": 0.125,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.575,
+        0.775
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Byzantine (Macedonian)",
+      "margin": 0.125,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.575,
+        0.775
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.1,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.388,
+        0.613
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.1,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.325,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Wari",
+      "margin": 0.1,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.2,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Achaemenid Persia",
+      "margin": 0.1,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.425,
+        0.675
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Achaemenid Persia",
+      "margin": 0.1,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.6,
+        0.8
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Sasanian Persia",
+      "margin": 0.1,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.55,
+        0.8
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Gupta Empire",
+      "margin": 0.1,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.55,
+        0.8
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "Tang Dynasty",
+      "margin": 0.1,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.55,
+        0.8
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Mauryan Empire",
+      "margin": 0.1,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Khmer / Angkor",
+      "margin": 0.1,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.1,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Carolingian",
+      "margin": 0.1,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Tiwanaku",
+      "margin": 0.1,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.225,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Srivijaya",
+      "margin": 0.1,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Great Zimbabwe",
+      "margin": 0.1,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Wari",
+      "margin": 0.1,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "New Kingdom Egypt",
+      "lower": "Classic Maya",
+      "margin": 0.1,
+      "higher_band": [
+        0.625,
+        0.875
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Aksum",
+      "margin": 0.088,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.188,
+        0.562
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tokugawa Japan",
+      "lower": "Carolingian",
+      "margin": 0.088,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Joseon Korea",
+      "lower": "Carolingian",
+      "margin": 0.088,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.087,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.325,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Wari",
+      "margin": 0.087,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.2,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Mali Empire",
+      "margin": 0.084,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.067,
+        0.433
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Classic Maya",
+      "margin": 0.077,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.173,
+        0.44
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Carolingian",
+      "margin": 0.077,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.083,
+        0.44
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Classic Maya",
+      "margin": 0.077,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.233,
+        0.563
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Tiwanaku",
+      "margin": 0.077,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.233,
+        0.563
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Wari",
+      "margin": 0.077,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.233,
+        0.563
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Mauryan Empire",
+      "margin": 0.075,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.425,
+        0.7
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Mauryan Empire",
+      "margin": 0.075,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.425,
+        0.7
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Mauryan Empire",
+      "margin": 0.075,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.425,
+        0.7
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Aksum",
+      "margin": 0.075,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.188,
+        0.562
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Tiwanaku",
+      "margin": 0.075,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.075,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.325,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Tiwanaku",
+      "margin": 0.075,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.075,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.325,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Tiwanaku",
+      "margin": 0.075,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.075,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.325,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Tiwanaku",
+      "margin": 0.075,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Gupta Empire",
+      "lower": "Carolingian",
+      "margin": 0.075,
+      "higher_band": [
+        0.575,
+        0.775
+      ],
+      "lower_band": [
+        0.25,
+        0.5
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Ottoman (classical)",
+      "margin": 0.075,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.45,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Majapahit",
+      "margin": 0.075,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Mali Empire",
+      "margin": 0.075,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Achaemenid Persia",
+      "lower": "Classic Maya",
+      "margin": 0.075,
+      "higher_band": [
+        0.6,
+        0.8
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Mali Empire",
+      "margin": 0.067,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.067,
+        0.433
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Song Dynasty",
+      "lower": "Tiwanaku",
+      "margin": 0.063,
+      "higher_band": [
+        0.4,
+        0.733
+      ],
+      "lower_band": [
+        0.087,
+        0.337
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Tiwanaku",
+      "margin": 0.062,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Gupta Empire",
+      "margin": 0.062,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Vijayanagara",
+      "margin": 0.062,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Khmer / Angkor",
+      "margin": 0.062,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Majapahit",
+      "margin": 0.062,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Mali Empire",
+      "margin": 0.062,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Achaemenid Persia",
+      "lower": "Classic Maya",
+      "margin": 0.062,
+      "higher_band": [
+        0.512,
+        0.738
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Achaemenid Persia",
+      "lower": "Srivijaya",
+      "margin": 0.062,
+      "higher_band": [
+        0.512,
+        0.738
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Achaemenid Persia",
+      "lower": "Great Zimbabwe",
+      "margin": 0.062,
+      "higher_band": [
+        0.512,
+        0.738
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "New Kingdom Egypt",
+      "lower": "Classic Maya",
+      "margin": 0.062,
+      "higher_band": [
+        0.512,
+        0.738
+      ],
+      "lower_band": [
+        0.175,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "New Kingdom Egypt",
+      "lower": "Srivijaya",
+      "margin": 0.062,
+      "higher_band": [
+        0.512,
+        0.738
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "New Kingdom Egypt",
+      "lower": "Great Zimbabwe",
+      "margin": 0.062,
+      "higher_band": [
+        0.512,
+        0.738
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Classic Maya",
+      "margin": 0.06,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.173,
+        0.44
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Carolingian",
+      "margin": 0.06,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.083,
+        0.44
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Mauryan Empire",
+      "margin": 0.057,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.233,
+        0.583
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Khmer / Angkor",
+      "margin": 0.057,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.233,
+        0.583
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Mauryan Empire",
+      "margin": 0.05,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Mauryan Empire",
+      "margin": 0.05,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Mauryan Empire",
+      "margin": 0.05,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Gupta Empire",
+      "lower": "Mali Empire",
+      "margin": 0.05,
+      "higher_band": [
+        0.575,
+        0.775
+      ],
+      "lower_band": [
+        0.225,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Sasanian Persia",
+      "lower": "Great Zimbabwe",
+      "margin": 0.05,
+      "higher_band": [
+        0.5,
+        0.75
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Sasanian Persia",
+      "lower": "Wari",
+      "margin": 0.05,
+      "higher_band": [
+        0.5,
+        0.75
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tokugawa Japan",
+      "lower": "Great Zimbabwe",
+      "margin": 0.05,
+      "higher_band": [
+        0.5,
+        0.75
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tokugawa Japan",
+      "lower": "Wari",
+      "margin": 0.05,
+      "higher_band": [
+        0.5,
+        0.75
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Great Zimbabwe",
+      "margin": 0.05,
+      "higher_band": [
+        0.5,
+        0.75
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Wari",
+      "margin": 0.05,
+      "higher_band": [
+        0.5,
+        0.75
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Ottoman (classical)",
+      "lower": "Great Zimbabwe",
+      "margin": 0.05,
+      "higher_band": [
+        0.5,
+        0.75
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Ottoman (classical)",
+      "lower": "Wari",
+      "margin": 0.05,
+      "higher_band": [
+        0.5,
+        0.75
+      ],
+      "lower_band": [
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.05,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.117,
+        0.467
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Aksum",
+      "margin": 0.05,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.1,
+        0.467
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Mauryan Empire",
+      "margin": 0.05,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Khmer / Angkor",
+      "margin": 0.05,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.05,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Carolingian",
+      "margin": 0.05,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Tiwanaku",
+      "margin": 0.05,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.225,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "New Kingdom Egypt",
+      "lower": "Srivijaya",
+      "margin": 0.05,
+      "higher_band": [
+        0.625,
+        0.875
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "New Kingdom Egypt",
+      "lower": "Great Zimbabwe",
+      "margin": 0.05,
+      "higher_band": [
+        0.625,
+        0.875
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "New Kingdom Egypt",
+      "lower": "Wari",
+      "margin": 0.05,
+      "higher_band": [
+        0.625,
+        0.875
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Song Dynasty",
+      "lower": "Classic Maya",
+      "margin": 0.05,
+      "higher_band": [
+        0.575,
+        0.775
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Classic Maya",
+      "margin": 0.05,
+      "higher_band": [
+        0.575,
+        0.775
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Gupta Empire",
+      "margin": 0.049,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Vijayanagara",
+      "margin": 0.049,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Khmer / Angkor",
+      "margin": 0.049,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Majapahit",
+      "margin": 0.049,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Mali Empire",
+      "margin": 0.049,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.287,
+        0.588
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Song Dynasty",
+      "lower": "Great Zimbabwe",
+      "margin": 0.047,
+      "higher_band": [
+        0.4,
+        0.733
+      ],
+      "lower_band": [
+        0.053,
+        0.353
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Khmer / Angkor",
+      "margin": 0.044,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.14,
+        0.473
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.04,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.177,
+        0.477
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Joseon Korea",
+      "margin": 0.04,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.233,
+        0.6
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Venetian Republic",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.04,
+      "higher_band": [
+        0.64,
+        0.907
+      ],
+      "lower_band": [
+        0.233,
+        0.6
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "Achaemenid Persia",
+      "margin": 0.037,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.512,
+        0.738
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tang Dynasty",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.037,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.512,
+        0.738
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "Achaemenid Persia",
+      "margin": 0.037,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.512,
+        0.738
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Song Dynasty",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.037,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.512,
+        0.738
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "Achaemenid Persia",
+      "margin": 0.037,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.512,
+        0.738
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Ottoman (classical)",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.037,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.512,
+        0.738
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.037,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.388,
+        0.613
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Majapahit",
+      "margin": 0.037,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.113,
+        0.48
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Tokugawa Japan",
+      "lower": "Carolingian",
+      "margin": 0.036,
+      "higher_band": [
+        0.483,
+        0.75
+      ],
+      "lower_band": [
+        0.15,
+        0.447
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Byzantine (Macedonian)",
+      "lower": "Carolingian",
+      "margin": 0.036,
+      "higher_band": [
+        0.483,
+        0.75
+      ],
+      "lower_band": [
+        0.15,
+        0.447
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.033,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.117,
+        0.467
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Aksum",
+      "margin": 0.033,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.1,
+        0.467
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Song Dynasty",
+      "lower": "Wari",
+      "margin": 0.03,
+      "higher_band": [
+        0.4,
+        0.733
+      ],
+      "lower_band": [
+        0.053,
+        0.37
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Vijayanagara",
+      "margin": 0.027,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.157,
+        0.49
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Mauryan Empire",
+      "margin": 0.027,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.123,
+        0.49
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Khmer / Angkor",
+      "margin": 0.027,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.14,
+        0.473
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Song Dynasty",
+      "lower": "Carolingian",
+      "margin": 0.026,
+      "higher_band": [
+        0.473,
+        0.74
+      ],
+      "lower_band": [
+        0.15,
+        0.447
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tokugawa Japan",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.025,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.325,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tokugawa Japan",
+      "lower": "Wari",
+      "margin": 0.025,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.2,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Joseon Korea",
+      "lower": "Old Kingdom Egypt",
+      "margin": 0.025,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.325,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Joseon Korea",
+      "lower": "Wari",
+      "margin": 0.025,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.2,
+        0.55
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Achaemenid Persia",
+      "lower": "Carolingian",
+      "margin": 0.025,
+      "higher_band": [
+        0.512,
+        0.738
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "New Kingdom Egypt",
+      "lower": "Carolingian",
+      "margin": 0.025,
+      "higher_band": [
+        0.512,
+        0.738
+      ],
+      "lower_band": [
+        0.263,
+        0.487
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Sasanian Persia",
+      "margin": 0.025,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.5,
+        0.75
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Tokugawa Japan",
+      "margin": 0.025,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.5,
+        0.75
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Byzantine (Macedonian)",
+      "margin": 0.025,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.5,
+        0.75
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Song Dynasty",
+      "lower": "Ottoman (classical)",
+      "margin": 0.025,
+      "higher_band": [
+        0.775,
+        0.925
+      ],
+      "lower_band": [
+        0.5,
+        0.75
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Khmer / Angkor",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Srivijaya",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "Classic Maya",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Tang Dynasty",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Khmer / Angkor",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Srivijaya",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "Classic Maya",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Joseon Korea",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Khmer / Angkor",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Srivijaya",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "Classic Maya",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P2",
+      "higher": "Venetian Republic",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.025,
+      "higher_band": [
+        0.65,
+        0.85
+      ],
+      "lower_band": [
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Venetian Republic",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.025,
+      "higher_band": [
+        0.9,
+        1.0
+      ],
+      "lower_band": [
+        0.625,
+        0.875
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Vijayanagara",
+      "margin": 0.025,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.4,
+        0.7
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tokugawa Japan",
+      "lower": "Aksum",
+      "margin": 0.025,
+      "higher_band": [
+        0.725,
+        0.925
+      ],
+      "lower_band": [
+        0.3,
+        0.7
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Ottoman (classical)",
+      "margin": 0.025,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.45,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Majapahit",
+      "margin": 0.025,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Old Kingdom Egypt",
+      "lower": "Mali Empire",
+      "margin": 0.025,
+      "higher_band": [
+        0.675,
+        0.925
+      ],
+      "lower_band": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Achaemenid Persia",
+      "lower": "Srivijaya",
+      "margin": 0.025,
+      "higher_band": [
+        0.6,
+        0.8
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Achaemenid Persia",
+      "lower": "Great Zimbabwe",
+      "margin": 0.025,
+      "higher_band": [
+        0.6,
+        0.8
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Achaemenid Persia",
+      "lower": "Wari",
+      "margin": 0.025,
+      "higher_band": [
+        0.6,
+        0.8
+      ],
+      "lower_band": [
+        0.175,
+        0.575
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Sasanian Persia",
+      "lower": "Classic Maya",
+      "margin": 0.025,
+      "higher_band": [
+        0.55,
+        0.8
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Gupta Empire",
+      "lower": "Classic Maya",
+      "margin": 0.025,
+      "higher_band": [
+        0.55,
+        0.8
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P5",
+      "higher": "Tang Dynasty",
+      "lower": "Classic Maya",
+      "margin": 0.025,
+      "higher_band": [
+        0.55,
+        0.8
+      ],
+      "lower_band": [
+        0.325,
+        0.525
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Sasanian Persia",
+      "lower": "Aztec Triple Alliance",
+      "margin": 0.024,
+      "higher_band": [
+        0.637,
+        0.863
+      ],
+      "lower_band": [
+        0.388,
+        0.613
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "New Kingdom Egypt",
+      "margin": 0.023,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.177,
+        0.477
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Majapahit",
+      "margin": 0.02,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.113,
+        0.48
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Ottoman (classical)",
+      "lower": "Carolingian",
+      "margin": 0.02,
+      "higher_band": [
+        0.467,
+        0.767
+      ],
+      "lower_band": [
+        0.15,
+        0.447
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Venetian Republic",
+      "lower": "Mauryan Empire",
+      "margin": 0.013,
+      "higher_band": [
+        0.713,
+        0.887
+      ],
+      "lower_band": [
+        0.425,
+        0.7
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Tokugawa Japan",
+      "lower": "Aksum",
+      "margin": 0.013,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.188,
+        0.562
+      ]
+    },
+    {
+      "pillar": "P1",
+      "higher": "Joseon Korea",
+      "lower": "Aksum",
+      "margin": 0.013,
+      "higher_band": [
+        0.575,
+        0.8
+      ],
+      "lower_band": [
+        0.188,
+        0.562
+      ]
+    },
+    {
+      "pillar": "P4",
+      "higher": "Tang Dynasty",
+      "lower": "Carolingian",
+      "margin": 0.013,
+      "higher_band": [
+        0.46,
+        0.827
+      ],
+      "lower_band": [
+        0.15,
+        0.447
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Venetian Republic",
+      "lower": "Gupta Empire",
+      "margin": 0.01,
+      "higher_band": [
+        0.517,
+        0.783
+      ],
+      "lower_band": [
+        0.14,
+        0.507
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Vijayanagara",
+      "margin": 0.01,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.157,
+        0.49
+      ]
+    },
+    {
+      "pillar": "P3",
+      "higher": "Tokugawa Japan",
+      "lower": "Mauryan Empire",
+      "margin": 0.01,
+      "higher_band": [
+        0.5,
+        0.733
+      ],
+      "lower_band": [
+        0.123,
+        0.49
+      ]
+    }
+  ],
+  "summary": {
+    "total_claims": 289,
+    "total_possible": 1500,
+    "pct": 19.3
+  }
+}

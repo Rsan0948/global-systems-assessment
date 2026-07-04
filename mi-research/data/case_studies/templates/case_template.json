@@ -23,8 +23,14 @@
     "legal_suppression",
     "extreme_porosity",
     "prospective",
-    "comparative_trajectory"
+    "comparative_trajectory",
+    "ancient_proxy"
   ],
+  "track_reference": {
+    "1": "Modern case with full WGI/WDI indicators",
+    "2": "Historical case with partial modern-era data",
+    "3": "Pre-modern case using proxy indicators (14 indicators, period-normalized ceilings: LE≤40, GDP≤$2000 GK$). Composite MI ranking is NOT defensible for exact ordering; pillar-level comparisons are the valid unit of analysis. Each indicator carries a confidence tag (HIGH ±0.10, MODERATE ±0.15, LOW ±0.25)."
+  },
   "pre_event": {
     "time_point": "",
     "event_description": "",

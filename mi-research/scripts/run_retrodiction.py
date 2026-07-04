@@ -147,6 +147,31 @@ def run_phase3(case_data: dict) -> dict:
     return scorecard
 
 
+def _check_track3_confidence(case_data: dict):
+    """Print a confidence warning for Track 3 (ancient proxy) cases."""
+    if case_data.get("track") != 3:
+        return
+    low_count = 0
+    total_count = 0
+    for tp_key in ("peak", "pre_stress"):
+        tp = case_data.get(tp_key, {})
+        for p in ("P1", "P2", "P3", "P4", "P5"):
+            indicators = tp.get(p, {}).get("indicators", {})
+            for ind in indicators.values():
+                total_count += 1
+                if ind.get("confidence") == "LOW":
+                    low_count += 1
+    if total_count > 0 and low_count > 0:
+        pct = 100 * low_count / total_count
+        rob = case_data.get("robustness", {})
+        claims = rob.get("total_defensible_claims", "?")
+        max_claims = rob.get("max_possible_claims", "?")
+        print(f"\n  ⚠  TRACK 3 CONFIDENCE NOTE")
+        print(f"     {low_count}/{total_count} indicators ({pct:.0f}%) are LOW confidence")
+        print(f"     {claims}/{max_claims} pillar-level claims survive uncertainty")
+        print(f"     Pillar-level comparisons are more defensible than composite MI ranking")
+
+
 def validate_baseline(completed_dir: str):
     """Validate all completed case studies against the baseline."""
     completed_path = Path(completed_dir)
@@ -234,9 +259,11 @@ def main():
     with open(args.case) as f:
         case_data = json.load(f)
 
-    case_name = case_data.get("metadata", {}).get("case_name", "Unknown")
+    case_name = case_data.get("metadata", {}).get("case_name", case_data.get("name", "Unknown"))
     print(f"\nMI RETRODICTION PROTOCOL — {case_name}")
     print(f"Timestamp: {datetime.now().isoformat()}")
+
+    _check_track3_confidence(case_data)
 
     if args.phase is None or args.phase == 1:
         phase1_results = run_phase1(case_data)

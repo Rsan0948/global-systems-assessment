@@ -1,0 +1,389 @@
+{
+  "method": "Monte Carlo robustness (10,000 runs, uniform perturbation)",
+  "seed": 42,
+  "n_runs": 10000,
+  "frontier_runs": 2000,
+  "mi_rank_stability": [
+    {
+      "case": "Venetian Republic",
+      "base_rank": 1,
+      "median": 1.0,
+      "mode": 1,
+      "min": 1,
+      "max": 2,
+      "iqr": 0,
+      "wobble": 1
+    },
+    {
+      "case": "Song Dynasty",
+      "base_rank": 2,
+      "median": 2.0,
+      "mode": 2,
+      "min": 1,
+      "max": 5,
+      "iqr": 0,
+      "wobble": 4
+    },
+    {
+      "case": "Tang Dynasty",
+      "base_rank": 3,
+      "median": 3.0,
+      "mode": 3,
+      "min": 1,
+      "max": 7,
+      "iqr": 0,
+      "wobble": 6
+    },
+    {
+      "case": "Tokugawa Japan",
+      "base_rank": 4,
+      "median": 4.0,
+      "mode": 4,
+      "min": 2,
+      "max": 8,
+      "iqr": 1,
+      "wobble": 6
+    },
+    {
+      "case": "Ottoman (classical)",
+      "base_rank": 5,
+      "median": 5.0,
+      "mode": 5,
+      "min": 2,
+      "max": 9,
+      "iqr": 1,
+      "wobble": 7
+    },
+    {
+      "case": "Byzantine (Macedonian)",
+      "base_rank": 6,
+      "median": 6.0,
+      "mode": 6,
+      "min": 2,
+      "max": 9,
+      "iqr": 2,
+      "wobble": 7
+    },
+    {
+      "case": "Sasanian Persia",
+      "base_rank": 7,
+      "median": 7.0,
+      "mode": 7,
+      "min": 2,
+      "max": 10,
+      "iqr": 1,
+      "wobble": 8
+    },
+    {
+      "case": "Joseon Korea",
+      "base_rank": 8,
+      "median": 9.0,
+      "mode": 8,
+      "min": 5,
+      "max": 12,
+      "iqr": 1,
+      "wobble": 7
+    },
+    {
+      "case": "Achaemenid Persia",
+      "base_rank": 9,
+      "median": 9.0,
+      "mode": 9,
+      "min": 4,
+      "max": 11,
+      "iqr": 1,
+      "wobble": 7
+    },
+    {
+      "case": "New Kingdom Egypt",
+      "base_rank": 10,
+      "median": 10.0,
+      "mode": 10,
+      "min": 6,
+      "max": 13,
+      "iqr": 1,
+      "wobble": 7
+    },
+    {
+      "case": "Gupta Empire",
+      "base_rank": 11,
+      "median": 11.0,
+      "mode": 11,
+      "min": 8,
+      "max": 19,
+      "iqr": 1,
+      "wobble": 11
+    },
+    {
+      "case": "Aztec Triple Alliance",
+      "base_rank": 12,
+      "median": 13.0,
+      "mode": 12,
+      "min": 10,
+      "max": 21,
+      "iqr": 3,
+      "wobble": 11
+    },
+    {
+      "case": "Mauryan Empire",
+      "base_rank": 13,
+      "median": 14.0,
+      "mode": 12,
+      "min": 10,
+      "max": 22,
+      "iqr": 3,
+      "wobble": 12
+    },
+    {
+      "case": "Vijayanagara",
+      "base_rank": 14,
+      "median": 14.0,
+      "mode": 13,
+      "min": 10,
+      "max": 21,
+      "iqr": 4,
+      "wobble": 11
+    },
+    {
+      "case": "Old Kingdom Egypt",
+      "base_rank": 15,
+      "median": 15.0,
+      "mode": 16,
+      "min": 11,
+      "max": 22,
+      "iqr": 3,
+      "wobble": 11
+    },
+    {
+      "case": "Majapahit",
+      "base_rank": 16,
+      "median": 15.0,
+      "mode": 16,
+      "min": 11,
+      "max": 23,
+      "iqr": 3,
+      "wobble": 12
+    },
+    {
+      "case": "Khmer / Angkor",
+      "base_rank": 17,
+      "median": 17.0,
+      "mode": 18,
+      "min": 11,
+      "max": 24,
+      "iqr": 2,
+      "wobble": 13
+    },
+    {
+      "case": "Aksum",
+      "base_rank": 18,
+      "median": 18.0,
+      "mode": 19,
+      "min": 11,
+      "max": 24,
+      "iqr": 3,
+      "wobble": 13
+    },
+    {
+      "case": "Mali Empire",
+      "base_rank": 19,
+      "median": 18.0,
+      "mode": 19,
+      "min": 11,
+      "max": 24,
+      "iqr": 3,
+      "wobble": 13
+    },
+    {
+      "case": "Classic Maya",
+      "base_rank": 20,
+      "median": 21.0,
+      "mode": 21,
+      "min": 14,
+      "max": 25,
+      "iqr": 2,
+      "wobble": 11
+    },
+    {
+      "case": "Srivijaya",
+      "base_rank": 21,
+      "median": 22.0,
+      "mode": 20,
+      "min": 13,
+      "max": 25,
+      "iqr": 3,
+      "wobble": 12
+    },
+    {
+      "case": "Carolingian",
+      "base_rank": 22,
+      "median": 22.0,
+      "mode": 22,
+      "min": 13,
+      "max": 25,
+      "iqr": 2,
+      "wobble": 12
+    },
+    {
+      "case": "Tiwanaku",
+      "base_rank": 23,
+      "median": 22.0,
+      "mode": 23,
+      "min": 13,
+      "max": 25,
+      "iqr": 2,
+      "wobble": 12
+    },
+    {
+      "case": "Wari",
+      "base_rank": 24,
+      "median": 24.0,
+      "mode": 24,
+      "min": 16,
+      "max": 25,
+      "iqr": 1,
+      "wobble": 9
+    },
+    {
+      "case": "Great Zimbabwe",
+      "base_rank": 25,
+      "median": 25.0,
+      "mode": 25,
+      "min": 17,
+      "max": 25,
+      "iqr": 1,
+      "wobble": 8
+    }
+  ],
+  "pillar_claim_stats": {
+    "P1": {
+      "total": 300,
+      "above_99": 199,
+      "above_95": 214,
+      "above_90": 235,
+      "above_75": 272,
+      "below_60": 28
+    },
+    "P2": {
+      "total": 300,
+      "above_99": 127,
+      "above_95": 178,
+      "above_90": 205,
+      "above_75": 234,
+      "below_60": 42
+    },
+    "P3": {
+      "total": 300,
+      "above_99": 79,
+      "above_95": 113,
+      "above_90": 156,
+      "above_75": 212,
+      "below_60": 37
+    },
+    "P4": {
+      "total": 300,
+      "above_99": 88,
+      "above_95": 107,
+      "above_90": 162,
+      "above_75": 226,
+      "below_60": 47
+    },
+    "P5": {
+      "total": 300,
+      "above_99": 138,
+      "above_95": 178,
+      "above_90": 185,
+      "above_75": 237,
+      "below_60": 36
+    }
+  },
+  "fragility_frontier": {
+    "10%": {
+      "above_99": 1320,
+      "above_95": 1347,
+      "above_90": 1353,
+      "above_75": 1361,
+      "below_60": 135,
+      "avg_survival": 0.9526
+    },
+    "20%": {
+      "above_99": 1258,
+      "above_95": 1291,
+      "above_90": 1311,
+      "above_75": 1353,
+      "below_60": 139,
+      "avg_survival": 0.9458
+    },
+    "30%": {
+      "above_99": 1201,
+      "above_95": 1250,
+      "above_90": 1276,
+      "above_75": 1327,
+      "below_60": 142,
+      "avg_survival": 0.9386
+    },
+    "40%": {
+      "above_99": 1122,
+      "above_95": 1200,
+      "above_90": 1244,
+      "above_75": 1306,
+      "below_60": 143,
+      "avg_survival": 0.9311
+    },
+    "50%": {
+      "above_99": 1037,
+      "above_95": 1144,
+      "above_90": 1204,
+      "above_75": 1289,
+      "below_60": 147,
+      "avg_survival": 0.9229
+    },
+    "60%": {
+      "above_99": 922,
+      "above_95": 1087,
+      "above_90": 1155,
+      "above_75": 1263,
+      "below_60": 153,
+      "avg_survival": 0.9139
+    },
+    "70%": {
+      "above_99": 821,
+      "above_95": 1020,
+      "above_90": 1114,
+      "above_75": 1250,
+      "below_60": 165,
+      "avg_survival": 0.9047
+    },
+    "80%": {
+      "above_99": 740,
+      "above_95": 936,
+      "above_90": 1072,
+      "above_75": 1236,
+      "below_60": 174,
+      "avg_survival": 0.8952
+    },
+    "90%": {
+      "above_99": 680,
+      "above_95": 870,
+      "above_90": 1016,
+      "above_75": 1221,
+      "below_60": 184,
+      "avg_survival": 0.8859
+    },
+    "100%": {
+      "above_99": 631,
+      "above_95": 790,
+      "above_90": 946,
+      "above_75": 1177,
+      "below_60": 190,
+      "avg_survival": 0.8752
+    }
+  },
+  "summary": {
+    "total_claims": 1500,
+    "ironclad_99": 631,
+    "robust_95": 790,
+    "solid_90": 943,
+    "coin_flips_60": 190
+  }
+}
