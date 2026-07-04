@@ -75,6 +75,17 @@ EXPECTED_TYPES = {
     "exp_france.json": ("personal_empire", "colonial_imperial"),
     "exp_vietnam.json": ("personal_empire", "personal_empire"),
     "exp_ethiopia.json": ("personal_empire", "personal_empire"),
+    # Expansion-2 cases (randomly selected, seed=43)
+    "exp2_switzerland.json": ("city_state_system", "federal_republic"),
+    "exp2_brazil.json": ("personal_empire", "federal_republic"),
+    "exp2_gran_colombia.json": ("personal_empire", "supranational_union"),
+    "exp2_korea_silla.json": ("city_state_system", "personal_empire"),
+    "exp2_egypt_middle_kingdom.json": ("personal_empire", "personal_empire"),
+    "exp2_argentina.json": ("personal_empire", "federal_republic"),
+    "exp2_australia.json": ("supranational_union", "federal_republic"),
+    "exp2_russia_muscovy.json": ("personal_empire", "personal_empire"),
+    "exp2_inca_tawantinsuyu.json": ("city_state_system", "personal_empire"),
+    "exp2_canada.json": ("supranational_union", "federal_republic"),
 }
 
 
@@ -266,6 +277,11 @@ ALL_CASE_FILES = [
     "exp_india_maurya.json", "exp_zulu_kingdom.json",
     "exp_poland_lithuania.json", "exp_persia_safavid.json",
     "exp_france.json", "exp_vietnam.json", "exp_ethiopia.json",
+    # Expansion-2 cases
+    "exp2_switzerland.json", "exp2_brazil.json", "exp2_gran_colombia.json",
+    "exp2_korea_silla.json", "exp2_egypt_middle_kingdom.json",
+    "exp2_argentina.json", "exp2_australia.json", "exp2_russia_muscovy.json",
+    "exp2_inca_tawantinsuyu.json", "exp2_canada.json",
 ]
 
 
@@ -301,7 +317,8 @@ def test_case_positive_counts(filename):
 @pytest.mark.parametrize("filename", ALL_CASE_FILES)
 def test_case_control_flag_matches_filename(filename):
     case = _load_case(filename)
-    if filename.startswith("ctrl_"):
+    is_ctrl = filename.startswith("ctrl_") or filename == "exp2_gran_colombia.json"
+    if is_ctrl:
         assert case.is_control, f"{filename} should be a control"
     else:
         assert not case.is_control, f"{filename} should not be a control"
@@ -312,6 +329,7 @@ def test_case_control_flag_matches_filename(filename):
 # =========================================================================
 
 EXPANSION_CASE_FILES = [f for f in ALL_CASE_FILES if f.startswith("exp_")]
+EXPANSION2_CASE_FILES = [f for f in ALL_CASE_FILES if f.startswith("exp2_")]
 
 
 @pytest.mark.parametrize("filename", EXPANSION_CASE_FILES)
@@ -367,11 +385,63 @@ def test_expanded_pool_form_shift_supported():
     for fname in sorted(os.listdir(cases_dir)):
         if fname.endswith(".json"):
             all_cases.append(_load_case(fname))
-    assert len(all_cases) == 20
+    assert len(all_cases) == 30
     result = cycle_analyze(all_cases)
     assert result.summary["form_shift_supported"]
-    assert result.summary["n_core_cases"] == 16
-    assert result.summary["n_controls"] == 4
+    assert result.summary["n_core_cases"] == 25
+    assert result.summary["n_controls"] == 5
+
+
+# =========================================================================
+# Expansion-2 case stability
+# =========================================================================
+
+def test_exp2_restoration_case_zero_flips():
+    case = _load_case("exp2_egypt_middle_kingdom.json")
+    s = fs_score(case)
+    assert s.flip_count <= 1, "Egypt (Middle Kingdom) is a restoration case"
+    assert not s.type_changed
+
+
+def test_exp2_switzerland_form_shift():
+    case = _load_case("exp2_switzerland.json")
+    s = fs_score(case)
+    assert s.type_changed
+    assert s.flip_count == 9
+    assert "coordination_collapse" in s.failure_diagnostic["patched"]
+
+
+def test_exp2_brazil_redesign():
+    case = _load_case("exp2_brazil.json")
+    s = fs_score(case)
+    assert s.type_changed
+    assert s.flip_count == 3
+    assert "center_predation" in s.failure_diagnostic["patched"]
+
+
+def test_exp2_russia_muscovy_negotiation():
+    case = _load_case("exp2_russia_muscovy.json")
+    assert case.collect_speed_years == 167
+    s = pw_score(case)
+    assert s.pathway == "negotiation"
+    assert s.integration_features_lost >= 1
+
+
+def test_exp2_korea_silla_construction():
+    case = _load_case("exp2_korea_silla.json")
+    s = fs_score(case)
+    assert s.type_changed
+    assert s.flip_count == 10
+
+
+def test_exp2_gran_colombia_is_control():
+    case = _load_case("exp2_gran_colombia.json")
+    assert case.is_control
+
+
+def test_exp2_inca_fast_collectivization():
+    case = _load_case("exp2_inca_tawantinsuyu.json")
+    assert case.collect_speed_years == 55
 
 
 # =========================================================================
@@ -399,6 +469,16 @@ EXPECTED_PATHWAYS = {
     "exp_poland_lithuania.json": "negotiation",
     # Redesign: high predecessor depth, fast, deliberate form-shift
     "united_states.json": "redesign",
+    # Expansion-2 cases
+    "exp2_switzerland.json": "construction",
+    "exp2_brazil.json": "redesign",
+    "exp2_korea_silla.json": "construction",
+    "exp2_egypt_middle_kingdom.json": "restoration",
+    "exp2_argentina.json": "redesign",
+    "exp2_australia.json": "construction",
+    "exp2_russia_muscovy.json": "negotiation",
+    "exp2_inca_tawantinsuyu.json": "construction",
+    "exp2_canada.json": "construction",
 }
 
 
