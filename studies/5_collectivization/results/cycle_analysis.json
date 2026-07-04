@@ -302,7 +302,23 @@
     "controls_mean_flips": 9.0,
     "mann_whitney_p": 0.4148,
     "all_cases_shifted_type": true,
-    "patching_rate": 0.83
+    "patching_rate": 0.83,
+    "net_patch_cases": [
+      0,
+      1,
+      3,
+      3,
+      2,
+      0
+    ],
+    "net_patch_controls": [
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "net_patch_u": 24.0,
+    "net_patch_p": 0.0054
   },
   "timing_intensity": {
     "spearman_matrix": {
@@ -439,7 +455,7 @@
   },
   "summary": {
     "ratchet_supported": true,
-    "form_shift_supported": false,
+    "form_shift_supported": true,
     "all_types_shifted": true,
     "dominant_mechanism_channel": "coordination_failure",
     "warning_signals_hit_rate": 0.83,

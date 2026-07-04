@@ -139,6 +139,10 @@ def analyze(cases: list[CaseProfile]) -> CycleAnalysis:
         "mann_whitney_p": f.mann_whitney_p,
         "all_cases_shifted_type": f.all_cases_shifted_type,
         "patching_rate": f.patching_rate,
+        "net_patch_cases": f.net_patch_cases,
+        "net_patch_controls": f.net_patch_controls,
+        "net_patch_u": f.net_patch_u,
+        "net_patch_p": f.net_patch_p,
     }
 
     ti_dict = {
@@ -148,7 +152,7 @@ def analyze(cases: list[CaseProfile]) -> CycleAnalysis:
 
     summary = {
         "ratchet_supported": r.sign_test_p < 0.05,
-        "form_shift_supported": f.mann_whitney_p < 0.10,
+        "form_shift_supported": f.net_patch_p < 0.10,
         "all_types_shifted": f.all_cases_shifted_type,
         "dominant_mechanism_channel": t.dominant_channel,
         "warning_signals_hit_rate": round(signals_fired / signals_total, 2)

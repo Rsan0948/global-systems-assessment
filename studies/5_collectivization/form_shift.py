@@ -72,6 +72,16 @@ class FormShiftResult:
     mann_whitney_p: float
     all_cases_shifted_type: bool
     patching_rate: float           # fraction of cases where >= 1 failure was patched
+    net_patch_cases: list[int]     # (patched - new_vulns) per core case
+    net_patch_controls: list[int]  # (patched - new_vulns) per control
+    net_patch_u: float
+    net_patch_p: float
+
+
+def _net_patch_score(score: FormShiftScore) -> int:
+    """Failures patched minus new vulnerabilities introduced."""
+    return (len(score.failure_diagnostic["patched"])
+            - len(score.failure_diagnostic["new_vulnerabilities"]))
 
 
 def analyze(cases: list[CaseProfile]) -> FormShiftResult:
@@ -87,9 +97,17 @@ def analyze(cases: list[CaseProfile]) -> FormShiftResult:
         u, p = float("nan"), float("nan")
 
     non_ctrl_scores = [scores[c.name] for c in cases if not c.is_control]
+    ctrl_scores = [scores[c.name] for c in cases if c.is_control]
     all_shifted = all(s.type_changed for s in non_ctrl_scores) if non_ctrl_scores else False
     n_patched = sum(1 for s in non_ctrl_scores if s.failure_diagnostic["patched"])
     patch_rate = n_patched / len(non_ctrl_scores) if non_ctrl_scores else 0.0
+
+    net_cases = [_net_patch_score(s) for s in non_ctrl_scores]
+    net_ctrls = [_net_patch_score(s) for s in ctrl_scores]
+    if net_cases and net_ctrls:
+        nu, np_ = stats.mannwhitneyu(net_cases, net_ctrls, alternative="greater")
+    else:
+        nu, np_ = float("nan"), float("nan")
 
     return FormShiftResult(
         per_case=scores,
@@ -99,4 +117,8 @@ def analyze(cases: list[CaseProfile]) -> FormShiftResult:
         mann_whitney_p=round(float(p), 4),
         all_cases_shifted_type=all_shifted,
         patching_rate=round(patch_rate, 2),
+        net_patch_cases=net_cases,
+        net_patch_controls=net_ctrls,
+        net_patch_u=round(float(nu), 1),
+        net_patch_p=round(float(np_), 4),
     )
