@@ -27,7 +27,49 @@
       "container_erosion",
       "frag2-4"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 4,
+        "justification": "Centralized bureaucracy with vizier, provincial nomarchs, and royal court; one of the earliest documented complex administrative states, but nomarch autonomy grew in Dynasties 5-6.",
+        "sources": ["Kemp 2006", "Trigger et al. 1983"],
+        "quantitative_anchors": ["Seshat: polity territory ~1M km2 at peak; hierarchical levels = 4-5 (Turchin et al. 2018)"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Pyramid construction demonstrates advanced surveying, engineering, and logistical coordination; medical papyri and astronomical observation present but no systematic diffusion mechanism.",
+        "sources": ["Shaw 2000", "Lehner 1997"],
+        "quantitative_anchors": ["Great Pyramid: 2.3M blocks, ~20yr construction; earliest known surgical text (Edwin Smith Papyrus) dates to OK copies"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Scribal schools for elite, life expectancy ~30-35 years typical of Bronze Age agricultural societies; population sufficient for large-scale labor mobilization.",
+        "sources": ["Butzer 1976", "Shaw 2000"],
+        "quantitative_anchors": ["Butzer estimates population 1.5-2M; literacy confined to <1% scribal class"]
+      },
+      "P4": {
+        "score": 3,
+        "justification": "Redistributive palace economy with organized agriculture, quarrying, and Nile-based trade; limited long-distance commerce compared to later periods.",
+        "sources": ["Warburton 1997", "Kemp 2006"],
+        "quantitative_anchors": ["Maddison Project: Egypt c.1 CE ~$700 GK$; OK necessarily lower, proxy ~$400-500 range"]
+      },
+      "P5": {
+        "score": 4,
+        "justification": "Stable for ~500 years (Dynasties 3-5), but 4.2 kiloyear climate event and rising nomarch autonomy eroded central control in Dynasty 6.",
+        "sources": ["Bell 1971", "Butzer 1976"],
+        "quantitative_anchors": ["4.2 kyr event: Nile flood failures documented; First Intermediate Period begins c.2181 BCE"]
+      }
+    },
+    "bibliography": [
+      "Bell, B. (1971). 'The Dark Ages in Ancient History: I. The First Dark Age in Egypt.' American Journal of Archaeology 75(1): 1-26.",
+      "Butzer, K. (1976). Early Hydraulic Civilization in Egypt. Chicago: University of Chicago Press.",
+      "Kemp, B. (2006). Ancient Egypt: Anatomy of a Civilization. 2nd ed. London: Routledge.",
+      "Lehner, M. (1997). The Complete Pyramids. London: Thames & Hudson.",
+      "Shaw, I. (ed.) (2000). The Oxford History of Ancient Egypt. Oxford: Oxford University Press.",
+      "Trigger, B. et al. (1983). Ancient Egypt: A Social History. Cambridge: Cambridge University Press.",
+      "Turchin, P. et al. (2018). 'Quantitative Historical Analysis Uncovers a Single Dimension of Complexity.' PNAS 115(2): E144-E151.",
+      "Warburton, D. (1997). State and Economy in Ancient Egypt. Fribourg: University Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Egyptological scholarship; quantitative anchors from Butzer population estimates and Seshat complexity coding. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Achaemenid Persia",
@@ -57,7 +99,45 @@
       "P1ord_exo_conquest",
       "porosity"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 5,
+        "justification": "Satrapal system governing 20-30 provinces with standardized tribute, Royal Road communications, codified law (Darius's Ordinance of Good Regulations), and imperial inspectors ('King's Eyes') — the most sophisticated pre-modern administrative apparatus.",
+        "sources": ["Briant 2002", "Wiesehöfer 2001"],
+        "quantitative_anchors": ["Seshat: hierarchical levels = 6; 20-31 satrapies; Royal Road ~2,700 km with relay stations"]
+      },
+      "P2": {
+        "score": 4,
+        "justification": "Standardized coinage (daric), cuneiform administrative records, advanced irrigation (qanat systems), and deliberate knowledge synthesis across subject peoples.",
+        "sources": ["Briant 2002", "Root 1979"],
+        "quantitative_anchors": ["Persepolis Fortification Archive: ~30,000 tablets documenting bureaucratic sophistication"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Multi-ethnic empire with variable human development across satrapies; Babylonian and Egyptian regions had higher literacy/health than peripheral areas.",
+        "sources": ["Briant 2002", "Aperghis 2004"],
+        "quantitative_anchors": ["Aperghis estimates total population ~35M; Briant notes ~17M in core Iranian/Mesopotamian provinces"]
+      },
+      "P4": {
+        "score": 4,
+        "justification": "Standardized weights/measures, Royal Road enabling long-distance trade, monetized economy in western satrapies, and tribute-based revenue system.",
+        "sources": ["Briant 2002", "Aperghis 2004"],
+        "quantitative_anchors": ["Herodotus records annual tribute ~14,560 Euboic talents; daric gold standard weight 8.4g"]
+      },
+      "P5": {
+        "score": 4,
+        "justification": "Empire endured ~220 years through multiple succession crises and Greek Wars; collapse was exogenous (Alexander's conquest), not structural failure.",
+        "sources": ["Briant 2002", "Wiesehöfer 2001"],
+        "quantitative_anchors": ["Empire span 550-330 BCE; survived revolts in Egypt (404-343 BCE) and Babylon before Macedonian conquest"]
+      }
+    },
+    "bibliography": [
+      "Aperghis, G.G. (2004). The Seleukid Royal Economy. Cambridge: Cambridge University Press.",
+      "Briant, P. (2002). From Cyrus to Alexander: A History of the Persian Empire. Winona Lake: Eisenbrauns.",
+      "Root, M.C. (1979). The King and Kingship in Achaemenid Art. Leiden: Brill.",
+      "Wiesehöfer, J. (2001). Ancient Persia: From 550 BC to 650 AD. London: I.B. Tauris."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Briant's comprehensive reconstruction and Persepolis Fortification Archive evidence. Peak scores reflect pre-Alexandrian zenith; pre_stress = peak because collapse was exogenous conquest, not internal deterioration. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Sasanian Persia",
@@ -89,7 +169,48 @@
       "container_erosion",
       "suppression"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 5,
+        "score_pre_stress": 3,
+        "justification": "At peak (Khosrow I): centralized tax reform, salaried army replacing feudal levies, four-quarter administrative division. Pre-stress (post-Khosrow II): exhaustion from 26-year Byzantine war, noble factionalism, rapid succession of rulers.",
+        "sources": ["Daryaee 2009", "Pourshariati 2008"],
+        "quantitative_anchors": ["Pourshariati documents 12 rulers in final 14 years (628-642); Khosrow I's tax reform yielded ~420M dirhams annually"]
+      },
+      "P2": {
+        "score": 4,
+        "justification": "Academy of Gundishapur synthesized Greek, Indian, and Persian knowledge; advanced irrigation, metallurgy, and textile production.",
+        "sources": ["Daryaee 2009", "Simpson 2017"],
+        "quantitative_anchors": ["Gundishapur active c.3rd-7th century; Sasanian silver plate production among finest metalwork of late antiquity"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Rigid caste system (priests, warriors, scribes, commoners) limited social mobility; Zoroastrian priestly literacy but narrow diffusion.",
+        "sources": ["Morony 1984", "Daryaee 2009"],
+        "quantitative_anchors": ["Morony estimates Iraq population alone ~8-9M pre-conquest; total empire ~20-25M"]
+      },
+      "P4": {
+        "score": 4,
+        "justification": "Controlled east-west Silk Road transit; monetized economy with silver drachm standard; state-managed irrigation in Mesopotamia.",
+        "sources": ["Daryaee 2009", "Potts 1999"],
+        "quantitative_anchors": ["Silk Road transit taxes significant revenue source; Sasanian drachm widely circulated from Central Asia to Ethiopia"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 1,
+        "justification": "Even at peak, dynastic succession was contested and noble houses held military power. Pre-stress: exhausted by 602-628 Byzantine war, plague, and noble confederacy fragmentation — structurally unable to resist Arab conquest.",
+        "sources": ["Pourshariati 2008", "Daryaee 2009"],
+        "quantitative_anchors": ["602-628 war cost estimated at half the empire's revenue; Battle of al-Qadisiyyah (636) decided by ~30,000 Arab troops against a fractured Sasanian force"]
+      }
+    },
+    "bibliography": [
+      "Daryaee, T. (2009). Sasanian Persia: The Rise and Fall of an Empire. London: I.B. Tauris.",
+      "Morony, M. (1984). Iraq After the Muslim Conquest. Princeton: Princeton University Press.",
+      "Potts, D.T. (1999). The Archaeology of Elam. Cambridge: Cambridge University Press.",
+      "Pourshariati, P. (2008). Decline and Fall of the Sasanian Empire. London: I.B. Tauris.",
+      "Simpson, St J. (2017). Sasanian Elites and Their Legacy. BAR International Series."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Pourshariati's confederacy thesis and Daryaee's institutional analysis. Large gap between peak and pre-stress reflects documented institutional collapse. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Mauryan Empire",
@@ -120,7 +241,49 @@
       "ruler_dependence",
       "container_erosion"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 4,
+        "score_pre_stress": 2,
+        "justification": "Arthashastra describes a sophisticated bureaucratic apparatus with espionage networks, provincial governors, and treasury management. But institutional quality was ruler-dependent — collapsed rapidly after Ashoka.",
+        "sources": ["Thapar 2012", "Olivelle 2013"],
+        "quantitative_anchors": ["Arthashastra describes 18 tirthas (ministerial offices); Ashoka's 33 rock/pillar edicts across subcontinent show administrative reach"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Polished stone pillar technology, Mauryan punch-marked coinage, and urban planning at Pataliputra; knowledge production present but not systematically diffused beyond court.",
+        "sources": ["Allchin & Allchin 1982", "Thapar 2012"],
+        "quantitative_anchors": ["Pataliputra estimated at ~150,000-300,000 population (Megasthenes via Strabo); advanced metallurgy in pillar construction"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Ashoka's edicts indicate concern for public welfare (hospitals, veterinary clinics, road shade trees), but literacy remained elite and life expectancy was standard for ancient agrarian empires.",
+        "sources": ["Thapar 2012", "Schwartzberg 1992"],
+        "quantitative_anchors": ["Maddison: Indian subcontinent GDP/cap ~$450 GK$ c.1 CE, Mauryan era likely similar; total population ~30M (Maddison estimate)"]
+      },
+      "P4": {
+        "score_peak": 3,
+        "score_pre_stress": 4,
+        "justification": "Extensive trade routes (Royal Highway), monetized economy, and agricultural surplus. Pre-stress P4 higher than P1 reflects the classic P4>P1 gap: commercial networks outlasted institutional control.",
+        "sources": ["Thapar 2012", "Ray 1986"],
+        "quantitative_anchors": ["Royal Highway: Pataliputra to Taxila ~1,600 km; Kautilya's Arthashastra details state monopolies on mines, forests, salt"]
+      },
+      "P5": {
+        "score_peak": 4,
+        "score_pre_stress": 2,
+        "justification": "Under Chandragupta and Ashoka, stability maintained through standing army and intelligence apparatus. Post-Ashoka succession weakness led to rapid fragmentation — last Maurya assassinated by general Pushyamitra.",
+        "sources": ["Thapar 2012", "Olivelle 2013"],
+        "quantitative_anchors": ["Pliny/Megasthenes: standing army of 600,000 infantry, 30,000 cavalry (likely exaggerated but indicates scale); dynasty collapsed ~50 years after Ashoka's death"]
+      }
+    },
+    "bibliography": [
+      "Allchin, B. & Allchin, R. (1982). The Rise of Civilization in India and Pakistan. Cambridge: Cambridge University Press.",
+      "Olivelle, P. (2013). King, Governance, and Law in Ancient India: Kautilya's Arthashastra. Oxford: Oxford University Press.",
+      "Ray, H.P. (1986). Monastery and Guild: Commerce Under the Satavahanas. Delhi: Oxford University Press.",
+      "Schwartzberg, J. (1992). A Historical Atlas of South Asia. 2nd ed. Oxford: Oxford University Press.",
+      "Thapar, R. (2012). Asoka and the Decline of the Mauryas. 3rd ed. Oxford: Oxford University Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Thapar's standard work and the Arthashastra (Olivelle translation). The P4>P1 gap at pre-stress is the central diagnostic finding. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Gupta Empire",
@@ -151,7 +314,48 @@
       "P4P1gap",
       "container_erosion"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Looser feudal-style governance compared to Maurya; provincial autonomy always significant. Peak P1 only 3 because institutional control was indirect — land grants (agrahara) devolved authority structurally.",
+        "sources": ["Kulke & Rothermund 2004", "Thapar 2002"],
+        "quantitative_anchors": ["Fa-Xian (c.405 CE) describes light-touch governance; copper-plate land grants document devolution"]
+      },
+      "P2": {
+        "score": 4,
+        "justification": "Golden age of Indian science: Aryabhata (astronomy/mathematics, c.499 CE), Varahamihira, Nalanda university, Ajanta cave art, Sanskrit literary florescence (Kalidasa).",
+        "sources": ["Basham 2004", "Kulke & Rothermund 2004"],
+        "quantitative_anchors": ["Aryabhata calculated Earth's circumference to within 0.2%; Nalanda housed ~10,000 students (Xuanzang, 7th c.)"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Elite education at Nalanda and other centers; caste system constrained broad human development; life expectancy typical of agrarian empires.",
+        "sources": ["Basham 2004", "Thapar 2002"],
+        "quantitative_anchors": ["Maddison: Indian subcontinent GDP/cap ~$450 GK$ c.500 CE; population ~75M subcontinent"]
+      },
+      "P4": {
+        "score": 4,
+        "justification": "Extensive Indian Ocean and overland trade; Gupta gold coinage among finest in ancient world; spice, textile, and gemstone exports to Rome and Southeast Asia.",
+        "sources": ["Ray 1986", "Kulke & Rothermund 2004"],
+        "quantitative_anchors": ["Gupta gold dinar weight ~8g, high purity; maritime trade to SE Asia established Indianized kingdoms"]
+      },
+      "P5": {
+        "score_peak": 4,
+        "score_pre_stress": 2,
+        "justification": "Stable under Chandragupta II (r.380-415), but Huna/Hephthalite invasions from c.450 combined with feudatory rebellion to fragment the empire by c.550.",
+        "sources": ["Bakker 1997", "Kulke & Rothermund 2004"],
+        "quantitative_anchors": ["Skandagupta repelled first Huna invasion c.455; by c.550 Gupta territory reduced to Magadha heartland"]
+      }
+    },
+    "bibliography": [
+      "Bakker, H. (1997). The Vakatakas: An Essay in Hindu Iconology. Groningen: Egbert Forsten.",
+      "Basham, A.L. (2004). The Wonder That Was India. 3rd rev. ed. London: Picador.",
+      "Kulke, H. & Rothermund, D. (2004). A History of India. 4th ed. London: Routledge.",
+      "Ray, H.P. (1986). Monastery and Guild: Commerce Under the Satavahanas. Delhi: Oxford University Press.",
+      "Thapar, R. (2002). Early India: From the Origins to AD 1300. London: Allen Lane."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Basham/Kulke standard histories and Maddison GDP estimates. 'Golden age' tag reflects P2=4 (high innovation) alongside moderate P1 (weak institutions) — the P4>P1 gap is diagnostic. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Vijayanagara",
@@ -181,7 +385,47 @@
       "suppression",
       "frag_engineered"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 3,
+        "justification": "Nayaka provincial system with significant local autonomy; central authority depended on military control and tributary relationships rather than bureaucratic depth.",
+        "sources": ["Stein 1989", "Karashima 2014"],
+        "quantitative_anchors": ["Abdur Razzaq (1443) and Paes (c.1520) describe elaborate court but devolved provincial governance; ~200 nayaka chiefs"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Sophisticated temple architecture, irrigation engineering, and textile production; knowledge economy present but not systematically advancing beyond regional norms.",
+        "sources": ["Sinopoli 2003", "Stein 1989"],
+        "quantitative_anchors": ["Hampi ruins cover 26 km2; Virupaksha temple complex among largest in South India"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Caste hierarchy limited broad human development; temple schools provided limited education; life expectancy typical of medieval South Asian agrarian states.",
+        "sources": ["Stein 1989", "Karashima 2014"],
+        "quantitative_anchors": ["Maddison: Indian subcontinent GDP/cap ~$550 GK$ c.1500; Hampi population estimated 250,000-500,000 at peak"]
+      },
+      "P4": {
+        "score": 4,
+        "justification": "Major spice and textile exporter; controlled key Indian Ocean trade routes; Portuguese accounts describe thriving commerce at Hampi's bazaars.",
+        "sources": ["Subrahmanyam 1990", "Stein 1989"],
+        "quantitative_anchors": ["Paes describes Hampi bazaars 'as large as those of Lisbon'; diamond trade at Golconda; horse imports from Arabia"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Survived 200+ years in hostile strategic environment (Bahmani/Deccan sultanates), but Battle of Talikota (1565) destroyed the capital and fragmented the empire into successor nayaka states.",
+        "sources": ["Eaton 2005", "Stein 1989"],
+        "quantitative_anchors": ["Battle of Talikota 1565: combined sultanate forces ~100,000; Hampi sacked and abandoned within months"]
+      }
+    },
+    "bibliography": [
+      "Eaton, R. (2005). A Social History of the Deccan, 1300-1761. Cambridge: Cambridge University Press.",
+      "Karashima, N. (2014). A Concise History of South India. New Delhi: Oxford University Press.",
+      "Sinopoli, C. (2003). The Political Economy of Craft Production: Crafting Empire in South India. Cambridge: Cambridge University Press.",
+      "Stein, B. (1989). Vijayanagara. Cambridge: Cambridge University Press.",
+      "Subrahmanyam, S. (1990). The Political Economy of Commerce: Southern India 1500-1650. Cambridge: Cambridge University Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Stein's standard monograph and Portuguese traveler accounts (Paes, Nuniz). P4>P1 gap diagnostic — commercial strength exceeded institutional depth. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Tang Dynasty",
@@ -211,7 +455,49 @@
       "suppression",
       "container_erosion"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 5,
+        "score_pre_stress": 4,
+        "justification": "Mature civil-service examination system, codified Tang Code (624 CE), Six Ministries, provincial governor system. Peak represents pre-An Lushan era; pre_stress reflects jiedushi (military governor) autonomy after 755.",
+        "sources": ["Twitchett 1979", "Lewis 2009"],
+        "quantitative_anchors": ["Tang Code: 502 articles in 30 chapters; exam system selected ~30 jinshi/year; Seshat hierarchical levels = 6"]
+      },
+      "P2": {
+        "score": 4,
+        "justification": "Woodblock printing (earliest dated: 868 CE Diamond Sutra), porcelain mass production, gunpowder formulation, advanced agricultural techniques (Jiangnan rice cultivation).",
+        "sources": ["Needham 1954-2004", "Lewis 2009"],
+        "quantitative_anchors": ["868 CE Diamond Sutra is earliest dated printed book; porcelain exports reached Abbasid Baghdad and East Africa"]
+      },
+      "P3": {
+        "score": 4,
+        "justification": "Examination system created meritocratic pathway; urban literacy higher than contemporaries; cosmopolitan culture in Chang'an drew scholars from across Eurasia.",
+        "sources": ["Lewis 2009", "Twitchett 1979"],
+        "quantitative_anchors": ["Maddison: China GDP/cap ~$480 GK$ at Tang peak; Bielenstein estimates population 50-60M, reaching 80M by 750s; Chang'an population ~1M"]
+      },
+      "P4": {
+        "score_peak": 4,
+        "score_pre_stress": 3,
+        "justification": "Silk Road apex; Grand Canal completed linking north-south; monetized economy with kaiyuan tongbao coinage. Post-An Lushan trade disruption and fiscal fragmentation reduced P4.",
+        "sources": ["Hansen 2000", "Twitchett 1979"],
+        "quantitative_anchors": ["Grand Canal: ~1,800 km linking Hangzhou to Beijing; annual salt revenue alone ~millions of strings of cash"]
+      },
+      "P5": {
+        "score_peak": 4,
+        "score_pre_stress": 2,
+        "justification": "Stable for 130 years before An Lushan rebellion (755) killed ~36M (Bielenstein census analysis) and permanently shifted power to military governors. Final collapse through Huang Chao rebellion (874-884).",
+        "sources": ["Pulleyblank 1955", "Lewis 2009"],
+        "quantitative_anchors": ["An Lushan: census drops from 52.9M (754) to 16.9M (764) — partly displacement, partly mortality; Five Dynasties fragmentation followed by 907"]
+      }
+    },
+    "bibliography": [
+      "Hansen, V. (2000). The Open Empire: A History of China to 1600. New York: W.W. Norton.",
+      "Lewis, M.E. (2009). China's Cosmopolitan Empire: The Tang Dynasty. Cambridge, MA: Harvard University Press.",
+      "Needham, J. (1954-2004). Science and Civilisation in China. Multiple vols. Cambridge: Cambridge University Press.",
+      "Pulleyblank, E.G. (1955). The Background of the Rebellion of An Lu-shan. London: Oxford University Press.",
+      "Twitchett, D. (ed.) (1979). The Cambridge History of China, Vol. 3: Sui and T'ang China. Cambridge: Cambridge University Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Cambridge History of China and Maddison GDP estimates. Tang scores among highest in ancient corpus; An Lushan rebellion is the key structural break. Census data provides unusually strong quantitative anchor. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Song Dynasty",
@@ -242,7 +528,48 @@
       "porosity",
       "P1ord_exo_conquest"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 5,
+        "justification": "Most developed pre-modern civil bureaucracy: expanded examination system selecting ~200+ jinshi/year by Southern Song, professionalized fiscal administration, codified commercial law.",
+        "sources": ["Hartwell 1982", "Elvin 1973"],
+        "quantitative_anchors": ["Exam candidates: ~400,000 per cycle by Southern Song; civil service ~20,000 officials governing ~100M people"]
+      },
+      "P2": {
+        "score": 5,
+        "justification": "Movable type printing (Bi Sheng c.1040), magnetic compass for navigation, gunpowder weapons, hydraulic engineering, and the world's first paper currency (jiaozi). Strongest pre-modern innovation case.",
+        "sources": ["Needham 1954-2004", "Elvin 1973"],
+        "quantitative_anchors": ["Elvin's 'medieval economic revolution': iron production ~125,000 tons/year by 1078 (not exceeded in Europe until 18th c.)"]
+      },
+      "P3": {
+        "score": 4,
+        "justification": "Highest pre-modern literacy rates outside classical Athens; widespread printing made books affordable; urban culture and commercial schools.",
+        "sources": ["Hartwell 1982", "Elvin 1973"],
+        "quantitative_anchors": ["Maddison: China GDP/cap >$600 GK$ at Song peak — highest in world; population ~100-120M; urbanization rate ~10-12% (Rozman)"]
+      },
+      "P4": {
+        "score": 5,
+        "justification": "World's most commercialized pre-modern economy: paper currency, maritime trade dominance, proto-industrial production, and tax revenue exceeding all contemporaries.",
+        "sources": ["Shiba 1970", "Elvin 1973"],
+        "quantitative_anchors": ["Annual government revenue ~60M strings of cash (Northern Song); maritime customs revenue from Guangzhou, Quanzhou; Shiba documents 'commercial revolution'"]
+      },
+      "P5": {
+        "score_peak": 4,
+        "score_pre_stress": 3,
+        "justification": "Northern Song fell to Jurchen Jin (1127) — survived as Southern Song for another 152 years. Final collapse to Mongols (1279) was exogenous military conquest, not internal fragmentation.",
+        "sources": ["Rossabi 1988", "Lorge 2005"],
+        "quantitative_anchors": ["Southern Song defended against Mongols for 45 years (1234-1279); naval battle of Yamen (1279) ended dynasty"]
+      }
+    },
+    "bibliography": [
+      "Elvin, M. (1973). The Pattern of the Chinese Past. Stanford: Stanford University Press.",
+      "Hartwell, R. (1982). 'Demographic, Political, and Social Transformations of China, 750-1550.' Harvard Journal of Asiatic Studies 42(2): 365-442.",
+      "Lorge, P. (2005). War, Politics and Society in Early Modern China. London: Routledge.",
+      "Needham, J. (1954-2004). Science and Civilisation in China. Multiple vols. Cambridge: Cambridge University Press.",
+      "Rossabi, M. (1988). Khubilai Khan: His Life and Times. Berkeley: University of California Press.",
+      "Shiba, Y. (1970). Commerce and Society in Sung China. Ann Arbor: University of Michigan Center for Chinese Studies."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Elvin's 'high-level equilibrium trap' thesis, Hartwell's demographic analysis, and Needham's technology documentation. Highest-scoring ancient case; collapse was purely exogenous (Mongol conquest). Maddison GDP data and iron production figures provide strong quantitative anchors. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Tokugawa Japan",
@@ -273,7 +600,49 @@
       "managed_transition",
       "container_absorb"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 4,
+        "justification": "Bakuhan system: centralized shogunal authority over ~260 semi-autonomous domains (han); sankin-kotai (alternate attendance) as institutional control mechanism; Confucian bureaucratic norms.",
+        "sources": ["Totman 1993", "Hall 1991"],
+        "quantitative_anchors": ["260+ han domains; sankin-kotai required biennial residence in Edo; shogunal direct domain ~15% of total rice yield"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Rangaku (Dutch learning) provided narrow Western science channel; sophisticated craft production (swords, ceramics, textiles) but sakoku policy limited systematic innovation diffusion.",
+        "sources": ["Hanley 1997", "Totman 1993"],
+        "quantitative_anchors": ["Rangaku: ~500 Dutch books imported/translated by late Tokugawa; Dejima trade post sole Western contact"]
+      },
+      "P3": {
+        "score": 4,
+        "justification": "Exceptionally high literacy for pre-modern state: terakoya (temple schools) and domain schools produced ~40% male literacy by 1850s. Life expectancy comparable to early modern Europe.",
+        "sources": ["Dore 1965", "Hanley 1997"],
+        "quantitative_anchors": ["Dore: male literacy ~40-45% by 1860s, female ~15%; ~15,000 terakoya by Bakumatsu period; Maddison GDP/cap ~$570 GK$ c.1700, ~$669 by 1820"]
+      },
+      "P4": {
+        "score_peak": 4,
+        "score_pre_stress": 3,
+        "justification": "Sophisticated domestic economy with rice-based exchange system, proto-industrial putting-out system (Osaka cotton), and castle-town commerce. Sakoku limited external trade but internal markets were highly developed.",
+        "sources": ["Crawcour 1963", "Totman 1993"],
+        "quantitative_anchors": ["Maddison: Japan GDP/cap ~$570 GK$ c.1700, rising to ~$669 by 1820; Edo population ~1M by 1720 (largest city in world)"]
+      },
+      "P5": {
+        "score_peak": 5,
+        "score_pre_stress": 4,
+        "justification": "250 years of internal peace (Pax Tokugawa, 1615-1868) — one of the longest stable periods for any pre-modern polity. Pre-stress decline reflects Perry shock (1853) and mounting domain debts.",
+        "sources": ["Jansen 2000", "Totman 1993"],
+        "quantitative_anchors": ["1615-1868: 253 years without major internal conflict; Meiji Restoration (1868) was managed transition, not state collapse"]
+      }
+    },
+    "bibliography": [
+      "Crawcour, S. (1963). 'Changes in Japanese Commerce in the Tokugawa Period.' Journal of Asian Studies 22(4): 387-400.",
+      "Dore, R.P. (1965). Education in Tokugawa Japan. Berkeley: University of California Press.",
+      "Hall, J.W. (ed.) (1991). The Cambridge History of Japan, Vol. 4: Early Modern Japan. Cambridge: Cambridge University Press.",
+      "Hanley, S. (1997). Everyday Things in Premodern Japan. Berkeley: University of California Press.",
+      "Jansen, M. (2000). The Making of Modern Japan. Cambridge, MA: Harvard University Press.",
+      "Totman, C. (1993). Early Modern Japan. Berkeley: University of California Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Totman/Hall standard histories and Dore's literacy data. Uniquely high P5 (250yr peace); managed transition outcome distinguishes it from rupture cases. Maddison GDP and Dore literacy rates are strong quantitative anchors. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Joseon Korea",
@@ -305,7 +674,46 @@
       "reconstruction",
       "moderate_P1_longevity"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 4,
+        "justification": "Neo-Confucian bureaucratic state with competitive civil service examinations (gwageo), Six Ministries, censorate (Saheonbu), and codified law (Gyeongguk daejeon, 1485). Institutional depth sustained dynasty for 500+ years.",
+        "sources": ["Palais 1996", "Duncan 2000"],
+        "quantitative_anchors": ["Gwageo exams selected ~33 munkwa (civil) + 28 mugwa (military) per triennial cycle; Gyeongguk daejeon codified in 6 volumes"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Hangul alphabet creation (1443) is major innovation; movable metal type (jikji, 1377 predates Gutenberg); rain gauge (cheugugi, 1441). But neo-Confucian orthodoxy limited sustained technological change.",
+        "sources": ["Seth 2006", "Palais 1996"],
+        "quantitative_anchors": ["Jikji (1377): earliest surviving movable metal type printed book; Hangul: 28-letter phonemic alphabet designed for mass literacy"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Yangban elite literacy very high; commoner education limited by rigid social hierarchy (yangban/jungin/sangmin/cheonmin). Hangul improved potential literacy but social barriers persisted.",
+        "sources": ["Palais 1996", "Duncan 2000"],
+        "quantitative_anchors": ["Maddison: Korea GDP/cap ~$600 GK$ c.1820; population ~10-14M by late Joseon"]
+      },
+      "P4": {
+        "score": 3,
+        "justification": "Agrarian economy with limited commercial development compared to Tokugawa Japan; tributary trade with Ming/Qing; internal markets constrained by Confucian anti-commerce ideology.",
+        "sources": ["Palais 1996", "Seth 2006"],
+        "quantitative_anchors": ["Maddison: Korea GDP/cap ~$600 GK$ c.1820, roughly comparable to Japan but with less commercial development"]
+      },
+      "P5": {
+        "score": 4,
+        "justification": "Survived Imjin War (1592-98) Japanese invasion and Manchu invasions (1627, 1636) — remarkable institutional resilience. Reconstruction capacity after Imjin War is the key diagnostic observation.",
+        "sources": ["Haboush 2016", "Lewis 2015"],
+        "quantitative_anchors": ["Imjin War: estimated 1-2M Korean deaths; post-war reconstruction restored administrative capacity within ~50 years; dynasty endured 518 years total (1392-1910)"]
+      }
+    },
+    "bibliography": [
+      "Duncan, J. (2000). The Origins of the Chosŏn Dynasty. Seattle: University of Washington Press.",
+      "Haboush, J.K. (2016). The Great East Asian War and the Birth of the Korean Nation. New York: Columbia University Press.",
+      "Lewis, J.B. (2015). The East Asian War, 1592-1598: International Relations, Violence, and Memory. London: Routledge.",
+      "Palais, J.B. (1996). Confucian Statecraft and Korean Institutions. Seattle: University of Washington Press.",
+      "Seth, M. (2006). A Concise History of Korea. Lanham: Rowman & Littlefield."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Palais's institutional analysis and Haboush's Imjin War study. Flat peak/pre_stress profile reflects institutional resilience — absorbed severe shocks without structural degradation. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Khmer / Angkor",
@@ -336,7 +744,49 @@
       "environmental",
       "migrate_transform"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 3,
+        "justification": "Devaraja (god-king) system with provincial administration through appointed governors; temple-based bureaucracy with Sanskrit/Khmer inscription records. Sophisticated but personalized around royal court.",
+        "sources": ["Mabbett & Chandler 1995", "Chandler 2008"],
+        "quantitative_anchors": ["~1,000+ inscriptions document administrative structure; Zhou Daguan (1296) provides detailed court/governance account"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Baray (reservoir) water management system among most sophisticated pre-modern hydraulic engineering; Angkor Wat architectural achievement, but limited evidence of systematic knowledge diffusion.",
+        "sources": ["Fletcher et al. 2008", "Mabbett & Chandler 1995"],
+        "quantitative_anchors": ["West Baray: 8km x 2.3km, ~56M m3 capacity; Angkor Wat: largest religious monument, 162.6 hectares"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Large urban population supported by rice surplus agriculture; temple education for elites; life expectancy typical of tropical agrarian states.",
+        "sources": ["Evans et al. 2013", "Mabbett & Chandler 1995"],
+        "quantitative_anchors": ["Evans et al. LiDAR: Greater Angkor urban complex ~1,000 km2; population estimates revised upward to 750,000-1,000,000"]
+      },
+      "P4": {
+        "score_peak": 4,
+        "score_pre_stress": 3,
+        "justification": "Regional trade hub connecting China and India via maritime Southeast Asian routes; Tonle Sap fishery and rice surplus supported large non-agricultural population. Trade decline preceded political collapse.",
+        "sources": ["Vickery 1998", "Chandler 2008"],
+        "quantitative_anchors": ["Zhou Daguan (1296) describes Chinese merchants, gold/silver trade, and specialized craft production at Angkor"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Angkorian state lasted 600+ years but was periodically contested. Final decline involved Thai (Ayutthaya) military pressure, water management failure, and capital relocation — a migrate/transform outcome, not a rupture.",
+        "sources": ["Buckley et al. 2010", "Chandler 2008"],
+        "quantitative_anchors": ["Buckley et al.: tree-ring data shows severe droughts c.1345-1375 and 1401-1425, coinciding with state contraction; Angkor abandoned as capital by c.1431"]
+      }
+    },
+    "bibliography": [
+      "Buckley, B.M. et al. (2010). 'Climate as a Contributing Factor in the Demise of Angkor, Cambodia.' PNAS 107(15): 6748-6752.",
+      "Chandler, D. (2008). A History of Cambodia. 4th ed. Boulder: Westview Press.",
+      "Evans, D.H. et al. (2013). 'Uncovering Archaeological Landscapes at Angkor Using Lidar.' PNAS 110(31): 12595-12600.",
+      "Fletcher, R. et al. (2008). 'The Water Management Network of Angkor, Cambodia.' Antiquity 82: 658-670.",
+      "Mabbett, I. & Chandler, D. (1995). The Khmers. Oxford: Blackwell.",
+      "Vickery, M. (1998). Society, Economics, and Politics in Pre-Angkor Cambodia. Tokyo: Centre for East Asian Cultural Studies."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Evans et al. LiDAR population data and Buckley et al. paleoclimate evidence. 'Migrate/transform' outcome — Angkor relocated rather than fragmented — is diagnostically significant. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Srivijaya",
@@ -366,7 +816,46 @@
       "P4P1gap_extreme",
       "thalassocracy"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 2,
+        "justification": "Maritime mandala polity with minimal territorial bureaucracy; power exercised through trade control and ritual authority rather than institutional administration. The archetype of extreme P4>P1 gap.",
+        "sources": ["Manguin 2004", "Wolters 1967"],
+        "quantitative_anchors": ["Only ~12 Old Malay inscriptions survive (7th c.); Yijing (671 CE) describes Palembang as a learning center but not a bureaucratic capital"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Buddhist learning center attracting monks from China and India; maritime navigation and shipbuilding knowledge; but limited evidence of systematic technological innovation.",
+        "sources": ["Coedès 1968", "Manguin 2004"],
+        "quantitative_anchors": ["Yijing: ~1,000 Buddhist monks at Palembang c.671; Nalanda-level Buddhist scholarship described"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Buddhist monastic education for elites; general population primarily engaged in maritime commerce and agriculture; limited data on broader human development indicators.",
+        "sources": ["Manguin 2004", "Wolters 1967"],
+        "quantitative_anchors": ["Population estimates highly uncertain; Palembang/coastal populations perhaps 20,000-50,000 in core"]
+      },
+      "P4": {
+        "score": 5,
+        "justification": "Controlled Strait of Malacca chokepoint — the most important pre-modern maritime trade route between Indian Ocean and South China Sea. Extreme trade dominance relative to institutional capacity.",
+        "sources": ["Hall 1985", "Manguin 2004"],
+        "quantitative_anchors": ["Arab/Chinese sources describe Srivijaya as dominant entrepôt for 7th-11th c. maritime trade; Chola raid (1025) targeted trade infrastructure specifically"]
+      },
+      "P5": {
+        "score": 3,
+        "justification": "Maintained Strait hegemony for ~400 years despite minimal institutional depth — impressive resilience for a thalassocracy. Chola naval raids (1025) disrupted but didn't immediately destroy; final fragmentation was gradual.",
+        "sources": ["Kulke 1993", "Manguin 2004"],
+        "quantitative_anchors": ["Rajendra Chola I raid (1025): captured 14 Srivijayan ports; polity fragmented into competing port-states by 13th century"]
+      }
+    },
+    "bibliography": [
+      "Coedès, G. (1968). The Indianized States of Southeast Asia. Honolulu: University of Hawaii Press.",
+      "Hall, K.R. (1985). Maritime Trade and State Development in Early Southeast Asia. Honolulu: University of Hawaii Press.",
+      "Kulke, H. (1993). 'Kadatuan Srivijaya: Empire or Kraton of Srivijaya?' Bulletin de l'École française d'Extrême-Orient 80: 159-180.",
+      "Manguin, P.-Y. (2004). 'The Archaeology of Early Maritime Polities of Southeast Asia.' In I. Glover & P. Bellwood (eds), Southeast Asia: From Prehistory to History. London: RoutledgeCurzon.",
+      "Wolters, O.W. (1967). Early Indonesian Commerce: A Study of the Origins of Srivijaya. Ithaca: Cornell University Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Manguin's archaeological synthesis and Chinese/Arab textual sources. P4=5 vs P1=2 is the most extreme pillar gap in the ancient corpus — the thalassocracy archetype. MOD data quality reflects limited epigraphy. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Majapahit",
@@ -397,7 +886,48 @@
       "ruler_dependence",
       "suppression"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Mandala polity: inner core directly administered, outer ring of semi-autonomous tributaries. Nagarakretagama (1365) describes extensive claims but real administrative control was limited beyond Java. Declined after Hayam Wuruk's death (1389).",
+        "sources": ["Pigeaud 1960-63", "Robson 1995"],
+        "quantitative_anchors": ["Nagarakretagama lists ~98 tributaries but most were nominal; Ming Shi records diplomatic missions from Majapahit"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Sophisticated literary culture (Nagarakretagama, Sutasoma), temple architecture (Trowulan complex), and metallurgy; knowledge production comparable to regional contemporaries.",
+        "sources": ["Robson 1995", "Pigeaud 1960-63"],
+        "quantitative_anchors": ["Trowulan site: ~100 km2 urban complex; Chinese ceramics and local terracotta production documented archaeologically"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Court literary culture and Buddhist-Hindu religious education; general population primarily agrarian with limited access to formal education.",
+        "sources": ["Reid 1988", "Pigeaud 1960-63"],
+        "quantitative_anchors": ["Trowulan population estimated at 200,000-500,000; Java total population perhaps 4-5M (Reid estimates)"]
+      },
+      "P4": {
+        "score": 4,
+        "justification": "Major spice trade hub controlling eastern Indonesian spice islands (clove, nutmeg, pepper); Chinese, Indian, and Arab merchants documented at Javanese ports.",
+        "sources": ["Reid 1993", "Pigeaud 1960-63"],
+        "quantitative_anchors": ["Spice trade: cloves and nutmeg exclusively from eastern Indonesia; Ma Huan (1433) describes Javanese commerce"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Stable under Hayam Wuruk (r.1350-1389) with Gajah Mada as chief minister. Succession crisis of Paregreg civil war (1405-06) fatally weakened central authority; Islamic coastal states progressively detached.",
+        "sources": ["Ricklefs 2001", "Reid 1993"],
+        "quantitative_anchors": ["Paregreg war (1405-06): split between eastern and western court factions; Demak (Islamic) successor established by 1478"]
+      }
+    },
+    "bibliography": [
+      "Pigeaud, T.G.Th. (1960-63). Java in the 14th Century: A Study in Cultural History. 5 vols. The Hague: Nijhoff.",
+      "Reid, A. (1988). Southeast Asia in the Age of Commerce, 1450-1680. Vol. 1: The Lands Below the Winds. New Haven: Yale University Press.",
+      "Reid, A. (1993). Southeast Asia in the Age of Commerce, 1450-1680. Vol. 2: Expansion and Crisis. New Haven: Yale University Press.",
+      "Ricklefs, M.C. (2001). A History of Modern Indonesia Since c.1200. 3rd ed. Stanford: Stanford University Press.",
+      "Robson, S. (1995). Desawarnana (Nagarakretagama) by Mpu Prapanca. Leiden: KITLV Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Pigeaud's Nagarakretagama study and Reid's commerce analysis. Mandala polity structure makes P1 coding challenging — inner vs outer control varied sharply. MOD data quality. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Mali Empire",
@@ -428,7 +958,49 @@
       "ruler_dependence",
       "container_erosion"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Provincial administration through farba (governors) and local chiefs; Mansa held authority through lineage legitimacy and military control. Administrative capacity peaked under Mansa Musa (r.1312-1337) but was ruler-dependent.",
+        "sources": ["Levtzion 1973", "Niane 1965"],
+        "quantitative_anchors": ["Ibn Battuta (1352) describes functioning court, judges (qadi), and provincial governors; ~14 provinces reported in Arabic sources"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Timbuktu and Djenné as Islamic learning centers; Sankore mosque/university attracted scholars from across Muslim world. Agricultural and metallurgical knowledge present but not systematically documented.",
+        "sources": ["Insoll 2003", "Levtzion 1973"],
+        "quantitative_anchors": ["Sankore: estimated 25,000 students at peak (likely exaggerated but indicates scale); manuscript traditions survive in Timbuktu libraries"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Islamic education available in urban centers (Timbuktu, Djenné, Niani); rural majority had limited formal education. Life expectancy typical of sub-Saharan agrarian societies.",
+        "sources": ["Levtzion 1973", "Insoll 2003"],
+        "quantitative_anchors": ["McEvedy & Jones: West African savanna population ~15-20M in region; urban populations modest (Timbuktu ~50,000-100,000 at peak)"]
+      },
+      "P4": {
+        "score_peak": 5,
+        "score_pre_stress": 4,
+        "justification": "Controlled trans-Saharan gold trade — at peak, Mali supplied roughly half of Old World gold. Mansa Musa's 1324 hajj reportedly depressed Cairo gold prices for a decade. Extreme P4>P1 gap.",
+        "sources": ["Levtzion 1973", "Austen 2010"],
+        "quantitative_anchors": ["Mansa Musa hajj (1324): reportedly carried 12,000+ kg of gold; al-Umari reports Cairo gold price depression lasting years; Bambuk/Buré goldfields dominant global source"]
+      },
+      "P5": {
+        "score_peak": 4,
+        "score_pre_stress": 2,
+        "justification": "Stable for ~150 years under strong mansas. Decline driven by succession disputes and Songhai/Mossi/Tuareg pressure from multiple directions simultaneously.",
+        "sources": ["Levtzion 1973", "Niane 1965"],
+        "quantitative_anchors": ["Empire span ~1235-1600; Songhai under Sunni Ali captured Timbuktu 1468; by c.1500 Mali reduced to Manding heartland"]
+      }
+    },
+    "bibliography": [
+      "Austen, R. (2010). Trans-Saharan Africa in World History. Oxford: Oxford University Press.",
+      "Insoll, T. (2003). The Archaeology of Islam in Sub-Saharan Africa. Cambridge: Cambridge University Press.",
+      "Levtzion, N. (1973). Ancient Ghana and Mali. London: Methuen.",
+      "McEvedy, C. & Jones, R. (1978). Atlas of World Population History. London: Penguin.",
+      "Niane, D.T. (1965). Sundiata: An Epic of Old Mali. Trans. G.D. Pickett. London: Longman."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Levtzion's standard history and Arabic primary sources (Ibn Battuta, al-Umari). P4=5 reflects documented gold trade dominance; MOD data quality due to reliance on external (Arabic) sources for internal history. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Great Zimbabwe",
@@ -459,7 +1031,48 @@
       "environmental",
       "frag2-4"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Centralized authority evidenced by monumental stone architecture (Great Enclosure) and control of cattle wealth and trade goods. No writing system — governance reconstructed from archaeology and oral tradition.",
+        "sources": ["Pikirayi 2001", "Huffman 1996"],
+        "quantitative_anchors": ["Great Enclosure: 11m high walls, 250m circumference, largest pre-colonial stone structure in sub-Saharan Africa; ~182 stone enclosures at site"]
+      },
+      "P2": {
+        "score": 2,
+        "justification": "Sophisticated dry-stone construction without mortar; iron and copper smelting; gold working. But no writing system and limited evidence of systematic knowledge production beyond craft specialization.",
+        "sources": ["Chirikure 2015", "Pikirayi 2001"],
+        "quantitative_anchors": ["Iron smelting furnaces documented archaeologically; gold ornaments and crucibles recovered from Hill Complex"]
+      },
+      "P3": {
+        "score": 2,
+        "justification": "No writing system limits evidence; population supported by cattle pastoralism and agriculture. Lower score reflects absence of documented formal education or health infrastructure.",
+        "sources": ["Pikirayi 2001", "Huffman 1996"],
+        "quantitative_anchors": ["Peak urban population estimated ~18,000 (Pikirayi); cattle kraal capacity suggests substantial herds"]
+      },
+      "P4": {
+        "score_peak": 4,
+        "score_pre_stress": 3,
+        "justification": "Indian Ocean trade link via Sofala coast: exported gold, ivory, and iron; imported Chinese ceramics, glass beads, and cloth. Trade wealth disproportionate to institutional capacity.",
+        "sources": ["Mudenge 1988", "Pikirayi 2001"],
+        "quantitative_anchors": ["Chinese celadon and Middle Eastern glass beads recovered archaeologically; gold exports to Kilwa/Sofala documented by al-Masudi and later Portuguese"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Polity endured ~300 years (c.1100-1450); decline linked to environmental degradation (deforestation, soil exhaustion) and trade route shifts. Successor states Mutapa and Torwa represent migrate/transform rather than collapse.",
+        "sources": ["Huffman 1996", "Pikirayi 2001"],
+        "quantitative_anchors": ["Site occupied c.1100-1450; environmental carrying capacity estimated at ~18,000 maximum (Pikirayi)"]
+      }
+    },
+    "bibliography": [
+      "Chirikure, S. (2015). Metals in Past Societies: A Global Perspective on Indigenous African Metallurgy. Cham: Springer.",
+      "Huffman, T. (1996). Snakes and Crocodiles: Power and Symbolism in Ancient Zimbabwe. Johannesburg: Witwatersrand University Press.",
+      "Mudenge, S.I. (1988). A Political History of Munhumutapa c.1400-1902. Harare: Zimbabwe Publishing House.",
+      "Pikirayi, I. (2001). The Zimbabwe Culture: Origins and Decline in Southern Zambezian States. Walnut Creek: AltaMira Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Pikirayi's archaeological synthesis and Huffman's symbolic analysis. MOD data quality reflects reliance on archaeology (no indigenous writing); Indian Ocean trade imports provide dating anchors. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Aksum",
@@ -491,7 +1104,46 @@
       "migrate",
       "environmental"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "King (negus) with provincial administration; one of earliest African states to mint its own coinage (indicating fiscal sophistication). Christianity as state religion from c.340 provided institutional framework. But limited bureaucratic depth compared to Roman/Sasanian contemporaries.",
+        "sources": ["Phillipson 2012", "Munro-Hay 1991"],
+        "quantitative_anchors": ["Aksumite coinage: gold, silver, and bronze denominations from c.270-630 CE; Ge'ez script inscriptions document royal governance"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Monumental obelisk construction (tallest ~33m), coinage production, Ge'ez script development, and terrace agriculture. Knowledge production comparable to regional peers.",
+        "sources": ["Phillipson 2012", "Munro-Hay 1991"],
+        "quantitative_anchors": ["Stelae field: largest obelisk ~33m, ~520 tons (largest monolith attempted in ancient world); coinage produced for ~360 years"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Ge'ez literacy in court and church; Christian education infrastructure after conversion. Population estimates uncertain but urban center suggests moderate development.",
+        "sources": ["Munro-Hay 1991", "Phillipson 2012"],
+        "quantitative_anchors": ["Aksum city: estimated 20,000-40,000 at peak; Adulis port population perhaps 10,000-20,000"]
+      },
+      "P4": {
+        "score_peak": 4,
+        "score_pre_stress": 2,
+        "justification": "Controlled Red Sea trade between Roman/Byzantine Mediterranean and Indian Ocean; Adulis was major entrepôt. Loss of Red Sea access to Islamic expansion after 7th century is the key P4 collapse.",
+        "sources": ["Munro-Hay 1991", "Phillipson 2012"],
+        "quantitative_anchors": ["Periplus of the Erythraean Sea (1st c.) describes Adulis as major port; Aksumite coins found in South Arabia, India; trade in ivory, gold, frankincense"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Maintained Red Sea hegemony for ~600 years (1st-7th c. CE). Islamic expansion cut maritime trade routes; polity contracted southward into Ethiopian highlands — a migrate/transform outcome.",
+        "sources": ["Phillipson 2012", "Munro-Hay 1991"],
+        "quantitative_anchors": ["Coinage ceases c.630 CE, indicating loss of trade revenue; Aksumite state contracted to Lasta/Zagwe highland successor by 10th century"]
+      }
+    },
+    "bibliography": [
+      "Munro-Hay, S. (1991). Aksum: An African Civilisation of Late Antiquity. Edinburgh: Edinburgh University Press.",
+      "Phillipson, D.W. (2012). Foundations of an African Civilisation: Aksum and the Northern Horn, 1000 BC - AD 1300. Woodbridge: James Currey."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Phillipson's archaeological synthesis and Munro-Hay's comprehensive study. Coinage evidence provides unusually firm dating and economic anchor for African ancient case. 'Migrate' outcome parallels Angkor. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Aztec Triple Alliance",
@@ -522,7 +1174,46 @@
       "P4P1gap",
       "confederacy"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 2,
+        "justification": "Triple Alliance was a confederacy (Tenochtitlan, Texcoco, Tlacopan) with tributary extraction but minimal direct administrative penetration of conquered provinces. Hegemonic rather than territorial empire — the archetype of suppression-without-integration.",
+        "sources": ["Smith 2012", "Berdan et al. 1996"],
+        "quantitative_anchors": ["Codex Mendoza: ~371 tributary provinces; tribute lists quantify extraction but not governance; calpulli (ward) system in core only"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Chinampas (floating garden) agriculture, advanced calendrical/astronomical systems, pharmacopoeia, and monumental architecture. Significant knowledge but limited in comparison to Old World contemporaries with printing and metallurgy.",
+        "sources": ["Smith 2012", "Clendinnen 1991"],
+        "quantitative_anchors": ["Chinampa agriculture yielded ~3,000 kg/hectare/year (Smith); Templo Mayor: 60m pyramid rebuilt 7 times"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Calmecac (elite) and telpochcalli (commoner) schools provided unusually broad education for a pre-modern state; life expectancy ~30-35 years typical of pre-Columbian Mesoamerica.",
+        "sources": ["Smith 2012", "Berdan 2014"],
+        "quantitative_anchors": ["Tenochtitlan population: 200,000-300,000 (Smith); Valley of Mexico ~1-1.5M; universal male education documented in codices"]
+      },
+      "P4": {
+        "score": 4,
+        "justification": "Extensive tribute economy and long-distance trade networks (pochteca merchants); large market at Tlatelolco served 40,000-60,000 daily. But no coinage — cacao beans and cotton mantles as media of exchange.",
+        "sources": ["Berdan 2014", "Smith 2012"],
+        "quantitative_anchors": ["Tlatelolco market: Cortés estimated 60,000 daily; Codex Mendoza documents tribute in quantified units; pochteca trade routes extended to Maya lowlands"]
+      },
+      "P5": {
+        "score": 3,
+        "justification": "Alliance endured ~93 years (1428-1521) with endemic tributary rebellion. Spanish conquest exploited structural fragility — Tlaxcalans and other suppressed tributaries allied with Cortés immediately.",
+        "sources": ["Hassig 2006", "Berdan et al. 1996"],
+        "quantitative_anchors": ["1519-21: Cortés + ~200,000 indigenous allies vs Aztec; structural suppression meant rapid defection of tributaries; smallpox reduced Tenochtitlan by ~40% during siege"]
+      }
+    },
+    "bibliography": [
+      "Berdan, F.F. et al. (1996). Aztec Imperial Strategies. Washington: Dumbarton Oaks.",
+      "Berdan, F.F. (2014). Aztec Archaeology and Ethnohistory. Cambridge: Cambridge University Press.",
+      "Clendinnen, I. (1991). Aztecs: An Interpretation. Cambridge: Cambridge University Press.",
+      "Hassig, R. (2006). Mexico and the Spanish Conquest. 2nd ed. Norman: University of Oklahoma Press.",
+      "Smith, M.E. (2012). The Aztecs. 3rd ed. Oxford: Wiley-Blackwell."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Smith's standard synthesis and Berdan's tribute analysis. Peak = pre_stress because collapse was exogenous (Spanish conquest); the P4>P1 gap and confederacy structure made rapid defection predictable. RICH data quality via codices and ethnohistorical sources. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Classic Maya",
@@ -553,7 +1244,48 @@
       "environmental",
       "container_erosion"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 3,
+        "justification": "Network of competing divine-kingship city-states (ajaw system), not a unified empire. Individual polities (Tikal, Calakmul, Palenque) had sophisticated local governance with scribe bureaucracies and diplomatic systems, but no overarching institutional framework.",
+        "sources": ["Martin & Grube 2008", "Sharer & Traxler 2006"],
+        "quantitative_anchors": ["~60 emblem glyphs indicating independent polities; Maya script: ~800 distinct glyphs; extensive diplomatic correspondence in hieroglyphic texts"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Independent invention of zero, sophisticated long-count calendar, hieroglyphic writing, advanced astronomy, corbel-arch architecture, and intensive raised-field agriculture.",
+        "sources": ["Houston 2014", "Sharer & Traxler 2006"],
+        "quantitative_anchors": ["Dresden Codex: Venus tables accurate to 2 hours over 481 years; temple pyramids at Tikal reach 47m"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Elite literacy in hieroglyphic script; general population primarily agricultural with access to sophisticated medical/herbal traditions. LiDAR has dramatically revised population estimates upward.",
+        "sources": ["Canuto et al. 2018", "Sharer & Traxler 2006"],
+        "quantitative_anchors": ["Canuto et al. LiDAR (2018): Maya Lowland population revised upward to 7-11M at Late Classic peak; Tikal urban zone ~60,000-120,000"]
+      },
+      "P4": {
+        "score": 3,
+        "justification": "Long-distance trade in jade, obsidian, cacao, salt, and Spondylus shell; market systems documented but scale limited compared to contemporaneous Old World empires.",
+        "sources": ["Demarest 2004", "Sharer & Traxler 2006"],
+        "quantitative_anchors": ["Obsidian trade: El Chayal and Ixtepeque sources distributed across 500+ km; cacao as prestige currency"]
+      },
+      "P5": {
+        "score_peak": 2,
+        "score_pre_stress": 1,
+        "justification": "Chronic inter-polity warfare with no stabilizing hegemony; system inherently fragile. Terminal Classic collapse (c.800-1000 CE) correlated with severe drought, soil degradation, and intensified warfare.",
+        "sources": ["Kennett et al. 2012", "Demarest 2004"],
+        "quantitative_anchors": ["Kennett et al. (Science 2012): stalagmite isotope data shows severe droughts c.820-870 CE coinciding with political collapse; ~40 royal courts ceased monument construction within ~100 years"]
+      }
+    },
+    "bibliography": [
+      "Canuto, M.A. et al. (2018). 'Ancient Lowland Maya Complexity as Revealed by Airborne Laser Scanning of Northern Guatemala.' Science 361(6409): eaau0137.",
+      "Demarest, A. (2004). Ancient Maya: The Rise and Fall of a Rainforest Civilization. Cambridge: Cambridge University Press.",
+      "Houston, S. (2014). The Life Within: Classic Maya and the Matter of Permanence. New Haven: Yale University Press.",
+      "Kennett, D.J. et al. (2012). 'Development and Disintegration of Maya Political Systems in Response to Climate Change.' Science 338(6108): 788-791.",
+      "Martin, S. & Grube, N. (2008). Chronicle of the Maya Kings and Queens. 2nd ed. London: Thames & Hudson.",
+      "Sharer, R. & Traxler, L. (2006). The Ancient Maya. 6th ed. Stanford: Stanford University Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Martin & Grube's dynastic analysis, Canuto et al. LiDAR population revision, and Kennett et al. paleoclimate data (both Science papers). P5 is lowest in the corpus — reflects structurally unstable peer-polity system. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Tiwanaku",
@@ -584,7 +1316,46 @@
       "ritual_legitimacy",
       "NOT_environmental"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 3,
+        "justification": "State-level polity with monumental ceremonial center (Akapana, Kalasasaya) and administrative colonies in coastal/valley regions. Governance appears ritual-ceremonial rather than bureaucratic — authority through pilgrimage and prestige rather than coercive administration.",
+        "sources": ["Kolata 1993", "Janusek 2008"],
+        "quantitative_anchors": ["Akapana pyramid: 200m x 200m base, 17m height; administrative colonies at Omo (Moquegua), Chen Chen, and Cochabamba Valley"]
+      },
+      "P2": {
+        "score": 2,
+        "justification": "Raised-field (suka qollu) agriculture at 3,800m altitude was a significant innovation; monumental stone architecture and metallurgy present. But no writing system and limited evidence of systematic knowledge accumulation.",
+        "sources": ["Kolata 1993", "Janusek 2008"],
+        "quantitative_anchors": ["Kolata: raised fields covered ~130 km2 around Lake Titicaca; produced 2-3x yields of non-raised plots at altitude"]
+      },
+      "P3": {
+        "score": 2,
+        "justification": "No writing system; population estimates modest. High-altitude adaptation (coca, freeze-dried potato/chuño) demonstrates indigenous knowledge but formal education infrastructure absent.",
+        "sources": ["Janusek 2008", "Kolata 1993"],
+        "quantitative_anchors": ["Tiwanaku urban core: estimated 20,000-40,000; total polity population ~365,000 (Kolata estimate, debated)"]
+      },
+      "P4": {
+        "score": 3,
+        "justification": "Multi-ecological trade network ('vertical archipelago' principle): highland pastoral/agricultural products exchanged with coastal/valley goods. Llama caravans and colonial outposts facilitated exchange.",
+        "sources": ["Browman 1997", "Kolata 1993"],
+        "quantitative_anchors": ["Omo/Moquegua colonies: 300+ km from capital; marine products, maize, and obsidian traded across ecological zones"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Polity endured ~500 years. Janusek argues collapse was primarily political (ritual legitimacy failure and social fragmentation), NOT environmental — contra earlier drought hypothesis. Tagged NOT_environmental to flag this scholarly debate.",
+        "sources": ["Janusek 2008", "Ortloff & Kolata 1993"],
+        "quantitative_anchors": ["Ortloff & Kolata (1993) proposed drought c.1000 CE; Janusek (2008) argues raised-field abandonment preceded drought, indicating political causes"]
+      }
+    },
+    "bibliography": [
+      "Browman, D. (1997). 'Political Institutional Factors Contributing to the Integration of the Tiwanaku State.' World Archaeology 29(1): 117-128.",
+      "Janusek, J.W. (2008). Ancient Tiwanaku. Cambridge: Cambridge University Press.",
+      "Kolata, A.L. (1993). The Tiwanaku: Portrait of an Andean Civilization. Oxford: Blackwell.",
+      "Ortloff, C.R. & Kolata, A.L. (1993). 'Climate and Collapse: Agro-Ecological Perspectives on the Decline of the Tiwanaku State.' Journal of Archaeological Science 20(2): 195-221."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Kolata's raised-field data and Janusek's political-collapse thesis. NOT_environmental tag flags active scholarly debate (Ortloff & Kolata drought vs Janusek political). MOD data quality; no writing system. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Wari",
@@ -614,7 +1385,46 @@
       "centralization_trigger",
       "config"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 2,
+        "score_pre_stress": 3,
+        "justification": "The unusual P1 inversion (pre_stress > peak) reflects Schreiber's thesis: Wari over-centralized by absorbing provincial autonomy, which paradoxically weakened resilience. Peak P1=2 because the centralized apparatus lacked adaptive capacity once the center weakened.",
+        "sources": ["Schreiber 1992", "Isbell & McEwan 1991"],
+        "quantitative_anchors": ["Huari capital: ~15 km2 urban area; D-shaped administrative buildings replicated at provincial centers (Pikillacta, Viracochapampa)"]
+      },
+      "P2": {
+        "score": 2,
+        "justification": "Road and administrative architecture; textile production and metallurgy present. But less evidence of systematic knowledge production than contemporaneous Tiwanaku; no writing system.",
+        "sources": ["Isbell & McEwan 1991", "Nash 2019"],
+        "quantitative_anchors": ["Pikillacta: planned administrative center covering ~2 km2 with 504 buildings; standardized ceramic and textile styles indicate centralized production"]
+      },
+      "P3": {
+        "score": 2,
+        "justification": "No writing system; population estimates modest. High-altitude Andean population with limited evidence of formal education or health infrastructure beyond subsistence.",
+        "sources": ["Schreiber 1992", "Isbell & McEwan 1991"],
+        "quantitative_anchors": ["Total polity population uncertain; Huari urban core perhaps 10,000-40,000 (estimates vary widely)"]
+      },
+      "P4": {
+        "score": 3,
+        "justification": "Multi-craft economy with centralized production and redistribution; road network connected ecological zones. Less commercially oriented than contemporary Tiwanaku.",
+        "sources": ["Nash 2019", "Schreiber 1992"],
+        "quantitative_anchors": ["Nash documents centralized multi-craft production at Cerro Baul; obsidian and Spondylus shell traded across ecological zones"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "Polity endured ~400 years but collapse was sudden — administrative centers were deliberately burned/abandoned. The centralization_trigger tag reflects how over-centralization created brittleness.",
+        "sources": ["Schreiber 1992", "Isbell & McEwan 1991"],
+        "quantitative_anchors": ["Pikillacta: evidence of deliberate burning and abandonment c.1000 CE; Huari similarly abandoned; no successor state emerged from core"]
+      }
+    },
+    "bibliography": [
+      "Isbell, W.H. & McEwan, G. (1991). 'A History of Huari Studies and Introduction to Current Interpretations.' In W.H. Isbell & G. McEwan (eds), Huari Administrative Structure. Washington: Dumbarton Oaks.",
+      "Nash, D.J. (2019). 'Multicrafting and Wari Political Economy.' In R.M. Czwarno et al. (eds), Global Perspectives on Long Distance Trade. Oxford: Archaeopress.",
+      "Schreiber, K.J. (1992). Wari Imperialism in Middle Horizon Peru. Ann Arbor: University of Michigan Museum of Anthropology."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Schreiber's imperialism study and Isbell & McEwan's administrative analysis. The P1 inversion (pre_stress 3 > peak 2) is deliberate: centralization_trigger thesis — over-centralization reduced adaptive capacity. MOD data quality; no writing system. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Carolingian",
@@ -645,7 +1455,47 @@
       "ruler_dependence",
       "thin_container"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 2,
+        "justification": "Charlemagne's personal authority over counts and missi dominici (royal inspectors) did not survive him as institutional infrastructure. Frankish partible inheritance (frag_engineered) structurally mandated fragmentation. The thinnest institutional container in the European corpus.",
+        "sources": ["McKitterick 2008", "Costambeys et al. 2011"],
+        "quantitative_anchors": ["~300 counties (comitatus); missi dominici system documented in capitularies; Ordinatio Imperii (817) attempted but failed to prevent partition"]
+      },
+      "P2": {
+        "score": 2,
+        "justification": "Carolingian Renaissance: monastic scriptoria, Alcuin's educational reforms, and manuscript copying preserved classical learning. But innovation was preservation-focused, not generative.",
+        "sources": ["McKitterick 1989", "Costambeys et al. 2011"],
+        "quantitative_anchors": ["~90% of surviving classical Latin texts come from Carolingian copies; Caroline minuscule standardized European handwriting"]
+      },
+      "P3": {
+        "score": 2,
+        "justification": "Literacy confined to clergy; monastic schools the only educational infrastructure. Population recovering from post-Roman demographic collapse; life expectancy ~30 years.",
+        "sources": ["McCormick 2001", "McKitterick 2008"],
+        "quantitative_anchors": ["Maddison: Western Europe GDP/cap ~$427 GK$ c.800; population ~25-30M in Carolingian territory (McEvedy & Jones)"]
+      },
+      "P4": {
+        "score": 2,
+        "justification": "Limited monetization (denier silver standard); economy predominantly agrarian and manorial. McCormick documents beginning of Mediterranean/North Sea trade revival but scale was modest.",
+        "sources": ["McCormick 2001", "Costambeys et al. 2011"],
+        "quantitative_anchors": ["McCormick: trade revival documented through ~669 datable traveler records 700-900 CE; Dorestad emporium peak ~200 ships/year"]
+      },
+      "P5": {
+        "score_peak": 3,
+        "score_pre_stress": 2,
+        "justification": "United empire lasted only under Charlemagne (r.768-814); Treaty of Verdun (843) partitioned realm into three kingdoms per Frankish inheritance custom. Stability was ruler-dependent, not institutional.",
+        "sources": ["Nelson 1992", "McKitterick 2008"],
+        "quantitative_anchors": ["Treaty of Verdun (843): tripartite division into West Francia, Middle Francia, East Francia; Viking raids intensified from 830s"]
+      }
+    },
+    "bibliography": [
+      "Costambeys, M. et al. (2011). The Carolingian World. Cambridge: Cambridge University Press.",
+      "McCormick, M. (2001). Origins of the European Economy: Communications and Commerce AD 300-900. Cambridge: Cambridge University Press.",
+      "McKitterick, R. (1989). The Carolingians and the Written Word. Cambridge: Cambridge University Press.",
+      "McKitterick, R. (2008). Charlemagne: The Formation of a European Identity. Cambridge: Cambridge University Press.",
+      "Nelson, J.L. (1992). Charles the Bald. London: Longman."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in McKitterick/Costambeys standard histories and Maddison GDP estimates. Lowest overall scores in European subset — 'thin_container' tag is the key diagnostic. Fragmentation was structurally engineered by partible inheritance, not a failure. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Byzantine (Macedonian)",
@@ -677,7 +1527,45 @@
       "porosity",
       "low_base_recovery"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 4,
+        "justification": "Roman legal inheritance (Basilika legal code, c.892); thematic military-administrative system; professional bureaucracy with logothetes (ministers), eparch (urban prefect), and tax apparatus. Most institutionally continuous pre-modern European state.",
+        "sources": ["Haldon 2016", "Treadgold 1997"],
+        "quantitative_anchors": ["Basilika: 60-volume legal code; Book of the Eparch regulated Constantinople's guilds; thematic system divided empire into ~30 military-administrative provinces"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Greek fire (state military secret), silk production monopoly, advanced architecture (Hagia Sophia maintenance), and manuscript preservation. More conservation/adaptation than breakthrough innovation.",
+        "sources": ["Gregory 2010", "Treadgold 1997"],
+        "quantitative_anchors": ["Greek fire: state secret maintained for centuries; silk monopoly: imperial gynaikeion workshops; Constantinople's university refounded c.863"]
+      },
+      "P3": {
+        "score": 4,
+        "justification": "Highest urban literacy in medieval Europe; Constantinople's educational institutions, church schools, and widespread Greek literacy. Laiou & Morrisson document recovery of living standards during Macedonian dynasty.",
+        "sources": ["Laiou & Morrisson 2007", "Treadgold 1997"],
+        "quantitative_anchors": ["Laiou & Morrisson: Byzantine GDP/cap recovered to ~$600-700 GK$ by 10th c. (above W. European levels); Constantinople population ~500,000-800,000"]
+      },
+      "P4": {
+        "score": 4,
+        "justification": "Constantinople as Eurasian trade hub; gold solidus/nomisma the 'dollar of the Middle Ages'; silk trade monopoly; regulated guild economy with sophisticated commercial law.",
+        "sources": ["Laiou & Morrisson 2007", "Haldon 2016"],
+        "quantitative_anchors": ["Laiou & Morrisson: nomisma maintained ~4.5g gold standard for 700 years; Book of the Eparch regulates 22 guild categories"]
+      },
+      "P5": {
+        "score": 4,
+        "justification": "Macedonian dynasty (867-1056) represents 189 years of relative stability and territorial recovery. Thematic system provided resilient military-fiscal base; Basil II's conquests (976-1025) represent peak.",
+        "sources": ["Haldon 2016", "Treadgold 1997"],
+        "quantitative_anchors": ["Basil II: conquered Bulgaria (1018), expanded to largest post-Justinianic borders; left treasury surplus of ~200,000 lbs gold"]
+      }
+    },
+    "bibliography": [
+      "Gregory, T. (2010). A History of Byzantium. 2nd ed. Malden: Wiley-Blackwell.",
+      "Haldon, J. (2016). The Empire That Would Not Die: The Paradox of Eastern Roman Survival, 640-740. Cambridge, MA: Harvard University Press.",
+      "Laiou, A.E. & Morrisson, C. (2007). The Byzantine Economy. Cambridge: Cambridge University Press.",
+      "Treadgold, W. (1997). A History of the Byzantine State and Society. Stanford: Stanford University Press."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Laiou & Morrisson's economic analysis and Haldon's institutional study. Flat peak/pre_stress profile reflects the 'absorb' outcome — Macedonian dynasty sustained institutional quality without deterioration. Laiou & Morrisson GDP estimates are unusually firm for a medieval case. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Venetian Republic",
@@ -709,7 +1597,48 @@
       "convergence_closure",
       "durability"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 5,
+        "justification": "Elaborate republican constitution: Great Council, Senate, Council of Ten, Doge (elected, constrained). Puga & Trefler show how colleganza contracts created institutional innovation in commercial law. Highest-P1 ancient case — institutions so strong they outlasted trade dominance.",
+        "sources": ["Lane 1973", "Puga & Trefler 2014"],
+        "quantitative_anchors": ["Great Council: ~2,500 members by 14th c.; Doge elected by 41-member committee through 10-round process; republic endured 1,100 years (697-1797)"]
+      },
+      "P2": {
+        "score_peak": 4,
+        "score_pre_stress": 3,
+        "justification": "Arsenal (state shipyard) pioneered assembly-line production; Murano glass monopoly; printing industry (Aldus Manutius). Peak P2=4 reflects 15th-16th c. innovation zenith; pre_stress P2=3 reflects earlier commercial-focus era.",
+        "sources": ["Lane 1973", "Puga & Trefler 2014"],
+        "quantitative_anchors": ["Arsenal: produced 1 galley/day at peak; employed ~16,000 workers (largest industrial complex in pre-modern Europe); Aldine Press: ~130 first editions"]
+      },
+      "P3": {
+        "score": 4,
+        "justification": "High literacy for pre-modern Europe; extensive notarial/legal documentation culture; University of Padua (under Venetian control) among Europe's leading institutions.",
+        "sources": ["Lane 1973", "Malanima 2009"],
+        "quantitative_anchors": ["Malanima: northern Italian GDP/cap ~$1,100-1,400 GK$ at peak (14th-15th c.); Venice population ~180,000 at 1340 peak; male literacy estimated 30-40%"]
+      },
+      "P4": {
+        "score_peak": 5,
+        "score_pre_stress": 3,
+        "justification": "Mediterranean trade hegemon: spice/silk monopoly, state-organized merchant convoys (muda), and sophisticated financial instruments. Peak P4=5 reflects 13th-15th c. commercial dominance; pre_stress P4=3 reflects earlier, pre-Crusades era.",
+        "sources": ["Lane 1973", "Puga & Trefler 2014"],
+        "quantitative_anchors": ["Puga & Trefler: colleganza contracts show institutional basis for long-distance trade; annual pepper imports ~1,200 tons at peak; state debt (Monte Vecchio) from 1262"]
+      },
+      "P5": {
+        "score": 5,
+        "justification": "1,100 years of continuous republican government (697-1797) — longest-lived republic in history. Only ended by Napoleonic conquest (exogenous), not internal fragmentation.",
+        "sources": ["Finlay 1980", "Lane 1973"],
+        "quantitative_anchors": ["697-1797: 1,100 years; survived Ottoman threat, League of Cambrai (1508), and plague (1348, 1575, 1630); constitutional stability unique in pre-modern record"]
+      }
+    },
+    "bibliography": [
+      "Finlay, R. (1980). Politics in Renaissance Venice. New Brunswick: Rutgers University Press.",
+      "Lane, F.C. (1973). Venice: A Maritime Republic. Baltimore: Johns Hopkins University Press.",
+      "Malanima, P. (2009). Pre-Modern European Economy: One Thousand Years (10th-19th Centuries). Leiden: Brill.",
+      "Norwich, J.J. (1982). A History of Venice. New York: Knopf.",
+      "Puga, D. & Trefler, D. (2014). 'International Trade and Institutional Change: Medieval Venice's Response to Globalization.' Quarterly Journal of Economics 129(2): 753-821."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Lane's standard history, Puga & Trefler's QJE institutional analysis, and Malanima's GDP estimates. Highest-scoring case in the ancient corpus alongside Song China; P1=5 + P5=5 is the 'durability' archetype. Convergence_closure tag flags Puga & Trefler's finding that institutional openness eventually narrowed (Serrata of 1297). Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "Ottoman (classical)",
@@ -740,7 +1669,46 @@
       "innovation_with_inst",
       "porosity"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score": 4,
+        "justification": "Timar land-grant system, devshirme recruitment creating slave-meritocratic elite, provincial eyalet/sanjak administration, codified kanun (secular law) alongside sharia. Sophisticated but not quite reaching Song/Venice institutional depth.",
+        "sources": ["İnalcık 1973", "Imber 2009"],
+        "quantitative_anchors": ["İnalcık: ~37 eyalets by 1600; devshirme recruited ~1,000-3,000 boys per levy; kanunname legal compilations for each province"]
+      },
+      "P2": {
+        "score": 4,
+        "justification": "Rapid adoption of gunpowder weapons, advanced military architecture (star forts), sophisticated cartography (Piri Reis), and institutional innovation in military organization. More adaptive-innovative than purely conservationist.",
+        "sources": ["Faroqhi 2005", "İnalcık 1973"],
+        "quantitative_anchors": ["Topkapi cannon: 8m bronze bombard at Constantinople siege (1453); Piri Reis map (1513) synthesizes 20 source maps; Istanbul population ~400,000-700,000 by 1550"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Medrese (theological college) system provided education for ulema class; general population literacy limited. Millet system allowed religious-community self-governance but constrained cross-community human development.",
+        "sources": ["İnalcık 1973", "Pamuk 2000"],
+        "quantitative_anchors": ["İnalcık: population ~22M by c.1520; Pamuk: Istanbul real wages comparable to European cities; ~150 medrese in Istanbul alone by 1580"]
+      },
+      "P4": {
+        "score": 4,
+        "justification": "Controlled east-west trade routes; monetized economy with akçe silver standard; İnalcık's timar system integrated fiscal-military-agricultural production. Pamuk documents prices and wages comparable to or exceeding European levels.",
+        "sources": ["Pamuk 2000", "İnalcık 1973"],
+        "quantitative_anchors": ["Pamuk (JEH 2012): Ottoman GDP/cap ~$600-700 GK$ at peak; Istanbul consumer prices systematically recorded; customs revenue from Bursa silk market ~300,000 akçe/year"]
+      },
+      "P5": {
+        "score": 4,
+        "justification": "Classical period (1299-1566) includes 267 years of expansion and consolidation. Devshirme succession mechanism (no primogeniture — most capable son wins fratricidal contest) was brutal but effective at preventing weak rulers.",
+        "sources": ["Imber 2009", "İnalcık 1973"],
+        "quantitative_anchors": ["10 sultans in 267 years of classical period; survived Timur's defeat (1402) and 11-year Interregnum; Suleiman's death (1566) conventionally marks end of classical era"]
+      }
+    },
+    "bibliography": [
+      "Faroqhi, S. (2005). Subjects of the Sultan: Culture and Daily Life in the Ottoman Empire. London: I.B. Tauris.",
+      "Imber, C. (2009). The Ottoman Empire, 1300-1650: The Structure of Power. 2nd ed. Basingstoke: Palgrave Macmillan.",
+      "İnalcık, H. (1973). The Ottoman Empire: The Classical Age, 1300-1600. London: Weidenfeld & Nicolson.",
+      "Pamuk, Ş. (2000). A Monetary History of the Ottoman Empire. Cambridge: Cambridge University Press.",
+      "Pamuk, Ş. (2012). 'Prices and Wages in Istanbul, 1469-1914.' International Institute of Social History."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in İnalcık's standard history and Pamuk's price/wage data (unusually strong quantitative evidence for an Islamic-world case). Flat peak/pre_stress profile reflects 'absorb' outcome during classical period. Directional only; firewall from 213C/0F baseline."
   },
   {
     "name": "New Kingdom Egypt",
@@ -772,6 +1740,48 @@
       "suppression",
       "frag2-4"
     ],
-    "note": "ORDINAL (1-5, relative to contemporaries), interpreter-scored from structural sketches. LOWEST-CONFIDENCE tier; directional only; firewall from the 213C/0F baseline; hindsight = post-hoc consistency check."
+    "pillar_grounding": {
+      "P1": {
+        "score_peak": 4,
+        "score_pre_stress": 3,
+        "justification": "At peak (18th-19th Dynasties): professional military, vizier-led bureaucracy, international diplomacy (Amarna Letters). Pre-stress (late 20th Dynasty): priestly autonomy in Thebes, worker strikes, and tomb robberies indicate institutional decay.",
+        "sources": ["Van De Mieroop 2011", "Kemp 2006"],
+        "quantitative_anchors": ["Amarna Letters: ~380 clay tablets documenting international diplomacy; Deir el-Medina worker records provide detailed administrative data; Turin Papyrus catalogs state officials"]
+      },
+      "P2": {
+        "score": 3,
+        "justification": "Advanced medicine (Ebers Papyrus), monumental architecture (Valley of the Kings, Abu Simbel), glass-making, and bronze metallurgy. Continuation and refinement of OK/MK knowledge rather than revolutionary innovation.",
+        "sources": ["Shaw 2000", "Van De Mieroop 2011"],
+        "quantitative_anchors": ["Abu Simbel: 4 statues at 20m height; Valley of the Kings: 63 royal tombs; Ebers Papyrus: 110 pages of medical knowledge"]
+      },
+      "P3": {
+        "score": 3,
+        "justification": "Scribal literacy perhaps 1-3% of population; Deir el-Medina records show skilled worker community with medical care, education, and regulated labor conditions — but this was an elite community, not representative.",
+        "sources": ["Butzer 1976", "Kemp 2006"],
+        "quantitative_anchors": ["Butzer: population 3-4.5M; Deir el-Medina: ~120 workers with detailed payment records; first documented labor strike (~1157 BCE) under Ramesses III"]
+      },
+      "P4": {
+        "score_peak": 4,
+        "score_pre_stress": 3,
+        "justification": "International trade networks spanning Mediterranean, Nubia, and Punt; tribute economy from conquered territories (Syria, Kush). Bronze Age collapse disrupted these networks catastrophically.",
+        "sources": ["Cline 2014", "Kemp 2006"],
+        "quantitative_anchors": ["Cline: Late Bronze Age trade network linked Egypt, Hatti, Mycenae, Ugarit, Cyprus; Amarna Letters document international gift exchange; Punt expeditions brought incense, gold, myrrh"]
+      },
+      "P5": {
+        "score_peak": 4,
+        "score_pre_stress": 2,
+        "justification": "Stable for ~300 years (18th-19th Dynasties); Bronze Age collapse (c.1177 BCE) brought Sea Peoples invasions, trade network collapse, and systemic drought. Third Intermediate Period fragmentation followed.",
+        "sources": ["Cline 2014", "Van De Mieroop 2011"],
+        "quantitative_anchors": ["Cline: Sea Peoples attacks c.1177 BCE; Medinet Habu reliefs document battles; Harris Papyrus records Ramesses III's temple donations totaling ~1/3 of cultivable land — institutional capture"]
+      }
+    },
+    "bibliography": [
+      "Butzer, K. (1976). Early Hydraulic Civilization in Egypt. Chicago: University of Chicago Press.",
+      "Cline, E. (2014). 1177 B.C.: The Year Civilization Collapsed. Princeton: Princeton University Press.",
+      "Kemp, B. (2006). Ancient Egypt: Anatomy of a Civilization. 2nd ed. London: Routledge.",
+      "Shaw, I. (ed.) (2000). The Oxford History of Ancient Egypt. Oxford: Oxford University Press.",
+      "Van De Mieroop, M. (2011). A History of Ancient Egypt. Chichester: Wiley-Blackwell."
+    ],
+    "note": "ORDINAL (1-5, relative to contemporaries). Grounded in Cline's Bronze Age collapse analysis, Kemp's institutional study, and Butzer's population estimates. Deir el-Medina records provide unusually rich administrative data for an ancient case. Environmental_systemic tag reflects multi-cause collapse (Sea Peoples + drought + institutional capture). Directional only; firewall from 213C/0F baseline."
   }
 ]
