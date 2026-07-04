@@ -72,7 +72,9 @@ raw sources ─► scripts/build_canonical_panel.py ─► data/sources/canonica
 
 ## Data + docs
 
-- `data/case_studies/completed/` — the **51-case validation corpus** (case01…).
+- `data/case_studies/completed/` — the **84-case modern validation corpus**: 51
+  P1-ordinality (case01–51) + 19 durability-gate (sig01–19) + 14 rule-validation
+  (rv01–14). `data/case_studies/ancient/` — **25 pre-modern cases** (firewalled).
   `data/case_studies/templates/` — the case template. `data/baselines/`,
   `data/forecasts/` — reference results / prospective forecasts.
 - `docs/` — the research history (start at `SYSTEM_STATE.md` and `HANDOFF.md`;
@@ -82,7 +84,7 @@ raw sources ─► scripts/build_canonical_panel.py ─► data/sources/canonica
 
 ## Invariants (do not break)
 
-1. **The 51-case corpus is the floor.** No change may degrade an existing case.
+1. **The 84-case modern corpus is the floor.** No change may degrade an existing case.
 2. **0-100 indicator scale.** WGI/CPI/GII inputs are 0–100; the scale guard hard-
    fails out-of-domain values and flags suspicious ones. Never feed raw WGI
    estimates (z-scores). All pillar normalizers clamp to [0,1].

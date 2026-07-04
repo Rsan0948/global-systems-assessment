@@ -1,6 +1,6 @@
 # Modernization Index Research Platform
 
-A quantitative diagnostic framework for measuring how complex governance systems respond to structural stress. Validated across 20 modern case studies and 5 ancient empires.
+A quantitative diagnostic framework for measuring how complex governance systems respond to structural stress. Validated across 84 modern case studies and 25 ancient empires, scoring 191 countries.
 
 ## Quick Start
 
@@ -33,9 +33,10 @@ mi-research/
 │   ├── safeguards.py        # All safeguards (A-G) + essential mods
 │   └── diagnostics.py       # Configuration analysis, strategy classification
 ├── data/
-│   ├── countries/           # Country indicator data (JSON per country)
+│   ├── sources/             # Canonical panel (191 countries) + raw indicator sources
 │   ├── case_studies/        # Retrodiction case studies
-│   │   ├── completed/       # Validated cases (the 20-case baseline)
+│   │   ├── completed/       # 84 validated modern cases (51 ordinality + 19 durability-gate + 14 rule-validation)
+│   │   ├── ancient/         # 25 pre-modern cases (firewalled, lowest-confidence)
 │   │   ├── in_progress/     # Cases being developed
 │   │   └── templates/       # Template for new cases
 │   └── baselines/           # Validated baseline results (do not modify)
@@ -47,7 +48,7 @@ mi-research/
 
 ## Core Principles
 
-1. **The 20-case baseline is the floor.** Any modification must not degrade performance on existing cases.
+1. **The 84-case modern corpus is the floor.** Any modification must not degrade performance on existing cases.
 2. **Honest reporting.** Every result — confirmation, partial, falsification — is documented with full reasoning.
 3. **Additive improvement.** New safeguards, new case studies, new indicators extend the framework. Nothing is removed without documented justification.
 4. **Reproducibility.** Given the same inputs, the scoring engine produces the same outputs. Every calculation is deterministic.

@@ -1,7 +1,7 @@
 # Validation rounds — the refinement history
 
 These documents are the **process record** of how the MI score was tested and
-refined over time — the retrodiction studies behind the 20-case modern baseline
+refined over time — the retrodiction studies behind the modern baseline
 summarized in `../../RESEARCH.md` ("What's Been Done"). They are **not** the
 canonical run 1–6 reference (that is the source-of-truth scoring record and lives
 in `../../live/runs/`).
@@ -35,8 +35,8 @@ in the LIVE version) as safeguards were added.
   case records belong in `../../data/case_studies/completed/` (follow
   `data/case_studies/templates/case_template.json`); building those JSON cases
   from these narratives is open work.
-- The aggregate "~78% clean / ~100% directional / 20-of-20 P1 ordinality" claim in
-  `RESEARCH.md` rests on Rounds 1–4 here plus the LIVE safeguards/mods. Each round
+- The aggregate "~73% clean / 100% directional / 51-case P1 ordinality" claim in
+  `RESEARCH.md` rests on Rounds 1–4 here plus Batches 1–6 and the LIVE safeguards/mods. Each round
   also documents its own caveats (WGI 2025 vintage break, small-N, confirmation
   risk) — carry those forward; don't launder them out.
 - Per the Golden Rule, any modification must not degrade performance on these

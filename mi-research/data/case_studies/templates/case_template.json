@@ -158,6 +158,6 @@
     "new_failure_modes_discovered": [],
     "what_this_case_uniquely_reveals": "",
     "proposed_framework_modifications": [],
-    "baseline_impact": "Does this case suggest any modification that needs 20-case baseline check?"
+    "baseline_impact": "Does this case suggest any modification that needs full corpus baseline check?"
   }
 }
