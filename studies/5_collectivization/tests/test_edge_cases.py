@@ -24,6 +24,7 @@ from failure_catalog import (
 from ratchet import score_case as ratchet_score, analyze as ratchet_analyze
 from form_shift import score_case as fs_score, analyze as fs_analyze, _net_patch_score
 from cycle_engine import timing_intensity, analyze as cycle_analyze
+from pathway_analysis import classify_pathway, score_case as pw_score, analyze as pw_analyze
 
 
 def _case(**kw):
@@ -327,6 +328,56 @@ class TestCycleEngineEdges:
         ]
         result = cycle_analyze(cases)
         required = {"ratchet_supported", "form_shift_supported",
-                    "all_types_shifted", "dominant_mechanism_channel",
+                    "all_types_shifted", "pathway_counts",
+                    "depth_predicts_flips", "speed_predicts_integration_loss",
+                    "dominant_mechanism_channel",
                     "warning_signals_hit_rate", "n_core_cases", "n_controls"}
         assert required.issubset(result.summary.keys())
+
+
+# =========================================================================
+# pathway_analysis edge cases
+# =========================================================================
+
+class TestPathwayEdges:
+
+    def test_low_depth_always_construction(self):
+        case = _case(features_pre=[0]*15, features_post=[1]*15,
+                     collect_speed_years=5)
+        assert classify_pathway(case) == "construction"
+
+    def test_high_depth_no_change_is_restoration(self):
+        vec = list(TYPE_TEMPLATES["personal_empire"])
+        case = _case(features_pre=vec, features_post=list(vec),
+                     collect_speed_years=50)
+        assert classify_pathway(case) == "restoration"
+
+    def test_high_depth_slow_is_negotiation(self):
+        pre = list(TYPE_TEMPLATES["personal_empire"])
+        post = list(TYPE_TEMPLATES["federal_republic"])
+        case = _case(features_pre=pre, features_post=post,
+                     collect_speed_years=200)
+        assert classify_pathway(case) == "negotiation"
+
+    def test_high_depth_fast_shift_is_redesign(self):
+        pre = list(TYPE_TEMPLATES["personal_empire"])
+        post = list(TYPE_TEMPLATES["federal_republic"])
+        case = _case(features_pre=pre, features_post=post,
+                     collect_speed_years=10)
+        assert classify_pathway(case) == "redesign"
+
+    def test_score_returns_all_fields(self):
+        case = _case()
+        s = pw_score(case)
+        assert hasattr(s, "pathway")
+        assert hasattr(s, "integration_features_lost")
+        assert hasattr(s, "sovereignty_features_gained")
+
+    def test_analyze_empty(self):
+        r = pw_analyze([])
+        assert r.pathway_counts == {}
+
+    def test_analyze_all_controls(self):
+        cases = [_case(name=f"c{i}", is_control=True) for i in range(3)]
+        r = pw_analyze(cases)
+        assert r.pathway_counts == {}

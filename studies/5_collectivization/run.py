@@ -133,6 +133,7 @@ def main():
     out = {
         "ratchet": result.ratchet_result,
         "form_shift": result.form_shift_result,
+        "pathway": result.pathway_result,
         "timing_intensity": result.timing_intensity_result,
         "warning_signals": result.warning_signals_result,
         "summary": result.summary,

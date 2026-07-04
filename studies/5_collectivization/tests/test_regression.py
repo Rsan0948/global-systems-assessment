@@ -18,6 +18,7 @@ from feature_vector import classify, TYPE_TEMPLATES, N_FEATURES, hamming
 from failure_catalog import active_failures, diagnostic
 from ratchet import score_case as ratchet_score
 from form_shift import score_case as fs_score
+from pathway_analysis import classify_pathway, score_case as pw_score
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CASES_DIR = os.path.join(HERE, "..", "cases")
@@ -371,3 +372,72 @@ def test_expanded_pool_form_shift_supported():
     assert result.summary["form_shift_supported"]
     assert result.summary["n_core_cases"] == 16
     assert result.summary["n_controls"] == 4
+
+
+# =========================================================================
+# Pathway classification stability
+# =========================================================================
+
+EXPECTED_PATHWAYS = {
+    # Construction: low predecessor depth, must build new institutions
+    "germany.json": "construction",
+    "italy.json": "construction",
+    "china.json": "construction",
+    "japan.json": "construction",
+    "european_union.json": "construction",
+    "exp_netherlands.json": "construction",
+    "exp_zulu_kingdom.json": "construction",
+    "exp_india_maurya.json": "construction",
+    # Restoration: high predecessor depth, fast, same type
+    "exp_india_mughal.json": "restoration",
+    "exp_persia_safavid.json": "restoration",
+    "exp_vietnam.json": "restoration",
+    "exp_ethiopia.json": "restoration",
+    # Negotiation: high predecessor depth, slow collectivization
+    "exp_france.json": "negotiation",
+    "exp_spain.json": "negotiation",
+    "exp_poland_lithuania.json": "negotiation",
+    # Redesign: high predecessor depth, fast, deliberate form-shift
+    "united_states.json": "redesign",
+}
+
+
+@pytest.mark.parametrize("filename,expected", list(EXPECTED_PATHWAYS.items()))
+def test_pathway_classification_stability(filename, expected):
+    case = _load_case(filename)
+    assert classify_pathway(case) == expected
+
+
+def test_restorations_have_zero_net_patch():
+    for fname, pathway in EXPECTED_PATHWAYS.items():
+        if pathway == "restoration":
+            case = _load_case(fname)
+            s = pw_score(case)
+            assert s.failures_patched == 0, f"{fname}: expected 0 patched"
+            assert s.new_vulnerabilities == 0, f"{fname}: expected 0 new"
+
+
+def test_restorations_have_zero_integration_loss():
+    for fname, pathway in EXPECTED_PATHWAYS.items():
+        if pathway == "restoration":
+            case = _load_case(fname)
+            s = pw_score(case)
+            assert s.integration_features_lost == 0
+
+
+def test_depth_predicts_flips():
+    from pathway_analysis import analyze as pw_analyze
+    cases_dir = os.path.join(HERE, "..", "cases")
+    all_cases = [_load_case(f) for f in sorted(os.listdir(cases_dir)) if f.endswith(".json")]
+    r = pw_analyze(all_cases)
+    assert r.depth_flip_p < 0.001
+    assert r.depth_flip_rho < -0.7
+
+
+def test_speed_predicts_integration_loss():
+    from pathway_analysis import analyze as pw_analyze
+    cases_dir = os.path.join(HERE, "..", "cases")
+    all_cases = [_load_case(f) for f in sorted(os.listdir(cases_dir)) if f.endswith(".json")]
+    r = pw_analyze(all_cases)
+    assert r.speed_integration_loss_p < 0.05
+    assert r.speed_integration_loss_rho > 0.7

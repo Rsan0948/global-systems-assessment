@@ -585,6 +585,223 @@
     "net_patch_u": 62.0,
     "net_patch_p": 0.0015
   },
+  "pathway": {
+    "per_case": {
+      "China": {
+        "pathway": "construction",
+        "id_pre": 0,
+        "id_post": 6,
+        "flip_count": 11,
+        "collect_speed": 9,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 2,
+        "new_vulnerabilities": 2,
+        "durability": 15
+      },
+      "European Union": {
+        "pathway": "construction",
+        "id_pre": 1,
+        "id_post": 5,
+        "flip_count": 6,
+        "collect_speed": 42,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 2,
+        "failures_patched": 1,
+        "new_vulnerabilities": 0,
+        "durability": 33
+      },
+      "Ethiopia": {
+        "pathway": "restoration",
+        "id_pre": 5,
+        "id_post": 6,
+        "flip_count": 1,
+        "collect_speed": 34,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 0,
+        "new_vulnerabilities": 0,
+        "durability": 85
+      },
+      "France": {
+        "pathway": "negotiation",
+        "id_pre": 6,
+        "id_post": 3,
+        "flip_count": 4,
+        "collect_speed": 447,
+        "integration_features_lost": 3,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 0,
+        "new_vulnerabilities": 0,
+        "durability": 128
+      },
+      "India (Maurya)": {
+        "pathway": "construction",
+        "id_pre": 0,
+        "id_post": 6,
+        "flip_count": 12,
+        "collect_speed": 62,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 2,
+        "new_vulnerabilities": 2,
+        "durability": 137
+      },
+      "India (Mughal)": {
+        "pathway": "restoration",
+        "id_pre": 6,
+        "id_post": 6,
+        "flip_count": 0,
+        "collect_speed": 79,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 0,
+        "new_vulnerabilities": 0,
+        "durability": 154
+      },
+      "Netherlands": {
+        "pathway": "construction",
+        "id_pre": 2,
+        "id_post": 3,
+        "flip_count": 9,
+        "collect_speed": 69,
+        "integration_features_lost": 1,
+        "sovereignty_features_gained": 2,
+        "failures_patched": 3,
+        "new_vulnerabilities": 0,
+        "durability": 207
+      },
+      "Persia (Safavid)": {
+        "pathway": "restoration",
+        "id_pre": 6,
+        "id_post": 6,
+        "flip_count": 0,
+        "collect_speed": 87,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 0,
+        "new_vulnerabilities": 0,
+        "durability": 134
+      },
+      "Poland-Lithuania": {
+        "pathway": "negotiation",
+        "id_pre": 6,
+        "id_post": 3,
+        "flip_count": 8,
+        "collect_speed": 249,
+        "integration_features_lost": 3,
+        "sovereignty_features_gained": 2,
+        "failures_patched": 3,
+        "new_vulnerabilities": 0,
+        "durability": 226
+      },
+      "Spain": {
+        "pathway": "negotiation",
+        "id_pre": 6,
+        "id_post": 2,
+        "flip_count": 5,
+        "collect_speed": 286,
+        "integration_features_lost": 4,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 0,
+        "new_vulnerabilities": 0,
+        "durability": 508
+      },
+      "Vietnam": {
+        "pathway": "restoration",
+        "id_pre": 6,
+        "id_post": 6,
+        "flip_count": 1,
+        "collect_speed": 31,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 0,
+        "new_vulnerabilities": 0,
+        "durability": 83
+      },
+      "Zulu Kingdom": {
+        "pathway": "construction",
+        "id_pre": 2,
+        "id_post": 5,
+        "flip_count": 8,
+        "collect_speed": 12,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 1,
+        "new_vulnerabilities": 2,
+        "durability": 51
+      },
+      "Germany": {
+        "pathway": "construction",
+        "id_pre": 1,
+        "id_post": 6,
+        "flip_count": 11,
+        "collect_speed": 37,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 2,
+        "failures_patched": 3,
+        "new_vulnerabilities": 0,
+        "durability": 47
+      },
+      "Italy": {
+        "pathway": "construction",
+        "id_pre": 0,
+        "id_post": 6,
+        "flip_count": 15,
+        "collect_speed": 13,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 2,
+        "failures_patched": 3,
+        "new_vulnerabilities": 0,
+        "durability": 165
+      },
+      "Japan": {
+        "pathway": "construction",
+        "id_pre": 0,
+        "id_post": 6,
+        "flip_count": 12,
+        "collect_speed": 321,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 1,
+        "failures_patched": 2,
+        "new_vulnerabilities": 0,
+        "durability": 137
+      },
+      "United States": {
+        "pathway": "redesign",
+        "id_pre": 5,
+        "id_post": 6,
+        "flip_count": 4,
+        "collect_speed": 3,
+        "integration_features_lost": 0,
+        "sovereignty_features_gained": 0,
+        "failures_patched": 0,
+        "new_vulnerabilities": 0,
+        "durability": 158
+      }
+    },
+    "pathway_counts": {
+      "construction": 8,
+      "restoration": 4,
+      "negotiation": 3,
+      "redesign": 1
+    },
+    "depth_flip_correlation": {
+      "rho": -0.844,
+      "p": 0.0
+    },
+    "speed_integration_loss_correlation": {
+      "rho": 0.825,
+      "p": 0.0117
+    },
+    "ceiling_fisher_p": 0.0769,
+    "pathway_mean_durabilities": {
+      "construction": 99.0,
+      "restoration": 114.0,
+      "negotiation": 287.3,
+      "redesign": 158.0
+    }
+  },
   "timing_intensity": {
     "spearman_matrix": {
       "unit_count_vs_speed": {
@@ -872,6 +1089,14 @@
     "ratchet_supported": false,
     "form_shift_supported": true,
     "all_types_shifted": false,
+    "pathway_counts": {
+      "construction": 8,
+      "restoration": 4,
+      "negotiation": 3,
+      "redesign": 1
+    },
+    "depth_predicts_flips": true,
+    "speed_predicts_integration_loss": true,
     "dominant_mechanism_channel": "coordination_failure",
     "warning_signals_hit_rate": 0.75,
     "n_core_cases": 16,

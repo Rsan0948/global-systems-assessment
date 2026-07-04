@@ -16,6 +16,7 @@ from scipy import stats
 from collectivization_case import CaseProfile
 import ratchet
 import form_shift
+import pathway_analysis
 import warning_signals
 
 
@@ -79,6 +80,7 @@ def timing_intensity(cases: list[CaseProfile]) -> TimingIntensityResult:
 class CycleAnalysis:
     ratchet_result: dict
     form_shift_result: dict
+    pathway_result: dict
     timing_intensity_result: dict
     warning_signals_result: dict
     summary: dict
@@ -88,6 +90,7 @@ def analyze(cases: list[CaseProfile]) -> CycleAnalysis:
     """Full cross-case cycle analysis."""
     r = ratchet.analyze(cases)
     f = form_shift.analyze(cases)
+    pw = pathway_analysis.analyze(cases)
     t = timing_intensity(cases)
 
     ws_results = {}
@@ -145,6 +148,29 @@ def analyze(cases: list[CaseProfile]) -> CycleAnalysis:
         "net_patch_p": f.net_patch_p,
     }
 
+    pw_dict = {
+        "per_case": {name: {
+            "pathway": s.pathway,
+            "id_pre": s.id_pre,
+            "id_post": s.id_post,
+            "flip_count": s.flip_count,
+            "collect_speed": s.collect_speed,
+            "integration_features_lost": s.integration_features_lost,
+            "sovereignty_features_gained": s.sovereignty_features_gained,
+            "failures_patched": s.failures_patched,
+            "new_vulnerabilities": s.new_vulnerabilities,
+            "durability": s.durability,
+        } for name, s in pw.per_case.items()},
+        "pathway_counts": pw.pathway_counts,
+        "depth_flip_correlation": {
+            "rho": pw.depth_flip_rho, "p": pw.depth_flip_p},
+        "speed_integration_loss_correlation": {
+            "rho": pw.speed_integration_loss_rho,
+            "p": pw.speed_integration_loss_p},
+        "ceiling_fisher_p": pw.ceiling_fisher_p,
+        "pathway_mean_durabilities": pw.pathway_durabilities,
+    }
+
     ti_dict = {
         "spearman_matrix": t.spearman_matrix,
         "dominant_channel": t.dominant_channel,
@@ -154,6 +180,9 @@ def analyze(cases: list[CaseProfile]) -> CycleAnalysis:
         "ratchet_supported": r.sign_test_p < 0.05,
         "form_shift_supported": f.net_patch_p < 0.10,
         "all_types_shifted": f.all_cases_shifted_type,
+        "pathway_counts": pw.pathway_counts,
+        "depth_predicts_flips": pw.depth_flip_p < 0.05,
+        "speed_predicts_integration_loss": pw.speed_integration_loss_p < 0.05,
         "dominant_mechanism_channel": t.dominant_channel,
         "warning_signals_hit_rate": round(signals_fired / signals_total, 2)
         if signals_total > 0 else None,
@@ -164,6 +193,7 @@ def analyze(cases: list[CaseProfile]) -> CycleAnalysis:
     return CycleAnalysis(
         ratchet_result=ratchet_dict,
         form_shift_result=fs_dict,
+        pathway_result=pw_dict,
         timing_intensity_result=ti_dict,
         warning_signals_result=ws_results,
         summary=summary,
