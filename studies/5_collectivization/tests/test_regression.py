@@ -63,6 +63,17 @@ EXPECTED_TYPES = {
     "ctrl_sub_saharan_africa.json": ("colonial_imperial", "city_state_system"),
     "ctrl_post_soviet.json": ("ideological_party", "city_state_system"),
     "ctrl_greek_poleis.json": ("colonial_imperial", "city_state_system"),
+    # Expansion cases (randomly selected, seed=42)
+    "exp_netherlands.json": ("colonial_imperial", "supranational_union"),
+    "exp_spain.json": ("personal_empire", "colonial_imperial"),
+    "exp_india_mughal.json": ("personal_empire", "personal_empire"),
+    "exp_india_maurya.json": ("city_state_system", "personal_empire"),
+    "exp_zulu_kingdom.json": ("city_state_system", "personal_empire"),
+    "exp_poland_lithuania.json": ("personal_empire", "federal_republic"),
+    "exp_persia_safavid.json": ("personal_empire", "personal_empire"),
+    "exp_france.json": ("personal_empire", "colonial_imperial"),
+    "exp_vietnam.json": ("personal_empire", "personal_empire"),
+    "exp_ethiopia.json": ("personal_empire", "personal_empire"),
 }
 
 
@@ -249,6 +260,11 @@ ALL_CASE_FILES = [
     "european_union.json", "china.json", "japan.json",
     "ctrl_middle_east_post_ottoman.json", "ctrl_sub_saharan_africa.json",
     "ctrl_post_soviet.json", "ctrl_greek_poleis.json",
+    # Expansion cases
+    "exp_netherlands.json", "exp_spain.json", "exp_india_mughal.json",
+    "exp_india_maurya.json", "exp_zulu_kingdom.json",
+    "exp_poland_lithuania.json", "exp_persia_safavid.json",
+    "exp_france.json", "exp_vietnam.json", "exp_ethiopia.json",
 ]
 
 
@@ -288,3 +304,70 @@ def test_case_control_flag_matches_filename(filename):
         assert case.is_control, f"{filename} should be a control"
     else:
         assert not case.is_control, f"{filename} should not be a control"
+
+
+# =========================================================================
+# Expansion case stability
+# =========================================================================
+
+EXPANSION_CASE_FILES = [f for f in ALL_CASE_FILES if f.startswith("exp_")]
+
+
+@pytest.mark.parametrize("filename", EXPANSION_CASE_FILES)
+def test_expansion_cases_not_controls(filename):
+    case = _load_case(filename)
+    assert not case.is_control
+
+
+def test_restoration_cases_zero_flips():
+    for fname in ["exp_india_mughal.json", "exp_persia_safavid.json"]:
+        case = _load_case(fname)
+        s = fs_score(case)
+        assert s.flip_count == 0, f"{fname} should have zero flips (restoration case)"
+        assert not s.type_changed
+
+
+def test_netherlands_form_shift():
+    case = _load_case("exp_netherlands.json")
+    s = fs_score(case)
+    assert s.type_changed
+    assert s.flip_count == 9
+    assert len(s.failure_diagnostic["new_vulnerabilities"]) == 0
+
+
+def test_poland_lithuania_form_shift():
+    case = _load_case("exp_poland_lithuania.json")
+    s = fs_score(case)
+    assert s.type_changed
+    assert s.flip_count == 8
+
+
+def test_india_maurya_ratchet():
+    case = _load_case("exp_india_maurya.json")
+    s = ratchet_score(case)
+    assert s.positive_dims == 3
+    assert s.integration_depth_post == 6
+
+
+def test_zulu_fast_collectivization():
+    case = _load_case("exp_zulu_kingdom.json")
+    assert case.collect_speed_years == 12
+
+
+def test_france_slow_collectivization():
+    case = _load_case("exp_france.json")
+    assert case.collect_speed_years == 447
+
+
+def test_expanded_pool_form_shift_supported():
+    from cycle_engine import analyze as cycle_analyze
+    cases_dir = os.path.join(HERE, "..", "cases")
+    all_cases = []
+    for fname in sorted(os.listdir(cases_dir)):
+        if fname.endswith(".json"):
+            all_cases.append(_load_case(fname))
+    assert len(all_cases) == 20
+    result = cycle_analyze(all_cases)
+    assert result.summary["form_shift_supported"]
+    assert result.summary["n_core_cases"] == 16
+    assert result.summary["n_controls"] == 4
