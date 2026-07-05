@@ -1,0 +1,2874 @@
+{
+  "validation": {
+    "per_country": {
+      "Argentina": {
+        "predicted": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.95
+        },
+        "actual": {
+          "P1": 0.4893,
+          "P2": 0.4409,
+          "P3": 0.8779,
+          "P4": 0.7203,
+          "P5": 0.6216
+        },
+        "residuals": {
+          "P1": -0.5107,
+          "P2": -0.5591,
+          "P3": -0.1221,
+          "P4": -0.2797,
+          "P5": -0.3284
+        },
+        "mean_absolute_residual": 0.36,
+        "largest_residual_pillar": "P2",
+        "largest_residual_value": 0.5591,
+        "shape_correlation": 0.0,
+        "capacity_realization": {
+          "P1": 0.4893,
+          "P2": 0.4409,
+          "P3": 0.8779,
+          "P4": 0.7203,
+          "P5": 0.6543
+        },
+        "mean_realization": 0.6365
+      },
+      "Australia": {
+        "predicted": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.95
+        },
+        "actual": {
+          "P1": 0.8195,
+          "P2": 0.5036,
+          "P3": 0.9562,
+          "P4": 0.8022,
+          "P5": 0.7944
+        },
+        "residuals": {
+          "P1": -0.1805,
+          "P2": -0.4964,
+          "P3": -0.0438,
+          "P4": -0.1978,
+          "P5": -0.1556
+        },
+        "mean_absolute_residual": 0.2148,
+        "largest_residual_pillar": "P2",
+        "largest_residual_value": 0.4964,
+        "shape_correlation": 0.3536,
+        "capacity_realization": {
+          "P1": 0.8195,
+          "P2": 0.5036,
+          "P3": 0.9562,
+          "P4": 0.8022,
+          "P5": 0.8362
+        },
+        "mean_realization": 0.7835
+      },
+      "Brazil": {
+        "predicted": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.95
+        },
+        "actual": {
+          "P1": 0.4512,
+          "P2": 0.5082,
+          "P3": 0.7893,
+          "P4": 0.6661,
+          "P5": 0.4746
+        },
+        "residuals": {
+          "P1": -0.5488,
+          "P2": -0.4918,
+          "P3": -0.2107,
+          "P4": -0.3339,
+          "P5": -0.4754
+        },
+        "mean_absolute_residual": 0.4121,
+        "largest_residual_pillar": "P1",
+        "largest_residual_value": 0.5488,
+        "shape_correlation": 0.3536,
+        "capacity_realization": {
+          "P1": 0.4512,
+          "P2": 0.5082,
+          "P3": 0.7893,
+          "P4": 0.6661,
+          "P5": 0.4996
+        },
+        "mean_realization": 0.5829
+      },
+      "Canada": {
+        "predicted": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.95
+        },
+        "actual": {
+          "P1": 0.7975,
+          "P2": 0.6471,
+          "P3": 0.9336,
+          "P4": 0.8523,
+          "P5": 0.8019
+        },
+        "residuals": {
+          "P1": -0.2025,
+          "P2": -0.3529,
+          "P3": -0.0664,
+          "P4": -0.1477,
+          "P5": -0.1481
+        },
+        "mean_absolute_residual": 0.1835,
+        "largest_residual_pillar": "P2",
+        "largest_residual_value": 0.3529,
+        "shape_correlation": 0.0,
+        "capacity_realization": {
+          "P1": 0.7975,
+          "P2": 0.6471,
+          "P3": 0.9336,
+          "P4": 0.8523,
+          "P5": 0.8441
+        },
+        "mean_realization": 0.8149
+      },
+      "France": {
+        "predicted": {
+          "P1": 0.96,
+          "P2": 0.6842,
+          "P3": 0.92,
+          "P4": 0.5946,
+          "P5": 0.925
+        },
+        "actual": {
+          "P1": 0.7211,
+          "P2": 0.6871,
+          "P3": 0.9067,
+          "P4": 0.8467,
+          "P5": 0.6888
+        },
+        "residuals": {
+          "P1": -0.2389,
+          "P2": 0.0029,
+          "P3": -0.0133,
+          "P4": 0.2521,
+          "P5": -0.2362
+        },
+        "mean_absolute_residual": 0.1487,
+        "largest_residual_pillar": "P4",
+        "largest_residual_value": 0.2521,
+        "shape_correlation": -0.1,
+        "capacity_realization": {
+          "P1": 0.7511,
+          "P2": 1.0042,
+          "P3": 0.9855,
+          "P4": 1.424,
+          "P5": 0.7446
+        },
+        "mean_realization": 0.9819
+      },
+      "Germany": {
+        "predicted": {
+          "P1": 0.9,
+          "P2": 0.9474,
+          "P3": 0.92,
+          "P4": 0.9189,
+          "P5": 0.925
+        },
+        "actual": {
+          "P1": 0.7996,
+          "P2": 0.7243,
+          "P3": 0.9508,
+          "P4": 0.8751,
+          "P5": 0.7376
+        },
+        "residuals": {
+          "P1": -0.1004,
+          "P2": -0.2231,
+          "P3": 0.0308,
+          "P4": -0.0438,
+          "P5": -0.1874
+        },
+        "mean_absolute_residual": 0.1171,
+        "largest_residual_pillar": "P2",
+        "largest_residual_value": 0.2231,
+        "shape_correlation": -0.6,
+        "capacity_realization": {
+          "P1": 0.8884,
+          "P2": 0.7645,
+          "P3": 1.0335,
+          "P4": 0.9523,
+          "P5": 0.7974
+        },
+        "mean_realization": 0.8872
+      },
+      "Italy": {
+        "predicted": {
+          "P1": 0.98,
+          "P2": 0.8421,
+          "P3": 0.96,
+          "P4": 0.8108,
+          "P5": 0.9
+        },
+        "actual": {
+          "P1": 0.6333,
+          "P2": 0.6394,
+          "P3": 0.9027,
+          "P4": 0.8451,
+          "P5": 0.6784
+        },
+        "residuals": {
+          "P1": -0.3467,
+          "P2": -0.2027,
+          "P3": -0.0573,
+          "P4": 0.0343,
+          "P5": -0.2216
+        },
+        "mean_absolute_residual": 0.1725,
+        "largest_residual_pillar": "P1",
+        "largest_residual_value": 0.3467,
+        "shape_correlation": -0.3,
+        "capacity_realization": {
+          "P1": 0.6462,
+          "P2": 0.7593,
+          "P3": 0.9403,
+          "P4": 1.0423,
+          "P5": 0.7538
+        },
+        "mean_realization": 0.8284
+      },
+      "Japan": {
+        "predicted": {
+          "P1": 0.98,
+          "P2": 0.8421,
+          "P3": 0.96,
+          "P4": 0.8108,
+          "P5": 0.95
+        },
+        "actual": {
+          "P1": 0.8044,
+          "P2": 0.7377,
+          "P3": 0.9246,
+          "P4": 0.8144,
+          "P5": 0.7993
+        },
+        "residuals": {
+          "P1": -0.1756,
+          "P2": -0.1044,
+          "P3": -0.0354,
+          "P4": 0.0036,
+          "P5": -0.1507
+        },
+        "mean_absolute_residual": 0.0939,
+        "largest_residual_pillar": "P1",
+        "largest_residual_value": 0.1756,
+        "shape_correlation": 0.2,
+        "capacity_realization": {
+          "P1": 0.8208,
+          "P2": 0.876,
+          "P3": 0.9631,
+          "P4": 1.0044,
+          "P5": 0.8414
+        },
+        "mean_realization": 0.9011
+      },
+      "Netherlands": {
+        "predicted": {
+          "P1": 0.86,
+          "P2": 0.9474,
+          "P3": 0.96,
+          "P4": 0.8108,
+          "P5": 0.55
+        },
+        "actual": {
+          "P1": 0.8294,
+          "P2": 0.6389,
+          "P3": 0.9393,
+          "P4": 0.948,
+          "P5": 0.7321
+        },
+        "residuals": {
+          "P1": -0.0306,
+          "P2": -0.3085,
+          "P3": -0.0207,
+          "P4": 0.1372,
+          "P5": 0.1821
+        },
+        "mean_absolute_residual": 0.1358,
+        "largest_residual_pillar": "P2",
+        "largest_residual_value": 0.3085,
+        "shape_correlation": 0.0,
+        "capacity_realization": {
+          "P1": 0.9644,
+          "P2": 0.6744,
+          "P3": 0.9784,
+          "P4": 1.1692,
+          "P5": 1.3311
+        },
+        "mean_realization": 1.0235
+      },
+      "Spain": {
+        "predicted": {
+          "P1": 0.92,
+          "P2": 0.4737,
+          "P3": 0.72,
+          "P4": 0.4865,
+          "P5": 0.925
+        },
+        "actual": {
+          "P1": 0.6665,
+          "P2": 0.6104,
+          "P3": 0.9166,
+          "P4": 0.8333,
+          "P5": 0.648
+        },
+        "residuals": {
+          "P1": -0.2535,
+          "P2": 0.1367,
+          "P3": 0.1966,
+          "P4": 0.3468,
+          "P5": -0.277
+        },
+        "mean_absolute_residual": 0.2421,
+        "largest_residual_pillar": "P4",
+        "largest_residual_value": 0.3468,
+        "shape_correlation": 0.1,
+        "capacity_realization": {
+          "P1": 0.7245,
+          "P2": 1.2886,
+          "P3": 1.2731,
+          "P4": 1.7128,
+          "P5": 0.7005
+        },
+        "mean_realization": 1.1399
+      },
+      "Switzerland": {
+        "predicted": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.95
+        },
+        "actual": {
+          "P1": 0.8456,
+          "P2": 0.7457,
+          "P3": 0.956,
+          "P4": 0.9612,
+          "P5": 0.8265
+        },
+        "residuals": {
+          "P1": -0.1544,
+          "P2": -0.2543,
+          "P3": -0.044,
+          "P4": -0.0388,
+          "P5": -0.1235
+        },
+        "mean_absolute_residual": 0.123,
+        "largest_residual_pillar": "P2",
+        "largest_residual_value": 0.2543,
+        "shape_correlation": 0.3536,
+        "capacity_realization": {
+          "P1": 0.8456,
+          "P2": 0.7457,
+          "P3": 0.956,
+          "P4": 0.9612,
+          "P5": 0.87
+        },
+        "mean_realization": 0.8757
+      },
+      "United States": {
+        "predicted": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.95
+        },
+        "actual": {
+          "P1": 0.7312,
+          "P2": 0.6741,
+          "P3": 0.9092,
+          "P4": 0.9382,
+          "P5": 0.6427
+        },
+        "residuals": {
+          "P1": -0.2688,
+          "P2": -0.3259,
+          "P3": -0.0908,
+          "P4": -0.0618,
+          "P5": -0.3073
+        },
+        "mean_absolute_residual": 0.2109,
+        "largest_residual_pillar": "P2",
+        "largest_residual_value": 0.3259,
+        "shape_correlation": 0.7071,
+        "capacity_realization": {
+          "P1": 0.7312,
+          "P2": 0.6741,
+          "P3": 0.9092,
+          "P4": 0.9382,
+          "P5": 0.6765
+        },
+        "mean_realization": 0.7858
+      }
+    },
+    "aggregate": {
+      "n_countries": 12,
+      "overall_correlation": -0.044,
+      "rmse": 0.2474,
+      "mae": 0.2012,
+      "per_pillar_correlation": {
+        "P1": -0.2978,
+        "P2": -0.1788,
+        "P3": -0.1073,
+        "P4": -0.0931,
+        "P5": -0.0727
+      },
+      "per_pillar_bias": {
+        "P1": -0.251,
+        "P2": -0.265,
+        "P3": -0.0398,
+        "P4": -0.0275,
+        "P5": -0.2024
+      },
+      "median_shape_correlation": 0.05,
+      "mean_shape_correlation": 0.089,
+      "n_shape_valid": 12,
+      "cross_type": {
+        "n_unique_types": 7,
+        "cross_type_correlation_pearson": 0.0174,
+        "cross_type_correlation_spearman": -0.0746,
+        "type_groups": {
+          "Argentina/Australia/Brazil/Canada/Switzerland/United States": 6,
+          "France": 1,
+          "Germany": 1,
+          "Italy": 1,
+          "Japan": 1,
+          "Netherlands": 1,
+          "Spain": 1
+        },
+        "within_type": {
+          "Argentina/Australia/Brazil/Canada/Switzerland/United States": {
+            "n": 6,
+            "per_pillar_actual_std": {
+              "P1": 0.1589,
+              "P2": 0.1087,
+              "P3": 0.058,
+              "P4": 0.1071,
+              "P5": 0.126
+            },
+            "mean_actual_std": 0.1117,
+            "per_pillar_realization_std": {
+              "P1": 0.1589,
+              "P2": 0.1087,
+              "P3": 0.058,
+              "P4": 0.1071,
+              "P5": 0.1326
+            }
+          }
+        }
+      }
+    }
+  },
+  "type_profiles": {
+    "city_state_system": {
+      "P1": 0.08,
+      "P2": 0.0526,
+      "P3": 0.08,
+      "P4": 0.0811,
+      "P5": 0.0
+    },
+    "colonial_imperial": {
+      "P1": 0.22,
+      "P2": 0.0526,
+      "P3": 0.04,
+      "P4": 0.2703,
+      "P5": 0.675
+    },
+    "confederation": {
+      "P1": 0.24,
+      "P2": 0.3158,
+      "P3": 0.28,
+      "P4": 0.3243,
+      "P5": 0.05
+    },
+    "dynastic_composite": {
+      "P1": 0.04,
+      "P2": 0.0,
+      "P3": 0.0,
+      "P4": 0.0541,
+      "P5": 0.125
+    },
+    "federal_republic": {
+      "P1": 1.0,
+      "P2": 1.0,
+      "P3": 1.0,
+      "P4": 1.0,
+      "P5": 0.95
+    },
+    "feudal_order": {
+      "P1": 0.0,
+      "P2": 0.0,
+      "P3": 0.0,
+      "P4": 0.0,
+      "P5": 0.0
+    },
+    "ideological_party": {
+      "P1": 0.72,
+      "P2": 0.7368,
+      "P3": 0.64,
+      "P4": 0.9459,
+      "P5": 0.925
+    },
+    "personal_empire": {
+      "P1": 0.62,
+      "P2": 0.6842,
+      "P3": 0.56,
+      "P4": 0.8649,
+      "P5": 0.9
+    },
+    "supranational_union": {
+      "P1": 0.76,
+      "P2": 0.9474,
+      "P3": 0.96,
+      "P4": 0.7297,
+      "P5": 0.25
+    },
+    "unitary_nation_state": {
+      "P1": 1.0,
+      "P2": 1.0,
+      "P3": 1.0,
+      "P4": 1.0,
+      "P5": 1.0
+    }
+  },
+  "trajectories": [
+    {
+      "name": "Australia",
+      "pathway": "construction",
+      "organicity": 0.5333,
+      "magnitude": 0.9647,
+      "dominant_shift": "P5",
+      "pre_P1": 0.46,
+      "post_P1": 0.84,
+      "disp_P1": 0.38,
+      "pre_P2": 0.6842,
+      "post_P2": 0.9474,
+      "disp_P2": 0.2632,
+      "pre_P3": 0.68,
+      "post_P3": 0.88,
+      "disp_P3": 0.2,
+      "pre_P4": 0.5135,
+      "post_P4": 0.9459,
+      "disp_P4": 0.4324,
+      "pre_P5": 0.175,
+      "post_P5": 0.875,
+      "disp_P5": 0.7
+    },
+    {
+      "name": "Canada",
+      "pathway": "construction",
+      "organicity": 0.5333,
+      "magnitude": 0.9647,
+      "dominant_shift": "P5",
+      "pre_P1": 0.46,
+      "post_P1": 0.84,
+      "disp_P1": 0.38,
+      "pre_P2": 0.6842,
+      "post_P2": 0.9474,
+      "disp_P2": 0.2632,
+      "pre_P3": 0.68,
+      "post_P3": 0.88,
+      "disp_P3": 0.2,
+      "pre_P4": 0.5135,
+      "post_P4": 0.9459,
+      "disp_P4": 0.4324,
+      "pre_P5": 0.175,
+      "post_P5": 0.875,
+      "disp_P5": 0.7
+    },
+    {
+      "name": "China",
+      "pathway": "construction",
+      "organicity": 0.2667,
+      "magnitude": 1.6783,
+      "dominant_shift": "P5",
+      "pre_P1": 0.0,
+      "post_P1": 0.62,
+      "disp_P1": 0.62,
+      "pre_P2": 0.0,
+      "post_P2": 0.6842,
+      "disp_P2": 0.6842,
+      "pre_P3": 0.0,
+      "post_P3": 0.56,
+      "disp_P3": 0.56,
+      "pre_P4": 0.0,
+      "post_P4": 0.8649,
+      "disp_P4": 0.8649,
+      "pre_P5": 0.0,
+      "post_P5": 0.95,
+      "disp_P5": 0.95
+    },
+    {
+      "name": "European Union",
+      "pathway": "construction",
+      "organicity": 0.6,
+      "magnitude": 1.3018,
+      "dominant_shift": "P2",
+      "pre_P1": 0.12,
+      "post_P1": 0.76,
+      "disp_P1": 0.64,
+      "pre_P2": 0.2632,
+      "post_P2": 0.9474,
+      "disp_P2": 0.6842,
+      "pre_P3": 0.28,
+      "post_P3": 0.96,
+      "disp_P3": 0.68,
+      "pre_P4": 0.1892,
+      "post_P4": 0.7297,
+      "disp_P4": 0.5405,
+      "pre_P5": 0.0,
+      "post_P5": 0.25,
+      "disp_P5": 0.25
+    },
+    {
+      "name": "Germany",
+      "pathway": "construction",
+      "organicity": 0.2667,
+      "magnitude": 1.8725,
+      "dominant_shift": "P2",
+      "pre_P1": 0.16,
+      "post_P1": 0.9,
+      "disp_P1": 0.74,
+      "pre_P2": 0.0526,
+      "post_P2": 0.9474,
+      "disp_P2": 0.8948,
+      "pre_P3": 0.12,
+      "post_P3": 0.92,
+      "disp_P3": 0.8,
+      "pre_P4": 0.027,
+      "post_P4": 0.9189,
+      "disp_P4": 0.8919,
+      "pre_P5": 0.075,
+      "post_P5": 0.925,
+      "disp_P5": 0.85
+    },
+    {
+      "name": "Inca (Tawantinsuyu)",
+      "pathway": "construction",
+      "organicity": 0.3333,
+      "magnitude": 1.4445,
+      "dominant_shift": "P5",
+      "pre_P1": 0.0,
+      "post_P1": 0.6,
+      "disp_P1": 0.6,
+      "pre_P2": 0.0,
+      "post_P2": 0.5263,
+      "disp_P2": 0.5263,
+      "pre_P3": 0.0,
+      "post_P3": 0.52,
+      "disp_P3": 0.52,
+      "pre_P4": 0.0,
+      "post_P4": 0.6757,
+      "disp_P4": 0.6757,
+      "pre_P5": 0.0,
+      "post_P5": 0.85,
+      "disp_P5": 0.85
+    },
+    {
+      "name": "India (Maurya)",
+      "pathway": "construction",
+      "organicity": 0.2,
+      "magnitude": 1.5314,
+      "dominant_shift": "P5",
+      "pre_P1": 0.08,
+      "post_P1": 0.62,
+      "disp_P1": 0.54,
+      "pre_P2": 0.0526,
+      "post_P2": 0.6842,
+      "disp_P2": 0.6316,
+      "pre_P3": 0.08,
+      "post_P3": 0.56,
+      "disp_P3": 0.48,
+      "pre_P4": 0.0811,
+      "post_P4": 0.8649,
+      "disp_P4": 0.7838,
+      "pre_P5": 0.0,
+      "post_P5": 0.9,
+      "disp_P5": 0.9
+    },
+    {
+      "name": "Italy",
+      "pathway": "construction",
+      "organicity": 0.0,
+      "magnitude": 1.9573,
+      "dominant_shift": "P5",
+      "pre_P1": 0.08,
+      "post_P1": 0.9,
+      "disp_P1": 0.82,
+      "pre_P2": 0.0526,
+      "post_P2": 0.9474,
+      "disp_P2": 0.8948,
+      "pre_P3": 0.08,
+      "post_P3": 0.92,
+      "disp_P3": 0.84,
+      "pre_P4": 0.0811,
+      "post_P4": 0.9189,
+      "disp_P4": 0.8378,
+      "pre_P5": 0.0,
+      "post_P5": 0.975,
+      "disp_P5": 0.975
+    },
+    {
+      "name": "Japan",
+      "pathway": "construction",
+      "organicity": 0.2,
+      "magnitude": 1.8616,
+      "dominant_shift": "P5",
+      "pre_P1": 0.0,
+      "post_P1": 0.76,
+      "disp_P1": 0.76,
+      "pre_P2": 0.0,
+      "post_P2": 0.7895,
+      "disp_P2": 0.7895,
+      "pre_P3": 0.0,
+      "post_P3": 0.72,
+      "disp_P3": 0.72,
+      "pre_P4": 0.0,
+      "post_P4": 0.8919,
+      "disp_P4": 0.8919,
+      "pre_P5": 0.0,
+      "post_P5": 0.975,
+      "disp_P5": 0.975
+    },
+    {
+      "name": "Korea (Silla)",
+      "pathway": "construction",
+      "organicity": 0.3333,
+      "magnitude": 1.4445,
+      "dominant_shift": "P5",
+      "pre_P1": 0.0,
+      "post_P1": 0.6,
+      "disp_P1": 0.6,
+      "pre_P2": 0.0,
+      "post_P2": 0.5263,
+      "disp_P2": 0.5263,
+      "pre_P3": 0.0,
+      "post_P3": 0.52,
+      "disp_P3": 0.52,
+      "pre_P4": 0.0,
+      "post_P4": 0.6757,
+      "disp_P4": 0.6757,
+      "pre_P5": 0.0,
+      "post_P5": 0.85,
+      "disp_P5": 0.85
+    },
+    {
+      "name": "Netherlands",
+      "pathway": "construction",
+      "organicity": 0.4,
+      "magnitude": 0.9181,
+      "dominant_shift": "P2",
+      "pre_P1": 0.2,
+      "post_P1": 0.48,
+      "disp_P1": 0.28,
+      "pre_P2": 0.2632,
+      "post_P2": 0.8421,
+      "disp_P2": 0.5789,
+      "pre_P3": 0.24,
+      "post_P3": 0.72,
+      "disp_P3": 0.48,
+      "pre_P4": 0.3784,
+      "post_P4": 0.7297,
+      "disp_P4": 0.3513,
+      "pre_P5": 0.475,
+      "post_P5": 0.2,
+      "disp_P5": -0.275
+    },
+    {
+      "name": "Switzerland",
+      "pathway": "construction",
+      "organicity": 0.4,
+      "magnitude": 1.4398,
+      "dominant_shift": "P5",
+      "pre_P1": 0.4,
+      "post_P1": 0.98,
+      "disp_P1": 0.58,
+      "pre_P2": 0.5263,
+      "post_P2": 1.0,
+      "disp_P2": 0.4737,
+      "pre_P3": 0.64,
+      "post_P3": 1.0,
+      "disp_P3": 0.36,
+      "pre_P4": 0.2432,
+      "post_P4": 1.0,
+      "disp_P4": 0.7568,
+      "pre_P5": 0.025,
+      "post_P5": 0.925,
+      "disp_P5": 0.9
+    },
+    {
+      "name": "Zulu Kingdom",
+      "pathway": "construction",
+      "organicity": 0.4667,
+      "magnitude": 1.1238,
+      "dominant_shift": "P5",
+      "pre_P1": 0.04,
+      "post_P1": 0.6,
+      "disp_P1": 0.56,
+      "pre_P2": 0.3684,
+      "post_P2": 0.5263,
+      "disp_P2": 0.1579,
+      "pre_P3": 0.24,
+      "post_P3": 0.52,
+      "disp_P3": 0.28,
+      "pre_P4": 0.3243,
+      "post_P4": 0.6757,
+      "disp_P4": 0.3514,
+      "pre_P5": 0.0,
+      "post_P5": 0.85,
+      "disp_P5": 0.85
+    },
+    {
+      "name": "France",
+      "pathway": "negotiation",
+      "organicity": 0.7333,
+      "magnitude": 0.7218,
+      "dominant_shift": "P2",
+      "pre_P1": 0.62,
+      "post_P1": 0.4,
+      "disp_P1": -0.22,
+      "pre_P2": 0.6842,
+      "post_P2": 0.2632,
+      "disp_P2": -0.421,
+      "pre_P3": 0.56,
+      "post_P3": 0.2,
+      "disp_P3": -0.36,
+      "pre_P4": 0.8649,
+      "post_P4": 0.4865,
+      "disp_P4": -0.3784,
+      "pre_P5": 0.95,
+      "post_P5": 0.8,
+      "disp_P5": -0.15
+    },
+    {
+      "name": "Poland-Lithuania",
+      "pathway": "negotiation",
+      "organicity": 0.4667,
+      "magnitude": 0.4664,
+      "dominant_shift": "P5",
+      "pre_P1": 0.62,
+      "post_P1": 0.6,
+      "disp_P1": -0.02,
+      "pre_P2": 0.6842,
+      "post_P2": 0.8421,
+      "disp_P2": 0.1579,
+      "pre_P3": 0.56,
+      "post_P3": 0.72,
+      "disp_P3": 0.16,
+      "pre_P4": 0.8649,
+      "post_P4": 0.7838,
+      "disp_P4": -0.0811,
+      "pre_P5": 0.95,
+      "post_P5": 0.55,
+      "disp_P5": -0.4
+    },
+    {
+      "name": "Russia (Muscovy)",
+      "pathway": "negotiation",
+      "organicity": 0.8,
+      "magnitude": 0.188,
+      "dominant_shift": "P3",
+      "pre_P1": 0.6,
+      "post_P1": 0.58,
+      "disp_P1": -0.02,
+      "pre_P2": 0.5263,
+      "post_P2": 0.4737,
+      "disp_P2": -0.0526,
+      "pre_P3": 0.52,
+      "post_P3": 0.36,
+      "disp_P3": -0.16,
+      "pre_P4": 0.6757,
+      "post_P4": 0.7568,
+      "disp_P4": 0.0811,
+      "pre_P5": 0.9,
+      "post_P5": 0.9,
+      "disp_P5": 0.0
+    },
+    {
+      "name": "Spain",
+      "pathway": "negotiation",
+      "organicity": 0.6667,
+      "magnitude": 0.9023,
+      "dominant_shift": "P3",
+      "pre_P1": 0.62,
+      "post_P1": 0.24,
+      "disp_P1": -0.38,
+      "pre_P2": 0.6842,
+      "post_P2": 0.2105,
+      "disp_P2": -0.4737,
+      "pre_P3": 0.56,
+      "post_P3": 0.08,
+      "disp_P3": -0.48,
+      "pre_P4": 0.8649,
+      "post_P4": 0.4595,
+      "disp_P4": -0.4054,
+      "pre_P5": 0.95,
+      "post_P5": 0.725,
+      "disp_P5": -0.225
+    },
+    {
+      "name": "Argentina",
+      "pathway": "redesign",
+      "organicity": 0.7333,
+      "magnitude": 0.8625,
+      "dominant_shift": "P3",
+      "pre_P1": 0.6,
+      "post_P1": 1.0,
+      "disp_P1": 0.4,
+      "pre_P2": 0.5263,
+      "post_P2": 1.0,
+      "disp_P2": 0.4737,
+      "pre_P3": 0.52,
+      "post_P3": 1.0,
+      "disp_P3": 0.48,
+      "pre_P4": 0.6486,
+      "post_P4": 1.0,
+      "disp_P4": 0.3514,
+      "pre_P5": 0.875,
+      "post_P5": 0.95,
+      "disp_P5": 0.075
+    },
+    {
+      "name": "Brazil",
+      "pathway": "redesign",
+      "organicity": 0.8,
+      "magnitude": 0.7091,
+      "dominant_shift": "P2",
+      "pre_P1": 0.6,
+      "post_P1": 0.9,
+      "disp_P1": 0.3,
+      "pre_P2": 0.5263,
+      "post_P2": 0.9474,
+      "disp_P2": 0.4211,
+      "pre_P3": 0.52,
+      "post_P3": 0.92,
+      "disp_P3": 0.4,
+      "pre_P4": 0.6486,
+      "post_P4": 0.9189,
+      "disp_P4": 0.2703,
+      "pre_P5": 0.875,
+      "post_P5": 0.925,
+      "disp_P5": 0.05
+    },
+    {
+      "name": "United States",
+      "pathway": "redesign",
+      "organicity": 0.7333,
+      "magnitude": 0.635,
+      "dominant_shift": "P5",
+      "pre_P1": 0.82,
+      "post_P1": 1.0,
+      "disp_P1": 0.18,
+      "pre_P2": 0.9474,
+      "post_P2": 1.0,
+      "disp_P2": 0.0526,
+      "pre_P3": 0.96,
+      "post_P3": 1.0,
+      "disp_P3": 0.04,
+      "pre_P4": 0.8108,
+      "post_P4": 1.0,
+      "disp_P4": 0.1892,
+      "pre_P5": 0.375,
+      "post_P5": 0.95,
+      "disp_P5": 0.575
+    },
+    {
+      "name": "Egypt (Middle Kingdom)",
+      "pathway": "restoration",
+      "organicity": 0.9333,
+      "magnitude": 0.05,
+      "dominant_shift": "P5",
+      "pre_P1": 0.6,
+      "post_P1": 0.6,
+      "disp_P1": 0.0,
+      "pre_P2": 0.5263,
+      "post_P2": 0.5263,
+      "disp_P2": 0.0,
+      "pre_P3": 0.52,
+      "post_P3": 0.52,
+      "disp_P3": 0.0,
+      "pre_P4": 0.6757,
+      "post_P4": 0.6757,
+      "disp_P4": 0.0,
+      "pre_P5": 0.9,
+      "post_P5": 0.85,
+      "disp_P5": -0.05
+    },
+    {
+      "name": "Ethiopia",
+      "pathway": "restoration",
+      "organicity": 0.9333,
+      "magnitude": 0.2554,
+      "dominant_shift": "P4",
+      "pre_P1": 0.6,
+      "post_P1": 0.62,
+      "disp_P1": 0.02,
+      "pre_P2": 0.5263,
+      "post_P2": 0.6842,
+      "disp_P2": 0.1579,
+      "pre_P3": 0.52,
+      "post_P3": 0.56,
+      "disp_P3": 0.04,
+      "pre_P4": 0.6757,
+      "post_P4": 0.8649,
+      "disp_P4": 0.1892,
+      "pre_P5": 0.85,
+      "post_P5": 0.9,
+      "disp_P5": 0.05
+    },
+    {
+      "name": "India (Mughal)",
+      "pathway": "restoration",
+      "organicity": 1.0,
+      "magnitude": 0.0,
+      "dominant_shift": "P1",
+      "pre_P1": 0.62,
+      "post_P1": 0.62,
+      "disp_P1": 0.0,
+      "pre_P2": 0.6842,
+      "post_P2": 0.6842,
+      "disp_P2": 0.0,
+      "pre_P3": 0.56,
+      "post_P3": 0.56,
+      "disp_P3": 0.0,
+      "pre_P4": 0.8649,
+      "post_P4": 0.8649,
+      "disp_P4": 0.0,
+      "pre_P5": 0.9,
+      "post_P5": 0.9,
+      "disp_P5": 0.0
+    },
+    {
+      "name": "Persia (Safavid)",
+      "pathway": "restoration",
+      "organicity": 1.0,
+      "magnitude": 0.0,
+      "dominant_shift": "P1",
+      "pre_P1": 0.62,
+      "post_P1": 0.62,
+      "disp_P1": 0.0,
+      "pre_P2": 0.6842,
+      "post_P2": 0.6842,
+      "disp_P2": 0.0,
+      "pre_P3": 0.56,
+      "post_P3": 0.56,
+      "disp_P3": 0.0,
+      "pre_P4": 0.8649,
+      "post_P4": 0.8649,
+      "disp_P4": 0.0,
+      "pre_P5": 0.9,
+      "post_P5": 0.9,
+      "disp_P5": 0.0
+    },
+    {
+      "name": "Vietnam",
+      "pathway": "restoration",
+      "organicity": 0.9333,
+      "magnitude": 0.05,
+      "dominant_shift": "P5",
+      "pre_P1": 0.62,
+      "post_P1": 0.62,
+      "disp_P1": 0.0,
+      "pre_P2": 0.6842,
+      "post_P2": 0.6842,
+      "disp_P2": 0.0,
+      "pre_P3": 0.56,
+      "post_P3": 0.56,
+      "disp_P3": 0.0,
+      "pre_P4": 0.8649,
+      "post_P4": 0.8649,
+      "disp_P4": 0.0,
+      "pre_P5": 0.95,
+      "post_P5": 0.9,
+      "disp_P5": -0.05
+    }
+  ],
+  "pathway_signatures": {
+    "construction": {
+      "n": 13,
+      "mean_displacement": {
+        "P1": 0.5769,
+        "P2": 0.5668,
+        "P3": 0.5108,
+        "P4": 0.6528,
+        "P5": 0.7288
+      },
+      "mean_magnitude": 1.4233,
+      "mean_organicity": 0.3487,
+      "dominant_shifts": [
+        "P5",
+        "P5",
+        "P5",
+        "P2",
+        "P2",
+        "P5",
+        "P5",
+        "P5",
+        "P5",
+        "P5",
+        "P2",
+        "P5",
+        "P5"
+      ]
+    },
+    "negotiation": {
+      "n": 4,
+      "mean_displacement": {
+        "P1": -0.16,
+        "P2": -0.1973,
+        "P3": -0.21,
+        "P4": -0.196,
+        "P5": -0.1938
+      },
+      "mean_magnitude": 0.5696,
+      "mean_organicity": 0.6667,
+      "dominant_shifts": [
+        "P2",
+        "P5",
+        "P3",
+        "P3"
+      ]
+    },
+    "redesign": {
+      "n": 3,
+      "mean_displacement": {
+        "P1": 0.2933,
+        "P2": 0.3158,
+        "P3": 0.3067,
+        "P4": 0.2703,
+        "P5": 0.2333
+      },
+      "mean_magnitude": 0.7355,
+      "mean_organicity": 0.7555,
+      "dominant_shifts": [
+        "P3",
+        "P2",
+        "P5"
+      ]
+    },
+    "restoration": {
+      "n": 5,
+      "mean_displacement": {
+        "P1": 0.004,
+        "P2": 0.0316,
+        "P3": 0.008,
+        "P4": 0.0378,
+        "P5": -0.01
+      },
+      "mean_magnitude": 0.0711,
+      "mean_organicity": 0.96,
+      "dominant_shifts": [
+        "P5",
+        "P4",
+        "P1",
+        "P1",
+        "P5"
+      ]
+    }
+  },
+  "failure_bridge": {
+    "China": {
+      "pre_failures": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [
+        "coordination_collapse",
+        "competitive_destruction"
+      ],
+      "new_vulnerabilities": [
+        "center_predation",
+        "rigidity_sclerosis"
+      ],
+      "persistent": [
+        "legitimacy_vacuum"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [
+        "E",
+        "G"
+      ],
+      "pre_weak_pillars": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "European Union": {
+      "pre_failures": [
+        "coordination_collapse",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [
+        "coordination_collapse"
+      ],
+      "patched": [
+        "legitimacy_vacuum"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "coordination_collapse"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [
+        "F",
+        "Mod8"
+      ],
+      "safeguards_resolved": [
+        "C"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P5"
+      ],
+      "post_weak_pillars": [
+        "P5"
+      ]
+    },
+    "Argentina": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [],
+      "patched": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": []
+    },
+    "Australia": {
+      "pre_failures": [],
+      "post_failures": [],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [],
+      "post_weak_pillars": []
+    },
+    "Brazil": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [],
+      "patched": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": []
+    },
+    "Canada": {
+      "pre_failures": [],
+      "post_failures": [],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [],
+      "post_weak_pillars": []
+    },
+    "Egypt (Middle Kingdom)": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Inca (Tawantinsuyu)": {
+      "pre_failures": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [
+        "coordination_collapse",
+        "competitive_destruction"
+      ],
+      "new_vulnerabilities": [
+        "center_predation",
+        "rigidity_sclerosis"
+      ],
+      "persistent": [
+        "legitimacy_vacuum"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [
+        "E",
+        "G"
+      ],
+      "pre_weak_pillars": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Korea (Silla)": {
+      "pre_failures": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [
+        "coordination_collapse",
+        "competitive_destruction"
+      ],
+      "new_vulnerabilities": [
+        "center_predation",
+        "rigidity_sclerosis"
+      ],
+      "persistent": [
+        "legitimacy_vacuum"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [
+        "E",
+        "G"
+      ],
+      "pre_weak_pillars": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Russia (Muscovy)": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Switzerland": {
+      "pre_failures": [
+        "coordination_collapse"
+      ],
+      "post_failures": [],
+      "patched": [
+        "coordination_collapse"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P5"
+      ],
+      "post_weak_pillars": []
+    },
+    "Ethiopia": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "France": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "India (Maurya)": {
+      "pre_failures": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [
+        "coordination_collapse",
+        "competitive_destruction"
+      ],
+      "new_vulnerabilities": [
+        "center_predation",
+        "rigidity_sclerosis"
+      ],
+      "persistent": [
+        "legitimacy_vacuum"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [
+        "E",
+        "G"
+      ],
+      "pre_weak_pillars": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "India (Mughal)": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Netherlands": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [],
+      "patched": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": []
+    },
+    "Persia (Safavid)": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Poland-Lithuania": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [],
+      "patched": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": []
+    },
+    "Spain": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Vietnam": {
+      "pre_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P2"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Zulu Kingdom": {
+      "pre_failures": [
+        "coordination_collapse",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [
+        "center_predation",
+        "legitimacy_vacuum",
+        "rigidity_sclerosis"
+      ],
+      "patched": [
+        "coordination_collapse"
+      ],
+      "new_vulnerabilities": [
+        "center_predation",
+        "rigidity_sclerosis"
+      ],
+      "persistent": [
+        "legitimacy_vacuum"
+      ],
+      "pre_expected_safeguards": [
+        "C",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [
+        "C",
+        "E",
+        "G"
+      ],
+      "safeguards_resolved": [
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [
+        "E",
+        "G"
+      ],
+      "pre_weak_pillars": [
+        "P1",
+        "P5"
+      ],
+      "post_weak_pillars": [
+        "P1",
+        "P2"
+      ]
+    },
+    "Germany": {
+      "pre_failures": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [],
+      "patched": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "post_weak_pillars": []
+    },
+    "Italy": {
+      "pre_failures": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [],
+      "patched": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "post_weak_pillars": []
+    },
+    "Japan": {
+      "pre_failures": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "post_failures": [],
+      "patched": [
+        "coordination_collapse",
+        "competitive_destruction",
+        "legitimacy_vacuum"
+      ],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [
+        "C",
+        "D",
+        "F",
+        "Mod8"
+      ],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "post_weak_pillars": []
+    },
+    "United States": {
+      "pre_failures": [],
+      "post_failures": [],
+      "patched": [],
+      "new_vulnerabilities": [],
+      "persistent": [],
+      "pre_expected_safeguards": [],
+      "post_expected_safeguards": [],
+      "safeguards_resolved": [],
+      "safeguards_introduced": [],
+      "pre_weak_pillars": [],
+      "post_weak_pillars": []
+    }
+  },
+  "organicity": {
+    "China": {
+      "organicity": 0.2667,
+      "imposed_count": 11,
+      "inherited_count": 4,
+      "imposed_features": [
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "popular_sovereignty",
+        "elected_leadership"
+      ],
+      "expected_fragmentation_cv": 4.286,
+      "fragmentation_predictability": "low"
+    },
+    "European Union": {
+      "organicity": 0.6,
+      "imposed_count": 6,
+      "inherited_count": 9,
+      "imposed_features": [
+        "shared_currency",
+        "shared_legal_code",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_goods",
+        "shared_supreme_court"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_persons",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 2.435,
+      "fragmentation_predictability": "moderate"
+    },
+    "Argentina": {
+      "organicity": 0.7333,
+      "imposed_count": 4,
+      "inherited_count": 11,
+      "imposed_features": [
+        "hereditary_succession",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_goods"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_persons",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 1.694,
+      "fragmentation_predictability": "high"
+    },
+    "Australia": {
+      "organicity": 0.5333,
+      "imposed_count": 7,
+      "inherited_count": 8,
+      "imposed_features": [
+        "single_executive",
+        "independent_militaries",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "hereditary_succession",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 2.805,
+      "fragmentation_predictability": "moderate"
+    },
+    "Brazil": {
+      "organicity": 0.8,
+      "imposed_count": 3,
+      "inherited_count": 12,
+      "imposed_features": [
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_goods"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_persons",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 1.324,
+      "fragmentation_predictability": "high"
+    },
+    "Canada": {
+      "organicity": 0.5333,
+      "imposed_count": 7,
+      "inherited_count": 8,
+      "imposed_features": [
+        "single_executive",
+        "independent_militaries",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "hereditary_succession",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 2.805,
+      "fragmentation_predictability": "moderate"
+    },
+    "Egypt (Middle Kingdom)": {
+      "organicity": 0.9333,
+      "imposed_count": 1,
+      "inherited_count": 14,
+      "imposed_features": [
+        "preexisting_polities"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "expected_fragmentation_cv": 0.583,
+      "fragmentation_predictability": "high"
+    },
+    "Inca (Tawantinsuyu)": {
+      "organicity": 0.3333,
+      "imposed_count": 10,
+      "inherited_count": 5,
+      "imposed_features": [
+        "single_executive",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "hereditary_succession",
+        "shared_currency",
+        "popular_sovereignty",
+        "elected_leadership",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 3.916,
+      "fragmentation_predictability": "low"
+    },
+    "Korea (Silla)": {
+      "organicity": 0.3333,
+      "imposed_count": 10,
+      "inherited_count": 5,
+      "imposed_features": [
+        "single_executive",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "hereditary_succession",
+        "shared_currency",
+        "popular_sovereignty",
+        "elected_leadership",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 3.916,
+      "fragmentation_predictability": "low"
+    },
+    "Russia (Muscovy)": {
+      "organicity": 0.8,
+      "imposed_count": 3,
+      "inherited_count": 12,
+      "imposed_features": [
+        "shared_currency",
+        "free_movement_persons",
+        "preexisting_polities"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "expected_fragmentation_cv": 1.324,
+      "fragmentation_predictability": "high"
+    },
+    "Switzerland": {
+      "organicity": 0.4,
+      "imposed_count": 9,
+      "inherited_count": 6,
+      "imposed_features": [
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 3.545,
+      "fragmentation_predictability": "low"
+    },
+    "Ethiopia": {
+      "organicity": 0.9333,
+      "imposed_count": 1,
+      "inherited_count": 14,
+      "imposed_features": [
+        "shared_currency"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 0.583,
+      "fragmentation_predictability": "high"
+    },
+    "France": {
+      "organicity": 0.7333,
+      "imposed_count": 4,
+      "inherited_count": 11,
+      "imposed_features": [
+        "shared_legal_code",
+        "free_movement_persons",
+        "free_movement_goods",
+        "preexisting_polities"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "expected_fragmentation_cv": 1.694,
+      "fragmentation_predictability": "high"
+    },
+    "India (Maurya)": {
+      "organicity": 0.2,
+      "imposed_count": 12,
+      "inherited_count": 3,
+      "imposed_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "popular_sovereignty",
+        "elected_leadership",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 4.656,
+      "fragmentation_predictability": "low"
+    },
+    "India (Mughal)": {
+      "organicity": 1.0,
+      "imposed_count": 0,
+      "inherited_count": 15,
+      "imposed_features": [],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 0.213,
+      "fragmentation_predictability": "high"
+    },
+    "Netherlands": {
+      "organicity": 0.4,
+      "imposed_count": 9,
+      "inherited_count": 6,
+      "imposed_features": [
+        "single_executive",
+        "hereditary_succession",
+        "shared_currency",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_goods",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_legal_code",
+        "free_movement_persons",
+        "shared_supreme_court",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 3.545,
+      "fragmentation_predictability": "low"
+    },
+    "Persia (Safavid)": {
+      "organicity": 1.0,
+      "imposed_count": 0,
+      "inherited_count": 15,
+      "imposed_features": [],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 0.213,
+      "fragmentation_predictability": "high"
+    },
+    "Poland-Lithuania": {
+      "organicity": 0.4667,
+      "imposed_count": 8,
+      "inherited_count": 7,
+      "imposed_features": [
+        "hereditary_succession",
+        "shared_legal_code",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "unilateral_exit",
+        "free_movement_persons",
+        "free_movement_goods"
+      ],
+      "expected_fragmentation_cv": 3.175,
+      "fragmentation_predictability": "moderate"
+    },
+    "Spain": {
+      "organicity": 0.6667,
+      "imposed_count": 5,
+      "inherited_count": 10,
+      "imposed_features": [
+        "shared_legal_code",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "preexisting_polities"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "central_standing_army"
+      ],
+      "expected_fragmentation_cv": 2.064,
+      "fragmentation_predictability": "moderate"
+    },
+    "Vietnam": {
+      "organicity": 0.9333,
+      "imposed_count": 1,
+      "inherited_count": 14,
+      "imposed_features": [
+        "preexisting_polities"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "expected_fragmentation_cv": 0.583,
+      "fragmentation_predictability": "high"
+    },
+    "Zulu Kingdom": {
+      "organicity": 0.4667,
+      "imposed_count": 8,
+      "inherited_count": 7,
+      "imposed_features": [
+        "single_executive",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "shared_supreme_court",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "hereditary_succession",
+        "shared_currency",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 3.175,
+      "fragmentation_predictability": "moderate"
+    },
+    "Germany": {
+      "organicity": 0.2667,
+      "imposed_count": 11,
+      "inherited_count": 4,
+      "imposed_features": [
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "shared_supreme_court",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 4.286,
+      "fragmentation_predictability": "low"
+    },
+    "Italy": {
+      "organicity": 0.0,
+      "imposed_count": 15,
+      "inherited_count": 0,
+      "imposed_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "inherited_features": [],
+      "expected_fragmentation_cv": 5.767,
+      "fragmentation_predictability": "low"
+    },
+    "Japan": {
+      "organicity": 0.2,
+      "imposed_count": 12,
+      "inherited_count": 3,
+      "imposed_features": [
+        "independent_militaries",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "unilateral_exit",
+        "central_tax",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "central_standing_army",
+        "preexisting_polities"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "popular_sovereignty"
+      ],
+      "expected_fragmentation_cv": 4.656,
+      "fragmentation_predictability": "low"
+    },
+    "United States": {
+      "organicity": 0.7333,
+      "imposed_count": 4,
+      "inherited_count": 11,
+      "imposed_features": [
+        "independent_militaries",
+        "unilateral_exit",
+        "central_tax",
+        "central_standing_army"
+      ],
+      "inherited_features": [
+        "single_executive",
+        "hereditary_succession",
+        "independent_foreign_policy",
+        "shared_currency",
+        "shared_legal_code",
+        "popular_sovereignty",
+        "elected_leadership",
+        "free_movement_persons",
+        "free_movement_goods",
+        "shared_supreme_court",
+        "preexisting_polities"
+      ],
+      "expected_fragmentation_cv": 1.694,
+      "fragmentation_predictability": "high"
+    }
+  },
+  "loading_matrix": {
+    "features": [
+      "single_executive",
+      "hereditary_succession",
+      "independent_militaries",
+      "independent_foreign_policy",
+      "shared_currency",
+      "shared_legal_code",
+      "unilateral_exit",
+      "central_tax",
+      "popular_sovereignty",
+      "elected_leadership",
+      "free_movement_persons",
+      "free_movement_goods",
+      "shared_supreme_court",
+      "central_standing_army",
+      "preexisting_polities"
+    ],
+    "pillars": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "values": [
+      [
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.1
+      ],
+      [
+        -0.5,
+        -0.1,
+        -0.2,
+        -0.3,
+        -0.1
+      ],
+      [
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        -0.8
+      ],
+      [
+        -0.2,
+        0.0,
+        0.0,
+        -0.3,
+        -0.4
+      ],
+      [
+        0.1,
+        0.3,
+        0.1,
+        0.7,
+        0.2
+      ],
+      [
+        0.8,
+        0.1,
+        0.3,
+        0.2,
+        0.3
+      ],
+      [
+        -0.2,
+        0.0,
+        0.0,
+        -0.2,
+        -0.5
+      ],
+      [
+        0.3,
+        0.1,
+        0.1,
+        0.5,
+        0.2
+      ],
+      [
+        0.7,
+        0.3,
+        0.5,
+        0.1,
+        0.0
+      ],
+      [
+        0.7,
+        0.2,
+        0.4,
+        0.1,
+        0.1
+      ],
+      [
+        0.2,
+        0.4,
+        0.5,
+        0.4,
+        0.0
+      ],
+      [
+        0.1,
+        0.3,
+        0.1,
+        0.8,
+        0.1
+      ],
+      [
+        0.8,
+        0.1,
+        0.3,
+        0.1,
+        0.3
+      ],
+      [
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.8
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.2
+      ]
+    ]
+  }
+}
