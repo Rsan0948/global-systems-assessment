@@ -195,7 +195,7 @@
    "origin_cases": [
     "N=21 acute-signature test set"
    ],
-   "why": "Independently derived on 21 crisis/absorber cases: the level gap between income (P4) and institutions (P1) separated real crises from shock-absorbers at 83% sensitivity / 100% specificity. When income has outrun institutions, the state is structurally crisis-prone under shock \u2014 'granted/fragile'.",
+   "why": "Independently derived on 21 crisis/absorber cases: the level gap between income (P4) and institutions (P1) separated real crises from shock-absorbers at 83% sensitivity / 100% specificity. When income has outrun institutions, the state is structurally crisis-prone under shock - 'granted/fragile'.",
    "validated_by": [
     "N=21 signature set",
     "unifies with the durability ratio"
@@ -234,7 +234,7 @@
    "origin_cases": [
     "Bosnia 1996"
    ],
-   "why": "Bosnia's WGI institutional scores under the Dayton OHR sat above Croatia's and Serbia's \u2014 the administrator's competence, not indigenous capacity, was being measured. The safeguard discounts raw P1 where an external administrator governs.",
+   "why": "Bosnia's WGI institutional scores under the Dayton OHR sat above Croatia's and Serbia's - the administrator's competence, not indigenous capacity, was being measured. The safeguard discounts raw P1 where an external administrator governs.",
    "validated_by": [
     "Kosovo (UNMIK/EULEX)",
     "East Timor (UNTAET)"
@@ -253,7 +253,7 @@
    "origin_cases": [
     "Sudan / South Sudan"
    ],
-   "why": "Sudan split into just two successor states \u2014 a low fragment count that would normally read as manageable \u2014 yet produced the worst outcome in the sample, because institutional capacity (P1) was far below the bottom third. Low count is not safety when P1 is that low.",
+   "why": "Sudan split into just two successor states - a low fragment count that would normally read as manageable - yet produced the worst outcome in the sample, because institutional capacity (P1) was far below the bottom third. Low count is not safety when P1 is that low.",
    "validated_by": [
     "Ethiopia / Eritrea",
     "Nigeria / Biafra"
@@ -315,7 +315,7 @@
     "Northern Ireland (Stormont collapses)",
     "Germany (AfD in eastern states)"
    ],
-   "why": "A state can survive intact while carrying chronic, managed instability \u2014 repeated executive collapses, high anti-system voting, sharp regional divergence. This is a management-load signal, not a collapse indicator.",
+   "why": "A state can survive intact while carrying chronic, managed instability - repeated executive collapses, high anti-system voting, sharp regional divergence. This is a management-load signal, not a collapse indicator.",
    "validated_by": [
     "Belgium",
     "Spain / Catalonia"
@@ -332,7 +332,7 @@
    "modification": null,
    "tier": null,
    "origin_cases": [
-    "Round 3 \u2014 Ethiopia vs Northern Ireland"
+    "Round 3 - Ethiopia vs Northern Ireland"
    ],
    "why": "Suppression and prevention looked identical until this safeguard split them into tiers: military suppression (Tier 1) doesn't resolve the underlying mismatch; institutional/legal suppression (Tier 2) de-escalates; porosity/power-sharing (Tier 3) addresses it by design. Re-suppression after a porosity period is the worst path.",
    "validated_by": [
@@ -382,14 +382,14 @@
   "vulnerability": {
    "risk_level": "low",
    "flags": [
-    "WARNING: Pillar spread 0.390 \u2014 significant imbalance",
+    "WARNING: Pillar spread 0.390 - significant imbalance",
     "Active safeguards: E"
    ],
    "structural_vulnerability": {
     "p4_minus_p1_gap": 0.05,
     "status": "clear",
     "flagged": false,
-    "reading": "institutions roughly keep pace with income \u2014 not structurally crisis-flagged (absorber-class on this measure)."
+    "reading": "institutions roughly keep pace with income - not structurally crisis-flagged (absorber-class on this measure)."
    },
    "below_floor": null,
    "summary": "Risk level: LOW. P1 = 0.565, spread = 0.390, 1 safeguards active."
@@ -401,7 +401,7 @@
    "va_minus_p1": -0.122,
    "status": "balanced",
    "reading": "accountability roughly tracks capacity and income.",
-   "caveat": "HYPOTHESIS (V3.2) \u2014 informational; orthogonal to the durability gap; no crisis validation yet."
+   "caveat": "HYPOTHESIS (V3.2) - informational; orthogonal to the durability gap; no crisis validation yet."
   },
   "sensitivity": {
    "v2_equal": 0.6244955871359541,
@@ -410,5 +410,50 @@
    "archived_hand_v0": 0.6029031246359542
   },
   "prior_year": null
+ },
+ "similar": [
+  {
+   "slug": "botswana",
+   "name": "Botswana",
+   "mi": 0.61,
+   "tier": 2
+  },
+  {
+   "slug": "jamaica",
+   "name": "Jamaica",
+   "mi": 0.571,
+   "tier": 3
+  },
+  {
+   "slug": "dominican-republic",
+   "name": "Dominican Republic",
+   "mi": 0.602,
+   "tier": 2
+  },
+  {
+   "slug": "costa-rica",
+   "name": "Costa Rica",
+   "mi": 0.686,
+   "tier": 2
+  },
+  {
+   "slug": "mauritius",
+   "name": "Mauritius",
+   "mi": 0.677,
+   "tier": 2
+  }
+ ],
+ "relational": {
+  "year": 1989,
+  "tier": "citable",
+  "label": "Kuwait, pre-1990 (FRAGILE + SHIELDED by response) -> invaded then RESTORED by coalition",
+  "exposure_structural": 0.819,
+  "exposure_structural_band": "high",
+  "exposure_net": 0.855,
+  "patron_present": false,
+  "response": 0.478,
+  "response_band": "moderate",
+  "joint_reading": "HIGH structural exposure with NO standing deterrent - but a RESPONSE patron intervened to reverse the shock after it landed: survival came from outside help, not internal strength (e.g. Kuwait 1990, conquered then restored by the coalition).",
+  "outcome_factual": "Invaded by Iraq 2 Aug 1990; sovereignty restored by the coalition Feb 1991. SURVIVED via the response patron."
  }
 }

@@ -2,9 +2,9 @@ import Link from "next/link";
 import { RESEARCH_TOPICS } from "@/lib/research";
 
 export const metadata = {
-  title: "Research — Modernization Index",
+  title: "Research - Modernization Index",
   description:
-    "Distilled findings from the Modernization Index research program — what held up, what failed, and what it all means.",
+    "Distilled findings from the Modernization Index research program - what held up, what failed, and what it all means.",
 };
 
 export default function Research() {
@@ -14,7 +14,7 @@ export default function Research() {
         <h1 className="serif text-3xl font-black sm:text-4xl">Research</h1>
         <p className="mt-4 text-[15px] leading-relaxed text-fg2">
           The country scores are the instrument&apos;s output. These four pieces are the research
-          behind and around it — read the whole world from the same data, ask what history is
+          behind and around it - read the whole world from the same data, ask what history is
           actually predictable, watch orders rebuild after they fragment, and step back to what the
           project is really <em>for</em>. We report the failures with the same prominence as the
           wins; on this program, a clean failed prediction is a feature.

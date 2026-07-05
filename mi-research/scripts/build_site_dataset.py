@@ -62,6 +62,18 @@ def _load_json(path, default):
         return default
 
 
+def strip_dashes(obj):
+    """The site copy uses plain hyphens only - no em/en dashes. The engine text is the
+    source of truth; the site reformats it. Recursively cleans every emitted string."""
+    if isinstance(obj, str):
+        return obj.replace("—", "-").replace("–", "-").replace("―", "-")
+    if isinstance(obj, list):
+        return [strip_dashes(x) for x in obj]
+    if isinstance(obj, dict):
+        return {k: strip_dashes(v) for k, v in obj.items()}
+    return obj
+
+
 # Curated per-country context (option B) — lets the event-safeguards fire on real modern
 # states; and the safeguard→case lineage (which case produced each safeguard, and why).
 COUNTRY_CONTEXT = _load_json(_SRC / "country_context.json", {})
@@ -336,14 +348,14 @@ def build():
     for slug, full in records:
         for t in full["safeguards"]:
             t["share_firing"] = firing_tally.get(t["key"], 0)
-        json.dump(full, open(OUT / "country" / f"{slug}.json", "w"), indent=1)
+        json.dump(strip_dashes(full), open(OUT / "country" / f"{slug}.json", "w"), indent=1)
 
     # full-coverage countries first (comparable), then partial - each by MI desc.
     # slug is the stable tiebreak so equal-MI countries (e.g. Denmark/Ireland) have
     # a deterministic order run-to-run.
     summaries.sort(key=lambda r: r["slug"])
     summaries.sort(key=lambda r: (r["coverage"]["present"] == 5, r["mi"]), reverse=True)
-    json.dump(summaries, open(OUT / "countries.json", "w"), indent=1)
+    json.dump(strip_dashes(summaries), open(OUT / "countries.json", "w"), indent=1)
     json.dump({"built": date.today().isoformat(), "count": len(summaries), "engine": "MI v3.3",
                "data_vintage": "WGI 2025-anchored", "world_states": 195,
                "context_countries": len(COUNTRY_CONTEXT),

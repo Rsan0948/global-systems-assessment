@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Are golden ages predictable? — Modernization Index",
+  title: "Are golden ages predictable? - Modernization Index",
   description:
-    "A pre-registered prediction that failed its geographic holdout — and the honest signal that survived. Trust the level; distrust the slope.",
+    "A pre-registered prediction that failed its geographic holdout - and the honest signal that survived. Trust the level; distrust the slope.",
 };
 
 function BackLink() {
@@ -20,7 +20,7 @@ export default function GoldenAges() {
       <BackLink />
       <h1 className="serif mt-3 text-3xl font-black sm:text-4xl">Are golden ages predictable?</h1>
       <p className="mt-4 text-[15px] leading-relaxed text-fg2">
-        A golden age is a durable institutional climb — a country that starts rising and keeps
+        A golden age is a durable institutional climb - a country that starts rising and keeps
         rising. We asked whether the index could <em>forecast</em> one. The honest headline:{" "}
         <span className="text-fg">
           you can predict a climb from where a country starts and when it lives, but not from its own
@@ -73,7 +73,7 @@ export default function GoldenAges() {
         </div>
         <p className="mt-3 text-[14px] leading-relaxed text-fg2">
           <span className="mono">137</span> well-powered holdout events and{" "}
-          <span className="text-fg">exactly zero lift</span> — not underpowered, a clean null. The
+          <span className="text-fg">exactly zero lift</span> - not underpowered, a clean null. The
           discovery signal was a post-communist / EU-accession transition-era artifact, not a law. No
           other institutional-component jump rescued it either. This is the point of the page: a real
           pre-registered forecast, honestly failed.
@@ -81,9 +81,9 @@ export default function GoldenAges() {
       </section>
 
       <section className="mt-10">
-        <h2 className="serif text-xl">But golden ages are not random — the structure is elsewhere</h2>
+        <h2 className="serif text-xl">But golden ages are not random - the structure is elsewhere</h2>
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
-          Casting a wide net on the holdout, two things <em>did</em> hold out of sample — and neither
+          Casting a wide net on the holdout, two things <em>did</em> hold out of sample - and neither
           is the country&apos;s own slope.
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -91,22 +91,22 @@ export default function GoldenAges() {
             <div className="mono text-lg font-semibold text-good">+2.4z</div>
             <div className="mt-1 text-[13px] leading-relaxed text-fg2">
               <span className="font-medium text-fg">Low starting base</span> (P1 &lt; 0.40) predicts
-              the climb: 20% vs a 16% base. Room to rise — where you <em>start</em> carries signal.
+              the climb: 20% vs a 16% base. Room to rise - where you <em>start</em> carries signal.
             </div>
           </div>
           <div className="rounded-lg border border-border bg-surface2/40 p-4">
             <div className="mono text-lg font-semibold text-danger">−1.7z</div>
             <div className="mt-1 text-[13px] leading-relaxed text-fg2">
               <span className="font-medium text-fg">Recent momentum is negative</span>: countries that
-              just rose tend to give it back. No flywheel — the gains mean-revert.
+              just rose tend to give it back. No flywheel - the gains mean-revert.
             </div>
           </div>
         </div>
         <p className="mt-3 text-[14px] leading-relaxed text-fg2">
           And golden ages arrive in <span className="font-medium text-fg">waves</span>: climb-starts
           cluster in time at <span className="mono">CV 0.50</span> against a Poisson-random{" "}
-          <span className="mono">~0.26</span> — about twice the clustering chance would produce, with
-          a clear 2002–2005 wave. The driver is largely exogenous: a low starting position caught in a
+          <span className="mono">~0.26</span> - about twice the clustering chance would produce, with
+          a clear 2002-2005 wave. The driver is largely exogenous: a low starting position caught in a
           global reform window, which pillar slopes cannot see.
         </p>
       </section>
@@ -120,7 +120,7 @@ export default function GoldenAges() {
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
           The candor goes one layer deeper. The low-base effect that survived the{" "}
           <em>geographic</em> holdout does <span className="text-fg">not</span> survive the{" "}
-          <em>temporal</em> one. It was carried entirely by the 2002–2011 wave:
+          <em>temporal</em> one. It was carried entirely by the 2002-2011 wave:
         </p>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full min-w-[22rem] text-[13px]">
@@ -134,13 +134,13 @@ export default function GoldenAges() {
             </thead>
             <tbody className="text-fg2">
               <tr className="border-t border-border">
-                <td className="py-2">Discovery 2002–11</td>
+                <td className="py-2">Discovery 2002-11</td>
                 <td className="mono py-2">15%</td>
                 <td className="mono py-2">6%</td>
                 <td className="mono py-2 text-good">+6.2</td>
               </tr>
               <tr className="border-t border-border">
-                <td className="py-2 font-medium text-fg">Held-out 2012–19</td>
+                <td className="py-2 font-medium text-fg">Held-out 2012-19</td>
                 <td className="mono py-2">5%</td>
                 <td className="mono py-2">6%</td>
                 <td className="mono py-2 text-danger">−0.6</td>
@@ -149,11 +149,11 @@ export default function GoldenAges() {
           </table>
         </div>
         <p className="mt-3 text-[14px] leading-relaxed text-fg2">
-          Since roughly 2012, low base is dormant — no better than high base. We also{" "}
+          Since roughly 2012, low base is dormant - no better than high base. We also{" "}
           <span className="text-fg">retracted</span> our own &quot;commodity cycle&quot; label:
           resource-rich states showed no boom-year boost (<span className="mono">z +0.6</span>); the
           entire era effect lives in resource-<em>poor</em> countries, so the mechanism is not
-          commodities — it is an unidentified era wave (EU enlargement, debt relief, the post–Cold-War
+          commodities - it is an unidentified era wave (EU enlargement, debt relief, the post-Cold-War
           high tide are candidates, none isolated). Post-communist transition <em>does</em> add,
           net of base.
         </p>
@@ -162,10 +162,10 @@ export default function GoldenAges() {
       <section className="mt-10">
         <h2 className="serif text-xl">The honest standing claim</h2>
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
-          Within the 2002–2011 wave, low base and transition-origin forecast climbs; outside{" "}
+          Within the 2002-2011 wave, low base and transition-origin forecast climbs; outside{" "}
           <em>all</em> structural conditions the climb rate drops below the base rate (
           <span className="mono">4% vs 7%, z −3.6</span>). The wave ended around 2012, and since then{" "}
-          <span className="text-fg">nothing reliably forecasts a golden age</span> — not the internal
+          <span className="text-fg">nothing reliably forecasts a golden age</span> - not the internal
           slope (refuted), not low base (dormant), nothing. We are in a golden-age drought. That the
           system can find the <em>era</em> but not a <em>live</em> predictor is itself the finding.
         </p>

@@ -156,7 +156,7 @@
    "origin_cases": [
     "N=21 acute-signature test set"
    ],
-   "why": "Independently derived on 21 crisis/absorber cases: the level gap between income (P4) and institutions (P1) separated real crises from shock-absorbers at 83% sensitivity / 100% specificity. When income has outrun institutions, the state is structurally crisis-prone under shock \u2014 'granted/fragile'.",
+   "why": "Independently derived on 21 crisis/absorber cases: the level gap between income (P4) and institutions (P1) separated real crises from shock-absorbers at 83% sensitivity / 100% specificity. When income has outrun institutions, the state is structurally crisis-prone under shock - 'granted/fragile'.",
    "validated_by": [
     "N=21 signature set",
     "unifies with the durability ratio"
@@ -195,7 +195,7 @@
    "origin_cases": [
     "Bosnia 1996"
    ],
-   "why": "Bosnia's WGI institutional scores under the Dayton OHR sat above Croatia's and Serbia's \u2014 the administrator's competence, not indigenous capacity, was being measured. The safeguard discounts raw P1 where an external administrator governs.",
+   "why": "Bosnia's WGI institutional scores under the Dayton OHR sat above Croatia's and Serbia's - the administrator's competence, not indigenous capacity, was being measured. The safeguard discounts raw P1 where an external administrator governs.",
    "validated_by": [
     "Kosovo (UNMIK/EULEX)",
     "East Timor (UNTAET)"
@@ -214,7 +214,7 @@
    "origin_cases": [
     "Sudan / South Sudan"
    ],
-   "why": "Sudan split into just two successor states \u2014 a low fragment count that would normally read as manageable \u2014 yet produced the worst outcome in the sample, because institutional capacity (P1) was far below the bottom third. Low count is not safety when P1 is that low.",
+   "why": "Sudan split into just two successor states - a low fragment count that would normally read as manageable - yet produced the worst outcome in the sample, because institutional capacity (P1) was far below the bottom third. Low count is not safety when P1 is that low.",
    "validated_by": [
     "Ethiopia / Eritrea",
     "Nigeria / Biafra"
@@ -276,7 +276,7 @@
     "Northern Ireland (Stormont collapses)",
     "Germany (AfD in eastern states)"
    ],
-   "why": "A state can survive intact while carrying chronic, managed instability \u2014 repeated executive collapses, high anti-system voting, sharp regional divergence. This is a management-load signal, not a collapse indicator.",
+   "why": "A state can survive intact while carrying chronic, managed instability - repeated executive collapses, high anti-system voting, sharp regional divergence. This is a management-load signal, not a collapse indicator.",
    "validated_by": [
     "Belgium",
     "Spain / Catalonia"
@@ -293,7 +293,7 @@
    "modification": null,
    "tier": null,
    "origin_cases": [
-    "Round 3 \u2014 Ethiopia vs Northern Ireland"
+    "Round 3 - Ethiopia vs Northern Ireland"
    ],
    "why": "Suppression and prevention looked identical until this safeguard split them into tiers: military suppression (Tier 1) doesn't resolve the underlying mismatch; institutional/legal suppression (Tier 2) de-escalates; porosity/power-sharing (Tier 3) addresses it by design. Re-suppression after a porosity period is the worst path.",
    "validated_by": [
@@ -338,13 +338,13 @@
   "vulnerability": {
    "risk_level": "critical",
    "flags": [
-    "CRITICAL: P1 in bottom third \u2014 high fragmentation/violence risk",
+    "CRITICAL: P1 in bottom third - high fragmentation/violence risk",
     "Active safeguards: D"
    ],
    "structural_vulnerability": null,
    "below_floor": {
     "configuration": "uniformly_poor",
-    "reading": "Weak across pillars including P4 \u2014 no resource/income cushion.",
+    "reading": "Weak across pillars including P4 - no resource/income cushion.",
     "prescription": "Broad-based capacity building; no single binding constraint to target."
    },
    "summary": "Risk level: CRITICAL. P1 = 0.161, spread = 0.302, 1 safeguards active."

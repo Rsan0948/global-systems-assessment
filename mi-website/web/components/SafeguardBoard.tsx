@@ -12,7 +12,7 @@ const GROUPS: { title: string; note: string; keys: string[] }[] = [
   },
   {
     title: "Conditions & events",
-    note: "The case-derived safeguards. They fire on a real-world condition; where we haven't curated that condition yet they read “not assessed” — never a false all-clear.",
+    note: "The case-derived safeguards. They fire on a real-world condition; where we haven't curated that condition yet they read “not assessed” - never a false all-clear.",
     keys: ["A", "B", "C", "D", "F", "G", "I"],
   },
 ];
@@ -68,9 +68,9 @@ function Tile({ t }: { t: SafeguardTile }) {
           <div className="mono mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] text-fg3">
             {t.status === "firing" && <span>{t.share_firing} of the scored countries are firing this now</span>}
             {t.status === "borderline" && (
-              <span>on watch — {t.share_firing} countries are flagged on this gate now</span>
+              <span>on watch - {t.share_firing} countries are flagged on this gate now</span>
             )}
-            {t.status === "not_assessed" && <span>needs a curated condition input — coming as we expand coverage</span>}
+            {t.status === "not_assessed" && <span>needs a curated condition input - coming as we expand coverage</span>}
           </div>
         </div>
       )}
@@ -91,7 +91,7 @@ export default function SafeguardBoard({ safeguards }: { safeguards: SafeguardTi
         </span>
       </div>
       <p className="mt-1 text-[12px] leading-relaxed text-fg3">
-        The same structural checks a case study runs — now run on this country. Each one was derived from a
+        The same structural checks a case study runs - now run on this country. Each one was derived from a
         historical case; tap any tile to see the rule, what it means here, and{" "}
         <span className="text-fg2">the case study it came from</span>.
       </p>

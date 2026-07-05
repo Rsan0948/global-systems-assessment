@@ -2,10 +2,10 @@ import type { Diagnostics as Dx } from "@/lib/types";
 import { RISK_COLOR } from "@/lib/config";
 
 const STRATEGY: Record<string, { label: string; blurb: string }> = {
-  porosity: { label: "Porosity", blurb: "diffuses pressure through institutional channels — devolution, power-sharing, federalism" },
+  porosity: { label: "Porosity", blurb: "diffuses pressure through institutional channels - devolution, power-sharing, federalism" },
   suppression: { label: "Suppression", blurb: "manages pressure through control rather than diffusion" },
   complexity_control: { label: "Complexity control", blurb: "high institutional quality applied to a deliberately low-complexity setting" },
-  ambiguous: { label: "Ambiguous", blurb: "not enough curated context to classify the strategy — a hybrid or in transition" },
+  ambiguous: { label: "Ambiguous", blurb: "not enough curated context to classify the strategy - a hybrid or in transition" },
   unknown: { label: "Unknown", blurb: "insufficient data" },
 };
 
@@ -120,7 +120,7 @@ export default function Diagnostics({ d }: { d: Dx }) {
             ))}
           </div>
           <p className="mt-1.5 text-[11px] text-fg3">
-            Spread across schemes: <span className="num">{sensSpread.toFixed(3)}</span> — the tier holds regardless of
+            Spread across schemes: <span className="num">{sensSpread.toFixed(3)}</span> - the tier holds regardless of
             weighting choice; the score is not an artifact of one recipe.
           </p>
         </div>

@@ -30,7 +30,7 @@ export default function WorldMap({
   const open = (f: MapFeature) => f.slug && router.push(`/country/${f.slug}`);
 
   // On a device with a real hover (desktop mouse), the tooltip already previews
-  // the country, so a click navigates directly — no pin-first step. The two-step
+  // the country, so a click navigates directly - no pin-first step. The two-step
   // pin→confirm model is only for touch (no hover), where there is no tooltip.
   const tapCountry = (f: MapFeature) => {
     const hoverCapable =
@@ -51,7 +51,7 @@ export default function WorldMap({
   const fill = (f: MapFeature) =>
     layer === "coverage" ? (f.slug ? COVERAGE_SCORED : COVERAGE_UNSCORED) : f.color;
 
-  // Position the tooltip by writing to the DOM directly — NO React state on mouse
+  // Position the tooltip by writing to the DOM directly - NO React state on mouse
   // move, so moving the cursor never re-renders the ~180 map paths.
   const moveTip = (e: React.MouseEvent) => {
     const r = wrap.current?.getBoundingClientRect();

@@ -50,7 +50,7 @@ export default function WhatIf({
         <div>
           <h2 className="serif text-base">Run the engine yourself</h2>
           <p className="mt-1 max-w-md text-[12px] leading-relaxed text-fg3">
-            Drag the pillars — or re-weight them — and watch the Modernization Index and tier recompute live. This
+            Drag the pillars - or re-weight them - and watch the Modernization Index and tier recompute live. This
             is the real aggregation (an equal-weighted mean of the five pillars), not an animation.
           </p>
         </div>

@@ -126,16 +126,16 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
-      {/* Safeguard board — the case-study engine, run on this country */}
+      {/* Safeguard board - the case-study engine, run on this country */}
       {c.safeguards && c.safeguards.length > 0 && <SafeguardBoard safeguards={c.safeguards} />}
 
-      {/* Engine diagnostics — strategy, vulnerability, trajectory, robustness */}
+      {/* Engine diagnostics - strategy, vulnerability, trajectory, robustness */}
       {c.diagnostics && <Diagnostics d={c.diagnostics} />}
 
       {/* Genuine interactivity: recompute the score yourself */}
       <WhatIf name={c.name} pillars={c.pillars} actualMi={c.mi} />
 
-      {/* Neighborhood (relational tier) — only where we have it */}
+      {/* Neighborhood (relational tier) - only where we have it */}
       {c.relational && (
         <section className="card mt-6 p-5">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
