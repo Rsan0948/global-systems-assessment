@@ -19,9 +19,24 @@ export default function WorldMap({
 }) {
   const router = useRouter();
   const [hover, setHover] = useState<MapFeature | null>(null);
+  // Pinned selection is the touch-friendly two-step model: first tap pins a
+  // readout, a second tap (or the "View →" affordance) navigates. Kept in React
+  // state (unlike hover position, which is written to the DOM via `tip`).
+  const [pinned, setPinned] = useState<MapFeature | null>(null);
   const [layer, setLayer] = useState<Layer>("structure");
   const wrap = useRef<HTMLDivElement>(null);
   const tip = useRef<HTMLDivElement>(null);
+
+  const open = (f: MapFeature) => f.slug && router.push(`/country/${f.slug}`);
+
+  // First tap pins; tapping the already-pinned country navigates.
+  const tapCountry = (f: MapFeature) => {
+    if (pinned?.iso3 === f.iso3) {
+      open(f);
+    } else {
+      setPinned(f);
+    }
+  };
 
   const fill = (f: MapFeature) =>
     layer === "coverage" ? (f.slug ? COVERAGE_SCORED : COVERAGE_UNSCORED) : f.color;
@@ -84,9 +99,10 @@ export default function WorldMap({
             stroke="#232338"
             strokeWidth={0.8}
             onMouseEnter={() => setHover(null)}
+            onClick={() => setPinned(null)}
           />
           {features.map((f, i) => {
-            const on = hover === f;
+            const on = hover === f || pinned?.iso3 === f.iso3;
             return (
               <path
                 key={`${f.iso3}-${i}`}
@@ -97,7 +113,7 @@ export default function WorldMap({
                 aria-hidden
                 style={{ cursor: f.slug ? "pointer" : "default" }}
                 onMouseEnter={() => setHover(f)}
-                onClick={() => f.slug && router.push(`/country/${f.slug}`)}
+                onClick={() => tapCountry(f)}
               />
             );
           })}
@@ -117,7 +133,7 @@ export default function WorldMap({
                   <span style={{ color: layer === "coverage" ? "#a6a6bd" : hover.color }}>
                     MI {hover.mi?.toFixed(3)} · Tier {hover.tier}
                   </span>
-                  <span className="text-fg3"> · click →</span>
+                  <span className="text-fg3"> · click to select</span>
                 </div>
               ) : (
                 <div className="mono mt-0.5 text-[11px] text-fg3">not yet scored</div>
@@ -126,6 +142,45 @@ export default function WorldMap({
           )}
         </div>
       </div>
+
+      {/* Pinned readout: always-visible (no pointer needed), highlights the
+          selected country and offers a tap target to open it. */}
+      {pinned && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="mt-3 flex items-center gap-3 rounded-lg border border-border bg-surface/95 px-3 py-2"
+        >
+          <div className="min-w-0 flex-1">
+            <div className="truncate text-[13px] font-medium">{pinned.name}</div>
+            {pinned.slug ? (
+              <div className="mono mt-0.5 text-[11px]">
+                <span style={{ color: layer === "coverage" ? "#a6a6bd" : pinned.color }}>
+                  MI {pinned.mi?.toFixed(3)} · Tier {pinned.tier}
+                </span>
+              </div>
+            ) : (
+              <div className="mono mt-0.5 text-[11px] text-fg3">not yet scored</div>
+            )}
+          </div>
+          {pinned.slug && (
+            <button
+              onClick={() => open(pinned)}
+              className="mono shrink-0 rounded px-2.5 py-1.5 text-[12px] transition-colors"
+              style={{ background: "#3b82f622", color: "#60a5fa", border: "1px solid #3b82f655" }}
+            >
+              View →
+            </button>
+          )}
+          <button
+            onClick={() => setPinned(null)}
+            aria-label="Dismiss selection"
+            className="mono shrink-0 rounded px-2 py-1.5 text-[12px] text-fg3 transition-colors hover:text-fg"
+          >
+            ✕
+          </button>
+        </div>
+      )}
 
       <div className="mt-3">
         {layer === "structure" ? (

@@ -38,14 +38,74 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
 
   return (
     <div>
-      <input
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
-        placeholder="Filter…"
-        aria-label="Filter countries"
-        className="mb-3 w-48 rounded-md border border-border bg-surface px-3 py-1.5 text-[13px] outline-none placeholder:text-fg3 focus:border-primary"
-      />
-      <div className="card overflow-x-auto">
+      <div className="mb-3 flex flex-wrap items-center gap-2">
+        <input
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          placeholder="Filter…"
+          aria-label="Filter countries"
+          className="w-48 rounded-md border border-border bg-surface px-3 py-1.5 text-[13px] outline-none placeholder:text-fg3 focus:border-primary"
+        />
+        {/* Sort control for the stacked mobile layout (the desktop table sorts
+            via its column headers). */}
+        <label className="mono flex items-center gap-1.5 text-[11px] text-fg3 sm:hidden">
+          Sort
+          <select
+            value={sort}
+            onChange={(e) => setSort(e.target.value)}
+            aria-label="Sort countries"
+            className="rounded-md border border-border bg-surface px-2 py-1.5 text-[12px] text-fg outline-none focus:border-primary"
+          >
+            {COLS.map(([key, label]) => (
+              <option key={key} value={key}>
+                {label}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      {/* Mobile: stacked cards (no horizontal scroll on narrow screens). */}
+      <div className="flex flex-col gap-2 sm:hidden">
+        {rows.length === 0 && (
+          <p className="card px-3 py-10 text-center text-[13px] text-fg3">No countries match “{q}”.</p>
+        )}
+        {rows.map((c) => (
+          <Link
+            key={c.slug}
+            href={`/country/${c.slug}`}
+            className="card lift block px-3 py-3 active:bg-surface2"
+          >
+            <div className="flex items-baseline justify-between gap-2">
+              <span className="flex min-w-0 items-center gap-2">
+                <span style={{ color: tierColor(c.tier) }}>●</span>
+                <span className="truncate font-medium">{c.name}</span>
+              </span>
+              <span className="mono shrink-0 text-[15px] font-semibold" style={{ color: tierColor(c.tier) }}>
+                {c.mi.toFixed(3)}
+              </span>
+            </div>
+            <div className="mono mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px]">
+              {["P1", "P2", "P3", "P4", "P5"].map((p) => (
+                <span key={p} className="text-fg3">
+                  {PILLARS[p].short} {cell(c.pillars[p])}
+                </span>
+              ))}
+              <span className="text-fg3">
+                Data{" "}
+                {c.coverage.present < 5 ? (
+                  <span className="text-warn/80">{c.coverage.present}/5</span>
+                ) : (
+                  <span>5/5</span>
+                )}
+              </span>
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {/* Desktop / tablet: the sortable table. */}
+      <div className="card hidden overflow-x-auto sm:block">
         <table className="w-full text-[12px]">
           <thead>
             <tr className="border-b border-border text-left text-fg3">

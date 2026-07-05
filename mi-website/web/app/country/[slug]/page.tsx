@@ -6,7 +6,9 @@ import Radar from "@/components/Radar";
 import ChipRow from "@/components/ChipRow";
 import Define from "@/components/Define";
 import IndicatorRow from "@/components/IndicatorRow";
-import ScoreProfile from "@/components/ScoreProfile";
+import SafeguardBoard from "@/components/SafeguardBoard";
+import Diagnostics from "@/components/Diagnostics";
+import WhatIf from "@/components/WhatIf";
 import { TierDot } from "@/components/ui";
 
 export const dynamicParams = false; // 190 country pages are fully known at build; no on-demand slugs
@@ -124,10 +126,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
-      {/* Interactive engine readout */}
-      {c.checks && c.checks.length > 0 && (
-        <ScoreProfile name={c.name} tier={c.tier} mi={c.mi} config={c.config} checks={c.checks} />
-      )}
+      {/* Safeguard board — the case-study engine, run on this country */}
+      {c.safeguards && c.safeguards.length > 0 && <SafeguardBoard safeguards={c.safeguards} />}
+
+      {/* Engine diagnostics — strategy, vulnerability, trajectory, robustness */}
+      {c.diagnostics && <Diagnostics d={c.diagnostics} />}
+
+      {/* Genuine interactivity: recompute the score yourself */}
+      <WhatIf name={c.name} pillars={c.pillars} actualMi={c.mi} />
 
       {/* Neighborhood (relational tier) — only where we have it */}
       {c.relational && (

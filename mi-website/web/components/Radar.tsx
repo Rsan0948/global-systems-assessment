@@ -29,8 +29,17 @@ export default function Radar({ pillars, overlay, colors, size = 260 }: Props) {
     "Pillar profile: " +
     ORDER.map((p) => `${PILLARS[p].full} ${pillars[p] == null ? "no data" : pillars[p]!.toFixed(2)}`).join(", ");
 
+  // Fluid: scale to the container width (keeping the square aspect from the
+  // viewBox) and cap at the intended `size`. Extra viewBox padding keeps the
+  // pillar labels (drawn past the ring) from clipping when the SVG shrinks.
+  const pad = 12;
   return (
-    <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size} role="img" aria-label={label}>
+    <svg
+      viewBox={`${-pad} ${-pad} ${size + pad * 2} ${size + pad * 2}`}
+      role="img"
+      aria-label={label}
+      style={{ width: "100%", height: "auto", maxWidth: size }}
+    >
       {rings.map((pts, i) => (
         <polygon key={i} points={pts} fill="none" stroke="#232338" strokeWidth={1} />
       ))}

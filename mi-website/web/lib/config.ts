@@ -18,7 +18,8 @@ export const SITE = {
   nav: [
     ["Atlas", "/atlas"],
     ["Compare", "/compare"],
-    ["Stories", "/stories"],
+    ["Research", "/research"],
+    ["Validation", "/validation"],
     ["How it works", "/how-it-works"],
     ["Data", "/data"],
   ] as const,
@@ -70,3 +71,19 @@ export const COVERAGE_UNSCORED = "#181826";
 export const SHAPE_BALANCED = 0.15;
 export const SHAPE_LOPSIDED = 0.35;
 export const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
+
+// safeguard-board status → color + label (single source of truth for the board + drill-downs)
+export const SG_STATUS: Record<string, { color: string; label: string; dot: string }> = {
+  firing: { color: "#f87171", label: "firing", dot: "#f87171" },
+  borderline: { color: "#fbbf24", label: "watch", dot: "#fbbf24" },
+  clear: { color: "#4ade80", label: "clear", dot: "#4ade80" },
+  not_assessed: { color: "#8a8aa4", label: "not assessed", dot: "#3a3a52" },
+};
+
+// risk-level → color (vulnerability badge)
+export const RISK_COLOR: Record<string, string> = {
+  low: "#4ade80",
+  moderate: "#fbbf24",
+  high: "#f97316",
+  critical: "#dc2626",
+};
