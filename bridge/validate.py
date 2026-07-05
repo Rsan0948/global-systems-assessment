@@ -52,21 +52,29 @@ MI_REFERENCE_SCORES = {
     "Spain": {"P1": 0.6665, "P2": 0.6104, "P3": 0.9166, "P4": 0.8333, "P5": 0.6480},
 }
 
-# Post-collectivization feature vectors for the same countries
-# (from studies/5_collectivization/cases/*.json)
+# Post-collectivization feature vectors for the same countries.
+# 19 features: 15 form features + 4 institutional depth features:
+#   [institutional_continuity, prior_self_governance, bureaucratic_inheritance,
+#    literacy_at_founding]
+#
+# Depth feature codings:
+#   institutional_continuity: current constitutional order unbroken 50+ years
+#   prior_self_governance: population had established self-rule tradition
+#   bureaucratic_inheritance: inherited functioning admin apparatus (not extraction)
+#   literacy_at_founding: >90% literacy at institutional founding
 POST_FEATURE_VECTORS = {
-    "Germany": [1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "United States": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "France": [1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0],
-    "Italy": [1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "Japan": [1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0],
-    "Netherlands": [0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
-    "Switzerland": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "Australia": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "Canada": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "Brazil": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "Argentina": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "Spain": [1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0],
+    "Germany": [1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "United States": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "France": [1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1],
+    "Italy": [1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "Japan": [1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1],
+    "Netherlands": [0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
+    "Switzerland": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "Australia": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "Canada": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "Brazil": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+    "Argentina": [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1],
+    "Spain": [1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1],
 }
 
 

@@ -45,9 +45,16 @@ FEATURE_NAMES = [
     "shared_supreme_court",       # 12
     "central_standing_army",      # 13
     "preexisting_polities",       # 14
+    # --- Institutional depth features (15-18) ---
+    "institutional_continuity",   # 15
+    "prior_self_governance",      # 16
+    "bureaucratic_inheritance",   # 17
+    "literacy_at_founding",       # 18
 ]
 
-N_FEATURES = 15
+N_BASE_FEATURES = 15
+N_DEPTH_FEATURES = 4
+N_FEATURES = 19
 N_PILLARS = 5
 
 # --- The Loading Matrix ---
@@ -104,6 +111,36 @@ N_PILLARS = 5
 # 14 preexisting_polities: slight negative P5 (historical cleavages persist
 #    as fragility), otherwise near-neutral (it's a historical fact, not a
 #    current institutional property).
+#
+# --- Institutional depth features (15-18) ---
+# These capture WHY countries with identical formal structure (e.g. Brazil and
+# Switzerland, both federal republics) have vastly different governance quality.
+# Form features (0-14) describe WHAT institutions exist.  Depth features
+# describe HOW deep those institutions run.
+#
+# 15 institutional_continuity: 50+ years of unbroken constitutional operation.
+#    Strong P5 (stability track record), strong P1 (institutional maturity →
+#    government effectiveness), moderate P2 (stable R&D environment), moderate
+#    P3 (sustained human development investment), moderate P4 (economic policy
+#    continuity).
+#
+# 16 prior_self_governance: established tradition of self-rule before the
+#    current system (the difference between democracy as learned practice vs
+#    imported template).  Strong P1 (democratic norms internalized), moderate
+#    P2 (culture of initiative), moderate P3 (civic engagement → public goods),
+#    slight P4, moderate P5 (legitimate institutions resist shocks).
+#
+# 17 bureaucratic_inheritance: inherited functioning administrative apparatus
+#    (Prussian tradition → Germany, vs colonial extraction → Brazil).  Strong
+#    P1 (government effectiveness from day one), moderate P2/P3 (state capacity
+#    enables R&D and service delivery), moderate P4 (economic management),
+#    moderate P5 (institutional resilience).
+#
+# 18 literacy_at_founding: near-universal literacy (>90%) at institutional
+#    founding.  Gates whether democratic institutions are PRACTICED or NOMINAL.
+#    Moderate P1 (informed electorate), strong P2 (human capital → innovation),
+#    strong P3 (directly measures human capital base), moderate P4 (productive
+#    workforce), slight P5.
 
 LOADING_MATRIX = np.array([
     #  P1    P2    P3    P4    P5
@@ -122,23 +159,32 @@ LOADING_MATRIX = np.array([
     [ 0.8,  0.1,  0.3,  0.1,  0.3],  # 12: shared_supreme_court
     [ 0.1,  0.0,  0.0,  0.0,  0.8],  # 13: central_standing_army
     [ 0.0,  0.0,  0.0,  0.0, -0.2],  # 14: preexisting_polities
+    # --- Depth features ---
+    [ 0.4,  0.3,  0.2,  0.3,  0.5],  # 15: institutional_continuity
+    [ 0.5,  0.3,  0.3,  0.1,  0.3],  # 16: prior_self_governance
+    [ 0.4,  0.3,  0.3,  0.4,  0.3],  # 17: bureaucratic_inheritance
+    [ 0.2,  0.5,  0.5,  0.3,  0.1],  # 18: literacy_at_founding
 ], dtype=float)
 
 assert LOADING_MATRIX.shape == (N_FEATURES, N_PILLARS)
 
 # --- Reference type templates (mirrored from feature_vector.py) ---
+# Each template now includes 4 depth features (15-18) representing the
+# archetype's typical institutional depth:
+#   [institutional_continuity, prior_self_governance, bureaucratic_inheritance,
+#    literacy_at_founding]
 
 TYPE_TEMPLATES = {
-    "personal_empire":       [1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1],
-    "feudal_order":          [1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
-    "city_state_system":     [0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
-    "dynastic_composite":    [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    "confederation":         [0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1],
-    "unitary_nation_state":  [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0],
-    "federal_republic":      [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-    "ideological_party":     [1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1],
-    "colonial_imperial":     [1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1],
-    "supranational_union":   [0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
+    "personal_empire":       [1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+    "feudal_order":          [1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+    "city_state_system":     [0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0],
+    "dynastic_composite":    [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+    "confederation":         [0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0],
+    "unitary_nation_state":  [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
+    "federal_republic":      [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "ideological_party":     [1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+    "colonial_imperial":     [1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
+    "supranational_union":   [0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
 }
 
 
@@ -159,11 +205,17 @@ _RAW_MIN, _RAW_MAX = _compute_normalization_bounds()
 
 
 def project(features: list[int]) -> np.ndarray:
-    """Project a 15-feature binary vector into raw (unnormalized) pillar space.
+    """Project a feature vector into raw (unnormalized) pillar space.
 
-    Returns a 5-element array of raw projected scores."""
+    Accepts 15-feature (form only) or 19-feature (form + depth) vectors.
+    If 15 features are passed, depth features default to 0 (no depth bonus —
+    the most conservative assumption for cases without depth data)."""
+    if len(features) == N_BASE_FEATURES:
+        features = list(features) + [0] * N_DEPTH_FEATURES
     if len(features) != N_FEATURES:
-        raise ValueError(f"expected {N_FEATURES} features, got {len(features)}")
+        raise ValueError(
+            f"expected {N_BASE_FEATURES} or {N_FEATURES} features, "
+            f"got {len(features)}")
     return np.array(features, dtype=float) @ LOADING_MATRIX
 
 
