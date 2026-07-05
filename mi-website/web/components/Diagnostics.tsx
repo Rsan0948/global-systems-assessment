@@ -35,6 +35,7 @@ export default function Diagnostics({ d }: { d: Dx }) {
   const sensVals = sens.map(([, v]) => v);
   const sensSpread = sensVals.length ? Math.max(...sensVals) - Math.min(...sensVals) : 0;
   const mv = d.movement;
+  const acct = d.accountability_gap;
 
   return (
     <section className="card mt-6 p-5">
@@ -89,6 +90,19 @@ export default function Diagnostics({ d }: { d: Dx }) {
           </div>
           <p className="mt-1 text-[12px] leading-relaxed text-fg2">{mv.reading}</p>
           <p className="mt-1 text-[10px] text-fg3">{mv.caveat}</p>
+        </Panel>
+      )}
+
+      {acct && acct.status !== "balanced" && (
+        <Panel title="Accountability gap · hypothesis">
+          <div className="flex flex-wrap items-baseline gap-x-3">
+            <span className="text-[14px] font-semibold text-fg">
+              {acct.status === "legitimacy_capped" ? "Capacity without consent" : "Accountability lag"}
+            </span>
+            <span className="num text-[12px] text-fg3">accountability vs income {acct.va_minus_p4.toFixed(2)}</span>
+          </div>
+          <p className="mt-1 text-[12px] leading-relaxed text-fg2">{acct.reading}</p>
+          <p className="mt-1 text-[10px] text-fg3">{acct.caveat}</p>
         </Panel>
       )}
 

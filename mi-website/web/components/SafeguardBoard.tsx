@@ -66,8 +66,9 @@ function Tile({ t }: { t: SafeguardTile }) {
             </div>
           )}
           <div className="mono mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] text-fg3">
-            {(t.status === "firing" || t.status === "borderline") && (
-              <span>{t.share_firing} of the scored countries are firing this now</span>
+            {t.status === "firing" && <span>{t.share_firing} of the scored countries are firing this now</span>}
+            {t.status === "borderline" && (
+              <span>on watch — {t.share_firing} countries are flagged on this gate now</span>
             )}
             {t.status === "not_assessed" && <span>needs a curated condition input — coming as we expand coverage</span>}
           </div>

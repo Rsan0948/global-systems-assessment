@@ -29,8 +29,18 @@ export default function WorldMap({
 
   const open = (f: MapFeature) => f.slug && router.push(`/country/${f.slug}`);
 
-  // First tap pins; tapping the already-pinned country navigates.
+  // On a device with a real hover (desktop mouse), the tooltip already previews
+  // the country, so a click navigates directly — no pin-first step. The two-step
+  // pin→confirm model is only for touch (no hover), where there is no tooltip.
   const tapCountry = (f: MapFeature) => {
+    const hoverCapable =
+      typeof window !== "undefined" &&
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(hover: hover)").matches;
+    if (hoverCapable) {
+      open(f);
+      return;
+    }
     if (pinned?.iso3 === f.iso3) {
       open(f);
     } else {
@@ -133,7 +143,7 @@ export default function WorldMap({
                   <span style={{ color: layer === "coverage" ? "#a6a6bd" : hover.color }}>
                     MI {hover.mi?.toFixed(3)} · Tier {hover.tier}
                   </span>
-                  <span className="text-fg3"> · click to select</span>
+                  <span className="text-fg3"> · click to open</span>
                 </div>
               ) : (
                 <div className="mono mt-0.5 text-[11px] text-fg3">not yet scored</div>
