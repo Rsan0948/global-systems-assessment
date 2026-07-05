@@ -42,6 +42,45 @@ export type Check = {
   detail: string;
 };
 
+export type SafeguardStatus = "firing" | "borderline" | "clear" | "not_assessed";
+export type SafeguardTile = {
+  key: string;
+  name: string;
+  status: SafeguardStatus;
+  triggered: boolean;
+  headline: string;
+  detail: string;
+  modification: string | null;
+  tier?: string | null;
+  origin_cases: string[];
+  why: string | null;
+  validated_by: string[];
+  share_firing: number;
+};
+
+export type Diagnostics = {
+  context_curated: boolean;
+  strategy: {
+    strategy: string;
+    confidence?: string;
+    tier?: number;
+    tier_label?: string;
+    explanation?: string;
+    failure_mode?: string;
+    examples?: string;
+  };
+  vulnerability: {
+    risk_level: "low" | "moderate" | "high" | "critical";
+    flags: string[];
+    structural_vulnerability?: { p4_minus_p1_gap: number; status: string; reading: string } | null;
+    summary: string;
+  };
+  movement: { class: string; dMI: number; lead: string; dP1: number; reading: string; caveat: string } | null;
+  accountability_gap: { status: string; reading: string; va_minus_p4: number; caveat: string } | null;
+  sensitivity: Record<string, number> | null;
+  prior_year: number | null;
+};
+
 export type Country = Summary & {
   verdict: string;
   spread: number | null;
@@ -51,6 +90,8 @@ export type Country = Summary & {
   indicators: { key: string; value: number; source: string }[];
   data_year: number;
   checks?: Check[];
+  safeguards?: SafeguardTile[];
+  diagnostics?: Diagnostics;
   similar?: { slug: string; name: string; mi: number; tier: number }[];
   relational?: Relational;
 };

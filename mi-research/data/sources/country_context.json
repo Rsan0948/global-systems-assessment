@@ -1,0 +1,476 @@
+{
+  "EST": {
+    "is_democratic": true,
+    "has_federalism": false,
+    "is_island": false,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Borders Russia; NATO/EU frontline state, threat mitigated by Article 5.",
+    "growth_trajectory": "growing",
+    "population": 1360000
+  },
+  "LVA": {
+    "is_democratic": true,
+    "is_island": false,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Borders Russia; NATO/EU frontline, threat mitigated by Article 5.",
+    "growth_trajectory": "growing",
+    "population": 1880000
+  },
+  "LTU": {
+    "is_democratic": true,
+    "is_island": false,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Borders Russia (Kaliningrad) and Belarus; NATO/EU frontline.",
+    "growth_trajectory": "growing",
+    "population": 2860000
+  },
+  "RUS": {
+    "is_authoritarian": true,
+    "has_federalism": true,
+    "is_island": false,
+    "neighbor_threat_level": "none",
+    "neighbor_details": "Itself the regional predatory power (invaded Ukraine 2014/2022).",
+    "resource_rents_pct_revenue": 40.0,
+    "growth_trajectory": "stagnant",
+    "population": 144000000
+  },
+  "UKR": {
+    "is_democratic": true,
+    "is_island": false,
+    "neighbor_threat_level": "high",
+    "neighbor_details": "Russian full-scale invasion since 2022; 2014 annexation of Crimea; occupied territory.",
+    "growth_trajectory": "declining",
+    "population": 38000000
+  },
+  "SVN": {
+    "is_democratic": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 2120000
+  },
+  "HRV": {
+    "is_democratic": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 3850000
+  },
+  "SRB": {
+    "neighbor_threat_level": "none",
+    "population": 6600000
+  },
+  "BIH": {
+    "has_federalism": true,
+    "has_power_sharing": true,
+    "under_external_admin": true,
+    "admin_details": "Post-Dayton Office of the High Representative (OHR) retains 'Bonn Powers' to impose laws and remove officials.",
+    "neighbor_threat_level": "none",
+    "population": 3200000
+  },
+  "XKX": {
+    "is_democratic": true,
+    "under_external_admin": true,
+    "admin_details": "UNMIK interim administration under UNSCR 1244 nominally continues; residual EULEX rule-of-law mission.",
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Non-normalized relations with Serbia (Sept 2023 Banjska attack).",
+    "population": 1600000
+  },
+  "CZE": {
+    "is_democratic": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 10700000
+  },
+  "SVK": {
+    "is_democratic": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 5400000
+  },
+  "TUN": {
+    "is_democratic_transition": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "stagnant",
+    "population": 12000000
+  },
+  "EGY": {
+    "is_authoritarian": true,
+    "military_dominant": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "stagnant",
+    "population": 112000000
+  },
+  "LBY": {
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Divided state; external intervention (Egypt/UAE/Russia/Turkey) post-2014.",
+    "population": 7000000
+  },
+  "SDN": {
+    "is_authoritarian": true,
+    "military_dominant": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Active civil war (2023-) with external backers; spillover with Chad, Ethiopia, South Sudan.",
+    "fragmentation_mechanism": "civil_war",
+    "prior_porosity_period": true,
+    "n_successor_states": 2,
+    "growth_trajectory": "declining",
+    "resource_rents_pct_revenue": 12.0,
+    "population": 48000000
+  },
+  "SSD": {
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Mutual predatory dynamic with Sudan (Abyei, oil-transit chokehold).",
+    "resource_rents_pct_revenue": 98.0,
+    "growth_trajectory": "declining",
+    "population": 11000000
+  },
+  "PAK": {
+    "military_dominant": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Nuclear rivalry with India; chronic internal instability.",
+    "growth_trajectory": "stagnant",
+    "population": 240000000
+  },
+  "BGD": {
+    "is_democratic_transition": true,
+    "neighbor_threat_level": "none",
+    "neighbor_details": "Near-encircled by India; no state-threatening neighbor.",
+    "growth_trajectory": "growing",
+    "population": 173000000
+  },
+  "IND": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Rivalries with Pakistan and China (border clashes); sub-state insurgencies.",
+    "growth_trajectory": "growing",
+    "population": 1430000000
+  },
+  "ETH": {
+    "has_federalism": true,
+    "is_authoritarian": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Tensions with Eritrea; internal armed conflict (Tigray war 2020-22, Amhara).",
+    "fragmentation_mechanism": "civil_war",
+    "prior_porosity_period": true,
+    "external_backstop": true,
+    "backstop_details": "African Union backing of territorial integrity; AU-brokered Pretoria agreement 2022.",
+    "population": 128000000
+  },
+  "ERI": {
+    "is_authoritarian": true,
+    "military_dominant": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Historic border war and recurring tension with Ethiopia.",
+    "population": 3600000
+  },
+  "IDN": {
+    "is_democratic": true,
+    "is_island": true,
+    "has_devolution": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 280000000
+  },
+  "TLS": {
+    "is_democratic": true,
+    "is_island": true,
+    "neighbor_threat_level": "none",
+    "population": 1400000
+  },
+  "MMR": {
+    "is_authoritarian": true,
+    "military_dominant": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "China as arms supplier and stabilizing-and-predatory actor.",
+    "fragmentation_mechanism": "military",
+    "prior_porosity_period": true,
+    "external_backstop": true,
+    "backstop_details": "China backstops the junta diplomatically/economically against internal collapse.",
+    "growth_trajectory": "declining",
+    "population": 54000000
+  },
+  "NGA": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Boko Haram/ISWAP insurgency; Sahel instability spillover.",
+    "resource_rents_pct_revenue": 50.0,
+    "population": 230000000
+  },
+  "CMR": {
+    "is_authoritarian": true,
+    "military_dominant": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Nigeria border porosity feeds Anglophone separatism; Boko Haram in Far North.",
+    "fragmentation_mechanism": "insurgency",
+    "growth_trajectory": "stagnant",
+    "population": 28000000
+  },
+  "DRC": {
+    "is_authoritarian": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Rwanda-backed M23 activity in eastern DRC.",
+    "resource_rents_pct_revenue": 40.0,
+    "population": 102000000
+  },
+  "RWA": {
+    "is_authoritarian": true,
+    "neighbor_threat_level": "none",
+    "resource_rents_pct_revenue": 5.0,
+    "growth_trajectory": "growing",
+    "population": 14000000
+  },
+  "ZAF": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "declining",
+    "population": 61000000
+  },
+  "BWA": {
+    "is_democratic": true,
+    "neighbor_threat_level": "none",
+    "resource_rents_pct_revenue": 50.0,
+    "growth_trajectory": "growing",
+    "population": 2400000
+  },
+  "MUS": {
+    "is_democratic": true,
+    "is_island": true,
+    "has_power_sharing": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 1300000
+  },
+  "SOM": {
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Al-Shabaab insurgency; tensions with Ethiopia (2024 port MoU).",
+    "fragmentation_mechanism": "secession",
+    "growth_trajectory": "growing",
+    "population": 18000000
+  },
+  "GBR": {
+    "is_democratic": true,
+    "has_devolution": true,
+    "has_power_sharing": true,
+    "is_island": true,
+    "neighbor_threat_level": "none",
+    "fragmentation_mechanism": "gfa",
+    "growth_trajectory": "stagnant",
+    "population": 68000000
+  },
+  "DEU": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "stagnant",
+    "population": 84000000
+  },
+  "ESP": {
+    "is_democratic": true,
+    "has_devolution": true,
+    "neighbor_threat_level": "none",
+    "fragmentation_mechanism": "legal",
+    "growth_trajectory": "growing",
+    "population": 48000000
+  },
+  "BEL": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "has_power_sharing": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 11700000
+  },
+  "CHE": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "has_power_sharing": true,
+    "is_island": false,
+    "neighbor_threat_level": "none",
+    "population": 8900000
+  },
+  "CAN": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "has_devolution": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 41000000
+  },
+  "USA": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 340000000
+  },
+  "AUS": {
+    "is_democratic": true,
+    "has_federalism": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 27000000
+  },
+  "FRA": {
+    "is_democratic": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "stagnant",
+    "population": 66000000
+  },
+  "ITA": {
+    "is_democratic": true,
+    "has_devolution": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "stagnant",
+    "population": 59000000
+  },
+  "POL": {
+    "is_democratic": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 37000000
+  },
+  "URY": {
+    "is_democratic": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 3400000
+  },
+  "NOR": {
+    "is_democratic": true,
+    "is_island": false,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 5500000
+  },
+  "SGP": {
+    "is_island": true,
+    "immigration_policy": "restrictive",
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 6000000
+  },
+  "JPN": {
+    "is_democratic": true,
+    "is_island": true,
+    "immigration_policy": "restrictive",
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "stagnant",
+    "population": 124000000
+  },
+  "KOR": {
+    "is_democratic": true,
+    "neighbor_threat_level": "high",
+    "neighbor_details": "North Korea (armistice not peace; nuclear-armed, artillery on Seoul).",
+    "growth_trajectory": "growing",
+    "population": 51000000
+  },
+  "TWN": {
+    "is_democratic": true,
+    "is_island": true,
+    "neighbor_threat_level": "high",
+    "neighbor_details": "PRC cross-strait military pressure and annexation claim.",
+    "growth_trajectory": "growing",
+    "population": 23500000
+  },
+  "CHN": {
+    "is_authoritarian": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 1410000000
+  },
+  "VNM": {
+    "is_authoritarian": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 100000000
+  },
+  "ARE": {
+    "is_authoritarian": true,
+    "has_federalism": true,
+    "is_island": false,
+    "immigration_policy": "very_restrictive",
+    "neighbor_threat_level": "none",
+    "resource_rents_pct_revenue": 16.0,
+    "growth_trajectory": "growing",
+    "population": 10000000
+  },
+  "QAT": {
+    "is_authoritarian": true,
+    "immigration_policy": "very_restrictive",
+    "neighbor_threat_level": "none",
+    "resource_rents_pct_revenue": 70.0,
+    "growth_trajectory": "growing",
+    "population": 3000000
+  },
+  "SAU": {
+    "is_authoritarian": true,
+    "immigration_policy": "restrictive",
+    "neighbor_threat_level": "none",
+    "resource_rents_pct_revenue": 24.0,
+    "growth_trajectory": "growing",
+    "population": 33000000
+  },
+  "MDA": {
+    "is_democratic": true,
+    "neighbor_threat_level": "high",
+    "neighbor_details": "Russian pressure; Russian troops/Transnistria breakaway region.",
+    "growth_trajectory": "growing",
+    "population": 2500000
+  },
+  "GEO": {
+    "neighbor_threat_level": "high",
+    "neighbor_details": "Russia occupies ~20% (Abkhazia, South Ossetia); 2008 war.",
+    "population": 3700000
+  },
+  "ARM": {
+    "is_democratic": true,
+    "neighbor_threat_level": "high",
+    "neighbor_details": "Azerbaijan (2020 and 2023 Nagorno-Karabakh offensives; border pressure).",
+    "growth_trajectory": "growing",
+    "population": 3000000
+  },
+  "ISR": {
+    "is_democratic": true,
+    "neighbor_threat_level": "high",
+    "neighbor_details": "Multi-front threat: Iran and its proxies (Hezbollah, Hamas); Oct 2023 attack and ensuing wars.",
+    "growth_trajectory": "growing",
+    "population": 9800000
+  },
+  "LBN": {
+    "has_power_sharing": true,
+    "neighbor_threat_level": "high",
+    "neighbor_details": "Israel-Hezbollah war (2024); Syria war spillover.",
+    "growth_trajectory": "declining",
+    "population": 5800000
+  },
+  "IRQ": {
+    "has_power_sharing": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Iranian influence; ISIS/Syria cross-border legacy.",
+    "resource_rents_pct_revenue": 88.0,
+    "population": 44000000
+  },
+  "IRN": {
+    "is_authoritarian": true,
+    "neighbor_threat_level": "moderate",
+    "neighbor_details": "Regional confrontation with Israel and Gulf states.",
+    "growth_trajectory": "stagnant",
+    "population": 89000000
+  },
+  "VEN": {
+    "is_authoritarian": true,
+    "neighbor_threat_level": "none",
+    "resource_rents_pct_revenue": 60.0,
+    "growth_trajectory": "declining",
+    "population": 28300000
+  },
+  "LKA": {
+    "is_democratic": true,
+    "is_island": true,
+    "neighbor_threat_level": "none",
+    "growth_trajectory": "growing",
+    "population": 22000000
+  }
+}

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { GLOSSARY, PILLAR_KEYS } from "@/lib/glossary";
 import { TIERS, tierColor } from "@/lib/config";
 
-export const metadata = { title: "How it works — Modernization Index" };
+export const metadata = { title: "How it works - Modernization Index" };
 
 function Concept({ id }: { id: string }) {
   const e = GLOSSARY[id];

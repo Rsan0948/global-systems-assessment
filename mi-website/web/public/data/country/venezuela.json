@@ -151,6 +151,222 @@
    "detail": "Starting from a low institutional base, the country is structurally eligible to climb. This is eligibility, not a forecast - the effect only showed up strongly in the 2000s global growth wave."
   }
  ],
+ "safeguards": [
+  {
+   "key": "J",
+   "name": "Durability Gate (P4-P1 gap)",
+   "status": "clear",
+   "triggered": false,
+   "headline": "income-institutions gap +0.00 \u00b7 ",
+   "detail": "Institutions or Economic Structure unavailable - gate not evaluable.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "N=21 acute-signature test set"
+   ],
+   "why": "Independently derived on 21 crisis/absorber cases: the level gap between income (P4) and institutions (P1) separated real crises from shock-absorbers at 83% sensitivity / 100% specificity. When income has outrun institutions, the state is structurally crisis-prone under shock - 'granted/fragile'.",
+   "validated_by": [
+    "N=21 signature set",
+    "unifies with the durability ratio"
+   ],
+   "share_firing": 35
+  },
+  {
+   "key": "E",
+   "name": "Rentier Capture (Bidirectional)",
+   "status": "clear",
+   "triggered": false,
+   "headline": "below 15% of GDP \u00b7 no penalty",
+   "detail": "Resource rents 0.0% of GDP -> below 15% (no penalty). Institutions likely unreliable (E-2, or rents >50% of revenue).",
+   "modification": "Treat P1 as unreliable (equivalent to Safeguard A).",
+   "tier": null,
+   "origin_cases": [
+    "Timor-Leste (negative capture)",
+    "Nigeria / Gulf (rent-stabilization)"
+   ],
+   "why": "Resource rents can inflate or hollow out measured institutional quality (Timor-Leste), or buy elite cohesion in a low-capacity state (Nigeria/Gulf). Graded E-1 (material, >15% of GDP) / E-2 (severe, >25%); severe rents make P1 unreliable.",
+   "validated_by": [
+    "Nigeria",
+    "Gulf states"
+   ],
+   "share_firing": 15
+  },
+  {
+   "key": "A",
+   "name": "External Administration",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "No external administration detected.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Bosnia 1996"
+   ],
+   "why": "Bosnia's WGI institutional scores under the Dayton OHR sat above Croatia's and Serbia's - the administrator's competence, not indigenous capacity, was being measured. The safeguard discounts raw P1 where an external administrator governs.",
+   "validated_by": [
+    "Kosovo (UNMIK/EULEX)",
+    "East Timor (UNTAET)"
+   ],
+   "share_firing": 2
+  },
+  {
+   "key": "B",
+   "name": "Capacity Gate",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "Institutions = 0.192, successors = N/A. Gate not triggered.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Sudan / South Sudan"
+   ],
+   "why": "Sudan split into just two successor states - a low fragment count that would normally read as manageable - yet produced the worst outcome in the sample, because institutional capacity (P1) was far below the bottom third. Low count is not safety when P1 is that low.",
+   "validated_by": [
+    "Ethiopia / Eritrea",
+    "Nigeria / Biafra"
+   ],
+   "share_firing": 1
+  },
+  {
+   "key": "C",
+   "name": "Reversal Risk",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "Not a democratic transition case.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Tunisia (Arab Spring)"
+   ],
+   "why": "The framework predicted Tunisia's initial positive trajectory but missed the 2021 presidential self-coup. Democratic transitions with weak economic delivery are flagged as reversal-prone rather than assumed durable.",
+   "validated_by": [
+    "Bangladesh 2024",
+    "Serbia",
+    "South Africa",
+    "India"
+   ],
+   "share_firing": 2
+  },
+  {
+   "key": "D",
+   "name": "Predatory Neighbor / Exogenous Shock",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "No significant predatory neighbor threat identified.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Ukraine (Russian invasion)",
+    "Inca (Spanish conquest)"
+   ],
+   "why": "A structurally sound state can be overrun from outside. The safeguard separates a country's endogenous trajectory from vulnerability to an aggressive neighbour or external shock, so the outcome isn't misread as internally generated.",
+   "validated_by": [
+    "Myanmar (China)",
+    "Bangladesh (India)",
+    "Ethiopia/Tigray (Eritrea)"
+   ],
+   "share_firing": 24
+  },
+  {
+   "key": "F",
+   "name": "Sub-State Turbulence",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "No significant sub-state turbulence indicators.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Northern Ireland (Stormont collapses)",
+    "Germany (AfD in eastern states)"
+   ],
+   "why": "A state can survive intact while carrying chronic, managed instability - repeated executive collapses, high anti-system voting, sharp regional divergence. This is a management-load signal, not a collapse indicator.",
+   "validated_by": [
+    "Belgium",
+    "Spain / Catalonia"
+   ],
+   "share_firing": 0
+  },
+  {
+   "key": "G",
+   "name": "Suppression vs Prevention",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "No fragmentation mechanism specified.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Round 3 - Ethiopia vs Northern Ireland"
+   ],
+   "why": "Suppression and prevention looked identical until this safeguard split them into tiers: military suppression (Tier 1) doesn't resolve the underlying mismatch; institutional/legal suppression (Tier 2) de-escalates; porosity/power-sharing (Tier 3) addresses it by design. Re-suppression after a porosity period is the worst path.",
+   "validated_by": [
+    "Spain (Tier 2)",
+    "Belgium/NI (Tier 3)",
+    "Nigeria/Ethiopia (Tier 1)",
+    "Myanmar (re-suppression)"
+   ],
+   "share_firing": 7
+  },
+  {
+   "key": "I",
+   "name": "Porosity-with-Backstop",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "No backstop-porosity configuration detected.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Ethiopia / Tigray (AU backstop)",
+    "Myanmar (China backstop)"
+   ],
+   "why": "The framework's most genuinely novel prediction: when a great-power patron backstops a state's territorial integrity, an internal secession tends to end in re-suppression and partial reconsolidation, not permanent independence.",
+   "validated_by": [
+    "Ethiopia/Tigray",
+    "Myanmar"
+   ],
+   "share_firing": 1
+  }
+ ],
+ "diagnostics": {
+  "context_curated": true,
+  "strategy": {
+   "strategy": "suppression",
+   "tier": 1,
+   "tier_label": "Military/authoritarian suppression",
+   "confidence": "moderate",
+   "explanation": "P1 = 0.192. System manages complexity through control rather than diffusion. Suppression tier: Military/authoritarian suppression.",
+   "failure_mode": "Violent fragmentation when control mechanisms weaken"
+  },
+  "vulnerability": {
+   "risk_level": "critical",
+   "flags": [
+    "CRITICAL: P1 in bottom third - high fragmentation/violence risk",
+    "CRITICAL: Pillar spread 0.554 - extreme configuration imbalance"
+   ],
+   "structural_vulnerability": null,
+   "below_floor": {
+    "configuration": "uniformly_poor",
+    "reading": "Weak across pillars including P4 - no resource/income cushion.",
+    "prescription": "Broad-based capacity building; no single binding constraint to target."
+   },
+   "summary": "Risk level: CRITICAL. P1 = 0.192, spread = 0.554, 0 safeguards active."
+  },
+  "movement": null,
+  "accountability_gap": null,
+  "sensitivity": {
+   "v2_equal": 0.39588011027235054,
+   "v2_timevarying": 0.4488300935644185,
+   "v1": 0.351180843000095,
+   "archived_hand_v0": 0.3913095128404382
+  },
+  "prior_year": 2014
+ },
  "relational": {
   "year": 1948,
   "tier": "citable",
