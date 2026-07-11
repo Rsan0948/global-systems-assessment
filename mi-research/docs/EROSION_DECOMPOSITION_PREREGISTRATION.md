@@ -67,10 +67,48 @@ sample, computed before any outcome is touched.
 
 ---
 
-## B2 — Composite dysfunction outcome (committed at Component B, before grading)
+## B2 — Composite dysfunction outcome (BINDING — committed before grading)
 
-*Placeholder — the binding spec is committed separately in this file's B2 section
-prior to running B2. See commit "prereg(B2): …".*
+**Motivation.** Component B claims the MI's signal was calibrated against a
+consequence — state death — that the post-1945 order eliminated, so institutional
+failure now yields *chronic dysfunction in a permanent territorial container*
+rather than death/partition/absorption. If the structural relationship is intact
+but the consequence changed, then MI structural scores should still predict
+negative outcomes short of state death. This test re-runs the temporal holdout with
+a broader **dysfunction** outcome. It does **not** replace the committed crisis
+definition — it is an additional outcome variable.
+
+**Composite dysfunction = ANY of the four sub-outcomes within the validation
+window** (2004→2024 and 2012→2024), pre-registered here before grading:
+
+| sub-outcome | operationalization | source | window coverage |
+|---|---|---|---|
+| D1 democratic backsliding | Polity2 falls ≥ 3 points from its base-year value at any point in the window | Polity5 (`p5v2018.xls`, `polity2`) | 2004→2018 / 2012→2018 (Polity5 ends 2018 — coverage caveat, tail of window unobserved) |
+| D2 economic deterioration | real GDP-pc falls ≥ 15% from its within-window peak | WB `NY.GDP.PCAP.PP.KD` | full window |
+| D3 conflict onset | UCDP/COW armed-conflict onset in window (the `ucdp` field already in the holdout panel) | UCDP/PRIO ACD v24.1 | 2004→2023 / 2012→2023 |
+| D4 fragility increase | FSI rises ≥ 10 points from base to latest available | Fund for Peace FSI (`fsi.csv`) | **2012 window only** (FSI series starts 2012) |
+
+**Robustness variant (reported alongside, not replacing):** because Polity5 ends in
+2018, a **V-Dem `libdem` backsliding** variant of D1 is also computed — `libdem`
+falls ≥ 0.10 (0–1 scale; ≈ a 3-point Polity move) at any point through 2024 — using
+the in-repo `vdem_longrun.json`, which covers the full window. Both the Polity and
+the V-Dem composite are reported.
+
+**Test.** Re-run the frozen holdout mechanics: for each window, compute the
+predictive power (AUC, and logistic gap-coefficient) of the MI structural signals
+(the P4−P1 durability **gap**, and neg-P1 institutional level) against the composite
+dysfunction outcome, and against GDP-pc alone. Report AUC, sensitivity/specificity
+of the `elevated` gate flag, and the gap vs wealth AUC delta. **What recovers the
+signal:** if the structural gap predicts *dysfunction* significantly better than GDP
+alone — even where it did not beat GDP on the death/default-coupled crisis outcome —
+the signal is intact and the modern order has merely decoupled institutional failure
+from terminal outcomes. **B's estimated share of erosion** = the gap in structural
+predictive power between the crisis-definition holdout and the dysfunction-definition
+holdout (how much of the "lost" signal the broader outcome recovers).
+
+Coverage caveats (D1 tail, D4 single-window) are disclosed, not worked around; the
+composite is ANY-of so a truncated sub-outcome only *weakens* detection (biases
+against the hypothesis).
 
 ## C1 — Revealed-outcome P1 specification (committed at Component C, before grading)
 
