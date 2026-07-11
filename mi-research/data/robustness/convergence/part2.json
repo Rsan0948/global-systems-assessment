@@ -1,0 +1,876 @@
+{
+ "test7_coupling_fragility": {
+  "n_balanced": 83,
+  "gdp_only_crisis_auc": 0.7754,
+  "literal_prereg": {
+   "criterion": "growth>50% AND dP1<0.05 (PRE-REGISTERED)",
+   "n_decoupled": 57,
+   "decoupled_share": 0.687,
+   "mean_residual_decoupled": 0.0011,
+   "mean_residual_coupled": -0.0023,
+   "decoupled_crisis_more_than_gdp_predicts": true,
+   "outlier_breakdown": {
+    "resource>=10%": 7,
+    "autocracy": 0,
+    "either_outlier": 7,
+    "non_outlier": 50
+   },
+   "countries": [
+    {
+     "name": "Bolivia",
+     "growth_pct": 253.3,
+     "dP1": -0.128,
+     "resource_rents": 5.4,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.534
+    },
+    {
+     "name": "Trinidad and Tobago",
+     "growth_pct": 267.6,
+     "dP1": -0.122,
+     "resource_rents": 11.2,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.283
+    },
+    {
+     "name": "Hungary",
+     "growth_pct": 417.2,
+     "dP1": -0.112,
+     "resource_rents": 0.3,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.294
+    },
+    {
+     "name": "South Africa",
+     "growth_pct": 114.4,
+     "dP1": -0.11,
+     "resource_rents": 3.9,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.356
+    },
+    {
+     "name": "Nicaragua",
+     "growth_pct": 274.6,
+     "dP1": -0.105,
+     "resource_rents": 2.0,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.65
+    },
+    {
+     "name": "Spain",
+     "growth_pct": 241.5,
+     "dP1": -0.095,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.181
+    },
+    {
+     "name": "United Kingdom",
+     "growth_pct": 182.5,
+     "dP1": -0.094,
+     "resource_rents": 0.6,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.856
+    },
+    {
+     "name": "Chile",
+     "growth_pct": 358.3,
+     "dP1": -0.086,
+     "resource_rents": 5.8,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.334
+    },
+    {
+     "name": "Egypt",
+     "growth_pct": 330.6,
+     "dP1": -0.078,
+     "resource_rents": 7.6,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.518
+    },
+    {
+     "name": "Greece",
+     "growth_pct": 180.9,
+     "dP1": -0.074,
+     "resource_rents": 0.1,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.193
+    },
+    {
+     "name": "Haiti",
+     "growth_pct": 54.3,
+     "dP1": -0.073,
+     "resource_rents": 0.4,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.323
+    },
+    {
+     "name": "Brazil",
+     "growth_pct": 169.1,
+     "dP1": -0.064,
+     "resource_rents": 3.6,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.322
+    },
+    {
+     "name": "Turkey",
+     "growth_pct": 329.6,
+     "dP1": -0.064,
+     "resource_rents": 0.5,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.733
+    },
+    {
+     "name": "Israel",
+     "growth_pct": 164.1,
+     "dP1": -0.062,
+     "resource_rents": 0.2,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.855
+    },
+    {
+     "name": "Thailand",
+     "growth_pct": 237.5,
+     "dP1": -0.062,
+     "resource_rents": 1.8,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.648
+    },
+    {
+     "name": "Sri Lanka",
+     "growth_pct": 336.5,
+     "dP1": -0.06,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.461
+    },
+    {
+     "name": "Tunisia",
+     "growth_pct": 188.1,
+     "dP1": -0.056,
+     "resource_rents": 2.8,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.552
+    },
+    {
+     "name": "Mali",
+     "growth_pct": 170.9,
+     "dP1": -0.054,
+     "resource_rents": 7.7,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.213
+    },
+    {
+     "name": "Papua New Guinea",
+     "growth_pct": 89.1,
+     "dP1": -0.053,
+     "resource_rents": 16.9,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.624
+    },
+    {
+     "name": "Argentina",
+     "growth_pct": 189.9,
+     "dP1": -0.051,
+     "resource_rents": 2.0,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.27
+    },
+    {
+     "name": "Canada",
+     "growth_pct": 168.6,
+     "dP1": -0.049,
+     "resource_rents": 1.8,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.132
+    },
+    {
+     "name": "Belgium",
+     "growth_pct": 223.2,
+     "dP1": -0.045,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.139
+    },
+    {
+     "name": "France",
+     "growth_pct": 194.1,
+     "dP1": -0.041,
+     "resource_rents": 0.0,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.852
+    },
+    {
+     "name": "Gabon",
+     "growth_pct": 52.1,
+     "dP1": -0.041,
+     "resource_rents": 21.2,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.212
+    },
+    {
+     "name": "Mongolia",
+     "growth_pct": 478.4,
+     "dP1": -0.038,
+     "resource_rents": 19.9,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.56
+    },
+    {
+     "name": "Germany",
+     "growth_pct": 204.3,
+     "dP1": -0.036,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.131
+    },
+    {
+     "name": "Botswana",
+     "growth_pct": 160.3,
+     "dP1": -0.032,
+     "resource_rents": 0.9,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.334
+    },
+    {
+     "name": "Pakistan",
+     "growth_pct": 160.4,
+     "dP1": -0.027,
+     "resource_rents": 1.2,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.358
+    },
+    {
+     "name": "Italy",
+     "growth_pct": 168.5,
+     "dP1": -0.026,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.137
+    },
+    {
+     "name": "Russia",
+     "growth_pct": 759.1,
+     "dP1": -0.025,
+     "resource_rents": 14.5,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.576
+    },
+    {
+     "name": "Nepal",
+     "growth_pct": 416.7,
+     "dP1": -0.023,
+     "resource_rents": 0.4,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.196
+    },
+    {
+     "name": "Slovenia",
+     "growth_pct": 300.3,
+     "dP1": -0.023,
+     "resource_rents": 0.3,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.21
+    },
+    {
+     "name": "Poland",
+     "growth_pct": 516.9,
+     "dP1": -0.02,
+     "resource_rents": 2.7,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.322
+    },
+    {
+     "name": "Peru",
+     "growth_pct": 290.8,
+     "dP1": -0.013,
+     "resource_rents": 6.0,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.526
+    },
+    {
+     "name": "Myanmar",
+     "growth_pct": 807.0,
+     "dP1": -0.011,
+     "resource_rents": 6.7,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.123
+    },
+    {
+     "name": "Cote d'Ivoire",
+     "growth_pct": 170.8,
+     "dP1": -0.005,
+     "resource_rents": 3.1,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.4
+    },
+    {
+     "name": "Malaysia",
+     "growth_pct": 231.2,
+     "dP1": -0.004,
+     "resource_rents": 7.3,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.753
+    },
+    {
+     "name": "Guatemala",
+     "growth_pct": 246.8,
+     "dP1": -0.003,
+     "resource_rents": 1.2,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.5
+    },
+    {
+     "name": "Bangladesh",
+     "growth_pct": 665.2,
+     "dP1": -0.002,
+     "resource_rents": 0.7,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.219
+    },
+    {
+     "name": "Jamaica",
+     "growth_pct": 92.2,
+     "dP1": -0.001,
+     "resource_rents": 1.7,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.374
+    },
+    {
+     "name": "Equatorial Guinea",
+     "growth_pct": 879.6,
+     "dP1": 0.002,
+     "resource_rents": 27.8,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.71
+    },
+    {
+     "name": "Singapore",
+     "growth_pct": 308.7,
+     "dP1": 0.005,
+     "resource_rents": 0.0,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.088
+    },
+    {
+     "name": "Ireland",
+     "growth_pct": 551.5,
+     "dP1": 0.006,
+     "resource_rents": 0.1,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.153
+    },
+    {
+     "name": "Costa Rica",
+     "growth_pct": 373.6,
+     "dP1": 0.011,
+     "resource_rents": 0.9,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.379
+    },
+    {
+     "name": "Slovakia",
+     "growth_pct": 406.7,
+     "dP1": 0.018,
+     "resource_rents": 0.3,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.291
+    },
+    {
+     "name": "Fiji",
+     "growth_pct": 202.4,
+     "dP1": 0.021,
+     "resource_rents": 1.2,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.444
+    },
+    {
+     "name": "Honduras",
+     "growth_pct": 362.8,
+     "dP1": 0.022,
+     "resource_rents": 1.1,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.732
+    },
+    {
+     "name": "Mauritius",
+     "growth_pct": 341.8,
+     "dP1": 0.023,
+     "resource_rents": 0.0,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.356
+    },
+    {
+     "name": "Iceland",
+     "growth_pct": 240.1,
+     "dP1": 0.025,
+     "resource_rents": 0.0,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.128
+    },
+    {
+     "name": "Colombia",
+     "growth_pct": 236.6,
+     "dP1": 0.027,
+     "resource_rents": 4.9,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.624
+    },
+    {
+     "name": "Nigeria",
+     "growth_pct": 210.1,
+     "dP1": 0.03,
+     "resource_rents": 9.8,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.409
+    },
+    {
+     "name": "India",
+     "growth_pct": 558.5,
+     "dP1": 0.031,
+     "resource_rents": 2.3,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.278
+    },
+    {
+     "name": "Ghana",
+     "growth_pct": 295.9,
+     "dP1": 0.037,
+     "resource_rents": 9.8,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.318
+    },
+    {
+     "name": "Cameroon",
+     "growth_pct": 202.2,
+     "dP1": 0.04,
+     "resource_rents": 6.1,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.297
+    },
+    {
+     "name": "Somalia",
+     "growth_pct": 287.7,
+     "dP1": 0.041,
+     "resource_rents": 11.7,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.078
+    },
+    {
+     "name": "Uruguay",
+     "growth_pct": 282.4,
+     "dP1": 0.045,
+     "resource_rents": 2.0,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.291
+    },
+    {
+     "name": "Dominican Republic",
+     "growth_pct": 433.7,
+     "dP1": 0.046,
+     "resource_rents": 0.9,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.441
+    }
+   ]
+  },
+  "literal_note": "Over the 28-yr window GDP-pc PPP grows >50% for nearly every country while WGI-based P1 is sticky, so the pre-registered threshold is met by 69% of the panel and does not discriminate. Reported faithfully; the sharp cut below isolates the meaningful 'wealth up, governance DOWN' set.",
+  "sharp_governance_decline": {
+   "criterion": "growth>50% AND dP1<-0.03 (wealth up, governance down)",
+   "n_decoupled": 27,
+   "decoupled_share": 0.325,
+   "mean_residual_decoupled": 0.0172,
+   "mean_residual_coupled": -0.0083,
+   "decoupled_crisis_more_than_gdp_predicts": true,
+   "outlier_breakdown": {
+    "resource>=10%": 4,
+    "autocracy": 0,
+    "either_outlier": 4,
+    "non_outlier": 23
+   },
+   "countries": [
+    {
+     "name": "Bolivia",
+     "growth_pct": 253.3,
+     "dP1": -0.128,
+     "resource_rents": 5.4,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.534
+    },
+    {
+     "name": "Trinidad and Tobago",
+     "growth_pct": 267.6,
+     "dP1": -0.122,
+     "resource_rents": 11.2,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.283
+    },
+    {
+     "name": "Hungary",
+     "growth_pct": 417.2,
+     "dP1": -0.112,
+     "resource_rents": 0.3,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.294
+    },
+    {
+     "name": "South Africa",
+     "growth_pct": 114.4,
+     "dP1": -0.11,
+     "resource_rents": 3.9,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.356
+    },
+    {
+     "name": "Nicaragua",
+     "growth_pct": 274.6,
+     "dP1": -0.105,
+     "resource_rents": 2.0,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.65
+    },
+    {
+     "name": "Spain",
+     "growth_pct": 241.5,
+     "dP1": -0.095,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.181
+    },
+    {
+     "name": "United Kingdom",
+     "growth_pct": 182.5,
+     "dP1": -0.094,
+     "resource_rents": 0.6,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.856
+    },
+    {
+     "name": "Chile",
+     "growth_pct": 358.3,
+     "dP1": -0.086,
+     "resource_rents": 5.8,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.334
+    },
+    {
+     "name": "Egypt",
+     "growth_pct": 330.6,
+     "dP1": -0.078,
+     "resource_rents": 7.6,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.518
+    },
+    {
+     "name": "Greece",
+     "growth_pct": 180.9,
+     "dP1": -0.074,
+     "resource_rents": 0.1,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.193
+    },
+    {
+     "name": "Haiti",
+     "growth_pct": 54.3,
+     "dP1": -0.073,
+     "resource_rents": 0.4,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.323
+    },
+    {
+     "name": "Brazil",
+     "growth_pct": 169.1,
+     "dP1": -0.064,
+     "resource_rents": 3.6,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.322
+    },
+    {
+     "name": "Turkey",
+     "growth_pct": 329.6,
+     "dP1": -0.064,
+     "resource_rents": 0.5,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.733
+    },
+    {
+     "name": "Israel",
+     "growth_pct": 164.1,
+     "dP1": -0.062,
+     "resource_rents": 0.2,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.855
+    },
+    {
+     "name": "Thailand",
+     "growth_pct": 237.5,
+     "dP1": -0.062,
+     "resource_rents": 1.8,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.648
+    },
+    {
+     "name": "Sri Lanka",
+     "growth_pct": 336.5,
+     "dP1": -0.06,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.461
+    },
+    {
+     "name": "Tunisia",
+     "growth_pct": 188.1,
+     "dP1": -0.056,
+     "resource_rents": 2.8,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.552
+    },
+    {
+     "name": "Mali",
+     "growth_pct": 170.9,
+     "dP1": -0.054,
+     "resource_rents": 7.7,
+     "is_democratic": null,
+     "crisis": 1,
+     "residual": 0.213
+    },
+    {
+     "name": "Papua New Guinea",
+     "growth_pct": 89.1,
+     "dP1": -0.053,
+     "resource_rents": 16.9,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.624
+    },
+    {
+     "name": "Argentina",
+     "growth_pct": 189.9,
+     "dP1": -0.051,
+     "resource_rents": 2.0,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.27
+    },
+    {
+     "name": "Canada",
+     "growth_pct": 168.6,
+     "dP1": -0.049,
+     "resource_rents": 1.8,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.132
+    },
+    {
+     "name": "Belgium",
+     "growth_pct": 223.2,
+     "dP1": -0.045,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.139
+    },
+    {
+     "name": "France",
+     "growth_pct": 194.1,
+     "dP1": -0.041,
+     "resource_rents": 0.0,
+     "is_democratic": true,
+     "crisis": 1,
+     "residual": 0.852
+    },
+    {
+     "name": "Gabon",
+     "growth_pct": 52.1,
+     "dP1": -0.041,
+     "resource_rents": 21.2,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.212
+    },
+    {
+     "name": "Mongolia",
+     "growth_pct": 478.4,
+     "dP1": -0.038,
+     "resource_rents": 19.9,
+     "is_democratic": null,
+     "crisis": 0,
+     "residual": -0.56
+    },
+    {
+     "name": "Germany",
+     "growth_pct": 204.3,
+     "dP1": -0.036,
+     "resource_rents": 0.1,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.131
+    },
+    {
+     "name": "Botswana",
+     "growth_pct": 160.3,
+     "dP1": -0.032,
+     "resource_rents": 0.9,
+     "is_democratic": true,
+     "crisis": 0,
+     "residual": -0.334
+    }
+   ]
+  }
+ },
+ "test8_decoupling_forces": {
+  "forces": {
+   "a_resource_rents>10%": {
+    "ref_year": 2018,
+    "coupling_exposed": 0.7219,
+    "n_exposed_set": 16,
+    "coupling_non_exposed": 0.8369,
+    "n_non_set": 70,
+    "coupling_weaker_when_exposed": true,
+    "exposure_counts": {
+     "1996": {
+      "n_exposed": 21,
+      "n_total": 87
+     },
+     "2024": {
+      "n_exposed": 24,
+      "n_total": 99
+     }
+    },
+    "exposure_growing": true
+   },
+   "b_FDI>5%": {
+    "ref_year": 2018,
+    "coupling_exposed": 0.945,
+    "n_exposed_set": 12,
+    "coupling_non_exposed": 0.7638,
+    "n_non_set": 73,
+    "coupling_weaker_when_exposed": false,
+    "exposure_counts": {
+     "1996": {
+      "n_exposed": 28,
+      "n_total": 168
+     },
+     "2024": {
+      "n_exposed": 43,
+      "n_total": 178
+     }
+    },
+    "exposure_growing": true
+   },
+   "c_private_credit>100%": {
+    "ref_year": 2018,
+    "coupling_exposed": 0.9355,
+    "n_exposed_set": 11,
+    "coupling_non_exposed": 0.766,
+    "n_non_set": 70,
+    "coupling_weaker_when_exposed": false,
+    "exposure_counts": {
+     "1996": {
+      "n_exposed": 6,
+      "n_total": 109
+     },
+     "2024": {
+      "n_exposed": 19,
+      "n_total": 135
+     }
+    },
+    "exposure_growing": true
+   },
+   "d_services>60%_(ICT_proxy)": {
+    "ref_year": 2018,
+    "coupling_exposed": 0.8691,
+    "n_exposed_set": 24,
+    "coupling_non_exposed": 0.6713,
+    "n_non_set": 61,
+    "coupling_weaker_when_exposed": false,
+    "exposure_counts": {
+     "1996": {
+      "n_exposed": 35,
+      "n_total": 153
+     },
+     "2024": {
+      "n_exposed": 65,
+      "n_total": 176
+     }
+    },
+    "exposure_growing": true
+   }
+  },
+  "ICT_gap_note": "No ICT-service-exports indicator is committed; the digital force is proxied by services>60% GDP and flagged as a gap, not a measurement of ICT decoupling."
+ }
+}
