@@ -110,7 +110,51 @@ Coverage caveats (D1 tail, D4 single-window) are disclosed, not worked around; t
 composite is ANY-of so a truncated sub-outcome only *weakens* detection (biases
 against the hypothesis).
 
-## C1 — Revealed-outcome P1 specification (committed at Component C, before grading)
+## C1 — Revealed-outcome P1 specification (BINDING — committed before grading)
 
-*Placeholder — the binding spec is committed separately in this file's C1 section
-prior to running C1. See commit "prereg(C1): …".*
+**Motivation.** The MI's P1 pillar uses WGI — *perceptions* of governance from
+expert surveys. The 25-case ancient validation scored institutions from *functional*
+evidence (tax collection, legal codification, administrative records). Perceptions
+lag reality: a functionally-decaying state can score well on WGI for years
+(reputation + path dependence). If modern P1 is a laggier proxy for true
+institutional quality, the temporal-holdout signal degrades without any change in
+the underlying structural relationship.
+
+**Revealed-outcome P1 at 2004 vintage.** Reuse the exact Finding-1 substitution seam
+(`scripts/robustness/substitute.py`): replace the three WGI P1 keys
+(`gov_effectiveness`, `rule_of_law`, `regulatory_quality`) in the flat indicator
+dict with a **0–100 cross-country percentile rank** of a revealed state-capacity
+series, then re-score with unmodified scoring math. All other pillars untouched.
+
+**Indicators available at 2004** (fetched as full time series from WB API):
+
+| revealed P1 series | WB code | note |
+|---|---|---|
+| tax revenue % GDP (fiscal/state capacity) | `GC.TAX.TOTL.GD.ZS` | primary |
+| govt education expenditure % GDP | `SE.XPD.TOTL.GD.ZS` | secondary |
+
+The Finding-1 LPI substitute is **excluded at 2004** — the LPI series begins 2007, so
+it is not available at the 2004 prediction origin (honest coverage constraint, not a
+choice). Each country uses the nearest year in **[2002, 2006]** to maximize coverage;
+the year used is recorded.
+
+**Variants (all reported):** `P1←tax`, `P1←edu`, `P1←tax+edu composite` (mean of the
+two percentile ranks). For each, rebuild the 2004 MI scores, run the **same** frozen
+holdout `predict()`, and grade against the **same committed 2004→2024 crisis
+outcomes** as the perception-P1 holdout. Compare AUC (of the `elevated`/vuln gate, the
+P4−P1 gap, and neg-P1), sensitivity, specificity, and lift over base rate against the
+perception-based P1 holdout.
+
+**C's estimated share of erosion** = the AUC/lift gain of revealed-P1 over
+perception-P1 in the holdout. If revealed-P1 outperforms, perception measurement is a
+bottleneck (C contributes). If it performs the same or worse, C is not a contributor.
+
+## C2 — Perception-lag detection (specified with C1)
+
+For countries with a crisis in 2010–2024, plot the WGI (`wgi_full_panel.json`,
+government-effectiveness / rule-of-law) trajectory vs the revealed-indicator (tax %GDP)
+trajectory over the ~10 pre-crisis years. Test whether functional indicators decline
+**earlier** than WGI (perception lag) — operationalized as: mean lead/lag of the
+revealed-series inflection vs the WGI inflection before crisis onset, and the fraction
+of crisis countries where the revealed series had already declined while WGI was still
+flat. Descriptive (small n); reported with counts, not over-claimed.
