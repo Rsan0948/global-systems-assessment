@@ -1,0 +1,136 @@
+{
+ "_meta": {
+  "test": "2C historical erosion vs external-support proxy",
+  "proxy": "great-power defense-pact membership (COW Alliances v4.1)",
+  "prereg": "docs/ESI_PREREGISTRATION.md",
+  "anchors": [
+   1816,
+   1850,
+   1880,
+   1910,
+   1940,
+   1970,
+   1990
+  ],
+  "window": 25
+ },
+ "epochs": [
+  {
+   "year": 1816,
+   "n": 12,
+   "onset_rate": 0.5,
+   "support_prevalence": 0.16666666666666666,
+   "structure_auc": 0.4444444444444444,
+   "wealth_auc": 0.2222222222222222,
+   "spread": 0.2222,
+   "struct_coef_baseline": -1.9205,
+   "struct_coef_with_support": -1.9471,
+   "support_coef": -0.8308
+  },
+  {
+   "year": 1850,
+   "n": 33,
+   "onset_rate": 0.5151515151515151,
+   "support_prevalence": 0.06060606060606061,
+   "structure_auc": 0.5955882352941176,
+   "wealth_auc": 0.46691176470588236,
+   "spread": 0.1287,
+   "struct_coef_baseline": -0.898,
+   "struct_coef_with_support": -0.9123,
+   "support_coef": 1.8662
+  },
+  {
+   "year": 1880,
+   "n": 31,
+   "onset_rate": 0.45161290322580644,
+   "support_prevalence": 0.03225806451612903,
+   "structure_auc": 0.8067226890756303,
+   "wealth_auc": 0.6386554621848739,
+   "spread": 0.1681,
+   "struct_coef_baseline": -2.0624,
+   "struct_coef_with_support": -2.0024,
+   "support_coef": -1.2206
+  },
+  {
+   "year": 1910,
+   "n": 50,
+   "onset_rate": 0.44,
+   "support_prevalence": 0.08,
+   "structure_auc": 0.5819805194805194,
+   "wealth_auc": 0.4512987012987013,
+   "spread": 0.1307,
+   "struct_coef_baseline": -0.8297,
+   "struct_coef_with_support": -0.9543,
+   "support_coef": 2.3797
+  },
+  {
+   "year": 1940,
+   "n": 56,
+   "onset_rate": 0.6428571428571429,
+   "support_prevalence": 0.08928571428571429,
+   "structure_auc": 0.5736111111111111,
+   "wealth_auc": 0.4847222222222222,
+   "spread": 0.0889,
+   "struct_coef_baseline": -0.5045,
+   "struct_coef_with_support": -0.4862,
+   "support_coef": 0.1885
+  },
+  {
+   "year": 1970,
+   "n": 140,
+   "onset_rate": 0.6214285714285714,
+   "support_prevalence": 0.08571428571428572,
+   "structure_auc": 0.6386900889178052,
+   "wealth_auc": 0.5920624593363696,
+   "spread": 0.0466,
+   "struct_coef_baseline": -0.516,
+   "struct_coef_with_support": -0.5156,
+   "support_coef": -0.0659
+  },
+  {
+   "year": 1990,
+   "n": 158,
+   "onset_rate": 0.5316455696202531,
+   "support_prevalence": 0.0379746835443038,
+   "structure_auc": 0.7200772200772201,
+   "wealth_auc": 0.6494530244530244,
+   "spread": 0.0706,
+   "struct_coef_baseline": -0.8903,
+   "struct_coef_with_support": -0.9843,
+   "support_coef": 0.4312
+  }
+ ],
+ "verdict": {
+  "spread_erosion_trend": {
+   "n_epochs": 7,
+   "pearson_r": -0.9086,
+   "p": 0.0046,
+   "slope_per_year": -0.0008604263053536063
+  },
+  "struct_coef_trend_baseline": {
+   "n_epochs": 7,
+   "pearson_r": 0.672,
+   "p": 0.0982,
+   "slope_per_year": 0.00676293787177795
+  },
+  "struct_coef_trend_with_support": {
+   "n_epochs": 7,
+   "pearson_r": 0.6668,
+   "p": 0.1019,
+   "slope_per_year": 0.006525404824851313
+  },
+  "support_prevalence_by_epoch": {
+   "1816": 0.16666666666666666,
+   "1850": 0.06060606060606061,
+   "1880": 0.03225806451612903,
+   "1910": 0.08,
+   "1940": 0.08928571428571429,
+   "1970": 0.08571428571428572,
+   "1990": 0.0379746835443038
+  },
+  "interpretation": "Flattening iff |support-controlled coef trend slope| < |baseline slope| AND support prevalence rises across epochs. Otherwise erosion is not explained by the great-power-alliance support proxy.",
+  "baseline_slope": 0.00676293787177795,
+  "support_controlled_slope": 0.006525404824851313,
+  "flattens": true
+ }
+}

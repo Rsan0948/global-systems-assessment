@@ -183,6 +183,19 @@ AUC) than to the FSI baseline (0.840→0.841, ≈0), the faint version of the pr
 "ESI helps the structural instrument more than the wealth baseline" signature — but it is
 small and never manifests as coefficient recovery.
 
+**Test 2C — does support explain the 150-year erosion? No (and can't reach the real
+mechanism).** The only ESI dimension buildable across 1816–1990 is a great-power
+**defense-pact** proxy (COW Formal Alliances v4.1). The erosion reproduces cleanly on this
+panel (structure-vs-wealth spread declines, Pearson **r=−0.909, p=0.005**, matching
+Finding 2). But controlling for the support proxy leaves the structure-coefficient decline
+essentially unchanged (slope 0.00676 → 0.00653, a negligible 3.5%). And the mechanism
+*precondition* fails: proxy prevalence across the seven epochs is 0.17/0.06/0.03/0.08/0.09/
+0.09/0.04 — **flat, not rising** — so it does not track the growth of the modern support
+system at all. The deeper limit: this proxy is *security* alliances, whereas the hypothesis
+is about *capital* support (IMF, ODA, reserve-currency, FDI), which barely exists pre-1960.
+So 2C cannot instrument the actual mechanism historically — it is a genuine null on the one
+proxy available, with the honest caveat that the capital dimension is untestable this far back.
+
 **Test 2D (the operational output):** among high-ESI states (>75th pct), those with
 support concentrated in a **single** sub-dimension (Herfindahl ≥0.6) — a single point of
 failure — are **Singapore, UAE** (Systemic-Insurance / SWF concentration) and **Mali**
@@ -204,7 +217,8 @@ the modern crisis definition is capital-coupled. A tuned or insurance-only ESI m
 behave differently — but that would be a new, separately pre-registered question, not a
 rescue of this one. Epistemic status: **registered null with a small independent
 ESI-crisis association surviving.** Artifacts: `data/robustness/esi/esi_scores.json`,
-`esi_test_report.json`; code `scripts/robustness/esi_{fetch,build,tests}.py`.
+`esi_test_report.json`, `esi_2C_historical.json`; code
+`scripts/robustness/esi_{fetch,build,tests}.py`, `esi_historical_2C.py`.
 
 ---
 
