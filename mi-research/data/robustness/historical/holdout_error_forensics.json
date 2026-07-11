@@ -1,0 +1,312 @@
+{
+  "caveat": "crisis label misses post-2015 economic collapses (CRAG cutoff 2015); some 'false alarms' DID crisis after cutoff \u2014 gate right, label blind.",
+  "windows": {
+    "2004": {
+      "false_alarms_flagged_no_crisis": {
+        "n": 16,
+        "with_external_support": 16,
+        "cases": [
+          {
+            "country": "Argentina",
+            "external_support": "chronic IMF programs (also DEFAULTED 2014/2020 \u2014 label miss)"
+          },
+          {
+            "country": "Bosnia-Herzegovina",
+            "external_support": "international administration + EU anchor"
+          },
+          {
+            "country": "Brazil",
+            "external_support": "size + FX reserves + commodity"
+          },
+          {
+            "country": "Cuba",
+            "external_support": "external patron subsidies + remittances (closed economy)"
+          },
+          {
+            "country": "Dominican Republic",
+            "external_support": "aid/IMF"
+          },
+          {
+            "country": "Fiji",
+            "external_support": "aid dependence"
+          },
+          {
+            "country": "Ghana",
+            "external_support": "IMF programs (also DEFAULTED 2022 \u2014 label miss)"
+          },
+          {
+            "country": "Equatorial Guinea",
+            "external_support": "oil rents"
+          },
+          {
+            "country": "Honduras",
+            "external_support": "aid/remittances"
+          },
+          {
+            "country": "Croatia",
+            "external_support": "EU accession 2013 (external anchor)"
+          },
+          {
+            "country": "Jamaica",
+            "external_support": "IMF programs"
+          },
+          {
+            "country": "Japan",
+            "external_support": "reserve-currency (yen) + domestic-held debt"
+          },
+          {
+            "country": "Mongolia",
+            "external_support": "IMF 2017 bailout"
+          },
+          {
+            "country": "Saudi Arabia",
+            "external_support": "sovereign wealth + oil rents + US security alliance"
+          },
+          {
+            "country": "East Timor",
+            "external_support": "petroleum fund + UN support"
+          },
+          {
+            "country": "Venezuela",
+            "external_support": "LABEL MISS \u2014 collapsed (2017 default, state failure); gate was RIGHT"
+          }
+        ]
+      },
+      "misses_crisis_not_flagged": {
+        "n": 10,
+        "external_shock_or_ambiguous": 10,
+        "cases": [
+          {
+            "country": "Bolivia",
+            "crisis": "+default",
+            "external_shock": "CRAG default label (2000s); weak/ambiguous"
+          },
+          {
+            "country": "Eritrea",
+            "crisis": "conflict",
+            "external_shock": "interstate/regional conflict (external)"
+          },
+          {
+            "country": "Greece",
+            "crisis": "+default",
+            "external_shock": "2008 GFC + eurozone rigidity (external financial + currency-union)"
+          },
+          {
+            "country": "Hungary",
+            "crisis": "+default",
+            "external_shock": "2008 GFC financial crisis (external)"
+          },
+          {
+            "country": "Ireland",
+            "crisis": "+default",
+            "external_shock": "2008 GFC banking collapse (external financial contagion; sound institutions)"
+          },
+          {
+            "country": "Mauritius",
+            "crisis": "+default",
+            "external_shock": "CRAG default label \u2014 questionable (stable economy)"
+          },
+          {
+            "country": "Malaysia",
+            "crisis": "conflict",
+            "external_shock": "Lahad Datu incursion 2013 (external militants)"
+          },
+          {
+            "country": "Papua New Guinea",
+            "crisis": "+default",
+            "external_shock": "CRAG default label; commodity/small"
+          },
+          {
+            "country": "Rwanda",
+            "crisis": "conflict",
+            "external_shock": "regional spillover (DRC/M23)"
+          },
+          {
+            "country": "Yemen",
+            "crisis": "conflict",
+            "external_shock": "civil war + Saudi-led intervention 2015 (external military)"
+          }
+        ]
+      }
+    },
+    "2012": {
+      "false_alarms_flagged_no_crisis": {
+        "n": 35,
+        "with_external_support": 14,
+        "cases": [
+          {
+            "country": "Argentina",
+            "external_support": "chronic IMF programs (also DEFAULTED 2014/2020 \u2014 label miss)"
+          },
+          {
+            "country": "Armenia",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Bosnia-Herzegovina",
+            "external_support": "international administration + EU anchor"
+          },
+          {
+            "country": "Brazil",
+            "external_support": "size + FX reserves + commodity"
+          },
+          {
+            "country": "Botswana",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Chile",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Cote d'Ivoire",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Costa Rica",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Cuba",
+            "external_support": "external patron subsidies + remittances (closed economy)"
+          },
+          {
+            "country": "Dominican Republic",
+            "external_support": "aid/IMF"
+          },
+          {
+            "country": "Fiji",
+            "external_support": "aid dependence"
+          },
+          {
+            "country": "Georgia",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Equatorial Guinea",
+            "external_support": "oil rents"
+          },
+          {
+            "country": "Honduras",
+            "external_support": "aid/remittances"
+          },
+          {
+            "country": "Croatia",
+            "external_support": "EU accession 2013 (external anchor)"
+          },
+          {
+            "country": "Haiti",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Iraq",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Iceland",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Italy",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Jamaica",
+            "external_support": "IMF programs"
+          },
+          {
+            "country": "Lithuania",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Mongolia",
+            "external_support": "IMF 2017 bailout"
+          },
+          {
+            "country": "Mauritius",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Nicaragua",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Oman",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Peru",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Poland",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Saudi Arabia",
+            "external_support": "sovereign wealth + oil rents + US security alliance"
+          },
+          {
+            "country": "Thailand",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "East Timor",
+            "external_support": "petroleum fund + UN support"
+          },
+          {
+            "country": "Trinidad and Tobago",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Uruguay",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "Venezuela",
+            "external_support": "LABEL MISS \u2014 collapsed (2017 default, state failure); gate was RIGHT"
+          },
+          {
+            "country": "Vietnam",
+            "external_support": "UNCLASSIFIED"
+          },
+          {
+            "country": "South Africa",
+            "external_support": "UNCLASSIFIED"
+          }
+        ]
+      },
+      "misses_crisis_not_flagged": {
+        "n": 5,
+        "external_shock_or_ambiguous": 4,
+        "cases": [
+          {
+            "country": "Ethiopia",
+            "crisis": "conflict",
+            "external_shock": "Tigray war \u2014 arguably internal (partial exception)"
+          },
+          {
+            "country": "Ireland",
+            "crisis": "+default",
+            "external_shock": "2008 GFC banking collapse (external financial contagion; sound institutions)"
+          },
+          {
+            "country": "Mali",
+            "crisis": "conflict",
+            "external_shock": "Sahel jihadist insurgency + 2012 Tuareg/Libya spillover (external)"
+          },
+          {
+            "country": "Papua New Guinea",
+            "crisis": "+default",
+            "external_shock": "CRAG default label; commodity/small"
+          },
+          {
+            "country": "Rwanda",
+            "crisis": "conflict",
+            "external_shock": "regional spillover (DRC/M23)"
+          }
+        ]
+      }
+    }
+  }
+}
