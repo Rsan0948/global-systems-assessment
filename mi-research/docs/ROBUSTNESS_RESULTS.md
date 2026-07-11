@@ -147,6 +147,47 @@ as a **real but narrow** signal (strong on cases resembling its validation set,
 weak as a general crisis predictor), not a crystal ball. A clean J-only out-of-time
 isolation is the remaining step.
 
+## Finding 7 — Historical program: was the signal cleaner before capital? (mostly yes)
+
+Tests whether the structural signal was stronger pre-modern and has eroded as a
+mobile capital order decoupled prosperity from institutions. Artifacts under
+`data/robustness/historical/`.
+
+- **Inversion (25 pre-modern cases):** structure out-discriminates rupture vs
+  wealth (AUC 0.66–0.68 vs 0.52–0.64) — the *inverse* of the modern holdout.
+  Institutional *decline* predicts collapse (0.65); wealth decline is chance
+  (0.52). Endo/exo split shows the mechanism: institutional decay 0.222 before
+  endogenous collapse vs 0.109 before conquest.
+- **Decay curve (1816–1990, conflict onset, COW∪UCDP, 143 polities):** structure
+  (V-Dem rule-of-law) beats wealth (log GDP) at predicting conflict in **every**
+  epoch, but the margin **halves** toward the present — spread +0.131 (1850) →
+  +0.070 (1990); Pearson r = −0.847, p = 0.033 (independently verified). **Soft
+  decay confirmed; NOT a sign flip** — wealth never overtakes structure on
+  conflict alone (the modern "wealth wins" result was driven by sovereign default,
+  a wealth-coupled crisis, being in that outcome).
+- **Durability gate on the 25 cases:** no pre-modern jump (gap-direction accuracy
+  0.52, AUC 0.74 ≈ modern). Reason is substantive: the P4−P1 gap is *negative*
+  across all cases — the economy-outruns-institutions failure mode the gate
+  detects is itself a modern/capital-era phenomenon; pre-modern collapse came from
+  institutional decline, not economic overreach.
+- **Holdout error forensics:** the gate's **misses** (crises it didn't flag) are
+  overwhelmingly *external* shocks — 2008 GFC financial contagion in
+  sound-institution states (Ireland, Greece, Hungary) + interstate/regional
+  conflict — a bounded limitation, not a flaw. Its **false alarms** are partly
+  externally-supported states (reserve currency, SWF/rents, EU/IMF anchors), but
+  the composite also genuinely over-flags.
+- **Caveat that partially rehabilitates the modern gate:** the modern crisis label
+  (CRAG default to 2015 + conflict) **misses post-2015 economic collapses**
+  (Venezuela 2017, Lebanon 2020, Sri Lanka 2022, Ghana 2022) that the gate DID
+  flag — so the earlier "partial null" likely **understates** the gate; its best
+  recent hits are invisible to the outcome data.
+
+**Net:** the *soft* form of the "capital distorted the signal" thesis holds across
+independent tests — structure's edge over wealth is real in every era and erodes
+significantly toward the present, and the modern failure mode is capital-shaped.
+The *strong* form (wealth fully overtakes structure) does not hold on clean
+outcomes.
+
 ## Bottom line so far
 
 After the full audit, the honest position:
