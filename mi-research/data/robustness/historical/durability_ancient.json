@@ -1,0 +1,242 @@
+{
+  "test": "durability_gate_ancient",
+  "n": 25,
+  "n_rupture": 17,
+  "accuracy": {
+    "gap_direction_pre (>0)": 0.52,
+    "modern_J_threshold (>=0.28)": 0.32,
+    "gap_widened_peak_to_prestress (>0)": 0.52
+  },
+  "auc_gap_pre_for_rupture": 0.743,
+  "auc_gap_widened_for_rupture": 0.629,
+  "modern_reference": "temporal holdout composite AUC 0.69-0.73, LOST to GDP-only baseline (0.75-0.81)",
+  "by_shock": {
+    "endo": {
+      "n": 6,
+      "gap_direction_accuracy": 0.333,
+      "mean_gap_pre": -0.012
+    },
+    "exo_agency": {
+      "n": 8,
+      "gap_direction_accuracy": 0.375,
+      "mean_gap_pre": -0.05
+    },
+    "exo_natural": {
+      "n": 1,
+      "gap_direction_accuracy": 0.0,
+      "mean_gap_pre": 0.02
+    },
+    "mixed": {
+      "n": 7,
+      "gap_direction_accuracy": 0.714,
+      "mean_gap_pre": -0.046
+    },
+    "none": {
+      "n": 3,
+      "gap_direction_accuracy": 1.0,
+      "mean_gap_pre": -0.183
+    }
+  },
+  "rows": [
+    {
+      "name": "Old Kingdom Egypt",
+      "shock": "mixed",
+      "rupture": 1,
+      "gap_peak": -0.12,
+      "gap_pre": 0.05,
+      "gap_widened": 0.17
+    },
+    {
+      "name": "Achaemenid Persia",
+      "shock": "exo_agency",
+      "rupture": 1,
+      "gap_peak": -0.04,
+      "gap_pre": 0.0,
+      "gap_widened": 0.04
+    },
+    {
+      "name": "Sasanian Persia",
+      "shock": "exo_agency",
+      "rupture": 1,
+      "gap_peak": -0.13,
+      "gap_pre": -0.08,
+      "gap_widened": 0.05
+    },
+    {
+      "name": "Mauryan Empire",
+      "shock": "endo",
+      "rupture": 1,
+      "gap_peak": -0.16,
+      "gap_pre": 0.15,
+      "gap_widened": 0.31
+    },
+    {
+      "name": "Gupta Empire",
+      "shock": "mixed",
+      "rupture": 1,
+      "gap_peak": 0.06,
+      "gap_pre": 0.09,
+      "gap_widened": 0.03
+    },
+    {
+      "name": "Vijayanagara",
+      "shock": "exo_agency",
+      "rupture": 1,
+      "gap_peak": 0.08,
+      "gap_pre": 0.05,
+      "gap_widened": -0.03
+    },
+    {
+      "name": "Tang Dynasty",
+      "shock": "endo",
+      "rupture": 1,
+      "gap_peak": -0.24,
+      "gap_pre": -0.11,
+      "gap_widened": 0.13
+    },
+    {
+      "name": "Song Dynasty",
+      "shock": "exo_agency",
+      "rupture": 1,
+      "gap_peak": -0.27,
+      "gap_pre": -0.3,
+      "gap_widened": -0.03
+    },
+    {
+      "name": "Tokugawa Japan",
+      "shock": "mixed",
+      "rupture": 0,
+      "gap_peak": -0.07,
+      "gap_pre": -0.16,
+      "gap_widened": -0.09
+    },
+    {
+      "name": "Joseon Korea",
+      "shock": "mixed",
+      "rupture": 0,
+      "gap_peak": -0.27,
+      "gap_pre": -0.14,
+      "gap_widened": 0.13
+    },
+    {
+      "name": "Khmer / Angkor",
+      "shock": "exo_agency",
+      "rupture": 0,
+      "gap_peak": -0.04,
+      "gap_pre": 0.02,
+      "gap_widened": 0.06
+    },
+    {
+      "name": "Srivijaya",
+      "shock": "exo_agency",
+      "rupture": 1,
+      "gap_peak": 0.27,
+      "gap_pre": 0.05,
+      "gap_widened": -0.22
+    },
+    {
+      "name": "Majapahit",
+      "shock": "endo",
+      "rupture": 1,
+      "gap_peak": 0.06,
+      "gap_pre": 0.07,
+      "gap_widened": 0.01
+    },
+    {
+      "name": "Mali Empire",
+      "shock": "mixed",
+      "rupture": 1,
+      "gap_peak": 0.06,
+      "gap_pre": -0.01,
+      "gap_widened": -0.07
+    },
+    {
+      "name": "Great Zimbabwe",
+      "shock": "exo_natural",
+      "rupture": 0,
+      "gap_peak": 0.21,
+      "gap_pre": 0.02,
+      "gap_widened": -0.19
+    },
+    {
+      "name": "Aksum",
+      "shock": "exo_agency",
+      "rupture": 0,
+      "gap_peak": 0.12,
+      "gap_pre": -0.06,
+      "gap_widened": -0.18
+    },
+    {
+      "name": "Aztec Triple Alliance",
+      "shock": "exo_agency",
+      "rupture": 1,
+      "gap_peak": -0.08,
+      "gap_pre": -0.08,
+      "gap_widened": 0.0
+    },
+    {
+      "name": "Classic Maya",
+      "shock": "mixed",
+      "rupture": 1,
+      "gap_peak": 0.07,
+      "gap_pre": 0.02,
+      "gap_widened": -0.05
+    },
+    {
+      "name": "Tiwanaku",
+      "shock": "endo",
+      "rupture": 1,
+      "gap_peak": 0.0,
+      "gap_pre": -0.06,
+      "gap_widened": -0.06
+    },
+    {
+      "name": "Wari",
+      "shock": "endo",
+      "rupture": 1,
+      "gap_peak": 0.0,
+      "gap_pre": -0.06,
+      "gap_widened": -0.06
+    },
+    {
+      "name": "Carolingian",
+      "shock": "endo",
+      "rupture": 1,
+      "gap_peak": -0.08,
+      "gap_pre": -0.06,
+      "gap_widened": 0.02
+    },
+    {
+      "name": "Byzantine (Macedonian)",
+      "shock": "none",
+      "rupture": 0,
+      "gap_peak": -0.13,
+      "gap_pre": -0.19,
+      "gap_widened": -0.06
+    },
+    {
+      "name": "Venetian Republic",
+      "shock": "none",
+      "rupture": 0,
+      "gap_peak": -0.04,
+      "gap_pre": -0.17,
+      "gap_widened": -0.13
+    },
+    {
+      "name": "Ottoman (classical)",
+      "shock": "none",
+      "rupture": 0,
+      "gap_peak": -0.26,
+      "gap_pre": -0.19,
+      "gap_widened": 0.07
+    },
+    {
+      "name": "New Kingdom Egypt",
+      "shock": "mixed",
+      "rupture": 1,
+      "gap_peak": -0.1,
+      "gap_pre": -0.17,
+      "gap_widened": -0.07
+    }
+  ]
+}
