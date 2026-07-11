@@ -1,0 +1,125 @@
+{
+  "_meta": {
+    "purpose": "External Support Index (ESI) construction spec — the indicator registry, normalization, and aggregation. Frozen BEFORE any test against outcomes (ESI_PREREGISTRATION.md). ESI is a CONTROL VARIABLE against the MI temporal-holdout results, testing whether external capital/institutional support explains the modern erosion of the institutional signal (ROBUSTNESS_RESULTS Findings 2-3, 5).",
+    "prereg": "docs/ESI_PREREGISTRATION.md",
+    "direction": "ALL indicators normalized to [0,1] where HIGHER = MORE external support.",
+    "aggregation": "Within each sub-dimension: mean of AVAILABLE normalized indicators (graceful degradation, no imputation). ESI = equal-weight mean of the 3 sub-dimension scores. Weights are NOT optimized (first pass; equal weights by design).",
+    "missing_data": "Track-2 logic: use available indicators, document coverage per country-year; never impute. A sub-dimension with zero available indicators for a country-year is null; ESI = mean of the non-null sub-dimensions."
+  },
+
+  "sub_dimensions": {
+    "A_financial_life_support": {
+      "_doc": "Active intervention — someone is subsidizing solvency right now.",
+      "indicators": {
+        "imf_program_active": {
+          "source": "IMF MONA",
+          "url": "https://www.imf.org/external/np/pdr/mona/index.aspx",
+          "definition": "binary: country under an active IMF arrangement (SBA, EFF, SAF/ESAF, PRGF/ECF, precautionary) in year T",
+          "normalization": "binary {0,1}; already in [0,1], higher = support",
+          "higher_is_more_support": true
+        },
+        "imf_program_cumulative_20yr": {
+          "source": "IMF MONA",
+          "definition": "count of years under any IMF arrangement in the preceding 20 years (T-19..T), normalized by 20",
+          "normalization": "cumulative_years / 20, clamp [0,1]",
+          "higher_is_more_support": true,
+          "rationale": "captures chronic dependence vs one-off stabilization"
+        },
+        "concessional_debt_share": {
+          "source": "World Bank WDI (IDS)",
+          "code_concessional": "DT.DOD.DECT.CD__RESOLVE",
+          "code_total": "DT.DOD.DECT.CD",
+          "definition": "external debt on concessional terms as a share of total external debt. Exact concessional-stock code resolved at fetch time (candidates: DT.DOD.DIMF.CD, concessional PPG series); documented in the fetch cache _meta.",
+          "normalization": "share in [0,1] directly (concessional / total), clamp",
+          "higher_is_more_support": true,
+          "coverage_note": "debtor-reporting (IDS) countries only — high-income issuers absent; treated as 0 concessional (they borrow commercially), documented."
+        },
+        "debt_service_burden": {
+          "source": "World Bank WDI",
+          "code": "DT.TDS.DECT.GN.ZS",
+          "definition": "total external debt service as % of GNI. INVERSE/ambiguous indicator — high service with continued solvency implies someone keeps lending; high service with NO new lending implies approaching default.",
+          "normalization": "percentile-rank across countries within year, then [0,1]; FLAGGED as ambiguous. Included in sub-A mean only in a sensitivity variant, NOT the primary ESI (see prereg 'debt_service handling'). Primary ESI excludes it to avoid sign ambiguity.",
+          "higher_is_more_support": "ambiguous",
+          "in_primary_esi": false
+        }
+      }
+    },
+
+    "B_structural_dependency": {
+      "_doc": "Chronic substitution — foreign capital/labour running a share of the economy in place of domestic P4 capacity.",
+      "indicators": {
+        "fdi_net_inflows_pct_gdp": {
+          "source": "World Bank WDI",
+          "code": "BX.KLT.DINV.WD.GD.ZS",
+          "definition": "FDI net inflows as % of GDP",
+          "normalization": "clamp negatives to 0; cap at ceiling then /ceiling. Ceiling = cross-country 90th percentile of the pooled distribution (documented at build), robust to Luxembourg/Ireland conduit outliers.",
+          "higher_is_more_support": true
+        },
+        "oda_pct_gni": {
+          "source": "World Bank WDI (already in MI pipeline)",
+          "code": "DT.ODA.ODAT.GN.ZS",
+          "definition": "net ODA received as % of GNI. In MI scoring this is INVERTED (aid = weakness); for ESI use UN-inverted (high ODA = high support).",
+          "normalization": "oda_pct / oda_full_dependence_pct (20, from LENS), clamp [0,1] — mirrors the MI normalizer's scale but NOT inverted",
+          "higher_is_more_support": true
+        },
+        "remittances_pct_gdp": {
+          "source": "World Bank WDI",
+          "code": "BX.TRF.PWKR.DT.GD.ZS",
+          "definition": "personal remittances received as % of GDP",
+          "normalization": "cap at ceiling then /ceiling; ceiling = cross-country 90th percentile (documented at build)",
+          "higher_is_more_support": true
+        },
+        "export_partner_hhi": {
+          "source": "UN COMTRADE via WITS / Harvard Atlas",
+          "definition": "Herfindahl-Hirschman Index of export destinations (high = dependent on one/two partners).",
+          "normalization": "HHI already in [0,1]",
+          "higher_is_more_support": true,
+          "in_primary_esi": false,
+          "phase1_status": "DEFERRED — skip for Phase 1 if not programmatically available; flagged as future addition per task."
+        }
+      }
+    },
+
+    "C_systemic_insurance": {
+      "_doc": "Implicit guarantees / self-insurance — buffers that delay the consequences of structural misalignment. Mostly categorical/stable; manually coded once for all countries.",
+      "indicators": {
+        "reserve_currency_status": {
+          "source": "manual coding",
+          "definition": "binary: issues a global reserve currency (USD, EUR, GBP, JPY, CHF; RMB from 2016 SDR inclusion). Eurozone members credited via EUR.",
+          "normalization": "binary {0,1}",
+          "higher_is_more_support": true,
+          "time_varying": "RMB (CHN) = 1 from 2016; EUR issuers = 1 from 1999"
+        },
+        "eu_eurozone_membership": {
+          "source": "manual coding",
+          "definition": "tiered: 0 none, 0.33 EU candidate/association agreement, 0.67 EU member, 1.0 Eurozone member",
+          "normalization": "already in [0,1]",
+          "higher_is_more_support": true,
+          "time_varying": "coded per year against accession/adoption dates"
+        },
+        "nato_alliance_membership": {
+          "source": "manual coding",
+          "definition": "tiered security insurance: 0 none, 0.5 formal defense partnership / major-non-NATO-ally, 1.0 NATO or equivalent mutual-defense treaty with a nuclear power",
+          "normalization": "already in [0,1]",
+          "higher_is_more_support": true,
+          "time_varying": "coded per year against accession dates"
+        },
+        "swf_assets_pct_gdp": {
+          "source": "Sovereign Wealth Fund Institute (SWFI) rankings",
+          "url": "https://www.swfinstitute.org/",
+          "definition": "sovereign wealth fund assets as % of GDP (self-insurance buffer)",
+          "normalization": "assets_pct_gdp / ceiling, clamp [0,1]; ceiling documented at build (Gulf outliers capped)",
+          "higher_is_more_support": true,
+          "coverage_note": "SWF data barely exists pre-2000; use available, document coverage"
+        },
+        "reserves_months_imports": {
+          "source": "World Bank WDI",
+          "code": "FI.RES.TOTL.MO",
+          "definition": "foreign-exchange reserves in months of imports (basic self-insurance)",
+          "normalization": "cap at ceiling then /ceiling; ceiling = cross-country 90th percentile (documented at build)",
+          "higher_is_more_support": true
+        }
+      }
+    }
+  }
+}
