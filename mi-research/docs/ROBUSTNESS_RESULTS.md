@@ -26,6 +26,7 @@
 | Erosion decomposition A/B/C — Finding 9 (compound hypothesis largely not supported) | ✅ done | (this branch) |
 | Wealth–institution decoupling battery — Finding 10 (registered null; hypothesis falsified) | ✅ done | (this branch) |
 | Gold-standard monetary-regime substitute — Finding 11 (registered null; fails at gate) | ✅ done | (this branch) |
+| Crisis-origin shift (domestic→contagion) — Finding 12 (registered null; erosion is domestic) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -422,6 +423,52 @@ candidate residuals: measurement-regime maturation / variance compression / chan
 conflict character). Epistemic status: **registered null; hypothesis falsified at the
 gate.** Write-up `docs/GOLD_STANDARD_RESULTS.md`; artifact
 `data/robustness/gold_standard/t1_gate.json`; code `scripts/robustness/gold_t1_gate.py`.
+
+## Finding 12 — The erosion is NOT a domestic→systemic-contagion shift; it is *specifically* in the domestic channel (registered null; reverses)
+
+The sharpest open puzzle after Findings 10/11: institutional quality predicts **wealth**
+better over time (F10) yet **political outcomes** worse (F7/F11), simultaneously. The
+most promising resolution: the *outcome variable* changed — an increasing share of
+"crises" are **external-systemic** shocks (contagion, interstate war, commodity/
+sanction/pandemic) that overwhelm domestic institutions regardless of quality, while
+the institutional signal stays intact for **domestic-origin** crises. If true, the MI
+is not weakening — the world's crisis mix shifted, and the fix is a systemic-exposure
+dimension (a scope characterization, not a flaw). Pre-registered
+(`CONTAGION_PREREGISTRATION.md`, sha256 `068e2c5…`) with the crisis-origin classification
+frozen and Test 2 as a hard gate. **It fails — by reversal.**
+
+Onsets were re-derived with a domestic/external tag from raw UCDP type codes + COW
+inter/intra, reproducing the committed Finding-7 onset set **exactly** (1176/1176, 0
+missing/extra; 798 domestic, 426 external, 48 both). Splitting the dense erosion curve
+three ways: **all crises** slope −0.001056 (reproduces F7); **domestic-origin only**
+slope **−0.00122** (r=−0.79, p<0.001, full erosion +0.222→−0.025); **external-origin
+only** slope **−0.00006** (r=−0.07, **p=0.76**, flat, and at a lower level throughout).
+The erosion lives **entirely in the domestic-origin channel** — the exact crises
+institutions should predict best — while the external signal was always flat. Robust to
+both frozen sensitivity flips (type-4→external; type-1 excluded). The **external-origin
+share is hump-shaped** (0.10 in 1816 → 0.66 in 1926 → **0.145 in 1996**): modern crises
+became *more* domestic, not more external, so the dilution premise is backwards for the
+modern period. Gate = **FAIL** (domestic erodes more than external). Per the stop rule,
+Tests 3–6 not run.
+
+**Reconciliation (required):** this *sharpens* rather than resolves the F10-vs-F7/11
+contradiction. Institutions now predict a country's **wealth** better than ever and its
+**own domestic political rupture** worse than ever, both accelerating. This kills the
+reassuring "scope-boundary" reading of Finding 5 — the degradation is in the
+institution→domestic-stability link itself, not external noise diluting an intact
+signal. Consistent with F10/F11; fatal to the contagion story.
+
+**Verdict:** the twelfth null on the longitudinal erosion, and the most *localizing*
+one. The surviving constraint set is tight: the driver is **continuous** (F11), sits in
+the **domestic** channel (F12), and coexists with a **strengthening** institution→wealth
+link (F10). The two Finding-9 residuals of the right shape — (i) measurement-regime
+maturation / V-Dem rule-of-law **variance compression** as formal-legal institutions
+diffused, and (ii) a secular change in how post-colonial civil conflict relates to
+measured rule-of-law (structure's *edge* over wealth shrinking once the sample fills
+with young poor states) — remain untested and are flagged for separate pre-registration.
+Epistemic status: **registered null; hypothesis falsified (reversed) at the gate.**
+Write-up `docs/CONTAGION_RESULTS.md`; artifacts `data/robustness/contagion/*`; code
+`scripts/robustness/contagion_{classify,t2_gate}.py`.
 
 ---
 

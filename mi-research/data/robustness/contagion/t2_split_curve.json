@@ -1,0 +1,1755 @@
+{
+ "test": "T2_gate_split_erosion_curve",
+ "primary": {
+  "all": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 6,
+     "onset_rate": 0.5,
+     "struct_auc": 0.4444,
+     "wealth_auc": 0.2222,
+     "spread": 0.2222
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 10,
+     "onset_rate": 0.667,
+     "struct_auc": 0.34,
+     "wealth_auc": 0.06,
+     "spread": 0.28
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 10,
+     "onset_rate": 0.556,
+     "struct_auc": 0.4125,
+     "wealth_auc": 0.3125,
+     "spread": 0.1
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 12,
+     "onset_rate": 0.545,
+     "struct_auc": 0.5083,
+     "wealth_auc": 0.425,
+     "spread": 0.0833
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 11,
+     "onset_rate": 0.524,
+     "struct_auc": 0.6182,
+     "wealth_auc": 0.4455,
+     "spread": 0.1727
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 9,
+     "onset_rate": 0.36,
+     "struct_auc": 0.6597,
+     "wealth_auc": 0.4722,
+     "spread": 0.1875
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 12,
+     "onset_rate": 0.4,
+     "struct_auc": 0.7546,
+     "wealth_auc": 0.6528,
+     "spread": 0.1019
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 15,
+     "onset_rate": 0.469,
+     "struct_auc": 0.7961,
+     "wealth_auc": 0.6373,
+     "spread": 0.1588
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 19,
+     "onset_rate": 0.559,
+     "struct_auc": 0.6737,
+     "wealth_auc": 0.5439,
+     "spread": 0.1298
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 17,
+     "onset_rate": 0.347,
+     "struct_auc": 0.4954,
+     "wealth_auc": 0.3585,
+     "spread": 0.1369
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 22,
+     "onset_rate": 0.478,
+     "struct_auc": 0.4223,
+     "wealth_auc": 0.303,
+     "spread": 0.1193
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 37,
+     "onset_rate": 0.597,
+     "struct_auc": 0.5059,
+     "wealth_auc": 0.4151,
+     "spread": 0.0908
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 41,
+     "onset_rate": 0.641,
+     "struct_auc": 0.5323,
+     "wealth_auc": 0.4295,
+     "spread": 0.1029
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 30,
+     "onset_rate": 0.566,
+     "struct_auc": 0.629,
+     "wealth_auc": 0.558,
+     "spread": 0.071
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 72,
+     "onset_rate": 0.522,
+     "struct_auc": 0.6239,
+     "wealth_auc": 0.56,
+     "spread": 0.064
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 83,
+     "onset_rate": 0.597,
+     "struct_auc": 0.6404,
+     "wealth_auc": 0.6097,
+     "spread": 0.0307
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 90,
+     "onset_rate": 0.634,
+     "struct_auc": 0.6951,
+     "wealth_auc": 0.6385,
+     "spread": 0.0566
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 87,
+     "onset_rate": 0.554,
+     "struct_auc": 0.6773,
+     "wealth_auc": 0.6563,
+     "spread": 0.021
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 76,
+     "onset_rate": 0.475,
+     "struct_auc": 0.7186,
+     "wealth_auc": 0.7383,
+     "spread": -0.0197
+    }
+   ],
+   "trend": {
+    "slope": -0.0010564035087719298,
+    "pearson_r": -0.8234725375988013,
+    "p": 1.4788640688418385e-05,
+    "n_epochs": 19,
+    "delta": -0.2419,
+    "mean_spread": 0.111
+   }
+  },
+  "domestic": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 6,
+     "onset_rate": 0.5,
+     "struct_auc": 0.4444,
+     "wealth_auc": 0.2222,
+     "spread": 0.2222
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 7,
+     "onset_rate": 0.467,
+     "struct_auc": 0.5536,
+     "wealth_auc": 0.2857,
+     "spread": 0.2679
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 8,
+     "onset_rate": 0.444,
+     "struct_auc": 0.5,
+     "wealth_auc": 0.4125,
+     "spread": 0.0875
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 10,
+     "onset_rate": 0.455,
+     "struct_auc": 0.6,
+     "wealth_auc": 0.4833,
+     "spread": 0.1167
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 6,
+     "onset_rate": 0.286,
+     "struct_auc": 0.6667,
+     "wealth_auc": 0.3889,
+     "spread": 0.2778
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 6,
+     "onset_rate": 0.24,
+     "struct_auc": 0.7456,
+     "wealth_auc": 0.6404,
+     "spread": 0.1053
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 6,
+     "onset_rate": 0.2,
+     "struct_auc": 0.8472,
+     "wealth_auc": 0.7708,
+     "spread": 0.0764
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 10,
+     "onset_rate": 0.312,
+     "struct_auc": 0.8295,
+     "wealth_auc": 0.7659,
+     "spread": 0.0636
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 13,
+     "onset_rate": 0.382,
+     "struct_auc": 0.674,
+     "wealth_auc": 0.5678,
+     "spread": 0.1062
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 11,
+     "onset_rate": 0.224,
+     "struct_auc": 0.5419,
+     "wealth_auc": 0.4211,
+     "spread": 0.1208
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 13,
+     "onset_rate": 0.283,
+     "struct_auc": 0.5571,
+     "wealth_auc": 0.4219,
+     "spread": 0.1352
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 20,
+     "onset_rate": 0.323,
+     "struct_auc": 0.694,
+     "wealth_auc": 0.5583,
+     "spread": 0.1357
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 23,
+     "onset_rate": 0.359,
+     "struct_auc": 0.5668,
+     "wealth_auc": 0.4581,
+     "spread": 0.1087
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 20,
+     "onset_rate": 0.377,
+     "struct_auc": 0.5652,
+     "wealth_auc": 0.5197,
+     "spread": 0.0455
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 63,
+     "onset_rate": 0.457,
+     "struct_auc": 0.6297,
+     "wealth_auc": 0.5738,
+     "spread": 0.056
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 76,
+     "onset_rate": 0.547,
+     "struct_auc": 0.6468,
+     "wealth_auc": 0.6543,
+     "spread": -0.0075
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 79,
+     "onset_rate": 0.556,
+     "struct_auc": 0.6835,
+     "wealth_auc": 0.6968,
+     "spread": -0.0133
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 76,
+     "onset_rate": 0.484,
+     "struct_auc": 0.6909,
+     "wealth_auc": 0.6954,
+     "spread": -0.0045
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 69,
+     "onset_rate": 0.431,
+     "struct_auc": 0.7542,
+     "wealth_auc": 0.7788,
+     "spread": -0.0246
+    }
+   ],
+   "trend": {
+    "slope": -0.0012156666666666668,
+    "pearson_r": -0.7874339124185036,
+    "p": 6.29007580679806e-05,
+    "n_epochs": 19,
+    "delta": -0.2468,
+    "mean_spread": 0.0987
+   }
+  },
+  "external": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 2,
+     "onset_rate": 0.167,
+     "struct_auc": 0.45,
+     "wealth_auc": 0.5,
+     "spread": -0.05
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 5,
+     "onset_rate": 0.333,
+     "struct_auc": 0.22,
+     "wealth_auc": 0.2,
+     "spread": 0.02
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 7,
+     "onset_rate": 0.389,
+     "struct_auc": 0.2987,
+     "wealth_auc": 0.1299,
+     "spread": 0.1688
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 9,
+     "onset_rate": 0.409,
+     "struct_auc": 0.4017,
+     "wealth_auc": 0.3419,
+     "spread": 0.0598
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 9,
+     "onset_rate": 0.429,
+     "struct_auc": 0.5741,
+     "wealth_auc": 0.4815,
+     "spread": 0.0926
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 7,
+     "onset_rate": 0.28,
+     "struct_auc": 0.5714,
+     "wealth_auc": 0.4603,
+     "spread": 0.1111
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 8,
+     "onset_rate": 0.267,
+     "struct_auc": 0.5966,
+     "wealth_auc": 0.5341,
+     "spread": 0.0625
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 8,
+     "onset_rate": 0.25,
+     "struct_auc": 0.5547,
+     "wealth_auc": 0.4688,
+     "spread": 0.0859
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 14,
+     "onset_rate": 0.412,
+     "struct_auc": 0.4929,
+     "wealth_auc": 0.4214,
+     "spread": 0.0714
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 14,
+     "onset_rate": 0.286,
+     "struct_auc": 0.3867,
+     "wealth_auc": 0.3082,
+     "spread": 0.0786
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 18,
+     "onset_rate": 0.391,
+     "struct_auc": 0.3085,
+     "wealth_auc": 0.25,
+     "spread": 0.0585
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 29,
+     "onset_rate": 0.468,
+     "struct_auc": 0.4086,
+     "wealth_auc": 0.3981,
+     "spread": 0.0104
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 34,
+     "onset_rate": 0.531,
+     "struct_auc": 0.4828,
+     "wealth_auc": 0.4118,
+     "spread": 0.0711
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 19,
+     "onset_rate": 0.358,
+     "struct_auc": 0.5294,
+     "wealth_auc": 0.5201,
+     "spread": 0.0093
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 47,
+     "onset_rate": 0.341,
+     "struct_auc": 0.556,
+     "wealth_auc": 0.5558,
+     "spread": 0.0002
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 44,
+     "onset_rate": 0.317,
+     "struct_auc": 0.5859,
+     "wealth_auc": 0.5419,
+     "spread": 0.044
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 45,
+     "onset_rate": 0.317,
+     "struct_auc": 0.5462,
+     "wealth_auc": 0.457,
+     "spread": 0.0891
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 39,
+     "onset_rate": 0.248,
+     "struct_auc": 0.5211,
+     "wealth_auc": 0.4518,
+     "spread": 0.0693
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 25,
+     "onset_rate": 0.156,
+     "struct_auc": 0.5099,
+     "wealth_auc": 0.459,
+     "spread": 0.051
+    }
+   ],
+   "trend": {
+    "slope": -6.256140350877194e-05,
+    "pearson_r": -0.07440579658220413,
+    "p": 0.7620965514164227,
+    "n_epochs": 19,
+    "delta": 0.101,
+    "mean_spread": 0.0581
+   }
+  }
+ },
+ "external_share_by_epoch": {
+  "1816": {
+   "domestic": 36,
+   "external": 4,
+   "external_share": 0.1
+  },
+  "1826": {
+   "domestic": 39,
+   "external": 15,
+   "external_share": 0.278
+  },
+  "1836": {
+   "domestic": 31,
+   "external": 26,
+   "external_share": 0.456
+  },
+  "1846": {
+   "domestic": 39,
+   "external": 44,
+   "external_share": 0.53
+  },
+  "1856": {
+   "domestic": 38,
+   "external": 33,
+   "external_share": 0.465
+  },
+  "1866": {
+   "domestic": 29,
+   "external": 19,
+   "external_share": 0.396
+  },
+  "1876": {
+   "domestic": 26,
+   "external": 25,
+   "external_share": 0.49
+  },
+  "1886": {
+   "domestic": 31,
+   "external": 24,
+   "external_share": 0.436
+  },
+  "1896": {
+   "domestic": 41,
+   "external": 63,
+   "external_share": 0.606
+  },
+  "1906": {
+   "domestic": 46,
+   "external": 55,
+   "external_share": 0.545
+  },
+  "1916": {
+   "domestic": 40,
+   "external": 64,
+   "external_share": 0.615
+  },
+  "1926": {
+   "domestic": 47,
+   "external": 93,
+   "external_share": 0.664
+  },
+  "1936": {
+   "domestic": 69,
+   "external": 108,
+   "external_share": 0.61
+  },
+  "1946": {
+   "domestic": 128,
+   "external": 114,
+   "external_share": 0.471
+  },
+  "1956": {
+   "domestic": 182,
+   "external": 103,
+   "external_share": 0.361
+  },
+  "1966": {
+   "domestic": 215,
+   "external": 107,
+   "external_share": 0.332
+  },
+  "1976": {
+   "domestic": 281,
+   "external": 95,
+   "external_share": 0.253
+  },
+  "1986": {
+   "domestic": 269,
+   "external": 69,
+   "external_share": 0.204
+  },
+  "1996": {
+   "domestic": 248,
+   "external": 42,
+   "external_share": 0.145
+  }
+ },
+ "sensitivity_S1_type4_external": {
+  "all": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 6,
+     "onset_rate": 0.5,
+     "struct_auc": 0.4444,
+     "wealth_auc": 0.2222,
+     "spread": 0.2222
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 10,
+     "onset_rate": 0.667,
+     "struct_auc": 0.34,
+     "wealth_auc": 0.06,
+     "spread": 0.28
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 10,
+     "onset_rate": 0.556,
+     "struct_auc": 0.4125,
+     "wealth_auc": 0.3125,
+     "spread": 0.1
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 12,
+     "onset_rate": 0.545,
+     "struct_auc": 0.5083,
+     "wealth_auc": 0.425,
+     "spread": 0.0833
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 11,
+     "onset_rate": 0.524,
+     "struct_auc": 0.6182,
+     "wealth_auc": 0.4455,
+     "spread": 0.1727
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 9,
+     "onset_rate": 0.36,
+     "struct_auc": 0.6597,
+     "wealth_auc": 0.4722,
+     "spread": 0.1875
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 12,
+     "onset_rate": 0.4,
+     "struct_auc": 0.7546,
+     "wealth_auc": 0.6528,
+     "spread": 0.1019
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 15,
+     "onset_rate": 0.469,
+     "struct_auc": 0.7961,
+     "wealth_auc": 0.6373,
+     "spread": 0.1588
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 19,
+     "onset_rate": 0.559,
+     "struct_auc": 0.6737,
+     "wealth_auc": 0.5439,
+     "spread": 0.1298
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 17,
+     "onset_rate": 0.347,
+     "struct_auc": 0.4954,
+     "wealth_auc": 0.3585,
+     "spread": 0.1369
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 22,
+     "onset_rate": 0.478,
+     "struct_auc": 0.4223,
+     "wealth_auc": 0.303,
+     "spread": 0.1193
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 37,
+     "onset_rate": 0.597,
+     "struct_auc": 0.5059,
+     "wealth_auc": 0.4151,
+     "spread": 0.0908
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 41,
+     "onset_rate": 0.641,
+     "struct_auc": 0.5323,
+     "wealth_auc": 0.4295,
+     "spread": 0.1029
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 30,
+     "onset_rate": 0.566,
+     "struct_auc": 0.629,
+     "wealth_auc": 0.558,
+     "spread": 0.071
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 72,
+     "onset_rate": 0.522,
+     "struct_auc": 0.6239,
+     "wealth_auc": 0.56,
+     "spread": 0.064
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 83,
+     "onset_rate": 0.597,
+     "struct_auc": 0.6404,
+     "wealth_auc": 0.6097,
+     "spread": 0.0307
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 90,
+     "onset_rate": 0.634,
+     "struct_auc": 0.6951,
+     "wealth_auc": 0.6385,
+     "spread": 0.0566
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 87,
+     "onset_rate": 0.554,
+     "struct_auc": 0.6773,
+     "wealth_auc": 0.6563,
+     "spread": 0.021
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 76,
+     "onset_rate": 0.475,
+     "struct_auc": 0.7186,
+     "wealth_auc": 0.7383,
+     "spread": -0.0197
+    }
+   ],
+   "trend": {
+    "slope": -0.0010564035087719298,
+    "pearson_r": -0.8234725375988013,
+    "p": 1.4788640688418385e-05,
+    "n_epochs": 19,
+    "delta": -0.2419,
+    "mean_spread": 0.111
+   }
+  },
+  "domestic": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 6,
+     "onset_rate": 0.5,
+     "struct_auc": 0.4444,
+     "wealth_auc": 0.2222,
+     "spread": 0.2222
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 7,
+     "onset_rate": 0.467,
+     "struct_auc": 0.5536,
+     "wealth_auc": 0.2857,
+     "spread": 0.2679
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 8,
+     "onset_rate": 0.444,
+     "struct_auc": 0.5,
+     "wealth_auc": 0.4125,
+     "spread": 0.0875
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 10,
+     "onset_rate": 0.455,
+     "struct_auc": 0.6,
+     "wealth_auc": 0.4833,
+     "spread": 0.1167
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 6,
+     "onset_rate": 0.286,
+     "struct_auc": 0.6667,
+     "wealth_auc": 0.3889,
+     "spread": 0.2778
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 6,
+     "onset_rate": 0.24,
+     "struct_auc": 0.7456,
+     "wealth_auc": 0.6404,
+     "spread": 0.1053
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 6,
+     "onset_rate": 0.2,
+     "struct_auc": 0.8472,
+     "wealth_auc": 0.7708,
+     "spread": 0.0764
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 10,
+     "onset_rate": 0.312,
+     "struct_auc": 0.8295,
+     "wealth_auc": 0.7659,
+     "spread": 0.0636
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 13,
+     "onset_rate": 0.382,
+     "struct_auc": 0.674,
+     "wealth_auc": 0.5678,
+     "spread": 0.1062
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 11,
+     "onset_rate": 0.224,
+     "struct_auc": 0.5419,
+     "wealth_auc": 0.4211,
+     "spread": 0.1208
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 13,
+     "onset_rate": 0.283,
+     "struct_auc": 0.5571,
+     "wealth_auc": 0.4219,
+     "spread": 0.1352
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 20,
+     "onset_rate": 0.323,
+     "struct_auc": 0.694,
+     "wealth_auc": 0.5583,
+     "spread": 0.1357
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 23,
+     "onset_rate": 0.359,
+     "struct_auc": 0.5668,
+     "wealth_auc": 0.4581,
+     "spread": 0.1087
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 20,
+     "onset_rate": 0.377,
+     "struct_auc": 0.5652,
+     "wealth_auc": 0.5197,
+     "spread": 0.0455
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 61,
+     "onset_rate": 0.442,
+     "struct_auc": 0.6292,
+     "wealth_auc": 0.5689,
+     "spread": 0.0604
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 72,
+     "onset_rate": 0.518,
+     "struct_auc": 0.6588,
+     "wealth_auc": 0.6153,
+     "spread": 0.0435
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 74,
+     "onset_rate": 0.521,
+     "struct_auc": 0.673,
+     "wealth_auc": 0.6433,
+     "spread": 0.0297
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 70,
+     "onset_rate": 0.446,
+     "struct_auc": 0.6667,
+     "wealth_auc": 0.6493,
+     "spread": 0.0175
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 62,
+     "onset_rate": 0.388,
+     "struct_auc": 0.7194,
+     "wealth_auc": 0.7444,
+     "spread": -0.025
+    }
+   ],
+   "trend": {
+    "slope": -0.0010750701754385966,
+    "pearson_r": -0.7576531224459522,
+    "p": 0.00017172265442198995,
+    "n_epochs": 19,
+    "delta": -0.2472,
+    "mean_spread": 0.105
+   }
+  },
+  "external": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 2,
+     "onset_rate": 0.167,
+     "struct_auc": 0.45,
+     "wealth_auc": 0.5,
+     "spread": -0.05
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 5,
+     "onset_rate": 0.333,
+     "struct_auc": 0.22,
+     "wealth_auc": 0.2,
+     "spread": 0.02
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 7,
+     "onset_rate": 0.389,
+     "struct_auc": 0.2987,
+     "wealth_auc": 0.1299,
+     "spread": 0.1688
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 9,
+     "onset_rate": 0.409,
+     "struct_auc": 0.4017,
+     "wealth_auc": 0.3419,
+     "spread": 0.0598
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 9,
+     "onset_rate": 0.429,
+     "struct_auc": 0.5741,
+     "wealth_auc": 0.4815,
+     "spread": 0.0926
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 7,
+     "onset_rate": 0.28,
+     "struct_auc": 0.5714,
+     "wealth_auc": 0.4603,
+     "spread": 0.1111
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 8,
+     "onset_rate": 0.267,
+     "struct_auc": 0.5966,
+     "wealth_auc": 0.5341,
+     "spread": 0.0625
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 8,
+     "onset_rate": 0.25,
+     "struct_auc": 0.5547,
+     "wealth_auc": 0.4688,
+     "spread": 0.0859
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 14,
+     "onset_rate": 0.412,
+     "struct_auc": 0.4929,
+     "wealth_auc": 0.4214,
+     "spread": 0.0714
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 14,
+     "onset_rate": 0.286,
+     "struct_auc": 0.3867,
+     "wealth_auc": 0.3082,
+     "spread": 0.0786
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 18,
+     "onset_rate": 0.391,
+     "struct_auc": 0.3085,
+     "wealth_auc": 0.25,
+     "spread": 0.0585
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 29,
+     "onset_rate": 0.468,
+     "struct_auc": 0.4086,
+     "wealth_auc": 0.3981,
+     "spread": 0.0104
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 35,
+     "onset_rate": 0.547,
+     "struct_auc": 0.4911,
+     "wealth_auc": 0.4236,
+     "spread": 0.0675
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 20,
+     "onset_rate": 0.377,
+     "struct_auc": 0.5409,
+     "wealth_auc": 0.5348,
+     "spread": 0.0061
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 53,
+     "onset_rate": 0.384,
+     "struct_auc": 0.5887,
+     "wealth_auc": 0.5765,
+     "spread": 0.0122
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 48,
+     "onset_rate": 0.345,
+     "struct_auc": 0.5829,
+     "wealth_auc": 0.5634,
+     "spread": 0.0195
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 54,
+     "onset_rate": 0.38,
+     "struct_auc": 0.5676,
+     "wealth_auc": 0.5516,
+     "spread": 0.016
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 52,
+     "onset_rate": 0.331,
+     "struct_auc": 0.5726,
+     "wealth_auc": 0.5813,
+     "spread": -0.0087
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 43,
+     "onset_rate": 0.269,
+     "struct_auc": 0.6357,
+     "wealth_auc": 0.6287,
+     "spread": 0.007
+    }
+   ],
+   "trend": {
+    "slope": -0.0003506842105263157,
+    "pearson_r": -0.3909318103360614,
+    "p": 0.09792962522272303,
+    "n_epochs": 19,
+    "delta": 0.057,
+    "mean_spread": 0.0468
+   }
+  }
+ },
+ "sensitivity_S2_type1_excluded": {
+  "all": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 6,
+     "onset_rate": 0.5,
+     "struct_auc": 0.4444,
+     "wealth_auc": 0.2222,
+     "spread": 0.2222
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 10,
+     "onset_rate": 0.667,
+     "struct_auc": 0.34,
+     "wealth_auc": 0.06,
+     "spread": 0.28
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 10,
+     "onset_rate": 0.556,
+     "struct_auc": 0.4125,
+     "wealth_auc": 0.3125,
+     "spread": 0.1
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 12,
+     "onset_rate": 0.545,
+     "struct_auc": 0.5083,
+     "wealth_auc": 0.425,
+     "spread": 0.0833
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 11,
+     "onset_rate": 0.524,
+     "struct_auc": 0.6182,
+     "wealth_auc": 0.4455,
+     "spread": 0.1727
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 9,
+     "onset_rate": 0.36,
+     "struct_auc": 0.6597,
+     "wealth_auc": 0.4722,
+     "spread": 0.1875
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 12,
+     "onset_rate": 0.4,
+     "struct_auc": 0.7546,
+     "wealth_auc": 0.6528,
+     "spread": 0.1019
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 15,
+     "onset_rate": 0.469,
+     "struct_auc": 0.7961,
+     "wealth_auc": 0.6373,
+     "spread": 0.1588
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 19,
+     "onset_rate": 0.559,
+     "struct_auc": 0.6737,
+     "wealth_auc": 0.5439,
+     "spread": 0.1298
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 17,
+     "onset_rate": 0.347,
+     "struct_auc": 0.4954,
+     "wealth_auc": 0.3585,
+     "spread": 0.1369
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 22,
+     "onset_rate": 0.478,
+     "struct_auc": 0.4223,
+     "wealth_auc": 0.303,
+     "spread": 0.1193
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 36,
+     "onset_rate": 0.581,
+     "struct_auc": 0.5096,
+     "wealth_auc": 0.4113,
+     "spread": 0.0983
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 40,
+     "onset_rate": 0.625,
+     "struct_auc": 0.5167,
+     "wealth_auc": 0.4052,
+     "spread": 0.1115
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 30,
+     "onset_rate": 0.566,
+     "struct_auc": 0.629,
+     "wealth_auc": 0.558,
+     "spread": 0.071
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 71,
+     "onset_rate": 0.514,
+     "struct_auc": 0.6176,
+     "wealth_auc": 0.547,
+     "spread": 0.0706
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 83,
+     "onset_rate": 0.597,
+     "struct_auc": 0.6404,
+     "wealth_auc": 0.6097,
+     "spread": 0.0307
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 90,
+     "onset_rate": 0.634,
+     "struct_auc": 0.6951,
+     "wealth_auc": 0.6385,
+     "spread": 0.0566
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 87,
+     "onset_rate": 0.554,
+     "struct_auc": 0.6773,
+     "wealth_auc": 0.6563,
+     "spread": 0.021
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 76,
+     "onset_rate": 0.475,
+     "struct_auc": 0.7186,
+     "wealth_auc": 0.7383,
+     "spread": -0.0197
+    }
+   ],
+   "trend": {
+    "slope": -0.0010434561403508773,
+    "pearson_r": -0.8173881901140329,
+    "p": 1.9295140306632002e-05,
+    "n_epochs": 19,
+    "delta": -0.2419,
+    "mean_spread": 0.1122
+   }
+  },
+  "domestic": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 6,
+     "onset_rate": 0.5,
+     "struct_auc": 0.4444,
+     "wealth_auc": 0.2222,
+     "spread": 0.2222
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 7,
+     "onset_rate": 0.467,
+     "struct_auc": 0.5536,
+     "wealth_auc": 0.2857,
+     "spread": 0.2679
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 8,
+     "onset_rate": 0.444,
+     "struct_auc": 0.5,
+     "wealth_auc": 0.4125,
+     "spread": 0.0875
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 10,
+     "onset_rate": 0.455,
+     "struct_auc": 0.6,
+     "wealth_auc": 0.4833,
+     "spread": 0.1167
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 6,
+     "onset_rate": 0.286,
+     "struct_auc": 0.6667,
+     "wealth_auc": 0.3889,
+     "spread": 0.2778
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 6,
+     "onset_rate": 0.24,
+     "struct_auc": 0.7456,
+     "wealth_auc": 0.6404,
+     "spread": 0.1053
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 6,
+     "onset_rate": 0.2,
+     "struct_auc": 0.8472,
+     "wealth_auc": 0.7708,
+     "spread": 0.0764
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 10,
+     "onset_rate": 0.312,
+     "struct_auc": 0.8295,
+     "wealth_auc": 0.7659,
+     "spread": 0.0636
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 13,
+     "onset_rate": 0.382,
+     "struct_auc": 0.674,
+     "wealth_auc": 0.5678,
+     "spread": 0.1062
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 11,
+     "onset_rate": 0.224,
+     "struct_auc": 0.5419,
+     "wealth_auc": 0.4211,
+     "spread": 0.1208
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 13,
+     "onset_rate": 0.283,
+     "struct_auc": 0.5571,
+     "wealth_auc": 0.4219,
+     "spread": 0.1352
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 20,
+     "onset_rate": 0.323,
+     "struct_auc": 0.694,
+     "wealth_auc": 0.5583,
+     "spread": 0.1357
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 23,
+     "onset_rate": 0.359,
+     "struct_auc": 0.5668,
+     "wealth_auc": 0.4581,
+     "spread": 0.1087
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 20,
+     "onset_rate": 0.377,
+     "struct_auc": 0.5652,
+     "wealth_auc": 0.5197,
+     "spread": 0.0455
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 63,
+     "onset_rate": 0.457,
+     "struct_auc": 0.6297,
+     "wealth_auc": 0.5738,
+     "spread": 0.056
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 76,
+     "onset_rate": 0.547,
+     "struct_auc": 0.6468,
+     "wealth_auc": 0.6543,
+     "spread": -0.0075
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 79,
+     "onset_rate": 0.556,
+     "struct_auc": 0.6835,
+     "wealth_auc": 0.6968,
+     "spread": -0.0133
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 76,
+     "onset_rate": 0.484,
+     "struct_auc": 0.6909,
+     "wealth_auc": 0.6954,
+     "spread": -0.0045
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 69,
+     "onset_rate": 0.431,
+     "struct_auc": 0.7542,
+     "wealth_auc": 0.7788,
+     "spread": -0.0246
+    }
+   ],
+   "trend": {
+    "slope": -0.0012156666666666668,
+    "pearson_r": -0.7874339124185036,
+    "p": 6.29007580679806e-05,
+    "n_epochs": 19,
+    "delta": -0.2468,
+    "mean_spread": 0.0987
+   }
+  },
+  "external": {
+   "curve": [
+    {
+     "year": 1816,
+     "n": 12,
+     "n_pos": 2,
+     "onset_rate": 0.167,
+     "struct_auc": 0.45,
+     "wealth_auc": 0.5,
+     "spread": -0.05
+    },
+    {
+     "year": 1826,
+     "n": 15,
+     "n_pos": 5,
+     "onset_rate": 0.333,
+     "struct_auc": 0.22,
+     "wealth_auc": 0.2,
+     "spread": 0.02
+    },
+    {
+     "year": 1836,
+     "n": 18,
+     "n_pos": 7,
+     "onset_rate": 0.389,
+     "struct_auc": 0.2987,
+     "wealth_auc": 0.1299,
+     "spread": 0.1688
+    },
+    {
+     "year": 1846,
+     "n": 22,
+     "n_pos": 9,
+     "onset_rate": 0.409,
+     "struct_auc": 0.4017,
+     "wealth_auc": 0.3419,
+     "spread": 0.0598
+    },
+    {
+     "year": 1856,
+     "n": 21,
+     "n_pos": 9,
+     "onset_rate": 0.429,
+     "struct_auc": 0.5741,
+     "wealth_auc": 0.4815,
+     "spread": 0.0926
+    },
+    {
+     "year": 1866,
+     "n": 25,
+     "n_pos": 7,
+     "onset_rate": 0.28,
+     "struct_auc": 0.5714,
+     "wealth_auc": 0.4603,
+     "spread": 0.1111
+    },
+    {
+     "year": 1876,
+     "n": 30,
+     "n_pos": 8,
+     "onset_rate": 0.267,
+     "struct_auc": 0.5966,
+     "wealth_auc": 0.5341,
+     "spread": 0.0625
+    },
+    {
+     "year": 1886,
+     "n": 32,
+     "n_pos": 8,
+     "onset_rate": 0.25,
+     "struct_auc": 0.5547,
+     "wealth_auc": 0.4688,
+     "spread": 0.0859
+    },
+    {
+     "year": 1896,
+     "n": 34,
+     "n_pos": 14,
+     "onset_rate": 0.412,
+     "struct_auc": 0.4929,
+     "wealth_auc": 0.4214,
+     "spread": 0.0714
+    },
+    {
+     "year": 1906,
+     "n": 49,
+     "n_pos": 14,
+     "onset_rate": 0.286,
+     "struct_auc": 0.3867,
+     "wealth_auc": 0.3082,
+     "spread": 0.0786
+    },
+    {
+     "year": 1916,
+     "n": 46,
+     "n_pos": 18,
+     "onset_rate": 0.391,
+     "struct_auc": 0.3085,
+     "wealth_auc": 0.25,
+     "spread": 0.0585
+    },
+    {
+     "year": 1926,
+     "n": 62,
+     "n_pos": 27,
+     "onset_rate": 0.435,
+     "struct_auc": 0.381,
+     "wealth_auc": 0.3735,
+     "spread": 0.0074
+    },
+    {
+     "year": 1936,
+     "n": 64,
+     "n_pos": 31,
+     "onset_rate": 0.484,
+     "struct_auc": 0.4462,
+     "wealth_auc": 0.3695,
+     "spread": 0.0767
+    },
+    {
+     "year": 1946,
+     "n": 53,
+     "n_pos": 19,
+     "onset_rate": 0.358,
+     "struct_auc": 0.5294,
+     "wealth_auc": 0.5201,
+     "spread": 0.0093
+    },
+    {
+     "year": 1956,
+     "n": 138,
+     "n_pos": 44,
+     "onset_rate": 0.319,
+     "struct_auc": 0.5503,
+     "wealth_auc": 0.5261,
+     "spread": 0.0242
+    },
+    {
+     "year": 1966,
+     "n": 139,
+     "n_pos": 44,
+     "onset_rate": 0.317,
+     "struct_auc": 0.5859,
+     "wealth_auc": 0.5419,
+     "spread": 0.044
+    },
+    {
+     "year": 1976,
+     "n": 142,
+     "n_pos": 45,
+     "onset_rate": 0.317,
+     "struct_auc": 0.5462,
+     "wealth_auc": 0.457,
+     "spread": 0.0891
+    },
+    {
+     "year": 1986,
+     "n": 157,
+     "n_pos": 39,
+     "onset_rate": 0.248,
+     "struct_auc": 0.5211,
+     "wealth_auc": 0.4518,
+     "spread": 0.0693
+    },
+    {
+     "year": 1996,
+     "n": 160,
+     "n_pos": 25,
+     "onset_rate": 0.156,
+     "struct_auc": 0.5099,
+     "wealth_auc": 0.459,
+     "spread": 0.051
+    }
+   ],
+   "trend": {
+    "slope": -3.9614035087719294e-05,
+    "pearson_r": -0.048182426361185894,
+    "p": 0.844706354307983,
+    "n_epochs": 19,
+    "delta": 0.101,
+    "mean_spread": 0.0595
+   }
+  }
+ },
+ "verdict": "FAIL_domestic_worse",
+ "verdict_detail": {}
+}
