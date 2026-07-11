@@ -1,0 +1,42 @@
+{
+ "body": "EU-27",
+ "n_members_with_data": 27,
+ "missing": [],
+ "weights": "fixed 2024 populations (millions), applied to both endpoints",
+ "caveat": "eastern members were not EU members in 1996; this is a counterfactual 'as if these 27 were one polity throughout'. Time-varying populations would shift weights (western pop grew via migration, eastern shrank) but would not flip the population/GDP-weighted decline, which is driven by the large core.",
+ "variants": {
+  "population_weighted": {
+   "p1_1996": 73.17,
+   "p1_2024": 72.09,
+   "dP1avg_pts": -1.08,
+   "gdp_1996": 18802,
+   "gdp_2024": 63618,
+   "gdp_growth_pct": 238.4,
+   "gap_delta": 0.225,
+   "divergence": true,
+   "p1_declined": true
+  },
+  "gdp_weighted": {
+   "p1_1996": 75.95,
+   "p1_2024": 73.52,
+   "dP1avg_pts": -2.43,
+   "gdp_1996": 18802,
+   "gdp_2024": 63618,
+   "gdp_growth_pct": 238.4,
+   "gap_delta": 0.238,
+   "divergence": true,
+   "p1_declined": true
+  },
+  "equal_per_country": {
+   "p1_1996": 70.09,
+   "p1_2024": 71.79,
+   "dP1avg_pts": 1.7,
+   "gdp_1996": 16466,
+   "gdp_2024": 65878,
+   "gdp_growth_pct": 300.1,
+   "gap_delta": 0.226,
+   "divergence": true,
+   "p1_declined": false
+  }
+ }
+}
