@@ -1,0 +1,205 @@
+{
+ "test": "T1_gate_regime_structure",
+ "curve_source": "erosion_component_B.dense_curve() unmodified; 19 pts 1816-1996",
+ "curve": [
+  {
+   "year": 1816,
+   "n": 12,
+   "onset_rate": 0.5,
+   "spread": 0.2222
+  },
+  {
+   "year": 1826,
+   "n": 15,
+   "onset_rate": 0.667,
+   "spread": 0.28
+  },
+  {
+   "year": 1836,
+   "n": 18,
+   "onset_rate": 0.556,
+   "spread": 0.1
+  },
+  {
+   "year": 1846,
+   "n": 22,
+   "onset_rate": 0.545,
+   "spread": 0.0833
+  },
+  {
+   "year": 1856,
+   "n": 21,
+   "onset_rate": 0.524,
+   "spread": 0.1727
+  },
+  {
+   "year": 1866,
+   "n": 25,
+   "onset_rate": 0.36,
+   "spread": 0.1875
+  },
+  {
+   "year": 1876,
+   "n": 30,
+   "onset_rate": 0.4,
+   "spread": 0.1019
+  },
+  {
+   "year": 1886,
+   "n": 32,
+   "onset_rate": 0.469,
+   "spread": 0.1588
+  },
+  {
+   "year": 1896,
+   "n": 34,
+   "onset_rate": 0.559,
+   "spread": 0.1298
+  },
+  {
+   "year": 1906,
+   "n": 49,
+   "onset_rate": 0.347,
+   "spread": 0.1369
+  },
+  {
+   "year": 1916,
+   "n": 46,
+   "onset_rate": 0.478,
+   "spread": 0.1193
+  },
+  {
+   "year": 1926,
+   "n": 62,
+   "onset_rate": 0.597,
+   "spread": 0.0908
+  },
+  {
+   "year": 1936,
+   "n": 64,
+   "onset_rate": 0.641,
+   "spread": 0.1029
+  },
+  {
+   "year": 1946,
+   "n": 53,
+   "onset_rate": 0.566,
+   "spread": 0.071
+  },
+  {
+   "year": 1956,
+   "n": 138,
+   "onset_rate": 0.522,
+   "spread": 0.064
+  },
+  {
+   "year": 1966,
+   "n": 139,
+   "onset_rate": 0.597,
+   "spread": 0.0307
+  },
+  {
+   "year": 1976,
+   "n": 142,
+   "onset_rate": 0.634,
+   "spread": 0.0566
+  },
+  {
+   "year": 1986,
+   "n": 157,
+   "onset_rate": 0.554,
+   "spread": 0.021
+  },
+  {
+   "year": 1996,
+   "n": 160,
+   "onset_rate": 0.475,
+   "spread": -0.0197
+  }
+ ],
+ "per_regime_slopes": {
+  "pre_gold": {
+   "is_gold": false,
+   "slope": -0.0014631428571428575,
+   "p": 0.47102001839834423,
+   "n": 6,
+   "mean_level": 0.17428333333333335
+  },
+  "classical_gold": {
+   "is_gold": true,
+   "slope": 0.0007599999999999998,
+   "p": 0.5820148486587569,
+   "n": 4,
+   "mean_level": 0.13185
+  },
+  "interwar_disruption": {
+   "is_gold": false,
+   "slope": -0.00082,
+   "p": 0.6113509919140451,
+   "n": 3,
+   "mean_level": 0.10433333333333333
+  },
+  "bretton_woods": {
+   "is_gold": true,
+   "slope": -0.002015,
+   "p": 0.2293944763570687,
+   "n": 3,
+   "mean_level": 0.055233333333333336
+  },
+  "post_1971_fiat": {
+   "is_gold": false,
+   "slope": -0.0038150000000000002,
+   "p": 0.02455555082276865,
+   "n": 3,
+   "mean_level": 0.0193
+  }
+ },
+ "mean_gold_slope": -0.0006275,
+ "mean_nongold_slope": -0.0020327142857142857,
+ "model_comparison": {
+  "single_linear": {
+   "params": 2,
+   "rss": 0.030196,
+   "aic": -64.526,
+   "bic": -62.637,
+   "slope": -0.0010564035087719335
+  },
+  "segmented_regime_knots": {
+   "params": 8,
+   "rss": 0.02625,
+   "aic": -55.186,
+   "bic": -47.631,
+   "knots": [
+    1870,
+    1914,
+    1919,
+    1944,
+    1971,
+    1985
+   ]
+  },
+  "delta_aic_lin_minus_seg": -9.34,
+  "delta_bic_lin_minus_seg": -15.006,
+  "aic_favors_segmented(>=2)": false
+ },
+ "gold_dummy_regression": {
+  "form": "spread ~ 1 + year_centered + GOLD + year_centered:GOLD",
+  "coef_intercept": 0.11012,
+  "coef_year": -0.001058,
+  "p_year": 0.00012449486235299102,
+  "coef_GOLD": 0.00275,
+  "p_GOLD": 0.9035889293321862,
+  "coef_year_x_GOLD": -2e-05,
+  "p_interaction": 0.9708446298933517
+ },
+ "directional_predictions": {
+  "P1a_gold_slopes_more_negative": false,
+  "P1b_interwar_not_steeper_than_gold": false,
+  "P1c_post71_not_steeper_than_BW": false,
+  "classical_gold_slope": 0.0007599999999999998,
+  "bretton_woods_slope": -0.002015,
+  "interwar_slope": -0.00082,
+  "post71_fiat_slope": -0.0038150000000000002
+ },
+ "verdict": "FAIL"
+}

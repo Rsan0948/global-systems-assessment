@@ -25,6 +25,7 @@
 | External Support Index (ESI) control — Finding 8 (registered null) | ✅ done | (this branch) |
 | Erosion decomposition A/B/C — Finding 9 (compound hypothesis largely not supported) | ✅ done | (this branch) |
 | Wealth–institution decoupling battery — Finding 10 (registered null; hypothesis falsified) | ✅ done | (this branch) |
+| Gold-standard monetary-regime substitute — Finding 11 (registered null; fails at gate) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -377,6 +378,50 @@ WGI variance-compression as formal-legal institutions diffuse), which is explici
 status: **registered null; hypothesis falsified in its pre-registered form.** Full
 write-up `docs/DECOUPLING_RESULTS.md`; artifacts `data/robustness/decoupling/*`;
 code `scripts/robustness/decoupling_*.py`.
+
+## Finding 11 — The erosion is NOT gold-standard monetary-regime structure (registered null; fails at the gate)
+
+Finding 10 left the residual open and pointed (by elimination) at slow, monotone
+processes. A structurally different candidate remained: that the erosion is not
+gradual technological change but a **bounded, system-level monetary regime** — the
+international **gold standard** acting as an *external institutional substitute*
+(supplying monetary credibility without domestic institutional quality) from
+~1870–1971, with the **post-1971 fiat era** removing the anchor and forcing the
+Finding-10 re-coupling. This makes a sharp, falsifiable prediction the
+industrialization story does not: the erosion curve should have **internal structure
+mapping onto monetary-regime boundaries** (steeper during gold, recovery in the
+interwar collapse and after 1971). Pre-registered (`GOLD_STANDARD_PREREGISTRATION.md`,
+sha256 `e7dc386…`, regime periodization frozen as historical fact) with Test 1 as a
+hard gate. **It fails the gate, with reversed directional predictions.**
+
+On the *committed, unmodified* 19-point dense curve (Finding 9 B1), per-regime erosion
+slopes are: pre-gold −0.00146, **classical gold +0.00076** (flat/rising — no erosion
+in the flagship gold zone), interwar −0.00082, **Bretton Woods −0.00202**, **post-1971
+fiat −0.00382** (steepest of all, and the *only* significant slope, p=0.025). Mean
+**gold** slope −0.00063 vs mean **non-gold** −0.00203 — non-gold periods erode ~3×
+*faster*, the reverse of the hypothesis. A regime-**segmented** model (knots at the
+frozen regime boundaries) is crushed by the **single linear trend** on AIC (Δ=−9.3)
+and BIC (Δ=−15.0); the gold-dummy regression's GOLD and year×GOLD coefficients are
+p=0.90 and p=0.97. The curve is **smooth and featureless with respect to monetary
+regimes** — the pre-registered falsification condition. Per the frozen stop rule,
+Tests 2–6 were **not run** (no fishing past a failed gate).
+
+**Reconciliation with Finding 10 (required):** the modern P1↔GDP re-coupling is on the
+**wealth pathway**; this gate is the **political-outcome (conflict-rupture) pathway**.
+The hypothesis needed the fiat era to re-couple the political-outcome signal, but that
+signal **keeps eroding through 1996, fastest in the fiat block** — so the re-coupling
+is confined to P1↔GDP and, critically, its **timing does not map to 1971**. Consistent
+with Finding 10; fatal to the monetary-regime story.
+
+**Verdict:** the eleventh hypothesis to fail on the longitudinal erosion. The
+**smoothness itself** is now the sharpest constraint: the erosion operates
+**continuously**, not in the discrete regime-linked steps a monetary substitute (or
+any punctuated cause) requires — pointing away from the whole family of
+regime/event-based explanations and back toward a slow monotone process (Finding 9's
+candidate residuals: measurement-regime maturation / variance compression / changing
+conflict character). Epistemic status: **registered null; hypothesis falsified at the
+gate.** Write-up `docs/GOLD_STANDARD_RESULTS.md`; artifact
+`data/robustness/gold_standard/t1_gate.json`; code `scripts/robustness/gold_t1_gate.py`.
 
 ---
 
