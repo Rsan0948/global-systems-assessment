@@ -1,0 +1,1638 @@
+{
+  "workstream": "P2_temporal_holdout_GENERATE",
+  "made_at_year": 2012,
+  "grade_at_year": 2024,
+  "label": "reduced-contamination retrodiction (historical values are 2025-anchored revisions)",
+  "prereg_sha256_16": "fbd991047fc980d3",
+  "note": "mechanical predictions are pillar-level, independent of V1-vs-current weights",
+  "n_predicted": 90,
+  "n_skipped": 1,
+  "predictions": [
+    {
+      "iso": "ARE",
+      "country": "United Arab Emirates",
+      "mi_score": 0.6881,
+      "P1": 0.6833,
+      "P4": 0.6723,
+      "pillar_spread": 0.1953,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": -0.0109,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "ARG",
+      "country": "Argentina",
+      "mi_score": 0.6619,
+      "P1": 0.4402,
+      "P4": 0.8559,
+      "pillar_spread": 0.4157,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.4157,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "ARM",
+      "country": "Armenia",
+      "mi_score": 0.6246,
+      "P1": 0.4952,
+      "P4": 0.7844,
+      "pillar_spread": 0.2893,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2893,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "BEL",
+      "country": "Belgium",
+      "mi_score": 0.8069,
+      "P1": 0.7829,
+      "P4": 0.8888,
+      "pillar_spread": 0.2182,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1059,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "BGD",
+      "country": "Bangladesh",
+      "mi_score": 0.4775,
+      "P1": 0.353,
+      "P4": 0.7441,
+      "pillar_spread": 0.4243,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3911,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "BIH",
+      "country": "Bosnia-Herzegovina",
+      "mi_score": 0.5957,
+      "P1": 0.4704,
+      "P4": 0.7731,
+      "pillar_spread": 0.3187,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3027,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "BOL",
+      "country": "Bolivia",
+      "mi_score": 0.5228,
+      "P1": 0.3994,
+      "P4": 0.6967,
+      "pillar_spread": 0.3408,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2973,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "BRA",
+      "country": "Brazil",
+      "mi_score": 0.6439,
+      "P1": 0.5207,
+      "P4": 0.8396,
+      "pillar_spread": 0.3189,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3189,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "BWA",
+      "country": "Botswana",
+      "mi_score": 0.6487,
+      "P1": 0.6621,
+      "P4": 0.8321,
+      "pillar_spread": 0.3676,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1701,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "CAN",
+      "country": "Canada",
+      "mi_score": 0.8278,
+      "P1": 0.8491,
+      "P4": 0.8746,
+      "pillar_spread": 0.235,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0255,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "CHL",
+      "country": "Chile",
+      "mi_score": 0.73,
+      "P1": 0.7602,
+      "P4": 0.8249,
+      "pillar_spread": 0.2989,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0647,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "CHN",
+      "country": "China",
+      "mi_score": 0.6235,
+      "P1": 0.4594,
+      "P4": 0.8222,
+      "pillar_spread": 0.3718,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3628,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "CIV",
+      "country": "Cote d'Ivoire",
+      "mi_score": 0.3906,
+      "P1": 0.3524,
+      "P4": 0.554,
+      "pillar_spread": 0.2859,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2016,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "CMR",
+      "country": "Cameroon",
+      "mi_score": 0.4579,
+      "P1": 0.3493,
+      "P4": 0.683,
+      "pillar_spread": 0.342,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3337,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "COD",
+      "country": "DR Congo",
+      "mi_score": 0.3148,
+      "P1": 0.2565,
+      "P4": 0.3342,
+      "pillar_spread": 0.3315,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0777,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "COL",
+      "country": "Colombia",
+      "mi_score": 0.5818,
+      "P1": 0.4823,
+      "P4": 0.794,
+      "pillar_spread": 0.4299,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3117,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "CRI",
+      "country": "Costa Rica",
+      "mi_score": 0.6922,
+      "P1": 0.6103,
+      "P4": 0.854,
+      "pillar_spread": 0.3332,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2438,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "CUB",
+      "country": "Cuba",
+      "mi_score": 0.6762,
+      "P1": 0.4125,
+      "P4": 0.9751,
+      "pillar_spread": 0.5626,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.5626,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "CZE",
+      "country": "Czech Republic",
+      "mi_score": 0.7651,
+      "P1": 0.6381,
+      "P4": 0.8509,
+      "pillar_spread": 0.2439,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2128,
+        "trajectory": "monitor",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "DEU",
+      "country": "Germany",
+      "mi_score": 0.8308,
+      "P1": 0.8198,
+      "P4": 0.8913,
+      "pillar_spread": 0.2066,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0716,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "DOM",
+      "country": "Dominican Republic",
+      "mi_score": 0.5931,
+      "P1": 0.4311,
+      "P4": 0.8408,
+      "pillar_spread": 0.4097,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.4097,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "EGY",
+      "country": "Egypt",
+      "mi_score": 0.5233,
+      "P1": 0.4187,
+      "P4": 0.7609,
+      "pillar_spread": 0.4438,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3422,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "ESP",
+      "country": "Spain",
+      "mi_score": 0.7443,
+      "P1": 0.6953,
+      "P4": 0.8635,
+      "pillar_spread": 0.2465,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1682,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "EST",
+      "country": "Estonia",
+      "mi_score": 0.7612,
+      "P1": 0.7265,
+      "P4": 0.8275,
+      "pillar_spread": 0.2172,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.101,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "ETH",
+      "country": "Ethiopia",
+      "mi_score": 0.3955,
+      "P1": 0.4015,
+      "P4": 0.4921,
+      "pillar_spread": 0.2084,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0906,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "FJI",
+      "country": "Fiji",
+      "mi_score": 0.5338,
+      "P1": 0.4363,
+      "P4": 0.7708,
+      "pillar_spread": 0.4918,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3345,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "FRA",
+      "country": "France",
+      "mi_score": 0.787,
+      "P1": 0.7592,
+      "P4": 0.8784,
+      "pillar_spread": 0.1952,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1191,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "GAB",
+      "country": "Gabon",
+      "mi_score": 0.5105,
+      "P1": 0.408,
+      "P4": 0.5856,
+      "pillar_spread": 0.2699,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1776,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "GBR",
+      "country": "United Kingdom",
+      "mi_score": 0.8071,
+      "P1": 0.7956,
+      "P4": 0.8717,
+      "pillar_spread": 0.1862,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0761,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "GEO",
+      "country": "Georgia",
+      "mi_score": 0.6225,
+      "P1": 0.6031,
+      "P4": 0.7692,
+      "pillar_spread": 0.3829,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1661,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "GHA",
+      "country": "Ghana",
+      "mi_score": 0.5283,
+      "P1": 0.528,
+      "P4": 0.6185,
+      "pillar_spread": 0.2464,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0905,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "GNQ",
+      "country": "Equatorial Guinea",
+      "mi_score": 0.4419,
+      "P1": 0.2749,
+      "P4": 0.6443,
+      "pillar_spread": 0.3811,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3694,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 3,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "GRC",
+      "country": "Greece",
+      "mi_score": 0.6749,
+      "P1": 0.5295,
+      "P4": 0.8392,
+      "pillar_spread": 0.3553,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3096,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "GTM",
+      "country": "Guatemala",
+      "mi_score": 0.5394,
+      "P1": 0.3971,
+      "P4": 0.798,
+      "pillar_spread": 0.4009,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.4009,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "HND",
+      "country": "Honduras",
+      "mi_score": 0.5171,
+      "P1": 0.3781,
+      "P4": 0.7229,
+      "pillar_spread": 0.3448,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3448,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "HRV",
+      "country": "Croatia",
+      "mi_score": 0.6923,
+      "P1": 0.5621,
+      "P4": 0.8173,
+      "pillar_spread": 0.2745,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2552,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "HTI",
+      "country": "Haiti",
+      "mi_score": 0.4287,
+      "P1": 0.2701,
+      "P4": 0.6105,
+      "pillar_spread": 0.3404,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3404,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 3,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "HUN",
+      "country": "Hungary",
+      "mi_score": 0.7267,
+      "P1": 0.6211,
+      "P4": 0.8302,
+      "pillar_spread": 0.2159,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2091,
+        "trajectory": "monitor",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "IDN",
+      "country": "Indonesia",
+      "mi_score": 0.5707,
+      "P1": 0.4518,
+      "P4": 0.7991,
+      "pillar_spread": 0.3566,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3473,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "IND",
+      "country": "India",
+      "mi_score": 0.5624,
+      "P1": 0.4732,
+      "P4": 0.7708,
+      "pillar_spread": 0.3651,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2976,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "IRL",
+      "country": "Ireland",
+      "mi_score": 0.818,
+      "P1": 0.7729,
+      "P4": 0.8972,
+      "pillar_spread": 0.1853,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1243,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "IRQ",
+      "country": "Iraq",
+      "mi_score": 0.3866,
+      "P1": 0.2961,
+      "P4": 0.5209,
+      "pillar_spread": 0.4132,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2248,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "ISL",
+      "country": "Iceland",
+      "mi_score": 0.8022,
+      "P1": 0.804,
+      "P4": 0.8884,
+      "pillar_spread": 0.391,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0844,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "ISR",
+      "country": "Israel",
+      "mi_score": 0.7155,
+      "P1": 0.7022,
+      "P4": 0.8632,
+      "pillar_spread": 0.477,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.161,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "ITA",
+      "country": "Italy",
+      "mi_score": 0.7281,
+      "P1": 0.5752,
+      "P4": 0.8739,
+      "pillar_spread": 0.2987,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2987,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "JAM",
+      "country": "Jamaica",
+      "mi_score": 0.6076,
+      "P1": 0.495,
+      "P4": 0.8191,
+      "pillar_spread": 0.383,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3241,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "JPN",
+      "country": "Japan",
+      "mi_score": 0.8077,
+      "P1": 0.7712,
+      "P4": 0.8785,
+      "pillar_spread": 0.1779,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1073,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "KAZ",
+      "country": "Kazakhstan",
+      "mi_score": 0.5781,
+      "P1": 0.4069,
+      "P4": 0.7384,
+      "pillar_spread": 0.3744,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3315,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "KOR",
+      "country": "South Korea",
+      "mi_score": 0.7818,
+      "P1": 0.6932,
+      "P4": 0.8716,
+      "pillar_spread": 0.2084,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1784,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "LBN",
+      "country": "Lebanon",
+      "mi_score": 0.5827,
+      "P1": 0.4336,
+      "P4": 0.8426,
+      "pillar_spread": 0.5055,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.409,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "LBY",
+      "country": "Libya",
+      "mi_score": 0.4307,
+      "P1": 0.2947,
+      "P4": 0.5644,
+      "pillar_spread": 0.5091,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2697,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "LKA",
+      "country": "Sri Lanka",
+      "mi_score": 0.5794,
+      "P1": 0.4936,
+      "P4": 0.8304,
+      "pillar_spread": 0.4672,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3368,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "LTU",
+      "country": "Lithuania",
+      "mi_score": 0.7289,
+      "P1": 0.6419,
+      "P4": 0.8317,
+      "pillar_spread": 0.2554,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1897,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "LVA",
+      "country": "Latvia",
+      "mi_score": 0.7089,
+      "P1": 0.6214,
+      "P4": 0.8065,
+      "pillar_spread": 0.2249,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1851,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "MLI",
+      "country": "Mali",
+      "mi_score": 0.4106,
+      "P1": 0.3957,
+      "P4": 0.5517,
+      "pillar_spread": 0.2144,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.156,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "MMR",
+      "country": "Myanmar",
+      "mi_score": 0.4404,
+      "P1": 0.2385,
+      "P4": 0.7315,
+      "pillar_spread": 0.493,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.493,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 3,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "MNG",
+      "country": "Mongolia",
+      "mi_score": 0.5614,
+      "P1": 0.4462,
+      "P4": 0.6285,
+      "pillar_spread": 0.3913,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1823,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "MUS",
+      "country": "Mauritius",
+      "mi_score": 0.7107,
+      "P1": 0.681,
+      "P4": 0.849,
+      "pillar_spread": 0.3266,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.168,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "MYS",
+      "country": "Malaysia",
+      "mi_score": 0.6758,
+      "P1": 0.6131,
+      "P4": 0.8279,
+      "pillar_spread": 0.2855,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2148,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "NGA",
+      "country": "Nigeria",
+      "mi_score": 0.3985,
+      "P1": 0.3519,
+      "P4": 0.7099,
+      "pillar_spread": 0.4801,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.358,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "NIC",
+      "country": "Nicaragua",
+      "mi_score": 0.515,
+      "P1": 0.3921,
+      "P4": 0.6766,
+      "pillar_spread": 0.3474,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2846,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "NPL",
+      "country": "Nepal",
+      "mi_score": 0.4797,
+      "P1": 0.3647,
+      "P4": 0.6948,
+      "pillar_spread": 0.379,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3301,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "OMN",
+      "country": "Oman",
+      "mi_score": 0.5989,
+      "P1": 0.5742,
+      "P4": 0.4993,
+      "pillar_spread": 0.3144,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": -0.0749,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "PAK",
+      "country": "Pakistan",
+      "mi_score": 0.44,
+      "P1": 0.3661,
+      "P4": 0.7581,
+      "pillar_spread": 0.581,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.392,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "PER",
+      "country": "Peru",
+      "mi_score": 0.5856,
+      "P1": 0.4866,
+      "P4": 0.7758,
+      "pillar_spread": 0.335,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2893,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "PNG",
+      "country": "Papua New Guinea",
+      "mi_score": 0.474,
+      "P1": 0.3876,
+      "P4": 0.6111,
+      "pillar_spread": 0.2235,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2235,
+        "trajectory": "monitor",
+        "volatility": "moderate",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "POL",
+      "country": "Poland",
+      "mi_score": 0.7336,
+      "P1": 0.6532,
+      "P4": 0.8004,
+      "pillar_spread": 0.2568,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1471,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "RUS",
+      "country": "Russia",
+      "mi_score": 0.5764,
+      "P1": 0.3789,
+      "P4": 0.6974,
+      "pillar_spread": 0.4161,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3185,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "RWA",
+      "country": "Rwanda",
+      "mi_score": 0.4764,
+      "P1": 0.516,
+      "P4": 0.4926,
+      "pillar_spread": 0.2037,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": -0.0234,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "SAU",
+      "country": "Saudi Arabia",
+      "mi_score": 0.552,
+      "P1": 0.519,
+      "P4": 0.4417,
+      "pillar_spread": 0.333,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": -0.0773,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "SDN",
+      "country": "Sudan",
+      "mi_score": 0.3691,
+      "P1": 0.26,
+      "P4": 0.6755,
+      "pillar_spread": 0.4996,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.4155,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 3,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "SGP",
+      "country": "Singapore",
+      "mi_score": 0.8564,
+      "P1": 0.8852,
+      "P4": 0.9458,
+      "pillar_spread": 0.1858,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.0606,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "SOM",
+      "country": "Somalia",
+      "mi_score": 0.1023,
+      "P1": 0.1431,
+      "P4": 0.061,
+      "pillar_spread": 0.082,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": -0.082,
+        "trajectory": "sustain_or_improve",
+        "volatility": "low",
+        "level": "decline_risk",
+        "durability": "durable_balanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "SRB",
+      "country": "Serbia",
+      "mi_score": 0.6314,
+      "P1": 0.4711,
+      "P4": 0.8035,
+      "pillar_spread": 0.3324,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3324,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "SSD",
+      "country": "South Sudan",
+      "mi_score": 0.3779,
+      "P1": 0.2812,
+      "P4": 0.5181,
+      "pillar_spread": 0.2682,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2368,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "SVK",
+      "country": "Slovakia",
+      "mi_score": 0.7274,
+      "P1": 0.601,
+      "P4": 0.8465,
+      "pillar_spread": 0.248,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2455,
+        "trajectory": "monitor",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "SVN",
+      "country": "Slovenia",
+      "mi_score": 0.774,
+      "P1": 0.662,
+      "P4": 0.8528,
+      "pillar_spread": 0.2379,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1908,
+        "trajectory": "sustain_or_improve",
+        "volatility": "moderate",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "THA",
+      "country": "Thailand",
+      "mi_score": 0.6142,
+      "P1": 0.5074,
+      "P4": 0.8445,
+      "pillar_spread": 0.4402,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3371,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "TLS",
+      "country": "East Timor",
+      "mi_score": 0.4584,
+      "P1": 0.3407,
+      "P4": 0.4727,
+      "pillar_spread": 0.2721,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1321,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "TTO",
+      "country": "Trinidad and Tobago",
+      "mi_score": 0.6014,
+      "P1": 0.5353,
+      "P4": 0.6738,
+      "pillar_spread": 0.3004,
+      "safeguard_J_status": "clear",
+      "predictions": {
+        "p4_minus_p1_gap": 0.1384,
+        "trajectory": "sustain_or_improve",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "TUN",
+      "country": "Tunisia",
+      "mi_score": 0.5984,
+      "P1": 0.5026,
+      "P4": 0.7637,
+      "pillar_spread": 0.3009,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2611,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "TUR",
+      "country": "Turkey",
+      "mi_score": 0.632,
+      "P1": 0.5632,
+      "P4": 0.8735,
+      "pillar_spread": 0.4418,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3104,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "UKR",
+      "country": "Ukraine",
+      "mi_score": 0.6135,
+      "P1": 0.3828,
+      "P4": 0.8006,
+      "pillar_spread": 0.4177,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.4177,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "URY",
+      "country": "Uruguay",
+      "mi_score": 0.7149,
+      "P1": 0.6691,
+      "P4": 0.8724,
+      "pillar_spread": 0.3684,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2033,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "UZB",
+      "country": "Uzbekistan",
+      "mi_score": 0.4997,
+      "P1": 0.2859,
+      "P4": 0.6921,
+      "pillar_spread": 0.4491,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.4062,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 3,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "VEN",
+      "country": "Venezuela",
+      "mi_score": 0.5239,
+      "P1": 0.2736,
+      "P4": 0.8119,
+      "pillar_spread": 0.5383,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.5383,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "decline_risk",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 3,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "VNM",
+      "country": "Vietnam",
+      "mi_score": 0.5827,
+      "P1": 0.4194,
+      "P4": 0.7306,
+      "pillar_spread": 0.3112,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.3112,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "XKX",
+      "country": "Kosovo",
+      "mi_score": 0.5529,
+      "P1": 0.4568,
+      "P4": 0.6729,
+      "pillar_spread": 0.2161,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2161,
+        "trajectory": "monitor",
+        "volatility": "moderate",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 0,
+        "elevated_crisis_vulnerability": false
+      }
+    },
+    {
+      "iso": "YEM",
+      "country": "Yemen",
+      "mi_score": 0.3908,
+      "P1": 0.3164,
+      "P4": 0.6108,
+      "pillar_spread": 0.4202,
+      "safeguard_J_status": "flagged",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2945,
+        "trajectory": "stress",
+        "volatility": "high",
+        "level": "hold",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 2,
+        "elevated_crisis_vulnerability": true
+      }
+    },
+    {
+      "iso": "ZAF",
+      "country": "South Africa",
+      "mi_score": 0.6268,
+      "P1": 0.5565,
+      "P4": 0.8102,
+      "pillar_spread": 0.2695,
+      "safeguard_J_status": "borderline",
+      "predictions": {
+        "p4_minus_p1_gap": 0.2536,
+        "trajectory": "monitor",
+        "volatility": "high",
+        "level": "improvement_capacity",
+        "durability": "unbalanced",
+        "vulnerability_score_0_3": 1,
+        "elevated_crisis_vulnerability": true
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "iso": "ERI",
+      "country": "Eritrea"
+    }
+  ]
+}
