@@ -22,8 +22,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from mi.scoring import (score_country, get_tier, get_configuration_profile,
                         calculate_pillar_spread)
-from mi.diagnostics import below_floor_diagnostic, ascent_potential
-from mi.panel import DISPLAY_FIX, iter_universe
+from mi.diagnostics import (below_floor_diagnostic, ascent_potential,
+                            classify_strategy, assess_vulnerability,
+                            movement_quality, accountability_gap)
+from mi.safeguards import evaluate_all_safeguards
+from mi.panel import DISPLAY_FIX, iter_universe, indicators_for
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT.parent / "mi-website" / "web" / "public" / "data"
@@ -44,6 +47,94 @@ INDICATOR_SOURCES = {
 }
 def slugify(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+PILLARS_L = ["P1", "P2", "P3", "P4", "P5"]
+PRIOR_YEAR = 2014  # ~10y prior scored state, for movement quality (real-vs-hollow ascent)
+_SRC = ROOT / "data" / "sources"
+
+
+def _load_json(path, default):
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return default
+
+
+def strip_dashes(obj):
+    """The site copy uses plain hyphens only - no em/en dashes. The engine text is the
+    source of truth; the site reformats it. Recursively cleans every emitted string."""
+    if isinstance(obj, str):
+        return obj.replace("—", "-").replace("–", "-").replace("―", "-")
+    if isinstance(obj, list):
+        return [strip_dashes(x) for x in obj]
+    if isinstance(obj, dict):
+        return {k: strip_dashes(v) for k, v in obj.items()}
+    return obj
+
+
+# Curated per-country context (option B) — lets the event-safeguards fire on real modern
+# states; and the safeguard→case lineage (which case produced each safeguard, and why).
+COUNTRY_CONTEXT = _load_json(_SRC / "country_context.json", {})
+DERIVATIONS = _load_json(_SRC / "safeguard_derivations.json", {})
+
+# Board order: the two always-evaluable structural gates first (J durability, E rentier),
+# then the seven condition/event safeguards. Mod4 is comparison-scoped (lives on /compare);
+# Mod8 is a standing framing note, surfaced separately.
+SAFEGUARD_ORDER = ["J", "E", "A", "B", "C", "D", "F", "G", "I"]
+_J_STATUS = {"flagged": "firing", "borderline": "borderline", "clear": "clear"}
+
+
+def build_safeguard_board(sg_raw, in_table):
+    """Turn the raw safeguard evaluations into display tiles with an honest status:
+    firing / borderline / clear / not_assessed. J and E are always evaluable (pillars +
+    panel rents); the condition safeguards read 'not_assessed' unless the country is in the
+    curated context table, so we never assert a false 'clear'. Each tile carries the case
+    that derived it (from safeguard_derivations.json)."""
+    board = []
+    for key in SAFEGUARD_ORDER:
+        r = sg_raw.get(key, {})
+        triggered = bool(r.get("triggered", False))
+        if key == "J":
+            status = _J_STATUS.get(r.get("status"), "clear")
+            headline = f"income-institutions gap {r.get('gap', 0):+.2f} · {r.get('status', '')}"
+        elif key == "E":
+            status = "firing" if triggered else "clear"
+            headline = r.get("tier") or "below 15% of GDP · no penalty"
+        else:
+            status = "firing" if triggered else ("clear" if in_table else "not_assessed")
+            headline = {"firing": "condition present", "clear": "no such condition",
+                        "not_assessed": "needs curated input"}[status]
+        der = DERIVATIONS.get(key, {})
+        detail = _pillar_names_in((r.get("explanation") or "").replace("—", "-")).strip()
+        board.append({
+            "key": key, "name": r.get("name") or der.get("name", key),
+            "status": status, "triggered": triggered, "headline": headline,
+            "detail": detail, "modification": r.get("modification"),
+            "tier": r.get("tier"), "origin_cases": der.get("origin_cases", []),
+            "why": der.get("why"), "validated_by": der.get("validated_by", []),
+        })
+    return board
+
+
+def build_context(iso, name, ind):
+    """Assemble the engine context for one country: curated flags + panel-derived resource
+    rents (so E fires from panel data) + a ~10y-prior pillar vector (for movement + the J
+    convergence qualifier). Returns (context, in_table, prior_pillars)."""
+    ctx = dict(COUNTRY_CONTEXT.get(iso, {}))
+    in_table = iso in COUNTRY_CONTEXT
+    if ind.get("resource_rents_pct_gdp") is not None:
+        ctx.setdefault("resource_rents_pct_gdp", ind.get("resource_rents_pct_gdp"))
+    prior_ind = indicators_for(iso, PRIOR_YEAR) or indicators_for(name, PRIOR_YEAR)
+    prior_pillars = None
+    if prior_ind:
+        ps = score_country(prior_ind, event_year=PRIOR_YEAR)
+        pp = ps.get("pillar_scores", {})
+        if ps.get("mi_score") is not None and all(pp.get(p) is not None for p in PILLARS_L):
+            prior_pillars = {p: round(pp[p], 3) for p in PILLARS_L}
+            ctx.setdefault("prior_pillars", prior_pillars)
+    return ctx, in_table, prior_pillars
 
 
 def chips_for(ind, tier, residual, spread, weakest, present):
@@ -195,32 +286,52 @@ def build():
         if mi is None:
             continue
         pillars = s["pillar_scores"]
-        scored.append((iso, name, ind, pillars, mi, get_tier(mi)["tier"], source))
+        scored.append((iso, name, ind, pillars, mi, get_tier(mi)["tier"], source, s))
         points.append((iso, mi, ind.get("gdp_per_capita_ppp")))
 
     residuals = fit_durability(points)
 
     summaries = []
-    for iso, name, ind, pillars, mi, tier, source in scored:
+    records = []                                   # (slug, full) — written after the firing tally
+    firing_tally = {k: 0 for k in SAFEGUARD_ORDER}  # how many countries each safeguard fires on
+    for iso, name, ind, pillars, mi, tier, source, s in scored:
         spread = calculate_pillar_spread(pillars)
         config = get_configuration_profile(pillars)
         weakest = config[-1][0] if config else None
         residual = residuals.get(iso)
-        present = [p for p in ["P1", "P2", "P3", "P4", "P5"] if pillars.get(p) is not None]
-        missing = [p for p in ["P1", "P2", "P3", "P4", "P5"] if pillars.get(p) is None]
+        present = [p for p in PILLARS_L if pillars.get(p) is not None]
+        missing = [p for p in PILLARS_L if pillars.get(p) is None]
         chips = chips_for(ind, tier, residual, spread, weakest, len(present))
         display = DISPLAY_FIX.get(name, name)  # readable name for the site; `name` stays the data key
         slug = slugify(display)
         summary = {
             "slug": slug, "name": display, "iso3": iso, "mi": round(mi, 3), "tier": tier,
             "pillars": {p: (round(pillars[p], 3) if pillars.get(p) is not None else None)
-                        for p in ["P1", "P2", "P3", "P4", "P5"]},
+                        for p in PILLARS_L},
             "chips": chips, "coverage": {"present": len(present), "total": 5, "missing": missing},
         }
         summaries.append(summary)
         indicators = [{"key": k, "value": v, "source": INDICATOR_SOURCES.get(k, "-")}
                       for k, v in ind.items()
                       if not (k.endswith("_min") or k.endswith("_max")) and v is not None]
+
+        # The full engine surface: safeguard board + diagnostics (previously computed then dropped).
+        ctx, in_table, prior_pillars = build_context(iso, name, ind)
+        sg_raw = evaluate_all_safeguards(s, ctx)
+        board = build_safeguard_board(sg_raw, in_table)
+        for t in board:
+            if t["status"] == "firing":
+                firing_tally[t["key"]] += 1
+        diagnostics = {
+            "context_curated": in_table,
+            "strategy": classify_strategy(s, ctx),
+            "vulnerability": assess_vulnerability(s, sg_raw),
+            "movement": movement_quality(pillars, prior_pillars) if prior_pillars else None,
+            "accountability_gap": accountability_gap(ind.get("voice_accountability"), pillars),
+            "sensitivity": s.get("sensitivity"),
+            "prior_year": PRIOR_YEAR if prior_pillars else None,
+        }
+
         full = dict(summary)
         full.update({
             "verdict": verdict(tier, residual, spread, weakest),
@@ -229,19 +340,30 @@ def build():
             "config": [[p, round(v, 3)] for p, v in config],
             "pillar_names": PILLAR_NAMES, "indicators": indicators, "data_year": YEAR,
             "source_tier": source, "checks": build_checks(pillars, mi, ind, weakest, residual),
+            "safeguards": board, "diagnostics": diagnostics,
         })
-        json.dump(full, open(OUT / "country" / f"{slug}.json", "w"), indent=1)
+        records.append((slug, full))
+
+    # inject "how many countries share this" onto each firing tile, then write (deterministic).
+    for slug, full in records:
+        for t in full["safeguards"]:
+            t["share_firing"] = firing_tally.get(t["key"], 0)
+        json.dump(strip_dashes(full), open(OUT / "country" / f"{slug}.json", "w"), indent=1)
 
     # full-coverage countries first (comparable), then partial - each by MI desc.
     # slug is the stable tiebreak so equal-MI countries (e.g. Denmark/Ireland) have
     # a deterministic order run-to-run.
     summaries.sort(key=lambda r: r["slug"])
     summaries.sort(key=lambda r: (r["coverage"]["present"] == 5, r["mi"]), reverse=True)
-    json.dump(summaries, open(OUT / "countries.json", "w"), indent=1)
+    json.dump(strip_dashes(summaries), open(OUT / "countries.json", "w"), indent=1)
     json.dump({"built": date.today().isoformat(), "count": len(summaries), "engine": "MI v3.3",
                "data_vintage": "WGI 2025-anchored", "world_states": 195,
+               "context_countries": len(COUNTRY_CONTEXT),
                "note": "Generated by the validated mi-research engine over all available public data. "
-                       "Countries with partial data show fewer pillars - gaps are shown, never faked."},
+                       "Each country carries the full safeguard board + diagnostics (strategy, "
+                       "vulnerability, movement, sensitivity). Countries with partial data show fewer "
+                       "pillars, and safeguards needing curated context read 'not assessed' - gaps are "
+                       "shown, never faked."},
               open(OUT / "meta.json", "w"), indent=1)
     full5 = sum(1 for s in summaries if s["coverage"]["present"] == 5)
     print(f"Wrote {len(summaries)} countries ({full5} with all 5 pillars) -> {OUT}")

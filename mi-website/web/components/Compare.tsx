@@ -170,7 +170,7 @@ export default function Compare({
                         <div className="h-full rounded-full" style={{ width: `${clamp01(va ?? 0) * 100}%`, background: CA, opacity: va == null ? 0.2 : 1 }} />
                       </div>
                       <span className="num w-9 text-right text-[11px]" style={{ color: aHi ? CA : "#a6a6bd", fontWeight: aHi ? 700 : 400 }}>
-                        {va == null ? "—" : va.toFixed(2)}
+                        {va == null ? "-" : va.toFixed(2)}
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -178,7 +178,7 @@ export default function Compare({
                         <div className="h-full rounded-full" style={{ width: `${clamp01(vb ?? 0) * 100}%`, background: CB, opacity: vb == null ? 0.2 : 1 }} />
                       </div>
                       <span className="num w-9 text-right text-[11px]" style={{ color: bHi ? CB : "#a6a6bd", fontWeight: bHi ? 700 : 400 }}>
-                        {vb == null ? "—" : vb.toFixed(2)}
+                        {vb == null ? "-" : vb.toFixed(2)}
                       </span>
                     </div>
                   </div>

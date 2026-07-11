@@ -8,7 +8,7 @@ WITHOUT touching the validated core.
 1. Create a directory: `experiments/your_experiment_name/`
 2. Add a `hypothesis.md` explaining what you're testing and why
 3. Copy and modify the relevant `mi/` module
-4. Run against the 20-case baseline using `scripts/run_retrodiction.py --validate`
+4. Run against the full corpus using `scripts/run_retrodiction.py --validate`
 5. Document results in `results.md`
 
 ## Rules
@@ -27,5 +27,5 @@ experiments/
     hypothesis.md      # What you're testing and why
     modified_scoring.py # Your modified code
     results.md         # What happened
-    baseline_comparison.json  # LIVE vs your modification on all 20 cases
+    baseline_comparison.json  # LIVE vs your modification on all cases
 ```

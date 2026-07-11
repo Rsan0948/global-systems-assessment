@@ -8,7 +8,7 @@ its own `CLAUDE.md` (linked) before touching code.
 |---------|-----------|-----------|--------|
 | **root** (`discovery/`, `integration/`, `studies/`, `census/`, `preregistration/`) | The **fragmentation study** — the original pre-registered discovery program (branching factors of self-organizing systems). | this file + `README.md` + `preregistration/PREREGISTRATION.md` | Concluded: rung 1, no universal constant (see `CENSUS.md`, `SYNTHESIS.md`, `DEFENSIBLE_RESULTS.md`). |
 | `mi_pipeline/` | MI **data pipeline** — builds the raw indicator panel from World Bank API + manual CSVs. | `mi_pipeline/CLAUDE.md` | Real panel committed. |
-| `mi-research/` | MI **scoring / diagnostic / retrodiction engine** + the 51-case validation corpus. The source-of-truth spec is `MASTER_REFERENCE_ARCHITECTURE.md`. | `mi-research/CLAUDE.md` → `RESEARCH.md` | Live; canonical-panel data path. |
+| `mi-research/` | MI **scoring / diagnostic / retrodiction engine** + the 109-case validation corpus (84 modern + 25 ancient). The source-of-truth spec is `MASTER_REFERENCE_ARCHITECTURE.md`. | `mi-research/CLAUDE.md` → `RESEARCH.md` | Live; canonical-panel data path. |
 | `mi-website/` | The **public Next.js website** for the MI — a consumer of `mi-research` (does not re-implement scoring). | `mi-website/CLAUDE.md` → `mi-website/web/AGENTS.md` | Built + deployable (190 country pages). |
 
 > The three `mi-*` projects are the **Modernization Index** platform (governance

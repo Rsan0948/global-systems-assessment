@@ -13,7 +13,7 @@ Continue testing, iterating, and improving the MI framework through:
 
 ## The Golden Rule
 
-**Any modification that improves performance on new cases but degrades it on existing cases is REJECTED.** The 20-case baseline is the floor. Improvements must be additive.
+**Any modification that improves performance on new cases but degrades it on existing cases is REJECTED.** The 84-case modern corpus is the floor. Improvements must be additive.
 
 ---
 
@@ -81,9 +81,11 @@ golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
 
 ## What's Been Done
 
-### Modern Case Studies (20 validated)
+### Modern Case Studies (84 validated across 3 classes)
 
-**Group A — Traditional Fragmentation:**
+**51 P1-ordinality cases** (`case01`–`case51`): the retrodiction baseline (213C/77P/0F).
+
+**Group A — Traditional Fragmentation (cases 1–8):**
 1. Post-Soviet (Estonia/Russia/Ukraine) — P1 ordinality confirmed
 2. Yugoslavia (Slovenia/Croatia/Serbia/Bosnia) — 4-way ordinal confirmed; Safeguard A derived from Bosnia
 3. Velvet Divorce (Czech/Slovakia) — high P1 = peaceful confirmed
@@ -93,30 +95,47 @@ golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
 7. Singapore/Malaysia — flagship positive case; complexity-control thesis confirmed
 8. Ethiopia/Eritrea — both low-P1, both poor trajectory confirmed
 
-**Group B — Recursive/Suppressed:**
+**Group B — Recursive/Suppressed (cases 9–12):**
 9. Serbia/Kosovo — recursive fragmentation; Safeguard A for UNMIK
 10. Indonesia/East Timor — violence-source misattribution found (Mod8 derived)
 11. Ethiopia/Tigray — recursive fragmentation; re-suppression confirmed; Safeguard I confirmed
 12. Nigeria/Biafra — military suppression; rent-stabilization found (Safeguard E bidirectional)
 
-**Group C — Non-Traditional:**
+**Group C — Non-Traditional (cases 13–17):**
 13. South Africa — institutional reconstruction; capacity lagging complexity confirmed
 14. Northern Ireland/GFA — fragmentation prevention through porosity confirmed; Safeguard F derived
 15. German Reunification — fusion; persistent east-west gap confirmed; Safeguard F confirmed
 16. Spain/Catalonia — institutional/legal suppression (Tier 2); de-escalation confirmed
 17. Belgium — extreme porosity; no hard limit found; Safeguard F confirmed
 
-**Group D — Comparative:**
+**Group D — Comparative (cases 18–19):**
 18. Baltics vs Central Asia — institutional choice > resource endowment confirmed
 19. India/Pakistan/Bangladesh — continental-scale P1 ordinality confirmed; Safeguard C confirmed (Bangladesh)
 
-**Group E — Prospective:**
+**Group E — Prospective (case 20):**
 20. Myanmar — re-suppression after porosity = catastrophic, confirmed prospectively; Safeguard I confirmed
 
-### Ancient Extension (5 cases, ordinal proxy)
-- Rome (East vs West), Han China, Abbasid Caliphate, Mongol Empire, Inca Empire
+**Cases 21–51:** Expansion batches 1–6 extending geographic/temporal coverage: Latin America (Haiti/DR,
+Venezuela, Colombia, Argentina, Chile/Uruguay, Costa Rica, Bolivia, Jamaica/Trinidad), Africa (DRC/Rwanda,
+Ghana/Cote d'Ivoire, Cameroon, Botswana), Asia (Korea/Taiwan, Sri Lanka, Nepal, Mongolia, Fiji, Bougainville/PNG),
+Middle East (Lebanon, Iraq, Yemen, Gulf states), Europe (Slovakia/Hungary, Quebec/Canada, Mauritius, Somaliland/Somalia).
+
+**19 durability-gate / Safeguard-J test cases** (`sig01`–`sig19`): tests whether P4−P1 gap correctly
+predicts crisis vs absorption. 17/19 correct (89%).
+
+**14 rule-validation A/B cases** (`rv01`–`rv14`): blind convergence-qualifier and accountability-gap tests.
+8 confirmed / 2 indeterminate / 2 falsified / 2 pre-WGI N/A.
+
+### Ancient Extension (25 cases, ordinal proxy — firewalled)
+25 pre-modern cases spanning c. 2686 BCE – 1797 CE: Old Kingdom Egypt, New Kingdom Egypt,
+Achaemenid Persia, Sasanian Persia, Mauryan Empire, Gupta Empire, Vijayanagara, Tang Dynasty,
+Song Dynasty, Tokugawa Japan, Joseon Korea, Khmer/Angkor, Srivijaya, Majapahit, Mali Empire,
+Great Zimbabwe, Aksum, Aztec Triple Alliance, Classic Maya, Tiwanaku, Wari, Carolingian,
+Byzantine (Macedonian), Venetian Republic, Ottoman (classical) — plus the 5 originals
+(Rome E/W, Han, Abbasids, Mongols, Inca).
 - Verdict: "strong heuristic, weak oracle"
-- P1 ordinality held in 4.5/5; configuration thesis confirmed in all 5
+- P1 ordinality and configuration thesis hold across eras
+- Firewalled: lowest confidence, interpreter-scored, never merged into the 213C/0F baseline
 
 ### Branching Empirics
 - River bifurcation ratio: Rb = 3.488 (discovery), 3.539 (confirmation, sealed holdout)
@@ -125,10 +144,12 @@ golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
 - DGS → instability: null result (honest, documented)
 
 ### Aggregate Results
-- Clean confirmation: ~78% (range 62-85%)
-- Directional accuracy: ~100% (zero falsifications across ~130 predictions)
-- P1 ordinality: 20/20 modern cases
+- Clean confirmation: ~73% across 51 P1-ordinality cases (213C/77P/0F), honest range 62–85%
+- Directional accuracy: 100% (zero falsifications)
+- P1 ordinality: confirmed across all 51 modern cases
+- Durability gate (Safeguard J): 17/19 correct (89%)
 - LIVE outperforms STATIC in every comparison
+- Total corpus: **109 case studies** (84 modern + 25 ancient) across ~5,000 years
 
 ### Expansion — Batch 1 (cases 21-25, 2026-06-27)
 - **Architectural decision settled first:** P1 kept as a single composite (NOT
@@ -137,7 +158,7 @@ golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
   decomposition changes no ordinal. See
   `docs/architectural_decisions/rwanda_p1_composite_vs_decomposed.md` (reproducible
   experiment in `sandbox/experiments/rwanda_p1_decomposition/`). The engine and the
-  20-case baseline are therefore UNCHANGED.
+  baseline is therefore UNCHANGED.
 - **Scored on fresh real data** (WGI 2025-anchored / UNDP HDR 2025 / WB WDI / FSI 2024,
   committed as `data/countries/*.json`): 21 Haiti/DR, 22 Venezuela, 23 Colombia,
   24 DRC/Rwanda, 25 Rwanda. Writeup: `live/runs/run7_expansion_batch1_cases21-25.md`.
@@ -156,12 +177,11 @@ golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
 
 ### Priority 1 — Geographic and Temporal Gaps
 
-The case study database is concentrated in Europe, the Middle East, Africa, and post-Soviet space. Underdeveloped areas:
+The corpus now covers six continents and ~5,000 years. Remaining gaps:
 
-- **Latin America:** No case studies. Test on: Colombia/FARC peace process, Venezuelan state collapse, Chilean democratic transition/reversal, Argentine institutional oscillation, Mexican cartel-state dynamics.
-- **East Asia:** Only Singapore/Malaysia tested. Test on: Korean War/division (1950-53), Taiwan's democratic transition, Hong Kong's re-suppression after porosity (2020 National Security Law — a DIRECT test of Safeguard I and re-suppression finding).
-- **Caribbean/Pacific Islands:** Test the complexity-control thesis on island nations with natural geographic constraints.
-- **Pre-modern cases beyond the current five:** Test on Ottoman Empire fragmentation, Spanish Empire dissolution, British Empire decolonization patterns, Austro-Hungarian dissolution.
+- **East Asia expansion:** Korea/Taiwan covered (case32), but Hong Kong's re-suppression after porosity (2020 National Security Law — a DIRECT test of Safeguard I) remains untested.
+- **Mexico/Central America:** Mexican cartel-state dynamics, Central American institutional oscillation.
+- **Sub-national application:** Apply the MI to states/provinces within large heterogeneous countries (US states, Indian states, Chinese provinces).
 
 ### Priority 2 — Framework Improvements
 
@@ -173,7 +193,7 @@ The case study database is concentrated in Europe, the Middle East, Africa, and 
 
 ### Priority 3 — Data Expansion
 
-- Expand country coverage beyond the current 85 snapshot / 27 longitudinal
+- Expand longitudinal coverage beyond the current 191-country panel
 - Reconcile with the 2025 WGI revision (new anchored scores vs legacy percentile ranks)
 - Add time points: 2025 data as it becomes available
 - Identify proxy indicators for countries with incomplete data
@@ -209,7 +229,7 @@ The case study database is concentrated in Europe, the Middle East, Africa, and 
 1. **Create experiment directory** in `sandbox/experiments/` with a descriptive name.
 2. **Document the hypothesis:** What modification are you testing? What specific improvement do you expect? What would falsify it?
 3. **Implement the modification** by extending the relevant module in `mi/`.
-4. **Run against the 20-case baseline.** Compare MODIFIED vs LIVE accuracy.
+4. **Run against the full corpus.** Compare MODIFIED vs LIVE accuracy.
 5. **If improvement with no degradation:** Document fully and flag for review.
 6. **If degradation on any existing case:** Reject. Document the negative result (negative results are valuable).
 
@@ -241,7 +261,7 @@ The case study database is concentrated in Europe, the Middle East, Africa, and 
 - **Don't cherry-pick cases.** Choose cases that STRESS-TEST the framework, not cases designed to confirm it.
 - **Don't interpolate missing data.** Missing data is information. Report gaps explicitly.
 - **Don't overclaim.** A framework that honestly reports 78% is more valuable than one that claims 95%.
-- **Don't modify the LIVE framework without running the full 20-case baseline check.**
+- **Don't modify the LIVE framework without running the full corpus baseline check.**
 
 ---
 

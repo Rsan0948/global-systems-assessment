@@ -134,5 +134,233 @@
    "headline": "already high",
    "detail": "The base is already high, so large structural jumps from here are historically rare."
   }
- ]
+ ],
+ "safeguards": [
+  {
+   "key": "J",
+   "name": "Durability Gate (P4-P1 gap)",
+   "status": "clear",
+   "triggered": false,
+   "headline": "income-institutions gap +0.12 \u00b7 clear",
+   "detail": "Economic Structure-Institutions gap = 0.122 <= 0.2 (absorber ceiling): institutions roughly keep pace with income - not structurally flagged (absorber-class).",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "N=21 acute-signature test set"
+   ],
+   "why": "Independently derived on 21 crisis/absorber cases: the level gap between income (P4) and institutions (P1) separated real crises from shock-absorbers at 83% sensitivity / 100% specificity. When income has outrun institutions, the state is structurally crisis-prone under shock - 'granted/fragile'.",
+   "validated_by": [
+    "N=21 signature set",
+    "unifies with the durability ratio"
+   ],
+   "share_firing": 35
+  },
+  {
+   "key": "E",
+   "name": "Rentier Capture (Bidirectional)",
+   "status": "clear",
+   "triggered": false,
+   "headline": "below 15% of GDP \u00b7 no penalty",
+   "detail": "Resource rents 0.0% of GDP -> below 15% (no penalty).",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Timor-Leste (negative capture)",
+    "Nigeria / Gulf (rent-stabilization)"
+   ],
+   "why": "Resource rents can inflate or hollow out measured institutional quality (Timor-Leste), or buy elite cohesion in a low-capacity state (Nigeria/Gulf). Graded E-1 (material, >15% of GDP) / E-2 (severe, >25%); severe rents make P1 unreliable.",
+   "validated_by": [
+    "Nigeria",
+    "Gulf states"
+   ],
+   "share_firing": 15
+  },
+  {
+   "key": "A",
+   "name": "External Administration",
+   "status": "firing",
+   "triggered": true,
+   "headline": "condition present",
+   "detail": "State under external administration: UNMIK interim administration under UNSCR 1244 nominally continues; residual EULEX rule-of-law mission.. WGI scores may reflect administrator competence, not indigenous capacity. Assess indigenous capacity qualitatively.",
+   "modification": "Discount raw WGI P1 scores. Use qualitative assessment of indigenous institutional capacity for predictions.",
+   "tier": null,
+   "origin_cases": [
+    "Bosnia 1996"
+   ],
+   "why": "Bosnia's WGI institutional scores under the Dayton OHR sat above Croatia's and Serbia's - the administrator's competence, not indigenous capacity, was being measured. The safeguard discounts raw P1 where an external administrator governs.",
+   "validated_by": [
+    "Kosovo (UNMIK/EULEX)",
+    "East Timor (UNTAET)"
+   ],
+   "share_firing": 2
+  },
+  {
+   "key": "B",
+   "name": "Capacity Gate",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "Institutions = 0.505, successors = N/A. Gate not triggered.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Sudan / South Sudan"
+   ],
+   "why": "Sudan split into just two successor states - a low fragment count that would normally read as manageable - yet produced the worst outcome in the sample, because institutional capacity (P1) was far below the bottom third. Low count is not safety when P1 is that low.",
+   "validated_by": [
+    "Ethiopia / Eritrea",
+    "Nigeria / Biafra"
+   ],
+   "share_firing": 1
+  },
+  {
+   "key": "C",
+   "name": "Reversal Risk",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "Not a democratic transition case.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Tunisia (Arab Spring)"
+   ],
+   "why": "The framework predicted Tunisia's initial positive trajectory but missed the 2021 presidential self-coup. Democratic transitions with weak economic delivery are flagged as reversal-prone rather than assumed durable.",
+   "validated_by": [
+    "Bangladesh 2024",
+    "Serbia",
+    "South Africa",
+    "India"
+   ],
+   "share_firing": 2
+  },
+  {
+   "key": "D",
+   "name": "Predatory Neighbor / Exogenous Shock",
+   "status": "firing",
+   "triggered": true,
+   "headline": "condition present",
+   "detail": "Neighbor threat: moderate. Non-normalized relations with Serbia (Sept 2023 Banjska attack). Institutions provides some resilience. Framework diagnoses vulnerability to shock, not the shock itself.",
+   "modification": "Note endogenous prediction separately. Flag that outcome may be externally imposed rather than internally generated.",
+   "tier": null,
+   "origin_cases": [
+    "Ukraine (Russian invasion)",
+    "Inca (Spanish conquest)"
+   ],
+   "why": "A structurally sound state can be overrun from outside. The safeguard separates a country's endogenous trajectory from vulnerability to an aggressive neighbour or external shock, so the outcome isn't misread as internally generated.",
+   "validated_by": [
+    "Myanmar (China)",
+    "Bangladesh (India)",
+    "Ethiopia/Tigray (Eritrea)"
+   ],
+   "share_firing": 24
+  },
+  {
+   "key": "F",
+   "name": "Sub-State Turbulence",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "No significant sub-state turbulence indicators.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Northern Ireland (Stormont collapses)",
+    "Germany (AfD in eastern states)"
+   ],
+   "why": "A state can survive intact while carrying chronic, managed instability - repeated executive collapses, high anti-system voting, sharp regional divergence. This is a management-load signal, not a collapse indicator.",
+   "validated_by": [
+    "Belgium",
+    "Spain / Catalonia"
+   ],
+   "share_firing": 0
+  },
+  {
+   "key": "G",
+   "name": "Suppression vs Prevention",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "No fragmentation mechanism specified.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Round 3 - Ethiopia vs Northern Ireland"
+   ],
+   "why": "Suppression and prevention looked identical until this safeguard split them into tiers: military suppression (Tier 1) doesn't resolve the underlying mismatch; institutional/legal suppression (Tier 2) de-escalates; porosity/power-sharing (Tier 3) addresses it by design. Re-suppression after a porosity period is the worst path.",
+   "validated_by": [
+    "Spain (Tier 2)",
+    "Belgium/NI (Tier 3)",
+    "Nigeria/Ethiopia (Tier 1)",
+    "Myanmar (re-suppression)"
+   ],
+   "share_firing": 7
+  },
+  {
+   "key": "I",
+   "name": "Porosity-with-Backstop",
+   "status": "clear",
+   "triggered": false,
+   "headline": "no such condition",
+   "detail": "No backstop-porosity configuration detected.",
+   "modification": null,
+   "tier": null,
+   "origin_cases": [
+    "Ethiopia / Tigray (AU backstop)",
+    "Myanmar (China backstop)"
+   ],
+   "why": "The framework's most genuinely novel prediction: when a great-power patron backstops a state's territorial integrity, an internal secession tends to end in re-suppression and partial reconsolidation, not permanent independence.",
+   "validated_by": [
+    "Ethiopia/Tigray",
+    "Myanmar"
+   ],
+   "share_firing": 1
+  }
+ ],
+ "diagnostics": {
+  "context_curated": true,
+  "strategy": {
+   "strategy": "ambiguous",
+   "confidence": "low",
+   "explanation": "P1 = 0.505. Insufficient context signals to classify strategy. Could be transitioning between strategies or running a hybrid.",
+   "indicators_needed": [
+    "is_democratic",
+    "is_authoritarian",
+    "has_federalism",
+    "has_devolution",
+    "population",
+    "is_island"
+   ]
+  },
+  "vulnerability": {
+   "risk_level": "low",
+   "flags": [
+    "Active safeguards: A, D"
+   ],
+   "structural_vulnerability": {
+    "p4_minus_p1_gap": 0.122,
+    "status": "clear",
+    "flagged": false,
+    "reading": "institutions roughly keep pace with income - not structurally crisis-flagged (absorber-class on this measure)."
+   },
+   "below_floor": null,
+   "summary": "Risk level: LOW. P1 = 0.505, spread = 0.122, 2 safeguards active."
+  },
+  "movement": null,
+  "accountability_gap": {
+   "voice_accountability": 0.596,
+   "va_minus_p4": -0.031,
+   "va_minus_p1": 0.091,
+   "status": "balanced",
+   "reading": "accountability roughly tracks capacity and income.",
+   "caveat": "HYPOTHESIS (V3.2) - informational; orthogonal to the durability gap; no crisis validation yet."
+  },
+  "sensitivity": {
+   "v2_equal": 0.5786983509952901,
+   "v2_timevarying": 0.5786983509952901,
+   "v1": 0.5625428722816772,
+   "archived_hand_v0": 0.5674118374494074
+  },
+  "prior_year": null
+ }
 }
