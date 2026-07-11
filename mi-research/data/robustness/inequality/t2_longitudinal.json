@@ -1,0 +1,170 @@
+{
+ "test": "T2_domestic_erosion_vs_inequality",
+ "epochs": {
+  "1816": {
+   "domestic_spread": 0.2222,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1826": {
+   "domestic_spread": 0.2679,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1836": {
+   "domestic_spread": 0.0875,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1846": {
+   "domestic_spread": 0.1167,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1856": {
+   "domestic_spread": 0.2778,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1866": {
+   "domestic_spread": 0.1053,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1876": {
+   "domestic_spread": 0.0764,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1886": {
+   "domestic_spread": 0.0636,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1896": {
+   "domestic_spread": 0.1062,
+   "top10_majors_mean": null,
+   "n_majors": 0,
+   "top10_all_mean": null,
+   "n_all": 0
+  },
+  "1906": {
+   "domestic_spread": 0.1208,
+   "top10_majors_mean": 46.88,
+   "n_majors": 1,
+   "top10_all_mean": 46.88,
+   "n_all": 1
+  },
+  "1916": {
+   "domestic_spread": 0.1352,
+   "top10_majors_mean": 47.55,
+   "n_majors": 2,
+   "top10_all_mean": 48.16,
+   "n_all": 4
+  },
+  "1926": {
+   "domestic_spread": 0.1357,
+   "top10_majors_mean": 41.37,
+   "n_majors": 4,
+   "top10_all_mean": 42.33,
+   "n_all": 12
+  },
+  "1936": {
+   "domestic_spread": 0.1087,
+   "top10_majors_mean": 41.23,
+   "n_majors": 5,
+   "top10_all_mean": 43.41,
+   "n_all": 17
+  },
+  "1946": {
+   "domestic_spread": 0.0455,
+   "top10_majors_mean": 36.97,
+   "n_majors": 4,
+   "top10_all_mean": 44.69,
+   "n_all": 22
+  },
+  "1956": {
+   "domestic_spread": 0.056,
+   "top10_majors_mean": 33.61,
+   "n_majors": 5,
+   "top10_all_mean": 43.0,
+   "n_all": 25
+  },
+  "1966": {
+   "domestic_spread": -0.0075,
+   "top10_majors_mean": 32.66,
+   "n_majors": 5,
+   "top10_all_mean": 40.16,
+   "n_all": 25
+  },
+  "1976": {
+   "domestic_spread": -0.0133,
+   "top10_majors_mean": 30.14,
+   "n_majors": 5,
+   "top10_all_mean": 34.81,
+   "n_all": 23
+  },
+  "1986": {
+   "domestic_spread": -0.0045,
+   "top10_majors_mean": 30.24,
+   "n_majors": 8,
+   "top10_all_mean": 35.49,
+   "n_all": 57
+  },
+  "1996": {
+   "domestic_spread": -0.0246,
+   "top10_majors_mean": 35.59,
+   "n_majors": 8,
+   "top10_all_mean": 43.91,
+   "n_all": 99
+  }
+ },
+ "correlation_over_epochs": {
+  "n_epochs": 8,
+  "pearson_r": 0.846,
+  "p": 0.0081,
+  "span": [
+   1926,
+   1996
+  ]
+ },
+ "piketty_U_fingerprint": {
+  "pre1914_tail_spread(1876-1906)": 0.0918,
+  "compression_spread(1916-1976)": 0.0658,
+  "post1980_tail_spread(1986-1996)": -0.0146,
+  "note": "hypothesis: spread HIGHER during 1914-1980 compression than in the high-inequality tails. Monotonic decline through compression => no U-fingerprint."
+ },
+ "US_vs_SE_top10_trajectory": {
+  "USA": {
+   "1930": 45.52,
+   "1950": 38.33,
+   "1970": 33.55,
+   "1990": 38.76,
+   "2010": 43.81
+  },
+  "SWE": {
+   "1930": null,
+   "1950": 30.91,
+   "1970": 29.47,
+   "1990": 26.55,
+   "2010": 31.63
+  }
+ },
+ "arm_B_pass": false
+}

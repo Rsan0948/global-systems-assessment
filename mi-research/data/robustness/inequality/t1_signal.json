@@ -1,0 +1,70 @@
+{
+ "test": "T1_inequality_predicts_domestic_crises",
+ "windows": {
+  "2004": {
+   "n": 63,
+   "n_pos": 25,
+   "base_rate": 0.397,
+   "M1_negP1": {
+    "coef": 1.8376,
+    "auc": 0.844
+   },
+   "M2_ineq": {
+    "coef": 1.123,
+    "auc": 0.792,
+    "pointbiserial_r": 0.464,
+    "p": 0.0001
+   },
+   "M3_both": {
+    "coef_negP1": 1.7873,
+    "coef_ineq": 0.9597,
+    "auc": 0.881
+   },
+   "M4_interaction": {
+    "coef_negP1": 1.7217,
+    "coef_ineq": 0.9778,
+    "coef_inter": 0.3335,
+    "auc": 0.886,
+    "inter_sign": "positive(null)"
+   },
+   "P1_recovery_M1_to_M3_rel": -0.027,
+   "baselines": {
+    "gdp_only_auc": 0.842,
+    "fsi_only_auc": null
+   }
+  },
+  "2012": {
+   "n": 72,
+   "n_pos": 21,
+   "base_rate": 0.292,
+   "M1_negP1": {
+    "coef": 1.3815,
+    "auc": 0.801
+   },
+   "M2_ineq": {
+    "coef": 0.756,
+    "auc": 0.721,
+    "pointbiserial_r": 0.32,
+    "p": 0.0061
+   },
+   "M3_both": {
+    "coef_negP1": 1.3537,
+    "coef_ineq": 0.7138,
+    "auc": 0.838
+   },
+   "M4_interaction": {
+    "coef_negP1": 1.3498,
+    "coef_ineq": 0.7139,
+    "coef_inter": 0.0104,
+    "auc": 0.837,
+    "inter_sign": "positive(null)"
+   },
+   "P1_recovery_M1_to_M3_rel": -0.02,
+   "baselines": {
+    "gdp_only_auc": 0.807,
+    "fsi_only_auc": 0.878
+   }
+  }
+ },
+ "arm_A_pass": true
+}

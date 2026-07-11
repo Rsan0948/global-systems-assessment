@@ -27,6 +27,7 @@
 | Wealth–institution decoupling battery — Finding 10 (registered null; hypothesis falsified) | ✅ done | (this branch) |
 | Gold-standard monetary-regime substitute — Finding 11 (registered null; fails at gate) | ✅ done | (this branch) |
 | Crisis-origin shift (domestic→contagion) — Finding 12 (registered null; erosion is domestic) | ✅ done | (this branch) |
+| Inequality / distribution dimension — Finding 13 (registered null; bivariate-only, longitudinal reversed) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -469,6 +470,45 @@ with young poor states) — remain untested and are flagged for separate pre-reg
 Epistemic status: **registered null; hypothesis falsified (reversed) at the gate.**
 Write-up `docs/CONTAGION_RESULTS.md`; artifacts `data/robustness/contagion/*`; code
 `scripts/robustness/contagion_{classify,t2_gate}.py`.
+
+## Finding 13 — The erosion is NOT explained by rising inequality (registered null; bivariate-only, longitudinal reversed)
+
+The tightest-fitting candidate yet for the F12 domestic-channel erosion: institutions
+got better at producing *aggregate* wealth (→ F10 P1↔GDP re-coupling) while its
+*distribution* concentrated; domestic rupture depends on distribution, not aggregates,
+so the domestic signal erodes as inequality rises (Piketty's r>g, continuous since
+~1850 with a 1914–1980 compression — matching every constraint: continuous, domestic,
+mature-state, WGI/P3-invisible). Pre-registered (`INEQUALITY_PREREGISTRATION.md`, sha256
+`8c0236a…`), primary indicator WID top-10% pre-tax share (via OWID), Tests 1 & 2 the
+gate. **The gate splits and the full battery resolves to null.**
+
+**T1 (arm A):** inequality is a *significant bivariate* predictor of domestic crises
+(2004 p=0.0001, AUC 0.79) — but that only reflects poor unstable states being unequal
+(AUC < GDP's 0.84); the P1 coefficient **does not recover** when inequality is
+controlled and the interaction is **positive**, not the predicted negative. **T2 (arm
+B) fails and reverses:** the domestic-channel spread correlates **+0.85** (p=0.008) with
+mean top-10% share over epochs — they *fell together* across the 20th century — and
+during the 1914–1980 Great Compression the domestic signal **kept eroding** (no Piketty-
+U fingerprint). **T3** refutes moderation: neg-P1 AUC is **0.88 in high-inequality
+mature states** (signal intact where it should have broken); low-inequality mature
+states simply had zero crises. **T4** does not resolve F10-vs-F12 (inequality-partialled
+P1↔stability corr *falls* below raw, 0.61→0.51). **T5** long-run +0.51 p=0.20 (wrong
+sign, underpowered). **T6** (exploratory) P6 distribution pillar adds nothing (AUC
+0.882→0.884; Afghanistan/Ethiopia *rise* with P6 — low measured top-10% ≠ stability).
+
+**Verdict:** inequality is a real cross-sectional correlate of instability but **not the
+erosion mechanism** — it neither recovers, moderates, nor longitudinally tracks the
+domestic signal, and the mid-century compression (the hypothesis's own natural
+experiment) shows the opposite of the prediction. The thirteenth null on the
+longitudinal erosion. The constraint profile tightens further: the driver is continuous
+(F11), domestic (F12), coexists with strengthening P1↔GDP (F10), within-mature (F9-A),
+and invisible to WGI, P3, **and income distribution** (F13). Standing leads (Finding-9
+residuals, untested): (i) measurement-regime maturation / V-Dem rule-of-law **variance
+compression** — now with the added constraint that it must co-move with the century's
+*falling* top-income concentration; (ii) secular change in post-colonial civil-conflict
+character vs measured rule-of-law. Epistemic status: **registered null.** Write-up
+`docs/INEQUALITY_RESULTS.md`; artifacts `data/robustness/inequality/*`; code
+`scripts/robustness/inequality_{fetch,t1_t2_gate,t3_t6}.py`.
 
 ---
 

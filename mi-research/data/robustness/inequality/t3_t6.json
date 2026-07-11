@@ -1,0 +1,329 @@
+{
+ "gate_status": "arm A passed (bivariate), arm B failed (reversed) \u2014 partial, cautionary",
+ "T3_mature_split": {
+  "2004": {
+   "median_top10": 36.4,
+   "n_mature": 31,
+   "low_ineq": {
+    "n": 16,
+    "n_pos": 0,
+    "mean_ineq": 33.1,
+    "negP1_auc": null
+   },
+   "high_ineq": {
+    "n": 15,
+    "n_pos": 5,
+    "mean_ineq": 44.6,
+    "negP1_auc": 0.88
+   },
+   "low_iso": [
+    "BEL",
+    "CZE",
+    "DEU",
+    "ESP",
+    "FRA",
+    "HRV",
+    "HUN",
+    "IRL",
+    "ISL",
+    "ITA",
+    "KOR",
+    "LTU",
+    "POL",
+    "SRB",
+    "SVK",
+    "SVN"
+   ],
+   "high_iso": [
+    "CAN",
+    "CHN",
+    "EGY",
+    "EST",
+    "ETH",
+    "GBR",
+    "GRC",
+    "JPN",
+    "LVA",
+    "MNG",
+    "NPL",
+    "RUS",
+    "THA",
+    "TUR",
+    "ZAF"
+   ]
+  },
+  "2012": {
+   "median_top10": 37.3,
+   "n_mature": 33,
+   "low_ineq": {
+    "n": 17,
+    "n_pos": 0,
+    "mean_ineq": 32.9,
+    "negP1_auc": null
+   },
+   "high_ineq": {
+    "n": 16,
+    "n_pos": 4,
+    "mean_ineq": 46.4,
+    "negP1_auc": 0.792
+   },
+   "low_iso": [
+    "BEL",
+    "CAN",
+    "CZE",
+    "DEU",
+    "ESP",
+    "FRA",
+    "GBR",
+    "GRC",
+    "HRV",
+    "HUN",
+    "IRL",
+    "ISL",
+    "ITA",
+    "KOR",
+    "POL",
+    "SVK",
+    "SVN"
+   ],
+   "high_iso": [
+    "CHN",
+    "EGY",
+    "EST",
+    "ETH",
+    "JPN",
+    "LTU",
+    "LVA",
+    "MNG",
+    "NPL",
+    "OMN",
+    "RUS",
+    "SAU",
+    "SRB",
+    "THA",
+    "TUR",
+    "ZAF"
+   ]
+  }
+ },
+ "T4_partial_correlation": {
+  "2004": {
+   "n": 65,
+   "raw_P1_stability_r": 0.606,
+   "partial_P1_stability_given_ineq_r": 0.507
+  },
+  "2012": {
+   "n": 72,
+   "raw_P1_stability_r": 0.471,
+   "partial_P1_stability_given_ineq_r": 0.408
+  }
+ },
+ "T5_longrun": {
+  "epochs": {
+   "1816": {
+    "all_spread": 0.2222,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1826": {
+    "all_spread": 0.28,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1836": {
+    "all_spread": 0.1,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1846": {
+    "all_spread": 0.0833,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1856": {
+    "all_spread": 0.1727,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1866": {
+    "all_spread": 0.1875,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1876": {
+    "all_spread": 0.1019,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1886": {
+    "all_spread": 0.1588,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1896": {
+    "all_spread": 0.1298,
+    "deep_top10_mean": null,
+    "n": 0
+   },
+   "1906": {
+    "all_spread": 0.1369,
+    "deep_top10_mean": 46.88,
+    "n": 1
+   },
+   "1916": {
+    "all_spread": 0.1193,
+    "deep_top10_mean": 47.55,
+    "n": 2
+   },
+   "1926": {
+    "all_spread": 0.0908,
+    "deep_top10_mean": 41.37,
+    "n": 4
+   },
+   "1936": {
+    "all_spread": 0.1029,
+    "deep_top10_mean": 41.23,
+    "n": 5
+   },
+   "1946": {
+    "all_spread": 0.071,
+    "deep_top10_mean": 36.97,
+    "n": 4
+   },
+   "1956": {
+    "all_spread": 0.064,
+    "deep_top10_mean": 33.61,
+    "n": 5
+   },
+   "1966": {
+    "all_spread": 0.0307,
+    "deep_top10_mean": 32.66,
+    "n": 5
+   },
+   "1976": {
+    "all_spread": 0.0566,
+    "deep_top10_mean": 30.14,
+    "n": 5
+   },
+   "1986": {
+    "all_spread": 0.021,
+    "deep_top10_mean": 30.59,
+    "n": 7
+   },
+   "1996": {
+    "all_spread": -0.0197,
+    "deep_top10_mean": 36.75,
+    "n": 7
+   }
+  },
+  "correlation": {
+   "n": 8,
+   "pearson_r": 0.507,
+   "p": 0.2002
+  },
+  "note": "deep subset 3-7 countries; underpowered"
+ },
+ "T6_exploratory_P6": {
+  "n": 101,
+  "n_pos": 34,
+  "auc_5pillar": 0.882,
+  "auc_6pillar": 0.884,
+  "biggest_drops_with_p6": [
+   [
+    "HKG",
+    -0.08
+   ],
+   [
+    "IRQ",
+    -0.075
+   ],
+   [
+    "CHL",
+    -0.072
+   ],
+   [
+    "COL",
+    -0.066
+   ],
+   [
+    "MEX",
+    -0.056
+   ],
+   [
+    "BRA",
+    -0.053
+   ]
+  ],
+  "biggest_rises_with_p6": [
+   [
+    "NGA",
+    0.046
+   ],
+   [
+    "AFG",
+    0.046
+   ],
+   [
+    "GNB",
+    0.046
+   ],
+   [
+    "SVK",
+    0.047
+   ],
+   [
+    "GIN",
+    0.054
+   ],
+   [
+    "ETH",
+    0.056
+   ]
+  ],
+  "watchlist": {
+   "ARE": {
+    "mi5": 0.763,
+    "mi6": 0.718,
+    "delta": -0.045,
+    "p6": 0.491
+   },
+   "DEU": {
+    "mi5": 0.817,
+    "mi6": 0.807,
+    "delta": -0.011,
+    "p6": 0.754
+   },
+   "DNK": {
+    "mi5": 0.84,
+    "mi6": 0.842,
+    "delta": 0.002,
+    "p6": 0.852
+   },
+   "GBR": {
+    "mi5": 0.79,
+    "mi6": 0.791,
+    "delta": 0.0,
+    "p6": 0.791
+   },
+   "NOR": {
+    "mi5": 0.81,
+    "mi6": 0.827,
+    "delta": 0.017,
+    "p6": 0.912
+   },
+   "SWE": {
+    "mi5": 0.833,
+    "mi6": 0.85,
+    "delta": 0.017,
+    "p6": 0.934
+   },
+   "USA": {
+    "mi5": 0.779,
+    "mi6": 0.74,
+    "delta": -0.039,
+    "p6": 0.547
+   }
+  },
+  "caveat": "EXPLORATORY ONLY \u2014 not a confirmed improvement; P6 not adopted."
+ }
+}
