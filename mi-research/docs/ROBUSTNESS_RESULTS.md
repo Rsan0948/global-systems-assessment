@@ -28,6 +28,7 @@
 | Gold-standard monetary-regime substitute — Finding 11 (registered null; fails at gate) | ✅ done | (this branch) |
 | Crisis-origin shift (domestic→contagion) — Finding 12 (registered null; erosion is domestic) | ✅ done | (this branch) |
 | Inequality / distribution dimension — Finding 13 (registered null; bivariate-only, longitudinal reversed) | ✅ done | (this branch) |
+| Variance compression + conflict-type shift — Finding 14 (A fails gate, B partial; erosion reframed as wealth catching up) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -509,6 +510,48 @@ compression** — now with the added constraint that it must co-move with the ce
 character vs measured rule-of-law. Epistemic status: **registered null.** Write-up
 `docs/INEQUALITY_RESULTS.md`; artifacts `data/robustness/inequality/*`; code
 `scripts/robustness/inequality_{fetch,t1_t2_gate,t3_t6}.py`.
+
+## Finding 14 — The erosion is NOT variance compression or a conflict-type shift — it is wealth catching up as a domestic-crisis predictor
+
+The last two Finding-9 residuals, pre-registered together (`VARIANCE_COMPRESSION_PREREGISTRATION.md`,
+sha256 `396e159…`) with A1/B1 as gates. **Candidate A (variance compression) fails at
+the gate:** institutional-quality variance has **not** compressed — modern P1 SD is flat
+(0.170→0.173, p=0.74) and V-Dem rule-of-law SD is flat-to-rising over 1850–2010
+(0.299→0.309, p=0.73); range restriction explains only **1.9%** of the signal change
+(A2), the Thorndike Case-II correction changes nothing (A3, u≈1), and P10/P90 are stable
+with the rol *top* rising (A4/A5). **Candidate B (conflict-type shift) passes its gate
+but cannot carry the erosion:** territory/identity share of domestic conflict genuinely
+rose (0.32→0.63, p=0.003, B1), but the governance-type spread is ≈0 and flat in the
+testable window (no strong intact governance-failure signal, B2), UCDP incompatibility
+coding is **blind to the pre-1946 two-thirds of the erosion**, and post-colonial conflict
+is not disproportionately territory-type (0.522 ≈ mature 0.556) so it does not explain
+the weaker post-colonial signal (B3).
+
+**The affirmative result — the erosion's character, finally resolved.** Decomposing the
+Finding-12 domestic spread (`struct_auc − wealth_auc`) over 1816–1996: `struct_auc`
+(institutions→domestic crisis) **rose** 0.44→0.75 (Δ+0.31, p=0.20, n.s.), while
+`wealth_auc` (GDP→domestic crisis) rose **faster**, 0.22→0.78 (Δ+0.557, **p=0.005**, the
+only significantly-trending component). **The 150-year "erosion of the institutional
+signal" is not institutions losing predictive power — it is GDP *gaining* it, catching up
+to and slightly overtaking institutions, so their *edge* (the spread) narrowed.** This is
+Finding-9 residual #1 (industrialization + improving economic statistics making wealth a
+better state-capacity proxy) — the one residual never run as a primary — and it is the
+only mechanism fitting the *entire* constraint profile at once: continuous, domestic-
+channel, coexisting with **strengthening P1↔GDP** (F10 seen from the wealth side),
+within-mature, and invisible to every distributional/regime/support/contagion test
+because it is a property of the **wealth predictor improving**, not of institutions
+changing. It reconciles F10/F11/F12/F13 in one stroke.
+
+**Status: lead, not closed.** It emerges from a pre-registered *decomposition*, not a
+primary hypothesis with its own falsification gate; the right next step is a dedicated
+pre-registration (does a revealed GDP/state-capacity series' rising discrimination fully
+account for the spread narrowing on a constant sample with wealth-data-quality
+controlled?). But after fourteen adversarial tests the most defensible headline shifts
+from *"the institutional signal is eroding"* to **"institutions did not weaken — the
+wealth signal caught up."** Epistemic status: A **registered null (gate fail)**; B
+**partial**; wealth-catching-up **strongest evidenced lead (p=0.005), awaiting its own
+pre-registration.** Write-up `docs/VARIANCE_COMPRESSION_RESULTS.md`; artifacts
+`data/robustness/varcomp/*`; code `scripts/robustness/varcomp_{A,B}.py`.
 
 ---
 

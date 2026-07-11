@@ -1,0 +1,193 @@
+{
+ "candidate": "B_conflict_type_shift",
+ "B1_composition": {
+  "per_decade": {
+   "1946": {
+    "gov": 19,
+    "terr": 9,
+    "territory_share": 0.321
+   },
+   "1956": {
+    "gov": 24,
+    "terr": 16,
+    "territory_share": 0.4
+   },
+   "1966": {
+    "gov": 26,
+    "terr": 17,
+    "territory_share": 0.395
+   },
+   "1976": {
+    "gov": 31,
+    "terr": 17,
+    "territory_share": 0.354
+   },
+   "1986": {
+    "gov": 46,
+    "terr": 44,
+    "territory_share": 0.489
+   },
+   "1996": {
+    "gov": 38,
+    "terr": 33,
+    "territory_share": 0.465
+   },
+   "2006": {
+    "gov": 29,
+    "terr": 50,
+    "territory_share": 0.633
+   },
+   "2016": {
+    "gov": 32,
+    "terr": 44,
+    "territory_share": 0.579
+   }
+  },
+  "territory_share_trend": {
+   "slope": 0.003947619047619047,
+   "p": 0.00326573695631086
+  },
+  "share_delta": 0.258,
+  "gate_pass": true
+ },
+ "B2_signal_by_type": {
+  "gov": {
+   "curve": [
+    {
+     "year": 1946,
+     "n_pos": 15,
+     "struct_auc": 0.6053,
+     "wealth_auc": 0.6298,
+     "spread": -0.0246
+    },
+    {
+     "year": 1956,
+     "n_pos": 46,
+     "struct_auc": 0.6793,
+     "wealth_auc": 0.5551,
+     "spread": 0.1243
+    },
+    {
+     "year": 1966,
+     "n_pos": 56,
+     "struct_auc": 0.6794,
+     "wealth_auc": 0.6829,
+     "spread": -0.0034
+    },
+    {
+     "year": 1976,
+     "n_pos": 57,
+     "struct_auc": 0.7283,
+     "wealth_auc": 0.7437,
+     "spread": -0.0154
+    },
+    {
+     "year": 1986,
+     "n_pos": 53,
+     "struct_auc": 0.7388,
+     "wealth_auc": 0.7422,
+     "spread": -0.0034
+    },
+    {
+     "year": 1996,
+     "n_pos": 46,
+     "struct_auc": 0.7546,
+     "wealth_auc": 0.7881,
+     "spread": -0.0336
+    }
+   ],
+   "spread_trend": {
+    "slope": -0.0012574285714285714,
+    "p": 0.4295084345548355,
+    "mean": 0.0073
+   }
+  },
+  "terr": {
+   "curve": [
+    {
+     "year": 1946,
+     "n_pos": 5,
+     "struct_auc": 0.5521,
+     "wealth_auc": 0.6,
+     "spread": -0.0479
+    },
+    {
+     "year": 1956,
+     "n_pos": 19,
+     "struct_auc": 0.5447,
+     "wealth_auc": 0.6479,
+     "spread": -0.1033
+    },
+    {
+     "year": 1966,
+     "n_pos": 23,
+     "struct_auc": 0.559,
+     "wealth_auc": 0.5922,
+     "spread": -0.0332
+    },
+    {
+     "year": 1976,
+     "n_pos": 21,
+     "struct_auc": 0.5114,
+     "wealth_auc": 0.5636,
+     "spread": -0.0521
+    },
+    {
+     "year": 1986,
+     "n_pos": 28,
+     "struct_auc": 0.5837,
+     "wealth_auc": 0.6022,
+     "spread": -0.0184
+    },
+    {
+     "year": 1996,
+     "n_pos": 43,
+     "struct_auc": 0.7443,
+     "wealth_auc": 0.7026,
+     "spread": 0.0416
+    }
+   ],
+   "spread_trend": {
+    "slope": 0.0019522857142857141,
+    "p": 0.0736529477948651,
+    "mean": -0.0356
+   }
+  }
+ },
+ "B3_postcolonial": {
+  "territory_share_by_formation": {
+   "mature": {
+    "n_states": 54,
+    "gov_onsets": 40,
+    "terr_onsets": 50,
+    "territory_share": 0.556
+   },
+   "post_colonial": {
+    "n_states": 93,
+    "gov_onsets": 165,
+    "terr_onsets": 180,
+    "territory_share": 0.522
+   },
+   "early_post_colonial": {
+    "n_states": 20,
+    "gov_onsets": 39,
+    "terr_onsets": 0,
+    "territory_share": 0.0
+   }
+  },
+  "rol_signal_by_formation": {
+   "mature": {
+    "n": 319,
+    "n_pos": 85,
+    "rol_crisis_r": -0.3426,
+    "struct_auc": 0.714
+   },
+   "post_colonial": {
+    "n": 494,
+    "n_pos": 228,
+    "rol_crisis_r": -0.1443,
+    "struct_auc": 0.5771
+   }
+  }
+ }
+}
