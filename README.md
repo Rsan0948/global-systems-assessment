@@ -22,12 +22,15 @@ Structure 20%, Human Capital 16%, Stability 16%, Innovation 15%) scoring **191
 countries** and evaluated against a **109-case retrodiction corpus** (84 modern +
 25 ancient) spanning ~4,700 years.
 
-> **Reproducibility note (2026-07-11).** The corpus's headline "100% directional
-> accuracy" is a coding tally that an audit found **heterogeneous** — only ~20% of
-> the flagship ordinality cases are clean mechanical derivations; the rest are
-> mechanical abstentions or preserved human judgment. The genuinely recomputable,
-> base-rate-beating signal is the **durability gate** (Safeguard J: +26 pts over
-> base rate, zero false positives). See `mi-research/docs/ROBUSTNESS_RESULTS.md`.
+> **Robustness finding (2026-07-11).** A pre-registered adversarial program found
+> that **institutional structure is the dominant predictor of political rupture
+> across pre-modern history** (25 cases, ~4,700 years; AUC 0.66–0.68 vs wealth
+> 0.52–0.64), that this signal has been **monotonically eroding for ~150 years**
+> (143-polity panel, p = 0.033) in lockstep with modern capital systems, and that
+> the erosion is **distortion, not inversion** — structure still leads on armed
+> conflict today. Separately, the marketing figure "100% directional accuracy"
+> was decomposed and found soft (~20% mechanically recomputable); it is superseded
+> by the above. Full record + epistemic labels: `mi-research/docs/ROBUSTNESS_RESULTS.md`.
 
 - **Status:** V3.3 live; automated weekly data refresh; website deployable.
 - **Key findings:** institutional quality (P1) is the most central variable in

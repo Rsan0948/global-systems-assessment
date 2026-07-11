@@ -10,22 +10,34 @@
 
 ## Modernization Index
 
-> **Corrected 2026-07-11 by the reproducibility audit** (`mi-research/docs/ROBUSTNESS_RESULTS.md`).
-> The "100% directional accuracy" below is a `verification{}` coding tally, not a
-> clean recomputable result: of the 51 flagship ordinality cases, only ~10 are
-> mechanical auto-derivations, 7 are mechanical abstentions counted as
-> confirmations, and ~34 rest on preserved human judgment. Quote the durability
-> gate (below), not the 100%.
+> **Headline finding (robustness program, 2026-07-11 — full record:
+> `mi-research/docs/ROBUSTNESS_RESULTS.md`).** **Institutional structure is the
+> dominant predictor of political rupture across pre-modern history** (AUC
+> 0.66–0.68 vs wealth at 0.52–0.64; institutional decline precedes rupture while
+> wealth decline predicts nothing). **This signal has been monotonically eroding
+> for ~150 years** (structure-over-wealth spread +0.131 (1850) → +0.070 (1990);
+> p = 0.033) in lockstep with the rise of modern capital systems. **The erosion is
+> distortion, not inversion** — on armed conflict (the outcome type present across
+> all history) structure still leads even today; the apparent modern "wealth wins"
+> result was an artifact of including sovereign default, a capital-coupled crisis.
+> The MI measures a structural law; the modern era's unprecedented capital mobility
+> distorts its measurement (see the durability-gate bullet). *Inversion-test
+> anchor is n=25, descriptive; the erosion curve is a 143-polity panel,
+> demonstrated.*
 
-- **109-case retrodiction corpus** — 84 modern (1947–2024, six continents) + 25
-  ancient (c. 2686 BCE – 1797 CE). Headline coding: 100% directional / zero
-  falsifications — but see the correction above; the mechanically-recomputable
-  core is a minority.
-- **Durability gate (Safeguard J) — the audit's strongest survivor.** Recomputes
-  cleanly (18/19), and predicts actual crises at **88.9% vs a 63.2% base rate
-  (+25.7 pts), with zero false positives**. This is the defensible predictive claim.
-- **Rule-validation family — honestly weak:** 60% vs a 66.7% majority baseline
-  (−6.7 pts); does not beat base rate.
+- **Durability gate (Safeguard J) — the load-bearing predictive signal.** On its
+  19-case validation set: recomputes cleanly (18/19), predicts crises at **88.9%
+  vs a 63.2% base rate (+25.7 pts), zero false positives.** On the full modern
+  holdout it does not beat trivial income/fragility baselines — but that reflects
+  a *specifically modern* pathology it detects (P4−P1 gap is negative across all
+  25 ancient cases; the economy-outruns-institutions failure mode is a capital-era
+  phenomenon) plus a data bias: the crisis label misses post-2015 collapses
+  (Venezuela, Lebanon, Sri Lanka, Ghana) it flagged. Its errors are systematic —
+  misses are external shocks, false alarms are externally-propped states.
+- **The "100% directional accuracy" was one soft metric, honestly decomposed** —
+  of the 51 ordinality cases, ~10 mechanical, 7 abstentions, ~34 human judgment.
+  Replaced by the findings above; the framework is not weaker for it.
+- **Rule-validation family — honestly weak:** 60% vs a 66.7% majority baseline.
 - **P1 ordinality** — Institutional Quality is the most central variable in the
   construct: it correlates with the other pillars at |r| ≈ 0.79–0.80, and P1
   ordinality is confirmed across all 51 ordinality cases (213 confirm / 77

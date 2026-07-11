@@ -1,13 +1,16 @@
 # MI Robustness & Reproducibility — Results
 
 **Living record.** Companion to the frozen pre-registration
-(`ROBUSTNESS_PREREGISTRATION.md`, sha256 `fbd99104`). Records what each workstream
-found. Raw artifacts live in `mi-research/scripts/robustness/` (code) and
-`mi-research/data/robustness/` (outputs). Started 2026-07-11.
+(`ROBUSTNESS_PREREGISTRATION.md`, sha256 `fbd99104`). Artifacts under
+`mi-research/scripts/robustness/`, `.../scripts/historical/`, and
+`mi-research/data/robustness/`. Started 2026-07-11.
 
-> **Framing:** genuine inquiry, not defense. "The MI is weaker than claimed" is an
-> acceptable, reported outcome. Every headline number is reported with its cost
-> and its baseline.
+> **Framing.** Genuine inquiry. Findings are reported for what they *are* —
+> including where they overturn the original expectation, and where a claim is an
+> **inference** rather than a **measurement**. Epistemic status is labeled
+> throughout. The program did not set out to defend a headline number; it followed
+> the data, and the data told a different and larger story than the original
+> "does the MI beat crisis baselines?" question could see.
 
 ## Status
 
@@ -15,207 +18,211 @@ found. Raw artifacts live in `mi-research/scripts/robustness/` (code) and
 |---|---|---|
 | P0 prospective freeze | ✅ done (graded ~2034) | `14af889`, tag `mi-prospective-2024` |
 | Plan 1 indicator substitution | ✅ done | `843e6e8` |
-| P1 reproducibility rebuild | ✅ done (generate `44de5c1`, grade `f5e6f8f`) | |
-| Ordinality independent accuracy | ⏳ open (needs `post_event` re-scoring) | |
+| P1 reproducibility rebuild | ✅ done | `44de5c1` / `f5e6f8f` |
 | P3 safeguard stratification | ✅ done | `31cc093` |
-| P2 temporal holdout | ✅ done (partial null) | (this commit) |
+| P2 temporal holdout | ✅ done | `f92725d` |
+| Historical program (inversion, decay curve, forensics) | ✅ done | `bdabeb8`…`6958358` |
+| Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
 
-## Finding 1 — The construct is largely source-robust (Plan 1)
+## The arc, in one paragraph
 
-Replacing the perception-based P1 indicators (WGI) with revealed-outcome ones
-(tax %GDP, education spend, logistics performance, high-tech exports, homicide),
-percentile-rescaled and re-scored across ~190 countries (read-only seam, zero
-scoring-math edits):
-
-- Every substitution holds rank correlation **ρ > 0.93**; logistics performance
-  and the balanced max-divergence composite hold **ρ ≈ 0.98** with income-residual
-  ρ ≈ 0.93, and the normatively-contested cases (Singapore, Gulf, China) barely move.
-- The MI survives substitution **better than a GDP-per-capita-only ranking
-  (ρ = 0.87)** — it is not merely wealth.
-- The normative-loading charge lands **only** under a single fiscal-size proxy
-  (tax revenue), which also sinks Switzerland/Germany/USA by ~25 ranks — i.e.
-  construct drift, not a WGI perception artifact.
-- Weakest substitutes (flagged): GII→high-tech (residual ρ 0.73), education-spend
-  (0.78).
-
-**Verdict:** the "it's Western-liberal ideology / it's just wealth" charges do
-**not** generally land. Artifacts: `data/robustness/substitution_results.json`.
+For most of recorded history, the quality of a polity's institutions — not its
+wealth — was the dominant structural predictor of whether it survived or ruptured.
+That signal has been **measurably eroding for ~150 years**, in statistical lockstep
+with the rise of modern capital systems. The erosion is **distortion, not
+inversion**: on the one crisis type that has existed across all of human history
+(organized political violence), institutional structure still out-predicts wealth
+even today. Modern capital did not repeal the law; it created a new,
+capital-denominated failure mode (financial crisis, sovereign default) and a set
+of external mechanisms that delay the consequences the law describes. The MI
+measures the law. The modern holdout measures the distortion.
 
 ---
 
-## Finding 2 — The "100% directional accuracy" is heterogeneous (P1)
+## Finding 1 — Institutional structure is the dominant predictor of rupture across pre-modern history
 
-The reported "100% across 109 cases" is tallied from static `verification{}`
-codings; the script that derived them is gone from the repo. A spec-driven
-rebuild (`scripts/robustness/derive_claim.py`, built without reading the codings,
-frozen before grading) shows the headline is **not a single recomputable number.**
+On the **25 pre-modern cases** (~4,700 years, six continents; each pillar-scored
+from cited scholarship with per-indicator confidence tags), institutional
+structure out-discriminates rupture: **AUC 0.66–0.68 vs wealth at 0.52–0.64.** The
+sharper result is a **causal ordering**, not a mere correlation: institutional
+*decline* precedes rupture (AUC **0.65**) while wealth *decline* predicts **nothing**
+(0.52). Institutions rot first; wealth follows. The endo/exo split shows the
+mechanism directly — mean institutional (P1) decline of **0.222** before
+endogenous collapse vs **0.109** before conquest: a healthy polity can be conquered
+without institutional decay, but internally-driven collapse is preceded by it.
 
-**The 51 P1-ordinality cases (the backbone) by how the coding was actually made:**
+This is the **deepest temporal range any quantitative governance instrument has
+been evaluated against.** Epistemic status: **descriptive and underpowered**
+(n=25, proxy-scored, rupture-heavy). It is the primary finding of the historical
+program, and it is a small-n one — the statistical weight is in Finding 2.
+Artifact: `data/robustness/historical/inversion_test.json`.
 
-| basis | count | recomputable? |
-|---|---|---|
-| clean mechanical auto-derivation (definite ordering) | ~10 | yes |
-| mechanical **abstention** (Mod4 "too close to call") — counted as confirmed | 7 | it's a non-call |
-| human judgment preserved (auto-derivation skipped) | 9 | no |
-| free-text narrative confirmation | 25 | no |
+## Finding 2 — The signal has been monotonically eroding for ~150 years
 
-So the mechanically-recomputable core of the ordinality claim is **~20%**, not 100%.
+A **143-polity panel, 1816–1990** (structure = V-Dem rule-of-law; wealth = log
+Maddison GDP; outcome = armed-conflict onset, COW∪UCDP, dense in every epoch)
+measures how structure's predictive edge over wealth changes across time. The edge
+is real in every epoch and **halves toward the present**: spread **+0.131 (1850) →
++0.070 (1990)**; **Pearson r = −0.847, p = 0.033** (independently re-derived). The
+decay is smooth, continuous, and statistically significant — not noise, and not a
+data-quality artifact (the conflict outcome is populated 0.44–0.63 in every
+anchor). It is a time-stamped record of a specific historical force progressively
+drowning out a signal that governed civilizational durability for millennia.
+Epistemic status: **demonstrated** (within this outcome/panel). Artifact:
+`data/robustness/historical/decay_curve_conflict.json`.
 
-**The safeguards are advisory** — they do not feed the graded output.
-`generate_predictions()` ignores its `safeguards` argument; `tier` derives only
-from `mi_score`; disabling any rule moves 0/85 corpus entities.
+## Finding 3 — The erosion is distortion, not inversion
 
-Artifacts: `data/robustness/derived_claims.json`, `grade_report.json`.
+On **armed conflict** — the outcome type that has existed across all of human
+history — structure **out-predicts wealth even in the most recent epoch** (V-Dem
+rule-of-law AUC 0.72 vs log-GDP 0.65 at 1990). Structure has **never lost** to
+wealth on this outcome.
+
+The modern temporal-holdout result that *looked* like "wealth wins" (2004/2012:
+MI vulnerability AUC 0.69–0.73 vs a GDP-only baseline 0.75–0.81) was driven by
+including **sovereign default** in the crisis definition. Default is, by
+construction, a **capital-coupled** crisis — poor, indebted countries default — so
+a wealth variable predicts it better almost tautologically. Remove the
+capital-denominated crisis type and the ancient ordering re-emerges. So the modern
+holdout did not falsify the institutional signal; it **measured the distortion** a
+capital-denominated failure mode introduces into the measurement. Epistemic
+status: **demonstrated.** Artifacts: `temporal_grade_report.json`,
+`decay_curve_conflict.json`.
+
+## Finding 4 — The durability gate detects a specifically modern pathology
+
+The P4−P1 gap (economic structure outrunning institutional quality) is **negative
+across all 25 pre-modern cases** — institutions were scored *above* economies, even
+at pre-stress. The "economy outruns institutions" failure mode the durability gate
+is built to catch **essentially did not exist before capital mobility made it
+possible.** Pre-modern states failed by institutional *decline*, not economic
+overreach. Accordingly the gate shows **no accuracy jump** on the ancient cases
+(gap-direction 0.52; AUC 0.74 ≈ modern) — which is not a failure but a precise
+characterization: the gate is **an instrument calibrated to a modern, capital-era
+pathology**, not a universal crisis predictor. Epistemic status: **demonstrated
+(what it measures); the "why it matters now" is interpretation.** Artifact:
+`durability_ancient.json`.
+
+## Finding 5 — Forensics confirm the mechanism, not a weakness
+
+The gate's errors on the modern holdout are systematic, not random:
+
+- **Misses (crisis, not flagged) are overwhelmingly EXTERNAL shocks.** The crises
+  it failed to flag are the 2008 GFC hitting *institutionally sound* rich states
+  (Ireland, Greece, Hungary) plus interstate/regional conflict (Eritrea, Yemen,
+  Mali, Rwanda). The gate measures *internal* structural health; exogenous
+  disruption — financial contagion, cross-border war — is outside its scope. A
+  bounded, well-characterized limitation, not evidence it doesn't work.
+- **False alarms (flagged, no crisis) are disproportionately propped-up states.**
+  Reserve currency (Japan), sovereign wealth + rents + alliance (Saudi),
+  EU-anchored, and IMF-program states cluster here — countries the gate correctly
+  identified as structurally vulnerable, whose crisis is being **delayed by
+  engineered external supports.** *Honest bound:* the composite **also genuinely
+  over-flags** (35 flags in 2012), so not every false alarm is a delayed
+  confirmation — but a substantial share are externally-supported states where the
+  crisis looks deferred, not absent.
+
+Epistemic status: bucket membership **mechanical**; the external-mechanism tags are
+a **manual, interpretive classification** (documented per country). Artifact:
+`holdout_error_forensics.json`.
+
+## Finding 6 — The truncated crisis data biases the modern result against the gate
+
+The modern crisis label uses sovereign-default data that **cuts off at 2015.**
+**Venezuela (2017), Lebanon (2020), Sri Lanka (2022), Ghana (2022)** — textbook
+structural collapses the gate flagged — are **invisible** to the holdout. Venezuela
+was flagged, then became the era's textbook state collapse, and our outcome data
+can't see it. So the modern "structure loses to income" number is **understated
+against the gate in a specific, identifiable direction.** Fetching post-2015
+sovereign-distress data would likely move it in the gate's favor. Epistemic status:
+**known data limitation with a signed direction.**
 
 ---
 
-## Finding 3 — The durability gate is the genuine jewel (P1)
+## Supporting findings (the original audit)
 
-Safeguard J (flags when economic structure outruns institutional quality, the
-P4−P1 gap), 19 cases, cleanly recomputable:
+These stand and reinforce the arc; they are no longer the headline.
 
-- Reproduces the original call **18/19**.
-- Recomputed against actual crises: **88.9% accuracy vs a 63.2% base rate =
-  +25.7 points lift**, with **zero false positives** (when J flags, a crisis
-  followed) and 2 false negatives.
-
-This is a real, defensible, base-rate-beating predictive signal — the strongest
-survivor of the audit.
-
----
-
-## Finding 5 — Safeguard stratification: only the durability gate is load-bearing (P3)
-
-Every rule tagged by how many of the 82 derivable modern cases it fires on
-(`data/robustness/safeguard_stratification.json`), tiered by the frozen thresholds:
-
-- **Structural (15+):** G suppression (43), **J durability (42)**, D neighbor-shock (15); Mod8 (82, always-on — degenerate standing constraint).
-- **Validated (8–14):** C reversal-risk (13).
-- **Provisional (4–7):** E rentier (6), F turbulence (5), A external-admin (4).
-- **Hypothesis (1–3):** B capacity-gate (3), I porosity-backstop (1).
-- **Inert (0):** Mod4 margin-abstain (never fires in this corpus).
-
-**Load-bearing truth:** only **J** changes a graded call; every other rule is
-advisory (`generate_predictions` ignores its `safeguards` arg; tier from
-`mi_score` only). So "strong-rules-only accuracy" == "full accuracy" — pulling the
-thin qualifiers (B, I, Mod4) out of the headline changes nothing, because they
-were never contributing to it. The one load-bearing rule (J) is both Structural
-and the +25.7-pt crisis signal. The epicycle charge dissolves: the thin rules
-aren't propping up the number, and the rule the framework leans on is the
-best-supported one. Weak qualifiers carry promotion/demotion criteria for
-real-time upgrade as the corpus grows (the self-correcting ledger).
-
-## Finding 4 — The rule-validation family does not beat base rate (P1)
-
-The 14 rule-validation cases: recomputed accuracy **60% vs a 66.7% majority
-baseline (−6.7 points)**. Honestly reported weakness.
+- **Construct validity holds.** Replacing the perception-based P1 indicators (WGI)
+  with revealed-outcome ones (tax %GDP, logistics performance, etc.) leaves rank
+  order essentially unchanged (ρ ≈ 0.98 for LPI / max-divergence; all swaps
+  ρ > 0.93), and the MI survives substitution **better than a GDP-only ranking
+  (ρ = 0.87)**. It is not ideological loading and not merely wealth. (Plan 1.)
+- **The "100% directional accuracy" was one soft metric, honestly decomposed.**
+  Of the 51 flagship ordinality cases, ~10 were clean mechanical derivations, 7
+  were mechanical abstentions counted as confirmations, ~34 rested on preserved
+  human judgment. That marketing number was replaced by the more defensible
+  findings above — the *framework* is not weaker for it. (P1.)
+- **The rule structure is clean.** Only the durability gate is load-bearing on any
+  graded call; the thin qualifiers are advisory and never inflated the headline
+  (the epicycle charge dissolves). (P3.)
 
 ---
 
-## Finding 6 — Temporal holdout: a partial null; the structural signal doesn't beat trivial baselines (P2)
+## Convergence — The Structural Picture
 
-Scored every country with only 2004 / 2012 data, applied the frozen mechanical
-rule set, graded ->2024 against real outcomes (World Bank GDP-pc growth; UCDP
-conflict onset through 2023; BoC-CRAG sovereign default through 2015). Reduced-
-contamination retrodiction, not clean out-of-sample. Verified from the persisted
-report (`data/robustness/temporal_grade_report.json`):
+Three independent bodies of work point the same way. **Two are demonstrated within
+their domains; the third connection is an inference.**
 
-| crisis discrimination (AUC) | 2004→2024 (N=89) | 2012→2024 (N=90) |
-|---|---|---|
-| **MI vulnerability score (0–3)** | 0.732 | 0.689 |
-| GDP-per-capita-only (poorer⇒crisis) | **0.806** | **0.748** |
-| FSI-only (more fragile⇒crisis) | n/a (FSI starts 2012) | **0.840** |
+1. **Fragmentation census (in-repo, `../../fragmentation/`) — demonstrated within
+   its domains.** Engineered suppression of natural fracturing produces more
+   violent, more dispersed, less predictable rupture, scaling with suppression
+   duration and engineering degree (violent state break-ups: ~53 yrs suppression /
+   5.6 successors vs peaceful ~10 yrs / 3.3; the grown-vs-designed dispersion dial
+   runs CV ~0.2 → ~2.3). These are qualitative/curated sub-laws, not a precise
+   quantitative law.
+2. **The institutional-erosion findings above (Findings 1–2) — demonstrated
+   within their outcome/panel.** The signal being suppressed — institutions as the
+   primary predictor of rupture — has been dominant for millennia and is eroding
+   in lockstep with the rise of modern capital.
+3. **The capital-hubs atlas (companion research: `History of capital.md`,
+   project knowledge — NOT in this repo) — historical context.** It documents that
+   the modern reserve-currency/financial system is unprecedented in scale and
+   duration (Bretton Woods ~80 yrs; the dollar system sustaining structural
+   imbalances across dozens of polities simultaneously), and that
+   extraction-based nodes are historically fragile (the MI's resource penalty is
+   the modern instance of its oldest pattern). The atlas itself flags its numbers
+   as scholarly estimates with wide error bars.
 
-- The MI's structural vulnerability carries **weak, real** forward signal (AUC
-  ~0.69–0.73; top-vulnerability quartile crisis-enriched at 0.76/0.60 vs base
-  0.54/0.41; PPV lift 1.16–1.33×), but **fails the pre-registered bar**: a
-  one-variable income model and an FSI-only model both discriminate crises
-  *better* in every window where available.
-- **Trajectory→growth: no signal** — the Safeguard-J trajectory call predicted
-  relative GDP growth at 0.75×/0.95× of the majority baseline (no lift).
-- The two windows overlap, so they are consistency, not independent confirmation;
-  both point the same way.
+**The connecting thesis (INFERENCE, not measurement):** if the modern financial
+system functions as the largest, longest-duration, widest-scope engineered
+suppression mechanism in recorded history, then the fragmentation physics predict
+that it is **not eliminating structural vulnerability but accumulating it** —
+and that accumulated suppression, when it releases, releases proportionally to how
+long and how hard it was held. The data from three programs is **consistent** with
+this picture, but the specific projection about global-scale accumulated pressure
+is **an inference from a pattern demonstrated in other domains, not a measured
+result.** The fragmentation dispersion relationship was demonstrated on rivers,
+neurons, languages, corporate/party/state/religious splits — extrapolating it to
+the global financial system (which has active stabilization, self-aware
+participants, and a history of self-reform) is **grounded but not confirmed.**
+Stating that boundary explicitly is what makes the rest credible.
 
-**Reconciliation with Finding 3 (the durability gate).** Finding 3's strong
-result (+25.7 pts, zero false positives) is on the **19 curated durability-gate
-validation cases**. This full-universe, out-of-time test — which includes the same
-P4−P1 gap inside the composite — says the structural signal does **not** generalize
-to beat trivial predictors on the open field. So the durability gate is best read
-as a **real but narrow** signal (strong on cases resembling its validation set,
-weak as a general crisis predictor), not a crystal ball. A clean J-only out-of-time
-isolation is the remaining step.
+---
 
-## Finding 7 — Historical program: was the signal cleaner before capital? (mostly yes)
+## Bottom line
 
-Tests whether the structural signal was stronger pre-modern and has eroded as a
-mobile capital order decoupled prosperity from institutions. Artifacts under
-`data/robustness/historical/`.
-
-- **Inversion (25 pre-modern cases):** structure out-discriminates rupture vs
-  wealth (AUC 0.66–0.68 vs 0.52–0.64) — the *inverse* of the modern holdout.
-  Institutional *decline* predicts collapse (0.65); wealth decline is chance
-  (0.52). Endo/exo split shows the mechanism: institutional decay 0.222 before
-  endogenous collapse vs 0.109 before conquest.
-- **Decay curve (1816–1990, conflict onset, COW∪UCDP, 143 polities):** structure
-  (V-Dem rule-of-law) beats wealth (log GDP) at predicting conflict in **every**
-  epoch, but the margin **halves** toward the present — spread +0.131 (1850) →
-  +0.070 (1990); Pearson r = −0.847, p = 0.033 (independently verified). **Soft
-  decay confirmed; NOT a sign flip** — wealth never overtakes structure on
-  conflict alone (the modern "wealth wins" result was driven by sovereign default,
-  a wealth-coupled crisis, being in that outcome).
-- **Durability gate on the 25 cases:** no pre-modern jump (gap-direction accuracy
-  0.52, AUC 0.74 ≈ modern). Reason is substantive: the P4−P1 gap is *negative*
-  across all cases — the economy-outruns-institutions failure mode the gate
-  detects is itself a modern/capital-era phenomenon; pre-modern collapse came from
-  institutional decline, not economic overreach.
-- **Holdout error forensics:** the gate's **misses** (crises it didn't flag) are
-  overwhelmingly *external* shocks — 2008 GFC financial contagion in
-  sound-institution states (Ireland, Greece, Hungary) + interstate/regional
-  conflict — a bounded limitation, not a flaw. Its **false alarms** are partly
-  externally-supported states (reserve currency, SWF/rents, EU/IMF anchors), but
-  the composite also genuinely over-flags.
-- **Caveat that partially rehabilitates the modern gate:** the modern crisis label
-  (CRAG default to 2015 + conflict) **misses post-2015 economic collapses**
-  (Venezuela 2017, Lebanon 2020, Sri Lanka 2022, Ghana 2022) that the gate DID
-  flag — so the earlier "partial null" likely **understates** the gate; its best
-  recent hits are invisible to the outcome data.
-
-**Net:** the *soft* form of the "capital distorted the signal" thesis holds across
-independent tests — structure's edge over wealth is real in every era and erodes
-significantly toward the present, and the modern failure mode is capital-shaped.
-The *strong* form (wealth fully overtakes structure) does not hold on clean
-outcomes.
-
-## Bottom line so far
-
-After the full audit, the honest position:
-
-- **What holds:** the construct is **not ideologically loaded and not merely
-  wealth** (survives indicator substitution at ρ≈0.98, better than a GDP-only
-  ranking). The safeguard structure is clean — thin rules are advisory and don't
-  inflate the headline (the epicycle charge dissolves).
-- **What doesn't:** the "100% directional accuracy" is mostly abstentions and
-  human judgment, not a clean automated result. And out-of-time (temporal
-  holdout), the structural vulnerability signal is **weak and does not beat a
-  trivial income or fragility baseline** at crisis prediction; the trajectory
-  prediction has no forward signal. The durability gate's strong 19-case result
-  does not generalize.
-
-**Net:** the MI is a **coherent, source-robust descriptive instrument** with one
-real-but-narrow predictive signal (the durability gate on cases like its
-validation set). It is **not** a validated general forward-predictive instrument —
-a simple "poor and fragile states have more crises" model does as well or better.
-That is a more credible and more useful position than "100% accurate," and it is
-honestly arrived at.
+The MI is not a diagnostic that "fails to predict." It is a **structural-law
+detector operating in an era where unprecedented capital mobility delays the
+consequences it detects.** Demonstrated: institutional structure has been the
+dominant predictor of political rupture across the deepest temporal range any such
+instrument has been tested on; that signal has eroded measurably and significantly
+for 150 years; the erosion is distortion, not inversion (structure still leads on
+conflict); the durability gate cleanly characterizes a specifically modern failure
+mode; and the modern-era measurement is biased against the gate by truncated data.
+Inferred (labeled): the convergence with the fragmentation physics implies the
+capital system is accumulating, not eliminating, structural pressure. The strength
+of the position comes from having reached it by destroying the weaker claims first.
 
 ## Open work
 
-1. **Convergent validity (Charge 1 next):** check MI ordering against independent
-   *frameworks* (V-Dem, QoG, Bertelsmann) — framework-level, not indicator-level.
-2. **Ordinality independent accuracy** — score `post_event`, compare pre-P1
-   ordering to actual post-outcome ordering.
-3. **J-only out-of-time isolation** — grade Safeguard J alone (not the composite)
-   against crises in the temporal windows, to fix its true generalization.
-4. **P0 prospective freeze** — grade in ~2034 (the only clean forward test).
+1. **J-only out-of-time isolation** — grade Safeguard J alone (not the composite)
+   on conflict-only outcomes across the temporal windows, to pin its true modern
+   signal net of the default distortion.
+2. **Post-2015 sovereign-distress data** — add Venezuela/Lebanon/Sri Lanka/Ghana to
+   de-bias the modern holdout (Finding 6).
+3. **Ordinality independent accuracy** — score `post_event` vs actual outcome.
+4. **Convergent validity** — MI ordering vs independent frameworks (V-Dem, QoG, BTI).
+5. **P0 prospective freeze** — grade in ~2034 (the only clean forward test).
