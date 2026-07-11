@@ -1,0 +1,1352 @@
+{
+  "test": "A1_state_formation_classification",
+  "status": "PRE-REGISTERED (committed before any A2/A3/A4 outcome split)",
+  "source_entry_year": "Correlates of War State System Membership (states2016.csv)",
+  "criterion": "prior multi-generational experience operating institutions at/near current scale",
+  "groups": {
+    "mature": 54,
+    "post_colonial": 93,
+    "early_post_colonial": 20
+  },
+  "n_states": 167,
+  "n_flagged_for_sensitivity": 26,
+  "india_special": "IND is coded post_colonial with alt_group=mature; A2/A3 run it in BOTH groups (brief).",
+  "states": {
+    "AFG": {
+      "name": "Afghanistan",
+      "cow_entry_year": 1919,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_never_colonized",
+      "note": "Never colonized buffer state; long continuous monarchy."
+    },
+    "AGO": {
+      "name": "Angola",
+      "cow_entry_year": 1975,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "ALB": {
+      "name": "Albania",
+      "cow_entry_year": 1914,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_revival",
+      "note": "Ottoman-successor European state, independence 1912-13; national-revival elite (parallels GRC/BGR)."
+    },
+    "ARE": {
+      "name": "United Arab Emirates",
+      "cow_entry_year": 1971,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_gulf_protectorate",
+      "note": "1971 federation of Trucial protectorate emirates."
+    },
+    "ARG": {
+      "name": "Argentina",
+      "cow_entry_year": 1841,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "ARM": {
+      "name": "Armenia",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_post_soviet_dissolution",
+      "note": "Brief 1918-20 republic; deep nation, no modern sovereignty at scale before 1991."
+    },
+    "AUS": {
+      "name": "Australia",
+      "cow_entry_year": 1920,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_settler",
+      "note": "Settler dominion; continuous resident administrative class."
+    },
+    "AUT": {
+      "name": "Austria-Hungary",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "AZE": {
+      "name": "Azerbaijan",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_post_soviet_dissolution",
+      "note": "Brief 1918-20 republic; no modern sovereignty at scale before 1991."
+    },
+    "BDI": {
+      "name": "Burundi",
+      "cow_entry_year": 1962,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "BEL": {
+      "name": "Belgium",
+      "cow_entry_year": 1830,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "BEN": {
+      "name": "Benin",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "BFA": {
+      "name": "Burkina Faso",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "BGD": {
+      "name": "Bangladesh",
+      "cow_entry_year": 1971,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "BGR": {
+      "name": "Bulgaria",
+      "cow_entry_year": 1908,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_revival",
+      "note": "Medieval statehood + 1878 autonomous principality; national-revival institutions."
+    },
+    "BHR": {
+      "name": "Bahrain",
+      "cow_entry_year": 1971,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_gulf_protectorate",
+      "note": "British protectorate to 1971; Al Khalifa dynastic rule."
+    },
+    "BIH": {
+      "name": "Bosnia and Herzegovina",
+      "cow_entry_year": 1992,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_dissolution_constructed",
+      "note": "Constructed Dayton (1995) state; no prior independent sovereign tradition at scale."
+    },
+    "BLR": {
+      "name": "Belarus",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_post_soviet_constructed",
+      "note": "No interwar independence; constructed Soviet-successor sovereignty 1991."
+    },
+    "BOL": {
+      "name": "Bolivia",
+      "cow_entry_year": 1848,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "BRA": {
+      "name": "Brazil",
+      "cow_entry_year": 1822,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "BRB": {
+      "name": "Barbados",
+      "cow_entry_year": 1966,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "BWA": {
+      "name": "Botswana",
+      "cow_entry_year": 1966,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "CAF": {
+      "name": "Central African Republic",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "CAN": {
+      "name": "Canada",
+      "cow_entry_year": 1920,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_settler",
+      "note": "Settler dominion; British-derived institutions continuously operated by a resident administrative class."
+    },
+    "CHE": {
+      "name": "Switzerland",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "CHL": {
+      "name": "Chile",
+      "cow_entry_year": 1839,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "CHN": {
+      "name": "China",
+      "cow_entry_year": 1860,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_never_colonized",
+      "note": "Continuous imperial-bureaucratic tradition; never fully colonized."
+    },
+    "CIV": {
+      "name": "Ivory Coast",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "CMR": {
+      "name": "Cameroon",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "COD": {
+      "name": "Democratic Republic of the Congo",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "COG": {
+      "name": "Congo",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "COL": {
+      "name": "Colombia",
+      "cow_entry_year": 1831,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "COM": {
+      "name": "Comoros",
+      "cow_entry_year": 1975,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "CPV": {
+      "name": "Cape Verde",
+      "cow_entry_year": 1975,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "CRI": {
+      "name": "Costa Rica",
+      "cow_entry_year": 1920,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "CUB": {
+      "name": "Cuba",
+      "cow_entry_year": 1902,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "flag_late_iberian",
+      "note": "Independent 1902 (from Spain/US); Iberian-colonial heritage, ~120y development \u2014 kept in the early bloc."
+    },
+    "CYP": {
+      "name": "Cyprus",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "CZE": {
+      "name": "Czechoslovakia",
+      "cow_entry_year": 1918,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_treaty_split",
+      "note": "1993 velvet split; deep Bohemian/Habsburg + interwar-Czechoslovak institutional continuity."
+    },
+    "DEU": {
+      "name": "Hanover",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "DJI": {
+      "name": "Djibouti",
+      "cow_entry_year": 1977,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "DNK": {
+      "name": "Denmark",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "DOM": {
+      "name": "Dominican Republic",
+      "cow_entry_year": 1894,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "flag_late_iberian",
+      "note": "Independent 1844/1865; Iberian-colonial heritage."
+    },
+    "DZA": {
+      "name": "Algeria",
+      "cow_entry_year": 1962,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "ECU": {
+      "name": "Ecuador",
+      "cow_entry_year": 1854,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "EGY": {
+      "name": "Egypt",
+      "cow_entry_year": 1855,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_deep_state",
+      "note": "Ancient/Ottoman-Khedival bureaucratic tradition; heavy British influence 1882-1952; genuinely ambiguous."
+    },
+    "ERI": {
+      "name": "Eritrea",
+      "cow_entry_year": 1993,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_secession_constructed",
+      "note": "1993 secession from Ethiopia; constructed sovereign institutions."
+    },
+    "ESP": {
+      "name": "Spain",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "EST": {
+      "name": "Estonia",
+      "cow_entry_year": 1918,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "ETH": {
+      "name": "Ethiopia",
+      "cow_entry_year": 1898,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_never_colonized",
+      "note": "Never colonized (Italian occupation 1936-41 only); ancient continuous state."
+    },
+    "FIN": {
+      "name": "Finland",
+      "cow_entry_year": 1917,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_autonomy",
+      "note": "Grand-Duchy autonomy + strong civil society before 1917; deep Nordic institutional embedding."
+    },
+    "FJI": {
+      "name": "Fiji",
+      "cow_entry_year": 1970,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "FRA": {
+      "name": "France",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "GAB": {
+      "name": "Gabon",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "GBR": {
+      "name": "United Kingdom",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "GEO": {
+      "name": "Georgia",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_post_soviet_dissolution",
+      "note": "Brief 1918-21 republic; no modern sovereignty at scale before 1991."
+    },
+    "GHA": {
+      "name": "Ghana",
+      "cow_entry_year": 1957,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "GIN": {
+      "name": "Guinea",
+      "cow_entry_year": 1958,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "GMB": {
+      "name": "Gambia",
+      "cow_entry_year": 1965,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "GNB": {
+      "name": "Guinea-Bissau",
+      "cow_entry_year": 1974,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "GNQ": {
+      "name": "Equatorial Guinea",
+      "cow_entry_year": 1968,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "GRC": {
+      "name": "Greece",
+      "cow_entry_year": 1828,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_revival",
+      "note": "1828 independence from Ottomans; classical/European institutional import + national-revival elite."
+    },
+    "GTM": {
+      "name": "Guatemala",
+      "cow_entry_year": 1868,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "HND": {
+      "name": "Honduras",
+      "cow_entry_year": 1899,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "HRV": {
+      "name": "Croatia",
+      "cow_entry_year": 1992,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_dissolution_strong_inst",
+      "note": "Habsburg embedding + Yugoslav republic-level administration; no prior independent sovereignty at scale."
+    },
+    "HTI": {
+      "name": "Haiti",
+      "cow_entry_year": 1859,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "flag_french",
+      "note": "Independent 1804 from France; earliest post-colonial republic."
+    },
+    "HUN": {
+      "name": "Hungary",
+      "cow_entry_year": 1918,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "IDN": {
+      "name": "Indonesia",
+      "cow_entry_year": 1949,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "IND": {
+      "name": "India",
+      "cow_entry_year": 1947,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_india_special",
+      "note": "Deep pre-colonial institutional traditions but current borders + unified administration are colonial; brief: run in BOTH groups."
+    },
+    "IRL": {
+      "name": "Ireland",
+      "cow_entry_year": 1922,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_uk_embedding",
+      "note": "Deep institutional embedding in the British system + Home-Rule tradition; admin class continuous."
+    },
+    "IRN": {
+      "name": "Iran",
+      "cow_entry_year": 1855,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_never_colonized",
+      "note": "Continuous Persian statehood; never formally colonized."
+    },
+    "IRQ": {
+      "name": "Iraq",
+      "cow_entry_year": 1932,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "ISL": {
+      "name": "Iceland",
+      "cow_entry_year": 1944,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "ISR": {
+      "name": "Israel",
+      "cow_entry_year": 1948,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_constructed_imported",
+      "note": "1948 creation; no prior state at scale but strong pre-state (Yishuv/mandate) + European-imported institutions."
+    },
+    "ITA": {
+      "name": "Italy",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "JAM": {
+      "name": "Jamaica",
+      "cow_entry_year": 1962,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "JOR": {
+      "name": "Jordan",
+      "cow_entry_year": 1946,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "JPN": {
+      "name": "Japan",
+      "cow_entry_year": 1860,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_never_colonized",
+      "note": "Never colonized; continuous state, Meiji institutional build."
+    },
+    "KAZ": {
+      "name": "Kazakhstan",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_central_asian_constructed",
+      "note": "Brief exemplar: constructed 1991 successor, no prior sovereignty at scale."
+    },
+    "KEN": {
+      "name": "Kenya",
+      "cow_entry_year": 1963,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "KGZ": {
+      "name": "Kyrgyzstan",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_central_asian_constructed",
+      "note": "Constructed 1991 successor."
+    },
+    "KHM": {
+      "name": "Cambodia",
+      "cow_entry_year": 1953,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "KOR": {
+      "name": "Korea",
+      "cow_entry_year": 1887,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_colonial_interruption",
+      "note": "Deep Joseon statehood at scale; Japanese colonial interruption 1910-45; strong post-war build."
+    },
+    "KWT": {
+      "name": "Kuwait",
+      "cow_entry_year": 1961,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_gulf_protectorate",
+      "note": "British protectorate to 1961 with continuous Al Sabah dynastic rule; local governance tradition below sovereign scale."
+    },
+    "LAO": {
+      "name": "Laos",
+      "cow_entry_year": 1953,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "LBN": {
+      "name": "Lebanon",
+      "cow_entry_year": 1946,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "LBR": {
+      "name": "Liberia",
+      "cow_entry_year": 1920,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_settler_founded_1847",
+      "note": "Freed-American-settler republic since 1847; never decolonized; weak institutional depth (ambiguous)."
+    },
+    "LBY": {
+      "name": "Libya",
+      "cow_entry_year": 1951,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "LKA": {
+      "name": "Sri Lanka",
+      "cow_entry_year": 1948,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "LSO": {
+      "name": "Lesotho",
+      "cow_entry_year": 1966,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "LTU": {
+      "name": "Lithuania",
+      "cow_entry_year": 1918,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "LUX": {
+      "name": "Luxembourg",
+      "cow_entry_year": 1920,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "LVA": {
+      "name": "Latvia",
+      "cow_entry_year": 1918,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "MAR": {
+      "name": "Morocco",
+      "cow_entry_year": 1847,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_protectorate",
+      "note": "Continuous Alaouite/Makhzen statehood since 1600s; French/Spanish protectorate 1912-56 (not full colony)."
+    },
+    "MDA": {
+      "name": "Moldova",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_post_soviet_constructed",
+      "note": "No prior independent sovereignty at scale; 1991 Soviet successor."
+    },
+    "MDG": {
+      "name": "Madagascar",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "MEX": {
+      "name": "Mexico",
+      "cow_entry_year": 1831,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "MKD": {
+      "name": "Macedonia",
+      "cow_entry_year": 1993,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_dissolution",
+      "note": "Yugoslav republic-level administration but no prior independent sovereignty; weaker institutional depth."
+    },
+    "MLI": {
+      "name": "Mali",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "MLT": {
+      "name": "Malta",
+      "cow_entry_year": 1964,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "MMR": {
+      "name": "Myanmar",
+      "cow_entry_year": 1948,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "MNG": {
+      "name": "Mongolia",
+      "cow_entry_year": 1921,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_constructed_1921",
+      "note": "Continuous steppe/Buddhist theocratic statehood but 1921 state consolidated under Soviet tutelage."
+    },
+    "MOZ": {
+      "name": "Mozambique",
+      "cow_entry_year": 1975,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "MRT": {
+      "name": "Mauritania",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "MUS": {
+      "name": "Mauritius",
+      "cow_entry_year": 1968,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "MWI": {
+      "name": "Malawi",
+      "cow_entry_year": 1964,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "MYS": {
+      "name": "Malaysia",
+      "cow_entry_year": 1957,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "NAM": {
+      "name": "Namibia",
+      "cow_entry_year": 1990,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "NER": {
+      "name": "Niger",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "NGA": {
+      "name": "Nigeria",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "NIC": {
+      "name": "Nicaragua",
+      "cow_entry_year": 1900,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "NLD": {
+      "name": "Netherlands",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "NOR": {
+      "name": "Norway",
+      "cow_entry_year": 1905,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_treaty_1905",
+      "note": "1905 treaty separation from Sweden with deep continuous institutions (brief's mature exemplar)."
+    },
+    "NPL": {
+      "name": "Nepal",
+      "cow_entry_year": 1920,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_never_colonized",
+      "note": "Never colonized; continuous Himalayan monarchy."
+    },
+    "NZL": {
+      "name": "New Zealand",
+      "cow_entry_year": 1920,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_settler",
+      "note": "Settler dominion; continuous resident administrative class."
+    },
+    "OMN": {
+      "name": "Oman",
+      "cow_entry_year": 1971,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_dynastic",
+      "note": "Continuous Omani sultanate/empire; British influence but never a formal colony/protectorate at scale."
+    },
+    "PAK": {
+      "name": "Pakistan",
+      "cow_entry_year": 1947,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "PAN": {
+      "name": "Panama",
+      "cow_entry_year": 1903,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "flag_late_iberian",
+      "note": "Independent 1903 (from Colombia/US); Iberian-colonial heritage."
+    },
+    "PER": {
+      "name": "Peru",
+      "cow_entry_year": 1839,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "PHL": {
+      "name": "Philippines",
+      "cow_entry_year": 1946,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "PNG": {
+      "name": "Papua New Guinea",
+      "cow_entry_year": 1975,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "POL": {
+      "name": "Poland",
+      "cow_entry_year": 1918,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_restored",
+      "note": "1918 restored state with deep pre-partition (Commonwealth) institutional tradition at scale."
+    },
+    "PRK": {
+      "name": "North Korea",
+      "cow_entry_year": 1948,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_colonial_interruption",
+      "note": "Same Joseon statehood tradition; colonial interruption 1910-45."
+    },
+    "PRT": {
+      "name": "Portugal",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "PRY": {
+      "name": "Paraguay",
+      "cow_entry_year": 1846,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "QAT": {
+      "name": "Qatar",
+      "cow_entry_year": 1971,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_gulf_protectorate",
+      "note": "British protectorate to 1971; Al Thani dynastic rule."
+    },
+    "ROU": {
+      "name": "Romania",
+      "cow_entry_year": 1878,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_revival",
+      "note": "1859/1878 union of principalities with continuous boyar/administrative tradition."
+    },
+    "RUS": {
+      "name": "Russia",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "RWA": {
+      "name": "Rwanda",
+      "cow_entry_year": 1962,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SAU": {
+      "name": "Saudi Arabia",
+      "cow_entry_year": 1927,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_organic_unification_1932",
+      "note": "Never colonized; 1932 organic conquest-unification (Al Saud) rather than institutional continuity."
+    },
+    "SDN": {
+      "name": "Sudan",
+      "cow_entry_year": 1956,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SEN": {
+      "name": "Senegal",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SGP": {
+      "name": "Singapore",
+      "cow_entry_year": 1965,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SLE": {
+      "name": "Sierra Leone",
+      "cow_entry_year": 1961,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SLV": {
+      "name": "El Salvador",
+      "cow_entry_year": 1875,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "SOM": {
+      "name": "Somalia",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SRB": {
+      "name": "Yugoslavia",
+      "cow_entry_year": 1878,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_dissolution_continuity",
+      "note": "Continuity with the independent pre-1914 Kingdom of Serbia (mature tradition)."
+    },
+    "SSD": {
+      "name": "South Sudan",
+      "cow_entry_year": 2011,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_secession_constructed",
+      "note": "2011 secession from Sudan; constructed sovereign institutions."
+    },
+    "STP": {
+      "name": "Sao Tome and Principe",
+      "cow_entry_year": 1975,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SVK": {
+      "name": "Slovakia",
+      "cow_entry_year": 1993,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_treaty_split",
+      "note": "1993 velvet split; interwar + federal Czechoslovak institutional continuity."
+    },
+    "SVN": {
+      "name": "Slovenia",
+      "cow_entry_year": 1992,
+      "group": "mature",
+      "alt_group": "post_colonial",
+      "flag": "flag_dissolution_strong_inst",
+      "note": "Habsburg embedding + Yugoslav republic-level administration; wealthy, strong institutions; no prior INDEPENDENT sovereignty."
+    },
+    "SWE": {
+      "name": "Sweden",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "SWZ": {
+      "name": "Swaziland",
+      "cow_entry_year": 1968,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SYC": {
+      "name": "Seychelles",
+      "cow_entry_year": 1976,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "SYR": {
+      "name": "Syria",
+      "cow_entry_year": 1946,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "TCD": {
+      "name": "Chad",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "TGO": {
+      "name": "Togo",
+      "cow_entry_year": 1960,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "THA": {
+      "name": "Thailand",
+      "cow_entry_year": 1887,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_never_colonized",
+      "note": "Never colonized; continuous Siamese/Thai monarchy-state."
+    },
+    "TJK": {
+      "name": "Tajikistan",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_central_asian_constructed",
+      "note": "Constructed 1991 successor."
+    },
+    "TKM": {
+      "name": "Turkmenistan",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_central_asian_constructed",
+      "note": "Constructed 1991 successor."
+    },
+    "TLS": {
+      "name": "East Timor",
+      "cow_entry_year": 2002,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "TTO": {
+      "name": "Trinidad and Tobago",
+      "cow_entry_year": 1962,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "TUN": {
+      "name": "Tunisia",
+      "cow_entry_year": 1825,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_protectorate",
+      "note": "Husainid Beylik under Ottoman suzerainty then French protectorate 1881-1956; weaker continuous-sovereignty claim than MAR."
+    },
+    "TUR": {
+      "name": "Turkey",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "mature_core",
+      "note": "Mature institutional core (see MATURE set)."
+    },
+    "TWN": {
+      "name": "Taiwan",
+      "cow_entry_year": 1949,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_roc_relocation",
+      "note": "Governed by the ROC \u2014 a state with deep mainland Chinese institutional tradition; sui generis."
+    },
+    "TZA": {
+      "name": "Tanzania",
+      "cow_entry_year": 1961,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "UGA": {
+      "name": "Uganda",
+      "cow_entry_year": 1962,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "UKR": {
+      "name": "Ukraine",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_post_soviet_dissolution",
+      "note": "Brief 1917-21 republic; no consolidated modern sovereign institutions at scale before 1991."
+    },
+    "URY": {
+      "name": "Uruguay",
+      "cow_entry_year": 1882,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "USA": {
+      "name": "United States of America",
+      "cow_entry_year": 1816,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_revolution",
+      "note": "1776 revolution establishing governance from internal institutional traditions (brief's mature exemplar)."
+    },
+    "UZB": {
+      "name": "Uzbekistan",
+      "cow_entry_year": 1991,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_central_asian_constructed",
+      "note": "Constructed 1991 successor, no prior sovereignty at scale."
+    },
+    "VEN": {
+      "name": "Venezuela",
+      "cow_entry_year": 1841,
+      "group": "early_post_colonial",
+      "alt_group": null,
+      "flag": "latam_bloc",
+      "note": "Iberian-colonial bloc, independence c.1810s-1840s."
+    },
+    "VNM": {
+      "name": "Vietnam",
+      "cow_entry_year": 1954,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "XKX": {
+      "name": "XKX",
+      "cow_entry_year": null,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "flag_dissolution_constructed",
+      "note": "2008 constructed state (not in COW states2016); no prior independent sovereign tradition."
+    },
+    "YEM": {
+      "name": "Yemen Arab Republic",
+      "cow_entry_year": 1926,
+      "group": "post_colonial",
+      "alt_group": "mature",
+      "flag": "flag_mixed_north_south",
+      "note": "North (Ottoman/imamate, uncolonized) + South (British Aden colony) unified 1990; constructed unification."
+    },
+    "ZAF": {
+      "name": "South Africa",
+      "cow_entry_year": 1920,
+      "group": "mature",
+      "alt_group": null,
+      "flag": "flag_settler",
+      "note": "Settler-administered continuous institutions since 1910 (Union); admin class stayed (apartheid notwithstanding)."
+    },
+    "ZMB": {
+      "name": "Zambia",
+      "cow_entry_year": 1964,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    },
+    "ZWE": {
+      "name": "Zimbabwe",
+      "cow_entry_year": 1965,
+      "group": "post_colonial",
+      "alt_group": null,
+      "flag": "decolonization_post1945",
+      "note": "Post-1945 independence from a colonial power (border-drawn, admin class removed)."
+    }
+  }
+}
