@@ -3,9 +3,9 @@
 Build the ONE canonical indicator panel the engine reads at runtime.
 
 Consolidates the previously-stitched governance sources (wb_anchored +
-mi_pipeline panel + wgi_full_panel) plus HDR into a single file,
+mi-pipeline panel + wgi_full_panel) plus HDR into a single file,
 `data/sources/canonical_panel.json`, with the tier precedence
-(A wb_anchored > B mi_pipeline > C wgi_full_panel) resolved HERE, once, at build
+(A wb_anchored > B mi-pipeline > C wgi_full_panel) resolved HERE, once, at build
 time. The runtime (`mi.panel`, the CLIs, build_site_dataset) then reads only this
 file — no live multi-source stitching, no coverage-tier logic scattered around.
 
@@ -32,7 +32,7 @@ from mi.panel import DISPLAY_FIX, YEAR
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "sources"
-CSV_PATH = ROOT.parent / "mi_pipeline" / "output" / "mi_scored_countries.csv"
+CSV_PATH = ROOT.parent / "mi-pipeline" / "output" / "mi_scored_countries.csv"
 OUT = SRC / "canonical_panel.json"
 
 # --- source-tier ingest (build-time only; the runtime reads the built panel) ---
@@ -85,7 +85,7 @@ def load_universe(year=YEAR):
 
 
 def assemble(iso, name, wb, fp, csv_rows, year=YEAR):
-    """Return (indicators, tier_label): A wb_anchored > B mi_pipeline > C wgi_full_panel."""
+    """Return (indicators, tier_label): A wb_anchored > B mi-pipeline > C wgi_full_panel."""
     if name in wb:
         ind = ds.get_indicators(name, year)
         return (ind or {}), "A"
@@ -160,7 +160,7 @@ def build():
     payload = {
         "meta": {
             "primary_year": YEAR,
-            "source": "canonical merge of World Bank WGI/WDI (anchored) + mi_pipeline "
+            "source": "canonical merge of World Bank WGI/WDI (anchored) + mi-pipeline "
                       "panel (CPI/GII/ECI/R&D/HDR) + wgi_full_panel; tier precedence "
                       "A>B>C resolved at build time",
             "n_countries": len(countries),

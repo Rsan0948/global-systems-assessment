@@ -7,7 +7,7 @@ rents / ODA) for every entity already in data/sources/wb_anchored.json and rewri
 that file. This is the "pull straight from source" step: run it to propagate fresh
 World Bank data to every case (mi.datasource reads this file; no per-country copies).
 
-Vintage-consistent with the mi_pipeline panel (same World Bank API + .SC series).
+Vintage-consistent with the mi-pipeline panel (same World Bank API + .SC series).
 
     python scripts/refresh_wgi_wdi.py            # refresh existing entities
     python scripts/refresh_wgi_wdi.py --add COD  # also add an ISO3 (by code)

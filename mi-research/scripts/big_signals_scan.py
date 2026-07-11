@@ -5,7 +5,7 @@ big_signals_scan.py — V3.2 signals across the full 180-country panel.
 Operationalizes (A) the Convergence Qualifier on Safeguard J's durability gap (P4-P1 level + its
 TRAJECTORY: closing=developmental catch-up vs widening=fragility) and (B) the Accountability Gap
 (VA vs income; "capacity without consent" — HYPOTHESIS) for any panel country, reading the committed
-mi_pipeline panel + data/sources/va_anchored.json. Breadth tool — distinct from the per-case engine.
+mi-pipeline panel + data/sources/va_anchored.json. Breadth tool — distinct from the per-case engine.
 
 Usage:
   python scripts/big_signals_scan.py --country China
@@ -19,7 +19,7 @@ MI = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(MI))
 from mi.constants import LENS  # noqa: E402
 
-PANEL = Path(os.environ.get("MI_PANEL_DIR", MI.parent / "mi_pipeline" / "data")).parent / "output" / "mi_scored_countries.csv"
+PANEL = Path(os.environ.get("MI_PANEL_DIR", MI.parent / "mi-pipeline" / "data")).parent / "output" / "mi_scored_countries.csv"
 VA = json.load(open(MI / "data" / "sources" / "va_anchored.json"))
 GSET = ["USA","CAN","GBR","FRA","DEU","ITA","JPN","BEL","NLD","SWE","CHE","ARG","AUS","BRA","CHN",
         "IND","IDN","MEX","RUS","SAU","ZAF","KOR","TUR"]

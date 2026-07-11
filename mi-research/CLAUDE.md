@@ -3,7 +3,7 @@
 The **scoring + diagnostic + retrodiction engine** for the Modernization Index
 (MI): it consumes per-country governance indicators and produces MI scores,
 pillar diagnostics, safeguard evaluations, and case-study validation. Separate
-from the sibling `mi_pipeline/` (raw data build) and the root fragmentation
+from the sibling `mi-pipeline/` (raw data build) and the root fragmentation
 study — do not wire them together.
 
 ## Read first (in order)
@@ -30,14 +30,14 @@ Pure-Python stdlib for the scoring path — no third-party deps.
 Indicators come from a **single file**, `data/sources/canonical_panel.json`,
 read by **`mi/panel.py`** (the only runtime reader). Everything else in
 `data/sources/` (`wb_anchored.json`, `wgi_full_panel.json`, `vdem_longrun.json`,
-…) plus the sibling `mi_pipeline/` CSV are **build inputs**, not read at runtime.
+…) plus the sibling `mi-pipeline/` CSV are **build inputs**, not read at runtime.
 
 ```
 raw sources ─► scripts/build_canonical_panel.py ─► data/sources/canonical_panel.json ─► mi/panel.py ─► engine
 ```
 
 - `build_canonical_panel.py` resolves the source tiers (A wb_anchored > B
-  mi_pipeline > C wgi_full_panel) + HDR **once, at build time**, and dedupes
+  mi-pipeline > C wgi_full_panel) + HDR **once, at build time**, and dedupes
   multi-iso countries. Re-run it when a raw source refreshes.
 - `mi/panel.py` exposes `indicators_for(name_or_iso, year)`, `country_record`,
   `all_indicators`, `iter_universe`. `scoring.load_country_data` and the CLIs

@@ -10,9 +10,9 @@ every case on the next score — no per-country copies to keep in sync.
 Sources (all paths in SOURCES below — the data config):
   - WGI (2025-anchored .SC) + WDI (GDP PPP / resource rents / ODA):
         data/sources/wb_anchored.json  (committed snapshot; refresh via
-        scripts/refresh_wgi_wdi.py — same World Bank API the mi_pipeline panel uses)
+        scripts/refresh_wgi_wdi.py — same World Bank API the mi-pipeline panel uses)
   - CPI, GII, ECI, FSI, HDR (Edu/LifeExp indices):
-        the committed mi_pipeline panel CSVs (the shared upstream source)
+        the committed mi-pipeline panel CSVs (the shared upstream source)
 
 ECI min/max for normalization is derived from the ECI source itself (so it tracks
 the data), and exposed per-record as eci_dataset_min/eci_dataset_max.
@@ -29,8 +29,8 @@ _REPO_ROOT = _MI_ROOT.parent                               # worktree root
 # === DATA CONFIG — the one place data locations are declared ===
 SOURCES = {
     "wb_anchored": _MI_ROOT / "data" / "sources" / "wb_anchored.json",
-    # Panel CSVs: env override wins, else the sibling mi_pipeline panel (shared upstream).
-    "panel_dir": Path(os.environ.get("MI_PANEL_DIR", _REPO_ROOT / "mi_pipeline" / "data")),
+    # Panel CSVs: env override wins, else the sibling mi-pipeline panel (shared upstream).
+    "panel_dir": Path(os.environ.get("MI_PANEL_DIR", _REPO_ROOT / "mi-pipeline" / "data")),
     # Voice & Accountability (WGI 2025-anchored .SC, 0-100) for ALL 180 panel countries — P1
     # excludes VA by design, so this serves the Accountability-Gap diagnostic (V3.2). Refresh via
     # the WB API (GOV_WGI_VA.SC, source=3).
@@ -175,7 +175,7 @@ def get_indicators(country: str, year, with_meta: bool = False):
     gaps = [k for k, v in ind.items()
             if v is None and k not in ("eci_dataset_min", "eci_dataset_max", "rd_pct_gdp")]
     notes = ["WGI=2025-anchored .SC (data/sources/wb_anchored.json); P1 corruption uses CPI "
-             "when present else WGI CtrlCorr; CPI/GII/FSI from mi_pipeline panel (grid years)."]
+             "when present else WGI CtrlCorr; CPI/GII/FSI from mi-pipeline panel (grid years)."]
     if hnote:
         notes.append(hnote)
     if year not in ("1996", "2004", "2012", "2018", "2024"):

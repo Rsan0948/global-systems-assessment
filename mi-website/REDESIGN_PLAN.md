@@ -34,9 +34,10 @@ derivation case in code; each case records which safeguards fired and why) — n
 - **Determinism.** Same inputs → same dataset. Sorted iteration, stable tiebreaks.
 - **Honesty as a feature.** A safeguard we can't evaluate reads **"not assessed,"** never a
   false "clear." Missing data is shown, never faked. Confidence tiers stay visible.
-- **The collectivization study lives in the root fragmentation project** (`studies/5_collectivization/`),
-  which shares "a conceptual origin only, never code" with the MI. It appears on the site as
-  its own *findings* content, never wired into country scoring.
+- **The collectivization study is its own top-level project** (`collectivization/`),
+  one of the platform's three empirical legs alongside the MI and the fragmentation
+  research. It shares the complexity–capacity principle with the MI but no code. It
+  appears on the site as its own *findings* content, never wired into country scoring.
 
 ---
 

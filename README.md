@@ -1,88 +1,120 @@
-# universalsystemgrade
+# The Modernization Index & Structural Governance Analysis Platform
 
-A pre-registered, **two-stage discovery program** asking whether there is a
-*lawful regularity* in how self-organizing hierarchical systems subdivide —
-above what mundane mechanisms already produce.
+This repository houses a quantitative research program studying how complex
+systems — from river networks to nation-states — accumulate and release
+structural complexity. The **Modernization Index (MI)** measures where countries
+sit on the institutional-quality spectrum: how much of a nation's prosperity is
+structurally *earned* versus circumstantially *granted*. The **fragmentation
+research** establishes *why* systems fracture the way they do — self-organizing
+systems in a tight, predictable band, engineered systems dispersedly and
+catastrophically. The **collectivization study** models *how* political entities
+reconsolidate after they fragment. Together they form a structural diagnostic
+framework for understanding governance durability. It is a **diagnostic** — it
+identifies configurations and vulnerabilities, not destinies.
 
-The project was reframed from *confirming a specific theorem* (that the
-subdivision constant is *e* ≈ 2.718) to **discovering whether there is a theorem
-at all**, and if so, what kind. The central question is decomposed into a ladder
-of nested claims, each a genuine result on its own:
+---
 
+## The three projects
+
+### Modernization Index — `mi-research/`, `mi-pipeline/`, `mi-website/`
+A five-pillar governance diagnostic (Institutional Quality 34%, Economic
+Structure 20%, Human Capital 16%, Stability 16%, Innovation 15%) scoring **191
+countries** and validated against a **109-case retrodiction corpus** (84 modern +
+25 ancient) spanning ~4,700 years with **100% directional accuracy** and zero
+falsifications.
+
+- **Status:** V3.3 live; automated weekly data refresh; website deployable.
+- **Key findings:** institutional quality (P1) is the most central variable in
+  the construct (|r| ≈ 0.79–0.80 with everything else); **configuration**
+  (balanced pillars) predicts durability better than peak performance on any
+  single dimension; a resource-wealth penalty; a global modernization
+  deceleration.
+- **Entry point:** [`mi-research/MASTER_REFERENCE_ARCHITECTURE.md`](mi-research/MASTER_REFERENCE_ARCHITECTURE.md)
+
+### Fragmentation Research — `fragmentation/`
+A cross-domain empirical study of how self-organizing versus designed systems
+subdivide, built as a pre-registered discovery program with a sealed-holdout
+confirmation protocol.
+
+- **Status:** Concluded at **rung 1** — domain-specific laws, no universal
+  constant. Census ongoing.
+- **Key findings:** self-organized systems (rivers, neurons, botanical trees,
+  human languages) fracture in a **tight band (CV ~0.2)** that beats their
+  random-topology null; designed systems fracture **dispersedly**, CV scaling
+  monotonically with how engineered they are (~0.3 for corporations up to ~2.3
+  for administrative hierarchies); suppression duration predicts rupture
+  magnitude.
+- **Entry point:** [`fragmentation/SYNTHESIS.md`](fragmentation/SYNTHESIS.md)
+
+### Collectivization Cycle Study — `collectivization/`
+A 30-case comparative analysis of fragmentation–collectivization dynamics across
+civilizations (25 core + 5 controls), using a 15-binary-feature governance vector
+to mechanically classify political forms.
+
+- **Status:** Active — core engine and case data complete, expansion ongoing.
+- **Key findings:** predecessor institutional depth predicts restructuring
+  magnitude (ρ = −0.84, p < 0.001); among high-depth cases, collectivization
+  speed predicts integration loss (ρ = 0.83, p < 0.001); four empirical pathway
+  types (construction, restoration, negotiation, redesign); **negotiated**
+  collectivizations are the most durable.
+- **Entry point:** [`collectivization/README.md`](collectivization/README.md)
+
+---
+
+## How they connect
+
+One principle runs through all three, drawn from
+[`fragmentation/SYNTHESIS.md`](fragmentation/SYNTHESIS.md): *a growing system's
+interior complexity outruns its interface capacity, and the mismatch must be
+released as subdivision.* Grown systems vent continuously (tight, predictable
+fracturing); designed systems suppress the venting, so pressure accumulates and
+releases catastrophically, in proportion to how long and how rigidly it was held.
+
+- The **fragmentation research** establishes the *physics* — that self-assembly
+  fractures tightly and engineering makes fracturing dispersed and severe.
+- The **Modernization Index** measures the *state* — it operationalizes the
+  complexity–capacity match as a country-level instrument (its P4–P1 durability
+  gate, Safeguard J, is the same idea as the fragmentation study's dimensional
+  gap; see [`fragmentation/DGS_AND_SAFEGUARD_J.md`](fragmentation/DGS_AND_SAFEGUARD_J.md)).
+- The **collectivization study** models the *process* — how fragmented polities
+  reconsolidate, and why predecessor institutional depth (a P1-like variable)
+  governs the outcome.
+
+They are one intellectual program with three empirical legs. They deliberately do
+**not** share code (each is independently runnable and testable); the connection
+is conceptual, not an import graph.
+
+---
+
+## Quick start
+
+```bash
+# Score a country (Modernization Index)
+cd mi-research && python scripts/score_country.py --country "Estonia" --year 2024
+
+# Run the fragmentation census
+cd fragmentation/census && python run.py
+
+# Run the full fragmentation ladder + controls + calibrations
+cd fragmentation/integration && python run.py
+
+# Run the collectivization cycle analysis
+cd collectivization && python run.py
 ```
-rung 0  no theorem (scatter, or indistinguishable from a mechanism-free null)
-rung 1  domain-specific laws  (each domain lawful, values differ)
-rung 2  universality          (domains share one value, beating the null)
-rung 3  named constant        (pooled CI isolates a principled constant)
-rung 4  mechanism             (the dimensional gap predicts the value)
-```
 
-Discovery is exploratory; whatever it finds is then **frozen and confirmed on a
-sealed holdout** the discovery never saw. The number *e* has no privileged
-status — it may emerge as the pooled estimate, or not.
+Python 3.11+. Core deps: `numpy`, `scipy`, `matplotlib`, `pytest`. Real river
+ingestion additionally needs `geopandas`/`pyogrio` (optional, import-guarded);
+the MI data pipeline needs `requests`.
 
-## Layout
+---
 
-```
-preregistration/PREREGISTRATION.md   The two-stage discovery pre-analysis plan (v0.2)
-discovery/                           Reusable core instrument: variance-components
-                                     decomposition + trivial-null control + the ladder
-integration/                         Node interface + runner: assemble all nodes -> ladder
-studies/2C_river_networks/           River branching: pipeline + power/calibration
-studies/2D_biological_branching/     Biology node (bronchial/vascular/botanical)
-studies/2A_political_fragmentation/  DGS -> instability mechanism test
-studies/2B_corporate/                Corporate split factor + survival/hazard test
-studies/2E_organizations/            Inter-echelon org scaling ratio
-studies/2F_opensource/               Viable-fork factor (boundary probe)
-studies/3B_mechanism/                Rung-4: does the dimensional gap predict the factor?
-studies/4_negative_controls/         Engineered (4A) + classification (4B) controls
-```
+## Data sources
 
-## Final verdict
+| Project | Sources |
+|---------|---------|
+| Modernization Index | World Bank WGI/WDI, UNDP HDR, Transparency International CPI, WIPO GII, Harvard/OEC ECI, Fund for Peace FSI, Maddison Project, V-Dem |
+| Fragmentation | HydroRIVERS (HydroSHEDS), NeuroMorpho, Glottolog, SEC EDGAR, ParlGov, GeoNames, NCBI taxonomy |
+| Collectivization | Maddison Project, V-Dem, constitutional/legal documents (15-feature coding) |
 
-**Rung 1 — domain-specific laws. No universal constant; no mechanism shown.**
-Self-organizing domains are each individually concentrated but do **not** share
-one value (I² ≈ 0.98); the pooled CI excludes *e*. Both pre-registered
-confirmations have been run and are **spent**:
-
-- **Prediction A (rivers, cross-continent):** **CONFIRMED.** South America
-  reproduces the North-America finding (geom Rb 3.539; A1/A2/A3 pass).
-- **Prediction B (cross-domain holdout = corporate):** **B1 fail, B2 pass — not
-  fully confirmed.** On 108 real SEC EDGAR spin-off events, corporate splitting
-  is **indistinguishable from its mechanism-free binary-default null** (a trivial
-  domain), but adding it **keeps the verdict at rung 1** — it does not collapse
-  to universality or isolate a constant. Reported symmetrically.
-
-The program was *built to be able to conclude "no theorem of a universal
-constant,"* and that is where the real data lands: a real regularity within some
-domains (rivers, biology), no shared law across them, and no mechanism
-demonstrated.
-
-## What is real vs. simulated
-
-- **REAL data:** rivers (2C, HydroRIVERS, both continents), biology (2D,
-  NeuroMorpho, 6 cell types), negative controls (4, NCBI taxonomy + specs),
-  DGS (2A, ECI+V-Dem+WB+UCDP), and **corporate (2B, SEC EDGAR, 108 splits)**.
-- **SIMULATED / deferred:** organizations (2E, doctrine-table literature values);
-  open-source (2F) — real-ingest code is committed but the GitHub crawl is
-  **deferred** (descoped from holdout B, logged as a prereg amendment).
-- **Rung-4 mechanism test → RUN on real allometry, result NULL.** Real
-  dimensional gaps were estimated per biology cell type from the NeuroMorpho
-  CNG.swc 3-D reconstructions (interior = total dendritic length ~ radius;
-  interface = terminal tips ~ radius; `fetch_neuromorpho_exponents.py`). Across
-  the 6 cell types the gap does **not** predict the subdivision factor
-  (slope 0.14, 95% CI [−0.07, 0.35], p = 0.15) — **no rung-4 mechanism.** The
-  gaps themselves are consistent with the dimensional prediction Δ≈1 (mean 0.66,
-  CI [0.15, 1.18]), but the gap→factor link is absent. The full *cross-domain*
-  apex (rivers + corporate exponents too) is not run — those need raw spatial
-  re-ingest beyond the committed caches.
-
-## Scope explicitly closed out
-
-This study is concluded at the confirmation + mechanism stages above. Genuinely
-out of reach here (not done): the **2F open-source** real crawl (needs a GitHub
-token), the **cross-domain** rung-4 extension to rivers/corporate (needs raw
-spatial re-ingest), real **2E** doctrine parsing (low value), and the public
-**OSF/arXiv deposit** (needs a human author identity). Each is a clean future
-extension, not a blocker — the engine, the real-data nodes, the spent
-confirmations, and a real (null) mechanism test are all in place.
+All sources are public and (where relevant) no-login. Raw multi-megabyte
+downloads are git-ignored; derived caches and the committed panels are in-repo.

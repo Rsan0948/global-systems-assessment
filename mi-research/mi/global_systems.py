@@ -15,7 +15,7 @@ aggregating the validated findings of the historical/golden-age work:
     ratchet_rise / hollow_stability / decline / stable), from the 5-pillar panel.
 
 EXPLORATORY/descriptive: built on long-run PROXIES (V-Dem rule-of-law, Maddison GDP, life expectancy)
-+ the mi_pipeline 5-pillar panel — NOT the country scoring engine, and it changes no country verdict.
++ the mi-pipeline 5-pillar panel — NOT the country scoring engine, and it changes no country verdict.
 Deterministic: same data in -> same measurement out.
 """
 import csv
@@ -29,7 +29,7 @@ from mi.constants import (GLOBAL_ENGINE_MEDIAN, GLOBAL_ENGINE_THRESH,
 from mi.diagnostics import movement_quality
 
 _SRC = Path(__file__).resolve().parent.parent / "data" / "sources"
-_PANEL = Path(__file__).resolve().parent.parent.parent / "mi_pipeline" / "output" / "mi_scored_countries.csv"
+_PANEL = Path(__file__).resolve().parent.parent.parent / "mi-pipeline" / "output" / "mi_scored_countries.csv"
 
 
 def _load(name):

@@ -1,86 +1,128 @@
-# Defensible results so far
+# Defensible results across the platform
 
-> **Scope disclaimer.** This summarizes what the current pipeline supports, sorted
-> by how much weight each claim can bear. Real-data results are flagged; simulated
-> nodes prove the *pipeline*, not the theory. The cross-domain pooled number is
-> **not** a finding about real systems (see "What is NOT defensible yet").
-> Numbers below were verified against a live re-run of `integration/run.py`.
+> **Scope.** This is the consolidated ledger of what each leg's evidence can bear,
+> sorted by weight. Real-data results are flagged; simulated/placeholder nodes
+> prove a *pipeline*, not a theory. Honest nulls and falsifications are listed
+> with the same prominence as positive results — they are scientific-integrity
+> artifacts, not omissions.
 
-## What's genuinely defensible (real data)
+---
 
-### 1. Rivers — the one fully confirmed result
-- Real HydroRIVERS (HydroSHEDS): North America = 3,412 basins, South America =
-  2,256 basins, measured by Strahler/Horton bifurcation ratio (Rb).
-- Discovery (NA): geom-mean Rb = **3.488**.
-- Frozen in git (`preregistration/FROZEN_DISCOVERY_CLAIM.md`, commit `5cff6be`)
-  **before** the SA holdout was touched, with three falsifiable predictions.
-- Confirmation (SA, sealed holdout): geom-mean Rb = **3.539**. Predictions
-  A1 (beats random null), A2 (in [3.2, 3.8]), A3 (above e) **all passed**.
-- This is the only result that cleared the full discovery → sealed-confirmation
-  discipline. The "~3.5 for natural systems" intuition lives here, and it holds.
+## Modernization Index
 
-### 2. Biology — real, discovery-stage, not yet holdout-confirmed
-- Real NeuroMorpho.org reconstructions, 6 cell types × 150 arbors each, measured
-  by the *same* Horton instrument as rivers.
+- **109-case retrodiction corpus** — 84 modern (1947–2024, six continents) + 25
+  ancient (c. 2686 BCE – 1797 CE). **100% directional accuracy**, zero
+  falsifications; ~73% clean confirmation on the modern set.
+- **P1 ordinality** — Institutional Quality is the most central variable in the
+  construct: it correlates with the other pillars at |r| ≈ 0.79–0.80, and P1
+  ordinality is confirmed across all 51 ordinality cases (213 confirm / 77
+  partial / 0 fail). Every country that sustained gains improved institutions
+  first or simultaneously.
+- **Cross-model validation** — Spearman ρ ≥ 0.99 across three independent pillar-
+  weighting schemes; the ranking is robust to the weight choice.
+- **Durability gate (Safeguard J)** — the direction of the P4–P1 gap (economic
+  structure minus institutional quality) predicts sustainability in **17/19**
+  cases. Structurally the same idea as Study 2A's dimensional-gap-score; see
+  `fragmentation/DGS_AND_SAFEGUARD_J.md`.
+- **Convergence qualifier** — validated against a blind holdout; correctly handles
+  petro-state edge cases.
+- **Configuration thesis** — balanced pillars predict durability better than peak
+  performance on any single dimension (configuration > magnitude).
+- **Resource penalty** — resource wealth reliably predicts underperformance
+  relative to income.
+- **Global deceleration** — modernization velocity is down ~65% from its peak;
+  median GPA is falling.
 
-  | cell type   | Rb    |
-  |-------------|-------|
-  | motoneuron  | 3.743 |
-  | pyramidal   | 3.685 |
-  | purkinje    | 3.445 |
-  | interneuron | 3.275 |
-  | ganglion    | 3.216 |
-  | granule     | 2.917 |
+### MI — honestly refuted or held back (kept, not added)
+- **Golden-age signature** — refuted on a geographic holdout (z = −0.0); NOT added
+  to the framework.
+- **Accountability gap** — falsified as a crisis predictor by the Cuba case;
+  retained only as an informational hypothesis.
 
-- Each concentrated (CV ≈ 0.17–0.25) and at/above the ~3.0 random-merging null.
-- Real and meaningful, but no frozen cross-holdout confirmation yet — a discovery
-  finding, not a confirmed one.
+---
 
-### 3. The boundary-condition control holds (real)
-- Real NCBI taxonomy + engineered specs (non-self-organizing).
-- They disperse ~22× more: control mean CV = **5.77** vs self-organizing
-  **0.26**; Brown–Forsythe p ≈ 1e-252.
-- Cleanest single piece of evidence: self-organizing systems concentrate,
-  designed/arbitrary ones don't.
+## Collectivization study
 
-### 4. The DGS → instability prediction is a real, defensible NULL
-- Real ECI + V-Dem + World Bank + UCDP panel, n = 713, 144 countries.
-- Dimensional-gap adds nothing beyond GDP + population + governance
-  (β = 0.107, p = 0.42, AUC gain 0.0; robust across 5 sensitivity specs).
-- A correctly reported negative result.
+*Verified against `collectivization/results/cycle_analysis.json`.* 30 cases (25
+core + 5 controls) spanning ~4,000 years.
 
-## How we got them (methodology)
+- **Predecessor depth predicts restructuring magnitude** — depth→flip-count
+  Spearman ρ = **−0.84**, p < 0.001. Deeper predecessor institutions flip fewer
+  governance features on collectivization.
+- **Speed predicts integration loss** — among high-depth cases, collectivization
+  speed→integration-features-lost ρ = **0.83**, p < 0.001. Fast collectivization
+  of a deep predecessor loses more integration.
+- **Four empirical pathway types** — construction (13), restoration (5),
+  negotiation (4), redesign (3). **Negotiated** collectivizations have the highest
+  mean durability (308 vs 119–149 for the others).
+- **Form-shift hypothesis supported**; ratchet hypothesis **not** supported
+  (sign-test p = 0.64) — reported as found.
+- **Warning-signals framework** operational (0.76 hit rate on the cases with
+  sufficient data).
 
-- **Observable:** one Horton/Strahler bifurcation ratio per unit (basin, arbor) —
-  a comparable factor, never a raw count. Identical code (`studies/2C_river_networks/horton.py`)
-  for rivers and neurons.
-- **Null-anchored:** every domain ships a mechanism-free null (random-coalescent /
-  random binary merging) run through the same instrument; it lands at ~3.0, so
-  only signal *above* that counts. The pipeline's honesty check confirms neutral
-  topology → ~2.98 and the procedure declines to call it *e*.
-- **Ladder verdict:** DerSimonian–Laird between/within-domain variance + Q-test
-  decides the rung.
-- **Rung 3 = CI-isolation, not Bayes factors** — the misspecification probe showed
-  fixed-point BFs hack toward whichever value is nearer as n grows, so they were
-  dropped.
-- **Discovery/confirmation are disjoint**, enforced by the git freeze + sealed
-  holdout.
+---
 
-## What is NOT defensible yet
+## Fragmentation census
 
-- **Corporate (2.04), organizations (3.20), open-source (2.79) are synthetic** —
-  `rng`-generated placeholders; real EDGAR/GitHub ingests not built. Pipeline only.
-- Therefore the **cross-domain pooled 3.162 / "Rung 1" verdict is contaminated** —
-  it mixes 7 real nodes with 3 simulated ones. The pooled cross-domain number is
-  **not** a claim about real systems.
-- The committed `integration/results/integration_summary.json` `note` field
-  ("all other domains simulated") is **stale** — biology is in fact real. Doc bug.
+*Verified against a live re-run of `fragmentation/integration/run.py` and
+`fragmentation/census/run.py`.*
+
+- **Rivers — the one fully confirmed result.** Real HydroRIVERS (HydroSHEDS);
+  discovery on North America (geom-mean Rb 3.488) was frozen in git
+  (`fragmentation/preregistration/FROZEN_DISCOVERY_CLAIM.md`, commit `5cff6be`)
+  before the South-America holdout was touched; the sealed holdout reproduced it
+  (Rb 3.539) and passed all three pre-registered criteria (beats null, in
+  [3.2, 3.8], above e). Only result that cleared the full discovery →
+  sealed-confirmation discipline.
+- **Biology — 6 neuron cell types** from real NeuroMorpho reconstructions
+  (150 arbors each), measured by the *same* Horton instrument as rivers. Each
+  concentrated (CV ≈ 0.17–0.25) and at/above the ~3.0 random-merging null:
+  motoneuron 3.74, pyramidal 3.69, purkinje 3.44, interneuron 3.28, ganglion
+  3.22, granule 2.92. Real, discovery-stage (no cross-holdout confirmation yet).
+- **Self-organizing vs designed dispersion contrast** — the cleanest single
+  result: real NCBI taxonomy + engineered specs disperse ~22× more than
+  self-organizing systems (control mean CV ~5.77 vs ~0.26; Brown–Forsythe
+  p ≈ 1e-252).
+- **Grown-vs-designed dispersion dial** — CV rises monotonically with how
+  engineered the structure is: corporate splits 0.31 → party splits 0.58 → state
+  dissolutions 0.90 → religious bodies 1.33 → administrative subdivisions 2.28.
+- **Languages land in the physical band** — Glottolog (a self-organized *human*
+  system) fractures at 3.40, CV 0.20 — same band as rivers and neurons. The
+  dividing line is *how a system came to be*, not what it is made of.
+
+### Fragmentation — honestly refuted or discarded (kept, not hidden)
+- **Universal subdivision constant — no.** Domains do not share a value
+  (I² ≈ 0.98); the pooled CI excludes *e*. Rung 1, not rung 2/3.
+- **Mechanism predicting the branching value — no.** The rung-4 test is a real
+  NULL: across 6 biology cell types the dimensional gap does not predict the
+  factor (slope 0.14, 95% CI [−0.07, 0.35], p = 0.15).
+- **DGS → instability with current proxies — no.** Real ECI + V-Dem + WB + UCDP
+  panel (n = 713, 144 countries): the dimensional gap adds nothing beyond GDP +
+  population + governance (β = 0.107, p = 0.42, AUC gain 0.0; robust across 5
+  sensitivity specs). A correctly reported negative result — see
+  `fragmentation/DGS_AND_SAFEGUARD_J.md` for why the MI's composite pillars
+  recover the signal the raw proxies miss.
+
+### Fragmentation — what is real vs. simulated
+- **REAL:** rivers (both continents), biology (6 cell types), negative controls
+  (NCBI taxonomy + specs), DGS (ECI+V-Dem+WB+UCDP), corporate (SEC EDGAR, 108
+  splits), languages (Glottolog), trees.
+- **SIMULATED / deferred:** organizations (doctrine-table literature values);
+  open-source real GitHub crawl deferred (descoped from holdout B, logged as a
+  prereg amendment). The pooled cross-domain number therefore mixes real and
+  simulated nodes and is **not** a clean claim about real systems — the earned
+  claims are the per-domain concentration and the grown-vs-designed dial.
+
+---
 
 ## Bottom line
 
-Restricted to **real self-organizing data (rivers + 6 neuron types)**: each domain
-is tightly concentrated, every one sits at/above the ~3.0 mundane null, they span
-**~2.9–3.7**, and they **do not share a single value** (motoneuron 3.74 vs granule
-2.92) — that's **Rung 1, domain-specific laws**, not a universal constant, and the
-pooled CI excludes *e*. Rivers specifically ≈ 3.5 and is holdout-confirmed; that's
-the strongest, cleanest result.
+- **MI:** a five-pillar instrument that retrodicts 109 cases at 100% directional
+  accuracy, with institutional quality (P1) as the load-bearing variable and
+  configuration beating magnitude for durability.
+- **Collectivization:** predecessor institutional depth governs how a fragmented
+  polity reconsolidates (ρ = −0.84), and negotiation is the most durable pathway.
+- **Fragmentation:** self-organizing systems (including human language) fracture
+  in a tight band that beats chance; designed systems fracture dispersedly,
+  severity scaling with engineering. No universal constant, no mechanism for the
+  value — rung 1, honestly reported.

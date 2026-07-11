@@ -37,7 +37,7 @@ distrust the slope.** Full framing: `PROJECT_SYNTHESIS.md`.
   `scripts/refresh_wgi_wdi.py`). `va_anchored.json` — Voice&Accountability, 180. `wgi_full_panel.json`
   — 202 economies (WGI GE/RL/RQ/CC/VA/PV + gdp + rents). `vdem_longrun.json` — V-Dem rule-of-law +
   liberal-democracy, 1789–2025 (rol vs WGI P1 **r=0.87**). `longrun_pillars.json` — Maddison GDP (1820+),
-  life-expectancy (1543+), schooling, literacy. Sibling panel: `../mi_pipeline/output/mi_scored_countries.csv`
+  life-expectancy (1543+), schooling, literacy. Sibling panel: `../mi-pipeline/output/mi_scored_countries.csv`
   (5-pillar, ~180 countries; **consume DATA only — do not wire the two projects' code together**).
 
 ## 4. Corpus state (`data/case_studies/`)

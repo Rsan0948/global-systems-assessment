@@ -40,6 +40,14 @@ The principle does NOT predict timing, specific triggers, or exact magnitudes. I
 
 ## 1.2 The Complexity-Capacity Matching Principle
 
+> **Empirical basis across domains.** This same principle is measured directly in
+> the repo's fragmentation research (`../fragmentation/SYNTHESIS.md`): self-
+> organizing systems (rivers, neurons, trees, human languages) vent complexity
+> continuously and fracture in a tight, predictable band that beats chance, while
+> engineered systems suppress the venting and fracture dispersedly, severity
+> scaling with how much design was imposed. The MI operationalizes that principle
+> as a country-level instrument.
+
 The core insight: every governance system manages some level of internal complexity (ethnic, linguistic, religious, economic, geographic, demographic). That complexity requires institutional coordination capacity to govern. When capacity matches or exceeds complexity, the system is stable. When complexity exceeds capacity, the system comes under structural stress that eventually produces fragmentation — unless the gap is managed through one of three strategies.
 
 The MI measures both sides of this equation:

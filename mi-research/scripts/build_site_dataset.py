@@ -4,7 +4,7 @@ Build the published dataset the website consumes - the engine, run in public, ov
 
 Coverage tiers (every country gets a page; gaps are shown, never faked):
   A. wb_anchored (full indicators)        -> canonical via datasource.get_indicators
-  B. mi_pipeline panel (full indicators)  -> assembled by iso3 (P1/P2/P3) + wgi_full_panel (gdp/PV/rents)
+  B. mi-pipeline panel (full indicators)  -> assembled by iso3 (P1/P2/P3) + wgi_full_panel (gdp/PV/rents)
   C. wgi_full_panel only (WGI institutions + gdp) -> partial pillars, gaps shown
 The validated mi-research engine (score_country) is the single source of truth; this script only
 ASSEMBLES inputs and calls it. Deterministic.

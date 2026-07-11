@@ -1,6 +1,6 @@
 # Experiment results — P1 composite vs. decomposed (Rwanda architectural decision)
 
-**Date:** 2026-06-27 · **Engine:** LIVE · **Data:** committed mi_pipeline panel (commit 9487dd0), WGI 2025-anchored, panel grid to 2024. Voice from WGI API (panel omits it).
+**Date:** 2026-06-27 · **Engine:** LIVE · **Data:** committed mi-pipeline panel (commit 9487dd0), WGI 2025-anchored, panel grid to 2024. Voice from WGI API (panel omits it).
 **Reproduce:** `python sandbox/experiments/rwanda_p1_decomposition/run_experiment.py`
 
 ## Hypothesis

@@ -18,7 +18,7 @@ ordinal P1 prediction" (proposal). The proposal mandated settling this *before* 
 warned the case "can be embarrassed either way."
 
 ## What was done
-Indicators are sourced from the **committed `mi_pipeline/` panel (commit 9487dd0)** for
+Indicators are sourced from the **committed `mi-pipeline/` panel (commit 9487dd0)** for
 cross-project consistency — WGI **2025 revision** anchored 0-100 scores (`wb_cached.csv`), CPI,
 GII, ECI, UNDP HDR sub-indices (`hdr.csv`), WDI (GDP PPP / resource rents / ODA), Fund for Peace
 FSI — on the panel year grid (…/2012/2018/2024). Voice & Accountability is pulled from the WGI API
@@ -35,7 +35,7 @@ The decision is unchanged from the initial 2023-vintage run; the 2024 panel data
 | Rwanda 1996 | 0.295 | 0.278 | 0.296 | −0.018 |
 
 Rwanda's WGI 2024 (anchored 0-100): GE 58.1 · RQ ≈59.1 · RL 58.7 · **CC 60.5** · **VA 46.5** · PV 65.1.
-(Inputs from the committed mi_pipeline panel; Voice from the WGI API as the panel omits it. The
+(Inputs from the committed mi-pipeline panel; Voice from the WGI API as the panel omits it. The
 2023 vintage gave the same picture: gap +0.030, GE 59.3/+0.41 est, VA 47.6/−0.53 est, SEs ≈ 0.14–0.19.)
 
 Four reasons the decomposition is **not clearly better**, and one reason it is **risky**:

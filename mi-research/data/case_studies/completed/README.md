@@ -104,7 +104,7 @@ Caveat: `d_failure_dimension` is **not** purely mechanical — the numeric-lowes
 is why d is augmented (not overwritten) and kept PARTIAL under the run6 strict-coding.
 
 ## Batch 1 (cases 21–25)
-Inputs sourced from the committed `mi_pipeline/` panel (commit 9487dd0) for cross-project
+Inputs sourced from the committed `mi-pipeline/` panel (commit 9487dd0) for cross-project
 consistency; panel grid to 2024. The batch writeup reports **~75% clean** (in-range) with
 0 falsifications and the Rwanda reversal-risk prediction logged as **open/prospective**
 (not counted as a closed confirmation). See `live/runs/run7_expansion_batch1_cases21-25.md`.

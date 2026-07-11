@@ -4,13 +4,13 @@ __pycache__/
 .venv/
 
 # HydroRIVERS raw downloads (60+ MB each); derived Rb caches in results/ are committed
-studies/2C_river_networks/data/
+fragmentation/natural-systems/rivers/data/
 
 # NCBI taxdump raw download (~75 MB); derived fan-out cache in results/ is committed
-studies/4_negative_controls/data/
+fragmentation/natural-systems/negative-controls/data/
 
 # DGS raw source downloads (Harvard ECI, V-Dem, World Bank, UCDP); panel cache in results/ is committed
-studies/2A_political_fragmentation/data/
+fragmentation/governance/political/data/
 
-# MI pipeline: data inputs and generated outputs ARE committed (see mi_pipeline/DATA_PROVENANCE.md).
+# MI pipeline: data inputs and generated outputs ARE committed (see mi-pipeline/DATA_PROVENANCE.md).
 # (Previously git-ignored; convention reversed 2026-06-28 — the real panel lives in the repo.)
