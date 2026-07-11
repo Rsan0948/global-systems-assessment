@@ -1,0 +1,121 @@
+{
+ "test": "T4_financial_depth",
+ "windows": {
+  "2004": {
+   "n_total": 89,
+   "crisis": {
+    "n": 79,
+    "n_pos": 43,
+    "base_rate": 0.544,
+    "mean_findepth": 0.231,
+    "M1_negP1": {
+     "coef_negP1": 1.2862,
+     "auc": 0.795
+    },
+    "M2_plus_findepth": {
+     "coef_negP1": 1.4961,
+     "coef_findepth": 0.3183,
+     "auc": 0.799
+    },
+    "M3_interaction": {
+     "coef_negP1": 1.5478,
+     "coef_findepth": 0.5011,
+     "coef_interaction": 0.3593,
+     "auc": 0.805
+    },
+    "interaction_sign": "positive(null)"
+   },
+   "dys_polity": {
+    "n": 79,
+    "n_pos": 40,
+    "base_rate": 0.506,
+    "mean_findepth": 0.231,
+    "M1_negP1": {
+     "coef_negP1": 1.2133,
+     "auc": 0.768
+    },
+    "M2_plus_findepth": {
+     "coef_negP1": 1.1306,
+     "coef_findepth": -0.1385,
+     "auc": 0.769
+    },
+    "M3_interaction": {
+     "coef_negP1": 1.1246,
+     "coef_findepth": -0.1642,
+     "coef_interaction": -0.0618,
+     "auc": 0.77
+    },
+    "interaction_sign": "negative(financialization-supported)"
+   }
+  },
+  "2012": {
+   "n_total": 90,
+   "crisis": {
+    "n": 87,
+    "n_pos": 35,
+    "base_rate": 0.402,
+    "mean_findepth": 0.256,
+    "M1_negP1": {
+     "coef_negP1": 1.1662,
+     "auc": 0.772
+    },
+    "M2_plus_findepth": {
+     "coef_negP1": 1.1609,
+     "coef_findepth": -0.0087,
+     "auc": 0.773
+    },
+    "M3_interaction": {
+     "coef_negP1": 1.1652,
+     "coef_findepth": -0.0044,
+     "coef_interaction": 0.0312,
+     "auc": 0.773
+    },
+    "interaction_sign": "positive(null)"
+   },
+   "dys_polity": {
+    "n": 87,
+    "n_pos": 36,
+    "base_rate": 0.414,
+    "mean_findepth": 0.256,
+    "M1_negP1": {
+     "coef_negP1": 1.7799,
+     "auc": 0.838
+    },
+    "M2_plus_findepth": {
+     "coef_negP1": 1.9206,
+     "coef_findepth": 0.2257,
+     "auc": 0.841
+    },
+    "M3_interaction": {
+     "coef_negP1": 1.9079,
+     "coef_findepth": 0.2017,
+     "coef_interaction": -0.3174,
+     "auc": 0.84
+    },
+    "interaction_sign": "negative(financialization-supported)"
+   }
+  }
+ },
+ "system_financial_deepening": {
+  "1996": {
+   "n": 60,
+   "mean_findepth_pct_gdp": 35.7
+  },
+  "2004": {
+   "n": 74,
+   "mean_findepth_pct_gdp": 43.8
+  },
+  "2012": {
+   "n": 80,
+   "mean_findepth_pct_gdp": 50.4
+  },
+  "2018": {
+   "n": 82,
+   "mean_findepth_pct_gdp": 50.2
+  },
+  "2024": {
+   "n": 79,
+   "mean_findepth_pct_gdp": 54.2
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "test": "T3_economic_composition",
+ "windows": {
+  "2004": {
+   "median_light_share": 19.0,
+   "mean_light_share": 21.47,
+   "n_scored": 87,
+   "groups": {
+    "H_institution_heavy": {
+     "n": 44,
+     "crisis": {
+      "n_eval": 44,
+      "negP1_auc": 0.799,
+      "wealth_auc": 0.839,
+      "negP1_minus_wealth": -0.04
+     },
+     "dys_polity": {
+      "n_eval": 44,
+      "negP1_auc": 0.713,
+      "wealth_auc": 0.748,
+      "negP1_minus_wealth": -0.035
+     }
+    },
+    "L_institution_light": {
+     "n": 43,
+     "crisis": {
+      "n_eval": 43,
+      "negP1_auc": 0.818,
+      "wealth_auc": 0.771,
+      "negP1_minus_wealth": 0.047
+     },
+     "dys_polity": {
+      "n_eval": 43,
+      "negP1_auc": 0.787,
+      "wealth_auc": 0.667,
+      "negP1_minus_wealth": 0.12
+     }
+    }
+   },
+   "H_minus_L_signal_edge": {
+    "crisis": -0.087,
+    "dys_polity": -0.155
+   }
+  },
+  "2012": {
+   "median_light_share": 18.88,
+   "mean_light_share": 21.33,
+   "n_scored": 89,
+   "groups": {
+    "H_institution_heavy": {
+     "n": 45,
+     "crisis": {
+      "n_eval": 45,
+      "negP1_auc": 0.765,
+      "wealth_auc": 0.741,
+      "negP1_minus_wealth": 0.024
+     },
+     "dys_polity": {
+      "n_eval": 45,
+      "negP1_auc": 0.846,
+      "wealth_auc": 0.754,
+      "negP1_minus_wealth": 0.092
+     }
+    },
+    "L_institution_light": {
+     "n": 44,
+     "crisis": {
+      "n_eval": 44,
+      "negP1_auc": 0.802,
+      "wealth_auc": 0.775,
+      "negP1_minus_wealth": 0.027
+     },
+     "dys_polity": {
+      "n_eval": 44,
+      "negP1_auc": 0.791,
+      "wealth_auc": 0.716,
+      "negP1_minus_wealth": 0.075
+     }
+    }
+   },
+   "H_minus_L_signal_edge": {
+    "crisis": -0.003,
+    "dys_polity": 0.017
+   }
+  }
+ }
+}

@@ -24,6 +24,7 @@
 | Historical program (inversion, decay curve, forensics) | ✅ done | `bdabeb8`…`6958358` |
 | External Support Index (ESI) control — Finding 8 (registered null) | ✅ done | (this branch) |
 | Erosion decomposition A/B/C — Finding 9 (compound hypothesis largely not supported) | ✅ done | (this branch) |
+| Wealth–institution decoupling battery — Finding 10 (registered null; hypothesis falsified) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -321,6 +322,61 @@ diffused. Artifacts: `data/robustness/decomposition/{component_A,component_B,com
 `data/robustness/formation/state_formation.json`; code
 `scripts/robustness/{formation_classify,erosion_component_A,erosion_component_B,erosion_component_C,erosion_synthesis,fetch_p1_timeseries}.py`;
 pre-registration `docs/EROSION_DECOMPOSITION_PREREGISTRATION.md`.
+
+## Finding 10 — The erosion is NOT wealth genuinely decoupling from institutions (registered null; the hypothesis is falsified, not merely unsupported)
+
+Finding 9 left the 150-year erosion with a ~100% residual and flagged the most
+structurally compelling remaining candidate: that the wealth↔institution
+relationship *genuinely weakened* because the **mechanisms of wealth generation
+progressively decoupled from institutional quality** — industrialization (produce
+wealth without domestic institutions), financialization (earn returns without caring
+about governance), and institutional reorientation (institutions retarget from
+public-welfare to capital-facilitation). An eight-test battery, pre-registered
+(`DECOUPLING_PREREGISTRATION.md`, sha256 `c4b4a24…`, frozen before any analysis) with
+exact indicator codes, expected directions, null criteria, and materiality floors,
+tested it at the **system level** the hypothesis specified (never naive
+country-level effects). **It is comprehensively not supported — and on several
+sub-claims the data points the other way.**
+
+**The gate (is decoupling even happening?) fails.** *Test 1* — the cross-sectional
+P1↔log-GDP correlation did **not** weaken in the modern MI panel; it **re-coupled**
+(r 0.770→0.818, R² 0.59→0.67, 1996→2024). The deep-historical arm (V-Dem
+rule-of-law vs Maddison GDP) *appeared* to decline (r 0.71→0.52, 1850→1970) but that
+is a **decolonization composition artifact**: on a constant 25-polity set the
+coupling *rises* (Δr=+0.24) and on mature states it is flat (Δr=+0.03, p=0.91) — the
+1970 anchor's sample doubles as post-colonial states enter and loosen the pooled
+correlation (the same composition seam as Finding 9-A). *Test 2* — institutional
+variance within the top income quartile **narrowed** (SD 0.137→0.069), the opposite
+of the predicted "rich with an increasingly wide range of governance"; rich
+countries' institutions **converged**.
+
+**The channels and the mechanism also fail, independently.** *Test 3* — economic
+composition does not moderate the signal (H−L institutional-signal edge ≈0 or
+reversed; institution-light share flat). *Test 4* — financial depth rose system-wide
+(36→54 %GDP) but the pre-registered interaction is **positive** on the primary
+(crisis) outcome in both windows (no financialization moderation; a lone weak
+negative on one secondary window). *Test 5A* — P1↔P3 (human capital) is stable-to-
+rising, not decoupling. *Test 5B* — the P1↔P4 "tightening" is entirely the GDP
+component; GDP-decontaminated P4\* **declines**. *Test 5C* — P1↔capital-orientation
+falls *faster* than P1↔people-orientation (reverse of predicted); by 2024 P1 tracks
+people more than capital. *Test 5D* — no discrete 1979 inflection (smooth trend,
+echoing 9-B); the real, gradual macro rise of capital-vs-people *spending* does not
+appear in the P1↔orientation *relationship*.
+
+**Verdict (per the frozen gate, no rationalization):** Tests 1–2 null ⇒ the
+decoupling **phenomenon fails at the first gate**, and every channel/mechanism test
+independently confirms the null. This is not "phenomenon real, mechanism wrong" —
+the phenomenon does not appear. The erosion's residual is **not closed but better
+bounded**: it is not composition (9-A), not consequence-elimination (9-B), not
+perception-lag (9-C), not external support (Finding 8), and **not wealth–institution
+decoupling** (Finding 10). What the data shows instead — modern re-coupling,
+rich-country institutional convergence, institutions still people-correlated — is
+consistent with Finding 9's *candidate residual #3* (measurement-regime maturation /
+WGI variance-compression as formal-legal institutions diffuse), which is explicitly
+**not** in the decoupling family and awaits its own pre-registration. Epistemic
+status: **registered null; hypothesis falsified in its pre-registered form.** Full
+write-up `docs/DECOUPLING_RESULTS.md`; artifacts `data/robustness/decoupling/*`;
+code `scripts/robustness/decoupling_*.py`.
 
 ---
 
