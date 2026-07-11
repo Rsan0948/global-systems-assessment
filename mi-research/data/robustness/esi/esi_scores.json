@@ -1,0 +1,5027 @@
+{
+ "_meta": {
+  "workstream": "ESI_build",
+  "spec": "config/esi.json",
+  "prereg": "docs/ESI_PREREGISTRATION.md",
+  "years": [
+   2004,
+   2012
+  ],
+  "n_countries": 91,
+  "aggregation": "sub-dim = mean of available indicators; ESI = mean of available sub-dims (equal weight, un-tuned)",
+  "ceilings_documented": {
+   "fdi_pct_gdp": 7.7291,
+   "remittances_pct_gdp": 10.7142,
+   "reserves_months_imports": 10.3115,
+   "swf_assets_pct_gdp": 1.8,
+   "oda_full_dependence_pct": 20.0,
+   "percentile": 0.9
+  },
+  "excluded_from_primary": [
+   "debt_service_pct_gni (sign-ambiguous)",
+   "export_partner_hhi (deferred)"
+  ]
+ },
+ "esi": {
+  "ARE": {
+   "2004": {
+    "ESI": 0.3752,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.8755,
+     "C_systemic_insurance": 0.25
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.8755
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 1.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1884,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.3151,
+     "C_systemic_insurance": 0.25
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3151
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 1.0
+     }
+    }
+   }
+  },
+  "ARG": {
+   "2004": {
+    "ESI": 0.4007,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.875,
+     "B_structural_dependency": 0.115,
+     "C_systemic_insurance": 0.2121
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.75
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3241,
+      "oda_pct_gni": 0.0033,
+      "remittances_pct_gdp": 0.0177
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.5,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5604
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.217,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.325,
+     "B_structural_dependency": 0.1249,
+     "C_systemic_insurance": 0.2012
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.65
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3631,
+      "oda_pct_gni": 0.0017,
+      "remittances_pct_gdp": 0.0099
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.5,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5061
+     }
+    }
+   }
+  },
+  "ARM": {
+   "2004": {
+    "ESI": 0.5698,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.7,
+     "B_structural_dependency": 0.7459,
+     "C_systemic_insurance": 0.2635
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.4
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.894,
+      "oda_pct_gni": 0.3438,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3174
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.5409,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.775,
+     "B_structural_dependency": 0.5759,
+     "C_systemic_insurance": 0.2719
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.55
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.6051,
+      "oda_pct_gni": 0.1225,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3596
+     }
+    }
+   }
+  },
+  "BEL": {
+   "2004": {
+    "ESI": 0.398,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.5829,
+     "C_systemic_insurance": 0.6111
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "remittances_pct_gdp": 0.1659
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0557
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2909,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.2579,
+     "C_systemic_insurance": 0.6149
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3066,
+      "remittances_pct_gdp": 0.2092
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0744
+     }
+    }
+   }
+  },
+  "BGD": {
+   "2004": {
+    "ESI": 0.3472,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.75,
+     "B_structural_dependency": 0.2359,
+     "C_systemic_insurance": 0.0558
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.5
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0892,
+      "oda_pct_gni": 0.1046,
+      "remittances_pct_gdp": 0.5137
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2788
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3851,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.675,
+     "B_structural_dependency": 0.4056,
+     "C_systemic_insurance": 0.0747
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1538,
+      "oda_pct_gni": 0.0745,
+      "remittances_pct_gdp": 0.9885
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3735
+     }
+    }
+   }
+  },
+  "BIH": {
+   "2004": {
+    "ESI": 0.4922,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.625,
+     "B_structural_dependency": 0.7739,
+     "C_systemic_insurance": 0.0778
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.3218,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3892
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4596,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.486,
+     "C_systemic_insurance": 0.1678
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2944,
+      "oda_pct_gni": 0.1636,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.33,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5088
+     }
+    }
+   }
+  },
+  "BOL": {
+   "2004": {
+    "ESI": 0.4094,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.875,
+     "B_structural_dependency": 0.2472,
+     "C_systemic_insurance": 0.106
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.75
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0965,
+      "oda_pct_gni": 0.4212,
+      "remittances_pct_gdp": 0.224
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.53
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2799,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.3,
+     "B_structural_dependency": 0.3397,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.6
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5063,
+      "oda_pct_gni": 0.13,
+      "remittances_pct_gdp": 0.3827
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "BRA": {
+   "2004": {
+    "ESI": 0.3241,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.1306,
+     "C_systemic_insurance": 0.1167
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3511,
+      "oda_pct_gni": 0.0014,
+      "remittances_pct_gdp": 0.0392
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5837
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1804,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.1663,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4858,
+      "oda_pct_gni": 0.0027,
+      "remittances_pct_gdp": 0.0105
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "BWA": {
+   "2004": {
+    "ESI": 0.1603,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.2252,
+     "C_systemic_insurance": 0.2556
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5646,
+      "oda_pct_gni": 0.0291,
+      "remittances_pct_gdp": 0.082
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.2778,
+      "reserves_months_imports": 1.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0997,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0582,
+     "C_systemic_insurance": 0.241
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1359,
+      "oda_pct_gni": 0.0267,
+      "remittances_pct_gdp": 0.0121
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.25,
+      "reserves_months_imports": 0.9548
+     }
+    }
+   }
+  },
+  "CAN": {
+   "2004": {
+    "ESI": 0.0779,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0129,
+     "C_systemic_insurance": 0.2207
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0183,
+      "remittances_pct_gdp": 0.0075
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1035
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1337,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1779,
+     "C_systemic_insurance": 0.2232
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3494,
+      "remittances_pct_gdp": 0.0064
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1159
+     }
+    }
+   }
+  },
+  "CHL": {
+   "2004": {
+    "ESI": 0.1472,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.2176,
+     "C_systemic_insurance": 0.099
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.6489,
+      "oda_pct_gni": 0.0029,
+      "remittances_pct_gdp": 0.0011
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0111,
+      "reserves_months_imports": 0.4839
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1433,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.335,
+     "C_systemic_insurance": 0.0948
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.0025,
+      "remittances_pct_gdp": 0.0025
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0444,
+      "reserves_months_imports": 0.4295
+     }
+    }
+   }
+  },
+  "CHN": {
+   "2004": {
+    "ESI": 0.12,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1599,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4442,
+      "oda_pct_gni": 0.0043,
+      "remittances_pct_gdp": 0.0312
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1109,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1261,
+     "C_systemic_insurance": 0.2067
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3598,
+      "oda_pct_gni": 0.0,
+      "remittances_pct_gdp": 0.0184
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0333,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "CIV": {
+   "2004": {
+    "ESI": 0.0887,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.0911,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1557,
+      "oda_pct_gni": 0.0543,
+      "remittances_pct_gdp": 0.0632
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3276,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.2577,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1177,
+      "oda_pct_gni": 0.5609,
+      "remittances_pct_gdp": 0.0944
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   }
+  },
+  "CMR": {
+   "2004": {
+    "ESI": 0.2906,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.1033,
+     "C_systemic_insurance": 0.0434
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0467,
+      "oda_pct_gni": 0.2119,
+      "remittances_pct_gdp": 0.0513
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2168
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1316,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.1306,
+     "C_systemic_insurance": 0.0893
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2263,
+      "oda_pct_gni": 0.1005,
+      "remittances_pct_gdp": 0.0651
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4466
+     }
+    }
+   }
+  },
+  "COD": {
+   "2004": {
+    "ESI": 0.3838,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.65,
+     "B_structural_dependency": 0.4937,
+     "C_systemic_insurance": 0.0078
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5139,
+      "oda_pct_gni": 0.9606,
+      "remittances_pct_gdp": 0.0066
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0392
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4484,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.5888,
+     "C_systemic_insurance": 0.0315
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.5005,
+      "remittances_pct_gdp": 0.266
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1573
+     }
+    }
+   }
+  },
+  "COL": {
+   "2004": {
+    "ESI": 0.3281,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.65,
+     "B_structural_dependency": 0.2074,
+     "C_systemic_insurance": 0.1268
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3443,
+      "oda_pct_gni": 0.0237,
+      "remittances_pct_gdp": 0.2542
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.6342
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3612,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.775,
+     "B_structural_dependency": 0.2123,
+     "C_systemic_insurance": 0.0962
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.55
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5249,
+      "oda_pct_gni": 0.0107,
+      "remittances_pct_gdp": 0.1012
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4812
+     }
+    }
+   }
+  },
+  "CRI": {
+   "2004": {
+    "ESI": 0.1606,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.307,
+     "C_systemic_insurance": 0.0499
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7534,
+      "oda_pct_gni": 0.0072,
+      "remittances_pct_gdp": 0.1603
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2495
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1406,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.05,
+     "B_structural_dependency": 0.2843,
+     "C_systemic_insurance": 0.0874
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.1
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7386,
+      "oda_pct_gni": 0.0031,
+      "remittances_pct_gdp": 0.1111
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4371
+     }
+    }
+   }
+  },
+  "CUB": {
+   "2004": {
+    "ESI": 0.0044,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0132,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "oda_pct_gni": 0.0132
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.002,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0059,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "oda_pct_gni": 0.0059
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   }
+  },
+  "CZE": {
+   "2004": {
+    "ESI": 0.2712,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.3933,
+     "C_systemic_insurance": 0.4204
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.6917,
+      "remittances_pct_gdp": 0.0949
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.432
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2392,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.3213,
+     "C_systemic_insurance": 0.3962
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5802,
+      "remittances_pct_gdp": 0.0625
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.311
+     }
+    }
+   }
+  },
+  "DEU": {
+   "2004": {
+    "ESI": 0.2112,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0107,
+     "C_systemic_insurance": 0.6229
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0,
+      "remittances_pct_gdp": 0.0213
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1144
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2588,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1377,
+     "C_systemic_insurance": 0.6386
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2354,
+      "remittances_pct_gdp": 0.0399
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1932
+     }
+    }
+   }
+  },
+  "DOM": {
+   "2004": {
+    "ESI": 0.3898,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.625,
+     "B_structural_dependency": 0.5223,
+     "C_systemic_insurance": 0.022
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5416,
+      "oda_pct_gni": 0.0254,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1102
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4099,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.4697,
+     "C_systemic_insurance": 0.035
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7298,
+      "oda_pct_gni": 0.0224,
+      "remittances_pct_gdp": 0.6568
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1752
+     }
+    }
+   }
+  },
+  "EGY": {
+   "2004": {
+    "ESI": 0.2037,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.15,
+     "B_structural_dependency": 0.2324,
+     "C_systemic_insurance": 0.2287
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2058,
+      "oda_pct_gni": 0.0956,
+      "remittances_pct_gdp": 0.3958
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.5,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.6436
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1723,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.1,
+     "B_structural_dependency": 0.2687,
+     "C_systemic_insurance": 0.1483
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.2
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1297,
+      "oda_pct_gni": 0.0333,
+      "remittances_pct_gdp": 0.6432
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.5,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2413
+     }
+    }
+   }
+  },
+  "ERI": {
+   "2004": {
+    "ESI": 0.2135,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.6406,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2812,
+      "oda_pct_gni": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0952,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.2855,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2444,
+      "oda_pct_gni": 0.3267
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   }
+  },
+  "ESP": {
+   "2004": {
+    "ESI": 0.2574,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1595,
+     "C_systemic_insurance": 0.6127
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3101,
+      "remittances_pct_gdp": 0.0088
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0633
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2421,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1009,
+     "C_systemic_insurance": 0.6254
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1871,
+      "remittances_pct_gdp": 0.0147
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1268
+     }
+    }
+   }
+  },
+  "EST": {
+   "2004": {
+    "ESI": 0.3724,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.5641,
+     "C_systemic_insurance": 0.3781
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "remittances_pct_gdp": 0.1282
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2203
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4478,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.15,
+     "B_structural_dependency": 0.5901,
+     "C_systemic_insurance": 0.6032
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.9951,
+      "remittances_pct_gdp": 0.185
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0161
+     }
+    }
+   }
+  },
+  "ETH": {
+   "2004": {
+    "ESI": 0.4644,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.5761,
+     "C_systemic_insurance": 0.092
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.6961,
+      "oda_pct_gni": 0.909,
+      "remittances_pct_gdp": 0.1232
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4599
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1368,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.1977,
+     "C_systemic_insurance": 0.0376
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0832,
+      "oda_pct_gni": 0.3753,
+      "remittances_pct_gdp": 0.1345
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1882
+     }
+    }
+   }
+  },
+  "FJI": {
+   "2004": {
+    "ESI": 0.2103,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.572,
+     "C_systemic_insurance": 0.059
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.121,
+      "remittances_pct_gdp": 0.595
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2948
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1912,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.4963,
+     "C_systemic_insurance": 0.0772
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.9033,
+      "oda_pct_gni": 0.1377,
+      "remittances_pct_gdp": 0.4479
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3858
+     }
+    }
+   }
+  },
+  "FRA": {
+   "2004": {
+    "ESI": 0.2555,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1387,
+     "C_systemic_insurance": 0.6277
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2184,
+      "remittances_pct_gdp": 0.059
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1384
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2541,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1189,
+     "C_systemic_insurance": 0.6435
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1589,
+      "remittances_pct_gdp": 0.0788
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2177
+     }
+    }
+   }
+  },
+  "GAB": {
+   "2004": {
+    "ESI": 0.3235,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.75,
+     "B_structural_dependency": 0.1872,
+     "C_systemic_insurance": 0.0334
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.5
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5228,
+      "oda_pct_gni": 0.0304,
+      "remittances_pct_gdp": 0.0082
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.167
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1591,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.225,
+     "B_structural_dependency": 0.1816,
+     "C_systemic_insurance": 0.0708
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5104,
+      "oda_pct_gni": 0.0223,
+      "remittances_pct_gdp": 0.0123
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.354
+     }
+    }
+   }
+  },
+  "GBR": {
+   "2004": {
+    "ESI": 0.2645,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.2432,
+     "C_systemic_insurance": 0.5502
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4636,
+      "remittances_pct_gdp": 0.0228
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0812
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2257,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1197,
+     "C_systemic_insurance": 0.5575
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2224,
+      "remittances_pct_gdp": 0.017
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1175
+     }
+    }
+   }
+  },
+  "GEO": {
+   "2004": {
+    "ESI": 0.4619,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.7,
+     "B_structural_dependency": 0.6517,
+     "C_systemic_insurance": 0.034
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.4
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.3022,
+      "remittances_pct_gdp": 0.653
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1698
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3344,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.3,
+     "B_structural_dependency": 0.6388,
+     "C_systemic_insurance": 0.0644
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.6
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7415,
+      "oda_pct_gni": 0.1971,
+      "remittances_pct_gdp": 0.9779
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3218
+     }
+    }
+   }
+  },
+  "GHA": {
+   "2004": {
+    "ESI": 0.4221,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.825,
+     "B_structural_dependency": 0.3688,
+     "C_systemic_insurance": 0.0724
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.65
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2029,
+      "oda_pct_gni": 0.8171,
+      "remittances_pct_gdp": 0.0866
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3622
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4845,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.825,
+     "B_structural_dependency": 0.5724,
+     "C_systemic_insurance": 0.0562
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.65
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.2296,
+      "remittances_pct_gdp": 0.4875
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2808
+     }
+    }
+   }
+  },
+  "GNQ": {
+   "2004": {
+    "ESI": 0.2247,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.5492,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.0984
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0957,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.287,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5694,
+      "oda_pct_gni": 0.0047
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   }
+  },
+  "GRC": {
+   "2004": {
+    "ESI": 0.2309,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0838,
+     "C_systemic_insurance": 0.609
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1183,
+      "remittances_pct_gdp": 0.0494
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0448
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4184,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.575,
+     "B_structural_dependency": 0.0583,
+     "C_systemic_insurance": 0.622
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.09,
+      "remittances_pct_gdp": 0.0266
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1101
+     }
+    }
+   }
+  },
+  "GTM": {
+   "2004": {
+    "ESI": 0.3535,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.575,
+     "B_structural_dependency": 0.4089,
+     "C_systemic_insurance": 0.0765
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1764,
+      "oda_pct_gni": 0.0504,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3827
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2247,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.15,
+     "B_structural_dependency": 0.4437,
+     "C_systemic_insurance": 0.0804
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3652,
+      "oda_pct_gni": 0.0314,
+      "remittances_pct_gdp": 0.9344
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.402
+     }
+    }
+   }
+  },
+  "HND": {
+   "2004": {
+    "ESI": 0.4885,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.65,
+     "B_structural_dependency": 0.7281,
+     "C_systemic_insurance": 0.0874
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.8638,
+      "oda_pct_gni": 0.3206,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4369
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4802,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.75,
+     "B_structural_dependency": 0.6397,
+     "C_systemic_insurance": 0.0508
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.5
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7551,
+      "oda_pct_gni": 0.1641,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2541
+     }
+    }
+   }
+  },
+  "HRV": {
+   "2004": {
+    "ESI": 0.3654,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.675,
+     "B_structural_dependency": 0.256,
+     "C_systemic_insurance": 0.1651
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4064,
+      "oda_pct_gni": 0.0145,
+      "remittances_pct_gdp": 0.347
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.33,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4953
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2828,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.225,
+     "B_structural_dependency": 0.2269,
+     "C_systemic_insurance": 0.3965
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3294,
+      "oda_pct_gni": 0.0132,
+      "remittances_pct_gdp": 0.3381
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.33,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.6525
+     }
+    }
+   }
+  },
+  "HTI": {
+   "2004": {
+    "ESI": 0.1724,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.075,
+     "B_structural_dependency": 0.4143,
+     "C_systemic_insurance": 0.028
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0125,
+      "oda_pct_gni": 0.2305,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1398
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4364,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.65,
+     "B_structural_dependency": 0.5366,
+     "C_systemic_insurance": 0.1225
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1472,
+      "oda_pct_gni": 0.4626,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.6126
+     }
+    }
+   }
+  },
+  "HUN": {
+   "2004": {
+    "ESI": 0.2812,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.15,
+     "B_structural_dependency": 0.3106,
+     "C_systemic_insurance": 0.383
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5645,
+      "remittances_pct_gdp": 0.0568
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2449
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3937,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.15,
+     "B_structural_dependency": 0.6133,
+     "C_systemic_insurance": 0.4177
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "remittances_pct_gdp": 0.2265
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4186
+     }
+    }
+   }
+  },
+  "IDN": {
+   "2004": {
+    "ESI": 0.1117,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.0551,
+     "C_systemic_insurance": 0.1051
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0955,
+      "oda_pct_gni": 0.002,
+      "remittances_pct_gdp": 0.0678
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5257
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1359,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.1242,
+     "C_systemic_insurance": 0.1084
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2988,
+      "oda_pct_gni": 0.0004,
+      "remittances_pct_gdp": 0.0733
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5421
+     }
+    }
+   }
+  },
+  "IND": {
+   "2004": {
+    "ESI": 0.1307,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.075,
+     "B_structural_dependency": 0.1171,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0991,
+      "oda_pct_gni": 0.0055,
+      "remittances_pct_gdp": 0.2468
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1049,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.025,
+     "B_structural_dependency": 0.1753,
+     "C_systemic_insurance": 0.1145
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.05
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1699,
+      "oda_pct_gni": 0.0047,
+      "remittances_pct_gdp": 0.3515
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5725
+     }
+    }
+   }
+  },
+  "IRL": {
+   "2004": {
+    "ESI": 0.1369,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0099,
+     "C_systemic_insurance": 0.4009
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0,
+      "remittances_pct_gdp": 0.0199
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0045
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4969,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.575,
+     "B_structural_dependency": 0.5143,
+     "C_systemic_insurance": 0.4013
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "remittances_pct_gdp": 0.0286
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0063
+     }
+    }
+   }
+  },
+  "IRQ": {
+   "2004": {
+    "ESI": 0.1272,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.2908,
+     "C_systemic_insurance": 0.0907
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.106,
+      "oda_pct_gni": 0.6339,
+      "remittances_pct_gdp": 0.1326
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4536
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3187,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.675,
+     "B_structural_dependency": 0.081,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2018,
+      "oda_pct_gni": 0.0297,
+      "remittances_pct_gdp": 0.0116
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "ISL": {
+   "2004": {
+    "ESI": 0.2033,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.3703,
+     "C_systemic_insurance": 0.2396
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.6998,
+      "remittances_pct_gdp": 0.0407
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1978
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2985,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.1,
+     "B_structural_dependency": 0.492,
+     "C_systemic_insurance": 0.3036
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.2
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.8867,
+      "remittances_pct_gdp": 0.0973
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5182
+     }
+    }
+   }
+  },
+  "ISR": {
+   "2004": {
+    "ESI": 0.1516,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1462,
+     "C_systemic_insurance": 0.3086
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2725,
+      "remittances_pct_gdp": 0.0199
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.543
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2012,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.2338,
+     "C_systemic_insurance": 0.3699
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4433,
+      "remittances_pct_gdp": 0.0243
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.8494
+     }
+    }
+   }
+  },
+  "ITA": {
+   "2004": {
+    "ESI": 0.2368,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0812,
+     "C_systemic_insurance": 0.6292
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1435,
+      "remittances_pct_gdp": 0.019
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1458
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2287,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0205,
+     "C_systemic_insurance": 0.6657
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0002,
+      "remittances_pct_gdp": 0.0408
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3283
+     }
+    }
+   }
+  },
+  "JAM": {
+   "2004": {
+    "ESI": 0.3019,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.25,
+     "B_structural_dependency": 0.5855,
+     "C_systemic_insurance": 0.0703
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.5
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7113,
+      "oda_pct_gni": 0.0452,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3513
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3875,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.65,
+     "B_structural_dependency": 0.4569,
+     "C_systemic_insurance": 0.0556
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3612,
+      "oda_pct_gni": 0.0096,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2779
+     }
+    }
+   }
+  },
+  "JPN": {
+   "2004": {
+    "ESI": 0.2035,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0106,
+     "C_systemic_insurance": 0.6
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0197,
+      "remittances_pct_gdp": 0.0015
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2008,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0024,
+     "C_systemic_insurance": 0.6
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0011,
+      "remittances_pct_gdp": 0.0037
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "KAZ": {
+   "2004": {
+    "ESI": 0.2625,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.3487,
+     "C_systemic_insurance": 0.3137
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.0337,
+      "remittances_pct_gdp": 0.0124
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0833,
+      "reserves_months_imports": 0.4852
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2434,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.2884,
+     "C_systemic_insurance": 0.3167
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.8489,
+      "oda_pct_gni": 0.0037,
+      "remittances_pct_gdp": 0.0127
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.2222,
+      "reserves_months_imports": 0.3611
+     }
+    }
+   }
+  },
+  "KOR": {
+   "2004": {
+    "ESI": 0.2179,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.15,
+     "B_structural_dependency": 0.1381,
+     "C_systemic_insurance": 0.3657
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2089,
+      "remittances_pct_gdp": 0.0673
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.8285
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1534,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.075,
+     "B_structural_dependency": 0.069,
+     "C_systemic_insurance": 0.3163
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.092,
+      "remittances_pct_gdp": 0.0461
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0222,
+      "reserves_months_imports": 0.5595
+     }
+    }
+   }
+  },
+  "LBN": {
+   "2004": {
+    "ESI": 0.2939,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.6885,
+     "C_systemic_insurance": 0.1931
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.0655,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.9654
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2884,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.6652,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.9145,
+      "oda_pct_gni": 0.0812,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "LBY": {
+   "2004": {
+    "ESI": 0.0828,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0483,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1394,
+      "oda_pct_gni": 0.0025,
+      "remittances_pct_gdp": 0.0028
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1303,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.102,
+     "C_systemic_insurance": 0.2889
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1992,
+      "oda_pct_gni": 0.0048
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.4444,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "LKA": {
+   "2004": {
+    "ESI": 0.3493,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.675,
+     "B_structural_dependency": 0.3188,
+     "C_systemic_insurance": 0.0542
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1458,
+      "oda_pct_gni": 0.0998,
+      "remittances_pct_gdp": 0.7109
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.271
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.377,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.3344,
+     "C_systemic_insurance": 0.0716
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1728,
+      "oda_pct_gni": 0.0354,
+      "remittances_pct_gdp": 0.7949
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3578
+     }
+    }
+   }
+  },
+  "LTU": {
+   "2004": {
+    "ESI": 0.3213,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.2,
+     "B_structural_dependency": 0.3687,
+     "C_systemic_insurance": 0.3953
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.4
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5003,
+      "remittances_pct_gdp": 0.237
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3065
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2772,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.2673,
+     "C_systemic_insurance": 0.3894
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2051,
+      "remittances_pct_gdp": 0.3294
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2769
+     }
+    }
+   }
+  },
+  "LVA": {
+   "2004": {
+    "ESI": 0.3055,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.3505,
+     "C_systemic_insurance": 0.391
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5536,
+      "remittances_pct_gdp": 0.1475
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2848
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3949,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.25,
+     "B_structural_dependency": 0.5157,
+     "C_systemic_insurance": 0.4189
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.5
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5157,
+      "remittances_pct_gdp": 0.5158
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4244
+     }
+    }
+   }
+  },
+  "MLI": {
+   "2004": {
+    "ESI": 0.3704,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.825,
+     "B_structural_dependency": 0.2862,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.65
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1695,
+      "oda_pct_gni": 0.4652,
+      "remittances_pct_gdp": 0.2237
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4019,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.8,
+     "B_structural_dependency": 0.4057,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.6
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3479,
+      "oda_pct_gni": 0.3473,
+      "remittances_pct_gdp": 0.522
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   }
+  },
+  "MMR": {
+   "2004": {
+    "ESI": 0.0668,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1401,
+     "C_systemic_insurance": 0.0604
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2588,
+      "oda_pct_gni": 0.0585,
+      "remittances_pct_gdp": 0.103
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3018
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.091,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1248,
+     "C_systemic_insurance": 0.1481
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2879,
+      "oda_pct_gni": 0.0438,
+      "remittances_pct_gdp": 0.0428
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.7406
+     }
+    }
+   }
+  },
+  "MNG": {
+   "2004": {
+    "ESI": 0.4869,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.7021,
+     "C_systemic_insurance": 0.0337
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.6035,
+      "oda_pct_gni": 0.554,
+      "remittances_pct_gdp": 0.9488
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.1687
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2752,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.25,
+     "B_structural_dependency": 0.4809,
+     "C_systemic_insurance": 0.0948
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.5
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.1968,
+      "remittances_pct_gdp": 0.2459
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4738
+     }
+    }
+   }
+  },
+  "MUS": {
+   "2004": {
+    "ESI": 0.0571,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.05,
+     "B_structural_dependency": 0.0175,
+     "C_systemic_insurance": 0.1038
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.1
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.027,
+      "oda_pct_gni": 0.0247,
+      "remittances_pct_gdp": 0.001
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.519
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1059,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.2389,
+     "C_systemic_insurance": 0.0788
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.6441,
+      "oda_pct_gni": 0.072,
+      "remittances_pct_gdp": 0.0007
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.394
+     }
+    }
+   }
+  },
+  "MYS": {
+   "2004": {
+    "ESI": 0.1032,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1755,
+     "C_systemic_insurance": 0.134
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4538,
+      "oda_pct_gni": 0.0126,
+      "remittances_pct_gdp": 0.06
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0722,
+      "reserves_months_imports": 0.5979
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0948,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1349,
+     "C_systemic_insurance": 0.1495
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.366,
+      "oda_pct_gni": 0.0003,
+      "remittances_pct_gdp": 0.0384
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0722,
+      "reserves_months_imports": 0.6753
+     }
+    }
+   }
+  },
+  "NGA": {
+   "2004": {
+    "ESI": 0.1624,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.15,
+     "B_structural_dependency": 0.1674,
+     "C_systemic_insurance": 0.1697
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1786,
+      "remittances_pct_gdp": 0.1562
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.8484
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1205,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.05,
+     "B_structural_dependency": 0.2107,
+     "C_systemic_insurance": 0.1007
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.1
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1971,
+      "oda_pct_gni": 0.0217,
+      "remittances_pct_gdp": 0.4132
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5037
+     }
+    }
+   }
+  },
+  "NIC": {
+   "2004": {
+    "ESI": 0.5255,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.725,
+     "B_structural_dependency": 0.7935,
+     "C_systemic_insurance": 0.0581
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5584,
+      "oda_pct_gni": 0.9864,
+      "remittances_pct_gdp": 0.8359
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2905
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3712,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.35,
+     "B_structural_dependency": 0.7055,
+     "C_systemic_insurance": 0.058
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.7
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.9529,
+      "oda_pct_gni": 0.2631,
+      "remittances_pct_gdp": 0.9006
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2901
+     }
+    }
+   }
+  },
+  "NPL": {
+   "2004": {
+    "ESI": 0.4107,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.65,
+     "B_structural_dependency": 0.4321,
+     "C_systemic_insurance": 0.1501
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0,
+      "oda_pct_gni": 0.2963,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.7505
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2526,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.2,
+     "B_structural_dependency": 0.4103,
+     "C_systemic_insurance": 0.1476
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.4
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0548,
+      "oda_pct_gni": 0.1761,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.7379
+     }
+    }
+   }
+  },
+  "OMN": {
+   "2004": {
+    "ESI": 0.0375,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0271,
+     "C_systemic_insurance": 0.0854
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0506,
+      "oda_pct_gni": 0.0179,
+      "remittances_pct_gdp": 0.0128
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0833,
+      "reserves_months_imports": 0.3438
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0553,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0689,
+     "C_systemic_insurance": 0.0969
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.202,
+      "oda_pct_gni": 0.0006,
+      "remittances_pct_gdp": 0.0042
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0611,
+      "reserves_months_imports": 0.4232
+     }
+    }
+   }
+  },
+  "PAK": {
+   "2004": {
+    "ESI": 0.3826,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.8,
+     "B_structural_dependency": 0.1463,
+     "C_systemic_insurance": 0.2014
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.6
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1094,
+      "oda_pct_gni": 0.0511,
+      "remittances_pct_gdp": 0.2785
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.5,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5072
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2293,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.325,
+     "B_structural_dependency": 0.2027,
+     "C_systemic_insurance": 0.1603
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.65
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0444,
+      "oda_pct_gni": 0.0409,
+      "remittances_pct_gdp": 0.5227
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.5,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3013
+     }
+    }
+   }
+  },
+  "PER": {
+   "2004": {
+    "ESI": 0.3664,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.75,
+     "B_structural_dependency": 0.1687,
+     "C_systemic_insurance": 0.1805
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.5
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3099,
+      "oda_pct_gni": 0.0378,
+      "remittances_pct_gdp": 0.1583
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.9023
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2973,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.325,
+     "B_structural_dependency": 0.3669,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.65
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.9525,
+      "oda_pct_gni": 0.0107,
+      "remittances_pct_gdp": 0.1375
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "PNG": {
+   "2004": {
+    "ESI": 0.1146,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.166,
+     "C_systemic_insurance": 0.0528
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1072,
+      "oda_pct_gni": 0.3683,
+      "remittances_pct_gdp": 0.0226
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2638
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0882,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.1,
+     "B_structural_dependency": 0.0632,
+     "C_systemic_insurance": 0.1013
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.2
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0175,
+      "oda_pct_gni": 0.1659,
+      "remittances_pct_gdp": 0.0062
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5064
+     }
+    }
+   }
+  },
+  "POL": {
+   "2004": {
+    "ESI": 0.3245,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.4361,
+     "C_systemic_insurance": 0.4125
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7001,
+      "remittances_pct_gdp": 0.172
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3927
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4245,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.675,
+     "B_structural_dependency": 0.1649,
+     "C_systemic_insurance": 0.4337
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1978,
+      "remittances_pct_gdp": 0.1319
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4984
+     }
+    }
+   }
+  },
+  "RUS": {
+   "2004": {
+    "ESI": 0.1854,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.175,
+     "B_structural_dependency": 0.186,
+     "C_systemic_insurance": 0.1951
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3372,
+      "remittances_pct_gdp": 0.0348
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0167,
+      "reserves_months_imports": 0.9587
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1727,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.15,
+     "B_structural_dependency": 0.1604,
+     "C_systemic_insurance": 0.2078
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2964,
+      "remittances_pct_gdp": 0.0245
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0389,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "RWA": {
+   "2004": {
+    "ESI": 0.345,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.675,
+     "B_structural_dependency": 0.3601,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0419,
+      "oda_pct_gni": 1.0,
+      "remittances_pct_gdp": 0.0385
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3898,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.7,
+     "B_structural_dependency": 0.4254,
+     "C_systemic_insurance": 0.0441
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.4
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4616,
+      "oda_pct_gni": 0.5894,
+      "remittances_pct_gdp": 0.2253
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2205
+     }
+    }
+   }
+  },
+  "SAU": {
+   "2004": {
+    "ESI": 0.0474,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.001,
+     "C_systemic_insurance": 0.1411
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0,
+      "oda_pct_gni": 0.0004,
+      "remittances_pct_gdp": 0.0027
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.2222,
+      "reserves_months_imports": 0.4834
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1112,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0448,
+     "C_systemic_insurance": 0.2889
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0866,
+      "remittances_pct_gdp": 0.0031
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.4444,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "SDN": {
+   "2004": {
+    "ESI": 0.1757,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.4733,
+     "C_systemic_insurance": 0.0538
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7337,
+      "oda_pct_gni": 0.1948,
+      "remittances_pct_gdp": 0.4914
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2691
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1273,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.3782,
+     "C_systemic_insurance": 0.0037
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.7947,
+      "oda_pct_gni": 0.1922,
+      "remittances_pct_gdp": 0.1478
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0183
+     }
+    }
+   }
+  },
+  "SGP": {
+   "2004": {
+    "ESI": 0.4176,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 1.0,
+     "C_systemic_insurance": 0.2528
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.7222,
+      "reserves_months_imports": 0.5419
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.424,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 1.0,
+     "C_systemic_insurance": 0.2721
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.8333,
+      "reserves_months_imports": 0.5272
+     }
+    }
+   }
+  },
+  "SOM": {
+   "2004": {
+    "ESI": 0.0442,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1327,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0,
+      "oda_pct_gni": 0.2655
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2197,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.6591,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3182,
+      "oda_pct_gni": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   }
+  },
+  "SRB": {
+   "2004": {
+    "ESI": 0.4612,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.575,
+     "B_structural_dependency": 0.6668,
+     "C_systemic_insurance": 0.1418
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.2177,
+      "remittances_pct_gdp": 0.7827
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.7091
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4294,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.675,
+     "B_structural_dependency": 0.4081,
+     "C_systemic_insurance": 0.2052
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.35
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3658,
+      "oda_pct_gni": 0.1245,
+      "remittances_pct_gdp": 0.7339
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.33,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.6958
+     }
+    }
+   }
+  },
+  "SSD": {
+   "2004": {
+    "ESI": 0.0,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 2,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0
+     },
+     "B": {},
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1152,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.3455,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1746,
+      "oda_pct_gni": 0.5164
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   }
+  },
+  "SVK": {
+   "2004": {
+    "ESI": 0.3455,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.05,
+     "B_structural_dependency": 0.5763,
+     "C_systemic_insurance": 0.4103
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.1
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "remittances_pct_gdp": 0.1527
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3814
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.291,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.05,
+     "B_structural_dependency": 0.2163,
+     "C_systemic_insurance": 0.6067
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.1
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2427,
+      "remittances_pct_gdp": 0.1899
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0337
+     }
+    }
+   }
+  },
+  "SVN": {
+   "2004": {
+    "ESI": 0.1856,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.1239,
+     "C_systemic_insurance": 0.433
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2891,
+      "oda_pct_gni": 0.0115,
+      "remittances_pct_gdp": 0.0713
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.67,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4948
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2121,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0299,
+     "C_systemic_insurance": 0.6065
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0094,
+      "remittances_pct_gdp": 0.0504
+     },
+     "C": {
+      "reserve_currency": 1.0,
+      "eu_eurozone": 1.0,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.0325
+     }
+    }
+   }
+  },
+  "THA": {
+   "2004": {
+    "ESI": 0.1668,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.1759,
+     "C_systemic_insurance": 0.1995
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4385,
+      "oda_pct_gni": 0.0016,
+      "remittances_pct_gdp": 0.0876
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.5,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4974
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1667,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.075,
+     "B_structural_dependency": 0.1842,
+     "C_systemic_insurance": 0.241
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4198,
+      "oda_pct_gni": 0.0,
+      "remittances_pct_gdp": 0.1328
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.5,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.7049
+     }
+    }
+   }
+  },
+  "TLS": {
+   "2004": {
+    "ESI": 0.1521,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.398,
+     "C_systemic_insurance": 0.0582
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1192,
+      "oda_pct_gni": 1.0,
+      "remittances_pct_gdp": 0.0749
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2909
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.301,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.5808,
+     "C_systemic_insurance": 0.3223
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4502,
+      "oda_pct_gni": 0.3284,
+      "remittances_pct_gdp": 0.9639
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 1.0,
+      "reserves_months_imports": 0.6117
+     }
+    }
+   }
+  },
+  "TTO": {
+   "2004": {
+    "ESI": 0.1869,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.075,
+     "B_structural_dependency": 0.3445,
+     "C_systemic_insurance": 0.1413
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.9724,
+      "oda_pct_gni": 0.0,
+      "remittances_pct_gdp": 0.0611
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0556,
+      "reserves_months_imports": 0.6508
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0621,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0162,
+     "C_systemic_insurance": 0.1702
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0,
+      "oda_pct_gni": 0.001,
+      "remittances_pct_gdp": 0.0477
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.1056,
+      "reserves_months_imports": 0.7455
+     }
+    }
+   }
+  },
+  "TUN": {
+   "2004": {
+    "ESI": 0.1428,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.2433,
+     "C_systemic_insurance": 0.0602
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2457,
+      "oda_pct_gni": 0.0558,
+      "remittances_pct_gdp": 0.4284
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3008
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1332,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.3282,
+     "C_systemic_insurance": 0.0713
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.425,
+      "oda_pct_gni": 0.1126,
+      "remittances_pct_gdp": 0.447
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3563
+     }
+    }
+   }
+  },
+  "TUR": {
+   "2004": {
+    "ESI": 0.3439,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.65,
+     "B_structural_dependency": 0.0366,
+     "C_systemic_insurance": 0.345
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.3
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0879,
+      "oda_pct_gni": 0.0036,
+      "remittances_pct_gdp": 0.0183
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.33,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3951
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2259,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.225,
+     "B_structural_dependency": 0.0795,
+     "C_systemic_insurance": 0.3732
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.2009,
+      "oda_pct_gni": 0.0177,
+      "remittances_pct_gdp": 0.0198
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.33,
+      "nato_alliance": 1.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.5362
+     }
+    }
+   }
+  },
+  "UKR": {
+   "2004": {
+    "ESI": 0.3228,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.7,
+     "B_structural_dependency": 0.2046,
+     "C_systemic_insurance": 0.0637
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.4
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3301,
+      "oda_pct_gni": 0.0237,
+      "remittances_pct_gdp": 0.2601
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3185
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.3986,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.8,
+     "B_structural_dependency": 0.3442,
+     "C_systemic_insurance": 0.0515
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.6
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5793,
+      "oda_pct_gni": 0.0214,
+      "remittances_pct_gdp": 0.4319
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2576
+     }
+    }
+   }
+  },
+  "URY": {
+   "2004": {
+    "ESI": 0.3345,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.75,
+     "B_structural_dependency": 0.1301,
+     "C_systemic_insurance": 0.1234
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.5
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.3334,
+      "oda_pct_gni": 0.0093,
+      "remittances_pct_gdp": 0.0477
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.6169
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.2364,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.225,
+     "B_structural_dependency": 0.3392,
+     "C_systemic_insurance": 0.1449
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.45
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 1.0,
+      "oda_pct_gni": 0.0017,
+      "remittances_pct_gdp": 0.0158
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.7243
+     }
+    }
+   }
+  },
+  "UZB": {
+   "2004": {
+    "ESI": 0.1234,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.05,
+     "B_structural_dependency": 0.3203,
+     "C_systemic_insurance": 0.0
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.1
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1899,
+      "oda_pct_gni": 0.1015,
+      "remittances_pct_gdp": 0.6694
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1832,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.05,
+     "B_structural_dependency": 0.2997,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.1
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1278,
+      "oda_pct_gni": 0.0168,
+      "remittances_pct_gdp": 0.7544
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   }
+  },
+  "VEN": {
+   "2004": {
+    "ESI": 0.1206,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.1,
+     "B_structural_dependency": 0.0618,
+     "C_systemic_insurance": 0.2
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.2
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1713,
+      "oda_pct_gni": 0.0021,
+      "remittances_pct_gdp": 0.0119
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 1.0
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0596,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.05,
+     "B_structural_dependency": 0.059,
+     "C_systemic_insurance": 0.0698
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.1
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1735,
+      "oda_pct_gni": 0.0007,
+      "remittances_pct_gdp": 0.003
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3492
+     }
+    }
+   }
+  },
+  "VNM": {
+   "2004": {
+    "ESI": 0.3735,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.7,
+     "B_structural_dependency": 0.373,
+     "C_systemic_insurance": 0.0474
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.4
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.4585,
+      "oda_pct_gni": 0.186,
+      "remittances_pct_gdp": 0.4746
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2369
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1931,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.2,
+     "B_structural_dependency": 0.3311,
+     "C_systemic_insurance": 0.0482
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.4
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.5535,
+      "oda_pct_gni": 0.1086
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2412
+     }
+    }
+   }
+  },
+  "XKX": {
+   "2004": {
+    "ESI": 0.0297,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "C_systemic_insurance": 0.0595
+    },
+    "n_sub_available": 2,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0
+     },
+     "B": {},
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2975
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.4413,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.575,
+     "B_structural_dependency": 0.6869,
+     "C_systemic_insurance": 0.0621
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 1.0,
+      "imf_cumulative_20yr": 0.15
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.6152,
+      "oda_pct_gni": 0.4455,
+      "remittances_pct_gdp": 1.0
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.3105
+     }
+    }
+   }
+  },
+  "YEM": {
+   "2004": {
+    "ESI": 0.2258,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.3679,
+     "C_systemic_insurance": 0.1845
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.134,
+      "oda_pct_gni": 0.1064,
+      "remittances_pct_gdp": 0.8632
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.9227
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.1829,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.125,
+     "B_structural_dependency": 0.3296,
+     "C_systemic_insurance": 0.0941
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.25
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0,
+      "oda_pct_gni": 0.1052,
+      "remittances_pct_gdp": 0.8835
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4707
+     }
+    }
+   }
+  },
+  "ZAF": {
+   "2004": {
+    "ESI": 0.0246,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0217,
+     "C_systemic_insurance": 0.0522
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.0355,
+      "oda_pct_gni": 0.0126,
+      "remittances_pct_gdp": 0.0171
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.2608
+     }
+    }
+   },
+   "2012": {
+    "ESI": 0.0473,
+    "sub_dimensions": {
+     "A_financial_life_support": 0.0,
+     "B_structural_dependency": 0.0579,
+     "C_systemic_insurance": 0.084
+    },
+    "n_sub_available": 3,
+    "indicators": {
+     "A": {
+      "imf_program_active": 0.0,
+      "imf_cumulative_20yr": 0.0
+     },
+     "B": {
+      "fdi_net_inflows_pct_gdp": 0.1378,
+      "oda_pct_gni": 0.0126,
+      "remittances_pct_gdp": 0.0233
+     },
+     "C": {
+      "reserve_currency": 0.0,
+      "eu_eurozone": 0.0,
+      "nato_alliance": 0.0,
+      "swf_assets_pct_gdp": 0.0,
+      "reserves_months_imports": 0.4201
+     }
+    }
+   }
+  }
+ }
+}

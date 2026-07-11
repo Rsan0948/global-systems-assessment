@@ -1,0 +1,3187 @@
+{
+  "_meta": {
+    "purpose": "External Support Index (ESI) manual coding for MI research-integrity robustness test; higher = more external support",
+    "years": [
+      2004,
+      2012
+    ],
+    "sources": [
+      "IMF program history (MONA/arrangement records, coded from documented program arcs)",
+      "EU accession & Eurozone adoption records",
+      "NATO accession records + US treaty/Major-Non-NATO-Ally designations + CSTO",
+      "Sovereign Wealth Fund Institute-type AUM figures + World Bank GDP"
+    ],
+    "coding_notes": "Conservative defaults (0/none/null) where uncertain. imf_program_active counts any active SBA/EFF/SAF/ESAF/PRGF/ECF/PRGT or precautionary/FCL arrangement; pure emergency instruments (RFI/RCF/EPCA) coded 0. imf_cumulative_years_20yr are best-effort estimates from program arcs (mostly low confidence; null where not estimable). NATO 1.0 includes full members and mutual-defense treaties with a nuclear power (US treaties for JPN/KOR; CSTO Art.4 with Russia for ARM/KAZ, noted); ISR coded 1.0 de-facto (no formal treaty, noted). SWF figures are approximate AUM/GDP ratios, low confidence."
+  },
+  "countries": {
+    "ARE": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement ever"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never an IMF borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 2.0,
+        "2012": 2.1,
+        "confidence": "low",
+        "basis": "ADIA + ICD(Dubai) + Mubadala; ADIA ~$360B(2004)/~$627B(2012), UAE GDP ~$147B/~$375B; AUM opaque"
+      }
+    },
+    "ARG": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "SBA 2003-2006 active in 2004; no arrangement in 2012 (none 2006-2018)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 15,
+        "2012": 13,
+        "confidence": "low",
+        "basis": "near-continuous arrangements 1991-2001 (EFF/SBA) + SBA 2003-06; no program 2002 default; est from program arc"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.5,
+        "2012": 0.5,
+        "confidence": "medium",
+        "basis": "US Major Non-NATO Ally designated 1998; no mutual-defense treaty"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "ARM": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "PRGF 2001-2004 active 2004; EFF/ECF blend 2010-2013 active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 8,
+        "2012": 11,
+        "confidence": "low",
+        "basis": "PRGF 1996-99, 2001-04, later ECF; est from arc"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "medium",
+        "basis": "CSTO member (Art.4 collective defense with nuclear Russia); noted as treaty-with-nuclear-power"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "BEL": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a post-war IMF borrower in window"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "Eurozone founding member (euro 1999)"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO founding member 1949"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "BGD": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high",
+        "basis": "PRGF 2003-2007 active 2004; ECF approved Apr 2012 active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 10,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "SAF/ESAF 1986-93, PRGF 2003-07, ECF 2012; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "BIH": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "SBA 2002-2004 active early 2004; SBA (Sep 2012) & prior 2009-12 SBA active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "joined IMF 1995; SBA 1998-2001, 2002-04, 2009-12, EFF 2012; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.33,
+        "confidence": "medium",
+        "basis": "Stabilisation & Association Agreement signed 2008 (potential candidate) by 2012; none 2004"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "BOL": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "SBA 2003-2005 active 2004; no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 15,
+        "2012": 12,
+        "confidence": "low",
+        "basis": "near-continuous SAF/ESAF/PRGF 1986-2006; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "BRA": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "SBA Sep 2002-2005 ($30B) active 2004; repaid early, no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 9,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "SBA 1988,1992; SBA 1998-2005 series; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "BWA": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never an IMF borrower"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.5,
+        "2012": 0.45,
+        "confidence": "low",
+        "basis": "Pula Fund; ~$5B(2004)/~$6.9B(2012), GDP ~$9B/~$14.5B"
+      }
+    },
+    "CAN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO founding member 1949"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "CHL": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in 2004 or 2012 (last EFF ended 1990)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "EFF 1985-1989 in first window; none in second window"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.02,
+        "2012": 0.08,
+        "confidence": "low",
+        "basis": "ESSF+Pension Reserve Fund (est 2006/07) ~$20.6B(2012), GDP ~$267B; Copper Stab Fund small in 2004"
+      }
+    },
+    "CHN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in windows (small 1986 SBA negligible)"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "RMB not a reserve currency until SDR 2016"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.0,
+        "2012": 0.06,
+        "confidence": "low",
+        "basis": "CIC (est 2007) ~$480-575B(2012), GDP ~$8.5T; reserves excluded; 0 in 2004 (CIC not created)"
+      }
+    },
+    "CIV": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "low",
+        "basis": "2002 PRGF off-track/suspended after conflict, treated inactive 2004 (uncertain); ECF Nov 2011 active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 7,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "SAF/ESAF/PRGF 1988-2001 (interrupted), ECF 2009-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "CMR": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "PRGF 2000-2004 active 2004; no arrangement 2012 (ECF came 2017)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 9,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "SBA 1988-89, ESAF/PRGF 1997-2004; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "COD": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "PRGF 2002-2006 active 2004; ECF 2009-2012 active 2012 (off-track late 2012)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "ESAF 1987-89, PRGF 2002-06, ECF 2009-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "COL": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "precautionary SBA 2003-2006 active 2004; Flexible Credit Line (renewed 2011) active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 11,
+        "confidence": "low",
+        "basis": "EFF 1999-2002, SBA 2003-06, FCL 2009-; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "CRI": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no active arrangement in 2004 or 2012 (precautionary SBA was 2009-2010)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 2,
+        "confidence": "low",
+        "basis": "precautionary SBAs early-1990s; SBA 2009-10; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "CUB": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "not an IMF member"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "not an IMF member"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "CZE": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "Czech Republic never drew on an IMF arrangement post-1993"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no post-1993 arrangement (Czechoslovak SBAs predate split)"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 0.67,
+        "confidence": "high",
+        "basis": "EU member (acceded May 2004), not Eurozone"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since 1999"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "DEU": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "Eurozone founding member (euro 1999)"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since 1955"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "DOM": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "low",
+        "basis": "SBA 2003-2005 active 2004; SBA 2009-2012 (28-mo) active into early 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "SBA 1985,1991,1993, 2003-08 series, 2009-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "EGY": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no active arrangement; 2012 SBA negotiations not concluded (approved only 2016)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 4,
+        "confidence": "low",
+        "basis": "SBA 1987, SBA 1991-93, EFF 1993-96; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.5,
+        "2012": 0.5,
+        "confidence": "high",
+        "basis": "US Major Non-NATO Ally since 1989; no mutual-defense treaty"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "ERI": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never an IMF borrower"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "ESP": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement (2012 bank recap was ESM, not IMF)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower in window"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "Eurozone founding member (euro 1999)"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since 1982"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "EST": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no active arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 7,
+        "2012": 6,
+        "confidence": "low",
+        "basis": "series of (mostly precautionary) SBAs 1992-2001; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "high",
+        "basis": "euro adopted 2011"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "EU member 2004; Eurozone 2011"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since Mar 2004"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "ETH": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "PRGF 2001-2004 active 2004; no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 9,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "ESAF/PRGF 1992-2004 (interrupted); est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "FJI": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement in these years"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no arrangement in windows"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "FRA": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "Eurozone founding member (euro 1999)"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO founding member 1949"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "GAB": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "SBA May 2004-2005 active 2004; no arrangement 2012 (last SBA 2007-2010)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 10,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "frequent SBA/EFF 1986-2005 and 2007-10; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "Fund for Future Generations exists but small/opaque; coded 0"
+      }
+    },
+    "GBR": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower in window"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 0.67,
+        "confidence": "high",
+        "basis": "EU member (not Eurozone)"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO founding member 1949"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "GEO": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "PRGF approved Jun 2004 active 2004; SBA 2008-2011 expired, no new arrangement in 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 8,
+        "2012": 12,
+        "confidence": "low",
+        "basis": "SBA 1994, ESAF/PRGF 1996-2007, SBA 2008-11; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "GHA": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "PRGF 2003-2006 active 2004; ECF Jul 2009 (3-yr) active into 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 13,
+        "2012": 13,
+        "confidence": "low",
+        "basis": "near-continuous ESAF/PRGF 1987-2006 + ECF 2009-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "GNQ": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in 2004 or 2012 (oil-rich)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "ESAF 1988-1996 in first window; none in second"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "GRC": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "high",
+        "basis": "no program 2004; EFF approved Mar 2012 (2nd bailout) active 2012 (after 2010 SBA)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 3,
+        "confidence": "high",
+        "basis": "no arrangement pre-2010; SBA 2010 + EFF 2012 => 2010,2011,2012"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "Eurozone member (euro 2001)"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since 1952"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "GTM": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "precautionary SBA (approved 2003) active 2004; no arrangement 2012 (2009 SBA ended 2011)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 3,
+        "2012": 6,
+        "confidence": "low",
+        "basis": "precautionary SBA 2002-04, SBA 2009-11; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "HND": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "low",
+        "basis": "PRGF Feb 2004-2007 active 2004; precautionary SBA 2010-2012 active into early 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 10,
+        "confidence": "low",
+        "basis": "ESAF/PRGF 1992-2007, SBA 2008, 2010-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "HRV": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "precautionary SBA Aug 2004-2006 active 2004; no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 7,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "joined IMF 1992; SBA/EFF 1994-2006; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.33,
+        "2012": 0.33,
+        "confidence": "high",
+        "basis": "EU candidate/acceding (treaty signed 2011, joined Jul 2013); candidate in 2004 too"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since Apr 2009"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "HTI": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "only Emergency Post-Conflict Assistance around 2004-05 (emergency=0); ECF Jul 2010 (3-yr) active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 3,
+        "2012": 6,
+        "confidence": "low",
+        "basis": "sparse SBA/ESAF 1989-96, EPCA, PRGF 2006-09, ECF 2010-13; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "HUN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no active arrangement (SBA 2008-2010 expired; 2012 talks failed, no program approved)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 6,
+        "confidence": "low",
+        "basis": "SBA/EFF 1988-96, SBA 2008-10; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 0.67,
+        "confidence": "high",
+        "basis": "EU member 2004, not Eurozone"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since 1999"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "IDN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "EFF ended Dec 2003; no arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 7,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "SBA/EFF 1997-2003; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "IND": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement since 1993"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 3,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "SBA 1991-1993; none since"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "IRL": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "high",
+        "basis": "no program 2004; EFF approved Dec 2010 (3-yr) active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 3,
+        "confidence": "high",
+        "basis": "no arrangement pre-2010; EFF 2010-2013 => 2010,2011,2012"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "Eurozone founding member (euro 1999)"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high",
+        "basis": "not a NATO member (militarily neutral)"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "IRQ": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "only Emergency Post-Conflict Assistance in 2004 (emergency=0); SBA 2010-2013 active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "EPCA 2004; SBA series 2005-2013; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "ISL": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "SBA 2008-2011 expired Aug 2011; no arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 4,
+        "confidence": "high",
+        "basis": "no arrangement pre-2008; SBA 2008-2011 => ~4 years in 2nd window"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO founding member 1949 (no standing military)"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "ISR": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "medium",
+        "basis": "de-facto US security guarantee + Major Non-NATO Ally (1989); NO formal mutual-defense treaty - coded 1.0 per judgment, NOTE ambiguity"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "ITA": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement (IMF only monitored in 2012)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower in window"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "Eurozone founding member (euro 1999)"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO founding member 1949"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "JAM": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "low",
+        "basis": "no arrangement 2004 (SMP only); SBA 2010 (27-mo) formally in place into early 2012 though off-track"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 10,
+        "2012": 6,
+        "confidence": "low",
+        "basis": "SBA/EFF 1985-96, SBA 2010-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "JPN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "US-Japan Security Treaty (mutual defense with nuclear power)"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "KAZ": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in 2004 or 2012 (EFF 1996-99 repaid early)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 5,
+        "confidence": "low",
+        "basis": "SBA 1994,1995, EFF 1996-99; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "medium",
+        "basis": "CSTO member (Art.4 collective defense with nuclear Russia); noted"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.15,
+        "2012": 0.4,
+        "confidence": "low",
+        "basis": "National Fund of Kazakhstan (~$5B/2004, ~$58B/2012) + Samruk-Kazyna; GDP ~$43B/~$208B"
+      }
+    },
+    "KOR": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "repaid 1997 crisis loan by 2001; no arrangement 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 3,
+        "confidence": "low",
+        "basis": "SBA 1985-87, SBA 1997-2000; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "US-ROK Mutual Defense Treaty (with nuclear power)"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.0,
+        "2012": 0.04,
+        "confidence": "low",
+        "basis": "Korea Investment Corp (est 2005) ~$56B(2012), GDP ~$1.28T; 0 in 2004"
+      }
+    },
+    "LBN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a standard IMF arrangement (only EPCA 2007)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in windows"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "LBY": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never an IMF borrower"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.0,
+        "2012": 0.8,
+        "confidence": "low",
+        "basis": "Libyan Investment Authority (est 2006) ~$65B, 2012 GDP ~$82B; 0 in 2004 (pre-establishment)"
+      }
+    },
+    "LKA": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "PRGF/EFF 2003-2006 active 2004; SBA 2009 (extended) active into mid-2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 7,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "ESAF 1988-91, EFF/PRGF 2001-06, SBA 2009-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "LTU": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no active arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 8,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "SBA/EFF 1992-97, precautionary SBA 2000-02; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 0.67,
+        "confidence": "high",
+        "basis": "EU member 2004; euro only 2015"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since Mar 2004"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "LVA": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "SBA 2008-2011 expired Dec 2011; no arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 7,
+        "2012": 10,
+        "confidence": "low",
+        "basis": "SBA series 1992-2001, SBA 2008-11; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 0.67,
+        "confidence": "high",
+        "basis": "EU member 2004; euro only 2014"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since Mar 2004"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "MLI": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "low",
+        "basis": "PRGF Jun 2004-2007 active 2004; ECF Dec 2011 active early 2012 (disrupted by Mar 2012 coup)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 13,
+        "2012": 12,
+        "confidence": "low",
+        "basis": "near-continuous ESAF/PRGF 1988-2007 + ECF 2011; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "MMR": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement (SMP only, 2013)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in windows"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "MNG": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "PRGF 2001-2005 active 2004; SBA 2009-2011 expired, no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 9,
+        "2012": 10,
+        "confidence": "low",
+        "basis": "ESAF/PRGF 1991-2005, SBA 2009-11; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "MUS": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 2,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "SBAs ended ~1986; none after; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "MYS": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement (declined IMF in 1997-98)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no arrangement in windows"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.13,
+        "2012": 0.13,
+        "confidence": "low",
+        "basis": "Khazanah Nasional ~$18B(2004)/~$41B(2012), GDP ~$125B/~$314B"
+      }
+    },
+    "NGA": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no financial arrangement (SBA 2000-01 expired; PSI 2005 is non-financing)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 2,
+        "confidence": "low",
+        "basis": "SBA 1987-92 (interrupted), SBA 2000-01; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "Excess Crude Account + NSIA (funded ~$1B 2012) small vs GDP ~$460B; coded 0"
+      }
+    },
+    "NIC": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "PRGF 2002-2006 active 2004; ECF 2007-2011 expired Dec 2011, no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 9,
+        "2012": 14,
+        "confidence": "low",
+        "basis": "near-continuous ESAF/PRGF/ECF 1994-2011; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "NPL": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "PRGF Nov 2003-2007 active 2004; no arrangement 2012 (RCF 2011 emergency only)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 8,
+        "confidence": "low",
+        "basis": "ESAF 1992-95, PRGF 2003-07; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "OMN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never an IMF borrower"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.15,
+        "2012": 0.11,
+        "confidence": "low",
+        "basis": "State General Reserve Fund ~$5B(2004)/~$8B(2012), GDP ~$32B/~$77B"
+      }
+    },
+    "PAK": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "PRGF 2001-2004 active 2004; SBA 2008-2011 expired Sep 2011, no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 12,
+        "2012": 13,
+        "confidence": "low",
+        "basis": "near-continuous SAF/ESAF/SBA/PRGF 1988-2004 + SBA 2008-11; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.5,
+        "2012": 0.5,
+        "confidence": "medium",
+        "basis": "US Major Non-NATO Ally designated Mar 2004; no mutual-defense treaty"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "PER": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "precautionary SBA Jun 2004-2006 active 2004; no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 10,
+        "2012": 13,
+        "confidence": "low",
+        "basis": "EFF/SBA near-continuous 1993-2009; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "PNG": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in 2004 or 2012 (last SBA 2000-01)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 4,
+        "confidence": "low",
+        "basis": "SBA 1990-91,1995-97,2000-01; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "PNG SWF legislated 2011 but not funded in period; coded 0"
+      }
+    },
+    "POL": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "high",
+        "basis": "no program 2004; Flexible Credit Line (from 2009, renewed 2011) active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "SBA/EFF 1990-96, FCL 2009-; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 0.67,
+        "confidence": "high",
+        "basis": "EU member 2004, not Eurozone"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since 1999"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "RUS": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "last EFF ended 2000; no arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 7,
+        "2012": 6,
+        "confidence": "low",
+        "basis": "SBA 1992,1995, EFF 1996-99, SBA 1999-2000; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high",
+        "basis": "nuclear power / provider of guarantees, not a recipient of external support"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.03,
+        "2012": 0.07,
+        "confidence": "low",
+        "basis": "Stabilization Fund (2004, ~$20B) -> Reserve Fund + NWF (~$150B/2012); GDP ~$591B/~$2.2T"
+      }
+    },
+    "RWA": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "PRGF 2002-2006 active 2004; Standby Credit Facility approved Jun 2012 active 2012 (PSI non-financing alongside)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 7,
+        "2012": 8,
+        "confidence": "low",
+        "basis": "ESAF 1991, PRGF 1998-2006, SCF 2012; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "SAU": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never an IMF borrower"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.4,
+        "2012": 0.8,
+        "confidence": "low",
+        "basis": "SAMA Foreign Holdings (classification as SWF debatable) ~$100B(2004)/~$530-650B(2012); PIF small pre-2015; GDP ~$250B/~$735B"
+      }
+    },
+    "SDN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement (Staff-Monitored Programs only; in arrears)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement (arrears since 1980s)"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "SGP": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never an IMF borrower"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 1.3,
+        "2012": 1.5,
+        "confidence": "low",
+        "basis": "GIC + Temasek; ~$160B(2004)/~$420-490B(2012), GDP ~$115B/~$290B; GIC AUM undisclosed"
+      }
+    },
+    "SOM": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement (in arrears; none until 2020)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement (protracted arrears)"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "SRB": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "low",
+        "basis": "EFF 2002-2006 active 2004; precautionary SBA (Sep 2011) formally in place early 2012 before lapsing"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 3,
+        "2012": 7,
+        "confidence": "low",
+        "basis": "joined IMF 2001; EFF 2002-06, SBA 2009-11, SBA 2011-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.33,
+        "confidence": "medium",
+        "basis": "EU candidate status Mar 2012 (SAA signed 2008); part of Serbia-Montenegro in 2004, no track"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "SSD": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "did not exist in 2004 (part of Sudan); joined IMF Apr 2012, no arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": null,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "did not exist in 2004 window (null); no arrangement 2012"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "SVK": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no active arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 2,
+        "2012": 2,
+        "confidence": "low",
+        "basis": "SBA 1994-95; none after; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "high",
+        "basis": "euro adopted 2009"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "EU member 2004; Eurozone 2009"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since Mar 2004"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "SVN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never an IMF borrower"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "never a borrower"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "high",
+        "basis": "euro adopted 2007"
+      },
+      "eu_eurozone": {
+        "2004": 0.67,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "EU member 2004; Eurozone 2007"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since Mar 2004"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "THA": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "repaid 1997 crisis; no arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 3,
+        "confidence": "low",
+        "basis": "SBA 1985-86, SBA 1997-2000; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.5,
+        "2012": 0.5,
+        "confidence": "low",
+        "basis": "US Major Non-NATO Ally (2003); also longstanding US treaty ally via Manila Pact - could be 1.0; coded 0.5 conservatively"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "TLS": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "joined IMF 2002; no arrangement"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.0,
+        "2012": 1.8,
+        "confidence": "low",
+        "basis": "Petroleum Fund (est 2005) ~$11.8B(2012) vs total GDP ~$6.7B; 0 in 2004 (pre-establishment)"
+      }
+    },
+    "TTO": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no arrangement in 2004 or 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 3,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "SBA/CFF 1988-91; none after; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0.1,
+        "2012": 0.19,
+        "confidence": "low",
+        "basis": "Heritage & Stabilisation Fund (predecessor 2000, HSF 2007) ~$1.7B(2004)/~$4.7B(2012), GDP ~$12B/~$25B"
+      }
+    },
+    "TUN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no active arrangement (SBA approved only 2013)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "SBA 1986, EFF 1988-92; none in 2nd window; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high",
+        "basis": "no EU accession track (Association Agreement is trade, not accession/SAA); MNNA came 2015"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "TUR": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "SBA 2002-2005 active 2004; no arrangement 2012 (last SBA ended 2008)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 6,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "SBA 1994, 1999-2008 series; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.33,
+        "2012": 0.33,
+        "confidence": "high",
+        "basis": "EU candidate since 1999, accession talks opened 2005"
+      },
+      "nato_alliance": {
+        "2004": 1.0,
+        "2012": 1.0,
+        "confidence": "high",
+        "basis": "NATO member since 1952"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "UKR": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "precautionary SBA Mar 2004 active 2004; SBA Jul 2010 (29-mo) formally in place through 2012 (off-track)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 8,
+        "2012": 12,
+        "confidence": "low",
+        "basis": "STF 1994, SBA/EFF 1995-2002, SBA 2004, 2008-10, 2010-12; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "URY": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "SBA 2002-2005 active 2004; no arrangement 2012 (exited ~2006)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 10,
+        "2012": 9,
+        "confidence": "low",
+        "basis": "near-continuous SBA 1985-2006; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "UZB": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement (last SBA 1995-96)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 2,
+        "2012": 2,
+        "confidence": "low",
+        "basis": "SBA 1995-96; none after; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "low",
+        "basis": "CSTO membership only 2006-2012 and unstable (suspended Jun 2012); coded 0 conservatively"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "VEN": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement (hostile to IMF in this era)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 4,
+        "2012": 2,
+        "confidence": "low",
+        "basis": "SBA 1989-90, EFF 1996-97; none after; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "low",
+        "basis": "FEM stabilization fund depleted; FONDEN a spending vehicle not an asset stock; coded 0"
+      }
+    },
+    "VNM": {
+      "imf_program_active": {
+        "2004": 1,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "PRGF 2001-2004 active early 2004; no arrangement 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 8,
+        "2012": 8,
+        "confidence": "low",
+        "basis": "SBA 1993-94, ESAF 1994-97, PRGF 2001-04; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "XKX": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 1,
+        "confidence": "medium",
+        "basis": "not an IMF member in 2004 (joined 2009); SBA Apr 2012 active 2012"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": null,
+        "2012": 3,
+        "confidence": "low",
+        "basis": "not IMF member in 2004 window (null); SBA 2010-11 + SBA 2012 in 2nd window"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "low",
+        "basis": "in Stabilisation & Association Process but no SAA until 2015; coded 0"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "YEM": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no active arrangement (EFF ended ~2001; 2012 RCF emergency only=0)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 5,
+        "2012": 5,
+        "confidence": "low",
+        "basis": "ESAF/EFF 1996-2001; est"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    },
+    "ZAF": {
+      "imf_program_active": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high",
+        "basis": "no IMF arrangement (1993 was a CCFF drawing, not an arrangement)"
+      },
+      "imf_cumulative_years_20yr": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "medium",
+        "basis": "no arrangement in windows"
+      },
+      "reserve_currency": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      },
+      "eu_eurozone": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "nato_alliance": {
+        "2004": 0.0,
+        "2012": 0.0,
+        "confidence": "high"
+      },
+      "swf_assets_pct_gdp": {
+        "2004": 0,
+        "2012": 0,
+        "confidence": "high"
+      }
+    }
+  }
+}

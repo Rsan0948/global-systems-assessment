@@ -1,0 +1,677 @@
+{
+ "_meta": {
+  "prereg": "docs/ESI_PREREGISTRATION.md",
+  "structural_predictor": "P4-P1 durability gap (z-standardized)",
+  "crisis_label": "frozen holdout definition (UCDP onset OR CRAG default)"
+ },
+ "windows": {
+  "2004": {
+   "test_2A_gate_error_esi": {
+    "n_scored": 89,
+    "buckets": {
+     "TP": {
+      "n": 38,
+      "mean_esi": 0.2579,
+      "median_esi": 0.2766
+     },
+     "FP": {
+      "n": 15,
+      "mean_esi": 0.2762,
+      "median_esi": 0.3019
+     },
+     "FN": {
+      "n": 10,
+      "mean_esi": 0.2118,
+      "median_esi": 0.2197
+     },
+     "TN": {
+      "n": 26,
+      "mean_esi": 0.2703,
+      "median_esi": 0.261
+     }
+    },
+    "FP_vs_TP": {
+     "FP_mean": 0.2762,
+     "TP_mean": 0.2579,
+     "mannwhitney_U": 317.0,
+     "mannwhitney_p": 0.533964013468505,
+     "welch_t": 0.40799923092280993,
+     "welch_p": 0.6871372257150644,
+     "cliffs_delta_FP_vs_TP": 0.1123,
+     "cohens_d_FP_vs_TP": 0.1335,
+     "hypothesis": "FP ESI > TP ESI (propped-up states flagged, no crisis)"
+    }
+   },
+   "test_2B_signal_recovery": {
+    "n": 89,
+    "model1_MI_only": {
+     "coef": {
+      "intercept": 0.1621,
+      "MI_gap": 0.4586
+     },
+     "auc": 0.654,
+     "loglik": -59.279,
+     "n": 89
+    },
+    "model2_MI_ESI": {
+     "coef": {
+      "intercept": 0.1641,
+      "MI_gap": 0.4502,
+      "ESI": -0.1598
+     },
+     "auc": 0.6707,
+     "loglik": -59.016,
+     "n": 89
+    },
+    "model3_interaction": {
+     "coef": {
+      "intercept": 0.1661,
+      "MI_gap": 0.4582,
+      "ESI": -0.1563,
+      "MI_gap_x_ESI": 0.0662
+     },
+     "auc": 0.6748,
+     "loglik": -58.97,
+     "n": 89
+    },
+    "baselines": {},
+    "signal_recovery": {
+     "MI_gap_coef_M1": 0.4586,
+     "MI_gap_coef_M2_with_ESI": 0.4502,
+     "coef_increased": false,
+     "auc_M1": 0.654,
+     "auc_M2": 0.6707,
+     "auc_M3": 0.6748,
+     "auc_gain_M2_over_M1": 0.0167
+    },
+    "variant_mi_score": {
+     "model1_negMI": {
+      "coef": {
+       "intercept": 0.27,
+       "negMI": 1.4438
+      },
+      "auc": 0.8155,
+      "loglik": -46.996,
+      "n": 89
+     },
+     "model2_negMI_ESI": {
+      "coef": {
+       "intercept": 0.2984,
+       "negMI": 1.5096,
+       "ESI": -0.3181
+      },
+      "auc": 0.8135,
+      "loglik": -46.192,
+      "n": 89
+     },
+     "negMI_coef_M1": 1.4438,
+     "negMI_coef_M2_with_ESI": 1.5096,
+     "coef_increased": true,
+     "auc_M1": 0.8155,
+     "auc_M2": 0.8135
+    },
+    "note": "predictors z-standardized; ridge L2=1e-03 consistent across models"
+   },
+   "test_2D_concentration": {
+    "esi_75th_pct": 0.3654,
+    "n_high_esi": 23,
+    "high_esi_states": [
+     {
+      "iso": "SGP",
+      "country": "Singapore",
+      "esi": 0.4176,
+      "n_sub": 3,
+      "concentration_hhi": 0.6779,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "ARE",
+      "country": "United Arab Emirates",
+      "esi": 0.3752,
+      "n_sub": 3,
+      "concentration_hhi": 0.6544,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "MLI",
+      "country": "Mali",
+      "esi": 0.3704,
+      "n_sub": 3,
+      "concentration_hhi": 0.6176,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "ARG",
+      "country": "Argentina",
+      "esi": 0.4007,
+      "n_sub": 3,
+      "concentration_hhi": 0.5701,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "BOL",
+      "country": "Bolivia",
+      "esi": 0.4094,
+      "n_sub": 3,
+      "concentration_hhi": 0.5555,
+      "elevated": false,
+      "crisis": true
+     },
+     {
+      "iso": "PAK",
+      "country": "Pakistan",
+      "esi": 0.3826,
+      "n_sub": 3,
+      "concentration_hhi": 0.5329,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "PER",
+      "country": "Peru",
+      "esi": 0.3664,
+      "n_sub": 3,
+      "concentration_hhi": 0.5161,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "GHA",
+      "country": "Ghana",
+      "esi": 0.4221,
+      "n_sub": 3,
+      "concentration_hhi": 0.5126,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "VNM",
+      "country": "Vietnam",
+      "esi": 0.3735,
+      "n_sub": 3,
+      "concentration_hhi": 0.503,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "COD",
+      "country": "DR Congo",
+      "esi": 0.3838,
+      "n_sub": 3,
+      "concentration_hhi": 0.5025,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "BEL",
+      "country": "Belgium",
+      "esi": 0.398,
+      "n_sub": 3,
+      "concentration_hhi": 0.5003,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "DOM",
+      "country": "Dominican Republic",
+      "esi": 0.3898,
+      "n_sub": 3,
+      "concentration_hhi": 0.4856,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "MNG",
+      "country": "Mongolia",
+      "esi": 0.4869,
+      "n_sub": 3,
+      "concentration_hhi": 0.4779,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "GEO",
+      "country": "Georgia",
+      "esi": 0.4619,
+      "n_sub": 3,
+      "concentration_hhi": 0.477,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "NIC",
+      "country": "Nicaragua",
+      "esi": 0.5255,
+      "n_sub": 3,
+      "concentration_hhi": 0.4661,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "BIH",
+      "country": "Bosnia-Herzegovina",
+      "esi": 0.4922,
+      "n_sub": 3,
+      "concentration_hhi": 0.4566,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "HRV",
+      "country": "Croatia",
+      "esi": 0.3654,
+      "n_sub": 3,
+      "concentration_hhi": 0.4565,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "HND",
+      "country": "Honduras",
+      "esi": 0.4885,
+      "n_sub": 3,
+      "concentration_hhi": 0.4471,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "ETH",
+      "country": "Ethiopia",
+      "esi": 0.4644,
+      "n_sub": 3,
+      "concentration_hhi": 0.4462,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "NPL",
+      "country": "Nepal",
+      "esi": 0.4107,
+      "n_sub": 3,
+      "concentration_hhi": 0.4161,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "SRB",
+      "country": "Serbia",
+      "esi": 0.4612,
+      "n_sub": 3,
+      "concentration_hhi": 0.4155,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "EST",
+      "country": "Estonia",
+      "esi": 0.3724,
+      "n_sub": 3,
+      "concentration_hhi": 0.394,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "ARM",
+      "country": "Armenia",
+      "esi": 0.5698,
+      "n_sub": 3,
+      "concentration_hhi": 0.3819,
+      "elevated": false,
+      "crisis": false
+     }
+    ],
+    "single_point_of_failure_flag": [
+     "SGP",
+     "ARE",
+     "MLI"
+    ]
+   }
+  },
+  "2012": {
+   "test_2A_gate_error_esi": {
+    "n_scored": 90,
+    "buckets": {
+     "TP": {
+      "n": 32,
+      "mean_esi": 0.2234,
+      "median_esi": 0.1922
+     },
+     "FP": {
+      "n": 35,
+      "mean_esi": 0.2445,
+      "median_esi": 0.2364
+     },
+     "FN": {
+      "n": 5,
+      "mean_esi": 0.3027,
+      "median_esi": 0.3898
+     },
+     "TN": {
+      "n": 18,
+      "mean_esi": 0.2931,
+      "median_esi": 0.2564
+     }
+    },
+    "FP_vs_TP": {
+     "FP_mean": 0.2445,
+     "TP_mean": 0.2234,
+     "mannwhitney_U": 609.0,
+     "mannwhitney_p": 0.5426623568035001,
+     "welch_t": 0.6868436754858924,
+     "welch_p": 0.4946796748539063,
+     "cliffs_delta_FP_vs_TP": 0.0875,
+     "cohens_d_FP_vs_TP": 0.1662,
+     "hypothesis": "FP ESI > TP ESI (propped-up states flagged, no crisis)"
+    }
+   },
+   "test_2B_signal_recovery": {
+    "n": 90,
+    "model1_MI_only": {
+     "coef": {
+      "intercept": -0.3921,
+      "MI_gap": 0.5942
+     },
+     "auc": 0.6864,
+     "loglik": -57.57,
+     "n": 90
+    },
+    "model2_MI_ESI": {
+     "coef": {
+      "intercept": -0.3905,
+      "MI_gap": 0.5781,
+      "ESI": -0.1696
+     },
+     "auc": 0.7129,
+     "loglik": -57.29,
+     "n": 90
+    },
+    "model3_interaction": {
+     "coef": {
+      "intercept": -0.3909,
+      "MI_gap": 0.5743,
+      "ESI": -0.1678,
+      "MI_gap_x_ESI": -0.0138
+     },
+     "auc": 0.7119,
+     "loglik": -57.288,
+     "n": 90
+    },
+    "baselines": {
+     "fsi_only": {
+      "coef": {
+       "intercept": -0.5467,
+       "FSI": 1.5659
+      },
+      "auc": 0.8397,
+      "n": 89
+     },
+     "fsi_plus_esi": {
+      "coef": {
+       "intercept": -0.5531,
+       "FSI": 1.563,
+       "ESI": -0.152
+      },
+      "auc": 0.841,
+      "n": 89
+     }
+    },
+    "signal_recovery": {
+     "MI_gap_coef_M1": 0.5942,
+     "MI_gap_coef_M2_with_ESI": 0.5781,
+     "coef_increased": false,
+     "auc_M1": 0.6864,
+     "auc_M2": 0.7129,
+     "auc_M3": 0.7119,
+     "auc_gain_M2_over_M1": 0.0265
+    },
+    "variant_mi_score": {
+     "model1_negMI": {
+      "coef": {
+       "intercept": -0.4518,
+       "negMI": 1.2835
+      },
+      "auc": 0.7902,
+      "loglik": -48.908,
+      "n": 90
+     },
+     "model2_negMI_ESI": {
+      "coef": {
+       "intercept": -0.4567,
+       "negMI": 1.2801,
+       "ESI": -0.1802
+      },
+      "auc": 0.7899,
+      "loglik": -48.631,
+      "n": 90
+     },
+     "negMI_coef_M1": 1.2835,
+     "negMI_coef_M2_with_ESI": 1.2801,
+     "coef_increased": false,
+     "auc_M1": 0.7902,
+     "auc_M2": 0.7899
+    },
+    "note": "predictors z-standardized; ridge L2=1e-03 consistent across models"
+   },
+   "test_2D_concentration": {
+    "esi_75th_pct": 0.3687,
+    "n_high_esi": 23,
+    "high_esi_states": [
+     {
+      "iso": "SGP",
+      "country": "Singapore",
+      "esi": 0.424,
+      "n_sub": 3,
+      "concentration_hhi": 0.6637,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "MLI",
+      "country": "Mali",
+      "esi": 0.4019,
+      "n_sub": 3,
+      "concentration_hhi": 0.5535,
+      "elevated": false,
+      "crisis": true
+     },
+     {
+      "iso": "UKR",
+      "country": "Ukraine",
+      "esi": 0.3986,
+      "n_sub": 3,
+      "concentration_hhi": 0.5324,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "NIC",
+      "country": "Nicaragua",
+      "esi": 0.3712,
+      "n_sub": 3,
+      "concentration_hhi": 0.5029,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "LKA",
+      "country": "Sri Lanka",
+      "esi": 0.377,
+      "n_sub": 3,
+      "concentration_hhi": 0.5023,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "DOM",
+      "country": "Dominican Republic",
+      "esi": 0.4099,
+      "n_sub": 3,
+      "concentration_hhi": 0.4943,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "RWA",
+      "country": "Rwanda",
+      "esi": 0.3898,
+      "n_sub": 3,
+      "concentration_hhi": 0.492,
+      "elevated": false,
+      "crisis": true
+     },
+     {
+      "iso": "COD",
+      "country": "DR Congo",
+      "esi": 0.4484,
+      "n_sub": 3,
+      "concentration_hhi": 0.4825,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "GHA",
+      "country": "Ghana",
+      "esi": 0.4845,
+      "n_sub": 3,
+      "concentration_hhi": 0.4787,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "HND",
+      "country": "Honduras",
+      "esi": 0.4802,
+      "n_sub": 3,
+      "concentration_hhi": 0.4695,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "JAM",
+      "country": "Jamaica",
+      "esi": 0.3875,
+      "n_sub": 3,
+      "concentration_hhi": 0.4694,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "BGD",
+      "country": "Bangladesh",
+      "esi": 0.3851,
+      "n_sub": 3,
+      "concentration_hhi": 0.4688,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "XKX",
+      "country": "Kosovo",
+      "esi": 0.4413,
+      "n_sub": 3,
+      "concentration_hhi": 0.46,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "GRC",
+      "country": "Greece",
+      "esi": 0.4184,
+      "n_sub": 3,
+      "concentration_hhi": 0.4575,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "HTI",
+      "country": "Haiti",
+      "esi": 0.4364,
+      "n_sub": 3,
+      "concentration_hhi": 0.4233,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "BIH",
+      "country": "Bosnia-Herzegovina",
+      "esi": 0.4596,
+      "n_sub": 3,
+      "concentration_hhi": 0.4155,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "POL",
+      "country": "Poland",
+      "esi": 0.4245,
+      "n_sub": 3,
+      "concentration_hhi": 0.4136,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "HUN",
+      "country": "Hungary",
+      "esi": 0.3937,
+      "n_sub": 3,
+      "concentration_hhi": 0.4109,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "EST",
+      "country": "Estonia",
+      "esi": 0.4478,
+      "n_sub": 3,
+      "concentration_hhi": 0.4071,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "SRB",
+      "country": "Serbia",
+      "esi": 0.4294,
+      "n_sub": 3,
+      "concentration_hhi": 0.4002,
+      "elevated": true,
+      "crisis": true
+     },
+     {
+      "iso": "ARM",
+      "country": "Armenia",
+      "esi": 0.5409,
+      "n_sub": 3,
+      "concentration_hhi": 0.3821,
+      "elevated": true,
+      "crisis": false
+     },
+     {
+      "iso": "LVA",
+      "country": "Latvia",
+      "esi": 0.3949,
+      "n_sub": 3,
+      "concentration_hhi": 0.3591,
+      "elevated": false,
+      "crisis": false
+     },
+     {
+      "iso": "IRL",
+      "country": "Ireland",
+      "esi": 0.4969,
+      "n_sub": 3,
+      "concentration_hhi": 0.3403,
+      "elevated": false,
+      "crisis": true
+     }
+    ],
+    "single_point_of_failure_flag": [
+     "SGP"
+    ]
+   }
+  }
+ }
+}

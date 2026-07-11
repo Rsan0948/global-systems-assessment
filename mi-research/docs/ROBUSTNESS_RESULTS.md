@@ -22,6 +22,7 @@
 | P3 safeguard stratification | ✅ done | `31cc093` |
 | P2 temporal holdout | ✅ done | `f92725d` |
 | Historical program (inversion, decay curve, forensics) | ✅ done | `bdabeb8`…`6958358` |
+| External Support Index (ESI) control — Finding 8 (registered null) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -138,6 +139,72 @@ can't see it. So the modern "structure loses to income" number is **understated
 against the gate in a specific, identifiable direction.** Fetching post-2015
 sovereign-distress data would likely move it in the gate's favor. Epistemic status:
 **known data limitation with a signed direction.**
+
+## Finding 8 — A measured external-support control does NOT recover the institutional signal (registered null)
+
+Findings 3 and 5 raised a specific, testable mechanism: the modern erosion is caused
+by **external capital/institutional support delaying the consequences** the gate detects,
+so *controlling for support should recover the institutional signal.* Finding 5 saw it by
+hand — false alarms cluster among reserve-currency / sovereign-wealth / EU-anchored /
+IMF-program states. Finding 8 built a measured **External Support Index (ESI)** and tested
+it as a control. **The mechanism, tested this way, is not supported.** Pre-registration
+(`ESI_PREREGISTRATION.md`, `config/esi.json`), frozen before any outcome was touched.
+
+**Construction.** ESI = equal-weight mean of three sub-dimensions, **weights un-tuned by
+design**: *Financial Life Support* (IMF program active + cumulative-20yr — concessional-debt
+dropped, WB archived the indicator), *Structural Dependency* (FDI, ODA un-inverted,
+remittances), *Systemic Insurance* (reserve-currency, EU/Eurozone, NATO, SWF assets/GDP,
+reserves in months). Built at 2004 and 2012 for the 91 holdout countries against the
+**committed joined panel** (`temporal_holdout_panel.json`). All indicator sources +
+codes documented; IMF/insurance manually coded (MONA unreachable), so those layers are
+documented estimates, not gold-standard series.
+
+**Test 2A — ESI by gate-error bucket:** false positives (flagged, no crisis) carry
+marginally higher mean ESI than true positives, **in the hypothesized direction but not
+significant** (2004: FP 0.276 vs TP 0.258, Mann-Whitney p=0.53, Cliff's δ=0.11; 2012:
+0.245 vs 0.223, p=0.54, δ=0.09 — negligible effect both windows). The "false alarms are
+the propped-up ones" reading does **not** survive as an aggregate, measured effect.
+
+**Test 2B (make-or-break) — does controlling for ESI recover the MI coefficient? No.**
+On the pre-registered structural predictor (the P4−P1 durability **gap**), adding ESI
+leaves the gap coefficient essentially unchanged — in fact **slightly lower**, not higher
+(2004: 0.459→0.450; 2012: 0.594→0.578). ESI's own coefficient is **negative** (≈−0.16),
+i.e. more support ↔ slightly *lower* in-window crisis — directionally consistent with
+"support buffers," but it does not unmask the institutional signal. ESI does add modest
+independent discrimination (AUC 0.654→0.671 in 2004, 0.686→0.713 in 2012). The overall-MI
+variant is mixed and not robust (2004 coefficient ticks up with ESI, 2012 does not; AUC
+flat), and overall MI is wealth-laden on this capital-coupled outcome (AUC ≈0.80,
+vs FSI-only 0.84) — exactly the Finding-3 distortion, which is why the pure-structural
+gap is the clean test. **The gate's signal is not being suppressed by uncontrolled
+external support in any way this control recovers.**
+
+**One weak positive, honestly bounded:** ESI adds more to the MI models (+0.017/+0.027
+AUC) than to the FSI baseline (0.840→0.841, ≈0), the faint version of the pre-registered
+"ESI helps the structural instrument more than the wealth baseline" signature — but it is
+small and never manifests as coefficient recovery.
+
+**Test 2D (the operational output):** among high-ESI states (>75th pct), those with
+support concentrated in a **single** sub-dimension (Herfindahl ≥0.6) — a single point of
+failure — are **Singapore, UAE** (Systemic-Insurance / SWF concentration) and **Mali**
+(Financial-Life-Support concentration) in 2004; **Singapore** in 2012. This list stands
+regardless of the null on 2A/2B.
+
+**Verdict (per the frozen interpretation gates, no rationalization):** external support,
+as measured by an equal-weight first-pass ESI, **does not explain the erosion and does not
+recover the institutional signal.** The mechanism hypothesis is **not supported** at the
+aggregate/systematic level; Finding 5's hand-picked cases do not generalize to a
+significant measured effect (consistent with Finding 5's own "also genuinely over-flags"
+bound). The rule holds: equal weights were mandatory and un-tuned — *"if it only works
+with tuned weights it is probably not real,"* so the null is taken at face value.
+**Honest limitations** (disclosed, not offered as escapes): the equal-weight composite
+dilutes support concentrated in one mechanism (reserve-currency issuers like Japan and
+SWF states like Saudi score low despite obvious insurance); concessional-debt was lost to
+an archived WB series; IMF/SWF/alliance layers are documented manual estimates; n≈90 and
+the modern crisis definition is capital-coupled. A tuned or insurance-only ESI might
+behave differently — but that would be a new, separately pre-registered question, not a
+rescue of this one. Epistemic status: **registered null with a small independent
+ESI-crisis association surviving.** Artifacts: `data/robustness/esi/esi_scores.json`,
+`esi_test_report.json`; code `scripts/robustness/esi_{fetch,build,tests}.py`.
 
 ---
 

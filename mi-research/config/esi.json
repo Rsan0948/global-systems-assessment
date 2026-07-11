@@ -27,12 +27,12 @@
         },
         "concessional_debt_share": {
           "source": "World Bank WDI (IDS)",
-          "code_concessional": "DT.DOD.DECT.CD__RESOLVE",
-          "code_total": "DT.DOD.DECT.CD",
-          "definition": "external debt on concessional terms as a share of total external debt. Exact concessional-stock code resolved at fetch time (candidates: DT.DOD.DIMF.CD, concessional PPG series); documented in the fetch cache _meta.",
-          "normalization": "share in [0,1] directly (concessional / total), clamp",
-          "higher_is_more_support": true,
-          "coverage_note": "debtor-reporting (IDS) countries only — high-income issuers absent; treated as 0 concessional (they borrow commercially), documented."
+          "code": "DT.DOD.ALLC.ZS",
+          "in_primary_esi": false,
+          "unavailable_note": "DROPPED — DT.DOD.ALLC.ZS and the component stocks DT.DOD.ALLC.CD were ARCHIVED by the World Bank (API returns 'indicator not found, may have been deleted or archived', default and source=6). No live replacement found at build time. Track-2 graceful degradation: Sub-A = mean(imf_program_active, imf_cumulative_20yr). Documented, not imputed.",
+          "definition": "external debt on concessional terms as a share of total external debt",
+          "normalization": "value is already % of total; /100, clamp [0,1]",
+          "higher_is_more_support": true
         },
         "debt_service_burden": {
           "source": "World Bank WDI",
