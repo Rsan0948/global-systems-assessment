@@ -1,0 +1,54 @@
+{
+  "test": "decay_curve_epoch_panel",
+  "outcome": "economic rupture = GDP trough/level < 0.8 within 30y",
+  "structure_signal": "V-Dem rule-of-law (institutional core)",
+  "wealth_signal": "log Maddison GDP-per-capita",
+  "caveat": "pre-1900 Maddison GDP is interpolated -> economic-rupture likely undercounted; watch rupture_rate; add conflict-onset (UCDP/COW) for the middle band.",
+  "epochs": [
+    {
+      "year": 1800,
+      "n": 9,
+      "n_rupture": 2,
+      "rupture_rate": 0.222,
+      "structure_auc": 1.0,
+      "wealth_auc": 0.286,
+      "spread_struct_minus_wealth": 0.714
+    },
+    {
+      "year": 1850,
+      "n": 22,
+      "n_rupture": 0,
+      "rupture_rate": 0.0,
+      "structure_auc": null,
+      "wealth_auc": null,
+      "spread_struct_minus_wealth": null
+    },
+    {
+      "year": 1900,
+      "n": 40,
+      "n_rupture": 5,
+      "rupture_rate": 0.125,
+      "structure_auc": 0.549,
+      "wealth_auc": 0.549,
+      "spread_struct_minus_wealth": 0.0
+    },
+    {
+      "year": 1950,
+      "n": 132,
+      "n_rupture": 4,
+      "rupture_rate": 0.03,
+      "structure_auc": 0.475,
+      "wealth_auc": 0.338,
+      "spread_struct_minus_wealth": 0.137
+    },
+    {
+      "year": 1980,
+      "n": 156,
+      "n_rupture": 59,
+      "rupture_rate": 0.378,
+      "structure_auc": 0.7,
+      "wealth_auc": 0.509,
+      "spread_struct_minus_wealth": 0.191
+    }
+  ]
+}
