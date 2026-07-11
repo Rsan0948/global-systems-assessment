@@ -56,12 +56,16 @@ samples:
 The pooled decline is the **decolonization composition artifact** — the coupling
 collapses at 1956 (r=0.435) as post-colonial states flood the panel, the exact seam
 Finding 10-T1 already characterized. On any **like-for-like** sample (constant or
-mature) the coupling **rises**. The mature coupling trajectory **positively tracks the
-`wealth_auc` trajectory** (Pearson r=+0.469, **p=0.043**); the pooled series does not
-(r=−0.199, p=0.41) — again the composition artifact. Modern MI panel (Finding 10)
-independently corroborates: P1↔GDP r 0.770→0.818, 1996→2024. **Confirmed:** GDP has
-been becoming a better proxy for institutional quality continuously, on samples that
-hold composition fixed.
+mature) the coupling **rises**. The mature coupling trajectory positively tracks the
+`wealth_auc` trajectory (matched mature-vs-mature sample r=+0.65, **p=0.005**; the
+mismatched mature-vs-pooled figure is +0.47, p=0.043); the pooled-vs-pooled series does
+not (r=−0.199, p=0.41) — again the composition artifact. **Audit caveat:** this is a
+*level* correlation of two independently rising series; **detrended**, the co-movement is
+only marginal (r=+0.40, p=0.11) — "both coupling and wealth_auc rose over the period" is
+established, but tight year-to-year co-movement is not. Modern MI panel (Finding 10)
+independently corroborates the rising coupling: P1↔GDP r 0.770→0.818, 1996→2024.
+**Confirmed (direction):** GDP has been becoming a better proxy for institutional quality
+on samples that hold composition fixed.
 
 ### Test 2 — GDP's sector composition shifted institution-independent → institution-dependent  *(GATE — PASS)*
 
@@ -202,10 +206,13 @@ P1↔GDP coupling among **exposed vs non-exposed** countries (2018), plus exposu
 | private credit > 100% (financialization) | 0.936 | 0.766 | no | 6 → 19 (growing) |
 | services > 60% (ICT proxy) | 0.869 | 0.671 | no | 35 → 65 (growing) |
 
-**Only resource extraction weakens the coupling** — resource rents generate GDP without
-institutional infrastructure, so wealth and institutions decouple among petro/mineral
-states. This is the MI's **oldest pattern**, already captured by the resource penalty.
-The **new post-industrial forces do NOT currently decouple** wealth from institutions —
+**Resource extraction is the only *directionally* weaker coupling** (0.72 vs 0.84) —
+resource rents generate GDP without institutional infrastructure, the MI's **oldest
+pattern**, already captured by the resource penalty. **Audit caveat:** with n=16 exposed
+states this difference is **not statistically distinguishable from zero** (bootstrap Δr
+95% CI [−0.45, +0.09]) — so the honest statement is that **no** candidate force
+*significantly* decouples wealth from institutions today, which if anything **strengthens**
+"robust today." The **new post-industrial forces do NOT decouple** wealth from institutions —
 FDI, deep finance, and services-heavy economies show *tighter* coupling when exposed,
 because those forces cluster in economies that **already** have strong institutions. The
 convergence is therefore **structurally robust today**: the one active decoupler is old
@@ -249,6 +256,61 @@ scale. The MI's institutional signal is the instrument that would **regain relat
 advantage** precisely in that scenario.
 
 ---
+
+## Adversarial audit (robustness of this finding)
+
+After the confirmation run, the whole finding was attacked to find what would break it
+(`scripts/robustness/convergence_audit.py`). A parallel mechanical data-integrity sweep of
+every source file (`vdem_longrun`, `longrun_pillars`, `crisis_classification`,
+`wdi_decoupling`, `mi_5pt_panel`) found **no corruption** — rol is correctly 0–1 and
+correctly signed (NOR/DNK/CHE high, AFG/SOM/COD low), Maddison GDP is plausible with correct
+rich/poor ordering, no string-parsing landmines, sector shares sum to ~100, `logGDP==log10(gdp)`
+everywhere. The decomposition machinery reproduces the committed Finding-14 curve exactly.
+**No code or data bug was found. The audit did find three statistical overclaims, now
+corrected in the text above and below.**
+
+1. **Direction robust, significance fragile (the important one).** The `wealth Δ > struct Δ`
+   ordering (wealth catching up; spread narrowing) is **invariant across all eight cuts** tried
+   — pooled/mature, overlapping/non-overlapping windows, and n-floors of 0/20/25/30. But the
+   *individual-trend p-values are not robust*: the headline "wealth p=0.005 while struct p=0.20"
+   is an artifact of (a) noisy small-n early anchors (1816 has n=12, npos=6; dropping n<20 drops
+   wealth to p=0.18) and (b) the 25-yr windows at 10-yr steps overlapping, which autocorrelates
+   the epoch series and makes every trend p-value **anti-conservative**. On the cleanest cut
+   (mature-only, non-overlapping 30-yr windows) **both** rise significantly — struct Δ+0.204
+   **p=0.006**, wealth Δ+0.415 **p=0.011**. So the crisp "institutions were flat, only wealth
+   moved" reading is too strong: **institutions' predictive power did not decline (it rose or
+   stayed flat on every cut) and wealth's rose faster** — that ordering, not the significance
+   asymmetry, is the finding.
+2. **Not a composition artifact.** The mature-only decomposition (composition-controlled, the
+   same control that killed Findings 9-A/10) preserves the ordering — struct flat-to-rising,
+   wealth rising more — so wealth-catching-up is **not** the decolonization/sample-mix artifact
+   that sank earlier candidates.
+3. **Test-1 confirm — matched sample stronger, detrended weaker.** The coupling-vs-`wealth_auc`
+   correlation is actually **stronger** on the matched (mature-vs-mature) sample (r=+0.65,
+   p=0.005) than the mismatched number reported earlier (+0.47). But **detrended**, the
+   co-movement is only marginal (r=+0.40, p=0.11): coupling and wealth_auc both *rise* over the
+   period (consistent with the mechanism), but tight year-to-year linkage beyond the shared time
+   trend is **not** established. Honest reading: two independently rising series, direction
+   consistent, co-movement not proven.
+4. **Test-3 mechanism holds under audit.** VIF is low (1.5–1.7 — the historical rol↔GDP
+   correlation is ~0.6, not the ~0.8 of the modern panel), and 20-fold jackknife coefficients
+   are stable (sd 0.03–0.06, both same sign every fold). Complementary-facets is robust.
+   *(Labeling note: Test 3's "P1" is V-Dem rol, the historical structure proxy used throughout
+   the decomposition, with Maddison GDP — not engine-P1.)*
+5. **Test-8 was overprecise.** "Only resource extraction weakens the coupling" rests on
+   r=0.72 (n=16) vs 0.84 (n=70); the bootstrap Δr 95% CI is **[−0.45, +0.09]** — **not
+   distinguishable from zero**. Corrected reading: **no** candidate force *significantly*
+   decouples wealth from institutions today (resource extraction is the only *directional*
+   one, consistent with the known resource pattern but underpowered). This **strengthens**
+   "robust today" while removing the false precision.
+
+**Net effect of the audit:** the core thesis is unchanged and arguably stronger — institutions
+did not lose predictive power, wealth caught up, the spread narrowed, and the convergence is
+robust today (no force significantly decouples). What changed: the crisp significance asymmetry
+from Finding 14 is downgraded to a robust *direction* with fragile *p-values* (overlapping-window
+autocorrelation caveat now stated), the Test-1 linkage is honestly bounded to "both rise, tight
+co-movement unproven," and the Test-8 resource claim is downgraded from "only one that decouples"
+to "only one even directionally weaker, not significant."
 
 ## Bottom line
 

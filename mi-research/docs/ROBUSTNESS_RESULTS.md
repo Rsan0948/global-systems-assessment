@@ -559,13 +559,16 @@ pre-registration.** Write-up `docs/VARIANCE_COMPRESSION_RESULTS.md`; artifacts
 Finding 14's lead — that the 150-year "erosion" is GDP *gaining* crisis-predictive
 signal, not institutions losing it — was pre-registered as its own hypothesis with gates
 and run to confirmation (`CONVERGENCE_PREREGISTRATION.md`, sha256 `4071b996`, frozen
-before analysis). **The two-part gate passes; the interpretation is confirmed with one
-qualification.**
+before analysis), then **adversarially audited** (`convergence_audit.py` + a mechanical
+data-integrity sweep of all source files). **The two-part gate passes; the interpretation
+is confirmed with one qualification; the audit found no data/code bug but downgraded three
+statistical overclaims (see the audit note at the end of this finding).**
 
 **Gate (Tests 1–2) — PASS.** *Test 1:* the V-Dem rule-of-law ↔ log-Maddison-GDP coupling
 has been **rising** for 150 years on every like-for-like sample (constant-set Δr **+0.151**;
 mature-only Δr **+0.152**, slope p=0.006), and the mature coupling trajectory positively
-tracks the `wealth_auc` curve (r=+0.469, **p=0.043**). It only *falls* on the **pooled**
+tracks the `wealth_auc` curve (matched-sample r=+0.65 p=0.005; detrended only marginal — see
+audit note). It only *falls* on the **pooled**
 sample (Δr−0.045) — the same decolonization composition artifact Finding 10-T1 already
 identified (coupling collapses at the 1956 anchor as post-colonial states enter). *Test 2:*
 GDP's economic substrate shifted as the mechanism requires — global agriculture share fell
@@ -596,12 +599,15 @@ complementary-facet, not clean re-measurement. *Test 6* replicates the pattern o
 partial-circularity caveat (the composite includes a GDP-decline term).
 
 **Durability (Part 2) — robust today, one bounded present risk, one forward risk.** *Test 8:*
-of four candidate decoupling forces, **only resource extraction weakens** the P1↔GDP coupling
-(0.722 vs 0.837, exposed vs not) — the MI's oldest pattern, already in the resource penalty.
-FDI, financialization, and services-heavy (ICT-proxy) economies show **tighter** coupling
-when exposed, because those forces cluster where institutions are **already** strong; the new
-post-industrial forces have **not** produced institution-independent GDP at scale. Exposure to
-every force is growing, so this is a present-tense robustness. *Test 7:* the pre-registered
+of four candidate decoupling forces, resource extraction is the only *directionally* weaker
+coupling (0.722 vs 0.837) — the MI's oldest pattern, already in the resource penalty — but
+with n=16 the difference is **not statistically distinguishable from zero** (bootstrap Δr 95%
+CI [−0.45, +0.09]), so the honest statement is that **no** candidate force *significantly*
+decouples wealth from institutions today. FDI, financialization, and services-heavy
+(ICT-proxy) economies show **tighter** coupling when exposed, because those forces cluster
+where institutions are **already** strong; the new post-industrial forces have **not**
+produced institution-independent GDP at scale. Exposure to every force is growing, so this is
+a present-tense robustness. *Test 7:* the pre-registered
 decouple threshold is non-discriminating (69% of the panel — GDP grows >50% over 28y almost
 universally while WGI-P1 is sticky; disclosed), but the sharp *governance-declined-while-
 wealth-grew* set (n=27) crisis **more than GDP predicts** (residual +0.017 vs −0.008) and is
@@ -626,6 +632,27 @@ complementary-facet; durability = robust-today with disclosed forward risk.** Wr
 `docs/CONVERGENCE_RESULTS.md`; artifacts `data/robustness/convergence/{part1,part2}.json`;
 code `scripts/robustness/convergence_{lib,part1,part2}.py`; pre-registration
 `docs/CONVERGENCE_PREREGISTRATION.md`.
+
+**Audit note (adversarial self-attack + data-integrity sweep).** A mechanical sweep of every
+source file found **no corruption** (rol correctly 0–1 and signed; Maddison GDP plausible;
+sector shares ~100; `logGDP==log10(gdp)`; no parsing landmines) and the machinery reproduces
+the committed Finding-14 curve exactly — **no data or code bug**. The audit did downgrade three
+statistical overclaims. **(1) Direction robust, significance fragile:** `wealth Δ > struct Δ`
+(spread narrowing) holds across **all eight** sample/window/floor cuts, but the crisp "wealth
+p=0.005 while struct p=0.20" asymmetry is an artifact of noisy small-n early anchors (1816 n=12)
+and **overlapping 25-yr windows at 10-yr steps** (autocorrelated epochs → anti-conservative
+p-values); on the cleanest cut (mature-only, non-overlapping windows) **both** rise significantly
+(struct Δ+0.204 p=0.006, wealth Δ+0.415 p=0.011). The robust claim is therefore **institutions
+did not lose predictive power (struct rose-or-flat, never declined) and wealth rose faster** —
+the *ordering*, not the significance asymmetry. The pattern is **not** a composition artifact
+(it survives the mature-only control that killed Findings 9-A/10). **(2) Test-1 linkage** is a
+level correlation of two independently rising series (matched-sample r=+0.65 p=0.005), but
+**detrended it is only marginal** (r=+0.40 p=0.11) — both rise; tight co-movement unproven.
+**(3) Test-8** resource-decoupling is directional but **not significant** (Δr CI includes 0);
+corrected to "no force significantly decouples today," which strengthens robustness. Test-3
+complementary-facets survives (VIF 1.5–1.7, jackknife-stable). Net: the core thesis is unchanged
+and the "institutions did not weaken" half is **stronger** (struct never declines on any cut);
+the false precision is removed. Audit code `scripts/robustness/convergence_audit.py`.
 
 ---
 
