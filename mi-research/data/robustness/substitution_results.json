@@ -1,0 +1,1590 @@
+{
+  "_meta": {
+    "year": 2024,
+    "n_baseline": 190,
+    "seam": "panel.indicators_for (panel.py:58) -> mutate dict -> scoring.score_country (scoring.py:324)",
+    "rescaling": "0-100 cross-country percentile rank",
+    "gdp_only_baseline_rho_vs_MI": 0.8702124790506829,
+    "gdp_only_baseline_N": 184
+  },
+  "runs": {
+    "P1_tax_revenue": {
+      "N": 144,
+      "rho_MI_rank": 0.9586367655333173,
+      "rho_income_residual_rank": 0.8429856528448076,
+      "N_residual": 143,
+      "top_movers": [
+        {
+          "iso": "LSO",
+          "country": "Lesotho",
+          "rank_orig": 94,
+          "rank_sub": 46,
+          "rank_change": -48,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BHR",
+          "country": "Bahrain",
+          "rank_orig": 60,
+          "rank_sub": 92,
+          "rank_change": 32,
+          "direction": "fell",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "SLB",
+          "country": "Solomon Islands",
+          "rank_orig": 91,
+          "rank_sub": 60,
+          "rank_change": -31,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ARE",
+          "country": "United Arab Emirates",
+          "rank_orig": 33,
+          "rank_sub": 61,
+          "rank_change": 28,
+          "direction": "fell",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "BTN",
+          "country": "Bhutan",
+          "rank_orig": 25,
+          "rank_sub": 51,
+          "rank_change": 26,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SAU",
+          "country": "Saudi Arabia",
+          "rank_orig": 50,
+          "rank_sub": 76,
+          "rank_change": 26,
+          "direction": "fell",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "ARG",
+          "country": "Argentina",
+          "rank_orig": 64,
+          "rank_sub": 89,
+          "rank_change": 25,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CHN",
+          "country": "China",
+          "rank_orig": 61,
+          "rank_sub": 86,
+          "rank_change": 25,
+          "direction": "fell",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "DEU",
+          "country": "Germany",
+          "rank_orig": 12,
+          "rank_sub": 37,
+          "rank_change": 25,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "USA",
+          "country": "United States",
+          "rank_orig": 24,
+          "rank_sub": 49,
+          "rank_change": 25,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CHE",
+          "country": "Switzerland",
+          "rank_orig": 4,
+          "rank_sub": 28,
+          "rank_change": 24,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SWZ",
+          "country": "Eswatini",
+          "rank_orig": 85,
+          "rank_sub": 63,
+          "rank_change": -22,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ZAF",
+          "country": "South Africa",
+          "rank_orig": 93,
+          "rank_sub": 71,
+          "rank_change": -22,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CAN",
+          "country": "Canada",
+          "rank_orig": 15,
+          "rank_sub": 35,
+          "rank_change": 20,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "NAM",
+          "country": "Namibia",
+          "rank_orig": 79,
+          "rank_sub": 59,
+          "rank_change": -20,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "PAN",
+          "country": "Panama",
+          "rank_orig": 62,
+          "rank_sub": 82,
+          "rank_change": 20,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "GRC",
+          "country": "Greece",
+          "rank_orig": 53,
+          "rank_sub": 34,
+          "rank_change": -19,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KGZ",
+          "country": "Kyrgyzstan",
+          "rank_orig": 103,
+          "rank_sub": 84,
+          "rank_change": -19,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "NRU",
+          "country": "Nauru",
+          "rank_orig": 40,
+          "rank_sub": 21,
+          "rank_change": -19,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "UKR",
+          "country": "Ukraine",
+          "rank_orig": 102,
+          "rank_sub": 83,
+          "rank_change": -19,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KAZ",
+          "country": "Kazakhstan",
+          "rank_orig": 69,
+          "rank_sub": 87,
+          "rank_change": 18,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": true
+        },
+        {
+          "iso": "TLS",
+          "country": "East Timor",
+          "rank_orig": 111,
+          "rank_sub": 93,
+          "rank_change": -18,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ITA",
+          "country": "Italy",
+          "rank_orig": 37,
+          "rank_sub": 20,
+          "rank_change": -17,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KOR",
+          "country": "South Korea",
+          "rank_orig": 16,
+          "rank_sub": 33,
+          "rank_change": 17,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "NIC",
+          "country": "Nicaragua",
+          "rank_orig": 121,
+          "rank_sub": 104,
+          "rank_change": -17,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": true
+        }
+      ],
+      "contested_in_top20": 4,
+      "contested_core_in_top20": 4,
+      "mean_abs_move_contested_core": 18.375,
+      "mean_abs_move_noncontested": 8.10077519379845,
+      "max_abs_move": 48
+    },
+    "P1_education_exp": {
+      "N": 175,
+      "rho_MI_rank": 0.9295364979847738,
+      "rho_income_residual_rank": 0.7768399355695328,
+      "N_residual": 172,
+      "top_movers": [
+        {
+          "iso": "BMU",
+          "country": "Bermuda",
+          "rank_orig": 7,
+          "rank_sub": 62,
+          "rank_change": 55,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SLB",
+          "country": "Solomon Islands",
+          "rank_orig": 107,
+          "rank_sub": 52,
+          "rank_change": -55,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CYM",
+          "country": "Cayman Islands",
+          "rank_orig": 5,
+          "rank_sub": 59,
+          "rank_change": 54,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KIR",
+          "country": "Kiribati",
+          "rank_orig": 57,
+          "rank_sub": 8,
+          "rank_change": -49,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "AND",
+          "country": "Andorra",
+          "rank_orig": 3,
+          "rank_sub": 50,
+          "rank_change": 47,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "LSO",
+          "country": "Lesotho",
+          "rank_orig": 112,
+          "rank_sub": 66,
+          "rank_change": -46,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "MHL",
+          "country": "Marshall Islands",
+          "rank_orig": 51,
+          "rank_sub": 6,
+          "rank_change": -45,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "VUT",
+          "country": "Vanuatu",
+          "rank_orig": 68,
+          "rank_sub": 24,
+          "rank_change": -44,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BHR",
+          "country": "Bahrain",
+          "rank_orig": 69,
+          "rank_sub": 112,
+          "rank_change": 43,
+          "direction": "fell",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "CUB",
+          "country": "Cuba",
+          "rank_orig": 105,
+          "rank_sub": 65,
+          "rank_change": -40,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": true
+        },
+        {
+          "iso": "BHS",
+          "country": "Bahamas",
+          "rank_orig": 26,
+          "rank_sub": 64,
+          "rank_change": 38,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KGZ",
+          "country": "Kyrgyzstan",
+          "rank_orig": 122,
+          "rank_sub": 85,
+          "rank_change": -37,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "NRU",
+          "country": "Nauru",
+          "rank_orig": 48,
+          "rank_sub": 11,
+          "rank_change": -37,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BOL",
+          "country": "Bolivia",
+          "rank_orig": 138,
+          "rank_sub": 103,
+          "rank_change": -35,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SUR",
+          "country": "Suriname",
+          "rank_orig": 73,
+          "rank_sub": 108,
+          "rank_change": 35,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ARM",
+          "country": "Armenia",
+          "rank_orig": 91,
+          "rank_sub": 124,
+          "rank_change": 33,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "PSE",
+          "country": "Palestine",
+          "rank_orig": 144,
+          "rank_sub": 111,
+          "rank_change": -33,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "THA",
+          "country": "Thailand",
+          "rank_orig": 87,
+          "rank_sub": 120,
+          "rank_change": 33,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": true
+        },
+        {
+          "iso": "SMR",
+          "country": "San Marino",
+          "rank_orig": 6,
+          "rank_sub": 38,
+          "rank_change": 32,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ATG",
+          "country": "Antigua and Barbuda",
+          "rank_orig": 33,
+          "rank_sub": 63,
+          "rank_change": 30,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "DZA",
+          "country": "Algeria",
+          "rank_orig": 128,
+          "rank_sub": 98,
+          "rank_change": -30,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "TUN",
+          "country": "Tunisia",
+          "rank_orig": 113,
+          "rank_sub": 84,
+          "rank_change": -29,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "VNM",
+          "country": "Vietnam",
+          "rank_orig": 89,
+          "rank_sub": 118,
+          "rank_change": 29,
+          "direction": "fell",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "MRT",
+          "country": "Mauritania",
+          "rank_orig": 148,
+          "rank_sub": 121,
+          "rank_change": -27,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BTN",
+          "country": "Bhutan",
+          "rank_orig": 31,
+          "rank_sub": 5,
+          "rank_change": -26,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        }
+      ],
+      "contested_in_top20": 3,
+      "contested_core_in_top20": 1,
+      "mean_abs_move_contested_core": 15.416666666666666,
+      "mean_abs_move_noncontested": 14.324675324675324,
+      "max_abs_move": 55
+    },
+    "P1_lpi": {
+      "N": 165,
+      "rho_MI_rank": 0.9817166671119069,
+      "rho_income_residual_rank": 0.927639751552795,
+      "N_residual": 160,
+      "top_movers": [
+        {
+          "iso": "FJI",
+          "country": "Fiji",
+          "rank_orig": 62,
+          "rank_sub": 97,
+          "rank_change": 35,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "GMB",
+          "country": "Gambia",
+          "rank_orig": 85,
+          "rank_sub": 113,
+          "rank_change": 28,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "LSO",
+          "country": "Lesotho",
+          "rank_orig": 96,
+          "rank_sub": 123,
+          "rank_change": 27,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BTN",
+          "country": "Bhutan",
+          "rank_orig": 23,
+          "rank_sub": 49,
+          "rank_change": 26,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "GUY",
+          "country": "Guyana",
+          "rank_orig": 81,
+          "rank_sub": 105,
+          "rank_change": 24,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ZAF",
+          "country": "South Africa",
+          "rank_orig": 95,
+          "rank_sub": 71,
+          "rank_change": -24,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SLE",
+          "country": "Sierra Leone",
+          "rank_orig": 113,
+          "rank_sub": 135,
+          "rank_change": 22,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CUB",
+          "country": "Cuba",
+          "rank_orig": 89,
+          "rank_sub": 108,
+          "rank_change": 19,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": true
+        },
+        {
+          "iso": "CIV",
+          "country": "Cote d'Ivoire",
+          "rank_orig": 138,
+          "rank_sub": 120,
+          "rank_change": -18,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "MUS",
+          "country": "Mauritius",
+          "rank_orig": 51,
+          "rank_sub": 69,
+          "rank_change": 18,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ALB",
+          "country": "Albania",
+          "rank_orig": 59,
+          "rank_sub": 76,
+          "rank_change": 17,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "MDA",
+          "country": "Moldova",
+          "rank_orig": 64,
+          "rank_sub": 81,
+          "rank_change": 17,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SEN",
+          "country": "Senegal",
+          "rank_orig": 109,
+          "rank_sub": 126,
+          "rank_change": 17,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "TZA",
+          "country": "Tanzania",
+          "rank_orig": 120,
+          "rank_sub": 103,
+          "rank_change": -17,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "HND",
+          "country": "Honduras",
+          "rank_orig": 130,
+          "rank_sub": 114,
+          "rank_change": -16,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "IND",
+          "country": "India",
+          "rank_orig": 98,
+          "rank_sub": 82,
+          "rank_change": -16,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "LBN",
+          "country": "Lebanon",
+          "rank_orig": 125,
+          "rank_sub": 109,
+          "rank_change": -16,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ARM",
+          "country": "Armenia",
+          "rank_orig": 77,
+          "rank_sub": 92,
+          "rank_change": 15,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BHS",
+          "country": "Bahamas",
+          "rank_orig": 19,
+          "rank_sub": 34,
+          "rank_change": 15,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "EGY",
+          "country": "Egypt",
+          "rank_orig": 108,
+          "rank_sub": 93,
+          "rank_change": -15,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "THA",
+          "country": "Thailand",
+          "rank_orig": 73,
+          "rank_sub": 58,
+          "rank_change": -15,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": true
+        },
+        {
+          "iso": "TUR",
+          "country": "Turkey",
+          "rank_orig": 71,
+          "rank_sub": 56,
+          "rank_change": -15,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": true
+        },
+        {
+          "iso": "BRA",
+          "country": "Brazil",
+          "rank_orig": 86,
+          "rank_sub": 72,
+          "rank_change": -14,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "TTO",
+          "country": "Trinidad and Tobago",
+          "rank_orig": 69,
+          "rank_sub": 83,
+          "rank_change": 14,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "VNM",
+          "country": "Vietnam",
+          "rank_orig": 75,
+          "rank_sub": 61,
+          "rank_change": -14,
+          "direction": "rose",
+          "contested_core": true,
+          "contested_ext": true
+        }
+      ],
+      "contested_in_top20": 1,
+      "contested_core_in_top20": 0,
+      "mean_abs_move_contested_core": 4.666666666666667,
+      "mean_abs_move_noncontested": 6.375,
+      "max_abs_move": 35
+    },
+    "P1_maxdivergence": {
+      "N": 124,
+      "rho_MI_rank": 0.9842643587726199,
+      "rho_income_residual_rank": 0.9309953437979648,
+      "N_residual": 123,
+      "top_movers": [
+        {
+          "iso": "SLB",
+          "country": "Solomon Islands",
+          "rank_orig": 78,
+          "rank_sub": 49,
+          "rank_change": -29,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ZAF",
+          "country": "South Africa",
+          "rank_orig": 80,
+          "rank_sub": 60,
+          "rank_change": -20,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BHR",
+          "country": "Bahrain",
+          "rank_orig": 49,
+          "rank_sub": 67,
+          "rank_change": 18,
+          "direction": "fell",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "LSO",
+          "country": "Lesotho",
+          "rank_orig": 81,
+          "rank_sub": 63,
+          "rank_change": -18,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "NAM",
+          "country": "Namibia",
+          "rank_orig": 68,
+          "rank_sub": 51,
+          "rank_change": -17,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BHS",
+          "country": "Bahamas",
+          "rank_orig": 17,
+          "rank_sub": 31,
+          "rank_change": 14,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "TTO",
+          "country": "Trinidad and Tobago",
+          "rank_orig": 60,
+          "rank_sub": 74,
+          "rank_change": 14,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BWA",
+          "country": "Botswana",
+          "rank_orig": 63,
+          "rank_sub": 52,
+          "rank_change": -11,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "FJI",
+          "country": "Fiji",
+          "rank_orig": 54,
+          "rank_sub": 65,
+          "rank_change": 11,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ARM",
+          "country": "Armenia",
+          "rank_orig": 67,
+          "rank_sub": 77,
+          "rank_change": 10,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "DOM",
+          "country": "Dominican Republic",
+          "rank_orig": 66,
+          "rank_sub": 76,
+          "rank_change": 10,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "HND",
+          "country": "Honduras",
+          "rank_orig": 105,
+          "rank_sub": 95,
+          "rank_change": -10,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "JOR",
+          "country": "Jordan",
+          "rank_orig": 59,
+          "rank_sub": 69,
+          "rank_change": 10,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ALB",
+          "country": "Albania",
+          "rank_orig": 52,
+          "rank_sub": 61,
+          "rank_change": 9,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BTN",
+          "country": "Bhutan",
+          "rank_orig": 21,
+          "rank_sub": 30,
+          "rank_change": 9,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "IRL",
+          "country": "Ireland",
+          "rank_orig": 6,
+          "rank_sub": 15,
+          "rank_change": 9,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "DEU",
+          "country": "Germany",
+          "rank_orig": 9,
+          "rank_sub": 17,
+          "rank_change": 8,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ISR",
+          "country": "Israel",
+          "rank_orig": 32,
+          "rank_sub": 24,
+          "rank_change": -8,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KGZ",
+          "country": "Kyrgyzstan",
+          "rank_orig": 89,
+          "rank_sub": 81,
+          "rank_change": -8,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "PRY",
+          "country": "Paraguay",
+          "rank_orig": 71,
+          "rank_sub": 79,
+          "rank_change": 8,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "UKR",
+          "country": "Ukraine",
+          "rank_orig": 88,
+          "rank_sub": 80,
+          "rank_change": -8,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CAN",
+          "country": "Canada",
+          "rank_orig": 12,
+          "rank_sub": 19,
+          "rank_change": 7,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "FRA",
+          "country": "France",
+          "rank_orig": 25,
+          "rank_sub": 18,
+          "rank_change": -7,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "GHA",
+          "country": "Ghana",
+          "rank_orig": 95,
+          "rank_sub": 102,
+          "rank_change": 7,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "PAN",
+          "country": "Panama",
+          "rank_orig": 51,
+          "rank_sub": 58,
+          "rank_change": 7,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        }
+      ],
+      "contested_in_top20": 1,
+      "contested_core_in_top20": 1,
+      "mean_abs_move_contested_core": 5.375,
+      "mean_abs_move_noncontested": 4.290909090909091,
+      "max_abs_move": 29
+    },
+    "P2_gii_to_hightech": {
+      "N": 172,
+      "rho_MI_rank": 0.9329376000830144,
+      "rho_income_residual_rank": 0.7340559892596094,
+      "N_residual": 169,
+      "top_movers": [
+        {
+          "iso": "ATG",
+          "country": "Antigua and Barbuda",
+          "rank_orig": 33,
+          "rank_sub": 103,
+          "rank_change": 70,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BHS",
+          "country": "Bahamas",
+          "rank_orig": 26,
+          "rank_sub": 96,
+          "rank_change": 70,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "MAC",
+          "country": "Macao",
+          "rank_orig": 8,
+          "rank_sub": 78,
+          "rank_change": 70,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "MDV",
+          "country": "Maldives",
+          "rank_orig": 64,
+          "rank_sub": 131,
+          "rank_change": 67,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BTN",
+          "country": "Bhutan",
+          "rank_orig": 31,
+          "rank_sub": 97,
+          "rank_change": 66,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SYC",
+          "country": "Seychelles",
+          "rank_orig": 28,
+          "rank_sub": 92,
+          "rank_change": 64,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "GRL",
+          "country": "Greenland",
+          "rank_orig": 3,
+          "rank_sub": 54,
+          "rank_change": 51,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KIR",
+          "country": "Kiribati",
+          "rank_orig": 54,
+          "rank_sub": 99,
+          "rank_change": 45,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "LSO",
+          "country": "Lesotho",
+          "rank_orig": 109,
+          "rank_sub": 152,
+          "rank_change": 43,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SLB",
+          "country": "Solomon Islands",
+          "rank_orig": 104,
+          "rank_sub": 143,
+          "rank_change": 39,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "FJI",
+          "country": "Fiji",
+          "rank_orig": 74,
+          "rank_sub": 110,
+          "rank_change": 36,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "LUX",
+          "country": "Luxembourg",
+          "rank_orig": 1,
+          "rank_sub": 33,
+          "rank_change": 32,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SLE",
+          "country": "Sierra Leone",
+          "rank_orig": 126,
+          "rank_sub": 156,
+          "rank_change": 30,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ABW",
+          "country": "Aruba",
+          "rank_orig": 14,
+          "rank_sub": 41,
+          "rank_change": 27,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "PHL",
+          "country": "Philippines",
+          "rank_orig": 90,
+          "rank_sub": 64,
+          "rank_change": -26,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BEN",
+          "country": "Benin",
+          "rank_orig": 133,
+          "rank_sub": 108,
+          "rank_change": -25,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "AGO",
+          "country": "Angola",
+          "rank_orig": 151,
+          "rank_sub": 127,
+          "rank_change": -24,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "GMB",
+          "country": "Gambia",
+          "rank_orig": 98,
+          "rank_sub": 122,
+          "rank_change": 24,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "MNG",
+          "country": "Mongolia",
+          "rank_orig": 106,
+          "rank_sub": 82,
+          "rank_change": -24,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SWZ",
+          "country": "Eswatini",
+          "rank_orig": 96,
+          "rank_sub": 120,
+          "rank_change": 24,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "VNM",
+          "country": "Vietnam",
+          "rank_orig": 86,
+          "rank_sub": 63,
+          "rank_change": -23,
+          "direction": "rose",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "KAZ",
+          "country": "Kazakhstan",
+          "rank_orig": 78,
+          "rank_sub": 56,
+          "rank_change": -22,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": true
+        },
+        {
+          "iso": "ARM",
+          "country": "Armenia",
+          "rank_orig": 88,
+          "rank_sub": 67,
+          "rank_change": -21,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ECU",
+          "country": "Ecuador",
+          "rank_orig": 116,
+          "rank_sub": 95,
+          "rank_change": -21,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KGZ",
+          "country": "Kyrgyzstan",
+          "rank_orig": 119,
+          "rank_sub": 98,
+          "rank_change": -21,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        }
+      ],
+      "contested_in_top20": 0,
+      "contested_core_in_top20": 0,
+      "mean_abs_move_contested_core": 7.25,
+      "mean_abs_move_noncontested": 12.086092715231787,
+      "max_abs_move": 70
+    },
+    "P5_fsi_to_homicide": {
+      "N": 149,
+      "rho_MI_rank": 0.9686958099038637,
+      "rho_income_residual_rank": 0.8531499137208027,
+      "N_residual": 146,
+      "top_movers": [
+        {
+          "iso": "BHS",
+          "country": "Bahamas",
+          "rank_orig": 25,
+          "rank_sub": 59,
+          "rank_change": 34,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "PSE",
+          "country": "Palestine",
+          "rank_orig": 130,
+          "rank_sub": 99,
+          "rank_change": -31,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "KNA",
+          "country": "St Kitts and Nevis",
+          "rank_orig": 36,
+          "rank_sub": 66,
+          "rank_change": 30,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "GUY",
+          "country": "Guyana",
+          "rank_orig": 90,
+          "rank_sub": 117,
+          "rank_change": 27,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BRB",
+          "country": "Barbados",
+          "rank_orig": 23,
+          "rank_sub": 49,
+          "rank_change": 26,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "ATG",
+          "country": "Antigua and Barbuda",
+          "rank_orig": 32,
+          "rank_sub": 57,
+          "rank_change": 25,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "IDN",
+          "country": "Indonesia",
+          "rank_orig": 102,
+          "rank_sub": 78,
+          "rank_change": -24,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SYC",
+          "country": "Seychelles",
+          "rank_orig": 27,
+          "rank_sub": 51,
+          "rank_change": 24,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "PLW",
+          "country": "Palau",
+          "rank_orig": 37,
+          "rank_sub": 60,
+          "rank_change": 23,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BMU",
+          "country": "Bermuda",
+          "rank_orig": 7,
+          "rank_sub": 29,
+          "rank_change": 22,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "PRI",
+          "country": "Puerto Rico",
+          "rank_orig": 43,
+          "rank_sub": 65,
+          "rank_change": 22,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CYM",
+          "country": "Cayman Islands",
+          "rank_orig": 6,
+          "rank_sub": 27,
+          "rank_change": 21,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "NAM",
+          "country": "Namibia",
+          "rank_orig": 87,
+          "rank_sub": 107,
+          "rank_change": 20,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CPV",
+          "country": "Cabo Verde",
+          "rank_orig": 95,
+          "rank_sub": 114,
+          "rank_change": 19,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "EGY",
+          "country": "Egypt",
+          "rank_orig": 114,
+          "rank_sub": 96,
+          "rank_change": -18,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SUR",
+          "country": "Suriname",
+          "rank_orig": 71,
+          "rank_sub": 89,
+          "rank_change": 18,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CZE",
+          "country": "Czech Republic",
+          "rank_orig": 38,
+          "rank_sub": 21,
+          "rank_change": -17,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "GRL",
+          "country": "Greenland",
+          "rank_orig": 3,
+          "rank_sub": 20,
+          "rank_change": 17,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "UKR",
+          "country": "Ukraine",
+          "rank_orig": 111,
+          "rank_sub": 94,
+          "rank_change": -17,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "UZB",
+          "country": "Uzbekistan",
+          "rank_orig": 108,
+          "rank_sub": 91,
+          "rank_change": -17,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "CHN",
+          "country": "China",
+          "rank_orig": 68,
+          "rank_sub": 52,
+          "rank_change": -16,
+          "direction": "rose",
+          "contested_core": true,
+          "contested_ext": true
+        },
+        {
+          "iso": "CRI",
+          "country": "Costa Rica",
+          "rank_orig": 57,
+          "rank_sub": 73,
+          "rank_change": 16,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "LKA",
+          "country": "Sri Lanka",
+          "rank_orig": 113,
+          "rank_sub": 97,
+          "rank_change": -16,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "SEN",
+          "country": "Senegal",
+          "rank_orig": 115,
+          "rank_sub": 100,
+          "rank_change": -15,
+          "direction": "rose",
+          "contested_core": false,
+          "contested_ext": false
+        },
+        {
+          "iso": "BTN",
+          "country": "Bhutan",
+          "rank_orig": 30,
+          "rank_sub": 44,
+          "rank_change": 14,
+          "direction": "fell",
+          "contested_core": false,
+          "contested_ext": false
+        }
+      ],
+      "contested_in_top20": 0,
+      "contested_core_in_top20": 0,
+      "mean_abs_move_contested_core": 8.0,
+      "mean_abs_move_noncontested": 8.221374045801527,
+      "max_abs_move": 34
+    }
+  }
+}
