@@ -1,0 +1,334 @@
+{
+  "reproduction": {
+    "durability": {
+      "n": 19,
+      "reproduced": 18,
+      "rate": 0.9474
+    },
+    "rule": {
+      "n": 12,
+      "reproduced": 10,
+      "rate": 0.8333
+    }
+  },
+  "recomputed_crisis_accuracy": {
+    "durability": {
+      "n": 19,
+      "abstained": 1,
+      "graded": 18,
+      "accuracy": 0.8889,
+      "base_rate_crisis": 0.6316,
+      "majority_baseline_acc": 0.6316,
+      "lift_over_baseline": 0.2573,
+      "confusion": {
+        "tp": 10,
+        "fp": 0,
+        "tn": 6,
+        "fn": 2
+      },
+      "details": [
+        {
+          "case": "Turkey",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Thailand",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Brazil",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "South Africa",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Peru",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Tunisia",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Sri Lanka",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Italy",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": true,
+          "frozen_result": "FALSIFIED",
+          "reproduced": true
+        },
+        {
+          "case": "Canada",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Germany",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Japan",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Uruguay",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Poland",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Hungary",
+          "derived_call": "watch",
+          "predict_crisis": null,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": false
+        },
+        {
+          "case": "France",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "South Korea",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": true,
+          "frozen_result": "FALSIFIED",
+          "reproduced": true
+        },
+        {
+          "case": "Argentina",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Egypt",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Venezuela",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        }
+      ]
+    },
+    "rule": {
+      "n": 12,
+      "abstained": 2,
+      "graded": 10,
+      "accuracy": 0.6,
+      "base_rate_crisis": 0.3333,
+      "majority_baseline_acc": 0.6667,
+      "lift_over_baseline": -0.0667,
+      "confusion": {
+        "tp": 2,
+        "fp": 3,
+        "tn": 4,
+        "fn": 1
+      },
+      "details": [
+        {
+          "case": "Greece",
+          "derived_call": "watch",
+          "predict_crisis": null,
+          "actual_crisis": true,
+          "frozen_result": "INDETERMINATE",
+          "reproduced": true
+        },
+        {
+          "case": "Botswana",
+          "derived_call": "watch",
+          "predict_crisis": null,
+          "actual_crisis": false,
+          "frozen_result": "INDETERMINATE",
+          "reproduced": true
+        },
+        {
+          "case": "Equatorial Guinea",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": false
+        },
+        {
+          "case": "Mali",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": true,
+          "frozen_result": "FALSIFIED",
+          "reproduced": true
+        },
+        {
+          "case": "Ireland",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Gabon",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Nicaragua",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": true,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Oman",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "China",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": false
+        },
+        {
+          "case": "Cuba",
+          "derived_call": "crisis_vulnerable",
+          "predict_crisis": true,
+          "actual_crisis": false,
+          "frozen_result": "FALSIFIED",
+          "reproduced": true
+        },
+        {
+          "case": "Israel",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        },
+        {
+          "case": "Iceland",
+          "derived_call": "absorber",
+          "predict_crisis": false,
+          "actual_crisis": false,
+          "frozen_result": "CONFIRMED",
+          "reproduced": true
+        }
+      ]
+    }
+  },
+  "divergences": [
+    {
+      "case": "Hungary",
+      "claim": "j_durability_gate",
+      "derived_call": "watch",
+      "predict": null,
+      "actual": false,
+      "frozen_result": "CONFIRMED"
+    },
+    {
+      "case": "Equatorial Guinea",
+      "claim": "rule_test",
+      "derived_call": "crisis_vulnerable",
+      "predict": true,
+      "actual": false,
+      "frozen_result": "CONFIRMED"
+    },
+    {
+      "case": "China",
+      "claim": "rule_test",
+      "derived_call": "crisis_vulnerable",
+      "predict": true,
+      "actual": false,
+      "frozen_result": "CONFIRMED"
+    }
+  ],
+  "ordinality_derivation_basis": {
+    "note": "Of 51 P1-ordinality cases, how the frozen coding was derived. Only 'auto_ordering' is a clean mechanical reproduction target; 'auto_abstain_mod4' are mechanical NON-calls counted as confirmed; 'judgment_preserved'/'narrative' rest on human judgment, not a recomputable rule.",
+    "counts": {
+      "auto_ordering": 10,
+      "auto_abstain_mod4": 7,
+      "judgment_preserved": 9,
+      "narrative_or_other": 25
+    },
+    "total": 51
+  }
+}
