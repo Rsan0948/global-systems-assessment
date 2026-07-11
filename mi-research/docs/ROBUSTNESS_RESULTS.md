@@ -23,6 +23,7 @@
 | P2 temporal holdout | ✅ done | `f92725d` |
 | Historical program (inversion, decay curve, forensics) | ✅ done | `bdabeb8`…`6958358` |
 | External Support Index (ESI) control — Finding 8 (registered null) | ✅ done | (this branch) |
+| Erosion decomposition A/B/C — Finding 9 (compound hypothesis largely not supported) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -219,6 +220,107 @@ rescue of this one. Epistemic status: **registered null with a small independent
 ESI-crisis association surviving.** Artifacts: `data/robustness/esi/esi_scores.json`,
 `esi_test_report.json`, `esi_2C_historical.json`; code
 `scripts/robustness/esi_{fetch,build,tests}.py`, `esi_historical_2C.py`.
+
+## Finding 9 — The erosion is NOT explained by the three structural mechanisms it most resembles (the residual is large)
+
+Findings 3/5/8 kept pointing at a structural story for the erosion: the post-1945
+order looks like mass state creation from near-zero institutional baselines *while
+blocking* the historical forces (conquest, failure→death) that forced institutional
+development. That thesis decomposes into three independently-testable mechanisms —
+**A** sample dilution by young states, **B** elimination of the state-death
+consequence, **C** perception-based P1 lagging functional reality. Each was
+pre-registered (`EROSION_DECOMPOSITION_PREREGISTRATION.md`, sha256 `b030da4b`) with
+the formation classification, the dysfunction outcome, and the revealed-P1 spec
+frozen in **separate commits before any outcome was graded.** **The compound
+hypothesis, tested this way, is largely not supported. Together the three explain
+well under 50% of the longitudinal erosion; the cause is substantially unexplained.**
+Two genuine positives survive — but as *bounded scope characterizations*, not as
+explanations of the 150-year curve.
+
+**A — Denominator dilution: not the driver (share ≈ 0).** Splitting the Finding-2/7
+erosion curve by formation type (54 mature / 93 post-colonial / 20 early-post-colonial
+across the 167-state panel∪holdout; COW entry years + a documented decolonization
+overlay), the **mature-only** curve erodes *as strongly as the full sample* — spread
++0.275 (1850) → +0.070 (1990), Pearson **r=−0.94, p=0.005**, vs full **r=−0.91,
+p=0.005**. The erosion is a *within-mature* phenomenon, not a composition artifact;
+`A_share` clamps to ~0 (mature erodes if anything *more*, robust across the India-in
+and all-flagged-edges-moved sensitivity variants). State **age** is a weak predictor
+(AUC 0.55–0.58), uncorrelated with the durability gap (Spearman ρ=0.065, p=0.55), and
+controlling for it does *not* recover the signal (gap coefficient moves +0.03). **The
+surviving piece is cross-sectional, not longitudinal:** in the 2012 holdout the
+durability gap discriminates far better among mature states (**gap AUC 0.83**) than
+post-colonial (**0.69**) or early-post-colonial/Latin-America (**0.50, chance**) — the
+gate *is* a mature-state instrument, i.e. it measures a decay dynamic that only
+operates where there is institutional history deep enough to decay from. Epistemic
+status: **longitudinal claim refuted; cross-sectional scope claim demonstrated.**
+
+**B — Consequence elimination: strong form refuted; one real partial positive.** On a
+dense (10-year-anchor, 19-point) erosion curve, a **single linear trend from 1816
+beats every broken-stick break** on AIC (breaks at 1918/1945/1960/1991 all fit worse):
+there is **no discrete 1945 inflection** — the erosion pre-dates and continues
+smoothly through the territorial-integrity norm, so that norm cannot be the primary
+mechanism. **State-death rate per decade does not track signal strength** (COW system
+exits vs spread, **r=−0.04, p=0.86, null** — with the honest caveat that COW exits
+conflate conquest with voluntary dissolution/unification, so a cleaner Fazal
+violent-death series could differ). **The one positive is B2, the make-or-break test.**
+Re-running the holdout against the pre-registered composite **dysfunction** outcome
+(ANY of: Polity2 −≥3 / GDP-pc −≥15% from peak / UCDP onset / FSI +≥10), the broad
+institutional signal (neg-P1) **recovers its edge over wealth**: P1-minus-wealth AUC
+goes from −0.006 (crisis) to **+0.044** (dysfunction) in 2004, and from +0.031 to
+**+0.082** in 2012 — the institutional level out-predicts income once the outcome is
+not restricted to the capital-coupled death/default event. The **narrow durability
+gap** stays below wealth even on dysfunction (it is the specifically-modern-pathology
+instrument of Finding 4, not the broad signal). Reading: the modern order **decoupled
+institutional failure from its terminal consequence** — the MI still identifies
+structurally vulnerable states; they no longer die, they become permanent dysfunction
+zones. But this recovers a modern-holdout distortion; it is **not** measured on, and
+does not account for, the longitudinal curve. Epistemic status: **1945-break and
+death-tracking refuted; dysfunction-recovery demonstrated but modest and
+cross-sectional.**
+
+**C — Measurement regime change: not supported (share ≈ 0).** Rebuilding 2004-vintage
+P1 from **revealed-outcome** state-capacity series (tax revenue %GDP, education
+expenditure %GDP, 0–100 percentile-ranked into the WGI P1 keys via the Finding-1 seam;
+LPI unavailable at a 2004 origin) and grading against the same committed 2004→2024
+crisis labels, revealed-P1 **under-performs perception-based P1 on every variant**
+(neg-P1 AUC 0.72 vs 0.77; PPV lift 1.15 vs 1.49). Perception is not a bottleneck —
+WGI predicts crises *better* than the available functional proxies. Nor is there
+systematic **perception lag**: across 34 evaluable 2010–2024 crisis countries, WGI
+government-effectiveness actually *rose* +4.4 on average in the pre-crisis decade and
+only 10/34 show functional-down-while-perception-flat (the crisis set is conflict-onset
+heavy — external shocks WGI would not register, echoing Finding 5). Epistemic status:
+**null** (with the Finding-1 caveat that revealed substitution preserves cross-sectional
+*rank order*, ρ≈0.98 — that is construct validity, a different claim from temporal
+crisis prediction).
+
+**Decomposition.**
+
+| component | claim | key test | result | share of erosion |
+|---|---|---|---|---|
+| A dilution | young states diluted the signal | A2 mature-only slope | mature erodes r=−0.94 ≈ full r=−0.91 | **≈ 0** |
+| B consequence | state death became impossible | B1 break / B2 dysfunction / B3 death-rate | no 1945 break; death-rate null; dysfunction recovers +0.05 AUC (cross-sectional only) | **≈ 0 longitudinal** (modest cross-sectional) |
+| C measurement | perceptions lag reality | C1 revealed-P1 holdout | revealed under-performs perception | **≈ 0** |
+| **residual** | — | — | — | **≈ 100% of the longitudinal curve** |
+
+**Bottom line (this session is diagnosis only — no framework changes proposed).** The
+institutional signal is real and ancient (Findings 1–4). Its 150-year erosion is
+demonstrated (Finding 2/7). But the erosion is **not** the structural analogue of
+mass state creation the thesis proposed: it is not composition (mature states erode
+too), not a 1945 consequence-break (smooth decline from 1816), and not perception lag
+(functional proxies predict worse). **Under the pre-registered gate (<50% ⇒ missing
+structure), the erosion's cause is an open question.** What *is* established, and is
+valuable: two bounded scope characterizations — the durability gate is a mature-state
+instrument (A3), and the institutional signal recovers as a **dysfunction detector**
+when the outcome is not restricted to capital-coupled death/default (B2). Candidate
+residual mechanisms — untested here, flagged for future pre-registration — are *not*
+in the A/B/C family: (1) improving GDP measurement + industrialization making wealth a
+better proxy for state capacity over time (wealth catching up to structure as a
+predictor); (2) the conflict outcome changing character (interstate→intrastate) across
+the period; (3) variance-compression in V-Dem rule-of-law as formal-legal institutions
+diffused. Artifacts: `data/robustness/decomposition/{component_A,component_B,component_C,synthesis}.json`,
+`data/robustness/formation/state_formation.json`; code
+`scripts/robustness/{formation_classify,erosion_component_A,erosion_component_B,erosion_component_C,erosion_synthesis,fetch_p1_timeseries}.py`;
+pre-registration `docs/EROSION_DECOMPOSITION_PREREGISTRATION.md`.
 
 ---
 

@@ -1,0 +1,112 @@
+{
+  "target": "the ~150y erosion (Finding 2/7): structure-minus-wealth AUC spread declining, r=-0.85..-0.91",
+  "metric_families": {
+    "longitudinal": "spread slope over 1816-1990 \u2014 where 'share of erosion' is literally defined",
+    "cross_sectional_holdout": "does structure out-predict wealth on 2004/2012->2024 \u2014 related but distinct"
+  },
+  "A_denominator_dilution": {
+    "longitudinal_share": 0.0,
+    "raw_estimate": -0.905,
+    "full_slope_per_yr": -0.0008569068076668913,
+    "mature_slope_per_yr": -0.001632558139534887,
+    "verdict": "NOT SUPPORTED as the erosion driver \u2014 mature-only erodes as strongly (r=-0.9404605869481206) as full (r=-0.9069608402685074); share clamps to ~0. Surviving piece is CROSS-SECTIONAL: the gate is a mature-state instrument.",
+    "cross_sectional_A3_gap_AUC_2012": {
+      "mature": 0.829,
+      "post_colonial": 0.689,
+      "early_post_colonial": 0.5
+    },
+    "A4_age_alone_AUC_2004": 0.581
+  },
+  "B_consequence_elimination": {
+    "B1_best_model": "linear",
+    "B1_verdict": "NO sharp 1945 break \u2014 single-linear wins on AIC; erosion is smooth from 1816, predating the territorial-integrity norm.",
+    "B3_state_death_vs_spread_r": -0.044,
+    "B3_p": 0.862,
+    "B3_verdict": "NULL \u2014 state-death rate does not track signal strength (COW exits conflate conquest with voluntary dissolution/unification).",
+    "B2_dysfunction_recovery": {
+      "2004": {
+        "P1_vs_wealth": {
+          "crisis": -0.006,
+          "dys_polity": 0.044,
+          "dys_vdem": 0.01,
+          "recovery_polity": 0.05,
+          "recovery_vdem": 0.016
+        },
+        "gap_vs_wealth": {
+          "crisis": -0.152,
+          "dys_polity": -0.082,
+          "dys_vdem": -0.096,
+          "recovery_polity": 0.07,
+          "recovery_vdem": 0.056
+        }
+      },
+      "2012": {
+        "P1_vs_wealth": {
+          "crisis": 0.031,
+          "dys_polity": 0.082,
+          "dys_vdem": 0.044,
+          "recovery_polity": 0.051,
+          "recovery_vdem": 0.013
+        },
+        "gap_vs_wealth": {
+          "crisis": -0.062,
+          "dys_polity": -0.043,
+          "dys_vdem": -0.024,
+          "recovery_polity": 0.019,
+          "recovery_vdem": 0.038
+        }
+      }
+    },
+    "B2_verdict": "PARTIAL POSITIVE \u2014 the broad institutional signal (neg-P1) recovers on the pre-registered dysfunction outcome: it flips tie->win vs wealth in 2004 and grows its edge in 2012. The narrow durability GAP stays below wealth. This is the one surviving mechanism, but it addresses the modern-holdout distortion, not the longitudinal curve."
+  },
+  "C_measurement_regime_change": {
+    "cross_sectional_share": 0.0,
+    "revealed_minus_perception_deltas": {
+      "P1_tax": {
+        "negP1_delta": -0.044,
+        "vuln_delta": -0.063,
+        "lift_delta": -0.34
+      },
+      "P1_edu": {
+        "negP1_delta": -0.097,
+        "vuln_delta": -0.095,
+        "lift_delta": -0.261
+      },
+      "P1_tax_edu": {
+        "negP1_delta": -0.051,
+        "vuln_delta": -0.084,
+        "lift_delta": -0.347
+      }
+    },
+    "C2_mean_wgi_GE_change_pre": 4.4,
+    "C2_n_functional_down_perception_flat": 10,
+    "C2_n_evaluable": 34,
+    "verdict": "NOT SUPPORTED \u2014 revealed-outcome P1 UNDERperforms perception-P1 (all deltas negative); no systematic perception lag. C's share ~= 0."
+  },
+  "decomposition_table": [
+    {
+      "component": "A denominator dilution",
+      "claim": "young states diluted the signal",
+      "longitudinal_share": 0.0,
+      "verdict": "not supported (mature erodes too)"
+    },
+    {
+      "component": "B consequence elimination",
+      "claim": "state death became impossible",
+      "longitudinal_share": 0.0,
+      "cross_sectional": "partial: dysfunction recovers ~0.05 AUC of P1-over-wealth edge",
+      "verdict": "strong form (1945 break / death-tracking) not supported; dysfunction-recovery real but modest"
+    },
+    {
+      "component": "C measurement lag",
+      "claim": "perceptions lag functional reality",
+      "cross_sectional_share": 0.0,
+      "verdict": "not supported (revealed P1 predicts worse)"
+    }
+  ],
+  "total_longitudinal_explained": 0.0,
+  "bottom_line": "The compound structural hypothesis, as operationalized, explains WELL UNDER 50% of the longitudinal erosion (A~=0, B-longitudinal~=0, C~=0). Per the pre-registered gate, the residual is LARGE and the erosion's cause is substantially UNEXPLAINED by A/B/C. Two genuine positives survive as bounded scope characterizations, not explanations of the curve: (A3) the durability gate is a mature-state instrument cross-sectionally, and (B2) the institutional signal recovers on a broader dysfunction outcome \u2014 the modern order decoupled institutional failure from terminal outcomes without repealing the relationship.",
+  "residual_open_questions": [
+    "Why does the structure-over-wealth edge shrink WITHIN mature states over 150y? Candidate residual mechanisms (untested here, diagnosis-only): (1) wealth/GDP measurement improved and industrial economies made GDP a better proxy for state capacity, so wealth catches up to structure as a predictor; (2) the conflict-onset outcome itself changed character (interstate->intrastate) across the period; (3) V-Dem rule-of-law's variance compressed as more states adopted formal-legal institutions, shrinking its discriminating power. None are consequence-elimination, dilution, or perception-lag."
+  ]
+}
