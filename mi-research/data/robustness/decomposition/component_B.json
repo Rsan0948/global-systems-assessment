@@ -1,0 +1,445 @@
+{
+  "component": "B_consequence_elimination",
+  "B1_structural_break": {
+    "method": "dense erosion curve (10y anchors); single-linear vs continuous broken-stick; lower AIC/BIC better",
+    "n_points": 19,
+    "year_span": [
+      1816,
+      1996
+    ],
+    "single_linear": {
+      "params": 2,
+      "rss": 0.030196,
+      "aic": -64.526,
+      "bic": -62.637,
+      "slope": -0.001056
+    },
+    "broken_stick": {
+      "1918": {
+        "break": 1918,
+        "params": 3,
+        "rss": 0.028861,
+        "aic": -63.385,
+        "bic": -60.552,
+        "slope_before": -0.000802,
+        "slope_after": -0.00143
+      },
+      "1945": {
+        "break": 1945,
+        "params": 3,
+        "rss": 0.028731,
+        "aic": -63.47,
+        "bic": -60.637,
+        "slope_before": -0.00088,
+        "slope_after": -0.001726
+      },
+      "1960": {
+        "break": 1960,
+        "params": 3,
+        "rss": 0.028826,
+        "aic": -63.407,
+        "bic": -60.574,
+        "slope_before": -0.000922,
+        "slope_after": -0.002047
+      },
+      "1991": {
+        "break": 1991,
+        "params": 3,
+        "rss": 0.028617,
+        "aic": -63.546,
+        "bic": -60.713,
+        "slope_before": -0.000986,
+        "slope_after": -0.009843
+      }
+    },
+    "best_by_aic": "linear",
+    "reading": "sharp 1945 break => territorial-integrity norm is the mechanism; smooth linear or non-1945 break => consequence-elimination is one force among several"
+  },
+  "B2_dysfunction_holdout": {
+    "2004": {
+      "sub_outcome_coverage": {
+        "D1_polity_backslide": {
+          "observed": 83,
+          "positive": 7
+        },
+        "D2_gdp_drop15": {
+          "observed": 85,
+          "positive": 18
+        },
+        "D3_conflict_onset": {
+          "observed": 89,
+          "positive": 34
+        },
+        "D4_fsi_rise10": {
+          "observed": 0,
+          "positive": 0
+        },
+        "D1v_libdem_backslide": {
+          "observed": 89,
+          "positive": 25
+        }
+      },
+      "crisis(committed)": {
+        "n": 89,
+        "n_pos": 48,
+        "base_rate": 0.539,
+        "AUC": {
+          "durability_gap": 0.654,
+          "neg_P1_institutional": 0.8,
+          "wealth_neg_logGDP": 0.806
+        },
+        "gap_beats_wealth": -0.152,
+        "logit_gap_coef_z": 0.4586,
+        "gate_confusion": {
+          "TP": 38,
+          "FP": 15,
+          "FN": 10,
+          "TN": 26,
+          "sensitivity": 0.792,
+          "specificity": 0.634
+        }
+      },
+      "dysfunction_polity": {
+        "n": 89,
+        "n_pos": 46,
+        "base_rate": 0.517,
+        "AUC": {
+          "durability_gap": 0.628,
+          "neg_P1_institutional": 0.754,
+          "wealth_neg_logGDP": 0.71
+        },
+        "gap_beats_wealth": -0.082,
+        "logit_gap_coef_z": 0.2942,
+        "gate_confusion": {
+          "TP": 36,
+          "FP": 17,
+          "FN": 10,
+          "TN": 26,
+          "sensitivity": 0.783,
+          "specificity": 0.605
+        }
+      },
+      "dysfunction_vdem": {
+        "n": 89,
+        "n_pos": 59,
+        "base_rate": 0.663,
+        "AUC": {
+          "durability_gap": 0.604,
+          "neg_P1_institutional": 0.71,
+          "wealth_neg_logGDP": 0.7
+        },
+        "gap_beats_wealth": -0.096,
+        "logit_gap_coef_z": 0.2421,
+        "gate_confusion": {
+          "TP": 40,
+          "FP": 13,
+          "FN": 19,
+          "TN": 17,
+          "sensitivity": 0.678,
+          "specificity": 0.567
+        }
+      }
+    },
+    "2012": {
+      "sub_outcome_coverage": {
+        "D1_polity_backslide": {
+          "observed": 83,
+          "positive": 6
+        },
+        "D2_gdp_drop15": {
+          "observed": 86,
+          "positive": 12
+        },
+        "D3_conflict_onset": {
+          "observed": 90,
+          "positive": 26
+        },
+        "D4_fsi_rise10": {
+          "observed": 89,
+          "positive": 5
+        },
+        "D1v_libdem_backslide": {
+          "observed": 89,
+          "positive": 27
+        }
+      },
+      "crisis(committed)": {
+        "n": 90,
+        "n_pos": 37,
+        "base_rate": 0.411,
+        "AUC": {
+          "durability_gap": 0.686,
+          "neg_P1_institutional": 0.779,
+          "wealth_neg_logGDP": 0.748
+        },
+        "gap_beats_wealth": -0.062,
+        "logit_gap_coef_z": 0.5942,
+        "gate_confusion": {
+          "TP": 32,
+          "FP": 35,
+          "FN": 5,
+          "TN": 18,
+          "sensitivity": 0.865,
+          "specificity": 0.34
+        }
+      },
+      "dysfunction_polity": {
+        "n": 90,
+        "n_pos": 37,
+        "base_rate": 0.411,
+        "AUC": {
+          "durability_gap": 0.701,
+          "neg_P1_institutional": 0.826,
+          "wealth_neg_logGDP": 0.744
+        },
+        "gap_beats_wealth": -0.043,
+        "logit_gap_coef_z": 0.6684,
+        "gate_confusion": {
+          "TP": 34,
+          "FP": 33,
+          "FN": 3,
+          "TN": 20,
+          "sensitivity": 0.919,
+          "specificity": 0.377
+        }
+      },
+      "dysfunction_vdem": {
+        "n": 90,
+        "n_pos": 53,
+        "base_rate": 0.589,
+        "AUC": {
+          "durability_gap": 0.673,
+          "neg_P1_institutional": 0.741,
+          "wealth_neg_logGDP": 0.697
+        },
+        "gap_beats_wealth": -0.024,
+        "logit_gap_coef_z": 0.6066,
+        "gate_confusion": {
+          "TP": 45,
+          "FP": 22,
+          "FN": 8,
+          "TN": 15,
+          "sensitivity": 0.849,
+          "specificity": 0.405
+        }
+      }
+    }
+  },
+  "B3_state_death_vs_signal": {
+    "method": "COW system exits (endyear<2016) per decade vs erosion spread per decade",
+    "series": [
+      {
+        "decade": 1820,
+        "state_deaths": 0,
+        "spread": 0.28
+      },
+      {
+        "decade": 1830,
+        "state_deaths": 0,
+        "spread": 0.1
+      },
+      {
+        "decade": 1840,
+        "state_deaths": 0,
+        "spread": 0.0833
+      },
+      {
+        "decade": 1850,
+        "state_deaths": 0,
+        "spread": 0.1727
+      },
+      {
+        "decade": 1860,
+        "state_deaths": 10,
+        "spread": 0.1875
+      },
+      {
+        "decade": 1870,
+        "state_deaths": 4,
+        "spread": 0.1019
+      },
+      {
+        "decade": 1880,
+        "state_deaths": 2,
+        "spread": 0.1588
+      },
+      {
+        "decade": 1890,
+        "state_deaths": 0,
+        "spread": 0.1298
+      },
+      {
+        "decade": 1900,
+        "state_deaths": 2,
+        "spread": 0.1369
+      },
+      {
+        "decade": 1910,
+        "state_deaths": 4,
+        "spread": 0.1193
+      },
+      {
+        "decade": 1920,
+        "state_deaths": 0,
+        "spread": 0.0908
+      },
+      {
+        "decade": 1930,
+        "state_deaths": 5,
+        "spread": 0.1029
+      },
+      {
+        "decade": 1940,
+        "state_deaths": 13,
+        "spread": 0.071
+      },
+      {
+        "decade": 1950,
+        "state_deaths": 1,
+        "spread": 0.064
+      },
+      {
+        "decade": 1960,
+        "state_deaths": 1,
+        "spread": 0.0307
+      },
+      {
+        "decade": 1970,
+        "state_deaths": 1,
+        "spread": 0.0566
+      },
+      {
+        "decade": 1980,
+        "state_deaths": 0,
+        "spread": 0.021
+      },
+      {
+        "decade": 1990,
+        "state_deaths": 5,
+        "spread": -0.0197
+      }
+    ],
+    "pearson_deaths_vs_spread": {
+      "r": -0.044,
+      "p": 0.862,
+      "n": 18
+    },
+    "reading": "both declining together (positive r: fewer deaths <-> lower spread) is consistent with the signal's erosion tracking the elimination of the outcome it predicted"
+  },
+  "dense_curve": [
+    {
+      "year": 1816,
+      "n": 12,
+      "onset_rate": 0.5,
+      "spread": 0.2222
+    },
+    {
+      "year": 1826,
+      "n": 15,
+      "onset_rate": 0.667,
+      "spread": 0.28
+    },
+    {
+      "year": 1836,
+      "n": 18,
+      "onset_rate": 0.556,
+      "spread": 0.1
+    },
+    {
+      "year": 1846,
+      "n": 22,
+      "onset_rate": 0.545,
+      "spread": 0.0833
+    },
+    {
+      "year": 1856,
+      "n": 21,
+      "onset_rate": 0.524,
+      "spread": 0.1727
+    },
+    {
+      "year": 1866,
+      "n": 25,
+      "onset_rate": 0.36,
+      "spread": 0.1875
+    },
+    {
+      "year": 1876,
+      "n": 30,
+      "onset_rate": 0.4,
+      "spread": 0.1019
+    },
+    {
+      "year": 1886,
+      "n": 32,
+      "onset_rate": 0.469,
+      "spread": 0.1588
+    },
+    {
+      "year": 1896,
+      "n": 34,
+      "onset_rate": 0.559,
+      "spread": 0.1298
+    },
+    {
+      "year": 1906,
+      "n": 49,
+      "onset_rate": 0.347,
+      "spread": 0.1369
+    },
+    {
+      "year": 1916,
+      "n": 46,
+      "onset_rate": 0.478,
+      "spread": 0.1193
+    },
+    {
+      "year": 1926,
+      "n": 62,
+      "onset_rate": 0.597,
+      "spread": 0.0908
+    },
+    {
+      "year": 1936,
+      "n": 64,
+      "onset_rate": 0.641,
+      "spread": 0.1029
+    },
+    {
+      "year": 1946,
+      "n": 53,
+      "onset_rate": 0.566,
+      "spread": 0.071
+    },
+    {
+      "year": 1956,
+      "n": 138,
+      "onset_rate": 0.522,
+      "spread": 0.064
+    },
+    {
+      "year": 1966,
+      "n": 139,
+      "onset_rate": 0.597,
+      "spread": 0.0307
+    },
+    {
+      "year": 1976,
+      "n": 142,
+      "onset_rate": 0.634,
+      "spread": 0.0566
+    },
+    {
+      "year": 1986,
+      "n": 157,
+      "onset_rate": 0.554,
+      "spread": 0.021
+    },
+    {
+      "year": 1996,
+      "n": 160,
+      "onset_rate": 0.475,
+      "spread": -0.0197
+    }
+  ]
+}
