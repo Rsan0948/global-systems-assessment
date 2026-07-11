@@ -20,3 +20,6 @@ mi-research/data/robustness/outcomes/*.xlsx
 mi-research/data/robustness/outcomes/*.zip
 mi-research/data/robustness/outcomes/gdp_pcap_ppp_kd_raw.json
 mi-research/data/robustness/outcomes/ucdp/
+
+# COW raw downloads (re-fetchable)
+mi-research/data/robustness/outcomes/cow/

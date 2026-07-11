@@ -1,0 +1,112 @@
+{
+  "test": "decay_curve_epoch_panel_conflict_outcome",
+  "outcome": "conflict/war ONSET within [anchor, anchor+25]",
+  "outcome_source": "UCDP/PRIO ACD v24.1 u COW Inter+Intra war (onset span 1818-2023)",
+  "structure_signal": "V-Dem rule-of-law (institutional core); low => onset",
+  "wealth_signal": "log Maddison GDP-per-capita; low => onset",
+  "panel": "polities with BOTH rule-of-law and GDP at the anchor year (common set)",
+  "window_years": 25,
+  "hypothesis": "structure-minus-wealth spread positive & large early, eroding toward present",
+  "epochs": [
+    {
+      "year": 1816,
+      "window": [
+        1816,
+        1841
+      ],
+      "n": 12,
+      "n_onset": 6,
+      "onset_rate": 0.5,
+      "structure_auc": 0.444,
+      "wealth_auc": 0.222,
+      "spread_struct_minus_wealth": 0.222,
+      "trust_flags": [
+        "small_n"
+      ]
+    },
+    {
+      "year": 1850,
+      "window": [
+        1850,
+        1875
+      ],
+      "n": 34,
+      "n_onset": 17,
+      "onset_rate": 0.5,
+      "structure_auc": 0.588,
+      "wealth_auc": 0.457,
+      "spread_struct_minus_wealth": 0.131,
+      "trust_flags": []
+    },
+    {
+      "year": 1880,
+      "window": [
+        1880,
+        1905
+      ],
+      "n": 31,
+      "n_onset": 14,
+      "onset_rate": 0.452,
+      "structure_auc": 0.807,
+      "wealth_auc": 0.639,
+      "spread_struct_minus_wealth": 0.168,
+      "trust_flags": []
+    },
+    {
+      "year": 1910,
+      "window": [
+        1910,
+        1935
+      ],
+      "n": 50,
+      "n_onset": 22,
+      "onset_rate": 0.44,
+      "structure_auc": 0.582,
+      "wealth_auc": 0.451,
+      "spread_struct_minus_wealth": 0.131,
+      "trust_flags": []
+    },
+    {
+      "year": 1940,
+      "window": [
+        1940,
+        1965
+      ],
+      "n": 57,
+      "n_onset": 36,
+      "onset_rate": 0.632,
+      "structure_auc": 0.566,
+      "wealth_auc": 0.488,
+      "spread_struct_minus_wealth": 0.078,
+      "trust_flags": []
+    },
+    {
+      "year": 1970,
+      "window": [
+        1970,
+        1995
+      ],
+      "n": 141,
+      "n_onset": 87,
+      "onset_rate": 0.617,
+      "structure_auc": 0.639,
+      "wealth_auc": 0.594,
+      "spread_struct_minus_wealth": 0.046,
+      "trust_flags": []
+    },
+    {
+      "year": 1990,
+      "window": [
+        1990,
+        2015
+      ],
+      "n": 159,
+      "n_onset": 84,
+      "onset_rate": 0.528,
+      "structure_auc": 0.72,
+      "wealth_auc": 0.65,
+      "spread_struct_minus_wealth": 0.07,
+      "trust_flags": []
+    }
+  ]
+}
