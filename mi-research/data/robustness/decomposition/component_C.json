@@ -1,0 +1,590 @@
+{
+  "component": "C_measurement_regime_change",
+  "C1_revealed_P1_holdout": {
+    "method": "Finding-1 seam: inject 0-100 percentile-ranked revealed series into P1 WGI keys at 2004; re-score; run frozen predict(); grade vs committed 2004->2024 crisis labels.",
+    "revealed_2004_coverage": {
+      "P1_tax": 65,
+      "P1_edu": 64,
+      "P1_tax_edu": 75
+    },
+    "perception_P1_full_holdout": {
+      "n": 89,
+      "base_rate": 0.539,
+      "AUC": {
+        "vuln_score": 0.732,
+        "durability_gap": 0.654,
+        "neg_P1_institutional": 0.8
+      },
+      "elevated_confusion": {
+        "TP": 38,
+        "FP": 15,
+        "FN": 10,
+        "TN": 26,
+        "sensitivity": 0.792,
+        "specificity": 0.634,
+        "PPV": 0.717,
+        "lift_over_base": 1.329,
+        "accuracy": 0.719
+      }
+    },
+    "revealed_variants": {
+      "P1_tax": {
+        "coverage": 65,
+        "metrics": {
+          "n": 65,
+          "base_rate": 0.492,
+          "AUC": {
+            "vuln_score": 0.697,
+            "durability_gap": 0.626,
+            "neg_P1_institutional": 0.725
+          },
+          "elevated_confusion": {
+            "TP": 25,
+            "FP": 19,
+            "FN": 7,
+            "TN": 14,
+            "sensitivity": 0.781,
+            "specificity": 0.424,
+            "PPV": 0.568,
+            "lift_over_base": 1.154,
+            "accuracy": 0.6
+          }
+        },
+        "isos": [
+          "ARG",
+          "ARM",
+          "BEL",
+          "BGD",
+          "BIH",
+          "BOL",
+          "BWA",
+          "CAN",
+          "CHL",
+          "CHN",
+          "CIV",
+          "COD",
+          "COL",
+          "CRI",
+          "CZE",
+          "DEU",
+          "DOM",
+          "EGY",
+          "ESP",
+          "EST",
+          "ETH",
+          "FJI",
+          "FRA",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GNQ",
+          "GRC",
+          "GTM",
+          "HND",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "KAZ",
+          "KOR",
+          "LBN",
+          "LKA",
+          "LTU",
+          "LVA",
+          "MLI",
+          "MMR",
+          "MNG",
+          "MUS",
+          "MYS",
+          "NIC",
+          "NPL",
+          "PER",
+          "PNG",
+          "POL",
+          "RUS",
+          "SGP",
+          "SVK",
+          "SVN",
+          "THA",
+          "TTO",
+          "TUN",
+          "UKR",
+          "URY",
+          "ZAF"
+        ]
+      },
+      "P1_edu": {
+        "coverage": 64,
+        "metrics": {
+          "n": 64,
+          "base_rate": 0.469,
+          "AUC": {
+            "vuln_score": 0.627,
+            "durability_gap": 0.588,
+            "neg_P1_institutional": 0.658
+          },
+          "elevated_confusion": {
+            "TP": 23,
+            "FP": 20,
+            "FN": 7,
+            "TN": 14,
+            "sensitivity": 0.767,
+            "specificity": 0.412,
+            "PPV": 0.535,
+            "lift_over_base": 1.141,
+            "accuracy": 0.578
+          }
+        },
+        "isos": [
+          "ARG",
+          "ARM",
+          "BEL",
+          "BGD",
+          "BOL",
+          "BRA",
+          "BWA",
+          "CAN",
+          "CHL",
+          "CIV",
+          "CMR",
+          "COL",
+          "CRI",
+          "CUB",
+          "CZE",
+          "DOM",
+          "EGY",
+          "ERI",
+          "ESP",
+          "EST",
+          "ETH",
+          "FJI",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GRC",
+          "GTM",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JPN",
+          "KAZ",
+          "LBN",
+          "LTU",
+          "LVA",
+          "MLI",
+          "MNG",
+          "MUS",
+          "MYS",
+          "NIC",
+          "NPL",
+          "OMN",
+          "PAK",
+          "PER",
+          "POL",
+          "RUS",
+          "SAU",
+          "SDN",
+          "SGP",
+          "SVK",
+          "SVN",
+          "THA",
+          "TTO",
+          "TUN",
+          "UKR",
+          "URY",
+          "VEN",
+          "ZAF"
+        ]
+      },
+      "P1_tax_edu": {
+        "coverage": 75,
+        "metrics": {
+          "n": 75,
+          "base_rate": 0.48,
+          "AUC": {
+            "vuln_score": 0.637,
+            "durability_gap": 0.6,
+            "neg_P1_institutional": 0.711
+          },
+          "elevated_confusion": {
+            "TP": 27,
+            "FP": 27,
+            "FN": 9,
+            "TN": 12,
+            "sensitivity": 0.75,
+            "specificity": 0.308,
+            "PPV": 0.5,
+            "lift_over_base": 1.042,
+            "accuracy": 0.52
+          }
+        },
+        "isos": [
+          "ARG",
+          "ARM",
+          "BEL",
+          "BGD",
+          "BIH",
+          "BOL",
+          "BRA",
+          "BWA",
+          "CAN",
+          "CHL",
+          "CHN",
+          "CIV",
+          "CMR",
+          "COD",
+          "COL",
+          "CRI",
+          "CUB",
+          "CZE",
+          "DEU",
+          "DOM",
+          "EGY",
+          "ERI",
+          "ESP",
+          "EST",
+          "ETH",
+          "FJI",
+          "FRA",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GNQ",
+          "GRC",
+          "GTM",
+          "HND",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JPN",
+          "KAZ",
+          "KOR",
+          "LBN",
+          "LKA",
+          "LTU",
+          "LVA",
+          "MLI",
+          "MMR",
+          "MNG",
+          "MUS",
+          "MYS",
+          "NIC",
+          "NPL",
+          "OMN",
+          "PAK",
+          "PER",
+          "PNG",
+          "POL",
+          "RUS",
+          "SAU",
+          "SDN",
+          "SGP",
+          "SVK",
+          "SVN",
+          "THA",
+          "TTO",
+          "TUN",
+          "UKR",
+          "URY",
+          "VEN",
+          "ZAF"
+        ]
+      }
+    },
+    "perception_baseline_on_matched_isos": {
+      "P1_tax": {
+        "n": 65,
+        "base_rate": 0.492,
+        "AUC": {
+          "vuln_score": 0.76,
+          "durability_gap": 0.683,
+          "neg_P1_institutional": 0.769
+        },
+        "elevated_confusion": {
+          "TP": 25,
+          "FP": 9,
+          "FN": 7,
+          "TN": 24,
+          "sensitivity": 0.781,
+          "specificity": 0.727,
+          "PPV": 0.735,
+          "lift_over_base": 1.494,
+          "accuracy": 0.754
+        }
+      },
+      "P1_edu": {
+        "n": 64,
+        "base_rate": 0.469,
+        "AUC": {
+          "vuln_score": 0.722,
+          "durability_gap": 0.675,
+          "neg_P1_institutional": 0.755
+        },
+        "elevated_confusion": {
+          "TP": 23,
+          "FP": 12,
+          "FN": 7,
+          "TN": 22,
+          "sensitivity": 0.767,
+          "specificity": 0.647,
+          "PPV": 0.657,
+          "lift_over_base": 1.402,
+          "accuracy": 0.703
+        }
+      },
+      "P1_tax_edu": {
+        "n": 75,
+        "base_rate": 0.48,
+        "AUC": {
+          "vuln_score": 0.721,
+          "durability_gap": 0.652,
+          "neg_P1_institutional": 0.762
+        },
+        "elevated_confusion": {
+          "TP": 28,
+          "FP": 14,
+          "FN": 8,
+          "TN": 25,
+          "sensitivity": 0.778,
+          "specificity": 0.641,
+          "PPV": 0.667,
+          "lift_over_base": 1.389,
+          "accuracy": 0.707
+        }
+      }
+    },
+    "reading": "if revealed-P1 AUC/lift > perception-P1 on the matched iso set, perception is a bottleneck (C contributes)."
+  },
+  "C2_perception_lag": {
+    "method": "for 2010-2024 (UCDP/COW-onset) crisis countries, compare change in WGI gov-effectiveness vs change in tax %GDP over the ~10y pre-crisis window.",
+    "n_crisis_countries_evaluable": 34,
+    "mean_wgi_GE_change_pre": 4.4,
+    "mean_tax_change_pre": 0.32,
+    "n_functional_down_while_perception_flat_or_up": 10,
+    "n_both_decline": 4,
+    "per_country": [
+      {
+        "iso": "JOR",
+        "onset": 2016,
+        "wgi_GE_change_pre": 8.59,
+        "tax_change_pre": -10.7
+      },
+      {
+        "iso": "AGO",
+        "onset": 2016,
+        "wgi_GE_change_pre": 11.51,
+        "tax_change_pre": -6.83
+      },
+      {
+        "iso": "AZE",
+        "onset": 2012,
+        "wgi_GE_change_pre": 7.31,
+        "tax_change_pre": -3.64
+      },
+      {
+        "iso": "RUS",
+        "onset": 2015,
+        "wgi_GE_change_pre": 6.94,
+        "tax_change_pre": -2.59
+      },
+      {
+        "iso": "CHN",
+        "onset": 2020,
+        "wgi_GE_change_pre": 13.91,
+        "tax_change_pre": -2.21
+      },
+      {
+        "iso": "MYS",
+        "onset": 2013,
+        "wgi_GE_change_pre": -0.94,
+        "tax_change_pre": -2.14
+      },
+      {
+        "iso": "CIV",
+        "onset": 2011,
+        "wgi_GE_change_pre": -1.2,
+        "tax_change_pre": -1.96
+      },
+      {
+        "iso": "ETH",
+        "onset": 2015,
+        "wgi_GE_change_pre": 9.38,
+        "tax_change_pre": -1.33
+      },
+      {
+        "iso": "ISR",
+        "onset": 2014,
+        "wgi_GE_change_pre": -2.72,
+        "tax_change_pre": -1.29
+      },
+      {
+        "iso": "LBN",
+        "onset": 2014,
+        "wgi_GE_change_pre": 0.5,
+        "tax_change_pre": -1.27
+      },
+      {
+        "iso": "EGY",
+        "onset": 2014,
+        "wgi_GE_change_pre": -0.1,
+        "tax_change_pre": -1.13
+      },
+      {
+        "iso": "CAF",
+        "onset": 2015,
+        "wgi_GE_change_pre": 0.74,
+        "tax_change_pre": -0.76
+      },
+      {
+        "iso": "USA",
+        "onset": 2019,
+        "wgi_GE_change_pre": 0.71,
+        "tax_change_pre": -0.39
+      },
+      {
+        "iso": "BDI",
+        "onset": 2014,
+        "wgi_GE_change_pre": 20.96,
+        "tax_change_pre": -0.17
+      },
+      {
+        "iso": "TZA",
+        "onset": 2020,
+        "wgi_GE_change_pre": -0.55,
+        "tax_change_pre": 0.09
+      },
+      {
+        "iso": "BGD",
+        "onset": 2016,
+        "wgi_GE_change_pre": 7.02,
+        "tax_change_pre": 0.18
+      },
+      {
+        "iso": "KHM",
+        "onset": 2011,
+        "wgi_GE_change_pre": 5.89,
+        "tax_change_pre": 0.35
+      },
+      {
+        "iso": "TUN",
+        "onset": 2013,
+        "wgi_GE_change_pre": -10.12,
+        "tax_change_pre": 0.57
+      },
+      {
+        "iso": "AFG",
+        "onset": 2015,
+        "wgi_GE_change_pre": -6.13,
+        "tax_change_pre": 0.62
+      },
+      {
+        "iso": "IRN",
+        "onset": 2016,
+        "wgi_GE_change_pre": 10.48,
+        "tax_change_pre": 0.7
+      },
+      {
+        "iso": "TUR",
+        "onset": 2015,
+        "wgi_GE_change_pre": 4.9,
+        "tax_change_pre": 0.7
+      },
+      {
+        "iso": "CMR",
+        "onset": 2015,
+        "wgi_GE_change_pre": 8.2,
+        "tax_change_pre": 0.77
+      },
+      {
+        "iso": "MMR",
+        "onset": 2011,
+        "wgi_GE_change_pre": 0.79,
+        "tax_change_pre": 0.92
+      },
+      {
+        "iso": "PHL",
+        "onset": 2016,
+        "wgi_GE_change_pre": 7.72,
+        "tax_change_pre": 1.16
+      },
+      {
+        "iso": "COL",
+        "onset": 2018,
+        "wgi_GE_change_pre": 1.47,
+        "tax_change_pre": 1.58
+      },
+      {
+        "iso": "TGO",
+        "onset": 2022,
+        "wgi_GE_change_pre": 7.49,
+        "tax_change_pre": 2.0
+      },
+      {
+        "iso": "MLI",
+        "onset": 2012,
+        "wgi_GE_change_pre": -1.94,
+        "tax_change_pre": 2.02
+      },
+      {
+        "iso": "IND",
+        "onset": 2012,
+        "wgi_GE_change_pre": 7.64,
+        "tax_change_pre": 2.76
+      },
+      {
+        "iso": "THA",
+        "onset": 2011,
+        "wgi_GE_change_pre": -3.07,
+        "tax_change_pre": 3.39
+      },
+      {
+        "iso": "BFA",
+        "onset": 2018,
+        "wgi_GE_change_pre": 4.78,
+        "tax_change_pre": 4.01
+      },
+      {
+        "iso": "UKR",
+        "onset": 2014,
+        "wgi_GE_change_pre": 7.67,
+        "tax_change_pre": 4.13
+      },
+      {
+        "iso": "COD",
+        "onset": 2011,
+        "wgi_GE_change_pre": 7.65,
+        "tax_change_pre": 6.67
+      },
+      {
+        "iso": "MOZ",
+        "onset": 2013,
+        "wgi_GE_change_pre": 4.77,
+        "tax_change_pre": 7.19
+      },
+      {
+        "iso": "COG",
+        "onset": 2016,
+        "wgi_GE_change_pre": 9.21,
+        "tax_change_pre": 7.4
+      }
+    ],
+    "reading": "if tax systematically falls pre-crisis while WGI stays flat/up, perceptions mask early institutional decay (bottlenecks the holdout). Small-n descriptive."
+  }
+}
