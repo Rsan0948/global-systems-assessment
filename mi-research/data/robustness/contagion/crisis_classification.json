@@ -1,0 +1,10708 @@
+{
+"scheme": "DOMESTIC=COW intra + UCDP type3/4; EXTERNAL=COW inter + UCDP type1/2",
+"baseline_check": {
+"committed_pairs": 1176,
+"reproduced_pairs": 1176,
+"missing_from_repro": 0,
+"extra_vs_committed": 0,
+"missing_examples": [],
+"extra_examples": []
+},
+"counts": {
+"total_onset_pairs": 1176,
+"domestic_pairs": 798,
+"external_pairs": 426,
+"both_pairs": 48
+},
+"classification_primary": {
+"AFG|1924": [
+"domestic"
+],
+"AFG|1928": [
+"domestic"
+],
+"AFG|1978": [
+"domestic"
+],
+"AFG|1979": [
+"external"
+],
+"AFG|1989": [
+"domestic"
+],
+"AFG|2001": [
+"external"
+],
+"AFG|2015": [
+"domestic"
+],
+"AGO|1961": [
+"external"
+],
+"AGO|1975": [
+"domestic",
+"external"
+],
+"AGO|1976": [
+"domestic"
+],
+"AGO|1991": [
+"domestic"
+],
+"AGO|1992": [
+"domestic"
+],
+"AGO|1994": [
+"domestic"
+],
+"AGO|1997": [
+"domestic"
+],
+"AGO|1998": [
+"domestic"
+],
+"AGO|2002": [
+"domestic"
+],
+"AGO|2007": [
+"domestic"
+],
+"AGO|2009": [
+"domestic"
+],
+"AGO|2016": [
+"domestic"
+],
+"AGO|2019": [
+"domestic"
+],
+"AGO|2022": [
+"domestic"
+],
+"ALB|1946": [
+"external"
+],
+"ARE|1991": [
+"external"
+],
+"ARG|1841": [
+"domestic"
+],
+"ARG|1851": [
+"external"
+],
+"ARG|1861": [
+"domestic"
+],
+"ARG|1863": [
+"domestic"
+],
+"ARG|1865": [
+"external"
+],
+"ARG|1866": [
+"domestic"
+],
+"ARG|1870": [
+"domestic"
+],
+"ARG|1874": [
+"domestic"
+],
+"ARG|1879": [
+"domestic"
+],
+"ARG|1880": [
+"domestic"
+],
+"ARG|1955": [
+"domestic"
+],
+"ARG|1963": [
+"domestic"
+],
+"ARG|1974": [
+"domestic"
+],
+"ARG|1975": [
+"domestic"
+],
+"ARG|1982": [
+"external"
+],
+"ARM|1991": [
+"domestic"
+],
+"ARM|1993": [
+"external"
+],
+"AUS|1939": [
+"external"
+],
+"AUS|1950": [
+"external"
+],
+"AUS|1965": [
+"external"
+],
+"AUS|1992": [
+"domestic"
+],
+"AUS|2001": [
+"external"
+],
+"AUS|2003": [
+"external"
+],
+"AUT|1821": [
+"domestic"
+],
+"AUT|1848": [
+"domestic",
+"external"
+],
+"AUT|1849": [
+"external"
+],
+"AUT|1859": [
+"external"
+],
+"AUT|1864": [
+"external"
+],
+"AUT|1866": [
+"external"
+],
+"AUT|1914": [
+"external"
+],
+"AZE|1991": [
+"domestic"
+],
+"AZE|1993": [
+"domestic",
+"external"
+],
+"AZE|1995": [
+"domestic"
+],
+"AZE|1997": [
+"domestic"
+],
+"AZE|2005": [
+"domestic"
+],
+"AZE|2008": [
+"domestic"
+],
+"AZE|2012": [
+"domestic"
+],
+"AZE|2014": [
+"domestic"
+],
+"AZE|2020": [
+"domestic"
+],
+"BDI|1965": [
+"domestic"
+],
+"BDI|1972": [
+"domestic"
+],
+"BDI|1991": [
+"domestic"
+],
+"BDI|1993": [
+"domestic"
+],
+"BDI|1994": [
+"domestic"
+],
+"BDI|1998": [
+"domestic"
+],
+"BDI|2001": [
+"domestic"
+],
+"BDI|2008": [
+"domestic"
+],
+"BDI|2014": [
+"domestic"
+],
+"BDI|2019": [
+"domestic"
+],
+"BEL|1914": [
+"external"
+],
+"BEL|1940": [
+"external"
+],
+"BEL|1951": [
+"external"
+],
+"BEL|1960": [
+"domestic"
+],
+"BEL|1964": [
+"domestic"
+],
+"BEL|1978": [
+"domestic"
+],
+"BEN|2022": [
+"domestic"
+],
+"BFA|1985": [
+"external"
+],
+"BFA|1987": [
+"domestic"
+],
+"BFA|2018": [
+"domestic"
+],
+"BFA|2019": [
+"domestic"
+],
+"BGD|1975": [
+"domestic"
+],
+"BGD|2005": [
+"domestic"
+],
+"BGD|2016": [
+"domestic"
+],
+"BGR|1912": [
+"external"
+],
+"BGR|1913": [
+"external"
+],
+"BGR|1915": [
+"external"
+],
+"BGR|1923": [
+"domestic"
+],
+"BGR|1941": [
+"external"
+],
+"BGR|1944": [
+"external"
+],
+"BIH|1992": [
+"domestic",
+"external"
+],
+"BIH|1993": [
+"domestic"
+],
+"BIH|1995": [
+"domestic"
+],
+"BOL|1862": [
+"domestic"
+],
+"BOL|1870": [
+"domestic"
+],
+"BOL|1879": [
+"external"
+],
+"BOL|1932": [
+"external"
+],
+"BOL|1946": [
+"domestic"
+],
+"BOL|1949": [
+"domestic"
+],
+"BOL|1952": [
+"domestic"
+],
+"BOL|1967": [
+"domestic"
+],
+"BRA|1835": [
+"domestic"
+],
+"BRA|1837": [
+"domestic"
+],
+"BRA|1851": [
+"external"
+],
+"BRA|1864": [
+"external"
+],
+"BRA|1893": [
+"domestic"
+],
+"BRA|1896": [
+"domestic"
+],
+"BRA|1932": [
+"domestic"
+],
+"BRA|1944": [
+"external"
+],
+"BRN|1962": [
+"external"
+],
+"CAF|2001": [
+"domestic"
+],
+"CAF|2006": [
+"domestic"
+],
+"CAF|2009": [
+"domestic"
+],
+"CAF|2015": [
+"domestic"
+],
+"CAF|2017": [
+"domestic"
+],
+"CAF|2023": [
+"domestic"
+],
+"CAN|1939": [
+"external"
+],
+"CAN|1950": [
+"external"
+],
+"CAN|1991": [
+"external"
+],
+"CAN|2001": [
+"external"
+],
+"CHL|1851": [
+"domestic"
+],
+"CHL|1865": [
+"external"
+],
+"CHL|1879": [
+"external"
+],
+"CHL|1891": [
+"domestic"
+],
+"CHL|1973": [
+"domestic"
+],
+"CHN|1860": [
+"domestic"
+],
+"CHN|1862": [
+"domestic"
+],
+"CHN|1864": [
+"domestic"
+],
+"CHN|1866": [
+"domestic"
+],
+"CHN|1876": [
+"domestic"
+],
+"CHN|1884": [
+"external"
+],
+"CHN|1891": [
+"domestic"
+],
+"CHN|1894": [
+"external"
+],
+"CHN|1895": [
+"domestic"
+],
+"CHN|1900": [
+"external"
+],
+"CHN|1911": [
+"domestic"
+],
+"CHN|1913": [
+"domestic"
+],
+"CHN|1914": [
+"domestic"
+],
+"CHN|1916": [
+"domestic"
+],
+"CHN|1926": [
+"domestic"
+],
+"CHN|1928": [
+"domestic"
+],
+"CHN|1929": [
+"domestic",
+"external"
+],
+"CHN|1930": [
+"domestic"
+],
+"CHN|1931": [
+"domestic",
+"external"
+],
+"CHN|1934": [
+"domestic"
+],
+"CHN|1937": [
+"external"
+],
+"CHN|1941": [
+"external"
+],
+"CHN|1946": [
+"domestic"
+],
+"CHN|1947": [
+"domestic"
+],
+"CHN|1949": [
+"external"
+],
+"CHN|1950": [
+"domestic",
+"external"
+],
+"CHN|1954": [
+"external"
+],
+"CHN|1956": [
+"domestic"
+],
+"CHN|1958": [
+"external"
+],
+"CHN|1959": [
+"domestic"
+],
+"CHN|1962": [
+"external"
+],
+"CHN|1967": [
+"domestic",
+"external"
+],
+"CHN|1969": [
+"external"
+],
+"CHN|1974": [
+"external"
+],
+"CHN|1978": [
+"external"
+],
+"CHN|1979": [
+"external"
+],
+"CHN|1983": [
+"external"
+],
+"CHN|1986": [
+"external"
+],
+"CHN|1987": [
+"external"
+],
+"CHN|2008": [
+"domestic"
+],
+"CHN|2020": [
+"external"
+],
+"CIV|2002": [
+"domestic"
+],
+"CIV|2011": [
+"domestic"
+],
+"CMR|1957": [
+"external"
+],
+"CMR|1960": [
+"domestic"
+],
+"CMR|1984": [
+"domestic"
+],
+"CMR|1996": [
+"external"
+],
+"CMR|2015": [
+"domestic"
+],
+"CMR|2017": [
+"domestic"
+],
+"CMR|2019": [
+"domestic"
+],
+"CMR|2020": [
+"domestic"
+],
+"CMR|2021": [
+"domestic"
+],
+"CMR|2022": [
+"domestic"
+],
+"CMR|2023": [
+"domestic"
+],
+"COD|1960": [
+"domestic"
+],
+"COD|1961": [
+"domestic"
+],
+"COD|1963": [
+"domestic"
+],
+"COD|1964": [
+"domestic"
+],
+"COD|1967": [
+"domestic"
+],
+"COD|1975": [
+"external"
+],
+"COD|1977": [
+"domestic"
+],
+"COD|1978": [
+"domestic"
+],
+"COD|1996": [
+"domestic"
+],
+"COD|1998": [
+"domestic"
+],
+"COD|2005": [
+"domestic"
+],
+"COD|2007": [
+"domestic"
+],
+"COD|2011": [
+"domestic"
+],
+"COD|2013": [
+"domestic"
+],
+"COD|2016": [
+"domestic"
+],
+"COD|2017": [
+"domestic"
+],
+"COD|2020": [
+"domestic"
+],
+"COG|1993": [
+"domestic"
+],
+"COG|1997": [
+"domestic"
+],
+"COG|1998": [
+"domestic"
+],
+"COG|2002": [
+"domestic"
+],
+"COG|2016": [
+"domestic"
+],
+"COL|1840": [
+"domestic"
+],
+"COL|1860": [
+"domestic"
+],
+"COL|1863": [
+"external"
+],
+"COL|1876": [
+"domestic"
+],
+"COL|1884": [
+"domestic"
+],
+"COL|1895": [
+"domestic"
+],
+"COL|1899": [
+"domestic"
+],
+"COL|1948": [
+"domestic"
+],
+"COL|1951": [
+"external"
+],
+"COL|1964": [
+"domestic"
+],
+"COL|1989": [
+"domestic"
+],
+"COL|2018": [
+"domestic"
+],
+"COM|1989": [
+"domestic"
+],
+"COM|1997": [
+"domestic"
+],
+"CRI|1948": [
+"domestic"
+],
+"CUB|1912": [
+"domestic"
+],
+"CUB|1953": [
+"domestic"
+],
+"CUB|1956": [
+"domestic"
+],
+"CUB|1958": [
+"domestic"
+],
+"CUB|1961": [
+"domestic"
+],
+"CUB|1975": [
+"external"
+],
+"CUB|1976": [
+"domestic"
+],
+"CUB|1977": [
+"external"
+],
+"CUB|1978": [
+"domestic"
+],
+"CYP|1955": [
+"external"
+],
+"CYP|1974": [
+"external"
+],
+"CZE|1919": [
+"external"
+],
+"DEU|1848": [
+"external"
+],
+"DEU|1849": [
+"external"
+],
+"DEU|1864": [
+"external"
+],
+"DEU|1866": [
+"external"
+],
+"DEU|1870": [
+"external"
+],
+"DEU|1914": [
+"external"
+],
+"DEU|1918": [
+"domestic",
+"external"
+],
+"DEU|1919": [
+"external"
+],
+"DEU|1936": [
+"domestic"
+],
+"DEU|1939": [
+"external"
+],
+"DEU|1999": [
+"external"
+],
+"DJI|1991": [
+"domestic"
+],
+"DJI|1999": [
+"domestic"
+],
+"DJI|2008": [
+"external"
+],
+"DNK|1848": [
+"external"
+],
+"DNK|1849": [
+"external"
+],
+"DNK|1864": [
+"external"
+],
+"DOM|1965": [
+"domestic"
+],
+"DZA|1954": [
+"external"
+],
+"DZA|1962": [
+"domestic"
+],
+"DZA|1963": [
+"external"
+],
+"DZA|1991": [
+"domestic"
+],
+"DZA|1992": [
+"domestic"
+],
+"DZA|2015": [
+"domestic"
+],
+"DZA|2020": [
+"domestic"
+],
+"ECU|1863": [
+"external"
+],
+"ECU|1895": [
+"domestic"
+],
+"ECU|1912": [
+"domestic"
+],
+"ECU|1995": [
+"external"
+],
+"EGY|1882": [
+"external"
+],
+"EGY|1948": [
+"external"
+],
+"EGY|1951": [
+"external"
+],
+"EGY|1956": [
+"external"
+],
+"EGY|1962": [
+"domestic"
+],
+"EGY|1967": [
+"external"
+],
+"EGY|1969": [
+"external"
+],
+"EGY|1973": [
+"external"
+],
+"EGY|1991": [
+"external"
+],
+"EGY|1993": [
+"domestic"
+],
+"EGY|2014": [
+"domestic"
+],
+"EGY|2015": [
+"domestic"
+],
+"EGY|2017": [
+"domestic"
+],
+"ERI|1997": [
+"domestic"
+],
+"ERI|1998": [
+"external"
+],
+"ERI|1999": [
+"domestic"
+],
+"ERI|2003": [
+"domestic"
+],
+"ERI|2006": [
+"domestic"
+],
+"ERI|2008": [
+"external"
+],
+"ERI|2016": [
+"external"
+],
+"ESP|1821": [
+"domestic"
+],
+"ESP|1823": [
+"external"
+],
+"ESP|1834": [
+"domestic"
+],
+"ESP|1847": [
+"domestic"
+],
+"ESP|1859": [
+"external"
+],
+"ESP|1865": [
+"external"
+],
+"ESP|1868": [
+"domestic"
+],
+"ESP|1872": [
+"domestic"
+],
+"ESP|1874": [
+"domestic"
+],
+"ESP|1898": [
+"external"
+],
+"ESP|1909": [
+"external"
+],
+"ESP|1934": [
+"domestic"
+],
+"ESP|1936": [
+"domestic"
+],
+"ESP|1957": [
+"external"
+],
+"ESP|1978": [
+"domestic"
+],
+"ESP|1985": [
+"domestic"
+],
+"ESP|1991": [
+"domestic"
+],
+"EST|1918": [
+"external"
+],
+"EST|1919": [
+"external"
+],
+"ETH|1928": [
+"domestic"
+],
+"ETH|1935": [
+"external"
+],
+"ETH|1941": [
+"external"
+],
+"ETH|1951": [
+"external"
+],
+"ETH|1960": [
+"domestic"
+],
+"ETH|1963": [
+"domestic"
+],
+"ETH|1964": [
+"domestic",
+"external"
+],
+"ETH|1975": [
+"domestic"
+],
+"ETH|1976": [
+"domestic"
+],
+"ETH|1977": [
+"domestic",
+"external"
+],
+"ETH|1978": [
+"domestic"
+],
+"ETH|1980": [
+"domestic",
+"external"
+],
+"ETH|1981": [
+"domestic"
+],
+"ETH|1982": [
+"domestic"
+],
+"ETH|1983": [
+"domestic"
+],
+"ETH|1991": [
+"domestic"
+],
+"ETH|1993": [
+"domestic"
+],
+"ETH|1994": [
+"domestic"
+],
+"ETH|1996": [
+"domestic"
+],
+"ETH|1998": [
+"domestic",
+"external"
+],
+"ETH|1999": [
+"domestic"
+],
+"ETH|2006": [
+"domestic"
+],
+"ETH|2015": [
+"domestic"
+],
+"ETH|2016": [
+"external"
+],
+"ETH|2019": [
+"domestic"
+],
+"ETH|2020": [
+"domestic"
+],
+"ETH|2023": [
+"domestic"
+],
+"FIN|1918": [
+"domestic",
+"external"
+],
+"FIN|1919": [
+"domestic"
+],
+"FIN|1939": [
+"external"
+],
+"FIN|1941": [
+"external"
+],
+"FRA|1823": [
+"external"
+],
+"FRA|1827": [
+"domestic"
+],
+"FRA|1830": [
+"domestic"
+],
+"FRA|1835": [
+"domestic"
+],
+"FRA|1848": [
+"domestic"
+],
+"FRA|1849": [
+"external"
+],
+"FRA|1854": [
+"external"
+],
+"FRA|1859": [
+"external"
+],
+"FRA|1862": [
+"external"
+],
+"FRA|1870": [
+"external"
+],
+"FRA|1871": [
+"domestic"
+],
+"FRA|1884": [
+"external"
+],
+"FRA|1900": [
+"external"
+],
+"FRA|1907": [
+"domestic"
+],
+"FRA|1914": [
+"external"
+],
+"FRA|1918": [
+"domestic"
+],
+"FRA|1919": [
+"external"
+],
+"FRA|1939": [
+"external"
+],
+"FRA|1940": [
+"external"
+],
+"FRA|1944": [
+"external"
+],
+"FRA|1946": [
+"external"
+],
+"FRA|1951": [
+"external"
+],
+"FRA|1956": [
+"external"
+],
+"FRA|1958": [
+"external"
+],
+"FRA|1961": [
+"domestic",
+"external"
+],
+"FRA|1968": [
+"domestic"
+],
+"FRA|1978": [
+"domestic"
+],
+"FRA|1983": [
+"domestic"
+],
+"FRA|1991": [
+"external"
+],
+"FRA|1992": [
+"domestic"
+],
+"FRA|1999": [
+"external"
+],
+"FRA|2001": [
+"external"
+],
+"FRA|2002": [
+"domestic"
+],
+"GAB|1964": [
+"domestic"
+],
+"GBR|1827": [
+"domestic"
+],
+"GBR|1831": [
+"domestic"
+],
+"GBR|1835": [
+"domestic"
+],
+"GBR|1840": [
+"domestic"
+],
+"GBR|1854": [
+"external"
+],
+"GBR|1856": [
+"external"
+],
+"GBR|1862": [
+"domestic"
+],
+"GBR|1882": [
+"external"
+],
+"GBR|1900": [
+"external"
+],
+"GBR|1914": [
+"external"
+],
+"GBR|1918": [
+"domestic"
+],
+"GBR|1939": [
+"external"
+],
+"GBR|1944": [
+"domestic"
+],
+"GBR|1946": [
+"external"
+],
+"GBR|1950": [
+"external"
+],
+"GBR|1951": [
+"external"
+],
+"GBR|1956": [
+"external"
+],
+"GBR|1971": [
+"domestic"
+],
+"GBR|1973": [
+"domestic"
+],
+"GBR|1982": [
+"external"
+],
+"GBR|1991": [
+"external"
+],
+"GBR|1998": [
+"domestic"
+],
+"GBR|1999": [
+"external"
+],
+"GBR|2000": [
+"domestic"
+],
+"GBR|2001": [
+"external"
+],
+"GBR|2003": [
+"external"
+],
+"GEO|1991": [
+"domestic"
+],
+"GEO|1992": [
+"domestic"
+],
+"GEO|1993": [
+"domestic"
+],
+"GEO|2004": [
+"domestic"
+],
+"GEO|2008": [
+"domestic"
+],
+"GHA|1966": [
+"domestic"
+],
+"GHA|1981": [
+"domestic"
+],
+"GHA|1983": [
+"domestic"
+],
+"GHA|1998": [
+"domestic"
+],
+"GHA|2000": [
+"domestic"
+],
+"GIN|1998": [
+"domestic"
+],
+"GIN|2000": [
+"domestic"
+],
+"GMB|1981": [
+"domestic"
+],
+"GNB|1963": [
+"external"
+],
+"GNB|1998": [
+"domestic"
+],
+"GRC|1897": [
+"external"
+],
+"GRC|1912": [
+"external"
+],
+"GRC|1913": [
+"external"
+],
+"GRC|1917": [
+"external"
+],
+"GRC|1919": [
+"external"
+],
+"GRC|1940": [
+"external"
+],
+"GRC|1944": [
+"domestic"
+],
+"GRC|1946": [
+"domestic"
+],
+"GRC|1951": [
+"external"
+],
+"GRD|1983": [
+"external"
+],
+"GTM|1876": [
+"external"
+],
+"GTM|1885": [
+"external"
+],
+"GTM|1906": [
+"external"
+],
+"GTM|1949": [
+"domestic"
+],
+"GTM|1954": [
+"domestic"
+],
+"GTM|1963": [
+"domestic"
+],
+"GTM|1965": [
+"domestic"
+],
+"GTM|1966": [
+"domestic"
+],
+"GTM|1970": [
+"domestic"
+],
+"GTM|1978": [
+"domestic"
+],
+"HND|1906": [
+"external"
+],
+"HND|1907": [
+"external"
+],
+"HND|1924": [
+"domestic"
+],
+"HND|1957": [
+"external"
+],
+"HND|1969": [
+"external"
+],
+"HRV|1992": [
+"domestic",
+"external"
+],
+"HRV|1994": [
+"domestic"
+],
+"HRV|1995": [
+"domestic"
+],
+"HTI|1869": [
+"domestic"
+],
+"HTI|1883": [
+"domestic"
+],
+"HTI|1989": [
+"domestic"
+],
+"HTI|1991": [
+"domestic"
+],
+"HTI|2004": [
+"domestic"
+],
+"HUN|1919": [
+"domestic",
+"external"
+],
+"HUN|1941": [
+"external"
+],
+"HUN|1956": [
+"external"
+],
+"IDN|1946": [
+"external"
+],
+"IDN|1950": [
+"domestic"
+],
+"IDN|1953": [
+"domestic"
+],
+"IDN|1956": [
+"domestic"
+],
+"IDN|1958": [
+"domestic"
+],
+"IDN|1962": [
+"external"
+],
+"IDN|1963": [
+"external"
+],
+"IDN|1965": [
+"domestic"
+],
+"IDN|1967": [
+"domestic"
+],
+"IDN|1975": [
+"domestic"
+],
+"IDN|1976": [
+"domestic"
+],
+"IDN|1981": [
+"domestic"
+],
+"IDN|1984": [
+"domestic"
+],
+"IDN|1989": [
+"domestic"
+],
+"IDN|1990": [
+"domestic"
+],
+"IDN|1992": [
+"domestic"
+],
+"IDN|1997": [
+"domestic"
+],
+"IDN|1999": [
+"domestic"
+],
+"IDN|2003": [
+"domestic"
+],
+"IDN|2018": [
+"domestic"
+],
+"IDN|2021": [
+"domestic"
+],
+"IND|1947": [
+"domestic",
+"external"
+],
+"IND|1948": [
+"domestic",
+"external"
+],
+"IND|1956": [
+"domestic"
+],
+"IND|1961": [
+"domestic"
+],
+"IND|1962": [
+"external"
+],
+"IND|1964": [
+"external"
+],
+"IND|1965": [
+"external"
+],
+"IND|1966": [
+"domestic"
+],
+"IND|1967": [
+"external"
+],
+"IND|1969": [
+"domestic"
+],
+"IND|1970": [
+"domestic"
+],
+"IND|1971": [
+"external"
+],
+"IND|1979": [
+"domestic"
+],
+"IND|1982": [
+"domestic"
+],
+"IND|1983": [
+"domestic"
+],
+"IND|1984": [
+"domestic",
+"external"
+],
+"IND|1987": [
+"domestic",
+"external"
+],
+"IND|1989": [
+"domestic",
+"external"
+],
+"IND|1990": [
+"domestic"
+],
+"IND|1991": [
+"domestic"
+],
+"IND|1992": [
+"domestic"
+],
+"IND|1993": [
+"domestic"
+],
+"IND|1994": [
+"domestic",
+"external"
+],
+"IND|1996": [
+"domestic",
+"external"
+],
+"IND|1997": [
+"domestic"
+],
+"IND|1998": [
+"domestic"
+],
+"IND|1999": [
+"domestic",
+"external"
+],
+"IND|2000": [
+"domestic"
+],
+"IND|2001": [
+"domestic"
+],
+"IND|2003": [
+"domestic"
+],
+"IND|2008": [
+"domestic"
+],
+"IND|2009": [
+"domestic"
+],
+"IND|2012": [
+"domestic"
+],
+"IND|2013": [
+"domestic",
+"external"
+],
+"IND|2014": [
+"domestic"
+],
+"IND|2015": [
+"domestic"
+],
+"IND|2020": [
+"external"
+],
+"IRN|1856": [
+"external"
+],
+"IRN|1908": [
+"domestic"
+],
+"IRN|1920": [
+"domestic"
+],
+"IRN|1946": [
+"domestic"
+],
+"IRN|1966": [
+"domestic"
+],
+"IRN|1973": [
+"domestic"
+],
+"IRN|1974": [
+"domestic",
+"external"
+],
+"IRN|1978": [
+"domestic"
+],
+"IRN|1979": [
+"domestic"
+],
+"IRN|1980": [
+"external"
+],
+"IRN|1985": [
+"domestic"
+],
+"IRN|1986": [
+"domestic"
+],
+"IRN|1990": [
+"domestic"
+],
+"IRN|1991": [
+"domestic"
+],
+"IRN|1993": [
+"domestic"
+],
+"IRN|1996": [
+"domestic"
+],
+"IRN|1997": [
+"domestic"
+],
+"IRN|1999": [
+"domestic"
+],
+"IRN|2005": [
+"domestic"
+],
+"IRN|2016": [
+"domestic"
+],
+"IRN|2017": [
+"domestic"
+],
+"IRN|2018": [
+"domestic",
+"external"
+],
+"IRN|2023": [
+"domestic"
+],
+"IRQ|1948": [
+"external"
+],
+"IRQ|1958": [
+"domestic"
+],
+"IRQ|1959": [
+"domestic"
+],
+"IRQ|1961": [
+"domestic"
+],
+"IRQ|1963": [
+"domestic"
+],
+"IRQ|1965": [
+"domestic"
+],
+"IRQ|1969": [
+"domestic"
+],
+"IRQ|1973": [
+"domestic",
+"external"
+],
+"IRQ|1974": [
+"domestic",
+"external"
+],
+"IRQ|1980": [
+"external"
+],
+"IRQ|1982": [
+"domestic"
+],
+"IRQ|1985": [
+"domestic"
+],
+"IRQ|1987": [
+"domestic"
+],
+"IRQ|1990": [
+"external"
+],
+"IRQ|1991": [
+"domestic"
+],
+"IRQ|1995": [
+"domestic"
+],
+"IRQ|1996": [
+"domestic"
+],
+"IRQ|2003": [
+"external"
+],
+"IRQ|2004": [
+"domestic"
+],
+"ISR|1946": [
+"external"
+],
+"ISR|1948": [
+"external"
+],
+"ISR|1949": [
+"domestic"
+],
+"ISR|1956": [
+"external"
+],
+"ISR|1967": [
+"external"
+],
+"ISR|1969": [
+"external"
+],
+"ISR|1973": [
+"external"
+],
+"ISR|1978": [
+"domestic"
+],
+"ISR|1982": [
+"external"
+],
+"ISR|1990": [
+"domestic"
+],
+"ISR|2000": [
+"domestic"
+],
+"ISR|2006": [
+"domestic"
+],
+"ISR|2014": [
+"domestic"
+],
+"ISR|2018": [
+"domestic",
+"external"
+],
+"ISR|2021": [
+"domestic"
+],
+"ISR|2023": [
+"domestic"
+],
+"ITA|1820": [
+"domestic"
+],
+"ITA|1821": [
+"domestic"
+],
+"ITA|1848": [
+"domestic",
+"external"
+],
+"ITA|1849": [
+"external"
+],
+"ITA|1855": [
+"external"
+],
+"ITA|1859": [
+"external"
+],
+"ITA|1860": [
+"external"
+],
+"ITA|1866": [
+"external"
+],
+"ITA|1911": [
+"external"
+],
+"ITA|1915": [
+"external"
+],
+"ITA|1935": [
+"external"
+],
+"ITA|1936": [
+"domestic"
+],
+"ITA|1940": [
+"external"
+],
+"ITA|1943": [
+"external"
+],
+"ITA|1991": [
+"external"
+],
+"ITA|1992": [
+"domestic"
+],
+"ITA|1999": [
+"external"
+],
+"JOR|1948": [
+"external"
+],
+"JOR|1967": [
+"external"
+],
+"JOR|1970": [
+"domestic"
+],
+"JOR|1973": [
+"external"
+],
+"JOR|2016": [
+"domestic"
+],
+"JPN|1868": [
+"domestic"
+],
+"JPN|1877": [
+"domestic"
+],
+"JPN|1894": [
+"domestic",
+"external"
+],
+"JPN|1900": [
+"external"
+],
+"JPN|1904": [
+"external"
+],
+"JPN|1914": [
+"external"
+],
+"JPN|1918": [
+"domestic"
+],
+"JPN|1927": [
+"domestic"
+],
+"JPN|1931": [
+"external"
+],
+"JPN|1937": [
+"external"
+],
+"JPN|1938": [
+"external"
+],
+"JPN|1939": [
+"external"
+],
+"JPN|1941": [
+"external"
+],
+"KEN|1952": [
+"external"
+],
+"KEN|1982": [
+"domestic"
+],
+"KEN|2015": [
+"domestic"
+],
+"KGZ|1992": [
+"domestic"
+],
+"KGZ|2000": [
+"domestic"
+],
+"KGZ|2010": [
+"domestic"
+],
+"KGZ|2021": [
+"external"
+],
+"KHM|1946": [
+"external"
+],
+"KHM|1967": [
+"domestic"
+],
+"KHM|1970": [
+"external"
+],
+"KHM|1971": [
+"domestic"
+],
+"KHM|1975": [
+"external"
+],
+"KHM|1977": [
+"external"
+],
+"KHM|1978": [
+"domestic"
+],
+"KHM|1989": [
+"domestic"
+],
+"KHM|1993": [
+"domestic"
+],
+"KHM|2011": [
+"external"
+],
+"KOR|1894": [
+"domestic"
+],
+"KOR|1949": [
+"external"
+],
+"KOR|1950": [
+"external"
+],
+"KOR|1965": [
+"external"
+],
+"KWT|1990": [
+"external"
+],
+"LAO|1946": [
+"external"
+],
+"LAO|1959": [
+"domestic"
+],
+"LAO|1960": [
+"domestic"
+],
+"LAO|1963": [
+"domestic"
+],
+"LAO|1968": [
+"external"
+],
+"LAO|1976": [
+"domestic"
+],
+"LAO|1986": [
+"external"
+],
+"LAO|1989": [
+"domestic"
+],
+"LBN|1948": [
+"external"
+],
+"LBN|1958": [
+"domestic"
+],
+"LBN|1975": [
+"domestic"
+],
+"LBN|1982": [
+"domestic"
+],
+"LBN|1983": [
+"domestic"
+],
+"LBN|1989": [
+"domestic"
+],
+"LBN|2014": [
+"domestic"
+],
+"LBN|2017": [
+"domestic"
+],
+"LBR|1980": [
+"domestic"
+],
+"LBR|1989": [
+"domestic"
+],
+"LBR|1992": [
+"domestic"
+],
+"LBR|1996": [
+"domestic"
+],
+"LBR|2000": [
+"domestic"
+],
+"LBR|2002": [
+"domestic"
+],
+"LBY|1979": [
+"external"
+],
+"LBY|1980": [
+"domestic"
+],
+"LBY|1983": [
+"domestic"
+],
+"LBY|1986": [
+"external"
+],
+"LBY|1987": [
+"external"
+],
+"LBY|2011": [
+"domestic"
+],
+"LBY|2013": [
+"domestic"
+],
+"LBY|2015": [
+"domestic"
+],
+"LBY|2017": [
+"domestic"
+],
+"LBY|2019": [
+"domestic"
+],
+"LKA|1971": [
+"domestic"
+],
+"LKA|1983": [
+"domestic"
+],
+"LKA|1984": [
+"domestic"
+],
+"LKA|1987": [
+"domestic"
+],
+"LKA|1989": [
+"domestic"
+],
+"LKA|2003": [
+"domestic"
+],
+"LKA|2005": [
+"domestic"
+],
+"LKA|2006": [
+"domestic"
+],
+"LSO|1998": [
+"domestic"
+],
+"LTU|1920": [
+"external"
+],
+"LVA|1918": [
+"external"
+],
+"MAR|1859": [
+"external"
+],
+"MAR|1907": [
+"domestic"
+],
+"MAR|1909": [
+"external"
+],
+"MAR|1953": [
+"external"
+],
+"MAR|1957": [
+"external"
+],
+"MAR|1963": [
+"external"
+],
+"MAR|1971": [
+"domestic"
+],
+"MAR|1975": [
+"domestic"
+],
+"MAR|1991": [
+"external"
+],
+"MDA|1991": [
+"domestic"
+],
+"MDA|1992": [
+"domestic"
+],
+"MDG|1947": [
+"external"
+],
+"MDG|1971": [
+"domestic"
+],
+"MEX|1832": [
+"domestic"
+],
+"MEX|1835": [
+"domestic"
+],
+"MEX|1841": [
+"domestic"
+],
+"MEX|1846": [
+"external"
+],
+"MEX|1848": [
+"domestic"
+],
+"MEX|1855": [
+"domestic"
+],
+"MEX|1858": [
+"domestic"
+],
+"MEX|1862": [
+"external"
+],
+"MEX|1867": [
+"domestic"
+],
+"MEX|1876": [
+"domestic"
+],
+"MEX|1899": [
+"domestic"
+],
+"MEX|1910": [
+"domestic"
+],
+"MEX|1914": [
+"domestic"
+],
+"MEX|1923": [
+"domestic"
+],
+"MEX|1926": [
+"domestic"
+],
+"MEX|1929": [
+"domestic"
+],
+"MEX|1994": [
+"domestic"
+],
+"MEX|1996": [
+"domestic"
+],
+"MKD|2001": [
+"domestic"
+],
+"MLI|1985": [
+"external"
+],
+"MLI|1990": [
+"domestic"
+],
+"MLI|1994": [
+"domestic"
+],
+"MLI|2007": [
+"domestic"
+],
+"MLI|2009": [
+"domestic"
+],
+"MLI|2012": [
+"domestic"
+],
+"MLI|2014": [
+"domestic"
+],
+"MLI|2015": [
+"domestic"
+],
+"MLI|2017": [
+"domestic"
+],
+"MLI|2023": [
+"domestic"
+],
+"MMR|1948": [
+"domestic"
+],
+"MMR|1949": [
+"domestic"
+],
+"MMR|1957": [
+"domestic"
+],
+"MMR|1958": [
+"domestic"
+],
+"MMR|1959": [
+"domestic"
+],
+"MMR|1961": [
+"domestic"
+],
+"MMR|1964": [
+"domestic"
+],
+"MMR|1967": [
+"domestic"
+],
+"MMR|1969": [
+"external"
+],
+"MMR|1972": [
+"domestic"
+],
+"MMR|1973": [
+"domestic"
+],
+"MMR|1976": [
+"domestic"
+],
+"MMR|1983": [
+"domestic"
+],
+"MMR|1987": [
+"domestic"
+],
+"MMR|1988": [
+"domestic"
+],
+"MMR|1990": [
+"domestic"
+],
+"MMR|1991": [
+"domestic"
+],
+"MMR|1992": [
+"domestic"
+],
+"MMR|1993": [
+"domestic"
+],
+"MMR|1994": [
+"domestic"
+],
+"MMR|1995": [
+"domestic"
+],
+"MMR|1996": [
+"domestic"
+],
+"MMR|1997": [
+"domestic"
+],
+"MMR|2000": [
+"domestic"
+],
+"MMR|2005": [
+"domestic"
+],
+"MMR|2009": [
+"domestic"
+],
+"MMR|2011": [
+"domestic"
+],
+"MMR|2013": [
+"domestic"
+],
+"MMR|2014": [
+"domestic"
+],
+"MMR|2015": [
+"domestic"
+],
+"MMR|2016": [
+"domestic"
+],
+"MMR|2017": [
+"domestic"
+],
+"MMR|2021": [
+"domestic"
+],
+"MMR|2022": [
+"domestic"
+],
+"MMR|2023": [
+"domestic"
+],
+"MNG|1939": [
+"external"
+],
+"MNG|1945": [
+"external"
+],
+"MOZ|1964": [
+"external"
+],
+"MOZ|1977": [
+"domestic"
+],
+"MOZ|1979": [
+"domestic"
+],
+"MOZ|2013": [
+"domestic"
+],
+"MOZ|2016": [
+"domestic"
+],
+"MOZ|2018": [
+"domestic"
+],
+"MOZ|2019": [
+"domestic"
+],
+"MRT|1957": [
+"external"
+],
+"MRT|1975": [
+"domestic"
+],
+"MRT|2010": [
+"domestic"
+],
+"MYS|1948": [
+"external"
+],
+"MYS|1958": [
+"domestic"
+],
+"MYS|1963": [
+"domestic",
+"external"
+],
+"MYS|1974": [
+"domestic"
+],
+"MYS|1981": [
+"domestic"
+],
+"MYS|2013": [
+"domestic"
+],
+"NAM|1998": [
+"domestic"
+],
+"NER|1991": [
+"domestic"
+],
+"NER|1994": [
+"domestic"
+],
+"NER|1995": [
+"domestic"
+],
+"NER|1997": [
+"domestic"
+],
+"NER|2007": [
+"domestic"
+],
+"NER|2015": [
+"domestic"
+],
+"NER|2021": [
+"domestic"
+],
+"NGA|1966": [
+"domestic"
+],
+"NGA|1967": [
+"domestic"
+],
+"NGA|1980": [
+"domestic"
+],
+"NGA|1983": [
+"external"
+],
+"NGA|1990": [
+"domestic"
+],
+"NGA|1992": [
+"domestic"
+],
+"NGA|1996": [
+"external"
+],
+"NGA|1998": [
+"domestic"
+],
+"NGA|2000": [
+"domestic"
+],
+"NGA|2004": [
+"domestic"
+],
+"NGA|2009": [
+"domestic"
+],
+"NGA|2011": [
+"domestic"
+],
+"NGA|2015": [
+"domestic"
+],
+"NGA|2021": [
+"domestic"
+],
+"NIC|1907": [
+"external"
+],
+"NIC|1957": [
+"external"
+],
+"NIC|1977": [
+"domestic"
+],
+"NIC|1978": [
+"domestic"
+],
+"NIC|1982": [
+"domestic"
+],
+"NLD|1830": [
+"domestic"
+],
+"NLD|1940": [
+"external"
+],
+"NLD|1951": [
+"external"
+],
+"NLD|1962": [
+"external"
+],
+"NLD|1999": [
+"external"
+],
+"NOR|1940": [
+"external"
+],
+"NPL|1960": [
+"domestic"
+],
+"NPL|1996": [
+"domestic"
+],
+"NPL|2001": [
+"domestic"
+],
+"NPL|2003": [
+"domestic"
+],
+"NZL|1939": [
+"external"
+],
+"OMN|1957": [
+"domestic"
+],
+"OMN|1969": [
+"domestic"
+],
+"OMN|1973": [
+"domestic"
+],
+"OMN|1991": [
+"external"
+],
+"PAK|1947": [
+"external"
+],
+"PAK|1948": [
+"external"
+],
+"PAK|1964": [
+"external"
+],
+"PAK|1965": [
+"external"
+],
+"PAK|1971": [
+"domestic",
+"external"
+],
+"PAK|1973": [
+"domestic"
+],
+"PAK|1974": [
+"domestic"
+],
+"PAK|1984": [
+"external"
+],
+"PAK|1987": [
+"external"
+],
+"PAK|1989": [
+"external"
+],
+"PAK|1990": [
+"domestic"
+],
+"PAK|1992": [
+"domestic"
+],
+"PAK|1994": [
+"domestic",
+"external"
+],
+"PAK|1996": [
+"external"
+],
+"PAK|1999": [
+"external"
+],
+"PAK|2004": [
+"domestic"
+],
+"PAK|2006": [
+"domestic"
+],
+"PAK|2007": [
+"domestic"
+],
+"PAK|2011": [
+"domestic"
+],
+"PAK|2013": [
+"external"
+],
+"PAK|2016": [
+"domestic"
+],
+"PAK|2019": [
+"domestic"
+],
+"PAK|2021": [
+"domestic"
+],
+"PAN|1989": [
+"domestic",
+"external"
+],
+"PER|1853": [
+"domestic"
+],
+"PER|1856": [
+"domestic"
+],
+"PER|1866": [
+"external"
+],
+"PER|1879": [
+"external"
+],
+"PER|1885": [
+"domestic"
+],
+"PER|1894": [
+"domestic"
+],
+"PER|1932": [
+"domestic"
+],
+"PER|1965": [
+"domestic"
+],
+"PER|1982": [
+"domestic"
+],
+"PER|1995": [
+"external"
+],
+"PER|2007": [
+"domestic"
+],
+"PHL|1946": [
+"domestic"
+],
+"PHL|1950": [
+"domestic",
+"external"
+],
+"PHL|1966": [
+"external"
+],
+"PHL|1969": [
+"domestic"
+],
+"PHL|1970": [
+"domestic"
+],
+"PHL|1972": [
+"domestic"
+],
+"PHL|1993": [
+"domestic"
+],
+"PHL|1997": [
+"domestic"
+],
+"PHL|1999": [
+"domestic"
+],
+"PHL|2000": [
+"domestic"
+],
+"PHL|2003": [
+"domestic"
+],
+"PHL|2005": [
+"domestic"
+],
+"PHL|2016": [
+"domestic"
+],
+"PNG|1989": [
+"domestic"
+],
+"PNG|1990": [
+"domestic"
+],
+"PNG|1992": [
+"domestic"
+],
+"POL|1919": [
+"external"
+],
+"POL|1920": [
+"external"
+],
+"POL|1939": [
+"external"
+],
+"POL|1945": [
+"domestic"
+],
+"PRK|1949": [
+"external"
+],
+"PRK|1950": [
+"external"
+],
+"PRT|1828": [
+"domestic"
+],
+"PRT|1835": [
+"domestic"
+],
+"PRT|1916": [
+"external"
+],
+"PRT|1936": [
+"domestic"
+],
+"PRY|1864": [
+"external"
+],
+"PRY|1911": [
+"domestic"
+],
+"PRY|1932": [
+"external"
+],
+"PRY|1947": [
+"domestic"
+],
+"PRY|1954": [
+"domestic"
+],
+"PRY|1989": [
+"domestic"
+],
+"QAT|1991": [
+"external"
+],
+"ROU|1907": [
+"domestic"
+],
+"ROU|1913": [
+"external"
+],
+"ROU|1916": [
+"external"
+],
+"ROU|1919": [
+"external"
+],
+"ROU|1941": [
+"external"
+],
+"ROU|1944": [
+"external"
+],
+"ROU|1989": [
+"domestic"
+],
+"RUS|1818": [
+"domestic"
+],
+"RUS|1827": [
+"domestic"
+],
+"RUS|1828": [
+"external"
+],
+"RUS|1830": [
+"domestic"
+],
+"RUS|1831": [
+"domestic"
+],
+"RUS|1834": [
+"domestic"
+],
+"RUS|1836": [
+"domestic"
+],
+"RUS|1849": [
+"domestic"
+],
+"RUS|1853": [
+"external"
+],
+"RUS|1863": [
+"domestic"
+],
+"RUS|1871": [
+"domestic"
+],
+"RUS|1877": [
+"external"
+],
+"RUS|1900": [
+"external"
+],
+"RUS|1904": [
+"external"
+],
+"RUS|1905": [
+"domestic"
+],
+"RUS|1909": [
+"domestic"
+],
+"RUS|1914": [
+"external"
+],
+"RUS|1916": [
+"domestic"
+],
+"RUS|1917": [
+"domestic"
+],
+"RUS|1918": [
+"domestic",
+"external"
+],
+"RUS|1919": [
+"external"
+],
+"RUS|1920": [
+"domestic"
+],
+"RUS|1921": [
+"domestic"
+],
+"RUS|1929": [
+"external"
+],
+"RUS|1934": [
+"domestic"
+],
+"RUS|1938": [
+"external"
+],
+"RUS|1939": [
+"external"
+],
+"RUS|1941": [
+"external"
+],
+"RUS|1945": [
+"domestic",
+"external"
+],
+"RUS|1946": [
+"domestic"
+],
+"RUS|1956": [
+"external"
+],
+"RUS|1969": [
+"external"
+],
+"RUS|1979": [
+"domestic",
+"external"
+],
+"RUS|1990": [
+"domestic"
+],
+"RUS|1993": [
+"domestic"
+],
+"RUS|1994": [
+"domestic"
+],
+"RUS|1999": [
+"domestic"
+],
+"RUS|2007": [
+"domestic"
+],
+"RUS|2015": [
+"domestic"
+],
+"RUS|2022": [
+"external"
+],
+"RUS|2023": [
+"domestic"
+],
+"RWA|1963": [
+"domestic"
+],
+"RWA|1990": [
+"domestic"
+],
+"RWA|1994": [
+"domestic"
+],
+"RWA|1996": [
+"domestic"
+],
+"RWA|1997": [
+"domestic"
+],
+"RWA|1998": [
+"domestic"
+],
+"RWA|2001": [
+"domestic"
+],
+"RWA|2009": [
+"domestic"
+],
+"RWA|2016": [
+"domestic"
+],
+"RWA|2019": [
+"domestic"
+],
+"RWA|2022": [
+"domestic"
+],
+"SAU|1929": [
+"domestic"
+],
+"SAU|1934": [
+"external"
+],
+"SAU|1973": [
+"external"
+],
+"SAU|1979": [
+"domestic"
+],
+"SAU|1991": [
+"external"
+],
+"SDN|1963": [
+"domestic"
+],
+"SDN|1971": [
+"domestic"
+],
+"SDN|1976": [
+"domestic"
+],
+"SDN|1983": [
+"domestic"
+],
+"SDN|1992": [
+"domestic"
+],
+"SDN|1998": [
+"domestic"
+],
+"SDN|2003": [
+"domestic"
+],
+"SDN|2011": [
+"domestic"
+],
+"SDN|2012": [
+"external"
+],
+"SDN|2020": [
+"domestic"
+],
+"SEN|1990": [
+"domestic"
+],
+"SEN|1992": [
+"domestic"
+],
+"SEN|1995": [
+"domestic"
+],
+"SEN|1997": [
+"domestic"
+],
+"SEN|1998": [
+"domestic"
+],
+"SEN|2000": [
+"domestic"
+],
+"SEN|2003": [
+"domestic"
+],
+"SEN|2011": [
+"domestic"
+],
+"SLE|1991": [
+"domestic"
+],
+"SLE|1998": [
+"domestic"
+],
+"SLE|2000": [
+"domestic"
+],
+"SLV|1876": [
+"external"
+],
+"SLV|1885": [
+"external"
+],
+"SLV|1906": [
+"external"
+],
+"SLV|1907": [
+"external"
+],
+"SLV|1932": [
+"domestic"
+],
+"SLV|1969": [
+"external"
+],
+"SLV|1972": [
+"domestic"
+],
+"SLV|1979": [
+"domestic"
+],
+"SOM|1963": [
+"domestic"
+],
+"SOM|1964": [
+"external"
+],
+"SOM|1976": [
+"domestic"
+],
+"SOM|1977": [
+"external"
+],
+"SOM|1980": [
+"domestic",
+"external"
+],
+"SOM|1982": [
+"domestic"
+],
+"SOM|1986": [
+"domestic"
+],
+"SOM|1988": [
+"domestic"
+],
+"SOM|1991": [
+"domestic"
+],
+"SOM|2001": [
+"domestic"
+],
+"SOM|2006": [
+"domestic"
+],
+"SOM|2018": [
+"domestic"
+],
+"SOM|2019": [
+"domestic"
+],
+"SRB|1912": [
+"external"
+],
+"SRB|1913": [
+"external"
+],
+"SRB|1914": [
+"external"
+],
+"SRB|1941": [
+"external"
+],
+"SRB|1991": [
+"domestic"
+],
+"SRB|1992": [
+"external"
+],
+"SRB|1998": [
+"domestic"
+],
+"SRB|1999": [
+"external"
+],
+"SSD|2011": [
+"domestic"
+],
+"SSD|2012": [
+"external"
+],
+"SUR|1987": [
+"domestic"
+],
+"SYR|1948": [
+"external"
+],
+"SYR|1966": [
+"domestic"
+],
+"SYR|1967": [
+"external"
+],
+"SYR|1970": [
+"domestic"
+],
+"SYR|1973": [
+"external"
+],
+"SYR|1976": [
+"domestic"
+],
+"SYR|1978": [
+"domestic"
+],
+"SYR|1979": [
+"domestic"
+],
+"SYR|1981": [
+"domestic"
+],
+"SYR|1982": [
+"external"
+],
+"SYR|1989": [
+"domestic"
+],
+"SYR|1991": [
+"external"
+],
+"SYR|2011": [
+"domestic"
+],
+"SYR|2012": [
+"domestic"
+],
+"SYR|2013": [
+"domestic"
+],
+"SYR|2016": [
+"domestic"
+],
+"SYR|2018": [
+"domestic"
+],
+"SYR|2023": [
+"domestic"
+],
+"TCD|1966": [
+"domestic"
+],
+"TCD|1976": [
+"domestic"
+],
+"TCD|1980": [
+"domestic"
+],
+"TCD|1983": [
+"external"
+],
+"TCD|1986": [
+"domestic",
+"external"
+],
+"TCD|1987": [
+"external"
+],
+"TCD|1989": [
+"domestic"
+],
+"TCD|1997": [
+"domestic"
+],
+"TCD|1998": [
+"domestic"
+],
+"TCD|2005": [
+"domestic"
+],
+"TCD|2015": [
+"domestic"
+],
+"TCD|2017": [
+"domestic"
+],
+"TCD|2018": [
+"domestic"
+],
+"TCD|2020": [
+"domestic"
+],
+"TCD|2023": [
+"domestic"
+],
+"TGO|1986": [
+"domestic"
+],
+"TGO|2022": [
+"domestic"
+],
+"THA|1940": [
+"external"
+],
+"THA|1946": [
+"external"
+],
+"THA|1951": [
+"domestic",
+"external"
+],
+"THA|1967": [
+"external"
+],
+"THA|1970": [
+"external"
+],
+"THA|1972": [
+"domestic"
+],
+"THA|1974": [
+"domestic"
+],
+"THA|1977": [
+"external"
+],
+"THA|1986": [
+"external"
+],
+"THA|2003": [
+"domestic"
+],
+"THA|2011": [
+"external"
+],
+"TJK|1992": [
+"domestic"
+],
+"TJK|2021": [
+"external"
+],
+"TTO|1990": [
+"domestic"
+],
+"TUN|1953": [
+"external"
+],
+"TUN|1961": [
+"external"
+],
+"TUN|1980": [
+"domestic"
+],
+"TUN|2013": [
+"domestic"
+],
+"TUN|2016": [
+"domestic"
+],
+"TUR|1821": [
+"domestic"
+],
+"TUR|1826": [
+"domestic"
+],
+"TUR|1828": [
+"external"
+],
+"TUR|1830": [
+"domestic"
+],
+"TUR|1831": [
+"domestic"
+],
+"TUR|1836": [
+"domestic"
+],
+"TUR|1839": [
+"domestic"
+],
+"TUR|1840": [
+"domestic"
+],
+"TUR|1841": [
+"domestic"
+],
+"TUR|1842": [
+"domestic"
+],
+"TUR|1852": [
+"domestic"
+],
+"TUR|1853": [
+"external"
+],
+"TUR|1858": [
+"domestic"
+],
+"TUR|1861": [
+"domestic"
+],
+"TUR|1866": [
+"domestic"
+],
+"TUR|1875": [
+"domestic"
+],
+"TUR|1877": [
+"external"
+],
+"TUR|1890": [
+"domestic"
+],
+"TUR|1895": [
+"domestic"
+],
+"TUR|1896": [
+"domestic"
+],
+"TUR|1897": [
+"external"
+],
+"TUR|1903": [
+"domestic"
+],
+"TUR|1904": [
+"domestic"
+],
+"TUR|1909": [
+"domestic"
+],
+"TUR|1910": [
+"domestic"
+],
+"TUR|1911": [
+"external"
+],
+"TUR|1912": [
+"external"
+],
+"TUR|1913": [
+"external"
+],
+"TUR|1914": [
+"external"
+],
+"TUR|1919": [
+"external"
+],
+"TUR|1950": [
+"external"
+],
+"TUR|1974": [
+"external"
+],
+"TUR|1984": [
+"domestic"
+],
+"TUR|1991": [
+"domestic"
+],
+"TUR|1999": [
+"external"
+],
+"TUR|2000": [
+"domestic"
+],
+"TUR|2005": [
+"domestic"
+],
+"TUR|2015": [
+"domestic"
+],
+"TUR|2016": [
+"domestic"
+],
+"TWN|1949": [
+"external"
+],
+"TWN|1954": [
+"external"
+],
+"TWN|1958": [
+"external"
+],
+"TZA|1964": [
+"domestic"
+],
+"TZA|1978": [
+"external"
+],
+"TZA|1985": [
+"domestic"
+],
+"TZA|2020": [
+"domestic"
+],
+"UGA|1966": [
+"domestic"
+],
+"UGA|1971": [
+"domestic"
+],
+"UGA|1974": [
+"domestic"
+],
+"UGA|1978": [
+"external"
+],
+"UGA|1979": [
+"domestic"
+],
+"UGA|1980": [
+"domestic"
+],
+"UGA|1986": [
+"domestic"
+],
+"UGA|1994": [
+"domestic"
+],
+"UGA|1997": [
+"domestic"
+],
+"UGA|1998": [
+"domestic"
+],
+"UGA|2013": [
+"domestic"
+],
+"UGA|2022": [
+"domestic"
+],
+"UKR|2014": [
+"domestic"
+],
+"UKR|2022": [
+"external"
+],
+"URY|1904": [
+"domestic"
+],
+"URY|1972": [
+"domestic"
+],
+"USA|1846": [
+"external"
+],
+"USA|1861": [
+"domestic"
+],
+"USA|1898": [
+"external"
+],
+"USA|1900": [
+"external"
+],
+"USA|1915": [
+"domestic"
+],
+"USA|1917": [
+"external"
+],
+"USA|1918": [
+"domestic"
+],
+"USA|1941": [
+"external"
+],
+"USA|1950": [
+"external"
+],
+"USA|1958": [
+"domestic"
+],
+"USA|1961": [
+"domestic"
+],
+"USA|1964": [
+"domestic"
+],
+"USA|1965": [
+"domestic",
+"external"
+],
+"USA|1966": [
+"domestic"
+],
+"USA|1968": [
+"external"
+],
+"USA|1970": [
+"external"
+],
+"USA|1971": [
+"domestic"
+],
+"USA|1983": [
+"domestic",
+"external"
+],
+"USA|1989": [
+"external"
+],
+"USA|1991": [
+"external"
+],
+"USA|1992": [
+"domestic"
+],
+"USA|1995": [
+"domestic"
+],
+"USA|1999": [
+"external"
+],
+"USA|2001": [
+"domestic",
+"external"
+],
+"USA|2003": [
+"external"
+],
+"USA|2004": [
+"domestic"
+],
+"USA|2007": [
+"domestic"
+],
+"USA|2019": [
+"domestic"
+],
+"UZB|1999": [
+"domestic"
+],
+"UZB|2004": [
+"domestic"
+],
+"VEN|1848": [
+"domestic"
+],
+"VEN|1859": [
+"domestic"
+],
+"VEN|1868": [
+"domestic"
+],
+"VEN|1869": [
+"domestic"
+],
+"VEN|1899": [
+"domestic"
+],
+"VEN|1901": [
+"domestic"
+],
+"VEN|1962": [
+"domestic"
+],
+"VEN|1982": [
+"domestic"
+],
+"VEN|1992": [
+"domestic"
+],
+"VNM|1946": [
+"external"
+],
+"VNM|1955": [
+"domestic"
+],
+"VNM|1960": [
+"domestic"
+],
+"VNM|1961": [
+"domestic"
+],
+"VNM|1963": [
+"domestic"
+],
+"VNM|1965": [
+"external"
+],
+"VNM|1968": [
+"external"
+],
+"VNM|1970": [
+"external"
+],
+"VNM|1974": [
+"external"
+],
+"VNM|1975": [
+"external"
+],
+"VNM|1976": [
+"domestic"
+],
+"VNM|1977": [
+"external"
+],
+"VNM|1978": [
+"external"
+],
+"VNM|1979": [
+"external"
+],
+"VNM|1983": [
+"external"
+],
+"VNM|1986": [
+"external"
+],
+"VNM|1987": [
+"external"
+],
+"YEM|1934": [
+"external"
+],
+"YEM|1948": [
+"domestic"
+],
+"YEM|1962": [
+"domestic"
+],
+"YEM|1964": [
+"external"
+],
+"YEM|1972": [
+"external"
+],
+"YEM|1979": [
+"domestic",
+"external"
+],
+"YEM|1986": [
+"domestic"
+],
+"YEM|1994": [
+"domestic"
+],
+"YEM|2004": [
+"domestic"
+],
+"YEM|2007": [
+"domestic"
+],
+"YEM|2009": [
+"domestic"
+],
+"YEM|2015": [
+"domestic"
+],
+"YEM|2017": [
+"domestic"
+],
+"YEM|2020": [
+"domestic"
+],
+"ZAF|1939": [
+"external"
+],
+"ZAF|1966": [
+"domestic"
+],
+"ZAF|1975": [
+"external"
+],
+"ZAF|1976": [
+"domestic"
+],
+"ZAF|1981": [
+"domestic"
+],
+"ZAF|1985": [
+"domestic"
+],
+"ZWE|1967": [
+"domestic"
+],
+"ZWE|1972": [
+"domestic"
+],
+"ZWE|1973": [
+"domestic"
+],
+"ZWE|1982": [
+"domestic"
+],
+"ZWE|1983": [
+"domestic"
+],
+"ZWE|1998": [
+"domestic"
+]
+},
+"classification_S1_type4_external": {
+"AFG|1924": [
+"domestic"
+],
+"AFG|1928": [
+"domestic"
+],
+"AFG|1978": [
+"domestic"
+],
+"AFG|1979": [
+"external"
+],
+"AFG|1989": [
+"domestic"
+],
+"AFG|2001": [
+"external"
+],
+"AFG|2015": [
+"domestic"
+],
+"AGO|1961": [
+"external"
+],
+"AGO|1975": [
+"external"
+],
+"AGO|1976": [
+"domestic"
+],
+"AGO|1991": [
+"domestic"
+],
+"AGO|1992": [
+"domestic"
+],
+"AGO|1994": [
+"domestic"
+],
+"AGO|1997": [
+"domestic"
+],
+"AGO|1998": [
+"domestic",
+"external"
+],
+"AGO|2002": [
+"domestic"
+],
+"AGO|2007": [
+"domestic"
+],
+"AGO|2009": [
+"domestic"
+],
+"AGO|2016": [
+"domestic"
+],
+"AGO|2019": [
+"domestic"
+],
+"AGO|2022": [
+"domestic"
+],
+"ALB|1946": [
+"external"
+],
+"ARE|1991": [
+"external"
+],
+"ARG|1841": [
+"domestic"
+],
+"ARG|1851": [
+"external"
+],
+"ARG|1861": [
+"domestic"
+],
+"ARG|1863": [
+"domestic"
+],
+"ARG|1865": [
+"external"
+],
+"ARG|1866": [
+"domestic"
+],
+"ARG|1870": [
+"domestic"
+],
+"ARG|1874": [
+"domestic"
+],
+"ARG|1879": [
+"domestic"
+],
+"ARG|1880": [
+"domestic"
+],
+"ARG|1955": [
+"domestic"
+],
+"ARG|1963": [
+"domestic"
+],
+"ARG|1974": [
+"domestic"
+],
+"ARG|1975": [
+"domestic"
+],
+"ARG|1982": [
+"external"
+],
+"ARM|1991": [
+"domestic"
+],
+"ARM|1993": [
+"external"
+],
+"AUS|1939": [
+"external"
+],
+"AUS|1950": [
+"external"
+],
+"AUS|1965": [
+"external"
+],
+"AUS|1992": [
+"domestic"
+],
+"AUS|2001": [
+"external"
+],
+"AUS|2003": [
+"external"
+],
+"AUT|1821": [
+"domestic"
+],
+"AUT|1848": [
+"domestic",
+"external"
+],
+"AUT|1849": [
+"external"
+],
+"AUT|1859": [
+"external"
+],
+"AUT|1864": [
+"external"
+],
+"AUT|1866": [
+"external"
+],
+"AUT|1914": [
+"external"
+],
+"AZE|1991": [
+"domestic",
+"external"
+],
+"AZE|1993": [
+"domestic",
+"external"
+],
+"AZE|1995": [
+"domestic"
+],
+"AZE|1997": [
+"external"
+],
+"AZE|2005": [
+"external"
+],
+"AZE|2008": [
+"external"
+],
+"AZE|2012": [
+"external"
+],
+"AZE|2014": [
+"external"
+],
+"AZE|2020": [
+"external"
+],
+"BDI|1965": [
+"external"
+],
+"BDI|1972": [
+"domestic"
+],
+"BDI|1991": [
+"external"
+],
+"BDI|1993": [
+"domestic"
+],
+"BDI|1994": [
+"external"
+],
+"BDI|1998": [
+"domestic"
+],
+"BDI|2001": [
+"domestic"
+],
+"BDI|2008": [
+"external"
+],
+"BDI|2014": [
+"external"
+],
+"BDI|2019": [
+"external"
+],
+"BEL|1914": [
+"external"
+],
+"BEL|1940": [
+"external"
+],
+"BEL|1951": [
+"external"
+],
+"BEL|1960": [
+"domestic"
+],
+"BEL|1964": [
+"domestic"
+],
+"BEL|1978": [
+"domestic"
+],
+"BEN|2022": [
+"domestic"
+],
+"BFA|1985": [
+"external"
+],
+"BFA|1987": [
+"external"
+],
+"BFA|2018": [
+"external"
+],
+"BFA|2019": [
+"domestic"
+],
+"BGD|1975": [
+"domestic"
+],
+"BGD|2005": [
+"domestic"
+],
+"BGD|2016": [
+"domestic"
+],
+"BGR|1912": [
+"external"
+],
+"BGR|1913": [
+"external"
+],
+"BGR|1915": [
+"external"
+],
+"BGR|1923": [
+"domestic"
+],
+"BGR|1941": [
+"external"
+],
+"BGR|1944": [
+"external"
+],
+"BIH|1992": [
+"domestic",
+"external"
+],
+"BIH|1993": [
+"domestic"
+],
+"BIH|1995": [
+"domestic"
+],
+"BOL|1862": [
+"domestic"
+],
+"BOL|1870": [
+"domestic"
+],
+"BOL|1879": [
+"external"
+],
+"BOL|1932": [
+"external"
+],
+"BOL|1946": [
+"domestic"
+],
+"BOL|1949": [
+"domestic"
+],
+"BOL|1952": [
+"domestic"
+],
+"BOL|1967": [
+"domestic"
+],
+"BRA|1835": [
+"domestic"
+],
+"BRA|1837": [
+"domestic"
+],
+"BRA|1851": [
+"external"
+],
+"BRA|1864": [
+"external"
+],
+"BRA|1893": [
+"domestic"
+],
+"BRA|1896": [
+"domestic"
+],
+"BRA|1932": [
+"domestic"
+],
+"BRA|1944": [
+"external"
+],
+"BRN|1962": [
+"external"
+],
+"CAF|2001": [
+"external"
+],
+"CAF|2006": [
+"external"
+],
+"CAF|2009": [
+"external"
+],
+"CAF|2015": [
+"external"
+],
+"CAF|2017": [
+"external"
+],
+"CAF|2023": [
+"external"
+],
+"CAN|1939": [
+"external"
+],
+"CAN|1950": [
+"external"
+],
+"CAN|1991": [
+"external"
+],
+"CAN|2001": [
+"external"
+],
+"CHL|1851": [
+"domestic"
+],
+"CHL|1865": [
+"external"
+],
+"CHL|1879": [
+"external"
+],
+"CHL|1891": [
+"domestic"
+],
+"CHL|1973": [
+"domestic"
+],
+"CHN|1860": [
+"domestic"
+],
+"CHN|1862": [
+"domestic"
+],
+"CHN|1864": [
+"domestic"
+],
+"CHN|1866": [
+"domestic"
+],
+"CHN|1876": [
+"domestic"
+],
+"CHN|1884": [
+"external"
+],
+"CHN|1891": [
+"domestic"
+],
+"CHN|1894": [
+"external"
+],
+"CHN|1895": [
+"domestic"
+],
+"CHN|1900": [
+"external"
+],
+"CHN|1911": [
+"domestic"
+],
+"CHN|1913": [
+"domestic"
+],
+"CHN|1914": [
+"domestic"
+],
+"CHN|1916": [
+"domestic"
+],
+"CHN|1926": [
+"domestic"
+],
+"CHN|1928": [
+"domestic"
+],
+"CHN|1929": [
+"domestic",
+"external"
+],
+"CHN|1930": [
+"domestic"
+],
+"CHN|1931": [
+"domestic",
+"external"
+],
+"CHN|1934": [
+"domestic"
+],
+"CHN|1937": [
+"external"
+],
+"CHN|1941": [
+"external"
+],
+"CHN|1946": [
+"domestic"
+],
+"CHN|1947": [
+"domestic"
+],
+"CHN|1949": [
+"external"
+],
+"CHN|1950": [
+"domestic",
+"external"
+],
+"CHN|1954": [
+"external"
+],
+"CHN|1956": [
+"domestic"
+],
+"CHN|1958": [
+"external"
+],
+"CHN|1959": [
+"domestic"
+],
+"CHN|1962": [
+"external"
+],
+"CHN|1967": [
+"domestic",
+"external"
+],
+"CHN|1969": [
+"external"
+],
+"CHN|1974": [
+"external"
+],
+"CHN|1978": [
+"external"
+],
+"CHN|1979": [
+"external"
+],
+"CHN|1983": [
+"external"
+],
+"CHN|1986": [
+"external"
+],
+"CHN|1987": [
+"external"
+],
+"CHN|2008": [
+"domestic"
+],
+"CHN|2020": [
+"external"
+],
+"CIV|2002": [
+"domestic"
+],
+"CIV|2011": [
+"domestic"
+],
+"CMR|1957": [
+"external"
+],
+"CMR|1960": [
+"domestic"
+],
+"CMR|1984": [
+"domestic"
+],
+"CMR|1996": [
+"external"
+],
+"CMR|2015": [
+"domestic"
+],
+"CMR|2017": [
+"domestic"
+],
+"CMR|2019": [
+"domestic"
+],
+"CMR|2020": [
+"domestic"
+],
+"CMR|2021": [
+"domestic"
+],
+"CMR|2022": [
+"domestic"
+],
+"CMR|2023": [
+"domestic"
+],
+"COD|1960": [
+"domestic"
+],
+"COD|1961": [
+"external"
+],
+"COD|1963": [
+"domestic"
+],
+"COD|1964": [
+"domestic",
+"external"
+],
+"COD|1967": [
+"external"
+],
+"COD|1975": [
+"external"
+],
+"COD|1977": [
+"external"
+],
+"COD|1978": [
+"domestic"
+],
+"COD|1996": [
+"domestic",
+"external"
+],
+"COD|1998": [
+"domestic"
+],
+"COD|2005": [
+"external"
+],
+"COD|2007": [
+"external"
+],
+"COD|2011": [
+"external"
+],
+"COD|2013": [
+"external"
+],
+"COD|2016": [
+"external"
+],
+"COD|2017": [
+"external"
+],
+"COD|2020": [
+"external"
+],
+"COG|1993": [
+"domestic"
+],
+"COG|1997": [
+"domestic"
+],
+"COG|1998": [
+"domestic"
+],
+"COG|2002": [
+"domestic"
+],
+"COG|2016": [
+"domestic"
+],
+"COL|1840": [
+"domestic"
+],
+"COL|1860": [
+"domestic"
+],
+"COL|1863": [
+"external"
+],
+"COL|1876": [
+"domestic"
+],
+"COL|1884": [
+"domestic"
+],
+"COL|1895": [
+"domestic"
+],
+"COL|1899": [
+"domestic"
+],
+"COL|1948": [
+"domestic"
+],
+"COL|1951": [
+"external"
+],
+"COL|1964": [
+"domestic"
+],
+"COL|1989": [
+"domestic"
+],
+"COL|2018": [
+"domestic"
+],
+"COM|1989": [
+"domestic"
+],
+"COM|1997": [
+"domestic"
+],
+"CRI|1948": [
+"domestic"
+],
+"CUB|1912": [
+"domestic"
+],
+"CUB|1953": [
+"external"
+],
+"CUB|1956": [
+"external"
+],
+"CUB|1958": [
+"domestic"
+],
+"CUB|1961": [
+"external"
+],
+"CUB|1975": [
+"external"
+],
+"CUB|1976": [
+"domestic"
+],
+"CUB|1977": [
+"external"
+],
+"CUB|1978": [
+"domestic"
+],
+"CYP|1955": [
+"external"
+],
+"CYP|1974": [
+"external"
+],
+"CZE|1919": [
+"external"
+],
+"DEU|1848": [
+"external"
+],
+"DEU|1849": [
+"external"
+],
+"DEU|1864": [
+"external"
+],
+"DEU|1866": [
+"external"
+],
+"DEU|1870": [
+"external"
+],
+"DEU|1914": [
+"external"
+],
+"DEU|1918": [
+"domestic",
+"external"
+],
+"DEU|1919": [
+"external"
+],
+"DEU|1936": [
+"domestic"
+],
+"DEU|1939": [
+"external"
+],
+"DEU|1999": [
+"external"
+],
+"DJI|1991": [
+"domestic"
+],
+"DJI|1999": [
+"domestic"
+],
+"DJI|2008": [
+"external"
+],
+"DNK|1848": [
+"external"
+],
+"DNK|1849": [
+"external"
+],
+"DNK|1864": [
+"external"
+],
+"DOM|1965": [
+"domestic"
+],
+"DZA|1954": [
+"external"
+],
+"DZA|1962": [
+"domestic"
+],
+"DZA|1963": [
+"external"
+],
+"DZA|1991": [
+"domestic"
+],
+"DZA|1992": [
+"domestic"
+],
+"DZA|2015": [
+"domestic"
+],
+"DZA|2020": [
+"domestic"
+],
+"ECU|1863": [
+"external"
+],
+"ECU|1895": [
+"domestic"
+],
+"ECU|1912": [
+"domestic"
+],
+"ECU|1995": [
+"external"
+],
+"EGY|1882": [
+"external"
+],
+"EGY|1948": [
+"external"
+],
+"EGY|1951": [
+"external"
+],
+"EGY|1956": [
+"external"
+],
+"EGY|1962": [
+"domestic"
+],
+"EGY|1967": [
+"external"
+],
+"EGY|1969": [
+"external"
+],
+"EGY|1973": [
+"external"
+],
+"EGY|1991": [
+"external"
+],
+"EGY|1993": [
+"domestic"
+],
+"EGY|2014": [
+"domestic"
+],
+"EGY|2015": [
+"domestic"
+],
+"EGY|2017": [
+"domestic"
+],
+"ERI|1997": [
+"domestic"
+],
+"ERI|1998": [
+"external"
+],
+"ERI|1999": [
+"domestic"
+],
+"ERI|2003": [
+"domestic"
+],
+"ERI|2006": [
+"domestic"
+],
+"ERI|2008": [
+"external"
+],
+"ERI|2016": [
+"external"
+],
+"ESP|1821": [
+"domestic"
+],
+"ESP|1823": [
+"external"
+],
+"ESP|1834": [
+"domestic"
+],
+"ESP|1847": [
+"domestic"
+],
+"ESP|1859": [
+"external"
+],
+"ESP|1865": [
+"external"
+],
+"ESP|1868": [
+"domestic"
+],
+"ESP|1872": [
+"domestic"
+],
+"ESP|1874": [
+"domestic"
+],
+"ESP|1898": [
+"external"
+],
+"ESP|1909": [
+"external"
+],
+"ESP|1934": [
+"domestic"
+],
+"ESP|1936": [
+"domestic"
+],
+"ESP|1957": [
+"external"
+],
+"ESP|1978": [
+"domestic"
+],
+"ESP|1985": [
+"domestic"
+],
+"ESP|1991": [
+"domestic"
+],
+"EST|1918": [
+"external"
+],
+"EST|1919": [
+"external"
+],
+"ETH|1928": [
+"domestic"
+],
+"ETH|1935": [
+"external"
+],
+"ETH|1941": [
+"external"
+],
+"ETH|1951": [
+"external"
+],
+"ETH|1960": [
+"external"
+],
+"ETH|1963": [
+"domestic"
+],
+"ETH|1964": [
+"domestic",
+"external"
+],
+"ETH|1975": [
+"domestic"
+],
+"ETH|1976": [
+"domestic",
+"external"
+],
+"ETH|1977": [
+"domestic",
+"external"
+],
+"ETH|1978": [
+"domestic"
+],
+"ETH|1980": [
+"domestic",
+"external"
+],
+"ETH|1981": [
+"domestic"
+],
+"ETH|1982": [
+"domestic"
+],
+"ETH|1983": [
+"domestic"
+],
+"ETH|1991": [
+"domestic"
+],
+"ETH|1993": [
+"domestic"
+],
+"ETH|1994": [
+"domestic"
+],
+"ETH|1996": [
+"domestic"
+],
+"ETH|1998": [
+"domestic",
+"external"
+],
+"ETH|1999": [
+"domestic"
+],
+"ETH|2006": [
+"domestic"
+],
+"ETH|2015": [
+"domestic"
+],
+"ETH|2016": [
+"external"
+],
+"ETH|2019": [
+"domestic"
+],
+"ETH|2020": [
+"external"
+],
+"ETH|2023": [
+"domestic"
+],
+"FIN|1918": [
+"domestic",
+"external"
+],
+"FIN|1919": [
+"domestic"
+],
+"FIN|1939": [
+"external"
+],
+"FIN|1941": [
+"external"
+],
+"FRA|1823": [
+"external"
+],
+"FRA|1827": [
+"domestic"
+],
+"FRA|1830": [
+"domestic"
+],
+"FRA|1835": [
+"domestic"
+],
+"FRA|1848": [
+"domestic"
+],
+"FRA|1849": [
+"external"
+],
+"FRA|1854": [
+"external"
+],
+"FRA|1859": [
+"external"
+],
+"FRA|1862": [
+"external"
+],
+"FRA|1870": [
+"external"
+],
+"FRA|1871": [
+"domestic"
+],
+"FRA|1884": [
+"external"
+],
+"FRA|1900": [
+"external"
+],
+"FRA|1907": [
+"domestic"
+],
+"FRA|1914": [
+"external"
+],
+"FRA|1918": [
+"domestic"
+],
+"FRA|1919": [
+"external"
+],
+"FRA|1939": [
+"external"
+],
+"FRA|1940": [
+"external"
+],
+"FRA|1944": [
+"external"
+],
+"FRA|1946": [
+"external"
+],
+"FRA|1951": [
+"external"
+],
+"FRA|1956": [
+"external"
+],
+"FRA|1958": [
+"external"
+],
+"FRA|1961": [
+"domestic",
+"external"
+],
+"FRA|1968": [
+"domestic"
+],
+"FRA|1978": [
+"domestic"
+],
+"FRA|1983": [
+"domestic"
+],
+"FRA|1991": [
+"external"
+],
+"FRA|1992": [
+"domestic"
+],
+"FRA|1999": [
+"external"
+],
+"FRA|2001": [
+"external"
+],
+"FRA|2002": [
+"domestic"
+],
+"GAB|1964": [
+"external"
+],
+"GBR|1827": [
+"domestic"
+],
+"GBR|1831": [
+"domestic"
+],
+"GBR|1835": [
+"domestic"
+],
+"GBR|1840": [
+"domestic"
+],
+"GBR|1854": [
+"external"
+],
+"GBR|1856": [
+"external"
+],
+"GBR|1862": [
+"domestic"
+],
+"GBR|1882": [
+"external"
+],
+"GBR|1900": [
+"external"
+],
+"GBR|1914": [
+"external"
+],
+"GBR|1918": [
+"domestic"
+],
+"GBR|1939": [
+"external"
+],
+"GBR|1944": [
+"domestic"
+],
+"GBR|1946": [
+"external"
+],
+"GBR|1950": [
+"external"
+],
+"GBR|1951": [
+"external"
+],
+"GBR|1956": [
+"external"
+],
+"GBR|1971": [
+"domestic"
+],
+"GBR|1973": [
+"domestic"
+],
+"GBR|1982": [
+"external"
+],
+"GBR|1991": [
+"external"
+],
+"GBR|1998": [
+"domestic"
+],
+"GBR|1999": [
+"external"
+],
+"GBR|2000": [
+"domestic"
+],
+"GBR|2001": [
+"external"
+],
+"GBR|2003": [
+"external"
+],
+"GEO|1991": [
+"domestic"
+],
+"GEO|1992": [
+"domestic",
+"external"
+],
+"GEO|1993": [
+"domestic"
+],
+"GEO|2004": [
+"external"
+],
+"GEO|2008": [
+"external"
+],
+"GHA|1966": [
+"domestic"
+],
+"GHA|1981": [
+"domestic"
+],
+"GHA|1983": [
+"domestic"
+],
+"GHA|1998": [
+"domestic"
+],
+"GHA|2000": [
+"domestic"
+],
+"GIN|1998": [
+"domestic"
+],
+"GIN|2000": [
+"domestic"
+],
+"GMB|1981": [
+"external"
+],
+"GNB|1963": [
+"external"
+],
+"GNB|1998": [
+"domestic",
+"external"
+],
+"GRC|1897": [
+"external"
+],
+"GRC|1912": [
+"external"
+],
+"GRC|1913": [
+"external"
+],
+"GRC|1917": [
+"external"
+],
+"GRC|1919": [
+"external"
+],
+"GRC|1940": [
+"external"
+],
+"GRC|1944": [
+"domestic"
+],
+"GRC|1946": [
+"domestic"
+],
+"GRC|1951": [
+"external"
+],
+"GRD|1983": [
+"external"
+],
+"GTM|1876": [
+"external"
+],
+"GTM|1885": [
+"external"
+],
+"GTM|1906": [
+"external"
+],
+"GTM|1949": [
+"domestic"
+],
+"GTM|1954": [
+"domestic"
+],
+"GTM|1963": [
+"domestic"
+],
+"GTM|1965": [
+"domestic"
+],
+"GTM|1966": [
+"domestic"
+],
+"GTM|1970": [
+"domestic"
+],
+"GTM|1978": [
+"domestic"
+],
+"HND|1906": [
+"external"
+],
+"HND|1907": [
+"external"
+],
+"HND|1924": [
+"domestic"
+],
+"HND|1957": [
+"external"
+],
+"HND|1969": [
+"external"
+],
+"HRV|1992": [
+"domestic",
+"external"
+],
+"HRV|1994": [
+"domestic"
+],
+"HRV|1995": [
+"domestic"
+],
+"HTI|1869": [
+"domestic"
+],
+"HTI|1883": [
+"domestic"
+],
+"HTI|1989": [
+"domestic"
+],
+"HTI|1991": [
+"domestic"
+],
+"HTI|2004": [
+"domestic"
+],
+"HUN|1919": [
+"domestic",
+"external"
+],
+"HUN|1941": [
+"external"
+],
+"HUN|1956": [
+"external"
+],
+"IDN|1946": [
+"external"
+],
+"IDN|1950": [
+"domestic"
+],
+"IDN|1953": [
+"domestic"
+],
+"IDN|1956": [
+"domestic"
+],
+"IDN|1958": [
+"domestic"
+],
+"IDN|1962": [
+"external"
+],
+"IDN|1963": [
+"external"
+],
+"IDN|1965": [
+"domestic"
+],
+"IDN|1967": [
+"domestic"
+],
+"IDN|1975": [
+"domestic"
+],
+"IDN|1976": [
+"domestic"
+],
+"IDN|1981": [
+"domestic"
+],
+"IDN|1984": [
+"domestic"
+],
+"IDN|1989": [
+"domestic"
+],
+"IDN|1990": [
+"domestic"
+],
+"IDN|1992": [
+"domestic"
+],
+"IDN|1997": [
+"domestic"
+],
+"IDN|1999": [
+"domestic"
+],
+"IDN|2003": [
+"domestic"
+],
+"IDN|2018": [
+"domestic"
+],
+"IDN|2021": [
+"domestic"
+],
+"IND|1947": [
+"domestic",
+"external"
+],
+"IND|1948": [
+"domestic",
+"external"
+],
+"IND|1956": [
+"domestic"
+],
+"IND|1961": [
+"domestic"
+],
+"IND|1962": [
+"external"
+],
+"IND|1964": [
+"external"
+],
+"IND|1965": [
+"external"
+],
+"IND|1966": [
+"domestic"
+],
+"IND|1967": [
+"external"
+],
+"IND|1969": [
+"domestic"
+],
+"IND|1970": [
+"domestic"
+],
+"IND|1971": [
+"external"
+],
+"IND|1979": [
+"domestic"
+],
+"IND|1982": [
+"domestic"
+],
+"IND|1983": [
+"domestic"
+],
+"IND|1984": [
+"domestic",
+"external"
+],
+"IND|1987": [
+"domestic",
+"external"
+],
+"IND|1989": [
+"domestic",
+"external"
+],
+"IND|1990": [
+"domestic"
+],
+"IND|1991": [
+"domestic"
+],
+"IND|1992": [
+"domestic"
+],
+"IND|1993": [
+"domestic"
+],
+"IND|1994": [
+"domestic",
+"external"
+],
+"IND|1996": [
+"domestic",
+"external"
+],
+"IND|1997": [
+"domestic"
+],
+"IND|1998": [
+"domestic"
+],
+"IND|1999": [
+"domestic",
+"external"
+],
+"IND|2000": [
+"domestic"
+],
+"IND|2001": [
+"domestic"
+],
+"IND|2003": [
+"domestic"
+],
+"IND|2008": [
+"domestic"
+],
+"IND|2009": [
+"domestic"
+],
+"IND|2012": [
+"domestic"
+],
+"IND|2013": [
+"domestic",
+"external"
+],
+"IND|2014": [
+"domestic"
+],
+"IND|2015": [
+"domestic"
+],
+"IND|2020": [
+"external"
+],
+"IRN|1856": [
+"external"
+],
+"IRN|1908": [
+"domestic"
+],
+"IRN|1920": [
+"domestic"
+],
+"IRN|1946": [
+"domestic",
+"external"
+],
+"IRN|1966": [
+"domestic"
+],
+"IRN|1973": [
+"domestic"
+],
+"IRN|1974": [
+"domestic",
+"external"
+],
+"IRN|1978": [
+"domestic"
+],
+"IRN|1979": [
+"domestic"
+],
+"IRN|1980": [
+"external"
+],
+"IRN|1985": [
+"domestic"
+],
+"IRN|1986": [
+"domestic"
+],
+"IRN|1990": [
+"domestic"
+],
+"IRN|1991": [
+"domestic"
+],
+"IRN|1993": [
+"domestic"
+],
+"IRN|1996": [
+"domestic"
+],
+"IRN|1997": [
+"domestic"
+],
+"IRN|1999": [
+"domestic"
+],
+"IRN|2005": [
+"domestic"
+],
+"IRN|2016": [
+"domestic"
+],
+"IRN|2017": [
+"domestic"
+],
+"IRN|2018": [
+"domestic",
+"external"
+],
+"IRN|2023": [
+"domestic"
+],
+"IRQ|1948": [
+"external"
+],
+"IRQ|1958": [
+"external"
+],
+"IRQ|1959": [
+"domestic"
+],
+"IRQ|1961": [
+"domestic"
+],
+"IRQ|1963": [
+"external"
+],
+"IRQ|1965": [
+"domestic"
+],
+"IRQ|1969": [
+"domestic"
+],
+"IRQ|1973": [
+"domestic",
+"external"
+],
+"IRQ|1974": [
+"domestic",
+"external"
+],
+"IRQ|1980": [
+"external"
+],
+"IRQ|1982": [
+"external"
+],
+"IRQ|1985": [
+"domestic"
+],
+"IRQ|1987": [
+"external"
+],
+"IRQ|1990": [
+"external"
+],
+"IRQ|1991": [
+"domestic",
+"external"
+],
+"IRQ|1995": [
+"domestic"
+],
+"IRQ|1996": [
+"domestic"
+],
+"IRQ|2003": [
+"external"
+],
+"IRQ|2004": [
+"external"
+],
+"ISR|1946": [
+"external"
+],
+"ISR|1948": [
+"external"
+],
+"ISR|1949": [
+"domestic"
+],
+"ISR|1956": [
+"external"
+],
+"ISR|1967": [
+"external"
+],
+"ISR|1969": [
+"external"
+],
+"ISR|1973": [
+"external"
+],
+"ISR|1978": [
+"domestic"
+],
+"ISR|1982": [
+"external"
+],
+"ISR|1990": [
+"domestic"
+],
+"ISR|2000": [
+"domestic"
+],
+"ISR|2006": [
+"domestic"
+],
+"ISR|2014": [
+"domestic"
+],
+"ISR|2018": [
+"domestic",
+"external"
+],
+"ISR|2021": [
+"domestic"
+],
+"ISR|2023": [
+"domestic"
+],
+"ITA|1820": [
+"domestic"
+],
+"ITA|1821": [
+"domestic"
+],
+"ITA|1848": [
+"domestic",
+"external"
+],
+"ITA|1849": [
+"external"
+],
+"ITA|1855": [
+"external"
+],
+"ITA|1859": [
+"external"
+],
+"ITA|1860": [
+"external"
+],
+"ITA|1866": [
+"external"
+],
+"ITA|1911": [
+"external"
+],
+"ITA|1915": [
+"external"
+],
+"ITA|1935": [
+"external"
+],
+"ITA|1936": [
+"domestic"
+],
+"ITA|1940": [
+"external"
+],
+"ITA|1943": [
+"external"
+],
+"ITA|1991": [
+"external"
+],
+"ITA|1992": [
+"domestic"
+],
+"ITA|1999": [
+"external"
+],
+"JOR|1948": [
+"external"
+],
+"JOR|1967": [
+"external"
+],
+"JOR|1970": [
+"domestic"
+],
+"JOR|1973": [
+"external"
+],
+"JOR|2016": [
+"domestic"
+],
+"JPN|1868": [
+"domestic"
+],
+"JPN|1877": [
+"domestic"
+],
+"JPN|1894": [
+"domestic",
+"external"
+],
+"JPN|1900": [
+"external"
+],
+"JPN|1904": [
+"external"
+],
+"JPN|1914": [
+"external"
+],
+"JPN|1918": [
+"domestic"
+],
+"JPN|1927": [
+"domestic"
+],
+"JPN|1931": [
+"external"
+],
+"JPN|1937": [
+"external"
+],
+"JPN|1938": [
+"external"
+],
+"JPN|1939": [
+"external"
+],
+"JPN|1941": [
+"external"
+],
+"KEN|1952": [
+"external"
+],
+"KEN|1982": [
+"domestic"
+],
+"KEN|2015": [
+"domestic"
+],
+"KGZ|1992": [
+"domestic"
+],
+"KGZ|2000": [
+"domestic"
+],
+"KGZ|2010": [
+"domestic"
+],
+"KGZ|2021": [
+"external"
+],
+"KHM|1946": [
+"external"
+],
+"KHM|1967": [
+"domestic"
+],
+"KHM|1970": [
+"external"
+],
+"KHM|1971": [
+"domestic"
+],
+"KHM|1975": [
+"external"
+],
+"KHM|1977": [
+"external"
+],
+"KHM|1978": [
+"domestic"
+],
+"KHM|1989": [
+"domestic"
+],
+"KHM|1993": [
+"domestic"
+],
+"KHM|2011": [
+"external"
+],
+"KOR|1894": [
+"domestic"
+],
+"KOR|1949": [
+"external"
+],
+"KOR|1950": [
+"external"
+],
+"KOR|1965": [
+"external"
+],
+"KWT|1990": [
+"external"
+],
+"LAO|1946": [
+"external"
+],
+"LAO|1959": [
+"domestic"
+],
+"LAO|1960": [
+"domestic"
+],
+"LAO|1963": [
+"domestic"
+],
+"LAO|1968": [
+"external"
+],
+"LAO|1976": [
+"domestic"
+],
+"LAO|1986": [
+"external"
+],
+"LAO|1989": [
+"domestic"
+],
+"LBN|1948": [
+"external"
+],
+"LBN|1958": [
+"domestic",
+"external"
+],
+"LBN|1975": [
+"domestic",
+"external"
+],
+"LBN|1982": [
+"external"
+],
+"LBN|1983": [
+"domestic"
+],
+"LBN|1989": [
+"domestic",
+"external"
+],
+"LBN|2014": [
+"domestic"
+],
+"LBN|2017": [
+"domestic"
+],
+"LBR|1980": [
+"domestic"
+],
+"LBR|1989": [
+"domestic"
+],
+"LBR|1992": [
+"domestic"
+],
+"LBR|1996": [
+"domestic"
+],
+"LBR|2000": [
+"domestic"
+],
+"LBR|2002": [
+"domestic"
+],
+"LBY|1979": [
+"external"
+],
+"LBY|1980": [
+"domestic"
+],
+"LBY|1983": [
+"domestic"
+],
+"LBY|1986": [
+"external"
+],
+"LBY|1987": [
+"external"
+],
+"LBY|2011": [
+"external"
+],
+"LBY|2013": [
+"external"
+],
+"LBY|2015": [
+"external"
+],
+"LBY|2017": [
+"external"
+],
+"LBY|2019": [
+"external"
+],
+"LKA|1971": [
+"domestic"
+],
+"LKA|1983": [
+"domestic"
+],
+"LKA|1984": [
+"domestic"
+],
+"LKA|1987": [
+"domestic"
+],
+"LKA|1989": [
+"domestic"
+],
+"LKA|2003": [
+"domestic"
+],
+"LKA|2005": [
+"domestic"
+],
+"LKA|2006": [
+"domestic"
+],
+"LSO|1998": [
+"external"
+],
+"LTU|1920": [
+"external"
+],
+"LVA|1918": [
+"external"
+],
+"MAR|1859": [
+"external"
+],
+"MAR|1907": [
+"domestic"
+],
+"MAR|1909": [
+"external"
+],
+"MAR|1953": [
+"external"
+],
+"MAR|1957": [
+"external"
+],
+"MAR|1963": [
+"external"
+],
+"MAR|1971": [
+"domestic"
+],
+"MAR|1975": [
+"domestic"
+],
+"MAR|1991": [
+"external"
+],
+"MDA|1991": [
+"domestic"
+],
+"MDA|1992": [
+"domestic"
+],
+"MDG|1947": [
+"external"
+],
+"MDG|1971": [
+"domestic"
+],
+"MEX|1832": [
+"domestic"
+],
+"MEX|1835": [
+"domestic"
+],
+"MEX|1841": [
+"domestic"
+],
+"MEX|1846": [
+"external"
+],
+"MEX|1848": [
+"domestic"
+],
+"MEX|1855": [
+"domestic"
+],
+"MEX|1858": [
+"domestic"
+],
+"MEX|1862": [
+"external"
+],
+"MEX|1867": [
+"domestic"
+],
+"MEX|1876": [
+"domestic"
+],
+"MEX|1899": [
+"domestic"
+],
+"MEX|1910": [
+"domestic"
+],
+"MEX|1914": [
+"domestic"
+],
+"MEX|1923": [
+"domestic"
+],
+"MEX|1926": [
+"domestic"
+],
+"MEX|1929": [
+"domestic"
+],
+"MEX|1994": [
+"domestic"
+],
+"MEX|1996": [
+"domestic"
+],
+"MKD|2001": [
+"domestic"
+],
+"MLI|1985": [
+"external"
+],
+"MLI|1990": [
+"external"
+],
+"MLI|1994": [
+"external"
+],
+"MLI|2007": [
+"external"
+],
+"MLI|2009": [
+"external"
+],
+"MLI|2012": [
+"external"
+],
+"MLI|2014": [
+"external"
+],
+"MLI|2015": [
+"domestic"
+],
+"MLI|2017": [
+"external"
+],
+"MLI|2023": [
+"domestic"
+],
+"MMR|1948": [
+"domestic"
+],
+"MMR|1949": [
+"domestic"
+],
+"MMR|1957": [
+"domestic"
+],
+"MMR|1958": [
+"domestic"
+],
+"MMR|1959": [
+"domestic"
+],
+"MMR|1961": [
+"domestic"
+],
+"MMR|1964": [
+"domestic"
+],
+"MMR|1967": [
+"domestic"
+],
+"MMR|1969": [
+"external"
+],
+"MMR|1972": [
+"domestic"
+],
+"MMR|1973": [
+"domestic"
+],
+"MMR|1976": [
+"domestic"
+],
+"MMR|1983": [
+"domestic"
+],
+"MMR|1987": [
+"domestic"
+],
+"MMR|1988": [
+"domestic"
+],
+"MMR|1990": [
+"domestic"
+],
+"MMR|1991": [
+"domestic"
+],
+"MMR|1992": [
+"domestic"
+],
+"MMR|1993": [
+"domestic"
+],
+"MMR|1994": [
+"domestic"
+],
+"MMR|1995": [
+"domestic"
+],
+"MMR|1996": [
+"domestic"
+],
+"MMR|1997": [
+"domestic"
+],
+"MMR|2000": [
+"domestic"
+],
+"MMR|2005": [
+"domestic"
+],
+"MMR|2009": [
+"domestic"
+],
+"MMR|2011": [
+"domestic"
+],
+"MMR|2013": [
+"domestic"
+],
+"MMR|2014": [
+"domestic"
+],
+"MMR|2015": [
+"domestic"
+],
+"MMR|2016": [
+"domestic"
+],
+"MMR|2017": [
+"domestic"
+],
+"MMR|2021": [
+"domestic"
+],
+"MMR|2022": [
+"domestic"
+],
+"MMR|2023": [
+"domestic"
+],
+"MNG|1939": [
+"external"
+],
+"MNG|1945": [
+"external"
+],
+"MOZ|1964": [
+"external"
+],
+"MOZ|1977": [
+"domestic"
+],
+"MOZ|1979": [
+"domestic"
+],
+"MOZ|2013": [
+"domestic"
+],
+"MOZ|2016": [
+"domestic"
+],
+"MOZ|2018": [
+"domestic"
+],
+"MOZ|2019": [
+"external"
+],
+"MRT|1957": [
+"external"
+],
+"MRT|1975": [
+"domestic"
+],
+"MRT|2010": [
+"external"
+],
+"MYS|1948": [
+"external"
+],
+"MYS|1958": [
+"domestic"
+],
+"MYS|1963": [
+"external"
+],
+"MYS|1974": [
+"domestic"
+],
+"MYS|1981": [
+"domestic"
+],
+"MYS|2013": [
+"domestic"
+],
+"NAM|1998": [
+"domestic"
+],
+"NER|1991": [
+"external"
+],
+"NER|1994": [
+"domestic"
+],
+"NER|1995": [
+"domestic"
+],
+"NER|1997": [
+"external"
+],
+"NER|2007": [
+"external"
+],
+"NER|2015": [
+"external"
+],
+"NER|2021": [
+"external"
+],
+"NGA|1966": [
+"external"
+],
+"NGA|1967": [
+"domestic",
+"external"
+],
+"NGA|1980": [
+"domestic"
+],
+"NGA|1983": [
+"external"
+],
+"NGA|1990": [
+"domestic"
+],
+"NGA|1992": [
+"domestic"
+],
+"NGA|1996": [
+"external"
+],
+"NGA|1998": [
+"domestic"
+],
+"NGA|2000": [
+"domestic"
+],
+"NGA|2004": [
+"domestic"
+],
+"NGA|2009": [
+"external"
+],
+"NGA|2011": [
+"external"
+],
+"NGA|2015": [
+"external"
+],
+"NGA|2021": [
+"external"
+],
+"NIC|1907": [
+"external"
+],
+"NIC|1957": [
+"external"
+],
+"NIC|1977": [
+"domestic"
+],
+"NIC|1978": [
+"domestic"
+],
+"NIC|1982": [
+"domestic"
+],
+"NLD|1830": [
+"domestic"
+],
+"NLD|1940": [
+"external"
+],
+"NLD|1951": [
+"external"
+],
+"NLD|1962": [
+"external"
+],
+"NLD|1999": [
+"external"
+],
+"NOR|1940": [
+"external"
+],
+"NPL|1960": [
+"domestic"
+],
+"NPL|1996": [
+"domestic"
+],
+"NPL|2001": [
+"domestic"
+],
+"NPL|2003": [
+"domestic"
+],
+"NZL|1939": [
+"external"
+],
+"OMN|1957": [
+"external"
+],
+"OMN|1969": [
+"external"
+],
+"OMN|1973": [
+"domestic"
+],
+"OMN|1991": [
+"external"
+],
+"PAK|1947": [
+"external"
+],
+"PAK|1948": [
+"external"
+],
+"PAK|1964": [
+"external"
+],
+"PAK|1965": [
+"external"
+],
+"PAK|1971": [
+"domestic",
+"external"
+],
+"PAK|1973": [
+"domestic"
+],
+"PAK|1974": [
+"domestic"
+],
+"PAK|1984": [
+"external"
+],
+"PAK|1987": [
+"external"
+],
+"PAK|1989": [
+"external"
+],
+"PAK|1990": [
+"domestic"
+],
+"PAK|1992": [
+"domestic"
+],
+"PAK|1994": [
+"domestic",
+"external"
+],
+"PAK|1996": [
+"external"
+],
+"PAK|1999": [
+"external"
+],
+"PAK|2004": [
+"domestic"
+],
+"PAK|2006": [
+"domestic"
+],
+"PAK|2007": [
+"domestic"
+],
+"PAK|2011": [
+"domestic"
+],
+"PAK|2013": [
+"external"
+],
+"PAK|2016": [
+"domestic"
+],
+"PAK|2019": [
+"domestic"
+],
+"PAK|2021": [
+"domestic"
+],
+"PAN|1989": [
+"domestic",
+"external"
+],
+"PER|1853": [
+"domestic"
+],
+"PER|1856": [
+"domestic"
+],
+"PER|1866": [
+"external"
+],
+"PER|1879": [
+"external"
+],
+"PER|1885": [
+"domestic"
+],
+"PER|1894": [
+"domestic"
+],
+"PER|1932": [
+"domestic"
+],
+"PER|1965": [
+"domestic"
+],
+"PER|1982": [
+"domestic"
+],
+"PER|1995": [
+"external"
+],
+"PER|2007": [
+"domestic"
+],
+"PHL|1946": [
+"domestic"
+],
+"PHL|1950": [
+"domestic",
+"external"
+],
+"PHL|1966": [
+"external"
+],
+"PHL|1969": [
+"domestic"
+],
+"PHL|1970": [
+"domestic"
+],
+"PHL|1972": [
+"domestic"
+],
+"PHL|1993": [
+"domestic"
+],
+"PHL|1997": [
+"domestic"
+],
+"PHL|1999": [
+"domestic"
+],
+"PHL|2000": [
+"domestic"
+],
+"PHL|2003": [
+"domestic"
+],
+"PHL|2005": [
+"domestic"
+],
+"PHL|2016": [
+"domestic"
+],
+"PNG|1989": [
+"domestic"
+],
+"PNG|1990": [
+"domestic"
+],
+"PNG|1992": [
+"domestic"
+],
+"POL|1919": [
+"external"
+],
+"POL|1920": [
+"external"
+],
+"POL|1939": [
+"external"
+],
+"POL|1945": [
+"domestic"
+],
+"PRK|1949": [
+"external"
+],
+"PRK|1950": [
+"external"
+],
+"PRT|1828": [
+"domestic"
+],
+"PRT|1835": [
+"domestic"
+],
+"PRT|1916": [
+"external"
+],
+"PRT|1936": [
+"domestic"
+],
+"PRY|1864": [
+"external"
+],
+"PRY|1911": [
+"domestic"
+],
+"PRY|1932": [
+"external"
+],
+"PRY|1947": [
+"domestic"
+],
+"PRY|1954": [
+"domestic"
+],
+"PRY|1989": [
+"domestic"
+],
+"QAT|1991": [
+"external"
+],
+"ROU|1907": [
+"domestic"
+],
+"ROU|1913": [
+"external"
+],
+"ROU|1916": [
+"external"
+],
+"ROU|1919": [
+"external"
+],
+"ROU|1941": [
+"external"
+],
+"ROU|1944": [
+"external"
+],
+"ROU|1989": [
+"domestic"
+],
+"RUS|1818": [
+"domestic"
+],
+"RUS|1827": [
+"domestic"
+],
+"RUS|1828": [
+"external"
+],
+"RUS|1830": [
+"domestic"
+],
+"RUS|1831": [
+"domestic"
+],
+"RUS|1834": [
+"domestic"
+],
+"RUS|1836": [
+"domestic"
+],
+"RUS|1849": [
+"domestic"
+],
+"RUS|1853": [
+"external"
+],
+"RUS|1863": [
+"domestic"
+],
+"RUS|1871": [
+"domestic"
+],
+"RUS|1877": [
+"external"
+],
+"RUS|1900": [
+"external"
+],
+"RUS|1904": [
+"external"
+],
+"RUS|1905": [
+"domestic"
+],
+"RUS|1909": [
+"domestic"
+],
+"RUS|1914": [
+"external"
+],
+"RUS|1916": [
+"domestic"
+],
+"RUS|1917": [
+"domestic"
+],
+"RUS|1918": [
+"domestic",
+"external"
+],
+"RUS|1919": [
+"external"
+],
+"RUS|1920": [
+"domestic"
+],
+"RUS|1921": [
+"domestic"
+],
+"RUS|1929": [
+"external"
+],
+"RUS|1934": [
+"domestic"
+],
+"RUS|1938": [
+"external"
+],
+"RUS|1939": [
+"external"
+],
+"RUS|1941": [
+"external"
+],
+"RUS|1945": [
+"domestic",
+"external"
+],
+"RUS|1946": [
+"domestic"
+],
+"RUS|1956": [
+"external"
+],
+"RUS|1969": [
+"external"
+],
+"RUS|1979": [
+"domestic",
+"external"
+],
+"RUS|1990": [
+"domestic"
+],
+"RUS|1993": [
+"domestic"
+],
+"RUS|1994": [
+"domestic"
+],
+"RUS|1999": [
+"domestic"
+],
+"RUS|2007": [
+"domestic"
+],
+"RUS|2015": [
+"domestic"
+],
+"RUS|2022": [
+"external"
+],
+"RUS|2023": [
+"domestic"
+],
+"RWA|1963": [
+"domestic"
+],
+"RWA|1990": [
+"domestic"
+],
+"RWA|1994": [
+"domestic"
+],
+"RWA|1996": [
+"domestic"
+],
+"RWA|1997": [
+"domestic"
+],
+"RWA|1998": [
+"domestic"
+],
+"RWA|2001": [
+"domestic"
+],
+"RWA|2009": [
+"domestic"
+],
+"RWA|2016": [
+"domestic"
+],
+"RWA|2019": [
+"domestic"
+],
+"RWA|2022": [
+"domestic"
+],
+"SAU|1929": [
+"domestic"
+],
+"SAU|1934": [
+"external"
+],
+"SAU|1973": [
+"external"
+],
+"SAU|1979": [
+"domestic"
+],
+"SAU|1991": [
+"external"
+],
+"SDN|1963": [
+"domestic"
+],
+"SDN|1971": [
+"domestic"
+],
+"SDN|1976": [
+"domestic"
+],
+"SDN|1983": [
+"domestic"
+],
+"SDN|1992": [
+"domestic"
+],
+"SDN|1998": [
+"domestic"
+],
+"SDN|2003": [
+"domestic"
+],
+"SDN|2011": [
+"domestic"
+],
+"SDN|2012": [
+"external"
+],
+"SDN|2020": [
+"domestic"
+],
+"SEN|1990": [
+"domestic"
+],
+"SEN|1992": [
+"domestic"
+],
+"SEN|1995": [
+"domestic"
+],
+"SEN|1997": [
+"domestic"
+],
+"SEN|1998": [
+"domestic"
+],
+"SEN|2000": [
+"domestic"
+],
+"SEN|2003": [
+"domestic"
+],
+"SEN|2011": [
+"domestic"
+],
+"SLE|1991": [
+"domestic"
+],
+"SLE|1998": [
+"domestic"
+],
+"SLE|2000": [
+"domestic"
+],
+"SLV|1876": [
+"external"
+],
+"SLV|1885": [
+"external"
+],
+"SLV|1906": [
+"external"
+],
+"SLV|1907": [
+"external"
+],
+"SLV|1932": [
+"domestic"
+],
+"SLV|1969": [
+"external"
+],
+"SLV|1972": [
+"domestic"
+],
+"SLV|1979": [
+"domestic"
+],
+"SOM|1963": [
+"domestic"
+],
+"SOM|1964": [
+"external"
+],
+"SOM|1976": [
+"domestic"
+],
+"SOM|1977": [
+"external"
+],
+"SOM|1980": [
+"domestic",
+"external"
+],
+"SOM|1982": [
+"external"
+],
+"SOM|1986": [
+"external"
+],
+"SOM|1988": [
+"domestic"
+],
+"SOM|1991": [
+"domestic"
+],
+"SOM|2001": [
+"external"
+],
+"SOM|2006": [
+"domestic",
+"external"
+],
+"SOM|2018": [
+"domestic"
+],
+"SOM|2019": [
+"external"
+],
+"SRB|1912": [
+"external"
+],
+"SRB|1913": [
+"external"
+],
+"SRB|1914": [
+"external"
+],
+"SRB|1941": [
+"external"
+],
+"SRB|1991": [
+"domestic"
+],
+"SRB|1992": [
+"external"
+],
+"SRB|1998": [
+"domestic",
+"external"
+],
+"SRB|1999": [
+"external"
+],
+"SSD|2011": [
+"domestic"
+],
+"SSD|2012": [
+"external"
+],
+"SUR|1987": [
+"domestic"
+],
+"SYR|1948": [
+"external"
+],
+"SYR|1966": [
+"external"
+],
+"SYR|1967": [
+"external"
+],
+"SYR|1970": [
+"domestic"
+],
+"SYR|1973": [
+"external"
+],
+"SYR|1976": [
+"domestic"
+],
+"SYR|1978": [
+"domestic"
+],
+"SYR|1979": [
+"external"
+],
+"SYR|1981": [
+"domestic"
+],
+"SYR|1982": [
+"external"
+],
+"SYR|1989": [
+"domestic"
+],
+"SYR|1991": [
+"external"
+],
+"SYR|2011": [
+"external"
+],
+"SYR|2012": [
+"domestic"
+],
+"SYR|2013": [
+"external"
+],
+"SYR|2016": [
+"domestic"
+],
+"SYR|2018": [
+"domestic"
+],
+"SYR|2023": [
+"domestic"
+],
+"TCD|1966": [
+"domestic"
+],
+"TCD|1976": [
+"domestic"
+],
+"TCD|1980": [
+"domestic"
+],
+"TCD|1983": [
+"external"
+],
+"TCD|1986": [
+"domestic",
+"external"
+],
+"TCD|1987": [
+"external"
+],
+"TCD|1989": [
+"domestic"
+],
+"TCD|1997": [
+"domestic"
+],
+"TCD|1998": [
+"domestic"
+],
+"TCD|2005": [
+"domestic"
+],
+"TCD|2015": [
+"domestic"
+],
+"TCD|2017": [
+"domestic"
+],
+"TCD|2018": [
+"domestic"
+],
+"TCD|2020": [
+"domestic"
+],
+"TCD|2023": [
+"domestic"
+],
+"TGO|1986": [
+"domestic"
+],
+"TGO|2022": [
+"domestic"
+],
+"THA|1940": [
+"external"
+],
+"THA|1946": [
+"external"
+],
+"THA|1951": [
+"domestic",
+"external"
+],
+"THA|1967": [
+"external"
+],
+"THA|1970": [
+"external"
+],
+"THA|1972": [
+"domestic"
+],
+"THA|1974": [
+"domestic"
+],
+"THA|1977": [
+"external"
+],
+"THA|1986": [
+"external"
+],
+"THA|2003": [
+"domestic"
+],
+"THA|2011": [
+"external"
+],
+"TJK|1992": [
+"domestic"
+],
+"TJK|2021": [
+"external"
+],
+"TTO|1990": [
+"domestic"
+],
+"TUN|1953": [
+"external"
+],
+"TUN|1961": [
+"external"
+],
+"TUN|1980": [
+"domestic"
+],
+"TUN|2013": [
+"domestic"
+],
+"TUN|2016": [
+"domestic"
+],
+"TUR|1821": [
+"domestic"
+],
+"TUR|1826": [
+"domestic"
+],
+"TUR|1828": [
+"external"
+],
+"TUR|1830": [
+"domestic"
+],
+"TUR|1831": [
+"domestic"
+],
+"TUR|1836": [
+"domestic"
+],
+"TUR|1839": [
+"domestic"
+],
+"TUR|1840": [
+"domestic"
+],
+"TUR|1841": [
+"domestic"
+],
+"TUR|1842": [
+"domestic"
+],
+"TUR|1852": [
+"domestic"
+],
+"TUR|1853": [
+"external"
+],
+"TUR|1858": [
+"domestic"
+],
+"TUR|1861": [
+"domestic"
+],
+"TUR|1866": [
+"domestic"
+],
+"TUR|1875": [
+"domestic"
+],
+"TUR|1877": [
+"external"
+],
+"TUR|1890": [
+"domestic"
+],
+"TUR|1895": [
+"domestic"
+],
+"TUR|1896": [
+"domestic"
+],
+"TUR|1897": [
+"external"
+],
+"TUR|1903": [
+"domestic"
+],
+"TUR|1904": [
+"domestic"
+],
+"TUR|1909": [
+"domestic"
+],
+"TUR|1910": [
+"domestic"
+],
+"TUR|1911": [
+"external"
+],
+"TUR|1912": [
+"external"
+],
+"TUR|1913": [
+"external"
+],
+"TUR|1914": [
+"external"
+],
+"TUR|1919": [
+"external"
+],
+"TUR|1950": [
+"external"
+],
+"TUR|1974": [
+"external"
+],
+"TUR|1984": [
+"domestic"
+],
+"TUR|1991": [
+"domestic"
+],
+"TUR|1999": [
+"external"
+],
+"TUR|2000": [
+"domestic"
+],
+"TUR|2005": [
+"domestic"
+],
+"TUR|2015": [
+"domestic"
+],
+"TUR|2016": [
+"domestic"
+],
+"TWN|1949": [
+"external"
+],
+"TWN|1954": [
+"external"
+],
+"TWN|1958": [
+"external"
+],
+"TZA|1964": [
+"domestic"
+],
+"TZA|1978": [
+"external"
+],
+"TZA|1985": [
+"domestic"
+],
+"TZA|2020": [
+"domestic"
+],
+"UGA|1966": [
+"domestic"
+],
+"UGA|1971": [
+"external"
+],
+"UGA|1974": [
+"external"
+],
+"UGA|1978": [
+"external"
+],
+"UGA|1979": [
+"external"
+],
+"UGA|1980": [
+"domestic"
+],
+"UGA|1986": [
+"domestic"
+],
+"UGA|1994": [
+"external"
+],
+"UGA|1997": [
+"domestic"
+],
+"UGA|1998": [
+"domestic"
+],
+"UGA|2013": [
+"external"
+],
+"UGA|2022": [
+"domestic"
+],
+"UKR|2014": [
+"domestic",
+"external"
+],
+"UKR|2022": [
+"external"
+],
+"URY|1904": [
+"domestic"
+],
+"URY|1972": [
+"domestic"
+],
+"USA|1846": [
+"external"
+],
+"USA|1861": [
+"domestic"
+],
+"USA|1898": [
+"external"
+],
+"USA|1900": [
+"external"
+],
+"USA|1915": [
+"domestic"
+],
+"USA|1917": [
+"external"
+],
+"USA|1918": [
+"domestic"
+],
+"USA|1941": [
+"external"
+],
+"USA|1950": [
+"external"
+],
+"USA|1958": [
+"domestic"
+],
+"USA|1961": [
+"domestic"
+],
+"USA|1964": [
+"domestic"
+],
+"USA|1965": [
+"domestic",
+"external"
+],
+"USA|1966": [
+"domestic"
+],
+"USA|1968": [
+"external"
+],
+"USA|1970": [
+"external"
+],
+"USA|1971": [
+"domestic"
+],
+"USA|1983": [
+"domestic",
+"external"
+],
+"USA|1989": [
+"external"
+],
+"USA|1991": [
+"external"
+],
+"USA|1992": [
+"domestic"
+],
+"USA|1995": [
+"domestic"
+],
+"USA|1999": [
+"external"
+],
+"USA|2001": [
+"external"
+],
+"USA|2003": [
+"external"
+],
+"USA|2004": [
+"domestic"
+],
+"USA|2007": [
+"domestic"
+],
+"USA|2019": [
+"external"
+],
+"UZB|1999": [
+"domestic"
+],
+"UZB|2004": [
+"domestic"
+],
+"VEN|1848": [
+"domestic"
+],
+"VEN|1859": [
+"domestic"
+],
+"VEN|1868": [
+"domestic"
+],
+"VEN|1869": [
+"domestic"
+],
+"VEN|1899": [
+"domestic"
+],
+"VEN|1901": [
+"domestic"
+],
+"VEN|1962": [
+"domestic"
+],
+"VEN|1982": [
+"domestic"
+],
+"VEN|1992": [
+"domestic"
+],
+"VNM|1946": [
+"external"
+],
+"VNM|1955": [
+"external"
+],
+"VNM|1960": [
+"domestic"
+],
+"VNM|1961": [
+"domestic"
+],
+"VNM|1963": [
+"domestic"
+],
+"VNM|1965": [
+"external"
+],
+"VNM|1968": [
+"external"
+],
+"VNM|1970": [
+"external"
+],
+"VNM|1974": [
+"external"
+],
+"VNM|1975": [
+"external"
+],
+"VNM|1976": [
+"domestic"
+],
+"VNM|1977": [
+"external"
+],
+"VNM|1978": [
+"external"
+],
+"VNM|1979": [
+"external"
+],
+"VNM|1983": [
+"external"
+],
+"VNM|1986": [
+"external"
+],
+"VNM|1987": [
+"external"
+],
+"YEM|1934": [
+"external"
+],
+"YEM|1948": [
+"domestic",
+"external"
+],
+"YEM|1962": [
+"domestic",
+"external"
+],
+"YEM|1964": [
+"external"
+],
+"YEM|1972": [
+"external"
+],
+"YEM|1979": [
+"external"
+],
+"YEM|1986": [
+"domestic"
+],
+"YEM|1994": [
+"domestic"
+],
+"YEM|2004": [
+"domestic"
+],
+"YEM|2007": [
+"domestic"
+],
+"YEM|2009": [
+"external"
+],
+"YEM|2015": [
+"domestic"
+],
+"YEM|2017": [
+"domestic"
+],
+"YEM|2020": [
+"domestic"
+],
+"ZAF|1939": [
+"external"
+],
+"ZAF|1966": [
+"domestic"
+],
+"ZAF|1975": [
+"external"
+],
+"ZAF|1976": [
+"domestic"
+],
+"ZAF|1981": [
+"domestic"
+],
+"ZAF|1985": [
+"domestic"
+],
+"ZWE|1967": [
+"domestic"
+],
+"ZWE|1972": [
+"domestic"
+],
+"ZWE|1973": [
+"domestic"
+],
+"ZWE|1982": [
+"domestic"
+],
+"ZWE|1983": [
+"domestic"
+],
+"ZWE|1998": [
+"domestic"
+]
+},
+"classification_S2_type1_excluded": {
+"AFG|1924": [
+"domestic"
+],
+"AFG|1928": [
+"domestic"
+],
+"AFG|1978": [
+"domestic"
+],
+"AFG|1979": [
+"external"
+],
+"AFG|1989": [
+"domestic"
+],
+"AFG|2001": [
+"external"
+],
+"AFG|2015": [
+"domestic"
+],
+"AGO|1975": [
+"domestic",
+"external"
+],
+"AGO|1976": [
+"domestic"
+],
+"AGO|1991": [
+"domestic"
+],
+"AGO|1992": [
+"domestic"
+],
+"AGO|1994": [
+"domestic"
+],
+"AGO|1997": [
+"domestic"
+],
+"AGO|1998": [
+"domestic"
+],
+"AGO|2002": [
+"domestic"
+],
+"AGO|2007": [
+"domestic"
+],
+"AGO|2009": [
+"domestic"
+],
+"AGO|2016": [
+"domestic"
+],
+"AGO|2019": [
+"domestic"
+],
+"AGO|2022": [
+"domestic"
+],
+"ALB|1946": [
+"external"
+],
+"ARE|1991": [
+"external"
+],
+"ARG|1841": [
+"domestic"
+],
+"ARG|1851": [
+"external"
+],
+"ARG|1861": [
+"domestic"
+],
+"ARG|1863": [
+"domestic"
+],
+"ARG|1865": [
+"external"
+],
+"ARG|1866": [
+"domestic"
+],
+"ARG|1870": [
+"domestic"
+],
+"ARG|1874": [
+"domestic"
+],
+"ARG|1879": [
+"domestic"
+],
+"ARG|1880": [
+"domestic"
+],
+"ARG|1955": [
+"domestic"
+],
+"ARG|1963": [
+"domestic"
+],
+"ARG|1974": [
+"domestic"
+],
+"ARG|1975": [
+"domestic"
+],
+"ARG|1982": [
+"external"
+],
+"ARM|1991": [
+"domestic"
+],
+"ARM|1993": [
+"external"
+],
+"AUS|1939": [
+"external"
+],
+"AUS|1950": [
+"external"
+],
+"AUS|1965": [
+"external"
+],
+"AUS|1992": [
+"domestic"
+],
+"AUS|2001": [
+"external"
+],
+"AUS|2003": [
+"external"
+],
+"AUT|1821": [
+"domestic"
+],
+"AUT|1848": [
+"domestic",
+"external"
+],
+"AUT|1849": [
+"external"
+],
+"AUT|1859": [
+"external"
+],
+"AUT|1864": [
+"external"
+],
+"AUT|1866": [
+"external"
+],
+"AUT|1914": [
+"external"
+],
+"AZE|1991": [
+"domestic"
+],
+"AZE|1993": [
+"domestic",
+"external"
+],
+"AZE|1995": [
+"domestic"
+],
+"AZE|1997": [
+"domestic"
+],
+"AZE|2005": [
+"domestic"
+],
+"AZE|2008": [
+"domestic"
+],
+"AZE|2012": [
+"domestic"
+],
+"AZE|2014": [
+"domestic"
+],
+"AZE|2020": [
+"domestic"
+],
+"BDI|1965": [
+"domestic"
+],
+"BDI|1972": [
+"domestic"
+],
+"BDI|1991": [
+"domestic"
+],
+"BDI|1993": [
+"domestic"
+],
+"BDI|1994": [
+"domestic"
+],
+"BDI|1998": [
+"domestic"
+],
+"BDI|2001": [
+"domestic"
+],
+"BDI|2008": [
+"domestic"
+],
+"BDI|2014": [
+"domestic"
+],
+"BDI|2019": [
+"domestic"
+],
+"BEL|1914": [
+"external"
+],
+"BEL|1940": [
+"external"
+],
+"BEL|1951": [
+"external"
+],
+"BEL|1960": [
+"domestic"
+],
+"BEL|1964": [
+"domestic"
+],
+"BEL|1978": [
+"domestic"
+],
+"BEN|2022": [
+"domestic"
+],
+"BFA|1985": [
+"external"
+],
+"BFA|1987": [
+"domestic"
+],
+"BFA|2018": [
+"domestic"
+],
+"BFA|2019": [
+"domestic"
+],
+"BGD|1975": [
+"domestic"
+],
+"BGD|2005": [
+"domestic"
+],
+"BGD|2016": [
+"domestic"
+],
+"BGR|1912": [
+"external"
+],
+"BGR|1913": [
+"external"
+],
+"BGR|1915": [
+"external"
+],
+"BGR|1923": [
+"domestic"
+],
+"BGR|1941": [
+"external"
+],
+"BGR|1944": [
+"external"
+],
+"BIH|1992": [
+"domestic",
+"external"
+],
+"BIH|1993": [
+"domestic"
+],
+"BIH|1995": [
+"domestic"
+],
+"BOL|1862": [
+"domestic"
+],
+"BOL|1870": [
+"domestic"
+],
+"BOL|1879": [
+"external"
+],
+"BOL|1932": [
+"external"
+],
+"BOL|1946": [
+"domestic"
+],
+"BOL|1949": [
+"domestic"
+],
+"BOL|1952": [
+"domestic"
+],
+"BOL|1967": [
+"domestic"
+],
+"BRA|1835": [
+"domestic"
+],
+"BRA|1837": [
+"domestic"
+],
+"BRA|1851": [
+"external"
+],
+"BRA|1864": [
+"external"
+],
+"BRA|1893": [
+"domestic"
+],
+"BRA|1896": [
+"domestic"
+],
+"BRA|1932": [
+"domestic"
+],
+"BRA|1944": [
+"external"
+],
+"CAF|2001": [
+"domestic"
+],
+"CAF|2006": [
+"domestic"
+],
+"CAF|2009": [
+"domestic"
+],
+"CAF|2015": [
+"domestic"
+],
+"CAF|2017": [
+"domestic"
+],
+"CAF|2023": [
+"domestic"
+],
+"CAN|1939": [
+"external"
+],
+"CAN|1950": [
+"external"
+],
+"CAN|1991": [
+"external"
+],
+"CAN|2001": [
+"external"
+],
+"CHL|1851": [
+"domestic"
+],
+"CHL|1865": [
+"external"
+],
+"CHL|1879": [
+"external"
+],
+"CHL|1891": [
+"domestic"
+],
+"CHL|1973": [
+"domestic"
+],
+"CHN|1860": [
+"domestic"
+],
+"CHN|1862": [
+"domestic"
+],
+"CHN|1864": [
+"domestic"
+],
+"CHN|1866": [
+"domestic"
+],
+"CHN|1876": [
+"domestic"
+],
+"CHN|1884": [
+"external"
+],
+"CHN|1891": [
+"domestic"
+],
+"CHN|1894": [
+"external"
+],
+"CHN|1895": [
+"domestic"
+],
+"CHN|1900": [
+"external"
+],
+"CHN|1911": [
+"domestic"
+],
+"CHN|1913": [
+"domestic"
+],
+"CHN|1914": [
+"domestic"
+],
+"CHN|1916": [
+"domestic"
+],
+"CHN|1926": [
+"domestic"
+],
+"CHN|1928": [
+"domestic"
+],
+"CHN|1929": [
+"domestic",
+"external"
+],
+"CHN|1930": [
+"domestic"
+],
+"CHN|1931": [
+"domestic",
+"external"
+],
+"CHN|1934": [
+"domestic"
+],
+"CHN|1937": [
+"external"
+],
+"CHN|1941": [
+"external"
+],
+"CHN|1946": [
+"domestic"
+],
+"CHN|1947": [
+"domestic"
+],
+"CHN|1949": [
+"external"
+],
+"CHN|1950": [
+"domestic",
+"external"
+],
+"CHN|1954": [
+"external"
+],
+"CHN|1956": [
+"domestic"
+],
+"CHN|1958": [
+"external"
+],
+"CHN|1959": [
+"domestic"
+],
+"CHN|1962": [
+"external"
+],
+"CHN|1967": [
+"domestic",
+"external"
+],
+"CHN|1969": [
+"external"
+],
+"CHN|1974": [
+"external"
+],
+"CHN|1978": [
+"external"
+],
+"CHN|1979": [
+"external"
+],
+"CHN|1983": [
+"external"
+],
+"CHN|1986": [
+"external"
+],
+"CHN|1987": [
+"external"
+],
+"CHN|2008": [
+"domestic"
+],
+"CHN|2020": [
+"external"
+],
+"CIV|2002": [
+"domestic"
+],
+"CIV|2011": [
+"domestic"
+],
+"CMR|1960": [
+"domestic"
+],
+"CMR|1984": [
+"domestic"
+],
+"CMR|1996": [
+"external"
+],
+"CMR|2015": [
+"domestic"
+],
+"CMR|2017": [
+"domestic"
+],
+"CMR|2019": [
+"domestic"
+],
+"CMR|2020": [
+"domestic"
+],
+"CMR|2021": [
+"domestic"
+],
+"CMR|2022": [
+"domestic"
+],
+"CMR|2023": [
+"domestic"
+],
+"COD|1960": [
+"domestic"
+],
+"COD|1961": [
+"domestic"
+],
+"COD|1963": [
+"domestic"
+],
+"COD|1964": [
+"domestic"
+],
+"COD|1967": [
+"domestic"
+],
+"COD|1975": [
+"external"
+],
+"COD|1977": [
+"domestic"
+],
+"COD|1978": [
+"domestic"
+],
+"COD|1996": [
+"domestic"
+],
+"COD|1998": [
+"domestic"
+],
+"COD|2005": [
+"domestic"
+],
+"COD|2007": [
+"domestic"
+],
+"COD|2011": [
+"domestic"
+],
+"COD|2013": [
+"domestic"
+],
+"COD|2016": [
+"domestic"
+],
+"COD|2017": [
+"domestic"
+],
+"COD|2020": [
+"domestic"
+],
+"COG|1993": [
+"domestic"
+],
+"COG|1997": [
+"domestic"
+],
+"COG|1998": [
+"domestic"
+],
+"COG|2002": [
+"domestic"
+],
+"COG|2016": [
+"domestic"
+],
+"COL|1840": [
+"domestic"
+],
+"COL|1860": [
+"domestic"
+],
+"COL|1863": [
+"external"
+],
+"COL|1876": [
+"domestic"
+],
+"COL|1884": [
+"domestic"
+],
+"COL|1895": [
+"domestic"
+],
+"COL|1899": [
+"domestic"
+],
+"COL|1948": [
+"domestic"
+],
+"COL|1951": [
+"external"
+],
+"COL|1964": [
+"domestic"
+],
+"COL|1989": [
+"domestic"
+],
+"COL|2018": [
+"domestic"
+],
+"COM|1989": [
+"domestic"
+],
+"COM|1997": [
+"domestic"
+],
+"CRI|1948": [
+"domestic"
+],
+"CUB|1912": [
+"domestic"
+],
+"CUB|1953": [
+"domestic"
+],
+"CUB|1956": [
+"domestic"
+],
+"CUB|1958": [
+"domestic"
+],
+"CUB|1961": [
+"domestic"
+],
+"CUB|1975": [
+"external"
+],
+"CUB|1976": [
+"domestic"
+],
+"CUB|1977": [
+"external"
+],
+"CUB|1978": [
+"domestic"
+],
+"CYP|1974": [
+"external"
+],
+"CZE|1919": [
+"external"
+],
+"DEU|1848": [
+"external"
+],
+"DEU|1849": [
+"external"
+],
+"DEU|1864": [
+"external"
+],
+"DEU|1866": [
+"external"
+],
+"DEU|1870": [
+"external"
+],
+"DEU|1914": [
+"external"
+],
+"DEU|1918": [
+"domestic",
+"external"
+],
+"DEU|1919": [
+"external"
+],
+"DEU|1936": [
+"domestic"
+],
+"DEU|1939": [
+"external"
+],
+"DEU|1999": [
+"external"
+],
+"DJI|1991": [
+"domestic"
+],
+"DJI|1999": [
+"domestic"
+],
+"DJI|2008": [
+"external"
+],
+"DNK|1848": [
+"external"
+],
+"DNK|1849": [
+"external"
+],
+"DNK|1864": [
+"external"
+],
+"DOM|1965": [
+"domestic"
+],
+"DZA|1962": [
+"domestic"
+],
+"DZA|1963": [
+"external"
+],
+"DZA|1991": [
+"domestic"
+],
+"DZA|1992": [
+"domestic"
+],
+"DZA|2015": [
+"domestic"
+],
+"DZA|2020": [
+"domestic"
+],
+"ECU|1863": [
+"external"
+],
+"ECU|1895": [
+"domestic"
+],
+"ECU|1912": [
+"domestic"
+],
+"ECU|1995": [
+"external"
+],
+"EGY|1882": [
+"external"
+],
+"EGY|1948": [
+"external"
+],
+"EGY|1951": [
+"external"
+],
+"EGY|1956": [
+"external"
+],
+"EGY|1962": [
+"domestic"
+],
+"EGY|1967": [
+"external"
+],
+"EGY|1969": [
+"external"
+],
+"EGY|1973": [
+"external"
+],
+"EGY|1991": [
+"external"
+],
+"EGY|1993": [
+"domestic"
+],
+"EGY|2014": [
+"domestic"
+],
+"EGY|2015": [
+"domestic"
+],
+"EGY|2017": [
+"domestic"
+],
+"ERI|1997": [
+"domestic"
+],
+"ERI|1998": [
+"external"
+],
+"ERI|1999": [
+"domestic"
+],
+"ERI|2003": [
+"domestic"
+],
+"ERI|2006": [
+"domestic"
+],
+"ERI|2008": [
+"external"
+],
+"ERI|2016": [
+"external"
+],
+"ESP|1821": [
+"domestic"
+],
+"ESP|1823": [
+"external"
+],
+"ESP|1834": [
+"domestic"
+],
+"ESP|1847": [
+"domestic"
+],
+"ESP|1859": [
+"external"
+],
+"ESP|1865": [
+"external"
+],
+"ESP|1868": [
+"domestic"
+],
+"ESP|1872": [
+"domestic"
+],
+"ESP|1874": [
+"domestic"
+],
+"ESP|1898": [
+"external"
+],
+"ESP|1909": [
+"external"
+],
+"ESP|1934": [
+"domestic"
+],
+"ESP|1936": [
+"domestic"
+],
+"ESP|1957": [
+"external"
+],
+"ESP|1978": [
+"domestic"
+],
+"ESP|1985": [
+"domestic"
+],
+"ESP|1991": [
+"domestic"
+],
+"EST|1918": [
+"external"
+],
+"EST|1919": [
+"external"
+],
+"ETH|1928": [
+"domestic"
+],
+"ETH|1935": [
+"external"
+],
+"ETH|1941": [
+"external"
+],
+"ETH|1951": [
+"external"
+],
+"ETH|1960": [
+"domestic"
+],
+"ETH|1963": [
+"domestic"
+],
+"ETH|1964": [
+"domestic",
+"external"
+],
+"ETH|1975": [
+"domestic"
+],
+"ETH|1976": [
+"domestic"
+],
+"ETH|1977": [
+"domestic",
+"external"
+],
+"ETH|1978": [
+"domestic"
+],
+"ETH|1980": [
+"domestic",
+"external"
+],
+"ETH|1981": [
+"domestic"
+],
+"ETH|1982": [
+"domestic"
+],
+"ETH|1983": [
+"domestic"
+],
+"ETH|1991": [
+"domestic"
+],
+"ETH|1993": [
+"domestic"
+],
+"ETH|1994": [
+"domestic"
+],
+"ETH|1996": [
+"domestic"
+],
+"ETH|1998": [
+"domestic",
+"external"
+],
+"ETH|1999": [
+"domestic"
+],
+"ETH|2006": [
+"domestic"
+],
+"ETH|2015": [
+"domestic"
+],
+"ETH|2016": [
+"external"
+],
+"ETH|2019": [
+"domestic"
+],
+"ETH|2020": [
+"domestic"
+],
+"ETH|2023": [
+"domestic"
+],
+"FIN|1918": [
+"domestic",
+"external"
+],
+"FIN|1919": [
+"domestic"
+],
+"FIN|1939": [
+"external"
+],
+"FIN|1941": [
+"external"
+],
+"FRA|1823": [
+"external"
+],
+"FRA|1827": [
+"domestic"
+],
+"FRA|1830": [
+"domestic"
+],
+"FRA|1835": [
+"domestic"
+],
+"FRA|1848": [
+"domestic"
+],
+"FRA|1849": [
+"external"
+],
+"FRA|1854": [
+"external"
+],
+"FRA|1859": [
+"external"
+],
+"FRA|1862": [
+"external"
+],
+"FRA|1870": [
+"external"
+],
+"FRA|1871": [
+"domestic"
+],
+"FRA|1884": [
+"external"
+],
+"FRA|1900": [
+"external"
+],
+"FRA|1907": [
+"domestic"
+],
+"FRA|1914": [
+"external"
+],
+"FRA|1918": [
+"domestic"
+],
+"FRA|1919": [
+"external"
+],
+"FRA|1939": [
+"external"
+],
+"FRA|1940": [
+"external"
+],
+"FRA|1944": [
+"external"
+],
+"FRA|1946": [
+"external"
+],
+"FRA|1951": [
+"external"
+],
+"FRA|1956": [
+"external"
+],
+"FRA|1958": [
+"external"
+],
+"FRA|1961": [
+"domestic",
+"external"
+],
+"FRA|1968": [
+"domestic"
+],
+"FRA|1978": [
+"domestic"
+],
+"FRA|1983": [
+"domestic"
+],
+"FRA|1991": [
+"external"
+],
+"FRA|1992": [
+"domestic"
+],
+"FRA|1999": [
+"external"
+],
+"FRA|2001": [
+"external"
+],
+"FRA|2002": [
+"domestic"
+],
+"GAB|1964": [
+"domestic"
+],
+"GBR|1827": [
+"domestic"
+],
+"GBR|1831": [
+"domestic"
+],
+"GBR|1835": [
+"domestic"
+],
+"GBR|1840": [
+"domestic"
+],
+"GBR|1854": [
+"external"
+],
+"GBR|1856": [
+"external"
+],
+"GBR|1862": [
+"domestic"
+],
+"GBR|1882": [
+"external"
+],
+"GBR|1900": [
+"external"
+],
+"GBR|1914": [
+"external"
+],
+"GBR|1918": [
+"domestic"
+],
+"GBR|1939": [
+"external"
+],
+"GBR|1944": [
+"domestic"
+],
+"GBR|1946": [
+"external"
+],
+"GBR|1950": [
+"external"
+],
+"GBR|1951": [
+"external"
+],
+"GBR|1956": [
+"external"
+],
+"GBR|1971": [
+"domestic"
+],
+"GBR|1973": [
+"domestic"
+],
+"GBR|1982": [
+"external"
+],
+"GBR|1991": [
+"external"
+],
+"GBR|1998": [
+"domestic"
+],
+"GBR|1999": [
+"external"
+],
+"GBR|2000": [
+"domestic"
+],
+"GBR|2001": [
+"external"
+],
+"GBR|2003": [
+"external"
+],
+"GEO|1991": [
+"domestic"
+],
+"GEO|1992": [
+"domestic"
+],
+"GEO|1993": [
+"domestic"
+],
+"GEO|2004": [
+"domestic"
+],
+"GEO|2008": [
+"domestic"
+],
+"GHA|1966": [
+"domestic"
+],
+"GHA|1981": [
+"domestic"
+],
+"GHA|1983": [
+"domestic"
+],
+"GHA|1998": [
+"domestic"
+],
+"GHA|2000": [
+"domestic"
+],
+"GIN|1998": [
+"domestic"
+],
+"GIN|2000": [
+"domestic"
+],
+"GMB|1981": [
+"domestic"
+],
+"GNB|1998": [
+"domestic"
+],
+"GRC|1897": [
+"external"
+],
+"GRC|1912": [
+"external"
+],
+"GRC|1913": [
+"external"
+],
+"GRC|1917": [
+"external"
+],
+"GRC|1919": [
+"external"
+],
+"GRC|1940": [
+"external"
+],
+"GRC|1944": [
+"domestic"
+],
+"GRC|1946": [
+"domestic"
+],
+"GRC|1951": [
+"external"
+],
+"GRD|1983": [
+"external"
+],
+"GTM|1876": [
+"external"
+],
+"GTM|1885": [
+"external"
+],
+"GTM|1906": [
+"external"
+],
+"GTM|1949": [
+"domestic"
+],
+"GTM|1954": [
+"domestic"
+],
+"GTM|1963": [
+"domestic"
+],
+"GTM|1965": [
+"domestic"
+],
+"GTM|1966": [
+"domestic"
+],
+"GTM|1970": [
+"domestic"
+],
+"GTM|1978": [
+"domestic"
+],
+"HND|1906": [
+"external"
+],
+"HND|1907": [
+"external"
+],
+"HND|1924": [
+"domestic"
+],
+"HND|1957": [
+"external"
+],
+"HND|1969": [
+"external"
+],
+"HRV|1992": [
+"domestic",
+"external"
+],
+"HRV|1994": [
+"domestic"
+],
+"HRV|1995": [
+"domestic"
+],
+"HTI|1869": [
+"domestic"
+],
+"HTI|1883": [
+"domestic"
+],
+"HTI|1989": [
+"domestic"
+],
+"HTI|1991": [
+"domestic"
+],
+"HTI|2004": [
+"domestic"
+],
+"HUN|1919": [
+"domestic",
+"external"
+],
+"HUN|1941": [
+"external"
+],
+"HUN|1956": [
+"external"
+],
+"IDN|1950": [
+"domestic"
+],
+"IDN|1953": [
+"domestic"
+],
+"IDN|1956": [
+"domestic"
+],
+"IDN|1958": [
+"domestic"
+],
+"IDN|1962": [
+"external"
+],
+"IDN|1963": [
+"external"
+],
+"IDN|1965": [
+"domestic"
+],
+"IDN|1967": [
+"domestic"
+],
+"IDN|1975": [
+"domestic"
+],
+"IDN|1976": [
+"domestic"
+],
+"IDN|1981": [
+"domestic"
+],
+"IDN|1984": [
+"domestic"
+],
+"IDN|1989": [
+"domestic"
+],
+"IDN|1990": [
+"domestic"
+],
+"IDN|1992": [
+"domestic"
+],
+"IDN|1997": [
+"domestic"
+],
+"IDN|1999": [
+"domestic"
+],
+"IDN|2003": [
+"domestic"
+],
+"IDN|2018": [
+"domestic"
+],
+"IDN|2021": [
+"domestic"
+],
+"IND|1947": [
+"domestic",
+"external"
+],
+"IND|1948": [
+"domestic",
+"external"
+],
+"IND|1956": [
+"domestic"
+],
+"IND|1961": [
+"domestic"
+],
+"IND|1962": [
+"external"
+],
+"IND|1964": [
+"external"
+],
+"IND|1965": [
+"external"
+],
+"IND|1966": [
+"domestic"
+],
+"IND|1967": [
+"external"
+],
+"IND|1969": [
+"domestic"
+],
+"IND|1970": [
+"domestic"
+],
+"IND|1971": [
+"external"
+],
+"IND|1979": [
+"domestic"
+],
+"IND|1982": [
+"domestic"
+],
+"IND|1983": [
+"domestic"
+],
+"IND|1984": [
+"domestic",
+"external"
+],
+"IND|1987": [
+"domestic",
+"external"
+],
+"IND|1989": [
+"domestic",
+"external"
+],
+"IND|1990": [
+"domestic"
+],
+"IND|1991": [
+"domestic"
+],
+"IND|1992": [
+"domestic"
+],
+"IND|1993": [
+"domestic"
+],
+"IND|1994": [
+"domestic",
+"external"
+],
+"IND|1996": [
+"domestic",
+"external"
+],
+"IND|1997": [
+"domestic"
+],
+"IND|1998": [
+"domestic"
+],
+"IND|1999": [
+"domestic",
+"external"
+],
+"IND|2000": [
+"domestic"
+],
+"IND|2001": [
+"domestic"
+],
+"IND|2003": [
+"domestic"
+],
+"IND|2008": [
+"domestic"
+],
+"IND|2009": [
+"domestic"
+],
+"IND|2012": [
+"domestic"
+],
+"IND|2013": [
+"domestic",
+"external"
+],
+"IND|2014": [
+"domestic"
+],
+"IND|2015": [
+"domestic"
+],
+"IND|2020": [
+"external"
+],
+"IRN|1856": [
+"external"
+],
+"IRN|1908": [
+"domestic"
+],
+"IRN|1920": [
+"domestic"
+],
+"IRN|1946": [
+"domestic"
+],
+"IRN|1966": [
+"domestic"
+],
+"IRN|1973": [
+"domestic"
+],
+"IRN|1974": [
+"domestic",
+"external"
+],
+"IRN|1978": [
+"domestic"
+],
+"IRN|1979": [
+"domestic"
+],
+"IRN|1980": [
+"external"
+],
+"IRN|1985": [
+"domestic"
+],
+"IRN|1986": [
+"domestic"
+],
+"IRN|1990": [
+"domestic"
+],
+"IRN|1991": [
+"domestic"
+],
+"IRN|1993": [
+"domestic"
+],
+"IRN|1996": [
+"domestic"
+],
+"IRN|1997": [
+"domestic"
+],
+"IRN|1999": [
+"domestic"
+],
+"IRN|2005": [
+"domestic"
+],
+"IRN|2016": [
+"domestic"
+],
+"IRN|2017": [
+"domestic"
+],
+"IRN|2018": [
+"domestic",
+"external"
+],
+"IRN|2023": [
+"domestic"
+],
+"IRQ|1948": [
+"external"
+],
+"IRQ|1958": [
+"domestic"
+],
+"IRQ|1959": [
+"domestic"
+],
+"IRQ|1961": [
+"domestic"
+],
+"IRQ|1963": [
+"domestic"
+],
+"IRQ|1965": [
+"domestic"
+],
+"IRQ|1969": [
+"domestic"
+],
+"IRQ|1973": [
+"domestic",
+"external"
+],
+"IRQ|1974": [
+"domestic",
+"external"
+],
+"IRQ|1980": [
+"external"
+],
+"IRQ|1982": [
+"domestic"
+],
+"IRQ|1985": [
+"domestic"
+],
+"IRQ|1987": [
+"domestic"
+],
+"IRQ|1990": [
+"external"
+],
+"IRQ|1991": [
+"domestic"
+],
+"IRQ|1995": [
+"domestic"
+],
+"IRQ|1996": [
+"domestic"
+],
+"IRQ|2003": [
+"external"
+],
+"IRQ|2004": [
+"domestic"
+],
+"ISR|1948": [
+"external"
+],
+"ISR|1949": [
+"domestic"
+],
+"ISR|1956": [
+"external"
+],
+"ISR|1967": [
+"external"
+],
+"ISR|1969": [
+"external"
+],
+"ISR|1973": [
+"external"
+],
+"ISR|1978": [
+"domestic"
+],
+"ISR|1982": [
+"external"
+],
+"ISR|1990": [
+"domestic"
+],
+"ISR|2000": [
+"domestic"
+],
+"ISR|2006": [
+"domestic"
+],
+"ISR|2014": [
+"domestic"
+],
+"ISR|2018": [
+"domestic",
+"external"
+],
+"ISR|2021": [
+"domestic"
+],
+"ISR|2023": [
+"domestic"
+],
+"ITA|1820": [
+"domestic"
+],
+"ITA|1821": [
+"domestic"
+],
+"ITA|1848": [
+"domestic",
+"external"
+],
+"ITA|1849": [
+"external"
+],
+"ITA|1855": [
+"external"
+],
+"ITA|1859": [
+"external"
+],
+"ITA|1860": [
+"external"
+],
+"ITA|1866": [
+"external"
+],
+"ITA|1911": [
+"external"
+],
+"ITA|1915": [
+"external"
+],
+"ITA|1935": [
+"external"
+],
+"ITA|1936": [
+"domestic"
+],
+"ITA|1940": [
+"external"
+],
+"ITA|1943": [
+"external"
+],
+"ITA|1991": [
+"external"
+],
+"ITA|1992": [
+"domestic"
+],
+"ITA|1999": [
+"external"
+],
+"JOR|1948": [
+"external"
+],
+"JOR|1967": [
+"external"
+],
+"JOR|1970": [
+"domestic"
+],
+"JOR|1973": [
+"external"
+],
+"JOR|2016": [
+"domestic"
+],
+"JPN|1868": [
+"domestic"
+],
+"JPN|1877": [
+"domestic"
+],
+"JPN|1894": [
+"domestic",
+"external"
+],
+"JPN|1900": [
+"external"
+],
+"JPN|1904": [
+"external"
+],
+"JPN|1914": [
+"external"
+],
+"JPN|1918": [
+"domestic"
+],
+"JPN|1927": [
+"domestic"
+],
+"JPN|1931": [
+"external"
+],
+"JPN|1937": [
+"external"
+],
+"JPN|1938": [
+"external"
+],
+"JPN|1939": [
+"external"
+],
+"JPN|1941": [
+"external"
+],
+"KEN|1982": [
+"domestic"
+],
+"KEN|2015": [
+"domestic"
+],
+"KGZ|1992": [
+"domestic"
+],
+"KGZ|2000": [
+"domestic"
+],
+"KGZ|2010": [
+"domestic"
+],
+"KGZ|2021": [
+"external"
+],
+"KHM|1967": [
+"domestic"
+],
+"KHM|1970": [
+"external"
+],
+"KHM|1971": [
+"domestic"
+],
+"KHM|1975": [
+"external"
+],
+"KHM|1977": [
+"external"
+],
+"KHM|1978": [
+"domestic"
+],
+"KHM|1989": [
+"domestic"
+],
+"KHM|1993": [
+"domestic"
+],
+"KHM|2011": [
+"external"
+],
+"KOR|1894": [
+"domestic"
+],
+"KOR|1949": [
+"external"
+],
+"KOR|1950": [
+"external"
+],
+"KOR|1965": [
+"external"
+],
+"KWT|1990": [
+"external"
+],
+"LAO|1959": [
+"domestic"
+],
+"LAO|1960": [
+"domestic"
+],
+"LAO|1963": [
+"domestic"
+],
+"LAO|1968": [
+"external"
+],
+"LAO|1976": [
+"domestic"
+],
+"LAO|1986": [
+"external"
+],
+"LAO|1989": [
+"domestic"
+],
+"LBN|1948": [
+"external"
+],
+"LBN|1958": [
+"domestic"
+],
+"LBN|1975": [
+"domestic"
+],
+"LBN|1982": [
+"domestic"
+],
+"LBN|1983": [
+"domestic"
+],
+"LBN|1989": [
+"domestic"
+],
+"LBN|2014": [
+"domestic"
+],
+"LBN|2017": [
+"domestic"
+],
+"LBR|1980": [
+"domestic"
+],
+"LBR|1989": [
+"domestic"
+],
+"LBR|1992": [
+"domestic"
+],
+"LBR|1996": [
+"domestic"
+],
+"LBR|2000": [
+"domestic"
+],
+"LBR|2002": [
+"domestic"
+],
+"LBY|1979": [
+"external"
+],
+"LBY|1980": [
+"domestic"
+],
+"LBY|1983": [
+"domestic"
+],
+"LBY|1986": [
+"external"
+],
+"LBY|1987": [
+"external"
+],
+"LBY|2011": [
+"domestic"
+],
+"LBY|2013": [
+"domestic"
+],
+"LBY|2015": [
+"domestic"
+],
+"LBY|2017": [
+"domestic"
+],
+"LBY|2019": [
+"domestic"
+],
+"LKA|1971": [
+"domestic"
+],
+"LKA|1983": [
+"domestic"
+],
+"LKA|1984": [
+"domestic"
+],
+"LKA|1987": [
+"domestic"
+],
+"LKA|1989": [
+"domestic"
+],
+"LKA|2003": [
+"domestic"
+],
+"LKA|2005": [
+"domestic"
+],
+"LKA|2006": [
+"domestic"
+],
+"LSO|1998": [
+"domestic"
+],
+"LTU|1920": [
+"external"
+],
+"LVA|1918": [
+"external"
+],
+"MAR|1859": [
+"external"
+],
+"MAR|1907": [
+"domestic"
+],
+"MAR|1909": [
+"external"
+],
+"MAR|1957": [
+"external"
+],
+"MAR|1963": [
+"external"
+],
+"MAR|1971": [
+"domestic"
+],
+"MAR|1975": [
+"domestic"
+],
+"MAR|1991": [
+"external"
+],
+"MDA|1991": [
+"domestic"
+],
+"MDA|1992": [
+"domestic"
+],
+"MDG|1971": [
+"domestic"
+],
+"MEX|1832": [
+"domestic"
+],
+"MEX|1835": [
+"domestic"
+],
+"MEX|1841": [
+"domestic"
+],
+"MEX|1846": [
+"external"
+],
+"MEX|1848": [
+"domestic"
+],
+"MEX|1855": [
+"domestic"
+],
+"MEX|1858": [
+"domestic"
+],
+"MEX|1862": [
+"external"
+],
+"MEX|1867": [
+"domestic"
+],
+"MEX|1876": [
+"domestic"
+],
+"MEX|1899": [
+"domestic"
+],
+"MEX|1910": [
+"domestic"
+],
+"MEX|1914": [
+"domestic"
+],
+"MEX|1923": [
+"domestic"
+],
+"MEX|1926": [
+"domestic"
+],
+"MEX|1929": [
+"domestic"
+],
+"MEX|1994": [
+"domestic"
+],
+"MEX|1996": [
+"domestic"
+],
+"MKD|2001": [
+"domestic"
+],
+"MLI|1985": [
+"external"
+],
+"MLI|1990": [
+"domestic"
+],
+"MLI|1994": [
+"domestic"
+],
+"MLI|2007": [
+"domestic"
+],
+"MLI|2009": [
+"domestic"
+],
+"MLI|2012": [
+"domestic"
+],
+"MLI|2014": [
+"domestic"
+],
+"MLI|2015": [
+"domestic"
+],
+"MLI|2017": [
+"domestic"
+],
+"MLI|2023": [
+"domestic"
+],
+"MMR|1948": [
+"domestic"
+],
+"MMR|1949": [
+"domestic"
+],
+"MMR|1957": [
+"domestic"
+],
+"MMR|1958": [
+"domestic"
+],
+"MMR|1959": [
+"domestic"
+],
+"MMR|1961": [
+"domestic"
+],
+"MMR|1964": [
+"domestic"
+],
+"MMR|1967": [
+"domestic"
+],
+"MMR|1969": [
+"external"
+],
+"MMR|1972": [
+"domestic"
+],
+"MMR|1973": [
+"domestic"
+],
+"MMR|1976": [
+"domestic"
+],
+"MMR|1983": [
+"domestic"
+],
+"MMR|1987": [
+"domestic"
+],
+"MMR|1988": [
+"domestic"
+],
+"MMR|1990": [
+"domestic"
+],
+"MMR|1991": [
+"domestic"
+],
+"MMR|1992": [
+"domestic"
+],
+"MMR|1993": [
+"domestic"
+],
+"MMR|1994": [
+"domestic"
+],
+"MMR|1995": [
+"domestic"
+],
+"MMR|1996": [
+"domestic"
+],
+"MMR|1997": [
+"domestic"
+],
+"MMR|2000": [
+"domestic"
+],
+"MMR|2005": [
+"domestic"
+],
+"MMR|2009": [
+"domestic"
+],
+"MMR|2011": [
+"domestic"
+],
+"MMR|2013": [
+"domestic"
+],
+"MMR|2014": [
+"domestic"
+],
+"MMR|2015": [
+"domestic"
+],
+"MMR|2016": [
+"domestic"
+],
+"MMR|2017": [
+"domestic"
+],
+"MMR|2021": [
+"domestic"
+],
+"MMR|2022": [
+"domestic"
+],
+"MMR|2023": [
+"domestic"
+],
+"MNG|1939": [
+"external"
+],
+"MNG|1945": [
+"external"
+],
+"MOZ|1977": [
+"domestic"
+],
+"MOZ|1979": [
+"domestic"
+],
+"MOZ|2013": [
+"domestic"
+],
+"MOZ|2016": [
+"domestic"
+],
+"MOZ|2018": [
+"domestic"
+],
+"MOZ|2019": [
+"domestic"
+],
+"MRT|1975": [
+"domestic"
+],
+"MRT|2010": [
+"domestic"
+],
+"MYS|1958": [
+"domestic"
+],
+"MYS|1963": [
+"domestic",
+"external"
+],
+"MYS|1974": [
+"domestic"
+],
+"MYS|1981": [
+"domestic"
+],
+"MYS|2013": [
+"domestic"
+],
+"NAM|1998": [
+"domestic"
+],
+"NER|1991": [
+"domestic"
+],
+"NER|1994": [
+"domestic"
+],
+"NER|1995": [
+"domestic"
+],
+"NER|1997": [
+"domestic"
+],
+"NER|2007": [
+"domestic"
+],
+"NER|2015": [
+"domestic"
+],
+"NER|2021": [
+"domestic"
+],
+"NGA|1966": [
+"domestic"
+],
+"NGA|1967": [
+"domestic"
+],
+"NGA|1980": [
+"domestic"
+],
+"NGA|1983": [
+"external"
+],
+"NGA|1990": [
+"domestic"
+],
+"NGA|1992": [
+"domestic"
+],
+"NGA|1996": [
+"external"
+],
+"NGA|1998": [
+"domestic"
+],
+"NGA|2000": [
+"domestic"
+],
+"NGA|2004": [
+"domestic"
+],
+"NGA|2009": [
+"domestic"
+],
+"NGA|2011": [
+"domestic"
+],
+"NGA|2015": [
+"domestic"
+],
+"NGA|2021": [
+"domestic"
+],
+"NIC|1907": [
+"external"
+],
+"NIC|1957": [
+"external"
+],
+"NIC|1977": [
+"domestic"
+],
+"NIC|1978": [
+"domestic"
+],
+"NIC|1982": [
+"domestic"
+],
+"NLD|1830": [
+"domestic"
+],
+"NLD|1940": [
+"external"
+],
+"NLD|1951": [
+"external"
+],
+"NLD|1962": [
+"external"
+],
+"NLD|1999": [
+"external"
+],
+"NOR|1940": [
+"external"
+],
+"NPL|1960": [
+"domestic"
+],
+"NPL|1996": [
+"domestic"
+],
+"NPL|2001": [
+"domestic"
+],
+"NPL|2003": [
+"domestic"
+],
+"NZL|1939": [
+"external"
+],
+"OMN|1957": [
+"domestic"
+],
+"OMN|1969": [
+"domestic"
+],
+"OMN|1973": [
+"domestic"
+],
+"OMN|1991": [
+"external"
+],
+"PAK|1947": [
+"external"
+],
+"PAK|1948": [
+"external"
+],
+"PAK|1964": [
+"external"
+],
+"PAK|1965": [
+"external"
+],
+"PAK|1971": [
+"domestic",
+"external"
+],
+"PAK|1973": [
+"domestic"
+],
+"PAK|1974": [
+"domestic"
+],
+"PAK|1984": [
+"external"
+],
+"PAK|1987": [
+"external"
+],
+"PAK|1989": [
+"external"
+],
+"PAK|1990": [
+"domestic"
+],
+"PAK|1992": [
+"domestic"
+],
+"PAK|1994": [
+"domestic",
+"external"
+],
+"PAK|1996": [
+"external"
+],
+"PAK|1999": [
+"external"
+],
+"PAK|2004": [
+"domestic"
+],
+"PAK|2006": [
+"domestic"
+],
+"PAK|2007": [
+"domestic"
+],
+"PAK|2011": [
+"domestic"
+],
+"PAK|2013": [
+"external"
+],
+"PAK|2016": [
+"domestic"
+],
+"PAK|2019": [
+"domestic"
+],
+"PAK|2021": [
+"domestic"
+],
+"PAN|1989": [
+"domestic",
+"external"
+],
+"PER|1853": [
+"domestic"
+],
+"PER|1856": [
+"domestic"
+],
+"PER|1866": [
+"external"
+],
+"PER|1879": [
+"external"
+],
+"PER|1885": [
+"domestic"
+],
+"PER|1894": [
+"domestic"
+],
+"PER|1932": [
+"domestic"
+],
+"PER|1965": [
+"domestic"
+],
+"PER|1982": [
+"domestic"
+],
+"PER|1995": [
+"external"
+],
+"PER|2007": [
+"domestic"
+],
+"PHL|1946": [
+"domestic"
+],
+"PHL|1950": [
+"domestic",
+"external"
+],
+"PHL|1966": [
+"external"
+],
+"PHL|1969": [
+"domestic"
+],
+"PHL|1970": [
+"domestic"
+],
+"PHL|1972": [
+"domestic"
+],
+"PHL|1993": [
+"domestic"
+],
+"PHL|1997": [
+"domestic"
+],
+"PHL|1999": [
+"domestic"
+],
+"PHL|2000": [
+"domestic"
+],
+"PHL|2003": [
+"domestic"
+],
+"PHL|2005": [
+"domestic"
+],
+"PHL|2016": [
+"domestic"
+],
+"PNG|1989": [
+"domestic"
+],
+"PNG|1990": [
+"domestic"
+],
+"PNG|1992": [
+"domestic"
+],
+"POL|1919": [
+"external"
+],
+"POL|1920": [
+"external"
+],
+"POL|1939": [
+"external"
+],
+"POL|1945": [
+"domestic"
+],
+"PRK|1949": [
+"external"
+],
+"PRK|1950": [
+"external"
+],
+"PRT|1828": [
+"domestic"
+],
+"PRT|1835": [
+"domestic"
+],
+"PRT|1916": [
+"external"
+],
+"PRT|1936": [
+"domestic"
+],
+"PRY|1864": [
+"external"
+],
+"PRY|1911": [
+"domestic"
+],
+"PRY|1932": [
+"external"
+],
+"PRY|1947": [
+"domestic"
+],
+"PRY|1954": [
+"domestic"
+],
+"PRY|1989": [
+"domestic"
+],
+"QAT|1991": [
+"external"
+],
+"ROU|1907": [
+"domestic"
+],
+"ROU|1913": [
+"external"
+],
+"ROU|1916": [
+"external"
+],
+"ROU|1919": [
+"external"
+],
+"ROU|1941": [
+"external"
+],
+"ROU|1944": [
+"external"
+],
+"ROU|1989": [
+"domestic"
+],
+"RUS|1818": [
+"domestic"
+],
+"RUS|1827": [
+"domestic"
+],
+"RUS|1828": [
+"external"
+],
+"RUS|1830": [
+"domestic"
+],
+"RUS|1831": [
+"domestic"
+],
+"RUS|1834": [
+"domestic"
+],
+"RUS|1836": [
+"domestic"
+],
+"RUS|1849": [
+"domestic"
+],
+"RUS|1853": [
+"external"
+],
+"RUS|1863": [
+"domestic"
+],
+"RUS|1871": [
+"domestic"
+],
+"RUS|1877": [
+"external"
+],
+"RUS|1900": [
+"external"
+],
+"RUS|1904": [
+"external"
+],
+"RUS|1905": [
+"domestic"
+],
+"RUS|1909": [
+"domestic"
+],
+"RUS|1914": [
+"external"
+],
+"RUS|1916": [
+"domestic"
+],
+"RUS|1917": [
+"domestic"
+],
+"RUS|1918": [
+"domestic",
+"external"
+],
+"RUS|1919": [
+"external"
+],
+"RUS|1920": [
+"domestic"
+],
+"RUS|1921": [
+"domestic"
+],
+"RUS|1929": [
+"external"
+],
+"RUS|1934": [
+"domestic"
+],
+"RUS|1938": [
+"external"
+],
+"RUS|1939": [
+"external"
+],
+"RUS|1941": [
+"external"
+],
+"RUS|1945": [
+"domestic",
+"external"
+],
+"RUS|1946": [
+"domestic"
+],
+"RUS|1956": [
+"external"
+],
+"RUS|1969": [
+"external"
+],
+"RUS|1979": [
+"domestic",
+"external"
+],
+"RUS|1990": [
+"domestic"
+],
+"RUS|1993": [
+"domestic"
+],
+"RUS|1994": [
+"domestic"
+],
+"RUS|1999": [
+"domestic"
+],
+"RUS|2007": [
+"domestic"
+],
+"RUS|2015": [
+"domestic"
+],
+"RUS|2022": [
+"external"
+],
+"RUS|2023": [
+"domestic"
+],
+"RWA|1963": [
+"domestic"
+],
+"RWA|1990": [
+"domestic"
+],
+"RWA|1994": [
+"domestic"
+],
+"RWA|1996": [
+"domestic"
+],
+"RWA|1997": [
+"domestic"
+],
+"RWA|1998": [
+"domestic"
+],
+"RWA|2001": [
+"domestic"
+],
+"RWA|2009": [
+"domestic"
+],
+"RWA|2016": [
+"domestic"
+],
+"RWA|2019": [
+"domestic"
+],
+"RWA|2022": [
+"domestic"
+],
+"SAU|1929": [
+"domestic"
+],
+"SAU|1934": [
+"external"
+],
+"SAU|1973": [
+"external"
+],
+"SAU|1979": [
+"domestic"
+],
+"SAU|1991": [
+"external"
+],
+"SDN|1963": [
+"domestic"
+],
+"SDN|1971": [
+"domestic"
+],
+"SDN|1976": [
+"domestic"
+],
+"SDN|1983": [
+"domestic"
+],
+"SDN|1992": [
+"domestic"
+],
+"SDN|1998": [
+"domestic"
+],
+"SDN|2003": [
+"domestic"
+],
+"SDN|2011": [
+"domestic"
+],
+"SDN|2012": [
+"external"
+],
+"SDN|2020": [
+"domestic"
+],
+"SEN|1990": [
+"domestic"
+],
+"SEN|1992": [
+"domestic"
+],
+"SEN|1995": [
+"domestic"
+],
+"SEN|1997": [
+"domestic"
+],
+"SEN|1998": [
+"domestic"
+],
+"SEN|2000": [
+"domestic"
+],
+"SEN|2003": [
+"domestic"
+],
+"SEN|2011": [
+"domestic"
+],
+"SLE|1991": [
+"domestic"
+],
+"SLE|1998": [
+"domestic"
+],
+"SLE|2000": [
+"domestic"
+],
+"SLV|1876": [
+"external"
+],
+"SLV|1885": [
+"external"
+],
+"SLV|1906": [
+"external"
+],
+"SLV|1907": [
+"external"
+],
+"SLV|1932": [
+"domestic"
+],
+"SLV|1969": [
+"external"
+],
+"SLV|1972": [
+"domestic"
+],
+"SLV|1979": [
+"domestic"
+],
+"SOM|1963": [
+"domestic"
+],
+"SOM|1964": [
+"external"
+],
+"SOM|1976": [
+"domestic"
+],
+"SOM|1977": [
+"external"
+],
+"SOM|1980": [
+"domestic",
+"external"
+],
+"SOM|1982": [
+"domestic"
+],
+"SOM|1986": [
+"domestic"
+],
+"SOM|1988": [
+"domestic"
+],
+"SOM|1991": [
+"domestic"
+],
+"SOM|2001": [
+"domestic"
+],
+"SOM|2006": [
+"domestic"
+],
+"SOM|2018": [
+"domestic"
+],
+"SOM|2019": [
+"domestic"
+],
+"SRB|1912": [
+"external"
+],
+"SRB|1913": [
+"external"
+],
+"SRB|1914": [
+"external"
+],
+"SRB|1941": [
+"external"
+],
+"SRB|1991": [
+"domestic"
+],
+"SRB|1992": [
+"external"
+],
+"SRB|1998": [
+"domestic"
+],
+"SRB|1999": [
+"external"
+],
+"SSD|2011": [
+"domestic"
+],
+"SSD|2012": [
+"external"
+],
+"SUR|1987": [
+"domestic"
+],
+"SYR|1948": [
+"external"
+],
+"SYR|1966": [
+"domestic"
+],
+"SYR|1967": [
+"external"
+],
+"SYR|1970": [
+"domestic"
+],
+"SYR|1973": [
+"external"
+],
+"SYR|1976": [
+"domestic"
+],
+"SYR|1978": [
+"domestic"
+],
+"SYR|1979": [
+"domestic"
+],
+"SYR|1981": [
+"domestic"
+],
+"SYR|1982": [
+"external"
+],
+"SYR|1989": [
+"domestic"
+],
+"SYR|1991": [
+"external"
+],
+"SYR|2011": [
+"domestic"
+],
+"SYR|2012": [
+"domestic"
+],
+"SYR|2013": [
+"domestic"
+],
+"SYR|2016": [
+"domestic"
+],
+"SYR|2018": [
+"domestic"
+],
+"SYR|2023": [
+"domestic"
+],
+"TCD|1966": [
+"domestic"
+],
+"TCD|1976": [
+"domestic"
+],
+"TCD|1980": [
+"domestic"
+],
+"TCD|1983": [
+"external"
+],
+"TCD|1986": [
+"domestic",
+"external"
+],
+"TCD|1987": [
+"external"
+],
+"TCD|1989": [
+"domestic"
+],
+"TCD|1997": [
+"domestic"
+],
+"TCD|1998": [
+"domestic"
+],
+"TCD|2005": [
+"domestic"
+],
+"TCD|2015": [
+"domestic"
+],
+"TCD|2017": [
+"domestic"
+],
+"TCD|2018": [
+"domestic"
+],
+"TCD|2020": [
+"domestic"
+],
+"TCD|2023": [
+"domestic"
+],
+"TGO|1986": [
+"domestic"
+],
+"TGO|2022": [
+"domestic"
+],
+"THA|1940": [
+"external"
+],
+"THA|1946": [
+"external"
+],
+"THA|1951": [
+"domestic",
+"external"
+],
+"THA|1967": [
+"external"
+],
+"THA|1970": [
+"external"
+],
+"THA|1972": [
+"domestic"
+],
+"THA|1974": [
+"domestic"
+],
+"THA|1977": [
+"external"
+],
+"THA|1986": [
+"external"
+],
+"THA|2003": [
+"domestic"
+],
+"THA|2011": [
+"external"
+],
+"TJK|1992": [
+"domestic"
+],
+"TJK|2021": [
+"external"
+],
+"TTO|1990": [
+"domestic"
+],
+"TUN|1961": [
+"external"
+],
+"TUN|1980": [
+"domestic"
+],
+"TUN|2013": [
+"domestic"
+],
+"TUN|2016": [
+"domestic"
+],
+"TUR|1821": [
+"domestic"
+],
+"TUR|1826": [
+"domestic"
+],
+"TUR|1828": [
+"external"
+],
+"TUR|1830": [
+"domestic"
+],
+"TUR|1831": [
+"domestic"
+],
+"TUR|1836": [
+"domestic"
+],
+"TUR|1839": [
+"domestic"
+],
+"TUR|1840": [
+"domestic"
+],
+"TUR|1841": [
+"domestic"
+],
+"TUR|1842": [
+"domestic"
+],
+"TUR|1852": [
+"domestic"
+],
+"TUR|1853": [
+"external"
+],
+"TUR|1858": [
+"domestic"
+],
+"TUR|1861": [
+"domestic"
+],
+"TUR|1866": [
+"domestic"
+],
+"TUR|1875": [
+"domestic"
+],
+"TUR|1877": [
+"external"
+],
+"TUR|1890": [
+"domestic"
+],
+"TUR|1895": [
+"domestic"
+],
+"TUR|1896": [
+"domestic"
+],
+"TUR|1897": [
+"external"
+],
+"TUR|1903": [
+"domestic"
+],
+"TUR|1904": [
+"domestic"
+],
+"TUR|1909": [
+"domestic"
+],
+"TUR|1910": [
+"domestic"
+],
+"TUR|1911": [
+"external"
+],
+"TUR|1912": [
+"external"
+],
+"TUR|1913": [
+"external"
+],
+"TUR|1914": [
+"external"
+],
+"TUR|1919": [
+"external"
+],
+"TUR|1950": [
+"external"
+],
+"TUR|1974": [
+"external"
+],
+"TUR|1984": [
+"domestic"
+],
+"TUR|1991": [
+"domestic"
+],
+"TUR|1999": [
+"external"
+],
+"TUR|2000": [
+"domestic"
+],
+"TUR|2005": [
+"domestic"
+],
+"TUR|2015": [
+"domestic"
+],
+"TUR|2016": [
+"domestic"
+],
+"TWN|1949": [
+"external"
+],
+"TWN|1954": [
+"external"
+],
+"TWN|1958": [
+"external"
+],
+"TZA|1964": [
+"domestic"
+],
+"TZA|1978": [
+"external"
+],
+"TZA|1985": [
+"domestic"
+],
+"TZA|2020": [
+"domestic"
+],
+"UGA|1966": [
+"domestic"
+],
+"UGA|1971": [
+"domestic"
+],
+"UGA|1974": [
+"domestic"
+],
+"UGA|1978": [
+"external"
+],
+"UGA|1979": [
+"domestic"
+],
+"UGA|1980": [
+"domestic"
+],
+"UGA|1986": [
+"domestic"
+],
+"UGA|1994": [
+"domestic"
+],
+"UGA|1997": [
+"domestic"
+],
+"UGA|1998": [
+"domestic"
+],
+"UGA|2013": [
+"domestic"
+],
+"UGA|2022": [
+"domestic"
+],
+"UKR|2014": [
+"domestic"
+],
+"UKR|2022": [
+"external"
+],
+"URY|1904": [
+"domestic"
+],
+"URY|1972": [
+"domestic"
+],
+"USA|1846": [
+"external"
+],
+"USA|1861": [
+"domestic"
+],
+"USA|1898": [
+"external"
+],
+"USA|1900": [
+"external"
+],
+"USA|1915": [
+"domestic"
+],
+"USA|1917": [
+"external"
+],
+"USA|1918": [
+"domestic"
+],
+"USA|1941": [
+"external"
+],
+"USA|1950": [
+"external"
+],
+"USA|1958": [
+"domestic"
+],
+"USA|1961": [
+"domestic"
+],
+"USA|1964": [
+"domestic"
+],
+"USA|1965": [
+"domestic",
+"external"
+],
+"USA|1966": [
+"domestic"
+],
+"USA|1968": [
+"external"
+],
+"USA|1970": [
+"external"
+],
+"USA|1971": [
+"domestic"
+],
+"USA|1983": [
+"domestic",
+"external"
+],
+"USA|1989": [
+"external"
+],
+"USA|1991": [
+"external"
+],
+"USA|1992": [
+"domestic"
+],
+"USA|1995": [
+"domestic"
+],
+"USA|1999": [
+"external"
+],
+"USA|2001": [
+"domestic",
+"external"
+],
+"USA|2003": [
+"external"
+],
+"USA|2004": [
+"domestic"
+],
+"USA|2007": [
+"domestic"
+],
+"USA|2019": [
+"domestic"
+],
+"UZB|1999": [
+"domestic"
+],
+"UZB|2004": [
+"domestic"
+],
+"VEN|1848": [
+"domestic"
+],
+"VEN|1859": [
+"domestic"
+],
+"VEN|1868": [
+"domestic"
+],
+"VEN|1869": [
+"domestic"
+],
+"VEN|1899": [
+"domestic"
+],
+"VEN|1901": [
+"domestic"
+],
+"VEN|1962": [
+"domestic"
+],
+"VEN|1982": [
+"domestic"
+],
+"VEN|1992": [
+"domestic"
+],
+"VNM|1955": [
+"domestic"
+],
+"VNM|1960": [
+"domestic"
+],
+"VNM|1961": [
+"domestic"
+],
+"VNM|1963": [
+"domestic"
+],
+"VNM|1965": [
+"external"
+],
+"VNM|1968": [
+"external"
+],
+"VNM|1970": [
+"external"
+],
+"VNM|1974": [
+"external"
+],
+"VNM|1975": [
+"external"
+],
+"VNM|1976": [
+"domestic"
+],
+"VNM|1977": [
+"external"
+],
+"VNM|1978": [
+"external"
+],
+"VNM|1979": [
+"external"
+],
+"VNM|1983": [
+"external"
+],
+"VNM|1986": [
+"external"
+],
+"VNM|1987": [
+"external"
+],
+"YEM|1934": [
+"external"
+],
+"YEM|1948": [
+"domestic"
+],
+"YEM|1962": [
+"domestic"
+],
+"YEM|1972": [
+"external"
+],
+"YEM|1979": [
+"domestic",
+"external"
+],
+"YEM|1986": [
+"domestic"
+],
+"YEM|1994": [
+"domestic"
+],
+"YEM|2004": [
+"domestic"
+],
+"YEM|2007": [
+"domestic"
+],
+"YEM|2009": [
+"domestic"
+],
+"YEM|2015": [
+"domestic"
+],
+"YEM|2017": [
+"domestic"
+],
+"YEM|2020": [
+"domestic"
+],
+"ZAF|1939": [
+"external"
+],
+"ZAF|1966": [
+"domestic"
+],
+"ZAF|1975": [
+"external"
+],
+"ZAF|1976": [
+"domestic"
+],
+"ZAF|1981": [
+"domestic"
+],
+"ZAF|1985": [
+"domestic"
+],
+"ZWE|1967": [
+"domestic"
+],
+"ZWE|1972": [
+"domestic"
+],
+"ZWE|1973": [
+"domestic"
+],
+"ZWE|1982": [
+"domestic"
+],
+"ZWE|1983": [
+"domestic"
+],
+"ZWE|1998": [
+"domestic"
+]
+}
+}
