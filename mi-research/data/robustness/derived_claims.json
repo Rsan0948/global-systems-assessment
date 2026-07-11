@@ -1,0 +1,6174 @@
+{
+  "workstream": "P1_reproducibility_rebuild__GENERATE_HALF_ONLY",
+  "discipline_note": "Spec-driven derivation. Derived ONLY from engine output + written spec rules; case verification{} VALUES were never read. This is the generate artifact; grading (agreement vs frozen codings) is run separately afterward and is NOT performed here.",
+  "prereg_sha256_16": "fbd991047fc980d3",
+  "engine_config": {
+    "p1_bottom_third": 0.33,
+    "p1_median": 0.5,
+    "mod4_margin": 0.1,
+    "v3_consolidation_threshold": 0.6,
+    "v3_high_end_margin": 0.15,
+    "j_flag_floor": 0.28,
+    "j_clear_ceiling": 0.2
+  },
+  "scope": "84 modern cases (51 ordinality + 19 durability-gate + 14 rule-validation)",
+  "ancient_status": "DEFERRED. The 25 ancient cases (data/case_studies/ancient/ancient_cases.json) are Track-3 proxy records with a DIFFERENT schema: (a) they carry NO `verification{}` block at all, so there is no claim coding to recompute; (b) their pillars are hand-coded proxy sub-scores (e.g. P1.indicators.P1a_admin_depth {value, source, confidence}) with peak/pre_stress time-points, NOT the WGI/CPI/GII/GDP raw-indicator dict that score_country consumes; there is no country_ref/year the Data API can resolve. Re-scoring them through the modern engine would require a separate Track-3 proxy-scoring path (firewalled per mi-research/CLAUDE.md). Scope is therefore the 84 modern cases.",
+  "judgment_calls": [
+    "1. REFERENCE ENTITY = first-listed entity (dict insertion order). b_violence and d_failure_dimension are computed on it, matching run_retrodiction.run_phase2 which passes list(phase1_results.values())[0] as the reference score to generate_predictions. The corpus 'focus' coding sometimes names a different entity (e.g. case01 b_violence focus=Russia, the 2nd entity); we did NOT copy that \u2014 we derive per the engine's own first-entity rule. A per-entity map is also emitted so the grader can re-key if desired.",
+    "2. MOD4 CONTEXT: p1_comparison_gap and p1_min_level are not in the case JSON; derived mechanically as (P1_hi - P1_lo) and min(pair) for each adjacent ranked pair. Explicitly authorized by the prereg Plan-3 mechanism paragraph ('derived mechanically from the case entities' P1 and documented').",
+    "3. SINGLE-ENTITY a_trajectory: generate_predictions produces NO ranking for n=1 (needs >=2 comparison_scores). The corpus still codes an a_trajectory for single-entity cases (a directional improve/decline call, not a ranking). We derive it from the prereg 'Shared mechanical rule set': J-gap flagged->'stress/decline-lean', clear->'sustain_or_improve', else 'monitor'; annotated with the P1-level read. This rule set is labeled in the prereg for P0/P2 but is the only frozen spec-level mechanical trajectory rule; flag for review.",
+    "4. SINGLE-ENTITY c_convergence: generate_predictions \u00a7(c) is undefined for one entity (no cross-entity P1 range). Emitted as 'N/A_single_entity'.",
+    "5. e/f/g/h CASE-LEVEL AGGREGATION across entities: the safeguard is per-entity; the case-level claim is set triggered if ANY resolved entity triggers it (for g_suppression, the first non-null tier is taken). Per-entity detail is retained under each claim.",
+    "6. YEAR PARSING: malformed multi-year pre_year strings (e.g. Yemen '1990/1996') fall back to the LAST 4-digit token ('1996'). Documented, mechanical.",
+    "7. UNRESOLVABLE ENTITIES (sub-national / unrecognized / pre-WGI: Taiwan, Aceh, Quebec, Bougainville, Somaliland, East-Timor-1998) are DROPPED from the ranking and recorded under unresolved_entities. A comparative case with <2 resolvable entities degrades to the single-entity derivation; with 0 it is marked underivable.",
+    "8. e_fragment_count is derived ONLY as the Safeguard-B mechanical status. The broader qualitative 'engineered vs organic fragmentation' judgment in the corpus is NOT mechanically derivable from the engine and is out of scope for the mechanical claim."
+  ],
+  "n_cases": 84,
+  "n_derivable": 82,
+  "n_underivable": 2,
+  "underivable": [
+    {
+      "file": "rv11_iran_1979.json",
+      "reason": "Data API has no record for (Iran, 1979)"
+    },
+    {
+      "file": "rv12_romania_1989.json",
+      "reason": "Data API has no record for (Romania, 1989)"
+    }
+  ],
+  "schema_coverage": {
+    "comparative": 19,
+    "comparative_degraded_single": 32,
+    "rule_validation": 14,
+    "durability_gate": 19
+  },
+  "claim_type_coverage": {
+    "a_trajectory": 51,
+    "c_convergence": 51,
+    "b_violence": 51,
+    "d_failure_dimension": 51,
+    "e_fragment_count": 51,
+    "f_reversal_risk": 51,
+    "g_suppression": 51,
+    "h_turbulence": 51,
+    "rule_test": 12,
+    "j_durability_gate": 19
+  },
+  "cases": [
+    {
+      "case_id": "case01",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Estonia",
+        "Russia",
+        "Ukraine"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Estonia",
+            "Russia",
+            "Ukraine"
+          ],
+          "p1_values": {
+            "Estonia": 0.6322,
+            "Russia": 0.3803,
+            "Ukraine": 0.3513
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Estonia",
+              "lower": "Russia",
+              "gap": 0.252,
+              "abstain": false,
+              "reason": "P1 gap (0.252) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            },
+            {
+              "higher": "Russia",
+              "lower": "Ukraine",
+              "gap": 0.029,
+              "abstain": true,
+              "reason": "P1 gap (0.029) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "DIVERGENCE",
+          "basis": "P1 range across entities: 0.281"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Estonia",
+          "risk": "LOW",
+          "reference_p1": 0.6322,
+          "per_entity": {
+            "Estonia": "LOW",
+            "Russia": "MODERATE",
+            "Ukraine": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Estonia",
+          "weakest_pillar": "P1",
+          "score": 0.6322
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Estonia": {
+              "triggered": false,
+              "n_successor_states": 15
+            },
+            "Russia": {
+              "triggered": false,
+              "n_successor_states": 15
+            },
+            "Ukraine": {
+              "triggered": false,
+              "n_successor_states": 15
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Estonia": {
+              "triggered": true,
+              "severity": "AT RISK"
+            },
+            "Russia": {
+              "triggered": false,
+              "severity": null
+            },
+            "Ukraine": {
+              "triggered": true,
+              "severity": "AT RISK"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: engineered",
+          "per_entity": {
+            "Estonia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: engineered"
+            },
+            "Russia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: engineered"
+            },
+            "Ukraine": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: engineered"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Estonia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Russia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Ukraine": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Estonia > Russia > Ukraine",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Estonia"
+      },
+      "source_file": "case01_post_soviet_estonia_russia_ukraine.json"
+    },
+    {
+      "case_id": "case02",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Slovenia",
+        "Croatia",
+        "Serbia",
+        "Bosnia-Herzegovina"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Slovenia",
+            "Croatia",
+            "Bosnia-Herzegovina",
+            "Serbia"
+          ],
+          "p1_values": {
+            "Slovenia": 0.707,
+            "Croatia": 0.4335,
+            "Bosnia-Herzegovina": 0.3693,
+            "Serbia": 0.3417
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Slovenia",
+              "lower": "Croatia",
+              "gap": 0.274,
+              "abstain": false,
+              "reason": "P1 gap (0.274) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            },
+            {
+              "higher": "Croatia",
+              "lower": "Bosnia-Herzegovina",
+              "gap": 0.064,
+              "abstain": true,
+              "reason": "P1 gap (0.064) -> ABSTAIN (within margin of error)."
+            },
+            {
+              "higher": "Bosnia-Herzegovina",
+              "lower": "Serbia",
+              "gap": 0.028,
+              "abstain": true,
+              "reason": "P1 gap (0.028) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "DIVERGENCE",
+          "basis": "P1 range across entities: 0.365"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Slovenia",
+          "risk": "LOW",
+          "reference_p1": 0.707,
+          "per_entity": {
+            "Slovenia": "LOW",
+            "Croatia": "MODERATE",
+            "Serbia": "MODERATE",
+            "Bosnia-Herzegovina": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Slovenia",
+          "weakest_pillar": "P1",
+          "score": 0.707
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Slovenia": {
+              "triggered": false,
+              "n_successor_states": 7
+            },
+            "Croatia": {
+              "triggered": false,
+              "n_successor_states": 7
+            },
+            "Serbia": {
+              "triggered": false,
+              "n_successor_states": 7
+            },
+            "Bosnia-Herzegovina": {
+              "triggered": false,
+              "n_successor_states": 7
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Slovenia": {
+              "triggered": true,
+              "severity": "AT RISK"
+            },
+            "Croatia": {
+              "triggered": true,
+              "severity": "AT RISK"
+            },
+            "Serbia": {
+              "triggered": false,
+              "severity": null
+            },
+            "Bosnia-Herzegovina": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: engineered",
+          "per_entity": {
+            "Slovenia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: engineered"
+            },
+            "Croatia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: engineered"
+            },
+            "Serbia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: engineered"
+            },
+            "Bosnia-Herzegovina": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: engineered"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Slovenia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Croatia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Serbia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Bosnia-Herzegovina": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Slovenia > Croatia > Bosnia-Herzegovina > Serbia",
+        "tier": 1,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Slovenia"
+      },
+      "source_file": "case02_yugoslav_successors.json"
+    },
+    {
+      "case_id": "case03",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Czech Republic",
+        "Slovakia"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Czech Republic",
+            "Slovakia"
+          ],
+          "p1_values": {
+            "Czech Republic": 0.653,
+            "Slovakia": 0.5844
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Czech Republic",
+              "lower": "Slovakia",
+              "gap": 0.069,
+              "abstain": true,
+              "reason": "P1 gap (0.069) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.069"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Czech Republic",
+          "risk": "LOW",
+          "reference_p1": 0.653,
+          "per_entity": {
+            "Czech Republic": "LOW",
+            "Slovakia": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Czech Republic",
+          "weakest_pillar": "P1",
+          "score": 0.653
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Czech Republic": {
+              "triggered": false,
+              "n_successor_states": 2
+            },
+            "Slovakia": {
+              "triggered": false,
+              "n_successor_states": 2
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Czech Republic": {
+              "triggered": true,
+              "severity": "AT RISK"
+            },
+            "Slovakia": {
+              "triggered": true,
+              "severity": "AT RISK"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: negotiated",
+          "per_entity": {
+            "Czech Republic": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: negotiated"
+            },
+            "Slovakia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: negotiated"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Czech Republic": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Slovakia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Czech Republic > Slovakia",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Czech Republic"
+      },
+      "source_file": "case03_velvet_divorce_czech_slovakia.json"
+    },
+    {
+      "case_id": "case04",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Tunisia",
+        "Egypt",
+        "Libya"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Tunisia",
+            "Egypt",
+            "Libya"
+          ],
+          "p1_values": {
+            "Tunisia": 0.5264,
+            "Egypt": 0.4577,
+            "Libya": 0.3026
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Tunisia",
+              "lower": "Egypt",
+              "gap": 0.069,
+              "abstain": true,
+              "reason": "P1 gap (0.069) -> ABSTAIN (within margin of error)."
+            },
+            {
+              "higher": "Egypt",
+              "lower": "Libya",
+              "gap": 0.155,
+              "abstain": false,
+              "reason": "P1 gap (0.155) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "DIVERGENCE",
+          "basis": "P1 range across entities: 0.224"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Tunisia",
+          "risk": "LOW",
+          "reference_p1": 0.5264,
+          "per_entity": {
+            "Tunisia": "LOW",
+            "Egypt": "MODERATE",
+            "Libya": "HIGH"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Tunisia",
+          "weakest_pillar": "P1",
+          "score": 0.5264
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Tunisia": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Egypt": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Libya": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Tunisia": {
+              "triggered": true,
+              "severity": "AT RISK"
+            },
+            "Egypt": {
+              "triggered": true,
+              "severity": "AT RISK"
+            },
+            "Libya": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": null,
+          "per_entity": {
+            "Tunisia": {
+              "triggered": false,
+              "tier": null
+            },
+            "Egypt": {
+              "triggered": false,
+              "tier": null
+            },
+            "Libya": {
+              "triggered": false,
+              "tier": null
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Tunisia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Egypt": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Libya": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Tunisia > Egypt > Libya",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Tunisia"
+      },
+      "source_file": "case04_arab_spring_tunisia_egypt_libya.json"
+    },
+    {
+      "case_id": "case05",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Sudan",
+        "South Sudan"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "South Sudan",
+            "Sudan"
+          ],
+          "p1_values": {
+            "South Sudan": 0.4352,
+            "Sudan": 0.2768
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "South Sudan",
+              "lower": "Sudan",
+              "gap": 0.158,
+              "abstain": false,
+              "reason": "P1 gap (0.158) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            }
+          ],
+          "any_pair_abstains": false
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "DIVERGENCE",
+          "basis": "P1 range across entities: 0.158"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Sudan",
+          "risk": "HIGH",
+          "reference_p1": 0.2768,
+          "per_entity": {
+            "Sudan": "HIGH",
+            "South Sudan": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Sudan",
+          "weakest_pillar": "P2",
+          "score": 0.156
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": true,
+          "per_entity": {
+            "Sudan": {
+              "triggered": true,
+              "n_successor_states": 2
+            },
+            "South Sudan": {
+              "triggered": false,
+              "n_successor_states": 2
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Sudan": {
+              "triggered": false,
+              "severity": null
+            },
+            "South Sudan": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: secession / independence referendum",
+          "per_entity": {
+            "Sudan": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: secession / independence referendum"
+            },
+            "South Sudan": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: secession / independence"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Sudan": {
+              "triggered": false,
+              "triggers": []
+            },
+            "South Sudan": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: South Sudan > Sudan",
+        "tier": 4,
+        "abstention": false,
+        "risk_level": "critical",
+        "reference_entity": "Sudan"
+      },
+      "source_file": "case05_sudan_south_sudan.json"
+    },
+    {
+      "case_id": "case06",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Pakistan",
+        "Bangladesh"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Pakistan",
+            "Bangladesh"
+          ],
+          "p1_values": {
+            "Pakistan": 0.398,
+            "Bangladesh": 0.3587
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Pakistan",
+              "lower": "Bangladesh",
+              "gap": 0.039,
+              "abstain": true,
+              "reason": "P1 gap (0.039) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.039"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Pakistan",
+          "risk": "MODERATE",
+          "reference_p1": 0.398,
+          "per_entity": {
+            "Pakistan": "MODERATE",
+            "Bangladesh": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Pakistan",
+          "weakest_pillar": "P1",
+          "score": 0.398
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Pakistan": {
+              "triggered": false,
+              "n_successor_states": 2
+            },
+            "Bangladesh": {
+              "triggered": false,
+              "n_successor_states": 2
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Pakistan": {
+              "triggered": false,
+              "severity": null
+            },
+            "Bangladesh": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: secession of bifurcated province (East Pakistan)",
+          "per_entity": {
+            "Pakistan": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: secession of bifurcated province (East Pakistan)"
+            },
+            "Bangladesh": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: successor state of 1971 secession"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Pakistan": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Bangladesh": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Pakistan > Bangladesh",
+        "tier": 3,
+        "abstention": true,
+        "risk_level": "high",
+        "reference_entity": "Pakistan"
+      },
+      "source_file": "case06_pakistan_bangladesh.json"
+    },
+    {
+      "case_id": "case07",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Singapore",
+        "Malaysia"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Singapore",
+            "Malaysia"
+          ],
+          "p1_values": {
+            "Singapore": 0.8699,
+            "Malaysia": 0.6228
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Singapore",
+              "lower": "Malaysia",
+              "gap": 0.247,
+              "abstain": false,
+              "reason": "P1 gap (0.247) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            }
+          ],
+          "any_pair_abstains": false
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "DIVERGENCE",
+          "basis": "P1 range across entities: 0.247"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Singapore",
+          "risk": "LOW",
+          "reference_p1": 0.8699,
+          "per_entity": {
+            "Singapore": "LOW",
+            "Malaysia": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Singapore",
+          "weakest_pillar": "P2",
+          "score": 0.7968
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Singapore": {
+              "triggered": false,
+              "n_successor_states": 2
+            },
+            "Malaysia": {
+              "triggered": false,
+              "n_successor_states": 2
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Singapore": {
+              "triggered": false,
+              "severity": null
+            },
+            "Malaysia": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: expulsion / negotiated separation",
+          "per_entity": {
+            "Singapore": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: expulsion / negotiated separation"
+            },
+            "Malaysia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: parent state of 1965 separation"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Singapore": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Malaysia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Singapore > Malaysia",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Singapore"
+      },
+      "source_file": "case07_singapore_malaysia.json"
+    },
+    {
+      "case_id": "case08",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Ethiopia",
+        "Eritrea"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Eritrea",
+            "Ethiopia"
+          ],
+          "p1_values": {
+            "Eritrea": 0.4006,
+            "Ethiopia": 0.3169
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Eritrea",
+              "lower": "Ethiopia",
+              "gap": 0.084,
+              "abstain": true,
+              "reason": "P1 gap (0.084) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.084"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Ethiopia",
+          "risk": "HIGH",
+          "reference_p1": 0.3169,
+          "per_entity": {
+            "Ethiopia": "HIGH",
+            "Eritrea": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Ethiopia",
+          "weakest_pillar": "P2",
+          "score": 0.3027
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": true,
+          "per_entity": {
+            "Ethiopia": {
+              "triggered": true,
+              "n_successor_states": 2
+            },
+            "Eritrea": {
+              "triggered": false,
+              "n_successor_states": 2
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Ethiopia": {
+              "triggered": false,
+              "severity": null
+            },
+            "Eritrea": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: secession (Eritrean independence)",
+          "per_entity": {
+            "Ethiopia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: secession (Eritrean independence)"
+            },
+            "Eritrea": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: new state via secession"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Ethiopia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Eritrea": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Eritrea > Ethiopia",
+        "tier": 4,
+        "abstention": true,
+        "risk_level": "critical",
+        "reference_entity": "Ethiopia"
+      },
+      "source_file": "case08_ethiopia_eritrea.json"
+    },
+    {
+      "case_id": "case09",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Serbia",
+        "Kosovo"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Kosovo",
+            "Serbia"
+          ],
+          "p1_values": {
+            "Kosovo": 0.4684,
+            "Serbia": 0.4669
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Kosovo",
+              "lower": "Serbia",
+              "gap": 0.001,
+              "abstain": true,
+              "reason": "P1 gap (0.001) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.001"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Serbia",
+          "risk": "MODERATE",
+          "reference_p1": 0.4669,
+          "per_entity": {
+            "Serbia": "MODERATE",
+            "Kosovo": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Serbia",
+          "weakest_pillar": "P1",
+          "score": 0.4669
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Serbia": {
+              "triggered": false,
+              "n_successor_states": 2
+            },
+            "Kosovo": {
+              "triggered": false,
+              "n_successor_states": 2
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Serbia": {
+              "triggered": false,
+              "severity": null
+            },
+            "Kosovo": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: loss of breakaway province (Kosovo)",
+          "per_entity": {
+            "Serbia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: loss of breakaway province (Kosovo)"
+            },
+            "Kosovo": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: unilateral declaration of independence"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Serbia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Kosovo": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Kosovo > Serbia",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "high",
+        "reference_entity": "Serbia"
+      },
+      "source_file": "case09_serbia_kosovo.json"
+    },
+    {
+      "case_id": "case10",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Indonesia"
+      ],
+      "unresolved_entities": [
+        {
+          "entity": "East Timor",
+          "country_ref": "East Timor",
+          "pre_year": "1998",
+          "reason": "P1 unavailable for (East Timor, 1998)"
+        }
+      ],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "hold",
+          "gap": 0.341,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Indonesia",
+          "risk": "MODERATE",
+          "reference_p1": 0.368,
+          "per_entity": {
+            "Indonesia": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Indonesia",
+          "weakest_pillar": "P1",
+          "score": 0.368
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Indonesia": {
+              "triggered": false,
+              "n_successor_states": 2
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Indonesia": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: loss of occupied territory via referendum",
+          "per_entity": {
+            "Indonesia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: loss of occupied territory via referendum"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Indonesia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Indonesia"
+      },
+      "source_file": "case10_indonesia_east_timor.json"
+    },
+    {
+      "case_id": "case11",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Ethiopia"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "monitor",
+          "level": "hold",
+          "gap": 0.209,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Ethiopia",
+          "risk": "MODERATE",
+          "reference_p1": 0.3995,
+          "per_entity": {
+            "Ethiopia": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Ethiopia",
+          "weakest_pillar": "P5",
+          "score": 0.3115
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Ethiopia": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Ethiopia": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: re-suppression after porosity (dismantling 23-year ethnic federalism)",
+          "per_entity": {
+            "Ethiopia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: re-suppression after porosity (dismantling 23-year ethnic federalism)"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Ethiopia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "monitor",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Ethiopia"
+      },
+      "source_file": "case11_ethiopia_tigray.json"
+    },
+    {
+      "case_id": "case12",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Nigeria"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "hold",
+          "gap": 0.116,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Nigeria",
+          "risk": "HIGH",
+          "reference_p1": 0.3252,
+          "per_entity": {
+            "Nigeria": "HIGH"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Nigeria",
+          "weakest_pillar": "P1",
+          "score": 0.3252
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Nigeria": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Nigeria": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: suppressed secession (Biafra) channeled by federal porosity",
+          "per_entity": {
+            "Nigeria": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: suppressed secession (Biafra) channeled by federal porosity"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Nigeria": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 4,
+        "abstention": false,
+        "risk_level": "critical",
+        "reference_entity": "Nigeria"
+      },
+      "source_file": "case12_nigeria_biafra.json"
+    },
+    {
+      "case_id": "case13",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "South Africa"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": 0.18,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "South Africa",
+          "risk": "LOW",
+          "reference_p1": 0.6078,
+          "per_entity": {
+            "South Africa": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "South Africa",
+          "weakest_pillar": "P5",
+          "score": 0.5632
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "South Africa": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "South Africa": {
+              "triggered": true,
+              "severity": "PROBABLE reversal"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: institutional_replacement",
+          "per_entity": {
+            "South Africa": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: institutional_replacement"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "South Africa": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "South Africa"
+      },
+      "source_file": "case13_south_africa.json"
+    },
+    {
+      "case_id": "case14",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Northern Ireland (UK)"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": -0.026,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Northern Ireland (UK)",
+          "risk": "LOW",
+          "reference_p1": 0.8621,
+          "per_entity": {
+            "Northern Ireland (UK)": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Northern Ireland (UK)",
+          "weakest_pillar": "P3",
+          "score": 0.8166
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Northern Ireland (UK)": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Northern Ireland (UK)": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: consociational_power_sharing",
+          "per_entity": {
+            "Northern Ireland (UK)": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: consociational_power_sharing"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": true,
+          "per_entity": {
+            "Northern Ireland (UK)": {
+              "triggered": true,
+              "triggers": [
+                "8 executive collapses"
+              ]
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Northern Ireland (UK)"
+      },
+      "source_file": "case14_northern_ireland_gfa.json"
+    },
+    {
+      "case_id": "case15",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Germany"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": 0.003,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Germany",
+          "risk": "LOW",
+          "reference_p1": 0.8357,
+          "per_entity": {
+            "Germany": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Germany",
+          "weakest_pillar": "P1",
+          "score": 0.8357
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Germany": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Germany": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: fusion",
+          "per_entity": {
+            "Germany": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: fusion"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": true,
+          "per_entity": {
+            "Germany": {
+              "triggered": true,
+              "triggers": [
+                "anti-system vote 32.8% > 25%"
+              ]
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Germany"
+      },
+      "source_file": "case15_german_reunification.json"
+    },
+    {
+      "case_id": "case16",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Spain (Catalonia)"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": 0.197,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Spain (Catalonia)",
+          "risk": "LOW",
+          "reference_p1": 0.6863,
+          "per_entity": {
+            "Spain (Catalonia)": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Spain (Catalonia)",
+          "weakest_pillar": "P1",
+          "score": 0.6863
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Spain (Catalonia)": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Spain (Catalonia)": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: legal_constitutional_suppression",
+          "per_entity": {
+            "Spain (Catalonia)": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: legal_constitutional_suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Spain (Catalonia)": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Spain (Catalonia)"
+      },
+      "source_file": "case16_spain_catalonia.json"
+    },
+    {
+      "case_id": "case17",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Belgium"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": 0.102,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Belgium",
+          "risk": "LOW",
+          "reference_p1": 0.7815,
+          "per_entity": {
+            "Belgium": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Belgium",
+          "weakest_pillar": "P1",
+          "score": 0.7815
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Belgium": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Belgium": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: extreme_porosity",
+          "per_entity": {
+            "Belgium": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: extreme_porosity"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": true,
+          "per_entity": {
+            "Belgium": {
+              "triggered": true,
+              "triggers": [
+                "anti-system vote 47.0% > 25%",
+                "3 executive collapses",
+                "regional divergence 40.0% > 30%"
+              ]
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Belgium"
+      },
+      "source_file": "case17_belgium.json"
+    },
+    {
+      "case_id": "case18",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Estonia",
+        "Latvia",
+        "Kazakhstan",
+        "Uzbekistan"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Estonia",
+            "Latvia",
+            "Kazakhstan",
+            "Uzbekistan"
+          ],
+          "p1_values": {
+            "Estonia": 0.6322,
+            "Latvia": 0.5176,
+            "Kazakhstan": 0.311,
+            "Uzbekistan": 0.2814
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Estonia",
+              "lower": "Latvia",
+              "gap": 0.115,
+              "abstain": false,
+              "reason": "P1 gap (0.115) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            },
+            {
+              "higher": "Latvia",
+              "lower": "Kazakhstan",
+              "gap": 0.207,
+              "abstain": false,
+              "reason": "P1 gap (0.207) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            },
+            {
+              "higher": "Kazakhstan",
+              "lower": "Uzbekistan",
+              "gap": 0.03,
+              "abstain": true,
+              "reason": "P1 gap (0.030) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "DIVERGENCE",
+          "basis": "P1 range across entities: 0.351"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Estonia",
+          "risk": "LOW",
+          "reference_p1": 0.6322,
+          "per_entity": {
+            "Estonia": "LOW",
+            "Latvia": "LOW",
+            "Kazakhstan": "HIGH",
+            "Uzbekistan": "HIGH"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Estonia",
+          "weakest_pillar": "P1",
+          "score": 0.6322
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Estonia": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Latvia": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Kazakhstan": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Uzbekistan": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Estonia": {
+              "triggered": false,
+              "severity": null
+            },
+            "Latvia": {
+              "triggered": false,
+              "severity": null
+            },
+            "Kazakhstan": {
+              "triggered": false,
+              "severity": null
+            },
+            "Uzbekistan": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": null,
+          "per_entity": {
+            "Estonia": {
+              "triggered": false,
+              "tier": null
+            },
+            "Latvia": {
+              "triggered": false,
+              "tier": null
+            },
+            "Kazakhstan": {
+              "triggered": false,
+              "tier": null
+            },
+            "Uzbekistan": {
+              "triggered": false,
+              "tier": null
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Estonia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Latvia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Kazakhstan": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Uzbekistan": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Estonia > Latvia > Kazakhstan > Uzbekistan",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Estonia"
+      },
+      "source_file": "case18_baltics_vs_central_asia.json"
+    },
+    {
+      "case_id": "case19",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "India",
+        "Pakistan",
+        "Bangladesh"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "India",
+            "Pakistan",
+            "Bangladesh"
+          ],
+          "p1_values": {
+            "India": 0.4865,
+            "Pakistan": 0.398,
+            "Bangladesh": 0.3587
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "India",
+              "lower": "Pakistan",
+              "gap": 0.089,
+              "abstain": true,
+              "reason": "P1 gap (0.089) -> ABSTAIN (within margin of error)."
+            },
+            {
+              "higher": "Pakistan",
+              "lower": "Bangladesh",
+              "gap": 0.039,
+              "abstain": true,
+              "reason": "P1 gap (0.039) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.128"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "India",
+          "risk": "MODERATE",
+          "reference_p1": 0.4865,
+          "per_entity": {
+            "India": "MODERATE",
+            "Pakistan": "MODERATE",
+            "Bangladesh": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "India",
+          "weakest_pillar": "P1",
+          "score": 0.4865
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "India": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Pakistan": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Bangladesh": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "India": {
+              "triggered": false,
+              "severity": null
+            },
+            "Pakistan": {
+              "triggered": false,
+              "severity": null
+            },
+            "Bangladesh": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: authoritarian collapse (August 2024)",
+          "per_entity": {
+            "India": {
+              "triggered": false,
+              "tier": null
+            },
+            "Pakistan": {
+              "triggered": false,
+              "tier": null
+            },
+            "Bangladesh": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: authoritarian collapse (August 2024)"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "India": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Pakistan": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Bangladesh": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: India > Pakistan > Bangladesh",
+        "tier": 3,
+        "abstention": true,
+        "risk_level": "high",
+        "reference_entity": "India"
+      },
+      "source_file": "case19_india_pakistan_bangladesh.json"
+    },
+    {
+      "case_id": "case20",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Myanmar"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "hold",
+          "gap": 0.386,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Myanmar",
+          "risk": "MODERATE",
+          "reference_p1": 0.3336,
+          "per_entity": {
+            "Myanmar": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Myanmar",
+          "weakest_pillar": "P5",
+          "score": 0.3182
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Myanmar": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Myanmar": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: re-suppression after porosity (Mod9)",
+          "per_entity": {
+            "Myanmar": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: re-suppression after porosity (Mod9)"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Myanmar": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Myanmar"
+      },
+      "source_file": "case20_myanmar.json"
+    },
+    {
+      "case_id": "case21",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Haiti",
+        "Dominican Republic"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Dominican Republic",
+            "Haiti"
+          ],
+          "p1_values": {
+            "Dominican Republic": 0.4564,
+            "Haiti": 0.2964
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Dominican Republic",
+              "lower": "Haiti",
+              "gap": 0.16,
+              "abstain": false,
+              "reason": "P1 gap (0.160) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            }
+          ],
+          "any_pair_abstains": false
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "DIVERGENCE",
+          "basis": "P1 range across entities: 0.160"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Haiti",
+          "risk": "HIGH",
+          "reference_p1": 0.2964,
+          "per_entity": {
+            "Haiti": "HIGH",
+            "Dominican Republic": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Haiti",
+          "weakest_pillar": "P1",
+          "score": 0.2964
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Haiti": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Dominican Republic": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Haiti": {
+              "triggered": false,
+              "severity": null
+            },
+            "Dominican Republic": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": null,
+          "per_entity": {
+            "Haiti": {
+              "triggered": false,
+              "tier": null
+            },
+            "Dominican Republic": {
+              "triggered": false,
+              "tier": null
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Haiti": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Dominican Republic": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Dominican Republic > Haiti",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "critical",
+        "reference_entity": "Haiti"
+      },
+      "source_file": "case21_haiti_dominican_republic.json"
+    },
+    {
+      "case_id": "case22",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Venezuela"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "hold",
+          "gap": 0.309,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Venezuela",
+          "risk": "MODERATE",
+          "reference_p1": 0.3918,
+          "per_entity": {
+            "Venezuela": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Venezuela",
+          "weakest_pillar": "P1",
+          "score": 0.3918
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Venezuela": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Venezuela": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: authoritarian_reversal",
+          "per_entity": {
+            "Venezuela": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: authoritarian_reversal"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Venezuela": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Venezuela"
+      },
+      "source_file": "case22_venezuela.json"
+    },
+    {
+      "case_id": "case23",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Colombia"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "hold",
+          "gap": 0.312,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Colombia",
+          "risk": "MODERATE",
+          "reference_p1": 0.4823,
+          "per_entity": {
+            "Colombia": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Colombia",
+          "weakest_pillar": "P5",
+          "score": 0.3641
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Colombia": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Colombia": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: insurgency",
+          "per_entity": {
+            "Colombia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: insurgency"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Colombia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Colombia"
+      },
+      "source_file": "case23_colombia.json"
+    },
+    {
+      "case_id": "case24",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "DR Congo",
+        "Rwanda"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Rwanda",
+            "DR Congo"
+          ],
+          "p1_values": {
+            "Rwanda": 0.2951,
+            "DR Congo": 0.1987
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Rwanda",
+              "lower": "DR Congo",
+              "gap": 0.096,
+              "abstain": true,
+              "reason": "P1 gap (0.096) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.096"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "DR Congo",
+          "risk": "HIGH",
+          "reference_p1": 0.1987,
+          "per_entity": {
+            "DR Congo": "HIGH",
+            "Rwanda": "HIGH"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "DR Congo",
+          "weakest_pillar": "P1",
+          "score": 0.1987
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "DR Congo": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Rwanda": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "DR Congo": {
+              "triggered": false,
+              "severity": null
+            },
+            "Rwanda": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "DR Congo": {
+              "triggered": false,
+              "tier": null
+            },
+            "Rwanda": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "DR Congo": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Rwanda": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Rwanda > DR Congo",
+        "tier": 4,
+        "abstention": true,
+        "risk_level": "critical",
+        "reference_entity": "DR Congo"
+      },
+      "source_file": "case24_drc_rwanda.json"
+    },
+    {
+      "case_id": "case25",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Rwanda"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "decline_risk",
+          "gap": -0.045,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Rwanda",
+          "risk": "HIGH",
+          "reference_p1": 0.2951,
+          "per_entity": {
+            "Rwanda": "HIGH"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Rwanda",
+          "weakest_pillar": "P4",
+          "score": 0.2496
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Rwanda": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Rwanda": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "Rwanda": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Rwanda": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 4,
+        "abstention": false,
+        "risk_level": "critical",
+        "reference_entity": "Rwanda"
+      },
+      "source_file": "case25_rwanda.json"
+    },
+    {
+      "case_id": "case26",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Ghana",
+        "Cote d'Ivoire"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Cote d'Ivoire",
+            "Ghana"
+          ],
+          "p1_values": {
+            "Cote d'Ivoire": 0.479,
+            "Ghana": 0.4774
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Cote d'Ivoire",
+              "lower": "Ghana",
+              "gap": 0.002,
+              "abstain": true,
+              "reason": "P1 gap (0.002) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.002"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Ghana",
+          "risk": "MODERATE",
+          "reference_p1": 0.4774,
+          "per_entity": {
+            "Ghana": "MODERATE",
+            "Cote d'Ivoire": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Ghana",
+          "weakest_pillar": "P2",
+          "score": 0.3844
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Ghana": {
+              "triggered": false,
+              "n_successor_states": 0
+            },
+            "Cote d'Ivoire": {
+              "triggered": false,
+              "n_successor_states": 1
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Ghana": {
+              "triggered": true,
+              "severity": "PROBABLE reversal"
+            },
+            "Cote d'Ivoire": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: ethnicized_political_settlement",
+          "per_entity": {
+            "Ghana": {
+              "triggered": false,
+              "tier": null
+            },
+            "Cote d'Ivoire": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: ethnicized_political_settlement"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Ghana": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Cote d'Ivoire": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Cote d'Ivoire > Ghana",
+        "tier": 3,
+        "abstention": true,
+        "risk_level": "high",
+        "reference_entity": "Ghana"
+      },
+      "source_file": "case26_ghana_cote_divoire.json"
+    },
+    {
+      "case_id": "case27",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Malaysia"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": 0.143,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Malaysia",
+          "risk": "LOW",
+          "reference_p1": 0.6228,
+          "per_entity": {
+            "Malaysia": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Malaysia",
+          "weakest_pillar": "P1",
+          "score": 0.6228
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Malaysia": {
+              "triggered": false,
+              "n_successor_states": 0
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Malaysia": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": null,
+          "per_entity": {
+            "Malaysia": {
+              "triggered": false,
+              "tier": null
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Malaysia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Malaysia"
+      },
+      "source_file": "case27_malaysia.json"
+    },
+    {
+      "case_id": "case28",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Argentina"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "improvement_capacity",
+          "gap": 0.332,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Argentina",
+          "risk": "LOW",
+          "reference_p1": 0.5017,
+          "per_entity": {
+            "Argentina": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Argentina",
+          "weakest_pillar": "P1",
+          "score": 0.5017
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Argentina": {
+              "triggered": false,
+              "n_successor_states": 0
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Argentina": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": null,
+          "per_entity": {
+            "Argentina": {
+              "triggered": false,
+              "tier": null
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": true,
+          "per_entity": {
+            "Argentina": {
+              "triggered": true,
+              "triggers": [
+                "5 executive collapses"
+              ]
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Argentina"
+      },
+      "source_file": "case28_argentina.json"
+    },
+    {
+      "case_id": "case29",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Lebanon"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "hold",
+          "gap": 0.406,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Lebanon",
+          "risk": "MODERATE",
+          "reference_p1": 0.4395,
+          "per_entity": {
+            "Lebanon": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Lebanon",
+          "weakest_pillar": "P5",
+          "score": 0.414
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Lebanon": {
+              "triggered": false,
+              "n_successor_states": 0
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Lebanon": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: confessional_elite_cartel",
+          "per_entity": {
+            "Lebanon": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: confessional_elite_cartel"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Lebanon": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Lebanon"
+      },
+      "source_file": "case29_lebanon.json"
+    },
+    {
+      "case_id": "case30",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Iraq"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "decline_risk",
+          "gap": 0.039,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Iraq",
+          "risk": "HIGH",
+          "reference_p1": 0.254,
+          "per_entity": {
+            "Iraq": "HIGH"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Iraq",
+          "weakest_pillar": "P5",
+          "score": 0.1734
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": true,
+          "per_entity": {
+            "Iraq": {
+              "triggered": true,
+              "n_successor_states": 0
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Iraq": {
+              "triggered": true,
+              "severity": "PROBABLE reversal"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: sectarian_quota_imposed",
+          "per_entity": {
+            "Iraq": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: sectarian_quota_imposed"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Iraq": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 4,
+        "abstention": false,
+        "risk_level": "critical",
+        "reference_entity": "Iraq"
+      },
+      "source_file": "case30_iraq.json"
+    },
+    {
+      "case_id": "case31",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Vietnam"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "monitor",
+          "level": "hold",
+          "gap": 0.236,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Vietnam",
+          "risk": "MODERATE",
+          "reference_p1": 0.4035,
+          "per_entity": {
+            "Vietnam": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Vietnam",
+          "weakest_pillar": "P1",
+          "score": 0.4035
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Vietnam": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Vietnam": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "Vietnam": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Vietnam": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "monitor",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Vietnam"
+      },
+      "source_file": "case31_vietnam.json"
+    },
+    {
+      "case_id": "case32",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "South Korea"
+      ],
+      "unresolved_entities": [
+        {
+          "entity": "Taiwan",
+          "country_ref": "Taiwan",
+          "pre_year": "1996",
+          "reason": "Data API has no record for (Taiwan, 1996)"
+        }
+      ],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "monitor",
+          "level": "improvement_capacity",
+          "gap": 0.231,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "South Korea",
+          "risk": "LOW",
+          "reference_p1": 0.635,
+          "per_entity": {
+            "South Korea": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "South Korea",
+          "weakest_pillar": "P1",
+          "score": 0.635
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "South Korea": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "South Korea": {
+              "triggered": true,
+              "severity": "AT RISK"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "South Korea": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "South Korea": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "monitor",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "South Korea"
+      },
+      "source_file": "case32_korea_taiwan.json"
+    },
+    {
+      "case_id": "case33",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Fiji"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": 0.186,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Fiji",
+          "risk": "LOW",
+          "reference_p1": 0.5694,
+          "per_entity": {
+            "Fiji": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Fiji",
+          "weakest_pillar": "P1",
+          "score": 0.5694
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Fiji": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Fiji": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: coup/military intervention",
+          "per_entity": {
+            "Fiji": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: coup/military intervention"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Fiji": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Fiji"
+      },
+      "source_file": "case33_fiji.json"
+    },
+    {
+      "case_id": "case34",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Bolivia"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "monitor",
+          "level": "hold",
+          "gap": 0.207,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Bolivia",
+          "risk": "MODERATE",
+          "reference_p1": 0.4656,
+          "per_entity": {
+            "Bolivia": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Bolivia",
+          "weakest_pillar": "P1",
+          "score": 0.4656
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Bolivia": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Bolivia": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: regional autonomy / resource-driven secessionist agitation",
+          "per_entity": {
+            "Bolivia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: regional autonomy / resource-driven secessionist agitation"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": true,
+          "per_entity": {
+            "Bolivia": {
+              "triggered": true,
+              "triggers": [
+                "regional divergence 40.0% > 30%"
+              ]
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "monitor",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Bolivia"
+      },
+      "source_file": "case34_bolivia.json"
+    },
+    {
+      "case_id": "case35",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Indonesia"
+      ],
+      "unresolved_entities": [
+        {
+          "entity": "Aceh",
+          "country_ref": "Aceh",
+          "pre_year": "2004",
+          "reason": "Data API has no record for (Aceh, 2004)"
+        }
+      ],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "hold",
+          "gap": 0.369,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Indonesia",
+          "risk": "MODERATE",
+          "reference_p1": 0.3786,
+          "per_entity": {
+            "Indonesia": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Indonesia",
+          "weakest_pillar": "P5",
+          "score": 0.3759
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Indonesia": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Indonesia": {
+              "triggered": true,
+              "severity": "AT RISK"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: separatist insurgency resolved by special autonomy",
+          "per_entity": {
+            "Indonesia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: separatist insurgency resolved by special autonomy"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Indonesia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Indonesia"
+      },
+      "source_file": "case35_aceh_indonesia.json"
+    },
+    {
+      "case_id": "case36",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Chile",
+        "Uruguay"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Chile",
+            "Uruguay"
+          ],
+          "p1_values": {
+            "Chile": 0.7589,
+            "Uruguay": 0.6525
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Chile",
+              "lower": "Uruguay",
+              "gap": 0.106,
+              "abstain": true,
+              "reason": "P1 gap (0.106) -> ABSTAIN (consolidated-pair high-end caution (both above the capacity threshold; sub-high-end-margin gaps don't predict trajectory))."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.106"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Chile",
+          "risk": "LOW",
+          "reference_p1": 0.7589,
+          "per_entity": {
+            "Chile": "LOW",
+            "Uruguay": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Chile",
+          "weakest_pillar": "P2",
+          "score": 0.6664
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Chile": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Uruguay": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Chile": {
+              "triggered": true,
+              "severity": "AT RISK"
+            },
+            "Uruguay": {
+              "triggered": true,
+              "severity": "AT RISK"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "Chile": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            },
+            "Uruguay": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Chile": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Uruguay": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Chile > Uruguay",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Chile"
+      },
+      "source_file": "case36_chile_uruguay.json"
+    },
+    {
+      "case_id": "case37",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Costa Rica",
+        "Nicaragua",
+        "Honduras",
+        "Guatemala"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Costa Rica",
+            "Nicaragua",
+            "Guatemala",
+            "Honduras"
+          ],
+          "p1_values": {
+            "Costa Rica": 0.6053,
+            "Nicaragua": 0.3877,
+            "Guatemala": 0.3754,
+            "Honduras": 0.3352
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Costa Rica",
+              "lower": "Nicaragua",
+              "gap": 0.218,
+              "abstain": false,
+              "reason": "P1 gap (0.218) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            },
+            {
+              "higher": "Nicaragua",
+              "lower": "Guatemala",
+              "gap": 0.012,
+              "abstain": true,
+              "reason": "P1 gap (0.012) -> ABSTAIN (within margin of error)."
+            },
+            {
+              "higher": "Guatemala",
+              "lower": "Honduras",
+              "gap": 0.04,
+              "abstain": true,
+              "reason": "P1 gap (0.040) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "DIVERGENCE",
+          "basis": "P1 range across entities: 0.270"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Costa Rica",
+          "risk": "LOW",
+          "reference_p1": 0.6053,
+          "per_entity": {
+            "Costa Rica": "LOW",
+            "Nicaragua": "MODERATE",
+            "Honduras": "MODERATE",
+            "Guatemala": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Costa Rica",
+          "weakest_pillar": "P2",
+          "score": 0.5757
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Costa Rica": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Nicaragua": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Honduras": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Guatemala": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Costa Rica": {
+              "triggered": false,
+              "severity": null
+            },
+            "Nicaragua": {
+              "triggered": true,
+              "severity": "PROBABLE reversal"
+            },
+            "Honduras": {
+              "triggered": false,
+              "severity": null
+            },
+            "Guatemala": {
+              "triggered": true,
+              "severity": "PROBABLE reversal"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "Costa Rica": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            },
+            "Nicaragua": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: authoritarian_reversal"
+            },
+            "Honduras": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            },
+            "Guatemala": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Costa Rica": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Nicaragua": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Honduras": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Guatemala": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Costa Rica > Nicaragua > Guatemala > Honduras",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Costa Rica"
+      },
+      "source_file": "case37_costa_rica.json"
+    },
+    {
+      "case_id": "case38",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Botswana"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": 0.161,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Botswana",
+          "risk": "LOW",
+          "reference_p1": 0.6317,
+          "per_entity": {
+            "Botswana": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Botswana",
+          "weakest_pillar": "P3",
+          "score": 0.5297
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Botswana": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Botswana": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "Botswana": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Botswana": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Botswana"
+      },
+      "source_file": "case38_botswana.json"
+    },
+    {
+      "case_id": "case39",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Mongolia"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": 0.023,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Mongolia",
+          "risk": "LOW",
+          "reference_p1": 0.5022,
+          "per_entity": {
+            "Mongolia": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Mongolia",
+          "weakest_pillar": "P1",
+          "score": 0.5022
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Mongolia": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Mongolia": {
+              "triggered": true,
+              "severity": "PROBABLE reversal"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "Mongolia": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Mongolia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Mongolia"
+      },
+      "source_file": "case39_mongolia.json"
+    },
+    {
+      "case_id": "case40",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Canada"
+      ],
+      "unresolved_entities": [
+        {
+          "entity": "Quebec",
+          "country_ref": "Quebec",
+          "pre_year": "1996",
+          "reason": "Data API has no record for (Quebec, 1996)"
+        }
+      ],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "improvement_capacity",
+          "gap": -0.039,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Canada",
+          "risk": "LOW",
+          "reference_p1": 0.8464,
+          "per_entity": {
+            "Canada": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Canada",
+          "weakest_pillar": "P4",
+          "score": 0.8076
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Canada": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Canada": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: centripetal federation / legal-constitutional management of a secession bid",
+          "per_entity": {
+            "Canada": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: centripetal federation / legal-constitutional management of a secession bid"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Canada": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Canada"
+      },
+      "source_file": "case40_quebec_canada.json"
+    },
+    {
+      "case_id": "case41",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Jamaica",
+        "Trinidad and Tobago"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Trinidad and Tobago",
+            "Jamaica"
+          ],
+          "p1_values": {
+            "Trinidad and Tobago": 0.6138,
+            "Jamaica": 0.5272
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Trinidad and Tobago",
+              "lower": "Jamaica",
+              "gap": 0.087,
+              "abstain": true,
+              "reason": "P1 gap (0.087) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.087"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Jamaica",
+          "risk": "LOW",
+          "reference_p1": 0.5272,
+          "per_entity": {
+            "Jamaica": "LOW",
+            "Trinidad and Tobago": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Jamaica",
+          "weakest_pillar": "P1",
+          "score": 0.5272
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Jamaica": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Trinidad and Tobago": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Jamaica": {
+              "triggered": false,
+              "severity": null
+            },
+            "Trinidad and Tobago": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": null,
+          "per_entity": {
+            "Jamaica": {
+              "triggered": false,
+              "tier": null
+            },
+            "Trinidad and Tobago": {
+              "triggered": false,
+              "tier": null
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Jamaica": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Trinidad and Tobago": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Trinidad and Tobago > Jamaica",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Jamaica"
+      },
+      "source_file": "case41_jamaica_trinidad.json"
+    },
+    {
+      "case_id": "case42",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Saudi Arabia",
+        "United Arab Emirates"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "United Arab Emirates",
+            "Saudi Arabia"
+          ],
+          "p1_values": {
+            "United Arab Emirates": 0.6467,
+            "Saudi Arabia": 0.5317
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "United Arab Emirates",
+              "lower": "Saudi Arabia",
+              "gap": 0.115,
+              "abstain": false,
+              "reason": "P1 gap (0.115) exceeds margin (0.1) and not a consolidated-pair case. Ordinal prediction is warranted."
+            }
+          ],
+          "any_pair_abstains": false
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.115"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Saudi Arabia",
+          "risk": "LOW",
+          "reference_p1": 0.5317,
+          "per_entity": {
+            "Saudi Arabia": "LOW",
+            "United Arab Emirates": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Saudi Arabia",
+          "weakest_pillar": "P4",
+          "score": 0.5291
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Saudi Arabia": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "United Arab Emirates": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Saudi Arabia": {
+              "triggered": false,
+              "severity": null
+            },
+            "United Arab Emirates": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": null,
+          "per_entity": {
+            "Saudi Arabia": {
+              "triggered": false,
+              "tier": null
+            },
+            "United Arab Emirates": {
+              "triggered": false,
+              "tier": null
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Saudi Arabia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "United Arab Emirates": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: United Arab Emirates > Saudi Arabia",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Saudi Arabia"
+      },
+      "source_file": "case42_gulf.json"
+    },
+    {
+      "case_id": "case43",
+      "schema": "comparative",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Slovakia",
+        "Hungary"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "p1_ordinality_ranking",
+          "ranking": [
+            "Hungary",
+            "Slovakia"
+          ],
+          "p1_values": {
+            "Hungary": 0.6849,
+            "Slovakia": 0.6497
+          },
+          "adjacent_pairs": [
+            {
+              "higher": "Hungary",
+              "lower": "Slovakia",
+              "gap": 0.035,
+              "abstain": true,
+              "reason": "P1 gap (0.035) -> ABSTAIN (within margin of error)."
+            }
+          ],
+          "any_pair_abstains": true
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "CONVERGENCE",
+          "basis": "P1 range across entities: 0.035"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Slovakia",
+          "risk": "LOW",
+          "reference_p1": 0.6497,
+          "per_entity": {
+            "Slovakia": "LOW",
+            "Hungary": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Slovakia",
+          "weakest_pillar": "P1",
+          "score": 0.6497
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Slovakia": {
+              "triggered": false,
+              "n_successor_states": null
+            },
+            "Hungary": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Slovakia": {
+              "triggered": false,
+              "severity": null
+            },
+            "Hungary": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": null,
+          "per_entity": {
+            "Slovakia": {
+              "triggered": false,
+              "tier": null
+            },
+            "Hungary": {
+              "triggered": false,
+              "tier": null
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Slovakia": {
+              "triggered": false,
+              "triggers": []
+            },
+            "Hungary": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "ranking: Hungary > Slovakia",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low",
+        "reference_entity": "Slovakia"
+      },
+      "source_file": "case43_slovakia_hungary.json"
+    },
+    {
+      "case_id": "case44",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Papua New Guinea"
+      ],
+      "unresolved_entities": [
+        {
+          "entity": "Bougainville",
+          "country_ref": "Bougainville",
+          "pre_year": "2019",
+          "reason": "Data API has no record for (Bougainville, 2019)"
+        }
+      ],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "monitor",
+          "level": "hold",
+          "gap": 0.258,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Papua New Guinea",
+          "risk": "MODERATE",
+          "reference_p1": 0.3915,
+          "per_entity": {
+            "Papua New Guinea": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Papua New Guinea",
+          "weakest_pillar": "P2",
+          "score": 0.3581
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Papua New Guinea": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Papua New Guinea": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: negotiated prospective secession (autonomy-with-backstop heading toward dissolution)",
+          "per_entity": {
+            "Papua New Guinea": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: negotiated prospective secession (autonomy-with-backstop heading toward dissolution)"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Papua New Guinea": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "monitor",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Papua New Guinea"
+      },
+      "source_file": "case44_bougainville_png.json"
+    },
+    {
+      "case_id": "case45",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Yemen"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "hold",
+          "gap": 0.067,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Yemen",
+          "risk": "MODERATE",
+          "reference_p1": 0.3737,
+          "per_entity": {
+            "Yemen": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Yemen",
+          "weakest_pillar": "P5",
+          "score": 0.3397
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Yemen": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Yemen": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: failed fusion of two low-capacity rent-competing states",
+          "per_entity": {
+            "Yemen": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: failed fusion of two low-capacity rent-competing states"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Yemen": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Yemen"
+      },
+      "source_file": "case45_yemen.json"
+    },
+    {
+      "case_id": "case46",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Sri Lanka"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "hold",
+          "gap": 0.374,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Sri Lanka",
+          "risk": "MODERATE",
+          "reference_p1": 0.4882,
+          "per_entity": {
+            "Sri Lanka": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Sri Lanka",
+          "weakest_pillar": "P2",
+          "score": 0.4269
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Sri Lanka": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Sri Lanka": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: economic crisis (sovereign default) without territorial fragmentation",
+          "per_entity": {
+            "Sri Lanka": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: economic crisis (sovereign default) without territorial fragmentation"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Sri Lanka": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Sri Lanka"
+      },
+      "source_file": "case46_sri_lanka.json"
+    },
+    {
+      "case_id": "case47",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Cameroon"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "hold",
+          "gap": 0.343,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Cameroon",
+          "risk": "MODERATE",
+          "reference_p1": 0.3648,
+          "per_entity": {
+            "Cameroon": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Cameroon",
+          "weakest_pillar": "P1",
+          "score": 0.3648
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Cameroon": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Cameroon": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: colonial-institutional engineering -- two legal/administrative traditions (British common law + French civil law) compressed into one centralized state; fragmentation pressure along the institutional fault line",
+          "per_entity": {
+            "Cameroon": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: colonial-institutional engineering -- two legal/administrative traditions (British common law + French civil law) compressed into one centralized state; fragmentation pressure along the institutional fault line"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Cameroon": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Cameroon"
+      },
+      "source_file": "case47_cameroon.json"
+    },
+    {
+      "case_id": "case48",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Nepal"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "sustain_or_improve",
+          "level": "hold",
+          "gap": 0.144,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Nepal",
+          "risk": "MODERATE",
+          "reference_p1": 0.4381,
+          "per_entity": {
+            "Nepal": "MODERATE"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Nepal",
+          "weakest_pillar": "P1",
+          "score": 0.4381
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Nepal": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": true,
+          "per_entity": {
+            "Nepal": {
+              "triggered": true,
+              "severity": "AT RISK"
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: insurgency-to-politics transition + federal redesign (Safeguard H)",
+          "per_entity": {
+            "Nepal": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: insurgency-to-politics transition + federal redesign (Safeguard H)"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Nepal": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "sustain_or_improve",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high",
+        "reference_entity": "Nepal"
+      },
+      "source_file": "case48_nepal.json"
+    },
+    {
+      "case_id": "case49",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Mauritius"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "monitor",
+          "level": "improvement_capacity",
+          "gap": 0.2,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Mauritius",
+          "risk": "LOW",
+          "reference_p1": 0.6145,
+          "per_entity": {
+            "Mauritius": "LOW"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Mauritius",
+          "weakest_pillar": "P2",
+          "score": 0.5318
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Mauritius": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Mauritius": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "TIER 2 \u2014 Institutional/Legal Suppression",
+          "per_entity": {
+            "Mauritius": {
+              "triggered": true,
+              "tier": "TIER 2 \u2014 Institutional/Legal Suppression"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Mauritius": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "monitor",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low",
+        "reference_entity": "Mauritius"
+      },
+      "source_file": "case49_mauritius.json"
+    },
+    {
+      "case_id": "case50",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Sudan"
+      ],
+      "unresolved_entities": [],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "stress_decline_lean",
+          "level": "decline_risk",
+          "gap": 0.44,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Sudan",
+          "risk": "HIGH",
+          "reference_p1": 0.2572,
+          "per_entity": {
+            "Sudan": "HIGH"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Sudan",
+          "weakest_pillar": "P5",
+          "score": 0.2299
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Sudan": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Sudan": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: re-suppression after porosity (Mod9)",
+          "per_entity": {
+            "Sudan": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: re-suppression after porosity (Mod9)"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Sudan": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "stress_decline_lean",
+        "tier": 4,
+        "abstention": false,
+        "risk_level": "critical",
+        "reference_entity": "Sudan"
+      },
+      "source_file": "case50_sudan_war.json"
+    },
+    {
+      "case_id": "case51",
+      "schema": "comparative_degraded_single",
+      "derivable": true,
+      "underivable_reason": null,
+      "resolved_entities": [
+        "Somalia"
+      ],
+      "unresolved_entities": [
+        {
+          "entity": "Somaliland",
+          "country_ref": "Somaliland",
+          "pre_year": "1996",
+          "reason": "Data API has no record for (Somaliland, 1996)"
+        }
+      ],
+      "claims": {
+        "a_trajectory": {
+          "type": "single_entity_trajectory",
+          "trajectory": "monitor",
+          "level": "decline_risk",
+          "gap": 0.242,
+          "basis": "prereg Shared mechanical rule set (Safeguard-J gap + P1 level)"
+        },
+        "c_convergence": {
+          "type": "convergence",
+          "value": "N/A_single_entity"
+        },
+        "b_violence": {
+          "type": "violence_risk",
+          "reference_entity": "Somalia",
+          "risk": "HIGH",
+          "reference_p1": 0.1317,
+          "per_entity": {
+            "Somalia": "HIGH"
+          }
+        },
+        "d_failure_dimension": {
+          "type": "primary_failure_pillar",
+          "reference_entity": "Somalia",
+          "weakest_pillar": "P1",
+          "score": 0.1317
+        },
+        "e_fragment_count": {
+          "type": "safeguard_B_capacity_gate",
+          "any_triggered": false,
+          "per_entity": {
+            "Somalia": {
+              "triggered": false,
+              "n_successor_states": null
+            }
+          }
+        },
+        "f_reversal_risk": {
+          "type": "safeguard_C_reversal_risk",
+          "any_triggered": false,
+          "per_entity": {
+            "Somalia": {
+              "triggered": false,
+              "severity": null
+            }
+          }
+        },
+        "g_suppression": {
+          "type": "safeguard_G_suppression_tier",
+          "tier": "UNCLASSIFIED: state collapse with de facto unrecognized secession (Somaliland)",
+          "per_entity": {
+            "Somalia": {
+              "triggered": true,
+              "tier": "UNCLASSIFIED: state collapse with de facto unrecognized secession (Somaliland)"
+            }
+          }
+        },
+        "h_turbulence": {
+          "type": "safeguard_F_substate_turbulence",
+          "any_triggered": false,
+          "per_entity": {
+            "Somalia": {
+              "triggered": false,
+              "triggers": []
+            }
+          }
+        }
+      },
+      "summary": {
+        "directional_call": "monitor",
+        "tier": 4,
+        "abstention": false,
+        "risk_level": "critical",
+        "reference_entity": "Somalia"
+      },
+      "source_file": "case51_somaliland_somalia.json"
+    },
+    {
+      "case_id": "Greece",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "borderline",
+          "gap": 0.238,
+          "convergence_direction": "widening",
+          "convergence_refined": "fragile",
+          "accountability_status": "balanced",
+          "va_minus_p4": -0.096,
+          "directional_call": "watch",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "watch",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low"
+      },
+      "source_file": "rv01_greece.json"
+    },
+    {
+      "case_id": "Botswana",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "borderline",
+          "gap": 0.237,
+          "convergence_direction": "widening",
+          "convergence_refined": "fragile",
+          "accountability_status": "accountability_lag",
+          "va_minus_p4": -0.248,
+          "directional_call": "watch",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "watch",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low"
+      },
+      "source_file": "rv02_botswana.json"
+    },
+    {
+      "case_id": "Equatorial Guinea",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "flagged",
+          "gap": 0.42,
+          "convergence_direction": "closing",
+          "convergence_refined": "developmental_catchup",
+          "accountability_status": "accountability_lag",
+          "va_minus_p4": -0.425,
+          "directional_call": "crisis_vulnerable",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "critical"
+      },
+      "source_file": "rv03_equatorial_guinea.json"
+    },
+    {
+      "case_id": "Mali",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "clear",
+          "gap": 0.127,
+          "convergence_direction": "widening",
+          "convergence_refined": "n/a",
+          "accountability_status": "balanced",
+          "va_minus_p4": 0.025,
+          "directional_call": "absorber",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "rv04_mali.json"
+    },
+    {
+      "case_id": "Ireland",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "clear",
+          "gap": 0.08,
+          "convergence_direction": "widening",
+          "convergence_refined": "n/a",
+          "accountability_status": "balanced",
+          "va_minus_p4": -0.055,
+          "directional_call": "absorber",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "rv05_ireland.json"
+    },
+    {
+      "case_id": "Gabon",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "flagged",
+          "gap": 0.435,
+          "convergence_direction": "widening",
+          "convergence_refined": "fragile",
+          "accountability_status": "accountability_lag",
+          "va_minus_p4": -0.423,
+          "directional_call": "crisis_vulnerable",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "rv06_gabon.json"
+    },
+    {
+      "case_id": "Nicaragua",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "flagged",
+          "gap": 0.335,
+          "convergence_direction": "widening",
+          "convergence_refined": "fragile",
+          "accountability_status": "accountability_lag",
+          "va_minus_p4": -0.305,
+          "directional_call": "crisis_vulnerable",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "rv07_nicaragua.json"
+    },
+    {
+      "case_id": "Oman",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "clear",
+          "gap": 0.051,
+          "convergence_direction": null,
+          "convergence_refined": null,
+          "accountability_status": "balanced",
+          "va_minus_p4": -0.184,
+          "directional_call": "absorber",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "rv08_oman.json"
+    },
+    {
+      "case_id": "China",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "flagged",
+          "gap": 0.322,
+          "convergence_direction": null,
+          "convergence_refined": null,
+          "accountability_status": "accountability_lag",
+          "va_minus_p4": -0.464,
+          "directional_call": "crisis_vulnerable",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "rv09_china_succession.json"
+    },
+    {
+      "case_id": "Cuba",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "flagged",
+          "gap": 0.53,
+          "convergence_direction": null,
+          "convergence_refined": null,
+          "accountability_status": "legitimacy_capped",
+          "va_minus_p4": -0.653,
+          "directional_call": "crisis_vulnerable",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "rv10_cuba.json"
+    },
+    {
+      "case_id": "Iran (pre-WGI)",
+      "schema": "rule_validation",
+      "derivable": false,
+      "underivable_reason": "Data API has no record for (Iran, 1979)",
+      "claims": {},
+      "summary": null,
+      "source_file": "rv11_iran_1979.json"
+    },
+    {
+      "case_id": "Romania (pre-WGI)",
+      "schema": "rule_validation",
+      "derivable": false,
+      "underivable_reason": "Data API has no record for (Romania, 1989)",
+      "claims": {},
+      "summary": null,
+      "source_file": "rv12_romania_1989.json"
+    },
+    {
+      "case_id": "Israel",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "clear",
+          "gap": 0.094,
+          "convergence_direction": "closing",
+          "convergence_refined": "n/a",
+          "accountability_status": "balanced",
+          "va_minus_p4": -0.161,
+          "directional_call": "absorber",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "rv13_israel_drift.json"
+    },
+    {
+      "case_id": "Iceland",
+      "schema": "rule_validation",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "rule_test": {
+          "type": "rules_A_convergence_B_accountability_drift",
+          "J_status": "clear",
+          "gap": 0.085,
+          "convergence_direction": "widening",
+          "convergence_refined": "n/a",
+          "accountability_status": "balanced",
+          "va_minus_p4": -0.044,
+          "directional_call": "absorber",
+          "prior_note": null
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "rv14_iceland_drift.json"
+    },
+    {
+      "case_id": "Turkey",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.31,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.5632,
+          "P4": 0.8735
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig01_turkey.json"
+    },
+    {
+      "case_id": "Thailand",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.332,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.5165,
+          "P4": 0.8486
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig02_thailand.json"
+    },
+    {
+      "case_id": "Brazil",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.319,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.5207,
+          "P4": 0.8396
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig03_brazil.json"
+    },
+    {
+      "case_id": "South Africa",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.288,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.5344,
+          "P4": 0.8228
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig04_south_africa.json"
+    },
+    {
+      "case_id": "Peru",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.299,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.48,
+          "P4": 0.7792
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "sig05_peru.json"
+    },
+    {
+      "case_id": "Tunisia",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.283,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.5201,
+          "P4": 0.8027
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig06_tunisia.json"
+    },
+    {
+      "case_id": "Sri Lanka",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.376,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.4827,
+          "P4": 0.8592
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "sig07_sri_lanka.json"
+    },
+    {
+      "case_id": "Italy",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "clear",
+          "gap": 0.195,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "absorber",
+          "P1": 0.6482,
+          "P4": 0.843
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig08_italy.json"
+    },
+    {
+      "case_id": "Canada",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "clear",
+          "gap": 0.055,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "absorber",
+          "P1": 0.7975,
+          "P4": 0.8523
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig09_canada.json"
+    },
+    {
+      "case_id": "Germany",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "clear",
+          "gap": 0.075,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "absorber",
+          "P1": 0.7996,
+          "P4": 0.8751
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig10_germany.json"
+    },
+    {
+      "case_id": "Japan",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "clear",
+          "gap": 0.01,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "absorber",
+          "P1": 0.8044,
+          "P4": 0.8144
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig11_japan.json"
+    },
+    {
+      "case_id": "Uruguay",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "clear",
+          "gap": 0.054,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "absorber",
+          "P1": 0.6979,
+          "P4": 0.7518
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig12_uruguay.json"
+    },
+    {
+      "case_id": "Poland",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "clear",
+          "gap": 0.167,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "absorber",
+          "P1": 0.6287,
+          "P4": 0.7957
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig13_poland.json"
+    },
+    {
+      "case_id": "Hungary",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "borderline",
+          "gap": 0.203,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "watch",
+          "P1": 0.5834,
+          "P4": 0.7864
+        }
+      },
+      "summary": {
+        "directional_call": "watch",
+        "tier": 2,
+        "abstention": true,
+        "risk_level": "low"
+      },
+      "source_file": "sig14_hungary.json"
+    },
+    {
+      "case_id": "France",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "clear",
+          "gap": 0.126,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "absorber",
+          "P1": 0.7665,
+          "P4": 0.893
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig15_france.json"
+    },
+    {
+      "case_id": "South Korea",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "clear",
+          "gap": 0.097,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "absorber",
+          "P1": 0.7351,
+          "P4": 0.8317
+        }
+      },
+      "summary": {
+        "directional_call": "absorber",
+        "tier": 1,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig16_south_korea.json"
+    },
+    {
+      "case_id": "Argentina",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.332,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.5017,
+          "P4": 0.8337
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "low"
+      },
+      "source_file": "sig17_argentina.json"
+    },
+    {
+      "case_id": "Egypt",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.309,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.4577,
+          "P4": 0.7672
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 3,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "sig18_egypt.json"
+    },
+    {
+      "case_id": "Venezuela",
+      "schema": "durability_gate",
+      "derivable": true,
+      "underivable_reason": null,
+      "claims": {
+        "j_durability_gate": {
+          "type": "safeguard_J_durability_gate",
+          "status": "flagged",
+          "gap": 0.423,
+          "flag_floor": 0.28,
+          "clear_ceiling": 0.2,
+          "directional_call": "crisis_vulnerable",
+          "P1": 0.3795,
+          "P4": 0.8025
+        }
+      },
+      "summary": {
+        "directional_call": "crisis_vulnerable",
+        "tier": 2,
+        "abstention": false,
+        "risk_level": "high"
+      },
+      "source_file": "sig19_venezuela.json"
+    }
+  ]
+}
