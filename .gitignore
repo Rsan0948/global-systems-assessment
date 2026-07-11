@@ -14,3 +14,9 @@ fragmentation/governance/political/data/
 
 # MI pipeline: data inputs and generated outputs ARE committed (see mi-pipeline/DATA_PROVENANCE.md).
 # (Previously git-ignored; convention reversed 2026-06-28 — the real panel lives in the repo.)
+
+# Robustness outcome raw downloads (re-fetchable from documented stable URLs); parsed/derived caches + reports are committed
+mi-research/data/robustness/outcomes/*.xlsx
+mi-research/data/robustness/outcomes/*.zip
+mi-research/data/robustness/outcomes/gdp_pcap_ppp_kd_raw.json
+mi-research/data/robustness/outcomes/ucdp/

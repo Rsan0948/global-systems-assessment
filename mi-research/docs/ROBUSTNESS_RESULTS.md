@@ -17,8 +17,8 @@ found. Raw artifacts live in `mi-research/scripts/robustness/` (code) and
 | Plan 1 indicator substitution | ✅ done | `843e6e8` |
 | P1 reproducibility rebuild | ✅ done (generate `44de5c1`, grade `f5e6f8f`) | |
 | Ordinality independent accuracy | ⏳ open (needs `post_event` re-scoring) | |
-| P3 safeguard stratification | ✅ done | (this commit) |
-| P2 temporal holdout | 🔄 in progress | |
+| P3 safeguard stratification | ✅ done | `31cc093` |
+| P2 temporal holdout | ✅ done (partial null) | (this commit) |
 
 ---
 
@@ -114,19 +114,67 @@ baseline (−6.7 points)**. Honestly reported weakness.
 
 ---
 
+## Finding 6 — Temporal holdout: a partial null; the structural signal doesn't beat trivial baselines (P2)
+
+Scored every country with only 2004 / 2012 data, applied the frozen mechanical
+rule set, graded ->2024 against real outcomes (World Bank GDP-pc growth; UCDP
+conflict onset through 2023; BoC-CRAG sovereign default through 2015). Reduced-
+contamination retrodiction, not clean out-of-sample. Verified from the persisted
+report (`data/robustness/temporal_grade_report.json`):
+
+| crisis discrimination (AUC) | 2004→2024 (N=89) | 2012→2024 (N=90) |
+|---|---|---|
+| **MI vulnerability score (0–3)** | 0.732 | 0.689 |
+| GDP-per-capita-only (poorer⇒crisis) | **0.806** | **0.748** |
+| FSI-only (more fragile⇒crisis) | n/a (FSI starts 2012) | **0.840** |
+
+- The MI's structural vulnerability carries **weak, real** forward signal (AUC
+  ~0.69–0.73; top-vulnerability quartile crisis-enriched at 0.76/0.60 vs base
+  0.54/0.41; PPV lift 1.16–1.33×), but **fails the pre-registered bar**: a
+  one-variable income model and an FSI-only model both discriminate crises
+  *better* in every window where available.
+- **Trajectory→growth: no signal** — the Safeguard-J trajectory call predicted
+  relative GDP growth at 0.75×/0.95× of the majority baseline (no lift).
+- The two windows overlap, so they are consistency, not independent confirmation;
+  both point the same way.
+
+**Reconciliation with Finding 3 (the durability gate).** Finding 3's strong
+result (+25.7 pts, zero false positives) is on the **19 curated durability-gate
+validation cases**. This full-universe, out-of-time test — which includes the same
+P4−P1 gap inside the composite — says the structural signal does **not** generalize
+to beat trivial predictors on the open field. So the durability gate is best read
+as a **real but narrow** signal (strong on cases resembling its validation set,
+weak as a general crisis predictor), not a crystal ball. A clean J-only out-of-time
+isolation is the remaining step.
+
 ## Bottom line so far
 
-The MI is **weaker than its "100%" headline but stronger than its critics' worst
-case.** The headline is mostly abstentions and human judgment, not a clean
-automated result; but the construct is not ideologically loaded or merely wealth,
-and the durability gate is a genuine, recomputable, base-rate-beating signal. The
-defensible position is narrower and more credible than "100% accurate."
+After the full audit, the honest position:
+
+- **What holds:** the construct is **not ideologically loaded and not merely
+  wealth** (survives indicator substitution at ρ≈0.98, better than a GDP-only
+  ranking). The safeguard structure is clean — thin rules are advisory and don't
+  inflate the headline (the epicycle charge dissolves).
+- **What doesn't:** the "100% directional accuracy" is mostly abstentions and
+  human judgment, not a clean automated result. And out-of-time (temporal
+  holdout), the structural vulnerability signal is **weak and does not beat a
+  trivial income or fragility baseline** at crisis prediction; the trajectory
+  prediction has no forward signal. The durability gate's strong 19-case result
+  does not generalize.
+
+**Net:** the MI is a **coherent, source-robust descriptive instrument** with one
+real-but-narrow predictive signal (the durability gate on cases like its
+validation set). It is **not** a validated general forward-predictive instrument —
+a simple "poor and fragile states have more crises" model does as well or better.
+That is a more credible and more useful position than "100% accurate," and it is
+honestly arrived at.
 
 ## Open work
 
-1. **Ordinality independent accuracy** — score `post_event`, compare pre-P1
-   ordering to actual post-outcome ordering (the one clean accuracy number the
-   ordinality claim still owes).
-2. **P3 safeguard stratification** — now unblocked; expected to confirm most
-   safeguards move few graded calls.
-3. **P2 temporal holdout** — reduced-contamination retrodiction, 2004→2024.
+1. **Convergent validity (Charge 1 next):** check MI ordering against independent
+   *frameworks* (V-Dem, QoG, Bertelsmann) — framework-level, not indicator-level.
+2. **Ordinality independent accuracy** — score `post_event`, compare pre-P1
+   ordering to actual post-outcome ordering.
+3. **J-only out-of-time isolation** — grade Safeguard J alone (not the composite)
+   against crises in the temporal windows, to fix its true generalization.
+4. **P0 prospective freeze** — grade in ~2034 (the only clean forward test).
