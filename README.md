@@ -19,9 +19,15 @@ identifies configurations and vulnerabilities, not destinies.
 ### Modernization Index — `mi-research/`, `mi-pipeline/`, `mi-website/`
 A five-pillar governance diagnostic (Institutional Quality 34%, Economic
 Structure 20%, Human Capital 16%, Stability 16%, Innovation 15%) scoring **191
-countries** and validated against a **109-case retrodiction corpus** (84 modern +
-25 ancient) spanning ~4,700 years with **100% directional accuracy** and zero
-falsifications.
+countries** and evaluated against a **109-case retrodiction corpus** (84 modern +
+25 ancient) spanning ~4,700 years.
+
+> **Reproducibility note (2026-07-11).** The corpus's headline "100% directional
+> accuracy" is a coding tally that an audit found **heterogeneous** — only ~20% of
+> the flagship ordinality cases are clean mechanical derivations; the rest are
+> mechanical abstentions or preserved human judgment. The genuinely recomputable,
+> base-rate-beating signal is the **durability gate** (Safeguard J: +26 pts over
+> base rate, zero false positives). See `mi-research/docs/ROBUSTNESS_RESULTS.md`.
 
 - **Status:** V3.3 live; automated weekly data refresh; website deployable.
 - **Key findings:** institutional quality (P1) is the most central variable in

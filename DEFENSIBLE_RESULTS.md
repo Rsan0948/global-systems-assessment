@@ -10,9 +10,22 @@
 
 ## Modernization Index
 
+> **Corrected 2026-07-11 by the reproducibility audit** (`mi-research/docs/ROBUSTNESS_RESULTS.md`).
+> The "100% directional accuracy" below is a `verification{}` coding tally, not a
+> clean recomputable result: of the 51 flagship ordinality cases, only ~10 are
+> mechanical auto-derivations, 7 are mechanical abstentions counted as
+> confirmations, and ~34 rest on preserved human judgment. Quote the durability
+> gate (below), not the 100%.
+
 - **109-case retrodiction corpus** — 84 modern (1947–2024, six continents) + 25
-  ancient (c. 2686 BCE – 1797 CE). **100% directional accuracy**, zero
-  falsifications; ~73% clean confirmation on the modern set.
+  ancient (c. 2686 BCE – 1797 CE). Headline coding: 100% directional / zero
+  falsifications — but see the correction above; the mechanically-recomputable
+  core is a minority.
+- **Durability gate (Safeguard J) — the audit's strongest survivor.** Recomputes
+  cleanly (18/19), and predicts actual crises at **88.9% vs a 63.2% base rate
+  (+25.7 pts), with zero false positives**. This is the defensible predictive claim.
+- **Rule-validation family — honestly weak:** 60% vs a 66.7% majority baseline
+  (−6.7 pts); does not beat base rate.
 - **P1 ordinality** — Institutional Quality is the most central variable in the
   construct: it correlates with the other pillars at |r| ≈ 0.79–0.80, and P1
   ordinality is confirmed across all 51 ordinality cases (213 confirm / 77
