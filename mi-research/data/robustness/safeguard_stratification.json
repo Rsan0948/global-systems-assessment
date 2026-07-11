@@ -1,0 +1,126 @@
+{
+  "workstream": "P3_safeguard_stratification",
+  "prereg_sha256_16": "fbd991047fc980d3",
+  "n_cases_scanned": 82,
+  "n_entities_scanned": 110,
+  "tier_thresholds": {
+    "Structural": ">=15",
+    "Validated": "8-14",
+    "Provisional": "4-7",
+    "Hypothesis": "1-3",
+    "Inert": "0"
+  },
+  "headline_finding": "Firing frequency tiers the rules, but the pre-registered output-change metric is ~0 for every rule except J: the safeguards are ADVISORY and do not feed the graded directional calls. So 'strong-rules-only accuracy' == 'full accuracy' for the ordinality family (removing advisory rules changes nothing); the durability signal rests on J alone, which is Structural.",
+  "registry": {
+    "A": {
+      "name": "External-administration WGI discount",
+      "applies_to_cases": 4,
+      "applies_to_entities": 4,
+      "tier_by_firing": "Provisional",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": "promote when firing cases reach the next threshold (8) AND no FALSIFIED case appears in its firing set",
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "B": {
+      "name": "Capacity gate (low P1 + few successors)",
+      "applies_to_cases": 3,
+      "applies_to_entities": 3,
+      "tier_by_firing": "Hypothesis",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": "promote when firing cases reach the next threshold (4) AND no FALSIFIED case appears in its firing set",
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "C": {
+      "name": "Reversal risk (democratic transition)",
+      "applies_to_cases": 13,
+      "applies_to_entities": 19,
+      "tier_by_firing": "Validated",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": "promote when firing cases reach the next threshold (15) AND no FALSIFIED case appears in its firing set",
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "D": {
+      "name": "Predatory-neighbor / exogenous shock",
+      "applies_to_cases": 15,
+      "applies_to_entities": 23,
+      "tier_by_firing": "Structural",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": null,
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "E": {
+      "name": "Rentier capture (rents %GDP)",
+      "applies_to_cases": 6,
+      "applies_to_entities": 7,
+      "tier_by_firing": "Provisional",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": "promote when firing cases reach the next threshold (8) AND no FALSIFIED case appears in its firing set",
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "F": {
+      "name": "Sub-state turbulence",
+      "applies_to_cases": 5,
+      "applies_to_entities": 5,
+      "tier_by_firing": "Provisional",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": "promote when firing cases reach the next threshold (8) AND no FALSIFIED case appears in its firing set",
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "G": {
+      "name": "Suppression vs prevention tier",
+      "applies_to_cases": 43,
+      "applies_to_entities": 58,
+      "tier_by_firing": "Structural",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": null,
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "I": {
+      "name": "Porosity-with-backstop",
+      "applies_to_cases": 1,
+      "applies_to_entities": 1,
+      "tier_by_firing": "Hypothesis",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": "promote when firing cases reach the next threshold (4) AND no FALSIFIED case appears in its firing set",
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "J": {
+      "name": "Durability gate (P4-P1 gap)",
+      "applies_to_cases": 42,
+      "applies_to_entities": 52,
+      "tier_by_firing": "Structural",
+      "load_bearing_on_graded_call": true,
+      "advisory_only": false,
+      "promotion_criteria": null,
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "Mod4": {
+      "name": "P1-ordinal margin-of-error abstain",
+      "applies_to_cases": 0,
+      "applies_to_entities": 0,
+      "tier_by_firing": "Inert",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": "promote when firing cases reach the next threshold (15) AND no FALSIFIED case appears in its firing set",
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    },
+    "Mod8": {
+      "name": "Violence-risk/agency framing (standing constraint)",
+      "applies_to_cases": 82,
+      "applies_to_entities": 110,
+      "tier_by_firing": "Structural",
+      "load_bearing_on_graded_call": false,
+      "advisory_only": true,
+      "promotion_criteria": null,
+      "demotion_criteria": "retire / downgrade if a FALSIFIED case appears in its firing set"
+    }
+  }
+}

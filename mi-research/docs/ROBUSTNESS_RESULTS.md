@@ -17,8 +17,8 @@ found. Raw artifacts live in `mi-research/scripts/robustness/` (code) and
 | Plan 1 indicator substitution | ✅ done | `843e6e8` |
 | P1 reproducibility rebuild | ✅ done (generate `44de5c1`, grade `f5e6f8f`) | |
 | Ordinality independent accuracy | ⏳ open (needs `post_event` re-scoring) | |
-| P3 safeguard stratification | ⏳ open (unblocked by P1 derivation) | |
-| P2 temporal holdout | ⏳ open | |
+| P3 safeguard stratification | ✅ done | (this commit) |
+| P2 temporal holdout | 🔄 in progress | |
 
 ---
 
@@ -85,6 +85,27 @@ This is a real, defensible, base-rate-beating predictive signal — the stronges
 survivor of the audit.
 
 ---
+
+## Finding 5 — Safeguard stratification: only the durability gate is load-bearing (P3)
+
+Every rule tagged by how many of the 82 derivable modern cases it fires on
+(`data/robustness/safeguard_stratification.json`), tiered by the frozen thresholds:
+
+- **Structural (15+):** G suppression (43), **J durability (42)**, D neighbor-shock (15); Mod8 (82, always-on — degenerate standing constraint).
+- **Validated (8–14):** C reversal-risk (13).
+- **Provisional (4–7):** E rentier (6), F turbulence (5), A external-admin (4).
+- **Hypothesis (1–3):** B capacity-gate (3), I porosity-backstop (1).
+- **Inert (0):** Mod4 margin-abstain (never fires in this corpus).
+
+**Load-bearing truth:** only **J** changes a graded call; every other rule is
+advisory (`generate_predictions` ignores its `safeguards` arg; tier from
+`mi_score` only). So "strong-rules-only accuracy" == "full accuracy" — pulling the
+thin qualifiers (B, I, Mod4) out of the headline changes nothing, because they
+were never contributing to it. The one load-bearing rule (J) is both Structural
+and the +25.7-pt crisis signal. The epicycle charge dissolves: the thin rules
+aren't propping up the number, and the rule the framework leans on is the
+best-supported one. Weak qualifiers carry promotion/demotion criteria for
+real-time upgrade as the corpus grows (the self-correcting ledger).
 
 ## Finding 4 — The rule-validation family does not beat base rate (P1)
 
