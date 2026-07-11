@@ -1,0 +1,50 @@
+{
+  "test": "inversion_deep_anchor",
+  "n": 25,
+  "n_rupture": 17,
+  "caveat": "n=25, rupture-heavy; DESCRIPTIVE. Statistical weight is in the epoch panel.",
+  "rupture_discrimination_AUC": {
+    "structural_composite_level": 0.662,
+    "structural_composite_decline": 0.676,
+    "P1_institutional_level": 0.676,
+    "P1_institutional_decline": 0.647,
+    "wealth_P4_level": 0.643,
+    "wealth_P4_decline": 0.518
+  },
+  "structure_minus_wealth_spread": {
+    "struct_level_minus_wealth_level": 0.018,
+    "P1_decline_minus_wealth_decline": 0.129
+  },
+  "by_shock_type": {
+    "endo": {
+      "n": 6,
+      "rupture_rate": 1,
+      "mean_P1_decline": 0.222,
+      "mean_wealth_decline": 0.163
+    },
+    "exo_agency": {
+      "n": 8,
+      "rupture_rate": 0.75,
+      "mean_P1_decline": 0.109,
+      "mean_wealth_decline": 0.148
+    },
+    "exo_natural": {
+      "n": 1,
+      "rupture_rate": 0,
+      "mean_P1_decline": 0.0,
+      "mean_wealth_decline": 0.19
+    },
+    "mixed": {
+      "n": 7,
+      "rupture_rate": 0.71,
+      "mean_P1_decline": 0.136,
+      "mean_wealth_decline": 0.129
+    },
+    "none": {
+      "n": 3,
+      "rupture_rate": 0,
+      "mean_P1_decline": 0.067,
+      "mean_wealth_decline": 0.107
+    }
+  }
+}
