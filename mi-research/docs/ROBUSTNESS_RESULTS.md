@@ -177,14 +177,14 @@ their domains; the third connection is an inference.**
    within their outcome/panel.** The signal being suppressed — institutions as the
    primary predictor of rupture — has been dominant for millennia and is eroding
    in lockstep with the rise of modern capital.
-3. **The capital-hubs atlas (companion research: `History of capital.md`,
-   project knowledge — NOT in this repo) — historical context.** It documents that
-   the modern reserve-currency/financial system is unprecedented in scale and
-   duration (Bretton Woods ~80 yrs; the dollar system sustaining structural
-   imbalances across dozens of polities simultaneously), and that
-   extraction-based nodes are historically fragile (the MI's resource penalty is
-   the modern instance of its oldest pattern). The atlas itself flags its numbers
-   as scholarly estimates with wide error bars.
+3. **The capital-hubs atlas (`../../docs/capital_hubs_atlas.md`) — historical
+   context.** It documents that the modern reserve-currency/financial system is
+   unprecedented in scale and duration (Bretton Woods ~80 yrs; the dollar system
+   sustaining structural imbalances across dozens of polities simultaneously), and
+   that extraction-based nodes are historically fragile (the MI's resource penalty
+   is the modern instance of its oldest pattern). The atlas itself flags its
+   numbers as scholarly estimates with wide error bars and its stronger causal
+   claims as contested.
 
 **The connecting thesis (INFERENCE, not measurement):** if the modern financial
 system functions as the largest, longest-duration, widest-scope engineered
