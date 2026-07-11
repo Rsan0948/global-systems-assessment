@@ -215,11 +215,28 @@ Every frozen artifact regenerates byte-identically; engine tests 8/8.
    `data/robustness/temporal_holdout_panel.json` (89 rows/window: iso, mi_score, P1, P4,
    vuln, elevated J-gate flag, ucdp, crag, crisis). The single source ESI + forensics read.
 
-**Phase B — engine-touching, GATED on 84-case corpus regression + explicit go-ahead:**
-5. Unify the two data readers (§1) — re-point `datasource.py` at the canonical panel.
-6. Extract engine inline magic numbers (§4b) into `LENS`; collapse the double Safeguard-J
-   impl (§6); normalize `SAFEGUARD_THRESHOLDS` units (§4a).
-7. Retire redundant runtime data copies (§3) — `wgi_full_panel`/`va_anchored` runtime reads.
+**Phase B — engine-touching (behind the 84-case corpus regression gate):**
+
+5. **Reader unification (§1) — EMPIRICALLY RESOLVED, deliberately NOT forced.** A
+   divergence audit compared `datasource.py`'s live stitch against `canonical_panel.json`
+   for every overlapping country-year-indicator: **6,685 values, ZERO divergences.** The
+   two readers *agree on values* — canonical is a faithful superset. But they differ in
+   **scope by design**: `datasource` serves the curated ~91-country `wb_anchored` set;
+   canonical covers 191. Re-pointing `datasource` at canonical would **expand
+   `durability`'s OLS reference set by ~100 country-years → change every residual → change
+   the durability-gate corpus (sig01–19)**. That is a *behavior change requiring corpus
+   re-validation*, not a refactor — so it is **deferred as a validated change, not done as
+   cleanup**. The "two conflicting truths" worry is dissolved: there is one truth at two
+   scopes. (Audit is reproducible; see the Phase B commit.)
+6. **Inline magic-number extraction (§4b) — ✅ DONE (behavior-preserving).** Consolidated
+   into `LENS`: `rd_full_pct` (5.0), `movement_deadband` (0.03, was inline ×3),
+   `strategy_confidence_p1` (0.80), `va_scale_detect` (1.5), `convergence_range` (0.15),
+   `durability_residual_band` (0.02), `durability_min_reference` (5). Verified: full 191-
+   country engine snapshot **byte-identical hash**, corpus artifacts unchanged, tests 8/8.
+   Still deferred (lower value / higher touch): scale-guard cutoffs (3/10), era cutoffs
+   (2015/2021), Safeguard-B fragment cap (4), the double Safeguard-J impl, and the
+   `SAFEGUARD_THRESHOLDS` percent-vs-fraction unit normalization.
+7. Retire redundant runtime data copies (§3) — coupled to item 5; deferred with it.
 
 **Eventual — the MCP layer:** a thin wrapper over the normalized substrate exposing
 `get_panel`, `get_holdout_panel`, `get_config`. Built last, over a clean layer.

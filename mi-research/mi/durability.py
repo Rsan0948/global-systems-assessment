@@ -12,6 +12,7 @@ Pure stdlib OLS (no numpy dependency).
 """
 import math
 from mi import datasource as ds
+from mi.constants import LENS
 from mi.scoring import score_country
 
 
@@ -65,14 +66,15 @@ def durability_ratio(country, year, reference_year=None):
         return {"residual": None, "classification": "undefined (missing GDP or MI)",
                 "actual_mi": mi, "predicted_mi": None, "n_reference": 0}
     xs, ys, used = _reference(reference_year)
-    if len(xs) < 5:
+    if len(xs) < LENS["durability_min_reference"]:
         return {"residual": None, "classification": "insufficient reference set",
                 "actual_mi": mi, "predicted_mi": None, "n_reference": len(xs)}
     a, b = _fit(xs, ys)
     predicted = a + b * math.log(gdp)
     residual = mi - predicted
-    cls = ("earned / durable (institutions exceed income)" if residual > 0.02 else
-           "granted / fragile (income exceeds institutions)" if residual < -0.02 else
+    _band = LENS["durability_residual_band"]
+    cls = ("earned / durable (institutions exceed income)" if residual > _band else
+           "granted / fragile (income exceeds institutions)" if residual < -_band else
            "on the line (institutions ~ income)")
     return {"residual": round(residual, 3), "predicted_mi": round(predicted, 3),
             "actual_mi": round(mi, 3), "classification": cls,

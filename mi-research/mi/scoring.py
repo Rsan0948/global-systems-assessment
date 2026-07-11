@@ -196,7 +196,7 @@ def calculate_pillar_scores(indicators: dict) -> dict:
         p2_values.append(normalize_gii(gii))
     elif rd is not None:
         # Track 2 proxy — normalize R&D as proportion (typical range 0-5%)
-        p2_values.append(min(rd / 5.0, 1.0))
+        p2_values.append(min(rd / LENS["rd_full_pct"], 1.0))
     else:
         gaps.append("P2:innovation_index")
 

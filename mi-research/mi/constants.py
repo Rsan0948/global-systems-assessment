@@ -130,6 +130,16 @@ LENS = {
     "va_accountability_lag_p4": -0.20,  # VA - P4 in (cap, this] -> accountability lag
     # (0.20, 0.28) = BORDERLINE / indeterminate — no validated evidence either way. The US (gap 0.211,
     # 2024) lands here, ABOVE every confirmed absorber, ~one 0.07 institutional backslide from the floor.
+
+    # --- Phase B: previously-inline engine constants consolidated here (behavior-preserving;
+    # values unchanged — see DATA_FLOW_MAP.md §4b). Single source of truth for these gates. ---
+    "rd_full_pct": 5.0,                # P2 R&D proxy: rd% / this saturates (typical R&D 0-5% GDP)
+    "movement_deadband": 0.03,         # |dMI|/|dP1| below this over the window -> flat (movement_quality)
+    "strategy_confidence_p1": 0.80,    # P1 above this + >=2 facilitators -> "high" strategy confidence
+    "va_scale_detect": 1.5,            # VA value above this is read as 0-100 (else 0-1)
+    "convergence_range": 0.15,         # cross-entity P1 range above this -> DIVERGENCE
+    "durability_residual_band": 0.02,  # |OLS residual| within this -> "on the line" (earned vs granted)
+    "durability_min_reference": 5,     # min reference-set size for the durability OLS
 }
 
 # Active MI model version. V3 = V2 + consolidated-pair Mod4 extension.

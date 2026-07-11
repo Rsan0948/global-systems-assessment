@@ -75,7 +75,7 @@ def classify_strategy(score: dict, context: dict) -> dict:
                         ("island geography", island), ("restrictive immigration", immigration_restrictive)] if c]
         return {
             "strategy": "complexity_control",
-            "confidence": "high" if (p1 > 0.80 and len(facilitators) >= 2) else "moderate",
+            "confidence": "high" if (p1 > LENS["strategy_confidence_p1"] and len(facilitators) >= 2) else "moderate",
             "explanation": (
                 f"High institutional quality (P1={p1:.3f}) applied to a low-complexity "
                 f"environment (facilitated by: {', '.join(facilitators)}). The advantage is the "
@@ -260,12 +260,13 @@ def movement_quality(pillars: dict, prior_pillars: dict) -> Optional[dict]:
     dmi = sum(pillars[p] for p in P) / 5 - sum(prior_pillars[p] for p in P) / 5
     dp = {p: pillars[p] - prior_pillars[p] for p in P}
     lead = max(dp, key=dp.get)
-    if dmi > 0.03:
+    _mdb = LENS["movement_deadband"]
+    if dmi > _mdb:
         cls = ("real_ascent" if lead in ("P1", "P5")
                else "windfall" if lead == "P4" else "ratchet_rise")
-    elif dmi < -0.03:
+    elif dmi < -_mdb:
         cls = "decline"
-    elif dp["P1"] <= -0.03:
+    elif dp["P1"] <= -_mdb:
         cls = "hollow_stability"
     else:
         cls = "stable"
@@ -299,7 +300,7 @@ def accountability_gap(voice_accountability, pillars: dict) -> Optional[dict]:
     p1 = pillars.get("P1"); p4 = pillars.get("P4")
     if va is None or p1 is None or p4 is None:
         return None
-    if va > 1.5:           # accept 0-100 input
+    if va > LENS["va_scale_detect"]:   # accept 0-100 input
         va = va / 100.0
     va_p4 = va - p4; va_p1 = va - p1
     cap = LENS["va_legitimacy_cap_p4"]; lag = LENS["va_accountability_lag_p4"]
@@ -421,7 +422,7 @@ def generate_predictions(score: dict, safeguards: dict, comparison_scores: dict 
                      if (p1 := s.get("pillar_scores", {}).get("P1")) is not None]
         p1_range = max(p1_values) - min(p1_values) if len(p1_values) >= 2 else 0
         predictions["c_convergence"] = {
-            "prediction": "DIVERGENCE" if p1_range > 0.15 else "CONVERGENCE",
+            "prediction": "DIVERGENCE" if p1_range > LENS["convergence_range"] else "CONVERGENCE",
             "basis": f"P1 range across entities: {p1_range:.3f}",
         }
 
