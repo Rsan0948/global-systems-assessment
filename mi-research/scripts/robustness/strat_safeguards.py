@@ -32,21 +32,23 @@ sys.path.insert(0, str(ROOT / "scripts" / "robustness"))
 
 from derive_claim import _score_ref                    # frozen, reused
 from mi.safeguards import evaluate_all_safeguards      # noqa: E402
+import config                                          # noqa: E402  (config/robustness.json)
 
 CASEDIR = ROOT / "data" / "case_studies" / "completed"
 OUT = ROOT / "data" / "robustness" / "safeguard_stratification.json"
 
 RULES = ["A", "B", "C", "D", "E", "F", "G", "I", "J", "Mod4", "Mod8"]
 
-# Frozen tier thresholds (prereg Plan 3). Case counts, not entity counts.
+# Frozen tier thresholds (prereg Plan 3; config/robustness.json). Case counts, not entity counts.
+_TIERS = config.robustness()["safeguard_stratification_tiers"]
 def tier_for(n):
-    if n >= 15:
+    if n >= _TIERS["structural_min"]:
         return "Structural"
-    if n >= 8:
+    if n >= _TIERS["validated_min"]:
         return "Validated"
-    if n >= 4:
+    if n >= _TIERS["provisional_min"]:
         return "Provisional"
-    if n >= 1:
+    if n >= _TIERS["hypothesis_min"]:
         return "Hypothesis"
     return "Inert"
 

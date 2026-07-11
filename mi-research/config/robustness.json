@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "purpose": "Single source of truth for the MI robustness program's ANALYSIS-LAYER parameters. This is NOT scoring math (that lives in mi/constants.py, LENS). It holds the frozen mechanical rule set, the outcome/crisis definitions, grading choices, and the historical epoch panels.",
+    "prereg": "docs/ROBUSTNESS_PREREGISTRATION.md",
+    "invariant": "Values here MUST match the frozen pre-registration. The mechanical_rule_set J thresholds are asserted equal to mi.constants.LENS at load time (config.verify_consistency). Any refactor wiring a script to this file must regenerate the script's committed artifact byte-identically.",
+    "consumers": [
+      "scripts/robustness/prospective_freeze.py (predict + rule_set echo)",
+      "scripts/robustness/temporal_holdout.py (inherits predict)",
+      "scripts/robustness/derive_claim.py (mechanical rule set)",
+      "scripts/robustness/strat_safeguards.py (tier thresholds)",
+      "scripts/historical/durability_ancient.py (j_floor)",
+      "scripts/historical/decay_curve_conflict.py (epoch panel)",
+      "scripts/historical/epoch_panel.py (epoch panel)",
+      "scripts/historical/holdout_error_forensics.py (windows + cutoff)",
+      "data/robustness/outcomes/grade.py (outcomes + grading)"
+    ]
+  },
+
+  "mechanical_rule_set": {
+    "_doc": "Frozen predict() thresholds (prereg 'Shared mechanical rule set'). gap = P4 - P1 (Safeguard-J's gap). Reused verbatim by prospective_freeze.predict and temporal_holdout.",
+    "j_flag_floor": 0.28,
+    "j_clear_ceiling": 0.20,
+    "spread_high": 0.25,
+    "spread_low": 0.15,
+    "p1_decline": 0.30,
+    "p1_improve": 0.50,
+    "vulnerability_elevated_min": 1
+  },
+
+  "outcomes": {
+    "_doc": "Frozen outcome definitions for temporal/prospective holdout grading (prereg Plan 2). crisis = UCDP conflict onset OR BoC-CRAG sovereign default within the window; both also reported separately.",
+    "crisis_definition": "ucdp_onset OR crag_default",
+    "crag_coverage_cutoff": 2015,
+    "ucdp_data_end": 2023,
+    "windows": {
+      "2004": {"base": 2004, "out": 2024},
+      "2012": {"base": 2012, "out": 2024}
+    },
+    "prospective": {"base": 2024, "out": 2034}
+  },
+
+  "grading": {
+    "_doc": "Grading choices used by data/robustness/outcomes/grade.py.",
+    "top_quartile_frac": 0.25,
+    "vuln_threshold_sweep_scores": [1, 2, 3]
+  },
+
+  "safeguard_stratification_tiers": {
+    "_doc": "Firing-count tier boundaries for scripts/robustness/strat_safeguards.py (prereg Plan 3, frozen before counts).",
+    "structural_min": 15,
+    "validated_min": 8,
+    "provisional_min": 4,
+    "hypothesis_min": 1
+  },
+
+  "historical": {
+    "_doc": "Epoch-panel configs for the historical decay program. NOTE: the two panels use deliberately different anchors/windows (conflict-onset vs economic-rupture outcomes).",
+    "decay_curve_conflict": {
+      "anchors": [1816, 1850, 1880, 1910, 1940, 1970, 1990],
+      "window": 25,
+      "small_n_max": 20,
+      "degenerate_rate_low": 0.08,
+      "degenerate_rate_high": 0.92
+    },
+    "epoch_panel_economic": {
+      "anchors": [1800, 1850, 1900, 1950, 1980],
+      "window": 30,
+      "collapse": 0.80
+    },
+    "durability_ancient": {
+      "j_floor": 0.28
+    }
+  }
+}

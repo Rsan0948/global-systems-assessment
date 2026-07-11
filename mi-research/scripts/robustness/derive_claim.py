@@ -82,18 +82,21 @@ from mi.safeguards import evaluate_all_safeguards, evaluate_mod4  # noqa: E402
 from mi.diagnostics import (                           # noqa: E402
     generate_predictions, assess_vulnerability, accountability_gap)
 from mi.constants import LENS                          # noqa: E402
+import config                                          # noqa: E402  (config/robustness.json)
 
 PREREG = ROOT / "docs" / "ROBUSTNESS_PREREGISTRATION.md"
 COMPLETED = ROOT / "data" / "case_studies" / "completed"
 ANCIENT = ROOT / "data" / "case_studies" / "ancient" / "ancient_cases.json"
 OUT = ROOT / "data" / "robustness" / "derived_claims.json"
 
-# Frozen "Shared mechanical rule set" thresholds (bottom of ROBUSTNESS_PREREGISTRATION.md),
-# reused only for the single-entity trajectory fallback (judgment call #3).
-J_FLAG_FLOOR = LENS["structural_vuln_flag_floor"]      # 0.28
-J_CLEAR_CEILING = LENS["structural_vuln_clear_ceiling"]  # 0.20
-P1_DECLINE = 0.30
-P1_IMPROVE = 0.50
+# Frozen "Shared mechanical rule set" thresholds (config/robustness.json; J thresholds
+# asserted == LENS), reused only for the single-entity trajectory fallback (judgment call #3).
+config.verify_consistency()
+_RS = config.rule_set()
+J_FLAG_FLOOR = _RS["j_flag_floor"]        # 0.28 (== LENS structural_vuln_flag_floor)
+J_CLEAR_CEILING = _RS["j_clear_ceiling"]  # 0.20 (== LENS structural_vuln_clear_ceiling)
+P1_DECLINE = _RS["p1_decline"]            # 0.30
+P1_IMPROVE = _RS["p1_improve"]            # 0.50
 
 JUDGMENT_CALLS = [
     "1. REFERENCE ENTITY = first-listed entity (dict insertion order). b_violence and "

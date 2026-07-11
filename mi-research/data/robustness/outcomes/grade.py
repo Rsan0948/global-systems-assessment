@@ -1,36 +1,21 @@
 #!/usr/bin/env python3
 """Grade frozen temporal-holdout predictions vs real outcomes. Read-only w.r.t. scoring math."""
-import csv, json, os
+import csv, json, os, sys
 from collections import defaultdict, Counter
 import pycountry
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROB = os.path.dirname(HERE)
+MI_ROOT = os.path.dirname(os.path.dirname(ROB))  # mi-research/
+sys.path.insert(0, MI_ROOT)
+from lib.iso_map import GW_ISO_BASE as GW_ISO, CRAG_NAME_MANUAL  # noqa: E402
+from lib import iso_map                                          # noqa: E402
+import config                                                   # noqa: E402  (config/robustness.json)
 
-# ---------- Gleditsch-Ward country number -> ISO3 (codes present in UCDP ACD) ----------
-GW_ISO = {
- 2:'USA',20:'CAN',40:'CUB',41:'HTI',42:'DOM',70:'MEX',90:'GTM',91:'HND',92:'SLV',
- 93:'NIC',95:'PAN',100:'COL',101:'VEN',110:'GUY',130:'ECU',135:'PER',140:'BRA',
- 145:'BOL',150:'PRY',155:'CHL',160:'ARG',165:'URY',200:'GBR',205:'IRL',210:'NLD',
- 211:'BEL',212:'LUX',220:'FRA',225:'CHE',230:'ESP',235:'PRT',255:'DEU',290:'POL',
- 305:'AUT',310:'HUN',316:'CZE',317:'SVK',325:'ITA',338:'MLT',339:'ALB',341:'MNE',
- 343:'MKD',344:'HRV',345:'SRB',346:'BIH',349:'SVN',350:'GRC',352:'CYP',355:'BGR',
- 359:'MDA',360:'ROU',365:'RUS',366:'EST',367:'LVA',368:'LTU',369:'UKR',370:'BLR',
- 371:'ARM',372:'GEO',373:'AZE',375:'FIN',380:'SWE',385:'NOR',390:'DNK',395:'ISL',
- 402:'CPV',404:'GNB',411:'GNQ',420:'GMB',432:'MLI',433:'SEN',434:'BEN',435:'MRT',
- 436:'NER',437:'CIV',438:'GIN',439:'BFA',450:'LBR',451:'SLE',452:'GHA',461:'TGO',
- 471:'CMR',475:'NGA',481:'GAB',482:'CAF',483:'TCD',484:'COG',490:'COD',500:'UGA',
- 501:'KEN',510:'TZA',516:'BDI',517:'RWA',520:'SOM',522:'DJI',530:'ETH',531:'ERI',
- 540:'AGO',541:'MOZ',551:'ZMB',552:'ZWE',553:'MWI',560:'ZAF',565:'NAM',570:'LSO',
- 571:'BWA',572:'SWZ',580:'MDG',590:'MUS',600:'MAR',615:'DZA',616:'TUN',620:'LBY',
- 625:'SDN',626:'SSD',630:'IRN',640:'TUR',645:'IRQ',651:'EGY',652:'SYR',660:'LBN',
- 663:'JOR',666:'ISR',670:'SAU',678:'YEM',680:'YEM',690:'KWT',692:'BHR',694:'QAT',
- 696:'ARE',698:'OMN',700:'AFG',701:'TKM',702:'KGZ',703:'TJK',704:'UZB',705:'KAZ',
- 710:'CHN',712:'MNG',713:'TWN',731:'PRK',732:'KOR',740:'JPN',750:'IND',760:'BTN',
- 770:'PAK',771:'BGD',775:'MMR',780:'LKA',781:'MDV',790:'NPL',800:'THA',811:'KHM',
- 812:'LAO',816:'VNM',820:'MYS',830:'SGP',840:'PHL',850:'IDN',860:'TLS',900:'AUS',
- 910:'PNG',920:'NZL',990:'WSM',
-}
+# Analysis-layer config (config/robustness.json) — outcome/crisis defs + grading choices.
+_OUT = config.robustness()["outcomes"]
+_GRD = config.robustness()["grading"]
+UCDP_END = _OUT["ucdp_data_end"]  # 2023 (UCDP v24.1 coverage end)
 
 # ---------- load predictions ----------
 def load_pred(f):
@@ -89,23 +74,7 @@ for r in crag:
     crag_country_years[r['country']][r['year']] = r['total']
 # map CRAG country name -> iso3
 def name_to_iso(name):
-    manual = {'Korea, Republic of':'KOR','Korea':'KOR','Russia':'RUS','Russian Federation':'RUS',
-      'Congo, Dem. Rep.':'COD','Congo, Democratic Republic of the':'COD','Congo':'COG',
-      'Congo, Republic of':'COG','Democratic Republic of the Congo':'COD',
-      'Egypt':'EGY','Iran':'IRN','Syria':'SYR','Venezuela':'VEN','Bolivia':'BOL',
-      'Tanzania':'TZA','Vietnam':'VNM','Laos':'LAO','Moldova':'MDA','Macedonia':'MKD',
-      'Slovak Republic':'SVK','Kyrgyz Republic':'KGZ','Yemen':'YEM','Cape Verde':'CPV',
-      "Cote d'Ivoire":'CIV',"Côte d'Ivoire":'CIV','Ivory Coast':'CIV','Gambia, The':'GMB',
-      'Gambia':'GMB','Turkiye':'TUR','Turkey':'TUR','Brunei':'BRN','Taiwan':'TWN',
-      'Bosnia & Herzegovina':'BIH','USSR/Russia':'RUS',
-      'Dem. Rep. of Congo (Kinshasa)':'COD','Rep. Of Congo (Brazzaville)':'COG',
-      "Côte d’Ivoire":'CIV','Swaziland':'SWZ','Korea (North)':'PRK',
-      'Trinidad & Tobago':'TTO','São Tomé and Príncipe':'STP'}
-    if name in manual: return manual[name]
-    try:
-        c=pycountry.countries.lookup(name); return c.alpha_3
-    except Exception:
-        return None
+    return iso_map.name_to_iso(name, CRAG_NAME_MANUAL)
 crag_iso = {}
 crag_unmapped = set()
 for cname in crag_country_years:
@@ -113,7 +82,7 @@ for cname in crag_country_years:
     if iso: crag_iso.setdefault(iso, cname)
     else: crag_unmapped.add(cname)
 
-CRAG_CUTOFF = 2015  # 2016 present but only 13 records -> incomplete; treat effective coverage as <=2015
+CRAG_CUTOFF = _OUT["crag_coverage_cutoff"]  # 2015 (2016 present but only 13 records -> incomplete)
 def crag_default_onset(iso, y0, y1):
     cname = crag_iso.get(iso)
     if cname is None: return None  # no CRAG coverage for this iso
@@ -166,10 +135,11 @@ def auc_roc(scores, labels):
 
 def threshold_sweep(scores, labels):
     out=[]
-    for thr in [0.5,1.5,2.5]:  # score>=1,>=2,>=3
+    for score in _GRD["vuln_threshold_sweep_scores"]:  # score>=1,>=2,>=3
+        thr=score-0.5
         yp=[s>=thr for s in scores]
         cm=confusion(labels, yp)
-        out.append(dict(threshold=f"score>={thr+0.5:.0f}", **cm))
+        out.append(dict(threshold=f"score>={score}", **cm))
     return out
 
 # ---------- run one window ----------
@@ -188,11 +158,11 @@ def run_window(pred, base_year, out_year, ucdp_start, label):
     for p in recs:
         iso=p['iso']
         g=gdp_growth(iso, base_year, out_year)
-        ucdp=ucdp_onset(iso, ucdp_start, 2023)
+        ucdp=ucdp_onset(iso, ucdp_start, UCDP_END)
         crag_ev=crag_default_onset(iso, ucdp_start, out_year)  # None if no coverage
         crag_bool = bool(crag_ev) if crag_ev is not None else False
         crisis = bool(ucdp) or crag_bool
-        rows.append(dict(iso=iso, country=p['country'], growth=g,
+        rows.append(dict(iso=iso, country=p['country'], mi_score=p.get('mi_score'), growth=g,
                          vuln=p['predictions']['vulnerability_score_0_3'],
                          elevated=p['predictions']['elevated_crisis_vulnerability'],
                          trajectory=p['predictions']['trajectory'],
@@ -236,7 +206,7 @@ def run_window(pred, base_year, out_year, ucdp_start, label):
     # ---- Design C: crisis quartile ----
     # top-quartile vulnerability by vuln score. vuln is 0-3; take top 25% by score rank.
     srt=sorted(rows, key=lambda r:r['vuln'], reverse=True)
-    q=max(1,round(N*0.25))
+    q=max(1,round(N*_GRD["top_quartile_frac"]))
     # handle ties at boundary: include all with vuln >= threshold value at rank q
     thr_val=srt[q-1]['vuln']
     topq=[r for r in rows if r['vuln']>=thr_val]
@@ -256,7 +226,7 @@ def run_window(pred, base_year, out_year, ucdp_start, label):
     gdp_auc=auc_roc(gdp_pov_scores, gdp_labels)
     # bottom-quartile-poorest as crisis predictor
     poor_sorted=sorted(gdp_rows, key=lambda r:gdp_vals[r['iso']])
-    qq=max(1,round(len(gdp_rows)*0.25))
+    qq=max(1,round(len(gdp_rows)*_GRD["top_quartile_frac"]))
     poorest=set(r['iso'] for r in poor_sorted[:qq])
     gdp_pred=[r['iso'] in poorest for r in gdp_rows]
     cm_gdp=confusion(gdp_labels, gdp_pred)
@@ -269,7 +239,7 @@ def run_window(pred, base_year, out_year, ucdp_start, label):
         fsi_labels=[r['crisis'] for r in fsi_rows]
         fsi_auc=auc_roc([fsi_vals[r['iso']] for r in fsi_rows], fsi_labels)
         fsi_sorted=sorted(fsi_rows, key=lambda r:fsi_vals[r['iso']], reverse=True)  # most fragile first
-        qf=max(1,round(len(fsi_rows)*0.25))
+        qf=max(1,round(len(fsi_rows)*_GRD["top_quartile_frac"]))
         frag=set(r['iso'] for r in fsi_sorted[:qf])
         cm_fsi=confusion(fsi_labels,[r['iso'] in frag for r in fsi_rows])
         fsi_baseline=dict(n=len(fsi_rows), auc=fsi_auc, top_quartile_fragile_confusion=cm_fsi)
@@ -281,7 +251,7 @@ def run_window(pred, base_year, out_year, ucdp_start, label):
 
     return dict(
         label=label, base_year=base_year, out_year=out_year, N=N,
-        ucdp_window=[ucdp_start,2023], crag_window=[ucdp_start,min(out_year,CRAG_CUTOFF)],
+        ucdp_window=[ucdp_start,UCDP_END], crag_window=[ucdp_start,min(out_year,CRAG_CUTOFF)],
         dropped_gdp_iso=dropped_gdp,
         trajectory=dict(n=len(traj_rows), growth_median=med, accuracy=traj_acc,
                         improve_base_rate=improve_base, majority_baseline=maj_traj,
@@ -305,8 +275,21 @@ def run_window(pred, base_year, out_year, ucdp_start, label):
         _rows=rows,
     )
 
-W2004 = run_window(pred2004, 2004, 2024, 2004, "2004->2024")
-W2012 = run_window(pred2012, 2012, 2024, 2012, "2012->2024")
+_W = _OUT["windows"]
+W2004 = run_window(pred2004, _W["2004"]["base"], _W["2004"]["out"], _W["2004"]["base"], "2004->2024")
+W2012 = run_window(pred2012, _W["2012"]["base"], _W["2012"]["out"], _W["2012"]["base"], "2012->2024")
+
+# Persist the joined per-country holdout panel (the table grade.py builds then otherwise
+# discards). One row per country per window; the single source ESI + forensics read from.
+holdout_panel=dict(
+    generated="temporal holdout joined per-country panel (Plan 2)",
+    note=("one row per country per window; fields: iso, country, mi_score, P1, P4, "
+          "vuln(0-3), elevated(J-gate flag), ucdp(onset), crag(default), crag_cov, "
+          "crisis(=ucdp OR crag), growth, trajectory"),
+    crisis_definition=_OUT["crisis_definition"],
+    windows={"2004": W2004["_rows"], "2012": W2012["_rows"]},
+)
+json.dump(holdout_panel, open(os.path.join(ROB,'temporal_holdout_panel.json'),'w'), indent=1, default=str)
 
 report=dict(
     generated="temporal holdout grading (Plan 2)",

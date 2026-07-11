@@ -23,19 +23,24 @@ sys.path.insert(0, str(ROOT))
 
 from mi.panel import iter_universe          # noqa: E402
 from mi.diagnostics import full_diagnostic  # noqa: E402
+import config                               # noqa: E402  (config/robustness.json)
 
-YEAR = 2024
-HORIZON = 2034
+_OUTC = config.robustness()["outcomes"]["prospective"]
+YEAR = _OUTC["base"]      # 2024
+HORIZON = _OUTC["out"]    # 2034
 PREREG = ROOT / "docs" / "ROBUSTNESS_PREREGISTRATION.md"
 OUT = ROOT / "data" / "robustness" / "prospective_2024_predictions.json"
 
-# --- FROZEN mechanical rule set (reuses the engine's own Safeguard-J thresholds) ---
-J_FLAG_FLOOR = 0.28      # gap >= this: economy outruns institutions -> stress
-J_CLEAR_CEILING = 0.20   # gap <= this: institutions keep pace -> sustain/improve
-SPREAD_HIGH = 0.25
-SPREAD_LOW = 0.15
-P1_DECLINE = 0.30
-P1_IMPROVE = 0.50
+# --- FROZEN mechanical rule set (config/robustness.json; J thresholds == LENS) ---
+config.verify_consistency()
+_RS = config.rule_set()
+J_FLAG_FLOOR = _RS["j_flag_floor"]        # 0.28  gap >= this: economy outruns institutions -> stress
+J_CLEAR_CEILING = _RS["j_clear_ceiling"]  # 0.20  gap <= this: institutions keep pace -> sustain/improve
+SPREAD_HIGH = _RS["spread_high"]          # 0.25
+SPREAD_LOW = _RS["spread_low"]            # 0.15
+P1_DECLINE = _RS["p1_decline"]            # 0.30
+P1_IMPROVE = _RS["p1_improve"]            # 0.50
+VULN_ELEVATED_MIN = _RS["vulnerability_elevated_min"]  # 1 (frozen loose binary)
 
 
 def predict(p1, p4, spread):
@@ -77,7 +82,7 @@ def predict(p1, p4, spread):
         "level": level,
         "durability": durability,
         "vulnerability_score_0_3": vuln_score,
-        "elevated_crisis_vulnerability": vuln_score >= 1,  # frozen binary (loose)
+        "elevated_crisis_vulnerability": vuln_score >= VULN_ELEVATED_MIN,  # frozen binary (loose)
     }
 
 

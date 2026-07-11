@@ -25,10 +25,17 @@ collapses (Venezuela 2017, Lebanon 2020, Sri Lanka 2022, Ghana 2022, Argentina
 bucket and is the biggest limitation of this forensic.
 """
 import json
+import sys
 from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+import config                               # noqa: E402  (config/robustness.json)
+
+_OUTC_CFG = config.robustness()["outcomes"]
+_UCDP_END = _OUTC_CFG["ucdp_data_end"]            # 2023
+_CRAG_CUTOFF = _OUTC_CFG["crag_coverage_cutoff"]  # 2015
 HIST = ROOT / "data" / "robustness" / "historical"
 OUTC = ROOT / "data" / "robustness" / "outcomes"
 OUT = HIST / "holdout_error_forensics.json"
@@ -114,8 +121,8 @@ def main():
         FP, FN = [], []
         for p in preds:
             iso, el = p["iso"], p["predictions"]["elevated_crisis_vulnerability"]
-            conf = any(yr <= y <= 2024 for y in onsets.get(iso, []))
-            deft = any(yr <= y <= 2015 for y in defs.get(iso, []))
+            conf = any(yr <= y <= _UCDP_END for y in onsets.get(iso, []))
+            deft = any(yr <= y <= _CRAG_CUTOFF for y in defs.get(iso, []))
             cr = conf or deft
             if el and not cr:
                 FP.append({"country": p["country"], "external_support": EXTERNAL_SUPPORT.get(p["country"], "UNCLASSIFIED")})

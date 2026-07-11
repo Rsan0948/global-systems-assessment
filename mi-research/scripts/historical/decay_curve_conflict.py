@@ -25,12 +25,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from conflict_outcome import onset_in_window, coverage_span  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+import config                               # noqa: E402  (config/robustness.json)
+
 VDEM = ROOT / "data" / "sources" / "vdem_longrun.json"
 LONGRUN = ROOT / "data" / "sources" / "longrun_pillars.json"
 OUT = ROOT / "data" / "robustness" / "historical" / "decay_curve_conflict.json"
 
-ANCHORS = [1816, 1850, 1880, 1910, 1940, 1970, 1990]
-WINDOW = 25            # outcome window (years after the anchor); onset in [y, y+WINDOW]
+_DC = config.robustness()["historical"]["decay_curve_conflict"]
+ANCHORS = _DC["anchors"]   # [1816, 1850, 1880, 1910, 1940, 1970, 1990]
+WINDOW = _DC["window"]     # 25  outcome window (years after the anchor); onset in [y, y+WINDOW]
 
 
 def _series(v):
@@ -84,9 +88,9 @@ def main():
     # thin-epoch flags (small n, or onset rate near 0/1 -> AUC unreliable)
     for e in epochs:
         flags = []
-        if e["n"] < 20:
+        if e["n"] < _DC["small_n_max"]:
             flags.append("small_n")
-        if e["onset_rate"] is not None and (e["onset_rate"] < 0.08 or e["onset_rate"] > 0.92):
+        if e["onset_rate"] is not None and (e["onset_rate"] < _DC["degenerate_rate_low"] or e["onset_rate"] > _DC["degenerate_rate_high"]):
             flags.append("degenerate_base_rate")
         if e["structure_auc"] is None or e["wealth_auc"] is None:
             flags.append("auc_undefined")

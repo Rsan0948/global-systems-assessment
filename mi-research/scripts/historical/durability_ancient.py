@@ -12,13 +12,17 @@ is less exogenous (capital) noise.
 Read-only; writes its own report.
 """
 import json
+import sys
 from pathlib import Path
 from statistics import mean
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+import config                               # noqa: E402  (config/robustness.json)
+
 CASES = ROOT / "data" / "case_studies" / "ancient" / "ancient_cases.json"
 OUT = ROOT / "data" / "robustness" / "historical" / "durability_ancient.json"
-J_FLOOR = 0.28  # modern Safeguard-J flag threshold
+J_FLOOR = config.robustness()["historical"]["durability_ancient"]["j_floor"]  # 0.28 modern Safeguard-J flag threshold
 
 
 def shock_class(s):

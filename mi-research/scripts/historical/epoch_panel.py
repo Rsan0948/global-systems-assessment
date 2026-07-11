@@ -20,16 +20,21 @@ Read-only; writes its own report.
 """
 import json
 import math
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+import config                               # noqa: E402  (config/robustness.json)
+
 VDEM = ROOT / "data" / "sources" / "vdem_longrun.json"
 LONGRUN = ROOT / "data" / "sources" / "longrun_pillars.json"
 OUT = ROOT / "data" / "robustness" / "historical" / "decay_curve.json"
 
-ANCHORS = [1800, 1850, 1900, 1950, 1980]
-WINDOW = 30            # outcome window (years after the anchor)
-COLLAPSE = 0.80        # rupture = trough/level < this (a >20% GDP collapse)
+_EP = config.robustness()["historical"]["epoch_panel_economic"]
+ANCHORS = _EP["anchors"]     # [1800, 1850, 1900, 1950, 1980]
+WINDOW = _EP["window"]       # 30  outcome window (years after the anchor)
+COLLAPSE = _EP["collapse"]   # 0.80  rupture = trough/level < this (a >20% GDP collapse)
 
 
 def _series(v):
