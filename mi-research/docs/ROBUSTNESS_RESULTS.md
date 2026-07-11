@@ -29,6 +29,7 @@
 | Crisis-origin shift (domestic→contagion) — Finding 12 (registered null; erosion is domestic) | ✅ done | (this branch) |
 | Inequality / distribution dimension — Finding 13 (registered null; bivariate-only, longitudinal reversed) | ✅ done | (this branch) |
 | Variance compression + conflict-type shift — Finding 14 (A fails gate, B partial; erosion reframed as wealth catching up) | ✅ done | (this branch) |
+| Convergence confirmation + durability — Finding 15 (gate passes; wealth-catching-up confirmed, mechanism = complementary facet; durable today) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -552,6 +553,79 @@ wealth signal caught up."** Epistemic status: A **registered null (gate fail)**;
 **partial**; wealth-catching-up **strongest evidenced lead (p=0.005), awaiting its own
 pre-registration.** Write-up `docs/VARIANCE_COMPRESSION_RESULTS.md`; artifacts
 `data/robustness/varcomp/*`; code `scripts/robustness/varcomp_{A,B}.py`.
+
+## Finding 15 — The wealth-catching-up lead is CONFIRMED (as a complementary-facet mechanism), and the convergence is durable today
+
+Finding 14's lead — that the 150-year "erosion" is GDP *gaining* crisis-predictive
+signal, not institutions losing it — was pre-registered as its own hypothesis with gates
+and run to confirmation (`CONVERGENCE_PREREGISTRATION.md`, sha256 `4071b996`, frozen
+before analysis). **The two-part gate passes; the interpretation is confirmed with one
+qualification.**
+
+**Gate (Tests 1–2) — PASS.** *Test 1:* the V-Dem rule-of-law ↔ log-Maddison-GDP coupling
+has been **rising** for 150 years on every like-for-like sample (constant-set Δr **+0.151**;
+mature-only Δr **+0.152**, slope p=0.006), and the mature coupling trajectory positively
+tracks the `wealth_auc` curve (r=+0.469, **p=0.043**). It only *falls* on the **pooled**
+sample (Δr−0.045) — the same decolonization composition artifact Finding 10-T1 already
+identified (coupling collapses at the 1956 anchor as post-colonial states enter). *Test 2:*
+GDP's economic substrate shifted as the mechanism requires — global agriculture share fell
+**23.7%→10.0%** monotonically (WDI 1970–2024, trend p=0.0002; deep-history ~60–70%→~4% is
+documented context), and GDP predicts crises **worse** where agriculture still dominates
+(GDP-crisis AUC 0.688 for ag≥25% vs 0.714 for ag<10%).
+
+**Mechanism (Test 3) — complementary facet, not pure proxy.** Adding P1 does **not**
+eliminate GDP's predictive power: in the joint logistic model both stay significant
+(2004: P1 z=2.8, GDP z=2.7; 2012: P1 z=2.5, GDP z=2.3), and GDP's independent contribution
+did **not** grow over epochs (|coef| trend −0.006, p=0.13). So GDP is **not** a proxy whose
+signal is parasitic on institutions — it captures a **partially independent facet of the
+same construct** (state capacity). Per the pre-registered middle outcome, the
+interpretation is *"GDP measures a complementary facet"*, not *"GDP measures the identical
+thing."*
+
+**Two weaker angles, reported honestly.** *Test 4 (diffusion)* is **inconclusive** —
+early/mid industrializers accumulate 0–5 domestic-crisis observations per epoch (rich deep
+states rarely rupture domestically), so cross-cohort `wealth_auc` ordering is not estimable;
+the one estimable cohort (late, n=145) rises as predicted (crosses 0.65 at 1976, p=0.003).
+*Test 5 (agricultural-economy discriminator)* **disconfirms**: modern agricultural economies
+do **not** retain the pre-convergence pattern — both P1−GDP spreads are negative and the
+agricultural spread is *more* negative (−0.093 vs −0.045), because modern low-GDP states are
+unstable partly *because* they are poor (the poverty→instability coupling carries
+crisis-information the 1816 wealth level did not). This is exactly why the mechanism is
+complementary-facet, not clean re-measurement. *Test 6* replicates the pattern on a broader
+**dysfunction** outcome (struct Δ+0.226 p=0.053; wealth Δ+0.460 p=0.002) with a disclosed
+partial-circularity caveat (the composite includes a GDP-decline term).
+
+**Durability (Part 2) — robust today, one bounded present risk, one forward risk.** *Test 8:*
+of four candidate decoupling forces, **only resource extraction weakens** the P1↔GDP coupling
+(0.722 vs 0.837, exposed vs not) — the MI's oldest pattern, already in the resource penalty.
+FDI, financialization, and services-heavy (ICT-proxy) economies show **tighter** coupling
+when exposed, because those forces cluster where institutions are **already** strong; the new
+post-industrial forces have **not** produced institution-independent GDP at scale. Exposure to
+every force is growing, so this is a present-tense robustness. *Test 7:* the pre-registered
+decouple threshold is non-discriminating (69% of the panel — GDP grows >50% over 28y almost
+universally while WGI-P1 is sticky; disclosed), but the sharp *governance-declined-while-
+wealth-grew* set (n=27) crisis **more than GDP predicts** (residual +0.017 vs −0.008) and is
+**not** just resource/authoritarian outliers — it includes advanced democracies (UK, France,
+Israel), the early signature of the "dangerous configuration" where GDP over-predicts a
+stability that eroding governance is undermining. *Test 9 (AI, structured forward
+assessment — not a test):* the convergence depends on GDP *requiring* institutional quality;
+if AI makes output institution-independent across the labor/production/trade/finance/services
+channels at scale, GDP could grow while institutions stagnate, **reversing** the convergence —
+institutions would again out-predict GDP, *not* because they strengthened but because GDP got
+noisier, from a higher baseline. Test 8 shows this is **not happening yet**; the leading
+indicator is the P1↔GDP coupling turning negative among AI-intensive economies.
+
+**Verdict.** The most defensible headline of the whole robustness program is now
+**confirmed, not merely led-to**: *institutions did not weaken over 150 years — the wealth
+signal caught up*, GDP having become a complementary state-capacity signal as economies
+industrialized and measurement improved. The convergence is structurally durable today, with
+resource extraction the one standing decoupler (already modeled) and AI the credible forward
+risk — in which reversal the MI's institutional signal **regains**, not loses, relative
+advantage. Epistemic status: **gate-passed confirmation; proxy claim qualified to
+complementary-facet; durability = robust-today with disclosed forward risk.** Write-up
+`docs/CONVERGENCE_RESULTS.md`; artifacts `data/robustness/convergence/{part1,part2}.json`;
+code `scripts/robustness/convergence_{lib,part1,part2}.py`; pre-registration
+`docs/CONVERGENCE_PREREGISTRATION.md`.
 
 ---
 
