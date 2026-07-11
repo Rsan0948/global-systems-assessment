@@ -1,0 +1,1539 @@
+{
+ "prereg_sha256": "4071b996",
+ "window": 25,
+ "test1_coupling_trajectory": {
+  "trajectories": {
+   "pooled": {
+    "n_set": 163,
+    "per_epoch": {
+     "1816": {
+      "n": 12,
+      "pearson_r": 0.7287,
+      "spearman_rho": 0.6294
+     },
+     "1826": {
+      "n": 15,
+      "pearson_r": 0.6397,
+      "spearman_rho": 0.5523
+     },
+     "1836": {
+      "n": 18,
+      "pearson_r": 0.6987,
+      "spearman_rho": 0.5893
+     },
+     "1846": {
+      "n": 22,
+      "pearson_r": 0.7543,
+      "spearman_rho": 0.7425
+     },
+     "1856": {
+      "n": 21,
+      "pearson_r": 0.79,
+      "spearman_rho": 0.7727
+     },
+     "1866": {
+      "n": 25,
+      "pearson_r": 0.7325,
+      "spearman_rho": 0.7615
+     },
+     "1876": {
+      "n": 30,
+      "pearson_r": 0.7672,
+      "spearman_rho": 0.8016
+     },
+     "1886": {
+      "n": 32,
+      "pearson_r": 0.7492,
+      "spearman_rho": 0.7531
+     },
+     "1896": {
+      "n": 34,
+      "pearson_r": 0.7808,
+      "spearman_rho": 0.7785
+     },
+     "1906": {
+      "n": 49,
+      "pearson_r": 0.7221,
+      "spearman_rho": 0.7517
+     },
+     "1916": {
+      "n": 46,
+      "pearson_r": 0.686,
+      "spearman_rho": 0.7398
+     },
+     "1926": {
+      "n": 62,
+      "pearson_r": 0.6342,
+      "spearman_rho": 0.6779
+     },
+     "1936": {
+      "n": 64,
+      "pearson_r": 0.6122,
+      "spearman_rho": 0.6464
+     },
+     "1946": {
+      "n": 53,
+      "pearson_r": 0.5873,
+      "spearman_rho": 0.6511
+     },
+     "1956": {
+      "n": 138,
+      "pearson_r": 0.4347,
+      "spearman_rho": 0.3728
+     },
+     "1966": {
+      "n": 139,
+      "pearson_r": 0.5066,
+      "spearman_rho": 0.4752
+     },
+     "1976": {
+      "n": 142,
+      "pearson_r": 0.5067,
+      "spearman_rho": 0.4763
+     },
+     "1986": {
+      "n": 157,
+      "pearson_r": 0.5187,
+      "spearman_rho": 0.4867
+     },
+     "1996": {
+      "n": 160,
+      "pearson_r": 0.6841,
+      "spearman_rho": 0.6821
+     }
+    },
+    "delta_r": -0.0446,
+    "r_trend": {
+     "slope": -0.001288894736842105,
+     "p": 0.001260671686254487,
+     "r": -0.6832737129616049
+    }
+   },
+   "constant": {
+    "n_set": 30,
+    "per_epoch": {
+     "1850": {
+      "n": 30,
+      "pearson_r": 0.6824,
+      "spearman_rho": 0.6788
+     },
+     "1900": {
+      "n": 30,
+      "pearson_r": 0.7891,
+      "spearman_rho": 0.8185
+     },
+     "1950": {
+      "n": 30,
+      "pearson_r": 0.6056,
+      "spearman_rho": 0.6693
+     },
+     "1996": {
+      "n": 30,
+      "pearson_r": 0.8337,
+      "spearman_rho": 0.7964
+     }
+    },
+    "delta_r": 0.1513,
+    "r_trend": {
+     "slope": 0.000531900604432505,
+     "p": 0.6753050352045479,
+     "r": 0.3246949647954521
+    }
+   },
+   "mature": {
+    "n_set": 54,
+    "per_epoch": {
+     "1816": {
+      "n": 10,
+      "pearson_r": 0.6411,
+      "spearman_rho": 0.4667
+     },
+     "1826": {
+      "n": 12,
+      "pearson_r": 0.425,
+      "spearman_rho": 0.1997
+     },
+     "1836": {
+      "n": 14,
+      "pearson_r": 0.5287,
+      "spearman_rho": 0.3538
+     },
+     "1846": {
+      "n": 17,
+      "pearson_r": 0.6352,
+      "spearman_rho": 0.5735
+     },
+     "1856": {
+      "n": 16,
+      "pearson_r": 0.6804,
+      "spearman_rho": 0.5794
+     },
+     "1866": {
+      "n": 20,
+      "pearson_r": 0.6746,
+      "spearman_rho": 0.6932
+     },
+     "1876": {
+      "n": 22,
+      "pearson_r": 0.7589,
+      "spearman_rho": 0.773
+     },
+     "1886": {
+      "n": 23,
+      "pearson_r": 0.8083,
+      "spearman_rho": 0.7798
+     },
+     "1896": {
+      "n": 23,
+      "pearson_r": 0.8664,
+      "spearman_rho": 0.7609
+     },
+     "1906": {
+      "n": 26,
+      "pearson_r": 0.8071,
+      "spearman_rho": 0.7731
+     },
+     "1916": {
+      "n": 26,
+      "pearson_r": 0.8822,
+      "spearman_rho": 0.8414
+     },
+     "1926": {
+      "n": 31,
+      "pearson_r": 0.7999,
+      "spearman_rho": 0.7992
+     },
+     "1936": {
+      "n": 33,
+      "pearson_r": 0.7361,
+      "spearman_rho": 0.7851
+     },
+     "1946": {
+      "n": 28,
+      "pearson_r": 0.8125,
+      "spearman_rho": 0.787
+     },
+     "1956": {
+      "n": 47,
+      "pearson_r": 0.8353,
+      "spearman_rho": 0.7949
+     },
+     "1966": {
+      "n": 47,
+      "pearson_r": 0.8012,
+      "spearman_rho": 0.8123
+     },
+     "1976": {
+      "n": 48,
+      "pearson_r": 0.7313,
+      "spearman_rho": 0.8061
+     },
+     "1986": {
+      "n": 52,
+      "pearson_r": 0.6941,
+      "spearman_rho": 0.7402
+     },
+     "1996": {
+      "n": 54,
+      "pearson_r": 0.7933,
+      "spearman_rho": 0.8337
+     }
+    },
+    "delta_r": 0.1522,
+    "r_trend": {
+     "slope": 0.0012620175438596494,
+     "p": 0.005520094227824678,
+     "r": 0.6102945975191754
+    }
+   }
+  },
+  "f14_epochs": {
+   "1816": {
+    "pooled_pearson_r": 0.7287,
+    "wealth_auc": 0.2222,
+    "struct_auc": 0.4444
+   },
+   "1876": {
+    "pooled_pearson_r": 0.7672,
+    "wealth_auc": 0.7708,
+    "struct_auc": 0.8472
+   },
+   "1946": {
+    "pooled_pearson_r": 0.5873,
+    "wealth_auc": 0.5197,
+    "struct_auc": 0.5652
+   },
+   "1996": {
+    "pooled_pearson_r": 0.6841,
+    "wealth_auc": 0.7788,
+    "struct_auc": 0.7542
+   }
+  },
+  "coupling_vs_wealth_auc": {
+   "pooled": {
+    "pearson_r": -0.1989,
+    "p": 0.4142,
+    "n": 19
+   },
+   "mature": {
+    "pearson_r": 0.4692,
+    "p": 0.0427,
+    "n": 19
+   }
+  },
+  "GATE_confirm": true
+ },
+ "test2_sector_shift": {
+  "longitudinal_sector_share": {
+   "1970": {
+    "agriculture": 23.67,
+    "industry": 26.04,
+    "services": 44.23,
+    "n": 96
+   },
+   "1980": {
+    "agriculture": 20.67,
+    "industry": 29.75,
+    "services": 44.63,
+    "n": 120
+   },
+   "1990": {
+    "agriculture": 16.95,
+    "industry": 27.97,
+    "services": 48.86,
+    "n": 177
+   },
+   "2000": {
+    "agriculture": 13.27,
+    "industry": 26.76,
+    "services": 51.66,
+    "n": 198
+   },
+   "2010": {
+    "agriculture": 10.46,
+    "industry": 26.15,
+    "services": 55.73,
+    "n": 204
+   },
+   "2020": {
+    "agriculture": 10.23,
+    "industry": 24.04,
+    "services": 58.57,
+    "n": 198
+   },
+   "2024": {
+    "agriculture": 10.02,
+    "industry": 25.06,
+    "services": 56.99,
+    "n": 187
+   }
+  },
+  "agriculture_trend": {
+   "slope": -0.2643166049953747,
+   "p": 0.00022300239929618767,
+   "r": -0.9731805623605302
+  },
+  "agriculture_monotone_decline": true,
+  "cross_sectional_gdp_auc": {
+   "1996": {
+    "high_ag(>=25%)": {
+     "gdp_auc": 0.8667,
+     "n": 13,
+     "n_pos": 10
+    },
+    "low_ag(<10%)": {
+     "gdp_auc": 0.632,
+     "n": 40,
+     "n_pos": 7
+    }
+   },
+   "2004": {
+    "high_ag(>=25%)": {
+     "gdp_auc": null,
+     "n": 10,
+     "n_pos": 6
+    },
+    "low_ag(<10%)": {
+     "gdp_auc": 0.7463,
+     "n": 51,
+     "n_pos": 10
+    }
+   },
+   "2012": {
+    "high_ag(>=25%)": {
+     "gdp_auc": null,
+     "n": 7,
+     "n_pos": 4
+    },
+    "low_ag(<10%)": {
+     "gdp_auc": 0.5933,
+     "n": 59,
+     "n_pos": 9
+    }
+   },
+   "2018": {
+    "high_ag(>=25%)": {
+     "gdp_auc": null,
+     "n": 2,
+     "n_pos": 2
+    },
+    "low_ag(<10%)": {
+     "gdp_auc": 0.5556,
+     "n": 58,
+     "n_pos": 4
+    }
+   },
+   "2024": {
+    "high_ag(>=25%)": {
+     "gdp_auc": null,
+     "n": 18,
+     "n_pos": 0
+    },
+    "low_ag(<10%)": {
+     "gdp_auc": null,
+     "n": 111,
+     "n_pos": 0
+    }
+   }
+  },
+  "pooled_gdp_auc": {
+   "high_ag": {
+    "auc": 0.6883,
+    "n": 50
+   },
+   "low_ag": {
+    "auc": 0.7137,
+    "n": 319
+   }
+  },
+  "historical_context_note": "agriculture ~60-70% of GDP mid-19thc -> ~4% today is documented economic-history (Maddison/Broadberry); cited as context, not recomputed here.",
+  "GATE_confirm": true
+ },
+ "test3_mediation": {
+  "holdout_2004_2012": {
+   "2004": {
+    "n": 161,
+    "n_pos": 54,
+    "M1_P1": {
+     "coef": 1.047,
+     "auc": 0.7575
+    },
+    "M2_GDP": {
+     "coef": 1.0174,
+     "auc": 0.7593
+    },
+    "M3_both": {
+     "P1_coef": 0.7286,
+     "P1_se": 0.257,
+     "P1_z": 2.84,
+     "GDP_coef": 0.6654,
+     "GDP_se": 0.2462,
+     "GDP_z": 2.7,
+     "auc": 0.7866
+    },
+    "M3_vs_M1_auc_gain": 0.0291
+   },
+   "2012": {
+    "n": 161,
+    "n_pos": 43,
+    "M1_P1": {
+     "coef": 0.8737,
+     "auc": 0.727
+    },
+    "M2_GDP": {
+     "coef": 0.8497,
+     "auc": 0.7253
+    },
+    "M3_both": {
+     "P1_coef": 0.615,
+     "P1_se": 0.2468,
+     "P1_z": 2.49,
+     "GDP_coef": 0.5758,
+     "GDP_se": 0.2463,
+     "GDP_z": 2.34,
+     "auc": 0.7525
+    },
+    "M3_vs_M1_auc_gain": 0.0254
+   }
+  },
+  "historical_epochs": {
+   "1826": {
+    "n": 15,
+    "n_pos": 7,
+    "M1_P1": {
+     "coef": 0.0829,
+     "auc": 0.5536
+    },
+    "M2_GDP": {
+     "coef": -0.8339,
+     "auc": 0.7143
+    },
+    "M3_both": {
+     "P1_coef": 1.3382,
+     "P1_se": 4.091,
+     "P1_z": 0.33,
+     "GDP_coef": -1.8144,
+     "GDP_se": 5.0024,
+     "GDP_z": -0.36,
+     "auc": 0.8214
+    },
+    "M3_vs_M1_auc_gain": 0.2679
+   },
+   "1836": {
+    "n": 18,
+    "n_pos": 8,
+    "M1_P1": {
+     "coef": -0.074,
+     "auc": 0.5
+    },
+    "M2_GDP": {
+     "coef": -0.3015,
+     "auc": 0.5875
+    },
+    "M3_both": {
+     "P1_coef": 0.2648,
+     "P1_se": 2.02,
+     "P1_z": 0.13,
+     "GDP_coef": -0.4852,
+     "GDP_se": 2.0464,
+     "GDP_z": -0.24,
+     "auc": 0.575
+    },
+    "M3_vs_M1_auc_gain": 0.075
+   },
+   "1846": {
+    "n": 22,
+    "n_pos": 10,
+    "M1_P1": {
+     "coef": 0.2618,
+     "auc": 0.6
+    },
+    "M2_GDP": {
+     "coef": -0.1365,
+     "auc": 0.5167
+    },
+    "M3_both": {
+     "P1_coef": 0.9194,
+     "P1_se": 1.5131,
+     "P1_z": 0.61,
+     "GDP_coef": -0.8389,
+     "GDP_se": 1.6997,
+     "GDP_z": -0.49,
+     "auc": 0.6583
+    },
+    "M3_vs_M1_auc_gain": 0.0583
+   },
+   "1856": {
+    "n": 21,
+    "n_pos": 6,
+    "M1_P1": {
+     "coef": 0.4295,
+     "auc": 0.6667
+    },
+    "M2_GDP": {
+     "coef": -0.4319,
+     "auc": 0.6111
+    },
+    "M3_both": {
+     "P1_coef": 4.0667,
+     "P1_se": 5.0163,
+     "P1_z": 0.81,
+     "GDP_coef": -3.9095,
+     "GDP_se": 4.5092,
+     "GDP_z": -0.87,
+     "auc": 0.8778
+    },
+    "M3_vs_M1_auc_gain": 0.2111
+   },
+   "1866": {
+    "n": 25,
+    "n_pos": 6,
+    "M1_P1": {
+     "coef": 0.7712,
+     "auc": 0.7456
+    },
+    "M2_GDP": {
+     "coef": 0.5295,
+     "auc": 0.6404
+    },
+    "M3_both": {
+     "P1_coef": 0.8164,
+     "P1_se": 3.085,
+     "P1_z": 0.26,
+     "GDP_coef": -0.0643,
+     "GDP_se": 2.8644,
+     "GDP_z": -0.02,
+     "auc": 0.7368
+    },
+    "M3_vs_M1_auc_gain": -0.0088
+   },
+   "1876": {
+    "n": 30,
+    "n_pos": 6,
+    "M1_P1": {
+     "coef": 1.3012,
+     "auc": 0.8472
+    },
+    "M2_GDP": {
+     "coef": 0.8284,
+     "auc": 0.7708
+    },
+    "M3_both": {
+     "P1_coef": 1.4593,
+     "P1_se": 2.4502,
+     "P1_z": 0.6,
+     "GDP_coef": -0.2264,
+     "GDP_se": 1.5126,
+     "GDP_z": -0.15,
+     "auc": 0.8472
+    },
+    "M3_vs_M1_auc_gain": 0.0
+   },
+   "1886": {
+    "n": 32,
+    "n_pos": 10,
+    "M1_P1": {
+     "coef": 1.1996,
+     "auc": 0.8295
+    },
+    "M2_GDP": {
+     "coef": 1.1008,
+     "auc": 0.7659
+    },
+    "M3_both": {
+     "P1_coef": 0.8684,
+     "P1_se": 1.5894,
+     "P1_z": 0.55,
+     "GDP_coef": 0.473,
+     "GDP_se": 1.8776,
+     "GDP_z": 0.25,
+     "auc": 0.8273
+    },
+    "M3_vs_M1_auc_gain": -0.0023
+   },
+   "1896": {
+    "n": 34,
+    "n_pos": 13,
+    "M1_P1": {
+     "coef": 0.4924,
+     "auc": 0.674
+    },
+    "M2_GDP": {
+     "coef": 0.2547,
+     "auc": 0.5678
+    },
+    "M3_both": {
+     "P1_coef": 0.7812,
+     "P1_se": 0.7596,
+     "P1_z": 1.03,
+     "GDP_coef": -0.3628,
+     "GDP_se": 0.7969,
+     "GDP_z": -0.46,
+     "auc": 0.663
+    },
+    "M3_vs_M1_auc_gain": -0.011
+   },
+   "1906": {
+    "n": 49,
+    "n_pos": 11,
+    "M1_P1": {
+     "coef": 0.0318,
+     "auc": 0.5419
+    },
+    "M2_GDP": {
+     "coef": -0.3128,
+     "auc": 0.5789
+    },
+    "M3_both": {
+     "P1_coef": 0.5701,
+     "P1_se": 0.5451,
+     "P1_z": 1.05,
+     "GDP_coef": -0.7623,
+     "GDP_se": 0.5965,
+     "GDP_z": -1.28,
+     "auc": 0.5933
+    },
+    "M3_vs_M1_auc_gain": 0.0514
+   },
+   "1916": {
+    "n": 46,
+    "n_pos": 13,
+    "M1_P1": {
+     "coef": 0.1,
+     "auc": 0.5571
+    },
+    "M2_GDP": {
+     "coef": -0.2293,
+     "auc": 0.5781
+    },
+    "M3_both": {
+     "P1_coef": 0.56,
+     "P1_se": 0.4613,
+     "P1_z": 1.21,
+     "GDP_coef": -0.6575,
+     "GDP_se": 0.5398,
+     "GDP_z": -1.22,
+     "auc": 0.5851
+    },
+    "M3_vs_M1_auc_gain": 0.028
+   },
+   "1926": {
+    "n": 62,
+    "n_pos": 20,
+    "M1_P1": {
+     "coef": 0.6992,
+     "auc": 0.694
+    },
+    "M2_GDP": {
+     "coef": 0.2124,
+     "auc": 0.5583
+    },
+    "M3_both": {
+     "P1_coef": 0.9257,
+     "P1_se": 0.4491,
+     "P1_z": 2.06,
+     "GDP_coef": -0.3812,
+     "GDP_se": 0.4551,
+     "GDP_z": -0.84,
+     "auc": 0.7
+    },
+    "M3_vs_M1_auc_gain": 0.006
+   },
+   "1936": {
+    "n": 64,
+    "n_pos": 23,
+    "M1_P1": {
+     "coef": 0.2191,
+     "auc": 0.5668
+    },
+    "M2_GDP": {
+     "coef": -0.1437,
+     "auc": 0.5419
+    },
+    "M3_both": {
+     "P1_coef": 0.5127,
+     "P1_se": 0.3939,
+     "P1_z": 1.3,
+     "GDP_coef": -0.4789,
+     "GDP_se": 0.4339,
+     "GDP_z": -1.1,
+     "auc": 0.6034
+    },
+    "M3_vs_M1_auc_gain": 0.0366
+   },
+   "1946": {
+    "n": 53,
+    "n_pos": 20,
+    "M1_P1": {
+     "coef": 0.1472,
+     "auc": 0.5652
+    },
+    "M2_GDP": {
+     "coef": 0.1317,
+     "auc": 0.5197
+    },
+    "M3_both": {
+     "P1_coef": 0.1071,
+     "P1_se": 0.4489,
+     "P1_z": 0.24,
+     "GDP_coef": 0.0696,
+     "GDP_se": 0.4806,
+     "GDP_z": 0.14,
+     "auc": 0.5288
+    },
+    "M3_vs_M1_auc_gain": -0.0364
+   },
+   "1956": {
+    "n": 138,
+    "n_pos": 63,
+    "M1_P1": {
+     "coef": 0.4637,
+     "auc": 0.6297
+    },
+    "M2_GDP": {
+     "coef": 0.2912,
+     "auc": 0.5738
+    },
+    "M3_both": {
+     "P1_coef": 0.4148,
+     "P1_se": 0.1943,
+     "P1_z": 2.14,
+     "GDP_coef": 0.1231,
+     "GDP_se": 0.2094,
+     "GDP_z": 0.59,
+     "auc": 0.6271
+    },
+    "M3_vs_M1_auc_gain": -0.0026
+   },
+   "1966": {
+    "n": 139,
+    "n_pos": 76,
+    "M1_P1": {
+     "coef": 0.558,
+     "auc": 0.6468
+    },
+    "M2_GDP": {
+     "coef": 0.5777,
+     "auc": 0.6543
+    },
+    "M3_both": {
+     "P1_coef": 0.3694,
+     "P1_se": 0.2139,
+     "P1_z": 1.73,
+     "GDP_coef": 0.3956,
+     "GDP_se": 0.2216,
+     "GDP_z": 1.79,
+     "auc": 0.6769
+    },
+    "M3_vs_M1_auc_gain": 0.0301
+   },
+   "1976": {
+    "n": 142,
+    "n_pos": 79,
+    "M1_P1": {
+     "coef": 0.6904,
+     "auc": 0.6835
+    },
+    "M2_GDP": {
+     "coef": 0.7289,
+     "auc": 0.6968
+    },
+    "M3_both": {
+     "P1_coef": 0.4566,
+     "P1_se": 0.2165,
+     "P1_z": 2.11,
+     "GDP_coef": 0.5109,
+     "GDP_se": 0.2268,
+     "GDP_z": 2.25,
+     "auc": 0.7263
+    },
+    "M3_vs_M1_auc_gain": 0.0428
+   },
+   "1986": {
+    "n": 157,
+    "n_pos": 76,
+    "M1_P1": {
+     "coef": 0.7045,
+     "auc": 0.6909
+    },
+    "M2_GDP": {
+     "coef": 0.73,
+     "auc": 0.6954
+    },
+    "M3_both": {
+     "P1_coef": 0.4794,
+     "P1_se": 0.2191,
+     "P1_z": 2.19,
+     "GDP_coef": 0.5222,
+     "GDP_se": 0.2158,
+     "GDP_z": 2.42,
+     "auc": 0.7326
+    },
+    "M3_vs_M1_auc_gain": 0.0417
+   },
+   "1996": {
+    "n": 160,
+    "n_pos": 69,
+    "M1_P1": {
+     "coef": 1.0324,
+     "auc": 0.7542
+    },
+    "M2_GDP": {
+     "coef": 1.1573,
+     "auc": 0.7788
+    },
+    "M3_both": {
+     "P1_coef": 0.5682,
+     "P1_se": 0.2538,
+     "P1_z": 2.24,
+     "GDP_coef": 0.8264,
+     "GDP_se": 0.2449,
+     "GDP_z": 3.37,
+     "auc": 0.7965
+    },
+    "M3_vs_M1_auc_gain": 0.0423
+   }
+  },
+  "GDP_indep_coef_trend": {
+   "slope": -0.00616577915376677,
+   "p": 0.13078185189507816,
+   "r": -0.36993466672336794
+  },
+  "P1_indep_coef_trend": {
+   "slope": -0.0073263777089783285,
+   "p": 0.06199319697239406,
+   "r": -0.44840094267031755
+  }
+ },
+ "test4_diffusion": {
+  "early": {
+   "n_states": 8,
+   "curve": [
+    {
+     "year": 1816,
+     "n": 5,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1826,
+     "n": 5,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1836,
+     "n": 5,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1846,
+     "n": 6,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1856,
+     "n": 7,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1866,
+     "n": 7,
+     "n_pos": 1,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1876,
+     "n": 8,
+     "n_pos": 0,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1886,
+     "n": 8,
+     "n_pos": 1,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1896,
+     "n": 8,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1906,
+     "n": 8,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1916,
+     "n": 8,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1926,
+     "n": 8,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1936,
+     "n": 8,
+     "n_pos": 5,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1946,
+     "n": 7,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1956,
+     "n": 7,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1966,
+     "n": 7,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1976,
+     "n": 7,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1986,
+     "n": 7,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1996,
+     "n": 8,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    }
+   ],
+   "first_epoch_wealth_auc>=0.65": null,
+   "wealth_auc_trend": null
+  },
+  "mid": {
+   "n_states": 10,
+   "curve": [
+    {
+     "year": 1816,
+     "n": 3,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1826,
+     "n": 5,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1836,
+     "n": 6,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1846,
+     "n": 7,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1856,
+     "n": 6,
+     "n_pos": 1,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1866,
+     "n": 7,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1876,
+     "n": 8,
+     "n_pos": 0,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1886,
+     "n": 9,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1896,
+     "n": 9,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1906,
+     "n": 9,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1916,
+     "n": 9,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1926,
+     "n": 9,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1936,
+     "n": 9,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1946,
+     "n": 9,
+     "n_pos": 1,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1956,
+     "n": 9,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1966,
+     "n": 9,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1976,
+     "n": 10,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1986,
+     "n": 10,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1996,
+     "n": 10,
+     "n_pos": 1,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    }
+   ],
+   "first_epoch_wealth_auc>=0.65": null,
+   "wealth_auc_trend": null
+  },
+  "late": {
+   "n_states": 145,
+   "curve": [
+    {
+     "year": 1816,
+     "n": 4,
+     "n_pos": 1,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1826,
+     "n": 5,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1836,
+     "n": 7,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1846,
+     "n": 9,
+     "n_pos": 4,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1856,
+     "n": 8,
+     "n_pos": 2,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1866,
+     "n": 11,
+     "n_pos": 3,
+     "struct_auc": null,
+     "wealth_auc": null,
+     "spread": null
+    },
+    {
+     "year": 1876,
+     "n": 14,
+     "n_pos": 6,
+     "struct_auc": 0.6458,
+     "wealth_auc": 0.5,
+     "spread": 0.1458
+    },
+    {
+     "year": 1886,
+     "n": 15,
+     "n_pos": 7,
+     "struct_auc": 0.7143,
+     "wealth_auc": 0.5625,
+     "spread": 0.1518
+    },
+    {
+     "year": 1896,
+     "n": 17,
+     "n_pos": 7,
+     "struct_auc": 0.6286,
+     "wealth_auc": 0.5,
+     "spread": 0.1286
+    },
+    {
+     "year": 1906,
+     "n": 32,
+     "n_pos": 5,
+     "struct_auc": 0.6185,
+     "wealth_auc": 0.3778,
+     "spread": 0.2407
+    },
+    {
+     "year": 1916,
+     "n": 29,
+     "n_pos": 5,
+     "struct_auc": 0.625,
+     "wealth_auc": 0.4,
+     "spread": 0.225
+    },
+    {
+     "year": 1926,
+     "n": 45,
+     "n_pos": 14,
+     "struct_auc": 0.6498,
+     "wealth_auc": 0.4954,
+     "spread": 0.1544
+    },
+    {
+     "year": 1936,
+     "n": 47,
+     "n_pos": 15,
+     "struct_auc": 0.5094,
+     "wealth_auc": 0.4688,
+     "spread": 0.0406
+    },
+    {
+     "year": 1946,
+     "n": 37,
+     "n_pos": 15,
+     "struct_auc": 0.4727,
+     "wealth_auc": 0.4788,
+     "spread": -0.0061
+    },
+    {
+     "year": 1956,
+     "n": 122,
+     "n_pos": 57,
+     "struct_auc": 0.6077,
+     "wealth_auc": 0.5622,
+     "spread": 0.0455
+    },
+    {
+     "year": 1966,
+     "n": 123,
+     "n_pos": 70,
+     "struct_auc": 0.6085,
+     "wealth_auc": 0.6377,
+     "spread": -0.0292
+    },
+    {
+     "year": 1976,
+     "n": 125,
+     "n_pos": 71,
+     "struct_auc": 0.6963,
+     "wealth_auc": 0.7149,
+     "spread": -0.0186
+    },
+    {
+     "year": 1986,
+     "n": 140,
+     "n_pos": 69,
+     "struct_auc": 0.7082,
+     "wealth_auc": 0.7171,
+     "spread": -0.0089
+    },
+    {
+     "year": 1996,
+     "n": 142,
+     "n_pos": 65,
+     "struct_auc": 0.7418,
+     "wealth_auc": 0.7788,
+     "spread": -0.0371
+    }
+   ],
+   "first_epoch_wealth_auc>=0.65": 1976,
+   "wealth_auc_trend": {
+    "slope": 0.002413681318681319,
+    "p": 0.002980147731691764,
+    "r": 0.7527819831204721
+   }
+  }
+ },
+ "test5_agricultural_economies": {
+  "agricultural(ag>=25%)": {
+   "n": 50,
+   "n_pos": 22,
+   "struct_auc": 0.5958,
+   "wealth_auc": 0.6883,
+   "spread": -0.0925
+  },
+  "industrial(ag<10%)": {
+   "n": 319,
+   "n_pos": 30,
+   "struct_auc": 0.6686,
+   "wealth_auc": 0.7137,
+   "spread": -0.0451
+  },
+  "confirm_direction": false,
+  "power_caveat": "agricultural-economy sample is small and concentrated in low-data-quality regions; direction reported with caveat."
+ },
+ "test6_dysfunction_outcome": {
+  "curve": [
+   {
+    "year": 1816,
+    "n": 12,
+    "n_pos": 6,
+    "struct_auc": 0.4444,
+    "wealth_auc": 0.2222,
+    "spread": 0.2222
+   },
+   {
+    "year": 1826,
+    "n": 15,
+    "n_pos": 12,
+    "struct_auc": 0.3056,
+    "wealth_auc": 0.1389,
+    "spread": 0.1667
+   },
+   {
+    "year": 1836,
+    "n": 18,
+    "n_pos": 13,
+    "struct_auc": 0.4769,
+    "wealth_auc": 0.3692,
+    "spread": 0.1077
+   },
+   {
+    "year": 1846,
+    "n": 22,
+    "n_pos": 14,
+    "struct_auc": 0.4821,
+    "wealth_auc": 0.3571,
+    "spread": 0.125
+   },
+   {
+    "year": 1856,
+    "n": 21,
+    "n_pos": 14,
+    "struct_auc": 0.6224,
+    "wealth_auc": 0.4388,
+    "spread": 0.1837
+   },
+   {
+    "year": 1866,
+    "n": 25,
+    "n_pos": 13,
+    "struct_auc": 0.7949,
+    "wealth_auc": 0.6603,
+    "spread": 0.1346
+   },
+   {
+    "year": 1876,
+    "n": 30,
+    "n_pos": 17,
+    "struct_auc": 0.7557,
+    "wealth_auc": 0.5928,
+    "spread": 0.1629
+   },
+   {
+    "year": 1886,
+    "n": 32,
+    "n_pos": 18,
+    "struct_auc": 0.8095,
+    "wealth_auc": 0.5813,
+    "spread": 0.2282
+   },
+   {
+    "year": 1896,
+    "n": 34,
+    "n_pos": 27,
+    "struct_auc": 0.5291,
+    "wealth_auc": 0.3545,
+    "spread": 0.1746
+   },
+   {
+    "year": 1906,
+    "n": 49,
+    "n_pos": 37,
+    "struct_auc": 0.3232,
+    "wealth_auc": 0.1644,
+    "spread": 0.1588
+   },
+   {
+    "year": 1916,
+    "n": 46,
+    "n_pos": 36,
+    "struct_auc": 0.3472,
+    "wealth_auc": 0.225,
+    "spread": 0.1222
+   },
+   {
+    "year": 1926,
+    "n": 62,
+    "n_pos": 55,
+    "struct_auc": 0.6571,
+    "wealth_auc": 0.5221,
+    "spread": 0.1351
+   },
+   {
+    "year": 1936,
+    "n": 64,
+    "n_pos": 52,
+    "struct_auc": 0.5256,
+    "wealth_auc": 0.5385,
+    "spread": -0.0128
+   },
+   {
+    "year": 1946,
+    "n": 53,
+    "n_pos": 34,
+    "struct_auc": 0.7105,
+    "wealth_auc": 0.6455,
+    "spread": 0.065
+   },
+   {
+    "year": 1956,
+    "n": 138,
+    "n_pos": 89,
+    "struct_auc": 0.6568,
+    "wealth_auc": 0.626,
+    "spread": 0.0308
+   },
+   {
+    "year": 1966,
+    "n": 139,
+    "n_pos": 105,
+    "struct_auc": 0.7143,
+    "wealth_auc": 0.6739,
+    "spread": 0.0403
+   },
+   {
+    "year": 1976,
+    "n": 142,
+    "n_pos": 111,
+    "struct_auc": 0.7435,
+    "wealth_auc": 0.6975,
+    "spread": 0.0461
+   },
+   {
+    "year": 1986,
+    "n": 157,
+    "n_pos": 111,
+    "struct_auc": 0.7335,
+    "wealth_auc": 0.615,
+    "spread": 0.1186
+   },
+   {
+    "year": 1996,
+    "n": 160,
+    "n_pos": 90,
+    "struct_auc": 0.6707,
+    "wealth_auc": 0.6821,
+    "spread": -0.0113
+   }
+  ],
+  "struct_auc_trend": {
+   "slope": 0.0012941578947368425,
+   "p": 0.053460291026339514,
+   "r": 0.44957730455362493
+  },
+  "wealth_auc_trend": {
+   "slope": 0.002212771929824561,
+   "p": 0.002219215703769594,
+   "r": 0.6574831541644198
+  },
+  "struct_auc_delta": 0.2263,
+  "wealth_auc_delta": 0.4599,
+  "outcome": "composite dysfunction = conflict onset OR GDP-pc decline>=15% from peak in window",
+  "note": "Polity2/FSI components unavailable across the full 1816-1996 span; historical dysfunction here = conflict+GDP-collapse composite. Modern-only Polity/FSI dysfunction is in Finding-9-B2."
+ }
+}
