@@ -13,6 +13,19 @@
 > claims (flagged in the Caveats). The connecting thesis that ties this atlas to
 > the fragmentation physics and the institutional-erosion findings is an
 > **inference, not a measurement** — stated as such in the robustness record.
+>
+> **RETIRED to context-only (2026-07-12).** The stronger form of that inference — that
+> the modern capital system is an *engineered suppression mechanism accumulating a
+> release proportional to how long it is held* — was tested directly and **failed, by
+> reversal.** A pre-registered study (`../mi-research/docs/CAPITAL_SUPPRESSION_PREREGISTRATION.md`,
+> sha256 `cc53e559`; result `.../data/robustness/convergence/capital_suppression.json`)
+> found that in the economic domain, the longer a wealth-above-institutions gap is held,
+> the **smaller** the eventual GDP collapse (Spearman ρ = −0.218, p=0.011, negative
+> across all 18 sensitivity cells) — because long-sustained gaps mark *self-stabilizing*
+> economies, not primed fuses. **This atlas therefore stands as historical context — a
+> 6,000-year map of where capital concentrated — and NOT as a mechanism predicting a
+> coming release.** Do not cite it for the "accumulating pressure" claim; that beam was
+> removed.
 
 ## TL;DR
 Over ~6,000 years the world's dominant "capital hub" migrated from the irrigated river valleys of Mesopotamia and Egypt, through the commercial Mediterranean (Phoenicia, Athens, Rome), eastward to the true economic giants of Asia (Abbasid Baghdad, Song China, Mughal India — which together held the majority of world GDP for most of recorded history), then decisively westward in the "Great Divergence" to Atlantic Europe (Lisbon, Seville, Amsterdam, London) and finally to the United States (New York, Silicon Valley), with East Asia now re-rising — and at every stage wealth was built through some mix of three mechanisms: EXTRACTION (mining/farming), COMMERCE (trade/finance/manufacturing), and WAR-TRANSFER (conquest/plunder/tribute).

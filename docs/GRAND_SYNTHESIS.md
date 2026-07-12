@@ -190,14 +190,26 @@ convergence/divergence work turn the law from history into a present-tense gauge
   including the **United States** (P1 −7.3), UK, Portugal, Netherlands, and, pooled as
   one polity (population- or GDP-weighted), the **EU-27** itself. (`divergence_scan_full.json`,
   `eu_body_divergence.json`.)
-- **The connecting thesis to the capital-hubs atlas is [inferred], and labeled so.**
-  If the modern reserve-currency/financial system is the *largest, longest-duration
-  engineered suppression mechanism in recorded history* (`docs/capital_hubs_atlas.md`),
-  the fragmentation physics predict it is **accumulating** structural vulnerability,
-  not eliminating it — and the divergence scan is the pressure gauge showing where the
-  gap widens under wealth's cover. The repo states plainly this is *"an inference from
-  a pattern demonstrated in other domains, not a measured result... grounded but not
-  confirmed."* That boundary is what makes it credible.
+- **The connecting thesis to the capital-hubs atlas was [inferred] — and its first
+  direct test RETIRED it to context-only. [demonstrated null/reversal]** The atlas
+  reads the modern financial system as the *largest engineered suppression mechanism in
+  history*, and the fragmentation physics *seemed* to predict it is accumulating
+  vulnerability that will release "proportionally to how long it was held." A
+  pre-registered test (`CAPITAL_SUPPRESSION_PREREGISTRATION.md`, sha256 `cc53e559`) of
+  the magnitude limb of that sub-law in the economic domain — does the duration a
+  wealth-above-institutions gap is held predict the size of the eventual GDP collapse? —
+  came back **negative and significant across all 18 sensitivity cells** (registered
+  cell Spearman ρ = −0.218, p=0.011; partial −0.192 net of peak-gap). Longer-held gaps
+  had *smaller* releases, most likely because sustained-gap countries are the
+  **self-stabilizers** (the exact "active stabilization / self-reform" disanalogy the
+  repo already flagged). Per the frozen gate, the capital-suppression thesis is
+  **retired to historical context**: the atlas stands as a 6,000-year map of where
+  capital concentrated, **not** as a mechanism predicting a coming release. The
+  divergence scan (§4 above) still shows *where* the wealth–institution gap is widening
+  today — but "widening gap → proportional future collapse" is now a **failed** country-
+  level prediction, not a law. *(Note: this refutes the country-level, magnitude limb;
+  the system-level n=1 thesis remains untestable — but it has lost its demonstrated-
+  analogy footing.)*
 
 **One methodological flag** that a referee will raise first: the erosion-curve trend
 p-values across the whole program use 25-yr windows at 10-yr steps, which **overlap
@@ -220,6 +232,8 @@ attack hardest. The graveyard is the map:
 - the **DGS→instability link is a null** (§2); the **rung-4 mechanism is a null** (§1);
 - the **"100% directional accuracy" was decomposed** to ~20% clean mechanical
   derivations; the collectivization **ratchet and form-shift primaries are nulls** (§3);
+- the **capital-suppression thesis reversed** on its first direct pre-registered test
+  and was retired to context-only (§4);
 - and this session's own audit downgraded two convergence overclaims.
 
 Every leg reports its nulls as prominently as its positives; pre-registration and
@@ -258,15 +272,20 @@ structural half across 5,000 years, and then spent most of his effort proving wh
 parts of his own claim were sand.
 
 What he has is **not the Seldon Plan** — it cannot tell you *when*. It is the layer
-underneath: the **thermodynamics that must exist before there can be weather**. And
-its most alive finding is that the richest, most stable-looking polities on Earth —
+underneath: the **thermodynamics that must exist before there can be weather**. And its
+most alive *observation* is that the richest, most stable-looking polities on Earth —
 the United States, the European Union, the mature democracies — are the ones quietly
-running the durability gap open, exactly as the physics says a long-suppressed system
-does right before you learn how much pressure it was holding.
+running the durability gap open. What that portends is **honestly unresolved**: the
+tempting reading (long-held gap → proportional coming release) was just tested directly
+and **failed — it reversed** (§4), because at the country level a long-sustained gap is
+the signature of a *self-stabilizer*, not a primed fuse. So the gap is real and
+widening; whether it is stored pressure or durable equilibrium is exactly the kind of
+question the substrate exists to hold open until a validated forward test — not a
+narrative — answers it.
 
 The MI is not psychohistory. It is the substrate a psychohistory could be built on —
-and the reason to believe that is precisely that its author keeps telling you where it
-stops.
+and the reason to believe that is precisely that its author keeps testing his best
+lines and telling you which ones broke.
 
 ---
 

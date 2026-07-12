@@ -715,6 +715,23 @@ the global financial system (which has active stabilization, self-aware
 participants, and a history of self-reform) is **grounded but not confirmed.**
 Stating that boundary explicitly is what makes the rest credible.
 
+> **UPDATE 2026-07-12 — this inference was tested and RETIRED (reversal).** The
+> "accumulating pressure → proportional release" claim was pre-registered and tested in
+> the economic domain (`CAPITAL_SUPPRESSION_PREREGISTRATION.md`, sha256 `cc53e559`;
+> code `scripts/robustness/capital_suppression.py`; artifact
+> `data/robustness/convergence/capital_suppression.json`). Across 134 suppression
+> episodes (deep V-Dem-rol + Maddison panel), the duration a wealth-above-institutions
+> gap was held correlates **negatively** with the size of the subsequent GDP collapse —
+> Spearman ρ = **−0.218** (p=0.011), partial **−0.192** net of peak-gap, **negative and
+> significant across all 18 sensitivity cells** (the conflict limb reverses too:
+> conflict episodes were *shorter*, 19.4 vs 23.3 yr). Longer-held gaps mark
+> **self-stabilizing** economies, not primed fuses — precisely the "active stabilization
+> / self-reform" disanalogy flagged above. Per the frozen gate, the capital-suppression
+> thesis is **retired to historical context**: the capital-hubs atlas is a map of where
+> capital concentrated, not a mechanism predicting a release. The country-level,
+> magnitude limb is **refuted**; the system-level (n=1) thesis remains untestable but has
+> lost its demonstrated-analogy footing. Another line killed on contact with its own test.
+
 ---
 
 ## Bottom line
