@@ -1,0 +1,606 @@
+{
+ "prereg_sha256": "ed1c717c",
+ "groups": {
+  "top20": [
+   "New Zealand",
+   "Denmark",
+   "Netherlands",
+   "Singapore",
+   "Norway",
+   "Finland",
+   "Sweden",
+   "Switzerland",
+   "Luxembourg",
+   "United Kingdom",
+   "Canada",
+   "Austria",
+   "Germany",
+   "Australia",
+   "United States",
+   "Ireland",
+   "Cayman Islands",
+   "Belgium",
+   "Liechtenstein",
+   "Iceland"
+  ],
+  "middle_41_60": [
+   "Czechia",
+   "Uruguay",
+   "Greece",
+   "Poland",
+   "Grenada",
+   "Namibia",
+   "Korea, Rep.",
+   "Estonia",
+   "Botswana",
+   "Seychelles",
+   "Malaysia",
+   "Mauritius",
+   "Trinidad and Tobago",
+   "United Arab Emirates",
+   "South Africa",
+   "Costa Rica",
+   "Kuwait",
+   "Lithuania",
+   "Maldives",
+   "Slovak Republic"
+  ],
+  "bottom20": [
+   "Haiti",
+   "Rwanda",
+   "Central African Republic",
+   "Sierra Leone",
+   "Comoros",
+   "Azerbaijan",
+   "Uzbekistan",
+   "Guinea-Bissau",
+   "Sudan",
+   "Burundi",
+   "Turkmenistan",
+   "Equatorial Guinea",
+   "Myanmar",
+   "Tajikistan",
+   "Korea, Dem. People's Rep.",
+   "Iraq",
+   "Congo, Dem. Rep.",
+   "Liberia",
+   "Afghanistan",
+   "Somalia, Fed. Rep."
+  ]
+ },
+ "step4_ceiling_tax_primary": {
+  "n_top": 17,
+  "n_mid": 16,
+  "top_mean_gap": 3.38,
+  "top_median": 3.15,
+  "mid_mean_gap": -0.96,
+  "mid_median": 8.11,
+  "mannwhitney_p_top_more_negative": 0.4641,
+  "welch_t": 0.65,
+  "welch_p": 0.5211,
+  "cliffs_delta": -0.022,
+  "ceiling_bias_confirmed": false
+ },
+ "step4_ceiling_basket_robustness": {
+  "n_top": 18,
+  "n_mid": 19,
+  "top_mean_gap": -5.16,
+  "top_median": -2.71,
+  "mid_mean_gap": -3.83,
+  "mid_median": -1.09,
+  "mannwhitney_p_top_more_negative": 0.4697,
+  "welch_t": -0.2,
+  "welch_p": 0.8393,
+  "cliffs_delta": -0.018,
+  "ceiling_bias_confirmed": false
+ },
+ "step5_profiles": {
+  "NLD": {
+   "name": "Netherlands",
+   "rank_1996": 3,
+   "trajectory": {
+    "1996": {
+     "wgi": 87.1,
+     "tax_pct": 75.7,
+     "basket_pct": 72.4
+    },
+    "2004": {
+     "wgi": 86.4,
+     "tax_pct": 68.1,
+     "basket_pct": 79.9
+    },
+    "2012": {
+     "wgi": 87.1,
+     "tax_pct": 74.8,
+     "basket_pct": 81.6
+    },
+    "2018": {
+     "wgi": 87.9,
+     "tax_pct": 83.8,
+     "basket_pct": 86.5
+    },
+    "2024": {
+     "wgi": 85.1,
+     "tax_pct": 89.3,
+     "basket_pct": 86.8
+    }
+   },
+   "perception_gap_tax": -15.66,
+   "raw_tax_pct_gdp": [
+    21.4,
+    25.3
+   ],
+   "raw_edu_pct_gdp": [
+    4.5,
+    5.2
+   ]
+  },
+  "DNK": {
+   "name": "Denmark",
+   "rank_1996": 2,
+   "trajectory": {
+    "1996": {
+     "wgi": 87.3,
+     "tax_pct": 99.0,
+     "basket_pct": 98.8
+    },
+    "2004": {
+     "wgi": 90.2,
+     "tax_pct": 100.0,
+     "basket_pct": 96.1
+    },
+    "2012": {
+     "wgi": 89.2,
+     "tax_pct": 98.5,
+     "basket_pct": 96.8
+    },
+    "2018": {
+     "wgi": 88.6,
+     "tax_pct": 100.0,
+     "basket_pct": 97.1
+    },
+    "2024": {
+     "wgi": 89.9,
+     "tax_pct": 98.4,
+     "basket_pct": 95.9
+    }
+   },
+   "perception_gap_tax": 3.21,
+   "raw_tax_pct_gdp": [
+    32.0,
+    33.4
+   ],
+   "raw_edu_pct_gdp": [
+    7.9,
+    6.4
+   ]
+  },
+  "NZL": {
+   "name": "New Zealand",
+   "rank_1996": 1,
+   "trajectory": {
+    "1996": {
+     "wgi": 88.7,
+     "tax_pct": null,
+     "basket_pct": 92.3
+    },
+    "2004": {
+     "wgi": 87.8,
+     "tax_pct": 99.1,
+     "basket_pct": 93.4
+    },
+    "2012": {
+     "wgi": 89.1,
+     "tax_pct": 95.6,
+     "basket_pct": 86.7
+    },
+    "2018": {
+     "wgi": 87.2,
+     "tax_pct": 96.3,
+     "basket_pct": 88.0
+    },
+    "2024": {
+     "wgi": 86.0,
+     "tax_pct": 97.5,
+     "basket_pct": 84.3
+    }
+   },
+   "perception_gap_tax": null,
+   "raw_tax_pct_gdp": [
+    null,
+    29.5
+   ],
+   "raw_edu_pct_gdp": [
+    6.4,
+    5.2
+   ]
+  },
+  "FIN": {
+   "name": "Finland",
+   "rank_1996": 6,
+   "trajectory": {
+    "1996": {
+     "wgi": 86.1,
+     "tax_pct": 80.6,
+     "basket_pct": 87.1
+    },
+    "2004": {
+     "wgi": 90.8,
+     "tax_pct": 77.0,
+     "basket_pct": 85.3
+    },
+    "2012": {
+     "wgi": 90.8,
+     "tax_pct": 74.1,
+     "basket_pct": 88.9
+    },
+    "2018": {
+     "wgi": 90.4,
+     "tax_pct": 74.3,
+     "basket_pct": 87.0
+    },
+    "2024": {
+     "wgi": 89.1,
+     "tax_pct": 90.2,
+     "basket_pct": 94.0
+    }
+   },
+   "perception_gap_tax": -6.53,
+   "raw_tax_pct_gdp": [
+    21.9,
+    25.3
+   ],
+   "raw_edu_pct_gdp": [
+    6.9,
+    6.4
+   ]
+  },
+  "NOR": {
+   "name": "Norway",
+   "rank_1996": 5,
+   "trajectory": {
+    "1996": {
+     "wgi": 86.9,
+     "tax_pct": 88.3,
+     "basket_pct": 92.1
+    },
+    "2004": {
+     "wgi": 85.5,
+     "tax_pct": 95.6,
+     "basket_pct": 93.5
+    },
+    "2012": {
+     "wgi": 88.7,
+     "tax_pct": 94.1,
+     "basket_pct": 92.3
+    },
+    "2018": {
+     "wgi": 88.6,
+     "tax_pct": 80.1,
+     "basket_pct": 88.3
+    },
+    "2024": {
+     "wgi": 86.6,
+     "tax_pct": 88.5,
+     "basket_pct": 85.2
+    }
+   },
+   "perception_gap_tax": -0.5,
+   "raw_tax_pct_gdp": [
+    24.1,
+    24.5
+   ],
+   "raw_edu_pct_gdp": [
+    7.1,
+    5.4
+   ]
+  },
+  "CHE": {
+   "name": "Switzerland",
+   "rank_1996": 8,
+   "trajectory": {
+    "1996": {
+     "wgi": 85.7,
+     "tax_pct": 13.6,
+     "basket_pct": 44.8
+    },
+    "2004": {
+     "wgi": 87.2,
+     "tax_pct": 11.5,
+     "basket_pct": 61.4
+    },
+    "2012": {
+     "wgi": 88.5,
+     "tax_pct": 11.1,
+     "basket_pct": 56.2
+    },
+    "2018": {
+     "wgi": 90.0,
+     "tax_pct": 12.5,
+     "basket_pct": 58.9
+    },
+    "2024": {
+     "wgi": 86.4,
+     "tax_pct": 11.5,
+     "basket_pct": 58.8
+    }
+   },
+   "perception_gap_tax": 2.8,
+   "raw_tax_pct_gdp": [
+    8.2,
+    9.5
+   ],
+   "raw_edu_pct_gdp": [
+    4.9,
+    4.9
+   ]
+  },
+  "SWE": {
+   "name": "Sweden",
+   "rank_1996": 7,
+   "trajectory": {
+    "1996": {
+     "wgi": 86.0,
+     "tax_pct": 98.1,
+     "basket_pct": 95.5
+    },
+    "2004": {
+     "wgi": 87.1,
+     "tax_pct": 97.3,
+     "basket_pct": 95.6
+    },
+    "2012": {
+     "wgi": 89.8,
+     "tax_pct": 94.8,
+     "basket_pct": 94.6
+    },
+    "2018": {
+     "wgi": 87.6,
+     "tax_pct": 97.1,
+     "basket_pct": 98.0
+    },
+    "2024": {
+     "wgi": 85.4,
+     "tax_pct": 94.3,
+     "basket_pct": 95.0
+    }
+   },
+   "perception_gap_tax": 3.15,
+   "raw_tax_pct_gdp": [
+    27.3,
+    27.2
+   ],
+   "raw_edu_pct_gdp": [
+    6.8,
+    7.3
+   ]
+  },
+  "DEU": {
+   "name": "Germany",
+   "rank_1996": 13,
+   "trajectory": {
+    "1996": {
+     "wgi": 83.6,
+     "tax_pct": 25.2,
+     "basket_pct": 46.8
+    },
+    "2004": {
+     "wgi": 82.2,
+     "tax_pct": 21.2,
+     "basket_pct": 59.9
+    },
+    "2012": {
+     "wgi": 82.6,
+     "tax_pct": 27.4,
+     "basket_pct": 63.3
+    },
+    "2018": {
+     "wgi": 85.2,
+     "tax_pct": 26.5,
+     "basket_pct": 65.2
+    },
+    "2024": {
+     "wgi": 82.1,
+     "tax_pct": 18.0,
+     "basket_pct": 63.9
+    }
+   },
+   "perception_gap_tax": 5.79,
+   "raw_tax_pct_gdp": [
+    10.9,
+    10.9
+   ],
+   "raw_edu_pct_gdp": [
+    4.5,
+    5.2
+   ]
+  },
+  "GBR": {
+   "name": "United Kingdom",
+   "rank_1996": 10,
+   "trajectory": {
+    "1996": {
+     "wgi": 85.2,
+     "tax_pct": 85.4,
+     "basket_pct": 75.5
+    },
+    "2004": {
+     "wgi": 84.0,
+     "tax_pct": 90.3,
+     "basket_pct": 84.2
+    },
+    "2012": {
+     "wgi": 80.5,
+     "tax_pct": 91.1,
+     "basket_pct": 87.9
+    },
+    "2018": {
+     "wgi": 82.3,
+     "tax_pct": 92.6,
+     "basket_pct": 88.3
+    },
+    "2024": {
+     "wgi": 77.6,
+     "tax_pct": 93.4,
+     "basket_pct": 88.5
+    }
+   },
+   "perception_gap_tax": -15.58,
+   "raw_tax_pct_gdp": [
+    23.0,
+    26.9
+   ],
+   "raw_edu_pct_gdp": [
+    4.4,
+    5.9
+   ]
+  },
+  "USA": {
+   "name": "United States",
+   "rank_1996": 15,
+   "trajectory": {
+    "1996": {
+     "wgi": 81.7,
+     "tax_pct": 29.1,
+     "basket_pct": 29.1
+    },
+    "2004": {
+     "wgi": 81.9,
+     "tax_pct": 15.9,
+     "basket_pct": 53.5
+    },
+    "2012": {
+     "wgi": 78.2,
+     "tax_pct": 15.6,
+     "basket_pct": 59.4
+    },
+    "2018": {
+     "wgi": 78.0,
+     "tax_pct": 16.9,
+     "basket_pct": 59.7
+    },
+    "2024": {
+     "wgi": 74.3,
+     "tax_pct": 16.4,
+     "basket_pct": 62.1
+    }
+   },
+   "perception_gap_tax": 5.39,
+   "raw_tax_pct_gdp": [
+    11.4,
+    10.8
+   ],
+   "raw_edu_pct_gdp": [
+    null,
+    5.4
+   ]
+  }
+ },
+ "step6_divergence_recount": {
+  "wgi_decliners": [
+   "Argentina",
+   "Austria",
+   "Belgium",
+   "Bahamas, The",
+   "Belarus",
+   "Botswana",
+   "Canada",
+   "Chile",
+   "Cyprus",
+   "Spain",
+   "France",
+   "United Kingdom",
+   "Greece",
+   "Hungary",
+   "Israel",
+   "Lebanon",
+   "Sri Lanka",
+   "Lesotho",
+   "Morocco",
+   "Madagascar",
+   "Maldives",
+   "Mexico",
+   "Malta",
+   "Mongolia",
+   "Namibia",
+   "Nicaragua",
+   "Netherlands",
+   "Nepal",
+   "Papua New Guinea",
+   "Portugal",
+   "Eswatini",
+   "Thailand",
+   "Turkiye",
+   "United States",
+   "South Africa"
+  ],
+  "still_decline_on_revealed": [
+   "Austria",
+   "Belgium",
+   "Bahamas, The",
+   "Belarus",
+   "Canada",
+   "Spain",
+   "Hungary",
+   "Israel",
+   "Lebanon",
+   "Sri Lanka",
+   "Papua New Guinea",
+   "Eswatini",
+   "Thailand",
+   "United States"
+  ],
+  "flip_to_stable_on_revealed": [
+   "Argentina",
+   "Botswana",
+   "Chile",
+   "Cyprus",
+   "France",
+   "United Kingdom",
+   "Greece",
+   "Lesotho",
+   "Morocco",
+   "Madagascar",
+   "Maldives",
+   "Mexico",
+   "Malta",
+   "Mongolia",
+   "Namibia",
+   "Nicaragua",
+   "Netherlands",
+   "Nepal",
+   "Portugal",
+   "Turkiye",
+   "South Africa"
+  ],
+  "n_wgi_decliners": 35,
+  "n_still_decline_revealed": 14,
+  "n_flip_to_stable": 21,
+  "mature_focus": {
+   "NLD": {
+    "dWGI": -2.0,
+    "dTax_pct": 13.6
+   },
+   "GBR": {
+    "dWGI": -7.6,
+    "dTax_pct": 8.0
+   },
+   "FRA": {
+    "dWGI": -2.7,
+    "dTax_pct": 6.8
+   },
+   "DEU": {
+    "dWGI": -1.4,
+    "dTax_pct": -7.2
+   },
+   "USA": {
+    "dWGI": -7.3,
+    "dTax_pct": -12.7
+   }
+  }
+ },
+ "step7_floor_effect": {
+  "note": "insufficient",
+  "n_bottom": 4
+ }
+}
