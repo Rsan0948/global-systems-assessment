@@ -185,11 +185,17 @@ convergence/divergence work turn the law from history into a present-tense gauge
   fragile p-values." GDP became a **complementary facet** of state capacity, not a
   pure proxy. (`CONVERGENCE_RESULTS.md`.)
 - **The dangerous-divergence configuration is live and concentrated in the wealthy
-  core. [demonstrated, cross-sectional]** Of ~198 economies, **112 show wealth rising
-  while institutional quality stagnates/declines; 91 are in active decline** —
-  including the **United States** (P1 −7.3), UK, Portugal, Netherlands, and, pooled as
-  one polity (population- or GDP-weighted), the **EU-27** itself. (`divergence_scan_full.json`,
-  `eu_body_divergence.json`.)
+  core. [demonstrated, cross-sectional — but partly measurement-sensitive]** Of ~198
+  economies, **112 show wealth rising while institutional quality stagnates/declines; 91
+  are in active decline** — including the **United States** (P1 −7.3), UK, Portugal,
+  Netherlands, and, pooled as one polity, the **EU-27** itself (`divergence_scan_full.json`,
+  `eu_body_divergence.json`). **Caveat added by Finding 16 (WGI ceiling-bias test):** the
+  wealthy-democracy tail is measurement-sensitive — 21 of 35 WGI decliners flip to stable
+  on revealed tax revenue, and the **Netherlands and UK declines are largely *perceptual*
+  (WGI slipped while tax collection and education spending rose)**, not functional. But
+  the **US and Germany decline on *both* perception and revealed function** — those flags
+  survive. There is **no systematic WGI ceiling bias** (the group test is null); the
+  divergence is real but *country-specific*, and the sharpest cases hold.
 - **The connecting thesis to the capital-hubs atlas was [inferred] — and its first
   direct test RETIRED it to context-only. [demonstrated null/reversal]** The atlas
   reads the modern financial system as the *largest engineered suppression mechanism in

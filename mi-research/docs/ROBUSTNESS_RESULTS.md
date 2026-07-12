@@ -30,6 +30,7 @@
 | Inequality / distribution dimension — Finding 13 (registered null; bivariate-only, longitudinal reversed) | ✅ done | (this branch) |
 | Variance compression + conflict-type shift — Finding 14 (A fails gate, B partial; erosion reframed as wealth catching up) | ✅ done | (this branch) |
 | Convergence confirmation + durability — Finding 15 (gate passes; wealth-catching-up confirmed, mechanism = complementary facet; durable today) | ✅ done | (this branch) |
+| WGI ceiling-bias — Finding 16 (systematic effect NULL; but NL/UK declines largely perceptual, US/DE corroborated) | ✅ done | (this branch) |
 | Ordinality independent accuracy; J-only out-of-time isolation | ⏳ open | |
 
 ---
@@ -653,6 +654,54 @@ corrected to "no force significantly decouples today," which strengthens robustn
 complementary-facets survives (VIF 1.5–1.7, jackknife-stable). Net: the core thesis is unchanged
 and the "institutions did not weaken" half is **stronger** (struct never declines on any cut);
 the false precision is removed. Audit code `scripts/robustness/convergence_audit.py`.
+
+## Finding 16 — WGI does NOT systematically overstate decline at the top — but the mature-democracy divergence is heterogeneous (Netherlands/UK largely perceptual, US/Germany corroborated)
+
+The divergence scan (Finding 15 downstream) flagged wealthy democracies — Netherlands,
+UK, US — as running the durability gap open on **WGI-perception** P1. A pre-registered
+test (`CEILING_BIAS_PREREGISTRATION.md`, sha256 `ed1c717c`) asked whether that top-tier
+decline is a **perception ceiling artifact**: near a perceived-perfect ceiling, a salient
+scandal produces an outsized *perception* drop even when *function* is unchanged. Revealed-
+outcome proxies (**tax revenue %GDP primary**; education expenditure + LPI robustness; WB
+Ease-of-Doing-Business retired from the API, documented gap), cross-sectionally
+percentile-ranked onto WGI's 0–100 scale; perception gap = ΔWGI − Δrevealed, 1996→2024.
+
+**Step 4 (gate) — no systematic ceiling bias.** Top-20 (by 1996 P1) perception gap is
+**not** distinguishable from the middle group (ranks 41–60): tax +3.4 vs −1.0 (Mann-
+Whitney p=0.46, Cliff δ=−0.02); basket −5.2 vs −3.8 (p=0.47, δ=−0.02). WGI is **not**
+uniformly biased toward overstating decline at the top. Registered gate: **NOT confirmed.**
+
+**But the top tier is highly heterogeneous, and for the flagged cases the mechanism
+operates strongly.** The Netherlands perception gap is **−15.7** and the UK **−15.6**: WGI
+slipped (NL −2.0, UK −7.6) while their revealed function was **flat-to-rising** (raw tax
+21.4→25.3 / 23.0→26.9 %GDP; education up; tax-percentile NL +13.6, UK +8.0). Their
+divergence-scan declines are **largely perceptual, not functional**. By contrast the
+**United States (+5.4) and Germany (+5.8)** decline on **both** perception *and* revealed
+tax (US ΔtaxPctile −12.7, DE −7.2) — their declines are **corroborated, not artifacts**;
+if anything WGI understates them. Denmark/Sweden/Switzerland/Norway sit near zero (stable
+on both). So the top group has **high variance in perception gap with no mean shift** —
+the accurate picture is country-specific divergence, not an instrument-wide ceiling.
+
+**Step 6 — the divergence scan is measurement-sensitive at the margin.** Of 35 WGI
+decliners (ΔWGI<−2 with tax data), **21 flip to stable/improving** on revealed tax (incl.
+NL, UK, France, Portugal, Chile, Greece) while **14 still decline** — and the sharpest
+cases (US, Germany) are among those that survive. So the *tail* of the mature-democracy
+divergence softens under revealed outcomes, but its *core* (US, Germany) stands.
+
+**Honest bounds.** Tax revenue is **policy-contaminated** (a country can raise tax %GDP by
+raising rates, independent of institutional quality) — so "NL is functionally improving"
+is suggestive, not proven; the safe claim is that NL's WGI decline is **not corroborated**
+by the primary revealed proxy. The **floor effect (Step 7) is untestable** — only 4 of the
+bottom-20 report tax revenue (poor states don't). Both WGI and revealed outcomes are
+imperfect proxies for the same latent construct; neither is ground truth.
+
+**Impact on prior work (stated plainly):** my own divergence scan's **Netherlands flag is
+the one most likely to be a perception artifact** (revise toward "functionally stable,
+perceptually declining"); the **US flag survives** the revealed-outcome check. Epistemic
+status: **registered null on the systematic hypothesis; a demonstrated country-level
+heterogeneity finding about the WGI instrument.** Write-up in
+`data/robustness/convergence/ceiling_bias.json`; code `scripts/robustness/ceiling_bias.py`;
+pre-registration `docs/CEILING_BIAS_PREREGISTRATION.md`.
 
 ---
 
