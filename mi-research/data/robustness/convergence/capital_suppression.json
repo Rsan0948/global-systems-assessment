@@ -1,0 +1,1396 @@
+{
+ "prereg_sha256": "cc53e559",
+ "n_countries": 157,
+ "registered_cell(0.75,5,15)": {
+  "n": 134,
+  "spearman_rho": -0.218,
+  "spearman_p": 0.0115,
+  "partial_rho_ctrl_peakgap": -0.192,
+  "partial_p": 0.0259,
+  "median_duration": 17.0,
+  "mean_drawdown": 16.3
+ },
+ "test2_political": {
+  "n_conflict": 50,
+  "n_none": 84,
+  "mean_dur_conflict": 19.4,
+  "mean_dur_none": 23.3,
+  "mannwhitney_p_greater": 0.9172
+ },
+ "sensitivity_grid": [
+  {
+   "gap_thresh": 0.5,
+   "min_len": 3,
+   "horizon": 10,
+   "n": 180,
+   "rho": -0.194,
+   "p": 0.0092,
+   "partial_rho": -0.238
+  },
+  {
+   "gap_thresh": 0.5,
+   "min_len": 3,
+   "horizon": 15,
+   "n": 180,
+   "rho": -0.172,
+   "p": 0.0207,
+   "partial_rho": -0.181
+  },
+  {
+   "gap_thresh": 0.5,
+   "min_len": 3,
+   "horizon": 20,
+   "n": 180,
+   "rho": -0.178,
+   "p": 0.0168,
+   "partial_rho": -0.183
+  },
+  {
+   "gap_thresh": 0.5,
+   "min_len": 5,
+   "horizon": 10,
+   "n": 150,
+   "rho": -0.271,
+   "p": 0.0008,
+   "partial_rho": -0.296
+  },
+  {
+   "gap_thresh": 0.5,
+   "min_len": 5,
+   "horizon": 15,
+   "n": 150,
+   "rho": -0.248,
+   "p": 0.0022,
+   "partial_rho": -0.24
+  },
+  {
+   "gap_thresh": 0.5,
+   "min_len": 5,
+   "horizon": 20,
+   "n": 150,
+   "rho": -0.264,
+   "p": 0.0011,
+   "partial_rho": -0.26
+  },
+  {
+   "gap_thresh": 0.75,
+   "min_len": 3,
+   "horizon": 10,
+   "n": 153,
+   "rho": -0.155,
+   "p": 0.0562,
+   "partial_rho": -0.16
+  },
+  {
+   "gap_thresh": 0.75,
+   "min_len": 3,
+   "horizon": 15,
+   "n": 153,
+   "rho": -0.191,
+   "p": 0.018,
+   "partial_rho": -0.168
+  },
+  {
+   "gap_thresh": 0.75,
+   "min_len": 3,
+   "horizon": 20,
+   "n": 153,
+   "rho": -0.222,
+   "p": 0.0059,
+   "partial_rho": -0.198
+  },
+  {
+   "gap_thresh": 0.75,
+   "min_len": 5,
+   "horizon": 10,
+   "n": 134,
+   "rho": -0.2,
+   "p": 0.0205,
+   "partial_rho": -0.191
+  },
+  {
+   "gap_thresh": 0.75,
+   "min_len": 5,
+   "horizon": 15,
+   "n": 134,
+   "rho": -0.218,
+   "p": 0.0115,
+   "partial_rho": -0.192
+  },
+  {
+   "gap_thresh": 0.75,
+   "min_len": 5,
+   "horizon": 20,
+   "n": 134,
+   "rho": -0.256,
+   "p": 0.0028,
+   "partial_rho": -0.229
+  },
+  {
+   "gap_thresh": 1.0,
+   "min_len": 3,
+   "horizon": 10,
+   "n": 130,
+   "rho": -0.115,
+   "p": 0.1943,
+   "partial_rho": -0.209
+  },
+  {
+   "gap_thresh": 1.0,
+   "min_len": 3,
+   "horizon": 15,
+   "n": 130,
+   "rho": -0.117,
+   "p": 0.1854,
+   "partial_rho": -0.192
+  },
+  {
+   "gap_thresh": 1.0,
+   "min_len": 3,
+   "horizon": 20,
+   "n": 130,
+   "rho": -0.134,
+   "p": 0.1295,
+   "partial_rho": -0.207
+  },
+  {
+   "gap_thresh": 1.0,
+   "min_len": 5,
+   "horizon": 10,
+   "n": 106,
+   "rho": -0.189,
+   "p": 0.052,
+   "partial_rho": -0.224
+  },
+  {
+   "gap_thresh": 1.0,
+   "min_len": 5,
+   "horizon": 15,
+   "n": 106,
+   "rho": -0.203,
+   "p": 0.0371,
+   "partial_rho": -0.217
+  },
+  {
+   "gap_thresh": 1.0,
+   "min_len": 5,
+   "horizon": 20,
+   "n": 106,
+   "rho": -0.199,
+   "p": 0.0412,
+   "partial_rho": -0.216
+  }
+ ],
+ "grid_positive_fraction": 0.0,
+ "gate_registered_pass": false,
+ "grid_directionally_stable": false,
+ "VERDICT": "RETIRE-to-context-only",
+ "episodes": [
+  {
+   "iso": "VEN",
+   "start": 1848,
+   "end": 1862,
+   "duration": 15,
+   "peak_gap": 1.504,
+   "drawdown_pct": 15.29,
+   "conflict": 1
+  },
+  {
+   "iso": "VEN",
+   "start": 1868,
+   "end": 1936,
+   "duration": 69,
+   "peak_gap": 1.741,
+   "drawdown_pct": 16.1,
+   "conflict": 0
+  },
+  {
+   "iso": "VEN",
+   "start": 1945,
+   "end": 1967,
+   "duration": 23,
+   "peak_gap": 2.437,
+   "drawdown_pct": 12.83,
+   "conflict": 1
+  },
+  {
+   "iso": "VEN",
+   "start": 1974,
+   "end": 1979,
+   "duration": 6,
+   "peak_gap": 0.924,
+   "drawdown_pct": 25.59,
+   "conflict": 1
+  },
+  {
+   "iso": "VEN",
+   "start": 1990,
+   "end": 1995,
+   "duration": 6,
+   "peak_gap": 0.831,
+   "drawdown_pct": 21.26,
+   "conflict": 0
+  },
+  {
+   "iso": "VEN",
+   "start": 1998,
+   "end": 2022,
+   "duration": 25,
+   "peak_gap": 2.168,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "MEX",
+   "start": 1895,
+   "end": 1931,
+   "duration": 37,
+   "peak_gap": 1.744,
+   "drawdown_pct": 16.67,
+   "conflict": 0
+  },
+  {
+   "iso": "MEX",
+   "start": 1933,
+   "end": 1938,
+   "duration": 6,
+   "peak_gap": 0.878,
+   "drawdown_pct": 2.81,
+   "conflict": 0
+  },
+  {
+   "iso": "MEX",
+   "start": 1942,
+   "end": 1994,
+   "duration": 53,
+   "peak_gap": 1.515,
+   "drawdown_pct": 7.24,
+   "conflict": 1
+  },
+  {
+   "iso": "ESP",
+   "start": 1823,
+   "end": 1833,
+   "duration": 11,
+   "peak_gap": 1.328,
+   "drawdown_pct": 6.22,
+   "conflict": 1
+  },
+  {
+   "iso": "ESP",
+   "start": 1923,
+   "end": 1930,
+   "duration": 8,
+   "peak_gap": 0.96,
+   "drawdown_pct": 32.81,
+   "conflict": 1
+  },
+  {
+   "iso": "ESP",
+   "start": 1951,
+   "end": 1974,
+   "duration": 24,
+   "peak_gap": 1.026,
+   "drawdown_pct": 0.79,
+   "conflict": 1
+  },
+  {
+   "iso": "GBR",
+   "start": 1820,
+   "end": 1870,
+   "duration": 51,
+   "peak_gap": 1.179,
+   "drawdown_pct": 2.76,
+   "conflict": 0
+  },
+  {
+   "iso": "CHL",
+   "start": 1974,
+   "end": 1981,
+   "duration": 8,
+   "peak_gap": 1.073,
+   "drawdown_pct": 18.67,
+   "conflict": 0
+  },
+  {
+   "iso": "NLD",
+   "start": 1820,
+   "end": 1847,
+   "duration": 28,
+   "peak_gap": 1.378,
+   "drawdown_pct": 7.85,
+   "conflict": 0
+  },
+  {
+   "iso": "COL",
+   "start": 1949,
+   "end": 1957,
+   "duration": 9,
+   "peak_gap": 1.217,
+   "drawdown_pct": 0.73,
+   "conflict": 1
+  },
+  {
+   "iso": "CHN",
+   "start": 2005,
+   "end": 2022,
+   "duration": 18,
+   "peak_gap": 1.467,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "DEU",
+   "start": 1933,
+   "end": 1944,
+   "duration": 12,
+   "peak_gap": 2.612,
+   "drawdown_pct": 63.56,
+   "conflict": 0
+  },
+  {
+   "iso": "USA",
+   "start": 1879,
+   "end": 1887,
+   "duration": 9,
+   "peak_gap": 0.851,
+   "drawdown_pct": 11.11,
+   "conflict": 0
+  },
+  {
+   "iso": "USA",
+   "start": 1897,
+   "end": 1914,
+   "duration": 18,
+   "peak_gap": 1.07,
+   "drawdown_pct": 7.61,
+   "conflict": 1
+  },
+  {
+   "iso": "USA",
+   "start": 1916,
+   "end": 1929,
+   "duration": 14,
+   "peak_gap": 1.012,
+   "drawdown_pct": 32.67,
+   "conflict": 0
+  },
+  {
+   "iso": "USA",
+   "start": 1941,
+   "end": 1948,
+   "duration": 8,
+   "peak_gap": 1.128,
+   "drawdown_pct": 3.65,
+   "conflict": 1
+  },
+  {
+   "iso": "ARG",
+   "start": 1903,
+   "end": 1914,
+   "duration": 12,
+   "peak_gap": 0.971,
+   "drawdown_pct": 15.5,
+   "conflict": 0
+  },
+  {
+   "iso": "ARG",
+   "start": 1931,
+   "end": 1958,
+   "duration": 28,
+   "peak_gap": 2.11,
+   "drawdown_pct": 8.03,
+   "conflict": 1
+  },
+  {
+   "iso": "ARG",
+   "start": 1967,
+   "end": 1982,
+   "duration": 16,
+   "peak_gap": 2.051,
+   "drawdown_pct": 13.37,
+   "conflict": 0
+  },
+  {
+   "iso": "ARG",
+   "start": 1990,
+   "end": 1994,
+   "duration": 5,
+   "peak_gap": 0.861,
+   "drawdown_pct": 20.36,
+   "conflict": 0
+  },
+  {
+   "iso": "BRA",
+   "start": 1964,
+   "end": 1985,
+   "duration": 22,
+   "peak_gap": 1.275,
+   "drawdown_pct": 7.01,
+   "conflict": 0
+  },
+  {
+   "iso": "PRT",
+   "start": 1820,
+   "end": 1850,
+   "duration": 31,
+   "peak_gap": 1.485,
+   "drawdown_pct": 4.28,
+   "conflict": 0
+  },
+  {
+   "iso": "IRN",
+   "start": 1979,
+   "end": 1987,
+   "duration": 9,
+   "peak_gap": 1.124,
+   "drawdown_pct": 8.12,
+   "conflict": 1
+  },
+  {
+   "iso": "IRN",
+   "start": 1990,
+   "end": 2022,
+   "duration": 33,
+   "peak_gap": 1.553,
+   "drawdown_pct": 0.0,
+   "conflict": 1
+  },
+  {
+   "iso": "MAR",
+   "start": 1950,
+   "end": 1959,
+   "duration": 10,
+   "peak_gap": 1.098,
+   "drawdown_pct": 2.17,
+   "conflict": 1
+  },
+  {
+   "iso": "POL",
+   "start": 1860,
+   "end": 1867,
+   "duration": 8,
+   "peak_gap": 1.336,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "IRQ",
+   "start": 1958,
+   "end": 1987,
+   "duration": 30,
+   "peak_gap": 1.468,
+   "drawdown_pct": 74.91,
+   "conflict": 1
+  },
+  {
+   "iso": "IRQ",
+   "start": 2005,
+   "end": 2022,
+   "duration": 18,
+   "peak_gap": 1.447,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "SAU",
+   "start": 1950,
+   "end": 2022,
+   "duration": 73,
+   "peak_gap": 2.223,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "EGY",
+   "start": 2018,
+   "end": 2022,
+   "duration": 5,
+   "peak_gap": 0.809,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "THA",
+   "start": 1992,
+   "end": 1996,
+   "duration": 5,
+   "peak_gap": 0.812,
+   "drawdown_pct": 13.2,
+   "conflict": 1
+  },
+  {
+   "iso": "THA",
+   "start": 2014,
+   "end": 2022,
+   "duration": 9,
+   "peak_gap": 1.131,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "ITA",
+   "start": 1848,
+   "end": 1852,
+   "duration": 5,
+   "peak_gap": 0.861,
+   "drawdown_pct": 6.91,
+   "conflict": 0
+  },
+  {
+   "iso": "ITA",
+   "start": 1923,
+   "end": 1943,
+   "duration": 21,
+   "peak_gap": 1.82,
+   "drawdown_pct": 27.98,
+   "conflict": 0
+  },
+  {
+   "iso": "TUR",
+   "start": 2013,
+   "end": 2022,
+   "duration": 10,
+   "peak_gap": 2.082,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "SYR",
+   "start": 1964,
+   "end": 2018,
+   "duration": 55,
+   "peak_gap": 2.014,
+   "drawdown_pct": 27.03,
+   "conflict": 1
+  },
+  {
+   "iso": "IDN",
+   "start": 1900,
+   "end": 1919,
+   "duration": 20,
+   "peak_gap": 1.084,
+   "drawdown_pct": 14.03,
+   "conflict": 0
+  },
+  {
+   "iso": "IDN",
+   "start": 1926,
+   "end": 1931,
+   "duration": 6,
+   "peak_gap": 0.853,
+   "drawdown_pct": 6.57,
+   "conflict": 0
+  },
+  {
+   "iso": "IDN",
+   "start": 1981,
+   "end": 1998,
+   "duration": 18,
+   "peak_gap": 1.553,
+   "drawdown_pct": 0.32,
+   "conflict": 1
+  },
+  {
+   "iso": "MMR",
+   "start": 2005,
+   "end": 2009,
+   "duration": 5,
+   "peak_gap": 0.855,
+   "drawdown_pct": 18.61,
+   "conflict": 1
+  },
+  {
+   "iso": "TUN",
+   "start": 1950,
+   "end": 1954,
+   "duration": 5,
+   "peak_gap": 0.928,
+   "drawdown_pct": 7.23,
+   "conflict": 0
+  },
+  {
+   "iso": "TUN",
+   "start": 1988,
+   "end": 2010,
+   "duration": 23,
+   "peak_gap": 1.384,
+   "drawdown_pct": 9.58,
+   "conflict": 1
+  },
+  {
+   "iso": "PER",
+   "start": 1869,
+   "end": 1874,
+   "duration": 6,
+   "peak_gap": 1.395,
+   "drawdown_pct": 57.59,
+   "conflict": 1
+  },
+  {
+   "iso": "PER",
+   "start": 1920,
+   "end": 1938,
+   "duration": 19,
+   "peak_gap": 1.324,
+   "drawdown_pct": 6.26,
+   "conflict": 0
+  },
+  {
+   "iso": "PER",
+   "start": 1949,
+   "end": 1956,
+   "duration": 8,
+   "peak_gap": 1.792,
+   "drawdown_pct": 4.55,
+   "conflict": 1
+  },
+  {
+   "iso": "PER",
+   "start": 1969,
+   "end": 1979,
+   "duration": 11,
+   "peak_gap": 1.371,
+   "drawdown_pct": 32.11,
+   "conflict": 1
+  },
+  {
+   "iso": "PER",
+   "start": 1993,
+   "end": 2000,
+   "duration": 8,
+   "peak_gap": 1.19,
+   "drawdown_pct": 0.46,
+   "conflict": 1
+  },
+  {
+   "iso": "CUB",
+   "start": 1953,
+   "end": 1969,
+   "duration": 17,
+   "peak_gap": 1.293,
+   "drawdown_pct": 5.13,
+   "conflict": 1
+  },
+  {
+   "iso": "CUB",
+   "start": 1983,
+   "end": 1992,
+   "duration": 10,
+   "peak_gap": 0.958,
+   "drawdown_pct": 21.84,
+   "conflict": 0
+  },
+  {
+   "iso": "CUB",
+   "start": 1999,
+   "end": 2022,
+   "duration": 24,
+   "peak_gap": 1.14,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "GRC",
+   "start": 1936,
+   "end": 1940,
+   "duration": 5,
+   "peak_gap": 1.01,
+   "drawdown_pct": 57.8,
+   "conflict": 1
+  },
+  {
+   "iso": "GRC",
+   "start": 1967,
+   "end": 1974,
+   "duration": 8,
+   "peak_gap": 1.082,
+   "drawdown_pct": 1.17,
+   "conflict": 0
+  },
+  {
+   "iso": "LBR",
+   "start": 1950,
+   "end": 1972,
+   "duration": 23,
+   "peak_gap": 1.467,
+   "drawdown_pct": 33.19,
+   "conflict": 1
+  },
+  {
+   "iso": "LBR",
+   "start": 1974,
+   "end": 1983,
+   "duration": 10,
+   "peak_gap": 0.894,
+   "drawdown_pct": 89.43,
+   "conflict": 1
+  },
+  {
+   "iso": "BOL",
+   "start": 1904,
+   "end": 1921,
+   "duration": 18,
+   "peak_gap": 1.044,
+   "drawdown_pct": 22.55,
+   "conflict": 0
+  },
+  {
+   "iso": "BOL",
+   "start": 1923,
+   "end": 1931,
+   "duration": 9,
+   "peak_gap": 0.941,
+   "drawdown_pct": 7.89,
+   "conflict": 1
+  },
+  {
+   "iso": "BOL",
+   "start": 1935,
+   "end": 1939,
+   "duration": 5,
+   "peak_gap": 0.931,
+   "drawdown_pct": 11.4,
+   "conflict": 1
+  },
+  {
+   "iso": "BOL",
+   "start": 1941,
+   "end": 1981,
+   "duration": 41,
+   "peak_gap": 1.441,
+   "drawdown_pct": 18.57,
+   "conflict": 0
+  },
+  {
+   "iso": "URY",
+   "start": 1870,
+   "end": 1886,
+   "duration": 17,
+   "peak_gap": 1.561,
+   "drawdown_pct": 26.29,
+   "conflict": 0
+  },
+  {
+   "iso": "URY",
+   "start": 1974,
+   "end": 1984,
+   "duration": 11,
+   "peak_gap": 1.151,
+   "drawdown_pct": 2.88,
+   "conflict": 0
+  },
+  {
+   "iso": "EST",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 2.069,
+   "drawdown_pct": 35.73,
+   "conflict": 0
+  },
+  {
+   "iso": "RUS",
+   "start": 1934,
+   "end": 2022,
+   "duration": 89,
+   "peak_gap": 1.981,
+   "drawdown_pct": 0.0,
+   "conflict": 1
+  },
+  {
+   "iso": "ROU",
+   "start": 1950,
+   "end": 1989,
+   "duration": 40,
+   "peak_gap": 1.156,
+   "drawdown_pct": 23.29,
+   "conflict": 1
+  },
+  {
+   "iso": "BGR",
+   "start": 1950,
+   "end": 1989,
+   "duration": 40,
+   "peak_gap": 1.475,
+   "drawdown_pct": 20.81,
+   "conflict": 0
+  },
+  {
+   "iso": "ECU",
+   "start": 1914,
+   "end": 1938,
+   "duration": 25,
+   "peak_gap": 1.013,
+   "drawdown_pct": 3.41,
+   "conflict": 0
+  },
+  {
+   "iso": "ECU",
+   "start": 1943,
+   "end": 1978,
+   "duration": 36,
+   "peak_gap": 1.554,
+   "drawdown_pct": 11.57,
+   "conflict": 0
+  },
+  {
+   "iso": "ZAF",
+   "start": 1903,
+   "end": 1909,
+   "duration": 7,
+   "peak_gap": 1.186,
+   "drawdown_pct": 23.25,
+   "conflict": 0
+  },
+  {
+   "iso": "ZAF",
+   "start": 1950,
+   "end": 1971,
+   "duration": 22,
+   "peak_gap": 1.053,
+   "drawdown_pct": 12.67,
+   "conflict": 1
+  },
+  {
+   "iso": "MYS",
+   "start": 1991,
+   "end": 2017,
+   "duration": 27,
+   "peak_gap": 1.069,
+   "drawdown_pct": 6.57,
+   "conflict": 0
+  },
+  {
+   "iso": "PHL",
+   "start": 1974,
+   "end": 1983,
+   "duration": 10,
+   "peak_gap": 0.904,
+   "drawdown_pct": 18.3,
+   "conflict": 1
+  },
+  {
+   "iso": "PAN",
+   "start": 1906,
+   "end": 1919,
+   "duration": 14,
+   "peak_gap": 1.337,
+   "drawdown_pct": 9.33,
+   "conflict": 0
+  },
+  {
+   "iso": "PAN",
+   "start": 1968,
+   "end": 1972,
+   "duration": 5,
+   "peak_gap": 1.001,
+   "drawdown_pct": 3.62,
+   "conflict": 0
+  },
+  {
+   "iso": "PAN",
+   "start": 1974,
+   "end": 1989,
+   "duration": 16,
+   "peak_gap": 1.37,
+   "drawdown_pct": 0.95,
+   "conflict": 1
+  },
+  {
+   "iso": "DZA",
+   "start": 2000,
+   "end": 2022,
+   "duration": 23,
+   "peak_gap": 1.257,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "SLV",
+   "start": 1947,
+   "end": 1979,
+   "duration": 33,
+   "peak_gap": 1.352,
+   "drawdown_pct": 20.79,
+   "conflict": 1
+  },
+  {
+   "iso": "HND",
+   "start": 1920,
+   "end": 1936,
+   "duration": 17,
+   "peak_gap": 1.317,
+   "drawdown_pct": 13.3,
+   "conflict": 0
+  },
+  {
+   "iso": "HND",
+   "start": 1945,
+   "end": 1969,
+   "duration": 25,
+   "peak_gap": 1.032,
+   "drawdown_pct": 12.86,
+   "conflict": 0
+  },
+  {
+   "iso": "GTM",
+   "start": 1920,
+   "end": 1944,
+   "duration": 25,
+   "peak_gap": 1.7,
+   "drawdown_pct": 5.79,
+   "conflict": 1
+  },
+  {
+   "iso": "GTM",
+   "start": 1954,
+   "end": 1986,
+   "duration": 33,
+   "peak_gap": 1.647,
+   "drawdown_pct": 0.97,
+   "conflict": 0
+  },
+  {
+   "iso": "GTM",
+   "start": 1990,
+   "end": 1994,
+   "duration": 5,
+   "peak_gap": 0.941,
+   "drawdown_pct": 1.76,
+   "conflict": 0
+  },
+  {
+   "iso": "NIC",
+   "start": 1920,
+   "end": 1979,
+   "duration": 60,
+   "peak_gap": 2.029,
+   "drawdown_pct": 39.23,
+   "conflict": 1
+  },
+  {
+   "iso": "NIC",
+   "start": 2013,
+   "end": 2022,
+   "duration": 10,
+   "peak_gap": 1.087,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "PRY",
+   "start": 1939,
+   "end": 1993,
+   "duration": 55,
+   "peak_gap": 1.733,
+   "drawdown_pct": 10.38,
+   "conflict": 0
+  },
+  {
+   "iso": "HTI",
+   "start": 1950,
+   "end": 1966,
+   "duration": 17,
+   "peak_gap": 1.333,
+   "drawdown_pct": 4.8,
+   "conflict": 0
+  },
+  {
+   "iso": "OMN",
+   "start": 1992,
+   "end": 2022,
+   "duration": 31,
+   "peak_gap": 1.107,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "DOM",
+   "start": 1950,
+   "end": 1962,
+   "duration": 13,
+   "peak_gap": 1.4,
+   "drawdown_pct": 15.14,
+   "conflict": 1
+  },
+  {
+   "iso": "DOM",
+   "start": 2014,
+   "end": 2019,
+   "duration": 6,
+   "peak_gap": 1.089,
+   "drawdown_pct": 7.61,
+   "conflict": 0
+  },
+  {
+   "iso": "GNQ",
+   "start": 1974,
+   "end": 1979,
+   "duration": 6,
+   "peak_gap": 1.264,
+   "drawdown_pct": 15.76,
+   "conflict": 0
+  },
+  {
+   "iso": "GNQ",
+   "start": 1991,
+   "end": 2022,
+   "duration": 32,
+   "peak_gap": 2.864,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "LBN",
+   "start": 1950,
+   "end": 1975,
+   "duration": 26,
+   "peak_gap": 1.79,
+   "drawdown_pct": 59.88,
+   "conflict": 1
+  },
+  {
+   "iso": "LBN",
+   "start": 1991,
+   "end": 2021,
+   "duration": 31,
+   "peak_gap": 1.295,
+   "drawdown_pct": 2.2,
+   "conflict": 0
+  },
+  {
+   "iso": "DJI",
+   "start": 1950,
+   "end": 1976,
+   "duration": 27,
+   "peak_gap": 1.748,
+   "drawdown_pct": 58.73,
+   "conflict": 1
+  },
+  {
+   "iso": "QAT",
+   "start": 1950,
+   "end": 2022,
+   "duration": 73,
+   "peak_gap": 4.528,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "AGO",
+   "start": 2006,
+   "end": 2016,
+   "duration": 11,
+   "peak_gap": 1.226,
+   "drawdown_pct": 21.74,
+   "conflict": 1
+  },
+  {
+   "iso": "BHR",
+   "start": 1950,
+   "end": 2022,
+   "duration": 73,
+   "peak_gap": 2.265,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "KWT",
+   "start": 1950,
+   "end": 1979,
+   "duration": 30,
+   "peak_gap": 2.861,
+   "drawdown_pct": 77.6,
+   "conflict": 0
+  },
+  {
+   "iso": "KWT",
+   "start": 1993,
+   "end": 2022,
+   "duration": 30,
+   "peak_gap": 1.574,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "GAB",
+   "start": 1950,
+   "end": 2022,
+   "duration": 73,
+   "peak_gap": 1.781,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "NAM",
+   "start": 1950,
+   "end": 1971,
+   "duration": 22,
+   "peak_gap": 1.272,
+   "drawdown_pct": 15.52,
+   "conflict": 0
+  },
+  {
+   "iso": "COG",
+   "start": 1968,
+   "end": 1976,
+   "duration": 9,
+   "peak_gap": 0.943,
+   "drawdown_pct": 18.65,
+   "conflict": 0
+  },
+  {
+   "iso": "COG",
+   "start": 1979,
+   "end": 1990,
+   "duration": 12,
+   "peak_gap": 1.188,
+   "drawdown_pct": 7.74,
+   "conflict": 1
+  },
+  {
+   "iso": "COG",
+   "start": 1997,
+   "end": 2015,
+   "duration": 19,
+   "peak_gap": 0.956,
+   "drawdown_pct": 31.44,
+   "conflict": 1
+  },
+  {
+   "iso": "LBY",
+   "start": 1970,
+   "end": 2022,
+   "duration": 53,
+   "peak_gap": 2.384,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "SRB",
+   "start": 1989,
+   "end": 1999,
+   "duration": 11,
+   "peak_gap": 1.39,
+   "drawdown_pct": 1.11,
+   "conflict": 0
+  },
+  {
+   "iso": "HRV",
+   "start": 1957,
+   "end": 1972,
+   "duration": 16,
+   "peak_gap": 1.051,
+   "drawdown_pct": 2.48,
+   "conflict": 0
+  },
+  {
+   "iso": "HRV",
+   "start": 1974,
+   "end": 1999,
+   "duration": 26,
+   "peak_gap": 1.603,
+   "drawdown_pct": 6.34,
+   "conflict": 0
+  },
+  {
+   "iso": "SVN",
+   "start": 1952,
+   "end": 1988,
+   "duration": 37,
+   "peak_gap": 1.447,
+   "drawdown_pct": 23.01,
+   "conflict": 0
+  },
+  {
+   "iso": "CZE",
+   "start": 1970,
+   "end": 1989,
+   "duration": 20,
+   "peak_gap": 1.835,
+   "drawdown_pct": 10.25,
+   "conflict": 0
+  },
+  {
+   "iso": "ARE",
+   "start": 1971,
+   "end": 1990,
+   "duration": 20,
+   "peak_gap": 2.285,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "ARE",
+   "start": 1993,
+   "end": 2022,
+   "duration": 30,
+   "peak_gap": 1.466,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "AZE",
+   "start": 1980,
+   "end": 1991,
+   "duration": 12,
+   "peak_gap": 1.434,
+   "drawdown_pct": 59.02,
+   "conflict": 1
+  },
+  {
+   "iso": "AZE",
+   "start": 1993,
+   "end": 2022,
+   "duration": 30,
+   "peak_gap": 2.119,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "MDA",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 1.616,
+   "drawdown_pct": 71.33,
+   "conflict": 1
+  },
+  {
+   "iso": "TKM",
+   "start": 1980,
+   "end": 2022,
+   "duration": 43,
+   "peak_gap": 2.123,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "BLR",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 1.682,
+   "drawdown_pct": 41.2,
+   "conflict": 0
+  },
+  {
+   "iso": "BLR",
+   "start": 1996,
+   "end": 2022,
+   "duration": 27,
+   "peak_gap": 1.939,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "TJK",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 1.019,
+   "drawdown_pct": 68.71,
+   "conflict": 1
+  },
+  {
+   "iso": "TJK",
+   "start": 2013,
+   "end": 2022,
+   "duration": 10,
+   "peak_gap": 1.041,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "KGZ",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 1.085,
+   "drawdown_pct": 51.65,
+   "conflict": 1
+  },
+  {
+   "iso": "GEO",
+   "start": 1980,
+   "end": 2003,
+   "duration": 24,
+   "peak_gap": 1.881,
+   "drawdown_pct": 4.73,
+   "conflict": 1
+  },
+  {
+   "iso": "LTU",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 1.882,
+   "drawdown_pct": 46.71,
+   "conflict": 0
+  },
+  {
+   "iso": "UZB",
+   "start": 1980,
+   "end": 2022,
+   "duration": 43,
+   "peak_gap": 1.556,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "LVA",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 1.935,
+   "drawdown_pct": 46.61,
+   "conflict": 0
+  },
+  {
+   "iso": "ARM",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 1.608,
+   "drawdown_pct": 60.76,
+   "conflict": 1
+  },
+  {
+   "iso": "ARM",
+   "start": 2001,
+   "end": 2017,
+   "duration": 17,
+   "peak_gap": 1.132,
+   "drawdown_pct": 6.88,
+   "conflict": 0
+  },
+  {
+   "iso": "KAZ",
+   "start": 1980,
+   "end": 2022,
+   "duration": 43,
+   "peak_gap": 1.94,
+   "drawdown_pct": 0.0,
+   "conflict": 0
+  },
+  {
+   "iso": "UKR",
+   "start": 1980,
+   "end": 1989,
+   "duration": 10,
+   "peak_gap": 1.518,
+   "drawdown_pct": 54.25,
+   "conflict": 0
+  },
+  {
+   "iso": "UKR",
+   "start": 1992,
+   "end": 2017,
+   "duration": 26,
+   "peak_gap": 1.208,
+   "drawdown_pct": 23.58,
+   "conflict": 0
+  }
+ ]
+}
