@@ -1,0 +1,25 @@
+{
+ "angle": "capacity_arsenal",
+ "n": 3907,
+ "events": 239,
+ "libdem_baseline": 0.705,
+ "univariate": {
+  "cap": 0.622,
+  "cap2": 0.625,
+  "dist_peak": 0.717,
+  "ceiling": 0.732,
+  "cap_lag20": 0.65,
+  "min_cap20": 0.64,
+  "cap_debt": 0.693,
+  "cap_vol": 0.702,
+  "cap_dev": 0.665,
+  "mag": 0.679,
+  "phase": 0.571,
+  "spectral_radius": 0.68,
+  "oscillation": 0.673
+ },
+ "smooth": 0.622,
+ "quad": 0.734,
+ "best_model": "+history",
+ "best_auc": 0.746
+}

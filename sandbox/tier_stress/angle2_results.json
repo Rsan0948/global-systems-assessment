@@ -1,0 +1,19 @@
+{
+ "angle": 2,
+ "verdict": "REAL within-country dynamic \u2014 the capacity-mobilization GAP predicts backsliding within a country (invisible between countries)",
+ "rol_cso_gap": {
+  "pooled": -0.086,
+  "between": -0.006,
+  "within": -0.081,
+  "within_perm_p": 0.0,
+  "real": true
+ },
+ "rol_alone": {
+  "within": 0.002,
+  "perm_p": 0.927,
+  "real": false,
+  "note": "ceiling artifact, killed by libdem control"
+ },
+ "controls": "per-country partial nets libdem level (ceiling/mean-reversion)",
+ "caveat": "V-Dem-based (rol/cso); modern independent WGI within-country underpowered (28y)"
+}

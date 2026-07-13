@@ -1,0 +1,16 @@
+{
+ "angle": 3,
+ "obs_partial": 0.024,
+ "n_cohorts": 24,
+ "label_null": [
+  -0.035,
+  0.032
+ ],
+ "spatial_null": [
+  -0.055,
+  0.061
+ ],
+ "adjacency_specific": false,
+ "real_vs_labelnull": false,
+ "raw_no_controls": 0.045
+}

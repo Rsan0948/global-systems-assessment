@@ -1,0 +1,11 @@
+{
+ "analysis": "capacity_relational",
+ "n": 3545,
+ "results": {
+  "ADDITIVE (levels, the arsenal way)": 0.746,
+  "RELATIONAL (ratios/gaps/products)": 0.732,
+  "RELATIONAL + capacity\u2212mobilisation": 0.722,
+  "BOTH": 0.723
+ },
+ "relational_minus_additive": -0.014
+}

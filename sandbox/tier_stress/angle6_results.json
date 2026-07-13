@@ -1,0 +1,15 @@
+{
+ "angle": 6,
+ "n": 3927,
+ "auc_smooth": 0.632,
+ "auc_quadratic": 0.736,
+ "auc_threshold": 0.724,
+ "best_cutoff": 0.8,
+ "winner": "QUADRATIC",
+ "bootstrap_cut_range": [
+  0.8,
+  0.85
+ ],
+ "threshold_well_identified": true,
+ "threshold_beats_smooth": true
+}

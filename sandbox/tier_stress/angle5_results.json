@@ -1,0 +1,15 @@
+{
+ "angle": 5,
+ "n_risk": 3406,
+ "n_events": 52,
+ "hazard_young_0_4": 0.057,
+ "hazard_old_40plus": 0.001,
+ "age_coef": -0.82,
+ "age_coef_net_capacity": -0.676,
+ "capacity_coef": -1.318,
+ "age_perm_p": 0.57,
+ "age_real": false,
+ "age_absorbed_by_capacity": false,
+ "erosion_age_coef": -0.215,
+ "erosion_age_net_cap": -0.105
+}

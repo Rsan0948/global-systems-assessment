@@ -1,0 +1,64 @@
+{
+ "libdem_backslide": {
+  "relational": {
+   "auc": 0.645,
+   "ci": [
+    0.556,
+    0.736
+   ],
+   "base_auc": 0.766,
+   "delta": -0.121,
+   "n_train": 392,
+   "n_test": 158,
+   "pos_train": 41,
+   "pos_test": 46,
+   "pass": false
+  },
+  "additive8": null,
+  "cap_minus_turb": {
+   "auc": 0.716,
+   "ci": [
+    0.634,
+    0.794
+   ],
+   "base_auc": 0.71,
+   "delta": 0.006,
+   "n_train": 437,
+   "n_test": 170,
+   "pos_train": 44,
+   "pos_test": 47,
+   "pass": false
+  }
+ },
+ "electdem_backslide": {
+  "relational": {
+   "auc": 0.681,
+   "ci": [
+    0.592,
+    0.767
+   ],
+   "base_auc": 0.702,
+   "delta": -0.022,
+   "n_train": 392,
+   "n_test": 158,
+   "pos_train": 51,
+   "pos_test": 52,
+   "pass": false
+  },
+  "additive8": null,
+  "cap_minus_turb": {
+   "auc": 0.742,
+   "ci": [
+    0.661,
+    0.815
+   ],
+   "base_auc": 0.677,
+   "delta": 0.065,
+   "n_train": 437,
+   "n_test": 170,
+   "pos_train": 55,
+   "pos_test": 53,
+   "pass": true
+  }
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "angle": 4,
+ "verdict": "CAPACITY IS THE MASTER VARIABLE \u2014 rival explanations null or capacity-mediated",
+ "main_effects_net_of_capacity": {
+  "resource_rents": {
+   "rho": -0.04,
+   "real": false
+  },
+  "ethnic_excl": {
+   "rho": 0.01,
+   "real": false
+  },
+  "ethnic_ngroups": {
+   "rho": 0.015,
+   "real": false
+  },
+  "log_pop": {
+   "rho": 0.058,
+   "real": false
+  },
+  "dem_age": {
+   "rho": -0.033,
+   "real": false
+  },
+  "state_age": {
+   "rho": 0.102,
+   "real": true
+  }
+ },
+ "legal_origin_raw_gradient": {
+  "Socialist": 0.129,
+  "French": 0.11,
+  "English": 0.079,
+  "German": 0.056,
+  "Scandinavian": 0.0
+ },
+ "legal_origin_residual_net_capacity": {
+  "Socialist": 0.034,
+  "French": -0.001,
+  "German": -0.005,
+  "Scandinavian": -0.011,
+  "English": -0.024
+ },
+ "legal_origin_mediated_by_capacity": true,
+ "moderation": {
+  "resource_rents": {
+   "gap_effect_low": -0.19,
+   "gap_effect_high": -0.218
+  },
+  "ethnic_excl": {
+   "gap_effect_low": -0.217,
+   "gap_effect_high": -0.245
+  },
+  "ethnic_ngroups": {
+   "gap_effect_low": -0.235,
+   "gap_effect_high": -0.217
+  },
+  "log_pop": {
+   "gap_effect_low": -0.25,
+   "gap_effect_high": -0.25
+  },
+  "dem_age": {
+   "gap_effect_low": -0.052,
+   "gap_effect_high": -0.175
+  },
+  "state_age": {
+   "gap_effect_low": -0.159,
+   "gap_effect_high": -0.279
+  }
+ }
+}

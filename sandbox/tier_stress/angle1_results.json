@@ -1,0 +1,30 @@
+{
+ "angle": 1,
+ "verdict": "NULL \u2014 founding equation is a STATE relationship, not a rate one",
+ "static_gap_backslide_k5": {
+  "rho": -0.09,
+  "perm_p": 0.0,
+  "real": true
+ },
+ "mismatch_vel_net_gap_k5": {
+  "rho": -0.017,
+  "perm_p": 0.315,
+  "real": false
+ },
+ "mismatch_vel_backslide_k10": {
+  "rho": -0.003,
+  "perm_p": 0.87,
+  "real": false
+ },
+ "mismatch_vel_onset_k10": {
+  "rho": 0.038,
+  "perm_p": 0.02,
+  "real": true,
+  "note": "tiny"
+ },
+ "components_and_accel": "all null",
+ "modern_independent_wgi": {
+  "rho": -0.01,
+  "real": false
+ }
+}

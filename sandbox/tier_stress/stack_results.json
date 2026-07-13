@@ -1,0 +1,196 @@
+{
+ "life_satisfaction_fwd": {
+  "kind": "cont",
+  "base": 0.924,
+  "best_single": {
+   "v1_mi": 0.928
+  },
+  "all6": 0.914,
+  "greedy": {
+   "n_A": 142,
+   "n_B": 140,
+   "skill_base": 0.904,
+   "skill_stack": 0.904,
+   "delta": 0.0,
+   "chosen": [],
+   "cv_base": 0.922,
+   "cv_final": 0.922
+  },
+  "best_interaction": {
+   "pair": "t5_turb_libdem\u00d7t6_spark",
+   "skill_mains": 0.911,
+   "skill_with_int": 0.902,
+   "delta_vs_mains": -0.009
+  }
+ },
+ "gdp_pc_growth_fwd": {
+  "kind": "cont",
+  "base": 0.035,
+  "best_single": {
+   "v1_mi": 0.044
+  },
+  "all6": -0.012,
+  "greedy": {
+   "n_A": 205,
+   "n_B": 249,
+   "skill_base": 0.033,
+   "skill_stack": 0.237,
+   "delta": 0.204,
+   "chosen": [
+    "P3",
+    "prior_conflict_decayed",
+    "youth",
+    "internet",
+    "dgs"
+   ],
+   "cv_base": 0.193,
+   "cv_final": 0.463
+  },
+  "best_interaction": {
+   "pair": "v1_mi\u00d7dgs",
+   "skill_mains": 0.02,
+   "skill_with_int": -0.009,
+   "delta_vs_mains": -0.029
+  }
+ },
+ "net_migration_fwd": {
+  "kind": "cont",
+  "base": 0.64,
+  "best_single": {
+   "dgs": 0.632
+  },
+  "all6": 0.641,
+  "greedy": {
+   "n_A": 530,
+   "n_B": 573,
+   "skill_base": 0.617,
+   "skill_stack": 0.617,
+   "delta": 0.0,
+   "chosen": [],
+   "cv_base": 0.651,
+   "cv_final": 0.651
+  },
+  "best_interaction": {
+   "pair": "v3_numer\u00d7t4_scar",
+   "skill_mains": 0.614,
+   "skill_with_int": 0.571,
+   "delta_vs_mains": -0.043
+  }
+ },
+ "brain_health_ratio_fwd": {
+  "kind": "cont",
+  "base": 0.975,
+  "best_single": {
+   "t5_turb_libdem": 0.98
+  },
+  "all6": 0.976,
+  "greedy": {
+   "n_A": 141,
+   "n_B": 171,
+   "skill_base": 0.977,
+   "skill_stack": 0.977,
+   "delta": 0.0,
+   "chosen": [],
+   "cv_base": 0.972,
+   "cv_final": 0.972
+  },
+  "best_interaction": {
+   "pair": "t6_spark\u00d7dgs",
+   "skill_mains": 0.977,
+   "skill_with_int": 0.96,
+   "delta_vs_mains": -0.017
+  }
+ },
+ "libdem_backslide": {
+  "kind": "bin",
+  "base": 0.479,
+  "best_single": {
+   "t5_turb_libdem": 0.545
+  },
+  "all6": 0.542,
+  "greedy": {
+   "n_A": 210,
+   "n_B": 241,
+   "skill_base": 0.462,
+   "skill_stack": 0.728,
+   "delta": 0.266,
+   "chosen": [
+    "internet",
+    "pts",
+    "cso",
+    "t6_spark",
+    "durgap",
+    "anocracy",
+    "dgs"
+   ],
+   "cv_base": 0.585,
+   "cv_final": 0.833
+  },
+  "best_interaction": {
+   "pair": "v1_mi\u00d7t4_scar",
+   "skill_mains": 0.483,
+   "skill_with_int": 0.567,
+   "delta_vs_mains": 0.084
+  }
+ },
+ "electdem_backslide": {
+  "kind": "bin",
+  "base": 0.56,
+  "best_single": {
+   "t5_turb_libdem": 0.622
+  },
+  "all6": 0.636,
+  "greedy": {
+   "n_A": 223,
+   "n_B": 270,
+   "skill_base": 0.576,
+   "skill_stack": 0.711,
+   "delta": 0.135,
+   "chosen": [
+    "v3_numer",
+    "P3",
+    "anocracy",
+    "t6_s4_military",
+    "t6_spark",
+    "internet"
+   ],
+   "cv_base": 0.574,
+   "cv_final": 0.809
+  },
+  "best_interaction": {
+   "pair": "v1_mi\u00d7t4_scar",
+   "skill_mains": 0.614,
+   "skill_with_int": 0.655,
+   "delta_vs_mains": 0.041
+  }
+ },
+ "conflict_onset_fwd": {
+  "kind": "bin",
+  "base": 0.791,
+  "best_single": {
+   "t6_spark": 0.812
+  },
+  "all6": 0.797,
+  "greedy": {
+   "n_A": 167,
+   "n_B": 219,
+   "skill_base": 0.774,
+   "skill_stack": 0.809,
+   "delta": 0.035,
+   "chosen": [
+    "P5",
+    "P3",
+    "t6_spark",
+    "durgap"
+   ],
+   "cv_base": 0.742,
+   "cv_final": 0.88
+  },
+  "best_interaction": {
+   "pair": "t6_spark\u00d7dgs",
+   "skill_mains": 0.814,
+   "skill_with_int": 0.828,
+   "delta_vs_mains": 0.014
+  }
+ }
+}
