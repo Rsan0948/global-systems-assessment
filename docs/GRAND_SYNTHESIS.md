@@ -13,7 +13,9 @@ or **[curated]** (hand-tabulated, tests a qualitative prediction). The whole poi
 of the platform is that this boundary is drawn honestly; this document keeps it.
 
 **Companion to** `mi-research/docs/PROJECT_SYNTHESIS.md` ("the substrate"), which
-makes the MI-specific version of this argument. This file is the leg-spanning view.
+makes the MI-specific version of this argument, and to `docs/THREE_MODEL_FRAMEWORK.md`,
+which formalizes the three complementary instruments (V1 capacity / V2 conversion / V3
+pressure) and records the full results ledger. This file is the leg-spanning view.
 
 ---
 
