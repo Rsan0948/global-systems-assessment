@@ -1,0 +1,94 @@
+{
+ "quadrant_medians": {
+  "L": 53.8,
+  "E": 64.0
+ },
+ "variants": {
+  "libdem2004>=0.0": {
+   "n": 158,
+   "rates": {
+    "HL_HE": "19/63=0.302",
+    "HL_LE": "8/16=0.5",
+    "LL_HE": "3/16=0.188",
+    "LL_LE": "20/63=0.317"
+   },
+   "HL_LE_vs_LL_HE_fisher_p": 0.0675,
+   "HL_LE_vs_rest_fisher_p": 0.0862,
+   "excluded_floor": []
+  },
+  "libdem2004>=0.25": {
+   "n": 102,
+   "rates": {
+    "HL_HE": "16/48=0.333",
+    "HL_LE": "7/13=0.538",
+    "LL_HE": "2/5=0.4",
+    "LL_LE": "14/36=0.389"
+   },
+   "HL_LE_vs_LL_HE_fisher_p": 0.5,
+   "HL_LE_vs_rest_fisher_p": 0.1745,
+   "excluded_floor": [
+    "Bhutan",
+    "Comoros",
+    "Algeria",
+    "Iraq",
+    "Kazakhstan",
+    "Nepal",
+    "Sudan",
+    "Syrian Arab Republ",
+    "Tajikistan",
+    "Turkmenistan",
+    "Tunisia"
+   ]
+  },
+  "libdem2004>=0.3": {
+   "n": 97,
+   "rates": {
+    "HL_HE": "16/47=0.34",
+    "HL_LE": "6/12=0.5",
+    "LL_HE": "2/5=0.4",
+    "LL_LE": "13/33=0.394"
+   },
+   "HL_LE_vs_LL_HE_fisher_p": 0.5633,
+   "HL_LE_vs_rest_fisher_p": 0.2755,
+   "excluded_floor": [
+    "Bhutan",
+    "Comoros",
+    "Algeria",
+    "Iraq",
+    "Kazakhstan",
+    "Nepal",
+    "Sudan",
+    "Syrian Arab Republ",
+    "Tajikistan",
+    "Turkmenistan",
+    "Tunisia"
+   ]
+  },
+  "libdem2004>=0.4": {
+   "n": 77,
+   "rates": {
+    "HL_HE": "15/41=0.366",
+    "HL_LE": "6/11=0.545",
+    "LL_HE": "1/3=0.333",
+    "LL_LE": "9/22=0.409"
+   },
+   "HL_LE_vs_LL_HE_fisher_p": null,
+   "HL_LE_vs_rest_fisher_p": 0.2366,
+   "excluded_floor": [
+    "Bhutan",
+    "Comoros",
+    "Dominican Republic",
+    "Algeria",
+    "Guyana",
+    "Iraq",
+    "Kazakhstan",
+    "Nepal",
+    "Sudan",
+    "Syrian Arab Republ",
+    "Tajikistan",
+    "Turkmenistan",
+    "Tunisia"
+   ]
+  }
+ }
+}

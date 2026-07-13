@@ -39,14 +39,40 @@ rich-democracy-sensitive stress measure conflict-onset misses.
   H6 does not hold (HL-LE 0.54 < LL-HE 0.62), consistent with the thesis being about
   legitimacy/erosion, not armed conflict.
 
-**Refined verdict:** the equity thesis is **real but narrow and not-yet-significant** — it
-operates as a *configuration/interaction* (the high-capability-low-equity corner), not a
-*linear* predictor; on *democratic backsliding*, not conflict; with a *large effect the
-current sample can't confirm* (p≈0.14). The authoritative data strengthened the signal and
-removed the "untestable where it matters" caveat, but did not cross it into a confirmed
-finding. The honest status is **directional support, underpowered — the instrument points
-where the spec predicted, and now needs n (a populist-vote outcome like V-Party, and more
-years) to settle it.** Everything below is the original proxy-data pass, retained for record.
+**Two artifacts found on inspection of the actual country-level data — both material:**
+- **Authoritarian-equity inflation.** Because DHS/PISA equity is absent for closed states,
+  their equity runs on income-Gini, and *managed-economy official Gini is low* — so
+  repressive states score spuriously high on equity/conversion: **Belarus (equity 100),
+  UAE (95), Jordan (100), Turkmenistan (96), Syria (92)**. These pad the top of the ranking
+  and the "converts above its structure" list (Syria V2 68 vs V1 36; Belarus 82 vs 61). The
+  equity dimension is **gameable by authoritarian statistics** — a real flaw.
+- **Backsliding floor effect.** The LL-HE ("equal but incapable") quadrant looked unusually
+  stable (0.19 backslide) partly because it contained states that were *already autocracies
+  with no liberal democracy left to lose* (Turkmenistan, Syria, Kazakhstan, Algeria, Iraq) —
+  they mechanically can't backslide.
+
+**H6 re-run controlling the floor effect (`scripts/v2/v2_h6_clean.py`) — the signal does NOT
+survive.** Restricting to countries with a real democracy to lose in 2004 (libdem ≥ 0.25),
+LL-HE's backslide rate **jumps from 0.19 to 0.40** (the floored autocracies removed), and the
+HL-LE-vs-LL-HE contrast goes from Fisher **p=0.068 → p=0.50**. Across the sensitivity grid
+(libdem₂₀₀₄ ≥ 0.25/0.3/0.4) the quadrants compress to HL-LE 0.54 / LL-LE 0.39 / HL-HE 0.34 /
+LL-HE 0.40 — **HL-LE stays numerically highest but is statistically indistinguishable from
+the rest** (HL-LE-vs-rest p=0.17–0.28). And on the diagonal, **HL-HE (high-equity, capable)
+backslid at 30% including the worst cases in the dataset — Hungary (−0.43), Poland (−0.20),
+Greece, Germany, Italy, Spain** — so "equity protects" is directly contradicted.
+
+**Refined verdict (final for this pass):** the equity thesis is **not supported once its two
+artifacts are controlled.** The apparent HL-LE signal was substantially a floor effect
+(already-autocratic states padding the LL-HE "stable" count), and the equity dimension itself
+is inflated for closed states. What survives is weak and honest: HL-LE (capable + unequal) is
+the *numerically* most backsliding-prone quadrant in every cut, but the clean comparison is
+**null (p≈0.5)**, and high-equity capable states (Hungary, Poland) backslide as hard as any.
+So V2 earns **construct validity (H4) and a genuine US/Botswana/Namibia diagnostic**, but its
+central distributional claim — that unequal delivery from a capable system is what drives the
+stress V1 can't explain — **is not established**, and its equity dimension needs
+authoritarian-robust indicators before it can be trusted. The authoritative data removed the
+"untestable" excuse and the answer, honestly, is: **the equity thesis does not hold in the
+data as measured.** Everything below is the original proxy-data pass, retained for record.
 
 ---
 
