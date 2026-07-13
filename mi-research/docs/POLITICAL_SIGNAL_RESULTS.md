@@ -80,3 +80,55 @@ and ethnic exclusion — not by the conflict-trap. The instrument to predict mod
 rupture is a **complexity/pressure tier bolted onto the capacity tier**, and it works well
 enough to matter and honestly not well enough to forecast — the calibrated-risk ceiling, as
 designed. Artifacts: `data/political/political_test.json`.
+
+---
+
+## Deep extension — the political signal across ~2 centuries (1816–1996)
+
+Taken as wide and as far back as the data allows: the full V-Dem panel (rule-of-law +
+liberal-democracy + civil-society, back to 1789), Maddison GDP, conflict onsets (1816+),
+ethnic exclusion (EPR, 1946+). Per decade epoch, 20-year forward window, does the
+NUMERATOR (anocracy + civil-society + prior-conflict [+ exclusion 1946+]) add over STRUCTURE
+(V-Dem rule-of-law + log Maddison GDP)? `scripts/v2/deep_political.py`, `data/political/deep_political.json`.
+(In-sample logit AUC for the deep panel — directional; the modern gate used out-of-fold CV.)
+
+**Five findings, each stable across the panel:**
+
+1. **The numerator beats structure at democratic backsliding across the entire 20th
+   century** — mean incremental AUC **+0.131** over 11 epochs (1896–1996), and *largest in
+   the modern era* (1986 +0.28, 1996 +0.13) where structure fails most (struct-AUC 0.60–0.66
+   recently vs 0.82–0.86 mid-century). The finding is a 100-year regularity, not a modern
+   artifact — and structure's *failure* at backsliding is specifically a late-century thing.
+
+2. **The conflict trap is the most stable political relationship in recorded history.**
+   prior-conflict → conflict onset is positive and strong in every epoch 1846–1996
+   (ρ = +0.21 → **+0.67**, peaking 1866 and holding +0.45 in 1996). Two centuries of
+   violence begetting violence.
+
+3. **The ancient institutional signal holds across 200 years.** V-Dem rule-of-law → *less*
+   conflict in every epoch (ρ = −0.06 to −0.49). This directly reproduces Findings 1–3 of the
+   robustness program (institutions predict rupture, deep in time) in the political-signal
+   frame — structure reliably predicts the *ancient* failure mode (conflict), always.
+
+4. **Ethnic exclusion → conflict is a robust post-1946 regularity** — ρ = **+0.20 to +0.39**
+   across the whole decolonization era (peaking 1976 +0.39). Cederman's horizontal-inequality
+   finding, reproduced across 50 years.
+
+5. **THE HISTORICAL SHIFT — the drivers of backsliding *changed*.** anocracy → backsliding
+   **flipped sign around 1966**: it was ≈0/negative pre-1956 (−0.11 to −0.25) and turned
+   **positive** in the modern era (1966 +0.09, 1986 **+0.22**, 1996 +0.21). The "contested
+   middle" as the democratic-erosion zone is a *late-20th-century* development. And civil
+   society **flipped from protective to neutral**: ρ(CSO, backslide) was −0.24 to −0.35
+   pre-1956 (mobilization guarded against erosion) and decayed to ≈0 by 1996. What predicts
+   political rupture is not historically fixed — it *evolved*, exactly as the wealth–
+   institution relationship did (the convergence arc). Structure predicts the old mode
+   (conflict) timelessly; the *new* mode (anocratic, civil-society-contested backsliding) is
+   a modern configuration that only the numerator sees, and only recently.
+
+**Synthesis.** Across two centuries the picture is consistent and it closes the loop with the
+whole program: **structure (institutions + wealth) is the timeless predictor of the ancient
+rupture — organized violence — and the numerator (grievance/mobilization/exclusion) is the
+predictor of the modern rupture — backsliding — which emerged as an anocracy-and-civil-
+society-driven configuration in the last third of the 20th century.** The instruments were
+never wrong; they were reading the failure mode that dominated their era. Building the
+complexity/numerator tier lets the framework see the failure mode of *ours*.

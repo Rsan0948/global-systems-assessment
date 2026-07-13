@@ -1,0 +1,446 @@
+[
+ {
+  "epoch": 1816,
+  "n": 11,
+  "backslide": {
+   "n": 5,
+   "note": "insufficient"
+  },
+  "conflict": {
+   "n": 11,
+   "note": "insufficient"
+  }
+ },
+ {
+  "epoch": 1826,
+  "n": 14,
+  "backslide": {
+   "n": 8,
+   "note": "insufficient"
+  },
+  "conflict": {
+   "n": 14,
+   "note": "insufficient"
+  }
+ },
+ {
+  "epoch": 1836,
+  "n": 18,
+  "backslide": {
+   "n": 11,
+   "note": "insufficient"
+  },
+  "conflict": {
+   "n": 18,
+   "note": "insufficient"
+  }
+ },
+ {
+  "epoch": 1846,
+  "n": 22,
+  "backslide": {
+   "n": 14,
+   "note": "insufficient"
+  },
+  "conflict": {
+   "n": 22,
+   "n_pos": 9,
+   "auc_struct": 0.65,
+   "auc_struct+numer": 0.684,
+   "increment": 0.034,
+   "rho_anocracy": 0.095,
+   "rho_cso": 0.153,
+   "rho_prior_conflict": 0.211,
+   "rho_rol": -0.095,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1856,
+  "n": 21,
+  "backslide": {
+   "n": 18,
+   "note": "insufficient"
+  },
+  "conflict": {
+   "n": 21,
+   "n_pos": 5,
+   "auc_struct": 0.9,
+   "auc_struct+numer": 0.95,
+   "increment": 0.05,
+   "rho_anocracy": -0.074,
+   "rho_cso": 0.166,
+   "rho_prior_conflict": 0.482,
+   "rho_rol": -0.148,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1866,
+  "n": 25,
+  "backslide": {
+   "n": 20,
+   "note": "insufficient"
+  },
+  "conflict": {
+   "n": 25,
+   "n_pos": 5,
+   "auc_struct": 0.78,
+   "auc_struct+numer": 1.0,
+   "increment": 0.22,
+   "rho_anocracy": -0.458,
+   "rho_cso": -0.263,
+   "rho_prior_conflict": 0.667,
+   "rho_rol": -0.402,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1876,
+  "n": 30,
+  "backslide": {
+   "n": 27,
+   "note": "insufficient"
+  },
+  "conflict": {
+   "n": 30,
+   "n_pos": 5,
+   "auc_struct": 0.8,
+   "auc_struct+numer": 0.896,
+   "increment": 0.096,
+   "rho_anocracy": -0.253,
+   "rho_cso": -0.388,
+   "rho_prior_conflict": 0.293,
+   "rho_rol": -0.377,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1886,
+  "n": 31,
+  "backslide": {
+   "n": 27,
+   "note": "insufficient"
+  },
+  "conflict": {
+   "n": 31,
+   "n_pos": 7,
+   "auc_struct": 0.833,
+   "auc_struct+numer": 0.857,
+   "increment": 0.024,
+   "rho_anocracy": -0.474,
+   "rho_cso": -0.453,
+   "rho_prior_conflict": 0.446,
+   "rho_rol": -0.487,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1896,
+  "n": 34,
+  "backslide": {
+   "n": 28,
+   "n_pos": 2,
+   "auc_struct": 0.769,
+   "auc_struct+numer": 1.0,
+   "increment": 0.231,
+   "rho_anocracy": 0.172,
+   "rho_cso": -0.24,
+   "rho_prior_conflict": -0.145,
+   "rho_rol": -0.017,
+   "rho_exclusion": null
+  },
+  "conflict": {
+   "n": 34,
+   "n_pos": 8,
+   "auc_struct": 0.75,
+   "auc_struct+numer": 0.798,
+   "increment": 0.048,
+   "rho_anocracy": -0.216,
+   "rho_cso": -0.233,
+   "rho_prior_conflict": 0.061,
+   "rho_rol": -0.332,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1906,
+  "n": 49,
+  "backslide": {
+   "n": 38,
+   "n_pos": 6,
+   "auc_struct": 0.724,
+   "auc_struct+numer": 0.865,
+   "increment": 0.141,
+   "rho_anocracy": -0.118,
+   "rho_cso": -0.349,
+   "rho_prior_conflict": 0.167,
+   "rho_rol": -0.263,
+   "rho_exclusion": null
+  },
+  "conflict": {
+   "n": 49,
+   "n_pos": 11,
+   "auc_struct": 0.593,
+   "auc_struct+numer": 0.732,
+   "increment": 0.139,
+   "rho_anocracy": 0.08,
+   "rho_cso": 0.149,
+   "rho_prior_conflict": 0.213,
+   "rho_rol": -0.061,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1916,
+  "n": 46,
+  "backslide": {
+   "n": 36,
+   "n_pos": 9,
+   "auc_struct": 0.77,
+   "auc_struct+numer": 0.77,
+   "increment": 0.0,
+   "rho_anocracy": -0.253,
+   "rho_cso": -0.287,
+   "rho_prior_conflict": 0.0,
+   "rho_rol": -0.411,
+   "rho_exclusion": null
+  },
+  "conflict": {
+   "n": 46,
+   "n_pos": 13,
+   "auc_struct": 0.585,
+   "auc_struct+numer": 0.646,
+   "increment": 0.061,
+   "rho_anocracy": 0.067,
+   "rho_cso": 0.089,
+   "rho_prior_conflict": 0.214,
+   "rho_rol": -0.089,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1926,
+  "n": 61,
+  "backslide": {
+   "n": 43,
+   "n_pos": 6,
+   "auc_struct": 0.581,
+   "auc_struct+numer": 0.865,
+   "increment": 0.284,
+   "rho_anocracy": 0.173,
+   "rho_cso": -0.019,
+   "rho_prior_conflict": 0.379,
+   "rho_rol": -0.005,
+   "rho_exclusion": null
+  },
+  "conflict": {
+   "n": 61,
+   "n_pos": 14,
+   "auc_struct": 0.757,
+   "auc_struct+numer": 0.828,
+   "increment": 0.071,
+   "rho_anocracy": -0.246,
+   "rho_cso": -0.27,
+   "rho_prior_conflict": 0.166,
+   "rho_rol": -0.27,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1936,
+  "n": 63,
+  "backslide": {
+   "n": 40,
+   "n_pos": 8,
+   "auc_struct": 0.82,
+   "auc_struct+numer": 0.844,
+   "increment": 0.023,
+   "rho_anocracy": -0.114,
+   "rho_cso": -0.097,
+   "rho_prior_conflict": 0.099,
+   "rho_rol": -0.417,
+   "rho_exclusion": null
+  },
+  "conflict": {
+   "n": 63,
+   "n_pos": 15,
+   "auc_struct": 0.635,
+   "auc_struct+numer": 0.689,
+   "increment": 0.054,
+   "rho_anocracy": -0.124,
+   "rho_cso": -0.078,
+   "rho_prior_conflict": -0.088,
+   "rho_rol": -0.201,
+   "rho_exclusion": null
+  }
+ },
+ {
+  "epoch": 1946,
+  "n": 53,
+  "backslide": {
+   "n": 40,
+   "n_pos": 5,
+   "auc_struct": 0.863,
+   "auc_struct+numer": 0.914,
+   "increment": 0.051,
+   "rho_anocracy": -0.196,
+   "rho_cso": -0.16,
+   "rho_prior_conflict": 0.025,
+   "rho_rol": -0.383,
+   "rho_exclusion": 0.201
+  },
+  "conflict": {
+   "n": 53,
+   "n_pos": 15,
+   "auc_struct": 0.612,
+   "auc_struct+numer": 0.739,
+   "increment": 0.126,
+   "rho_anocracy": 0.048,
+   "rho_cso": 0.131,
+   "rho_prior_conflict": -0.066,
+   "rho_rol": -0.138,
+   "rho_exclusion": 0.279
+  }
+ },
+ {
+  "epoch": 1956,
+  "n": 137,
+  "backslide": {
+   "n": 73,
+   "n_pos": 24,
+   "auc_struct": 0.82,
+   "auc_struct+numer": 0.856,
+   "increment": 0.037,
+   "rho_anocracy": -0.165,
+   "rho_cso": -0.206,
+   "rho_prior_conflict": 0.103,
+   "rho_rol": -0.473,
+   "rho_exclusion": 0.288
+  },
+  "conflict": {
+   "n": 137,
+   "n_pos": 52,
+   "auc_struct": 0.606,
+   "auc_struct+numer": 0.703,
+   "increment": 0.098,
+   "rho_anocracy": 0.035,
+   "rho_cso": 0.084,
+   "rho_prior_conflict": 0.19,
+   "rho_rol": -0.17,
+   "rho_exclusion": 0.28
+  }
+ },
+ {
+  "epoch": 1966,
+  "n": 138,
+  "backslide": {
+   "n": 85,
+   "n_pos": 12,
+   "auc_struct": 0.615,
+   "auc_struct+numer": 0.825,
+   "increment": 0.21,
+   "rho_anocracy": 0.085,
+   "rho_cso": -0.04,
+   "rho_prior_conflict": -0.162,
+   "rho_rol": -0.134,
+   "rho_exclusion": 0.07
+  },
+  "conflict": {
+   "n": 138,
+   "n_pos": 60,
+   "auc_struct": 0.636,
+   "auc_struct+numer": 0.783,
+   "increment": 0.148,
+   "rho_anocracy": -0.075,
+   "rho_cso": -0.037,
+   "rho_prior_conflict": 0.466,
+   "rho_rol": -0.216,
+   "rho_exclusion": 0.295
+  }
+ },
+ {
+  "epoch": 1976,
+  "n": 141,
+  "backslide": {
+   "n": 69,
+   "n_pos": 3,
+   "auc_struct": 0.843,
+   "auc_struct+numer": 0.904,
+   "increment": 0.061,
+   "rho_anocracy": 0.143,
+   "rho_cso": -0.103,
+   "rho_prior_conflict": 0.028,
+   "rho_rol": -0.05,
+   "rho_exclusion": -0.024
+  },
+  "conflict": {
+   "n": 141,
+   "n_pos": 71,
+   "auc_struct": 0.684,
+   "auc_struct+numer": 0.747,
+   "increment": 0.063,
+   "rho_anocracy": -0.173,
+   "rho_cso": -0.25,
+   "rho_prior_conflict": 0.315,
+   "rho_rol": -0.287,
+   "rho_exclusion": 0.393
+  }
+ },
+ {
+  "epoch": 1986,
+  "n": 156,
+  "backslide": {
+   "n": 92,
+   "n_pos": 7,
+   "auc_struct": 0.657,
+   "auc_struct+numer": 0.933,
+   "increment": 0.276,
+   "rho_anocracy": 0.222,
+   "rho_cso": 0.013,
+   "rho_prior_conflict": 0.375,
+   "rho_rol": -0.016,
+   "rho_exclusion": -0.019
+  },
+  "conflict": {
+   "n": 156,
+   "n_pos": 71,
+   "auc_struct": 0.706,
+   "auc_struct+numer": 0.706,
+   "increment": 0.0,
+   "rho_anocracy": -0.201,
+   "rho_cso": -0.183,
+   "rho_prior_conflict": 0.138,
+   "rho_rol": -0.285,
+   "rho_exclusion": 0.33
+  }
+ },
+ {
+  "epoch": 1996,
+  "n": 159,
+  "backslide": {
+   "n": 132,
+   "n_pos": 25,
+   "auc_struct": 0.603,
+   "auc_struct+numer": 0.731,
+   "increment": 0.128,
+   "rho_anocracy": 0.212,
+   "rho_cso": 0.043,
+   "rho_prior_conflict": -0.021,
+   "rho_rol": -0.139,
+   "rho_exclusion": 0.098
+  },
+  "conflict": {
+   "n": 159,
+   "n_pos": 65,
+   "auc_struct": 0.792,
+   "auc_struct+numer": 0.829,
+   "increment": 0.038,
+   "rho_anocracy": -0.234,
+   "rho_cso": -0.311,
+   "rho_prior_conflict": 0.453,
+   "rho_rol": -0.46,
+   "rho_exclusion": 0.235
+  }
+ }
+]
