@@ -1,56 +1,56 @@
 {
- "n": 164,
+ "n": 166,
  "H4_cross_model": {
   "L": {
-   "n_complete": 116,
+   "n_complete": 133,
    "corr_weights": {
-    "F1": 0.11,
-    "F2": 0.155,
-    "F3": 0.215,
-    "F4": 0.137,
-    "F5": 0.204,
-    "F6": 0.179
+    "F1": 0.062,
+    "F2": 0.166,
+    "F3": 0.24,
+    "F4": 0.128,
+    "F5": 0.209,
+    "F6": 0.195
    },
    "pairwise_rho": {
-    "a_equal~b_corr": 0.9858,
-    "a_equal~c_analyst": 0.9856,
-    "b_corr~c_analyst": 0.9572
+    "a_equal~b_corr": 0.9814,
+    "a_equal~c_analyst": 0.989,
+    "b_corr~c_analyst": 0.9648
    },
-   "min_rho": 0.9572
+   "min_rho": 0.9648
   },
   "E": {
-   "n_complete": 71,
+   "n_complete": 115,
    "corr_weights": {
-    "F1": 0.193,
-    "F2": 0.085,
-    "F3": 0.181,
-    "F4": 0.193,
-    "F5": 0.154,
-    "F6": 0.193
+    "F1": 0.211,
+    "F2": 0.036,
+    "F3": 0.168,
+    "F4": 0.211,
+    "F5": 0.164,
+    "F6": 0.211
    },
    "pairwise_rho": {
-    "a_equal~b_corr": 0.9874,
-    "a_equal~c_analyst": 0.9939,
-    "b_corr~c_analyst": 0.9835
+    "a_equal~b_corr": 0.9787,
+    "a_equal~c_analyst": 0.9911,
+    "b_corr~c_analyst": 0.9603
    },
-   "min_rho": 0.9835
+   "min_rho": 0.9603
   },
   "score": {
-   "n_complete": 116,
+   "n_complete": 133,
    "corr_weights": {
-    "F1": 0.155,
-    "F2": 0.081,
-    "F3": 0.196,
-    "F4": 0.177,
-    "F5": 0.195,
-    "F6": 0.197
+    "F1": 0.153,
+    "F2": 0.086,
+    "F3": 0.198,
+    "F4": 0.172,
+    "F5": 0.196,
+    "F6": 0.194
    },
    "pairwise_rho": {
-    "a_equal~b_corr": 0.9934,
-    "a_equal~c_analyst": 0.9931,
-    "b_corr~c_analyst": 0.9786
+    "a_equal~b_corr": 0.9876,
+    "a_equal~c_analyst": 0.9893,
+    "b_corr~c_analyst": 0.9619
    },
-   "min_rho": 0.9786
+   "min_rho": 0.9619
   }
  },
  "H4_gate_pass": true,
@@ -58,61 +58,61 @@
  "n_analysis": 115,
  "H5": {
   "auc_v1": 0.8066,
-  "auc_v2Level": 0.6354,
-  "auc_v2Equity": 0.5944,
-  "auc_v1+v2L": 0.8388,
-  "auc_v1+v2L+v2E": 0.8424,
-  "equity_gain_over_v1+level": 0.0036,
+  "auc_v2Level": 0.6351,
+  "auc_v2Equity": 0.5729,
+  "auc_v1+v2L": 0.8315,
+  "auc_v1+v2L+v2E": 0.8415,
+  "equity_gain_over_v1+level": 0.01,
   "adds_power(gain>=0.05)": false
  },
  "H3": {
   "auc_v1_only": 0.8066,
-  "auc_v2C_only": 0.6243,
-  "auc_gap_level": 0.6324,
-  "auc_gap_equity": 0.5932,
+  "auc_v2C_only": 0.6082,
+  "auc_gap_level": 0.6333,
+  "auc_gap_equity": 0.5713,
   "equity_gap_more_predictive": false
  },
  "H1": {
-  "auc_combined": 0.6243,
-  "auc_spread": 0.4909,
-  "auc_combined+spread": 0.6184,
+  "auc_combined": 0.6082,
+  "auc_spread": 0.5328,
+  "auc_combined+spread": 0.6193,
   "spread_adds": false
  },
  "H6": {
-  "median_L": 50.4,
-  "median_E": 58.2,
+  "median_L": 50.8,
+  "median_E": 57.2,
   "n_by_quadrant": {
-   "HL_HE": 48,
-   "HL_LE": 10,
-   "LL_HE": 10,
-   "LL_LE": 47
+   "HL_HE": 45,
+   "HL_LE": 13,
+   "LL_HE": 13,
+   "LL_LE": 44
   },
   "stress_rate_by_quadrant": {
-   "HL_HE": 0.354,
-   "HL_LE": 0.6,
-   "LL_HE": 0.6,
-   "LL_LE": 0.532
+   "HL_HE": 0.356,
+   "HL_LE": 0.538,
+   "LL_HE": 0.615,
+   "LL_LE": 0.523
   },
-  "HL_LE_vs_LL_HE": 0.0,
+  "HL_LE_vs_LL_HE": -0.077,
   "confirmed(HL_LE>LL_HE)": false
  },
  "US_case": {
-  "V2_Level": 61.1,
-  "V2_Equity": 61.2,
-  "V2_Combined": 61.1,
+  "V2_Level": 59.1,
+  "V2_Equity": 58.6,
+  "V2_Combined": 58.8,
   "V1": 0.779,
   "pillars": {
    "F1": {
-    "L": 35.1,
-    "E": 35.3,
-    "score": 35.2,
+    "L": 23.4,
+    "E": 34.6,
+    "score": 26.7,
     "equity_source": "proxy(income)"
    },
    "F2": {
     "L": 25.4,
-    "E": null,
-    "score": 25.4,
-    "equity_source": "none"
+    "E": 47.7,
+    "score": 34.8,
+    "equity_source": "real"
    },
    "F3": {
     "L": 92.0,
@@ -122,8 +122,8 @@
    },
    "F4": {
     "L": 50.9,
-    "E": 35.3,
-    "score": 42.3,
+    "E": 34.6,
+    "score": 41.9,
     "equity_source": "proxy(income)"
    },
    "F5": {
@@ -134,8 +134,8 @@
    },
    "F6": {
     "L": 93.0,
-    "E": 35.3,
-    "score": 57.3,
+    "E": 34.6,
+    "score": 56.7,
     "equity_source": "proxy(income)"
    }
   },

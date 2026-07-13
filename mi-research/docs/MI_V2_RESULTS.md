@@ -10,6 +10,46 @@ was run). Engine `scripts/v2/v2_engine.py`; hypotheses `scripts/v2/v2_hypotheses
 
 ---
 
+## ⟐ Authoritative-data update (2026-07-12) — read this first
+
+The initial pass ran on proxy equity (income-Gini) and a WDI/conflict outcome. The three
+blocking datasets were then obtained and ingested (`scripts/v2/ingest_manual.py`):
+**IMF WEO Apr-2025** (real primary balance + gross debt → F1, 188/194 countries),
+**PISA 2022 ESCS socio-economic score gaps** (real developed-country education equity, 57
+countries — fetched through stat.link), and **LIS Key Figures** (disposable-income Gini +
+P90/P10, 49 countries). F2 equity is now **real (non-proxy) for 132 countries** (DHS
+quintiles for the developing world + PISA for the rich world), and a **democratic-
+backsliding outcome** (V-Dem liberal-democracy decline 2004→2024) was added as the
+rich-democracy-sensitive stress measure conflict-onset misses.
+
+**What changed, and what didn't:**
+- **H4 (construct validity) still PASSES** on the authoritative data (cross-model ρ: Level
+  0.965 / Equity 0.960 / Combined 0.962). V2 is a real construct.
+- **The continuous equity tests stay NULL on both outcomes.** V2-Equity adds +0.01 (conflict)
+  / −0.006 (backsliding) over V1+V2-Level. Real equity data did **not** make the linear
+  equity signal appear. V1 (AUC 0.807) still dominates conflict; **nothing predicts
+  backsliding linearly** (V1 itself only 0.53 — democratic erosion is not a capacity failure).
+- **H6 (the configurational headline) CONFIRMS on backsliding, and the real data *sharpened*
+  it.** Backslide rate by quadrant: **HL-LE 0.50 > LL-LE 0.32 > HL-HE 0.30 > LL-HE 0.19** —
+  exactly the pre-registered ordering: *capability + inequality (the "American configuration")
+  is the most democratic-erosion-prone; capability + equity and incapability + equity are the
+  most stable.* The upgrade from proxy to real equity moved HL-LE-vs-LL-HE from 0.44/0.25 to
+  **0.50/0.19** (a 2.6× gap). **But it is underpowered — n=16 per off-diagonal quadrant,
+  Fisher p≈0.14 — a large effect that does not reach significance.** On the *conflict* outcome
+  H6 does not hold (HL-LE 0.54 < LL-HE 0.62), consistent with the thesis being about
+  legitimacy/erosion, not armed conflict.
+
+**Refined verdict:** the equity thesis is **real but narrow and not-yet-significant** — it
+operates as a *configuration/interaction* (the high-capability-low-equity corner), not a
+*linear* predictor; on *democratic backsliding*, not conflict; with a *large effect the
+current sample can't confirm* (p≈0.14). The authoritative data strengthened the signal and
+removed the "untestable where it matters" caveat, but did not cross it into a confirmed
+finding. The honest status is **directional support, underpowered — the instrument points
+where the spec predicted, and now needs n (a populist-vote outcome like V-Party, and more
+years) to settle it.** Everything below is the original proxy-data pass, retained for record.
+
+---
+
 ## Verdict in one paragraph
 
 **V2 is a real construct that mostly fails to justify itself as a predictor — and the

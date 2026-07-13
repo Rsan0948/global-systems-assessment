@@ -23,3 +23,6 @@ mi-research/data/robustness/outcomes/ucdp/
 
 # COW raw downloads (re-fetchable)
 mi-research/data/robustness/outcomes/cow/
+
+# V2 large raw source (re-downloadable from IMF; parsed result committed as manual_indicators.json)
+mi-research/data/v2/manual/weoapr2025all.xls

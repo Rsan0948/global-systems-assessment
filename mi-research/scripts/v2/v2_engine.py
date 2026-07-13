@@ -17,7 +17,39 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
 IND = json.loads((ROOT / "data/v2/v2_indicators.json").read_text())["series"]
+MAN = json.loads((ROOT / "data/v2/manual_indicators.json").read_text())["series"]
 OUT = ROOT / "data/v2/v2_scores.json"
+
+
+def latest_man(iso, key, lo=2014, hi=2025):
+    s = MAN.get(key, {}).get(iso)
+    if s is None:
+        return None
+    if isinstance(s, (int, float)):   # scalar series (PISA gap, LIS)
+        return float(s)
+    for y in range(hi, lo - 1, -1):
+        if str(y) in s:
+            return s[str(y)]
+    return None
+
+
+def avg_man(iso, key, years):
+    s = MAN.get(key, {}).get(iso)
+    if not s:
+        return None
+    v = [s[str(y)] for y in years if str(y) in s]
+    return sum(v) / len(v) if v else None
+
+
+def change5_man(iso, key):
+    s = MAN.get(key, {}).get(iso)
+    if not s:
+        return None
+    yrs = sorted(int(y) for y in s)
+    if not yrs:
+        return None
+    y1 = yrs[-1]; prev = [y for y in yrs if y <= y1 - 4]
+    return (s[str(y1)] - s[str(prev[-1])]) if prev else None
 
 
 def latest(iso, key, lo=2014, hi=2024):
@@ -57,15 +89,19 @@ def raw_level(iso):
     g = lambda k: latest(iso, k)
     gdp = g("gdp_pc_ppp")
     out = {}
-    # F1 fiscal (collective sustainability measures)
+    # F1 fiscal — authoritative IMF WEO (primary balance 3-yr avg + gross-debt trajectory);
+    # WDI interest/revenue as third indicator.
     f1 = {}
-    if g("f1_cash_bal_gdp") is not None:
-        f1["cash_bal"] = g("f1_cash_bal_gdp")
+    pb = avg_man(iso, "weo_primary_bal", range(2020, 2025))
+    if pb is None:
+        pb = latest_man(iso, "weo_primary_bal")
+    if pb is not None:
+        f1["primary_bal"] = pb                             # higher (surplus) better
+    debt_ch = change5_man(iso, "weo_gross_debt")
+    if debt_ch is not None:
+        f1["debt_traj"] = -debt_ch                         # rising debt bad
     if g("f1_interest_rev") is not None:
-        f1["interest"] = -g("f1_interest_rev")            # lower better
-    dch = change5(iso, "f1_debt_gdp")
-    if dch is not None:
-        f1["debt_traj"] = -dch                             # rising debt bad
+        f1["interest"] = -g("f1_interest_rev")             # lower better
     out["F1"] = f1
     # F2 human development (conversion ratios, log input)
     f2 = {}
@@ -126,9 +162,13 @@ def raw_level(iso):
 def raw_equity(iso):
     g = lambda k: latest(iso, k)
     out = {}
-    # income anchor (proxy for F1/F4/F6): 100 - Gini
+    # income anchor: WDI 100-Gini, supplemented by LIS P90/P10 where WDI Gini is missing
     gini = g("gini")
     income_eq = (100 - gini) if gini is not None else None
+    if income_eq is None:
+        p = latest_man(iso, "lis_p90p10")               # ratio ~3-8, lower=more equal
+        if p is not None:
+            income_eq = max(0.0, 100 - (p - 2) * 12)    # ~4.3->72, ~8->28 (rough LIS->equity map)
     # F2 health equity (Q1 poorest / Q5 richest; stunting inverted)
     def ratio(q1, q5, invert=False):
         a, b = g(q1), g(q5)
@@ -136,10 +176,15 @@ def raw_equity(iso):
             return None
         r = (b / a) if invert else (a / b)
         return min(r, 1.0) * 100
-    f2e = [x for x in [ratio("eq_measles_q1", "eq_measles_q5"),
-                       ratio("eq_birth_q1", "eq_birth_q5"),
-                       ratio("eq_antenatal_q1", "eq_antenatal_q5"),
-                       ratio("eq_stunt_q1", "eq_stunt_q5", invert=True)] if x is not None]
+    f2_health = [x for x in [ratio("eq_measles_q1", "eq_measles_q5"),
+                             ratio("eq_birth_q1", "eq_birth_q5"),
+                             ratio("eq_antenatal_q1", "eq_antenatal_q5"),
+                             ratio("eq_stunt_q1", "eq_stunt_q5", invert=True)] if x is not None]
+    # F2 EDUCATION equity — real PISA ESCS socio-economic score gap (higher gap = less
+    # equitable). Convert to a 0-100 equity score (gap ~150 -> 0, ~40 -> ~100).
+    pisa_gap = latest_man(iso, "pisa_escs_gap")
+    f2_edu = max(0.0, 100 - (pisa_gap - 40) * (100 / 110)) if pisa_gap is not None else None
+    f2e = list(f2_health) + ([f2_edu] if f2_edu is not None else [])
     # F3 infra equity (rural/urban)
     def ru(r, u):
         a, b = g(r), g(u)
