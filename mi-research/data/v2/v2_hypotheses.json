@@ -1,0 +1,144 @@
+{
+ "n": 164,
+ "H4_cross_model": {
+  "L": {
+   "n_complete": 116,
+   "corr_weights": {
+    "F1": 0.11,
+    "F2": 0.155,
+    "F3": 0.215,
+    "F4": 0.137,
+    "F5": 0.204,
+    "F6": 0.179
+   },
+   "pairwise_rho": {
+    "a_equal~b_corr": 0.9858,
+    "a_equal~c_analyst": 0.9856,
+    "b_corr~c_analyst": 0.9572
+   },
+   "min_rho": 0.9572
+  },
+  "E": {
+   "n_complete": 71,
+   "corr_weights": {
+    "F1": 0.193,
+    "F2": 0.085,
+    "F3": 0.181,
+    "F4": 0.193,
+    "F5": 0.154,
+    "F6": 0.193
+   },
+   "pairwise_rho": {
+    "a_equal~b_corr": 0.9874,
+    "a_equal~c_analyst": 0.9939,
+    "b_corr~c_analyst": 0.9835
+   },
+   "min_rho": 0.9835
+  },
+  "score": {
+   "n_complete": 116,
+   "corr_weights": {
+    "F1": 0.155,
+    "F2": 0.081,
+    "F3": 0.196,
+    "F4": 0.177,
+    "F5": 0.195,
+    "F6": 0.197
+   },
+   "pairwise_rho": {
+    "a_equal~b_corr": 0.9934,
+    "a_equal~c_analyst": 0.9931,
+    "b_corr~c_analyst": 0.9786
+   },
+   "min_rho": 0.9786
+  }
+ },
+ "H4_gate_pass": true,
+ "H4_equity_single_construct": true,
+ "n_analysis": 115,
+ "H5": {
+  "auc_v1": 0.8066,
+  "auc_v2Level": 0.6354,
+  "auc_v2Equity": 0.5944,
+  "auc_v1+v2L": 0.8388,
+  "auc_v1+v2L+v2E": 0.8424,
+  "equity_gain_over_v1+level": 0.0036,
+  "adds_power(gain>=0.05)": false
+ },
+ "H3": {
+  "auc_v1_only": 0.8066,
+  "auc_v2C_only": 0.6243,
+  "auc_gap_level": 0.6324,
+  "auc_gap_equity": 0.5932,
+  "equity_gap_more_predictive": false
+ },
+ "H1": {
+  "auc_combined": 0.6243,
+  "auc_spread": 0.4909,
+  "auc_combined+spread": 0.6184,
+  "spread_adds": false
+ },
+ "H6": {
+  "median_L": 50.4,
+  "median_E": 58.2,
+  "n_by_quadrant": {
+   "HL_HE": 48,
+   "HL_LE": 10,
+   "LL_HE": 10,
+   "LL_LE": 47
+  },
+  "stress_rate_by_quadrant": {
+   "HL_HE": 0.354,
+   "HL_LE": 0.6,
+   "LL_HE": 0.6,
+   "LL_LE": 0.532
+  },
+  "HL_LE_vs_LL_HE": 0.0,
+  "confirmed(HL_LE>LL_HE)": false
+ },
+ "US_case": {
+  "V2_Level": 61.1,
+  "V2_Equity": 61.2,
+  "V2_Combined": 61.1,
+  "V1": 0.779,
+  "pillars": {
+   "F1": {
+    "L": 35.1,
+    "E": 35.3,
+    "score": 35.2,
+    "equity_source": "proxy(income)"
+   },
+   "F2": {
+    "L": 25.4,
+    "E": null,
+    "score": 25.4,
+    "equity_source": "none"
+   },
+   "F3": {
+    "L": 92.0,
+    "E": 100.0,
+    "score": 95.9,
+    "equity_source": "real"
+   },
+   "F4": {
+    "L": 50.9,
+    "E": 35.3,
+    "score": 42.3,
+    "equity_source": "proxy(income)"
+   },
+   "F5": {
+    "L": 70.0,
+    "E": 100.0,
+    "score": 83.7,
+    "equity_source": "real"
+   },
+   "F6": {
+    "L": 93.0,
+    "E": 35.3,
+    "score": 57.3,
+    "equity_source": "proxy(income)"
+   }
+  },
+  "note": "conversion instrument: US F2(health) Level is near worst-in-class (spends most, converts least)"
+ }
+}
