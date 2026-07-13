@@ -1,18 +1,29 @@
-# The Three-Model Framework — capacity, conversion, pressure
+# The Four-Tier Framework — capacity, conversion, pressure, scarring
 
-**The Modernization program now has three complementary instruments**, each measuring one
+**The Modernization program now has four complementary instruments**, each measuring one
 face of the founding equation (**rupture = interior complexity > interface capacity**), and
-each — proven empirically — owning a *different* class of outcome. Together they span the
-space: what a polity *is*, how well it *delivers*, and how much *pressure* it is containing.
+each — proven empirically — owning a *different* class of outcome at a *different* timescale.
+Together they span the space: what a polity *is*, how well it *delivers*, how much *pressure*
+it is containing, and what damage the *ground* already carries.
 
-| | **V1 — State / Capacity** | **V2 — Function / Conversion** | **V3 — Pressure / Complexity** |
-|---|---|---|---|
-| **Asks** | what is its structure? | how well does it convert capacity to outcomes, and for whom? | how much rupture-pressure is building, and can it vent? |
-| **Measures** | 5 pillars (institutions P1 central), balance, the P4−P1 durability gap | 6 functional-conversion pillars, each Level + Equity | grievance + mobilization + opportunity + history + shock (the numerator) |
-| **Data** | WGI/CPI/GII/HDR/FSI/Maddison/V-Dem (revealed + some perception) | WDI/WHO/IMF-WEO/PISA/DHS/LIS ratios (revealed-outcome) | EPR/V-Dem/PTS/WDI (grievance + expert-coded) |
-| **Predicts (validated)** | the **ancient rupture** (armed conflict, AUC ~0.72); demographic + structural trajectory; institutional rupture across 5,000y | **wellbeing** — life satisfaction via Level–Equity *balance* (t=−3.06 net of income) | the **modern rupture** — democratic backsliding (0.54→0.61) + repression (0.64→0.71) |
-| **Does NOT predict** | modern backsliding (≈chance) | any political outcome; the equity thesis failed | timing / the trigger (the Mule) |
-| **Status** | frozen, validated (109 cases, 15 adversarial findings) | construct-valid; equity thesis not supported; earns a wellbeing signal | gate-passed on 2 modern political modes; deep-validated 1816–1996 |
+| | **V1 — Capacity** | **V2 — Conversion** | **V3 — Pressure** | **Tier 4 — Scarring** |
+|---|---|---|---|---|
+| **Asks** | what is its structure? | does it deliver, and for whom? | is pressure building? | what happened on this ground before? |
+| **Measures** | 5 pillars, durability gap | 6 conversion pillars (Level + Equity) | grievance + mobilization + opportunity | conflict history (decayed) + trust + displacement + state-perpetration |
+| **Timescale** | generational | experiential | political-cycle | **civilizational (carries history forward with decay)** |
+| **Predicts (validated)** | the **ancient rupture** (armed conflict ~0.72); structural trajectory across 5,000y | **wellbeing** (life-sat via balance, t=−3.06) | the **modern rupture** — backsliding (0.54→0.61), repression (0.64→0.71) | **conflict recurrence** (+0.092 AUC over V1+V3 → **0.88**) |
+| **Does NOT predict** | modern backsliding (≈chance) | any political outcome | the trigger | which scarred states heal (decay rate is measured; the trajectory is contingent) |
+| **Status** | frozen, validated (109 cases, 15 findings) | construct-valid; equity null; wellbeing signal | gate-passed; deep-validated 1816–1996 | all hypotheses passed; **operationalizes the conflict trap** (mediates the raw binary) |
+
+**The one law measured on both sides, across four timescales.** V1/V2 are the **capacity
+denominator**; V3 is the **live complexity numerator**; **Tier 4 is the *accumulated* numerator
+— the pressure history leaves in the ground.** Each owns a distinct rupture: V1 the ancient
+(violence from weakness), V3 the modern (backsliding from contestation), Tier 4 the recurrent
+(violence from scarring). Tier 4's headline result is that it turned the program's most stable,
+least-explained relationship — the conflict trap (ρ +0.21..+0.67 across two centuries) — into a
+measurable, decomposable, **25-year-half-life** construct that *fully absorbs* the raw
+prior-conflict binary. Societies heal from violence on a generational, not civilizational,
+timescale — one of the framework's open questions, now answered quantitatively.
 
 **The equation, fully instantiated.** V1 and V2 are the **capacity denominator** (structure
 and its delivery); V3 is the **complexity numerator** (organized pressure). The whole
