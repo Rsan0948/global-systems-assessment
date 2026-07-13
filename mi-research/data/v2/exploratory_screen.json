@@ -1,0 +1,777 @@
+{
+ "n_tests": 266,
+ "n_fdr_survivors": 77,
+ "fdr_crit_p": 0.013395447962569067,
+ "survivors": [
+  {
+   "pred": "F3",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.854,
+   "p": 0.0,
+   "partial_rho": -0.405,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P3",
+   "out": "fertility",
+   "n": 139,
+   "rho": -0.844,
+   "p": 0.0,
+   "partial_rho": -0.35,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P3",
+   "out": "life_satisfaction",
+   "n": 134,
+   "rho": 0.819,
+   "p": 0.0,
+   "partial_rho": 0.17,
+   "partial_p": 0.049,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F3",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.814,
+   "p": 0.0,
+   "partial_rho": 0.127,
+   "partial_p": 0.127,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F5",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.812,
+   "p": 0.0,
+   "partial_rho": -0.353,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P2",
+   "out": "fertility",
+   "n": 136,
+   "rho": -0.808,
+   "p": 0.0,
+   "partial_rho": -0.396,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "v1",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.805,
+   "p": 0.0,
+   "partial_rho": -0.29,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "v1",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.805,
+   "p": 0.0,
+   "partial_rho": 0.124,
+   "partial_p": 0.136,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vC",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.764,
+   "p": 0.0,
+   "partial_rho": -0.36,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F5",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.744,
+   "p": 0.0,
+   "partial_rho": 0.06,
+   "partial_p": 0.471,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P4",
+   "out": "life_satisfaction",
+   "n": 144,
+   "rho": 0.733,
+   "p": 0.0,
+   "partial_rho": -0.004,
+   "partial_p": 0.967,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vL",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.731,
+   "p": 0.0,
+   "partial_rho": -0.295,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P4",
+   "out": "fertility",
+   "n": 158,
+   "rho": -0.728,
+   "p": 0.0,
+   "partial_rho": -0.11,
+   "partial_p": 0.169,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P1",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.719,
+   "p": 0.0,
+   "partial_rho": 0.071,
+   "partial_p": 0.398,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P1",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.715,
+   "p": 0.0,
+   "partial_rho": -0.166,
+   "partial_p": 0.036,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P2",
+   "out": "life_satisfaction",
+   "n": 133,
+   "rho": 0.696,
+   "p": 0.0,
+   "partial_rho": 0.01,
+   "partial_p": 0.909,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vL",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.657,
+   "p": 0.0,
+   "partial_rho": -0.046,
+   "partial_p": 0.582,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P5",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.65,
+   "p": 0.0,
+   "partial_rho": 0.128,
+   "partial_p": 0.122,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vC",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.633,
+   "p": 0.0,
+   "partial_rho": -0.069,
+   "partial_p": 0.41,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vE",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.63,
+   "p": 0.0,
+   "partial_rho": -0.253,
+   "partial_p": 0.001,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F6",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.622,
+   "p": 0.0,
+   "partial_rho": 0.029,
+   "partial_p": 0.728,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P3",
+   "out": "d_life_exp",
+   "n": 139,
+   "rho": -0.62,
+   "p": 0.0,
+   "partial_rho": -0.193,
+   "partial_p": 0.023,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F6",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.597,
+   "p": 0.0,
+   "partial_rho": -0.164,
+   "partial_p": 0.038,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F3",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.593,
+   "p": 0.0,
+   "partial_rho": -0.315,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F5",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.587,
+   "p": 0.0,
+   "partial_rho": -0.304,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "v1",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.563,
+   "p": 0.0,
+   "partial_rho": -0.243,
+   "partial_p": 0.002,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P2",
+   "out": "d_life_exp",
+   "n": 136,
+   "rho": -0.553,
+   "p": 0.0,
+   "partial_rho": -0.094,
+   "partial_p": 0.274,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P5",
+   "out": "fertility",
+   "n": 160,
+   "rho": -0.55,
+   "p": 0.0,
+   "partial_rho": -0.07,
+   "partial_p": 0.38,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P4",
+   "out": "d_life_exp",
+   "n": 158,
+   "rho": -0.549,
+   "p": 0.0,
+   "partial_rho": -0.207,
+   "partial_p": 0.009,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "vC",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.533,
+   "p": 0.0,
+   "partial_rho": -0.236,
+   "partial_p": 0.003,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "vL",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.508,
+   "p": 0.0,
+   "partial_rho": -0.199,
+   "partial_p": 0.012,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P1",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.486,
+   "p": 0.0,
+   "partial_rho": -0.13,
+   "partial_p": 0.101,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vE",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": 0.473,
+   "p": 0.0,
+   "partial_rho": -0.11,
+   "partial_p": 0.187,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F6",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.455,
+   "p": 0.0,
+   "partial_rho": -0.183,
+   "partial_p": 0.02,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "vE",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.447,
+   "p": 0.0,
+   "partial_rho": -0.175,
+   "partial_p": 0.027,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F4",
+   "out": "fertility",
+   "n": 129,
+   "rho": -0.442,
+   "p": 0.0,
+   "partial_rho": -0.12,
+   "partial_p": 0.176,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P2",
+   "out": "suicide",
+   "n": 136,
+   "rho": 0.44,
+   "p": 0.0,
+   "partial_rho": 0.191,
+   "partial_p": 0.026,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P3",
+   "out": "suicide",
+   "n": 139,
+   "rho": 0.41,
+   "p": 0.0,
+   "partial_rho": 0.066,
+   "partial_p": 0.443,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "v1",
+   "out": "suicide",
+   "n": 159,
+   "rho": 0.403,
+   "p": 0.0,
+   "partial_rho": 0.224,
+   "partial_p": 0.005,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P5",
+   "out": "d_life_exp",
+   "n": 160,
+   "rho": -0.392,
+   "p": 0.0,
+   "partial_rho": -0.093,
+   "partial_p": 0.243,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P1",
+   "out": "suicide",
+   "n": 159,
+   "rho": 0.389,
+   "p": 0.0,
+   "partial_rho": 0.202,
+   "partial_p": 0.011,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P5",
+   "out": "suicide",
+   "n": 159,
+   "rho": 0.366,
+   "p": 0.0,
+   "partial_rho": 0.202,
+   "partial_p": 0.011,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F4",
+   "out": "life_satisfaction",
+   "n": 121,
+   "rho": 0.355,
+   "p": 0.0,
+   "partial_rho": -0.178,
+   "partial_p": 0.051,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P1",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": -0.349,
+   "p": 0.0,
+   "partial_rho": -0.139,
+   "partial_p": 0.082,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F6",
+   "out": "suicide",
+   "n": 159,
+   "rho": 0.335,
+   "p": 0.0,
+   "partial_rho": 0.159,
+   "partial_p": 0.045,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "v1",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": -0.328,
+   "p": 0.0,
+   "partial_rho": -0.068,
+   "partial_p": 0.393,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F2",
+   "out": "suicide",
+   "n": 159,
+   "rho": -0.321,
+   "p": 0.0,
+   "partial_rho": -0.225,
+   "partial_p": 0.004,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "imbalance_LE",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": -0.312,
+   "p": 0.0,
+   "partial_rho": -0.266,
+   "partial_p": 0.001,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P4",
+   "out": "suicide",
+   "n": 157,
+   "rho": 0.308,
+   "p": 0.0,
+   "partial_rho": 0.033,
+   "partial_p": 0.68,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vL",
+   "out": "suicide",
+   "n": 159,
+   "rho": 0.304,
+   "p": 0.0,
+   "partial_rho": 0.074,
+   "partial_p": 0.355,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F3",
+   "out": "suicide",
+   "n": 159,
+   "rho": 0.297,
+   "p": 0.0,
+   "partial_rho": -0.051,
+   "partial_p": 0.523,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P5",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": -0.296,
+   "p": 0.0,
+   "partial_rho": -0.112,
+   "partial_p": 0.162,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F3",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": -0.29,
+   "p": 0.0,
+   "partial_rho": 0.052,
+   "partial_p": 0.513,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F2",
+   "out": "life_satisfaction",
+   "n": 146,
+   "rho": -0.286,
+   "p": 0.0,
+   "partial_rho": 0.055,
+   "partial_p": 0.51,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "gap_v1_vC",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": -0.286,
+   "p": 0.0,
+   "partial_rho": -0.309,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "F3",
+   "out": "gross_savings",
+   "n": 145,
+   "rho": 0.275,
+   "p": 0.001,
+   "partial_rho": -0.013,
+   "partial_p": 0.874,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P4",
+   "out": "inflation_vol",
+   "n": 156,
+   "rho": -0.272,
+   "p": 0.001,
+   "partial_rho": 0.001,
+   "partial_p": 0.993,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F5",
+   "out": "suicide",
+   "n": 159,
+   "rho": 0.268,
+   "p": 0.001,
+   "partial_rho": -0.052,
+   "partial_p": 0.514,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F4",
+   "out": "d_life_exp",
+   "n": 129,
+   "rho": -0.266,
+   "p": 0.002,
+   "partial_rho": -0.039,
+   "partial_p": 0.662,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P3",
+   "out": "gross_savings",
+   "n": 129,
+   "rho": 0.255,
+   "p": 0.004,
+   "partial_rho": -0.079,
+   "partial_p": 0.376,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vL",
+   "out": "gross_savings",
+   "n": 145,
+   "rho": 0.252,
+   "p": 0.002,
+   "partial_rho": 0.027,
+   "partial_p": 0.752,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F4",
+   "out": "gross_savings",
+   "n": 119,
+   "rho": 0.251,
+   "p": 0.006,
+   "partial_rho": 0.14,
+   "partial_p": 0.129,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P3",
+   "out": "inflation_vol",
+   "n": 138,
+   "rho": -0.25,
+   "p": 0.003,
+   "partial_rho": 0.072,
+   "partial_p": 0.404,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F1",
+   "out": "fertility",
+   "n": 159,
+   "rho": -0.248,
+   "p": 0.002,
+   "partial_rho": -0.114,
+   "partial_p": 0.151,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F1",
+   "out": "life_satisfaction",
+   "n": 145,
+   "rho": 0.246,
+   "p": 0.003,
+   "partial_rho": 0.045,
+   "partial_p": 0.591,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P5",
+   "out": "fdi_in",
+   "n": 159,
+   "rho": 0.24,
+   "p": 0.002,
+   "partial_rho": 0.259,
+   "partial_p": 0.001,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "P1",
+   "out": "gross_savings",
+   "n": 145,
+   "rho": 0.235,
+   "p": 0.004,
+   "partial_rho": -0.016,
+   "partial_p": 0.849,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vC",
+   "out": "gross_savings",
+   "n": 145,
+   "rho": 0.232,
+   "p": 0.005,
+   "partial_rho": -0.003,
+   "partial_p": 0.969,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "gap_v1_vE",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": -0.232,
+   "p": 0.003,
+   "partial_rho": -0.292,
+   "partial_p": 0.0,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "v1",
+   "out": "gross_savings",
+   "n": 145,
+   "rho": 0.226,
+   "p": 0.006,
+   "partial_rho": -0.089,
+   "partial_p": 0.285,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P2",
+   "out": "inflation_vol",
+   "n": 135,
+   "rho": -0.222,
+   "p": 0.01,
+   "partial_rho": -0.001,
+   "partial_p": 0.995,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "vC",
+   "out": "suicide",
+   "n": 159,
+   "rho": 0.221,
+   "p": 0.005,
+   "partial_rho": -0.068,
+   "partial_p": 0.395,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "P5",
+   "out": "gross_savings",
+   "n": 145,
+   "rho": 0.214,
+   "p": 0.01,
+   "partial_rho": 0.039,
+   "partial_p": 0.645,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F2",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": 0.207,
+   "p": 0.009,
+   "partial_rho": 0.097,
+   "partial_p": 0.223,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "F5",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": -0.205,
+   "p": 0.01,
+   "partial_rho": 0.169,
+   "partial_p": 0.033,
+   "survives_gdp_control": false
+  },
+  {
+   "pred": "imbalance_LE",
+   "out": "inflation_vol",
+   "n": 158,
+   "rho": 0.205,
+   "p": 0.01,
+   "partial_rho": 0.162,
+   "partial_p": 0.043,
+   "survives_gdp_control": true
+  },
+  {
+   "pred": "gap_v1_vE",
+   "out": "fertility",
+   "n": 160,
+   "rho": 0.195,
+   "p": 0.013,
+   "partial_rho": 0.161,
+   "partial_p": 0.043,
+   "survives_gdp_control": true
+  }
+ ]
+}
