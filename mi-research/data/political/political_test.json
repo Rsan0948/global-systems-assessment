@@ -1,0 +1,446 @@
+{
+ "prereg": "ec4aebe0",
+ "n": 170,
+ "T1_fdr_crit": 0.020420935198651693,
+ "T1_survivors": [
+  {
+   "pred": "pts",
+   "out": "conflict_1224",
+   "n": 154,
+   "rho": 0.45,
+   "p": 4.8223817433130126e-09,
+   "fdr": true
+  },
+  {
+   "pred": "prior_conflict",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": 0.425,
+   "p": 7.938533159814316e-09,
+   "fdr": true
+  },
+  {
+   "pred": "youth",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": 0.409,
+   "p": 3.0302923539513906e-08,
+   "fdr": true
+  },
+  {
+   "pred": "P1",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": -0.366,
+   "p": 8.888859520802004e-07,
+   "fdr": true
+  },
+  {
+   "pred": "internet",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": -0.366,
+   "p": 9.346719793552688e-07,
+   "fdr": true
+  },
+  {
+   "pred": "logGDP",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": -0.345,
+   "p": 4.203942448026587e-06,
+   "fdr": true
+  },
+  {
+   "pred": "pts_chg",
+   "out": "repression_worsen",
+   "n": 139,
+   "rho": -0.28,
+   "p": 0.0008285526772107695,
+   "fdr": true
+  },
+  {
+   "pred": "internet",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.243,
+   "p": 0.0033384794356165447,
+   "fdr": true
+  },
+  {
+   "pred": "P1",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.241,
+   "p": 0.0035779756998638944,
+   "fdr": true
+  },
+  {
+   "pred": "cso",
+   "out": "backslide",
+   "n": 170,
+   "rho": 0.22,
+   "p": 0.003937662422188012,
+   "fdr": true
+  },
+  {
+   "pred": "logGDP",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.223,
+   "p": 0.0071503774919495985,
+   "fdr": true
+  },
+  {
+   "pred": "anocracy",
+   "out": "backslide",
+   "n": 170,
+   "rho": 0.204,
+   "p": 0.007727779736755446,
+   "fdr": true
+  },
+  {
+   "pred": "cso",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.214,
+   "p": 0.010104105808239564,
+   "fdr": true
+  },
+  {
+   "pred": "ethnic_excl",
+   "out": "conflict_1224",
+   "n": 156,
+   "rho": 0.193,
+   "p": 0.01589049395039064,
+   "fdr": true
+  },
+  {
+   "pred": "food_imp",
+   "out": "repression_worsen",
+   "n": 136,
+   "rho": 0.199,
+   "p": 0.020420935198651693,
+   "fdr": true
+  }
+ ],
+ "T1_all": [
+  {
+   "pred": "pts",
+   "out": "conflict_1224",
+   "n": 154,
+   "rho": 0.45,
+   "p": 4.8223817433130126e-09,
+   "fdr": true
+  },
+  {
+   "pred": "prior_conflict",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": 0.425,
+   "p": 7.938533159814316e-09,
+   "fdr": true
+  },
+  {
+   "pred": "youth",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": 0.409,
+   "p": 3.0302923539513906e-08,
+   "fdr": true
+  },
+  {
+   "pred": "P1",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": -0.366,
+   "p": 8.888859520802004e-07,
+   "fdr": true
+  },
+  {
+   "pred": "internet",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": -0.366,
+   "p": 9.346719793552688e-07,
+   "fdr": true
+  },
+  {
+   "pred": "logGDP",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": -0.345,
+   "p": 4.203942448026587e-06,
+   "fdr": true
+  },
+  {
+   "pred": "pts_chg",
+   "out": "repression_worsen",
+   "n": 139,
+   "rho": -0.28,
+   "p": 0.0008285526772107695,
+   "fdr": true
+  },
+  {
+   "pred": "internet",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.243,
+   "p": 0.0033384794356165447,
+   "fdr": true
+  },
+  {
+   "pred": "P1",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.241,
+   "p": 0.0035779756998638944,
+   "fdr": true
+  },
+  {
+   "pred": "cso",
+   "out": "backslide",
+   "n": 170,
+   "rho": 0.22,
+   "p": 0.003937662422188012,
+   "fdr": true
+  },
+  {
+   "pred": "logGDP",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.223,
+   "p": 0.0071503774919495985,
+   "fdr": true
+  },
+  {
+   "pred": "anocracy",
+   "out": "backslide",
+   "n": 170,
+   "rho": 0.204,
+   "p": 0.007727779736755446,
+   "fdr": true
+  },
+  {
+   "pred": "cso",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.214,
+   "p": 0.010104105808239564,
+   "fdr": true
+  },
+  {
+   "pred": "ethnic_excl",
+   "out": "conflict_1224",
+   "n": 156,
+   "rho": 0.193,
+   "p": 0.01589049395039064,
+   "fdr": true
+  },
+  {
+   "pred": "food_imp",
+   "out": "repression_worsen",
+   "n": 136,
+   "rho": 0.199,
+   "p": 0.020420935198651693,
+   "fdr": true
+  },
+  {
+   "pred": "prior_conflict",
+   "out": "backslide",
+   "n": 170,
+   "rho": 0.138,
+   "p": 0.07290330491026055,
+   "fdr": false
+  },
+  {
+   "pred": "youth",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": 0.138,
+   "p": 0.09809799298629324,
+   "fdr": false
+  },
+  {
+   "pred": "cso",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": -0.121,
+   "p": 0.1152702904918361,
+   "fdr": false
+  },
+  {
+   "pred": "food_imp",
+   "out": "conflict_1224",
+   "n": 161,
+   "rho": 0.106,
+   "p": 0.18242372246231492,
+   "fdr": false
+  },
+  {
+   "pred": "pts",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": -0.108,
+   "p": 0.196067678467102,
+   "fdr": false
+  },
+  {
+   "pred": "food_imp",
+   "out": "backslide",
+   "n": 161,
+   "rho": -0.096,
+   "p": 0.22455690179626273,
+   "fdr": false
+  },
+  {
+   "pred": "growth_vol",
+   "out": "conflict_1224",
+   "n": 168,
+   "rho": -0.087,
+   "p": 0.264680180812904,
+   "fdr": false
+  },
+  {
+   "pred": "anocracy",
+   "out": "conflict_1224",
+   "n": 170,
+   "rho": -0.066,
+   "p": 0.3947646518327377,
+   "fdr": false
+  },
+  {
+   "pred": "growth_vol",
+   "out": "repression_worsen",
+   "n": 143,
+   "rho": 0.071,
+   "p": 0.4008600057114441,
+   "fdr": false
+  },
+  {
+   "pred": "pts_chg",
+   "out": "backslide",
+   "n": 153,
+   "rho": -0.062,
+   "p": 0.4443647125145111,
+   "fdr": false
+  },
+  {
+   "pred": "youth",
+   "out": "backslide",
+   "n": 170,
+   "rho": -0.043,
+   "p": 0.5803819709985276,
+   "fdr": false
+  },
+  {
+   "pred": "pts_chg",
+   "out": "conflict_1224",
+   "n": 153,
+   "rho": 0.044,
+   "p": 0.5902619416808035,
+   "fdr": false
+  },
+  {
+   "pred": "prior_conflict",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": 0.033,
+   "p": 0.6943357115860195,
+   "fdr": false
+  },
+  {
+   "pred": "internet",
+   "out": "backslide",
+   "n": 170,
+   "rho": -0.028,
+   "p": 0.7168292303352679,
+   "fdr": false
+  },
+  {
+   "pred": "P1",
+   "out": "backslide",
+   "n": 170,
+   "rho": 0.024,
+   "p": 0.7582899734129689,
+   "fdr": false
+  },
+  {
+   "pred": "anocracy",
+   "out": "repression_worsen",
+   "n": 144,
+   "rho": 0.021,
+   "p": 0.806297177734304,
+   "fdr": false
+  },
+  {
+   "pred": "growth_vol",
+   "out": "backslide",
+   "n": 168,
+   "rho": -0.014,
+   "p": 0.8556773004635974,
+   "fdr": false
+  },
+  {
+   "pred": "ethnic_excl",
+   "out": "repression_worsen",
+   "n": 135,
+   "rho": -0.015,
+   "p": 0.8644100148260102,
+   "fdr": false
+  },
+  {
+   "pred": "ethnic_excl",
+   "out": "backslide",
+   "n": 156,
+   "rho": 0.01,
+   "p": 0.9054158496473577,
+   "fdr": false
+  },
+  {
+   "pred": "pts",
+   "out": "backslide",
+   "n": 154,
+   "rho": 0.007,
+   "p": 0.9323179892138486,
+   "fdr": false
+  },
+  {
+   "pred": "logGDP",
+   "out": "backslide",
+   "n": 170,
+   "rho": 0.003,
+   "p": 0.9724497530119579,
+   "fdr": false
+  }
+ ],
+ "T2_gate": {
+  "backslide": {
+   "n": 131,
+   "n_pos": 60,
+   "auc_structural": 0.5432,
+   "auc_struct+numerator": 0.6055,
+   "increment": 0.0623,
+   "auc_struct+num_no_eventhistory": 0.5806,
+   "gate_pass(inc>=0.05)": true
+  },
+  "conflict_1224": {
+   "n": 131,
+   "n_pos": 39,
+   "auc_structural": 0.725,
+   "auc_struct+numerator": 0.7415,
+   "increment": 0.0165,
+   "auc_struct+num_no_eventhistory": 0.7386,
+   "gate_pass(inc>=0.05)": false
+  },
+  "repression_worsen": {
+   "n": 125,
+   "n_pos": 46,
+   "auc_structural": 0.6425,
+   "auc_struct+numerator": 0.7123,
+   "increment": 0.0698,
+   "auc_struct+num_no_eventhistory": 0.7279,
+   "gate_pass(inc>=0.05)": true
+  }
+ }
+}
