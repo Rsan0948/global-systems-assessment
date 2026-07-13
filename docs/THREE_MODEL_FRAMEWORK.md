@@ -15,7 +15,21 @@ it is containing, and what damage the *ground* already carries.
 | **Does NOT predict** | modern backsliding (≈chance) | any political outcome | the trigger | which scarred states heal (decay rate is measured; the trajectory is contingent) |
 | **Status** | frozen, validated (109 cases, 15 findings) | construct-valid; equity null; wellbeing signal | gate-passed; deep-validated 1816–1996 | all hypotheses passed; **operationalizes the conflict trap** (mediates the raw binary) |
 
-**The one law measured on both sides, across four timescales.** V1/V2 are the **capacity
+**Tier 5 — Criticality (the timing tier), and a founding rule.** The four tiers above all
+answer *how vulnerable?* A fifth answers *how close?* — grounded in the **Criticality
+Principle**: *a system approaching rupture slows down; the fluctuations in its state variables
+grow in amplitude and memory as it nears the threshold, an accelerating countdown, even though
+the spark that tips it stays unpredictable.* This is self-organized-criticality (the sandpile
+of the fragmentation leg) applied to the political time series, and it is empirically decisive
+for democratic backsliding: pre-collapse variance rises **monotonically 3.6×→7.4×** approaching
+the event, **within a country's own history** (84%), across **220 years** (every era). Tier 5
+scores the recent variance of the regime indices (0–100, higher=closer), scoped to democracies.
+It catches the imminent-tipping democracies the other four call healthy — **Poland, Korea,
+Romania: green on capacity/delivery/pressure/scarring, but flickering hard.** It is the first
+signal in the program to speak to *when*, not just *whether*. The spark holds; the ripeness
+does not. See `mi-research/docs/MI_TIER5_CRITICALITY.md`.
+
+**The one law measured on both sides, across four timescales, with a fifth for timing.** V1/V2 are the **capacity
 denominator**; V3 is the **live complexity numerator**; **Tier 4 is the *accumulated* numerator
 — the pressure history leaves in the ground.** Each owns a distinct rupture: V1 the ancient
 (violence from weakness), V3 the modern (backsliding from contestation), Tier 4 the recurrent
