@@ -1,5 +1,19 @@
 # Tier 5 — Criticality (the timing tier) + the Criticality Principle
 
+> **⚠ AUDIT CORRECTION (2026-07-12) — read before the claims below.** An adversarial audit found
+> the original CSD "countdown" headline (*variance rises monotonically 3.6×→7.4×, 84% within-
+> country, AUC 0.689, every era*) was compromised by cross-country confounding, pseudoreplication
+> (overlapping windows counted independent → fake p-values), and a lead gradient on shifting
+> subsets. The corrected analysis (`scripts/v2/csd_corrected.py` → `data/political/csd_corrected.json`;
+> country-clustered, one obs per backsliding *episode*, matched windows, fixed cohort) shows:
+> **within-country variance IS elevated before backsliding (81% of 240 episodes, country-clustered
+> 95% CI excludes 0) — the signal survives — but it is NOT a clean monotonic countdown, the
+> theory-canonical AR1 indicator is NULL (AUC 0.51, p=0.33), and the effect is partly mechanical.**
+> Out-of-fold, T5 alone is near-chance as a cross-country predictor (AUC 0.48). Tier 5 flags
+> *turbulence/ripeness before rupture*, diagnostically and within-country — NOT a calibrated
+> accelerating clock. Treat every "countdown / monotonic / AUC 0.689 / 84%" statement below as
+> superseded by this banner.
+
 **A fifth tier, and unlike any of the first four.** V1–V4 all answer *how vulnerable?* —
 capacity, delivery, pressure, scarring, each a state or a stock. **Tier 5 answers *how
 close?*** It is the only tier that speaks to *timing*, and it is grounded in a founding rule

@@ -11,30 +11,56 @@ it is containing, and what damage the *ground* already carries.
 | **Asks** | what is its structure? | does it deliver, and for whom? | is pressure building? | what happened on this ground before? |
 | **Measures** | 5 pillars, durability gap | 6 conversion pillars (Level + Equity) | grievance + mobilization + opportunity | conflict history (decayed) + trust + displacement + state-perpetration |
 | **Timescale** | generational | experiential | political-cycle | **civilizational (carries history forward with decay)** |
-| **Predicts (validated)** | the **ancient rupture** (armed conflict ~0.72); structural trajectory across 5,000y | **wellbeing** (life-sat via balance, t=−3.06) | the **modern rupture** — backsliding (0.54→0.61), repression (0.64→0.71) | **conflict recurrence** (+0.092 AUC over V1+V3 → **0.88**) |
+| **Predicts (validated)** | the **ancient rupture** (armed conflict ~0.72); structural trajectory across 5,000y | **wellbeing** (life-sat via balance, t=−3.06) | the **modern rupture** — backsliding (+0.093 CI[.03,.16]), repression (+0.063 CI[.01,.12]) | **conflict recurrence** (+0.112 AUC over V1+V3 → **0.86**, CI>0) |
 | **Does NOT predict** | modern backsliding (≈chance) | any political outcome | the trigger | which scarred states heal (decay rate is measured; the trajectory is contingent) |
 | **Status** | frozen, validated (109 cases, 15 findings) | construct-valid; equity null; wellbeing signal | gate-passed; deep-validated 1816–1996 | all hypotheses passed; **operationalizes the conflict trap** (mediates the raw binary) |
 
 **Tier 5 — Criticality (the timing tier), and a founding rule.** The four tiers above all
 answer *how vulnerable?* A fifth answers *how close?* — grounded in the **Criticality
 Principle**: *a system approaching rupture slows down; the fluctuations in its state variables
-grow in amplitude and memory as it nears the threshold, an accelerating countdown, even though
-the spark that tips it stays unpredictable.* This is self-organized-criticality (the sandpile
-of the fragmentation leg) applied to the political time series, and it is empirically decisive
-for democratic backsliding: pre-collapse variance rises **monotonically 3.6×→7.4×** approaching
-the event, **within a country's own history** (84%), across **220 years** (every era). Tier 5
-scores the recent variance of the regime indices (0–100, higher=closer), scoped to democracies.
-It catches the imminent-tipping democracies the other four call healthy — **Poland, Korea,
-Romania: green on capacity/delivery/pressure/scarring, but flickering hard.** It is the first
-signal in the program to speak to *when*, not just *whether*. The spark holds; the ripeness
-does not. See `mi-research/docs/MI_TIER5_CRITICALITY.md`.
+grow in amplitude and memory as it nears the threshold, even though the spark that tips it
+stays unpredictable.* This is self-organized-criticality (the sandpile of the fragmentation
+leg) applied to the political time series.
+
+> **⚠ AUDIT CORRECTION (2026-07-12) — Tier 5 is a real but WEAKER signal than first claimed.**
+> An adversarial audit found the original headline ("variance rises *monotonically 3.6×→7.4×*,
+> *84%* within-country, *AUC 0.689*, every era") was compromised by three defects: cross-country
+> confounding (volatile poor states rupture more), pseudoreplication (overlapping windows counted
+> independent), and a lead gradient computed on shifting subsets. The corrected, honest picture
+> (`mi-research/scripts/v2/csd_corrected.py`, country-clustered, one observation per backsliding
+> *episode*, matched windows, fixed cohort): **within-country variance IS elevated before a
+> backsliding episode — 81% of 240 episodes, mean log-ratio +4.9, country-clustered 95% CI
+> excludes 0 — so the signal survives.** BUT (1) it does **not** rise in a clean monotonic
+> countdown; (2) the *theory-canonical* CSD indicator, rising autocorrelation (AR1), is **NULL**
+> (AUC 0.51, p=0.33); and (3) part of the surviving variance signal is **mechanical** (variance
+> of libdem is elevated before a defined move in libdem). Tier 5 flags *turbulence before
+> rupture*, not a calibrated accelerating clock. It still catches flickering democracies the
+> other tiers call healthy (**Poland, Korea, Romania**), but out-of-fold it is near-chance as a
+> standalone cross-country crisis predictor (AUC 0.48) — its value is within-country and
+> diagnostic, not predictive.
+
+Tier 5 scores the recent variance of the regime indices (0–100, higher=more turbulent), scoped
+to democracies. It is the first signal in the program to speak to *when*, not just *whether* —
+now understood as *ripeness/turbulence*, not a countdown. The spark holds; the ripeness does
+not. See `mi-research/docs/MI_TIER5_CRITICALITY.md`.
 
 **Tier 6 — Spark Probability (spark density).** The last tier attacks the Mule directly: the
 *specific* spark is idiosyncratic, but the *rate* at which potential triggers arrive is a
 **structural** property — geography (a violent neighbourhood), resources (a prize worth
 seizing), transcendent contestation (sacred/claimed ground), military dynamics. T6 scores that
-density 0–100. It earns its place: spark density predicts crisis at **AUC 0.65, adding +0.22
-over criticality**, and the **full six-tier model reaches AUC 0.712**, beating every subset.
+density 0–100. It earns its place, but on **out-of-fold** numbers (audit C1 correction below):
+spark density predicts crisis at AUC 0.64 and **adds +0.15 over criticality out-of-fold**
+(the in-sample increment was +0.22), and the **full six-tier model reaches AUC 0.63
+out-of-fold** (the *in-sample* 0.712 was inflated by stacking 6–7 predictors on n≈114).
+
+> **⚠ AUDIT CORRECTION (2026-07-12).** Every tier-6 headline AUC was originally computed
+> **in-sample** (resubstitution), which mechanically rises as predictors are added. Re-run with
+> stratified out-of-fold CV (`scripts/v2/tier6_spark.py`, `tier6_auc.json`): T6 increment over
+> T5 is **+0.15 OOF** (still real), the full six-tier model is **AUC 0.63 OOF** (not 0.712), and
+> — notably — **T5 alone is near-chance out-of-fold (0.48)** while T6 alone holds (0.64), so
+> spark density, not criticality, carries the cross-country signal. The T5×T6 interaction is
+> **not significant** (z=−1.07), reinforcing the "tiers add, don't multiply" null.
+
 The nulls are honest — the elegant *criticality×spark-density* multiplier did **not** confirm
 (the tiers add up, they don't multiply), and **geography, not transcendent meaning, is the
 master spark source** (S1 dominates; the sacred-ground S3 dimension is real but secondary).
@@ -105,15 +131,21 @@ wrong; each reads the rupture of its era.
   `docs/MI_V2_RESULTS.md`, `V2_EXPLORATORY_FINDINGS.md`.
 
 ### V3 — structural pressure (new instrument)
-- **Gate PASSES** on the two modern political rupture modes: democratic backsliding
-  0.54→0.61, repression 0.64→0.71 (out-of-fold CV, incremental over V1+income), both
-  surviving event-history removal. Backsliding carried by **anocracy + civil-society**;
-  conflict by **exclusion + youth + repression + prior-conflict** (structure already predicts
-  conflict). `docs/MI_V3_ARCHITECTURE.md`, `POLITICAL_SIGNAL_RESULTS.md`.
-- **Deep validation 1816–1996:** numerator beats structure at backsliding across the whole
-  20th century (+0.131 mean); conflict-trap the most stable relationship in 200 years
-  (+0.21..+0.67); institutional signal (rol→less conflict) holds deep; **the drivers of
-  backsliding evolved** (anocracy→backsliding flipped positive ~1966).
+- **Gate PASSES** on the two modern political rupture modes (audit M5 fix: 50-seed **repeated**
+  CV with a CI, replacing a single non-reproducible draw): democratic backsliding **+0.093 CI
+  [0.033, 0.156]** (structural 0.51 → +numerator 0.60, 100% of seeds positive), repression
+  **+0.063 CI [0.014, 0.116]** (98% positive); **conflict does NOT pass** (+0.022, CI includes
+  0 — structure already predicts conflict). Net of P1+logGDP (audit M4 fix), the surviving T1
+  drivers are **anocracy + civil-society → backsliding** and **PTS/prior-conflict/youth →
+  conflict**; internet, ethnic-exclusion and food-import were confounded by capacity/wealth and
+  drop out. `docs/MI_V3_ARCHITECTURE.md`, `POLITICAL_SIGNAL_RESULTS.md`.
+- **Deep validation 1816–1996:** the numerator adds over structure at backsliding across the
+  20th century, but the honest **out-of-fold** increment is **+0.071 mean, positive in only
+  6/11 epochs** (audit C1: the original "+0.131 across two centuries" was an *in-sample*
+  resubstitution figure, ~2× inflated; conflict OOF +0.033). The conflict-trap remains the most
+  stable relationship in 200 years (+0.21..+0.67); institutional signal (rol→less conflict)
+  holds deep; **the drivers of backsliding evolved** (anocracy→backsliding flipped positive
+  ~1966). The direction survives; the magnitude and consistency were overstated.
 
 ### Cross-program
 - **Grand synthesis** — one law, three faces (fragmentation physics / MI state /

@@ -22,18 +22,28 @@ def get(u,tries=4):
             with urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=40) as r: return r.read().decode("utf-8","replace")
         except Exception: time.sleep(3)
     return None
-# ISO2 -> ISO3
+# ISO2 -> ISO3 + adjacency (ISO3). AUDIT C2 FIX: cache to a committed, version-pinned file so
+# regeneration is offline-reproducible and a fetch failure can't crash or silently reshape T6.
+import os
+CACHE="data/political/_borders_cache.json"
+NET_OK=True
 iso=get("https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv")
-I2I3={}
-for r in csv.DictReader(io.StringIO(iso)):
-    I2I3[r["alpha-2"]]=r["alpha-3"]
-# adjacency (ISO3)
 bcsv=get("https://raw.githubusercontent.com/geodatasource/country-borders/master/GEODATASOURCE-COUNTRY-BORDERS.CSV")
-adj=defaultdict(set); haveborder=set()
-for r in csv.DictReader(io.StringIO(bcsv)):
-    a=I2I3.get(r["country_code"]); b=I2I3.get(r["country_border_code"])
-    if a: haveborder.add(a)
-    if a and b: adj[a].add(b)
+adj=defaultdict(set); haveborder=set(); I2I3={}
+if iso is not None and bcsv is not None:
+    for r in csv.DictReader(io.StringIO(iso)): I2I3[r["alpha-2"]]=r["alpha-3"]
+    for r in csv.DictReader(io.StringIO(bcsv)):
+        a=I2I3.get(r["country_code"]); b=I2I3.get(r["country_border_code"])
+        if a: haveborder.add(a)
+        if a and b: adj[a].add(b)
+    json.dump({"I2I3":I2I3,"adj":{k:sorted(v) for k,v in adj.items()},"haveborder":sorted(haveborder)},
+              open(CACHE,"w")); print(f"  fetched borders -> cached ({len(adj)} countries with neighbours)")
+elif os.path.exists(CACHE):
+    c=json.load(open(CACHE)); I2I3=c["I2I3"]; haveborder=set(c["haveborder"])
+    adj=defaultdict(set,{k:set(v) for k,v in c["adj"].items()})
+    print("  network unavailable -> loaded committed border cache (offline reproducible)")
+else:
+    NET_OK=False; print("  !! network unavailable AND no border cache -> T6 geographic dim will be degraded")
 def latest(ser,i,lo=2015,hi=2024):
     s=ser.get(i) if ser else None
     if not s: return None
@@ -125,16 +135,37 @@ for r in sorted(rows.values(),key=lambda x:-x["T6"])[:15]:
 print(f"\n  Netherlands T6 rank (T6-6): {sorted([r['T6'] for r in rows.values()]).index(rows['NLD']['T6'])+1}/{len(rows)} (T6={rows['NLD']['T6']:.0f})  [bottom decile?={rows['NLD']['T6']<=np.percentile([r['T6'] for r in rows.values()],10)}]")
 
 # ---- tests ----
-def auc(cols,y):
+def auc(cols,y):  # IN-SAMPLE (diagnostic only — overfits when stacking many predictors on n~small)
     y=np.array(y,float); X=np.column_stack([np.ones(len(y))]+[L.zscore(c) for c in cols]); _,a,_=L.logit_fit(X,y); return round(float(a),4)
+def cv_auc(cols,y,k=5,seed=0):
+    """OUT-OF-FOLD AUC. AUDIT C1 FIX: stacking V1+V3+T4+T5+T6+interaction (6-7 predictors) on
+    n~small makes in-sample AUC mechanically >= every sub-model. Report OOF for any comparison."""
+    y=np.array(y,float); n=len(y); pos=int(y.sum()); neg=n-pos
+    if pos<2 or neg<2: return None
+    kk=min(k,pos,neg)
+    if kk<2: return None
+    rng=np.random.default_rng(seed); fold=np.empty(n,int)
+    for cls in (0.0,1.0):
+        idx=rng.permutation(np.where(y==cls)[0]); fold[idx]=np.arange(len(idx))%kk
+    Xraw=np.column_stack(cols).astype(float); oof=np.full(n,np.nan)
+    for f in range(kk):
+        tr=np.where(fold!=f)[0]; te=np.where(fold==f)[0]
+        if len(set(y[tr]))<2: return None
+        mu=Xraw[tr].mean(0); sd=Xraw[tr].std(0); sd[sd==0]=1.0
+        b,_,_=L.logit_fit(np.column_stack([np.ones(len(tr)),(Xraw[tr]-mu)/sd]),y[tr])
+        oof[te]=1/(1+np.exp(-np.column_stack([np.ones(len(te)),(Xraw[te]-mu)/sd])@b))
+    return round(float(L.auc_roc(list(oof),list(y))),4)
 sub=[r for r in rows.values() if r["T5"] is not None]
 y=[r["crisis"] for r in sub]
 print(f"\nn(with T5)={len(sub)} crisis={sum(y)}")
 a_t5=auc([[r["T5"] for r in sub]],y); a_t6=auc([[r["T6"] for r in sub]],y); a_both=auc([[r["T5"] for r in sub],[r["T6"] for r in sub]],y)
+c_t5=cv_auc([[r["T5"] for r in sub]],y); c_t6=cv_auc([[r["T6"] for r in sub]],y); c_both=cv_auc([[r["T5"] for r in sub],[r["T6"] for r in sub]],y)
 inter=[r["T5"]*r["T6"]/100 for r in sub]
 a_intr=auc([[r["T5"] for r in sub],[r["T6"] for r in sub],inter],y)
+c_intr=cv_auc([[r["T5"] for r in sub],[r["T6"] for r in sub],inter],y)
 print("\n=== T6-1 — does spark density add over criticality? ===")
-print(f"   T5 only={a_t5}  T6 only={a_t6}  T5+T6={a_both}  (T6 increment over T5: {round(a_both-a_t5,3)})")
+print(f"   IN-SAMPLE: T5={a_t5} T6={a_t6} T5+T6={a_both} (incr {round(a_both-a_t5,3)})")
+print(f"   OUT-OF-FOLD: T5={c_t5} T6={c_t6} T5+T6={c_both} (incr {None if (c_both is None or c_t5 is None) else round(c_both-c_t5,3)})  <-- honest")
 print("=== T6-4 (CAPSTONE) — T5 x T6 interaction ===")
 # interaction significance
 yy=np.array(y,float); X=np.column_stack([np.ones(len(yy)),L.zscore([r['T5'] for r in sub]),L.zscore([r['T6'] for r in sub]),L.zscore(inter)])
@@ -145,11 +176,12 @@ for _ in range(400):
     if len(set(yy[ix].tolist()))<2: continue
     bb,_,_=L.logit_fit(X[ix],yy[ix]); bs.append(bb)
 se=np.std(bs,0)
-print(f"   T5+T6+interaction AUC={a_intr}  | interaction coef={b[3]:+.3f} (z={b[3]/se[3]:+.2f})")
+print(f"   T5+T6+interaction AUC(in-sample)={a_intr} OOF={c_intr}  | interaction coef={b[3]:+.3f} (z={b[3]/se[3]:+.2f})")
 # full six-tier
 V1=[[five[r['iso']]['V1'] for r in sub]]; V3=[[r['V3'] for r in sub]]; T4=[[r['T4'] for r in sub]]
-a_six=auc(V1+V3+T4+[[r['T5'] for r in sub],[r['T6'] for r in sub],inter],y)
-print(f"   FULL six-tier (V1+V3+T4+T5+T6+T5xT6) AUC={a_six}")
+sixcols=V1+V3+T4+[[r['T5'] for r in sub],[r['T6'] for r in sub],inter]
+a_six=auc(sixcols,y); c_six=cv_auc(sixcols,y)
+print(f"   FULL six-tier (V1+V3+T4+T5+T6+T5xT6) AUC: in-sample={a_six}  OUT-OF-FOLD={c_six}  <-- honest headline")
 # T6-2/3: false neg/pos vs T6
 medT5=np.median([r['T5'] for r in sub]); medT6=np.median([r['T6'] for r in sub])
 fn=[r['T6'] for r in sub if r['T5']>=medT5 and r['crisis']==0]  # flickering, no crisis
@@ -165,7 +197,25 @@ Xf=np.column_stack([np.ones(len(yy))]+[L.zscore([r[k] for r in sub]) for k in ["
 bf,_,_=L.logit_fit(Xf,yy)
 print(f"   joint coefs: S1={bf[1]:+.2f} S2={bf[2]:+.2f} S3={bf[3]:+.2f} S4={bf[4]:+.2f}")
 
-json.dump([{"iso":i,"name":five[i]["name"],"V1":five[i]["V1"],"V2":five[i]["V2"],"V3":five[i]["V3"],
-            "T4":five[i]["T4"],"T5":five[i]["T5"],"T6":round(rows[i]["T6"],1),"arch":five[i]["arch"]} for i in sorted(rows,key=lambda x:-five[x]["V1"])],
-          open("data/political/six_tier_snapshot.json","w"),indent=1)
-print("\nsaved six_tier_snapshot.json")
+# persist the AUC results (OOF is the honest headline) so the regression suite can pin them
+json.dump({"n":len(sub),"crisis":int(sum(y)),
+           "insample":{"T5":a_t5,"T6":a_t6,"T5+T6":a_both,"T6_increment":round(a_both-a_t5,3),
+                       "T5+T6+inter":a_intr,"six_tier":a_six},
+           "out_of_fold":{"T5":c_t5,"T6":c_t6,"T5+T6":c_both,
+                          "T6_increment":None if (c_both is None or c_t5 is None) else round(c_both-c_t5,3),
+                          "T5+T6+inter":c_intr,"six_tier":c_six}},
+          open("data/political/tier6_auc.json","w"),indent=1)
+
+# AUDIT C2 GUARD: only overwrite the committed snapshot when the border/ISO fetch actually
+# succeeded (else we'd silently shift every T6 from a data gap). NET_OK is set in build().
+if NET_OK:
+    prev=json.load(open("data/political/six_tier_snapshot.json")) if os.path.exists("data/political/six_tier_snapshot.json") else None
+    newsnap=[{"iso":i,"name":five[i]["name"],"V1":five[i]["V1"],"V2":five[i]["V2"],"V3":five[i]["V3"],
+              "T4":five[i]["T4"],"T5":five[i]["T5"],"T6":round(rows[i]["T6"],1),"arch":five[i]["arch"]} for i in sorted(rows,key=lambda x:-five[x]["V1"])]
+    if prev is not None:
+        pm={r["iso"]:r["T6"] for r in prev}; drift=max((abs(pm.get(r["iso"],r["T6"])-r["T6"]) for r in newsnap),default=0)
+        print(f"\n  T6 max drift vs committed snapshot: {drift:.2f}")
+        if drift>3.0: print("  !! large T6 drift — the border CACHE pins geography, so this is a T4/T5 input change; expected during reconciliation but verify it's intentional")
+    json.dump(newsnap,open("data/political/six_tier_snapshot.json","w"),indent=1); print("\nsaved six_tier_snapshot.json")
+else:
+    print("\n  network fetch failed/unavailable -> six_tier_snapshot.json left untouched (offline-safe)")

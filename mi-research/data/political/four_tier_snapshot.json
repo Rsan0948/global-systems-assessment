@@ -5,8 +5,8 @@
   "V1": 90.6,
   "V2": 77.5,
   "V3": 21.1,
-  "T4": 13.7,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 9.3,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "SGP",
@@ -14,8 +14,8 @@
   "V1": 87.6,
   "V2": 68.7,
   "V3": 14.9,
-  "T4": 12.5,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 6.7,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "CHE",
@@ -23,8 +23,8 @@
   "V1": 86.7,
   "V2": 72.8,
   "V3": 8.3,
-  "T4": 9.6,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 0.0,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "FIN",
@@ -32,8 +32,8 @@
   "V1": 84.2,
   "V2": 82.4,
   "V3": 12.8,
-  "T4": 10.3,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 2.3,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "DNK",
@@ -41,8 +41,8 @@
   "V1": 84.0,
   "V2": 79.0,
   "V3": 11.5,
-  "T4": 5.2,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 0.2,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "IRL",
@@ -50,8 +50,8 @@
   "V1": 84.0,
   "V2": 79.4,
   "V3": 13.2,
-  "T4": 12.5,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 6.7,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "SWE",
@@ -59,8 +59,8 @@
   "V1": 83.3,
   "V2": 80.6,
   "V3": 12.6,
-  "T4": 7.2,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 0.0,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "NLD",
@@ -68,8 +68,8 @@
   "V1": 81.8,
   "V2": 84.3,
   "V3": 16.8,
-  "T4": 16.0,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 6.8,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "DEU",
@@ -77,8 +77,8 @@
   "V1": 81.7,
   "V2": 70.4,
   "V3": 12.8,
-  "T4": 19.5,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 14.1,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "JPN",
@@ -86,8 +86,8 @@
   "V1": 81.6,
   "V2": 75.0,
   "V3": 19.0,
-  "T4": 17.0,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 11.4,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "NZL",
@@ -95,8 +95,8 @@
   "V1": 81.5,
   "V2": 69.8,
   "V3": 19.0,
-  "T4": 11.4,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 2.7,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "NOR",
@@ -104,8 +104,8 @@
   "V1": 81.0,
   "V2": 87.0,
   "V3": 11.8,
-  "T4": 6.4,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 1.0,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "CAN",
@@ -113,8 +113,8 @@
   "V1": 80.6,
   "V2": 75.9,
   "V3": 16.6,
-  "T4": 19.4,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 12.4,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "KOR",
@@ -122,8 +122,8 @@
   "V1": 80.4,
   "V2": 73.6,
   "V3": 15.4,
-  "T4": 18.0,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 14.5,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "ISL",
@@ -131,8 +131,8 @@
   "V1": 80.4,
   "V2": 81.2,
   "V3": 17.5,
-  "T4": 10.3,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 1.7,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "AUT",
@@ -140,8 +140,8 @@
   "V1": 79.8,
   "V2": 73.1,
   "V3": 14.0,
-  "T4": 13.7,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 8.4,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "BRB",
@@ -150,7 +150,7 @@
   "V2": 64.7,
   "V3": 32.8,
   "T4": 0.2,
-  "arch": "CLEAN FOUNDATION"
+  "arch": "Clean Foundation"
  },
  {
   "iso": "GBR",
@@ -158,8 +158,8 @@
   "V1": 79.0,
   "V2": 71.6,
   "V3": 19.0,
-  "T4": 43.1,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 37.8,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "MLT",
@@ -167,8 +167,8 @@
   "V1": 78.4,
   "V2": 75.8,
   "V3": 28.2,
-  "T4": 15.8,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 13.9,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "BEL",
@@ -176,8 +176,8 @@
   "V1": 78.1,
   "V2": 74.3,
   "V3": 14.7,
-  "T4": 21.0,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 15.6,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "SYC",
@@ -186,7 +186,7 @@
   "V2": 69.7,
   "V3": 48.1,
   "T4": 0.3,
-  "arch": "capable-under-pressure"
+  "arch": "Capable-but-Pressured"
  },
  {
   "iso": "USA",
@@ -194,8 +194,8 @@
   "V1": 77.9,
   "V2": 58.8,
   "V3": 41.3,
-  "T4": 56.3,
-  "arch": "capable-under-pressure"
+  "T4": 50.0,
+  "arch": "Loaded Spring"
  },
  {
   "iso": "BTN",
@@ -204,7 +204,7 @@
   "V2": 68.5,
   "V3": 54.4,
   "T4": 13.3,
-  "arch": "capable-under-pressure"
+  "arch": "Capable-but-Pressured"
  },
  {
   "iso": "AUS",
@@ -212,8 +212,8 @@
   "V1": 77.5,
   "V2": 72.4,
   "V3": 13.1,
-  "T4": 24.3,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 16.4,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "EST",
@@ -221,8 +221,8 @@
   "V1": 77.5,
   "V2": 77.8,
   "V3": 23.5,
-  "T4": 14.7,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 10.2,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "SVN",
@@ -230,8 +230,8 @@
   "V1": 77.1,
   "V2": 82.7,
   "V3": 16.3,
-  "T4": 15.8,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 14.0,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "FRA",
@@ -239,8 +239,8 @@
   "V1": 77.0,
   "V2": 71.9,
   "V3": 18.9,
-  "T4": 46.6,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 44.2,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "CZE",
@@ -248,8 +248,8 @@
   "V1": 76.8,
   "V2": 79.6,
   "V3": 10.5,
-  "T4": 14.7,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 10.7,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "ARE",
@@ -258,7 +258,7 @@
   "V2": 82.4,
   "V3": 12.5,
   "T4": 5.0,
-  "arch": "CLEAN FOUNDATION"
+  "arch": "Clean Foundation"
  },
  {
   "iso": "LTU",
@@ -266,8 +266,8 @@
   "V1": 75.6,
   "V2": 67.0,
   "V3": 21.6,
-  "T4": 15.1,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 11.6,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "PRT",
@@ -275,8 +275,8 @@
   "V1": 75.0,
   "V2": 71.0,
   "V3": 21.9,
-  "T4": 17.6,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 16.3,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "CYP",
@@ -284,8 +284,8 @@
   "V1": 74.6,
   "V2": 76.6,
   "V3": 28.4,
-  "T4": 21.2,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 22.3,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "ITA",
@@ -293,8 +293,8 @@
   "V1": 74.0,
   "V2": 72.1,
   "V3": 25.7,
-  "T4": 26.5,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 22.8,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "ISR",
@@ -302,8 +302,8 @@
   "V1": 73.8,
   "V2": 62.4,
   "V3": 70.5,
-  "T4": 63.2,
-  "arch": "capable-under-pressure"
+  "T4": 60.9,
+  "arch": "Loaded Spring"
  },
  {
   "iso": "ESP",
@@ -311,8 +311,8 @@
   "V1": 73.5,
   "V2": 73.5,
   "V3": 30.4,
-  "T4": 28.1,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 24.6,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "POL",
@@ -320,8 +320,8 @@
   "V1": 72.2,
   "V2": 76.6,
   "V3": 23.4,
-  "T4": 17.8,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 15.6,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "LVA",
@@ -329,8 +329,8 @@
   "V1": 72.2,
   "V2": 68.8,
   "V3": 33.1,
-  "T4": 15.7,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 13.0,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "SVK",
@@ -338,8 +338,8 @@
   "V1": 71.8,
   "V2": 74.9,
   "V3": 18.0,
-  "T4": 17.6,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 18.0,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "URY",
@@ -347,8 +347,8 @@
   "V1": 71.6,
   "V2": 56.6,
   "V3": 21.7,
-  "T4": 23.5,
-  "arch": "facade"
+  "T4": 20.8,
+  "arch": "Hollow Facade"
  },
  {
   "iso": "HRV",
@@ -356,8 +356,8 @@
   "V1": 70.3,
   "V2": 76.9,
   "V3": 27.7,
-  "T4": 40.6,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 39.2,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "HUN",
@@ -365,8 +365,8 @@
   "V1": 69.9,
   "V2": 71.0,
   "V3": 17.3,
-  "T4": 17.5,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 15.0,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "ROU",
@@ -374,8 +374,8 @@
   "V1": 69.7,
   "V2": 74.0,
   "V3": 28.6,
-  "T4": 23.6,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 22.6,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "QAT",
@@ -383,8 +383,8 @@
   "V1": 69.4,
   "V2": 73.3,
   "V3": 12.2,
-  "T4": 19.4,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 17.5,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "CHL",
@@ -392,8 +392,8 @@
   "V1": 69.1,
   "V2": 57.1,
   "V3": 27.7,
-  "T4": 27.6,
-  "arch": "facade"
+  "T4": 28.0,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "CRI",
@@ -402,7 +402,7 @@
   "V2": 55.3,
   "V3": 24.5,
   "T4": 2.6,
-  "arch": "facade"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "GRC",
@@ -410,8 +410,8 @@
   "V1": 68.6,
   "V2": 71.6,
   "V3": 26.4,
-  "T4": 20.3,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 18.6,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "BGR",
@@ -419,8 +419,8 @@
   "V1": 68.5,
   "V2": 53.7,
   "V3": 31.1,
-  "T4": 19.5,
-  "arch": "facade"
+  "T4": 18.3,
+  "arch": "Hollow Facade"
  },
  {
   "iso": "MYS",
@@ -428,8 +428,8 @@
   "V1": 68.1,
   "V2": 64.2,
   "V3": 31.6,
-  "T4": 29.1,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 30.3,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "MUS",
@@ -438,7 +438,7 @@
   "V2": 64.4,
   "V3": 47.9,
   "T4": 0.0,
-  "arch": "capable-under-pressure"
+  "arch": "Capable-but-Pressured"
  },
  {
   "iso": "MDV",
@@ -447,7 +447,7 @@
   "V2": 72.4,
   "V3": 41.1,
   "T4": 0.1,
-  "arch": "capable-under-pressure"
+  "arch": "Capable-but-Pressured"
  },
  {
   "iso": "MKD",
@@ -455,8 +455,8 @@
   "V1": 66.0,
   "V2": 64.4,
   "V3": 24.0,
-  "T4": 28.2,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 27.3,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "MNE",
@@ -464,8 +464,8 @@
   "V1": 65.8,
   "V2": 62.8,
   "V3": 45.5,
-  "T4": 20.3,
-  "arch": "capable-under-pressure"
+  "T4": 17.8,
+  "arch": "Capable-but-Pressured"
  },
  {
   "iso": "CHN",
@@ -473,8 +473,8 @@
   "V1": 65.6,
   "V2": 65.6,
   "V3": 18.0,
-  "T4": 64.3,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 55.5,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "PAN",
@@ -483,7 +483,7 @@
   "V2": 43.3,
   "V3": 40.8,
   "T4": 8.6,
-  "arch": "facade"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "ALB",
@@ -491,8 +491,8 @@
   "V1": 64.6,
   "V2": 71.0,
   "V3": 28.2,
-  "T4": 24.1,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 25.2,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "SUR",
@@ -501,7 +501,7 @@
   "V2": 62.4,
   "V3": 42.9,
   "T4": 9.7,
-  "arch": "capable-under-pressure"
+  "arch": "Capable-but-Pressured"
  },
  {
   "iso": "STP",
@@ -510,7 +510,7 @@
   "V2": 48.9,
   "V3": 71.3,
   "T4": 0.2,
-  "arch": "facade"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "ARG",
@@ -518,8 +518,8 @@
   "V1": 63.0,
   "V2": 55.7,
   "V3": 27.7,
-  "T4": 31.3,
-  "arch": "facade"
+  "T4": 30.4,
+  "arch": "Scarred Facade"
  },
  {
   "iso": "SRB",
@@ -527,8 +527,8 @@
   "V1": 62.9,
   "V2": 70.1,
   "V3": 22.0,
-  "T4": 34.6,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 34.9,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "FJI",
@@ -537,7 +537,7 @@
   "V2": 63.2,
   "V3": 32.6,
   "T4": 2.4,
-  "arch": "CLEAN FOUNDATION"
+  "arch": "Clean Foundation"
  },
  {
   "iso": "MDA",
@@ -545,8 +545,8 @@
   "V1": 62.8,
   "V2": 73.7,
   "V3": 36.4,
-  "T4": 28.8,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 28.7,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "GEO",
@@ -554,8 +554,8 @@
   "V1": 62.6,
   "V2": 58.0,
   "V3": 36.3,
-  "T4": 44.8,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 43.3,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "KAZ",
@@ -563,8 +563,8 @@
   "V1": 62.4,
   "V2": 68.2,
   "V3": 41.8,
-  "T4": 12.5,
-  "arch": "capable-under-pressure"
+  "T4": 6.4,
+  "arch": "Capable-but-Pressured"
  },
  {
   "iso": "JOR",
@@ -572,8 +572,8 @@
   "V1": 62.4,
   "V2": 77.3,
   "V3": 69.8,
-  "T4": 23.4,
-  "arch": "capable-under-pressure"
+  "T4": 19.2,
+  "arch": "Capable-but-Pressured"
  },
  {
   "iso": "BLR",
@@ -581,8 +581,8 @@
   "V1": 61.2,
   "V2": 81.9,
   "V3": 17.9,
-  "T4": 12.3,
-  "arch": "CLEAN FOUNDATION"
+  "T4": 5.4,
+  "arch": "Clean Foundation"
  },
  {
   "iso": "TUR",
@@ -590,8 +590,8 @@
   "V1": 61.1,
   "V2": 58.9,
   "V3": 46.2,
-  "T4": 62.7,
-  "arch": "capable-under-pressure"
+  "T4": 63.9,
+  "arch": "Loaded Spring"
  },
  {
   "iso": "BWA",
@@ -600,7 +600,7 @@
   "V2": 19.2,
   "V3": 37.2,
   "T4": 0.1,
-  "arch": "facade"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "THA",
@@ -608,8 +608,8 @@
   "V1": 60.8,
   "V2": 72.1,
   "V3": 25.2,
-  "T4": 42.0,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 35.2,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "MEX",
@@ -617,8 +617,8 @@
   "V1": 60.6,
   "V2": 47.2,
   "V3": 37.3,
-  "T4": 41.1,
-  "arch": "facade"
+  "T4": 40.7,
+  "arch": "Scarred Facade"
  },
  {
   "iso": "VNM",
@@ -626,8 +626,8 @@
   "V1": 60.3,
   "V2": 65.5,
   "V3": 23.9,
-  "T4": 38.5,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 29.3,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "DOM",
@@ -636,7 +636,7 @@
   "V2": 55.5,
   "V3": 36.7,
   "T4": 7.1,
-  "arch": "facade"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "NAM",
@@ -645,7 +645,7 @@
   "V2": 16.8,
   "V3": 42.4,
   "T4": 18.2,
-  "arch": "facade"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "ARM",
@@ -653,8 +653,8 @@
   "V1": 59.8,
   "V2": 71.5,
   "V3": 29.6,
-  "T4": 28.0,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 26.4,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "PHL",
@@ -662,8 +662,8 @@
   "V1": 59.3,
   "V2": 52.1,
   "V3": 61.3,
-  "T4": 80.5,
-  "arch": "facade"
+  "T4": 81.2,
+  "arch": "Scarred Facade"
  },
  {
   "iso": "PRY",
@@ -672,7 +672,7 @@
   "V2": 44.9,
   "V3": 30.5,
   "T4": 18.2,
-  "arch": "facade"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "GUY",
@@ -681,7 +681,7 @@
   "V2": 54.9,
   "V3": 31.6,
   "T4": 1.1,
-  "arch": "facade"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "SLV",
@@ -690,7 +690,7 @@
   "V2": 56.4,
   "V3": 35.2,
   "T4": 25.2,
-  "arch": "facade"
+  "arch": "Scarred Facade"
  },
  {
   "iso": "BIH",
@@ -698,8 +698,8 @@
   "V1": 58.3,
   "V2": 61.9,
   "V3": 26.6,
-  "T4": 41.5,
-  "arch": "REBUILT-ON-SCARS"
+  "T4": 38.5,
+  "arch": "Rebuilt-on-Scars"
  },
  {
   "iso": "CPV",
@@ -708,7 +708,7 @@
   "V2": 49.9,
   "V3": 46.6,
   "T4": 0.0,
-  "arch": "other"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "SWZ",
@@ -717,7 +717,7 @@
   "V2": 32.8,
   "V3": 39.7,
   "T4": 0.1,
-  "arch": "other"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "GMB",
@@ -726,7 +726,7 @@
   "V2": 43.1,
   "V3": 47.1,
   "T4": 10.3,
-  "arch": "other"
+  "arch": "Hollow Facade"
  },
  {
   "iso": "BRA",
@@ -734,8 +734,8 @@
   "V1": 57.8,
   "V2": 42.9,
   "V3": 45.9,
-  "T4": 40.8,
-  "arch": "SCAR-TRAPPED"
+  "T4": 41.9,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "JAM",
@@ -744,7 +744,7 @@
   "V2": 49.9,
   "V3": 35.3,
   "T4": 6.6,
-  "arch": "other"
+  "arch": "Low-Quiet"
  },
  {
   "iso": "RUS",
@@ -752,8 +752,8 @@
   "V1": 57.0,
   "V2": 66.6,
   "V3": 45.6,
-  "T4": 66.2,
-  "arch": "other"
+  "T4": 63.1,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "COL",
@@ -761,8 +761,8 @@
   "V1": 56.7,
   "V2": 39.8,
   "V3": 64.3,
-  "T4": 54.7,
-  "arch": "SCAR-TRAPPED"
+  "T4": 54.5,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "IDN",
@@ -770,8 +770,8 @@
   "V1": 56.6,
   "V2": 66.2,
   "V3": 56.2,
-  "T4": 73.7,
-  "arch": "other"
+  "T4": 67.8,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "MNG",
@@ -780,7 +780,7 @@
   "V2": 56.3,
   "V3": 35.3,
   "T4": 3.1,
-  "arch": "other"
+  "arch": "Low-Quiet"
  },
  {
   "iso": "DJI",
@@ -789,7 +789,7 @@
   "V2": 33.6,
   "V3": 37.3,
   "T4": 23.9,
-  "arch": "other"
+  "arch": "Low-Quiet"
  },
  {
   "iso": "ZAF",
@@ -797,8 +797,8 @@
   "V1": 56.1,
   "V2": 39.2,
   "V3": 35.3,
-  "T4": 41.6,
-  "arch": "other"
+  "T4": 39.2,
+  "arch": "Dormant Scar"
  },
  {
   "iso": "LSO",
@@ -807,7 +807,7 @@
   "V2": 38.4,
   "V3": 48.6,
   "T4": 12.6,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "TUN",
@@ -815,8 +815,8 @@
   "V1": 55.7,
   "V2": 59.3,
   "V3": 47.3,
-  "T4": 26.0,
-  "arch": "other"
+  "T4": 25.6,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "IND",
@@ -824,8 +824,8 @@
   "V1": 55.5,
   "V2": 67.7,
   "V3": 52.8,
-  "T4": 81.2,
-  "arch": "other"
+  "T4": 79.4,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "KHM",
@@ -834,7 +834,7 @@
   "V2": 48.5,
   "V3": 19.9,
   "T4": 38.8,
-  "arch": "other"
+  "arch": "Dormant Scar"
  },
  {
   "iso": "PER",
@@ -842,8 +842,8 @@
   "V1": 55.4,
   "V2": 51.4,
   "V3": 44.9,
-  "T4": 49.6,
-  "arch": "SCAR-TRAPPED"
+  "T4": 50.9,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "UZB",
@@ -851,8 +851,8 @@
   "V1": 55.3,
   "V2": 61.6,
   "V3": 29.5,
-  "T4": 35.6,
-  "arch": "other"
+  "T4": 35.5,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "LAO",
@@ -861,7 +861,7 @@
   "V2": 45.3,
   "V3": 26.7,
   "T4": 25.5,
-  "arch": "other"
+  "arch": "Dormant Scar"
  },
  {
   "iso": "ECU",
@@ -869,8 +869,8 @@
   "V1": 54.8,
   "V2": 45.3,
   "V3": 41.5,
-  "T4": 26.9,
-  "arch": "SCAR-TRAPPED"
+  "T4": 28.3,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "UKR",
@@ -878,8 +878,8 @@
   "V1": 54.5,
   "V2": 74.3,
   "V3": 40.2,
-  "T4": 15.2,
-  "arch": "other"
+  "T4": 12.2,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "KGZ",
@@ -887,8 +887,8 @@
   "V1": 54.3,
   "V2": 75.3,
   "V3": 39.2,
-  "T4": 34.8,
-  "arch": "other"
+  "T4": 29.3,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "LKA",
@@ -897,7 +897,7 @@
   "V2": 50.2,
   "V3": 43.3,
   "T4": 73.2,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "COM",
@@ -906,7 +906,7 @@
   "V2": 42.8,
   "V3": 43.1,
   "T4": 17.7,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "EGY",
@@ -914,8 +914,8 @@
   "V1": 53.1,
   "V2": 74.5,
   "V3": 58.1,
-  "T4": 47.1,
-  "arch": "other"
+  "T4": 45.9,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "SEN",
@@ -924,7 +924,7 @@
   "V2": 46.5,
   "V3": 47.9,
   "T4": 57.7,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "GAB",
@@ -933,7 +933,7 @@
   "V2": 44.8,
   "V3": 31.1,
   "T4": 5.0,
-  "arch": "other"
+  "arch": "Low-Quiet"
  },
  {
   "iso": "TKM",
@@ -942,7 +942,7 @@
   "V2": 61.1,
   "V3": 26.6,
   "T4": 0.1,
-  "arch": "other"
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "DZA",
@@ -950,8 +950,8 @@
   "V1": 51.1,
   "V2": 65.7,
   "V3": 59.1,
-  "T4": 44.3,
-  "arch": "other"
+  "T4": 43.5,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "SLE",
@@ -960,7 +960,7 @@
   "V2": 43.1,
   "V3": 51.8,
   "T4": 34.8,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "KEN",
@@ -969,7 +969,7 @@
   "V2": 43.9,
   "V3": 62.4,
   "T4": 17.6,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "TJK",
@@ -978,7 +978,7 @@
   "V2": 61.8,
   "V3": 44.8,
   "T4": 12.4,
-  "arch": "other"
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "GHA",
@@ -986,8 +986,8 @@
   "V1": 50.2,
   "V2": 42.6,
   "V3": 42.8,
-  "T4": 41.8,
-  "arch": "SCAR-TRAPPED"
+  "T4": 43.1,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "TLS",
@@ -996,7 +996,7 @@
   "V2": 57.6,
   "V3": 51.7,
   "T4": 0.0,
-  "arch": "other"
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "GTM",
@@ -1004,8 +1004,8 @@
   "V1": 49.8,
   "V2": 34.7,
   "V3": 55.6,
-  "T4": 47.2,
-  "arch": "SCAR-TRAPPED"
+  "T4": 46.9,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "MWI",
@@ -1014,7 +1014,7 @@
   "V2": 40.0,
   "V3": 40.4,
   "T4": 0.0,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "TZA",
@@ -1022,8 +1022,8 @@
   "V1": 49.6,
   "V2": 40.0,
   "V3": 70.4,
-  "T4": 29.7,
-  "arch": "SCAR-TRAPPED"
+  "T4": 31.2,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "BEN",
@@ -1032,7 +1032,7 @@
   "V2": 45.2,
   "V3": 72.3,
   "T4": 0.0,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "BOL",
@@ -1041,7 +1041,7 @@
   "V2": 49.6,
   "V3": 29.4,
   "T4": 12.8,
-  "arch": "other"
+  "arch": "Low-Quiet"
  },
  {
   "iso": "IRN",
@@ -1049,8 +1049,8 @@
   "V1": 48.6,
   "V2": 63.4,
   "V3": 63.2,
-  "T4": 82.5,
-  "arch": "other"
+  "T4": 83.3,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "TGO",
@@ -1059,7 +1059,7 @@
   "V2": 30.1,
   "V3": 71.3,
   "T4": 15.4,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "UGA",
@@ -1067,8 +1067,8 @@
   "V1": 47.7,
   "V2": 36.9,
   "V3": 60.6,
-  "T4": 71.8,
-  "arch": "SCAR-TRAPPED"
+  "T4": 73.3,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "LBN",
@@ -1076,8 +1076,8 @@
   "V1": 47.2,
   "V2": 63.1,
   "V3": 51.7,
-  "T4": 40.6,
-  "arch": "other"
+  "T4": 41.6,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "RWA",
@@ -1085,8 +1085,8 @@
   "V1": 47.1,
   "V2": 47.7,
   "V3": 70.1,
-  "T4": 75.5,
-  "arch": "SCAR-TRAPPED"
+  "T4": 76.5,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "NPL",
@@ -1095,7 +1095,7 @@
   "V2": 56.0,
   "V3": 58.3,
   "T4": 39.6,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "NIC",
@@ -1104,7 +1104,7 @@
   "V2": 29.1,
   "V3": 28.4,
   "T4": 19.1,
-  "arch": "other"
+  "arch": "Low-Quiet"
  },
  {
   "iso": "GNB",
@@ -1113,7 +1113,7 @@
   "V2": 42.7,
   "V3": 42.1,
   "T4": 18.8,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "HND",
@@ -1122,7 +1122,7 @@
   "V2": 35.6,
   "V3": 45.8,
   "T4": 13.0,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "MRT",
@@ -1131,7 +1131,7 @@
   "V2": 48.3,
   "V3": 49.0,
   "T4": 33.9,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "ZMB",
@@ -1139,8 +1139,8 @@
   "V1": 46.2,
   "V2": 26.3,
   "V3": 41.3,
-  "T4": 18.6,
-  "arch": "other"
+  "T4": 19.3,
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "BGD",
@@ -1148,8 +1148,8 @@
   "V1": 46.0,
   "V2": 57.2,
   "V3": 49.8,
-  "T4": 39.7,
-  "arch": "other"
+  "T4": 37.3,
+  "arch": "Punches-Above-Weight"
  },
  {
   "iso": "ZWE",
@@ -1157,8 +1157,8 @@
   "V1": 46.0,
   "V2": 26.6,
   "V3": 40.6,
-  "T4": 50.9,
-  "arch": "SCAR-TRAPPED"
+  "T4": 52.2,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "MDG",
@@ -1167,7 +1167,7 @@
   "V2": 47.1,
   "V3": 44.5,
   "T4": 9.3,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "IRQ",
@@ -1175,8 +1175,8 @@
   "V1": 44.7,
   "V2": 54.3,
   "V3": 51.1,
-  "T4": 90.2,
-  "arch": "SCAR-TRAPPED"
+  "T4": 84.0,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "AGO",
@@ -1185,7 +1185,7 @@
   "V2": 13.0,
   "V3": 72.4,
   "T4": 77.4,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "CIV",
@@ -1194,7 +1194,7 @@
   "V2": 37.7,
   "V3": 45.1,
   "T4": 38.2,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "GNQ",
@@ -1203,7 +1203,7 @@
   "V2": 28.3,
   "V3": 37.1,
   "T4": 2.0,
-  "arch": "other"
+  "arch": "Low-Quiet"
  },
  {
   "iso": "GIN",
@@ -1212,7 +1212,7 @@
   "V2": 38.7,
   "V3": 53.9,
   "T4": 27.9,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "PNG",
@@ -1221,7 +1221,7 @@
   "V2": 28.8,
   "V3": 43.6,
   "T4": 24.7,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "PAK",
@@ -1229,8 +1229,8 @@
   "V1": 40.9,
   "V2": 51.8,
   "V3": 62.6,
-  "T4": 82.7,
-  "arch": "SCAR-TRAPPED"
+  "T4": 80.6,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "AFG",
@@ -1239,7 +1239,7 @@
   "V2": 39.1,
   "V3": 64.5,
   "T4": 60.7,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "COG",
@@ -1248,7 +1248,7 @@
   "V2": 36.9,
   "V3": 64.6,
   "T4": 39.2,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "NER",
@@ -1257,7 +1257,7 @@
   "V2": 34.5,
   "V3": 67.2,
   "T4": 40.3,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "LBR",
@@ -1266,7 +1266,7 @@
   "V2": 32.7,
   "V3": 44.5,
   "T4": 54.3,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "HTI",
@@ -1274,8 +1274,8 @@
   "V1": 39.2,
   "V2": 24.1,
   "V3": 43.7,
-  "T4": 47.7,
-  "arch": "SCAR-TRAPPED"
+  "T4": 45.8,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "MOZ",
@@ -1284,7 +1284,7 @@
   "V2": 27.7,
   "V3": 67.2,
   "T4": 17.2,
-  "arch": "other"
+  "arch": "Fresh Crisis"
  },
  {
   "iso": "CMR",
@@ -1293,7 +1293,7 @@
   "V2": 28.5,
   "V3": 61.7,
   "T4": 25.0,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "BFA",
@@ -1302,7 +1302,7 @@
   "V2": 43.1,
   "V3": 54.7,
   "T4": 27.2,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "NGA",
@@ -1310,8 +1310,8 @@
   "V1": 37.0,
   "V2": 33.9,
   "V3": 66.7,
-  "T4": 79.7,
-  "arch": "SCAR-TRAPPED"
+  "T4": 79.4,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "MMR",
@@ -1320,7 +1320,7 @@
   "V2": 54.8,
   "V3": 52.2,
   "T4": 90.7,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "BDI",
@@ -1329,7 +1329,7 @@
   "V2": 55.1,
   "V3": 52.4,
   "T4": 73.9,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "CAF",
@@ -1338,7 +1338,7 @@
   "V2": 24.0,
   "V3": 63.2,
   "T4": 55.0,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "ETH",
@@ -1346,8 +1346,8 @@
   "V1": 35.6,
   "V2": 44.0,
   "V3": 61.5,
-  "T4": 85.4,
-  "arch": "SCAR-TRAPPED"
+  "T4": 83.5,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "MLI",
@@ -1355,8 +1355,8 @@
   "V1": 31.8,
   "V2": 38.4,
   "V3": 61.4,
-  "T4": 54.5,
-  "arch": "SCAR-TRAPPED"
+  "T4": 54.2,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "YEM",
@@ -1364,8 +1364,8 @@
   "V1": 31.2,
   "V2": 46.5,
   "V3": 83.4,
-  "T4": 59.7,
-  "arch": "SCAR-TRAPPED"
+  "T4": 53.6,
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "TCD",
@@ -1374,7 +1374,7 @@
   "V2": 34.2,
   "V3": 52.8,
   "T4": 69.5,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "SDN",
@@ -1383,7 +1383,7 @@
   "V2": 55.4,
   "V3": 81.8,
   "T4": 83.2,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "SSD",
@@ -1392,7 +1392,7 @@
   "V2": 31.0,
   "V3": 53.3,
   "T4": 29.0,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  },
  {
   "iso": "COD",
@@ -1401,6 +1401,6 @@
   "V2": 31.6,
   "V3": 63.1,
   "T4": 66.4,
-  "arch": "SCAR-TRAPPED"
+  "arch": "Scar-Trapped"
  }
 ]

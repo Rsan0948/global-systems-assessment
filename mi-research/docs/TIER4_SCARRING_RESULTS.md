@@ -1,5 +1,14 @@
 # Tier 4 — Structural Scarring — Results
 
+> **⚠ AUDIT UPDATE (2026-07-12) — numbers strengthened after two fixes; conclusion unchanged.**
+> (H4) S2/distrust is now 5/95 percentile-normalized like the other sub-dimensions (was raw
+> 100−trust, a scale mismatch that inflated scarring for WVS-surveyed states); (H5) missing V3
+> covariates in the gate are mean-imputed, not raw-0 (raw-0 = the *minimum* for exclusion, which
+> had biased the baseline). Re-run with 50-seed repeated CV: **Tier-4 increment over V1+V3 is now
+> +0.112, CI[0.070,0.153], 100% of seeds positive (was +0.092)**; the raw prior-conflict binary is
+> still absorbed by the composite S (mediation holds). Snapshot T4 scores shifted modestly
+> (mean 1.9 pts, e.g. USA 56→50) and were reconciled across the four/five/six-tier snapshots.
+
 **Companion to** `TIER4_SCARRING_PREREGISTRATION.md` (sha256 `3f6d0907`, frozen before
 analysis). Code `scripts/v2/tier4_scarring.py`; data `data/political/{tier4_indicators,
 tier4_scarring,four_tier_snapshot}.json`. Base 2012 → conflict onset 2013–2024, n=170.

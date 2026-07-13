@@ -9,21 +9,21 @@
   "75": 0.805
  },
  "T4_1": {
-  "V1": 0.7506,
-  "V3": 0.7749,
-  "V1+V3": 0.7849,
-  "V1+V3+T4": 0.8772,
-  "increment": 0.0923,
+  "V1": 0.7424480000000001,
+  "V3": 0.7594920000000001,
+  "V1+V3": 0.7540300000000001,
+  "V1+V3+T4": 0.8659679999999998,
+  "increment": 0.1119,
   "pass": true
  },
  "T4_6": {
-  "raw_alone_z": 4.01,
-  "raw_with_S_z": -1.83,
-  "S_z": 5.13
+  "raw_alone_z": 3.99,
+  "raw_with_S_z": -1.97,
+  "S_z": 5.15
  },
  "T4_4": {
-  "missed_conflict_meanT4": 51.1,
-  "quiet_meanT4": 21.9
+  "missed_conflict_meanT4": 49.4,
+  "quiet_meanT4": 20.0
  },
  "scores": [
   {
@@ -34,13 +34,6 @@
    "track": 3
   },
   {
-   "iso": "IRQ",
-   "name": "Iraq",
-   "S": 90.2,
-   "S1": 100.0,
-   "track": 4
-  },
-  {
    "iso": "SOM",
    "name": "Somalia, Fed. Rep.",
    "S": 87.0,
@@ -48,9 +41,23 @@
    "track": 3
   },
   {
+   "iso": "IRQ",
+   "name": "Iraq",
+   "S": 84.0,
+   "S1": 100.0,
+   "track": 4
+  },
+  {
    "iso": "ETH",
    "name": "Ethiopia",
-   "S": 85.4,
+   "S": 83.5,
+   "S1": 100.0,
+   "track": 4
+  },
+  {
+   "iso": "IRN",
+   "name": "Iran, Islamic Rep.",
+   "S": 83.3,
    "S1": 100.0,
    "track": 4
   },
@@ -62,37 +69,30 @@
    "track": 3
   },
   {
-   "iso": "PAK",
-   "name": "Pakistan",
-   "S": 82.7,
-   "S1": 100.0,
+   "iso": "PHL",
+   "name": "Philippines",
+   "S": 81.2,
+   "S1": 86.0,
    "track": 4
   },
   {
-   "iso": "IRN",
-   "name": "Iran, Islamic Rep.",
-   "S": 82.5,
+   "iso": "PAK",
+   "name": "Pakistan",
+   "S": 80.6,
    "S1": 100.0,
    "track": 4
   },
   {
    "iso": "IND",
    "name": "India",
-   "S": 81.2,
+   "S": 79.4,
    "S1": 100.0,
-   "track": 4
-  },
-  {
-   "iso": "PHL",
-   "name": "Philippines",
-   "S": 80.5,
-   "S1": 86.0,
    "track": 4
   },
   {
    "iso": "NGA",
    "name": "Nigeria",
-   "S": 79.7,
+   "S": 79.4,
    "S1": 100.0,
    "track": 4
   },
@@ -106,7 +106,7 @@
   {
    "iso": "RWA",
    "name": "Rwanda",
-   "S": 75.5,
+   "S": 76.5,
    "S1": 76.3,
    "track": 4
   },
@@ -118,10 +118,10 @@
    "track": 3
   },
   {
-   "iso": "IDN",
-   "name": "Indonesia",
-   "S": 73.7,
-   "S1": 100.0,
+   "iso": "UGA",
+   "name": "Uganda",
+   "S": 73.3,
+   "S1": 66.3,
    "track": 4
   },
   {
@@ -132,18 +132,18 @@
    "track": 3
   },
   {
-   "iso": "UGA",
-   "name": "Uganda",
-   "S": 71.8,
-   "S1": 66.3,
-   "track": 4
-  },
-  {
    "iso": "TCD",
    "name": "Chad",
    "S": 69.5,
    "S1": 71.2,
    "track": 3
+  },
+  {
+   "iso": "IDN",
+   "name": "Indonesia",
+   "S": 67.8,
+   "S1": 100.0,
+   "track": 4
   },
   {
    "iso": "COD",
@@ -153,24 +153,17 @@
    "track": 3
   },
   {
+   "iso": "TUR",
+   "name": "Turkiye",
+   "S": 63.9,
+   "S1": 58.3,
+   "track": 4
+  },
+  {
    "iso": "RUS",
    "name": "Russian Federation",
-   "S": 66.2,
+   "S": 63.1,
    "S1": 81.0,
-   "track": 4
-  },
-  {
-   "iso": "CHN",
-   "name": "China",
-   "S": 64.3,
-   "S1": 78.8,
-   "track": 4
-  },
-  {
-   "iso": "ISR",
-   "name": "Israel",
-   "S": 63.2,
-   "S1": 54.8,
    "track": 4
   },
   {
@@ -181,10 +174,10 @@
    "track": 3
   },
   {
-   "iso": "TUR",
-   "name": "Turkiye",
-   "S": 62.7,
-   "S1": 58.3,
+   "iso": "ISR",
+   "name": "Israel",
+   "S": 60.9,
+   "S1": 54.8,
    "track": 4
   },
   {
@@ -195,13 +188,6 @@
    "track": 3
   },
   {
-   "iso": "YEM",
-   "name": "Yemen, Rep.",
-   "S": 59.7,
-   "S1": 73.5,
-   "track": 4
-  },
-  {
    "iso": "SEN",
    "name": "Senegal",
    "S": 57.7,
@@ -209,10 +195,10 @@
    "track": 3
   },
   {
-   "iso": "USA",
-   "name": "United States",
-   "S": 56.3,
-   "S1": 100.0,
+   "iso": "CHN",
+   "name": "China",
+   "S": 55.5,
+   "S1": 78.8,
    "track": 4
   },
   {
@@ -225,15 +211,8 @@
   {
    "iso": "COL",
    "name": "Colombia",
-   "S": 54.7,
-   "S1": 18.4,
-   "track": 4
-  },
-  {
-   "iso": "MLI",
-   "name": "Mali",
    "S": 54.5,
-   "S1": 48.0,
+   "S1": 18.4,
    "track": 4
   },
   {
@@ -244,136 +223,122 @@
    "track": 3
   },
   {
+   "iso": "MLI",
+   "name": "Mali",
+   "S": 54.2,
+   "S1": 48.0,
+   "track": 4
+  },
+  {
+   "iso": "YEM",
+   "name": "Yemen, Rep.",
+   "S": 53.6,
+   "S1": 73.5,
+   "track": 4
+  },
+  {
    "iso": "ZWE",
    "name": "Zimbabwe",
-   "S": 50.9,
+   "S": 52.2,
    "S1": 38.1,
    "track": 4
   },
   {
    "iso": "PER",
    "name": "Peru",
-   "S": 49.6,
+   "S": 50.9,
    "S1": 31.9,
+   "track": 4
+  },
+  {
+   "iso": "USA",
+   "name": "United States",
+   "S": 50.0,
+   "S1": 100.0,
    "track": 4
   },
   {
    "iso": "AZE",
    "name": "Azerbaijan",
-   "S": 48.3,
+   "S": 48.0,
    "S1": 62.8,
-   "track": 4
-  },
-  {
-   "iso": "HTI",
-   "name": "Haiti",
-   "S": 47.7,
-   "S1": 29.3,
    "track": 4
   },
   {
    "iso": "GTM",
    "name": "Guatemala",
-   "S": 47.2,
+   "S": 46.9,
    "S1": 29.3,
    "track": 4
   },
   {
    "iso": "EGY",
    "name": "Egypt, Arab Rep.",
-   "S": 47.1,
+   "S": 45.9,
    "S1": 28.4,
    "track": 4
   },
   {
-   "iso": "FRA",
-   "name": "France",
-   "S": 46.6,
-   "S1": 70.0,
-   "track": 4
-  },
-  {
-   "iso": "GEO",
-   "name": "Georgia",
-   "S": 44.8,
-   "S1": 51.7,
-   "track": 4
-  },
-  {
-   "iso": "DZA",
-   "name": "Algeria",
-   "S": 44.3,
-   "S1": 24.4,
+   "iso": "HTI",
+   "name": "Haiti",
+   "S": 45.8,
+   "S1": 29.3,
    "track": 4
   },
   {
    "iso": "LBY",
    "name": "Libya",
-   "S": 44.2,
+   "S": 45.1,
    "S1": 38.2,
    "track": 4
   },
   {
-   "iso": "GBR",
-   "name": "United Kingdom",
-   "S": 43.1,
-   "S1": 67.2,
+   "iso": "FRA",
+   "name": "France",
+   "S": 44.2,
+   "S1": 70.0,
    "track": 4
   },
   {
-   "iso": "THA",
-   "name": "Thailand",
-   "S": 42.0,
-   "S1": 45.5,
+   "iso": "DZA",
+   "name": "Algeria",
+   "S": 43.5,
+   "S1": 24.4,
+   "track": 4
+  },
+  {
+   "iso": "GEO",
+   "name": "Georgia",
+   "S": 43.3,
+   "S1": 51.7,
    "track": 4
   },
   {
    "iso": "GHA",
    "name": "Ghana",
-   "S": 41.8,
+   "S": 43.1,
    "S1": 38.5,
-   "track": 4
-  },
-  {
-   "iso": "ZAF",
-   "name": "South Africa",
-   "S": 41.6,
-   "S1": 27.1,
-   "track": 4
-  },
-  {
-   "iso": "BIH",
-   "name": "Bosnia and Herzegovina",
-   "S": 41.5,
-   "S1": 27.0,
-   "track": 4
-  },
-  {
-   "iso": "MEX",
-   "name": "Mexico",
-   "S": 41.1,
-   "S1": 27.3,
    "track": 4
   },
   {
    "iso": "BRA",
    "name": "Brazil",
-   "S": 40.8,
+   "S": 41.9,
    "S1": 4.4,
-   "track": 4
-  },
-  {
-   "iso": "HRV",
-   "name": "Croatia",
-   "S": 40.6,
-   "S1": 27.3,
    "track": 4
   },
   {
    "iso": "LBN",
    "name": "Lebanon",
-   "S": 40.6,
+   "S": 41.6,
    "S1": 31.4,
+   "track": 4
+  },
+  {
+   "iso": "MEX",
+   "name": "Mexico",
+   "S": 40.7,
+   "S1": 27.3,
    "track": 4
   },
   {
@@ -384,18 +349,25 @@
    "track": 3
   },
   {
-   "iso": "BGD",
-   "name": "Bangladesh",
-   "S": 39.7,
-   "S1": 17.9,
-   "track": 4
-  },
-  {
    "iso": "NPL",
    "name": "Nepal",
    "S": 39.6,
    "S1": 36.2,
    "track": 3
+  },
+  {
+   "iso": "HRV",
+   "name": "Croatia",
+   "S": 39.2,
+   "S1": 27.3,
+   "track": 4
+  },
+  {
+   "iso": "ZAF",
+   "name": "South Africa",
+   "S": 39.2,
+   "S1": 27.1,
+   "track": 4
   },
   {
    "iso": "COG",
@@ -412,10 +384,10 @@
    "track": 3
   },
   {
-   "iso": "VNM",
-   "name": "Viet Nam",
+   "iso": "BIH",
+   "name": "Bosnia and Herzegovina",
    "S": 38.5,
-   "S1": 52.7,
+   "S1": 27.0,
    "track": 4
   },
   {
@@ -426,24 +398,45 @@
    "track": 3
   },
   {
-   "iso": "VEN",
-   "name": "Venezuela, RB",
-   "S": 35.9,
-   "S1": 21.3,
+   "iso": "GBR",
+   "name": "United Kingdom",
+   "S": 37.8,
+   "S1": 67.2,
+   "track": 4
+  },
+  {
+   "iso": "BGD",
+   "name": "Bangladesh",
+   "S": 37.3,
+   "S1": 17.9,
    "track": 4
   },
   {
    "iso": "UZB",
    "name": "Uzbekistan",
-   "S": 35.6,
+   "S": 35.5,
    "S1": 22.7,
    "track": 4
   },
   {
-   "iso": "KGZ",
-   "name": "Kyrgyz Republic",
-   "S": 34.8,
-   "S1": 33.8,
+   "iso": "VEN",
+   "name": "Venezuela, RB",
+   "S": 35.3,
+   "S1": 21.3,
+   "track": 4
+  },
+  {
+   "iso": "THA",
+   "name": "Thailand",
+   "S": 35.2,
+   "S1": 45.5,
+   "track": 4
+  },
+  {
+   "iso": "SRB",
+   "name": "Serbia",
+   "S": 34.9,
+   "S1": 30.8,
    "track": 4
   },
   {
@@ -452,13 +445,6 @@
    "S": 34.8,
    "S1": 29.5,
    "track": 3
-  },
-  {
-   "iso": "SRB",
-   "name": "Serbia",
-   "S": 34.6,
-   "S1": 30.8,
-   "track": 4
   },
   {
    "iso": "MRT",
@@ -470,29 +456,43 @@
   {
    "iso": "MAR",
    "name": "Morocco",
-   "S": 32.2,
+   "S": 32.5,
    "S1": 20.9,
-   "track": 4
-  },
-  {
-   "iso": "ARG",
-   "name": "Argentina",
-   "S": 31.3,
-   "S1": 23.5,
    "track": 4
   },
   {
    "iso": "TZA",
    "name": "Tanzania",
-   "S": 29.7,
+   "S": 31.2,
    "S1": 14.1,
+   "track": 4
+  },
+  {
+   "iso": "ARG",
+   "name": "Argentina",
+   "S": 30.4,
+   "S1": 23.5,
    "track": 4
   },
   {
    "iso": "MYS",
    "name": "Malaysia",
-   "S": 29.1,
+   "S": 30.3,
    "S1": 20.2,
+   "track": 4
+  },
+  {
+   "iso": "VNM",
+   "name": "Viet Nam",
+   "S": 29.3,
+   "S1": 52.7,
+   "track": 4
+  },
+  {
+   "iso": "KGZ",
+   "name": "Kyrgyz Republic",
+   "S": 29.3,
+   "S1": 33.8,
    "track": 4
   },
   {
@@ -505,29 +505,22 @@
   {
    "iso": "MDA",
    "name": "Moldova",
-   "S": 28.8,
+   "S": 28.7,
    "S1": 17.1,
    "track": 4
   },
   {
-   "iso": "MKD",
-   "name": "North Macedonia",
-   "S": 28.2,
-   "S1": 11.1,
+   "iso": "ECU",
+   "name": "Ecuador",
+   "S": 28.3,
+   "S1": 6.4,
    "track": 4
   },
   {
-   "iso": "ESP",
-   "name": "Spain",
-   "S": 28.1,
-   "S1": 29.0,
-   "track": 4
-  },
-  {
-   "iso": "ARM",
-   "name": "Armenia",
+   "iso": "CHL",
+   "name": "Chile",
    "S": 28.0,
-   "S1": 12.9,
+   "S1": 6.1,
    "track": 4
   },
   {
@@ -538,17 +531,10 @@
    "track": 3
   },
   {
-   "iso": "SAU",
-   "name": "Saudi Arabia",
-   "S": 27.8,
-   "S1": 15.2,
-   "track": 4
-  },
-  {
-   "iso": "CHL",
-   "name": "Chile",
-   "S": 27.6,
-   "S1": 6.1,
+   "iso": "MKD",
+   "name": "North Macedonia",
+   "S": 27.3,
+   "S1": 11.1,
    "track": 4
   },
   {
@@ -559,23 +545,23 @@
    "track": 4
   },
   {
-   "iso": "ECU",
-   "name": "Ecuador",
-   "S": 26.9,
-   "S1": 6.4,
+   "iso": "ARM",
+   "name": "Armenia",
+   "S": 26.4,
+   "S1": 12.9,
    "track": 4
   },
   {
-   "iso": "ITA",
-   "name": "Italy",
-   "S": 26.5,
-   "S1": 24.9,
+   "iso": "TTO",
+   "name": "Trinidad and Tobago",
+   "S": 26.1,
+   "S1": 8.2,
    "track": 4
   },
   {
    "iso": "TUN",
    "name": "Tunisia",
-   "S": 26.0,
+   "S": 25.6,
    "S1": 9.5,
    "track": 4
   },
@@ -587,18 +573,18 @@
    "track": 3
   },
   {
-   "iso": "TTO",
-   "name": "Trinidad and Tobago",
-   "S": 25.3,
-   "S1": 8.2,
-   "track": 4
-  },
-  {
    "iso": "SLV",
    "name": "El Salvador",
    "S": 25.2,
    "S1": 16.2,
    "track": 3
+  },
+  {
+   "iso": "ALB",
+   "name": "Albania",
+   "S": 25.2,
+   "S1": 1.2,
+   "track": 4
   },
   {
    "iso": "CMR",
@@ -615,17 +601,10 @@
    "track": 3
   },
   {
-   "iso": "AUS",
-   "name": "Australia",
-   "S": 24.3,
-   "S1": 24.5,
-   "track": 4
-  },
-  {
-   "iso": "ALB",
-   "name": "Albania",
-   "S": 24.1,
-   "S1": 1.2,
+   "iso": "ESP",
+   "name": "Spain",
+   "S": 24.6,
+   "S1": 29.0,
    "track": 4
   },
   {
@@ -636,87 +615,45 @@
    "track": 3
   },
   {
+   "iso": "ITA",
+   "name": "Italy",
+   "S": 22.8,
+   "S1": 24.9,
+   "track": 4
+  },
+  {
    "iso": "ROU",
    "name": "Romania",
-   "S": 23.6,
+   "S": 22.6,
    "S1": 12.6,
-   "track": 4
-  },
-  {
-   "iso": "URY",
-   "name": "Uruguay",
-   "S": 23.5,
-   "S1": 5.7,
-   "track": 4
-  },
-  {
-   "iso": "JOR",
-   "name": "Jordan",
-   "S": 23.4,
-   "S1": 10.7,
    "track": 4
   },
   {
    "iso": "CYP",
    "name": "Cyprus",
-   "S": 21.2,
+   "S": 22.3,
    "S1": 4.2,
    "track": 4
   },
   {
-   "iso": "BEL",
-   "name": "Belgium",
-   "S": 21.0,
-   "S1": 16.4,
+   "iso": "URY",
+   "name": "Uruguay",
+   "S": 20.8,
+   "S1": 5.7,
    "track": 4
   },
   {
-   "iso": "KWT",
-   "name": "Kuwait",
-   "S": 20.4,
-   "S1": 4.1,
-   "track": 4
-  },
-  {
-   "iso": "MNE",
-   "name": "Montenegro",
-   "S": 20.3,
+   "iso": "ZMB",
+   "name": "Zambia",
+   "S": 19.3,
    "S1": 0.0,
    "track": 4
   },
   {
-   "iso": "GRC",
-   "name": "Greece",
-   "S": 20.3,
-   "S1": 9.5,
-   "track": 4
-  },
-  {
-   "iso": "DEU",
-   "name": "Germany",
-   "S": 19.5,
-   "S1": 10.9,
-   "track": 4
-  },
-  {
-   "iso": "BGR",
-   "name": "Bulgaria",
-   "S": 19.5,
-   "S1": 5.0,
-   "track": 4
-  },
-  {
-   "iso": "QAT",
-   "name": "Qatar",
-   "S": 19.4,
-   "S1": 4.2,
-   "track": 4
-  },
-  {
-   "iso": "CAN",
-   "name": "Canada",
-   "S": 19.4,
-   "S1": 12.1,
+   "iso": "JOR",
+   "name": "Jordan",
+   "S": 19.2,
+   "S1": 10.7,
    "track": 4
   },
   {
@@ -734,10 +671,24 @@
    "track": 3
   },
   {
-   "iso": "ZMB",
-   "name": "Zambia",
+   "iso": "SAU",
+   "name": "Saudi Arabia",
+   "S": 18.7,
+   "S1": 15.2,
+   "track": 4
+  },
+  {
+   "iso": "GRC",
+   "name": "Greece",
    "S": 18.6,
-   "S1": 0.0,
+   "S1": 9.5,
+   "track": 4
+  },
+  {
+   "iso": "BGR",
+   "name": "Bulgaria",
+   "S": 18.3,
+   "S1": 5.0,
    "track": 4
   },
   {
@@ -755,17 +706,17 @@
    "track": 3
   },
   {
-   "iso": "KOR",
-   "name": "Korea, Rep.",
+   "iso": "SVK",
+   "name": "Slovak Republic",
    "S": 18.0,
-   "S1": 5.3,
+   "S1": 0.0,
    "track": 4
   },
   {
-   "iso": "POL",
-   "name": "Poland",
+   "iso": "MNE",
+   "name": "Montenegro",
    "S": 17.8,
-   "S1": 4.5,
+   "S1": 0.0,
    "track": 4
   },
   {
@@ -783,24 +734,10 @@
    "track": 3
   },
   {
-   "iso": "PRT",
-   "name": "Portugal",
-   "S": 17.6,
-   "S1": 2.6,
-   "track": 4
-  },
-  {
-   "iso": "SVK",
-   "name": "Slovak Republic",
-   "S": 17.6,
-   "S1": 0.0,
-   "track": 4
-  },
-  {
-   "iso": "HUN",
-   "name": "Hungary",
+   "iso": "QAT",
+   "name": "Qatar",
    "S": 17.5,
-   "S1": 3.8,
+   "S1": 4.2,
    "track": 4
   },
   {
@@ -811,38 +748,38 @@
    "track": 3
   },
   {
-   "iso": "JPN",
-   "name": "Japan",
-   "S": 17.0,
-   "S1": 9.7,
+   "iso": "KWT",
+   "name": "Kuwait",
+   "S": 16.7,
+   "S1": 4.1,
    "track": 4
   },
   {
-   "iso": "NLD",
-   "name": "Netherlands",
-   "S": 16.0,
-   "S1": 9.7,
+   "iso": "AUS",
+   "name": "Australia",
+   "S": 16.4,
+   "S1": 24.5,
    "track": 4
   },
   {
-   "iso": "SVN",
-   "name": "Slovenia",
-   "S": 15.8,
-   "S1": 0.0,
+   "iso": "PRT",
+   "name": "Portugal",
+   "S": 16.3,
+   "S1": 2.6,
    "track": 4
   },
   {
-   "iso": "MLT",
-   "name": "Malta",
-   "S": 15.8,
-   "S1": 0.0,
+   "iso": "POL",
+   "name": "Poland",
+   "S": 15.6,
+   "S1": 4.5,
    "track": 4
   },
   {
-   "iso": "LVA",
-   "name": "Latvia",
-   "S": 15.7,
-   "S1": 0.6,
+   "iso": "BEL",
+   "name": "Belgium",
+   "S": 15.6,
+   "S1": 16.4,
    "track": 4
   },
   {
@@ -853,45 +790,38 @@
    "track": 3
   },
   {
-   "iso": "UKR",
-   "name": "Ukraine",
-   "S": 15.2,
+   "iso": "HUN",
+   "name": "Hungary",
+   "S": 15.0,
+   "S1": 3.8,
+   "track": 4
+  },
+  {
+   "iso": "KOR",
+   "name": "Korea, Rep.",
+   "S": 14.5,
+   "S1": 5.3,
+   "track": 4
+  },
+  {
+   "iso": "DEU",
+   "name": "Germany",
+   "S": 14.1,
+   "S1": 10.9,
+   "track": 4
+  },
+  {
+   "iso": "SVN",
+   "name": "Slovenia",
+   "S": 14.0,
    "S1": 0.0,
    "track": 4
   },
   {
-   "iso": "LTU",
-   "name": "Lithuania",
-   "S": 15.1,
-   "S1": 0.6,
-   "track": 4
-  },
-  {
-   "iso": "EST",
-   "name": "Estonia",
-   "S": 14.7,
-   "S1": 1.1,
-   "track": 4
-  },
-  {
-   "iso": "CZE",
-   "name": "Czechia",
-   "S": 14.7,
-   "S1": 0.6,
-   "track": 4
-  },
-  {
-   "iso": "LUX",
-   "name": "Luxembourg",
-   "S": 13.7,
+   "iso": "MLT",
+   "name": "Malta",
+   "S": 13.9,
    "S1": 0.0,
-   "track": 4
-  },
-  {
-   "iso": "AUT",
-   "name": "Austria",
-   "S": 13.7,
-   "S1": 1.2,
    "track": 4
   },
   {
@@ -900,6 +830,13 @@
    "S": 13.3,
    "S1": 0.0,
    "track": 3
+  },
+  {
+   "iso": "LVA",
+   "name": "Latvia",
+   "S": 13.0,
+   "S1": 0.6,
+   "track": 4
   },
   {
    "iso": "HND",
@@ -923,32 +860,18 @@
    "track": 3
   },
   {
-   "iso": "SGP",
-   "name": "Singapore",
-   "S": 12.5,
-   "S1": 0.0,
-   "track": 4
-  },
-  {
-   "iso": "IRL",
-   "name": "Ireland",
-   "S": 12.5,
-   "S1": 0.0,
-   "track": 4
-  },
-  {
-   "iso": "KAZ",
-   "name": "Kazakhstan",
-   "S": 12.5,
-   "S1": 0.0,
-   "track": 4
-  },
-  {
    "iso": "OMN",
    "name": "Oman",
    "S": 12.5,
    "S1": 17.2,
    "track": 3
+  },
+  {
+   "iso": "CAN",
+   "name": "Canada",
+   "S": 12.4,
+   "S1": 12.1,
+   "track": 4
   },
   {
    "iso": "TJK",
@@ -958,38 +881,31 @@
    "track": 3
   },
   {
-   "iso": "BLR",
-   "name": "Belarus",
-   "S": 12.3,
+   "iso": "UKR",
+   "name": "Ukraine",
+   "S": 12.2,
    "S1": 0.0,
    "track": 4
   },
   {
-   "iso": "HKG",
-   "name": "Hong Kong SAR, China",
-   "S": 11.9,
-   "S1": 0.0,
+   "iso": "LTU",
+   "name": "Lithuania",
+   "S": 11.6,
+   "S1": 0.6,
    "track": 4
   },
   {
-   "iso": "NZL",
-   "name": "New Zealand",
+   "iso": "JPN",
+   "name": "Japan",
    "S": 11.4,
-   "S1": 1.0,
+   "S1": 9.7,
    "track": 4
   },
   {
-   "iso": "FIN",
-   "name": "Finland",
-   "S": 10.3,
-   "S1": 4.3,
-   "track": 4
-  },
-  {
-   "iso": "ISL",
-   "name": "Iceland",
-   "S": 10.3,
-   "S1": 0.0,
+   "iso": "CZE",
+   "name": "Czechia",
+   "S": 10.7,
+   "S1": 0.6,
    "track": 4
   },
   {
@@ -1000,6 +916,13 @@
    "track": 3
   },
   {
+   "iso": "EST",
+   "name": "Estonia",
+   "S": 10.2,
+   "S1": 1.1,
+   "track": 4
+  },
+  {
    "iso": "SUR",
    "name": "Suriname",
    "S": 9.7,
@@ -1007,9 +930,9 @@
    "track": 3
   },
   {
-   "iso": "CHE",
-   "name": "Switzerland",
-   "S": 9.6,
+   "iso": "LUX",
+   "name": "Luxembourg",
+   "S": 9.3,
    "S1": 0.0,
    "track": 4
   },
@@ -1028,10 +951,10 @@
    "track": 3
   },
   {
-   "iso": "SWE",
-   "name": "Sweden",
-   "S": 7.2,
-   "S1": 0.0,
+   "iso": "AUT",
+   "name": "Austria",
+   "S": 8.4,
+   "S1": 1.2,
    "track": 4
   },
   {
@@ -1042,6 +965,27 @@
    "track": 3
   },
   {
+   "iso": "NLD",
+   "name": "Netherlands",
+   "S": 6.8,
+   "S1": 9.7,
+   "track": 4
+  },
+  {
+   "iso": "SGP",
+   "name": "Singapore",
+   "S": 6.7,
+   "S1": 0.0,
+   "track": 4
+  },
+  {
+   "iso": "IRL",
+   "name": "Ireland",
+   "S": 6.7,
+   "S1": 0.0,
+   "track": 4
+  },
+  {
    "iso": "JAM",
    "name": "Jamaica",
    "S": 6.6,
@@ -1049,17 +993,24 @@
    "track": 3
   },
   {
-   "iso": "NOR",
-   "name": "Norway",
+   "iso": "KAZ",
+   "name": "Kazakhstan",
    "S": 6.4,
-   "S1": 1.0,
+   "S1": 0.0,
    "track": 4
   },
   {
-   "iso": "DNK",
-   "name": "Denmark",
-   "S": 5.2,
-   "S1": 0.3,
+   "iso": "BLR",
+   "name": "Belarus",
+   "S": 5.4,
+   "S1": 0.0,
+   "track": 4
+  },
+  {
+   "iso": "HKG",
+   "name": "Hong Kong SAR, China",
+   "S": 5.3,
+   "S1": 0.0,
    "track": 4
   },
   {
@@ -1084,6 +1035,13 @@
    "track": 3
   },
   {
+   "iso": "NZL",
+   "name": "New Zealand",
+   "S": 2.7,
+   "S1": 1.0,
+   "track": 4
+  },
+  {
    "iso": "CRI",
    "name": "Costa Rica",
    "S": 2.6,
@@ -1096,6 +1054,13 @@
    "S": 2.4,
    "S1": 0.0,
    "track": 3
+  },
+  {
+   "iso": "FIN",
+   "name": "Finland",
+   "S": 2.3,
+   "S1": 4.3,
+   "track": 4
   },
   {
    "iso": "BHR",
@@ -1112,6 +1077,13 @@
    "track": 3
   },
   {
+   "iso": "ISL",
+   "name": "Iceland",
+   "S": 1.7,
+   "S1": 0.0,
+   "track": 4
+  },
+  {
    "iso": "SLB",
    "name": "Solomon Islands",
    "S": 1.1,
@@ -1126,11 +1098,25 @@
    "track": 3
   },
   {
+   "iso": "NOR",
+   "name": "Norway",
+   "S": 1.0,
+   "S1": 1.0,
+   "track": 4
+  },
+  {
    "iso": "SYC",
    "name": "Seychelles",
    "S": 0.3,
    "S1": 0.0,
    "track": 3
+  },
+  {
+   "iso": "DNK",
+   "name": "Denmark",
+   "S": 0.2,
+   "S1": 0.3,
+   "track": 4
   },
   {
    "iso": "BRB",
@@ -1208,6 +1194,20 @@
    "S": 0.0,
    "S1": 0.0,
    "track": 3
+  },
+  {
+   "iso": "SWE",
+   "name": "Sweden",
+   "S": 0.0,
+   "S1": 0.0,
+   "track": 4
+  },
+  {
+   "iso": "CHE",
+   "name": "Switzerland",
+   "S": 0.0,
+   "S1": 0.0,
+   "track": 4
   },
   {
    "iso": "VUT",

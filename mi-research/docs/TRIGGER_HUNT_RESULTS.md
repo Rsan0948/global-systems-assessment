@@ -1,6 +1,19 @@
 # Trigger Hunt — is the Mule really unmeasurable?
 
+> **⚠ AUDIT CORRECTION (2026-07-12) — the "variance countdown" here is CONFOUNDED.** This doc's
+> headline (variance AUC **0.689** for backsliding, "accelerates 3.6×→7.4×", "84% within-country")
+> does **not** survive adversarial audit. The cross-country AUC 0.689 is a confound (volatile poor
+> states rupture more) plus mechanical coupling (variance of libdem is elevated before a defined
+> move in libdem); the p-values are inflated by pseudoreplication (overlapping windows counted as
+> independent); the "3.6×→7.4× monotonic" gradient was computed on shifting subsets. The corrected
+> within-country analysis (`scripts/v2/csd_corrected.py` → `csd_corrected.json`, country-clustered,
+> one obs per episode, matched windows, fixed cohort) confirms **within-country variance elevation
+> is real (81% of 240 episodes, CI excludes 0)** but is **not a monotonic countdown**, and the
+> theory-canonical **AR1 signal is NULL (AUC 0.51)**. See the banner in `MI_TIER5_CRITICALITY.md`.
+> The numbers in the tables below are retained for the record but are superseded.
+
 Code `scripts/v2/trigger_hunt.py`; data `data/political/trigger_hunt.json`.
+Corrected: `scripts/v2/csd_corrected.py`; data `data/political/csd_corrected.json`.
 
 ## The reframe: "the Mule" conflated two different things
 

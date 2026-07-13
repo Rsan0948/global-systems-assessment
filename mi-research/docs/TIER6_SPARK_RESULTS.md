@@ -1,7 +1,15 @@
 # Tier 6 — Spark Probability — Results
 
+> **⚠ AUDIT CORRECTION (2026-07-12) — the AUCs below were IN-SAMPLE.** Every tier-6 headline AUC
+> was resubstitution (fit and scored on the same rows), which mechanically rises as predictors are
+> stacked. Re-run out-of-fold (`tier6_spark.py` → `data/political/tier6_auc.json`): **T6 adds +0.15
+> over T5 OOF** (real; in-sample was +0.22); the **full six-tier model is AUC 0.63 OOF, not 0.712**;
+> and notably **T5 alone is near-chance OOF (0.48)** while T6 alone holds (0.64) — spark density,
+> not criticality, carries the cross-country signal. The T5×T6 interaction is not significant
+> (z=−1.07). Read "0.712 / +0.22" below as the inflated in-sample figures.
+
 Frozen prereg sha256 `9784e84f`. Code `scripts/v2/tier6_spark.py`; data
-`data/political/{tier6_indicators,six_tier_snapshot}.json`. n=114 (T5-scored democracies),
+`data/political/{tier6_indicators,six_tier_snapshot,tier6_auc}.json`. n=114 (T5-scored democracies),
 crisis = conflict-or-backsliding 2013–2024.
 
 > **The claim:** the spark is idiosyncratic, but the *rate* at which potential triggers arrive

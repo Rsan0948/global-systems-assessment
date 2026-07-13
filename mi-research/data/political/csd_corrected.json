@@ -1,0 +1,19 @@
+{
+ "n_episodes": 240,
+ "n_countries": 125,
+ "within_country_mean_logratio": 4.896,
+ "within_country_CI": [
+  2.779,
+  7.671
+ ],
+ "within_country_survives": true,
+ "lead_gradient": {
+  "12": 12.76,
+  "9": 18.14,
+  "6": 22.51,
+  "3": 21.77,
+  "1": 32.75
+ },
+ "lead_monotone": false,
+ "ar1_auc": 0.509
+}

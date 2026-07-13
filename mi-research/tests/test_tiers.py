@@ -120,7 +120,7 @@ def test_headline_anchors_stable(snapshots):
     _, _, six = snapshots
     us = six["USA"]
     assert us["V1"] == pytest.approx(77.9, abs=1.0)   # capable
-    assert us["T4"] == pytest.approx(56.3, abs=1.5)   # Loaded Spring scarring
+    assert us["T4"] == pytest.approx(50.0, abs=1.5)   # scarring (audit H4: S2 now percentile-normalized)
     nl = six["NLD"]
     assert nl["V3"] < 25 and nl["T4"] < 25 and (nl["T5"] or 0) < 5  # clean on risk axes
     assert nl["T6"] < 10                               # minimum spark density (bottom decile)
@@ -146,29 +146,82 @@ def test_flickering_cases_present(snapshots):
 
 # ----------------------------------------------------------------- results-artifact invariants
 def test_political_signal_gate_committed():
-    """political_test committed result: numerator adds over structural on the modern outcomes."""
+    """political_test T2 gate (audit M5 fix): 50-seed repeated CV with a CI. The numerator layer
+    adds over structural for backsliding & repression with a CI lower bound above 0; conflict does
+    not (structure already predicts conflict). Encodes the honest, reproducible result."""
     r = _load("political/political_test.json")["T2_gate"]
     bs = r["backslide"]; rep = r["repression_worsen"]
-    assert bs["auc_struct+numerator"] > bs["auc_structural"]      # numerator helps backsliding
-    assert bs["increment"] >= 0.03
-    assert rep["increment"] >= 0.03
+    assert bs["auc_struct+numerator"] > bs["auc_structural"]     # numerator helps backsliding
+    assert bs["increment_mean"] >= 0.05
+    assert bs["increment_CI"][0] > 0 and bs["gate_pass(CI>0)"]   # robust to reshuffling
+    assert bs["frac_seeds_positive"] >= 0.95
+    assert rep["increment_CI"][0] > 0 and rep["gate_pass(CI>0)"]
+    # conflict is honestly NOT passed by the numerator (structure already carries it)
+    assert not r["conflict_1224"]["gate_pass(CI>0)"]
 
 
-def test_csd_trigger_signal_committed():
-    """trigger_hunt committed result: variance is a positive early-warning for backsliding."""
-    r = _load("political/trigger_hunt.json")["backsliding_libdem"]
-    assert r["var"]["AUC"] > 0.6                     # variance discriminates
-    assert r["var"]["event_mean"] > r["var"]["control_mean"]   # rises before rupture
-    assert r["ar1"]["AUC"] > 0.5
+def test_political_signal_partial_survivors_committed():
+    """political_test T1 (audit M4 fix): net of P1+logGDP, the CORE V3 signals survive
+    (anocracy+cso->backslide, pts/prior-conflict/youth->conflict) while the confounded marginals
+    (internet, ethnic_excl, food_imp) drop out."""
+    o = _load("political/political_test.json")
+    surv = {(t["pred"], t["out"]) for t in o["T1_survivors_partial"]}
+    assert ("anocracy", "backslide") in surv
+    assert ("cso", "backslide") in surv
+    assert ("prior_conflict", "conflict_1224") in surv
+    # confounded-by-capacity marginals must NOT be in the partial survivor set
+    assert ("internet", "conflict_1224") not in surv
+    assert ("food_imp", "repression_worsen") not in surv
+
+
+def test_csd_corrected_honest_signal():
+    """CSD, audit-corrected (H1/H2/M1/M2). Within-country variance elevation before backsliding
+    SURVIVES (country-clustered CI excludes 0), but the theory-canonical AR1 indicator is NULL
+    and the lead gradient is NOT a clean monotonic countdown. This is the corrected, weaker,
+    honest finding that replaces the 'monotonic 3.6x->7.4x, AUC 0.689' claim."""
+    r = _load("political/csd_corrected.json")
+    assert r["within_country_survives"] and r["within_country_CI"][0] > 0   # real within-country
+    assert r["within_country_mean_logratio"] > 0
+    assert r["ar1_auc"] < 0.60          # AR1 does NOT discriminate — the honest null
+    assert r["lead_monotone"] is False  # elevated but not a clean accelerating countdown
 
 
 def test_tier4_operationalizes_conflict_trap():
-    """tier4 committed: adds over V1+V3 and mediates the raw prior-conflict binary."""
+    """tier4 (audit H4/H5 fix): S2 percentile-normalized, missing V3 covariates mean-imputed,
+    50-seed repeated CV. Still adds over V1+V3 and still mediates the raw prior-conflict binary."""
     r = _load("political/tier4_scarring.json")
     assert r["T4_1"]["increment"] >= 0.03
+    assert r["T4_1"]["pass"]
     assert r["optimal_halflife"] in (15, 25, 50, 75)
     # raw binary absorbed by S (|z| of raw drops when S added)
     assert abs(r["T4_6"]["raw_with_S_z"]) < abs(r["T4_6"]["raw_alone_z"])
+
+
+def test_deep_political_oof_below_insample():
+    """deep_political (audit C1 fix): the headline is OUT-OF-FOLD, and OOF increments must be
+    below the (inflated) in-sample ones. Guards against a regression back to resubstitution AUC."""
+    rows = _load("political/deep_political.json")
+    for OUT in ("backslide", "conflict"):
+        oof = [r[OUT]["increment"] for r in rows
+               if OUT in r and r[OUT].get("increment") is not None and r[OUT]["n"] >= 25]
+        ins = [r[OUT]["increment_insample"] for r in rows
+               if OUT in r and r[OUT].get("increment_insample") is not None and r[OUT]["n"] >= 25]
+        assert oof and ins
+        assert float(np.mean(oof)) < float(np.mean(ins))   # OOF is the honest, smaller number
+    # backsliding numerator signal is weak-positive OOF, not the old inflated +0.131
+    bs = [r["backslide"]["increment"] for r in rows
+          if "backslide" in r and r["backslide"].get("increment") is not None and r["backslide"]["n"] >= 25]
+    assert 0.0 < float(np.mean(bs)) < 0.12
+
+
+def test_tier6_oof_present_and_honest():
+    """tier6 (audit C1 fix): the six-tier headline AUC is reported OUT-OF-FOLD and is materially
+    below the in-sample number (which mechanically rises with predictors). T6 still adds over T5
+    out-of-fold."""
+    r = _load("political/tier6_auc.json")
+    assert r["out_of_fold"]["six_tier"] < r["insample"]["six_tier"]
+    assert r["out_of_fold"]["six_tier"] > 0.55            # still beats chance
+    assert r["out_of_fold"]["T6_increment"] > 0          # spark density adds over criticality OOF
 
 
 def test_v2_construct_validity_committed():

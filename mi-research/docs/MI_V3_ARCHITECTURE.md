@@ -59,9 +59,10 @@ The FDR-surviving backsliding predictors are **anocracy + civil-society mobiliza
 structure (P1) does not survive. Armed conflict — the *ancient*, poverty-driven mode — is
 already structure-predictable; V3 owns the *modern* mode.
 
-**Deep validation (1816–1996, `deep_political.py`):** the V3 numerator beats structure at
-backsliding across the entire 20th century (mean incremental AUC **+0.131**, 11 epochs),
-largest where structure fails most (modern). The conflict-trap (+0.21..+0.67) and
+**Deep validation (1816–1996, `deep_political.py`):** the V3 numerator adds over structure at
+backsliding across the 20th century, but on the honest **out-of-fold** basis the mean increment
+is **+0.071 (positive in 6/11 epochs)** — the earlier **+0.131** was an *in-sample* resubstitution
+figure (audit C1, 2026-07-12), ~2× inflated. Direction survives; magnitude was overstated. The conflict-trap (+0.21..+0.67) and
 rule-of-law→less-conflict (−0.06..−0.49) hold across 200 years; ethnic exclusion→conflict is
 robust post-1946 (+0.20..+0.39). **The drivers evolved:** anocracy→backsliding flipped from
 ≈0/negative (pre-1956) to **+0.22** (modern) — the "contested middle" as the erosion zone is

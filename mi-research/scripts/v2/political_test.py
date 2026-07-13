@@ -65,7 +65,9 @@ BASE=2012
 EPR=epr_excl(2008)
 print("EPR mapped to ISO:",len(EPR))
 
-isos=set(WBC)|set(lib)
+isos=sorted(set(WBC)|set(lib))   # REPRODUCIBILITY FIX: was set-iteration order (hash-randomized
+                                 # across runs) -> the single-seed CV fold split, and thus the gate
+                                 # AUCs, were non-deterministic run-to-run. Sort pins row order.
 rows=[]
 for iso in isos:
     P1b=p1(iso,BASE); Gb=gdp(iso,BASE)
@@ -111,14 +113,30 @@ for P in NUM+["P1","logGDP"]:
         if len(xy)<30 or len(set(b for _,b,_,_ in xy))<2: continue
         x=[a for a,_,_,_ in xy]; y=[b for _,b,_,_ in xy]
         sp=stats.spearmanr(x,y)
-        # partial out P1+logGDP
-        rz=np.column_stack([stats.rankdata([c for _,_,c,_ in xy]),stats.rankdata([d for _,_,_,d in xy])])
-        rx=stats.rankdata(x)-np.polyval(np.polyfit(rz[:,0],x,1),rz[:,0])  # crude single-control partial
-        tests.append({"pred":P,"out":O,"n":len(xy),"rho":round(float(sp.statistic),3),"p":float(sp.pvalue)})
+        # AUDIT M4 FIX: previously rz/rx were computed then DISCARDED, so the reported rho was the
+        # uncontrolled bivariate marginal. Compute a real partial-Spearman: rank everything, regress
+        # rank-x and rank-y each on [rank-P1, rank-logGDP] (with intercept), correlate the residuals.
+        if P not in ("P1","logGDP"):
+            rx=stats.rankdata(x); ry=stats.rankdata(y)
+            Z=np.column_stack([np.ones(len(xy)),stats.rankdata([c for _,_,c,_ in xy]),stats.rankdata([d for _,_,_,d in xy])])
+            bx,_,_,_=np.linalg.lstsq(Z,rx,rcond=None); by,_,_,_=np.linalg.lstsq(Z,ry,rcond=None)
+            ex=rx-Z@bx; ey=ry-Z@by
+            pr=stats.pearsonr(ex,ey)
+            prho=round(float(pr.statistic),3); pp=float(pr.pvalue)
+        else:
+            prho=None; pp=None   # can't partial a control out of itself
+        tests.append({"pred":P,"out":O,"n":len(xy),"rho":round(float(sp.statistic),3),"p":float(sp.pvalue),
+                      "partial_rho":prho,"partial_p":pp})
 ps=sorted(tests,key=lambda t:t["p"]); m=len(tests); crit=None
 for rank,t in enumerate(ps,1):
     if t["p"]<=rank/m*0.05: crit=t["p"]
 for t in tests: t["fdr"]=bool(crit and t["p"]<=crit)
+# AUDIT M4 FIX: BH-FDR on the PARTIAL p (net of P1+logGDP) — this is the honest survivor set.
+pt=[t for t in tests if t.get("partial_p") is not None]
+pps=sorted(pt,key=lambda t:t["partial_p"]); mp=len(pps); pcrit=None
+for rank,t in enumerate(pps,1):
+    if t["partial_p"]<=rank/mp*0.05: pcrit=t["partial_p"]
+for t in tests: t["fdr_partial"]=bool(pcrit and t.get("partial_p") is not None and t["partial_p"]<=pcrit)
 
 # ---- T2 gate: 5-fold CV AUC structural vs +numerator ----
 def cv_auc(Xcols,y,k=5,seed=0):
@@ -133,6 +151,21 @@ def cv_auc(Xcols,y,k=5,seed=0):
         p=1/(1+np.exp(-(X[te]@b)))
         aucs.append(L.auc_roc(p,y[te]))
     return round(float(np.mean(aucs)),4) if aucs else None
+def repeated_gate(struct,numer,y,seeds=range(50)):
+    """AUDIT M5 FIX: the single-seed 5-fold CV was a fragile point estimate. Repeat over 50 seeds,
+    report mean structural/+numerator AUC, the increment distribution (mean + 95% CI), and the
+    fraction of seeds with a positive increment. The gate passes only if the CI lower bound > 0."""
+    s_a,sn_a,inc=[],[],[]
+    for sd in seeds:
+        a_s=cv_auc(struct,y,seed=sd); a_sn=cv_auc(struct+numer,y,seed=sd)
+        if a_s is None or a_sn is None: continue
+        s_a.append(a_s); sn_a.append(a_sn); inc.append(a_sn-a_s)
+    if not inc: return None
+    lo,hi=np.percentile(inc,[2.5,97.5])
+    return {"auc_structural":round(float(np.mean(s_a)),4),"auc_struct+numerator":round(float(np.mean(sn_a)),4),
+            "increment_mean":round(float(np.mean(inc)),4),"increment_CI":[round(float(lo),4),round(float(hi),4)],
+            "frac_seeds_positive":round(float(np.mean([x>0 for x in inc])),3),
+            "gate_pass(CI>0)":bool(lo>0)}
 
 gate={}
 for O in OUTS:
@@ -141,25 +174,28 @@ for O in OUTS:
     y=[r["out"][O] for r in sub]
     struct=[[r["pred"]["P1"] for r in sub],[r["pred"]["logGDP"] for r in sub]]
     numer=[[r["pred"][p] for r in sub] for p in NUM]
-    a_s=cv_auc(struct,y); a_sn=cv_auc(struct+numer,y)
-    # numerator WITHOUT event-history (prior_conflict)
     numer_noeh=[[r["pred"][p] for r in sub] for p in NUM if p!="prior_conflict"]
-    a_sn_noeh=cv_auc(struct+numer_noeh,y)
-    gate[O]={"n":len(sub),"n_pos":int(sum(y)),"auc_structural":a_s,"auc_struct+numerator":a_sn,
-             "increment":round((a_sn-a_s),4) if a_s and a_sn else None,
-             "auc_struct+num_no_eventhistory":a_sn_noeh,
-             "gate_pass(inc>=0.05)":bool(a_s and a_sn and (a_sn-a_s)>=0.05)}
+    g=repeated_gate(struct,numer,y)
+    g["n"]=len(sub); g["n_pos"]=int(sum(y))
+    g["auc_struct+num_no_eventhistory"]=cv_auc(struct+numer_noeh,y)
+    gate[O]=g
 
-out={"prereg":"ec4aebe0","n":len(rows),"T1_fdr_crit":crit,
+out={"prereg":"ec4aebe0","n":len(rows),"T1_fdr_crit":crit,"T1_fdr_partial_crit":pcrit,
      "T1_survivors":sorted([t for t in tests if t["fdr"]],key=lambda t:t["p"]),
+     "T1_survivors_partial":sorted([t for t in tests if t["fdr_partial"]],key=lambda t:t["partial_p"]),
      "T1_all":sorted(tests,key=lambda t:t["p"]),"T2_gate":gate}
 (ROOT/"data/political/political_test.json").write_text(json.dumps(out,indent=1))
-print(f"\n=== T1 screen: {m} tests, FDR survivors (crit p<={crit}) ===")
+print(f"\n=== T1 screen: {m} tests, BIVARIATE FDR survivors (crit p<={crit}) ===")
 for t in out["T1_survivors"]:
-    print(f"   {t['pred']:15s} -> {t['out']:18s} rho={t['rho']:+.3f} p={t['p']:.4f} n={t['n']}")
+    pr=f"{t['partial_rho']:+.3f}" if t.get('partial_rho') is not None else "  n/a"
+    print(f"   {t['pred']:15s} -> {t['out']:18s} rho={t['rho']:+.3f} p={t['p']:.4f} | partial(net P1+GDP) rho={pr} {'[survives]' if t['fdr_partial'] else '[GONE net of controls]'}")
 if not out["T1_survivors"]: print("   (none survive FDR)")
-print(f"\n=== T2 GATE: does numerator add over structural (P1+logGDP), 5-fold CV AUC ===")
+print(f"\n=== T1 PARTIAL survivors (net of P1+logGDP, the honest set, crit p<={pcrit}) ===")
+for t in out["T1_survivors_partial"]:
+    print(f"   {t['pred']:15s} -> {t['out']:18s} partial_rho={t['partial_rho']:+.3f} partial_p={t['partial_p']:.4f} n={t['n']}")
+if not out["T1_survivors_partial"]: print("   (none survive the partial FDR — T1 marginals were all confounded by capacity/wealth)")
+print(f"\n=== T2 GATE: numerator over structural (P1+logGDP), 50-seed repeated 5-fold CV ===")
 for O,g in gate.items():
     if "note" in g: print(f"   {O}: {g}"); continue
     print(f"   {O:18s} n={g['n']} pos={g['n_pos']}: structural={g['auc_structural']}  +numerator={g['auc_struct+numerator']}  "
-          f"increment={g['increment']}  (no-eventhist={g['auc_struct+num_no_eventhistory']})  PASS={g['gate_pass(inc>=0.05)']}")
+          f"increment={g['increment_mean']:+.4f} CI{g['increment_CI']} pos-frac={g['frac_seeds_positive']}  PASS(CI>0)={g['gate_pass(CI>0)']}")

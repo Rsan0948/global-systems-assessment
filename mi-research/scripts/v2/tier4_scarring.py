@@ -50,7 +50,7 @@ def build(halflife):
     lam=math.log(2)/halflife
     pop=T4.get("population",{}); ref=T4.get("refugees_origin",{}); trust=T4.get("trust",{}); pts=POL.get("pts",{})
     rows=[]
-    for iso in set(WBC)|set(onsets):
+    for iso in sorted(set(WBC)|set(onsets)):   # REPRODUCIBILITY: pin row order (was hash-randomized)
         P1=p1(iso); G=gdp(iso); lb=libv(iso)
         if P1 is None or G is None or lb is None: continue
         # S1: decay-weighted prior onsets (civil 1.0, interstate 0.5), before BASE
@@ -76,9 +76,13 @@ def build(halflife):
         return (lambda v: float(np.clip((v-lo)/(hi-lo)*100,0,100))) if hi>lo else (lambda v:50.0)
     nS1=pctf([r["s1"] for r in rows]); nS4=pctf([r["s4"] for r in rows])
     nref=pctf([r["refshare"] for r in rows if r["refshare"] is not None]); nyx=pctf([r["youth_x"] for r in rows if r["youth_x"] is not None])
+    # AUDIT H4 FIX: S2 (distrust) must be 5/95 percentile-normalized like S1/S3/S4. Previously it
+    # was raw 100-trust (median ~77, floor ~25 vs ~50 for the normalized dims), which pushed the
+    # composite ~5pts up specifically for WVS-surveyed (stabler) countries -> spurious "scarring".
+    nS2=pctf([100-r["trust"] for r in rows if r["trust"] is not None])
     for r in rows:
         r["S1"]=nS1(r["s1"]); r["S4"]=nS4(r["s4"])
-        r["S2"]=(100-r["trust"]) if r["trust"] is not None else None  # trust already 0-100ish? WVS % -> use directly
+        r["S2"]=nS2(100-r["trust"]) if r["trust"] is not None else None
         s3=[x for x in [nref(r["refshare"]) if r["refshare"] is not None else None, nyx(r["youth_x"]) if r["youth_x"] is not None else None] if x is not None]
         r["S3"]=float(np.mean(s3)) if s3 else None
         # composite with available dims, weights renormalized
@@ -114,12 +118,27 @@ y=[r["conflict"] for r in sub]
 print(f"n={len(sub)} conflict_pos={sum(y)} | tracks:",{t:sum(1 for r in sub if r['track']==t) for t in [1,2,3,4]})
 
 # ---- T4-1 (GATE): incremental AUC ----
+# AUDIT H5 FIX: previously missing cso/excl/youth were imputed as raw 0. For excl (EPR share in
+# [0,1]) and youth, 0 is the MINIMUM ("no excluded group"), not a neutral value -> it coded
+# data-gap countries as low-risk, weakening the V1+V3 baseline and mechanically enlarging the
+# Tier-4 increment. Impute the observed MEAN instead (z-scores to ~0, genuinely neutral).
+def meanimp(key):
+    obs=[r[key] for r in sub if r.get(key) is not None]
+    mu=float(np.mean(obs)) if obs else 0.0
+    return [r[key] if r.get(key) is not None else mu for r in sub]
 V1=[[r["P1"] for r in sub],[r["lg"] for r in sub]]
-V3=[[r["ano"] for r in sub],[r.get("cso") if r.get("cso") is not None else 0 for r in sub],[r["excl"] if r["excl"] is not None else 0 for r in sub],[r["youth"] if r["youth"] is not None else 0 for r in sub]]
+V3=[meanimp("ano"),meanimp("cso"),meanimp("excl"),meanimp("youth")]
 T4c=[[r["S"] for r in sub]]
-a_v1=cv_auc(V1,y); a_v3=cv_auc(V3,y); a_v1v3=cv_auc(V1+V3,y); a_all=cv_auc(V1+V3+T4c,y)
-print(f"\n=== T4-1 (GATE) — incremental AUC (5-fold CV) ===")
-print(f"   V1={a_v1}  V3={a_v3}  V1+V3={a_v1v3}  V1+V3+Tier4={a_all}  increment={round(a_all-a_v1v3,4)}  PASS={a_all-a_v1v3>=0.03}")
+def rep_cv(cols,seeds=range(50)):
+    a=[cv_auc(cols,y,seed=sd) for sd in seeds]; a=[x for x in a if x is not None]
+    return float(np.mean(a)) if a else None
+a_v1=rep_cv(V1); a_v3=rep_cv(V3); a_v1v3=rep_cv(V1+V3); a_all=rep_cv(V1+V3+T4c)
+# increment CI over seeds
+inc=[cv_auc(V1+V3+T4c,y,seed=sd)-cv_auc(V1+V3,y,seed=sd) for sd in range(50)]
+lo,hi=np.percentile(inc,[2.5,97.5])
+print(f"\n=== T4-1 (GATE) — incremental AUC (50-seed repeated 5-fold CV, mean-imputed) ===")
+print(f"   V1={a_v1:.4f}  V3={a_v3:.4f}  V1+V3={a_v1v3:.4f}  V1+V3+Tier4={a_all:.4f}")
+print(f"   increment={np.mean(inc):+.4f} CI[{lo:+.4f},{hi:+.4f}] pos-frac={np.mean([x>0 for x in inc]):.2f}  PASS(CI>0)={lo>0}")
 
 # ---- T4-6 (crux): does S mediate the raw prior-conflict binary? ----
 yy=np.array(y,float); n=len(yy)

@@ -1,5 +1,16 @@
 # Political-Signal Test — Results
 
+> **⚠ AUDIT CORRECTION (2026-07-12).** Two fixes changed the numbers below. (1) **Reproducibility
+> + robustness (M5):** the T2 gate was a single non-reproducible CV draw (row order was hash-
+> randomized). Re-run with 50-seed repeated CV + CI: **backsliding +0.093 CI[0.033,0.156] (100%
+> seeds +), repression +0.063 CI[0.014,0.116] (98% +) — both PASS; conflict +0.022 CI includes 0
+> — FAILS.** So "0.54→0.61 / 0.64→0.71" below is one noisy draw; the CI version supersedes it.
+> (2) **Deep panel (C1):** the "numerator beats structure across the 20th century, **+0.131**"
+> was an *in-sample* resubstitution figure. The honest **out-of-fold** increment is **+0.071 mean,
+> positive in only 6/11 epochs** (conflict +0.033). Direction holds; magnitude was ~2× inflated.
+> (3) **T1 partial (M4):** net of P1+logGDP, the real survivors are anocracy+cso→backslide and
+> pts/prior-conflict/youth→conflict; internet/ethnic-exclusion/food-import were confounded.
+
 **Companion to** `POLITICAL_SIGNAL_PREREGISTRATION.md` (sha256 `ec4aebe0`, frozen before
 analysis). Code `scripts/v2/political_test.py`; data `data/political/*`. Self-served
 2026-07-12 (EPR-ETH ethnic exclusion, V-Dem civil society, Political Terror Scale, WDI
