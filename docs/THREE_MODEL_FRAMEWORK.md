@@ -29,7 +29,20 @@ Romania: green on capacity/delivery/pressure/scarring, but flickering hard.** It
 signal in the program to speak to *when*, not just *whether*. The spark holds; the ripeness
 does not. See `mi-research/docs/MI_TIER5_CRITICALITY.md`.
 
-**The one law measured on both sides, across four timescales, with a fifth for timing.** V1/V2 are the **capacity
+**Tier 6 — Spark Probability (spark density).** The last tier attacks the Mule directly: the
+*specific* spark is idiosyncratic, but the *rate* at which potential triggers arrive is a
+**structural** property — geography (a violent neighbourhood), resources (a prize worth
+seizing), transcendent contestation (sacred/claimed ground), military dynamics. T6 scores that
+density 0–100. It earns its place: spark density predicts crisis at **AUC 0.65, adding +0.22
+over criticality**, and the **full six-tier model reaches AUC 0.712**, beating every subset.
+The nulls are honest — the elegant *criticality×spark-density* multiplier did **not** confirm
+(the tiers add up, they don't multiply), and **geography, not transcendent meaning, is the
+master spark source** (S1 dominates; the sacred-ground S3 dimension is real but secondary).
+Netherlands scores bottom-decile spark density (T6=2), completing its clean read on all six.
+See `mi-research/docs/MI_TIER5_CRITICALITY.md` and `TIER6_SPARK_RESULTS.md`. **The Mule shrinks
+to a fraction: the moment stays dark, but the density of moments is lit.**
+
+**The one law measured on both sides, across five timescales, with a sixth for the environment.** V1/V2 are the **capacity
 denominator**; V3 is the **live complexity numerator**; **Tier 4 is the *accumulated* numerator
 — the pressure history leaves in the ground.** Each owns a distinct rupture: V1 the ancient
 (violence from weakness), V3 the modern (backsliding from contestation), Tier 4 the recurrent
