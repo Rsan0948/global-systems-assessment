@@ -1,0 +1,32 @@
+{
+ "outcome": "V-Dem liberal-democracy decline <=-0.05, 2004->2024",
+ "n": 156,
+ "n_backsliders": 50,
+ "H5": {
+  "v1": 0.5219,
+  "v2Level": 0.5414,
+  "v2Equity": 0.5041,
+  "v1+v2L": 0.6392,
+  "v1+v2L+v2E": 0.6274,
+  "equity_gain": -0.0118
+ },
+ "H6": {
+  "HL_HE": {
+   "n": 62,
+   "backslide_rate": 0.323
+  },
+  "HL_LE": {
+   "n": 16,
+   "backslide_rate": 0.438
+  },
+  "LL_HE": {
+   "n": 16,
+   "backslide_rate": 0.25
+  },
+  "LL_LE": {
+   "n": 62,
+   "backslide_rate": 0.306
+  },
+  "HL_LE_gt_LL_HE": true
+ }
+}
