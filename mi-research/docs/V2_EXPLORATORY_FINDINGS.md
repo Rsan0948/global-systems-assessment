@@ -35,6 +35,13 @@ consistent with the program's own "reads structure, not timing" spine.
   showing a real signal — on subjective wellbeing, not political stability.** It reframes
   what V2's equity dimension is *for*: capturing the lived-experience mismatch, which shows
   up in how people rate their lives, not in coup counts.
+  **Robustness (critical — the raw imbalance leaderboard is dominated by the authoritarian-
+  equity-inflation artifact: Turkmenistan/Syria/Iraq/Algeria have fake-high equity → high
+  imbalance).** The relationship nonetheless SURVIVES stripping those out: imbalance β/t stays
+  significant on the **real-equity subset** (DHS/PISA only, n=120, t=−2.5), on **democracies
+  only** (libdem≥0.4, n=66, t=−2.5), and **excluding autocracies** (libdem≥0.3, n=87, t=−2.8).
+  So it is not merely "troubled autocracies are unhappy" — among clean democracies with real
+  equity data, more Level–Equity mismatch still predicts lower life satisfaction net of income.
 - **Stability → FDI.** P5 → FDI inflows, partial +0.26 (sensible, survives income).
 
 ## What got culled by discipline (honest graveyard)
