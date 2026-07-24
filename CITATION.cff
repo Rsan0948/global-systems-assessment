@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or its datasets, please cite it as below."
+title: "universalsystemgrade: open engines for structural law in macro-social systems"
+version: v3.3-mi
+date-released: 2026-07-16
+authors:
+  # Entity author — replace with a person entry (family-names / given-names)
+  # and an ORCID when you are ready to attach a real name.
+  - name: "universalsystemgrade (Rsan0948)"
+repository-code: "https://github.com/Rsan0948/universalsystemgrade"
+license: MIT
+keywords:
+  - state formation
+  - institutional quality
+  - fragmentation
+  - complexity science
+  - cliodynamics
+  - early warning signals
+  - pre-registration
+abstract: >
+  Three open engines testing whether macro-social systems obey structural
+  law: a fragmentation census across natural and social systems (Horton–
+  Strahler with Kirchner-null discipline), a five-pillar / six-tier country
+  modernization instrument with a claims ledger and sealed forward flags,
+  and a mechanical 15-feature classifier over 109 polity-formation cycles
+  in 30 cases. All claims are tagged by epistemic status; retired theories
+  are preserved with their kill evidence.

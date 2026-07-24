@@ -1,0 +1,12 @@
+# Core runtime + test dependencies for all three research legs
+numpy
+scipy
+matplotlib
+pytest
+
+# MI leg: upstream data pulls (WGI/WDI refresh, site dataset builds)
+requests
+
+# Optional, only for geospatial layers (atlas tiles, geography bridges)
+# geopandas
+# pyogrio
