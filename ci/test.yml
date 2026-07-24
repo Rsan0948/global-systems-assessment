@@ -1,0 +1,43 @@
+# GitHub Actions test workflow — MOVE TO .github/workflows/test.yml
+#
+# This file was staged outside .github/workflows/ because the automation
+# token used to open this PR lacks the `workflow` scope required to
+# create files in that directory. To activate CI: copy this file to
+# .github/workflows/test.yml (the GitHub web UI works fine for this).
+
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  mi-research:
+    name: MI engine tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run MI tests
+        working-directory: mi-research
+        run: pytest -q -p no:cacheprovider tests/
+
+  collectivization:
+    name: Collectivization tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run collectivization tests
+        working-directory: collectivization
+        run: pytest -q -p no:cacheprovider tests/
