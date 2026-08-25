@@ -1,0 +1,317 @@
+{
+  "schema_version": "1.0",
+  "authoritative": true,
+  "last_reviewed": "2026-08-25",
+  "counting_rules": {
+    "mi_modern_hindsight_cases": 84,
+    "mi_ancient_interpretive_cases": 25,
+    "mi_historical_case_corpus": 109,
+    "mi_blind_out_of_sample_observations": 67,
+    "mi_relational_records": 12,
+    "mi_approximate_total_records": 188,
+    "mi_approximate_distinct_records": 183,
+    "collectivization_cases": 30,
+    "collectivization_formation_cycles": 109,
+    "public_atlas_pages": 190
+  },
+  "claims": [
+    {
+      "id": "MI-001",
+      "program": "modernization-index",
+      "claim": "The public country score is deterministic for fixed inputs, version, and settings.",
+      "evidence_design": [
+        "descriptive"
+      ],
+      "verdict": "supported",
+      "sample": "190 current atlas pages, with mixed coverage",
+      "limits": "Reproducibility does not establish prediction.",
+      "sources": [
+        "mi-research/mi/scoring.py",
+        "mi-research/mi/constants.py"
+      ]
+    },
+    {
+      "id": "MI-002",
+      "program": "modernization-index",
+      "claim": "The 84 modern historical cases are internally consistent with the framework.",
+      "evidence_design": [
+        "hindsight_retrodiction"
+      ],
+      "verdict": "supported_within_corpus",
+      "sample": "84 modern case studies",
+      "limits": "Outcomes were known during selection, scoring, or calibration.",
+      "sources": [
+        "mi-research/docs/SYSTEM_STATE.md",
+        "mi-research/data/case_studies/completed/"
+      ]
+    },
+    {
+      "id": "MI-003",
+      "program": "modernization-index",
+      "claim": "The 25 ancient cases extend the pattern across earlier periods.",
+      "evidence_design": [
+        "interpretive",
+        "hindsight_retrodiction"
+      ],
+      "verdict": "mixed",
+      "sample": "25 ancient case studies",
+      "limits": "Single-coder interpretation with outcome knowledge. Independent recoding is needed.",
+      "sources": [
+        "mi-research/docs/SYSTEM_STATE.md",
+        "mi-research/data/case_studies/ancient/"
+      ]
+    },
+    {
+      "id": "MI-004",
+      "program": "modernization-index",
+      "claim": "The combined out-of-sample program supports predictive use.",
+      "evidence_design": [
+        "blind_out_of_sample"
+      ],
+      "verdict": "mixed",
+      "sample": "67 observations across several cohorts",
+      "result": "Random modern cohort was right-signed but weak at about d=0.37. Ancient cohort had no outcome variance. The second shock cohort was stronger within cohorts but null when pooled.",
+      "limits": "The cohorts use different designs and should not be combined into one accuracy percentage.",
+      "sources": [
+        "mi-research/docs/SYSTEM_STATE.md",
+        "mi-research/data/case_studies/source_reports/VALIDATION_v1_30_random_modern.md"
+      ]
+    },
+    {
+      "id": "MI-005",
+      "program": "modernization-index",
+      "claim": "The P4 minus P1 durability gap identifies structural vulnerability.",
+      "evidence_design": [
+        "hindsight_derivation"
+      ],
+      "verdict": "supported_in_derivation",
+      "sample": "19-case derivation set",
+      "result": "17 of 19 in the recorded derivation count.",
+      "limits": "This is not a forward validation record. The MI-versus-income residual is a different measure.",
+      "sources": [
+        "mi-research/docs/architectural_decisions/v3_1_durability_gate.md",
+        "mi-research/mi/durability.py"
+      ]
+    },
+    {
+      "id": "MI-006",
+      "program": "modernization-index",
+      "claim": "Backsliding risk follows an inverted-U across institutional capacity.",
+      "evidence_design": [
+        "blind_out_of_sample"
+      ],
+      "verdict": "supported_provisionally",
+      "result": "Recorded out-of-sample AUC of 0.746.",
+      "limits": "Independent replication and sensitivity checks are needed before policy use.",
+      "sources": [
+        "mi-research/docs/ROBUSTNESS_RESULTS.md",
+        "https://github.com/Rsan0948/universalsystemgrade/issues/23"
+      ]
+    },
+    {
+      "id": "MI-007",
+      "program": "modernization-index",
+      "claim": "Institutional structure and wealth have moved closer over the long run.",
+      "evidence_design": [
+        "descriptive_panel"
+      ],
+      "verdict": "supported_provisionally",
+      "sample": "143-polity panel",
+      "result": "Recorded spread narrows from about 0.131 to 0.070, with p=0.033.",
+      "limits": "Some inference was reconstructed through bootstrap analysis. Independent reproduction is needed.",
+      "sources": [
+        "mi-research/docs/ROBUSTNESS_RESULTS.md",
+        "https://github.com/Rsan0948/universalsystemgrade/issues/16"
+      ]
+    },
+    {
+      "id": "MI-008",
+      "program": "modernization-index",
+      "claim": "The full six-layer model adds strong predictive power.",
+      "evidence_design": [
+        "cross_validated_model_audit"
+      ],
+      "verdict": "not_supported",
+      "result": "Honest out-of-fold AUC was about 0.63, below an earlier in-sample estimate of about 0.71.",
+      "limits": "Model layers 5 and 6 remain exploratory.",
+      "sources": [
+        "mi-research/docs/AUDIT_2026_07_12.md"
+      ]
+    },
+    {
+      "id": "MI-009",
+      "program": "modernization-index",
+      "claim": "The golden-age signature predicts future outcomes.",
+      "evidence_design": [
+        "prospective"
+      ],
+      "verdict": "not_supported",
+      "result": "The preregistered forward test failed.",
+      "limits": "The failure must remain visible in summaries of prospective evidence.",
+      "sources": [
+        "mi-research/docs/PROJECT_SYNTHESIS.md"
+      ]
+    },
+    {
+      "id": "MI-010",
+      "program": "modernization-index",
+      "claim": "The sealed country flags predict outcomes around 2030 to 2034.",
+      "evidence_design": [
+        "prospective"
+      ],
+      "verdict": "pending",
+      "limits": "The flags cannot yet be scored and are not evidence of predictive accuracy.",
+      "sources": [
+        "mi-research/data/forecasts/sealed_flags_2024.json"
+      ]
+    },
+    {
+      "id": "FRAG-001",
+      "program": "fragmentation",
+      "claim": "River branching concentration replicated across continents.",
+      "evidence_design": [
+        "discovery",
+        "blind_geographic_holdout"
+      ],
+      "verdict": "supported",
+      "result": "North American estimate about 3.488 and sealed South American estimate about 3.539.",
+      "limits": "This supports a river-network regularity, not a universal constant.",
+      "sources": [
+        "fragmentation/natural-systems/rivers/README.md"
+      ]
+    },
+    {
+      "id": "FRAG-002",
+      "program": "fragmentation",
+      "claim": "Self-organizing systems converge on Euler's number.",
+      "evidence_design": [
+        "cross_domain_testing"
+      ],
+      "verdict": "retired",
+      "limits": "The proposed universal value did not survive testing.",
+      "sources": [
+        "fragmentation/README.md",
+        "fragmentation/SYNTHESIS.md"
+      ]
+    },
+    {
+      "id": "FRAG-003",
+      "program": "fragmentation",
+      "claim": "The current DGS measure predicts instability.",
+      "evidence_design": [
+        "observational_model_test"
+      ],
+      "verdict": "not_supported",
+      "result": "beta=0.107, p=0.42, and no AUC gain.",
+      "limits": "A better measure would require a new preregistered test.",
+      "sources": [
+        "fragmentation/DGS_AND_SAFEGUARD_J.md"
+      ]
+    },
+    {
+      "id": "FRAG-004",
+      "program": "fragmentation",
+      "claim": "Grown and designed systems have sharply different dispersion.",
+      "evidence_design": [
+        "observational",
+        "curated",
+        "simulation"
+      ],
+      "verdict": "supported_provisionally",
+      "limits": "Some designed-system inputs are curated, the organization result is simulated, and the GitHub holdout is deferred.",
+      "sources": [
+        "fragmentation/README.md",
+        "DEFENSIBLE_RESULTS.md"
+      ]
+    },
+    {
+      "id": "COLL-001",
+      "program": "collectivization",
+      "claim": "Deeper predecessor institutions are associated with fewer form changes.",
+      "evidence_design": [
+        "interpretive_historical_coding"
+      ],
+      "verdict": "supported_within_coded_dataset",
+      "sample": "30 cases",
+      "result": "Spearman rho=-0.84, p<0.001.",
+      "limits": "Independent recoding is needed.",
+      "sources": [
+        "collectivization/results/cycle_analysis.json",
+        "collectivization/README.md"
+      ]
+    },
+    {
+      "id": "COLL-002",
+      "program": "collectivization",
+      "claim": "Faster consolidation is associated with integration loss in high-depth cases.",
+      "evidence_design": [
+        "interpretive_historical_coding"
+      ],
+      "verdict": "supported_within_subset",
+      "result": "rho=0.83 in the high-depth subset.",
+      "limits": "Report the group size and selection rule with the result.",
+      "sources": [
+        "collectivization/results/cycle_analysis.json"
+      ]
+    },
+    {
+      "id": "COLL-003",
+      "program": "collectivization",
+      "claim": "Negotiated unions are more durable.",
+      "evidence_design": [
+        "interpretive_historical_coding"
+      ],
+      "verdict": "exploratory",
+      "sample": "4 negotiated cases",
+      "limits": "The group is too small for a broad conclusion.",
+      "sources": [
+        "collectivization/README.md",
+        "collectivization/results/cycle_analysis.json"
+      ]
+    },
+    {
+      "id": "COLL-004",
+      "program": "collectivization",
+      "claim": "Collectivization creates a general ratchet toward greater scope.",
+      "evidence_design": [
+        "interpretive_historical_coding"
+      ],
+      "verdict": "not_supported",
+      "result": "p=0.64.",
+      "limits": "The stronger pattern concerns changes in institutional form.",
+      "sources": [
+        "collectivization/README.md"
+      ]
+    },
+    {
+      "id": "COLL-005",
+      "program": "collectivization",
+      "claim": "Designed systems tend to lose a parent function dimension.",
+      "evidence_design": [
+        "curated_cross_domain_comparison"
+      ],
+      "verdict": "supported_provisionally",
+      "sample": "13 designed cases",
+      "result": "Function loss recorded in 12 of 13 cases.",
+      "limits": "The classifications need independent recoding.",
+      "sources": [
+        "fragmentation/README.md",
+        "DEFENSIBLE_RESULTS.md"
+      ]
+    },
+    {
+      "id": "SYN-001",
+      "program": "synthesis",
+      "claim": "One structural law unifies all three research programs.",
+      "evidence_design": [
+        "conceptual_synthesis"
+      ],
+      "verdict": "exploratory",
+      "limits": "The evidence is uneven across domains. This is a research agenda, not a validated law.",
+      "sources": [
+        "docs/GRAND_SYNTHESIS.md",
+        "mi-research/docs/PROJECT_SYNTHESIS.md"
+      ]
+    }
+  ]
+}
