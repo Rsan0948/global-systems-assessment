@@ -1,25 +1,37 @@
 ---
 name: Claim dispute
-about: Dispute a claim in the ledger — tag, evidence, and what would settle it
+about: Dispute a claim's evidence, verdict, data, or scope
 title: "[claim] "
 ---
 
-The claims ledger (mi-research/docs/curated/) grades every claim by
-epistemic status: [demonstrated] [curated] [exploratory] [pending]
-[retired]. Disputes are how claims move between tags — in either
-direction.
+The authoritative ledger is `mi-research/docs/CLAIMS_LEDGER.md`.
+Its machine-readable companion is
+`mi-research/data/claims/claims.json`.
 
-**The claim** (quote it, with file/section)
+Claims have an evidence design and a verdict. A dispute can change either
+one, in either direction.
 
-**Its current tag**
+**Claim ID**
 
-**Your challenge** (what you believe is wrong — method, data, coding,
-inference, or scope)
+**The claim**
 
-**Evidence** (primary data preferred over derived indices; links or
-files welcome)
+**Current evidence design and verdict**
 
-**Proposed change** (new tag, revised scope, or retirement)
+**Your challenge**
 
-**What evidence would settle this** (be specific — "a second independent
-coding of the ancient tier", "a null model that accounts for X")
+Explain what you believe is wrong with the method, data, coding,
+inference, or scope.
+
+**Evidence**
+
+Primary data and reproducible code are preferred. Links and attached files
+are welcome.
+
+**Proposed change**
+
+State the revised wording, evidence design, verdict, or scope.
+
+**What would settle this?**
+
+Be specific. Examples include an independent recoding of the ancient cases,
+a null model that accounts for a named mechanism, or a sealed holdout.
