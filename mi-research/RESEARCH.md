@@ -1,4 +1,4 @@
-# RESEARCH.md — Standing Instructions for AI Research Agents
+# RESEARCH.md - Standing Instructions for AI Research Agents
 
 You are a research agent working on the Modernization Index (MI) framework. This document tells you what the framework is, what's been done, what needs doing, and how to do it.
 
@@ -23,11 +23,11 @@ The MI scores countries across five pillars measuring structural properties of g
 
 | Pillar | Weight | What it measures |
 |--------|--------|------------------|
-| P1 — Institutional Quality | 34% | Government effectiveness, rule of law, regulatory quality, corruption control |
-| P2 — Innovation & Knowledge Economy | 15% | R&D/GII, economic complexity |
-| P3 — Human Capital | 16% | Education, life expectancy |
-| P4 — Economic Structure & Independence | 20% | GDP per capita, resource rents (inverted), ODA (inverted) |
-| P5 — Stability & Resilience | 16% | Political stability, fragile states index (inverted) |
+| P1 - Institutional Quality | 34% | Government effectiveness, rule of law, regulatory quality, corruption control |
+| P2 - Innovation & Knowledge Economy | 15% | R&D/GII, economic complexity |
+| P3 - Human Capital | 16% | Education, life expectancy |
+| P4 - Economic Structure & Independence | 20% | GDP per capita, resource rents (inverted), ODA (inverted) |
+| P5 - Stability & Resilience | 16% | Political stability, fragile states index (inverted) |
 
 The weights are correlation-derived from the data itself. P1 at 34% (up from initial 25%) reflects institutional quality being the most central variable (avg |r| = 0.79-0.80).
 
@@ -37,34 +37,34 @@ The weights are correlation-derived from the data itself. P1 at 34% (up from ini
 2. Low P1 predicts violent rather than peaceful outcomes
 3. Wide pillar spread predicts structural vulnerability
 4. High resource dependence (P4) compounds institutional weakness
-5. Framework is directional/ordinal only — no timing, no exact magnitudes
+5. Framework is directional/ordinal only - no timing, no exact magnitudes
 6. Underlying principle: complexity-capacity matching
 
 ### The Seven Safeguards
 
-- **A — External Administration:** Flag WGI scores under international administration as potentially reflecting administrator capacity, not indigenous capacity.
-- **B — Capacity Gate:** Low fragment count (2-4) coded as "manageable" ONLY when P1 exceeds bottom third of Rule of Law. Below that, even low counts can be catastrophic.
-- **C — Reversal Risk (graded):** Democratic transition + weak P4 = reversal risk. Resource rents >30% OR stagnant growth = PROBABLE reversal. Youth unemployment >25% = compounding.
-- **D — Predatory Neighbor:** Low-P1 state bordering aggressive power. Framework diagnoses vulnerability, not the shock itself.
-- **E — Rentier Capture (BIDIRECTIONAL):** Negative: rents >25-30% GDP inflate P1. Positive: rents can buy cohesion in low-P1 states (rent-stabilization).
-- **F — Sub-State Turbulence:** High-P1 states: flag "managed instability" when anti-system vote >25%, repeated executive collapse, or regional divergence >30% GDP per capita.
-- **G — Suppression vs Prevention (THREE-TIER):** Tier 1 Military (force), Tier 2 Institutional/Legal (law), Tier 3 Prevention/Porosity (institutional design). Re-suppression after porosity = worst path.
+- **A - External Administration:** Flag WGI scores under international administration as potentially reflecting administrator capacity, not indigenous capacity.
+- **B - Capacity Gate:** Low fragment count (2-4) coded as "manageable" ONLY when P1 exceeds bottom third of Rule of Law. Below that, even low counts can be catastrophic.
+- **C - Reversal Risk (graded):** Democratic transition + weak P4 = reversal risk. Resource rents >30% OR stagnant growth = PROBABLE reversal. Youth unemployment >25% = compounding.
+- **D - Predatory Neighbor:** Low-P1 state bordering aggressive power. Framework diagnoses vulnerability, not the shock itself.
+- **E - Rentier Capture (BIDIRECTIONAL):** Negative: rents >25-30% GDP inflate P1. Positive: rents can buy cohesion in low-P1 states (rent-stabilization).
+- **F - Sub-State Turbulence:** High-P1 states: flag "managed instability" when anti-system vote >25%, repeated executive collapse, or regional divergence >30% GDP per capita.
+- **G - Suppression vs Prevention (THREE-TIER):** Tier 1 Military (force), Tier 2 Institutional/Legal (law), Tier 3 Prevention/Porosity (institutional design). Re-suppression after porosity = worst path.
 
 ### Essential Modifications (LIVE version)
 
-- **Mod4 — Margin-of-Error Gate:** P1 ordinality claim applies ONLY when gap exceeds margin. Narrow-gap cases = abstain, don't predict.
-- **Mod8 — Violence Risk/Agency Split:** Framework predicts violence RISK, not violence AGENCY (who initiates). Separate these in all predictions.
-- **Safeguard I — Porosity-with-Backstop:** When fragmenting state has external backstop patron, predict re-suppression rather than permanent secession. Confirmed by Ethiopia/Tigray and Myanmar.
-- **Safeguard J — Durability Gate (P4−P1 gap) [V3.1, independently derived]:** When economy/income has outrun institutions (P4 − P1 > 0.22), the state is "granted/fragile" — structurally crisis-vulnerable under shock. Derived on the N=21 acute-signature test set (83% sens / 100% spec / 100% PPV; the four-component DECLINE signature failed blind at 14–25%/40% — a *level*, not a trajectory, is what predicts). Three-state (flag ≥ 0.28 / clear ≤ 0.20 / borderline between). Unifies with the durability ratio. See `docs/architectural_decisions/v3_1_durability_gate.md`.
-  - **Convergence Qualifier [V3.2]:** the gap's TRAJECTORY disambiguates a flag — CLOSING (P1 rising) = developmental catch-up (downgrade); WIDENING/static = fragility (escalate). 92% sens / 80% spec on flagged states. Supply `context["prior_pillars"]`.
-- **Accountability Gap [V3.2 — HYPOTHESIS, informational, NOT a verdict]:** VA (which P1 excludes) vs income; VA − P4 ≤ −0.50 = "capacity without consent" (legitimacy-capped: Saudi/China/Russia/Turkey), a hypothesized brittle failure mode orthogonal to the durability gap. VA wired in for all 180 panel countries (`data/sources/va_anchored.json`); `diagnostics.accountability_gap()`; `scripts/big_signals_scan.py`. No crisis validation yet. See `docs/architectural_decisions/v3_2_convergence_and_accountability.md`.
+- **Mod4 - Margin-of-Error Gate:** P1 ordinality claim applies ONLY when gap exceeds margin. Narrow-gap cases = abstain, don't predict.
+- **Mod8 - Violence Risk/Agency Split:** Framework predicts violence RISK, not violence AGENCY (who initiates). Separate these in all predictions.
+- **Safeguard I - Porosity-with-Backstop:** When fragmenting state has external backstop patron, predict re-suppression rather than permanent secession. Confirmed by Ethiopia/Tigray and Myanmar.
+- **Safeguard J - Durability Gate (P4−P1 gap) [V3.1, independently derived]:** When economy/income has outrun institutions (P4 − P1 > 0.22), the state is "granted/fragile" - structurally crisis-vulnerable under shock. Derived on the N=21 acute-signature test set (83% sens / 100% spec / 100% PPV; the four-component DECLINE signature failed blind at 14–25%/40% - a *level*, not a trajectory, is what predicts). Three-state (flag ≥ 0.28 / clear ≤ 0.20 / borderline between). Unifies with the durability ratio. See `docs/architectural_decisions/v3_1_durability_gate.md`.
+  - **Convergence Qualifier [V3.2]:** the gap's TRAJECTORY disambiguates a flag - CLOSING (P1 rising) = developmental catch-up (downgrade); WIDENING/static = fragility (escalate). 92% sens / 80% spec on flagged states. Supply `context["prior_pillars"]`.
+- **Accountability Gap [V3.2 - HYPOTHESIS, informational, NOT a verdict]:** VA (which P1 excludes) vs income; VA − P4 ≤ −0.50 = "capacity without consent" (legitimacy-capped: Saudi/China/Russia/Turkey), a hypothesized brittle failure mode orthogonal to the durability gap. VA wired in for all 180 panel countries (`data/sources/va_anchored.json`); `diagnostics.accountability_gap()`; `scripts/big_signals_scan.py`. No crisis validation yet. See `docs/architectural_decisions/v3_2_convergence_and_accountability.md`.
 
-## Measurement tiers — COUNTRY-LEVEL + SYSTEM-LEVEL [V3.3]
+## Measurement tiers - COUNTRY-LEVEL + SYSTEM-LEVEL [V3.3]
 The framework now has two tiers, sharing data + the level/slope epistemic, answering different questions:
-- **Country-level (the MI):** pillars P1–P5, safeguards A–J, mods 4/8, durability/ascent/movement diagnostics — *is this polity durable?*
-- **System-level (Global Systems Measurement):** the world system's state — the three improvement *engines* (institutions/income/human-capital climb rates vs historical norm), the institutional *container* trajectory (the supercycle discriminator: strengthening/eroding/flat), the *texture* (surge/churn/stasis/collapse), and the global *movement distribution* (real_ascent / windfall / ratchet_rise / hollow_stability / decline). `mi/global_systems.py`; `scripts/global_systems.py`; `docs/global_systems_measurement.md`. EXPLORATORY/proxy — changes no country verdict. Current reading: multi-engine lull on a flat-to-eroding container; only ~2% of countries in genuine institution-led ascent.
+- **Country-level (the MI):** pillars P1–P5, safeguards A–J, mods 4/8, durability/ascent/movement diagnostics - *is this polity durable?*
+- **System-level (Global Systems Measurement):** the world system's state - the three improvement *engines* (institutions/income/human-capital climb rates vs historical norm), the institutional *container* trajectory (the supercycle discriminator: strengthening/eroding/flat), the *texture* (surge/churn/stasis/collapse), and the global *movement distribution* (real_ascent / windfall / ratchet_rise / hollow_stability / decline). `mi/global_systems.py`; `scripts/global_systems.py`; `docs/global_systems_measurement.md`. EXPLORATORY/proxy - changes no country verdict. Current reading: multi-engine lull on a flat-to-eroding container; only ~2% of countries in genuine institution-led ascent.
 
-## Standing epistemic — TRUST THE LEVEL, DISTRUST THE SLOPE [V3.3]
+## Standing epistemic - TRUST THE LEVEL, DISTRUST THE SLOPE [V3.3]
 The crisis lead-time and golden-age holdout converge on one rule: the **level** (and the durability
 gap) carries the predictive content; the **slope** (year-to-year movement) is mean-reverting noise.
 Crises: ordinal level predicts 10–28y out; acute timing only ~3–5y. Golden ages: a country's own
@@ -72,7 +72,7 @@ institutional *jump* predicts nothing (CC-jump signature **refuted on a pre-regi
 holdout**, z=−0.0), while a low *level* (room-to-rise) is holdout-validated (z+2.4) and the real
 drivers are exogenous (transition era + commodity cycle, ~81% of climbs). Operationalized in V3.3:
 `diagnostics.ascent_potential()` (validated level signal) and `diagnostics.movement_quality()` (names
-the movement — windfall / hollow_stability / real_ascent — with an explicit distrust-the-slope caveat).
+the movement - windfall / hollow_stability / real_ascent - with an explicit distrust-the-slope caveat).
 Global-picture consequence (`docs/v3_3_inclusion_and_global_picture.md`): apparent global MI progress
 is the P3 human-capital ratchet + commodity income masking a flat-to-eroding governance core, a
 golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
@@ -81,39 +81,39 @@ golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
 
 ## What's Been Done
 
-### Modern Case Studies (84 validated across 3 classes)
+### Modern Case Studies (84 hindsight-retrodictive cases across 3 classes)
 
 **51 P1-ordinality cases** (`case01`–`case51`): the retrodiction baseline (213C/77P/0F).
 
-**Group A — Traditional Fragmentation (cases 1–8):**
-1. Post-Soviet (Estonia/Russia/Ukraine) — P1 ordinality confirmed
-2. Yugoslavia (Slovenia/Croatia/Serbia/Bosnia) — 4-way ordinal confirmed; Safeguard A derived from Bosnia
-3. Velvet Divorce (Czech/Slovakia) — high P1 = peaceful confirmed
-4. Arab Spring (Tunisia/Egypt/Libya) — P1 ranking predicted outcomes; Safeguard C derived from Tunisia
-5. Sudan/South Sudan — catastrophic confirmed; Safeguard B derived
-6. Pakistan/Bangladesh — engineered bifurcated state failure confirmed
-7. Singapore/Malaysia — flagship positive case; complexity-control thesis confirmed
-8. Ethiopia/Eritrea — both low-P1, both poor trajectory confirmed
+**Group A - Traditional Fragmentation (cases 1–8):**
+1. Post-Soviet (Estonia/Russia/Ukraine) - P1 ordinality confirmed
+2. Yugoslavia (Slovenia/Croatia/Serbia/Bosnia) - 4-way ordinal confirmed; Safeguard A derived from Bosnia
+3. Velvet Divorce (Czech/Slovakia) - high P1 = peaceful confirmed
+4. Arab Spring (Tunisia/Egypt/Libya) - P1 ranking predicted outcomes; Safeguard C derived from Tunisia
+5. Sudan/South Sudan - catastrophic confirmed; Safeguard B derived
+6. Pakistan/Bangladesh - engineered bifurcated state failure confirmed
+7. Singapore/Malaysia - flagship positive case; complexity-control thesis confirmed
+8. Ethiopia/Eritrea - both low-P1, both poor trajectory confirmed
 
-**Group B — Recursive/Suppressed (cases 9–12):**
-9. Serbia/Kosovo — recursive fragmentation; Safeguard A for UNMIK
-10. Indonesia/East Timor — violence-source misattribution found (Mod8 derived)
-11. Ethiopia/Tigray — recursive fragmentation; re-suppression confirmed; Safeguard I confirmed
-12. Nigeria/Biafra — military suppression; rent-stabilization found (Safeguard E bidirectional)
+**Group B - Recursive/Suppressed (cases 9–12):**
+9. Serbia/Kosovo - recursive fragmentation; Safeguard A for UNMIK
+10. Indonesia/East Timor - violence-source misattribution found (Mod8 derived)
+11. Ethiopia/Tigray - recursive fragmentation; re-suppression confirmed; Safeguard I confirmed
+12. Nigeria/Biafra - military suppression; rent-stabilization found (Safeguard E bidirectional)
 
-**Group C — Non-Traditional (cases 13–17):**
-13. South Africa — institutional reconstruction; capacity lagging complexity confirmed
-14. Northern Ireland/GFA — fragmentation prevention through porosity confirmed; Safeguard F derived
-15. German Reunification — fusion; persistent east-west gap confirmed; Safeguard F confirmed
-16. Spain/Catalonia — institutional/legal suppression (Tier 2); de-escalation confirmed
-17. Belgium — extreme porosity; no hard limit found; Safeguard F confirmed
+**Group C - Non-Traditional (cases 13–17):**
+13. South Africa - institutional reconstruction; capacity lagging complexity confirmed
+14. Northern Ireland/GFA - fragmentation prevention through porosity confirmed; Safeguard F derived
+15. German Reunification - fusion; persistent east-west gap confirmed; Safeguard F confirmed
+16. Spain/Catalonia - institutional/legal suppression (Tier 2); de-escalation confirmed
+17. Belgium - extreme porosity; no hard limit found; Safeguard F confirmed
 
-**Group D — Comparative (cases 18–19):**
-18. Baltics vs Central Asia — institutional choice > resource endowment confirmed
-19. India/Pakistan/Bangladesh — continental-scale P1 ordinality confirmed; Safeguard C confirmed (Bangladesh)
+**Group D - Comparative (cases 18–19):**
+18. Baltics vs Central Asia - institutional choice > resource endowment confirmed
+19. India/Pakistan/Bangladesh - continental-scale P1 ordinality confirmed; Safeguard C confirmed (Bangladesh)
 
-**Group E — Prospective (case 20):**
-20. Myanmar — re-suppression after porosity = catastrophic, confirmed prospectively; Safeguard I confirmed
+**Group E - Prospective (case 20):**
+20. Myanmar - re-suppression after porosity = catastrophic, confirmed prospectively; Safeguard I confirmed
 
 **Cases 21–51:** Expansion batches 1–6 extending geographic/temporal coverage: Latin America (Haiti/DR,
 Venezuela, Colombia, Argentina, Chile/Uruguay, Costa Rica, Bolivia, Jamaica/Trinidad), Africa (DRC/Rwanda,
@@ -126,12 +126,12 @@ predicts crisis vs absorption. 17/19 correct (89%).
 **14 rule-validation A/B cases** (`rv01`–`rv14`): blind convergence-qualifier and accountability-gap tests.
 8 confirmed / 2 indeterminate / 2 falsified / 2 pre-WGI N/A.
 
-### Ancient Extension (25 cases, ordinal proxy — firewalled)
+### Ancient Extension (25 cases, ordinal proxy - firewalled)
 25 pre-modern cases spanning c. 2686 BCE – 1797 CE: Old Kingdom Egypt, New Kingdom Egypt,
 Achaemenid Persia, Sasanian Persia, Mauryan Empire, Gupta Empire, Vijayanagara, Tang Dynasty,
 Song Dynasty, Tokugawa Japan, Joseon Korea, Khmer/Angkor, Srivijaya, Majapahit, Mali Empire,
 Great Zimbabwe, Aksum, Aztec Triple Alliance, Classic Maya, Tiwanaku, Wari, Carolingian,
-Byzantine (Macedonian), Venetian Republic, Ottoman (classical) — plus the 5 originals
+Byzantine (Macedonian), Venetian Republic, Ottoman (classical) - plus the 5 originals
 (Rome E/W, Han, Abbasids, Mongols, Inca).
 - Verdict: "strong heuristic, weak oracle"
 - P1 ordinality and configuration thesis hold across eras
@@ -145,16 +145,16 @@ Byzantine (Macedonian), Venetian Republic, Ottoman (classical) — plus the 5 or
 
 ### Aggregate Results
 - Clean confirmation: ~73% across 51 P1-ordinality cases (213C/77P/0F), honest range 62–85%
-- Directional accuracy: 100% (zero falsifications)
+- Historical coding tally: no directional falsifications were recorded. This is hindsight retrodiction, not blind accuracy.
 - P1 ordinality: confirmed across all 51 modern cases
 - Durability gate (Safeguard J): 17/19 correct (89%)
 - LIVE outperforms STATIC in every comparison
-- Total corpus: **109 case studies** (84 modern + 25 ancient) across ~5,000 years
+- Historical case corpus: **109 case studies** (84 modern hindsight-retrodictive + 25 ancient interpretive) across about 5,000 years. The 67 blind out-of-sample observations are separate.
 
-### Expansion — Batch 1 (cases 21-25, 2026-06-27)
+### Expansion - Batch 1 (cases 21-25, 2026-06-27)
 - **Architectural decision settled first:** P1 kept as a single composite (NOT
   decomposed into capacity/accountability). Evidence: in the 2025-anchored WGI,
-  Rwanda's capacity-accountability gap is +0.030 — inside the Mod4 margin — and
+  Rwanda's capacity-accountability gap is +0.030 - inside the Mod4 margin - and
   decomposition changes no ordinal. See
   `docs/architectural_decisions/rwanda_p1_composite_vs_decomposed.md` (reproducible
   experiment in `sandbox/experiments/rwanda_p1_decomposition/`). The engine and the
@@ -166,7 +166,7 @@ Byzantine (Macedonian), Venetian Republic, Ottoman (classical) — plus the 5 or
   Mod4-then-divergence sequence (DRC/Rwanda 1996) both validated. Open prospective
   forecast: Rwanda latent reversal risk (voice deficit).
 - **Structured JSON case records** now exist in `data/case_studies/completed/` for the
-  20 baseline cases (transcribed from `live/runs/`) plus the 5 new cases — the README
+  20 baseline cases (transcribed from `live/runs/`) plus the 5 new cases - the README
   no longer over-promises them.
 - **WGI 2025 vintage break:** new cases use anchored 0-100 scores; the legacy baseline
   used percentile ranks. Never assert an ordinal across that boundary.
@@ -175,15 +175,15 @@ Byzantine (Macedonian), Venetian Republic, Ottoman (classical) — plus the 5 or
 
 ## What Needs Doing
 
-### Priority 1 — Geographic and Temporal Gaps
+### Priority 1 - Geographic and Temporal Gaps
 
 The corpus now covers six continents and ~5,000 years. Remaining gaps:
 
-- **East Asia expansion:** Korea/Taiwan covered (case32), but Hong Kong's re-suppression after porosity (2020 National Security Law — a DIRECT test of Safeguard I) remains untested.
+- **East Asia expansion:** Korea/Taiwan covered (case32), but Hong Kong's re-suppression after porosity (2020 National Security Law - a DIRECT test of Safeguard I) remains untested.
 - **Mexico/Central America:** Mexican cartel-state dynamics, Central American institutional oscillation.
 - **Sub-national application:** Apply the MI to states/provinces within large heterogeneous countries (US states, Indian states, Chinese provinces).
 
-### Priority 2 — Framework Improvements
+### Priority 2 - Framework Improvements
 
 - **Factionalism indicator:** Goldstone et al. (2010) found partial-democracy-with-factionalism is the strongest single predictor of instability onset. The MI doesn't capture this. Test whether adding a factionalism measure improves accuracy.
 - **Ideology/legitimacy variable:** The ancient extension flagged this as missing. The Mandate of Heaven, caliphal religious legitimacy, and democratic legitimacy all shape outcomes in ways the MI doesn't measure.
@@ -191,14 +191,14 @@ The corpus now covers six continents and ~5,000 years. Remaining gaps:
 - **Sub-national application:** Apply the MI to states/provinces within large heterogeneous countries (US states, Indian states, Chinese provinces, Italian regions).
 - **Safeguard H (Centrifugal/Centripetal):** Test for incremental value over Safeguard F. Drop if redundant.
 
-### Priority 3 — Data Expansion
+### Priority 3 - Data Expansion
 
 - Expand longitudinal coverage beyond the current 191-country panel
 - Reconcile with the 2025 WGI revision (new anchored scores vs legacy percentile ranks)
 - Add time points: 2025 data as it becomes available
 - Identify proxy indicators for countries with incomplete data
 
-### Priority 4 — Prospective Predictions
+### Priority 4 - Prospective Predictions
 
 - Identify 5-10 countries the MI currently flags as approaching fragmentation or reversal thresholds
 - Document the predictions formally with falsification conditions
@@ -210,15 +210,15 @@ The corpus now covers six continents and ~5,000 years. Remaining gaps:
 
 ### Running a New Case Study
 
-1. **Select the case.** Choose based on what it tests that existing cases don't — a new geographic region, a new stress type, a new safeguard test.
+1. **Select the case.** Choose based on what it tests that existing cases don't - a new geographic region, a new stress type, a new safeguard test.
 
 2. **Create the case file.** Copy `data/case_studies/templates/case_template.json` to `data/case_studies/in_progress/`. Fill in metadata.
 
-3. **Phase 1 — Pre-event scoring.** Collect all available indicators at the pre-event time point. Use `python scripts/score_country.py` to calculate pillar scores, MI, spread, configuration. Apply all safeguards.
+3. **Phase 1 - Pre-event scoring.** Collect all available indicators at the pre-event time point. Use `python scripts/score_country.py` to calculate pillar scores, MI, spread, configuration. Apply all safeguards.
 
-4. **Phase 2 — Predictions.** Based ONLY on pre-event data, generate specific falsifiable predictions (a-h). Write them down BEFORE looking at post-event data. This is critical for intellectual honesty.
+4. **Phase 2 - Predictions.** Based ONLY on pre-event data, generate specific falsifiable predictions (a-h). Write them down BEFORE looking at post-event data. This is critical for intellectual honesty.
 
-5. **Phase 3 — Verification.** Collect post-event data. Score each prediction as confirmed, partially confirmed, or falsified. Explain what failures reveal.
+5. **Phase 3 - Verification.** Collect post-event data. Score each prediction as confirmed, partially confirmed, or falsified. Explain what failures reveal.
 
 6. **Document.** Write up the complete case study with all data, predictions, results, and analysis. Save to the case study directory.
 
@@ -268,7 +268,7 @@ The corpus now covers six continents and ~5,000 years. Remaining gaps:
 ## Key References
 
 ### Academic Foundations
-- Huntington, *Political Order in Changing Societies* (1968) — the intellectual ancestor
+- Huntington, *Political Order in Changing Societies* (1968) - the intellectual ancestor
 - Goldstone et al., "A Global Model for Forecasting Political Instability," *AJPS* 54(1), 2010
 - Cederman, Wimmer & Min, "Why Do Ethnic Groups Rebel?" *World Politics* 62(1), 2010
 - Svolik, "Authoritarian Reversals and Democratic Consolidation," *APSR* 102(2), 2008
@@ -277,13 +277,13 @@ The corpus now covers six continents and ~5,000 years. Remaining gaps:
 - Kennedy, *The Rise and Fall of the Great Powers* (1987)
 
 ### Data Sources
-- World Bank Worldwide Governance Indicators (WGI) — P1 and P5 inputs
-- Transparency International Corruption Perceptions Index (CPI) — P1 input
-- WIPO Global Innovation Index (GII) — P2 input
-- Harvard/OEC Economic Complexity Index (ECI) — P2 input
-- UNDP Human Development Report (Education Index, Life Expectancy Index) — P3 inputs
-- World Bank World Development Indicators (GDP PPP, resource rents, ODA) — P4 inputs
-- Fund for Peace Fragile States Index (FSI) — P5 input
+- World Bank Worldwide Governance Indicators (WGI) - P1 and P5 inputs
+- Transparency International Corruption Perceptions Index (CPI) - P1 input
+- WIPO Global Innovation Index (GII) - P2 input
+- Harvard/OEC Economic Complexity Index (ECI) - P2 input
+- UNDP Human Development Report (Education Index, Life Expectancy Index) - P3 inputs
+- World Bank World Development Indicators (GDP PPP, resource rents, ODA) - P4 inputs
+- Fund for Peace Fragile States Index (FSI) - P5 input
 
 ### Existing Comparable Tools
 - Fragile States Index: broader coverage, no predictive architecture

@@ -1,22 +1,27 @@
-# CLAUDE.md — monorepo guide (`universalsystemgrade`)
+# CLAUDE.md - monorepo guide (`universalsystemgrade`)
+
+> Claims authority: `mi-research/docs/CLAIMS_LEDGER.md`. The 109-case
+> number means 84 modern hindsight-retrodictive cases plus 25 ancient
+> interpreter-scored cases. The 67 blind out-of-sample observations and
+> 12 relational records are separate.
 
 This repository is **one research platform with three empirical legs plus
-infrastructure**. The legs do **not** import each other's code — each is
-independently runnable and testable — but they ARE one intellectual project:
+infrastructure**. The legs do **not** import each other's code - each is
+independently runnable and testable - but they ARE one intellectual project:
 how complex systems accumulate and release structural complexity. Find your leg
 below, read its own guide before touching code, and do not wire imports across
 legs.
 
 | Leg / component | What it is | Start here | Status |
 |---|---|---|---|
-| **Modernization Index** — `mi-research/` | MI **scoring / diagnostic / retrodiction engine** + the 109-case corpus (84 modern + 25 ancient). Source-of-truth spec: `MASTER_REFERENCE_ARCHITECTURE.md`. | `mi-research/CLAUDE.md` → `RESEARCH.md` | Live (V3.3); canonical-panel data path. |
-| — `mi-pipeline/` | MI **data pipeline** — builds the raw indicator panel from the World Bank API + manual CSVs. | `mi-pipeline/CLAUDE.md` | Real panel committed. |
-| — `mi-website/` | The **public Next.js website** for the MI — a consumer of `mi-research`, does not re-implement scoring. | `mi-website/CLAUDE.md` → `mi-website/web/AGENTS.md` | Built + deployable (190+ country pages). |
-| **Fragmentation** — `fragmentation/` | The pre-registered discovery program on how self-organizing vs designed systems subdivide (branching factors, dispersion dial, census). | `fragmentation/README.md` → `SYNTHESIS.md` → `preregistration/PREREGISTRATION.md` | Concluded: rung 1, no universal constant. Census ongoing. |
-| **Collectivization** — `collectivization/` | 30-case comparative study of fragmentation→collectivization cycles across civilizations (institutional-ceiling model). | `collectivization/README.md` | Active — engine + case data complete. |
+| **Modernization Index** - `mi-research/` | MI **scoring / diagnostic / retrodiction engine** + the 109-case historical corpus (84 modern hindsight-retrodictive + 25 ancient interpretive). Source-of-truth spec: `MASTER_REFERENCE_ARCHITECTURE.md`. | `mi-research/CLAUDE.md` → `RESEARCH.md` | Live (V3.3); canonical-panel data path. |
+| - `mi-pipeline/` | MI **data pipeline** - builds the raw indicator panel from the World Bank API + manual CSVs. | `mi-pipeline/CLAUDE.md` | Real panel committed. |
+| - `mi-website/` | The **public Next.js website** for the MI - a consumer of `mi-research`, does not re-implement scoring. | `mi-website/CLAUDE.md` → `mi-website/web/AGENTS.md` | Built + deployable (190+ country pages). |
+| **Fragmentation** - `fragmentation/` | The pre-registered discovery program on how self-organizing vs designed systems subdivide (branching factors, dispersion dial, census). | `fragmentation/README.md` → `SYNTHESIS.md` → `preregistration/PREREGISTRATION.md` | Concluded: rung 1, no universal constant. Census ongoing. |
+| **Collectivization** - `collectivization/` | 30-case comparative study of fragmentation→collectivization cycles across civilizations (institutional-ceiling model). | `collectivization/README.md` | Active - engine + case data complete. |
 
-> **They share a conceptual origin — the complexity–capacity matching principle
-> — not code.** The fragmentation research is the *physics*, the MI is the
+> **They share a conceptual origin - the complexity–capacity matching principle
+> - not code.** The fragmentation research is the *physics*, the MI is the
 > *state* measurement, the collectivization study is the *process*. Keeping them
 > import-decoupled is deliberate; do not merge the codebases.
 
@@ -67,7 +72,7 @@ fracturing proportional to suppression and engineering).
 
 ---
 
-# Hard rules per leg (these encode the science — do not break them)
+# Hard rules per leg (these encode the science - do not break them)
 
 ## Fragmentation (`fragmentation/`)
 
@@ -92,7 +97,7 @@ fracturing proportional to suppression and engineering).
   contribution is the e-independent DGS→instability prediction. Don't push it
   into the ladder.
 - **Per-study module basenames must be unique across the repo** (e.g.
-  `biology_node.py`, not `node.py`) — pytest imports test modules by basename and
+  `biology_node.py`, not `node.py`) - pytest imports test modules by basename and
   collides otherwise.
 - **Each study is runnable standalone** (`pytest tests/ -q` from its dir) and via
   the integration runner. Heavy/real data is never committed; `results/` is
@@ -101,28 +106,28 @@ fracturing proportional to suppression and engineering).
 ## Modernization Index (`mi-research/`, `mi-pipeline/`, `mi-website/`)
 
 - **Do not change the MI version number or any safeguard definitions** without an
-  explicit validation pass. The corpus is 109 cases (84 modern + 25 ancient).
-- **Do not rename files inside `mi-research/`** — `MASTER_REFERENCE_ARCHITECTURE.md`
+  explicit validation pass. The historical corpus is 109 cases (84 modern hindsight-retrodictive + 25 ancient interpretive).
+- **Do not rename files inside `mi-research/`** - `MASTER_REFERENCE_ARCHITECTURE.md`
   and others are referenced by path elsewhere.
 - The engine reads the committed panel from the sibling `mi-pipeline/` at build
   time (path constants in `mi/datasource.py`, `mi/global_systems.py`, and several
   `scripts/`). If `mi-pipeline/` moves, update those path constants.
-- `mi-website/` is a **consumer** — it does not re-implement scoring. The scheduled
+- `mi-website/` is a **consumer** - it does not re-implement scoring. The scheduled
   refresh (`.github/workflows/update-mi-data.yml` → `mi-website/scripts/refresh_and_build.py`)
   regenerates the dataset and commits it; a push triggers the Vercel deploy.
 - Preserve all honest nulls and falsifications (golden-age signature refuted on
-  holdout; accountability-gap falsified by Cuba) — they are scientific-integrity
+  holdout; accountability-gap falsified by Cuba) - they are scientific-integrity
   artifacts.
 
 ## Collectivization (`collectivization/`)
 
 - The 15 binary governance features and reference type-templates are **fixed
-  before any case is coded** (the pre-registration equivalent) — see
+  before any case is coded** (the pre-registration equivalent) - see
   `feature_vector.py`. Do not tune them to fit a case.
 - The framework is **diagnostic/structural, not predictive**. It classifies forms
   and measures restructuring magnitude; it does not predict specific outcomes.
 - Real GDP/governance series come from Maddison/V-Dem; feature vectors from
-  documents. Do not substitute synthetic data for missing real data — flag the
+  documents. Do not substitute synthetic data for missing real data - flag the
   gap.
 
 ## Conventions (all legs)
@@ -139,5 +144,5 @@ fracturing proportional to suppression and engineering).
   them green: `pytest -q -p no:cacheprovider`. For fragmentation, also run
   `fragmentation/integration/run.py` and `fragmentation/census/run.py` and
   confirm they complete (neither has a pytest suite).
-- When you wire in real data, do NOT change the downstream statistical stages —
+- When you wire in real data, do NOT change the downstream statistical stages -
   only the `ingest_*` function and the node's inputs.
