@@ -113,7 +113,9 @@ them:
 - `mi-research/sandbox/` and root `sandbox/` are exploratory - failures
   live there permanently and are not shipped claims.
 
-The grading discipline is in `mi-research/docs/curated/` (claims ledger)
-and `mi-research/RESEARCH.md`. The commit history is itself part of the
-audit trail - hypotheses were frozen, tested, and sometimes killed in
-sequence; nothing was squashed away.
+The grading discipline is in `mi-research/docs/CLAIMS_LEDGER.md` and
+`mi-research/data/claims/claims.json`. The 109 historical cases are 84
+modern hindsight-retrodictive cases plus 25 ancient interpreter-scored
+cases. The 67 blind out-of-sample observations are reported separately.
+The commit history is part of the audit trail. Hypotheses were frozen,
+tested, and sometimes killed in sequence.
