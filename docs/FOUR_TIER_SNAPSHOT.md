@@ -1,4 +1,4 @@
-# Global Snapshot — all four tiers (2024)
+# Global Snapshot: first four model layers (2024)
 
 156 countries. V1 capacity, V2 conversion, V3 pressure (higher=worse), T4 scarring (higher=worse). Medians V1=58 V2=57 V3=40 T4=24. Ranked by V1.
 

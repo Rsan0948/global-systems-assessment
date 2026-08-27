@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCountries, getCountry } from "@/lib/data";
-import { tier as tierOf, tierColor, clamp01, SHAPE_BALANCED, SHAPE_LOPSIDED } from "@/lib/config";
+import { scoreBand, scoreBandColor, clamp01, SHAPE_BALANCED, SHAPE_LOPSIDED } from "@/lib/config";
 import Radar from "@/components/Radar";
 import ChipRow from "@/components/ChipRow";
 import Define from "@/components/Define";
@@ -9,7 +9,7 @@ import IndicatorRow from "@/components/IndicatorRow";
 import SafeguardBoard from "@/components/SafeguardBoard";
 import Diagnostics from "@/components/Diagnostics";
 import WhatIf from "@/components/WhatIf";
-import { TierDot } from "@/components/ui";
+import { ScoreBandDot } from "@/components/ui";
 
 export const dynamicParams = false; // 190 country pages are fully known at build; no on-demand slugs
 
@@ -61,7 +61,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const c = getCountry(slug);
   if (!c) notFound();
-  const col = tierColor(c.tier);
+  const col = scoreBandColor(c.tier);
   const spreadLabel =
     c.spread == null
       ? null
@@ -88,7 +88,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             {c.mi.toFixed(3)}
           </div>
           <div className="mono mt-1 text-[11px]" style={{ color: col }}>
-            Tier {c.tier} · {tierOf(c.tier).name}
+            Band {c.tier} · {scoreBand(c.tier).name}
           </div>
           <div className="mono mt-1 text-[10px] text-fg3">
             <Define id="mi">what is this score?</Define>
@@ -215,9 +215,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 href={`/compare?a=${c.slug}&b=${s.slug}`}
                 className="lift flex items-center gap-2 rounded-lg border border-border bg-surface2/40 px-3 py-2 text-[13px]"
               >
-                <TierDot tier={s.tier} size={7} />
+                <ScoreBandDot band={s.tier} size={7} />
                 <span className="font-medium">{s.name}</span>
-                <span className="num text-[12px]" style={{ color: tierColor(s.tier) }}>
+                <span className="num text-[12px]" style={{ color: scoreBandColor(s.tier) }}>
                   {s.mi.toFixed(2)}
                 </span>
               </Link>

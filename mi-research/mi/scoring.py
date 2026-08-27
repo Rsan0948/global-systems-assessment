@@ -1,16 +1,24 @@
-"""
-Modernization Index — Scoring Engine
+"""Modernization Index scoring engine.
 
 Core calculation logic for scoring countries across five pillars.
-Deterministic: given same inputs, always produces same outputs.
+The public MI v3.3 score uses equal pillar weights.
 """
 
 import math
 import json
 from pathlib import Path
 from typing import Optional
-from mi.constants import (WEIGHTS, WEIGHTS_ARCHIVED_HAND_V0, WEIGHTS_EQUAL, TIERS, LENS,
-                          WEIGHTS_V2_EQUAL, V2_ERA_LEADER, V2_ELEVATED_WEIGHT, MI_ACTIVE_WEIGHTING)
+from mi.constants import (
+    CANONICAL_WEIGHTS,
+    LENS,
+    MI_CANONICAL_WEIGHTING,
+    MI_MODEL_VERSION,
+    SCORE_BANDS,
+    V2_ELEVATED_WEIGHT,
+    V2_ERA_LEADER,
+    WEIGHTS_ARCHIVED_HAND_V0,
+    WEIGHTS_V1_CORRELATION,
+)
 
 _PILLARS = ["P1", "P2", "P3", "P4", "P5"]
 
@@ -32,13 +40,22 @@ def v2_timevarying_weights(event_year):
 
 
 def resolve_weights(weighting: str = None, event_year=None) -> dict:
-    """Resolve the active weighting scheme to a weights dict (the single selector)."""
-    mode = weighting or MI_ACTIVE_WEIGHTING
-    if mode == "v1":
-        return WEIGHTS
-    if mode == "timevarying":
+    """Resolve a named weighting scheme.
+
+    Equal weighting is the public default. Other schemes are explicit
+    sensitivity checks. Unknown names fail loudly so a typo cannot silently
+    produce a published score.
+    """
+    mode = weighting or MI_CANONICAL_WEIGHTING
+    if mode in {"v1", "v1_correlation"}:
+        return WEIGHTS_V1_CORRELATION
+    if mode in {"timevarying", "v2_timevarying"}:
         return v2_timevarying_weights(event_year)
-    return WEIGHTS_V2_EQUAL  # "equal" (V2 default; equal wins ties)
+    if mode in {"equal", "canonical_equal", "v2_equal"}:
+        return CANONICAL_WEIGHTS
+    if mode == "archived_hand_v0":
+        return WEIGHTS_ARCHIVED_HAND_V0
+    raise ValueError(f"unknown weighting mode: {mode}")
 
 
 def normalize_wgi(score: float) -> float:
@@ -270,7 +287,7 @@ def calculate_mi_score(pillar_scores: dict, weights: dict = None) -> Optional[fl
 
     Args:
         pillar_scores: dict with P1-P5 values (0-1 each)
-        weights: weight dict (defaults to the active V2 weighting; pass explicitly to override)
+        weights: weight dict (defaults to canonical equal weighting; pass explicitly to override)
 
     Returns:
         Weighted composite score, or None if insufficient pillars available.
@@ -313,12 +330,21 @@ def get_configuration_profile(pillar_scores: dict) -> list:
 
 
 def get_tier(mi_score: float) -> dict:
-    """Determine which tier a country falls into based on MI score."""
-    for tier_num in sorted(TIERS.keys()):
-        if mi_score >= TIERS[tier_num]["m_score_min"]:
-            return {"tier": tier_num, "name": TIERS[tier_num]["name"]}
-    # Below all thresholds
-    return {"tier": 6, "name": "Below Floor"}
+    """Return the legacy tier-shaped score band result.
+
+    This wrapper keeps old case records and scripts working. New code should
+    call get_score_band.
+    """
+    band = get_score_band(mi_score)
+    return {"tier": band["band"], "name": band["name"]}
+
+
+def get_score_band(mi_score: float) -> dict:
+    """Return the public score band for an MI score."""
+    for band_num in sorted(SCORE_BANDS.keys()):
+        if mi_score >= SCORE_BANDS[band_num]["m_score_min"]:
+            return {"band": band_num, "name": SCORE_BANDS[band_num]["name"]}
+    return {"band": 6, "name": "Below Floor"}
 
 
 def score_country(indicators: dict, weights: dict = None, event_year=None) -> dict:
@@ -332,7 +358,7 @@ def score_country(indicators: dict, weights: dict = None, event_year=None) -> di
 
     Returns:
         Complete diagnostic output including pillars, MI score, spread,
-        configuration, tier, and data gaps.
+        configuration, score band, and data gaps.
     """
     pillars = calculate_pillar_scores(indicators)
     eff_weights = weights if weights is not None else resolve_weights(event_year=event_year)
@@ -341,23 +367,27 @@ def score_country(indicators: dict, weights: dict = None, event_year=None) -> di
     config = get_configuration_profile(pillars)
 
     result = {
+        "model_version": MI_MODEL_VERSION,
         "pillar_scores": {k: v for k, v in pillars.items() if k.startswith("P")},
         "mi_score": mi_score,
         "pillar_spread": spread,
         "configuration": config,
+        "score_band": get_score_band(mi_score) if mi_score is not None else None,
         "tier": get_tier(mi_score) if mi_score is not None else None,
         "data_gaps": pillars.get("gaps", []),
         "scale_warnings": pillars.get("scale_warnings", []),
         "weights_used": eff_weights,
-        "weighting_mode": MI_ACTIVE_WEIGHTING if weights is None else "explicit",
+        "weighting_mode": MI_CANONICAL_WEIGHTING if weights is None else "explicit",
     }
 
-    # Sensitivity across all weighting schemes (active V2 + the alternatives + frozen V1).
+    # Sensitivity across the public score and historical alternatives. These
+    # field names remain stable for existing JSON consumers. In public copy,
+    # v2_equal is the canonical equal model and v1 is the correlation model.
     if weights is None:
         result["sensitivity"] = {
-            "v2_equal": calculate_mi_score(pillars, WEIGHTS_V2_EQUAL),
+            "v2_equal": calculate_mi_score(pillars, CANONICAL_WEIGHTS),
             "v2_timevarying": calculate_mi_score(pillars, v2_timevarying_weights(event_year)),
-            "v1": calculate_mi_score(pillars, WEIGHTS),
+            "v1": calculate_mi_score(pillars, WEIGHTS_V1_CORRELATION),
             "archived_hand_v0": calculate_mi_score(pillars, WEIGHTS_ARCHIVED_HAND_V0),
         }
 

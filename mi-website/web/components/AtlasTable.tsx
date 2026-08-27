@@ -2,7 +2,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { Summary } from "@/lib/data";
-import { PILLARS, tierColor, heat } from "@/lib/config";
+import { PILLARS, scoreBandColor, heat } from "@/lib/config";
 
 const COLS = [
   ["name", "Country"],
@@ -78,10 +78,10 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
           >
             <div className="flex items-baseline justify-between gap-2">
               <span className="flex min-w-0 items-center gap-2">
-                <span style={{ color: tierColor(c.tier) }}>●</span>
+                <span style={{ color: scoreBandColor(c.tier) }}>●</span>
                 <span className="truncate font-medium">{c.name}</span>
               </span>
-              <span className="mono shrink-0 text-[15px] font-semibold" style={{ color: tierColor(c.tier) }}>
+              <span className="mono shrink-0 text-[15px] font-semibold" style={{ color: scoreBandColor(c.tier) }}>
                 {c.mi.toFixed(3)}
               </span>
             </div>
@@ -133,11 +133,11 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
               <tr key={c.slug} className="border-b border-border/50 hover:bg-surface2">
                 <td className="px-3 py-1.5">
                   <Link href={`/country/${c.slug}`} className="flex items-center gap-2 hover:text-white">
-                    <span style={{ color: tierColor(c.tier) }}>●</span>
+                    <span style={{ color: scoreBandColor(c.tier) }}>●</span>
                     <span className="font-sans">{c.name}</span>
                   </Link>
                 </td>
-                <td className="px-3 py-1.5 font-semibold" style={{ color: tierColor(c.tier) }}>
+                <td className="px-3 py-1.5 font-semibold" style={{ color: scoreBandColor(c.tier) }}>
                   {c.mi.toFixed(3)}
                 </td>
                 {["P1", "P2", "P3", "P4", "P5"].map((p) => (

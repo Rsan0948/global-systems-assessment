@@ -7,7 +7,7 @@ reference set, then for a country residual = actual MI - predicted MI.
   residual < 0  -> income EXCEEDS what institutions predict   (granted / fragile)
 
 It answers "is this prosperity going to last?" in one number. Computed on demand
-from the internal Data API + the active V2 scoring (so it tracks the lens + data).
+from the internal Data API plus the canonical scoring contract, so it tracks the lens and data.
 Pure stdlib OLS (no numpy dependency).
 """
 import math

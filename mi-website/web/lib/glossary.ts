@@ -21,12 +21,12 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     example: "Switzerland scores ~0.87 (very durable); a fragile state may score below 0.30.",
   },
   tier: {
-    id: "tiers",
-    term: "Tier",
+    id: "score-bands",
+    term: "Score band",
     short:
-      "A readable band for the score. Tier 1 (0.80+) is the most structurally durable, down to Tier 5 (below 0.20). It is just a grouping of the MI score.",
-    what: "Five colored bands of the MI score: Tier 1 is 0.80+, Tier 2 0.60-0.79, Tier 3 0.40-0.59, Tier 4 0.20-0.39, Tier 5 below 0.20.",
-    why: "Tiers make the map and lists scannable without reading every decimal.",
+      "A readable range for the score. Band 1 starts at 0.80, while Band 5 covers scores below 0.20. A band is only a grouping of the MI score.",
+    what: "Five colored ranges of the MI score: Band 1 is 0.80 or higher, Band 2 is 0.60 to 0.79, Band 3 is 0.40 to 0.59, Band 4 is 0.20 to 0.39, and Band 5 is below 0.20.",
+    why: "Score bands make the map and lists easy to scan without implying a separate model or evidence level.",
   },
   p1: {
     id: "pillar-p1",

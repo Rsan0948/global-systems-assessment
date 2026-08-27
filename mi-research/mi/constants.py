@@ -1,16 +1,27 @@
-"""
-Modernization Index — Constants and Configuration
+"""Modernization Index constants and configuration.
 
-All weights, thresholds, and indicator specifications.
-This is the single source of truth for framework parameters.
+All weights, thresholds, and indicator specifications live here. Public
+scoring uses MI v3.3 with equal pillar weights.
 """
 
 # === PILLAR WEIGHTS ===
-# MI v1 is the canonical, only-supported methodology from 2026-06-27 onward.
-# "MI v1" == the former "LIVE"/v2 version (correlation-derived weights; data
-# independently pushed P1 from 25% to 34%, plus Mods 4/8 and Safeguards A-I).
-# ALWAYS use WEIGHTS for scoring.
-WEIGHTS = {
+# This block is the public scoring contract. The score version and weighting
+# mode are separate so a later model revision cannot silently change weights.
+MI_MODEL_VERSION = "v3.3"
+MI_CANONICAL_WEIGHTING = "equal"
+
+CANONICAL_WEIGHTS = {
+    "P1": 0.20,
+    "P2": 0.20,
+    "P3": 0.20,
+    "P4": 0.20,
+    "P5": 0.20,
+}
+
+# The correlation-derived v1 model is retained only for reproduction and
+# sensitivity analysis. It is not the public MI v3.3 score. These historical
+# values sum to 1.01, so the scorer normalizes them over available pillars.
+WEIGHTS_V1_CORRELATION = {
     "P1": 0.34,  # Institutional Quality (most central: avg |r| = 0.79-0.80)
     "P2": 0.15,  # Innovation & Knowledge Economy
     "P3": 0.16,  # Human Capital
@@ -18,7 +29,11 @@ WEIGHTS = {
     "P5": 0.16,  # Stability & Resilience
 }
 
-# === ARCHIVED — DO NOT USE FOR SCORING ===
+# Backward compatibility for older scripts that import WEIGHTS directly.
+# New code should name CANONICAL_WEIGHTS or WEIGHTS_V1_CORRELATION explicitly.
+WEIGHTS = WEIGHTS_V1_CORRELATION
+
+# === ARCHIVED: DO NOT USE FOR PUBLIC SCORING ===
 # Original hand-assigned draft weights (the pre-release "v0" weighting, previously
 # labelled "v1"). ARCHIVED 2026-06-27: superseded by MI v1 (WEIGHTS above). Retained
 # ONLY for the documented 25%->34% provenance and historical sensitivity, never for
@@ -31,28 +46,21 @@ WEIGHTS_ARCHIVED_HAND_V0 = {
     "P5": 0.10,
 }
 
-# Equal weights for sensitivity analysis (a robustness control, not a version)
-WEIGHTS_EQUAL = {
-    "P1": 0.20,
-    "P2": 0.20,
-    "P3": 0.20,
-    "P4": 0.20,
-    "P5": 0.20,
-}
+# Backward-compatible names for the canonical equal weights.
+WEIGHTS_EQUAL = dict(CANONICAL_WEIGHTS)
 
 # === V2 WEIGHTING ARCHITECTURE (retrodiction decides; equal wins ties) ===
-# V1's P1=0.34 was an artifact of the 85-country/2018 sample. At 143 countries across
+# V1's P1=0.34 was specific to the 85-country/2018 sample. At 143 countries across
 # three time points the most-central pillar ROTATES and all five sit in a tight
 # 0.71-0.80 correlation band — so V2 chooses between:
-#   Option A — equal weights (WEIGHTS_EQUAL above). Simple, defensible, empirically supported.
-#   Option B — time-varying: the most-central pillar at the stress-event era is elevated.
-WEIGHTS_V2_EQUAL = dict(WEIGHTS_EQUAL)
+#   Option A: equal weights. Simple, defensible, and supported by the wider panel.
+#   Option B: time-varying weights that elevate the era's most-central pillar.
+WEIGHTS_V2_EQUAL = dict(CANONICAL_WEIGHTS)
 # Measured rotation (the era's binding constraint / most-central pillar):
 V2_ERA_LEADER = {"2012": "P2", "2018": "P1", "2024": "P3"}
 V2_ELEVATED_WEIGHT = 0.30  # leader pillar; remaining 0.70 split equally (0.175 each)
-# Active V2 weighting — set by the A-vs-B retrodiction (see docs/architectural_decisions/).
-# "equal" | "timevarying" | "v1" (v1 retained only for V1 reproduction).
-MI_ACTIVE_WEIGHTING = "equal"
+# Backward compatibility for scripts that still read the old setting name.
+MI_ACTIVE_WEIGHTING = MI_CANONICAL_WEIGHTING
 
 # === MI v1 LENS — the single scoring config ===
 # Every scoring/normalization/safeguard threshold the engine uses lives HERE.
@@ -142,7 +150,7 @@ LENS = {
     "durability_min_reference": 5,     # min reference-set size for the durability OLS
 }
 
-# Active MI model version. V3 = V2 + consolidated-pair Mod4 extension.
+# MI model history. V3 = V2 + consolidated-pair Mod4 extension.
 # V3.1 = V3 + Safeguard J (the durability gate, P4-P1 gap) — independently derived on the N=21
 # signature set (83% sens / 100% spec / 100% PPV), unifying with the durability ratio.
 # V3.2 = V3.1 + the Convergence Qualifier on Safeguard J (gap TRAJECTORY: closing=developmental
@@ -153,7 +161,6 @@ LENS = {
 # durable-climb tendency; the one HOLDOUT-VALIDATED golden-age signal, z+2.4). NB: the golden-age
 # *signature* (CC/component jumps) was REFUTED on a pre-registered geographic holdout (z=-0.0) and is
 # deliberately NOT added — golden ages are exogenous (level + era + commodity), not internal slope.
-MI_MODEL_VERSION = "v3.3"
 
 # Ascent potential: low institutional base predicts a durable climb (room-to-rise / mean-reversion),
 # holdout-validated (z+2.4). Not agency — needs an exogenous trigger (transition/commodity window).
@@ -332,15 +339,19 @@ SAFEGUARD_THRESHOLDS = {
     },
 }
 
-# === TIER BOUNDARIES ===
-TIERS = {
-    1: {"name": "Fully Modernized", "m_score_min": 0.80},
-    2: {"name": "Highly Modernized", "m_score_min": 0.60},
-    3: {"name": "Moderately Modernized", "m_score_min": 0.40},
-    4: {"name": "Emerging Modern", "m_score_min": 0.20},
-    5: {"name": "Fragile Modern", "m_score_min": 0.00},
+# === PUBLIC SCORE BANDS ===
+# "Band" is reserved for the five public MI score ranges. "Model layer" names
+# the separate V1 to V6 research instruments. TIERS remains as a compatibility
+# alias because historical case files and scripts still use that field name.
+SCORE_BANDS = {
+    1: {"name": "Highly Modernized", "m_score_min": 0.80},
+    2: {"name": "Durable", "m_score_min": 0.60},
+    3: {"name": "Mixed", "m_score_min": 0.40},
+    4: {"name": "Fragile", "m_score_min": 0.20},
+    5: {"name": "Floor", "m_score_min": 0.00},
     6: {"name": "Below Floor", "m_score_min": float("-inf")},
 }
+TIERS = SCORE_BANDS
 
 # === STRATEGY CLASSIFICATION ===
 STRATEGIES = {

@@ -5,7 +5,8 @@ import type { Chip } from "@/lib/data";
 import { valenceColor } from "@/lib/config";
 
 const CHIP_ANCHOR: Record<string, string> = {
-  tier: "tiers",
+  tier: "score-bands",
+  score_band: "score-bands",
   durability: "durability-gap",
   shape: "shape",
   partial: "the-score",
@@ -20,6 +21,7 @@ export default function ChipRow({ chips }: { chips: Chip[] }) {
         {chips.map((c) => {
           const cl = valenceColor(c.valence);
           const on = open === c.key;
+          const label = c.key === "tier" ? c.label.replace(/^Tier /, "Band ") : c.label;
           return (
             <button
               key={c.key}
@@ -29,7 +31,7 @@ export default function ChipRow({ chips }: { chips: Chip[] }) {
               className="rounded-full border px-3 py-1 text-[12px] font-medium transition-colors"
               style={{ borderColor: cl + "66", color: cl, background: on ? cl + "1f" : cl + "12" }}
             >
-              {c.label}
+              {label}
             </button>
           );
         })}
@@ -37,7 +39,7 @@ export default function ChipRow({ chips }: { chips: Chip[] }) {
       {active && (
         <div id="chip-detail" role="region" className="card mt-3 p-4 text-[13px]">
           <div className="font-medium" style={{ color: valenceColor(active.valence) }}>
-            {active.label}
+            {active.key === "tier" ? active.label.replace(/^Tier /, "Band ") : active.label}
           </div>
           <p className="mt-1 text-fg2">{active.why}</p>
           <p className="mono mt-2 text-[11px] text-fg3">Rule: {active.rule}</p>

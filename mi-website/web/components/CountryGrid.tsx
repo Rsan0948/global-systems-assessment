@@ -2,7 +2,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { Summary } from "@/lib/data";
-import { PILLAR_ORDER, TIERS, tierColor, clamp01, NODATA, TRACK } from "@/lib/config";
+import { PILLAR_ORDER, SCORE_BANDS, scoreBandColor, clamp01, NODATA, TRACK } from "@/lib/config";
 
 const FLAG_LABEL: Record<string, string> = {
   durability: "granted",
@@ -11,7 +11,7 @@ const FLAG_LABEL: Record<string, string> = {
 };
 
 function Tile({ c }: { c: Summary }) {
-  const col = tierColor(c.tier);
+  const col = scoreBandColor(c.tier);
   const flags = c.chips.filter((ch) => FLAG_LABEL[ch.key] && (ch.valence === "warn" || ch.valence === "bad"));
   return (
     <Link href={`/country/${c.slug}`} className="card lift group flex flex-col gap-2 p-3">
@@ -42,7 +42,7 @@ function Tile({ c }: { c: Summary }) {
         })}
       </div>
       <div className="mono flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[10px] text-fg3">
-        <span style={{ color: col }}>● Tier {c.tier}</span>
+        <span style={{ color: col }}>● Band {c.tier}</span>
         {c.coverage.present < 5 && <span>· {c.coverage.present}/5 data</span>}
         {flags.map((f) => {
           const fc = f.valence === "bad" ? "#f87171" : "#fbbf24";
@@ -64,17 +64,17 @@ function Tile({ c }: { c: Summary }) {
 
 export default function CountryGrid({ countries }: { countries: Summary[] }) {
   const [q, setQ] = useState("");
-  const [tier, setTier] = useState(0);
+  const [band, setBand] = useState(0);
   const [fullOnly, setFullOnly] = useState(false);
   const filtered = useMemo(
     () =>
       countries.filter(
         (c) =>
-          (tier === 0 || c.tier === tier) &&
+          (band === 0 || c.tier === band) &&
           (!fullOnly || c.coverage.present === 5) &&
           c.name.toLowerCase().includes(q.toLowerCase())
       ),
-    [countries, q, tier, fullOnly]
+    [countries, q, band, fullOnly]
   );
   return (
     <div>
@@ -88,28 +88,28 @@ export default function CountryGrid({ countries }: { countries: Summary[] }) {
         />
         <div className="flex gap-1">
           <button
-            onClick={() => setTier(0)}
+            onClick={() => setBand(0)}
             className="rounded px-2 py-1 text-[11px] transition-colors"
             style={{
-              background: tier === 0 ? "#232338" : "transparent",
+              background: band === 0 ? "#232338" : "transparent",
               color: "#9a9ab0",
-              border: `1px solid ${tier === 0 ? "#3a3a52" : "transparent"}`,
+              border: `1px solid ${band === 0 ? "#3a3a52" : "transparent"}`,
             }}
           >
             All
           </button>
-          {TIERS.map((t) => (
+          {SCORE_BANDS.map((scoreBand) => (
             <button
-              key={t.n}
-              onClick={() => setTier(t.n)}
+              key={scoreBand.n}
+              onClick={() => setBand(scoreBand.n)}
               className="rounded px-2 py-1 text-[11px] transition-colors"
               style={{
-                background: tier === t.n ? t.color + "22" : "transparent",
-                color: t.color,
-                border: `1px solid ${tier === t.n ? t.color + "66" : "transparent"}`,
+                background: band === scoreBand.n ? scoreBand.color + "22" : "transparent",
+                color: scoreBand.color,
+                border: `1px solid ${band === scoreBand.n ? scoreBand.color + "66" : "transparent"}`,
               }}
             >
-              T{t.n}
+              B{scoreBand.n}
             </button>
           ))}
         </div>

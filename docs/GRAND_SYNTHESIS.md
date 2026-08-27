@@ -109,13 +109,12 @@ grows even when `e` is wrong, so the rung-3 test was switched to CI-isolation
 §4, engine `mi/`):
 
 - **Capacity = P1 (Institutional Quality)** - WGI Gov-Effectiveness / Rule-of-Law /
-  Regulatory-Quality + corruption. The **data itself** identified P1 as the most
-  central variable (avg |r| ≈ 0.79–0.80 with all other indicators), which moved its
-  correlation-derived weight from a hand-guessed 25% to 34%. *(Engine note: the live
-  default is actually equal weights, `MI_ACTIVE_WEIGHTING="equal"`, because at panel
-  scale the central pillar rotates P2→P1→P3 across eras; all schemes cross-validate
-  at Spearman ρ ≥ 0.99, so ordinal conclusions are stable and the "34% P1" headline
-  is a v1 artifact.)*
+  Regulatory-Quality + corruption. The public MI v3.3 score gives each of the five
+  pillars an equal 20% weight. In the wider panel, the most central pillar rotates
+  P2 to P1 to P3 across eras. The earlier 34% P1 correlation model is retained only
+  as the `v1_correlation` sensitivity check. The schemes have Spearman rho at or
+  above 0.99, so the ordinal conclusions are stable, but the 34% P1 figure is not
+  the public scoring rule.
 - **Complexity / delivery = P4 (Economic Structure)** - GDP-pc PPP with resource
   wealth *penalized* (rents at 50% of GDP zero out the sub-indicator).
 - **The object is the relationship, never a level.** The **P4−P1 durability gap**
@@ -136,7 +135,7 @@ single argument in the repo for why the MI needs to be built at all - and it res
 a reported null, not a reported win.
 
 **Why it is a substrate and not an index** (`PROJECT_SYNTHESIS.md`): breadth kept
-**uncollapsed** (5 pillars + 10 safeguards + tiers, never averaged - *"a substrate
+**uncollapsed** (5 pillars + 10 safeguards + model layers, never averaged - *"a substrate
 must have unused room; an index has spent all of it"*); the **relationship** is the
 primary object (gap, container, spread), not the level; the gravity center is allowed
 to **rotate** across eras; contradictions ("hollow stability") are **preserved**, not

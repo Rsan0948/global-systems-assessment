@@ -9,7 +9,7 @@
   --color-fg2: #a6a6bd;
   --color-fg3: #8a8aa4;
 
-  /* tier colours are owned by lib/config.ts TIERS (single source of truth); do not duplicate here */
+  /* Score-band colors live in lib/config.ts. Do not duplicate them here. */
   --color-nodata: #2a2a3a;
 
   --color-good: #4ade80;

@@ -60,12 +60,12 @@ units, administrative subdivisions, and state dissolutions.
 `fragmentation/census/run.py` → `fragmentation/census/results/`.
 
 **B. Modernization Index** (`mi-research/`, `mi-pipeline/`,
-`mi-website/`) - five pillars (institutions, household position,
-pressure, capacity, revealed system), six tiers of forward risk, scored
-1900–2024 for 190+ countries. T1 gap → T2 topology → T3 momentum →
-T4 scarring → T5 turbulence → T6 coupling. Tiers 5–6 are exploratory
-and were weakened by the project's own adversarial audit (full six-tier
-OOF AUC 0.63) - the corrected numbers are in
+`mi-website/`) - a public MI v3.3 country score with five equally weighted
+pillars and five descriptive score bands. The research program also contains
+six separate model layers: capacity, conversion, pressure, scarring,
+turbulence, and spark density. Layers 5 and 6 are exploratory and were
+weakened by the project's own adversarial audit (full six-layer OOF AUC 0.63).
+The corrected numbers are in
 `docs/THREE_MODEL_FRAMEWORK.md`. Public site:
 [mi-website/](mi-website/) (Next.js, deployed via Vercel).
 
@@ -86,12 +86,12 @@ baseline; `docs/` - glossary, sources, unified timeline.
   instrument is a **diagnostic** - it identifies configurations and
   vulnerabilities, not destinies.
 - **Not a collapse predictor.** Structure is knowable 10–28 years out;
-  timing is knowable 3–5 years at best. Tier 5 stress tests failed their
+  timing is knowable 3–5 years at best. Model layer 5 stress tests failed their
   10% ceiling and were honestly downgraded - the countdown lives in
-  Tier 6 coupling, which is directional and exploratory.
+  model layer 6 coupling, which is directional and exploratory.
 - **Not neutral to gaming.** V2's equity pillar can be gamed by
   authoritarian statistics; automated scoring can flatten edge cases;
-  historical tiers are interpreter-scored with hindsight. All documented
+  historical cases are interpreter-scored with hindsight. All documented
   in the ledger.
 
 ## Quick start
@@ -116,7 +116,7 @@ Full reproduction paths and expected outputs: **[REPRODUCE.md](REPRODUCE.md)**.
 ## Contributing
 
 The most valuable contribution is adversarial: independent recoding of
-the historical tiers, replication of the languages result with different
+the historical cases, replication of the languages result with different
 tree sources, Kirchner-null extensions, out-of-sample challenges to the
 sealed flags. See **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { GLOSSARY, PILLAR_KEYS } from "@/lib/glossary";
-import { TIERS, tierColor } from "@/lib/config";
+import { SCORE_BANDS, scoreBandColor } from "@/lib/config";
 
 export const metadata = { title: "How it works - Modernization Index" };
 
@@ -42,7 +42,7 @@ export default function HowItWorks() {
           <h2 className="serif text-xl">The five pillars</h2>
           <p className="mt-2 text-[14px] leading-relaxed text-fg2">
             These are the five traits we measure for every country. Each is scored 0 to 1 from citable
-            public data, then averaged into the headline score.
+            public data, then combined with equal 20 percent weights into the MI v3.3 score.
           </p>
           <div className="mt-5 space-y-7">
             {PILLAR_KEYS.map((k, i) => {
@@ -97,11 +97,11 @@ export default function HowItWorks() {
         </section>
 
         <section className="scroll-mt-20">
-          <h2 className="serif text-xl">It is a formula, not an opinion</h2>
+          <h2 className="serif text-xl">The score is a formula</h2>
           <p className="mt-2 text-[14px] leading-relaxed text-fg2">
-            No one is interpreting anything. Every score is a fixed calculation over public numbers, so
-            the same inputs always give the same answer. The data is public and the engine is open, so the
-            whole thing is yours to check.
+            The core score is a fixed calculation over published inputs. The same inputs, version, and
+            settings give the same answer. Some safeguards and historical context are curated by people.
+            Those parts are labeled separately and never silently folded into the score.
           </p>
           <Link href="/data" className="link mt-3 inline-block text-[13px]">
             Get the data and the engine →
@@ -124,17 +124,17 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      {/* a quick visual of the tier scale */}
+      {/* A quick visual of the public score bands. */}
       <div className="mt-8">
-        <p className="mb-2 text-[12px] text-fg3">The tier scale, at a glance:</p>
+        <p className="mb-2 text-[12px] text-fg3">The score bands, at a glance:</p>
         <div className="flex flex-wrap gap-x-4 gap-y-1.5">
-          {TIERS.map((t) => (
-            <span key={t.n} className="flex items-center gap-1.5 text-[12px] text-fg2">
+          {SCORE_BANDS.map((band) => (
+            <span key={band.n} className="flex items-center gap-1.5 text-[12px] text-fg2">
               <span
                 className="inline-block h-2.5 w-2.5 rounded-[3px]"
-                style={{ background: tierColor(t.n) }}
+                style={{ background: scoreBandColor(band.n) }}
               />
-              T{t.n} {t.short}
+              B{band.n} {band.short}
             </span>
           ))}
         </div>
