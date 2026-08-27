@@ -23,13 +23,17 @@ The MI scores countries across five pillars measuring structural properties of g
 
 | Pillar | Weight | What it measures |
 |--------|--------|------------------|
-| P1 - Institutional Quality | 34% | Government effectiveness, rule of law, regulatory quality, corruption control |
-| P2 - Innovation & Knowledge Economy | 15% | R&D/GII, economic complexity |
-| P3 - Human Capital | 16% | Education, life expectancy |
+| P1 - Institutional Quality | 20% | Government effectiveness, rule of law, regulatory quality, corruption control |
+| P2 - Innovation & Knowledge Economy | 20% | R&D/GII, economic complexity |
+| P3 - Human Capital | 20% | Education, life expectancy |
 | P4 - Economic Structure & Independence | 20% | GDP per capita, resource rents (inverted), ODA (inverted) |
-| P5 - Stability & Resilience | 16% | Political stability, fragile states index (inverted) |
+| P5 - Stability & Resilience | 20% | Political stability, fragile states index (inverted) |
 
-The weights are correlation-derived from the data itself. P1 at 34% (up from initial 25%) reflects institutional quality being the most central variable (avg |r| = 0.79-0.80).
+This is the public MI v3.3 scoring contract. The public score uses equal weights
+because the most central pillar changes by era in the wider panel. The older
+34/15/16/20/16 correlation-derived model remains available as the
+`v1_correlation` sensitivity check and for historical reproduction. It must
+not be presented as the public score.
 
 ### Core Predictions
 
@@ -48,7 +52,7 @@ The weights are correlation-derived from the data itself. P1 at 34% (up from ini
 - **D - Predatory Neighbor:** Low-P1 state bordering aggressive power. Framework diagnoses vulnerability, not the shock itself.
 - **E - Rentier Capture (BIDIRECTIONAL):** Negative: rents >25-30% GDP inflate P1. Positive: rents can buy cohesion in low-P1 states (rent-stabilization).
 - **F - Sub-State Turbulence:** High-P1 states: flag "managed instability" when anti-system vote >25%, repeated executive collapse, or regional divergence >30% GDP per capita.
-- **G - Suppression vs Prevention (THREE-TIER):** Tier 1 Military (force), Tier 2 Institutional/Legal (law), Tier 3 Prevention/Porosity (institutional design). Re-suppression after porosity = worst path.
+- **G - Suppression vs Prevention (THREE-MODE):** Mode 1 Military (force), Mode 2 Institutional/Legal (law), Mode 3 Prevention/Porosity (institutional design). Re-suppression after porosity = worst path.
 
 ### Essential Modifications (LIVE version)
 
@@ -59,8 +63,8 @@ The weights are correlation-derived from the data itself. P1 at 34% (up from ini
   - **Convergence Qualifier [V3.2]:** the gap's TRAJECTORY disambiguates a flag - CLOSING (P1 rising) = developmental catch-up (downgrade); WIDENING/static = fragility (escalate). 92% sens / 80% spec on flagged states. Supply `context["prior_pillars"]`.
 - **Accountability Gap [V3.2 - HYPOTHESIS, informational, NOT a verdict]:** VA (which P1 excludes) vs income; VA − P4 ≤ −0.50 = "capacity without consent" (legitimacy-capped: Saudi/China/Russia/Turkey), a hypothesized brittle failure mode orthogonal to the durability gap. VA wired in for all 180 panel countries (`data/sources/va_anchored.json`); `diagnostics.accountability_gap()`; `scripts/big_signals_scan.py`. No crisis validation yet. See `docs/architectural_decisions/v3_2_convergence_and_accountability.md`.
 
-## Measurement tiers - COUNTRY-LEVEL + SYSTEM-LEVEL [V3.3]
-The framework now has two tiers, sharing data + the level/slope epistemic, answering different questions:
+## Measurement levels - COUNTRY-LEVEL + SYSTEM-LEVEL [V3.3]
+The framework now has two measurement levels, sharing data + the level/slope epistemic and answering different questions:
 - **Country-level (the MI):** pillars P1–P5, safeguards A–J, mods 4/8, durability/ascent/movement diagnostics - *is this polity durable?*
 - **System-level (Global Systems Measurement):** the world system's state - the three improvement *engines* (institutions/income/human-capital climb rates vs historical norm), the institutional *container* trajectory (the supercycle discriminator: strengthening/eroding/flat), the *texture* (surge/churn/stasis/collapse), and the global *movement distribution* (real_ascent / windfall / ratchet_rise / hollow_stability / decline). `mi/global_systems.py`; `scripts/global_systems.py`; `docs/global_systems_measurement.md`. EXPLORATORY/proxy - changes no country verdict. Current reading: multi-engine lull on a flat-to-eroding container; only ~2% of countries in genuine institution-led ascent.
 
@@ -105,7 +109,7 @@ golden-age drought (25→7 climb-starts/yr), and widespread hollow stability.
 13. South Africa - institutional reconstruction; capacity lagging complexity confirmed
 14. Northern Ireland/GFA - fragmentation prevention through porosity confirmed; Safeguard F derived
 15. German Reunification - fusion; persistent east-west gap confirmed; Safeguard F confirmed
-16. Spain/Catalonia - institutional/legal suppression (Tier 2); de-escalation confirmed
+16. Spain/Catalonia - institutional/legal suppression (Mode 2); de-escalation confirmed
 17. Belgium - extreme porosity; no hard limit found; Safeguard F confirmed
 
 **Group D - Comparative (cases 18–19):**

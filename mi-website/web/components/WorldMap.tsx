@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import type { MapFeature, Summary } from "@/lib/types";
 import { MAP_W, MAP_H, COVERAGE_SCORED, COVERAGE_UNSCORED } from "@/lib/config";
-import { TierLegend } from "@/components/ui";
+import { ScoreBandLegend } from "@/components/ui";
 
 type Layer = "structure" | "coverage";
 const TOOLTIP_W = 220;
@@ -95,7 +95,7 @@ export default function WorldMap({
           className="relative w-full"
           style={{ filter: "drop-shadow(0 8px 24px #00000066)" }}
           role="img"
-          aria-label="World map of Modernization Index tiers. Browse and select any country in the keyboard-accessible list below."
+          aria-label="World map of Modernization Index score bands. Browse and select any country in the keyboard-accessible list below."
         >
           <defs>
             <radialGradient id="ocean" cx="50%" cy="42%" r="75%">
@@ -141,7 +141,7 @@ export default function WorldMap({
               {hover.slug ? (
                 <div className="mono mt-0.5 text-[11px]">
                   <span style={{ color: layer === "coverage" ? "#a6a6bd" : hover.color }}>
-                    MI {hover.mi?.toFixed(3)} · Tier {hover.tier}
+                    MI {hover.mi?.toFixed(3)} · Band {hover.tier}
                   </span>
                   <span className="text-fg3"> · click to open</span>
                 </div>
@@ -166,7 +166,7 @@ export default function WorldMap({
             {pinned.slug ? (
               <div className="mono mt-0.5 text-[11px]">
                 <span style={{ color: layer === "coverage" ? "#a6a6bd" : pinned.color }}>
-                  MI {pinned.mi?.toFixed(3)} · Tier {pinned.tier}
+                  MI {pinned.mi?.toFixed(3)} · Band {pinned.tier}
                 </span>
               </div>
             ) : (
@@ -194,7 +194,7 @@ export default function WorldMap({
 
       <div className="mt-3">
         {layer === "structure" ? (
-          <TierLegend countries={countries} />
+          <ScoreBandLegend countries={countries} />
         ) : (
           <p className="mono flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[11px] text-fg3">
             <span

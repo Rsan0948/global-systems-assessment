@@ -1,4 +1,4 @@
-import { TIERS, tierColor } from "@/lib/config";
+import { SCORE_BANDS, scoreBandColor } from "@/lib/config";
 import type { Summary } from "@/lib/data";
 
 // Reusable primitives - one definition, used everywhere. Keeps the site consistent.
@@ -7,8 +7,8 @@ export function Card({ className = "", children }: { className?: string; childre
   return <div className={`card ${className}`}>{children}</div>;
 }
 
-export function TierDot({ tier, size = 8 }: { tier: number; size?: number }) {
-  const col = tierColor(tier);
+export function ScoreBandDot({ band, size = 8 }: { band: number; size?: number }) {
+  const col = scoreBandColor(band);
   return (
     <span
       aria-hidden
@@ -27,38 +27,38 @@ export function PageHeader({ title, lede }: { title: string; lede?: string }) {
   );
 }
 
-export function TierDistribution({ countries }: { countries: Summary[] }) {
+export function ScoreBandDistribution({ countries }: { countries: Summary[] }) {
   const total = countries.length;
   return (
-    <div className="flex h-2 w-full overflow-hidden rounded-full" title="Distribution of scored countries by tier">
-      {TIERS.map((t) => {
-        const n = countries.filter((c) => c.tier === t.n).length;
+    <div className="flex h-2 w-full overflow-hidden rounded-full" title="Distribution of countries by score band">
+      {SCORE_BANDS.map((band) => {
+        const n = countries.filter((c) => c.tier === band.n).length;
         const pct = total ? (n / total) * 100 : 0;
-        return pct > 0 ? <div key={t.n} style={{ width: `${pct}%`, background: t.color }} /> : null;
+        return pct > 0 ? <div key={band.n} style={{ width: `${pct}%`, background: band.color }} /> : null;
       })}
     </div>
   );
 }
 
-export function TierLegend({ countries }: { countries?: Summary[] }) {
+export function ScoreBandLegend({ countries }: { countries?: Summary[] }) {
   return (
     <div>
       <p className="mb-2 text-[11.5px] text-fg2">
-        Each country scores 0 to 1. Higher tiers are more structurally able to weather stress.
+        Each country scores 0 to 1. Higher score bands indicate greater structural capacity.
       </p>
       <div className="flex flex-wrap gap-x-5 gap-y-2">
-        {TIERS.map((t) => {
-          const n = countries?.filter((c) => c.tier === t.n).length;
-          const range = t.n === 1 ? "0.80+" : `${t.min.toFixed(2)} to ${(t.min + 0.2 - 0.01).toFixed(2)}`;
+        {SCORE_BANDS.map((band) => {
+          const n = countries?.filter((c) => c.tier === band.n).length;
+          const range = band.n === 1 ? "0.80+" : `${band.min.toFixed(2)} to ${(band.min + 0.2 - 0.01).toFixed(2)}`;
           return (
-            <span key={t.n} className="flex items-center gap-2 text-[12.5px]">
+            <span key={band.n} className="flex items-center gap-2 text-[12.5px]">
               <span
                 aria-hidden
                 className="inline-block h-3 w-3 shrink-0 rounded-[3px]"
-                style={{ background: t.color, boxShadow: `0 0 8px ${t.color}66` }}
+                style={{ background: band.color, boxShadow: `0 0 8px ${band.color}66` }}
               />
-              <span className="font-medium text-fg">Tier {t.n}</span>
-              <span className="text-fg2">{t.short}</span>
+              <span className="font-medium text-fg">Band {band.n}</span>
+              <span className="text-fg2">{band.short}</span>
               <span className="mono text-[10.5px] text-fg3">{range}</span>
               {n != null && (
                 <span className="num rounded bg-surface2 px-1.5 text-[11px] text-fg2">{n}</span>

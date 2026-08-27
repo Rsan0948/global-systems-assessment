@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { geoNaturalEarth1, geoPath, geoArea } from "d3-geo";
 import { getCountries } from "@/lib/data";
-import { tierColor, MAP_W, MAP_H } from "@/lib/config";
+import { scoreBandColor, MAP_W, MAP_H } from "@/lib/config";
 import type { MapFeature } from "@/lib/types";
 
 // d3-geo fills a polygon's COMPLEMENT when its ring winding is reversed (common on
@@ -48,7 +48,7 @@ export function buildWorldPaths(): { features: MapFeature[]; sphere: string } {
         slug: c?.slug ?? null,
         mi: c?.mi ?? null,
         tier: c?.tier ?? null,
-        color: c ? tierColor(c.tier) : "#20202e",
+        color: c ? scoreBandColor(c.tier) : "#20202e",
       } as MapFeature;
     })
     .filter((x): x is MapFeature => x !== null);

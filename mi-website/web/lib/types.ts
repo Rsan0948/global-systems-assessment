@@ -14,6 +14,8 @@ export type Summary = {
   name: string;
   iso3: string | null;
   mi: number;
+  band?: number;
+  /** @deprecated Read legacy generated datasets through band when available. */
   tier: number;
   pillars: Record<string, number | null>;
   chips: Chip[];
@@ -100,6 +102,8 @@ export type Meta = {
   built: string;
   count: number;
   engine: string;
+  weighting?: string;
+  score_classification?: string;
   data_vintage: string;
   note: string;
 };

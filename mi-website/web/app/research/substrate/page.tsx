@@ -15,7 +15,7 @@ function BackLink() {
 }
 
 const FEATURES = [
-  ["Breadth, uncollapsed", "Five pillars, ten safeguards, two measurement tiers - deliberately not averaged into one number. A substrate has to have unused room; an index has spent all of it."],
+  ["Breadth, uncollapsed", "Five pillars, ten safeguards, and two measurement levels, deliberately not averaged into one number. A substrate has to have unused room; an index has spent all of it."],
   ["Relationships, not levels", "Every validated signal is a relationship - the durability gap, the container, the configuration - never a raw level. We measure the geometry between the parts."],
   ["Multiple centers, in tension", "The central pillar rotates across eras; the improvement engines peak in different decades. No single forced point of collapse, so competing hypotheses can coexist."],
   ["Contradiction preserved", "Hollow stability keeps both readings - human capital up, institutions down. Disagreement is treated as information, not averaged away."],

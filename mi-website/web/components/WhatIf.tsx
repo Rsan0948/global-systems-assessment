@@ -1,11 +1,11 @@
 "use client";
 import { useMemo, useState } from "react";
-import { PILLAR_ORDER, PILLARS, TIERS, tier as tierOf, tierColor, clamp01 } from "@/lib/config";
+import { PILLAR_ORDER, PILLARS, SCORE_BANDS, scoreBand, scoreBandColor, clamp01 } from "@/lib/config";
 import Radar from "@/components/Radar";
 import Define from "@/components/Define";
 
 type Vals = Record<string, number>;
-const tierFromMi = (mi: number) => TIERS.find((t) => mi >= t.min)?.n ?? 5;
+const bandFromMi = (mi: number) => SCORE_BANDS.find((band) => mi >= band.min)?.n ?? 5;
 
 export default function WhatIf({
   name,
@@ -28,8 +28,8 @@ export default function WhatIf({
     () => (wsum > 0 ? present.reduce((s, p) => s + weights[p] * vals[p], 0) / wsum : 0),
     [vals, weights, wsum, present]
   );
-  const tnum = tierFromMi(mi);
-  const col = tierColor(tnum);
+  const bandNumber = bandFromMi(mi);
+  const col = scoreBandColor(bandNumber);
   const dirty =
     present.some((p) => Math.abs(vals[p] - base[p]) > 0.001) ||
     present.some((p) => Math.abs(weights[p] - 1) > 0.001);
@@ -50,8 +50,8 @@ export default function WhatIf({
         <div>
           <h2 className="serif text-base">Run the engine yourself</h2>
           <p className="mt-1 max-w-md text-[12px] leading-relaxed text-fg3">
-            Drag the pillars - or re-weight them - and watch the Modernization Index and tier recompute live. This
-            is the real aggregation (an equal-weighted mean of the five pillars), not an animation.
+            Drag the pillars or adjust their weights and watch the score and band change. The published MI v3.3
+            score is the equal-weighted mean. Custom weights here are a private what-if exercise.
           </p>
         </div>
         <div className="text-right">
@@ -59,7 +59,7 @@ export default function WhatIf({
             {mi.toFixed(3)}
           </div>
           <div className="mono text-[11px]" style={{ color: col }}>
-            Tier {tnum} · {tierOf(tnum).name}
+            Band {bandNumber} · {scoreBand(bandNumber).name}
           </div>
           <div className="mono mt-0.5 text-[10px] text-fg3">
             {dirty ? (

@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // SINGLE SOURCE OF TRUTH for the whole site.
-// Tiers, pillars, valences, thresholds, copy. Every component imports from here -
+// Score bands, pillars, valences, thresholds, and copy live here.
 // change a color or a label once and it propagates everywhere.
 // (UI-chrome colors - bg/surface/fg - live in globals.css @theme; the DATA-DRIVEN
 //  colors below are used in inline styles and must live in JS.)
@@ -11,6 +11,7 @@ export type Valence = "good" | "warn" | "bad" | "neutral";
 export const SITE = {
   name: "Modernization Index",
   version: "v3.3",
+  weighting: "equal",
   tagline: "How nations weather stress",
   url: "https://modernization-index.vercel.app",
   description:
@@ -25,16 +26,23 @@ export const SITE = {
   ] as const,
 };
 
-export type Tier = { n: number; name: string; short: string; color: string; min: number };
-export const TIERS: Tier[] = [
+export type ScoreBand = { n: number; name: string; short: string; color: string; min: number };
+export const SCORE_BANDS: ScoreBand[] = [
   { n: 1, name: "Highly Modernized", short: "Highly modernized", color: "#10b981", min: 0.8 },
   { n: 2, name: "Durable", short: "Durable", color: "#38bdf8", min: 0.6 },
   { n: 3, name: "Mixed", short: "Mixed", color: "#eab308", min: 0.4 },
   { n: 4, name: "Fragile", short: "Fragile", color: "#f97316", min: 0.2 },
   { n: 5, name: "Floor", short: "Floor", color: "#dc2626", min: 0.0 },
 ];
-export const tier = (n: number): Tier => TIERS[n - 1] ?? TIERS[TIERS.length - 1];
-export const tierColor = (n: number): string => tier(n).color;
+export const scoreBand = (n: number): ScoreBand => SCORE_BANDS[n - 1] ?? SCORE_BANDS[SCORE_BANDS.length - 1];
+export const scoreBandColor = (n: number): string => scoreBand(n).color;
+
+// Compatibility aliases for the committed v3.3 dataset, which still carries
+// a numeric `tier` field. New public copy and components use score-band names.
+export type Tier = ScoreBand;
+export const TIERS = SCORE_BANDS;
+export const tier = scoreBand;
+export const tierColor = scoreBandColor;
 
 export const PILLAR_ORDER = ["P1", "P2", "P3", "P4", "P5"] as const;
 export const PILLARS: Record<string, { short: string; full: string; desc: string }> = {

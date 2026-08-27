@@ -1,16 +1,16 @@
-# The Four-Tier Framework - capacity, conversion, pressure, scarring
+# The Six-Layer Research Framework
 
 > This document records the model's development. Current claim status and
 > corpus counts live in `../mi-research/docs/CLAIMS_LEDGER.md`. The 109
 > historical cases are not 109 blind predictions.
 
-**The Modernization program now has four complementary instruments**, each measuring one
+**The first four model layers are complementary instruments**, each measuring one
 face of the founding equation (**rupture = interior complexity > interface capacity**), and
 each - proven empirically - owning a *different* class of outcome at a *different* timescale.
 Together they span the space: what a polity *is*, how well it *delivers*, how much *pressure*
 it is containing, and what damage the *ground* already carries.
 
-| | **V1 - Capacity** | **V2 - Conversion** | **V3 - Pressure** | **Tier 4 - Scarring** |
+| | **V1 - Capacity** | **V2 - Conversion** | **V3 - Pressure** | **Layer 4 - Scarring** |
 |---|---|---|---|---|
 | **Asks** | what is its structure? | does it deliver, and for whom? | is pressure building? | what happened on this ground before? |
 | **Measures** | 5 pillars, durability gap | 6 conversion pillars (Level + Equity) | grievance + mobilization + opportunity | conflict history (decayed) + trust + displacement + state-perpetration |
@@ -19,14 +19,14 @@ it is containing, and what damage the *ground* already carries.
 | **Does NOT predict** | modern backsliding (≈chance) | any political outcome | the trigger | which scarred states heal (decay rate is measured; the trajectory is contingent) |
 | **Status** | frozen; historically retrodictive across 109 cases; not blind validation | construct-valid; equity null; wellbeing signal | gate-passed; deep-validated 1816–1996 | all hypotheses passed; **operationalizes the conflict trap** (mediates the raw binary) |
 
-**Tier 5 - Criticality (the timing tier), and a founding rule.** The four tiers above all
+**Layer 5 - Criticality (the timing layer), and a founding rule.** The four layers above all
 answer *how vulnerable?* A fifth answers *how close?* - grounded in the **Criticality
 Principle**: *a system approaching rupture slows down; the fluctuations in its state variables
 grow in amplitude and memory as it nears the threshold, even though the spark that tips it
 stays unpredictable.* This is self-organized-criticality (the sandpile of the fragmentation
 leg) applied to the political time series.
 
-> **⚠ AUDIT CORRECTION (2026-07-12) - Tier 5 is a real but WEAKER signal than first claimed.**
+> **⚠ AUDIT CORRECTION (2026-07-12) - Layer 5 is a real but WEAKER signal than first claimed.**
 > An adversarial audit found the original headline ("variance rises *monotonically 3.6×→7.4×*,
 > *84%* within-country, *AUC 0.689*, every era") was compromised by three defects: cross-country
 > confounding (volatile poor states rupture more), pseudoreplication (overlapping windows counted
@@ -37,46 +37,46 @@ leg) applied to the political time series.
 > excludes 0 - so the signal survives.** BUT (1) it does **not** rise in a clean monotonic
 > countdown; (2) the *theory-canonical* CSD indicator, rising autocorrelation (AR1), is **NULL**
 > (AUC 0.51, p=0.33); and (3) part of the surviving variance signal is **mechanical** (variance
-> of libdem is elevated before a defined move in libdem). Tier 5 flags *turbulence before
+> of libdem is elevated before a defined move in libdem). Layer 5 flags *turbulence before
 > rupture*, not a calibrated accelerating clock. It still catches flickering democracies the
-> other tiers call healthy (**Poland, Korea, Romania**), but out-of-fold it is near-chance as a
+> other layers call healthy (**Poland, Korea, Romania**), but out-of-fold it is near-chance as a
 > standalone cross-country crisis predictor (AUC 0.48) - its value is within-country and
 > diagnostic, not predictive.
 
-Tier 5 scores the recent variance of the regime indices (0–100, higher=more turbulent), scoped
+Layer 5 scores the recent variance of the regime indices (0–100, higher=more turbulent), scoped
 to democracies. It is the first signal in the program to speak to *when*, not just *whether* -
 now understood as *ripeness/turbulence*, not a countdown. The spark holds; the ripeness does
 not. See `mi-research/docs/MI_TIER5_CRITICALITY.md`.
 
-**Tier 6 - Spark Probability (spark density).** The last tier attacks the Mule directly: the
+**Layer 6 - Spark Probability (spark density).** The last layer attacks the Mule directly: the
 *specific* spark is idiosyncratic, but the *rate* at which potential triggers arrive is a
 **structural** property - geography (a violent neighbourhood), resources (a prize worth
 seizing), transcendent contestation (sacred/claimed ground), military dynamics. T6 scores that
 density 0–100. It earns its place, but on **out-of-fold** numbers (audit C1 correction below):
 spark density predicts crisis at AUC 0.64 and **adds +0.15 over criticality out-of-fold**
-(the in-sample increment was +0.22), and the **full six-tier model reaches AUC 0.63
+(the in-sample increment was +0.22), and the **full six-layer model reaches AUC 0.63
 out-of-fold** (the *in-sample* 0.712 was inflated by stacking 6–7 predictors on n≈114).
 
-> **⚠ AUDIT CORRECTION (2026-07-12).** Every tier-6 headline AUC was originally computed
+> **⚠ AUDIT CORRECTION (2026-07-12).** Every layer-6 headline AUC was originally computed
 > **in-sample** (resubstitution), which mechanically rises as predictors are added. Re-run with
 > stratified out-of-fold CV (`scripts/v2/tier6_spark.py`, `tier6_auc.json`): T6 increment over
-> T5 is **+0.15 OOF** (still real), the full six-tier model is **AUC 0.63 OOF** (not 0.712), and
+> T5 is **+0.15 OOF** (still real), the full six-layer model is **AUC 0.63 OOF** (not 0.712), and
 > - notably - **T5 alone is near-chance out-of-fold (0.48)** while T6 alone holds (0.64), so
 > spark density, not criticality, carries the cross-country signal. The T5×T6 interaction is
-> **not significant** (z=−1.07), reinforcing the "tiers add, don't multiply" null.
+> **not significant** (z=−1.07), reinforcing the "layers add, don't multiply" null.
 
 The nulls are honest - the elegant *criticality×spark-density* multiplier did **not** confirm
-(the tiers add up, they don't multiply), and **geography, not transcendent meaning, is the
+(the layers add up, they don't multiply), and **geography, not transcendent meaning, is the
 master spark source** (S1 dominates; the sacred-ground S3 dimension is real but secondary).
 Netherlands scores bottom-decile spark density (T6=2), completing its clean read on all six.
 See `mi-research/docs/MI_TIER5_CRITICALITY.md` and `TIER6_SPARK_RESULTS.md`. **The Mule shrinks
 to a fraction: the moment stays dark, but the density of moments is lit.**
 
 **The one law measured on both sides, across five timescales, with a sixth for the environment.** V1/V2 are the **capacity
-denominator**; V3 is the **live complexity numerator**; **Tier 4 is the *accumulated* numerator
+denominator**; V3 is the **live complexity numerator**; **Layer 4 is the *accumulated* numerator
 - the pressure history leaves in the ground.** Each owns a distinct rupture: V1 the ancient
-(violence from weakness), V3 the modern (backsliding from contestation), Tier 4 the recurrent
-(violence from scarring). Tier 4's headline result is that it turned the program's most stable,
+(violence from weakness), V3 the modern (backsliding from contestation), Layer 4 the recurrent
+(violence from scarring). Layer 4's headline result is that it turned the program's most stable,
 least-explained relationship - the conflict trap (ρ +0.21..+0.67 across two centuries) - into a
 measurable, decomposable, **25-year-half-life** construct that *fully absorbs* the raw
 prior-conflict binary. Societies heal from violence on a generational, not civilizational,
@@ -86,7 +86,7 @@ timescale - one of the framework's open questions, now answered quantitatively.
 and its delivery); V3 is the **complexity numerator** (organized pressure). The whole
 program's physics - rupture is the interior outrunning the interface - is now measured on
 *both* sides for the first time. And the striking empirical result is that **capacity
-predicts the ancient failure mode (violence) timelessly, while the complexity tier is
+predicts the ancient failure mode (violence) timelessly, while the complexity layer is
 required for the modern one (backsliding), which only emerged as an anocracy-and-civil-
 society configuration in the last third of the 20th century.** The instruments were never
 wrong; each reads the rupture of its era.

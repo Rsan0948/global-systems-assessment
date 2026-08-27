@@ -18,6 +18,13 @@ const MOVEMENT: Record<string, string> = {
   stable: "Stable",
 };
 
+const SENSITIVITY_LABEL: Record<string, string> = {
+  v2_equal: "canonical equal",
+  v2_timevarying: "time-varying",
+  v1: "v1 correlation",
+  archived_hand_v0: "archived hand v0",
+};
+
 function Panel({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="rounded-lg border border-border bg-surface2/40 p-3.5">
@@ -51,7 +58,9 @@ export default function Diagnostics({ d }: { d: Dx }) {
           <div className="text-[14px] font-semibold text-fg">
             {strat.label}
             {d.strategy?.tier_label && (
-              <span className="ml-2 text-[12px] font-normal text-fg3">· {d.strategy.tier_label}</span>
+              <span className="ml-2 text-[12px] font-normal text-fg3">
+                · {d.strategy.tier_label.replace(/^Tier /, "Mode ")}
+              </span>
             )}
           </div>
           <p className="mt-1 text-[12px] leading-relaxed text-fg2">{strat.blurb}.</p>
@@ -115,13 +124,15 @@ export default function Diagnostics({ d }: { d: Dx }) {
             {sens.map(([k, v]) => (
               <div key={k} className="rounded-md border border-border bg-surface2/40 px-2.5 py-2">
                 <div className="num text-[15px] font-semibold text-fg">{v.toFixed(3)}</div>
-                <div className="mono text-[10px] text-fg3">{k.replace(/_/g, " ")}</div>
+                <div className="mono text-[10px] text-fg3">
+                  {SENSITIVITY_LABEL[k] ?? k.replace(/_/g, " ")}
+                </div>
               </div>
             ))}
           </div>
           <p className="mt-1.5 text-[11px] text-fg3">
-            Spread across schemes: <span className="num">{sensSpread.toFixed(3)}</span> - the tier holds regardless of
-            weighting choice; the score is not an artifact of one recipe.
+            Spread across schemes: <span className="num">{sensSpread.toFixed(3)}</span>. The score band remains stable
+            across these weighting checks.
           </p>
         </div>
       )}

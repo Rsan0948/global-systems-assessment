@@ -31,7 +31,7 @@ export default function GlobalSystems() {
       <h1 className="serif mt-3 text-3xl font-black sm:text-4xl">State of the world</h1>
       <p className="mt-4 text-[15px] leading-relaxed text-fg2">
         Where the country index scores one polity, this reads the whole{" "}
-        <em>world system</em> from the same kind of data. It is a separate, system-level tier - a
+        <em>world system</em> from the same kind of data. It is a separate, system-level view, a
         descriptive gauge, not a forecast, and it changes no country&apos;s score. Built on long-run
         proxies (V-Dem for institutions, Maddison for income), it is deliberately{" "}
         <span className="text-fg">exploratory</span>.

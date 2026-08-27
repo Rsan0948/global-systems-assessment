@@ -9,7 +9,7 @@ export default function Home() {
   const countries = getCountries();
   const meta = getMeta();
   const { features, sphere } = buildWorldPaths();
-  const tier1 = countries.filter((c) => c.tier === 1).length;
+  const band1 = countries.filter((c) => c.tier === 1).length;
 
   return (
     <div className="py-10 sm:py-12">
@@ -25,7 +25,7 @@ export default function Home() {
             <b className="text-fg">{meta.count}</b> countries scored
           </span>
           <span>
-            <b className="text-fg">{tier1}</b> highly modernized
+            <b className="text-fg">{band1}</b> highly modernized
           </span>
           <span>
             engine <b className="text-fg">{meta.engine}</b> · reproducible

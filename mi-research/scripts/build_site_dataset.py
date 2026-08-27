@@ -2,7 +2,7 @@
 """
 Build the published dataset the website consumes - the engine, run in public, over ALL available data.
 
-Coverage tiers (every country gets a page; gaps are shown, never faked):
+Coverage levels (every country gets a page; gaps are shown, never faked):
   A. wb_anchored (full indicators)        -> canonical via datasource.get_indicators
   B. mi-pipeline panel (full indicators)  -> assembled by iso3 (P1/P2/P3) + wgi_full_panel (gdp/PV/rents)
   C. wgi_full_panel only (WGI institutions + gdp) -> partial pillars, gaps shown
@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from mi.scoring import (score_country, get_tier, get_configuration_profile,
+from mi.scoring import (score_country, get_score_band, get_configuration_profile,
                         calculate_pillar_spread)
 from mi.diagnostics import (below_floor_diagnostic, ascent_potential,
                             classify_strategy, assess_vulnerability,
@@ -34,7 +34,7 @@ YEAR = 2024
 
 PILLAR_NAMES = {"P1": "Institutions", "P2": "Economic Complexity", "P3": "Human Capital",
                 "P4": "Economic Structure", "P5": "Stability & Resilience"}
-TIER_LABEL = {1: "Highly Modernized", 2: "Durable", 3: "Mixed", 4: "Fragile", 5: "Floor"}
+SCORE_BAND_LABEL = {1: "Highly Modernized", 2: "Durable", 3: "Mixed", 4: "Fragile", 5: "Floor"}
 INDICATOR_SOURCES = {
     "gov_effectiveness": "World Bank WGI", "rule_of_law": "World Bank WGI",
     "regulatory_quality": "World Bank WGI", "control_of_corruption": "World Bank WGI",
@@ -137,10 +137,11 @@ def build_context(iso, name, ind):
     return ctx, in_table, prior_pillars
 
 
-def chips_for(ind, tier, residual, spread, weakest, present):
-    chips = [{"key": "tier", "label": f"Tier {tier}: {TIER_LABEL.get(tier,'')}",
-              "valence": "good" if tier <= 2 else "warn" if tier == 3 else "bad",
-              "why": "Modernization Index band (equal-weighted pillars).", "rule": "MI score binned into 5 tiers."}]
+def chips_for(ind, band, residual, spread, weakest, present):
+    chips = [{"key": "score_band", "label": f"Band {band}: {SCORE_BAND_LABEL.get(band,'')}",
+              "valence": "good" if band <= 2 else "warn" if band == 3 else "bad",
+              "why": "MI v3.3 score band based on five equally weighted pillars.",
+              "rule": "The MI score is grouped into five public score bands."}]
     if present < 5:
         chips.append({"key": "partial", "label": f"Partial data · {present}/5 pillars", "valence": "neutral",
                       "why": ("Scored on the pillars we have data for. Its score is not directly comparable "
@@ -241,9 +242,9 @@ def build_checks(pillars, mi, ind, weakest, residual):
     return checks
 
 
-def verdict(tier, residual, spread, weakest):
+def verdict(band, residual, spread, weakest):
     parts = [{1: "Highly modernized", 2: "Structurally durable", 3: "Mixed structural profile",
-              4: "Structurally fragile", 5: "At the structural floor"}.get(tier, "")]
+              4: "Structurally fragile", 5: "At the structural floor"}.get(band, "")]
     if residual is not None:
         parts.append("prosperity outrunning institutions" if residual < -0.03
                      else "prosperity matched by institutions" if residual > 0.03
@@ -276,7 +277,7 @@ def build():
     (OUT / "country").mkdir(exist_ok=True)
     for stale in (OUT / "country").glob("*.json"):  # avoid orphaned files from renamed slugs
         stale.unlink()
-    scored = []  # (iso, name, ind, pillars, mi, tier, source)
+    scored = []  # (iso, name, ind, pillars, mi, score band, source)
     points = []
     for iso, name, _display, ind, source in iter_universe(YEAR):  # canonical panel (sorted, deterministic)
         if not ind:
@@ -286,7 +287,7 @@ def build():
         if mi is None:
             continue
         pillars = s["pillar_scores"]
-        scored.append((iso, name, ind, pillars, mi, get_tier(mi)["tier"], source, s))
+        scored.append((iso, name, ind, pillars, mi, get_score_band(mi)["band"], source, s))
         points.append((iso, mi, ind.get("gdp_per_capita_ppp")))
 
     residuals = fit_durability(points)
@@ -294,18 +295,19 @@ def build():
     summaries = []
     records = []                                   # (slug, full) — written after the firing tally
     firing_tally = {k: 0 for k in SAFEGUARD_ORDER}  # how many countries each safeguard fires on
-    for iso, name, ind, pillars, mi, tier, source, s in scored:
+    for iso, name, ind, pillars, mi, band, source, s in scored:
         spread = calculate_pillar_spread(pillars)
         config = get_configuration_profile(pillars)
         weakest = config[-1][0] if config else None
         residual = residuals.get(iso)
         present = [p for p in PILLARS_L if pillars.get(p) is not None]
         missing = [p for p in PILLARS_L if pillars.get(p) is None]
-        chips = chips_for(ind, tier, residual, spread, weakest, len(present))
+        chips = chips_for(ind, band, residual, spread, weakest, len(present))
         display = DISPLAY_FIX.get(name, name)  # readable name for the site; `name` stays the data key
         slug = slugify(display)
         summary = {
-            "slug": slug, "name": display, "iso3": iso, "mi": round(mi, 3), "tier": tier,
+            "slug": slug, "name": display, "iso3": iso, "mi": round(mi, 3),
+            "band": band, "tier": band,
             "pillars": {p: (round(pillars[p], 3) if pillars.get(p) is not None else None)
                         for p in PILLARS_L},
             "chips": chips, "coverage": {"present": len(present), "total": 5, "missing": missing},
@@ -334,7 +336,7 @@ def build():
 
         full = dict(summary)
         full.update({
-            "verdict": verdict(tier, residual, spread, weakest),
+            "verdict": verdict(band, residual, spread, weakest),
             "spread": round(spread, 3) if spread is not None else None,
             "residual": round(residual, 3) if residual is not None else None,
             "config": [[p, round(v, 3)] for p, v in config],
@@ -357,13 +359,14 @@ def build():
     summaries.sort(key=lambda r: (r["coverage"]["present"] == 5, r["mi"]), reverse=True)
     json.dump(strip_dashes(summaries), open(OUT / "countries.json", "w"), indent=1)
     json.dump({"built": date.today().isoformat(), "count": len(summaries), "engine": "MI v3.3",
+               "weighting": "equal", "score_classification": "five score bands",
                "data_vintage": "WGI 2025-anchored", "world_states": 195,
                "context_countries": len(COUNTRY_CONTEXT),
-               "note": "Generated by the validated mi-research engine over all available public data. "
-                       "Each country carries the full safeguard board + diagnostics (strategy, "
-                       "vulnerability, movement, sensitivity). Countries with partial data show fewer "
-                       "pillars, and safeguards needing curated context read 'not assessed' - gaps are "
-                       "shown, never faked."},
+               "note": "Generated by the deterministic mi-research engine over all available public data. "
+                       "Each country carries the full safeguard board plus diagnostics for strategy, "
+                       "vulnerability, movement, and sensitivity. Countries with partial data show fewer "
+                       "pillars, and safeguards needing curated context read 'not assessed'. Gaps are "
+                       "shown, never filled with invented values."},
               open(OUT / "meta.json", "w"), indent=1)
     full5 = sum(1 for s in summaries if s["coverage"]["present"] == 5)
     print(f"Wrote {len(summaries)} countries ({full5} with all 5 pillars) -> {OUT}")

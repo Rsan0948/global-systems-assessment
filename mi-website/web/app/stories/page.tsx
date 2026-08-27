@@ -29,7 +29,7 @@ export default function Stories() {
               <span className="mono text-[10px] uppercase tracking-wider text-fg3">{kind}</span>
               {firewalled && (
                 <span className="mono rounded bg-warn/10 px-1.5 py-0.5 text-[9px] text-warn">
-                  lowest-confidence tier
+                  lowest-confidence evidence level
                 </span>
               )}
             </div>

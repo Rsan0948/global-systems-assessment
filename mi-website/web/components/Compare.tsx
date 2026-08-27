@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import type { Summary } from "@/lib/types";
-import { tierColor, tier as tierOf, PILLAR_ORDER, PILLARS, clamp01 } from "@/lib/config";
+import { scoreBandColor, scoreBand, PILLAR_ORDER, PILLARS, clamp01 } from "@/lib/config";
 import Radar from "@/components/Radar";
 import Define from "@/components/Define";
-import { TierDot } from "@/components/ui";
+import { ScoreBandDot } from "@/components/ui";
 
 const CA = "#60a5fa";
 const CB = "#f472b6";
@@ -58,9 +58,9 @@ function Picker({
                 }}
                 className="flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-[13px] hover:bg-surface2"
               >
-                <TierDot tier={c.tier} size={7} />
+                <ScoreBandDot band={c.tier} size={7} />
                 <span className="flex-1">{c.name}</span>
-                <span className="num text-[12px]" style={{ color: tierColor(c.tier) }}>
+                <span className="num text-[12px]" style={{ color: scoreBandColor(c.tier) }}>
                   {c.mi.toFixed(2)}
                 </span>
               </button>
@@ -80,7 +80,7 @@ function Head({ c, color }: { c: Summary; color: string }) {
       </div>
       <div className="serif mt-0.5 text-[15px]">{c.name}</div>
       <div className="mono text-[11px]" style={{ color }}>
-        Tier {c.tier} · {tierOf(c.tier).name}
+        Band {c.tier} · {scoreBand(c.tier).name}
       </div>
     </div>
   );
