@@ -2,7 +2,7 @@ import { getCountries } from "@/lib/data";
 import Compare from "@/components/Compare";
 import { PageHeader } from "@/components/ui";
 
-export const metadata = { title: "Compare - Modernization Index" };
+export const metadata = { title: "Compare | Modernization Index" };
 
 export default async function ComparePage({
   searchParams,

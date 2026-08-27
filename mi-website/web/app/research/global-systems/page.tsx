@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "State of the world - Modernization Index",
+  title: "State of the world | Modernization Index",
   description:
-    "A system-level reading of the whole world from the same data: three improvement engines, an institutional container, texture, and the movement distribution.",
+    "A global comparison of three improvement measures, institutional change, and the distribution of country-level movement.",
 };
 
 function BackLink() {
@@ -33,7 +33,7 @@ export default function GlobalSystems() {
         Where the country index scores one polity, this reads the whole{" "}
         <em>world system</em> from the same kind of data. It is a separate, system-level view, a
         descriptive gauge, not a forecast, and it changes no country&apos;s score. Built on long-run
-        proxies (V-Dem for institutions, Maddison for income), it is deliberately{" "}
+        proxies (V-Dem for institutions, Maddison for income), it is{" "}
         <span className="text-fg">exploratory</span>.
       </p>
 
@@ -42,59 +42,60 @@ export default function GlobalSystems() {
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
           Golden ages are dimension-specific and out of phase, so the engines are read separately,
           never collapsed into one number. Each is a global 10-year climb rate, compared against its
-          own 1850-2012 historical-median &quot;firing&quot; bar.
+          own historical median for 1850 to 2012.
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          <Stat value="8% / 7%" label="Institutions - climb vs decline (median 5%): firing, but churning" tone="warn" />
+          <Stat value="8% / 7%" label="Institutional climbs versus declines (median 5%): active, with high turnover" tone="warn" />
           <Stat value="2%" label="Income climb (median 5%): quiet" />
           <Stat value="2%" label="Human capital climb (median 7%): quiet" />
         </div>
         <p className="mt-3 text-[13px] leading-relaxed text-fg3">
-          As of 2024, only <span className="mono text-fg2">1 of 3</span> engines is firing - and the
-          one that is (institutions) is running high climb <em>and</em> high decline at once, which
-          nets to almost nothing. That is the churn case: activity without direction.
+          As of 2024, only <span className="mono text-fg2">1 of 3</span> measures is above its historical
+          median. Institutional gains and declines are both high, so the net change is small. We call
+          this pattern churn.
         </p>
       </section>
 
       <section className="mt-10">
-        <h2 className="serif text-xl">The container - does a boom get absorbed, or rupture?</h2>
+        <h2 className="serif text-xl">Can institutions absorb a boom?</h2>
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
-          The institutional <span className="text-fg">container</span> is net institutional change -
-          climb minus decline. It is read two ways, and they can point opposite directions:
+          The institutional <span className="text-fg">container</span> is net institutional change,
+          calculated as climbs minus declines. It is read over two periods, which can point in
+          different directions:
         </p>
         <ul className="mt-3 space-y-2 text-[14px] leading-relaxed text-fg2">
           <li>
-            <span className="font-medium text-fg">Trailing</span> - the decade behind.
+            <span className="font-medium text-fg">Trailing:</span> the previous decade.
           </li>
           <li>
-            <span className="font-medium text-fg">Forward</span> - the decade ahead. This is the actual
-            discriminator between rupture and absorption.
+            <span className="font-medium text-fg">Forward:</span> the following decade. In the historical
+            cases, this measure distinguishes between rupture and absorption.
           </li>
         </ul>
         <p className="mt-3 text-[14px] leading-relaxed text-fg2">
-          The two really do diverge. In <span className="mono">1973</span> the trailing container read{" "}
+          The two measures can diverge. In <span className="mono">1973</span> the trailing container read{" "}
           <span className="text-danger">collapse</span> (it was catching the 1960s decolonization
-          reversals), yet forward it was <span className="text-good">strengthening +8pp</span> - the
+          reversals), yet forward it was <span className="text-good">strengthening +8pp</span>. The
           Third Wave of democratization was about to absorb the shock. In{" "}
           <span className="mono">1913</span> the reverse: trailing calm, forward brittle.
         </p>
         <div className="mt-4 rounded-lg border border-border bg-surface2/40 p-4">
           <p className="text-[13.5px] leading-relaxed text-fg2">
-            <span className="font-medium text-fg">Why the present is genuinely unknowable. </span>
-            The container that decides rupture-vs-absorption is the <em>forward</em> one - and for now
+            <span className="font-medium text-fg">Why the current reading is incomplete. </span>
+            The historical comparison depends on the <em>forward</em> measure, and for now
             it is right-censored: the decade ahead isn&apos;t observable yet. The current net reads{" "}
-            <span className="mono text-warn">+1pp - flat</span>: neither clearly repairing nor clearly
-            collapsing. That ambiguity is honest, not reassuring.
+            <span className="mono text-warn">+1pp, roughly flat</span>. That is not a clear signal of
+            either institutional repair or decline.
           </p>
         </div>
       </section>
 
       <section className="mt-10">
-        <h2 className="serif text-xl">The supercycle shape - and what decides the sequel</h2>
+        <h2 className="serif text-xl">What followed three global slowdowns</h2>
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
           Three times, a sustained global growth boom has been followed by a rapid fall of nearly the
-          same magnitude - roughly <span className="mono">1.5pp per decade</span>. The shape is real
-          and it recurs.
+          same magnitude, roughly <span className="mono">1.5pp per decade</span>. The sample contains
+          only three episodes, so the comparison is descriptive.
         </p>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full min-w-[26rem] text-[13px]">
@@ -123,7 +124,7 @@ export default function GlobalSystems() {
                 <td className="py-2">Second globalization</td>
                 <td className="mono py-2">3.4% → 2.0%</td>
                 <td className="mono py-2 text-warn">−1.4pp</td>
-                <td className="py-2">GFC, stagnation, populism - ongoing</td>
+                <td className="py-2">GFC, stagnation, and populism; still ongoing</td>
               </tr>
             </tbody>
           </table>
@@ -136,14 +137,13 @@ export default function GlobalSystems() {
           <span className="mono text-danger">net −1pp → −6pp by the 1930s</span>) and it ruptured;
           1973&apos;s were surging (<span className="mono text-good">net +8pp</span>) and it was
           absorbed. Today reads <span className="mono text-warn">+2pp on V-Dem but eroding
-          underneath</span> - flat-to-eroding, leaning brittle.
+          underneath</span>. This is a flat or slightly weakening reading.
         </p>
         <p className="mt-3 text-[13px] leading-relaxed text-fg3">
-          Honest limit: this is <span className="mono">n=3</span> supercycles and{" "}
-          <span className="mono">n=2</span> clean outcomes - a mechanism-consistent reading, not a
-          statistically powered law. It is not a prediction of catastrophe. It is a precise statement
-          of why the present is concerning: we are decelerating <em>without</em> the institutional
-          strengthening that absorbed the last comparable deceleration.
+          This comparison covers <span className="mono">n=3</span> supercycles and{" "}
+          <span className="mono">n=2</span> completed outcomes. That is too small for a statistical law
+          or a prediction of catastrophe. It does show that the current slowdown lacks the clear
+          institutional strengthening seen during the comparable 1973 episode.
         </p>
       </section>
 
@@ -152,7 +152,7 @@ export default function GlobalSystems() {
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
           <span className="font-medium text-fg">Texture</span> classifies the climb-vs-decline mix as
           surge, churn, stasis, or collapse. The current reading is{" "}
-          <span className="mono text-warn">churn</span> - gains and losses both elevated, netting to
+          <span className="mono text-warn">churn</span>. Gains and losses are both elevated and net to
           flat. And the <span className="font-medium text-fg">movement distribution</span> splits the
           5-pillar panel by the quality of each country&apos;s trajectory:
         </p>
@@ -162,12 +162,12 @@ export default function GlobalSystems() {
           <Stat value="13%" label="decline" tone="bad" />
           <Stat value="13%" label="hollow stability" tone="warn" />
           <Stat value="12%" label="windfall" tone="warn" />
-          <Stat value="2%" label="real ascent" tone="good" />
+          <Stat value="2%" label="institution-led ascent" tone="good" />
         </div>
         <p className="mt-3 text-[13px] leading-relaxed text-fg3">
-          Only <span className="mono text-good">2%</span> of countries are in a genuine
-          institution-led ascent, while roughly a quarter are in <em>fake</em> improvement - income
-          windfall or hollow stability masked by the human-capital ratchet. Read together: a
+          Only <span className="mono text-good">2%</span> of countries show an
+          institution-led ascent, while roughly a quarter show income gains without similar
+          institutional gains. Read together, the measures suggest a
           multi-engine lull on a flat-to-eroding container. Over a long window the human-capital
           ratchet inflates the &quot;ratchet rise&quot; share, so read the container and texture for
           the net.
@@ -176,9 +176,8 @@ export default function GlobalSystems() {
 
       <section className="mt-10 rounded-lg border border-border bg-surface2/40 p-4">
         <p className="text-[13px] leading-relaxed text-fg2">
-          This gauge shares the country index&apos;s epistemic -{" "}
-          <em>trust the level, distrust the slope</em> - but answers a different question. Pair every
-          reading with its printed caveats.
+          This gauge is more useful for describing the current level than for projecting the next
+          movement. Its uncertainty notes should be read alongside every result.
         </p>
         <div className="mono mt-2 flex flex-wrap gap-x-5 gap-y-1 text-[13px]">
           <Link href="/research/golden-ages" className="link">

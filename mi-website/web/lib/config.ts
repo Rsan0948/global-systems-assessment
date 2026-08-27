@@ -12,10 +12,10 @@ export const SITE = {
   name: "Modernization Index",
   version: "v3.3",
   weighting: "equal",
-  tagline: "How nations weather stress",
+  tagline: "How countries hold up under stress",
   url: "https://modernization-index.vercel.app",
   description:
-    "A structural diagnostic of how governed systems withstand stress. Deterministic, from citable public data. Look up any country - see how it's built, and what we can't yet see.",
+    "Compare how countries are equipped to handle political and economic stress. Every score comes from public data and a fixed formula.",
   nav: [
     ["Atlas", "/atlas"],
     ["Compare", "/compare"],
@@ -48,7 +48,7 @@ export const PILLAR_ORDER = ["P1", "P2", "P3", "P4", "P5"] as const;
 export const PILLARS: Record<string, { short: string; full: string; desc: string }> = {
   P1: { short: "Institutions", full: "Institutions", desc: "Government effectiveness, rule of law, corruption control, accountability." },
   P2: { short: "Complexity", full: "Economic Complexity", desc: "How sophisticated and diversified the productive economy is." },
-  P3: { short: "Human cap.", full: "Human Capital", desc: "Education and health - the population's capacity." },
+  P3: { short: "Human cap.", full: "Human Capital", desc: "Education and health, which shape what a population can do." },
   P4: { short: "Economy", full: "Economic Structure", desc: "Income and the material base." },
   P5: { short: "Stability", full: "Stability & Resilience", desc: "Political stability and the absence of structural fragility." },
 };
@@ -82,7 +82,7 @@ export const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
 
 // safeguard-board status → color + label (single source of truth for the board + drill-downs)
 export const SG_STATUS: Record<string, { color: string; label: string; dot: string }> = {
-  firing: { color: "#f87171", label: "firing", dot: "#f87171" },
+  firing: { color: "#f87171", label: "flagged", dot: "#f87171" },
   borderline: { color: "#fbbf24", label: "watch", dot: "#fbbf24" },
   clear: { color: "#4ade80", label: "clear", dot: "#4ade80" },
   not_assessed: { color: "#8a8aa4", label: "not assessed", dot: "#3a3a52" },

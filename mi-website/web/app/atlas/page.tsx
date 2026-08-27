@@ -2,7 +2,7 @@ import { getCountries } from "@/lib/data";
 import AtlasTable from "@/components/AtlasTable";
 import { PageHeader, ScoreBandLegend } from "@/components/ui";
 
-export const metadata = { title: "Atlas - Modernization Index" };
+export const metadata = { title: "Atlas | Modernization Index" };
 
 export default function Atlas() {
   const countries = getCountries();
