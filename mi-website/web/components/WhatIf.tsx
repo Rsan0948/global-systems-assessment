@@ -48,10 +48,10 @@ export default function WhatIf({
     <section className="card mt-6 p-5">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h2 className="serif text-base">Run the engine yourself</h2>
+          <h2 className="serif text-base">Try a different profile</h2>
           <p className="mt-1 max-w-md text-[12px] leading-relaxed text-fg3">
-            Drag the pillars or adjust their weights and watch the score and band change. The published MI v3.3
-            score is the equal-weighted mean. Custom weights here are a private what-if exercise.
+            Move a pillar to see how the overall score would change. You can also test different
+            pillar weights. The published score uses equal weights of 20 percent each.
           </p>
         </div>
         <div className="text-right">
@@ -65,10 +65,10 @@ export default function WhatIf({
             {dirty ? (
               <span style={{ color: delta >= 0 ? "#4ade80" : "#f87171" }}>
                 {delta >= 0 ? "+" : ""}
-                {delta.toFixed(3)} vs actual
+                {delta.toFixed(3)} from the published score
               </span>
             ) : (
-              "= the published score"
+              "published score"
             )}
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function WhatIf({
             className="mono mt-4 text-[11px] text-fg3 hover:text-fg2"
             aria-expanded={showWeights}
           >
-            {showWeights ? "− hide weights" : "+ adjust pillar weights"} (what if institutions mattered more?)
+            {showWeights ? "− hide weights" : "+ change pillar weights"}
           </button>
 
           {showWeights && (
@@ -150,9 +150,8 @@ export default function WhatIf({
       </div>
 
       <p className="mt-4 text-[11px] leading-relaxed text-fg3">
-        Honest scope: you&apos;re re-weighting and nudging the <em>published pillars</em>, not re-deriving them from
-        raw indicators (the normalization lives in the engine). The durability gate, safeguards, and diagnostics
-        above are computed by the Python engine and don&apos;t move here.
+        This tool changes the five published pillar values or their weights. It does not recalculate
+        the pillars from the raw indicators, and it does not update the additional checks shown above.
       </p>
     </section>
   );

@@ -25,7 +25,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <span className="serif text-base font-semibold tracking-tight sm:text-lg">{SITE.name}</span>
               <span className="mono hidden text-[10px] text-fg3 sm:inline">{SITE.version}</span>
             </Link>
-            <nav className="-mr-2 flex items-center gap-0.5 overflow-x-auto text-[13px] text-fg2 sm:gap-1">
+            <nav aria-label="Primary" className="-mr-2 flex items-center gap-0.5 overflow-x-auto text-[13px] text-fg2 sm:gap-1">
               {SITE.nav.map(([label, href]) => (
                 <Link
                   key={href}
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </Link>
             </p>
             <p className="mono mt-3 text-[11px]">
-              Engine: {SITE.name} {SITE.version} · open source · reproducible. Same data in → same answer out.
+              Scoring version {SITE.version} · open source · reproducible. Identical inputs produce identical results.
             </p>
           </div>
         </footer>

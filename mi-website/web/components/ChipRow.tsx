@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import type { Chip } from "@/lib/data";
-import { valenceColor } from "@/lib/config";
+import { scoreBand, valenceColor } from "@/lib/config";
 
 const CHIP_ANCHOR: Record<string, string> = {
   tier: "score-bands",
@@ -11,6 +11,22 @@ const CHIP_ANCHOR: Record<string, string> = {
   shape: "shape",
   partial: "the-score",
 };
+
+function publicLabel(chip: Chip): string {
+  if (chip.key === "tier" || chip.key === "score_band") {
+    const match = chip.label.match(/(?:Tier|Band)\s+(\d)/i);
+    if (match) {
+      const bandNumber = Number(match[1]);
+      return `Band ${bandNumber}: ${scoreBand(bandNumber).name}`;
+    }
+  }
+  if (chip.key === "durability") {
+    return chip.label.toLowerCase().includes("granted")
+      ? "Institutions lag income"
+      : "Institutions keep pace with income";
+  }
+  return chip.label;
+}
 
 export default function ChipRow({ chips }: { chips: Chip[] }) {
   const [open, setOpen] = useState<string | null>(null);
@@ -21,7 +37,7 @@ export default function ChipRow({ chips }: { chips: Chip[] }) {
         {chips.map((c) => {
           const cl = valenceColor(c.valence);
           const on = open === c.key;
-          const label = c.key === "tier" ? c.label.replace(/^Tier /, "Band ") : c.label;
+          const label = publicLabel(c);
           return (
             <button
               key={c.key}
@@ -39,10 +55,10 @@ export default function ChipRow({ chips }: { chips: Chip[] }) {
       {active && (
         <div id="chip-detail" role="region" className="card mt-3 p-4 text-[13px]">
           <div className="font-medium" style={{ color: valenceColor(active.valence) }}>
-            {active.key === "tier" ? active.label.replace(/^Tier /, "Band ") : active.label}
+            {publicLabel(active)}
           </div>
           <p className="mt-1 text-fg2">{active.why}</p>
-          <p className="mono mt-2 text-[11px] text-fg3">Rule: {active.rule}</p>
+          <p className="mono mt-2 text-[11px] text-fg3">How it is calculated: {active.rule}</p>
           {CHIP_ANCHOR[active.key] && (
             <Link href={`/how-it-works#${CHIP_ANCHOR[active.key]}`} className="link mt-2 inline-block text-[11px]">
               Learn more →

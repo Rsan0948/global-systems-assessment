@@ -20,7 +20,7 @@ export const SITE = {
     ["Atlas", "/atlas"],
     ["Compare", "/compare"],
     ["Research", "/research"],
-    ["Validation", "/validation"],
+    ["Evidence", "/validation"],
     ["How it works", "/how-it-works"],
     ["Data", "/data"],
   ] as const,
@@ -28,11 +28,11 @@ export const SITE = {
 
 export type ScoreBand = { n: number; name: string; short: string; color: string; min: number };
 export const SCORE_BANDS: ScoreBand[] = [
-  { n: 1, name: "Highly Modernized", short: "Highly modernized", color: "#10b981", min: 0.8 },
-  { n: 2, name: "Durable", short: "Durable", color: "#38bdf8", min: 0.6 },
-  { n: 3, name: "Mixed", short: "Mixed", color: "#eab308", min: 0.4 },
-  { n: 4, name: "Fragile", short: "Fragile", color: "#f97316", min: 0.2 },
-  { n: 5, name: "Floor", short: "Floor", color: "#dc2626", min: 0.0 },
+  { n: 1, name: "Very high capacity", short: "Very high capacity", color: "#10b981", min: 0.8 },
+  { n: 2, name: "High capacity", short: "High capacity", color: "#38bdf8", min: 0.6 },
+  { n: 3, name: "Mixed capacity", short: "Mixed capacity", color: "#eab308", min: 0.4 },
+  { n: 4, name: "Low capacity", short: "Low capacity", color: "#f97316", min: 0.2 },
+  { n: 5, name: "Very low capacity", short: "Very low capacity", color: "#dc2626", min: 0.0 },
 ];
 export const scoreBand = (n: number): ScoreBand => SCORE_BANDS[n - 1] ?? SCORE_BANDS[SCORE_BANDS.length - 1];
 export const scoreBandColor = (n: number): string => scoreBand(n).color;

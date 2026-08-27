@@ -43,7 +43,7 @@ function RelStat({
       </div>
       <div className="mt-1 flex items-baseline gap-2">
         <span className="num text-[15px] font-semibold" style={{ color: col }}>
-          {value == null ? "-" : value.toFixed(2)}
+          {value == null ? "n/a" : value.toFixed(2)}
         </span>
         <span className="text-[12px] capitalize" style={{ color: col }}>
           {band}
@@ -74,7 +74,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   return (
     <div className="py-10">
       <Link href="/atlas" className="mono text-[11px] text-fg3 hover:text-fg2">
-        ← atlas
+        ← Country atlas
       </Link>
 
       {/* Verdict */}
@@ -100,7 +100,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       <section className="mt-7">
         <h2 className="mono mb-2 text-[11px] uppercase tracking-wider text-fg3">What stands out</h2>
         <ChipRow chips={c.chips} />
-        <p className="mt-2 text-[11px] text-fg3">Tap any flag to see what it means and why it matters.</p>
+        <p className="mt-2 text-[11px] text-fg3">Select any label for its definition and scoring rule.</p>
       </section>
 
       {/* Structural shape */}
@@ -112,9 +112,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <div className="text-[13px] leading-relaxed text-fg2">
             <h2 className="serif text-base text-fg">Structural shape</h2>
             <p className="mt-1.5">
-              Each spoke is one of the five pillars, 0 at the center and 1 at the edge. A balanced
-              pentagon is sturdier than a lopsided one with the same score, because a country tends to
-              break at its <Define id="shape">weakest pillar</Define>.
+              Each spoke shows one pillar, with 0 at the center and 1 at the edge. The shape reveals
+              whether the pillars are similar or whether one is much lower than the others. That
+              difference is called the <Define id="shape">pillar spread</Define>.
             </p>
             {spreadLabel && (
               <p className="mono mt-2 text-[11px] text-fg3">
@@ -139,8 +139,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       {c.relational && (
         <section className="card mt-6 p-5">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h2 className="serif text-base">The neighborhood</h2>
-            <span className="mono text-[11px] text-fg3">how exposure shaped its fate · {c.relational.year}</span>
+            <h2 className="serif text-base">External security context</h2>
+            <span className="mono text-[11px] text-fg3">reviewed for {c.relational.year}</span>
           </div>
           <div className="mt-3 grid gap-3 sm:grid-cols-3">
             <RelStat
@@ -149,7 +149,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               value={c.relational.exposure_structural}
               band={c.relational.exposure_structural_band}
               invert
-              hint="how much external danger it faced"
+              hint="threats from outside the country"
             />
             <div className="rounded-lg border border-border bg-surface2/40 p-3">
               <div className="mono text-[10px] uppercase tracking-wider text-fg3">
@@ -159,16 +159,16 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 className="mt-1 text-[15px] font-semibold"
                 style={{ color: c.relational.patron_present ? "#60a5fa" : "#f87171" }}
               >
-                {c.relational.patron_present ? "Shielded" : "Standing alone"}
+                {c.relational.patron_present ? "Protected by an ally" : "No major ally identified"}
               </div>
-              <div className="mt-0.5 text-[11px] text-fg3">did a powerful ally have its back?</div>
+              <div className="mt-0.5 text-[11px] text-fg3">whether a credible ally was expected to defend it</div>
             </div>
             <RelStat
               label="Response"
               defId="response"
               value={c.relational.response}
               band={c.relational.response_band}
-              hint="how well it could absorb a hit"
+              hint="capacity to respond after an external shock"
             />
           </div>
           <p className="mt-4 rounded-lg border border-border bg-surface2/40 p-3 text-[13px] leading-relaxed text-fg">
@@ -198,15 +198,16 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             <IndicatorRow key={ind.key} ind={ind} />
           ))}
         </div>
-        <p className="mt-3 text-[11px] text-fg3">Tap any indicator to see what it measures and where it comes from.</p>
+        <p className="mt-3 text-[11px] text-fg3">Select an indicator to see what it measures and where it comes from.</p>
       </section>
 
       {/* Structurally similar countries */}
       {c.similar && c.similar.length > 0 && (
         <section className="card mt-6 p-5">
-          <h2 className="serif text-base">Built like {c.name}</h2>
+          <h2 className="serif text-base">Countries with similar pillar profiles</h2>
           <p className="mt-1 text-[12px] text-fg3">
-            The countries whose five-pillar shape is closest. Good places to explore next.
+            These countries have the closest five-pillar pattern to {c.name}. Similarity does not mean
+            that their politics or histories are the same.
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             {c.similar.map((s) => (

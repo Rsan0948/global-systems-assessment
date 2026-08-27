@@ -41,7 +41,7 @@ export default function IndicatorRow({
           <p className="mt-1 leading-relaxed text-fg2">{meta.what}</p>
           <div className="mono mt-2 flex flex-wrap gap-x-3 gap-y-0.5 text-[10.5px] text-fg3">
             <span>Source: {ind.source}</span>
-            {pillar && <span>Feeds: {pillar.full}</span>}
+            {pillar && <span>Used in: {pillar.full}</span>}
           </div>
         </div>
       )}

@@ -83,7 +83,7 @@ export default function HowItWorks() {
         </section>
 
         <section id="relational" className="scroll-mt-20">
-          <h2 className="serif text-xl">The neighborhood</h2>
+          <h2 className="serif text-xl">External security context</h2>
           <p className="mt-2 text-[14px] leading-relaxed text-fg2">
             The five pillars describe conditions inside a country. They do not capture external threats
             or the protection offered by allies. A separate layer records that context as it is reviewed
@@ -100,11 +100,11 @@ export default function HowItWorks() {
           <h2 className="serif text-xl">The score is a formula</h2>
           <p className="mt-2 text-[14px] leading-relaxed text-fg2">
             The core score is a fixed calculation over published inputs. The same inputs, version, and
-            settings give the same answer. Some safeguards and historical context are curated by people.
+            settings give the same answer. Some additional checks and historical context are reviewed by people.
             Those parts are labeled separately and never silently folded into the score.
           </p>
           <Link href="/data" className="link mt-3 inline-block text-[13px]">
-            Get the data and the engine →
+            Get the data and scoring code →
           </Link>
         </section>
       </div>
@@ -116,7 +116,7 @@ export default function HowItWorks() {
             The world map →
           </Link>
           <Link href="/atlas" className="link">
-            Rank every country →
+            Browse every country →
           </Link>
           <Link href="/stories" className="link">
             Read the stories →

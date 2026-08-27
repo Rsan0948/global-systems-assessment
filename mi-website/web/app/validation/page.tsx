@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "What the evidence shows | Modernization Index",
   description:
-    "A clear account of the historical corpus, blind tests, failed forward test, and pending forecasts.",
+    "A clear account of the historical cases, blind tests, failed forward test, and pending forecasts.",
 };
 
 function Stat({ value, label, tone = "fg" }: { value: string; label: string; tone?: string }) {
@@ -28,27 +28,27 @@ export default function Validation() {
       </p>
 
       <section className="mt-10">
-        <h2 className="serif text-xl">Four collections, four jobs</h2>
+        <h2 className="serif text-xl">Four evidence collections</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
-          <Stat value="84" label="modern hindsight-retrodictive cases" />
-          <Stat value="25" label="ancient interpreter-scored cases" tone="warn" />
-          <Stat value="67" label="blind out-of-sample observations" />
-          <Stat value="12" label="firewalled relational records" tone="warn" />
+          <Stat value="84" label="modern cases scored with outcomes known" />
+          <Stat value="25" label="ancient cases interpreted by a human coder" tone="warn" />
+          <Stat value="67" label="observations tested without using their outcomes" />
+          <Stat value="12" label="external-security records kept separate from scoring" tone="warn" />
         </div>
         <p className="mt-4 text-[14px] leading-relaxed text-fg2">
-          The number <span className="mono">109</span> refers only to the historical case corpus:
+          The number <span className="mono">109</span> refers only to the historical case collection:
           84 modern cases plus 25 ancient cases. It is not a record of 109 blind predictions. The
           separate collectivization study also contains 109 formation cycles, but those cycles are
-          not part of the Modernization Index corpus.
+          not part of the Modernization Index evidence collection.
         </p>
       </section>
 
       <section className="mt-10">
-        <h2 className="serif text-xl">The historical corpus</h2>
+        <h2 className="serif text-xl">The historical cases</h2>
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
           The 84 modern cases show that the framework can reproduce many expected relationships across
           different eras and types of stress. The outcomes were known during selection, scoring, or
-          calibration. That makes the result hindsight retrodiction, not forecast validation.
+          calibration. These results show historical consistency, not successful forecasting.
         </p>
         <div className="mt-4 rounded-lg border border-warn/25 bg-warn/[0.05] p-4">
           <h3 className="serif text-base text-fg">The ancient extension</h3>
@@ -62,49 +62,49 @@ export default function Validation() {
       <section className="mt-10">
         <h2 className="serif text-xl">The blind tests</h2>
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
-          The 67 out-of-sample observations come from several designs. They should not be compressed
-          into one accuracy percentage.
+          The 67 observations tested without using their outcomes come from several designs. They
+          should not be compressed into one accuracy percentage.
         </p>
         <div className="mt-4 space-y-3">
           <div className="rounded-lg border border-border bg-surface2/40 p-4">
-            <h3 className="serif text-base text-fg">Random modern cohort</h3>
+            <h3 className="serif text-base text-fg">Random sample of modern cases</h3>
             <p className="mt-1 text-[13px] leading-relaxed text-fg2">
               The main signal pointed in the expected direction, but it was weak, at about{" "}
-              <span className="mono">Cohen d = 0.37</span>. This was not a clear validation or a clear
-              refutation.
+              <span className="mono">a standardized difference of 0.37</span>. This was not a clear validation or a clear
+              rejection of the idea.
             </p>
           </div>
           <div className="rounded-lg border border-border bg-surface2/40 p-4">
-            <h3 className="serif text-base text-fg">Ancient blind cohort</h3>
+            <h3 className="serif text-base text-fg">Ancient cases tested blind</h3>
             <p className="mt-1 text-[13px] leading-relaxed text-fg2">
               Nine of ten sampled cases ended in collapse. With almost no outcome variation, the
-              cohort could not test discrimination.
+              group could not show whether the method separates collapse from survival.
             </p>
           </div>
           <div className="rounded-lg border border-border bg-surface2/40 p-4">
-            <h3 className="serif text-base text-fg">Shock cohorts</h3>
+            <h3 className="serif text-base text-fg">Groups exposed to major shocks</h3>
             <p className="mt-1 text-[13px] leading-relaxed text-fg2">
-              Later tests were stronger within some cohorts but null when pooled. That is useful
-              evidence about scope, not a single winning score.
+              Later tests showed stronger results within some groups, but no overall effect when all
+              groups were combined. This suggests that any useful relationship may depend on context.
             </p>
           </div>
         </div>
       </section>
 
       <section className="mt-10">
-        <h2 className="serif text-xl">Prospective record</h2>
+        <h2 className="serif text-xl">Tests registered before the outcome</h2>
         <div className="mt-4 space-y-3">
           <div className="rounded-lg border border-danger/25 bg-danger/[0.05] p-4">
             <h3 className="serif text-base text-fg">Golden-age signature</h3>
             <p className="mt-1 text-[13px] leading-relaxed text-fg2">
-              The preregistered forward test failed. The signal was not added to the live framework.
+              The forward test recorded in advance failed. The signal was not added to the live framework.
             </p>
           </div>
           <div className="rounded-lg border border-warn/25 bg-warn/[0.05] p-4">
             <h3 className="serif text-base text-fg">Sealed country flags</h3>
             <p className="mt-1 text-[13px] leading-relaxed text-fg2">
-              These forecasts are pending. They have written falsification conditions, but they
-              cannot count as evidence of predictive accuracy until their grading windows arrive.
+              These forecasts are still pending. Each has written conditions for deciding whether it
+              succeeds or fails, but none can count as evidence until its review date arrives.
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function Validation() {
         <p className="text-[13.5px] leading-relaxed text-fg2">
           <span className="font-medium text-fg">The bottom line. </span>
           The framework is reproducible and historically suggestive. Its blind evidence is mixed, one
-          prospective test failed, and its main forecasts are still pending. That is enough to keep
+          forward-looking test failed, and its main forecasts are still pending. That is enough to keep
           testing. It is not enough to claim reliable political prediction.
         </p>
       </section>

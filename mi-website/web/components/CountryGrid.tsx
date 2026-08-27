@@ -5,9 +5,9 @@ import type { Summary } from "@/lib/data";
 import { PILLAR_ORDER, SCORE_BANDS, scoreBandColor, clamp01, NODATA, TRACK } from "@/lib/config";
 
 const FLAG_LABEL: Record<string, string> = {
-  durability: "granted",
-  resource: "resource",
-  aid: "aid",
+  durability: "institutions lag income",
+  resource: "resource dependent",
+  aid: "aid dependent",
 };
 
 function Tile({ c }: { c: Summary }) {
@@ -108,6 +108,8 @@ export default function CountryGrid({ countries }: { countries: Summary[] }) {
                 color: scoreBand.color,
                 border: `1px solid ${band === scoreBand.n ? scoreBand.color + "66" : "transparent"}`,
               }}
+              aria-label={`Show ${scoreBand.name} countries`}
+              title={`Band ${scoreBand.n}: ${scoreBand.name}`}
             >
               B{scoreBand.n}
             </button>
@@ -123,7 +125,7 @@ export default function CountryGrid({ countries }: { countries: Summary[] }) {
           }}
           title="Only countries measured on all five pillars are directly comparable"
         >
-          Full data 5/5
+          Complete profiles
         </button>
         <span className="mono ml-auto text-[11px] text-fg3">{filtered.length} shown</span>
       </div>

@@ -16,7 +16,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Modernization Index (MI)",
     short:
       "A score from 0 to 1 that combines five structural features of a country. Higher scores indicate stronger conditions for handling stress. The score is not a prediction.",
-    what: "A 0-to-1 score that averages five equally-weighted pillars of how a country is built.",
+    what: "A score from 0 to 1 that averages five pillars. Each pillar contributes 20 percent of the published score.",
     why: "It provides a quick comparison across countries while keeping the five underlying pillar scores available for review.",
     example: "Switzerland scores about 0.87, while countries with much weaker structural conditions may score below 0.30.",
   },
@@ -87,8 +87,8 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     id: "shape",
     term: "Structural shape",
     short:
-      "We read the shape of the five pillars, not just the average. A balanced country is sturdier than a lopsided one with the same score.",
-    what: "How even or uneven a country's five pillars are.",
+      "The difference between the highest and lowest pillar. It shows whether one weak area is hidden by the overall average.",
+    what: "How even or uneven a country's five pillar scores are.",
     why: "A very weak pillar can matter even when the overall average looks healthy. The spread shows information that the combined score can hide.",
   },
   exposure: {
@@ -103,17 +103,17 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     id: "relational",
     term: "Protection",
     short:
-      "Whether a powerful ally would actually defend it. A weak country with a strong protector can survive what would sink it alone.",
-    what: "Whether a credible external patron or alliance stands behind the country.",
-    why: "Among exposed countries, protection is often the difference between a weak state that survives and an identical one that gets swallowed.",
+      "Whether a credible ally or alliance is expected to defend the country against an external threat.",
+    what: "Whether a credible ally or alliance is expected to help defend the country.",
+    why: "In the historical cases, outside protection changed the outcomes of some countries facing similar threats.",
     example: "After Iraq invaded Kuwait in 1990, an international coalition restored the Kuwaiti government.",
   },
   response: {
     id: "relational",
     term: "Response",
-    short: "How well a country could absorb a shock that lands: its cohesion, capacity, and whether help arrives.",
-    what: "The ability to blunt a shock once it hits, through internal cohesion or outside help.",
-    why: "Exposure says how likely a hit is; response says how well the country takes one.",
+    short: "How well a country could respond after an external shock, using its own capacity and any outside help.",
+    what: "The ability to respond after an external shock through internal capacity or outside help.",
+    why: "Exposure measures the external threat. Response measures the capacity available after the threat becomes real.",
   },
 };
 
