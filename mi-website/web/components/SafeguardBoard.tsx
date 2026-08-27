@@ -102,7 +102,7 @@ export default function SafeguardBoard({ safeguards }: { safeguards: SafeguardTi
           <div key={g.title} className="mt-4">
             <div className="mono mb-1.5 text-[10px] uppercase tracking-wider text-fg3">{g.title}</div>
             <p className="mb-2.5 text-[11px] leading-relaxed text-fg3">{g.note}</p>
-            <div className="grid gap-2 sm:grid-cols-2">
+            <div className="grid items-start gap-2 sm:grid-cols-2">
               {tiles.map((t) => (
                 <Tile key={t.key} t={t} />
               ))}
