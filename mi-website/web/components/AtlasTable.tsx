@@ -6,17 +6,17 @@ import { PILLARS, scoreBandColor, heat } from "@/lib/config";
 
 const COLS = [
   ["name", "Country"],
-  ["mi", "MI"],
+  ["mi", "Score"],
   ["P1", PILLARS.P1.short],
   ["P2", PILLARS.P2.short],
-  ["P3", PILLARS.P3.short],
-  ["P4", PILLARS.P4.short],
-  ["P5", PILLARS.P5.short],
-  ["cov", "Data"],
+  ["P3", "Human capital"],
+  ["P4", "Income"],
+  ["P5", "Stability"],
+  ["cov", "Pillars"],
 ] as const;
 
 const cell = (v: number | null) =>
-  v == null ? <span className="text-fg3">-</span> : <span style={{ color: heat(v) }}>{v.toFixed(2)}</span>;
+  v == null ? <span className="text-fg3">n/a</span> : <span style={{ color: heat(v) }}>{v.toFixed(2)}</span>;
 
 export default function AtlasTable({ countries }: { countries: Summary[] }) {
   const [sort, setSort] = useState<string>("mi");
@@ -42,8 +42,8 @@ export default function AtlasTable({ countries }: { countries: Summary[] }) {
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Filter…"
-          aria-label="Filter countries"
+          placeholder="Search countries"
+          aria-label="Search countries"
           className="w-48 rounded-md border border-border bg-surface px-3 py-1.5 text-[13px] outline-none placeholder:text-fg3 focus:border-primary"
         />
         {/* Sort control for the stacked mobile layout (the desktop table sorts

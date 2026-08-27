@@ -72,14 +72,14 @@ export default function WorldMap({
             key={l}
             onClick={() => setLayer(l)}
             aria-pressed={layer === l}
-            className="mono rounded px-2 py-1 capitalize transition-colors"
+            className="mono rounded px-2 py-1 transition-colors"
             style={{
               background: layer === l ? "#3b82f622" : "transparent",
               color: layer === l ? "#60a5fa" : "#8a8aa4",
               border: `1px solid ${layer === l ? "#3b82f655" : "#232338"}`,
             }}
           >
-            {l}
+            {l === "structure" ? "Score" : "Data coverage"}
           </button>
         ))}
       </div>
@@ -141,7 +141,7 @@ export default function WorldMap({
               {hover.slug ? (
                 <div className="mono mt-0.5 text-[11px]">
                   <span style={{ color: layer === "coverage" ? "#a6a6bd" : hover.color }}>
-                    MI {hover.mi?.toFixed(3)} · Band {hover.tier}
+                    Score {hover.mi?.toFixed(3)} · Band {hover.tier}
                   </span>
                   <span className="text-fg3"> · click to open</span>
                 </div>
@@ -166,7 +166,7 @@ export default function WorldMap({
             {pinned.slug ? (
               <div className="mono mt-0.5 text-[11px]">
                 <span style={{ color: layer === "coverage" ? "#a6a6bd" : pinned.color }}>
-                  MI {pinned.mi?.toFixed(3)} · Band {pinned.tier}
+                  Score {pinned.mi?.toFixed(3)} · Band {pinned.tier}
                 </span>
               </div>
             ) : (
@@ -201,12 +201,12 @@ export default function WorldMap({
               className="inline-block h-2.5 w-2.5 rounded-[2px] border border-border align-middle"
               style={{ background: COVERAGE_SCORED }}
             />
-            scored ·
+            enough data to score ·
             <span
               className="inline-block h-2.5 w-2.5 rounded-[2px] border border-border align-middle"
               style={{ background: COVERAGE_UNSCORED }}
             />
-            not yet measured. Those countries are missing some of the public data the engine needs.
+            not enough data to score
           </p>
         )}
       </div>

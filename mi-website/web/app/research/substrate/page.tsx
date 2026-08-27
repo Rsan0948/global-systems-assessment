@@ -17,7 +17,7 @@ function BackLink() {
 const FEATURES = [
   [
     "Keep the detail visible",
-    "The five pillars, safeguards, and two levels of measurement stay available instead of disappearing into one score.",
+    "The five pillars, additional checks, and country-level details remain visible instead of disappearing into one score.",
   ],
   [
     "Test relationships",
@@ -80,19 +80,20 @@ export default function Substrate() {
         <h2 className="serif text-xl text-fg">What the evidence supports</h2>
         <p>
           Several relationships recur in the modern panel and in the historical cases, including the
-          durability gap and the institutional container. That makes them worth studying. It does not
+          gap between income and institutions, and the balance of institutional gains and declines.
+          That makes them worth studying. It does not
           make them proven forecasts. Most historical cases were scored with the outcome already
           known, and some thresholds were adjusted during development.
         </p>
         <p>
-          Failed tests are published for the same reason. The proposed golden-age signature did not
-          survive its holdout test. Other ideas, including a fixed modernization sequence and a simple
+          Failed tests are published for the same reason. The proposed golden-age pattern did not
+          repeat in the data reserved for testing. Other ideas, including a fixed modernization sequence and a simple
           commodity explanation, also fell short. Recording those results helps prevent the same weak
           claims from being recycled later.
         </p>
         <p>
-          The next stage is straightforward but demanding: add more cases, register tests before
-          seeing the results, and improve coverage without hiding missing data. Until that work is
+          The next stage is straightforward but demanding: add more cases, record tests before
+          examining the results, and improve coverage without hiding missing data. Until that work is
           done, the project should be used as a structural comparison tool rather than an event
           prediction system.
         </p>

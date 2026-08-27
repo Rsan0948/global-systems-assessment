@@ -65,6 +65,9 @@ function Picker({
                 </span>
               </button>
             ))}
+            {matches.length === 0 && (
+              <p className="px-2 py-3 text-center text-[12px] text-fg3">No country matches that search.</p>
+            )}
           </div>
         </>
       )}
@@ -101,11 +104,12 @@ export default function Compare({
   const B = countries.find((c) => c.slug === b);
 
   const both = A && B;
+  const incomplete = both && (A.coverage.present < 5 || B.coverage.present < 5);
   const diff = both ? A.mi - B.mi : 0;
   let verdict = "";
   if (both) {
     if (Math.abs(diff) < 0.03) {
-      verdict = `${A.name} and ${B.name} are structurally very close (MI ${A.mi.toFixed(2)} vs ${B.mi.toFixed(2)}). The index would abstain from ranking two this near.`;
+      verdict = `${A.name} and ${B.name} have very similar scores (${A.mi.toFixed(2)} and ${B.mi.toFixed(2)}). The difference is below the 0.03 comparison margin, so they are treated as too close to rank.`;
     } else {
       const [hi, lo] = diff > 0 ? [A, B] : [B, A];
       // biggest pillar gap
@@ -119,7 +123,7 @@ export default function Compare({
           gapP = p;
         }
       }
-      verdict = `${hi.name} is the more structurally durable of the two (MI ${hi.mi.toFixed(2)} vs ${lo.mi.toFixed(2)}). Their biggest difference is ${PILLARS[gapP].full.toLowerCase()}.`;
+      verdict = `${hi.name} has the higher overall score (${hi.mi.toFixed(2)} compared with ${lo.mi.toFixed(2)}). The largest pillar difference is in ${PILLARS[gapP].full.toLowerCase()}.`;
     }
   }
 
@@ -139,6 +143,13 @@ export default function Compare({
             <Head c={A} color={CA} />
             <Head c={B} color={CB} />
           </div>
+
+          {incomplete && (
+            <p className="mt-5 rounded-lg border border-warn/30 bg-warn/[0.06] p-3 text-[12px] leading-relaxed text-fg2">
+              At least one country is missing a pillar. This comparison uses the available data and
+              is not directly comparable with a complete five-pillar comparison.
+            </p>
+          )}
 
           <div className="mt-6 flex justify-center">
             <Radar pillars={A.pillars} overlay={B.pillars} colors={[CA, CB]} size={300} />
@@ -170,7 +181,7 @@ export default function Compare({
                         <div className="h-full rounded-full" style={{ width: `${clamp01(va ?? 0) * 100}%`, background: CA, opacity: va == null ? 0.2 : 1 }} />
                       </div>
                       <span className="num w-9 text-right text-[11px]" style={{ color: aHi ? CA : "#a6a6bd", fontWeight: aHi ? 700 : 400 }}>
-                        {va == null ? "-" : va.toFixed(2)}
+                        {va == null ? "n/a" : va.toFixed(2)}
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -178,7 +189,7 @@ export default function Compare({
                         <div className="h-full rounded-full" style={{ width: `${clamp01(vb ?? 0) * 100}%`, background: CB, opacity: vb == null ? 0.2 : 1 }} />
                       </div>
                       <span className="num w-9 text-right text-[11px]" style={{ color: bHi ? CB : "#a6a6bd", fontWeight: bHi ? 700 : 400 }}>
-                        {vb == null ? "-" : vb.toFixed(2)}
+                        {vb == null ? "n/a" : vb.toFixed(2)}
                       </span>
                     </div>
                   </div>

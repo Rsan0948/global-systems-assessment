@@ -48,7 +48,7 @@ export default function Research() {
               How it works →
             </Link>
             <Link href="/validation" className="link">
-              How we know it works →
+              Review the evidence →
             </Link>
             <Link href="/limits" className="link">
               What it can&apos;t tell you →

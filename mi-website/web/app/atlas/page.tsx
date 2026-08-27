@@ -9,8 +9,8 @@ export default function Atlas() {
   return (
     <div className="py-10">
       <PageHeader
-        title="The Atlas"
-        lede="Every scored country, rankable by any pillar. Partial-data countries sort below the fully-measured ones."
+        title="Country atlas"
+        lede="Search all scored countries and sort by the overall score or any of the five pillars. When sorting by the overall score, complete five-pillar profiles appear before partial profiles."
       />
       <div className="mb-5">
         <ScoreBandLegend countries={countries} />

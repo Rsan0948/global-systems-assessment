@@ -25,10 +25,10 @@ export default function Home() {
             <b className="text-fg">{meta.count}</b> countries scored
           </span>
           <span>
-            <b className="text-fg">{band1}</b> highly modernized
+            <b className="text-fg">{band1}</b> in the highest score band
           </span>
           <span>
-            engine <b className="text-fg">{meta.engine}</b> · reproducible
+            formula <b className="text-fg">{meta.engine}</b> · reproducible
           </span>
         </div>
         <p className="mt-4 text-[13px] text-fg3">
@@ -42,9 +42,8 @@ export default function Home() {
       <section className="mt-8">
         <WorldMap features={features} sphere={sphere} countries={countries} />
         <p className="mono mt-2 text-[10px] text-fg3">
-          Tap or hover a country for its score; tap View to open it. A handful of scored micro-states (Singapore,
-          San Marino, and several island states) are too small to draw clearly. They are included in
-          the list below.
+          Select a country on the map to see its score and open its profile. Small countries and
+          island states, including Singapore and San Marino, may be easier to find in the list below.
         </p>
       </section>
 
@@ -57,9 +56,8 @@ export default function Home() {
         </div>
         <CountryGrid countries={countries} />
         <p className="mt-5 max-w-2xl text-[12px] leading-relaxed text-fg3">
-          {meta.count} of the world&apos;s ~195 states are scored here. The rest are{" "}
-          <span className="text-fg2">unmeasured</span>, missing the public data the engine needs, and shown
-          dark rather than guessed.
+          {meta.count} of about 195 states are scored. Countries without enough source data are labeled{" "}
+          <span className="text-fg2">unmeasured</span> and are not assigned an estimated score.
         </p>
       </section>
     </div>

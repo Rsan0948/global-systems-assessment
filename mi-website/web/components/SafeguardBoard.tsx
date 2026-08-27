@@ -6,13 +6,13 @@ import { SG_STATUS } from "@/lib/config";
 
 const GROUPS: { title: string; note: string; keys: string[] }[] = [
   {
-    title: "Structural gates",
-    note: "Evaluated for every scored country, from the pillars and public data.",
+    title: "Data-based checks",
+    note: "These two checks run automatically from the five pillars and public source data.",
     keys: ["J", "E"],
   },
   {
-    title: "Conditions & events",
-    note: "These safeguards come from the case studies. When the required context has not been reviewed, the result says “not assessed” instead of implying that everything is clear.",
+    title: "Case-specific checks",
+    note: "These checks need reviewed historical or political context. A result of “not assessed” means that review has not been completed.",
     keys: ["A", "B", "C", "D", "F", "G", "I"],
   },
 ];
@@ -49,26 +49,26 @@ function Tile({ t }: { t: SafeguardTile }) {
           {t.detail && <p className="text-fg2">{t.detail}</p>}
           {t.modification && (
             <p className="mt-2 text-fg3">
-              <span className="mono text-[10px] uppercase tracking-wide text-fg3">If it fires: </span>
+              <span className="mono text-[10px] uppercase tracking-wide text-fg3">When flagged: </span>
               {t.modification}
             </p>
           )}
           {t.why && (
             <div className="mt-2.5 rounded-md border border-border bg-bg/40 p-2.5">
               <div className="mono text-[10px] uppercase tracking-wide text-fg3">
-                Where this safeguard came from
+                Why this check exists
                 {t.origin_cases.length > 0 && <> · {t.origin_cases.join(", ")}</>}
               </div>
               <p className="mt-1 text-fg2">{t.why}</p>
               {t.validated_by.length > 0 && (
-                <p className="mt-1.5 text-[11px] text-fg3">Held up on: {t.validated_by.join(", ")}</p>
+                <p className="mt-1.5 text-[11px] text-fg3">Also compared with: {t.validated_by.join(", ")}</p>
               )}
             </div>
           )}
           <div className="mono mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] text-fg3">
             {t.status === "firing" && <span>{t.share_firing} scored countries are currently flagged by this check</span>}
             {t.status === "borderline" && (
-              <span>on watch: {t.share_firing} countries are currently flagged by this check</span>
+              <span>on watch: {t.share_firing} scored countries are currently flagged by this check</span>
             )}
             {t.status === "not_assessed" && <span>needs a reviewed context input before it can be assessed</span>}
           </div>
@@ -85,15 +85,14 @@ export default function SafeguardBoard({ safeguards }: { safeguards: SafeguardTi
   return (
     <section className="card mt-6 p-5">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 className="serif text-base">The safeguard board</h2>
+        <h2 className="serif text-base">Additional checks</h2>
         <span className="mono text-[11px] text-fg3">
           {firing} flagged · {assessed}/{safeguards.length} assessed
         </span>
       </div>
       <p className="mt-1 text-[12px] leading-relaxed text-fg3">
-        These are the same structural checks used in the case studies, applied to this country. Each one came from a
-        historical case; tap any tile to see the rule, what it means here, and{" "}
-        <span className="text-fg2">the case study it came from</span>.
+        These checks add context that the overall score can miss. Select a check to see its result,
+        the evidence behind it, and whether enough information was available to assess it.
       </p>
 
       {GROUPS.map((g) => {
@@ -113,8 +112,8 @@ export default function SafeguardBoard({ safeguards }: { safeguards: SafeguardTi
       })}
 
       <p className="mt-4 text-[11px] text-fg3">
-        A standing rule (Mod8) frames every reading: the index predicts structural <em>risk</em>, never who acts
-        first. The margin-of-error gate (Mod4) applies when two countries are{" "}
+        These checks describe structural <em>risk</em>. They do not predict who will act first in a
+        conflict. Differences smaller than 0.03 are treated as too close to rank when countries are{" "}
         <Link href="/compare" className="link">
           compared head-to-head
         </Link>

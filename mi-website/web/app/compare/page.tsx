@@ -14,7 +14,7 @@ export default async function ComparePage({
     <div className="py-10">
       <PageHeader
         title="Compare"
-        lede="Put two countries side by side: their pillar shapes, their scores, and where they actually differ."
+        lede="Choose two countries to compare their overall scores and five pillar profiles. Differences smaller than 0.03 are treated as too close to rank."
       />
       <div className="mx-auto max-w-2xl">
         <Compare countries={getCountries()} initialA={a} initialB={b} />

@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "How orders rebuild after they fragment | Modernization Index",
   description:
-    "A 30-polity study of how political systems re-integrate after collapse: four pathways, which ones last, and what predicts the outcome.",
+    "A 30-case study of how political systems reunite after fragmentation, including four pathways and the factors associated with each outcome.",
 };
 
 function BackLink() {
@@ -55,8 +55,8 @@ export default function Collectivization() {
       <p className="mt-4 text-[15px] leading-relaxed text-fg2">
         The index reads a country at a moment. This study reads the opposite motion over the long run:
         how political orders reunite after they break apart. It covers{" "}
-        <span className="mono">30</span> polities (<span className="mono">25</span> core cases plus{" "}
-        <span className="mono">5</span> controls), from Tawantinsuyu and the Zulu Kingdom to the
+        <span className="mono">30</span> political systems (<span className="mono">25</span> core cases plus{" "}
+        <span className="mono">5</span> comparison cases), from Tawantinsuyu and the Zulu Kingdom to the
         European Union.
       </p>
 
@@ -72,9 +72,9 @@ export default function Collectivization() {
       <section className="mt-10">
         <h2 className="serif text-xl">Four pathways and their duration</h2>
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
-          Every re-integration falls into one of four pathways, sorted by how deep the predecessor
-          order was and how fast the rebuild happened. The mean durability figures are the study&apos;s
-          main descriptive result:
+          Each reunification is placed in one of four pathways. The classification depends on how
+          established the earlier system was and how quickly reunification happened. The average
+          duration of each pathway is the study&apos;s main descriptive result:
         </p>
         <div className="mt-4 space-y-3">
           {PATHWAYS.map((p) => (
@@ -86,7 +86,7 @@ export default function Collectivization() {
                 </div>
                 <div className="text-right">
                   <span className={`mono text-lg font-semibold ${p.tone}`}>{p.dur.toFixed(0)}</span>
-                  <span className="mono ml-1 text-[11px] text-fg3">yr mean</span>
+                  <span className="mono ml-1 text-[11px] text-fg3">year average</span>
                 </div>
               </div>
               <p className="mt-1.5 text-[13px] leading-relaxed text-fg2">{p.desc}</p>
@@ -95,58 +95,57 @@ export default function Collectivization() {
         </div>
         <p className="mt-3 text-[14px] leading-relaxed text-fg2">
           Bargained reunifications lasted <span className="mono text-good">about 308 years</span> on
-          average, against <span className="mono">~119-149</span> for construction, restoration, and
+          average, against <span className="mono">about 119 to 149 years</span> for construction, restoration, and
           redesign. The sample is small, but the difference is substantial.
         </p>
       </section>
 
       <section className="mt-10">
-        <h2 className="serif text-xl">What predicts the outcome</h2>
+        <h2 className="serif text-xl">Relationships in the sample</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           <div className="rounded-lg border border-border bg-surface2/40 p-4">
-            <div className="mono text-lg font-semibold text-fg">ρ = −0.84</div>
+            <div className="mono text-lg font-semibold text-fg">Correlation −0.84</div>
             <div className="mt-1 text-[13px] leading-relaxed text-fg2">
-              <span className="font-medium text-fg">Depth predicts form-shift. </span>
-              The deeper the predecessor&apos;s integration, the fewer institutional features flip in
-              the rebuild. The relationship is strong in this sample (p &lt; 0.001).
+              <span className="font-medium text-fg">Established systems changed less. </span>
+              The more integrated the earlier system was, the fewer institutional features changed
+              during reunification. This relationship is strong in the study sample (p &lt; 0.001).
             </div>
           </div>
           <div className="rounded-lg border border-border bg-surface2/40 p-4">
-            <div className="mono text-lg font-semibold text-fg">ρ ≈ 0.83</div>
+            <div className="mono text-lg font-semibold text-fg">Correlation about 0.83</div>
             <div className="mt-1 text-[13px] leading-relaxed text-fg2">
-              <span className="font-medium text-fg">Speed predicts integration loss. </span>
-              Among deep orders, the slower and more drawn-out the re-integration, the more of the old
-              integration it sheds. A gradual bargain loosens the prior order more than a sharp
-              reforging does.
+              <span className="font-medium text-fg">Slower reunification changed more. </span>
+              Among well-established systems, slower reunification was associated with a larger loss
+              of the old system&apos;s integration. Gradual bargaining changed more of the earlier
+              arrangement than a rapid rebuild did.
             </div>
           </div>
           <div className="rounded-lg border border-border bg-surface2/40 p-4">
             <div className="mono text-lg font-semibold text-warn">76%</div>
             <div className="mt-1 text-[13px] leading-relaxed text-fg2">
               <span className="font-medium text-fg">Warning signals appeared</span> in 76% of core cases.
-              Efficiency decay, integration reversal, or legitimacy erosion appeared before the
-              trouble did.
+              Declining administrative performance, weakening coordination, or falling legitimacy
+              appeared before the system came apart.
             </div>
           </div>
           <div className="rounded-lg border border-border bg-surface2/40 p-4">
-            <div className="mono text-sm font-semibold text-danger">coordination failure</div>
+            <div className="mono text-sm font-semibold text-danger">coordination problems</div>
             <div className="mt-1 text-[13px] leading-relaxed text-fg2">
-              <span className="font-medium text-fg">The dominant failure channel. </span>
+              <span className="font-medium text-fg">The most common reason for failure. </span>
               When these orders came apart, they most often did so because the parts could no longer
               coordinate, rather than because one part was conquered.
             </div>
           </div>
         </div>
         <p className="mt-3 text-[13px] leading-relaxed text-fg3">
-          Two of the study&apos;s framing hypotheses split: form-shift <span className="text-fg2">is</span>{" "}
-          supported (re-integration changes institutional form), but a strict one-way
-          &quot;ratchet&quot; is <span className="text-fg2">not</span>. Orders do not only tighten;
-          some shed integration on the way through.
+          The cases support the idea that reunification can change institutional form. They do not
+          support a one-way process in which systems only become more integrated. Some became less
+          integrated during reunification.
         </p>
       </section>
 
       <section className="mt-10">
-        <h2 className="serif text-xl">The polities studied</h2>
+        <h2 className="serif text-xl">Cases in the study</h2>
         <p className="mt-2 text-[14px] leading-relaxed text-fg2">
           The 25 core cases span roughly four millennia and every inhabited continent:
         </p>

@@ -44,7 +44,7 @@ export function ScoreBandLegend({ countries }: { countries?: Summary[] }) {
   return (
     <div>
       <p className="mb-2 text-[11.5px] text-fg2">
-        Each country scores 0 to 1. Higher score bands indicate greater structural capacity.
+        Each country scores from 0 to 1. A higher score indicates greater measured capacity to handle stress. Bands are score ranges, not forecasts.
       </p>
       <div className="flex flex-wrap gap-x-5 gap-y-2">
         {SCORE_BANDS.map((band) => {

@@ -14,27 +14,27 @@ export type ResearchTopic = {
 export const RESEARCH_TOPICS: ResearchTopic[] = [
   {
     slug: "global-systems",
-    kind: "system-level",
+    kind: "global analysis",
     title: "State of the world",
     lede:
       "A global view of three improvement measures, the institutional setting around them, and recent changes in each.",
-    status: "exploratory · proxy-based",
+    status: "exploratory · uses historical proxies",
   },
   {
     slug: "golden-ages",
-    kind: "prediction",
+    kind: "forecast test",
     title: "Are golden ages predictable?",
     lede:
-      "A registered prediction that failed its holdout test, followed by a review of the weaker pattern that remained.",
-    status: "registered test · failed holdout",
+      "A prediction recorded in advance that did not repeat in the reserved test data, followed by a review of the weaker pattern that remained.",
+    status: "registered test · did not repeat",
   },
   {
     slug: "collectivization",
-    kind: "sibling study",
+    kind: "separate study",
     title: "How orders rebuild after they fragment",
     lede:
-      "A 30-polity study comparing four ways political systems have reunited after fragmentation.",
-    status: "sibling program · not MI scoring",
+      "A 30-case study comparing four ways political systems have reunited after fragmentation.",
+    status: "separate study · not part of the score",
   },
   {
     slug: "substrate",
