@@ -10,7 +10,7 @@ const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrai
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: `${SITE.name} - ${SITE.tagline.toLowerCase()}`,
+  title: `${SITE.name} | ${SITE.tagline.toLowerCase()}`,
   description: SITE.description,
   openGraph: { title: SITE.name, description: SITE.description, url: SITE.url, type: "website" },
 };
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <footer className="mt-24 border-t border-border">
           <div className="mx-auto max-w-6xl px-4 py-8 text-[12px] text-fg3 sm:px-5">
             <p className="max-w-2xl">
-              A deterministic structural diagnostic computed from citable public data - not a forecast.{" "}
+              A structural diagnostic built from public data and a fixed formula. It is not a forecast.{" "}
               <Link href="/limits" className="link">
                 What this can and can&apos;t tell you →
               </Link>

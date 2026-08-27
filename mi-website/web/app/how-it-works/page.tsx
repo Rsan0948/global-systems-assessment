@@ -2,7 +2,7 @@ import Link from "next/link";
 import { GLOSSARY, PILLAR_KEYS } from "@/lib/glossary";
 import { SCORE_BANDS, scoreBandColor } from "@/lib/config";
 
-export const metadata = { title: "How it works - Modernization Index" };
+export const metadata = { title: "How it works | Modernization Index" };
 
 function Concept({ id }: { id: string }) {
   const e = GLOSSARY[id];
@@ -29,9 +29,9 @@ export default function HowItWorks() {
     <div className="mx-auto max-w-2xl py-12">
       <h1 className="serif text-3xl font-black">How it works</h1>
       <p className="mt-4 text-[15px] leading-relaxed text-fg2">
-        Every country gets a structural health check: not how rich or powerful it looks today, but how
-        it is <em>built</em> to withstand stress. We measure five things, read the shape they make, and
-        turn it into one score. Here is what each piece means, in plain language.
+        The index combines five features of a country into one score. The score is meant to describe
+        how well its underlying structure can handle stress, not how powerful it appears today. The
+        sections below explain each part of the calculation.
       </p>
 
       <div className="mt-10 space-y-10">
@@ -71,7 +71,7 @@ export default function HowItWorks() {
         </section>
 
         <section className="scroll-mt-20">
-          <h2 className="serif text-xl">It is the shape, not just the average</h2>
+          <h2 className="serif text-xl">The shape matters too</h2>
           <p className="mt-2 text-[14px] leading-relaxed text-fg2">
             Two countries can share the same score and be built very differently. So we look at two
             relationships that a single number hides.
@@ -85,9 +85,9 @@ export default function HowItWorks() {
         <section id="relational" className="scroll-mt-20">
           <h2 className="serif text-xl">The neighborhood</h2>
           <p className="mt-2 text-[14px] leading-relaxed text-fg2">
-            The five pillars read a country from the <em>inside</em>. But a perfectly-built country can
-            still be invaded. A separate layer reads its <em>position</em> in the world. It is the newest
-            part of the system and is filled in country by country.
+            The five pillars describe conditions inside a country. They do not capture external threats
+            or the protection offered by allies. A separate layer records that context as it is reviewed
+            country by country.
           </p>
           <div className="mt-5 space-y-8">
             <Concept id="exposure" />

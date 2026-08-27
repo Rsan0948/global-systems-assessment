@@ -2,15 +2,15 @@ import type { Diagnostics as Dx } from "@/lib/types";
 import { RISK_COLOR } from "@/lib/config";
 
 const STRATEGY: Record<string, { label: string; blurb: string }> = {
-  porosity: { label: "Porosity", blurb: "diffuses pressure through institutional channels - devolution, power-sharing, federalism" },
+  porosity: { label: "Porosity", blurb: "diffuses pressure through channels such as devolution, power-sharing, and federalism" },
   suppression: { label: "Suppression", blurb: "manages pressure through control rather than diffusion" },
   complexity_control: { label: "Complexity control", blurb: "high institutional quality applied to a deliberately low-complexity setting" },
-  ambiguous: { label: "Ambiguous", blurb: "not enough curated context to classify the strategy - a hybrid or in transition" },
+  ambiguous: { label: "Ambiguous", blurb: "there is not enough reviewed context to classify the strategy, or the country is in transition" },
   unknown: { label: "Unknown", blurb: "insufficient data" },
 };
 
 const MOVEMENT: Record<string, string> = {
-  real_ascent: "Real ascent",
+  real_ascent: "Institution-led ascent",
   windfall: "Windfall rise",
   ratchet_rise: "Ratchet rise",
   hollow_stability: "Hollow stability",

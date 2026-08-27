@@ -17,7 +17,7 @@ export const RESEARCH_TOPICS: ResearchTopic[] = [
     kind: "system-level",
     title: "State of the world",
     lede:
-      "Reading the whole world system from the same data - the three improvement engines, the institutional container, and where the current lull sits.",
+      "A global view of three improvement measures, the institutional setting around them, and recent changes in each.",
     status: "exploratory · proxy-based",
   },
   {
@@ -25,23 +25,23 @@ export const RESEARCH_TOPICS: ResearchTopic[] = [
     kind: "prediction",
     title: "Are golden ages predictable?",
     lede:
-      "A pre-registered prediction that failed its holdout - and the honest signal that survived. Trust the level; distrust the slope.",
-    status: "pre-registered · one clean fail",
+      "A registered prediction that failed its holdout test, followed by a review of the weaker pattern that remained.",
+    status: "registered test · failed holdout",
   },
   {
     slug: "collectivization",
     kind: "sibling study",
     title: "How orders rebuild after they fragment",
     lede:
-      "A 30-polity study of how political systems re-integrate after collapse - four pathways, and which ones last.",
+      "A 30-polity study comparing four ways political systems have reunited after fragmentation.",
     status: "sibling program · not MI scoring",
   },
   {
     slug: "substrate",
     kind: "synthesis",
-    title: "What the whole thing means",
+    title: "How the pieces fit together",
     lede:
-      "The capstone argument: this is not an index or a forecast - it is a substrate a genuine predictive science could one day be built on.",
+      "How the score, safeguards, historical tests, and open questions form one research program.",
     status: "synthesis",
   },
 ];

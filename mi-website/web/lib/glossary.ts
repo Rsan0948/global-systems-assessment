@@ -15,10 +15,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     id: "the-score",
     term: "Modernization Index (MI)",
     short:
-      "A single score from 0 to 1 that combines five structural traits of a country. Higher means it is better built to withstand stress. It is a health check, not a prediction.",
+      "A score from 0 to 1 that combines five structural features of a country. Higher scores indicate stronger conditions for handling stress. The score is not a prediction.",
     what: "A 0-to-1 score that averages five equally-weighted pillars of how a country is built.",
-    why: "It compresses a country's whole structural profile into one comparable number, so you can scan the world at a glance and then dig into why a country scores the way it does.",
-    example: "Switzerland scores ~0.87 (very durable); a fragile state may score below 0.30.",
+    why: "It provides a quick comparison across countries while keeping the five underlying pillar scores available for review.",
+    example: "Switzerland scores about 0.87, while countries with much weaker structural conditions may score below 0.30.",
   },
   tier: {
     id: "score-bands",
@@ -33,10 +33,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Institutions",
     short:
       "How well the state actually works: rule of law, government effectiveness, control of corruption, and accountability.",
-    what: "The quality of the machinery of government: courts that function, agencies that deliver, corruption that is checked, leaders who can be held to account.",
-    why: "Institutions are what let a country absorb a shock in an orderly way instead of fracturing. They are the single most load-bearing pillar.",
+    what: "How well courts, public agencies, anti-corruption rules, and political accountability work in practice.",
+    why: "Strong institutions give a country established ways to respond to a crisis and resolve disputes.",
     example:
-      "When a crisis hits, a country with real rule of law resolves it through courts and elections; one without resolves it on the street.",
+      "During a crisis, functioning courts and elections can provide an orderly way to settle disputes.",
   },
   p2: {
     id: "pillar-p2",
@@ -44,26 +44,26 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     short:
       "How sophisticated and diversified the economy is. Does it make many complex things, or depend on one commodity?",
     what: "A measure of the range and sophistication of what a country produces and exports.",
-    why: "A complex economy has more ways to adapt when one sector fails; a one-product economy is hostage to that one product.",
+    why: "A diverse economy has more ways to adapt when one sector fails. An economy that depends on one product has fewer alternatives.",
     example:
-      "A country that only exports oil rises and falls with the oil price. One that exports machinery, chemicals, and software has shock absorbers.",
+      "A country that depends heavily on oil is more exposed to oil-price changes than one that exports machinery, chemicals, and software.",
   },
   p3: {
     id: "pillar-p3",
     term: "Human Capital",
     short: "The capacity of the population: education and health.",
-    what: "How educated and healthy the people are, the raw human material a country works and rebuilds with.",
-    why: "A skilled, healthy population is what makes recovery possible. It is the slowest pillar to build and the slowest to lose.",
+    what: "How educated and healthy the population is.",
+    why: "Education and health affect a country's ability to adapt, provide services, and recover after disruption. They usually change slowly.",
     example: "Post-war recoveries are far faster where the workforce is already educated.",
   },
   p4: {
     id: "pillar-p4",
     term: "Economic Structure",
     short:
-      "The material base: income per person. Wealth buys options and a cushion, but on its own it is the least reliable pillar.",
+      "Income per person. Wealth provides resources and flexibility, but it does not guarantee strong institutions.",
     what: "How wealthy the country is, in income per person.",
-    why: "Money buys reserves and breathing room. But wealth without the institutions to anchor it is fragile, which is the whole point of the durability gap.",
-    example: "An oil state can look rich on this pillar while being structurally hollow underneath.",
+    why: "Higher income can provide reserves and policy options. Its effect depends partly on whether institutions are strong enough to manage those resources.",
+    example: "An oil-producing country can have high income even when its institutions remain weak.",
   },
   p5: {
     id: "pillar-p5",
@@ -77,11 +77,11 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     id: "durability-gap",
     term: "Durability gap",
     short:
-      "Is a country's prosperity earned (institutions match its wealth) or granted (wealth has outrun institutions)? Granted prosperity is historically fragile.",
+      "A comparison between a country's income and the strength of its institutions. A large gap may indicate that prosperity is less durable.",
     what: "The relationship between how wealthy a country is and how strong its institutions are.",
-    why: "Wealth without the institutions to anchor it tends not to last. Income that has outrun institutions is the clearest structural warning sign in the index.",
+    why: "The historical cases suggest that high income is less durable when institutions remain comparatively weak.",
     example:
-      "Two countries can have the same income; the one whose institutions match it is durable, the one whose institutions lag is living on borrowed time.",
+      "Two countries can have similar incomes but different institutional strength, which can lead to different readings of durability.",
   },
   shape: {
     id: "shape",
@@ -89,15 +89,15 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     short:
       "We read the shape of the five pillars, not just the average. A balanced country is sturdier than a lopsided one with the same score.",
     what: "How even or uneven a country's five pillars are.",
-    why: "A chain breaks at its weakest link. A lopsided country carries a hidden liability that a single average score hides.",
+    why: "A very weak pillar can matter even when the overall average looks healthy. The spread shows information that the combined score can hide.",
   },
   exposure: {
     id: "relational",
     term: "Exposure",
     short:
-      "How much external danger a country faces: a powerful hostile neighbor, a contested border, a bad neighborhood. The internal pillars do not see this.",
+      "How much external danger a country faces, including hostile neighbors and contested borders. The five internal pillars do not measure this.",
     what: "The raw external threat a country sits under, independent of how it is built inside.",
-    why: "A perfectly-built country can still be invaded. Exposure is the part of the story the internal pillars are blind to.",
+    why: "Internal strength cannot remove every external threat, so exposure is recorded separately.",
   },
   protection: {
     id: "relational",
@@ -106,7 +106,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
       "Whether a powerful ally would actually defend it. A weak country with a strong protector can survive what would sink it alone.",
     what: "Whether a credible external patron or alliance stands behind the country.",
     why: "Among exposed countries, protection is often the difference between a weak state that survives and an identical one that gets swallowed.",
-    example: "Kuwait was conquered in 1990, then restored by a coalition. The protector was the whole story.",
+    example: "After Iraq invaded Kuwait in 1990, an international coalition restored the Kuwaiti government.",
   },
   response: {
     id: "relational",

@@ -206,7 +206,7 @@ export default function WorldMap({
               className="inline-block h-2.5 w-2.5 rounded-[2px] border border-border align-middle"
               style={{ background: COVERAGE_UNSCORED }}
             />
-            not yet measured - roughly half the world is dark, missing the public data the engine needs.
+            not yet measured. Those countries are missing some of the public data the engine needs.
           </p>
         )}
       </div>

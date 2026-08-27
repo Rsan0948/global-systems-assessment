@@ -23,15 +23,15 @@
    "key": "partial",
    "label": "Partial data \u00b7 4/5 pillars",
    "valence": "neutral",
-   "why": "Scored on the pillars we have data for. Its score is not directly comparable to a fully-measured country - the missing pillars are unmeasured, not zero.",
+   "why": "This score uses only the pillars with available data. It is not directly comparable with a complete five-pillar score, and missing pillars are unmeasured rather than zero.",
    "rule": "1 of 5 pillars lack public data."
   },
   {
    "key": "shape",
    "label": "Lopsided \u00b7 weakest: Institutions",
    "valence": "bad",
-   "why": "Spread between the strongest and weakest pillar - the country's structural shape.",
-   "rule": "max(pillar) - min(pillar)."
+   "why": "The gap between the strongest and weakest pillar shows how balanced the country's structure is.",
+   "rule": "max(pillar) minus min(pillar)."
   }
  ],
  "coverage": {
@@ -41,7 +41,7 @@
    "P4"
   ]
  },
- "verdict": "Mixed structural profile - lopsided (institutions the weak point).",
+ "verdict": "Mixed structural profile, lopsided (institutions the weak point).",
  "spread": 0.403,
  "residual": null,
  "config": [
@@ -134,14 +134,14 @@
    "title": "Weakest link",
    "status": "info",
    "headline": "Institutions is lowest",
-   "detail": "Institutions is the pillar dragging the score down. A chain breaks at its weakest link, so this is where the structural risk concentrates."
+   "detail": "Institutions is the lowest pillar and the main source of imbalance in the score."
   },
   {
    "key": "ascent",
    "title": "Room to rise",
    "status": "info",
    "headline": "already high",
-   "detail": "The base is already high, so large structural jumps from here are historically rare."
+   "detail": "The institutional starting level is already high, and large further increases are uncommon in the historical data."
   }
  ],
  "safeguards": [
@@ -151,13 +151,13 @@
    "status": "clear",
    "triggered": false,
    "headline": "income-institutions gap +0.00 \u00b7 ",
-   "detail": "Institutions or Economic Structure unavailable - gate not evaluable.",
+   "detail": "Institutions or Economic Structure unavailable, gate not evaluable.",
    "modification": null,
    "tier": null,
    "origin_cases": [
     "N=21 acute-signature test set"
    ],
-   "why": "Independently derived on 21 crisis/absorber cases: the level gap between income (P4) and institutions (P1) separated real crises from shock-absorbers at 83% sensitivity / 100% specificity. When income has outrun institutions, the state is structurally crisis-prone under shock - 'granted/fragile'.",
+   "why": "Independently derived on 21 crisis/absorber cases: the level gap between income (P4) and institutions (P1) separated real crises from shock-absorbers at 83% sensitivity / 100% specificity. When income has outrun institutions, the state is structurally crisis-prone under shock: 'granted/fragile'.",
    "validated_by": [
     "N=21 signature set",
     "unifies with the durability ratio"
@@ -170,14 +170,14 @@
    "status": "clear",
    "triggered": false,
    "headline": "below 15% of GDP \u00b7 no penalty",
-   "detail": "Resource rents 0.0% of GDP -> below 15% (no penalty).",
+   "detail": "Resource rents 0.0% of GDP: below 15% (no penalty).",
    "modification": null,
    "tier": null,
    "origin_cases": [
     "Timor-Leste (negative capture)",
     "Nigeria / Gulf (rent-stabilization)"
    ],
-   "why": "Resource rents can inflate or hollow out measured institutional quality (Timor-Leste), or buy elite cohesion in a low-capacity state (Nigeria/Gulf). Graded E-1 (material, >15% of GDP) / E-2 (severe, >25%); severe rents make P1 unreliable.",
+   "why": "Resource income can distort measures of institutional strength or help governments maintain elite support. This check marks rents above 15 percent of GDP and treats levels above 25 percent as severe.",
    "validated_by": [
     "Nigeria",
     "Gulf states"
@@ -196,7 +196,7 @@
    "origin_cases": [
     "Bosnia 1996"
    ],
-   "why": "Bosnia's WGI institutional scores under the Dayton OHR sat above Croatia's and Serbia's - the administrator's competence, not indigenous capacity, was being measured. The safeguard discounts raw P1 where an external administrator governs.",
+   "why": "Under the Dayton OHR, Bosnia's WGI scores partly reflected the external administrator's capacity. This safeguard discounts P1 when an external administration is doing much of the governing.",
    "validated_by": [
     "Kosovo (UNMIK/EULEX)",
     "East Timor (UNTAET)"
@@ -215,7 +215,7 @@
    "origin_cases": [
     "Sudan / South Sudan"
    ],
-   "why": "Sudan split into just two successor states - a low fragment count that would normally read as manageable - yet produced the worst outcome in the sample, because institutional capacity (P1) was far below the bottom third. Low count is not safety when P1 is that low.",
+   "why": "Sudan produced only two successor states, but the outcome was still the worst in the sample because institutional capacity was very low. A small number of fragments is not reassuring when P1 is that weak.",
    "validated_by": [
     "Ethiopia / Eritrea",
     "Nigeria / Biafra"
@@ -234,7 +234,7 @@
    "origin_cases": [
     "Tunisia (Arab Spring)"
    ],
-   "why": "The framework predicted Tunisia's initial positive trajectory but missed the 2021 presidential self-coup. Democratic transitions with weak economic delivery are flagged as reversal-prone rather than assumed durable.",
+   "why": "The framework captured Tunisia's initial improvement but missed the 2021 presidential self-coup. This safeguard marks democratic transitions with weak economic results as vulnerable to reversal.",
    "validated_by": [
     "Bangladesh 2024",
     "Serbia",
@@ -249,14 +249,14 @@
    "status": "not_assessed",
    "triggered": false,
    "headline": "needs curated input",
-   "detail": "No significant predatory neighbor threat identified.",
+   "detail": "No major threat from a hostile neighboring state was identified.",
    "modification": null,
    "tier": null,
    "origin_cases": [
     "Ukraine (Russian invasion)",
     "Inca (Spanish conquest)"
    ],
-   "why": "A structurally sound state can be overrun from outside. The safeguard separates a country's endogenous trajectory from vulnerability to an aggressive neighbour or external shock, so the outcome isn't misread as internally generated.",
+   "why": "External threats can overwhelm a country even when its internal structure is sound. This safeguard records those threats separately from conditions inside the country.",
    "validated_by": [
     "Myanmar (China)",
     "Bangladesh (India)",
@@ -277,7 +277,7 @@
     "Northern Ireland (Stormont collapses)",
     "Germany (AfD in eastern states)"
    ],
-   "why": "A state can survive intact while carrying chronic, managed instability - repeated executive collapses, high anti-system voting, sharp regional divergence. This is a management-load signal, not a collapse indicator.",
+   "why": "A state can remain intact while dealing with repeated government collapses, high anti-system voting, or sharp regional divisions. This check measures that ongoing burden, not the likelihood of collapse.",
    "validated_by": [
     "Belgium",
     "Spain / Catalonia"
@@ -294,9 +294,9 @@
    "modification": null,
    "tier": null,
    "origin_cases": [
-    "Round 3 - Ethiopia vs Northern Ireland"
+    "Round 3: Ethiopia vs Northern Ireland"
    ],
-   "why": "Suppression and prevention looked identical until this safeguard split them into tiers: military suppression (Tier 1) doesn't resolve the underlying mismatch; institutional/legal suppression (Tier 2) de-escalates; porosity/power-sharing (Tier 3) addresses it by design. Re-suppression after a porosity period is the worst path.",
+   "why": "This safeguard separates military suppression, legal or institutional de-escalation, and power-sharing. In the case studies, renewed suppression after a period of power-sharing had the worst outcomes.",
    "validated_by": [
     "Spain (Tier 2)",
     "Belgium/NI (Tier 3)",
@@ -318,7 +318,7 @@
     "Ethiopia / Tigray (AU backstop)",
     "Myanmar (China backstop)"
    ],
-   "why": "The framework's most genuinely novel prediction: when a great-power patron backstops a state's territorial integrity, an internal secession tends to end in re-suppression and partial reconsolidation, not permanent independence.",
+   "why": "This safeguard tests whether support from a major outside power makes renewed suppression and partial reunification more likely than permanent independence.",
    "validated_by": [
     "Ethiopia/Tigray",
     "Myanmar"
@@ -344,8 +344,8 @@
   "vulnerability": {
    "risk_level": "high",
    "flags": [
-    "WARNING: P1 below median - elevated structural risk",
-    "WARNING: Pillar spread 0.403 - significant imbalance"
+    "Watch: P1 below median, elevated structural risk",
+    "Watch: Pillar spread 0.403, significant imbalance"
    ],
    "structural_vulnerability": null,
    "below_floor": null,

@@ -16,9 +16,9 @@ export default function Home() {
       <section className="mx-auto max-w-3xl text-center">
         <h1 className="serif text-[2.1rem] font-black leading-[1.05] sm:text-5xl">{SITE.tagline}</h1>
         <p className="mx-auto mt-5 max-w-xl text-[14px] leading-relaxed text-fg2 sm:text-[15px]">
-          A structural diagnostic of how governed systems withstand pressure - computed
-          deterministically from citable public data, not opinion. Look up any country: see how it&apos;s
-          built, and what we can&apos;t yet see.
+          Compare how countries are equipped to handle political and economic stress. Every score
+          comes from public data and a fixed formula. Open a country to see its five pillars, its data
+          gaps, and the checks that affect its reading.
         </p>
         <div className="mono mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[12px] text-fg3">
           <span>
@@ -43,7 +43,8 @@ export default function Home() {
         <WorldMap features={features} sphere={sphere} countries={countries} />
         <p className="mono mt-2 text-[10px] text-fg3">
           Tap or hover a country for its score; tap View to open it. A handful of scored micro-states (Singapore,
-          San Marino, island states…) are too small to draw - find them in the list below.
+          San Marino, and several island states) are too small to draw clearly. They are included in
+          the list below.
         </p>
       </section>
 

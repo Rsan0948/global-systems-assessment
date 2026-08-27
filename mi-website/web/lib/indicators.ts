@@ -50,7 +50,7 @@ export const INDICATOR_META: Record<string, { what: string; pillar: string }> = 
   gii: { what: "A composite ranking of a country's capacity for, and output of, innovation.", pillar: "P2" },
   rd_pct_gdp: { what: "How much a country spends on research and development, as a share of its economy.", pillar: "P2" },
   eci: {
-    what: "How diverse and sophisticated a country's export mix is - the range of complex things it can make.",
+    what: "How diverse and sophisticated a country's exports are, based on the range of complex goods it can make.",
     pillar: "P2",
   },
   education_index: { what: "The UN's schooling measure: expected and average years of education.", pillar: "P3" },

@@ -2,9 +2,9 @@ import Link from "next/link";
 import { RESEARCH_TOPICS } from "@/lib/research";
 
 export const metadata = {
-  title: "Research - Modernization Index",
+  title: "Research | Modernization Index",
   description:
-    "Distilled findings from the Modernization Index research program - what held up, what failed, and what it all means.",
+    "Results, failed tests, and open questions from the Modernization Index research program.",
 };
 
 export default function Research() {
@@ -13,11 +13,10 @@ export default function Research() {
       <section className="mx-auto max-w-2xl">
         <h1 className="serif text-3xl font-black sm:text-4xl">Research</h1>
         <p className="mt-4 text-[15px] leading-relaxed text-fg2">
-          The country scores are the instrument&apos;s output. These four pieces are the research
-          behind and around it - read the whole world from the same data, ask what history is
-          actually predictable, watch orders rebuild after they fragment, and step back to what the
-          project is really <em>for</em>. We report the failures with the same prominence as the
-          wins; on this program, a clean failed prediction is a feature.
+          The country scores are one output of a larger research program. These pages examine global
+          patterns, test whether historical change can be anticipated, compare how political orders
+          rebuild, and explain how the pieces fit together. Failed tests are included because they
+          narrow the claims the project can responsibly make.
         </p>
       </section>
 
