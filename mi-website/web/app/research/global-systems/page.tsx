@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "State of the world | Modernization Index",
+  title: "State of the world",
+  alternates: { canonical: "/research/global-systems" },
   description:
     "A global comparison of three improvement measures, institutional change, and the distribution of country-level movement.",
 };

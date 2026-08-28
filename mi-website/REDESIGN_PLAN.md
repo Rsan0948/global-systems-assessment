@@ -1,6 +1,6 @@
 # MI Website — Redesign Plan (v0.3 sprint)
 
-**Date:** 2026-07-05 · **Branch:** `claude/vercel-mobile-interactive-qios4e`
+**Date:** 2026-07-05 · **Status:** implemented, retained as a design record
 **Supersedes nothing in `DESIGN_SPEC.md`** — this is the execution plan that closes the gap
 between the current live site (a June 30 / July 1 snapshot) and the research the engine
 actually produces today.

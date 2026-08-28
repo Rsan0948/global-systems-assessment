@@ -138,7 +138,7 @@ ANCIENT_STATUS = (
     "(e.g. P1.indicators.P1a_admin_depth {value, source, confidence}) with peak/pre_stress "
     "time-points, NOT the WGI/CPI/GII/GDP raw-indicator dict that score_country consumes; there "
     "is no country_ref/year the Data API can resolve. Re-scoring them through the modern engine "
-    "would require a separate Track-3 proxy-scoring path (firewalled per mi-research/CLAUDE.md). "
+    "would require a separate Track-3 proxy-scoring path under the research protocol. "
     "Scope is therefore the 84 modern cases."
 )
 

@@ -16,7 +16,7 @@ plan; update when the reader-unification (Phase B) lands.
 
 ## 1. The two-reader problem (the core disease)
 
-The CLAUDE.md story is *"one canonical runtime store: `canonical_panel.json`, read by
+The intended architecture is *"one canonical runtime store: `canonical_panel.json`, read by
 `mi/panel.py`."* That is **only half true.**
 
 ```

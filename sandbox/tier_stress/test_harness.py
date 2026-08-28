@@ -7,7 +7,7 @@ import json, hashlib
 from pathlib import Path
 import numpy as np
 HERE=Path(__file__).resolve().parent
-MIROOT=Path("/Users/rubensanchez/Developer/usg-sandbox-wt/mi-research")
+MIROOT=HERE.parents[1]/"mi-research"
 
 import combo_search as CS
 import relational_screen as R

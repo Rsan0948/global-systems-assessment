@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-The data-collection pipeline — the chain that keeps the site a LIVING instrument.
+Refresh the public data and rebuild the website dataset.
 
   1. (best-effort) refresh the public source data from the upstream APIs
   2. run the validated MI engine over all available data
@@ -10,7 +10,7 @@ Run locally:  python mi-website/scripts/refresh_and_build.py
 On schedule:  .github/workflows/update-mi-data.yml runs this weekly, commits the
               regenerated dataset, and the push triggers a Vercel deploy.
 
-The engine is the single source of truth; this only orchestrates refresh -> score -> publish.
+The engine is the single source of truth. This script only coordinates refresh, score, and publish.
 Deterministic given fixed source data.
 """
 import subprocess
@@ -28,12 +28,12 @@ def run(cmd, cwd, *, optional=False, timeout=None):
         r = subprocess.run(cmd, cwd=cwd, timeout=timeout)
     except subprocess.TimeoutExpired:
         if optional:
-            print(f"  (optional step timed out after {timeout}s — continuing with existing data)")
+            print(f"  (optional step timed out after {timeout}s; continuing with existing data)")
             return False
         raise
     if r.returncode != 0:
         if optional:
-            print(f"  (optional step failed rc={r.returncode} — continuing with existing data)")
+            print(f"  (optional step failed rc={r.returncode}; continuing with existing data)")
             return False
         sys.exit(r.returncode)
     return True
@@ -45,7 +45,7 @@ def main():
     if refresh.exists():
         run([PY, str(refresh)], MI_RESEARCH, optional=True, timeout=300)
     else:
-        print("refresh script not found — skipping refresh, rebuilding from committed sources")
+        print("refresh script not found; rebuilding from committed sources")
 
     # 2 + 3. run the engine over all data and publish the site dataset
     run([PY, str(MI_RESEARCH / "scripts" / "build_site_dataset.py")], MI_RESEARCH)
@@ -53,7 +53,7 @@ def main():
     run([PY, str(MI_RESEARCH / "scripts" / "build_similar.py")], MI_RESEARCH)
     # 5. enrich with the T3 relational layer where we have it
     run([PY, str(MI_RESEARCH / "scripts" / "build_relational.py")], MI_RESEARCH)
-    print("\n✓ pipeline complete — web/public/data refreshed.")
+    print("\n✓ pipeline complete; web/public/data refreshed.")
 
 
 if __name__ == "__main__":

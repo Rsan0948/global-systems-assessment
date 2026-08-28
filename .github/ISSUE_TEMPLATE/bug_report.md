@@ -1,13 +1,13 @@
 ---
 name: Bug report
-about: Something in the engines, pipeline, or site is broken
+about: Something in the research code, data pipeline, or site is broken
 title: "[bug] "
 labels: bug
 ---
 
 **What broke**
 
-**Leg** (fragmentation / mi-research / collectivization / atlas / website / pipeline)
+**Area** (fragmentation / mi-research / collectivization / atlas / website / pipeline)
 
 **Commit SHA**
 

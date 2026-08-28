@@ -1,133 +1,102 @@
-# universalsystemgrade
+# Universal System Grade
 
-A public research workspace for testing structural claims about human and
-natural systems. It contains three connected research programs and one
-authoritative claims ledger.
+Universal System Grade is a public research project about how complex systems divide, endure stress, and form again. It combines three related research programs with a country-level website and a claims ledger that keeps successful, mixed, failed, and pending findings separate.
 
-> **Status: pre-publication research code.** Every claim in this repo is
-> tagged by epistemic status. Read the ledger section below before citing
-> anything.
+Explore the country data at the [Modernization Index website](https://web-gamma-bice-97.vercel.app).
 
----
+## Start with the evidence
 
-## Read this first: the claims ledger
+The [claims ledger](mi-research/docs/CLAIMS_LEDGER.md) is the authoritative record of the project's findings. A [machine-readable copy](mi-research/data/claims/claims.json) is also available. If a summary elsewhere in the repository disagrees with the ledger, use the ledger.
 
-This project keeps failed ideas visible. That is part of the method, not a footnote.
+Each claim records two things:
 
-The authoritative record is [`mi-research/docs/CLAIMS_LEDGER.md`](mi-research/docs/CLAIMS_LEDGER.md). A machine-readable copy lives at [`mi-research/data/claims/claims.json`](mi-research/data/claims/claims.json). If another summary disagrees with the ledger, the ledger wins.
+- Its evidence design, such as descriptive analysis, hindsight retrodiction, blind out-of-sample testing, prospective testing, interpretation, or simulation
+- Its current verdict, such as supported, mixed, not supported, pending, or retired
 
-The ledger records two separate things for every claim:
+This distinction matters. A reproducible score is not automatically a validated forecast, and a result that fits historical cases is not automatically predictive.
 
-- **Evidence design:** descriptive, hindsight retrodiction, blind out-of-sample, prospective, interpretive, or simulation.
-- **Verdict:** supported, mixed, not supported, pending, or retired.
+## What is in the repository
 
-### The counts, without mixing them together
+### Modernization Index
 
-- The historical MI corpus contains **109 case studies**: 84 modern hindsight-retrodictive cases and 25 ancient interpreter-scored cases.
-- The MI out-of-sample program contains **67 observations** across several blind cohorts. Its results are mixed.
-- The relational layer contains **12 firewalled records**.
-- The collectivization study is separate. It contains **30 cases and 109 formation cycles**.
-- The public atlas currently contains **190 scored country pages**. Those pages are descriptive outputs, not validation cases.
+The Modernization Index is a five-pillar description of a country's structural capacity. It covers institutions, economic complexity, human capital, economic structure, and stability. The public atlas currently includes 190 scored country profiles.
 
-### What the evidence currently supports
+- Research and scoring code: [`mi-research/`](mi-research/)
+- Data preparation pipeline: [`mi-pipeline/`](mi-pipeline/)
+- Website and publishing pipeline: [`mi-website/`](mi-website/)
 
-- River branching concentration passed a discovery and sealed geographic holdout.
-- The MI score is deterministic for fixed inputs, but determinism does not establish prediction.
-- The 84 modern historical cases show hindsight-retrodictive consistency.
-- The P4 minus P1 durability gap recorded 17 of 19 in its derivation set. That is not a forward validation record.
-- The backsliding inverted-U recorded an out-of-sample AUC of 0.746 and remains provisional.
-- The collectivization depth result records rho = -0.84 within a curated historical dataset that still needs independent recoding.
+### Fragmentation
 
-### What failed or remains open
+The fragmentation program studies branching structure across natural and social systems. It uses Horton-Strahler and Tokunaga measures, along with null models designed to separate genuine structure from patterns that appear in random trees.
 
-- The proposed universal constant near Euler's number was retired.
-- The current DGS instability test was null.
-- The preregistered golden-age forward test failed.
-- The general collectivization ratchet was not supported.
-- The sealed country flags are pending and cannot yet count as predictive evidence.
-- The grand synthesis remains a research agenda, not a validated law.
+- Research program: [`fragmentation/`](fragmentation/)
+- Main census: [`fragmentation/census/`](fragmentation/census/)
+- Preregistrations and governance records: [`fragmentation/preregistration/`](fragmentation/preregistration/) and [`fragmentation/governance/`](fragmentation/governance/)
 
+### Collectivization
 
----
+The collectivization program studies how political systems form and reform. It uses a fixed 15-feature governance vector and a Hamming-distance classifier across 109 formation cycles in 30 historical cases.
 
-## The three engines
+- Research program: [`collectivization/`](collectivization/)
+- Casebook: [`collectivization/cases/`](collectivization/cases/)
+- Results: [`collectivization/results/`](collectivization/results/)
 
-**A. Fragmentation** (`fragmentation/`) - how systems subdivide.
-Horton–Strahler / Tokunaga analysis with Kirchner-null discipline,
-applied across rivers, neurons, trees, blood vessels, corals, fungi,
-languages, corporations, political parties, religious bodies, military
-units, administrative subdivisions, and state dissolutions.
-`fragmentation/census/run.py` → `fragmentation/census/results/`.
+## Current evidence in plain language
 
-**B. Modernization Index** (`mi-research/`, `mi-pipeline/`,
-`mi-website/`) - a public MI v3.3 country score with five equally weighted
-pillars and five descriptive score bands. The research program also contains
-six separate model layers: capacity, conversion, pressure, scarring,
-turbulence, and spark density. Layers 5 and 6 are exploratory and were
-weakened by the project's own adversarial audit (full six-layer OOF AUC 0.63).
-The corrected numbers are in
-`docs/THREE_MODEL_FRAMEWORK.md`. Public site:
-[mi-website/](mi-website/) (Next.js, deployed via Vercel).
+The repository contains 109 Modernization Index historical cases: 84 modern hindsight cases and 25 ancient cases scored by interpretation. The separate out-of-sample program contains 67 observations across several cohorts. The collectivization study contains 30 cases and 109 formation cycles. The public country atlas is descriptive and should not be counted as validation evidence.
 
-**C. Collectivization** (`collectivization/`) - how polities reassemble.
-A mechanical 15-binary-feature governance vector and Hamming-distance
-classifier over 109 formation cycles in 30 cases spanning 1,143 years.
-`collectivization/run.py` → `collectivization/results/`.
+Some findings have held up. River branching concentration passed both discovery and a sealed geographic holdout. The backsliding model recorded an out-of-sample AUC of 0.746, although it remains provisional. Other ideas did not survive testing. The proposed constant near Euler's number was retired, the current DGS instability test was null, and the preregistered golden-age forward test failed.
 
-Context: `docs/capital_hubs_atlas.md` - 6,000 years of capital hubs as the capital-suppression
-baseline; `docs/` - glossary, sources, unified timeline.
+That mixed record is intentional. Failed tests remain visible because the audit trail is part of the research.
 
----
+## What this project does not claim
 
-## What this is not
+- It is not a rating agency. Country scores describe structural configurations, not national worth or political virtue.
+- It is not a collapse clock. The public score is descriptive, and timing claims remain limited and exploratory.
+- It is not immune to weak inputs. Some historical cases require interpretation, public statistics can be manipulated, and automated scoring can flatten important context.
+- It does not treat one successful historical fit as proof of a universal law.
 
-- **Not a rating agency.** Scores are structural readings of information-
-  processing architecture, not league tables or moral judgments. The
-  instrument is a **diagnostic** - it identifies configurations and
-  vulnerabilities, not destinies.
-- **Not a collapse predictor.** Structure is knowable 10–28 years out;
-  timing is knowable 3–5 years at best. Model layer 5 stress tests failed their
-  10% ceiling and were honestly downgraded - the countdown lives in
-  model layer 6 coupling, which is directional and exploratory.
-- **Not neutral to gaming.** V2's equity pillar can be gamed by
-  authoritarian statistics; automated scoring can flatten edge cases;
-  historical cases are interpreter-scored with hindsight. All documented
-  in the ledger.
+See [Defensible Results](DEFENSIBLE_RESULTS.md) for the shortest account of what can be stated confidently.
 
 ## Quick start
 
+Python 3.11 or newer is recommended.
+
 ```bash
+git clone https://github.com/Rsan0948/universalsystemgrade.git
+cd universalsystemgrade
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -r requirements.txt
 
-# Score a country
-cd mi-research && python scripts/score_country.py --country "Estonia" --year 2024
+# Run the repository test suites
+pytest -q mi-research/tests
+pytest -q collectivization/tests
+pytest -q fragmentation/tests
 
-# Backsliding danger-zone diagnostic
-python scripts/assess_backsliding.py --country "Hungary"
-
-# Run the other legs
-cd ../fragmentation/census && python run.py
-cd ../integration && python run.py
-cd ../../collectivization && python run.py
+# Score one country
+cd mi-research
+python scripts/score_country.py --country "Estonia" --year 2024
 ```
 
-Full reproduction paths and expected outputs: **[REPRODUCE.md](REPRODUCE.md)**.
+For the full set of commands and expected outputs, see [Reproducing the Results](REPRODUCE.md).
 
 ## Contributing
 
-The most valuable contribution is adversarial: independent recoding of
-the historical cases, replication of the languages result with different
-tree sources, Kirchner-null extensions, out-of-sample challenges to the
-sealed flags. See **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+Corrections, replications, independent recoding, new null models, documentation improvements, and focused software changes are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Please use the issue templates for claim disputes and replication challenges so the evidence trail remains easy to follow.
 
-## Data sources
+## Data and provenance
 
-V-Dem v15, WGI 2024, WDI, Polity5, UCDP/PRIO v25.1, Glottolog 5.2, WALS,
-GEM/OPPID, HYDE 3.3, Seshat, FAO GAUL, ITU, SEC EDGAR, ParlGov, Varieties
-of Party Identity, UDS, PRC BEPS, plus historical collections (Maddison,
-CINC/NMC, Geacron, OWID). All upstream data used under their own licenses.
+The project draws on public and research datasets including V-Dem, the Worldwide Governance Indicators, World Development Indicators, Polity5, UCDP/PRIO, Glottolog, WALS, HYDE, Seshat, FAO GAUL, ITU, SEC EDGAR, ParlGov, CINC/NMC, Geacron, and Our World in Data.
 
-## License & citation
+The repository's license does not replace the terms of upstream data providers. Each upstream dataset remains subject to its original license and access terms. See [`mi-pipeline/DATA_PROVENANCE.md`](mi-pipeline/DATA_PROVENANCE.md) and the source notes within each research program before redistributing data.
 
-Code: MIT. Documents, analyses, and curated datasets: CC BY 4.0. See
-[LICENSE](LICENSE) and [CITATION.cff](CITATION.cff).
+## License and citation
+
+The project is source available for noncommercial use:
+
+- Code is available under the [PolyForm Noncommercial License 1.0.0](LICENSE).
+- Original documentation, analysis, and curated datasets are available under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+- Third-party data remains governed by its original provider.
+
+You may inspect, copy, modify, and redistribute the project for permitted noncommercial purposes. Commercial use requires separate written permission. See [LICENSE](LICENSE) for the exact scope and [CITATION.cff](CITATION.cff) for citation metadata.

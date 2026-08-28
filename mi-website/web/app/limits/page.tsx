@@ -1,4 +1,7 @@
-export const metadata = { title: "What this can and cannot tell you | Modernization Index" };
+export const metadata = {
+  title: "What this can and cannot tell you",
+  alternates: { canonical: "/limits" },
+};
 
 const LIMITS = [
   [

@@ -46,7 +46,7 @@ NAME2ISO={"Australia":"AUS","Austria":"AUT","Belgium":"BEL","Brazil":"BRA","Cana
 "South Korea":"KOR","Korea":"KOR","Spain":"ESP","Sweden":"SWE","Switzerland":"CHE","Taiwan":"TWN",
 "United Kingdom":"GBR","United States":"USA","Uruguay":"URY","Dominican Republic":"DOM","Ivory Coast":"CIV",
 "Cote d'Ivoire":"CIV","Palestine":"PSE"}
-wb=openpyxl.load_workbook(M/"access-key-workbook.xlsx",read_only=True,data_only=True)
+wb=openpyxl.load_workbook(M/"lis-key-figures-workbook.xlsx",read_only=True,data_only=True)
 ws=wb[wb.sheetnames[0]]
 gini={}; p9010={}
 rows=list(ws.iter_rows(values_only=True)); hdr2=[str(c) if c else "" for c in rows[0]]

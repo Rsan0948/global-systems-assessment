@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCountries, getCountry } from "@/lib/data";
@@ -15,6 +16,23 @@ export const dynamicParams = false; // 190 country pages are fully known at buil
 
 export function generateStaticParams() {
   return getCountries().map((c) => ({ slug: c.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const country = getCountry(slug);
+
+  if (!country) return {};
+
+  return {
+    title: country.name,
+    description: `${country.name} Modernization Index profile, including its overall score, five pillars, data coverage, and structural diagnostics.`,
+    alternates: { canonical: `/country/${slug}` },
+  };
 }
 
 function RelStat({

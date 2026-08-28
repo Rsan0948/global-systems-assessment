@@ -22,19 +22,24 @@ Read-only w.r.t. mi/, data/, scripts/. Outputs written next to this script.
 """
 from __future__ import annotations
 import sys, os, json, math, csv
+from pathlib import Path
 from collections import defaultdict
 
-sys.path.insert(0, ".")
-sys.path.insert(0, "scripts/robustness")
+HERE = Path(__file__).resolve().parent
+REPO_ROOT = HERE.parents[1]
+MI_ROOT = REPO_ROOT / "mi-research"
+
+sys.path.insert(0, str(MI_ROOT))
+sys.path.insert(0, str(MI_ROOT / "scripts" / "robustness"))
 
 import numpy as np
 import convergence_lib as L
 from mi import panel as MP
 from mi.scoring import calculate_pillar_scores, calculate_mi_score
 
-ROOT = os.path.abspath(".")
+ROOT = str(MI_ROOT)
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
-DGS_PANEL = "/Users/rubensanchez/Developer/usg-sandbox-wt/fragmentation/governance/political/results/dgs_panel_real.json"
+DGS_PANEL = REPO_ROOT / "fragmentation" / "governance" / "political" / "results" / "dgs_panel_real.json"
 
 PRED_YEARS = list(range(1996, 2025))      # 1996..2024
 PRED_YEARS_SET = set(PRED_YEARS)
@@ -523,4 +528,3 @@ if sanity["mismatches"]:
 print("-" * 72)
 print("DGS iso recovery:", coverage["dgs_recovery"])
 print("=" * 72)
-

@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "How orders rebuild after they fragment | Modernization Index",
+  title: "How orders rebuild after they fragment",
+  alternates: { canonical: "/research/collectivization" },
   description:
     "A 30-case study of how political systems reunite after fragmentation, including four pathways and the factors associated with each outcome.",
 };

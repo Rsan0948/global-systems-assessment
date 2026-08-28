@@ -1,28 +1,30 @@
-# MI website — frontend
+# Modernization Index frontend
 
-This is the Next.js frontend for the **Modernization Index**. It is a *consumer*
-of the `mi-research` engine — it does **not** re-implement scoring. The site
-reads the generated dataset in `web/public/data/` (a build artifact committed so
-Vercel deploys without running Python).
+This is the Next.js application for the public Modernization Index website. It reads generated JSON from `public/data/` and does not calculate scores in the browser.
 
-Start here:
+## Develop locally
 
-- **`../DESIGN_SPEC.md`** — the design source of truth (information architecture,
-  features, design language).
-- **`../REDESIGN_PLAN.md`** — the redesign plan (surface the full engine,
-  interactivity, mobile).
-- **`../CLAUDE.md`** — the website agent guide (data flow, build/verify).
-- **`AGENTS.md`** — app-specific conventions. **Read it before writing any code.**
-
-## Develop
+Node.js 20.9 or newer is required.
 
 ```bash
-# regenerate the dataset from the mi-research engine (run from the repo root)
-python mi-website/scripts/refresh_and_build.py
-
-# then the app
-cd mi-website/web && npm install && npm run dev   # http://localhost:3000
+npm ci
+npm run dev
 ```
 
-Never port the scoring math into JS — regenerate the dataset via
-`mi-research` instead (see `../CLAUDE.md`).
+Open <http://localhost:3000>.
+
+To rebuild the data first, run this from the repository root:
+
+```bash
+python mi-website/scripts/refresh_and_build.py
+```
+
+## Check a change
+
+```bash
+npm run check
+npm run build
+npm audit --omit=dev --audit-level=high
+```
+
+Keep scoring changes in `mi-research`. The frontend should display the generated output without reimplementing the research formula.

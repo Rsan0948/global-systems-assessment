@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 from scipy import stats
 HERE=Path(__file__).resolve().parent
-MIROOT=Path("/Users/rubensanchez/Developer/usg-sandbox-wt/mi-research")
+MIROOT=HERE.parents[1]/"mi-research"
 PRED=json.load(open(HERE/"predictors.json"))
 OUTC=json.load(open(HERE/"outcomes.json"))
 GDPPC=json.load(open(MIROOT/"data/v2/v2_indicators.json"))["series"].get("gdp_pc_ppp",{})

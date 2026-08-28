@@ -4,8 +4,8 @@ Read-only. Prints a per-angle readiness verdict."""
 import json, numpy as np
 from pathlib import Path
 import deep_time as DT
-MI=Path("/Users/rubensanchez/Developer/usg-sandbox-wt/mi-research")
 HERE=Path(__file__).resolve().parent
+MI=HERE.parents[1]/"mi-research"
 def L(p):
     try: return json.load(open(p))
     except Exception as e: return {"__err__":str(e)}

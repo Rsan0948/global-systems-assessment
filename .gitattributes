@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+*.gif binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.pdf binary
+*.png binary
+*.xls binary
+*.xlsx binary
+*.zip binary
+
+mi-pipeline/output/** linguist-generated=true
+mi-website/web/public/data/** linguist-generated=true
