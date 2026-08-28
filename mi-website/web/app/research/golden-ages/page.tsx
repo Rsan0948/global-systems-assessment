@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Are golden ages predictable? | Modernization Index",
+  title: "Are golden ages predictable?",
+  alternates: { canonical: "/research/golden-ages" },
   description:
     "A prediction recorded in advance that failed when tested on reserved data, plus the weaker patterns that remained.",
 };

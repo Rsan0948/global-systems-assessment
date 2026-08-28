@@ -2,7 +2,8 @@ import Link from "next/link";
 import { RESEARCH_TOPICS } from "@/lib/research";
 
 export const metadata = {
-  title: "Research | Modernization Index",
+  title: "Research",
+  alternates: { canonical: "/research" },
   description:
     "Results, failed tests, and open questions from the Modernization Index research program.",
 };

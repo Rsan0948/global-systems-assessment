@@ -8,8 +8,8 @@ from pathlib import Path
 from scipy import stats
 import deep_time as DT
 
-MI=Path("/Users/rubensanchez/Developer/usg-sandbox-wt/mi-research")
 HERE=Path(__file__).resolve().parent
+MI=HERE.parents[1]/"mi-research"
 
 # ---- re-export the deep panel primitives (single source of truth) ----
 LIB, ROL, CSO, ONS = DT.LIB, DT.ROL, DT.CSO, DT.ONS

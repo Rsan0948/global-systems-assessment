@@ -1,6 +1,6 @@
 # Modernization Index Research Platform
 
-A quantitative diagnostic framework for measuring how complex governance systems respond to structural stress. The repository contains 84 modern hindsight-retrodictive cases, 25 ancient interpreter-scored cases, and descriptive scores for 191 countries.
+A quantitative diagnostic for describing how governance systems are structured and how they have responded to stress in the historical record. The research corpus contains 84 modern hindsight cases and 25 ancient interpreter-scored cases. The canonical panel contains up to 191 country records, while the current public atlas publishes 190 scored profiles.
 
 ## Public scoring contract
 
@@ -36,7 +36,7 @@ python scripts/find_similar.py --country "Venezuela" --year 2023
 
 ```
 mi-research/
-├── RESEARCH.md              # Standing instructions for AI research agents
+├── RESEARCH.md              # Research protocol, project state, and open work
 ├── MASTER_REFERENCE_ARCHITECTURE.md  # Complete MI specification, with Section 4 as the scoring source of truth
 ├── mi/                      # Core scoring and diagnostic engine
 │   ├── constants.py         # Weights, thresholds, indicator specs

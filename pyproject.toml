@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+testpaths = [
+  "mi-research/tests",
+  "collectivization/tests",
+  "fragmentation/tests",
+]
+addopts = "-p no:cacheprovider"
+pythonpath = [
+  "mi-research",
+  "collectivization",
+  "fragmentation",
+]

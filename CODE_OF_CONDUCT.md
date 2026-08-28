@@ -23,7 +23,7 @@ Examples of behavior that contributes to a positive environment:
   mistakes, and learning from the experience
 * Focusing on what is best not just for us as individuals, but for the
   overall community
-* Attacking claims, methods, and evidence — never people
+* Challenging claims, methods, and evidence while treating people with respect
 
 Examples of unacceptable behavior:
 

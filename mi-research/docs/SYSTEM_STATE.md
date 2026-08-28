@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-28. One-page map of everything that exists: measurement tiers, every case/observation
 count, the epistemic status of each, the engine modules, and the honest disposition. Read with
-`HANDOFF.md` (mechanics + next steps) and `PROJECT_SYNTHESIS.md` (what it means).
+`PROJECT_SYNTHESIS.md` (interpretation) and `DATA_FLOW_MAP.md` (mechanics and provenance).
 
 ## 1. Three measurement tiers
 1. **Country MI** (`mi/scoring.py` + `safeguards.py` + `diagnostics.py`): P1–P5, Safeguards A–J,

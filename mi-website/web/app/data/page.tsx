@@ -1,6 +1,6 @@
 import { getMeta, getCountries } from "@/lib/data";
 
-export const metadata = { title: "Data and scoring code | Modernization Index" };
+export const metadata = { title: "Data and scoring code", alternates: { canonical: "/data" } };
 
 export default function DataPage() {
   const meta = getMeta();
@@ -19,7 +19,7 @@ export default function DataPage() {
           <div className="flex gap-3">
             <span className="mono text-primary">1</span>
             <span>
-              <b>Open-source scoring code:</b> the fixed formula, written in Python. The same inputs
+              <b>Public scoring code:</b> the fixed formula, written in Python. The same inputs
               produce the same result.
             </span>
           </div>
@@ -58,9 +58,11 @@ export default function DataPage() {
       </div>
 
       <p className="mono mt-6 text-[11px] text-fg3">
-        Built {meta.built} · scoring version {meta.engine} · {meta.data_vintage}. License: CC BY 4.0.
+        Built {meta.built} · scoring version {meta.engine} · {meta.data_vintage}. Project data: CC BY-NC 4.0.
       </p>
-      <p className="mt-2 text-[12px] text-fg3">{meta.note}</p>
+      <p className="mt-2 text-[12px] text-fg3">
+        {meta.note} Third-party source data remains subject to its provider&apos;s terms.
+      </p>
     </div>
   );
 }

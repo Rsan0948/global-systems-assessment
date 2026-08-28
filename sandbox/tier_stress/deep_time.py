@@ -10,8 +10,8 @@ import json, math
 from pathlib import Path
 import numpy as np
 from scipy import stats
-MIROOT=Path("/Users/rubensanchez/Developer/usg-sandbox-wt/mi-research")
 HERE=Path(__file__).resolve().parent
+MIROOT=HERE.parents[1]/"mi-research"
 vd=json.load(open(MIROOT/"data/v2/vdem_democracy.json"))["series"]
 LIB,ELECT,ROL=vd["libdem"],vd["electdem"],vd["rol_vdem"]
 CSO=json.load(open(MIROOT/"data/political/political_indicators.json"))["series"]["cso_participation"]

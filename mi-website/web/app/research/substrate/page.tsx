@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "How the pieces fit together | Modernization Index",
+  title: "How the pieces fit together",
+  alternates: { canonical: "/research/substrate" },
   description:
     "How the score, safeguards, historical tests, and open questions fit into one research program.",
 };

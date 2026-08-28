@@ -12,10 +12,10 @@ import json, math, sys, hashlib
 from pathlib import Path
 import numpy as np
 from scipy import stats
-sys.path.insert(0,str(Path("/Users/rubensanchez/Developer/usg-sandbox-wt/mi-research")))
-sys.path.insert(0,str(Path("/Users/rubensanchez/Developer/usg-sandbox-wt/mi-research/scripts/robustness")))
 HERE=Path(__file__).resolve().parent
-MIROOT=Path("/Users/rubensanchez/Developer/usg-sandbox-wt/mi-research")
+MIROOT=HERE.parents[1]/"mi-research"
+sys.path.insert(0,str(MIROOT))
+sys.path.insert(0,str(MIROOT/"scripts/robustness"))
 PRED=json.load(open(HERE/"predictors.json"))
 OUTC=json.load(open(HERE/"outcomes.json"))
 GDPPC=json.load(open(MIROOT/"data/v2/v2_indicators.json"))["series"].get("gdp_pc_ppp",{})

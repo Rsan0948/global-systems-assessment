@@ -1,121 +1,107 @@
 # Reproducing the results
 
-Everything in this repo is deterministic where it matters: fixed sample
-windows, frozen null-sampler seeds, and version-locked scored artifacts.
-This page is the fresh-clone path for each leg. If your numbers differ
-from the stated expectations, that is a finding - open an issue with the
-commit SHA and the leg you ran.
+This guide covers the shortest fresh-clone path for each research program. The repository includes the data snapshots needed for its standard test suites, so the basic checks do not require network access.
+
+Reproducing a number confirms that the committed code and inputs produce the same output. It does not, by itself, establish that a claim is externally valid. Use the [claims ledger](mi-research/docs/CLAIMS_LEDGER.md) to see how each result was tested.
 
 ## Setup
+
+Python 3.11 or newer is recommended.
 
 ```bash
 git clone https://github.com/Rsan0948/universalsystemgrade.git
 cd universalsystemgrade
-python -m pip install -r requirements.txt   # Python 3.11+
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-Optional geospatial layers (atlas tiles, geography bridges) additionally
-need `geopandas` and `pyogrio`.
+On Windows PowerShell, activate the environment with `.venv\Scripts\Activate.ps1`.
 
----
+## Run the complete test set
 
-## Leg A - Fragmentation census
+From the repository root:
 
 ```bash
-cd fragmentation/census && python run.py
+pytest -q -p no:cacheprovider mi-research/tests
+pytest -q -p no:cacheprovider collectivization/tests
+pytest -q -p no:cacheprovider fragmentation/tests
 ```
 
-Expected: the run grows (or refreshes) `fragmentation/census/results/` and
-prints the census table across natural, language, and social systems.
-Headline expectation: rivers Rb 4.55 ± 0.24 (σ/μ ≈ 0.053, confirmed);
-languages Rb 3.40, CV 0.20 (discovery, in the grown band); corporate
-splits 2.16 / party splits 2.06 (below the band, curated-tier). Every
-discovery claim must beat the frozen Kirchner random-tree null - see
-`fragmentation/preregistration/` and `fragmentation/governance/`.
-
-```bash
-cd ../integration && python run.py
-```
-
-Expected: `integration/results/` and a short report. Current status is a
-**working correlation family, not a claim**: tree-shape vs. complexity
-r = 0.95 (5/5 known + 5/8 extras) and vs. function r = 0.73 (7/7 known).
-
-## Leg B - Modernization Index
-
-Score one country end to end:
+## Modernization Index
 
 ```bash
 cd mi-research
+
+# Score one country
 python scripts/score_country.py --country "Estonia" --year 2024
+
+# Compare two countries
+python scripts/compare_countries.py --a "Estonia" --b "Russia" --year 2024
+
+# Run the historical case validator
+python scripts/run_retrodiction.py --validate data/case_studies/completed/
+
+# Run the focused tests
+pytest -q -p no:cacheprovider tests
 ```
 
-Expected: a per-pillar table (V1/V2/V3 on the 0–100 display scale), T4
-scarring, the durability gap (P4−P1), the 3-year trajectory, the sealed
-engineered-suppression flag, and an archetype call.
+The country score command prints the five pillars, relevant diagnostics, data coverage, and the scoring version. Historical validation results must be described as hindsight retrodiction, not as a forecast record.
 
-Backsliding danger-zone diagnostic (curated-tier finding: inverted-U in
-rule-of-law capacity, safety ceiling near the 80th percentile):
+Rebuilding all upstream inputs is a separate and heavier process. See [`mi-pipeline/README.md`](mi-pipeline/README.md) and [`mi-pipeline/DATA_PROVENANCE.md`](mi-pipeline/DATA_PROVENANCE.md).
+
+## Fragmentation census
 
 ```bash
-python scripts/assess_backsliding.py --country "Hungary"
+cd fragmentation/census
+python run.py
+
+cd ../integration
+python run.py
+
+cd ..
+pytest -q -p no:cacheprovider tests
 ```
 
-Run the test suite:
+The census command refreshes `fragmentation/census/results/`. The integration command refreshes `fragmentation/integration/results/`. Consult the preregistrations and the claims ledger before treating a reported pattern as a confirmed claim.
 
-```bash
-pytest -q -p no:cacheprovider tests/
-```
-
-Expected: all tests pass (`test_tiers.py`, `test_scale_guard.py`,
-`test_backsliding.py`). Tests run on the canonical panel snapshots
-committed under `mi-research/data/` - no network access needed.
-
-Rebuilding the **full** upstream panel (V-Dem ~15M rows, WDI bulk, WGI
-refresh) is the heavier path: see `mi-pipeline/README.md` and
-`scripts/refresh_wgi_wdi.py`. You do not need it to reproduce the
-published findings.
-
-## Leg C - Collectivization
+## Collectivization
 
 ```bash
 cd collectivization
 python run.py
-pytest -q -p no:cacheprovider tests/
+pytest -q -p no:cacheprovider tests
 ```
 
-Expected: `results/cycle_analysis.json` and `results/cycle_summary.png`
-recomputed from the frozen casebook - 109 formation cycles over 30 coded
-cases, Hamming-distance template matching against four frozen pathway
-templates, plus cycle reports for the formation cycles. Headline curated
-expectations: deep predecessor → restoration (ρ = −0.84, n=30, curated);
-negotiated unions ~2× more durable than conquests (308 vs 156 yrs, n=4,
-exhibition-only).
+The main command rebuilds `results/cycle_analysis.json` and `results/cycle_summary.png` from the committed 30-case casebook.
 
----
+## Website
 
-## What "reproduced" means here - and what it does not
+The website reads generated JSON from `mi-website/web/public/data/`. It does not calculate country scores in the browser.
 
-Re-running the pipelines confirms **internal consistency**: same code,
-same frozen inputs, same numbers. It does not by itself confirm external
-validity. The honest caveats, stated where a replicator will trip over
-them:
+```bash
+# From the repository root, rebuild the published dataset
+python mi-website/scripts/refresh_and_build.py
 
-- Historical tiers (ancient n=25, supercycle n=3) are interpreter-scored
-  with hindsight. Independent recoding is the single most valuable
-  external contribution - see CONTRIBUTING.md.
-- T1 gap thresholds (0.20/0.28) were derived on a development set; the
-  17/19 success count is hindsight-calibrated, not a forecast record.
-- The sealed forward flags (US/UK/Chile acute; RU/BY/KG/ML floor) have
-  not yet met their trigger windows; the acute-timing signature behind
-  them is calibrated on n=2 turns (disclosed in
-  `mi-research/data/forecasts/sealed_flags_2024.json`).
-- `mi-research/sandbox/` and root `sandbox/` are exploratory - failures
-  live there permanently and are not shipped claims.
+# Build the site
+cd mi-website/web
+npm ci
+npm run check
+npm run build
+```
 
-The grading discipline is in `mi-research/docs/CLAIMS_LEDGER.md` and
-`mi-research/data/claims/claims.json`. The 109 historical cases are 84
-modern hindsight-retrodictive cases plus 25 ancient interpreter-scored
-cases. The 67 blind out-of-sample observations are reported separately.
-The commit history is part of the audit trail. Hypotheses were frozen,
-tested, and sometimes killed in sequence.
+Node.js 20.9 or newer is required.
+
+## Reporting a mismatch
+
+Open a replication challenge using the GitHub issue template. Include:
+
+- The commit SHA
+- The exact command
+- The expected and observed values
+- Your Python or Node.js version and operating system
+- The data snapshot, source vintage, seed, and sample window when relevant
+- Any local changes, including changes that seem unrelated
+
+Exploratory work under `sandbox/` and `mi-research/sandbox/` is not part of the published claim set unless the claims ledger says otherwise.

@@ -5,6 +5,8 @@ import { buildWorldPaths } from "@/lib/worldmap";
 import CountryGrid from "@/components/CountryGrid";
 import WorldMap from "@/components/WorldMap";
 
+export const metadata = { alternates: { canonical: "/" } };
+
 export default function Home() {
   const countries = getCountries();
   const meta = getMeta();

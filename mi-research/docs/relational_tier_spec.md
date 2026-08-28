@@ -1,7 +1,6 @@
 # Relational / Exposure Tier (T3) — Specification
 
-**Status:** SPEC FOR REVIEW (no module built yet). **Date:** 2026-06-28.
-**Author:** Claude Opus 4.8 (1M context), under the standing integrity rules (`HANDOFF.md` §8).
+**Status:** Historical design specification. **Date:** 2026-06-28.
 
 This is the highest-leverage artifact of the T3 increment. It is written **spec-first, on
 purpose**: every key design decision is called out below in §A for review *before* any code is

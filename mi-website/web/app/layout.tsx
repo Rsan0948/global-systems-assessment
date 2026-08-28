@@ -10,9 +10,19 @@ const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrai
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: `${SITE.name} | ${SITE.tagline.toLowerCase()}`,
+  title: {
+    default: `${SITE.name} | ${SITE.tagline}`,
+    template: `%s | ${SITE.name}`,
+  },
   description: SITE.description,
-  openGraph: { title: SITE.name, description: SITE.description, url: SITE.url, type: "website" },
+  openGraph: {
+    title: SITE.name,
+    description: SITE.description,
+    url: SITE.url,
+    siteName: SITE.name,
+    type: "website",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -48,7 +58,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </Link>
             </p>
             <p className="mono mt-3 text-[11px]">
-              Scoring version {SITE.version} · open source · reproducible. Identical inputs produce identical results.
+              Scoring version {SITE.version} · source available · reproducible. Identical inputs produce identical results.
             </p>
           </div>
         </footer>

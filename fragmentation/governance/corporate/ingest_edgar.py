@@ -53,7 +53,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, "results")
 CACHE = os.path.join(RESULTS, "corporate_splits_edgar.json")
 
-UA = "universalsystemgrade research (rubmatsan2001@gmail.com)"
+UA = os.environ.get(
+    "USG_HTTP_USER_AGENT",
+    "universalsystemgrade research; contact via github.com/Rsan0948/universalsystemgrade",
+)
 SCALE = 3.0                        # same unit scaling as the placeholder node
 _NUMWORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
              "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12}

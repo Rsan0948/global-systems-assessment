@@ -13,7 +13,7 @@ export const SITE = {
   version: "v3.3",
   weighting: "equal",
   tagline: "How countries hold up under stress",
-  url: "https://modernization-index.vercel.app",
+  url: "https://web-gamma-bice-97.vercel.app",
   description:
     "Compare how countries are equipped to handle political and economic stress. Every score comes from public data and a fixed formula.",
   nav: [

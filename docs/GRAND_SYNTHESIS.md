@@ -34,9 +34,8 @@ pressure) and records the full results ledger. This file is the leg-spanning vie
 
 Named the **complexity–capacity matching principle** (`MASTER_REFERENCE_ARCHITECTURE.md`
 §1.2). Everything in the repo is a measurement of one side of that sentence, or of
-what happens when the two sides diverge. The three legs are import-decoupled by
-design - *"they share a conceptual origin, not code"* (`CLAUDE.md`) - which is a
-feature: each must stand on its own data.
+what happens when the two sides diverge. The three research programs are independent
+in code and data. They share a conceptual origin, so each must stand on its own evidence.
 
 ---
 

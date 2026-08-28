@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "What the evidence shows | Modernization Index",
+  title: "What the evidence shows",
+  alternates: { canonical: "/validation" },
   description:
     "A clear account of the historical cases, blind tests, failed forward test, and pending forecasts.",
 };

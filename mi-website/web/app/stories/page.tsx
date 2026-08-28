@@ -1,4 +1,4 @@
-export const metadata = { title: "Stories | Modernization Index" };
+export const metadata = { title: "Stories", alternates: { canonical: "/stories" } };
 
 const STORIES = [
   ["The fall of Rome", "ancient", "A look at institutional strain, external pressure, and the limits of the surviving evidence.", true],

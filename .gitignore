@@ -2,6 +2,17 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
+.DS_Store
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
 
 # HydroRIVERS raw downloads (60+ MB each); derived Rb caches in results/ are committed
 fragmentation/natural-systems/rivers/data/
@@ -26,4 +37,3 @@ mi-research/data/robustness/outcomes/cow/
 
 # V2 large raw source (re-downloadable from IMF; parsed result committed as manual_indicators.json)
 mi-research/data/v2/manual/weoapr2025all.xls
-

@@ -1,13 +1,13 @@
 # Modernization Index Website — Design Specification
 
-**Version:** 0.2 **Date:** 2026-06-30 **Status:** V1 LIVE — https://modernization-index.vercel.app
+**Version:** 0.2 **Date:** 2026-06-30 **Status:** live at https://web-gamma-bice-97.vercel.app
 (190 countries, full coverage with visible gaps; data pipeline wired via `scripts/refresh_and_build.py`
 + `.github/workflows/update-mi-data.yml`)
 
 > v0.2 supersedes v0.1 (2026-06-27). v0.1 predated the relational/exposure tier and the project's
 > honesty reckoning; it led with "Zero falsifications" and was an academic platform (contribution
 > portal, peer review, freemium gating). v0.2 reorients around three principles, adds the relational
-> layer, makes the engine open-source and the source of truth, and makes intellectual honesty a
+> layer, makes the public source code the source of truth, and makes intellectual honesty a
 > visible feature rather than fine print.
 
 ---
@@ -15,7 +15,7 @@
 ## 1. The concept
 
 **The site is the engine, running in public.** Not a site *about* the Modernization Index — the index
-*itself*, alive: fed by public data, computed by an open-source deterministic engine, showing its
+*itself*, alive: fed by public data, computed by a public deterministic engine, showing its
 work, placing every country *in relation to* others, and honest about its own edges. The metaphor is a
 **diagnostic instrument / observatory for how nations weather stress** — serious, transparent, alive —
 not a crystal ball and not a ranked list.
@@ -41,7 +41,7 @@ not a crystal ball and not a ranked list.
 /stories/:slug     One case study
 /how-it-works      Methodology, layered: plain -> technical -> "run it yourself"
 /limits            "What this can and can't tell you" (honesty, with authority)
-/data              Download everything + link to the open-source engine repo
+/data              Download everything + link to the public source repository
 /signals           Structural-change feed (the living part — diagnostic, never forecast) [later phase]
 ```
 
@@ -99,7 +99,7 @@ engagement, NOT as an accuracy score.
 
 ## 8. Architecture — the living engine (the reproducible chain)
 ```
-[open-source engine repo]   keystone; deterministic, pip-installable, its own tests
+[public source repository]  keystone; deterministic, pip-installable, its own tests
         | consumed by, NEVER reimplemented in JS
 [scheduled pipeline]   pulls public APIs (WGI/V-Dem/Maddison/WDI + COW/ATOP/ICOW) ->
                        runs the engine -> publishes a versioned public dataset (JSON) +

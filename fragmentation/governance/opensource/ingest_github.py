@@ -53,7 +53,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, "results")
 CACHE = os.path.join(RESULTS, "oss_forks_github.json")
 
-UA = "universalsystemgrade research (rubmatsan2001@gmail.com)"
+UA = os.environ.get(
+    "USG_HTTP_USER_AGENT",
+    "universalsystemgrade research; contact via github.com/Rsan0948/universalsystemgrade",
+)
 PRIMARY_THRESHOLD = 10
 SENS_THRESHOLDS = [5, 10, 25, 50, 100]
 

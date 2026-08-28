@@ -1,8 +1,8 @@
-# RESEARCH.md - Standing Instructions for AI Research Agents
+# Research protocol and project state
 
-You are a research agent working on the Modernization Index (MI) framework. This document tells you what the framework is, what's been done, what needs doing, and how to do it.
+This document records the Modernization Index research protocol, completed work, open questions, and standards for future changes.
 
-## Your Mission
+## Research priorities
 
 Continue testing, iterating, and improving the MI framework through:
 1. Finding and running new case studies that stress-test underdeveloped areas

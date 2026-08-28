@@ -1,6 +1,6 @@
 ---
 name: Replication challenge
-about: You ran the code and got different numbers — that is a finding, report it
+about: You ran the code and got different numbers; that is a finding, report it
 title: "[replication] "
 ---
 
@@ -8,7 +8,7 @@ Different numbers on a fresh clone are the most valuable issue this repo
 can receive. Please include everything needed to make the discrepancy
 decidable.
 
-**Leg and claim** (e.g. fragmentation census — rivers Rb; MI durability
+**Program and claim** (for example, fragmentation census rivers Rb; MI durability
 gap AUC; collectivization depth->flips rho)
 
 **Commit SHA**
@@ -19,7 +19,7 @@ gap AUC; collectivization depth->flips rho)
 
 **Observed value**
 
-**Sampler / seed / sample window** (if relevant — null pools are seeded;
+**Sampler / seed / sample window** (if relevant; null pools are seeded;
 derivation sets are named in REPRODUCE.md)
 
 **Data snapshot used** (committed snapshot vs upstream rebuild; if
