@@ -42,11 +42,13 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     id: "pillar-p2",
     term: "Innovation & Productive Complexity",
     short:
-      "Innovation capacity plus the sophistication and diversity visible in production and exports. It is a useful proxy for productive capability, not a complete inventory of every capability in a modern service-heavy economy.",
-    what: "A combined measure using the Global Innovation Index and Economic Complexity Index. It captures innovation capacity and the range and sophistication of capabilities revealed through production and exports.",
-    why: "Economies with broader innovation and productive capabilities usually have more ways to adapt when one sector or export market is disrupted. The measure is intentionally standardized across countries, but it can understate capabilities that are difficult to observe in merchandise trade, such as software, finance, advanced services, and intellectual property.",
+      "How much innovation capacity and complex tradable production the economy can sustain. Service-heavy sophistication still matters, but it is not treated as equivalent to deep productive capability under stress.",
+    what:
+      "A combined measure of innovation capacity and the sophistication and diversity revealed in what a country can produce and export. It intentionally emphasizes productive depth rather than total service-sector sophistication.",
+    why:
+      "Under stress, economies with more complex productive capabilities have more ways to substitute inputs, redirect production, rebuild, and adapt when individual sectors or trade links fail. High-value services can strengthen an economy, but they may depend more heavily on intact global networks and imported physical capacity.",
     example:
-      "A country combining strong innovation institutions with machinery, chemicals, electronics, or other sophisticated exports scores well. A service-heavy economy may possess additional complex capabilities that the export-based component only partially captures.",
+      "Two countries can have similar incomes, but the one that can produce machinery, chemicals, electronics, pharmaceuticals, and other complex goods has more physical productive options when supply chains are disrupted.",
   },
   p3: {
     id: "pillar-p3",
