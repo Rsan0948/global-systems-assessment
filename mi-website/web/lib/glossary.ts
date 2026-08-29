@@ -40,13 +40,13 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
   },
   p2: {
     id: "pillar-p2",
-    term: "Economic Complexity",
+    term: "Innovation & Productive Complexity",
     short:
-      "How sophisticated and diversified the economy is. Does it make many complex things, or depend on one commodity?",
-    what: "A measure of the range and sophistication of what a country produces and exports.",
-    why: "A diverse economy has more ways to adapt when one sector fails. An economy that depends on one product has fewer alternatives.",
+      "Innovation capacity plus the sophistication and diversity visible in production and exports. It is a useful proxy for productive capability, not a complete inventory of every capability in a modern service-heavy economy.",
+    what: "A combined measure using the Global Innovation Index and Economic Complexity Index. It captures innovation capacity and the range and sophistication of capabilities revealed through production and exports.",
+    why: "Economies with broader innovation and productive capabilities usually have more ways to adapt when one sector or export market is disrupted. The measure is intentionally standardized across countries, but it can understate capabilities that are difficult to observe in merchandise trade, such as software, finance, advanced services, and intellectual property.",
     example:
-      "A country that depends heavily on oil is more exposed to oil-price changes than one that exports machinery, chemicals, and software.",
+      "A country combining strong innovation institutions with machinery, chemicals, electronics, or other sophisticated exports scores well. A service-heavy economy may possess additional complex capabilities that the export-based component only partially captures.",
   },
   p3: {
     id: "pillar-p3",
