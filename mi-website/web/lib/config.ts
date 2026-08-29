@@ -47,7 +47,7 @@ export const tierColor = scoreBandColor;
 export const PILLAR_ORDER = ["P1", "P2", "P3", "P4", "P5"] as const;
 export const PILLARS: Record<string, { short: string; full: string; desc: string }> = {
   P1: { short: "Institutions", full: "Institutions", desc: "Government effectiveness, rule of law, corruption control, accountability." },
-  P2: { short: "Complexity", full: "Economic Complexity", desc: "How sophisticated and diversified the productive economy is." },
+  P2: { short: "Complexity", full: "Innovation & Productive Complexity", desc: "Innovation capacity plus the sophistication and diversity revealed in what the economy produces and exports." },
   P3: { short: "Human cap.", full: "Human Capital", desc: "Education and health, which shape what a population can do." },
   P4: { short: "Economy", full: "Economic Structure", desc: "Income and the material base." },
   P5: { short: "Stability", full: "Stability & Resilience", desc: "Political stability and the absence of structural fragility." },
