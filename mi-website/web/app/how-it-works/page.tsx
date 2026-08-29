@@ -71,6 +71,27 @@ export default function HowItWorks() {
         </section>
 
         <section className="scroll-mt-20">
+          <h2 className="serif text-xl">Not all prosperity is built the same</h2>
+          <p className="mt-2 text-[14px] leading-relaxed text-fg2">
+            The economic pillars are designed to separate how rich a country is from what that wealth
+            rests on. Two countries can have similar incomes while having very different capacity to
+            adapt, redirect production, or sustain themselves when normal trade and institutions are stressed.
+          </p>
+          <div className="mt-4 space-y-2 text-[14px] leading-relaxed text-fg2">
+            <p><span className="font-medium text-fg">P4</span> asks how much material economic capacity exists and how independently it is generated.</p>
+            <p><span className="font-medium text-fg">P2</span> asks how much innovation and difficult, adaptable productive capability sits underneath that prosperity.</p>
+            <p><span className="font-medium text-fg">P1</span> asks whether the state has the institutional capacity to coordinate and preserve those systems.</p>
+            <p><span className="font-medium text-fg">P3</span> asks whether the population has the human capability to sustain and rebuild them.</p>
+            <p><span className="font-medium text-fg">P5</span> asks whether the overall system is already showing visible strain.</p>
+          </div>
+          <p className="mt-4 rounded-lg border border-border bg-surface2/40 p-3 text-[13px] leading-relaxed text-fg2">
+            A high income can come from deep productive capabilities, from natural-resource rents, or
+            from other forms of activity that are less embedded in the domestic productive base. The
+            index does not treat those sources of prosperity as structurally identical.
+          </p>
+        </section>
+
+        <section className="scroll-mt-20">
           <h2 className="serif text-xl">The shape matters too</h2>
           <p className="mt-2 text-[14px] leading-relaxed text-fg2">
             Two countries can share the same score and be built very differently. So we look at two
