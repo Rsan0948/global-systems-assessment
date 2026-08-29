@@ -56,8 +56,14 @@ export const INDICATOR_META: Record<string, { what: string; pillar: string }> = 
   education_index: { what: "The UN's schooling measure: expected and average years of education.", pillar: "P3" },
   life_expectancy_index: { what: "The UN's population-health measure, from life expectancy at birth.", pillar: "P3" },
   gdp_per_capita_ppp: { what: "Average income per person, adjusted for what money actually buys locally.", pillar: "P4" },
-  resource_rents_pct_gdp: { what: "Income from extracting natural resources, as a share of the economy.", pillar: "P4" },
-  oda_pct_gni: { what: "Foreign aid received, as a share of national income.", pillar: "P4" },
+  resource_rents_pct_gdp: {
+    what: "Income from extracting natural resources, as a share of the economy. Greater dependence lowers P4 because rents can create high income without requiring an equally broad domestic productive base.",
+    pillar: "P4",
+  },
+  oda_pct_gni: {
+    what: "Foreign aid received, as a share of national income. Greater dependence lowers P4 because aid supports resources available today but is not domestically generated economic capacity.",
+    pillar: "P4",
+  },
   fsi: { what: "A composite index of the pressures that push states toward fragility and collapse.", pillar: "P5" },
 };
 
