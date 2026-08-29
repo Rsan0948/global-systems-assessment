@@ -19,8 +19,9 @@ export default function Home() {
         <h1 className="serif text-[2.1rem] font-black leading-[1.05] sm:text-5xl">{SITE.tagline}</h1>
         <p className="mx-auto mt-5 max-w-xl text-[14px] leading-relaxed text-fg2 sm:text-[15px]">
           Compare how countries are equipped to handle political and economic stress. Every score
-          comes from public data and a fixed formula. Open a country to see its five pillars, its data
-          gaps, and the checks that affect its reading.
+          comes from public data and a fixed formula. The index distinguishes wealth from the
+          institutions, human capabilities, and productive systems that make wealth durable. Open a
+          country to see its five pillars, its data gaps, and the checks that affect its reading.
         </p>
         <div className="mono mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[12px] text-fg3">
           <span>
