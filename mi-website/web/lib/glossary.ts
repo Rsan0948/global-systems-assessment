@@ -62,10 +62,13 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     id: "pillar-p4",
     term: "Economic Structure",
     short:
-      "Income per person. Wealth provides resources and flexibility, but it does not guarantee strong institutions.",
-    what: "How wealthy the country is, in income per person.",
-    why: "Higher income can provide reserves and policy options. Its effect depends partly on whether institutions are strong enough to manage those resources.",
-    example: "An oil-producing country can have high income even when its institutions remain weak.",
+      "Material economic capacity, adjusted for dependence on resource rents and foreign aid. Wealth provides options, but the source of that wealth matters too.",
+    what:
+      "A measure of income per person and how independently that material capacity is generated. Higher resource-rent dependence and greater reliance on foreign aid reduce the pillar score.",
+    why:
+      "Money gives governments and societies more options under stress, but not every source of income reflects the same domestic capability. Resource rents can create high income without a broad productive base, while aid can support current spending without being domestically generated capacity.",
+    example:
+      "Two countries can have similar incomes, but one may rely heavily on oil rents while the other draws income from a broader domestic economy. The index treats those economic bases differently.",
   },
   p5: {
     id: "pillar-p5",
