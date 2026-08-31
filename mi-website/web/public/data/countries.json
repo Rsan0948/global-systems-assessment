@@ -4,6 +4,7 @@
   "name": "Singapore",
   "iso3": "SGP",
   "mi": 0.876,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.874,
@@ -14,11 +15,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -46,6 +47,7 @@
   "name": "Switzerland",
   "iso3": "CHE",
   "mi": 0.867,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.846,
@@ -56,11 +58,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -88,6 +90,7 @@
   "name": "Finland",
   "iso3": "FIN",
   "mi": 0.842,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.881,
@@ -98,11 +101,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -130,6 +133,7 @@
   "name": "Denmark",
   "iso3": "DNK",
   "mi": 0.84,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.888,
@@ -140,11 +144,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -172,6 +176,7 @@
   "name": "Ireland",
   "iso3": "IRL",
   "mi": 0.84,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.818,
@@ -182,11 +187,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -214,6 +219,7 @@
   "name": "Sweden",
   "iso3": "SWE",
   "mi": 0.833,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.834,
@@ -224,11 +230,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -256,6 +262,7 @@
   "name": "Netherlands",
   "iso3": "NLD",
   "mi": 0.818,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.829,
@@ -266,11 +273,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -298,6 +305,7 @@
   "name": "Germany",
   "iso3": "DEU",
   "mi": 0.817,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.8,
@@ -308,11 +316,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -340,6 +348,7 @@
   "name": "Japan",
   "iso3": "JPN",
   "mi": 0.816,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.804,
@@ -350,11 +359,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -382,6 +391,7 @@
   "name": "New Zealand",
   "iso3": "NZL",
   "mi": 0.815,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.85,
@@ -392,11 +402,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -424,6 +434,7 @@
   "name": "Norway",
   "iso3": "NOR",
   "mi": 0.81,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.85,
@@ -434,11 +445,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -473,6 +484,7 @@
   "name": "Canada",
   "iso3": "CAN",
   "mi": 0.806,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.797,
@@ -483,11 +495,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -515,6 +527,7 @@
   "name": "Iceland",
   "iso3": "ISL",
   "mi": 0.804,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.803,
@@ -525,11 +538,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -557,6 +570,7 @@
   "name": "South Korea",
   "iso3": "KOR",
   "mi": 0.804,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.728,
@@ -567,11 +581,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -599,6 +613,7 @@
   "name": "Austria",
   "iso3": "AUT",
   "mi": 0.798,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.774,
@@ -609,11 +624,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -641,6 +656,7 @@
   "name": "United Kingdom",
   "iso3": "GBR",
   "mi": 0.79,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.757,
@@ -651,11 +667,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -683,6 +699,7 @@
   "name": "Belgium",
   "iso3": "BEL",
   "mi": 0.781,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.743,
@@ -693,11 +710,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -725,6 +742,7 @@
   "name": "United States",
   "iso3": "USA",
   "mi": 0.779,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.731,
@@ -735,11 +753,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -767,6 +785,7 @@
   "name": "Australia",
   "iso3": "AUS",
   "mi": 0.775,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.82,
@@ -777,11 +796,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -816,6 +835,7 @@
   "name": "Estonia",
   "iso3": "EST",
   "mi": 0.775,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.78,
@@ -826,11 +846,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -858,6 +878,7 @@
   "name": "Slovenia",
   "iso3": "SVN",
   "mi": 0.771,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.684,
@@ -868,11 +889,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -900,6 +921,7 @@
   "name": "France",
   "iso3": "FRA",
   "mi": 0.77,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.721,
@@ -910,11 +932,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -942,6 +964,7 @@
   "name": "Czech Republic",
   "iso3": "CZE",
   "mi": 0.768,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.705,
@@ -952,11 +975,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -984,6 +1007,7 @@
   "name": "United Arab Emirates",
   "iso3": "ARE",
   "mi": 0.763,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.705,
@@ -994,11 +1018,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1026,6 +1050,7 @@
   "name": "Lithuania",
   "iso3": "LTU",
   "mi": 0.756,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.734,
@@ -1036,11 +1061,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1068,6 +1093,7 @@
   "name": "Portugal",
   "iso3": "PRT",
   "mi": 0.75,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.672,
@@ -1078,11 +1104,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1110,6 +1136,7 @@
   "name": "Cyprus",
   "iso3": "CYP",
   "mi": 0.746,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.649,
@@ -1120,11 +1147,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1152,6 +1179,7 @@
   "name": "Italy",
   "iso3": "ITA",
   "mi": 0.74,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.633,
@@ -1162,11 +1190,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1194,6 +1222,7 @@
   "name": "Israel",
   "iso3": "ISR",
   "mi": 0.738,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.695,
@@ -1204,11 +1233,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1236,6 +1265,7 @@
   "name": "Spain",
   "iso3": "ESP",
   "mi": 0.735,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.666,
@@ -1246,11 +1276,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1278,6 +1308,7 @@
   "name": "Latvia",
   "iso3": "LVA",
   "mi": 0.722,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.682,
@@ -1288,11 +1319,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1320,6 +1351,7 @@
   "name": "Poland",
   "iso3": "POL",
   "mi": 0.722,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.625,
@@ -1330,11 +1362,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1362,6 +1394,7 @@
   "name": "Slovakia",
   "iso3": "SVK",
   "mi": 0.718,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.603,
@@ -1372,11 +1405,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1404,6 +1437,7 @@
   "name": "Uruguay",
   "iso3": "URY",
   "mi": 0.716,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.698,
@@ -1414,11 +1448,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1446,6 +1480,7 @@
   "name": "Croatia",
   "iso3": "HRV",
   "mi": 0.703,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.587,
@@ -1456,11 +1491,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1488,6 +1523,7 @@
   "name": "Hungary",
   "iso3": "HUN",
   "mi": 0.699,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.556,
@@ -1498,11 +1534,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1530,6 +1566,7 @@
   "name": "Romania",
   "iso3": "ROU",
   "mi": 0.697,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.574,
@@ -1540,11 +1577,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1572,6 +1609,7 @@
   "name": "Qatar",
   "iso3": "QAT",
   "mi": 0.694,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.674,
@@ -1582,11 +1620,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1621,6 +1659,7 @@
   "name": "Saudi Arabia",
   "iso3": "SAU",
   "mi": 0.693,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.631,
@@ -1631,11 +1670,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1663,6 +1702,7 @@
   "name": "Chile",
   "iso3": "CHL",
   "mi": 0.691,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.673,
@@ -1673,11 +1713,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1705,6 +1745,7 @@
   "name": "Costa Rica",
   "iso3": "CRI",
   "mi": 0.686,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.616,
@@ -1715,11 +1756,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1747,6 +1788,7 @@
   "name": "Greece",
   "iso3": "GRC",
   "mi": 0.686,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.571,
@@ -1757,11 +1799,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1789,6 +1831,7 @@
   "name": "Bulgaria",
   "iso3": "BGR",
   "mi": 0.685,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.527,
@@ -1799,11 +1842,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1831,6 +1874,7 @@
   "name": "Malaysia",
   "iso3": "MYS",
   "mi": 0.681,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.619,
@@ -1841,11 +1885,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1873,6 +1917,7 @@
   "name": "Mauritius",
   "iso3": "MUS",
   "mi": 0.677,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.637,
@@ -1883,11 +1928,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1915,6 +1960,7 @@
   "name": "Oman",
   "iso3": "OMN",
   "mi": 0.665,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.619,
@@ -1925,11 +1971,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1957,6 +2003,7 @@
   "name": "North Macedonia",
   "iso3": "MKD",
   "mi": 0.66,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.507,
@@ -1967,11 +2014,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -1999,6 +2046,7 @@
   "name": "Montenegro",
   "iso3": "MNE",
   "mi": 0.658,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.554,
@@ -2009,11 +2057,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2041,6 +2089,7 @@
   "name": "Bahrain",
   "iso3": "BHR",
   "mi": 0.657,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.614,
@@ -2051,11 +2100,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2090,6 +2139,7 @@
   "name": "China",
   "iso3": "CHN",
   "mi": 0.656,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.531,
@@ -2100,11 +2150,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2132,6 +2182,7 @@
   "name": "Panama",
   "iso3": "PAN",
   "mi": 0.655,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.488,
@@ -2142,11 +2193,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2174,6 +2225,7 @@
   "name": "Albania",
   "iso3": "ALB",
   "mi": 0.646,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.528,
@@ -2184,11 +2236,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2216,6 +2268,7 @@
   "name": "Argentina",
   "iso3": "ARG",
   "mi": 0.63,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.489,
@@ -2226,11 +2279,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2258,6 +2311,7 @@
   "name": "Serbia",
   "iso3": "SRB",
   "mi": 0.629,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.495,
@@ -2268,11 +2322,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2300,6 +2354,7 @@
   "name": "Moldova",
   "iso3": "MDA",
   "mi": 0.628,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.519,
@@ -2310,11 +2365,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2342,6 +2397,7 @@
   "name": "Georgia",
   "iso3": "GEO",
   "mi": 0.626,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.595,
@@ -2352,11 +2408,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2384,6 +2440,7 @@
   "name": "Jordan",
   "iso3": "JOR",
   "mi": 0.624,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.559,
@@ -2394,11 +2451,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2426,6 +2483,7 @@
   "name": "Kazakhstan",
   "iso3": "KAZ",
   "mi": 0.624,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.5,
@@ -2436,11 +2494,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2468,6 +2526,7 @@
   "name": "Kuwait",
   "iso3": "KWT",
   "mi": 0.624,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.565,
@@ -2478,11 +2537,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2517,6 +2576,7 @@
   "name": "Trinidad and Tobago",
   "iso3": "TTO",
   "mi": 0.616,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.492,
@@ -2527,11 +2587,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2559,6 +2619,7 @@
   "name": "Belarus",
   "iso3": "BLR",
   "mi": 0.612,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.355,
@@ -2569,11 +2630,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2601,6 +2662,7 @@
   "name": "Turkey",
   "iso3": "TUR",
   "mi": 0.611,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.445,
@@ -2611,11 +2673,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2643,6 +2705,7 @@
   "name": "Botswana",
   "iso3": "BWA",
   "mi": 0.61,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.6,
@@ -2653,11 +2716,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2685,6 +2748,7 @@
   "name": "Thailand",
   "iso3": "THA",
   "mi": 0.608,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.5,
@@ -2695,11 +2759,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2727,6 +2791,7 @@
   "name": "Mexico",
   "iso3": "MEX",
   "mi": 0.606,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.405,
@@ -2737,11 +2802,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2769,6 +2834,7 @@
   "name": "Vietnam",
   "iso3": "VNM",
   "mi": 0.603,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.479,
@@ -2779,11 +2845,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2811,6 +2877,7 @@
   "name": "Dominican Republic",
   "iso3": "DOM",
   "mi": 0.602,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.502,
@@ -2821,11 +2888,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2853,6 +2920,7 @@
   "name": "Armenia",
   "iso3": "ARM",
   "mi": 0.598,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.507,
@@ -2863,11 +2931,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2895,6 +2963,7 @@
   "name": "Namibia",
   "iso3": "NAM",
   "mi": 0.598,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.555,
@@ -2905,11 +2974,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2937,6 +3006,7 @@
   "name": "Morocco",
   "iso3": "MAR",
   "mi": 0.593,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.492,
@@ -2947,11 +3017,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -2979,6 +3049,7 @@
   "name": "Philippines",
   "iso3": "PHL",
   "mi": 0.593,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.476,
@@ -2989,11 +3060,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3021,6 +3092,7 @@
   "name": "Paraguay",
   "iso3": "PRY",
   "mi": 0.592,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.42,
@@ -3031,11 +3103,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3063,6 +3135,7 @@
   "name": "El Salvador",
   "iso3": "SLV",
   "mi": 0.589,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.436,
@@ -3073,11 +3146,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3105,6 +3178,7 @@
   "name": "Bosnia-Herzegovina",
   "iso3": "BIH",
   "mi": 0.583,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.432,
@@ -3115,11 +3189,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3147,6 +3221,7 @@
   "name": "Cabo Verde",
   "iso3": "CPV",
   "mi": 0.581,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.603,
@@ -3157,11 +3232,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3196,6 +3271,7 @@
   "name": "Eswatini",
   "iso3": "SWZ",
   "mi": 0.581,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.375,
@@ -3206,11 +3282,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3238,6 +3314,7 @@
   "name": "Brazil",
   "iso3": "BRA",
   "mi": 0.578,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.451,
@@ -3248,11 +3325,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3280,6 +3357,7 @@
   "name": "Jamaica",
   "iso3": "JAM",
   "mi": 0.571,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.526,
@@ -3290,11 +3368,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3322,6 +3400,7 @@
   "name": "Russia",
   "iso3": "RUS",
   "mi": 0.57,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.355,
@@ -3332,11 +3411,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3364,6 +3443,7 @@
   "name": "Colombia",
   "iso3": "COL",
   "mi": 0.567,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.476,
@@ -3374,11 +3454,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3406,6 +3486,7 @@
   "name": "Indonesia",
   "iso3": "IDN",
   "mi": 0.566,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.505,
@@ -3416,11 +3497,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3448,6 +3529,7 @@
   "name": "Mongolia",
   "iso3": "MNG",
   "mi": 0.563,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.464,
@@ -3458,11 +3540,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3490,6 +3572,7 @@
   "name": "South Africa",
   "iso3": "ZAF",
   "mi": 0.561,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.498,
@@ -3500,11 +3583,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3532,6 +3615,7 @@
   "name": "Tunisia",
   "iso3": "TUN",
   "mi": 0.557,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.463,
@@ -3542,11 +3626,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3574,6 +3658,7 @@
   "name": "Cambodia",
   "iso3": "KHM",
   "mi": 0.555,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.376,
@@ -3584,11 +3669,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3616,6 +3701,7 @@
   "name": "India",
   "iso3": "IND",
   "mi": 0.555,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.517,
@@ -3626,11 +3712,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3658,6 +3744,7 @@
   "name": "Peru",
   "iso3": "PER",
   "mi": 0.554,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.457,
@@ -3668,11 +3755,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3700,6 +3787,7 @@
   "name": "Uzbekistan",
   "iso3": "UZB",
   "mi": 0.553,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.432,
@@ -3710,11 +3798,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3742,6 +3830,7 @@
   "name": "Laos",
   "iso3": "LAO",
   "mi": 0.549,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.405,
@@ -3752,11 +3841,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3784,6 +3873,7 @@
   "name": "Ecuador",
   "iso3": "ECU",
   "mi": 0.548,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.41,
@@ -3794,11 +3884,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3826,6 +3916,7 @@
   "name": "Azerbaijan",
   "iso3": "AZE",
   "mi": 0.546,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.455,
@@ -3836,11 +3927,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3875,6 +3966,7 @@
   "name": "Ukraine",
   "iso3": "UKR",
   "mi": 0.545,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.423,
@@ -3885,11 +3977,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3917,6 +4009,7 @@
   "name": "Kyrgyzstan",
   "iso3": "KGZ",
   "mi": 0.543,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.367,
@@ -3927,11 +4020,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -3966,6 +4059,7 @@
   "name": "Sri Lanka",
   "iso3": "LKA",
   "mi": 0.541,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.452,
@@ -3976,11 +4070,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4008,6 +4102,7 @@
   "name": "Egypt",
   "iso3": "EGY",
   "mi": 0.531,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.426,
@@ -4018,11 +4113,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4050,6 +4145,7 @@
   "name": "Senegal",
   "iso3": "SEN",
   "mi": 0.53,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.513,
@@ -4060,11 +4156,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4092,6 +4188,7 @@
   "name": "Gabon",
   "iso3": "GAB",
   "mi": 0.515,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.37,
@@ -4102,11 +4199,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4134,6 +4231,7 @@
   "name": "Turkmenistan",
   "iso3": "TKM",
   "mi": 0.512,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.272,
@@ -4144,11 +4242,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4183,6 +4281,7 @@
   "name": "Algeria",
   "iso3": "DZA",
   "mi": 0.511,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.421,
@@ -4193,11 +4292,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4232,6 +4331,7 @@
   "name": "Kenya",
   "iso3": "KEN",
   "mi": 0.51,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.44,
@@ -4242,11 +4342,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4274,6 +4374,7 @@
   "name": "Tajikistan",
   "iso3": "TJK",
   "mi": 0.503,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.345,
@@ -4284,11 +4385,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4316,6 +4417,7 @@
   "name": "Ghana",
   "iso3": "GHA",
   "mi": 0.502,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.515,
@@ -4326,11 +4428,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4358,6 +4460,7 @@
   "name": "Guatemala",
   "iso3": "GTM",
   "mi": 0.498,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.373,
@@ -4368,11 +4471,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4400,6 +4503,7 @@
   "name": "Malawi",
   "iso3": "MWI",
   "mi": 0.497,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.428,
@@ -4410,11 +4514,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4442,6 +4546,7 @@
   "name": "Benin",
   "iso3": "BEN",
   "mi": 0.496,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.483,
@@ -4452,11 +4557,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4484,6 +4589,7 @@
   "name": "Tanzania",
   "iso3": "TZA",
   "mi": 0.496,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.453,
@@ -4494,11 +4600,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4526,6 +4632,7 @@
   "name": "Bolivia",
   "iso3": "BOL",
   "mi": 0.495,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.344,
@@ -4536,11 +4643,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4568,6 +4675,7 @@
   "name": "Iran",
   "iso3": "IRN",
   "mi": 0.486,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.318,
@@ -4578,11 +4686,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4617,6 +4725,7 @@
   "name": "Togo",
   "iso3": "TGO",
   "mi": 0.478,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.406,
@@ -4627,11 +4736,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4659,6 +4768,7 @@
   "name": "Uganda",
   "iso3": "UGA",
   "mi": 0.477,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.403,
@@ -4669,11 +4779,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4701,6 +4811,7 @@
   "name": "Rwanda",
   "iso3": "RWA",
   "mi": 0.471,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.582,
@@ -4711,11 +4822,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4743,6 +4854,7 @@
   "name": "Nepal",
   "iso3": "NPL",
   "mi": 0.47,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.415,
@@ -4753,11 +4865,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4785,6 +4897,7 @@
   "name": "Nicaragua",
   "iso3": "NIC",
   "mi": 0.467,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.283,
@@ -4795,11 +4908,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4827,6 +4940,7 @@
   "name": "Honduras",
   "iso3": "HND",
   "mi": 0.465,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.357,
@@ -4837,11 +4951,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4869,6 +4983,7 @@
   "name": "Mauritania",
   "iso3": "MRT",
   "mi": 0.464,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.379,
@@ -4879,11 +4994,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4918,6 +5033,7 @@
   "name": "Zambia",
   "iso3": "ZMB",
   "mi": 0.462,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.439,
@@ -4928,11 +5044,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -4967,6 +5083,7 @@
   "name": "Bangladesh",
   "iso3": "BGD",
   "mi": 0.46,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.357,
@@ -4977,11 +5094,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5009,6 +5126,7 @@
   "name": "Zimbabwe",
   "iso3": "ZWE",
   "mi": 0.46,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.314,
@@ -5019,11 +5137,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5051,6 +5169,7 @@
   "name": "Madagascar",
   "iso3": "MDG",
   "mi": 0.455,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.363,
@@ -5061,11 +5180,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5093,6 +5212,7 @@
   "name": "Iraq",
   "iso3": "IRQ",
   "mi": 0.447,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.32,
@@ -5103,11 +5223,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5135,6 +5255,7 @@
   "name": "Angola",
   "iso3": "AGO",
   "mi": 0.446,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.369,
@@ -5145,11 +5266,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5184,6 +5305,7 @@
   "name": "Cote d'Ivoire",
   "iso3": "CIV",
   "mi": 0.445,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.474,
@@ -5194,11 +5316,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5226,6 +5348,7 @@
   "name": "Equatorial Guinea",
   "iso3": "GNQ",
   "mi": 0.428,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.262,
@@ -5236,11 +5359,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5268,6 +5391,7 @@
   "name": "Guinea",
   "iso3": "GIN",
   "mi": 0.424,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.35,
@@ -5278,11 +5402,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5310,6 +5434,7 @@
   "name": "Libya",
   "iso3": "LBY",
   "mi": 0.42,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.23,
@@ -5320,11 +5445,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5352,6 +5477,7 @@
   "name": "Papua New Guinea",
   "iso3": "PNG",
   "mi": 0.417,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.393,
@@ -5362,11 +5488,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5394,6 +5520,7 @@
   "name": "Pakistan",
   "iso3": "PAK",
   "mi": 0.409,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.371,
@@ -5404,11 +5531,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5436,6 +5563,7 @@
   "name": "Afghanistan",
   "iso3": "AFG",
   "mi": 0.401,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.212,
@@ -5446,11 +5574,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5478,6 +5606,7 @@
   "name": "Republic of the Congo",
   "iso3": "COG",
   "mi": 0.398,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.315,
@@ -5488,11 +5617,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5527,6 +5656,7 @@
   "name": "Niger",
   "iso3": "NER",
   "mi": 0.396,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.385,
@@ -5537,11 +5667,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5569,6 +5699,7 @@
   "name": "Liberia",
   "iso3": "LBR",
   "mi": 0.395,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.344,
@@ -5579,11 +5710,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5618,6 +5749,7 @@
   "name": "Haiti",
   "iso3": "HTI",
   "mi": 0.392,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.223,
@@ -5628,11 +5760,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5660,6 +5792,7 @@
   "name": "Mozambique",
   "iso3": "MOZ",
   "mi": 0.385,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.354,
@@ -5670,11 +5803,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5709,6 +5842,7 @@
   "name": "Cameroon",
   "iso3": "CMR",
   "mi": 0.384,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.351,
@@ -5719,11 +5853,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5751,6 +5885,7 @@
   "name": "Burkina Faso",
   "iso3": "BFA",
   "mi": 0.383,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.409,
@@ -5761,11 +5896,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5800,6 +5935,7 @@
   "name": "Nigeria",
   "iso3": "NGA",
   "mi": 0.37,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.356,
@@ -5810,11 +5946,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5842,6 +5978,7 @@
   "name": "Burundi",
   "iso3": "BDI",
   "mi": 0.367,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.313,
@@ -5852,11 +5989,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5891,6 +6028,7 @@
   "name": "Myanmar",
   "iso3": "MMR",
   "mi": 0.367,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.238,
@@ -5901,11 +6039,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5933,6 +6071,7 @@
   "name": "Ethiopia",
   "iso3": "ETH",
   "mi": 0.356,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.391,
@@ -5943,11 +6082,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -5975,6 +6114,7 @@
   "name": "Mali",
   "iso3": "MLI",
   "mi": 0.318,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.336,
@@ -5985,11 +6125,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -6017,6 +6157,7 @@
   "name": "Chad",
   "iso3": "TCD",
   "mi": 0.303,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.302,
@@ -6027,11 +6168,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -6066,6 +6207,7 @@
   "name": "Sudan",
   "iso3": "SDN",
   "mi": 0.297,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.216,
@@ -6076,11 +6218,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -6108,6 +6250,7 @@
   "name": "DR Congo",
   "iso3": "COD",
   "mi": 0.27,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.255,
@@ -6118,11 +6261,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "durability",
@@ -6150,6 +6293,7 @@
   "name": "Luxembourg",
   "iso3": "LUX",
   "mi": 0.906,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.877,
@@ -6160,11 +6304,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6202,6 +6346,7 @@
   "name": "Andorra",
   "iso3": "AND",
   "mi": 0.87,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.748,
@@ -6212,11 +6357,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6254,6 +6399,7 @@
   "name": "Greenland",
   "iso3": "GRL",
   "mi": 0.87,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.795,
@@ -6264,11 +6410,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6306,6 +6452,7 @@
   "name": "Cayman Islands",
   "iso3": "CYM",
   "mi": 0.852,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.694,
@@ -6316,11 +6463,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6358,6 +6505,7 @@
   "name": "San Marino",
   "iso3": "SMR",
   "mi": 0.851,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.715,
@@ -6368,11 +6516,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6410,6 +6558,7 @@
   "name": "Bermuda",
   "iso3": "BMU",
   "mi": 0.842,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.718,
@@ -6420,11 +6569,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6462,6 +6611,7 @@
   "name": "Macao",
   "iso3": "MAC",
   "mi": 0.842,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.702,
@@ -6472,11 +6622,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6514,6 +6664,7 @@
   "name": "Hong Kong",
   "iso3": "HKG",
   "mi": 0.834,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.795,
@@ -6524,11 +6675,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6566,6 +6717,7 @@
   "name": "Aruba",
   "iso3": "ABW",
   "mi": 0.829,
+  "band": 1,
   "tier": 1,
   "pillars": {
    "P1": 0.695,
@@ -6576,11 +6728,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 1: Highly Modernized",
+    "key": "score_band",
+    "label": "Band 1: Highly Modernized",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6618,6 +6770,7 @@
   "name": "Barbados",
   "iso3": "BRB",
   "mi": 0.794,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.668,
@@ -6628,11 +6781,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6670,6 +6823,7 @@
   "name": "Bahamas",
   "iso3": "BHS",
   "mi": 0.785,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.631,
@@ -6680,11 +6834,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6722,6 +6876,7 @@
   "name": "Malta",
   "iso3": "MLT",
   "mi": 0.784,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.622,
@@ -6732,11 +6887,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6774,6 +6929,7 @@
   "name": "Seychelles",
   "iso3": "SYC",
   "mi": 0.781,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.661,
@@ -6784,11 +6940,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6826,6 +6982,7 @@
   "name": "US Virgin Islands",
   "iso3": "VIR",
   "mi": 0.779,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.611,
@@ -6836,11 +6993,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6878,6 +7035,7 @@
   "name": "Bhutan",
   "iso3": "BTN",
   "mi": 0.776,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.661,
@@ -6888,11 +7046,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6930,6 +7088,7 @@
   "name": "Antigua and Barbuda",
   "iso3": "ATG",
   "mi": 0.775,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.614,
@@ -6940,11 +7099,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -6982,6 +7141,7 @@
   "name": "Palau",
   "iso3": "PLW",
   "mi": 0.77,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.623,
@@ -6992,11 +7152,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7034,6 +7194,7 @@
   "name": "St Kitts and Nevis",
   "iso3": "KNA",
   "mi": 0.77,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.623,
@@ -7044,11 +7205,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7086,6 +7247,7 @@
   "name": "Puerto Rico",
   "iso3": "PRI",
   "mi": 0.741,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.585,
@@ -7096,11 +7258,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7138,6 +7300,7 @@
   "name": "Nauru",
   "iso3": "NRU",
   "mi": 0.728,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.544,
@@ -7148,11 +7311,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7190,6 +7353,7 @@
   "name": "Marshall Islands",
   "iso3": "MHL",
   "mi": 0.721,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.542,
@@ -7200,11 +7364,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7242,6 +7406,7 @@
   "name": "Kiribati",
   "iso3": "KIR",
   "mi": 0.695,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.539,
@@ -7252,11 +7417,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7294,6 +7459,7 @@
   "name": "Maldives",
   "iso3": "MDV",
   "mi": 0.663,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.492,
@@ -7304,11 +7470,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7346,6 +7512,7 @@
   "name": "Vanuatu",
   "iso3": "VUT",
   "mi": 0.659,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.486,
@@ -7356,11 +7523,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7398,6 +7565,7 @@
   "name": "Suriname",
   "iso3": "SUR",
   "mi": 0.639,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.441,
@@ -7408,11 +7576,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7450,6 +7618,7 @@
   "name": "Sao Tome and Principe",
   "iso3": "STP",
   "mi": 0.632,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.452,
@@ -7460,11 +7629,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7502,6 +7671,7 @@
   "name": "Fiji",
   "iso3": "FJI",
   "mi": 0.629,
+  "band": 2,
   "tier": 2,
   "pillars": {
    "P1": 0.591,
@@ -7512,11 +7682,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 2: Durable",
+    "key": "score_band",
+    "label": "Band 2: Durable",
     "valence": "good",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7553,6 +7723,7 @@
   "name": "Guyana",
   "iso3": "GUY",
   "mi": 0.592,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.473,
@@ -7563,11 +7734,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7612,6 +7783,7 @@
   "name": "Gambia",
   "iso3": "GMB",
   "mi": 0.58,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.441,
@@ -7622,11 +7794,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7664,6 +7836,7 @@
   "name": "Kosovo",
   "iso3": "XKX",
   "mi": 0.579,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.505,
@@ -7674,11 +7847,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7716,6 +7889,7 @@
   "name": "Cuba",
   "iso3": "CUB",
   "mi": 0.57,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.414,
@@ -7726,11 +7900,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7760,6 +7934,7 @@
   "name": "Solomon Islands",
   "iso3": "SLB",
   "mi": 0.567,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.45,
@@ -7770,11 +7945,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7819,6 +7994,7 @@
   "name": "Djibouti",
   "iso3": "DJI",
   "mi": 0.561,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.381,
@@ -7829,11 +8005,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7871,6 +8047,7 @@
   "name": "Lesotho",
   "iso3": "LSO",
   "mi": 0.558,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.444,
@@ -7881,11 +8058,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7923,6 +8100,7 @@
   "name": "Comoros",
   "iso3": "COM",
   "mi": 0.533,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.313,
@@ -7933,11 +8111,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -7975,6 +8153,7 @@
   "name": "Sierra Leone",
   "iso3": "SLE",
   "mi": 0.51,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.367,
@@ -7985,11 +8164,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8027,6 +8206,7 @@
   "name": "East Timor",
   "iso3": "TLS",
   "mi": 0.502,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.418,
@@ -8037,11 +8217,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8078,6 +8258,7 @@
   "name": "Lebanon",
   "iso3": "LBN",
   "mi": 0.472,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.324,
@@ -8088,11 +8269,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8122,6 +8303,7 @@
   "name": "Palestine",
   "iso3": "PSE",
   "mi": 0.471,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.384,
@@ -8132,11 +8314,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8174,6 +8356,7 @@
   "name": "Guinea-Bissau",
   "iso3": "GNB",
   "mi": 0.467,
+  "band": 3,
   "tier": 3,
   "pillars": {
    "P1": 0.293,
@@ -8184,11 +8367,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 3: Mixed",
+    "key": "score_band",
+    "label": "Band 3: Mixed",
     "valence": "warn",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8233,6 +8416,7 @@
   "name": "Venezuela",
   "iso3": "VEN",
   "mi": 0.396,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.192,
@@ -8243,11 +8427,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8277,6 +8461,7 @@
   "name": "Eritrea",
   "iso3": "ERI",
   "mi": 0.383,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.212,
@@ -8287,11 +8472,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8322,6 +8507,7 @@
   "name": "Syria",
   "iso3": "SYR",
   "mi": 0.364,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.203,
@@ -8332,11 +8518,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8374,6 +8560,7 @@
   "name": "Central African Republic",
   "iso3": "CAF",
   "mi": 0.362,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.261,
@@ -8384,11 +8571,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8433,6 +8620,7 @@
   "name": "Yemen",
   "iso3": "YEM",
   "mi": 0.312,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.205,
@@ -8443,11 +8631,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8477,6 +8665,7 @@
   "name": "South Sudan",
   "iso3": "SSD",
   "mi": 0.292,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.161,
@@ -8487,11 +8676,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",
@@ -8522,6 +8711,7 @@
   "name": "Somalia",
   "iso3": "SOM",
   "mi": 0.245,
+  "band": 4,
   "tier": 4,
   "pillars": {
    "P1": 0.173,
@@ -8532,11 +8722,11 @@
   },
   "chips": [
    {
-    "key": "tier",
-    "label": "Tier 4: Fragile",
+    "key": "score_band",
+    "label": "Band 4: Fragile",
     "valence": "bad",
-    "why": "Modernization Index band (equal-weighted pillars).",
-    "rule": "MI score binned into 5 tiers."
+    "why": "MI v3.3 score band based on five equally weighted pillars.",
+    "rule": "The MI score is grouped into five public score bands."
    },
    {
     "key": "partial",

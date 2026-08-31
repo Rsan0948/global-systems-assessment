@@ -3,6 +3,7 @@
  "name": "Bermuda",
  "iso3": "BMU",
  "mi": 0.842,
+ "band": 1,
  "tier": 1,
  "pillars": {
   "P1": 0.718,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 1: Highly Modernized",
+   "key": "score_band",
+   "label": "Band 1: Highly Modernized",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "partial",

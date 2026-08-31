@@ -3,6 +3,7 @@
  "name": "Saudi Arabia",
  "iso3": "SAU",
  "mi": 0.693,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.631,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -382,7 +383,7 @@
    "va_minus_p4": -0.572,
    "va_minus_p1": -0.333,
    "status": "legitimacy_capped",
-   "reading": "Accountability is far below income and state capacity. This is an exploratory concern about succession or legitimacy shocks, not a verdict.",
+   "reading": "CAPACITY WITHOUT CONSENT, accountability far below income/capacity; hypothesized brittle failure mode (succession/legitimacy shock). HYPOTHESIS, not a verdict.",
    "caveat": "Exploratory note (v3.2): informational; orthogonal to the durability gap; no crisis validation yet."
   },
   "sensitivity": {

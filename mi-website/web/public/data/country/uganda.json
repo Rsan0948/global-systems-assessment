@@ -3,6 +3,7 @@
  "name": "Uganda",
  "iso3": "UGA",
  "mi": 0.477,
+ "band": 3,
  "tier": 3,
  "pillars": {
   "P1": 0.403,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 3: Mixed",
+   "key": "score_band",
+   "label": "Band 3: Mixed",
    "valence": "warn",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",

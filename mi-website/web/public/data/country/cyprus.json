@@ -3,6 +3,7 @@
  "name": "Cyprus",
  "iso3": "CYP",
  "mi": 0.746,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.649,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -439,7 +440,7 @@
   "patron_present": false,
   "response": 0.192,
   "response_band": "low",
-  "joint_reading": "HIGH structural exposure + NO patron + weak response: standing vulnerability to externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs it. This is the configuration that turns an internal 'OK' read into an external miss: Cyprus 1974, Poland-Lithuania 1772.",
+  "joint_reading": "HIGH structural exposure + NO patron + weak response: standing vulnerability to externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs it. This is the configuration that turns an internal 'OK' read into an external miss - Cyprus 1974, Poland-Lithuania 1772.",
   "outcome_factual": "Turkish invasion (Jul-Aug 1974); ~37% of the island occupied; de facto partition persisting to today."
  }
 }

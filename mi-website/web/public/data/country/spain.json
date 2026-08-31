@@ -3,6 +3,7 @@
  "name": "Spain",
  "iso3": "ESP",
  "mi": 0.735,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.666,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -309,9 +310,9 @@
    "status": "firing",
    "triggered": true,
    "headline": "condition present",
-   "detail": "Classification: TIER 2: Institutional/Legal Suppression.",
+   "detail": "Classification: TIER 2, Institutional/Legal Suppression.",
    "modification": "Mismatch partially addressed. Predict de-escalation but not permanent resolution. Pressure may recur. Near-zero casualty cost.",
-   "tier": "TIER 2: Institutional/Legal Suppression",
+   "tier": "TIER 2, Institutional/Legal Suppression",
    "origin_cases": [
     "Round 3: Ethiopia vs Northern Ireland"
    ],
@@ -427,14 +428,14 @@
  "relational": {
   "year": 1936,
   "tier": "citable",
-  "label": "Spain 1936 (engine-alone MISS: INTERNAL polarization, NOT relational)",
+  "label": "Spain 1936 (engine-alone MISS - INTERNAL polarization, NOT relational)",
   "exposure_structural": 0.0,
   "exposure_structural_band": "low",
   "exposure_net": 0.25,
   "patron_present": false,
   "response": 0.554,
   "response_band": "moderate",
-  "joint_reading": "LOW structural exposure, moderate response: this was not a relational case, any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
+  "joint_reading": "LOW structural exposure, moderate response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
   "outcome_factual": "Spanish Civil War 1936-39; Franco dictatorship to 1975."
  }
 }

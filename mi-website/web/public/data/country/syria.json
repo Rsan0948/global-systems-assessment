@@ -3,6 +3,7 @@
  "name": "Syria",
  "iso3": "SYR",
  "mi": 0.364,
+ "band": 4,
  "tier": 4,
  "pillars": {
   "P1": 0.203,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 4: Fragile",
+   "key": "score_band",
+   "label": "Band 4: Fragile",
    "valence": "bad",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "partial",
@@ -130,7 +131,7 @@
    "title": "Configuration",
    "status": "flag",
    "headline": "partial failure",
-   "detail": "Has money, not institutions: strong Economic Structure (resource/income) atop catastrophic Institutions and Economic Complexity. Target Institutions and Economic Complexity (institutions, knowledge economy): NOT Economic Structure. Money is not the binding constraint."
+   "detail": "Has money, not institutions: strong Economic Structure (resource/income) atop catastrophic Institutions and Economic Complexity. Target Institutions and Economic Complexity (institutions, knowledge economy), NOT Economic Structure. Money is not the binding constraint."
   },
   {
    "key": "weak",
@@ -154,7 +155,7 @@
    "status": "firing",
    "triggered": true,
    "headline": "income-institutions gap +0.43 \u00b7 flagged",
-   "detail": "Economic Structure-Institutions gap = 0.431 >= 0.28 (crisis floor): income/economy has outrun institutions (granted/fragile): structurally vulnerable under stress.",
+   "detail": "Economic Structure-Institutions gap = 0.431 >= 0.28 (crisis floor): income/economy has outrun institutions (granted/fragile), structurally vulnerable under stress.",
    "modification": "Flag elevated structural crisis-vulnerability; pair with stability (P5)/shock exposure. Risk, not timing (Mod8).",
    "tier": null,
    "origin_cases": [
@@ -355,7 +356,7 @@
    "below_floor": {
     "configuration": "partial_failure",
     "reading": "Has money, not institutions: strong P4 (resource/income) atop catastrophic P1/P2.",
-    "prescription": "Target P1/P2 (institutions, knowledge economy): NOT P4. Money is not the binding constraint."
+    "prescription": "Target P1/P2 (institutions, knowledge economy), NOT P4. Money is not the binding constraint."
    },
    "summary": "Risk level: high concern. P1 = 0.203, spread = 0.431, 1 safeguards active."
   },

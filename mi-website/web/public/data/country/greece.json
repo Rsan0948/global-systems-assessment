@@ -3,6 +3,7 @@
  "name": "Greece",
  "iso3": "GRC",
  "mi": 0.686,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.571,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -433,14 +434,14 @@
  "relational": {
   "year": 1919,
   "tier": "citable",
-  "label": "Greece, Asia Minor campaign 1919-1922 (engine-alone MISS: EXOGENOUS-military)",
+  "label": "Greece, Asia Minor campaign 1919-1922 (engine-alone MISS - EXOGENOUS-military)",
   "exposure_structural": 0.733,
   "exposure_structural_band": "high",
   "exposure_net": 0.787,
   "patron_present": false,
   "response": 0.27,
   "response_band": "low",
-  "joint_reading": "HIGH structural exposure + NO patron + weak response: standing vulnerability to externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs it. This is the configuration that turns an internal 'OK' read into an external miss: Cyprus 1974, Poland-Lithuania 1772.",
+  "joint_reading": "HIGH structural exposure + NO patron + weak response: standing vulnerability to externally-imposed shock that the internal MI does not see. If a shock lands, little absorbs it. This is the configuration that turns an internal 'OK' read into an external miss - Cyprus 1974, Poland-Lithuania 1772.",
   "outcome_factual": "Catastrophic defeat in Anatolia (1922); Smyrna burned; population exchange; the 1922 revolution at home."
  }
 }

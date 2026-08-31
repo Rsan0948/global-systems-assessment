@@ -3,6 +3,7 @@
  "name": "Bulgaria",
  "iso3": "BGR",
  "mi": 0.685,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.527,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -175,7 +176,7 @@
    "status": "firing",
    "triggered": true,
    "headline": "income-institutions gap +0.35 \u00b7 flagged",
-   "detail": "Economic Structure-Institutions gap = 0.352 >= 0.28 (crisis floor): income/economy has outrun institutions (granted/fragile): structurally vulnerable under stress.",
+   "detail": "Economic Structure-Institutions gap = 0.352 >= 0.28 (crisis floor): income/economy has outrun institutions (granted/fragile), structurally vulnerable under stress.",
    "modification": "Flag elevated structural crisis-vulnerability; pair with stability (P5)/shock exposure. Risk, not timing (Mod8).",
    "tier": null,
    "origin_cases": [

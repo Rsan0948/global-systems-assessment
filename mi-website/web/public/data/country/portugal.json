@@ -3,6 +3,7 @@
  "name": "Portugal",
  "iso3": "PRT",
  "mi": 0.75,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.672,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -432,14 +433,14 @@
  "relational": {
   "year": 1926,
   "tier": "citable",
-  "label": "Portugal 1926 (engine-alone MISS: INTERNAL military coup)",
+  "label": "Portugal 1926 (engine-alone MISS - INTERNAL military coup)",
   "exposure_structural": 0.0,
   "exposure_structural_band": "low",
   "exposure_net": 0.25,
   "patron_present": false,
   "response": 0.258,
   "response_band": "low",
-  "joint_reading": "LOW structural exposure, low response: this was not a relational case, any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
-  "outcome_factual": "28 May 1926 coup: the Estado Novo dictatorship (to 1974)."
+  "joint_reading": "LOW structural exposure, low response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
+  "outcome_factual": "28 May 1926 coup -> the Estado Novo dictatorship (to 1974)."
  }
 }

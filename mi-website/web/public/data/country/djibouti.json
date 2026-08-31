@@ -3,6 +3,7 @@
  "name": "Djibouti",
  "iso3": "DJI",
  "mi": 0.561,
+ "band": 3,
  "tier": 3,
  "pillars": {
   "P1": 0.381,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 3: Mixed",
+   "key": "score_band",
+   "label": "Band 3: Mixed",
    "valence": "warn",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "partial",
@@ -147,7 +148,7 @@
    "status": "firing",
    "triggered": true,
    "headline": "income-institutions gap +0.36 \u00b7 flagged",
-   "detail": "Economic Structure-Institutions gap = 0.357 >= 0.28 (crisis floor): income/economy has outrun institutions (granted/fragile): structurally vulnerable under stress.",
+   "detail": "Economic Structure-Institutions gap = 0.357 >= 0.28 (crisis floor): income/economy has outrun institutions (granted/fragile), structurally vulnerable under stress.",
    "modification": "Flag elevated structural crisis-vulnerability; pair with stability (P5)/shock exposure. Risk, not timing (Mod8).",
    "tier": null,
    "origin_cases": [

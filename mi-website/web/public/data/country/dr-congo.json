@@ -3,6 +3,7 @@
  "name": "DR Congo",
  "iso3": "COD",
  "mi": 0.27,
+ "band": 4,
  "tier": 4,
  "pillars": {
   "P1": 0.255,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 4: Fragile",
+   "key": "score_band",
+   "label": "Band 4: Fragile",
    "valence": "bad",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",

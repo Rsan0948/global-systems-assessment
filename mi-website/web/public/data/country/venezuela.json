@@ -3,6 +3,7 @@
  "name": "Venezuela",
  "iso3": "VEN",
  "mi": 0.396,
+ "band": 4,
  "tier": 4,
  "pillars": {
   "P1": 0.192,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 4: Fragile",
+   "key": "score_band",
+   "label": "Band 4: Fragile",
    "valence": "bad",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "partial",
@@ -370,14 +371,14 @@
  "relational": {
   "year": 1948,
   "tier": "citable",
-  "label": "Venezuela 1948 (engine-alone MISS: INTERNAL military coup)",
+  "label": "Venezuela 1948 (engine-alone MISS - INTERNAL military coup)",
   "exposure_structural": 0.0,
   "exposure_structural_band": "low",
   "exposure_net": 0.25,
   "patron_present": false,
   "response": 0.504,
   "response_band": "moderate",
-  "joint_reading": "LOW structural exposure, moderate response: this was not a relational case, any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
+  "joint_reading": "LOW structural exposure, moderate response: this was not a relational case - any rupture here came through the INTERNAL channel, not external exposure (e.g. Spain 1936).",
   "outcome_factual": "Nov 1948 coup; military rule (Perez Jimenez) to 1958."
  }
 }

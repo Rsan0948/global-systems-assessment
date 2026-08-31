@@ -3,6 +3,7 @@
  "name": "Kuwait",
  "iso3": "KWT",
  "mi": 0.624,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.565,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -446,14 +447,14 @@
  "relational": {
   "year": 1989,
   "tier": "citable",
-  "label": "Kuwait, pre-1990 (FRAGILE + protected by response): invaded then RESTORED by coalition",
+  "label": "Kuwait, pre-1990 (FRAGILE + SHIELDED by response) -> invaded then RESTORED by coalition",
   "exposure_structural": 0.819,
   "exposure_structural_band": "high",
   "exposure_net": 0.855,
   "patron_present": false,
   "response": 0.478,
   "response_band": "moderate",
-  "joint_reading": "HIGH structural exposure with NO standing deterrent, but a RESPONSE patron intervened to reverse the shock after it landed: survival came from outside help, not internal strength (e.g. Kuwait 1990, conquered then restored by the coalition).",
+  "joint_reading": "HIGH structural exposure with NO standing deterrent - but a RESPONSE patron intervened to reverse the shock after it landed: survival came from outside help, not internal strength (e.g. Kuwait 1990, conquered then restored by the coalition).",
   "outcome_factual": "Invaded by Iraq 2 Aug 1990; sovereignty restored by the coalition Feb 1991. SURVIVED via the response patron."
  }
 }

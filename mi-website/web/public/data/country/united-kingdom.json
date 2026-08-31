@@ -3,6 +3,7 @@
  "name": "United Kingdom",
  "iso3": "GBR",
  "mi": 0.79,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.757,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -309,9 +310,9 @@
    "status": "firing",
    "triggered": true,
    "headline": "condition present",
-   "detail": "Classification: TIER 3: Prevention/Porosity.",
+   "detail": "Classification: TIER 3, Prevention/Porosity.",
    "modification": "Mismatch partially or fully addressed through institutional design. Predict reduced but ongoing pressure with maintenance costs.",
-   "tier": "TIER 3: Prevention/Porosity",
+   "tier": "TIER 3, Prevention/Porosity",
    "origin_cases": [
     "Round 3: Ethiopia vs Northern Ireland"
    ],

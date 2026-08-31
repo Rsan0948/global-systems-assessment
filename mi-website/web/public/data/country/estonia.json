@@ -3,6 +3,7 @@
  "name": "Estonia",
  "iso3": "EST",
  "mi": 0.775,
+ "band": 2,
  "tier": 2,
  "pillars": {
   "P1": 0.78,
@@ -13,11 +14,11 @@
  },
  "chips": [
   {
-   "key": "tier",
-   "label": "Tier 2: Durable",
+   "key": "score_band",
+   "label": "Band 2: Durable",
    "valence": "good",
-   "why": "Modernization Index band (equal-weighted pillars).",
-   "rule": "MI score binned into 5 tiers."
+   "why": "MI v3.3 score band based on five equally weighted pillars.",
+   "rule": "The MI score is grouped into five public score bands."
   },
   {
    "key": "durability",
@@ -427,7 +428,7 @@
  "relational": {
   "year": 2003,
   "tier": "citable",
-  "label": "Estonia 2003, pre-NATO accession (DURABLE + exposed + protected): persists",
+  "label": "Estonia 2003, pre-NATO accession (DURABLE + EXPOSED + SHIELDED) -> persists",
   "exposure_structural": 0.496,
   "exposure_structural_band": "moderate",
   "exposure_net": 0.397,
